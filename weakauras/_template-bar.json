@@ -1,0 +1,305 @@
+{
+ "icon_side": "RIGHT",
+ "desaturate": false,
+ "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+ "anchorFrameType": "SCREEN",
+ "source": "import",
+ "texture": "Solid",
+ "semver": "11.2.3",
+ "tocversion": 110200,
+ "adjustedMin": "",
+ "width": 405,
+ "sparkRotation": 0,
+ "sparkBlendMode": "ADD",
+ "sparkHidden": "NEVER",
+ "sparkRotationMode": "AUTO",
+ "barColor": [
+  0.03921568627451,
+  0.45098039215686,
+  0.82745098039216,
+  1
+ ],
+ "barColor2": [
+  1,
+  1,
+  0,
+  1
+ ],
+ "auto": true,
+ "icon": false,
+ "conditions": [
+  {
+   "check": {
+    "op": "<=",
+    "trigger": 1,
+    "variable": "percentpower",
+    "value": "30"
+   },
+   "changes": [
+    {
+     "property": "sub.4.text_color",
+     "value": [
+      1,
+      0.64705884456635,
+      0.3647058904171,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "check": {
+    "op": "<=",
+    "trigger": 1,
+    "variable": "percentpower",
+    "value": "15"
+   },
+   "changes": [
+    {
+     "property": "sub.4.text_color",
+     "value": [
+      1,
+      0.38039219379425,
+      0.41960787773132,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "inverse": false,
+ "load": {
+  "use_never": false,
+  "size": {
+   "multi": []
+  },
+  "use_spec": true,
+  "class": {
+   "multi": {
+    "WARLOCK": true
+   },
+   "single": "SHAMAN"
+  },
+  "talent": {
+   "multi": []
+  },
+  "use_class_and_spec": true,
+  "zoneIds": "",
+  "spec": {
+   "multi": {
+    "3": true
+   },
+   "single": 3
+  },
+  "use_class": true,
+  "role": [],
+  "use_petbattle": false,
+  "class_and_spec": {
+   "single": 264
+  },
+  "pvptalent": []
+ },
+ "triggers": {
+  "__array": [
+   {
+    "untrigger": [],
+    "trigger": {
+     "use_unit": true,
+     "duration": "1",
+     "use_showCost": true,
+     "debuffType": "HELPFUL",
+     "use_powertype": true,
+     "use_absorbMode": true,
+     "unevent": "auto",
+     "powertype": 0,
+     "unit": "player",
+     "type": "unit",
+     "event": "Power",
+     "subeventPrefix": "SPELL",
+     "subeventSuffix": "_CAST_START",
+     "names": [],
+     "spellIds": []
+    }
+   },
+   {
+    "untrigger": [],
+    "trigger": {
+     "custom": "function()\n    return true\nend",
+     "unit": "player",
+     "custom_hide": "timed",
+     "type": "custom",
+     "debuffType": "HELPFUL",
+     "custom_type": "stateupdate",
+     "events": "LWA_INIT",
+     "check": "event"
+    }
+   }
+  ],
+  "disjunctive": "any",
+  "activeTriggerMode": 1
+ },
+ "sparkColor": [
+  1,
+  1,
+  1,
+  1
+ ],
+ "yOffset": 0,
+ "information": {
+  "ignoreOptionsEventErrors": true,
+  "forceEvents": true
+ },
+ "overlayclip": true,
+ "useAdjustededMin": false,
+ "animation": {
+  "main": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "start": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "finish": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  }
+ },
+ "selfPoint": "TOP",
+ "smoothProgress": true,
+ "url": "https://wago.io/LuxthosShamanWarWithin/130",
+ "iconSource": -1,
+ "xOffset": 0,
+ "subRegions": [
+  {
+   "type": "subbackground"
+  },
+  {
+   "type": "subforeground"
+  },
+  {
+   "border_color": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "border_edge": "Square Full White",
+   "border_visible": true,
+   "type": "subborder",
+   "border_size": 2,
+   "border_offset": 0,
+   "anchor_area": "bar"
+  },
+  {
+   "text_text_format_p_time_precision": 1,
+   "text_text_format_c_format": "none",
+   "text_automaticWidth": "Auto",
+   "rotateText": "NONE",
+   "anchor_point": "INNER_CENTER",
+   "anchorXOffset": 0,
+   "text_text_format_1.percentpower_format": "none",
+   "text_fontType": "OUTLINE",
+   "text_shadowYOffset": -1,
+   "text_text_format_p_format": "timed",
+   "text_text_format_p_time_legacy_floor": true,
+   "text_fixedWidth": 64,
+   "text_text_format_p_time_mod_rate": true,
+   "text_visible": true,
+   "text_font": "Friz Quadrata TT",
+   "text_fontSize": 16,
+   "text_wordWrap": "WordWrap",
+   "text_selfPoint": "CENTER",
+   "text_text_format_p_time_format": 0,
+   "text_text": "%c",
+   "anchorYOffset": 0,
+   "text_shadowColor": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "text_text_format_p_time_dynamic_threshold": 60,
+   "text_color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "type": "subtext",
+   "text_anchorYOffset": 0,
+   "text_shadowXOffset": 1,
+   "text_justify": "CENTER"
+  }
+ ],
+ "height": 20,
+ "gradientOrientation": "HORIZONTAL",
+ "textureSource": "LSM",
+ "wagoID": "Hkc9ktj4X",
+ "id": "Mana Bar (Restoration) - LWA - Shaman",
+ "useAdjustededMax": false,
+ "progressSource": [
+  -1,
+  ""
+ ],
+ "actions": {
+  "init": {
+   "custom": "aura_env.region.configGroup = \"mana_bar\"",
+   "do_custom": true
+  },
+  "start": {
+   "custom": "",
+   "do_message": false,
+   "do_custom": false
+  },
+  "finish": []
+ },
+ "parent": "Resources - LWA - Shaman",
+ "backgroundColor": [
+  0,
+  0,
+  0,
+  0.30000001192093
+ ],
+ "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+ "sparkOffsetY": 0,
+ "anchorPoint": "CENTER",
+ "enableGradient": false,
+ "alpha": 1,
+ "internalVersion": 85,
+ "zoom": 0,
+ "regionType": "aurabar",
+ "frameStrata": 4,
+ "config": [],
+ "orientation": "HORIZONTAL",
+ "configGroup": "mana_bar",
+ "icon_color": [
+  1,
+  1,
+  1,
+  1
+ ],
+ "spark": false,
+ "isPrimaryResource": true,
+ "sparkHeight": 30,
+ "overlays": [
+  [
+   0,
+   0,
+   0,
+   0.40000003576279
+  ]
+ ],
+ "sparkOffsetX": 0,
+ "adjustedMax": "",
+ "authorOptions": [],
+ "sparkWidth": 10,
+ "uid": "EOFjJvczcg8",
+ "version": 130
+}

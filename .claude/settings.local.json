@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import zlib; print\\('zlib ok'\\)\")",
+      "Bash(where.exe python3 *)",
+      "Bash(py --version)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(node wa-codec.js luxthos-elemental.json)",
+      "Bash(node -e ' *)",
+      "WebFetch(domain:github.com)",
+      "Bash(node -e \"const j=require\\('./_template-icon.json'\\); \\(j.subRegions||[]\\).forEach\\(\\(s,i\\)=>console.log\\(i,'=> sub.'+\\(i+1\\), s.type\\)\\);\")"
+    ]
+  }
+}

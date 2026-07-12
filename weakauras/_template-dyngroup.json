@@ -1,0 +1,200 @@
+{
+ "sortHybridTable": {
+  "Master of the Elements": false,
+  "Flux Melting": false,
+  "Hot Hand": false,
+  "Crackling Surge": false,
+  "Elemental Equilibrium": false,
+  "Flash Flood": false,
+  "Magma Chamber": false,
+  "Power of the Maelstrom": false,
+  "High Tide": false,
+  "Tidal Waves": false,
+  "Hailstorm": false,
+  "Molten Weapon": false,
+  "Legacy of the Frost Witch": false,
+  "Icy Edge": false,
+  "Splintered Elements": false,
+  "Elemental Blast: Buff": false,
+  "Deeply Rooted Elements": false,
+  "Flame Shock & Lava Burst  (Restoration)": false
+ },
+ "centerType": "LR",
+ "parent": "Luxthos - Shaman",
+ "anchorFrameType": "SELECTFRAME",
+ "stepAngle": 15,
+ "limit": 5,
+ "source": "import",
+ "customGrow": "function(newPositions, activeRegions)\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.GrowDynamicEffects then\n        LWA.GrowDynamicEffects(newPositions, activeRegions)\n    end\nend",
+ "controlledChildren": [
+  "Fusion of Elements",
+  "Arc Discharge (Elemental)",
+  "Call of the Ancestor (Elemental)",
+  "Lightning Rod (Elemental)",
+  "Master of the Elements (Elemental)",
+  "Awakening Storms (Elemental)",
+  "Flux Melting",
+  "Surging Currents (Elemental)",
+  "Elemental Equilibrium",
+  "Storm Frenzy (Optional)",
+  "Magma Chamber (Optional)",
+  "Splintered Elements (Optional)",
+  "Power of the Maelstrom (Optional)",
+  "Elemental Blast (Optional - Elemental)",
+  "Stormfury",
+  "Call Lightning",
+  "Arc Discharge (Enhancement)",
+  "Feral Spirit - (Elemental)",
+  "Feral Spirit - (Physical)",
+  "Icy Edge (Optional)",
+  "Molten Weapon (Optional)",
+  "Crackling Surge (Optional)",
+  "Lightning Rod (Enhancement)",
+  "Awakening Storms (Enhancement)",
+  "Legacy of the Frost Witch",
+  "Hailstorm (Optional)",
+  "Hot Hand",
+  "Surging Currents (Enhancement)",
+  "Undulation",
+  "High Tide",
+  "Flame Shock & Lava Burst  (Restoration)",
+  "Master of the Elements (Restoration)",
+  "Tidebringer",
+  "Tidal Waves",
+  "Whirling Earth",
+  "Whirling Water",
+  "Coalescing Water",
+  "Flash Flood",
+  "Call of the Ancestor (Restoration)",
+  "Spiritwalker's Tidal Totem",
+  "Stormweaver (PvP Talent)",
+  "Totem of Wrath (PvP Talent)",
+  "Precognition (Elemental & Restoration - PvP Talent)",
+  "Winning Streak! (Shaman - S2 - 2-Pieces)",
+  "Awakening Storms (Elemental - S3 - 2-Pieces)",
+  "Storm's Eye (Elemental - S3 - 4-Pieces)",
+  "Ancestral Wisdom (Elemental - S3 - 4-Pieces)",
+  "Awakening Storms (Enhancement - S3 - 2-Pieces)",
+  "Storm's Eye (Enhancement - S3 - 4-Pieces)",
+  "Elemental Overflow (Enhancement - S3 - 4-Pieces)",
+  "Elemental Overflow (Restoration - S3 - 4-Pieces)"
+ ],
+ "borderInset": 1,
+ "desc": "Made by Luxthos - twitch.tv/luxthos",
+ "tocversion": 110200,
+ "scale": 1,
+ "internalVersion": 85,
+ "sharedFrameLevel": true,
+ "borderOffset": 4,
+ "space": 2,
+ "hybridSortMode": "ascending",
+ "conditions": [],
+ "load": {
+  "talent": {
+   "multi": []
+  },
+  "class": {
+   "multi": []
+  },
+  "size": {
+   "multi": []
+  },
+  "spec": {
+   "multi": []
+  }
+ },
+ "anchorFrameParent": false,
+ "triggers": [
+  {
+   "untrigger": [],
+   "trigger": {
+    "spellIds": [],
+    "type": "aura2",
+    "unit": "player",
+    "event": "Health",
+    "debuffType": "HELPFUL",
+    "subeventSuffix": "_CAST_START",
+    "subeventPrefix": "SPELL",
+    "names": []
+   }
+  }
+ ],
+ "yOffset": 0,
+ "information": {
+  "forceEvents": true
+ },
+ "animation": {
+  "main": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "start": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "finish": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  }
+ },
+ "selfPoint": "BOTTOM",
+ "url": "https://wago.io/LuxthosShamanWarWithin/130",
+ "arcLength": 360,
+ "useLimit": false,
+ "xOffset": -0.00006103515625,
+ "borderEdge": "Square Full White",
+ "hybridPosition": "hybridFirst",
+ "subRegions": [],
+ "gridType": "RD",
+ "config": [],
+ "wagoID": "Hkc9ktj4X",
+ "id": "Dynamic Effects - LWA - Shaman",
+ "backdropColor": [
+  1,
+  1,
+  1,
+  0.5
+ ],
+ "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+ "grow": "CUSTOM",
+ "fullCircle": true,
+ "border": false,
+ "constantFactor": "RADIUS",
+ "alpha": 1,
+ "borderBackdrop": "Blizzard Tooltip",
+ "regionType": "dynamicgroup",
+ "anchorPoint": "TOP",
+ "gridWidth": 5,
+ "actions": {
+  "init": [],
+  "start": [],
+  "finish": []
+ },
+ "sort": "none",
+ "stagger": 0,
+ "growOn": "show",
+ "frameStrata": 1,
+ "animate": false,
+ "radius": 200,
+ "rotation": 0,
+ "rowSpace": 1,
+ "borderSize": 2,
+ "semver": "11.2.3",
+ "align": "CENTER",
+ "authorOptions": [],
+ "columnSpace": 1,
+ "borderColor": [
+  0,
+  0,
+  0,
+  1
+ ],
+ "uid": "O0xhuN0GtgC",
+ "version": 130
+}

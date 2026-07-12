@@ -1,0 +1,309 @@
+{
+ "yOffset": 0,
+ "desaturate": false,
+ "information": {
+  "forceEvents": true
+ },
+ "parent": "Dynamic Effects - LWA - Shaman",
+ "regionType": "icon",
+ "animation": {
+  "main": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "start": {
+   "preset": "shrink",
+   "easeStrength": 3,
+   "type": "preset",
+   "duration_type": "seconds",
+   "easeType": "none"
+  },
+  "finish": {
+   "preset": "shrink",
+   "easeStrength": 3,
+   "type": "preset",
+   "duration_type": "seconds",
+   "easeType": "none"
+  }
+ },
+ "keepAspectRatio": true,
+ "selfPoint": "CENTER",
+ "cooldownEdge": false,
+ "iconSource": -1,
+ "xOffset": 0,
+ "semver": "11.2.3",
+ "authorOptions": [],
+ "cooldown": true,
+ "zoom": 0.3,
+ "height": 48,
+ "config": [],
+ "adjustedMin": "",
+ "wagoID": "Hkc9ktj4X",
+ "width": 48,
+ "color": [
+  1,
+  1,
+  1,
+  1
+ ],
+ "useAdjustededMax": false,
+ "progressSource": [
+  -1,
+  ""
+ ],
+ "cooldownTextDisabled": false,
+ "internalVersion": 85,
+ "version": 130,
+ "useCooldownModRate": true,
+ "useAdjustededMin": false,
+ "anchorPoint": "CENTER",
+ "url": "https://wago.io/LuxthosShamanWarWithin/130",
+ "uid": "Kjy(VDcyx(j",
+ "triggers": {
+  "__array": [
+   {
+    "untrigger": [],
+    "trigger": {
+     "use_absorbMode": true,
+     "debuffType": "HELPFUL",
+     "use_genericShowOn": true,
+     "track": "auto",
+     "use_exact_spellName": false,
+     "use_unit": true,
+     "use_absorbHealMode": true,
+     "unit": "pet",
+     "names": [],
+     "use_spellName": true,
+     "spellNames": [
+      157375
+     ],
+     "spellIds": [],
+     "spellName": 157375,
+     "genericShowOn": "showOnCooldown",
+     "subeventPrefix": "SPELL",
+     "use_spellNames": true,
+     "event": "Cast",
+     "type": "unit",
+     "subeventSuffix": "_CAST_START",
+     "realSpellName": "Tempest",
+     "use_track": true
+    }
+   },
+   {
+    "untrigger": {
+     "genericShowOn": "showOnCooldown"
+    },
+    "trigger": {
+     "use_absorbMode": true,
+     "debuffType": "HELPFUL",
+     "use_genericShowOn": true,
+     "track": "auto",
+     "use_ignoreSpellKnown": false,
+     "use_exact_spellName": true,
+     "use_unit": true,
+     "unit": "player",
+     "use_spellName": true,
+     "duration": "1",
+     "use_showgcd": false,
+     "use_ignoreoverride": false,
+     "spellIds": [],
+     "realSpellName": "Storm Elemental",
+     "unevent": "auto",
+     "genericShowOn": "showAlways",
+     "subeventPrefix": "SPELL",
+     "names": [],
+     "event": "Cooldown Progress (Spell)",
+     "type": "spell",
+     "subeventSuffix": "_CAST_START",
+     "spellName": 157375,
+     "use_track": true
+    }
+   }
+  ],
+  "disjunctive": "any",
+  "activeTriggerMode": -10
+ },
+ "auto": true,
+ "tocversion": 110200,
+ "frameStrata": 1,
+ "icon": true,
+ "displayIcon": "",
+ "conditions": [
+  {
+   "check": {
+    "trigger": 2,
+    "variable": "onCooldown",
+    "value": 0
+   },
+   "changes": [
+    {
+     "property": "sub.3.glow",
+     "value": true
+    },
+    {
+     "property": "sub.3.glowType",
+     "value": "Proc"
+    }
+   ]
+  },
+  {
+   "check": {
+    "trigger": -1,
+    "variable": "incombat",
+    "value": 0
+   },
+   "changes": [
+    {
+     "property": "sub.3.glow"
+    }
+   ]
+  },
+  {
+   "check": {
+    "trigger": 2,
+    "variable": "onCooldown",
+    "value": 1
+   },
+   "changes": [
+    {
+     "property": "desaturate",
+     "value": true
+    }
+   ]
+  },
+  {
+   "check": {
+    "checks": [
+     {
+      "trigger": 1,
+      "variable": "show",
+      "value": 1
+     },
+     {
+      "trigger": 2,
+      "variable": "show",
+      "value": 1
+     },
+     {
+      "trigger": 3,
+      "variable": "show",
+      "value": 1
+     }
+    ],
+    "trigger": 1,
+    "variable": "show",
+    "value": 1
+   },
+   "changes": [
+    {
+     "property": "sub.3.glow",
+     "value": true
+    },
+    {
+     "property": "sub.3.glowType",
+     "value": "Pixel"
+    },
+    {
+     "property": "desaturate"
+    },
+    {
+     "property": "inverse"
+    },
+    {
+     "property": "cooldownEdge",
+     "value": true
+    }
+   ]
+  }
+ ],
+ "subRegions": [
+  {
+   "type": "subbackground"
+  },
+  {
+   "border_color": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "border_edge": "Square Full White",
+   "type": "subborder",
+   "border_visible": true,
+   "border_offset": 0,
+   "border_size": 2
+  },
+  {
+   "glowColor": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "useGlowColor": false,
+   "glowLines": 8,
+   "glow": false,
+   "type": "subglow",
+   "glowType": "Proc",
+   "glowThickness": 1,
+   "glowYOffset": 0,
+   "glowLength": 10,
+   "glowBorder": false,
+   "glowScale": 1,
+   "glowXOffset": 0,
+   "glowDuration": 1,
+   "glowFrequency": 0.25
+  }
+ ],
+ "cooldownSwipe": true,
+ "source": "import",
+ "inverse": true,
+ "load": {
+  "use_never": false,
+  "size": {
+   "multi": []
+  },
+  "use_spec": true,
+  "class": {
+   "multi": [],
+   "single": "SHAMAN"
+  },
+  "talent": {
+   "multi": {
+    "101849": true,
+    "127914": true
+   }
+  },
+  "spellknown": 210689,
+  "use_talent": false,
+  "spec": {
+   "multi": [],
+   "single": 1
+  },
+  "use_class": true,
+  "role": [],
+  "use_spellknown": false,
+  "use_petbattle": false,
+  "class_and_spec": {
+   "multi": {
+    "262": true,
+    "263": true,
+    "264": true
+   },
+   "single": 262
+  },
+  "use_class_and_spec": true
+ },
+ "anchorFrameParent": false,
+ "adjustedMax": "",
+ "actions": {
+  "init": [],
+  "start": [],
+  "finish": []
+ },
+ "alpha": 1,
+ "id": "Stormfury",
+ "anchorFrameType": "SCREEN"
+}

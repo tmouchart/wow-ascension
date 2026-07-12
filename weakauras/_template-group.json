@@ -1,0 +1,114 @@
+{
+ "yOffset": -170,
+ "version": 130,
+ "information": {
+  "forceEvents": true
+ },
+ "anchorFrameType": "SCREEN",
+ "animation": {
+  "main": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "start": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  },
+  "finish": {
+   "type": "none",
+   "duration_type": "seconds",
+   "easeType": "none",
+   "easeStrength": 3
+  }
+ },
+ "source": "import",
+ "url": "https://wago.io/LuxthosShamanWarWithin/130",
+ "controlledChildren": [
+  "General Options - LWA - Shaman",
+  "Class Options - LWA - Shaman",
+  "Dynamic Effects - LWA - Shaman",
+  "Core - LWA - Shaman",
+  "Left Side - LWA - Shaman",
+  "Right Side - LWA - Shaman",
+  "Utilities - LWA - Shaman",
+  "Maintenance - LWA - Shaman",
+  "Resources - LWA - Shaman"
+ ],
+ "borderColor": [
+  0,
+  0,
+  0,
+  1
+ ],
+ "borderInset": 1,
+ "semver": "11.2.3",
+ "subRegions": [],
+ "actions": {
+  "init": [],
+  "start": [],
+  "finish": []
+ },
+ "config": [],
+ "borderSize": 2,
+ "groupIcon": "interface/icons/classicon_shaman.blp",
+ "backdropColor": [
+  1,
+  1,
+  1,
+  0.5
+ ],
+ "internalVersion": 85,
+ "border": false,
+ "sharedFrameLevel": true,
+ "alpha": 1,
+ "borderOffset": 4,
+ "xOffset": 0,
+ "wagoID": "Hkc9ktj4X",
+ "uid": "oxNB7E4Uhm4",
+ "frameStrata": 2,
+ "anchorPoint": "CENTER",
+ "tocversion": 110200,
+ "conditions": [],
+ "borderBackdrop": "Blizzard Tooltip",
+ "borderEdge": "Square Full White",
+ "desc": "Created by Luxthos\nwww.twitch.tv/luxthos",
+ "authorOptions": [],
+ "load": {
+  "talent": {
+   "multi": []
+  },
+  "class": {
+   "multi": []
+  },
+  "size": {
+   "multi": []
+  },
+  "spec": {
+   "multi": []
+  }
+ },
+ "anchorFrameParent": false,
+ "triggers": [
+  {
+   "untrigger": [],
+   "trigger": {
+    "spellIds": [],
+    "type": "aura2",
+    "unit": "player",
+    "event": "Health",
+    "debuffType": "HELPFUL",
+    "subeventSuffix": "_CAST_START",
+    "subeventPrefix": "SPELL",
+    "names": []
+   }
+  }
+ ],
+ "id": "Luxthos - Shaman",
+ "regionType": "group",
+ "selfPoint": "CENTER",
+ "scale": 1
+}
