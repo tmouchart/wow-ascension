@@ -1,0 +1,4278 @@
+{
+  "class": "Runemaster",
+  "classId": "32",
+  "specs": [
+    "Arcane",
+    "Runic",
+    "Riftblade"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Arcane": 11,
+    "Runic": 85,
+    "Riftblade": 86
+  },
+  "nodes": [
+    {
+      "id": 1578,
+      "name": "Fists of Power",
+      "spellId": 805796,
+      "spellIds": [
+        805796
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_trinket6oog_stonefist2",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        14154,
+        34660
+      ],
+      "requiredIds": [],
+      "desc": "Engrave your fists for 15 seconds, causing auto attacks to grant Earthen Fists for 10 seconds, increasing melee haste by 3% and the chance to trigger Weapon Engraving: Earth by 10%, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805796,
+          "description": "Engrave your fists for <span class=\"item-number\">15</span> seconds, causing auto attacks to grant <span style=\"color: #FFFFFF; display: inline\">Earthen Fists</span> for <span class=\"item-number\">10</span> seconds, increasing melee haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and the chance to trigger <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 1581,
+      "name": "Primordial Salvos",
+      "spellId": 800752,
+      "spellIds": [
+        800752
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_ascendance",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7839
+      ],
+      "requiredIds": [],
+      "desc": "Unleashing a Glyph now deals an additional 115 + 6% SP damage of the same magic school to all enemies within 8 yds of the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800752,
+          "description": "Unleashing a <span style=\"color: #ffffff; display: inline\">Glyph</span> now deals an additional <span class=\"item-number\">115</span> + <span class=\"item-number\">6% SP</span> damage of the same magic school to all enemies within <span class=\"item-number\">8</span> yds of the target."
+        }
+      ]
+    },
+    {
+      "id": 1598,
+      "name": "Elemental Acuity",
+      "spellId": 706671,
+      "spellIds": [
+        706671
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_shockinglava",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        2253
+      ],
+      "requiredIds": [],
+      "desc": "Increases all Fire, Frost, and Nature damage dealt by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706671,
+          "description": "Increases all Fire, Frost, and Nature damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 1662,
+      "name": "Explosive Runes",
+      "spellId": 521219,
+      "spellIds": [
+        521219
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_fireinyourhand_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1778,
+        1779,
+        34579
+      ],
+      "requiredIds": [],
+      "desc": "Your Weapon Engraving: Fire now detonates after 2 sec and its critical damage is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 521219,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Fire</span> now detonates after <span class=\"item-number\">2</span> sec and its critical damage is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 1679,
+      "name": "Runic Tempest",
+      "spellId": 560036,
+      "spellIds": [
+        560036
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\runictempest",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1734,
+        14154
+      ],
+      "requiredIds": [],
+      "desc": "Harness the power of your runic tattoos, resetting the cooldown of Fist of the Ancients and allowing the use of abilities that require Runeshroud and making them able to be cast while moving for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560036,
+          "description": "Harness the power of your runic tattoos, resetting the cooldown of <span style=\"color: #ffffff; display: inline\">Fist of the Ancients</span> and allowing the use of abilities that require <span style=\"color: #ffffff; display: inline\">Runeshroud</span> and making them able to be cast while moving for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 1722,
+      "name": "Frostburn",
+      "spellId": 705594,
+      "spellIds": [
+        705594
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frost_knife_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1598,
+        30029
+      ],
+      "requiredIds": [],
+      "desc": "Removes the cast time of Glacial Rune and Permafrost Rune.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705594,
+          "description": "Removes the cast time of <span style=\"color: #ffffff; display: inline\">Glacial Rune</span> and <span style=\"color: #ffffff; display: inline\">Permafrost Rune</span>."
+        }
+      ]
+    },
+    {
+      "id": 1734,
+      "name": "Magic Etchings",
+      "spellId": 300582,
+      "spellIds": [
+        300582
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_RuneSauvagePourpre",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1821,
+        6495,
+        34579
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Primordial Blast now reduces the affected target's armor by -4% for 12 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300582,
+          "description": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> now reduces the affected target's armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 1770,
+      "name": "Runelord",
+      "spellId": 806984,
+      "spellIds": [
+        806984
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_elementalprecision_2",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30758
+      ],
+      "requiredIds": [],
+      "desc": "After activating Zenith, deal 900 + 33% AP Elemental Damage to your target and increase the damage dealt by your Runic Brand and Weapon Engravings by 30% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806984,
+          "description": "After activating <span style=\"color: #ffffff; display: inline\">Zenith</span>, deal <span class=\"item-number\">900</span> + <span class=\"item-number\">33% AP</span> Elemental Damage to your target and increase the damage dealt by your <span style=\"color: #ffffff; display: inline\">Runic Brand</span> and <span style=\"color: #ffffff; display: inline\">Weapon Engravings</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 1771,
+      "name": "Stone Savant",
+      "spellId": 520917,
+      "spellIds": [
+        520917
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_sumstonearmy_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1578
+      ],
+      "requiredIds": [],
+      "desc": "While Earthen Fists is active, critical strikes with Weapon Engraving: Earth now causes you to strike twice with your next auto attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520917,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Earthen Fists</span> is active, critical strikes with <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> now causes you to strike twice with your next auto attack."
+        }
+      ]
+    },
+    {
+      "id": 1774,
+      "name": "Spellblade",
+      "spellId": 705540,
+      "spellIds": [
+        705540,
+        707878
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_SwordOfFlame_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34599
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility and Intellect by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705540,
+          "description": "Increases your Agility and Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707878,
+          "description": "Increases your Agility and Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 2253,
+      "name": "Primordial Fury",
+      "spellId": 806543,
+      "spellIds": [
+        806543
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_mageskill04_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6473,
+        9619,
+        30603,
+        34619
+      ],
+      "requiredIds": [],
+      "desc": "Your runic tattoos flare up for 15 seconds, causing Runeblade to strike up to 5 additional enemies.For the duration, your Runic Tattoos have 100% increased effectiveness.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806543,
+          "description": "Your runic tattoos flare up for <span class=\"item-number\">15</span> seconds, causing <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> to strike up to <span class=\"item-number\">5</span> additional enemies.<br /><br />For the duration, your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> have <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased effectiveness."
+        }
+      ]
+    },
+    {
+      "id": 4655,
+      "name": "Elemental Mastery",
+      "spellId": 806711,
+      "spellIds": [
+        806711
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(58)_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34656
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Runic Brand now has a 33% chance to transform your Primordial Blast into a random unique elemental version of itself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806711,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Runic Brand</span> now has a <span class=\"item-number\">33</span><span class=\"item-number\">%</span> chance to transform your <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> into a random unique elemental version of itself."
+        }
+      ]
+    },
+    {
+      "id": 5451,
+      "name": "Frozen Earth",
+      "spellId": 705592,
+      "spellIds": [
+        705592
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frost_staff_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6470,
+        30031
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Ice Rune and the stun effect from Palm Sigil: Earth by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705592,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ice Rune</span> and the stun effect from <span style=\"color: #ffffff; display: inline\">Palm Sigil: Earth</span> by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 5648,
+      "name": "Glyphs of Power",
+      "spellId": 520145,
+      "spellIds": [
+        520145
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_rune_03",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30173,
+        30327,
+        34609
+      ],
+      "requiredIds": [],
+      "desc": "Your direct damage dealt has a 10% chance to restore 3% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520145,
+          "description": "Your direct damage dealt has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": 6378,
+      "name": "Master Engraver",
+      "spellId": 705605,
+      "spellIds": [
+        705605
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_blacksmithing_greatersharpeningstone",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7829,
+        34663
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger your Weapon Engravings by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705605,
+          "description": "Increases the chance to trigger your <span style=\"color: #FFFFFF; display: inline\">Weapon Engravings</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6389,
+      "name": "Ley Walker",
+      "spellId": 500250,
+      "spellIds": [
+        500250
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "interface\\icons\\LeyWalk",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6879,
+        34603
+      ],
+      "requiredIds": [],
+      "desc": "Casting or reactivating Warpdagger now removes all root and snare effects from you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500250,
+          "description": "Casting or reactivating <span style=\"color: #ffffff; display: inline\">Warpdagger</span> now removes all root and snare effects from you."
+        }
+      ]
+    },
+    {
+      "id": 6472,
+      "name": "Turbulence",
+      "spellId": 705575,
+      "spellIds": [
+        705575
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill79_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31136,
+        34640
+      ],
+      "requiredIds": [],
+      "desc": "Send out a gust of wind from your weapon that strikes nearby enemies in a 6 yd radius for 200% Weapon Damage as Nature damage every 1 sec for 3 seconds.While active, you leave behind a Turbulent Spiral every 1 sec for 6 seconds.Turbulent Spiral (Damage)Enemies in the area take an additional 97 + 13.5% AP Nature Damage every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705575,
+          "description": "Send out a gust of wind from your weapon that strikes nearby enemies in a <span class=\"item-number\">6</span> yd radius for <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage as Nature damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />While active, you leave behind a <span style=\"color: #ffffff; display: inline\">Turbulent Spiral</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">6</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_snowwhirlwind_border\" /><span class=\"name\">Turbulent Spiral (Damage)</span></div><span class=\"desc\">Enemies in the area take an additional <span class=\"item-number\">97</span> + <span class=\"item-number\">13.5% AP</span> Nature Damage every <span class=\"item-number\">1</span> sec.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6473,
+      "name": "Frost Spectre",
+      "spellId": 560039,
+      "spellIds": [
+        560039,
+        561350
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\novart_magicspell_(3)_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30027
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance and critical damage of Smolder and Primordial Blast against Frozen targets by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560039,
+          "description": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span> and <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561350,
+          "description": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span> and <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6474,
+      "name": "Unbound Energy",
+      "spellId": 705570,
+      "spellIds": [
+        705570,
+        707877
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_ScrollofEarth_Border",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31212
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 3% and your expertise by 4.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705570,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707877,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">8</span>."
+        }
+      ]
+    },
+    {
+      "id": 6476,
+      "name": "Stone Petroglyph",
+      "spellId": 707157,
+      "spellIds": [
+        707157
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_earthmask_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34663
+      ],
+      "requiredIds": [],
+      "desc": "While in Runic Tattoos: Earth, you now heal for 3% of your maximum health every 4 sec and you become immune to knockbacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707157,
+          "description": "While in <span style=\"color: #ffffff; display: inline\">Runic Tattoos: Earth</span>, you now heal for <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum health every <span class=\"item-number\">4</span> sec and you become immune to knockbacks."
+        }
+      ]
+    },
+    {
+      "id": 6478,
+      "name": "Earthen Codex",
+      "spellId": 707460,
+      "spellIds": [
+        707460
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_book_10_b_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34622
+      ],
+      "requiredIds": [],
+      "desc": "When you active a Palm Sigil, you are now guaranteed to critically strike for 20% increased critical damage for 10 seconds or your next 3 attacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707460,
+          "description": "When you active a <span style=\"color: #ffffff; display: inline\">Palm Sigil</span>, you are now guaranteed to critically strike for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased critical damage for <span class=\"item-number\">10</span> seconds or your next <span class=\"item-number\">3</span> attacks."
+        }
+      ]
+    },
+    {
+      "id": 6482,
+      "name": "Ancient Warrior",
+      "spellId": 520755,
+      "spellIds": [
+        520755
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warriorskill14_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29533
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Fist of the Ancients by -2 sec whenever you use Runeblade or Primordial Blast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520755,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Fist of the Ancients</span> by <span class=\"item-number\">-2</span> sec whenever you use <span style=\"color: #ffffff; display: inline\">Runeblade</span> or <span style=\"color: #ffffff; display: inline\">Primordial Blast</span>."
+        }
+      ]
+    },
+    {
+      "id": 6483,
+      "name": "Decoder",
+      "spellId": 706523,
+      "spellIds": [
+        706523
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_10",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6378,
+        6476
+      ],
+      "requiredIds": [],
+      "desc": "Your Elemental Burst and Runeblade now have a 20% chance to instantly trigger your Weapon Engravings.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706523,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> and <span style=\"color: #ffffff; display: inline\">Runeblade</span> now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to instantly trigger your <span style=\"color: #FFFFFF; display: inline\">Weapon Engravings</span>."
+        }
+      ]
+    },
+    {
+      "id": 6485,
+      "name": "Sigilist",
+      "spellId": 705586,
+      "spellIds": [
+        705586
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_runestone_05",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34616,
+        34617
+      ],
+      "requiredIds": [],
+      "desc": "After using a Palm Sigil, the duration of your crowd control effects is increased by 20%.Reduces the cast time of all Palm Sigils by -0.5 sec and increases the duration of your Palm Sigil buffs by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705586,
+          "description": "After using a <span style=\"color: #ffffff; display: inline\">Palm Sigil</span>, the duration of your crowd control effects is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />Reduces the cast time of all <span style=\"color: #ffffff; display: inline\">Palm Sigils</span> by <span class=\"item-number\">-0.5</span> sec and increases the duration of your <span style=\"color: #ffffff; display: inline\">Palm Sigil</span> buffs by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6486,
+      "name": "Battle Engravings",
+      "spellId": 706674,
+      "spellIds": [
+        706674
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_manaclone_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30032
+      ],
+      "requiredIds": [],
+      "desc": "Removes the cast time from Ley Lock, but reduces its duration by 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706674,
+          "description": "Removes the cast time from <span style=\"color: #ffffff; display: inline\">Ley Lock</span>, but reduces its duration by <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6487,
+      "name": "Leyfrost",
+      "spellId": 712308,
+      "spellIds": [
+        712308
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_magicstrike_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30027
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Hoarfrost now cause your next spell within 15 seconds to cast as if the target were Frozen.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712308,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> now cause your next spell within <span class=\"item-number\">15</span> seconds to cast as if the target were <span style=\"color: #3399ff; display: inline\">Frozen</span>."
+        }
+      ]
+    },
+    {
+      "id": 6493,
+      "name": "Alteration",
+      "spellId": 705619,
+      "spellIds": [
+        705619,
+        707875
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_custom_hearthstone_frost",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34578
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Runic Tattoos by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705619,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707875,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6825,
+      "name": "Wizardry",
+      "spellId": 705632,
+      "spellIds": [
+        705632
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanearrow_Border",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34669
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Intellect by 10% and increases the mana gained for each point of Intellect by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705632,
+          "description": "Increases your Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases the mana gained for each point of Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6879,
+      "name": "Runes of Quickness",
+      "spellId": 560527,
+      "spellIds": [
+        560527
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_unholyrune_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29528,
+        31131
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Glyphic spells is increased by 6 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560527,
+          "description": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, the range of your Glyphic spells is increased by <span class=\"item-number\">6</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 7373,
+      "name": "Guarding Rune",
+      "spellId": 500464,
+      "spellIds": [
+        500464
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\ever_probe_sprite_296_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29221
+      ],
+      "requiredIds": [],
+      "desc": "Inscribe a defensive rune beneath you in a 10 yd radius, summoning a barrier that causes allies within the radius to take -40% reduced Magic damage. Lasts 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500464,
+          "description": "Inscribe a defensive rune beneath you in a <span class=\"item-number\">10</span> yd radius, summoning a barrier that causes allies within the radius to take <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> reduced Magic damage. Lasts <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7374,
+      "name": "Earth, Wind, and Fire",
+      "spellId": 706531,
+      "spellIds": [
+        706531
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_ascendance",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7373,
+        30734
+      ],
+      "requiredIds": [],
+      "desc": "Striking at least 5 enemies with Runic Explosion now unleashes Wild Steam.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706531,
+          "description": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Runic Explosion</span> now unleashes <span style=\"color: #ffffff; display: inline\">Wild Steam</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 wildsteam\" /><span class=\"name\">Wild Steam (Transform)</span></div><span class=\"desc\">Stomp the ground in a <span class=\"item-number\">5</span> yd radius around you and release steam, dealing <span class=\"item-number\">128</span> + <span class=\"item-number\">25% AP</span> Frostfire Damage to nearby enemies.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7375,
+      "name": "Leyborn",
+      "spellId": 705609,
+      "spellIds": [
+        705609
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_newshadowmoonvalley",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4655,
+        6482
+      ],
+      "requiredIds": [],
+      "desc": "Your Marked: Runic Brand now stacks 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705609,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Marked: Runic Brand</span> now stacks <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7376,
+      "name": "Runic Tattoos",
+      "spellId": 800736,
+      "spellIds": [
+        800736
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\70_inscription_vantus_rune_azure",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29218,
+        31102
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the resource costs of your spells and abilities by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800736,
+          "description": "Reduces the resource costs of your spells and abilities by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7377,
+      "name": "Prismatic Flow",
+      "spellId": 705581,
+      "spellIds": [
+        705581
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_shadow_manafeed",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34653
+      ],
+      "requiredIds": [],
+      "desc": "Phase Out now increases your movement speed by 40% for 2 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705581,
+          "description": "<span style=\"color: #ffffff; display: inline\">Phase Out</span> now increases your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">2</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7382,
+      "name": "Fracture",
+      "spellId": 803018,
+      "spellIds": [
+        803018
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_manaspike_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30033,
+        34621
+      ],
+      "requiredIds": [],
+      "desc": "Strike an enemy with frozen fury, dealing 921 + 100% AP Frost damage and burning 25 + 35% AP of the target's mana.Damage dealt is guaranteed to critically strike against frozen targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803018,
+          "description": "Strike an enemy with frozen fury, dealing <span class=\"item-number\">921</span> + <span class=\"item-number\">100% AP</span> Frost damage and burning <span class=\"item-number\">25</span> + <span class=\"item-number\">35% AP</span> of the target's mana.<br /><br />Damage dealt is guaranteed to critically strike against frozen targets."
+        }
+      ]
+    },
+    {
+      "id": 7818,
+      "name": "Kirin Tor Agent",
+      "spellId": 705634,
+      "spellIds": [
+        705634
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_06",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29167
+      ],
+      "requiredIds": [],
+      "desc": "Casting Eye of the Beholder now rapidly reduces the coldown of your Rune spells and Phase Out for the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705634,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Eye of the Beholder</span> now rapidly reduces the coldown of your <span style=\"color: #ffffff; display: inline\">Rune</span> spells and <span style=\"color: #ffffff; display: inline\">Phase Out</span> for the duration."
+        }
+      ]
+    },
+    {
+      "id": 7829,
+      "name": "Permafrost Rune",
+      "spellId": 804060,
+      "spellIds": [
+        804060
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_icestone_Border",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11647,
+        33375,
+        34647
+      ],
+      "requiredIds": [],
+      "desc": "Requires Frozen TargetInscribe a rune of permafrost and unleash it on an enemy, incapacitating them for 40 seconds (10 sec vs players). Damage taken will end the effect. Affected enemies are considered Frozen.Using this while in Runeshroud causes it to incur an -80% reduced cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804060,
+          "description": "<span style=\"color: #3399ff; display: inline\">Requires Frozen Target</span><br />Inscribe a rune of permafrost and unleash it on an enemy, incapacitating them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">10</span> sec vs players). Damage taken will end the effect. <br /><br />Affected enemies are considered <span style=\"color: #3399ff; display: inline\">Frozen</span>.<br /><br />Using this while in <span style=\"color: #ffffff; display: inline\">Runeshroud</span> causes it to incur an <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> reduced cooldown."
+        }
+      ]
+    },
+    {
+      "id": 7833,
+      "name": "Expert Elementalist",
+      "spellId": 807505,
+      "spellIds": [
+        807505
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elemental_eternal_shadow",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34664
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Elemental Burst and Glyphic Ruin by 0.5 sec and increases your chance to hit by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807505,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> and <span style=\"color: #ffffff; display: inline\">Glyphic Ruin</span> by <span class=\"item-number\">0.5</span> sec and increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7834,
+      "name": "Arcane Glyph",
+      "spellId": 805727,
+      "spellIds": [
+        805727
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\70_inscription_vantus_rune_suramar",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34664
+      ],
+      "requiredIds": [],
+      "desc": "Using Elemental Burst or Primordial Blast while Flame Glyph is active now grants you Arcane Glyph.Arcane GlyphUnleash: Deals 276 + 18% arcane SP Arcane Damage to up to 0 enemies near the primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805727,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> or <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> while <span style=\"color: #ffffff; display: inline\">Flame Glyph</span> is active now grants you <span style=\"color: #ffffff; display: inline\">Arcane Glyph</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _70_inscription_vantus_rune_suramar\" /><span class=\"name\">Arcane Glyph</span></div><span class=\"desc\"><span style=\"color: #FFFFFF; display: inline\">Unleash</span>: Deals <span class=\"item-number\">276</span> + <span class=\"item-number\">18% arcane SP</span> Arcane Damage to up to <span class=\"item-number\">0</span> enemies near the primary target.</span></div><br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 7839,
+      "name": "Concentrated Magic",
+      "spellId": 560995,
+      "spellIds": [
+        560995,
+        561351
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_arcaneburst_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7833
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Spirit by 5% and reduces spell pushback suffered from damaging attacks by 35%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560995,
+          "description": "Increases your Spirit by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561351,
+          "description": "Increases your Spirit by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7849,
+      "name": "Cryomagi",
+      "spellId": 805726,
+      "spellIds": [
+        805726
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_icelaser_Border",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34603,
+        34665
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of Cryobrand by 10 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805726,
+          "description": "Increases the range of <span style=\"color: #ffffff; display: inline\">Cryobrand</span> by <span class=\"item-number\">10</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 9210,
+      "name": "Unbound",
+      "spellId": 806718,
+      "spellIds": [
+        806718
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_azerite_explosion",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6378,
+        30173,
+        34609
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of harmful magic and curse effects on you by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806718,
+          "description": "Reduces the duration of harmful magic and curse effects on you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9221,
+      "name": "Eternal Magic",
+      "spellId": 806698,
+      "spellIds": [
+        806698
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(2)_Border",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29531
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Primordial Blast by -4 sec and it now refreshes 3 charges of Runeblade.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806698,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> by <span class=\"item-number\">-4</span> sec and it now refreshes <span class=\"item-number\">3</span> charges of <span style=\"color: #ffffff; display: inline\">Runeblade</span>."
+        }
+      ]
+    },
+    {
+      "id": 14154,
+      "name": "Symbols of Power",
+      "spellId": 705613,
+      "spellIds": [
+        705613,
+        705614
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\novart_magicspell_(17)_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1821,
+        6495,
+        7374
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Fist of the Ancients while you have Weapon Engraving: Fire active by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705613,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Fist of the Ancients</span> while you have <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Fire</span> active by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705614,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Fist of the Ancients</span> while you have <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Fire</span> active by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29166,
+      "name": "Ley Constitution",
+      "spellId": 705562,
+      "spellIds": [
+        705562
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_mindtwisting",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29521
+      ],
+      "requiredIds": [],
+      "desc": "Your Armor contribution from items is increased by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705562,
+          "description": "Your Armor contribution from items is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29167,
+      "name": "Eye of the Beholder",
+      "spellId": 500121,
+      "spellIds": [
+        500121
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanevision_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7849,
+        34605
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell critical strike chance by 25% for 15 seconds.While active, the damage of your Glyphic Ruin and Primordial Blast is increased by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500121,
+          "description": "Increases your spell critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />While active, the damage of your <span style=\"color: #ffffff; display: inline\">Glyphic Ruin</span> and <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29218,
+      "name": "Warpdagger",
+      "spellId": 500287,
+      "spellIds": [
+        500287
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Warpblade",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Toss an enchanted dagger forward in a line. Upon reactivation, you instantly teleport to the location of the dagger and deal 124 + 44% SP + 20% AP Elemental Damage to nearby enemies.Usable while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500287,
+          "description": "Toss an enchanted dagger forward in a line. Upon reactivation, you instantly teleport to the location of the dagger and deal <span class=\"item-number\">124</span> + <span class=\"item-number\">44% SP</span> + <span class=\"item-number\">20% AP</span> Elemental Damage to nearby enemies.<br /><br />Usable while stealthed."
+        }
+      ]
+    },
+    {
+      "id": 29221,
+      "name": "Uncovered Engravings",
+      "spellId": 567233,
+      "spellIds": [
+        567233
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_socererking_arcanemines",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6482
+      ],
+      "requiredIds": [],
+      "desc": "Using Fist of the Ancients now increases your chance to trigger Weapon Engravings by 20% for 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 567233,
+          "description": "Using <span style=\"color: #FFFFFF; display: inline\">Fist of the Ancients</span> now increases your chance to trigger <span style=\"color: #FFFFFF; display: inline\">Weapon Engravings</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29222,
+      "name": "Bursting Pulses",
+      "spellId": 300584,
+      "spellIds": [
+        300584
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(57)_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34581
+      ],
+      "requiredIds": [],
+      "desc": "Each weapon enchanted by Weapon Engraving: Earth now reduces the cooldown of Primordial Pulse by -4 sec and increases it's damage by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300584,
+          "description": "Each weapon enchanted by <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Primordial Pulse</span> by <span class=\"item-number\">-4</span> sec and increases it's damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29226,
+      "name": "Ancient Teachings",
+      "spellId": 806797,
+      "spellIds": [
+        806797
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_potentspirit",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34580
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Etching of the Dextrous by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806797,
+          "description": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Etching of the Dextrous</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29228,
+      "name": "Power Engraving",
+      "spellId": 500296,
+      "spellIds": [
+        500296
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_hungeringruneblade",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6483,
+        34616
+      ],
+      "requiredIds": [],
+      "desc": "Create a Power Engraving beneath you for 20 seconds, granting 20% increased Magic Damage dealt and 20% increased critical strike chance to up to 5 allies standing in the area.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500296,
+          "description": "Create a <span style=\"color: #ffffff; display: inline\">Power Engraving</span> beneath you for <span class=\"item-number\">20</span> seconds, granting <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased Magic Damage dealt and <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased critical strike chance to up to <span class=\"item-number\">5</span> allies standing in the area."
+        }
+      ]
+    },
+    {
+      "id": 29346,
+      "name": "Glyph God",
+      "spellId": 520156,
+      "spellIds": [
+        520156
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Racial_Ultravision",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6389,
+        7849
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Glyphic Overload by -15 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520156,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Glyphic Overload</span> by <span class=\"item-number\">-15</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29521,
+      "name": "Zenith",
+      "spellId": 712325,
+      "spellIds": [
+        712325
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicKeeper_Border",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "For 6 seconds, your runic tattoos flare up, increasing your chance to trigger your Weapon Engravings by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712325,
+          "description": "For <span class=\"item-number\">6</span> seconds, your runic tattoos flare up, increasing your chance to trigger your <span style=\"color: #FFFFFF; display: inline\">Weapon Engravings</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29522,
+      "name": "Silencing Rune",
+      "spellId": 802631,
+      "spellIds": [
+        802631
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_arcanesurge",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6825,
+        11605,
+        31129,
+        34602
+      ],
+      "requiredIds": [],
+      "desc": "Inscribe a rune in a 5 yd radius at target location that activates after 1 sec, silencing all enemies within for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802631,
+          "description": "Inscribe a rune in a <span class=\"item-number\">5</span> yd radius at target location that activates after <span class=\"item-number\">1</span> sec, silencing all enemies within for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29528,
+      "name": "Terraglyphs",
+      "spellId": 705551,
+      "spellIds": [
+        705551
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_ScrollofEarth_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1581,
+        29536,
+        34576
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Weapon Engraving: Earth by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705551,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29531,
+      "name": "Runic Brand",
+      "spellId": 712299,
+      "spellIds": [
+        712299
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_mageskill14_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Brand an enemy, dealing 10 + 26% AP Fire damage with each weapon, and marking the enemy for 8 seconds.Marked: Runic BrandYour next Runeblade on the enemy causes a Runic Explosion, dealing an additional 121 + 18.5% AP Spellfire Damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712299,
+          "description": "Brand an enemy, dealing <span class=\"item-number\">10</span> + <span class=\"item-number\">26% AP</span> Fire damage with each weapon, and marking the enemy for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_mageskill14_border\" /><span class=\"name\">Marked: Runic Brand</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Runeblade</span> on the enemy causes a <span style=\"color: #ffffff; display: inline\">Runic Explosion</span>, dealing an additional <span class=\"item-number\">121</span> + <span class=\"item-number\">18.5% AP</span> Spellfire Damage to nearby enemies.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29533,
+      "name": "Fist of the Ancients",
+      "spellId": 712326,
+      "spellIds": [
+        712326
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill150_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9221,
+        34578
+      ],
+      "requiredIds": [],
+      "desc": "Smash an enemy and 1 nearby enemy with your rune-engraved fists, dealing 40 + 40% AP Elemental Damage and triggering your Weapon Engraving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712326,
+          "description": "Smash an enemy and <span class=\"item-number\">1</span> nearby enemy with your rune-engraved fists, dealing <span class=\"item-number\">40</span> + <span class=\"item-number\">40% AP</span> Elemental Damage and triggering your <span style=\"color: #ffffff; display: inline\">Weapon Engraving</span>."
+        }
+      ]
+    },
+    {
+      "id": 29536,
+      "name": "Runeslinger",
+      "spellId": 705550,
+      "spellIds": [
+        705550
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_70_starlightbeacon",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34669
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage dealt has a 5% chance to increase your spell haste by 20% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705550,
+          "description": "Direct damage dealt has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to increase your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29633,
+      "name": "Genesis",
+      "spellId": 500501,
+      "spellIds": [
+        500501
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(60)_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31136
+      ],
+      "requiredIds": [],
+      "desc": "Apply a runic brand to an enemy for 8 seconds, accumulating 50% of your damage dealt, and unleashing after 8 seconds as Elemental Damage.When this deals damage, it triggers your Weapon Engraving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500501,
+          "description": "Apply a runic brand to an enemy for <span class=\"item-number\">8</span> seconds, accumulating <span class=\"item-number\">50%</span> of your damage dealt, and unleashing after <span class=\"item-number\">8</span> seconds as Elemental Damage.<br /><br />When this deals damage, it triggers your <span style=\"color: #ffffff; display: inline\">Weapon Engraving</span>."
+        }
+      ]
+    },
+    {
+      "id": 29637,
+      "name": "Convergence",
+      "spellId": 801086,
+      "spellIds": [
+        801086
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcaneaid_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34616
+      ],
+      "requiredIds": [],
+      "desc": "For 15 seconds, the next 10 Weapon Engravings you trigger will now deal an additional 348 + 30% SP + 20% AP Elemental Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801086,
+          "description": "For <span class=\"item-number\">15</span> seconds, the next <span class=\"item-number\">10</span> <span style=\"color: #ffffff; display: inline\">Weapon Engravings</span> you trigger will now deal an additional <span class=\"item-number\">348</span> + <span class=\"item-number\">30% SP</span> + <span class=\"item-number\">20% AP</span> Elemental Damage."
+        }
+      ]
+    },
+    {
+      "id": 29955,
+      "name": "Manuscription",
+      "spellId": 524952,
+      "spellIds": [
+        524952
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_80_contract_vulpera",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29167,
+        29346,
+        34668
+      ],
+      "requiredIds": [],
+      "desc": "Send manuscriptions to envelop an enemy and enemies around them, dealing 1620 + 190% SP Arcane damage over 5 seconds.When you cast this ability, you are granted Transcribing for 5 seconds.TranscribingWhile active, your next Thaumaturgy or Glyphic Ruin will now grant you a Chapter of the same school as your active Attunement, causing your next 10 direct spell casts to deal additional school damage to nearby enemies, reduced by 20% for each target hit past the initial.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524952,
+          "description": "Send manuscriptions to envelop an enemy and enemies around them, dealing <span class=\"item-number\">1620</span> + <span class=\"item-number\">190% SP</span> Arcane damage over <span class=\"item-number\">5</span> seconds.<br /><br />When you cast this ability, you are granted <span style=\"color: #ffffff; display: inline\">Transcribing</span> for <span class=\"item-number\">5</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_misc_notefolded2b\" /><span class=\"name\">Transcribing</span></div><span class=\"desc\">While active, your next <span style=\"color: #ffffff; display: inline\">Thaumaturgy</span> or <span style=\"color: #FFFFFF; display: inline\">Glyphic Ruin</span> will now grant you a <span style=\"color: #ffffff; display: inline\">Chapter</span> of the same school as your active <span style=\"color: #ffffff; display: inline\">Attunement</span>, causing your next <span class=\"item-number\">10</span> direct spell casts to deal additional school damage to nearby enemies, reduced by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for each target hit past the initial.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30026,
+      "name": "Hoarfrost",
+      "spellId": 801104,
+      "spellIds": [
+        801104
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_iceempower_Border",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6474
+      ],
+      "requiredIds": [],
+      "desc": "Slash in a frozen fury in front of you, dealing 7 + 33% AP Frost Damage to up to 3 nearby enemies, plus an additional 7 + 33% AP every 3 sec for 21 seconds.Enemies hit by the initial strike are frozen in place for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801104,
+          "description": "Slash in a frozen fury in front of you, dealing <span class=\"item-number\">7</span> + <span class=\"item-number\">33% AP</span> Frost Damage to up to <span class=\"item-number\">3</span> nearby enemies, plus an additional <span class=\"item-number\">7</span> + <span class=\"item-number\">33% AP</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">21</span> seconds.<br /><br />Enemies hit by the initial strike are frozen in place for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30027,
+      "name": "Runic Invocation",
+      "spellId": 807204,
+      "spellIds": [
+        807204
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_rune_06_b",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30026
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Hoarfrost by 10% and allows its periodic damage to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807204,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows its periodic damage to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 30029,
+      "name": "Primordial Echoes",
+      "spellId": 705572,
+      "spellIds": [
+        705572
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicVortex_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6473,
+        34622
+      ],
+      "requiredIds": [],
+      "desc": "Your critical strikes dealt with Primordial Blast now have a 40% chance to strike an additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705572,
+          "description": "Your critical strikes dealt with <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to strike an additional time."
+        }
+      ]
+    },
+    {
+      "id": 30032,
+      "name": "Echo Rune",
+      "spellId": 500270,
+      "spellIds": [
+        500270
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\EchoRune",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30030,
+        30603,
+        34598
+      ],
+      "requiredIds": [],
+      "desc": "Mark your current location with an echo rune for 20 seconds.At the end of the duration or upon reactivation, warp back to the marked location and heal for 880 + 150% AP health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500270,
+          "description": "Mark your current location with an echo rune for <span class=\"item-number\">20</span> seconds.<br /><br />At the end of the duration or upon reactivation, warp back to the marked location and heal for <span class=\"item-number\">880</span> + <span class=\"item-number\">150% AP</span> health."
+        }
+      ]
+    },
+    {
+      "id": 30033,
+      "name": "Runic Power",
+      "spellId": 300944,
+      "spellIds": [
+        300944
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcane_scroll_Border",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1598,
+        1756,
+        6481
+      ],
+      "requiredIds": [],
+      "desc": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, Elemental Burst now increase the chance for the target to be critically struck by your spells by 3% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300944,
+          "description": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, <span style=\"color: #FFFFFF; display: inline\">Elemental Burst</span> now increase the chance for the target to be critically struck by your spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30034,
+      "name": "Waveforged",
+      "spellId": 705565,
+      "spellIds": [
+        705565
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_watersword_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7382,
+        31136
+      ],
+      "requiredIds": [],
+      "desc": "After Hurricane ends, you may now use abilties that require Runeshroud for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705565,
+          "description": "After <span style=\"color: #ffffff; display: inline\">Hurricane</span> ends, you may now use abilties that require <span style=\"color: #ffffff; display: inline\">Runeshroud</span> for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30158,
+      "name": "Speed Rune",
+      "spellId": 801103,
+      "spellIds": [
+        801103
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\runeofspeed",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29166,
+        34648
+      ],
+      "requiredIds": [],
+      "desc": "Conjure a path of runes in the direction you are facing for 10 seconds, increasing the movement speed of allies by 70%.This effect can persist for a short duration after leaving the runic path.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801103,
+          "description": "Conjure a path of runes in the direction you are facing for <span class=\"item-number\">10</span> seconds, increasing the movement speed of allies by <span class=\"item-number\">70</span><span class=\"item-number\">%</span>.<br /><br />This effect can persist for a short duration after leaving the runic path."
+        }
+      ]
+    },
+    {
+      "id": 30208,
+      "name": "Focusing Crystals",
+      "spellId": 705564,
+      "spellIds": [
+        705564,
+        707879
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Arcane_Blast",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34664
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Magic Damage dealt by 3% and allows 30% of your mana regeneration to continue while in combat.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705564,
+          "description": "Increases your Magic Damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and allows <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your mana regeneration to continue while in combat."
+        },
+        {
+          "rank": 2,
+          "spellId": 707879,
+          "description": "Increases your Magic Damage dealt by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and allows <span class=\"item-number\">60</span><span class=\"item-number\">%</span> of your mana regeneration to continue while in combat."
+        }
+      ]
+    },
+    {
+      "id": 30327,
+      "name": "Magic Feeder",
+      "spellId": 705546,
+      "spellIds": [
+        705546
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Racial_ShadowMeld",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34610,
+        34614
+      ],
+      "requiredIds": [],
+      "desc": "Your Leyfeed now steals 1 additional magic effect from the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705546,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Leyfeed</span> now steals <span class=\"item-number\">1</span> additional magic effect from the target."
+        }
+      ]
+    },
+    {
+      "id": 30603,
+      "name": "Residual Power",
+      "spellId": 560040,
+      "spellIds": [
+        560040
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(17)_Border",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1774
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage replicated by Weapon Engraving: Air by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560040,
+          "description": "Increases the damage replicated by <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Air</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30678,
+      "name": "Ley Power",
+      "spellId": 801096,
+      "spellIds": [
+        801096
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_13",
+      "x": 3,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1679,
+        30758
+      ],
+      "requiredIds": [],
+      "desc": "Divert ley energy into your weapons, drawing power from enemies within 20 yds of you. For each enemy in the radius, your damage dealt deals an additional 10% of the damage as Arcane damage, up to 100%, for 15 seconds.While active, melee attacks and abilities grant you Harnessed Leylines.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801096,
+          "description": "Divert ley energy into your weapons, drawing power from enemies within <span class=\"item-number\">20</span> yds of you. For each enemy in the radius, your damage dealt deals an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage as Arcane damage, up to <span class=\"item-number\">100%</span>, for <span class=\"item-number\">15</span> seconds.<br /><br />While active, melee attacks and abilities grant you <span style=\"color: #ffffff; display: inline\">Harnessed Leylines</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_magicspell__25__border\" /><span class=\"name\">Harnessed Leylines (Proc)</span></div><span class=\"desc\">Increases the damage of your <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> and <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Additional applications do not refresh the effect.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30728,
+      "name": "Granite Resolve",
+      "spellId": 520229,
+      "spellIds": [
+        520229
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_earthtranquility_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30158,
+        34653
+      ],
+      "requiredIds": [],
+      "desc": "Become hard as stone, reducing your Physical damage taken by -30% for 8 seconds.Usable while stunned.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520229,
+          "description": "Become hard as stone, reducing your Physical damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Usable while stunned."
+        }
+      ]
+    },
+    {
+      "id": 30733,
+      "name": "Tempo",
+      "spellId": 807172,
+      "spellIds": [
+        807172
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\runeofimpermanence",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6482,
+        34601
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Runeblade by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807172,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Runeblade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30734,
+      "name": "Volcanic Etching",
+      "spellId": 705615,
+      "spellIds": [
+        705615
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_3",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30733
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Weapon Engraving: Fire and Weapon Engraving: Earth by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705615,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Fire</span> and <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30758,
+      "name": "Echoes of Eternity",
+      "spellId": 521211,
+      "spellIds": [
+        521211
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Mount_elementalfcca06",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1662,
+        1734
+      ],
+      "requiredIds": [],
+      "desc": "Your Zenith now has 2 charges.Zenith2 Charges, 45 sec rechargeFor 6 seconds, your runic tattoos flare up, increasing your chance to trigger your Weapon Engravings by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 521211,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Zenith</span> now has <span class=\"item-number\">2</span> charges.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_magickeeper_border\" /><span class=\"name\">Zenith</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">45</span> sec recharge</span><br />For <span class=\"item-number\">6</span> seconds, your runic tattoos flare up, increasing your chance to trigger your <span style=\"color: #FFFFFF; display: inline\">Weapon Engravings</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31102,
+      "name": "Glacial Rune",
+      "spellId": 807842,
+      "spellIds": [
+        807842
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_icespectator_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Place a rune at the target location that explodes after 1 sec with frigid magic, dealing 128 + 30% SP Frost damage to enemies inside and freezing them in place for 40 seconds (8 sec vs players).Damage caused may interrupt the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807842,
+          "description": "Place a rune at the target location that explodes after <span class=\"item-number\">1</span> sec with frigid magic, dealing <span class=\"item-number\">128</span> + <span class=\"item-number\">30% SP</span> Frost damage to enemies inside and freezing them in place for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players).<br /><br />Damage caused may interrupt the effect."
+        }
+      ]
+    },
+    {
+      "id": 31106,
+      "name": "Advanced Magi",
+      "spellId": 804557,
+      "spellIds": [
+        804557
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_icetorch_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11605,
+        34602
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Elemental Burst by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804557,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31108,
+      "name": "Glyphic Destruction",
+      "spellId": 800758,
+      "spellIds": [
+        800758
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Zone_CrystalSong_01",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31106
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Glyphic Ruin by 100% against Frozen targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800758,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Glyphic Ruin</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 31126,
+      "name": "Frigid Blast",
+      "spellId": 500118,
+      "spellIds": [
+        500118
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill40_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30208
+      ],
+      "requiredIds": [],
+      "desc": "Blast an enemy with frigid runic magic, dealing cond(gt(SPFR, SPA), 40+0+SPFR*0.65, 40+0+SPA*0.65) Frost damage and applying Frigid Fusion. Frigid Fusion (Aura)Accumulate 20% of your damage dealt to the target over 6 seconds.After the duration, deal it as Frost Damage to the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500118,
+          "description": "Blast an enemy with frigid runic magic, dealing <span class=\"item-number\">cond(gt(SPFR, SPA), 40+0+SPFR*0.65, 40+0+SPA*0.65)</span> Frost damage and applying <span style=\"color: #FFFFFF; display: inline\">Frigid Fusion</span>. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 skill_icon_skill40_border\" /><span class=\"name\">Frigid Fusion (Aura)</span></div><span class=\"desc\">Accumulate <span class=\"item-number\">20%</span> of your damage dealt to the target over <span class=\"item-number\">6</span> seconds.<br /><br />After the duration, deal it as Frost Damage to the target.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31129,
+      "name": "Primordial Power",
+      "spellId": 705556,
+      "spellIds": [
+        705556
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_mage_overpowered",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31126
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Frigid Fusion by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705556,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Frigid Fusion</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 31131,
+      "name": "Thaumaturgy",
+      "spellId": 804550,
+      "spellIds": [
+        804550
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_elementalprecision_2",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6825,
+        29536
+      ],
+      "requiredIds": [],
+      "desc": "Blast an enemy for 67 + 41% arcane SP + 10% AP Arcane damage and unleash your active Glyph effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804550,
+          "description": "Blast an enemy for <span class=\"item-number\">67</span> + <span class=\"item-number\">41% arcane SP</span> + <span class=\"item-number\">10% AP</span> Arcane damage and unleash your active <span style=\"color: #ffffff; display: inline\">Glyph</span> effect."
+        }
+      ]
+    },
+    {
+      "id": 31136,
+      "name": "Spellfire Runes",
+      "spellId": 801511,
+      "spellIds": [
+        801511
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireRune_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1722,
+        30033
+      ],
+      "requiredIds": [],
+      "desc": "Your Runeblade now has a 20% chance, and Warpdagger a 100% chance, to reset the cooldown of Smolder, and increase the damage of your next Smolder by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801511,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Runeblade</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance, and <span style=\"color: #ffffff; display: inline\">Warpdagger</span> a <span class=\"item-number\">100</span><span class=\"item-number\">%</span> chance, to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Smolder</span>, and increase the damage of your next <span style=\"color: #ffffff; display: inline\">Smolder</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31212,
+      "name": "Smolder",
+      "spellId": 801087,
+      "spellIds": [
+        801087
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_fire_spell_02_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4063,
+        29218
+      ],
+      "desc": "Ignite your blade and strike an enemy, dealing 140% Weapon Damage plus 19 Fire Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801087,
+          "description": "Ignite your blade and strike an enemy, dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">19</span> Fire Damage."
+        }
+      ]
+    },
+    {
+      "id": 31242,
+      "name": "Freezing Codex",
+      "spellId": 705577,
+      "spellIds": [
+        705577
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\item_icecrownringd",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6478,
+        30029
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Ice Rune by -20 sec and increases the mana cost by 50%, but reduces its range by -10 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705577,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Ice Rune</span> by <span class=\"item-number\">-20</span> sec and increases the mana cost by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but reduces its range by <span class=\"item-number\">-10</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 31270,
+      "name": "Steam Conjurer",
+      "spellId": 805743,
+      "spellIds": [
+        805743
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(77)_Border",
+      "x": 5,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1578,
+        1679
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Weapon Engraving: Earth now has a 5% chance to cast Wild Steam. Can only occur once every 3 sec.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805743,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to cast <span style=\"color: #ffffff; display: inline\">Wild Steam</span>. Can only occur once every <span class=\"item-number\">3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 wildsteam\" /><span class=\"name\">Wild Steam (Transform)</span></div><span class=\"desc\">Stomp the ground in a <span class=\"item-number\">5</span> yd radius around you and release steam, dealing <span class=\"item-number\">128</span> + <span class=\"item-number\">25% AP</span> Frostfire Damage to nearby enemies.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 33375,
+      "name": "Primal Rune",
+      "spellId": 705636,
+      "spellIds": [
+        705636
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_fortifiedbark",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30728
+      ],
+      "requiredIds": [],
+      "desc": "Granite Resolve now reduces damage taken by an additional -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705636,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Granite Resolve</span> now reduces damage taken by an additional <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34576,
+      "name": "Primordial Pulse",
+      "spellId": 300578,
+      "spellIds": [
+        300578
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\primordialpulse",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7839
+      ],
+      "requiredIds": [],
+      "desc": "Inscribe an area with runes for 2 seconds, dealing 23 + 30% SP Elemental Damage every 0 sec to up to 5 enemies inside.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300578,
+          "description": "Inscribe an area with runes for <span class=\"item-number\">2</span> seconds, dealing <span class=\"item-number\">23</span> + <span class=\"item-number\">30% SP</span> Elemental Damage every <span class=\"item-number\">0</span> sec to up to <span class=\"item-number\">5</span> enemies inside."
+        }
+      ]
+    },
+    {
+      "id": 34578,
+      "name": "Leystone Springs",
+      "spellId": 300581,
+      "spellIds": [
+        300581
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_ghostwater_Border",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29531
+      ],
+      "requiredIds": [],
+      "desc": "Your melee auto attacks now have a 15% chance to restore 49 + 5% AP mana. While Runic Tattoos: Water is active, the mana restored is increased by 200%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300581,
+          "description": "Your melee auto attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to restore <span class=\"item-number\">49</span> + <span class=\"item-number\">5% AP</span> mana. <br /><br />While <span style=\"color: #FFFFFF; display: inline\">Runic Tattoos: Water</span> is active, the mana restored is increased by <span class=\"item-number\">200</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34579,
+      "name": "Leyline Disturbance",
+      "spellId": 560540,
+      "spellIds": [
+        560540
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcaneshuriken_Border",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7373,
+        34655
+      ],
+      "requiredIds": [],
+      "desc": "Increases melee and ranged haste of party and raid members within 100 yds by 10%.Does not stack with similar effects.Additionally, the duration of stun effects on you is reduced by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560540,
+          "description": "Increases melee and ranged haste of party and raid members within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.<br /><br />Additionally, the duration of stun effects on you is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34580,
+      "name": "Runic Affinity",
+      "spellId": 705621,
+      "spellIds": [
+        705621
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Rune_05",
+      "x": 0,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29166
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Zenith by 6 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705621,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Zenith</span> by <span class=\"item-number\">6</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34581,
+      "name": "Leyline Magician",
+      "spellId": 706823,
+      "spellIds": [
+        706823
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_arcane_massdispel",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34576
+      ],
+      "requiredIds": [],
+      "desc": "Casting Primordial Blast now reduces the cooldown of Primordial Pulse by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706823,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Primordial Pulse</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34599,
+      "name": "Hurricane",
+      "spellId": 645435,
+      "spellIds": [
+        645435
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill153_Border",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34624
+      ],
+      "requiredIds": [],
+      "desc": "Strike an enemy 5 times over 2 seconds, each strike dealing 125% Weapon Damage as Nature Damage, scaling with level.While striking your target, your chance to dodge is increased by 100%, but you cannot use any spells or abilities.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 645435,
+          "description": "Strike an enemy <span class=\"item-number\">5</span> times over <span class=\"item-number\">2</span> seconds, each strike dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Weapon Damage as Nature Damage, scaling with level.<br /><br />While striking your target, your chance to dodge is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>, but you cannot use any spells or abilities."
+        }
+      ]
+    },
+    {
+      "id": 34601,
+      "name": "Elemental Strikes",
+      "spellId": 806704,
+      "spellIds": [
+        806704
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_ElementalPrecision_1",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6493
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance with Fire, Frost, and Nature spells by 3% and your expertise by 4.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806704,
+          "description": "Increases your critical strike chance with Fire, Frost, and Nature spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>."
+        }
+      ]
+    },
+    {
+      "id": 34603,
+      "name": "Phase Rush",
+      "spellId": 805724,
+      "spellIds": [
+        805724
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_socererking_arcaneacceleration",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31131
+      ],
+      "requiredIds": [],
+      "desc": "Casting Thaumaturgy now grants you 25% increased movement speed for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805724,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Thaumaturgy</span> now grants you <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased movement speed for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34605,
+      "name": "Glyph Seeker",
+      "spellId": 705627,
+      "spellIds": [
+        705627
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_wretchedelf",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31108,
+        34665
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Primordial Blast and Thaumaturgy by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705627,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> and <span style=\"color: #ffffff; display: inline\">Thaumaturgy</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34610,
+      "name": "Warding Rune",
+      "spellId": 804232,
+      "spellIds": [
+        804232
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_qiraj_jewelglyphed",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7377,
+        33375
+      ],
+      "requiredIds": [],
+      "desc": "Engrave anti-magic runes around you, removing all harmful magic effects and causing harmful magic effects to have no duration when cast on you for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804232,
+          "description": "Engrave anti-magic runes around you, removing all harmful magic effects and causing harmful magic effects to have no duration when cast on you for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34612,
+      "name": "Blade Rift",
+      "spellId": 520237,
+      "spellIds": [
+        520237
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_magicresistance_Border",
+      "x": 8,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34649
+      ],
+      "requiredIds": [],
+      "desc": "While stealthed, using Warpdagger now increases your Magic Damage dealt by 10% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520237,
+          "description": "While stealthed, using <span style=\"color: #FFFFFF; display: inline\">Warpdagger</span> now increases your Magic Damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34614,
+      "name": "Primordialism",
+      "spellId": 520054,
+      "spellIds": [
+        520054
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_AstralRecalGroup",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7377,
+        34615
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 10% for 5 seconds after leaving Runeshroud.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520054,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds after leaving <span style=\"color: #ffffff; display: inline\">Runeshroud</span>."
+        }
+      ]
+    },
+    {
+      "id": 34615,
+      "name": "Shroudwalker",
+      "spellId": 705563,
+      "spellIds": [
+        705563
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_shroudofconcealment",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34612
+      ],
+      "requiredIds": [],
+      "desc": "Your Warpdagger now incurs no cooldown if used while your Runeshroud is active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705563,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Warpdagger</span> now incurs no cooldown if used while your <span style=\"color: #ffffff; display: inline\">Runeshroud</span> is active."
+        }
+      ]
+    },
+    {
+      "id": 34616,
+      "name": "Elements of Fury",
+      "spellId": 707413,
+      "spellIds": [
+        707413
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_echooftheelements",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5648,
+        9210
+      ],
+      "requiredIds": [],
+      "desc": "Your Palm Sigils now affect 1 additional instance of damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707413,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Palm Sigils</span> now affect <span class=\"item-number\">1</span> additional instance of damage."
+        }
+      ]
+    },
+    {
+      "id": 34617,
+      "name": "Runic Breakout",
+      "spellId": 705583,
+      "spellIds": [
+        705583
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Teleport",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6477,
+        30327,
+        34607
+      ],
+      "requiredIds": [],
+      "desc": "Abilities requiring Runeshroud can now be used for 3 sec and have no cast time after Runeshroud breaks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705583,
+          "description": "Abilities requiring <span style=\"color: #FFFFFF; display: inline\">Runeshroud</span> can now be used for <span class=\"item-number\">3</span> sec and have no cast time after <span style=\"color: #FFFFFF; display: inline\">Runeshroud</span> breaks."
+        }
+      ]
+    },
+    {
+      "id": 34621,
+      "name": "Swift Etching",
+      "spellId": 705600,
+      "spellIds": [
+        705600
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_rune_14",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1756,
+        6481,
+        6486
+      ],
+      "requiredIds": [],
+      "desc": "After Hurricane ends, your melee attack speed is increased by 15% and critical strike chance by 10% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705600,
+          "description": "After <span style=\"color: #ffffff; display: inline\">Hurricane</span> ends, your melee attack speed is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34622,
+      "name": "Elements, Heed My Call!",
+      "spellId": 706670,
+      "spellIds": [
+        706670
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_ElementalAbsorption",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6473,
+        6487
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of Smolder, Hurricane, and Hoarfrost by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706670,
+          "description": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span>, <span style=\"color: #ffffff; display: inline\">Hurricane</span>, and <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34624,
+      "name": "Runic Omen",
+      "spellId": 705580,
+      "spellIds": [
+        705580
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicRune_Border",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31212
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd cast of Runeblade now deals 30% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705580,
+          "description": "Every 3rd cast of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> now deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": 34640,
+      "name": "Elemental Inscription",
+      "spellId": 806737,
+      "spellIds": [
+        806737
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Scroll3_Frostfire",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1722,
+        31242
+      ],
+      "requiredIds": [],
+      "desc": "Casting Smolder now reduces the cooldown of Primordial Fury by -10 sec and Zenith by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806737,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Smolder</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Primordial Fury</span> by <span class=\"item-number\">-10</span> sec and <span style=\"color: #ffffff; display: inline\">Zenith</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34648,
+      "name": "Mystical Etchings",
+      "spellId": 806795,
+      "spellIds": [
+        806795,
+        807921
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_arcanestone_Border",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29521,
+        31102
+      ],
+      "requiredIds": [],
+      "desc": "Reduces all Fire, Nature, Frost, and Arcane damage taken by -8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806795,
+          "description": "Reduces all Fire, Nature, Frost, and Arcane damage taken by <span class=\"item-number\">-8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807921,
+          "description": "Reduces all Fire, Nature, Frost, and Arcane damage taken by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34649,
+      "name": "Warpmaster",
+      "spellId": 560992,
+      "spellIds": [
+        560992
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Archway_01",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29218
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Warpdagger by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560992,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Warpdagger</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34653,
+      "name": "Phase Out",
+      "spellId": 500671,
+      "spellIds": [
+        500671
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_greaterinvisibility",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7376,
+        34649
+      ],
+      "requiredIds": [],
+      "desc": "Disappear from sight, entering an improved stealth for 6 seconds and applying Runeshroud.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500671,
+          "description": "Disappear from sight, entering an improved stealth for <span class=\"item-number\">6</span> seconds and applying <span style=\"color: #ffffff; display: inline\">Runeshroud</span>."
+        }
+      ]
+    },
+    {
+      "id": 34655,
+      "name": "Brandmaster",
+      "spellId": 520524,
+      "spellIds": [
+        520524
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_37",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7375
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance with Runic Brand's explosion effect by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520524,
+          "description": "Increases your critical strike chance with <span style=\"color: #ffffff; display: inline\">Runic Brand</span>'s explosion effect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34656,
+      "name": "Graceful",
+      "spellId": 806708,
+      "spellIds": [
+        806708,
+        807922
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicInYourHands_Border",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9221
+      ],
+      "requiredIds": [],
+      "desc": "Increases your haste by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806708,
+          "description": "Increases your haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807922,
+          "description": "Increases your haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34659,
+      "name": "Mark of Strength",
+      "spellId": 560050,
+      "spellIds": [
+        560050
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_arcane_rune",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4655
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Primordial Blast by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560050,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34660,
+      "name": "Sky and Stone",
+      "spellId": 560053,
+      "spellIds": [
+        560053
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_StoneTablet_ShamanAir",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7374,
+        34661
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Weapon Engraving: Air and Weapon Engraving: Earth now have a 10% chance to increase the melee attack speed of your next 10 attacks within 10 seconds by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560053,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Weapon Engraving: Air</span> and <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Earth</span> now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to increase the melee attack speed of your next <span class=\"item-number\">10</span> attacks within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34661,
+      "name": "Forbidden Engraving",
+      "spellId": 705543,
+      "spellIds": [
+        705543
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(49)_Border",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29911,
+        30734,
+        30735
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Weapon Engravings by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705543,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Weapon Engravings</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34663,
+      "name": "Speedy Attuner",
+      "spellId": 705554,
+      "spellIds": [
+        705554,
+        707746
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicSpeed_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11647,
+        29226,
+        34647
+      ],
+      "requiredIds": [],
+      "desc": "Increases your movement speed by 8% and reduces the mana cost of your Runic Tattoos by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705554,
+          "description": "Increases your movement speed by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707746,
+          "description": "Increases your movement speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34664,
+      "name": "Flame Glyph",
+      "spellId": 705625,
+      "spellIds": [
+        705625
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\70_inscription_vantus_rune_nightmare",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        66733
+      ],
+      "requiredIds": [],
+      "desc": "Using Elemental Burst or Primordial Blast while Frost Glyph is active now grants you a Flame Glyph.Flame GlyphUnleash: Deals 250 + 65% fire SP Fire Damage and an additional 750 + 30% SP Fire Damage over 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705625,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> or <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> while <span style=\"color: #ffffff; display: inline\">Frost Glyph</span> is active now grants you a <span style=\"color: #ffffff; display: inline\">Flame Glyph</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _70_inscription_vantus_rune_nightmare\" /><span class=\"name\">Flame Glyph</span></div><span class=\"desc\"><span style=\"color: #FFFFFF; display: inline\">Unleash</span>: Deals <span class=\"item-number\">250</span> + <span class=\"item-number\">65% fire SP</span> Fire Damage and an additional <span class=\"item-number\">750</span> + <span class=\"item-number\">30% SP</span> Fire Damage over <span class=\"item-number\">6</span> seconds.</span></div><br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34665,
+      "name": "Arcane Student",
+      "spellId": 300576,
+      "spellIds": [
+        300576
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_books_(6)_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29522,
+        31131
+      ],
+      "requiredIds": [],
+      "desc": "While Glyphic Overload is active, your Glyphic Ruin is guaranteed to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300576,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Glyphic Overload</span> is active, your <span style=\"color: #ffffff; display: inline\">Glyphic Ruin</span> is guaranteed to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 34668,
+      "name": "Scroll of Magic",
+      "spellId": 802204,
+      "spellIds": [
+        802204
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ScrollOfMagic_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6389,
+        29343,
+        31128
+      ],
+      "requiredIds": [],
+      "desc": "Unleashing a Glyph increases the damage of your Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802204,
+          "description": "Unleashing a <span style=\"color: #ffffff; display: inline\">Glyph</span> increases the damage of your <span style=\"color: #FFFFFF; display: inline\">Unleashed Glyphs</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34669,
+      "name": "Glyphic Overload",
+      "spellId": 520099,
+      "spellIds": [
+        520099
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\glyphicoverload",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7834
+      ],
+      "requiredIds": [],
+      "desc": "Instantly generate Frost Glyph, Flame Glyph, and Arcane Glyph on yourself and overload, granting all active Glyphs an additional effect the next time you unleash them on an enemy. Lasts 15 seconds.Usable while stealthed.Overloaded Arcane GlyphDeals 100% increased damage.Overloaded Flame GlyphFlame Glyph now affects 2 additional enemies, and deals an additional 475 + 200% fire SP Fire Damage over 5 seconds.Overloaded Frost GlyphFreeze an enemy in place for 3 seconds. At the end of this duration, their movement speed is reduced by -50% for 5 seconds. Does not break on damage taken.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520099,
+          "description": "Instantly generate <span style=\"color: #ffffff; display: inline\">Frost Glyph</span>, <span style=\"color: #ffffff; display: inline\">Flame Glyph</span>, and <span style=\"color: #ffffff; display: inline\">Arcane Glyph</span> on yourself and overload, granting all active <span style=\"color: #ffffff; display: inline\">Glyphs</span> an additional effect the next time you unleash them on an enemy. Lasts <span class=\"item-number\">15</span> seconds.<br /><br />Usable while stealthed.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_runeofshadow_border\" /><span class=\"name\">Overloaded Arcane Glyph</span></div><span class=\"desc\">Deals <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased damage.</span></div><br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_chaosrune_border\" /><span class=\"name\">Overloaded Flame Glyph</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\">Flame Glyph</span> now affects <span class=\"item-number\">2</span> additional enemies, and deals an additional <span class=\"item-number\">475</span> + <span class=\"item-number\">200% fire SP</span> Fire Damage over <span class=\"item-number\">5</span> seconds.</span></div><br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_frostrune_border\" /><span class=\"name\">Overloaded Frost Glyph</span></div><span class=\"desc\">Freeze an enemy in place for <span class=\"item-number\">3</span> seconds. At the end of this duration, their movement speed is reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds. Does not break on damage taken.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34670,
+      "name": "Glyph Master",
+      "spellId": 520015,
+      "spellIds": [
+        520015
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanestone_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34668
+      ],
+      "requiredIds": [],
+      "desc": "Scroll of Magic now also increases the critical damage and critical strike chance of Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520015,
+          "description": "<span style=\"color: #ffffff; display: inline\">Scroll of Magic</span> now also increases the critical damage and critical strike chance of <span style=\"color: #ffffff; display: inline\">Unleashed Glyphs</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 66733,
+      "name": "Glyphic Ruin",
+      "spellId": 801179,
+      "spellIds": [
+        801179
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_raidprimalist_council",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4061,
+        31102
+      ],
+      "desc": "Unleash your active Glyph effect on an enemy and deal 82 + 100% SP Elemental Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801179,
+          "description": "Unleash your active <span style=\"color: #ffffff; display: inline\">Glyph</span> effect on an enemy and deal <span class=\"item-number\">82</span> + <span class=\"item-number\">100% SP</span> Elemental Damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:11:707654",
+      "name": "Frigid Elements / Cold Elements",
+      "spellId": 707654,
+      "spellIds": [
+        707654
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_magicdevour_Border",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31126
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Frigid Blast by 50%, but the cast time is increased by 1 sec.Additionally, Frigid Fusion now accumulates 10% more damage on the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707654,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Frigid Blast</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but the cast time is increased by <span class=\"item-number\">1</span> sec.<br /><br />Additionally, <span style=\"color: #ffffff; display: inline\">Frigid Fusion</span> now accumulates <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more damage on the target."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:11:624211",
+      "name": "Harnessing Leylines / Burned Etching",
+      "spellId": 704139,
+      "spellIds": [
+        704139
+      ],
+      "tabId": 11,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(25)_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6879,
+        29222
+      ],
+      "requiredIds": [],
+      "desc": "You now gain a stack of Harnessed Leylines every 1 sec for until cancelled. After the duration, the stacks reset.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704139,
+          "description": "You now gain a stack of <span style=\"color: #FFFFFF; display: inline\">Harnessed Leylines</span> every <span class=\"item-number\">1</span> sec for until cancelled. After the duration, the stacks reset.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_magicspell__25__border\" /><span class=\"name\">Harnessed Leylines (Proc)</span></div><span class=\"desc\">Increases the damage of your <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> and <span style=\"color: #ffffff; display: inline\">Elemental Burst</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Additional applications do not refresh the effect.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:32:87:707653",
+      "name": "Nomad's Scroll / Elemental Secrets",
+      "spellId": 707653,
+      "spellIds": [
+        707653
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_scroll_07_b",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30158
+      ],
+      "requiredIds": [],
+      "desc": "Swapping to Runic Tattoos: Air now instantly dispels 1 movement slowing effect on you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707653,
+          "description": "Swapping to <span style=\"color: #ffffff; display: inline\">Runic Tattoos: Air</span> now instantly dispels <span class=\"item-number\">1</span> movement slowing effect on you."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:87:804531",
+      "name": "Wind Walker / Master of Runes",
+      "spellId": 807376,
+      "spellIds": [
+        807376
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Frost_WindWalkOn",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7829,
+        34610
+      ],
+      "requiredIds": [],
+      "desc": "While Runic Tattoos: Air is active, the cooldown of Rune spells is reduced by 5% every 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807376,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Runic Tattoos: Air</span> is active, the cooldown of <span style=\"color: #ffffff; display: inline\">Rune</span> spells is reduced by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> every <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:87:802669",
+      "name": "Mind Wrath / Mind Over Matter",
+      "spellId": 800757,
+      "spellIds": [
+        800757
+      ],
+      "tabId": 87,
+      "classId": 32,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_corruptionmind_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34614
+      ],
+      "requiredIds": [],
+      "desc": "Your Ley Lock now interrupts 1 additional enemy near your primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800757,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Ley Lock</span> now interrupts <span class=\"item-number\">1</span> additional enemy near your primary target."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:85:365212",
+      "name": "Flowing Rivers / Wind Surge",
+      "spellId": 524697,
+      "spellIds": [
+        524697
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_waterstrick_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34601
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Replenishment with Weapon Engravement: Water by 10% and the mana restored by Runic Tattoos: Water by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524697,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Replenishment</span> with <span style=\"color: #ffffff; display: inline\">Weapon Engravement: Water</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and the mana restored by <span style=\"color: #ffffff; display: inline\">Runic Tattoos: Water</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:85:734831",
+      "name": "Devastating Flames / Granite Shield",
+      "spellId": 806993,
+      "spellIds": [
+        806993
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_burningsoul",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34655,
+        34659
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt of Weapon Engraving: Fire by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806993,
+          "description": "Increases the damage dealt of <span style=\"color: #FFFFFF; display: inline\">Weapon Engraving: Fire</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:85:800756",
+      "name": "Protective Warding / Runebound Surge",
+      "spellId": 800756,
+      "spellIds": [
+        800756
+      ],
+      "tabId": 85,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_bastion_mage",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7373
+      ],
+      "requiredIds": [],
+      "desc": "Critical damage taken reduces the cooldown of Rune of Guarding by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800756,
+          "description": "Critical damage taken reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Rune of Guarding</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:86:356211",
+      "name": "Cinderstorm Runes / Melting Runes",
+      "spellId": 706458,
+      "spellIds": [
+        706458
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_firetwist_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6474,
+        34624
+      ],
+      "requiredIds": [],
+      "desc": "Hurricane and Smolder now deal 50% more damage against enemies below 20% maximum health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706458,
+          "description": "<span style=\"color: #ffffff; display: inline\">Hurricane</span> and <span style=\"color: #ffffff; display: inline\">Smolder</span> now deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more damage against enemies below <span class=\"item-number\">20%</span> maximum health."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:86:235212",
+      "name": "Wind Runes / Water Runes",
+      "spellId": 706672,
+      "spellIds": [
+        706672
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_StoneTablet_ShamanAir",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1774
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Hurricane by 1 sec, allowing it to strike 2 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706672,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hurricane</span> by <span class=\"item-number\">1</span> sec, allowing it to strike <span class=\"item-number\">2</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:86:845630",
+      "name": "Rift Clones / Phaser",
+      "spellId": 707463,
+      "spellIds": [
+        707463
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_mirrorimage",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5451
+      ],
+      "requiredIds": [],
+      "desc": "Casting Phase Out now summons 10 clones of yourself that run in a random direction for 5 seconds.Rift Clones periodically explode dealing 1 + 19.5% AP Arcane damage to all enemies within 5 yds of them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707463,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Phase Out</span> now summons <span class=\"item-number\">10</span> clones of yourself that run in a random direction for <span class=\"item-number\">5</span> seconds.<br /><br /><span style=\"color: #ffffff; display: inline\">Rift Clones</span> periodically explode dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">19.5% AP</span> Arcane damage to all enemies within <span class=\"item-number\">5</span> yds of them."
+        }
+      ]
+    },
+    {
+      "id": "choice:32:86:32623",
+      "name": "Windbreaker / Magebreaker",
+      "spellId": 804094,
+      "spellIds": [
+        804094
+      ],
+      "tabId": 86,
+      "classId": 32,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(28)_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30032,
+        30603
+      ],
+      "requiredIds": [],
+      "desc": "While Weapon Engraving: Air is active, the damage of each strike of your Hurricane is increased by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804094,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Air</span> is active, the damage of each strike of your <span style=\"color: #ffffff; display: inline\">Hurricane</span> is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    }
+  ]
+}

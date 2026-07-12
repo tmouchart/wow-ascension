@@ -1,0 +1,4303 @@
+{
+  "class": "Necromancer",
+  "classId": "23",
+  "specs": [
+    "Death",
+    "Rime",
+    "Animation"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Death": 59,
+    "Rime": 60,
+    "Animation": 61
+  },
+  "nodes": [
+    {
+      "id": 2174,
+      "name": "Putrifier",
+      "spellId": 302923,
+      "spellIds": [
+        302923
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DeathCoil",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7145
+      ],
+      "requiredIds": [],
+      "desc": "Increases the durations of Ghoulify and Mass Grave by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 302923,
+          "description": "Increases the durations of <span style=\"color: #ffffff; display: inline\">Ghoulify</span> and <span style=\"color: #ffffff; display: inline\">Mass Grave</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4238,
+      "name": "Plague Horde",
+      "spellId": 802986,
+      "spellIds": [
+        802986
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_pvpwarlock_e_01",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7141,
+        7346,
+        7350
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Undead minions now has a 10% chance to cast Plague Horde on themselves for 5 seconds and emit Zombie Plague, dealing 79 + 10% SP Plague damage to their target.Plague HordeEnrage for 5 seconds, increasing their critical strike chance by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802986,
+          "description": "Damage dealt by your Undead minions now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to cast <span style=\"color: #FFFFFF; display: inline\">Plague Horde</span> on themselves for <span class=\"item-number\">5</span> seconds and emit <span style=\"color: #ffffff; display: inline\">Zombie Plague</span>, dealing <span class=\"item-number\">79</span> + <span class=\"item-number\">10% SP</span> Plague damage to their target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_belt_pvpwarlock_e_01\" /><span class=\"name\">Plague Horde</span></div><span class=\"desc\">Enrage for <span class=\"item-number\">5</span> seconds, increasing their critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 4438,
+      "name": "Lich Form",
+      "spellId": 500981,
+      "spellIds": [
+        500981
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_Amnennar_the_Coldbringer",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        4437
+      ],
+      "requiredIds": [],
+      "desc": "Transform into a Lich, becoming Undead increasing your Frost damage dealt by 10%.While active you generate 3 Runic Power every 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500981,
+          "description": "Transform into a <span style=\"color: #FFFFFF; display: inline\">Lich</span>, becoming Undead increasing your Frost damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />While active you generate <span class=\"item-number\">3</span> Runic Power every <span class=\"item-number\">5</span> sec.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 4619,
+      "name": "Flesh Symbiosis",
+      "spellId": 301207,
+      "spellIds": [
+        301207
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ReforgedAbomination",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7141,
+        30488
+      ],
+      "requiredIds": [],
+      "desc": "Each Abomination or Decaying Colossus active now increases your total Armor and magic resistance by 30% and causes you to periodically regenerate 2% maximum health every 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301207,
+          "description": "Each <span style=\"color: #ffffff; display: inline\">Abomination</span> or <span style=\"color: #ffffff; display: inline\">Decaying Colossus</span> active now increases your total Armor and magic resistance by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and causes you to periodically regenerate <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 4620,
+      "name": "Mutation",
+      "spellId": 500342,
+      "spellIds": [
+        500342
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_plaguefall_stradamamargrave",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30917,
+        33759
+      ],
+      "requiredIds": [],
+      "desc": "For the next 15 seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick -50% faster.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500342,
+          "description": "For the next <span class=\"item-number\">15</span> seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> faster."
+        }
+      ]
+    },
+    {
+      "id": 5314,
+      "name": "Command: Hook",
+      "spellId": 504316,
+      "spellIds": [
+        504316
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_MISC_HOOK_01",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29364
+      ],
+      "requiredIds": [],
+      "desc": "Command your Abominations to hook an enemy to their location, slowing their movement speed to a halt for 2 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504316,
+          "description": "Command your <span style=\"color: #ffffff; display: inline\">Abominations</span> to hook an enemy to their location, slowing their movement speed to a halt for <span class=\"item-number\">2</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 5892,
+      "name": "Army of the North",
+      "spellId": 561138,
+      "spellIds": [
+        561138
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_frost_runedweapon_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6892,
+        29317,
+        30620
+      ],
+      "requiredIds": [],
+      "desc": "Chant a powerful ritual that brings forth 1 Rotting Frost Giant near you to aid you in combat for 30 seconds and generate 30 Runic Power, repeating every 3 sec for 15 seconds.For the duration, your Undead minions are guaranteed to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561138,
+          "description": "Chant a powerful ritual that brings forth <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Rotting Frost Giant</span> near you to aid you in combat for <span class=\"item-number\">30</span> seconds and generate <span class=\"item-number\">30</span> Runic Power, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />For the duration, your Undead minions are guaranteed to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 6295,
+      "name": "Creeping Crypt",
+      "spellId": 300960,
+      "spellIds": [
+        300960
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathwing_sealarmorbreachgreen",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6904
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Flesh to Worms by 25% against enemies below 35% maximum health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300960,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> maximum health."
+        }
+      ]
+    },
+    {
+      "id": 6458,
+      "name": "Vampiric Aura",
+      "spellId": 300241,
+      "spellIds": [
+        300241
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_vampiricaura",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5314,
+        6885
+      ],
+      "requiredIds": [],
+      "desc": "While you are below 50% health, your Undead minions now heal you for 10% of their damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300241,
+          "description": "While you are below <span class=\"item-number\">50%</span> health, your Undead minions now heal you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of their damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 6459,
+      "name": "Icecrown Scriptures",
+      "spellId": 300234,
+      "spellIds": [
+        300234,
+        301325
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_ScrollOfSpeed_LightBlue",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29787
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Shadow and Frost damage dealt against Humanoids and Undead by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300234,
+          "description": "Increases your Shadow and Frost damage dealt against Humanoids and Undead by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301325,
+          "description": "Increases your Shadow and Frost damage dealt against Humanoids and Undead by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6488,
+      "name": "Hoarfrost Hands",
+      "spellId": 803291,
+      "spellIds": [
+        803291
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Call_of_the_Sepulcher_64x64",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6893
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Lichfrost's movement speed slow by 4 sec and your hit chance by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803291,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Lichfrost's</span> movement speed slow by <span class=\"item-number\">4</span> sec and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6863,
+      "name": "Damnation",
+      "spellId": 806149,
+      "spellIds": [
+        806149,
+        807925
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\nhi_deathcoil_Border",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33752
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Shadow damage by 5%, doubled against enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806149,
+          "description": "Increases your Shadow damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, doubled against enemies below <span class=\"item-number\">35%</span> health."
+        },
+        {
+          "rank": 2,
+          "spellId": 807925,
+          "description": "Increases your Shadow damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, doubled against enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 6885,
+      "name": "Hulking Hordes",
+      "spellId": 300748,
+      "spellIds": [
+        300748,
+        301326
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\uico_unholy_spell_08_Border",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29244,
+        29364
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum health and the maximum health of your summons by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300748,
+          "description": "Increases your maximum health and the maximum health of your summons by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301326,
+          "description": "Increases your maximum health and the maximum health of your summons by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6886,
+      "name": "Putrid Summoner",
+      "spellId": 560595,
+      "spellIds": [
+        560595
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3wallofzombies",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5781,
+        12381,
+        29520
+      ],
+      "requiredIds": [],
+      "desc": "Each Undead Stance now provides an additional bonus:Undead: Assault: Increases your critical strike chance against Humanoids by 5%.Undead: Protect: Reduces your threat generated by -75%.Undead: Pacify: Reduces your damage taken by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560595,
+          "description": "Each <span style=\"color: #ffffff; display: inline\">Undead Stance</span> now provides an additional bonus:<br /><br /><span style=\"color: #FFFFFF; display: inline\">Undead: Assault</span>: Increases your critical strike chance against Humanoids by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Undead: Protect</span>: Reduces your threat generated by <span class=\"item-number\">-75</span><span class=\"item-number\">%</span>.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Undead: Pacify</span>: Reduces your damage taken by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6887,
+      "name": "Unrelenting Army",
+      "spellId": 705747,
+      "spellIds": [
+        705747,
+        707880
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_ArmyOfTheDead",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10495,
+        30487,
+        30495
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Harvest Plague now has a 20% chance to summon a Lesser Zombie to aid you in combat for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705747,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Harvest Plague</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #FFFFFF; display: inline\">Lesser Zombie</span> to aid you in combat for <span class=\"item-number\">15</span> seconds."
+        },
+        {
+          "rank": 2,
+          "spellId": 707880,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Harvest Plague</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #FFFFFF; display: inline\">Lesser Zombie</span> to aid you in combat for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6892,
+      "name": "Raising the Kirin Tor",
+      "spellId": 805649,
+      "spellIds": [
+        805649
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Brilliance",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30617,
+        33723
+      ],
+      "requiredIds": [],
+      "desc": "Your Command spells now have a 40% chance to refund a portion of their Runic Power cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805649,
+          "description": "Your <span style=\"color: #90ee90; display: inline\">Command</span> spells now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund a portion of their Runic Power cost."
+        }
+      ]
+    },
+    {
+      "id": 6893,
+      "name": "Glacial Impact",
+      "spellId": 704355,
+      "spellIds": [
+        704355
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill23_Border",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6901
+      ],
+      "requiredIds": [],
+      "desc": "Requires Frozen TargetCall down icy boulders onto a Frozen enemy, dealing 84 + 100% frost SP Frost damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704355,
+          "description": "<span style=\"color: #3399ff; display: inline\">Requires Frozen Target</span><br />Call down icy boulders onto a <span style=\"color: #3399ff; display: inline\">Frozen</span> enemy, dealing <span class=\"item-number\">84</span> + <span class=\"item-number\">100% frost SP</span> Frost damage.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 6900,
+      "name": "Champion of Kel'Thuzad",
+      "spellId": 807937,
+      "spellIds": [
+        807937
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_MindFreeze",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6892
+      ],
+      "requiredIds": [],
+      "desc": "Your Skeletal Mages now only cost 1 Life Force.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807937,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Skeletal Mages</span> now only cost <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>."
+        }
+      ]
+    },
+    {
+      "id": 6901,
+      "name": "Refreshing Chill",
+      "spellId": 300940,
+      "spellIds": [
+        300940
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_mageskill32_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31185
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells now has a 20% chance to reset the cooldown of Ice Barrage and make your cast next within 15 seconds free of cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300940,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> and make your cast next within <span class=\"item-number\">15</span> seconds free of cost."
+        }
+      ]
+    },
+    {
+      "id": 6903,
+      "name": "Life For Power",
+      "spellId": 705746,
+      "spellIds": [
+        705746
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_CreepingPlague",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6458
+      ],
+      "requiredIds": [],
+      "desc": "You absorb 20% of healing taken and gain a shield for the amount absorbed, lasting 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705746,
+          "description": "You absorb <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of healing taken and gain a shield for the amount absorbed, lasting <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6904,
+      "name": "Swarmer",
+      "spellId": 704528,
+      "spellIds": [
+        704528
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DarkSummoning",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11904,
+        33752
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Runic Power generated by Crypt Swarm by 2 per tick.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704528,
+          "description": "Increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">2</span> per tick."
+        }
+      ]
+    },
+    {
+      "id": 6961,
+      "name": "Festering Decay",
+      "spellId": 806324,
+      "spellIds": [
+        806324
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_DeathCoilV2_Cyan",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6960,
+        30835
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of Command spells by -15% and causes them to increase the target's spell damage taken by 10% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806324,
+          "description": "Reduces the cost of <span style=\"color: #90ee90; display: inline\">Command</span> spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and causes them to increase the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6965,
+      "name": "Touch of Death",
+      "spellId": 707113,
+      "spellIds": [
+        707113
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill47_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34982
+      ],
+      "requiredIds": [],
+      "desc": "Allows Expunge to stack an additional time and increases the range of your Death spells by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707113,
+          "description": "Allows <span style=\"color: #FFFFFF; display: inline\">Expunge</span> to stack an additional time and increases the range of your Death spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7117,
+      "name": "Master Animator",
+      "spellId": 504431,
+      "spellIds": [
+        504431
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0004s_0000_shadow_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4238,
+        4619
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum Life Force by 1.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504431,
+          "description": "Increases your maximum <span style=\"color: #ffffff; display: inline\">Life Force</span> by <span class=\"item-number\">1</span>."
+        }
+      ]
+    },
+    {
+      "id": 7119,
+      "name": "Ghoul Mastery",
+      "spellId": 503740,
+      "spellIds": [
+        503740
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_reversemagic",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33775
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Ghouls now has a 15% chance to transform them into a Frenzied Ghoul.Frenzied Ghoul (Proc)Transformed into a Frenzied Ghoul, increasing haste by 40% for 10 seconds. Immune to movement slowing effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503740,
+          "description": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Ghouls</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to transform them into a <span style=\"color: #ffffff; display: inline\">Frenzied Ghoul</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_demonhunter_reversemagic\" /><span class=\"name\">Frenzied Ghoul (Proc)</span></div><span class=\"desc\">Transformed into a <span style=\"color: #FFFFFF; display: inline\">Frenzied Ghoul</span>, increasing haste by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. Immune to movement slowing effects.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7141,
+      "name": "Summoning Ritual",
+      "spellId": 805038,
+      "spellIds": [
+        805038
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_deathgolem_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5766,
+        33766
+      ],
+      "requiredIds": [],
+      "desc": "Summon a ritual circle at your location for 1 minute. While active, you may cast Ritual Return to return to it.Ritual ReturnTeleport back to the position of your Scourge Transporter and remove all movement slowing effects from you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805038,
+          "description": "Summon a ritual circle at your location for <span class=\"item-number\">1</span> minute. While active, you may cast <span style=\"color: #ffffff; display: inline\">Ritual Return</span> to return to it.<br /><br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_necro_undyingrelentlessness\" /><span class=\"name\">Ritual Return</span></div><span class=\"desc\">Teleport back to the position of your <span style=\"color: #ffffff; display: inline\">Scourge Transporter</span> and remove all movement slowing effects from you.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7143,
+      "name": "Bone King",
+      "spellId": 707175,
+      "spellIds": [
+        707175
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_custom_bonetattoo_green",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7345
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells now has a 15% chance to make your next Lichfrost or Blight free of cost and instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707175,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Lichfrost</span> or <span style=\"color: #ffffff; display: inline\">Blight</span> free of cost and instant cast."
+        }
+      ]
+    },
+    {
+      "id": 7145,
+      "name": "Runic Animation",
+      "spellId": 707445,
+      "spellIds": [
+        707445
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_thenecroticwake_stitchflesh",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30497
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Animate: Skeletal Archers and Command: Hook by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707445,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> and <span style=\"color: #ffffff; display: inline\">Command: Hook</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7146,
+      "name": "Skeletal Artillery",
+      "spellId": 302518,
+      "spellIds": [
+        302518,
+        302921
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_misc_trinket6oog_cyclopianpig1",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7145
+      ],
+      "requiredIds": [],
+      "desc": "Your Animate: Skeletal Archers now summons 1 additional Skeletal Archer.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 302518,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> now summons <span class=\"item-number\">1</span> additional <span style=\"color: #FFFFFF; display: inline\">Skeletal Archer</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 302921,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> now summons <span class=\"item-number\">2</span> additional <span style=\"color: #FFFFFF; display: inline\">Skeletal Archer</span>."
+        }
+      ]
+    },
+    {
+      "id": 7214,
+      "name": "Heartchill",
+      "spellId": 801739,
+      "spellIds": [
+        801739
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_heartstopaura",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33725
+      ],
+      "requiredIds": [],
+      "desc": "Chill an enemy's heart, interrupting their current spell cast.Successfully interrupting a spell also reduces their movement speed and haste by -80% for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801739,
+          "description": "Chill an enemy's heart, interrupting their current spell cast.<br /><br />Successfully interrupting a spell also reduces their movement speed and haste by <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7345,
+      "name": "Animate: Skeletal Archer",
+      "spellId": 805040,
+      "spellIds": [
+        805040
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\SkeletalArcher",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Animate 3 Skeletal Archers to aid you in combat for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805040,
+          "description": "Animate <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Skeletal Archers</span> to aid you in combat for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7346,
+      "name": "Plague Protection",
+      "spellId": 570046,
+      "spellIds": [
+        570046,
+        570226
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Deathknight_ClassIcon",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33772
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Wards by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570046,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Wards</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 570226,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Wards</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7347,
+      "name": "Scourge Disciple",
+      "spellId": 531126,
+      "spellIds": [
+        531126
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_rottenflesh_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33774
+      ],
+      "requiredIds": [],
+      "desc": "Each active Skeletal Archer now increases your haste by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 531126,
+          "description": "Each active <span style=\"color: #ffffff; display: inline\">Skeletal Archer</span> now increases your haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7348,
+      "name": "Raise: Decaying Colossus",
+      "spellId": 500989,
+      "spellIds": [
+        500989
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_grimbatol_drahga_the_shadowburner",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6886
+      ],
+      "requiredIds": [],
+      "desc": "Raise a Decaying Colossus to aid you in combat, occupying 3 Life Force. While active, 25% of all damage taken by the caster is taken by the Decaying Colossus.Command: Unleash a powerful attack dealing Weapon Damage plus 100 to all enemies in front of it.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500989,
+          "description": "Raise a <span style=\"color: #ffffff; display: inline\">Decaying Colossus</span> to aid you in combat, occupying <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br />While active, <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of all damage taken by the caster is taken by the <span style=\"color: #ffffff; display: inline\">Decaying Colossus</span>.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Unleash a powerful attack dealing Weapon Damage plus <span class=\"item-number\">100</span> to all enemies in front of it."
+        }
+      ]
+    },
+    {
+      "id": 7350,
+      "name": "Corpse Wagon",
+      "spellId": 503738,
+      "spellIds": [
+        503738
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_corpseexplode",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7112,
+        7298,
+        11112,
+        33773
+      ],
+      "requiredIds": [],
+      "desc": "Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, increases the damage of Corpse Explosion by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503738,
+          "description": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases the damage of <span style=\"color: #ffffff; display: inline\">Corpse Explosion</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7371,
+      "name": "Phylactery",
+      "spellId": 500933,
+      "spellIds": [
+        500933
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_frost_phylactery_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6903
+      ],
+      "requiredIds": [],
+      "desc": "Create a Phylactery near you for 2 minutes.Upon taking damage which would bring you below 10% health, become a Shade, protecting you from all physical attacks and spells, but during that time you cannot attack or cast spells.Reaching your Phylactery in this state revives you with 40% of your maximum health. If you do not reach it in time you will die.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500933,
+          "description": "Create a <span style=\"color: #FFFFFF; display: inline\">Phylactery</span> near you for <span class=\"item-number\">2</span> minutes.<br /><br />Upon taking damage which would bring you below <span class=\"item-number\">10%</span> health, become a <span style=\"color: #FFFFFF; display: inline\">Shade</span>, protecting you from all physical attacks and spells, but during that time you cannot attack or cast spells.<br /><br />Reaching your <span style=\"color: #FFFFFF; display: inline\">Phylactery</span> in this state revives you with <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your maximum health. If you do not reach it in time you will die."
+        }
+      ]
+    },
+    {
+      "id": 7785,
+      "name": "Lich Essence",
+      "spellId": 802988,
+      "spellIds": [
+        802988
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\WC3LichReforged",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29244,
+        29787
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Lichfrost by -15% and reduces your spell pushback suffered from taking damage by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802988,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and reduces your spell pushback suffered from taking damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7807,
+      "name": "Fiend",
+      "spellId": 707627,
+      "spellIds": [
+        707627
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_Thrash_Ghoul",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29864
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage and critical damage of Lichfrost by 20% against diseased targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707627,
+          "description": "Increases the damage and critical damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against diseased targets."
+        }
+      ]
+    },
+    {
+      "id": 7808,
+      "name": "Rotting Flesh",
+      "spellId": 301304,
+      "spellIds": [
+        301304
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_RaiseDead",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11904
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Flesh to Worms by 25% and allows its periodic damage to scale with your spell haste.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301304,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and allows its periodic damage to scale with your spell haste."
+        }
+      ]
+    },
+    {
+      "id": 8100,
+      "name": "Arch Lich",
+      "spellId": 707588,
+      "spellIds": [
+        707588
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_food_109_honeylichen",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29772,
+        30619
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Frost spells now refund 3% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707588,
+          "description": "Critical strikes with Frost spells now refund <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": 10918,
+      "name": "Death Commander",
+      "spellId": 300235,
+      "spellIds": [
+        300235
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0005s_0000_grave_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4620,
+        6961
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 10% chance to increase your and your Undead minion's haste by 20% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300235,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to increase your and your Undead minion's haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 11619,
+      "name": "Animate: Bone Construct",
+      "spellId": 531130,
+      "spellIds": [
+        531130
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Bone_Construct",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4238,
+        7346
+      ],
+      "requiredIds": [],
+      "desc": "Animate a Bone Construct to aid you in combat for 20 seconds.It moves at a slow speed, but upon reaching an enemy, deals 1560 + 200% SP + 50% AP Shadow damage, piercing all invulnerabilities, resistances, and immunities.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 531130,
+          "description": "Animate a <span style=\"color: #ffffff; display: inline\">Bone Construct</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />It moves at a slow speed, but upon reaching an enemy, deals <span class=\"item-number\">1560</span> + <span class=\"item-number\">200% SP</span> + <span class=\"item-number\">50% AP</span> Shadow damage, piercing all invulnerabilities, resistances, and immunities."
+        }
+      ]
+    },
+    {
+      "id": 11904,
+      "name": "Cycle of Death",
+      "spellId": 560727,
+      "spellIds": [
+        560727
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_holy_turnundead",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29866
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell haste by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560727,
+          "description": "Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12165,
+      "name": "Sepulchral Might",
+      "spellId": 706472,
+      "spellIds": [
+        706472,
+        572638
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_D3markedfordeath",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7143,
+        30022
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Stamina by 5%.Increases your spell damage by an amount equal to 15% of the total of your Raised minion's Stamina.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706472,
+          "description": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Increases your spell damage by an amount equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the total of your <span style=\"color: #ffffff; display: inline\">Raised</span> minion's Stamina."
+        },
+        {
+          "rank": 2,
+          "spellId": 572638,
+          "description": "Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />Increases your spell damage by an amount equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the total of your <span style=\"color: #ffffff; display: inline\">Raised</span> minion's Stamina."
+        }
+      ]
+    },
+    {
+      "id": 12212,
+      "name": "Command: Bonefreeze",
+      "spellId": 504489,
+      "spellIds": [
+        504489
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DarkRitual",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30622
+      ],
+      "requiredIds": [],
+      "desc": "Command your Skeletal Mages to freeze enemies at target location for 40 seconds (8 sec vs players). Damage taken may end the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504489,
+          "description": "Command your <span style=\"color: #ffffff; display: inline\">Skeletal Mages</span> to freeze enemies at target location for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players). Damage taken may end the effect.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 19778,
+      "name": "Frozen Bodies",
+      "spellId": 707562,
+      "spellIds": [
+        707562
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_senseundead",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29779,
+        30599
+      ],
+      "requiredIds": [],
+      "desc": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of Frozen Bodies.Frozen BodiesIncreases the damage of your next Glacial Impact by 3% for 20 seconds, stacking 10 times.Reaching 10 stacks causes your next Glacial Impact within until cancelled to critically strike for 50% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707562,
+          "description": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of <span style=\"color: #ffffff; display: inline\">Frozen Bodies</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_senseundead\" /><span class=\"name\">Frozen Bodies</span></div><span class=\"desc\">Increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Glacial Impact</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Reaching <span class=\"item-number\">10</span> stacks causes your next <span style=\"color: #FFFFFF; display: inline\">Glacial Impact</span> within until cancelled to critically strike for <span class=\"item-number\">50%</span> increased damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29241,
+      "name": "Crypt Explosion",
+      "spellId": 500572,
+      "spellIds": [
+        500572
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_necrolord_fleshcraft",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34982
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells on an enemy now applies Crypt Plague to 3 enemies near the primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500572,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> to <span class=\"item-number\">3</span> enemies near the primary target."
+        }
+      ]
+    },
+    {
+      "id": 29242,
+      "name": "Putricide's Formula",
+      "spellId": 707001,
+      "spellIds": [
+        707001,
+        707882
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_boss_profputricide",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29864
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Undead minions has a 10% chance to blast up to 3 nearby enemies for 71 + 30% SP Plague damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707001,
+          "description": "Damage dealt by Undead minions has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to blast up to <span class=\"item-number\">3</span> nearby enemies for <span class=\"item-number\">71</span> + <span class=\"item-number\">30% SP</span> Plague damage."
+        },
+        {
+          "rank": 2,
+          "spellId": 707882,
+          "description": "Damage dealt by Undead minions has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to blast up to <span class=\"item-number\">3</span> nearby enemies for <span class=\"item-number\">71</span> + <span class=\"item-number\">30% SP</span> Plague damage."
+        }
+      ]
+    },
+    {
+      "id": 29244,
+      "name": "Fetid Ward",
+      "spellId": 680388,
+      "spellIds": [
+        680388
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_icon_shadowcouncilorb_green",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Activate a Fetid Ward on yourself and your Undead minions for 30 minutes.While active, 30% of your damage dealt heals you and your minions, split evenly amongst them, and healing received is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680388,
+          "description": "Activate a <span style=\"color: #ffffff; display: inline\">Fetid Ward</span> on yourself and your Undead minions for <span class=\"item-number\">30</span> minutes.<br /><br />While active, <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your damage dealt heals you and your minions, split evenly amongst them, and healing received is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29317,
+      "name": "Soulfreeze",
+      "spellId": 572023,
+      "spellIds": [
+        572023
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_rayoffrost",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8100,
+        33723
+      ],
+      "requiredIds": [],
+      "desc": "All Frost damage you deal to Frozen targets now has a 25% chance to unleash Soulfreeze on them.SoulfreezeLaunch a chain of frost at an enemy, dealing 354 + 35% frost SP Frost Damage every 1 sec for 3 seconds.Each tick generates 3 to 8 Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572023,
+          "description": "All Frost damage you deal to <span style=\"color: #3399ff; display: inline\">Frozen</span> targets now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #FFFFFF; display: inline\">Soulfreeze</span> on them.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_mage_rayoffrost\" /><span class=\"name\">Soulfreeze</span></div><span class=\"desc\">Launch a chain of frost at an enemy, dealing <span class=\"item-number\">354</span> + <span class=\"item-number\">35% frost SP</span> Frost Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />Each tick generates <span class=\"item-number\">3</span> to <span class=\"item-number\">8</span> Runic Power.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29364,
+      "name": "Raise: Abomination",
+      "spellId": 500335,
+      "spellIds": [
+        500335
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ui_darkshore_warfront_horde_abomination",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Raise an Abomination to aid you in combat, occupying 3 Life Force.It is surrounded by a disease cloud, dealing 9 + 25% SP Nature damage to enemies when they deal damage and reducing their attack speed by -20% for 15 seconds.Command: Instantly unleashes an empowered disease cloud around it.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500335,
+          "description": "Raise an <span style=\"color: #ffffff; display: inline\">Abomination</span> to aid you in combat, occupying <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.<br /><br />It is surrounded by a disease cloud, dealing <span class=\"item-number\">9</span> + <span class=\"item-number\">25% SP</span> Nature damage to enemies when they deal damage and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Instantly unleashes an empowered disease cloud around it."
+        }
+      ]
+    },
+    {
+      "id": 29520,
+      "name": "Game of Bones",
+      "spellId": 301198,
+      "spellIds": [
+        301198
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\icon_petfamily_undead",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29865,
+        31048
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Champion spells by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301198,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Champion</span> spells by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29772,
+      "name": "Permafrost",
+      "spellId": 704681,
+      "spellIds": [
+        704681
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_ManaBurn_Frost",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29779,
+        33731
+      ],
+      "requiredIds": [],
+      "desc": "Gives your spells a 15% chance to grant you the Permafrost, which treats your next 2 spells cast as if the target were Frozen. Lasts 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704681,
+          "description": "Gives your spells a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you the <span style=\"color: #FFFFFF; display: inline\">Permafrost</span>, which treats your next <span class=\"item-number\">2</span> spells cast as if the target were <span style=\"color: #3399ff; display: inline\">Frozen</span>. Lasts <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29773,
+      "name": "Glacier Lord",
+      "spellId": 560852,
+      "spellIds": [
+        560852
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_frost_spell_03_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5605,
+        6488,
+        30605
+      ],
+      "requiredIds": [],
+      "desc": "Your Glacial Impact is now guaranteed to critically strike against Frozen targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560852,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> is now guaranteed to critically strike against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 29774,
+      "name": "Bone Tithe",
+      "spellId": 802121,
+      "spellIds": [
+        802121
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ossuary_Bond",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6458,
+        30833,
+        34980
+      ],
+      "requiredIds": [],
+      "desc": "Siphon life from your undead minions, sacrificing 40% of their health to grant yourself an absorb shield equal to half of the health stolen for 20 seconds.Usable while stunned.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802121,
+          "description": "Siphon life from your undead minions, sacrificing <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of their health to grant yourself an absorb shield equal to half of the health stolen for <span class=\"item-number\">20</span> seconds.<br /><br />Usable while stunned."
+        }
+      ]
+    },
+    {
+      "id": 29778,
+      "name": "Giant Bones",
+      "spellId": 805427,
+      "spellIds": [
+        805427
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_icegiant_01",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6488,
+        33720,
+        34978
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unholy Frenzy now summons a Rotting Frost Giant to aid you in combat for the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805427,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> now summons a <span style=\"color: #ffffff; display: inline\">Rotting Frost Giant</span> to aid you in combat for the duration."
+        }
+      ]
+    },
+    {
+      "id": 29779,
+      "name": "Frigidness",
+      "spellId": 704669,
+      "spellIds": [
+        704669,
+        707742
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_boss_forgemaster",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29778
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical damage by 50% against Frozen targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704669,
+          "description": "Increases your critical damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets."
+        },
+        {
+          "rank": 2,
+          "spellId": 707742,
+          "description": "Increases your critical damage by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 29787,
+      "name": "Glacial Tap",
+      "spellId": 805369,
+      "spellIds": [
+        805369
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SkullCurse2_Blue",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Tap into necrotic energies, instantly regenerating 30 Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805369,
+          "description": "Tap into necrotic energies, instantly regenerating <span class=\"item-number\">30</span> Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 29788,
+      "name": "Death's Due",
+      "spellId": 807796,
+      "spellIds": [
+        807796
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_deathpickaxe_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31143
+      ],
+      "requiredIds": [],
+      "desc": "Force a target to accept the reality of death, removing any invulnerability or immunity effects from them and cursing them for 5 seconds.If the target's health is below 20% at the end of duration, they take 800 + 200% SP Shadowfrost Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807796,
+          "description": "Force a target to accept the reality of death, removing any invulnerability or immunity effects from them and cursing them for <span class=\"item-number\">5</span> seconds.<br /><br />If the target's health is below <span class=\"item-number\">20%</span> at the end of duration, they take <span class=\"item-number\">800</span> + <span class=\"item-number\">200% SP</span> Shadowfrost Damage."
+        }
+      ]
+    },
+    {
+      "id": 29861,
+      "name": "Rot Fetishist",
+      "spellId": 805675,
+      "spellIds": [
+        805675
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_rotting_breath",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10918,
+        30919
+      ],
+      "requiredIds": [],
+      "desc": "Your Virulency now applies Rot Fetishist for 10 seconds, causing you to replicate 20% of your periodic damage dealt as direct damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805675,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Virulency</span> now applies <span style=\"color: #FFFFFF; display: inline\">Rot Fetishist</span> for <span class=\"item-number\">10</span> seconds, causing you to replicate <span class=\"item-number\">20%</span> of your periodic damage dealt as direct damage."
+        }
+      ]
+    },
+    {
+      "id": 29864,
+      "name": "Plague Revenant",
+      "spellId": 806321,
+      "spellIds": [
+        806321
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_cloth_raidwarlockmythic_s_01",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6961,
+        33753
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes now apply a stack of Crypt Plague.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806321,
+          "description": "Critical strikes now apply a stack of <span style=\"color: #ffffff; display: inline\">Crypt Plague</span>."
+        }
+      ]
+    },
+    {
+      "id": 29865,
+      "name": "Gravedigger",
+      "spellId": 704715,
+      "spellIds": [
+        704715
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_bg_xkills_avgraveyard",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7371
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Sacrifice Undead by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704715,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Sacrifice Undead</span> by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29866,
+      "name": "Flesh to Worms",
+      "spellId": 500338,
+      "spellIds": [
+        500338
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_batpetmaldraxxus",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Disease an enemy, dealing 15 + 11.06% shadow SP Plague damage and generating Runic Power every 3 sec for 18 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500338,
+          "description": "Disease an enemy, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">11.06% shadow SP</span> Plague damage and generating Runic Power every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29943,
+      "name": "March of the Dead",
+      "spellId": 707007,
+      "spellIds": [
+        707007
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DeadofNight",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        2174,
+        7146
+      ],
+      "requiredIds": [],
+      "desc": "Beckon the restless dead to rise and march forward.When they reach an enemy they explode, dealing 700 + 75% SP Plague damage to nearby enemies and slowing their movement speed by -70% for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707007,
+          "description": "Beckon the restless dead to rise and march forward.<br /><br />When they reach an enemy they explode, dealing <span class=\"item-number\">700</span> + <span class=\"item-number\">75% SP</span> Plague damage to nearby enemies and slowing their movement speed by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29946,
+      "name": "Parasite Plague",
+      "spellId": 560730,
+      "spellIds": [
+        560730
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Creature_Disease_01",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33763
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt now has a 5% chance to apply Parasites for 8 seconds.ParasitesYour Undead minions feast upon the parasites on hit, leeching 15% of their damage dealt as Plague Damage to the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560730,
+          "description": "Damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Parasites</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_worms_01\" /><span class=\"name\">Parasites</span></div><span class=\"desc\">Your Undead minions feast upon the parasites on hit, leeching <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of their damage dealt as Plague Damage to the target.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30022,
+      "name": "Graverobber",
+      "spellId": 503757,
+      "spellIds": [
+        503757
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_deathsiphon",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7345
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost and cast time of your Raise and Animate spells by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503757,
+          "description": "Reduces the mana cost and cast time of your <span style=\"color: #ffffff; display: inline\">Raise</span> and <span style=\"color: #ffffff; display: inline\">Animate</span> spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30238,
+      "name": "Long March",
+      "spellId": 704717,
+      "spellIds": [
+        704717
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_deathknight_iceboundfortitude",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5290,
+        6290,
+        7346
+      ],
+      "requiredIds": [],
+      "desc": "Removes the cooldown from March of the Dead, but gives it a 1 sec cast time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704717,
+          "description": "Removes the cooldown from <span style=\"color: #ffffff; display: inline\">March of the Dead</span>, but gives it a <span class=\"item-number\">1</span> sec cast time."
+        }
+      ]
+    },
+    {
+      "id": 30487,
+      "name": "Summoner",
+      "spellId": 706953,
+      "spellIds": [
+        706953
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_necklacea7",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7347
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost and cooldown of Sacrifice Undead by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706953,
+          "description": "Reduces the mana cost and cooldown of <span style=\"color: #ffffff; display: inline\">Sacrifice Undead</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30488,
+      "name": "Anti-Magic Shell",
+      "spellId": 504866,
+      "spellIds": [
+        504866
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5766,
+        33766
+      ],
+      "requiredIds": [],
+      "desc": "When you summon a Raised minion, it now raises with a shield absorbing Magic damage equal to 40% of their maximum health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504866,
+          "description": "When you summon a <span style=\"color: #ffffff; display: inline\">Raised</span> minion, it now raises with a shield absorbing Magic damage equal to <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of their maximum health."
+        }
+      ]
+    },
+    {
+      "id": 30497,
+      "name": "Forbidden Technique",
+      "spellId": 561215,
+      "spellIds": [
+        561215
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30022
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells now reduces the cooldown of your Animates by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561215,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Animates</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30599,
+      "name": "Dominion of Frost",
+      "spellId": 537208,
+      "spellIds": [
+        537208
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Frost_FreezingBreath",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29778
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes dealt by your Undead minions now reduce the cooldown of Unholy Frenzy by -3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 537208,
+          "description": "Critical strikes dealt by your Undead minions now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">-3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30600,
+      "name": "Animate: Frost Wyrm",
+      "spellId": 805428,
+      "spellIds": [
+        805428
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_dragoncoldbreath_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33771
+      ],
+      "requiredIds": [],
+      "desc": "Animate a Frost Wyrm that flies behind the Necromancer that blasts nearby enemies every 2 sec for 30 seconds, dealing 1500 + 14.88% frost SP + 14.88% Intellect Frost damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805428,
+          "description": "Animate a <span style=\"color: #ffffff; display: inline\">Frost Wyrm</span> that flies behind the Necromancer that blasts nearby enemies every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">30</span> seconds, dealing <span class=\"item-number\">1500</span> + <span class=\"item-number\">14.88% frost SP</span> + <span class=\"item-number\">14.88% Intellect</span> Frost damage."
+        }
+      ]
+    },
+    {
+      "id": 30617,
+      "name": "Crown's Call",
+      "spellId": 805429,
+      "spellIds": [
+        805429,
+        807924
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\expansionicon_wrathofthelichking",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4615,
+        12212,
+        30355
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Intellect by 5% and the Frost damage dealt by your Undead minions by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805429,
+          "description": "Increases your Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and the Frost damage dealt by your Undead minions by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807924,
+          "description": "Increases your Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and the Frost damage dealt by your Undead minions by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30619,
+      "name": "Deathly Chill",
+      "spellId": 805424,
+      "spellIds": [
+        805424
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frost_beam_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33731
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the channel and cast time of Ice Barrage by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805424,
+          "description": "Reduces the channel and cast time of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30620,
+      "name": "Harrowing Winds",
+      "spellId": 705745,
+      "spellIds": [
+        705745
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_14_big_frost_arrow_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33723
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Glacial Impact now deals an additional 50% of the damage dealt as Frost damage to enemies within 6 yds of the primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705745,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> now deals an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt as Frost damage to enemies within <span class=\"item-number\">6</span> yds of the primary target."
+        }
+      ]
+    },
+    {
+      "id": 30621,
+      "name": "Icecrown",
+      "spellId": 531135,
+      "spellIds": [
+        531135
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_eternalwinter_d_01",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5605,
+        30605
+      ],
+      "requiredIds": [],
+      "desc": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by 1% for 10 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 531135,
+          "description": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30622,
+      "name": "Raise: Skeletal Mage",
+      "spellId": 500331,
+      "spellIds": [
+        500331
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\SkeletalIceMage2",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6891,
+        7214,
+        12891
+      ],
+      "requiredIds": [],
+      "desc": "Raise a Skeletal Mage to aid you in combat, occupying 2 Life Force.Command: Unleashes ice at your target and enemies within 6 yds, dealing 51 + 80% frost SP Frost damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500331,
+          "description": "Raise a <span style=\"color: #ffffff; display: inline\">Skeletal Mage</span> to aid you in combat, occupying <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Unleashes ice at your target and enemies within <span class=\"item-number\">6</span> yds, dealing <span class=\"item-number\">51</span> + <span class=\"item-number\">80% frost SP</span> Frost damage."
+        }
+      ]
+    },
+    {
+      "id": 30804,
+      "name": "Virulency",
+      "spellId": 801938,
+      "spellIds": [
+        801938
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_maldraxxus_shaman",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6295,
+        30821,
+        31245
+      ],
+      "requiredIds": [],
+      "desc": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.You may use this abilty again within 10 sec to Infest another target, applying the copied diseases.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801938,
+          "description": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.<br /><br />You may use this abilty again within <span class=\"item-number\">10</span> sec to <span style=\"color: #FFFFFF; display: inline\">Infest</span> another target, applying the copied diseases."
+        }
+      ]
+    },
+    {
+      "id": 30821,
+      "name": "Dark Harvester",
+      "spellId": 807960,
+      "spellIds": [
+        807960
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6863
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike and hit chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807960,
+          "description": "Increases your critical strike and hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30822,
+      "name": "Raise: Gargoyle",
+      "spellId": 500329,
+      "spellIds": [
+        500329
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_summongargoyle",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29861,
+        30912,
+        33760
+      ],
+      "requiredIds": [],
+      "desc": "Raise a fallen Gargoyle to aid you in combat, occupying 3 Life Force. Command: Shoots necrotic bile at an enemy, dealing 73 + 65% SP Plague damage, dealing 50% increased damage for each of your diseases on the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500329,
+          "description": "Raise a fallen <span style=\"color: #ffffff; display: inline\">Gargoyle</span> to aid you in combat, occupying <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Shoots necrotic bile at an enemy, dealing <span class=\"item-number\">73</span> + <span class=\"item-number\">65% SP</span> Plague damage, dealing <span class=\"item-number\">50%</span> increased damage for each of your diseases on the target."
+        }
+      ]
+    },
+    {
+      "id": 30833,
+      "name": "Living Dead",
+      "spellId": 302888,
+      "spellIds": [
+        302888,
+        302920
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_zone_deadwindpass",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6885,
+        7785
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost of Lichfrost and Crypt Swarm by -10%. Blight now refunds 25% of its base mana cost if it lasts the full duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 302888,
+          "description": "Reduces the mana cost of <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> and <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>. <span style=\"color: #FFFFFF; display: inline\">Blight</span> now refunds <span class=\"item-number\">25%</span> of its base mana cost if it lasts the full duration."
+        },
+        {
+          "rank": 2,
+          "spellId": 302920,
+          "description": "Reduces the mana cost of <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> and <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>. <span style=\"color: #FFFFFF; display: inline\">Blight</span> now refunds <span class=\"item-number\">25%</span> of its base mana cost if it lasts the full duration."
+        }
+      ]
+    },
+    {
+      "id": 30912,
+      "name": "Lichplague",
+      "spellId": 802132,
+      "spellIds": [
+        802132
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warlock09_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29946,
+        33761
+      ],
+      "requiredIds": [],
+      "desc": "Disease an enemy, dealing 151 + 22% SP Plague damage every 3 sec for 18 seconds. Damage increased by 4% for each Necromancer disease on the enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802132,
+          "description": "Disease an enemy, dealing <span class=\"item-number\">151</span> + <span class=\"item-number\">22% SP</span> Plague damage every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds. <br /><br />Damage increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for each Necromancer disease on the enemy."
+        }
+      ]
+    },
+    {
+      "id": 30915,
+      "name": "Muck Summoner",
+      "spellId": 806086,
+      "spellIds": [
+        806086
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_fishing_lure_worm",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33760
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has an 5% chance to summon 2 to 3 Rotlings that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806086,
+          "description": "Periodic damage dealt now has an <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to summon <span class=\"item-number\">2</span> to <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Rotlings</span> that will run towards the enemy and explode after <span class=\"item-number\">5</span> sec for <span class=\"item-number\">320</span> + <span class=\"item-number\">33.5% SP</span> Plague damage."
+        }
+      ]
+    },
+    {
+      "id": 30917,
+      "name": "Creeping Plagues",
+      "spellId": 572130,
+      "spellIds": [
+        572130
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_necro_necroticsmash",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30804
+      ],
+      "requiredIds": [],
+      "desc": "You may now Infest an additional target after using Virulency.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572130,
+          "description": "You may now <span style=\"color: #ffffff; display: inline\">Infest</span> an additional target after using <span style=\"color: #ffffff; display: inline\">Virulency</span>."
+        }
+      ]
+    },
+    {
+      "id": 30919,
+      "name": "Apothecary's Cauldron",
+      "spellId": 560537,
+      "spellIds": [
+        560537
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_nullifydisease",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4620,
+        29241
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your Magic damage dealt by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560537,
+          "description": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31048,
+      "name": "Reclaimed Life",
+      "spellId": 707670,
+      "spellIds": [
+        707670
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_CallToArms_Forsaken_Green",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6897,
+        7371,
+        29196
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of your Raise spells by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707670,
+          "description": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Raise</span> spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31143,
+      "name": "Ner'zhul's Blessing",
+      "spellId": 704729,
+      "spellIds": [
+        704729
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_raid_torghast_shadowscourge_prisonofnerzhul",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34980
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum Runic Power by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704729,
+          "description": "Increases your maximum Runic Power by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31185,
+      "name": "Ice Barrage",
+      "spellId": 801760,
+      "spellIds": [
+        801760
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_frost_spell_09_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4035,
+        29787
+      ],
+      "desc": "Unleash a relentless volley of glacial shards, dealing 19 + 35% SP Frost damage every 0 sec for 1 seconds.At the end of the duration, you entomb your target in ice, freezing them for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801760,
+          "description": "Unleash a relentless volley of glacial shards, dealing <span class=\"item-number\">19</span> + <span class=\"item-number\">35% SP</span> Frost damage every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">1</span> seconds.<br /><br />At the end of the duration, you entomb your target in ice, freezing them for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31245,
+      "name": "Plague of Undeath",
+      "spellId": 801945,
+      "spellIds": [
+        801945
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0000s_0000_spirits_Border",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7808
+      ],
+      "requiredIds": [],
+      "desc": "Disease an enemy dealing 32 + 25% shadow SP Plague damage every 3 sec and reduces the targets Holy healing received by -40% for 20 seconds.If Plague of Undeath is dispelled, the enemy takes 456 + 125% shadow SP Plague damage and is stunned for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801945,
+          "description": "Disease an enemy dealing <span class=\"item-number\">32</span> + <span class=\"item-number\">25% shadow SP</span> Plague damage every <span class=\"item-number\">3</span> sec and reduces the targets Holy healing received by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />If <span style=\"color: #ffffff; display: inline\">Plague of Undeath</span> is dispelled, the enemy takes <span class=\"item-number\">456</span> + <span class=\"item-number\">125% shadow SP</span> Plague damage and is stunned for <span class=\"item-number\">5</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 33720,
+      "name": "Runic Reservoir",
+      "spellId": 704670,
+      "spellIds": [
+        704670,
+        803850
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_misc_frostemblem_01",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6893,
+        7213,
+        34976
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Frost damage by 5% and your maximum Runic Power by 15.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704670,
+          "description": "Increases your Frost damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your maximum Runic Power by <span class=\"item-number\">15</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 803850,
+          "description": "Increases your Frost damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your maximum Runic Power by <span class=\"item-number\">30</span>."
+        }
+      ]
+    },
+    {
+      "id": 33723,
+      "name": "Chilling Presence",
+      "spellId": 300958,
+      "spellIds": [
+        300958
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4615,
+        19778,
+        29772,
+        30355
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases the critical strike chance of Ice Barrage by 20% against Frozen targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300958,
+          "description": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 33725,
+      "name": "Bone Legion",
+      "spellId": 707006,
+      "spellIds": [
+        707006,
+        707881
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\novart_physical_ability_(38)_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7213,
+        34976
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Lichfrost by 10% and its Runic Power generated by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707006,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its Runic Power generated by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707881,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and its Runic Power generated by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33731,
+      "name": "Frigid Power",
+      "spellId": 560620,
+      "spellIds": [
+        560620
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Frost_Frostbolt",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29773,
+        30621
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Lichfrost and Ice Barrage by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560620,
+          "description": "Increases the spell power scaling of <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> and <span style=\"color: #FFFFFF; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33732,
+      "name": "Foul Invocation",
+      "spellId": 804371,
+      "spellIds": [
+        804371
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_festergutrotface",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6886,
+        33733,
+        33740
+      ],
+      "requiredIds": [],
+      "desc": "Transform into an undead monstrosity for 20 seconds, increasing your maximum health by 30%.While transformed you are immune to Fear, Sleep, Charm, and Disease effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804371,
+          "description": "Transform into an undead monstrosity for <span class=\"item-number\">20</span> seconds, increasing your maximum health by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.<br /><br />While transformed you are immune to Fear, Sleep, Charm, and Disease effects."
+        }
+      ]
+    },
+    {
+      "id": 33733,
+      "name": "Winds of Northrend",
+      "spellId": 301333,
+      "spellIds": [
+        301333
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Ice_Lament",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6555,
+        33751,
+        33780
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount slowed by Lichfrost by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301333,
+          "description": "Increases the amount slowed by <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33738,
+      "name": "Master Lich",
+      "spellId": 560848,
+      "spellIds": [
+        560848
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_frost_0000s_0000_figure_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29317
+      ],
+      "requiredIds": [],
+      "desc": "Soulfreeze now increases the enemy's Frost damage taken by you by 5% per tick for 8 sec, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560848,
+          "description": "<span style=\"color: #ffffff; display: inline\">Soulfreeze</span> now increases the enemy's Frost damage taken by you by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> per tick for <span class=\"item-number\">8</span> sec, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 33740,
+      "name": "Deadly Defense",
+      "spellId": 300580,
+      "spellIds": [
+        300580
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_04_summon_skeleton_army_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5781,
+        12381,
+        33751
+      ],
+      "requiredIds": [],
+      "desc": "Each of your summons now reduces your damage taken by 1%, up to a maximum of 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300580,
+          "description": "Each of your summons now reduces your damage taken by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>, up to a maximum of <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33748,
+      "name": "Animate: Plaguefather",
+      "spellId": 805048,
+      "spellIds": [
+        805048
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_leather_maldraxxus_d_01",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7119,
+        7146,
+        10495,
+        30495
+      ],
+      "requiredIds": [],
+      "desc": "Animate a Plaguefather to aid you in combat for 15 seconds. Damage dealt by this minion will emit Zombie Plague, dealing 79 + 10% SP Plague damage to nearby enemies, and reducing their attack power by 223.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805048,
+          "description": "Animate a <span style=\"color: #ffffff; display: inline\">Plaguefather</span> to aid you in combat for <span class=\"item-number\">15</span> seconds. <br /><br />Damage dealt by this minion will emit <span style=\"color: #ffffff; display: inline\">Zombie Plague</span>, dealing <span class=\"item-number\">79</span> + <span class=\"item-number\">10% SP</span> Plague damage to nearby enemies, and reducing their attack power by <span class=\"item-number\">223</span>."
+        }
+      ]
+    },
+    {
+      "id": 33749,
+      "name": "Underking",
+      "spellId": 704701,
+      "spellIds": [
+        704701
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_sumzombie_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4238
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells now grants you a stack of Underking for 20 seconds.At 10 stacks, the cooldown of Animate: Tomb King, Animate: Bone Wraith or Animate: Plaguefather is reduced by -15 sec at random.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704701,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now grants you a stack of <span style=\"color: #ffffff; display: inline\">Underking</span> for <span class=\"item-number\">20</span> seconds.<br /><br />At <span class=\"item-number\">10</span> stacks, the cooldown of <span style=\"color: #ffffff; display: inline\">Animate: Tomb King</span>, <span style=\"color: #ffffff; display: inline\">Animate: Bone Wraith</span> or <span style=\"color: #ffffff; display: inline\">Animate: Plaguefather</span> is reduced by <span class=\"item-number\">-15</span> sec at random."
+        }
+      ]
+    },
+    {
+      "id": 33750,
+      "name": "Waking Crypts",
+      "spellId": 570136,
+      "spellIds": [
+        570136
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_maldraxxus",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30912
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Crypt Plague by 50% and Crypt Swarm now deals 4% more damage for each Necromancer disease you have on the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570136,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span> now deals <span class=\"item-number\">4</span><span class=\"item-number\">%</span> more damage for each Necromancer disease you have on the target."
+        }
+      ]
+    },
+    {
+      "id": 33751,
+      "name": "Dead Man Walking",
+      "spellId": 300233,
+      "spellIds": [
+        300233
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_plate_pvpdeathknight_g_01_boot",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33778
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of root and slow effects against you by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300233,
+          "description": "Reduces the duration of root and slow effects against you by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33752,
+      "name": "Master of Death",
+      "spellId": 806328,
+      "spellIds": [
+        806328
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DeathAndDecay",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29866
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells on an enemy now applies Crypt Plague.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806328,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #ffffff; display: inline\">Crypt Plague</span>."
+        }
+      ]
+    },
+    {
+      "id": 33753,
+      "name": "Unholy Runes",
+      "spellId": 561353,
+      "spellIds": [
+        561353
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6960,
+        30835
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Crypt Swarm by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561353,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33759,
+      "name": "Pandemic",
+      "spellId": 560798,
+      "spellIds": [
+        560798
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_sicklypolymorph",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30804
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Undead minions now reduces the cooldown of Virulency by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560798,
+          "description": "Damage dealt by your Undead minions now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Virulency</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 33760,
+      "name": "Wormfood",
+      "spellId": 560800,
+      "spellIds": [
+        560800
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_worm_b_01_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7807,
+        29242
+      ],
+      "requiredIds": [],
+      "desc": "Upon fully channeling Crypt Swarm, you summon a Rotling that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560800,
+          "description": "Upon fully channeling <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span>, you summon a <span style=\"color: #ffffff; display: inline\">Rotling</span> that will run towards the enemy and explode after <span class=\"item-number\">5</span> sec for <span class=\"item-number\">320</span> + <span class=\"item-number\">33.5% SP</span> Plague damage."
+        }
+      ]
+    },
+    {
+      "id": 33761,
+      "name": "Fleshcrafting",
+      "spellId": 300941,
+      "spellIds": [
+        300941
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_unholybird_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33763
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration Unholy Frenzy by 5 sec and casting Command spells now reduces its cooldown by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300941,
+          "description": "Increases the duration <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">5</span> sec and casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now reduces its cooldown by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 33763,
+      "name": "Expediting Death",
+      "spellId": 300236,
+      "spellIds": [
+        300236
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_fishing_bait_spineworm",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6965,
+        29241
+      ],
+      "requiredIds": [],
+      "desc": "Each stack of Expunge now increases the target's damage taken from your Plague of Undeath by an additional 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300236,
+          "description": "Each stack of <span style=\"color: #FFFFFF; display: inline\">Expunge</span> now increases the target's damage taken from your <span style=\"color: #FFFFFF; display: inline\">Plague of Undeath</span> by an additional <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33764,
+      "name": "Command: Blight",
+      "spellId": 504050,
+      "spellIds": [
+        504050
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_necro_deathrift",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7348
+      ],
+      "requiredIds": [],
+      "desc": "Command your Decaying Colossus to blight the ground in a 10 yd radius beneath it, reducing healing received by -60% for enemies inside for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504050,
+          "description": "Command your <span style=\"color: #ffffff; display: inline\">Decaying Colossus</span> to blight the ground in a <span class=\"item-number\">10</span> yd radius beneath it, reducing healing received by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for enemies inside for <span class=\"item-number\">20</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 33771,
+      "name": "Frost Runes",
+      "spellId": 705750,
+      "spellIds": [
+        705750
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_deathknight_empowerruneblade2",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33733
+      ],
+      "requiredIds": [],
+      "desc": "Dealing Magic damage now has a 15% chance to increase your haste by 10% for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705750,
+          "description": "Dealing Magic damage now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 33772,
+      "name": "Lich's Prodigy",
+      "spellId": 302519,
+      "spellIds": [
+        302519
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_herb_ancientlichen",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29943
+      ],
+      "requiredIds": [],
+      "desc": "Your Glacial Tap now generates an additional 20 Runic Power, but its cost is increased by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 302519,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Glacial Tap</span> now generates an additional <span class=\"item-number\">20</span> Runic Power, but its cost is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33774,
+      "name": "Summoning Prodigy",
+      "spellId": 704682,
+      "spellIds": [
+        704682
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Requiem",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7143
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Skeletal Archers by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704682,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Skeletal Archers</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 33775,
+      "name": "Raise: Ghoul",
+      "spellId": 500971,
+      "spellIds": [
+        500971
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ghoul",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12165,
+        30497,
+        33774
+      ],
+      "requiredIds": [],
+      "desc": "Raise a Ghoul to aid you in combat occupying 1 Life Force. Its auto attacks restore 21 + 3.53% Intellect + 3.53% SP health to you.Command: Expels leeching plague that strikes up to 5 nearby enemies, dealing 30 + 15.68% Intellect + 15.68% SP Plague damage, and healing you for 35 + 22% SP + 50% Intellect for each Ghoul.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500971,
+          "description": "Raise a <span style=\"color: #ffffff; display: inline\">Ghoul</span> to aid you in combat occupying <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br />Its auto attacks restore <span class=\"item-number\">21</span> + <span class=\"item-number\">3.53% Intellect</span> + <span class=\"item-number\">3.53% SP</span> health to you.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Expels leeching plague that strikes up to <span class=\"item-number\">5</span> nearby enemies, dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">15.68% Intellect</span> + <span class=\"item-number\">15.68% SP</span> Plague damage, and healing you for <span class=\"item-number\">35</span> + <span class=\"item-number\">22% SP</span> + <span class=\"item-number\">50% Intellect</span> for each <span style=\"color: #ffffff; display: inline\">Ghoul</span>."
+        }
+      ]
+    },
+    {
+      "id": 33777,
+      "name": "Raise: Banshee",
+      "spellId": 504861,
+      "spellIds": [
+        504861
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ui_darkshore_warfront_horde_banshee",
+      "x": 5,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33732,
+        33771
+      ],
+      "requiredIds": [],
+      "desc": "Raise a Banshee to aid you in combat, occupying 2 Life Force.It will channel on your target, dealing damage and draining their mana over time.Command: Drains 20% of your target's mana (up to a maximum of 40% of their own maximum mana) and deals Frost damage equal to the mana drained.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504861,
+          "description": "Raise a <span style=\"color: #ffffff; display: inline\">Banshee</span> to aid you in combat, occupying <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.<br /><br />It will channel on your target, dealing damage and draining their mana over time.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Drains <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your target's mana (up to a maximum of <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of their own maximum mana) and deals Frost damage equal to the mana drained."
+        }
+      ]
+    },
+    {
+      "id": 33778,
+      "name": "Mass Grave",
+      "spellId": 803741,
+      "spellIds": [
+        803741
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_necro_deathlyecho",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6897,
+        29196
+      ],
+      "requiredIds": [],
+      "desc": "Transform up to 5 nearby enemies into a ghoul, fearing them for 40 seconds (8). Only affects Humanoids.While above 50 Runic Power this spell is instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803741,
+          "description": "Transform up to <span class=\"item-number\">5</span> nearby enemies into a ghoul, fearing them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span>). Only affects Humanoids.<br /><br />While above <span class=\"item-number\">50</span> Runic Power this spell is instant cast."
+        }
+      ]
+    },
+    {
+      "id": 33784,
+      "name": "Disciple of Kel'thuzad",
+      "spellId": 560615,
+      "spellIds": [
+        560615,
+        560616
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_belt_plate_raiddeathknightmythic_q_01",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6897,
+        29196,
+        29788
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell haste by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560615,
+          "description": "Increases your spell haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 560616,
+          "description": "Increases your spell haste by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34977,
+      "name": "Improved Mandates",
+      "spellId": 560613,
+      "spellIds": [
+        560613
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0001s_0000_soul_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29788
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Mandates by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560613,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Mandates</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34978,
+      "name": "Curse of the Lich",
+      "spellId": 300240,
+      "spellIds": [
+        300240
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_CasterCloak_Ice",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7213,
+        34976
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your Rime spells by 6 yds and increases the Frost critical strike chance of you and your summons by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300240,
+          "description": "Increases the range of your Rime spells by <span class=\"item-number\">6</span> yds and increases the Frost critical strike chance of you and your summons by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34980,
+      "name": "Create Frozen Reliquary",
+      "spellId": 803772,
+      "spellIds": [
+        803772
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\FrozenUrn",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6459,
+        7785
+      ],
+      "requiredIds": [],
+      "desc": "Create 1 Frozen Reliquary that restores 30% of your missing mana.Allies may only use a Frozen Reliquary once per minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803772,
+          "description": "Create <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Frozen Reliquary</span> that restores <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your missing mana.<br /><br />Allies may only use a <span style=\"color: #ffffff; display: inline\">Frozen Reliquary</span> once per minute."
+        }
+      ]
+    },
+    {
+      "id": 34981,
+      "name": "Study of Death",
+      "spellId": 704721,
+      "spellIds": [
+        704721
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_book_06",
+      "x": 3,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7348,
+        33732
+      ],
+      "requiredIds": [],
+      "desc": "When you cast Unholy Frenzy you now summon 3 Greater Zombies to aid you in combat for 14 seconds.Damage dealt by your Undead minions now reduces the cooldown of Unholy Frenzy by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704721,
+          "description": "When you cast <span style=\"color: #FFFFFF; display: inline\">Unholy Frenzy</span> you now summon <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Greater Zombies</span> to aid you in combat for <span class=\"item-number\">14</span> seconds.<br /><br />Damage dealt by your Undead minions now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34982,
+      "name": "Expunge",
+      "spellId": 705754,
+      "spellIds": [
+        705754
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3acidcloud",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31245
+      ],
+      "requiredIds": [],
+      "desc": "Casting Command spells on an enemy now applies Expunge if they are Diseased.Expunge (Talent)Increases the target's damage taken from your Necromancer diseases by 10% for 10 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705754,
+          "description": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #ffffff; display: inline\">Expunge</span> if they are <span style=\"color: #7fff00; display: inline\">Diseased</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3acidcloud\" /><span class=\"name\">Expunge (Talent)</span></div><span class=\"desc\">Increases the target's damage taken from your Necromancer diseases by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:23:59:802990",
+      "name": "Foul Contagion / Necrosis",
+      "spellId": 300965,
+      "spellIds": [
+        300965
+      ],
+      "tabId": 59,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_Explode_Ghoul",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30821
+      ],
+      "requiredIds": [],
+      "desc": "Applying Crypt Plague now extends the duration of Flesh to Worms on the target by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300965,
+          "description": "Applying <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> on the target by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:87:236112",
+      "name": "Overwhelming Force / Tears of Lordaeron",
+      "spellId": 531128,
+      "spellIds": [
+        531128
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_raisedead_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6903,
+        29774,
+        31143
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Undead minions now has a 5% chance to restore 2 Runic Power and 2% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 531128,
+          "description": "Damage dealt by your Undead minions now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to restore <span class=\"item-number\">2</span> Runic Power and <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:87:707739",
+      "name": "Lich Commander / Corpse Commander",
+      "spellId": 704713,
+      "spellIds": [
+        704713
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_7af_deathknight_frostmournefragment",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33778
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Runic Power cost of your Command spells by -5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704713,
+          "description": "Reduces the Runic Power cost of your <span style=\"color: #90ee90; display: inline\">Command</span> spells by <span class=\"item-number\">-5</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:87:804717",
+      "name": "Cobalt-Plated Armor / Naxxramas Prodigy",
+      "spellId": 300945,
+      "spellIds": [
+        300945
+      ],
+      "tabId": 87,
+      "classId": 23,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frost_knight_Border",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33784,
+        34977
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Armor of your Undead minions by 300, scaling with your level.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300945,
+          "description": "Increases the Armor of your Undead minions by <span class=\"item-number\">300</span>, scaling with your level."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:60:988800",
+      "name": "Frigid Winds / Piercing Icicles",
+      "spellId": 504357,
+      "spellIds": [
+        504357
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_IceWave_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6901
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Refreshing Chill by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504357,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Refreshing Chill</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:60:362123",
+      "name": "Frigid Death / Freeze Dry",
+      "spellId": 560851,
+      "spellIds": [
+        560851
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Ice_Lament",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6893
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Glacial Impact by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560851,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:60:803797",
+      "name": "Necrotic Chains / Ner'zhul's Blessing",
+      "spellId": 801733,
+      "spellIds": [
+        801733
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_lichking",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33725,
+        34978
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd Command spell now freezes the target in place for 5 seconds. Damage dealt may end this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801733,
+          "description": "Every 3rd <span style=\"color: #90ee90; display: inline\">Command</span> spell now freezes the target in place for <span class=\"item-number\">5</span> seconds. Damage dealt may end this effect."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:60:782311",
+      "name": "Blood and Ice / Death and Ice",
+      "spellId": 561164,
+      "spellIds": [
+        561164
+      ],
+      "tabId": 60,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_herb_frostweedbranch",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30599,
+        30622
+      ],
+      "requiredIds": [],
+      "desc": "Each Skeletal Warrior or Skeletal Rogue now increases the damage of your Ice Barrage by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561164,
+          "description": "Each <span style=\"color: #ffffff; display: inline\">Skeletal Warrior</span> or <span style=\"color: #ffffff; display: inline\">Skeletal Rogue</span> now increases the damage of your <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:61:805032",
+      "name": "Animate: Bone Wraith / Animate: Tomb King",
+      "spellId": 805032,
+      "spellIds": [
+        805032
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_lordmarrowgar",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7347
+      ],
+      "requiredIds": [],
+      "desc": "Animate a Bone Wraith to aid you in combat for 15 seconds.While active, it will periodically unleash a Bonestorm, striking up to 5 nearby enemies for 30 + 40% SP Physical damage every 1 sec for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805032,
+          "description": "Animate a <span style=\"color: #ffffff; display: inline\">Bone Wraith</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.<br /><br />While active, it will periodically unleash a <span style=\"color: #ffffff; display: inline\">Bonestorm</span>, striking up to <span class=\"item-number\">5</span> nearby enemies for <span class=\"item-number\">30</span> + <span class=\"item-number\">40% SP</span> Physical damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:61:72342",
+      "name": "Depravity / Mindless Fury",
+      "spellId": 638403,
+      "spellIds": [
+        638403
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_warfrontsforsaken_d_01",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6887
+      ],
+      "requiredIds": [],
+      "desc": "Increases the melee haste of your Undead minions by 5% and gives their critical melee auto attacks an 50% chance to trigger Bone Club, dealing 40% of the damage dealt as Shadow Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 638403,
+          "description": "Increases the melee haste of your Undead minions by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and gives their critical melee auto attacks an <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #FFFFFF; display: inline\">Bone Club</span>, dealing <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt as Shadow Damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:61:704718",
+      "name": "Crypt Keeper / Unrelenting",
+      "spellId": 560596,
+      "spellIds": [
+        560596
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Undead_02",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33748
+      ],
+      "requiredIds": [],
+      "desc": "Your Crypt Swarm now bounces to 2 additional nearby enemies, at 30% reduced value per enemy struck.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560596,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now bounces to <span class=\"item-number\">2</span> additional nearby enemies, at <span class=\"item-number\">30</span><span class=\"item-number\">%</span> reduced value per enemy struck."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:61:561232",
+      "name": "Army of the Dead / Unstoppable Frenzy",
+      "spellId": 525600,
+      "spellIds": [
+        525600
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3graspofthedead",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33748
+      ],
+      "requiredIds": [],
+      "desc": "While only 1 Abomination is active, the critical strike chance of your Ghouls is increased by 10% and haste by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 525600,
+          "description": "While only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Abomination</span> is active, the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Ghouls</span> is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:23:61:72431",
+      "name": "Chomp / Fetid Mark",
+      "spellId": 707283,
+      "spellIds": [
+        707283
+      ],
+      "tabId": 61,
+      "classId": 23,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_necrodrain_Border",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33772
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes dealt by your Abominations and Decaying Collosi now Chomp your target, dealing 150 + 112.5% SP damage to them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707283,
+          "description": "Critical strikes dealt by your <span style=\"color: #ffffff; display: inline\">Abominations</span> and <span style=\"color: #ffffff; display: inline\">Decaying Collosi</span> now <span style=\"color: #FFFFFF; display: inline\">Chomp</span> your target, dealing <span class=\"item-number\">150</span> + <span class=\"item-number\">112.5% SP</span> damage to them."
+        }
+      ]
+    }
+  ]
+}

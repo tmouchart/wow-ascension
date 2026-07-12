@@ -1,0 +1,5266 @@
+{
+  "class": "Witch Hunter",
+  "classId": "15",
+  "specs": [
+    "Boltslinger",
+    "Houndmaster",
+    "Black Knight",
+    "Inquisition"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Boltslinger": 39,
+    "Houndmaster": 40,
+    "Black Knight": 94,
+    "Inquisition": 41
+  },
+  "nodes": [
+    {
+      "id": 4134,
+      "name": "Bounty Hunter",
+      "spellId": 805773,
+      "spellIds": [
+        805773
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_corruptiongold_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4135,
+        7459,
+        12259
+      ],
+      "requiredIds": [],
+      "desc": "Casting Darkslayer or Witchbane now applies a stack of Bounty Hunter to you for 8 seconds, which can be consumed by casting Heartseeking Bolt to deal an additional 305 + 45% SP + 30% ranged AP Physical damage, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805773,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Darkslayer</span> or <span style=\"color: #FFFFFF; display: inline\">Witchbane</span> now applies a stack of <span style=\"color: #FFFFFF; display: inline\">Bounty Hunter</span> to you for <span class=\"item-number\">8</span> seconds, which can be consumed by casting <span style=\"color: #FFFFFF; display: inline\">Heartseeking Bolt</span> to deal an additional <span class=\"item-number\">305</span> + <span class=\"item-number\">45% SP</span> + <span class=\"item-number\">30% ranged AP</span> Physical damage, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 4135,
+      "name": "Contract Killing",
+      "spellId": 705506,
+      "spellIds": [
+        705506
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_garrison_blueprints2",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7458,
+        30739
+      ],
+      "requiredIds": [],
+      "desc": "Increases damage dealt against enemies above 75% health and below 35% health by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705506,
+          "description": "Increases damage dealt against enemies above <span class=\"item-number\">75%</span> health and below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4589,
+      "name": "Monster Hunting",
+      "spellId": 300872,
+      "spellIds": [
+        300872
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(44)_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11197
+      ],
+      "requiredIds": [],
+      "desc": "Increases melee and ranged haste of party and raid members within 100 yds by 10%. Does not stack with similar effects.In addition, increases your damage dealt against Undead and Demons by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300872,
+          "description": "Increases melee and ranged haste of party and raid members within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt against Undead and Demons by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5076,
+      "name": "Mechanized Crossbows",
+      "spellId": 705514,
+      "spellIds": [
+        705514
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_blindingshot",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31160
+      ],
+      "requiredIds": [],
+      "desc": "Increases your ranged attack power by 10% and the range of your ranged abilities by 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705514,
+          "description": "Increases your ranged attack power by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and the range of your ranged abilities by <span class=\"item-number\">5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 5678,
+      "name": "Bringing the Law",
+      "spellId": 705500,
+      "spellIds": [
+        705500
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_engineerskill41_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7456,
+        29156
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Shadowblast by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705500,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Shadowblast</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6325,
+      "name": "Tonic Supply",
+      "spellId": 705497,
+      "spellIds": [
+        705497
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_5potionbag_special",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29986
+      ],
+      "requiredIds": [],
+      "desc": "Using a Tonic now reduces the cooldown of all other Tonics by -10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705497,
+          "description": "Using a <span style=\"color: #ffffff; display: inline\">Tonic</span> now reduces the cooldown of all other <span style=\"color: #ffffff; display: inline\">Tonics</span> by <span class=\"item-number\">-10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6326,
+      "name": "Inquisitor's Trap",
+      "spellId": 681445,
+      "spellIds": [
+        681445
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_pettrap02",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6457,
+        34592
+      ],
+      "requiredIds": [],
+      "desc": "Place a cruel trap on the ground lasting 1 minute that will curse the first enemy to approach it silencing them and all enemies in a 5 yd radius for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681445,
+          "description": "Place a cruel trap on the ground lasting <span class=\"item-number\">1</span> minute that will curse the first enemy to approach it silencing them and all enemies in a <span class=\"item-number\">5</span> yd radius for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6334,
+      "name": "Shadow Rage",
+      "spellId": 705455,
+      "spellIds": [
+        705455
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_CurseOfShadow_Border",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9414
+      ],
+      "requiredIds": [],
+      "desc": "Casting Shadowblast now grants Shadow Rage to your Shadow Hound.Shadow RageAuto attacks have a 50% chance to deal an additional 57*1+AP*0.07t Shadow Damage. Lasts 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705455,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Shadowblast</span> now grants <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> to your <span style=\"color: #ffffff; display: inline\">Shadow Hound</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_curseofshadow_border\" /><span class=\"name\">Shadow Rage</span></div><span class=\"desc\">Auto attacks have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to deal an additional <span class=\"item-number\">57*1+AP*0.07t</span> Shadow Damage. Lasts <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6379,
+      "name": "Bringer of Darkness",
+      "spellId": 500101,
+      "spellIds": [
+        500101
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_shadow_spell_04_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7415
+      ],
+      "requiredIds": [],
+      "desc": "Your Repulse now resets the cooldown of Vault and makes your next Vault within 6 seconds free of cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500101,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Repulse</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Vault</span> and makes your next <span style=\"color: #ffffff; display: inline\">Vault</span> within <span class=\"item-number\">6</span> seconds free of cost."
+        }
+      ]
+    },
+    {
+      "id": 6411,
+      "name": "Houndfeeder",
+      "spellId": 705477,
+      "spellIds": [
+        705477
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_sumshadowwolf_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29163,
+        34540
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of you and your Shadow Hound by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705477,
+          "description": "Increases the critical strike chance of you and your <span style=\"color: #ffffff; display: inline\">Shadow Hound</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6413,
+      "name": "Witchblood Tonic",
+      "spellId": 802278,
+      "spellIds": [
+        802278
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_potione2",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6415,
+        6417
+      ],
+      "requiredIds": [],
+      "desc": "Drink a shadowy tonic, removing all curse effects from you and reducing all Magic damage taken by -40% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802278,
+          "description": "Drink a shadowy tonic, removing all curse effects from you and reducing all Magic damage taken by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. <br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 6415,
+      "name": "Combat Training",
+      "spellId": 680529,
+      "spellIds": [
+        680529,
+        681484
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Sword_2H_Blood_C_01",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6622
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Physical damage dealt and parry chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680529,
+          "description": "Increases your Physical damage dealt and parry chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 681484,
+          "description": "Increases your Physical damage dealt and parry chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6417,
+      "name": "Vishas' Memoir",
+      "spellId": 300795,
+      "spellIds": [
+        300795
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_book_02_b_Border",
+      "x": 5,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7451
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Brand spells by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300795,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Brand</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6457,
+      "name": "Brimming Hatred",
+      "spellId": 705496,
+      "spellIds": [
+        705496
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3mantraofretribution",
+      "x": 3,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34538
+      ],
+      "requiredIds": [],
+      "desc": "Your critical strikes now generate 10 Rage. Can only occur every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705496,
+          "description": "Your critical strikes now generate <span class=\"item-number\">10</span> Rage. Can only occur every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6529,
+      "name": "Death Trap",
+      "spellId": 681450,
+      "spellIds": [
+        681450
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_traplauncher",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29952
+      ],
+      "requiredIds": [],
+      "desc": "Place a death trap on the ground lasting 1 minute that will curse the first enemy to approach it, marking them for death, causing them to take 3100 + 100% AP Shadow damage after 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681450,
+          "description": "Place a death trap on the ground lasting <span class=\"item-number\">1</span> minute that will curse the first enemy to approach it, marking them for death, causing them to take <span class=\"item-number\">3100</span> + <span class=\"item-number\">100% AP</span> Shadow damage after <span class=\"item-number\">1</span> minute."
+        }
+      ]
+    },
+    {
+      "id": 6610,
+      "name": "Holy Frenzy",
+      "spellId": 681327,
+      "spellIds": [
+        681327
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Challange_yellow",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6614
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee haste by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681327,
+          "description": "Increases your melee haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6613,
+      "name": "Dark Penance",
+      "spellId": 805533,
+      "spellIds": [
+        805533,
+        807907
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_helm_cloth_raidpriest_r_01_gold",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7574
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility and your chance to parry and dodge by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805533,
+          "description": "Increases your Agility and your chance to parry and dodge by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807907,
+          "description": "Increases your Agility and your chance to parry and dodge by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6614,
+      "name": "Pyro Tonic",
+      "spellId": 802277,
+      "spellIds": [
+        802277
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_potione6",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7096,
+        34550
+      ],
+      "requiredIds": [],
+      "desc": "Drink a fiery tonic, increasing your Fire damage dealt by 20% and your critical damage by 10% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802277,
+          "description": "Drink a fiery tonic, increasing your Fire damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your critical damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 6615,
+      "name": "Rapid Reload",
+      "spellId": 705512,
+      "spellIds": [
+        705512,
+        707863,
+        712479
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_crossbow_2h_maw_c_01",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29372
+      ],
+      "requiredIds": [],
+      "desc": "Increases your ranged haste by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705512,
+          "description": "Increases your ranged haste by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707863,
+          "description": "Increases your ranged haste by <span class=\"item-number\">16</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712479,
+          "description": "Increases your ranged haste by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6618,
+      "name": "Flames of the Sinned",
+      "spellId": 560207,
+      "spellIds": [
+        560207
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_AuraCloak_Fire",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29988
+      ],
+      "requiredIds": [],
+      "desc": "Your Smite Evil now has a 25% chance to strike again.While you have Flames of Sin active, the chance to trigger this effect is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560207,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Smite Evil</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again.<br /><br />While you have <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> active, the chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6622,
+      "name": "Burrow Bolt",
+      "spellId": 802269,
+      "spellIds": [
+        802269
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Burrow Bolt",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Shoot a bolt with a rope attached to it at an enemy dealing 6 + 25% AP Physical damage and pulling them to you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802269,
+          "description": "Shoot a bolt with a rope attached to it at an enemy dealing <span class=\"item-number\">6</span> + <span class=\"item-number\">25% AP</span> Physical damage and pulling them to you."
+        }
+      ]
+    },
+    {
+      "id": 6625,
+      "name": "Torch the Wicked!",
+      "spellId": 560226,
+      "spellIds": [
+        560226
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_fishing_nethooks01",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34541,
+        34547
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Flames of Sin now grants 2% attack speed, stacking up to 12 times for 6 seconds. Application of this effect does not refresh the duration.Additionally, Pyro Tonic now also resets the cooldown of Torchlight.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560226,
+          "description": "Dealing damage with <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> now grants <span class=\"item-number\">2</span><span class=\"item-number\">%</span> attack speed, stacking up to <span class=\"item-number\">12</span> times for <span class=\"item-number\">6</span> seconds. Application of this effect does not refresh the duration.<br /><br />Additionally, <span style=\"color: #FFFFFF; display: inline\">Pyro Tonic</span> now also resets the cooldown of <span style=\"color: #FFFFFF; display: inline\">Torchlight</span>."
+        }
+      ]
+    },
+    {
+      "id": 6856,
+      "name": "Tormentor",
+      "spellId": 800162,
+      "spellIds": [
+        800162
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_ammo_arrow_05",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34570
+      ],
+      "requiredIds": [],
+      "desc": "Fire a deadly bolt dealing cond(gt(SPS, SPH), 5+0+SPS*0.175, 5+0+SPH*0.175) Twilight Damage plus 63 + 87.5% ranged AP over 14 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800162,
+          "description": "Fire a deadly bolt dealing <span class=\"item-number\">cond(gt(SPS, SPH), 5+0+SPS*0.175, 5+0+SPH*0.175)</span> Twilight Damage plus <span class=\"item-number\">63</span> + <span class=\"item-number\">87.5% ranged AP</span> over <span class=\"item-number\">14</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6857,
+      "name": "Cinder and Ashes",
+      "spellId": 707317,
+      "spellIds": [
+        707317
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill26_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34544
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Purifier's Edge and Fiery Judgement by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707317,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> and <span style=\"color: #ffffff; display: inline\">Fiery Judgement</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6858,
+      "name": "Darkrider",
+      "spellId": 705453,
+      "spellIds": [
+        705453
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_skeletalwarhorse_01_brown",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7418,
+        30396
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Rage cost of Shadowblast, Vault, and Unleash the Hounds by -10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705453,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Shadowblast</span>, <span style=\"color: #ffffff; display: inline\">Vault</span>, and <span style=\"color: #ffffff; display: inline\">Unleash the Hounds</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": 7061,
+      "name": "Shadow Order",
+      "spellId": 680503,
+      "spellIds": [
+        680503,
+        681486
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Shadow_AntiShadow",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7595
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Shadow Brand by 20% and your hit rating by 3% of your Agility.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680503,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shadow Brand</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your hit rating by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your Agility."
+        },
+        {
+          "rank": 2,
+          "spellId": 681486,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shadow Brand</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> and your hit rating by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> of your Agility."
+        }
+      ]
+    },
+    {
+      "id": 7063,
+      "name": "Refined Combatant",
+      "spellId": 572770,
+      "spellIds": [
+        572770
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_OffensiveStance",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29951
+      ],
+      "requiredIds": [],
+      "desc": "Increases your expertise by 10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572770,
+          "description": "Increases your expertise by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 7064,
+      "name": "Noctis Protection",
+      "spellId": 681100,
+      "spellIds": [
+        681100
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_cascade_shadow",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7577
+      ],
+      "requiredIds": [],
+      "desc": "Casting Noctis Blade now applies a shield absorbing 166 + 200% Stamina + 10% AP damage for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681100,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Noctis Blade</span> now applies a shield absorbing <span class=\"item-number\">166</span> + <span class=\"item-number\">200% Stamina</span> + <span class=\"item-number\">10% AP</span> damage for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7066,
+      "name": "Torchlight",
+      "spellId": 503662,
+      "spellIds": [
+        503662
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_enchanting_70_pet_torch",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6857,
+        7599
+      ],
+      "requiredIds": [],
+      "desc": "Throw a torch at an enemy, dealing 166 + 30% AP + 45% fire SP Fire damage, and causing up to 5 of the next attacks you make against them to grant you Flames of Sin and increasing the duration by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503662,
+          "description": "Throw a torch at an enemy, dealing <span class=\"item-number\">166</span> + <span class=\"item-number\">30% AP</span> + <span class=\"item-number\">45% fire SP</span> Fire damage, and causing up to <span class=\"item-number\">5</span> of the next attacks you make against them to grant you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increasing the duration by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7068,
+      "name": "Burned Alive",
+      "spellId": 705478,
+      "spellIds": [
+        705478
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_FlameBlades",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4589,
+        34547
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 25% on enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705478,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 7074,
+      "name": "Hatred & Vitriol",
+      "spellId": 504470,
+      "spellIds": [
+        504470
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_CursedMonster_Yellow",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7068
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Stake now ignores enemy armor and its critical strikes refund half of its cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504470,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Stake</span> now ignores enemy armor and its critical strikes refund half of its cost."
+        }
+      ]
+    },
+    {
+      "id": 7075,
+      "name": "Strafing Shot",
+      "spellId": 705515,
+      "spellIds": [
+        705515
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3evasivefire",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6856
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with ranged abilities now spread Tormentor to a nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705515,
+          "description": "Critical strikes with ranged abilities now spread <span style=\"color: #FFFFFF; display: inline\">Tormentor</span> to a nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 7077,
+      "name": "Escape Artist",
+      "spellId": 705490,
+      "spellIds": [
+        705490
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_QuickRecovery",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7456
+      ],
+      "requiredIds": [],
+      "desc": "Your Daring Escape now resets the cooldown of Vault and generates 10 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705490,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Daring Escape</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Vault</span> and generates <span class=\"item-number\">10</span> Rage."
+        }
+      ]
+    },
+    {
+      "id": 7078,
+      "name": "Twilight Frenzy",
+      "spellId": 805751,
+      "spellIds": [
+        805751
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_ArrowRain_Warlock",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7075,
+        29373,
+        34573
+      ],
+      "requiredIds": [],
+      "desc": "Spin around, unable to stop moving for 5 seconds, firing shots at nearby enemies for 50% Ranged Weapon Damage plus cond(gt(SPS, SPH), 15+31+SPS*0.2+ranged AP*0.1, 15+31+SPH*0.2+ranged AP*0.1) as Twilight Damage.Can dodge and parry while active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805751,
+          "description": "Spin around, unable to stop moving for <span class=\"item-number\">5</span> seconds, firing shots at nearby enemies for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">cond(gt(SPS, SPH), 15+31+SPS*0.2+ranged AP*0.1, 15+31+SPH*0.2+ranged AP*0.1)</span> as Twilight Damage.<br /><br />Can dodge and parry while active."
+        }
+      ]
+    },
+    {
+      "id": 7093,
+      "name": "Renegade",
+      "spellId": 524812,
+      "spellIds": [
+        524812
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_sinistercalling",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7588,
+        30736
+      ],
+      "requiredIds": [],
+      "desc": "You now drop caltrops below you each time you use Vault that last 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524812,
+          "description": "You now drop caltrops below you each time you use <span style=\"color: #ffffff; display: inline\">Vault</span> that last <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7095,
+      "name": "Witching Shroud",
+      "spellId": 805770,
+      "spellIds": [
+        805770
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Sylvanas_Warlock",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7482,
+        34558
+      ],
+      "requiredIds": [],
+      "desc": "Enter a powerful stealth mode for 3 seconds, granting immunity to all harmful magic effects.Only usable for 10 seconds after being hit by a magical critical strike. Usable while stunned or feared.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805770,
+          "description": "Enter a powerful stealth mode for <span class=\"item-number\">3</span> seconds, granting immunity to all harmful magic effects.<br /><br />Only usable for <span class=\"item-number\">10</span> seconds after being hit by a magical critical strike. Usable while stunned or feared."
+        }
+      ]
+    },
+    {
+      "id": 7096,
+      "name": "Duskwood Renegade",
+      "spellId": 504677,
+      "spellIds": [
+        504677,
+        504891
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_zone_duskwood",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7598
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Burrow Bolt by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504677,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-5</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 504891,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7097,
+      "name": "Dusk Blade",
+      "spellId": 802020,
+      "spellIds": [
+        802020
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_passivemastery_(6)_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12263
+      ],
+      "requiredIds": [],
+      "desc": "Strike an enemy with both weapons, dealing Weapon Damage plus 10 + 15% shadow SP Shadow damage, piercing resistances. Heals for 25% of damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802020,
+          "description": "Strike an enemy with both weapons, dealing Weapon Damage plus <span class=\"item-number\">10</span> + <span class=\"item-number\">15% shadow SP</span> Shadow damage, piercing resistances. Heals for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 7414,
+      "name": "Unleash the Hounds",
+      "spellId": 807918,
+      "spellIds": [
+        807918
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Shadowhound_Summon_Icon",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Summon 1 Lesser Shadow Hound to aid you in combat for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807918,
+          "description": "Summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> to aid you in combat for <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7415,
+      "name": "Repulse",
+      "spellId": 680236,
+      "spellIds": [
+        680236
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(26)_Border",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29162,
+        34527,
+        34528
+      ],
+      "requiredIds": [],
+      "desc": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing 57 Shadow damage and knocking all affected targets back.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680236,
+          "description": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing <span class=\"item-number\">57</span> Shadow damage and knocking all affected targets back."
+        }
+      ]
+    },
+    {
+      "id": 7416,
+      "name": "Defender of Darkshire",
+      "spellId": 705531,
+      "spellIds": [
+        705531
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_shieldnobg_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6411,
+        30188
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with ranged auto attacks now increase the melee haste of your Shadow Hounds by 10% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705531,
+          "description": "Critical strikes with ranged auto attacks now increase the melee haste of your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7417,
+      "name": "Darkflock",
+      "spellId": 520270,
+      "spellIds": [
+        520270
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_13_summon_raven_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34540
+      ],
+      "requiredIds": [],
+      "desc": "Channel for 8 seconds, commanding a flock of crows to deal 50 + 15% ranged AP + 85% SP Shadow damage to enemies in a wide cone every 2 sec.Can channel while moving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520270,
+          "description": "Channel for <span class=\"item-number\">8</span> seconds, commanding a flock of crows to deal <span class=\"item-number\">50</span> + <span class=\"item-number\">15% ranged AP</span> + <span class=\"item-number\">85% SP</span> Shadow damage to enemies in a wide cone every <span class=\"item-number\">2</span> sec.<br /><br />Can channel while moving."
+        }
+      ]
+    },
+    {
+      "id": 7418,
+      "name": "Trapper",
+      "spellId": 681180,
+      "spellIds": [
+        681180
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_steeltrap",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7875
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Trap spells by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681180,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Trap</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7420,
+      "name": "Low Dawn",
+      "spellId": 680247,
+      "spellIds": [
+        680247
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_gun_b_03_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31161,
+        34530,
+        34532
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Sixfold Shot by 25% and causes it to channel 0.5 sec quicker.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680247,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Sixfold Shot</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and causes it to channel <span class=\"item-number\">0.5</span> sec quicker."
+        }
+      ]
+    },
+    {
+      "id": 7422,
+      "name": "Rearmament",
+      "spellId": 805738,
+      "spellIds": [
+        805738
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowbombs_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6379,
+        34532
+      ],
+      "requiredIds": [],
+      "desc": "Arm yourself against evil, resetting the cooldown of all Traps and Decimate.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805738,
+          "description": "Arm yourself against evil, resetting the cooldown of all <span style=\"color: #ffffff; display: inline\">Traps</span> and <span style=\"color: #FFFFFF; display: inline\">Decimate</span>."
+        }
+      ]
+    },
+    {
+      "id": 7424,
+      "name": "Evil Never Sleeps",
+      "spellId": 804185,
+      "spellIds": [
+        804185
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SpectralSight",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6417,
+        6457
+      ],
+      "requiredIds": [],
+      "desc": "In the night time, your Agility is increased by 4%.In the day time, your haste is increased by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804185,
+          "description": "In the night time, your Agility is increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.<br /><br />In the day time, your haste is increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7427,
+      "name": "Feast of Talons",
+      "spellId": 500056,
+      "spellIds": [
+        500056
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mount_fireravengodmountpurple",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34531
+      ],
+      "requiredIds": [],
+      "desc": "Striking at least 5 enemies with Darkflock now causes you to unleash a flock of crows around each enemy struck, dealing 762 + 78.75% SP + 45% ranged AP Twilight Damage over 9 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500056,
+          "description": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Darkflock</span> now causes you to unleash a flock of crows around each enemy struck, dealing <span class=\"item-number\">762</span> + <span class=\"item-number\">78.75% SP</span> + <span class=\"item-number\">45% ranged AP</span> Twilight Damage over <span class=\"item-number\">9</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7430,
+      "name": "Anguish",
+      "spellId": 504742,
+      "spellIds": [
+        504742
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_DemonHand_Red",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7417
+      ],
+      "requiredIds": [],
+      "desc": "Your Shadow damage dealt now has a 5% chance to reduce the channel time of your next Darkflock within 15 seconds by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504742,
+          "description": "Your Shadow damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reduce the channel time of your next <span style=\"color: #ffffff; display: inline\">Darkflock</span> within <span class=\"item-number\">15</span> seconds by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7451,
+      "name": "Plagueland Survivalist",
+      "spellId": 681169,
+      "spellIds": [
+        681169
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_shadowworld_Border",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6622,
+        30187
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of disease effects on you by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681169,
+          "description": "Reduces the duration of disease effects on you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7456,
+      "name": "Daring Escape",
+      "spellId": 500086,
+      "spellIds": [
+        500086
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3vault",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11171,
+        29371,
+        34572
+      ],
+      "requiredIds": [],
+      "desc": "Jump backwards, causing all ranged attacks to miss you for 2 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500086,
+          "description": "Jump backwards, causing all ranged attacks to miss you for <span class=\"item-number\">2</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7458,
+      "name": "Arbalest Mastery",
+      "spellId": 706240,
+      "spellIds": [
+        706240
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\artifactability_marksmanhunter_legacyofthewindrunners",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5678
+      ],
+      "requiredIds": [],
+      "desc": "Each subsequent shot of a Witchbane cast deals 15% more damage, up to a maximum of 150%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706240,
+          "description": "Each subsequent shot of a <span style=\"color: #FFFFFF; display: inline\">Witchbane</span> cast deals <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more damage, up to a maximum of <span class=\"item-number\">150</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7460,
+      "name": "One Shot",
+      "spellId": 680331,
+      "spellIds": [
+        680331
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_bow_1h_draenorraid_d_01",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6615
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Heartseeking Bolt by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680331,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Heartseeking Bolt</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7461,
+      "name": "Bane of Witches",
+      "spellId": 500055,
+      "spellIds": [
+        500055
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_darkness",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6615
+      ],
+      "requiredIds": [],
+      "desc": "Casting Heartseeking Bolt now increases your Physical damage dealt by 10% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500055,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Heartseeking Bolt</span> now increases your Physical damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7569,
+      "name": "Noctis Blade",
+      "spellId": 802280,
+      "spellIds": [
+        802280
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_brokensword_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Strike an enemy, dealing 100% Weapon Damage plus 26, scaling with your parry rating, and healing you for 50% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802280,
+          "description": "Strike an enemy, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">26</span>, scaling with your parry rating, and healing you for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 7571,
+      "name": "Dark Riposte",
+      "spellId": 503659,
+      "spellIds": [
+        503659
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_110",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31213
+      ],
+      "requiredIds": [],
+      "desc": "Parrying enemy attacks now restores 5% of your missing health and Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503659,
+          "description": "Parrying enemy attacks now restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your missing health and Rage."
+        }
+      ]
+    },
+    {
+      "id": 7574,
+      "name": "Shadow Brand",
+      "spellId": 680516,
+      "spellIds": [
+        680516
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_shadow_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7569
+      ],
+      "requiredIds": [],
+      "desc": "Direct ability damage now applies Shadow Brand to enemies.Shadow BrandMarks the target for 12 seconds, dealing 36 High Threat Shadow Damage over 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680516,
+          "description": "Direct ability damage now applies <span style=\"color: #ffffff; display: inline\">Shadow Brand</span> to enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_shadow_border\" /><span class=\"name\">Shadow Brand</span></div><span class=\"desc\">Marks the target for <span class=\"item-number\">12</span> seconds, dealing <span class=\"item-number\">36</span> High Threat Shadow Damage over <span class=\"item-number\">12</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7575,
+      "name": "March of the Black King",
+      "spellId": 681095,
+      "spellIds": [
+        681095
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_shadowclones_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7595
+      ],
+      "requiredIds": [],
+      "desc": "Expel darkness from within you, dealing 55 Shadow damage to nearby enemies over 10 seconds.Generates 5 Rage every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681095,
+          "description": "Expel darkness from within you, dealing <span class=\"item-number\">55</span> Shadow damage to nearby enemies over <span class=\"item-number\">10</span> seconds.<br /><br />Generates <span class=\"item-number\">5</span> Rage every <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7577,
+      "name": "Witchblight",
+      "spellId": 680494,
+      "spellIds": [
+        680494
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowbeam_(2)_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7061,
+        7594
+      ],
+      "requiredIds": [],
+      "desc": "Explode with dark energy, dealing 51 + 50% shadow SP + 20% AP Shadow damage to up to to 10 nearby enemies and healing you for 20% of your maximum health.Each target struck is guaranteed to miss their next instance of damage within 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680494,
+          "description": "Explode with dark energy, dealing <span class=\"item-number\">51</span> + <span class=\"item-number\">50% shadow SP</span> + <span class=\"item-number\">20% AP</span> Shadow damage to up to to <span class=\"item-number\">10</span> nearby enemies and healing you for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your maximum health.<br /><br />Each target struck is guaranteed to miss their next instance of damage within <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7579,
+      "name": "Guard Strike",
+      "spellId": 804432,
+      "spellIds": [
+        804432
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_qiraj_hiltornate",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31213
+      ],
+      "requiredIds": [],
+      "desc": "Bash an enemy with your weapon's hilt, interrupting them and preventing any spell from that school of magic from being cast for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804432,
+          "description": "Bash an enemy with your weapon's hilt, interrupting them and preventing any spell from that school of magic from being cast for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7580,
+      "name": "Shadowy Tendrils",
+      "spellId": 707407,
+      "spellIds": [
+        707407
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_88",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        4550
+      ],
+      "requiredIds": [],
+      "desc": "Your Grasp of the Undying now strikes 2 additional nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707407,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Grasp of the Undying</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 7582,
+      "name": "Witch Knight",
+      "spellId": 805346,
+      "spellIds": [
+        805346
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_161",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7633,
+        30853
+      ],
+      "requiredIds": [],
+      "desc": "Direct ability damage with a two-handed weapon now reduces the remaining cooldown of your Tonics by -1 sec and grants Witching.WitchingIncreases magic resistances by 10%, and melee haste by 10% for 8 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805346,
+          "description": "Direct ability damage with a two-handed weapon now reduces the remaining cooldown of your <span style=\"color: #ffffff; display: inline\">Tonics</span> by <span class=\"item-number\">-1</span> sec and grants <span style=\"color: #ffffff; display: inline\">Witching</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_sword_161\" /><span class=\"name\">Witching</span></div><span class=\"desc\">Increases magic resistances by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, and melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">3</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7583,
+      "name": "Bulwark of Darkness",
+      "spellId": 680496,
+      "spellIds": [
+        680496
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SealOfKings",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7571,
+        7579
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Dawn Blade is now increased by 5% for each stack of Pommel Smash on the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680496,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> is now increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #ffffff; display: inline\">Pommel Smash</span> on the target."
+        }
+      ]
+    },
+    {
+      "id": 7584,
+      "name": "Chains of Darkness",
+      "spellId": 680521,
+      "spellIds": [
+        680521
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowchains_Border",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7590,
+        11375,
+        30661
+      ],
+      "requiredIds": [],
+      "desc": "Pull all nearby enemies to you, dealing 84 + 55% shadow SP + 15% AP Shadow damage and taunting them for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680521,
+          "description": "Pull all nearby enemies to you, dealing <span class=\"item-number\">84</span> + <span class=\"item-number\">55% shadow SP</span> + <span class=\"item-number\">15% AP</span> Shadow damage and taunting them for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7585,
+      "name": "Destroyer of Evil",
+      "spellId": 680528,
+      "spellIds": [
+        680528
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_shadow_spell_03_Border",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7587
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Dawn Blade now deals an additional 20% of the damage dealt as Twilight Damage every 1 sec for 3 seconds.Shadow BrandMarks the target for 12 seconds, dealing 36 High Threat Shadow Damage over 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680528,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> now deals an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt as Twilight Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_shadow_border\" /><span class=\"name\">Shadow Brand</span></div><span class=\"desc\">Marks the target for <span class=\"item-number\">12</span> seconds, dealing <span class=\"item-number\">36</span> High Threat Shadow Damage over <span class=\"item-number\">12</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7586,
+      "name": "Desecrate",
+      "spellId": 680518,
+      "spellIds": [
+        680518
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_sword_b_05_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6613
+      ],
+      "requiredIds": [],
+      "desc": "Desecrate up to 8 enemies in front of you, dealing Weapon Damage plus 18 as Shadow damage, piercing resistances.Only usable after avoiding an attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680518,
+          "description": "Desecrate up to <span class=\"item-number\">8</span> enemies in front of you, dealing Weapon Damage plus <span class=\"item-number\">18</span> as Shadow damage, piercing resistances.<br /><br />Only usable after avoiding an attack."
+        }
+      ]
+    },
+    {
+      "id": 7587,
+      "name": "Clinch Fighting",
+      "spellId": 680492,
+      "spellIds": [
+        680492
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_blood_c_03",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7064,
+        30661
+      ],
+      "requiredIds": [],
+      "desc": "Attacks which would otherwise kill you now heal you for 50% maximum health and increases the damage of Noctis Blade by 50% for 6 seconds.Can only occur once every 2 min.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680492,
+          "description": "Attacks which would otherwise kill you now heal you for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> maximum health and increases the damage of <span style=\"color: #ffffff; display: inline\">Noctis Blade</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.<br /><br />Can only occur once every <span class=\"item-number\">2</span> min."
+        }
+      ]
+    },
+    {
+      "id": 7588,
+      "name": "Strategist",
+      "spellId": 681156,
+      "spellIds": [
+        681156
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_heroicleap",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6529,
+        34588
+      ],
+      "requiredIds": [],
+      "desc": "Your Vault now regenerates 5% maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681156,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Vault</span> now regenerates <span class=\"item-number\">5</span><span class=\"item-number\">%</span> maximum mana."
+        }
+      ]
+    },
+    {
+      "id": 7589,
+      "name": "Undying",
+      "spellId": 680504,
+      "spellIds": [
+        680504
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7590,
+        11375
+      ],
+      "requiredIds": [],
+      "desc": "While below 75% maximum health, Dawn Blade now increases the critical strike chance of Noctis Blade by 40% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680504,
+          "description": "While below <span class=\"item-number\">75%</span> maximum health, <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> now increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Noctis Blade</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7591,
+      "name": "Secret of Raven Hill",
+      "spellId": 680513,
+      "spellIds": [
+        680513
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowsilence_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7582
+      ],
+      "requiredIds": [],
+      "desc": "Drinking a Tonic will transform your Dawn Blade into powerful damaging spells with unique effects for 30 seconds based on the last Tonic consumed.Surging BladeSlash an enemy for 280% Weapon Damage and increase your haste by 15% for 10 seconds.Witchblood FeverCurse all nearby enemies, dealing 104 + 12% AP Shadow damage every 1 sec for 8 seconds and increasing their Magic damage taken from you by 3%.Enemies affected by Witchblood Fever can be seen while stealthed.Dark PerilCrush nearby enemies, dealing 241 + 24% AP Shadow damage and stunning them for 3 seconds.Vampiric RageLeech the life from 10 enemies within 8 yds, dealing 279 + 28% AP Shadow damage and healing for 90% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680513,
+          "description": "Drinking a <span style=\"color: #ffffff; display: inline\">Tonic</span> will transform your <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> into powerful damaging spells with unique effects for <span class=\"item-number\">30</span> seconds based on the last <span style=\"color: #FFFFFF; display: inline\">Tonic</span> consumed.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_sword_1h_artifactruneblade_d_06\" /><span class=\"name\">Surging Blade</span></div><span class=\"desc\">Slash an enemy for <span class=\"item-number\">280</span><span class=\"item-number\">%</span> Weapon Damage and increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_shadowwhirl_border\" /><span class=\"name\">Witchblood Fever</span></div><span class=\"desc\">Curse all nearby enemies, dealing <span class=\"item-number\">104</span> + <span class=\"item-number\">12% AP</span> Shadow damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">8</span> seconds and increasing their Magic damage taken from you by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Enemies affected by <span style=\"color: #FFFFFF; display: inline\">Witchblood Fever</span> can be seen while stealthed.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Dark Peril</span></div><span class=\"desc\">Crush nearby enemies, dealing <span class=\"item-number\">241</span> + <span class=\"item-number\">24% AP</span> Shadow damage and stunning them for <span class=\"item-number\">3</span> seconds.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_blood_spell_04_border\" /><span class=\"name\">Vampiric Rage</span></div><span class=\"desc\">Leech the life from <span class=\"item-number\">10</span> enemies within <span class=\"item-number\">8</span> yds, dealing <span class=\"item-number\">279</span> + <span class=\"item-number\">28% AP</span> Shadow damage and healing for <span class=\"item-number\">90%</span> of the damage dealt.</span></div><br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 7592,
+      "name": "Night King",
+      "spellId": 707067,
+      "spellIds": [
+        707067
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(72)_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7584,
+        7589
+      ],
+      "requiredIds": [],
+      "desc": "Noctis Blade now consumes Shadow Brand to deal 50% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707067,
+          "description": "<span style=\"color: #ffffff; display: inline\">Noctis Blade</span> now consumes <span style=\"color: #ffffff; display: inline\">Shadow Brand</span> to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": 7594,
+      "name": "Wide Swings",
+      "spellId": 681098,
+      "spellIds": [
+        681098
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Weapon_Shortblade_28",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6613
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Noctis Blade and Grasp of the Undying by 20% on enemies affected by Shadow Brand.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681098,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Noctis Blade</span> and <span style=\"color: #ffffff; display: inline\">Grasp of the Undying</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> on enemies affected by <span style=\"color: #ffffff; display: inline\">Shadow Brand</span>."
+        }
+      ]
+    },
+    {
+      "id": 7595,
+      "name": "Dark Chivalry",
+      "spellId": 680525,
+      "spellIds": [
+        680525
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowthrow_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7574
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor contribution from mail items by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680525,
+          "description": "Increases your Armor contribution from mail items by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7596,
+      "name": "Foresight",
+      "spellId": 680599,
+      "spellIds": [
+        680599
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(50)_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7587
+      ],
+      "requiredIds": [],
+      "desc": "Your direct Physical critical strikes now grant allies Replenishment.In addition, Dawn Blade is now guaranteed to critically strike against Undead or Demons.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680599,
+          "description": "Your direct Physical critical strikes now grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> is now guaranteed to critically strike against Undead or Demons.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Restores <span class=\"item-number\">1</span><span class=\"item-number\">%</span> maximum mana every <span class=\"item-number\">5</span> sec to allies within <span class=\"item-number\">100</span> yds for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7597,
+      "name": "Blade of the Misbegotten",
+      "spellId": 680530,
+      "spellIds": [
+        680530
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Weapon_Shortblade_60",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7592
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Dawn Blade now increases your health by 15% of the damage dealt for 8 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680530,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> now increases your health by <span class=\"item-number\">15%</span> of the damage dealt for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7598,
+      "name": "Protector of Darkshire",
+      "spellId": 300575,
+      "spellIds": [
+        300575
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_Cleave_Rogue",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29951,
+        30851
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Dawn Blade and Dusk Blade by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300575,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> and <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7599,
+      "name": "Scarlet Inquisitor",
+      "spellId": 301338,
+      "spellIds": [
+        301338
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29901
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost of your Traps and Brands by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301338,
+          "description": "Reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Traps</span> and <span style=\"color: #ffffff; display: inline\">Brands</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7601,
+      "name": "Cycle of Despair",
+      "spellId": 503664,
+      "spellIds": [
+        503664
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_moon_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6625
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of stacks of Dawn and Dusk by 10.In addition, reaching 20 stacks with both buffs will consume them to grant you 20% increased damage, melee haste, movement speed, and critical strike chance for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503664,
+          "description": "Increases the amount of stacks of <span style=\"color: #ffffff; display: inline\">Dawn</span> and <span style=\"color: #ffffff; display: inline\">Dusk</span> by <span class=\"item-number\">10</span>.<br /><br />In addition, reaching <span class=\"item-number\">20</span> stacks with both buffs will consume them to grant you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage, melee haste, movement speed, and critical strike chance for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7604,
+      "name": "Purity & Wickedness",
+      "spellId": 680544,
+      "spellIds": [
+        680544
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_01dual",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7605
+      ],
+      "requiredIds": [],
+      "desc": "Main-hand auto attacks now apply a stack of Purity to the target, increasing the Fire and Holy damage you deal to them by 2% per stack, stacking 6 times.Off-hand auto attacks now apply a stack of Wickedness to the target, increasing the Shadow and Physical damage you deal to them by 2% per stack, stacking 6 times.Torchlight can now consume these stacks to deal 1028 + 25% holy SP + 45% AP Holyflame or Shadowstrike damage to the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680544,
+          "description": "Main-hand auto attacks now apply a stack of <span style=\"color: #FFFFFF; display: inline\">Purity</span> to the target, increasing the Fire and Holy damage you deal to them by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack, stacking <span class=\"item-number\">6</span> times.<br /><br />Off-hand auto attacks now apply a stack of <span style=\"color: #FFFFFF; display: inline\">Wickedness</span> to the target, increasing the Shadow and Physical damage you deal to them by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack, stacking <span class=\"item-number\">6</span> times.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Torchlight</span> can now consume these stacks to deal <span class=\"item-number\">1028</span> + <span class=\"item-number\">25% holy SP</span> + <span class=\"item-number\">45% AP</span> Holyflame or Shadowstrike damage to the target."
+        }
+      ]
+    },
+    {
+      "id": 7605,
+      "name": "Lightbringer",
+      "spellId": 680538,
+      "spellIds": [
+        680538
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyThrow_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12546,
+        34541,
+        34546
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Dusk Blade now has a 15% chance to reduce the mana cost of your next Purifier's Edge by -100%. This effect has a 25% chance to not be consumed by Purifier's Edge.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680538,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reduce the mana cost of your next <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>. This effect has a <span class=\"item-number\">25%</span> chance to not be consumed by <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span>."
+        }
+      ]
+    },
+    {
+      "id": 7630,
+      "name": "Shadowstorm",
+      "spellId": 520277,
+      "spellIds": [
+        520277
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowstab_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7585,
+        7596
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Pommel Smash now has a 20% chance to trigger a Shadowstorm.ShadowstormLeeches 350 + 30% SP + 10% AP health from enemies within 8 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520277,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Pommel Smash</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Shadowstorm</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_shadowstab_border\" /><span class=\"name\">Shadowstorm</span></div><span class=\"desc\">Leeches <span class=\"item-number\">350</span> + <span class=\"item-number\">30% SP</span> + <span class=\"item-number\">10% AP</span> health from enemies within <span class=\"item-number\">8</span> yds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7633,
+      "name": "Witching Idol",
+      "spellId": 804051,
+      "spellIds": [
+        804051
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_80_witch_fetishofthequestioningmind",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7064,
+        7583
+      ],
+      "requiredIds": [],
+      "desc": "Drop a Witching Idol that periodically dispels fear, sleep, and charm effects every 3 sec from party members within 20 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804051,
+          "description": "Drop a <span style=\"color: #ffffff; display: inline\">Witching Idol</span> that periodically dispels fear, sleep, and charm effects every <span class=\"item-number\">3</span> sec from party members within <span class=\"item-number\">20</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 7875,
+      "name": "Expert Shot",
+      "spellId": 705467,
+      "spellIds": [
+        705467,
+        707889
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_hisek_aim",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9414
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Shadowblast by 10% and your hit chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705467,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowblast</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707889,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowblast</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 8005,
+      "name": "Lethal Pursuit",
+      "spellId": 572530,
+      "spellIds": [
+        572530
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_ironmaidens_darkhunt",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7420,
+        7422,
+        34531
+      ],
+      "requiredIds": [],
+      "desc": "Shadow Rage now also grants your Shadow Hounds 10% increased haste and it now stacks 3 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572530,
+          "description": "<span style=\"color: #ffffff; display: inline\">Shadow Rage</span> now also grants your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased haste and it now stacks <span class=\"item-number\">3</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": 9414,
+      "name": "Houndmaster's Call",
+      "spellId": 802273,
+      "spellIds": [
+        802273
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowroar_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7414
+      ],
+      "requiredIds": [],
+      "desc": "Command your Shadow Hounds to leap upon an enemy target, dealing two strikes for 1164 + 30% ranged AP Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802273,
+          "description": "Command your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> to leap upon an enemy target, dealing two strikes for <span class=\"item-number\">1164</span> + <span class=\"item-number\">30% ranged AP</span> Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": 9415,
+      "name": "Resilient to Darkness",
+      "spellId": 681092,
+      "spellIds": [
+        681092
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology_engravedscimitarpommel",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7588,
+        9417
+      ],
+      "requiredIds": [],
+      "desc": "Direct Magic damage taken now heals you and restores mana to you equal to 3% of the damage done.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681092,
+          "description": "Direct Magic damage taken now heals you and restores mana to you equal to <span class=\"item-number\">3%</span> of the damage done."
+        }
+      ]
+    },
+    {
+      "id": 9417,
+      "name": "Three Sevens",
+      "spellId": 300572,
+      "spellIds": [
+        300572
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_72_creating_shadow_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6529
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration that Traps last on the ground by 7 sec, reduces the cooldown of Burrow Bolt by -7 sec, and reduces the cost of Dawn Blade by -7.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300572,
+          "description": "Increases the duration that <span style=\"color: #ffffff; display: inline\">Traps</span> last on the ground by <span class=\"item-number\">7</span> sec, reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-7</span> sec, and reduces the cost of <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> by <span class=\"item-number\">-7</span>."
+        }
+      ]
+    },
+    {
+      "id": 9750,
+      "name": "Damnation",
+      "spellId": 520062,
+      "spellIds": [
+        520062
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill18_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5076
+      ],
+      "requiredIds": [
+        4010,
+        29150
+      ],
+      "desc": "Deplete your rage to shoot a powerful bolt dealing 130% Weapon Damage plus 6 Twilight Damage and converting each point of Rage into additional damage.Only usable on enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520062,
+          "description": "Deplete your rage to shoot a powerful bolt dealing <span class=\"item-number\">130</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">6</span> Twilight Damage and converting each point of Rage into additional damage.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 9751,
+      "name": "Wicked Intent",
+      "spellId": 504645,
+      "spellIds": [
+        504645
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_61",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29947
+      ],
+      "requiredIds": [],
+      "desc": "Casting Desecrate now has a 15% chance to reset the cooldown of Noctis Blade.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504645,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Desecrate</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #FFFFFF; display: inline\">Noctis Blade</span>."
+        }
+      ]
+    },
+    {
+      "id": 11197,
+      "name": "Stake",
+      "spellId": 680537,
+      "spellIds": [
+        680537
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_stake_02_b",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5393,
+        11393,
+        34545
+      ],
+      "requiredIds": [],
+      "desc": "Drive your concealed stake into the chest of an injured enemy, dealing 197 + 67.5% AP Physical damage.Grants Flames of Sin and increases the duration by 3 sec.Only usable on enemies at or below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680537,
+          "description": "Drive your concealed stake into the chest of an injured enemy, dealing <span class=\"item-number\">197</span> + <span class=\"item-number\">67.5% AP</span> Physical damage.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increases the duration by <span class=\"item-number\">3</span> sec.<br /><br />Only usable on enemies at or below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 11218,
+      "name": "Dark Souls",
+      "spellId": 802011,
+      "spellIds": [
+        802011
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowbreath_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34555,
+        34560
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Tonics by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802011,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Tonics</span> by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 12263,
+      "name": "Hunt",
+      "spellId": 802006,
+      "spellIds": [
+        802006
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_run_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4012,
+        6622
+      ],
+      "desc": "2 Charges, 25 sec rechargeCharge an enemy, slowing their movement speed by -70% for 2 seconds and generating 20 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802006,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">25</span> sec recharge</span><br />Charge an enemy, slowing their movement speed by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">2</span> seconds and generating <span class=\"item-number\">20</span> Rage."
+        }
+      ]
+    },
+    {
+      "id": 29150,
+      "name": "Vault",
+      "spellId": 500085,
+      "spellIds": [
+        500085
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_vengefulretreat2",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Dash in the direction you are moving. Distance scales with movement speed.Not usable while rooted.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500085,
+          "description": "Dash in the direction you are moving. Distance scales with movement speed.<br /><br />Not usable while rooted."
+        }
+      ]
+    },
+    {
+      "id": 29156,
+      "name": "Heartless",
+      "spellId": 680326,
+      "spellIds": [
+        680326,
+        680327
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_boss_kilrogg_heartseeker",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7461,
+        7460
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Physical ranged critical damage by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680326,
+          "description": "Increases your Physical ranged critical damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 680327,
+          "description": "Increases your Physical ranged critical damage by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29159,
+      "name": "Houndmaster",
+      "spellId": 705450,
+      "spellIds": [
+        705450
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_HowlOfTerror_Purple",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7416,
+        29984,
+        34527
+      ],
+      "requiredIds": [],
+      "desc": "Using Houndmaster's Call summons 1 Lesser Shadow Hound for 15 seconds that leaps at the target and deals 217 Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705450,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span> summons <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds that leaps at the target and deals <span class=\"item-number\">217</span> Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": 29161,
+      "name": "Pure Agony",
+      "spellId": 300789,
+      "spellIds": [
+        300789
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_darkness",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30396
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of Quickdraw by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300789,
+          "description": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Quickdraw</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29163,
+      "name": "Expulsion of Evil",
+      "spellId": 139778,
+      "spellIds": [
+        139778
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_DarkHand_Sha",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6334
+      ],
+      "requiredIds": [],
+      "desc": "Direct ranged attacks and abilities now have a 5% chance to reset the cooldown of Houndmaster's Call.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 139778,
+          "description": "Direct ranged attacks and abilities now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span>."
+        }
+      ]
+    },
+    {
+      "id": 29277,
+      "name": "Enchanted Bolts",
+      "spellId": 520548,
+      "spellIds": [
+        520548
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill47_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7078,
+        29156
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Magic damage dealt by 5% and your Armor penetration by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520548,
+          "description": "Increases your Magic damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your Armor penetration by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29371,
+      "name": "Neverending Pursuit",
+      "spellId": 524970,
+      "spellIds": [
+        524970
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_triumvirate_darknaaru",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9750
+      ],
+      "requiredIds": [],
+      "desc": "Critically striking with Damnation now refunds 40 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524970,
+          "description": "Critically striking with <span style=\"color: #FFFFFF; display: inline\">Damnation</span> now refunds <span class=\"item-number\">40</span> Rage."
+        }
+      ]
+    },
+    {
+      "id": 29372,
+      "name": "Heartseeking Bolt",
+      "spellId": 805754,
+      "spellIds": [
+        805754
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_shadowarrow_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5076,
+        34570
+      ],
+      "requiredIds": [],
+      "desc": "Charge up a powerful bolt that deals 200% Ranged Weapon Damage plus 40 + 50% ranged AP + 30% shadow SP to an enemy and reduces their healing received by -30% for 10 seconds.Generates Rage based on the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805754,
+          "description": "Charge up a powerful bolt that deals <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">40</span> + <span class=\"item-number\">50% ranged AP</span> + <span class=\"item-number\">30% shadow SP</span> to an enemy and reduces their healing received by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Generates Rage based on the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 29901,
+      "name": "Fiery Judgement",
+      "spellId": 802140,
+      "spellIds": [
+        802140
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(37)_Border",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29907,
+        29953
+      ],
+      "requiredIds": [],
+      "desc": "Judge an enemy, dealing 361 + 40% AP + 100% fire SP Fire damage to them and nearby enemies.Grants Flames of Sin or increases the duration by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802140,
+          "description": "Judge an enemy, dealing <span class=\"item-number\">361</span> + <span class=\"item-number\">40% AP</span> + <span class=\"item-number\">100% fire SP</span> Fire damage to them and nearby enemies.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> or increases the duration by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29904,
+      "name": "Dark Juggernaut",
+      "spellId": 560208,
+      "spellIds": [
+        560208
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowentagle_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29947
+      ],
+      "requiredIds": [],
+      "desc": "Desecrate now restores 10 + 20% shadow SP + 10% AP health plus an additional 1% maximum health for each target struck affected by Shadow Brand.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560208,
+          "description": "<span style=\"color: #ffffff; display: inline\">Desecrate</span> now restores <span class=\"item-number\">10</span> + <span class=\"item-number\">20% shadow SP</span> + <span class=\"item-number\">10% AP</span> health plus an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> maximum health for each target struck affected by <span style=\"color: #ffffff; display: inline\">Shadow Brand</span>."
+        }
+      ]
+    },
+    {
+      "id": 29907,
+      "name": "Purifier's Edge",
+      "spellId": 802019,
+      "spellIds": [
+        802019
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_assassinskill28_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30851
+      ],
+      "requiredIds": [],
+      "desc": "Strike an enemy with searing blades, dealing Weapon Damage plus 20 with both weapons as Fire damage.Grants Flames of Sin or increases the duration by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802019,
+          "description": "Strike an enemy with searing blades, dealing Weapon Damage plus <span class=\"item-number\">20</span> with both weapons as Fire damage.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> or increases the duration by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29947,
+      "name": "Knight's Seal",
+      "spellId": 680498,
+      "spellIds": [
+        680498
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ShadowCatcher_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7586
+      ],
+      "requiredIds": [],
+      "desc": "Curse an enemy, dealing 66 + 19.2% shadow SP + 14.6% AP Shadow damage every 2 sec and applying Dark Oath to you, reducing all damage taken by -5% for 8 seconds.Your next Desecrate within 8 seconds now restores 15% of your maximum health and mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680498,
+          "description": "Curse an enemy, dealing <span class=\"item-number\">66</span> + <span class=\"item-number\">19.2% shadow SP</span> + <span class=\"item-number\">14.6% AP</span> Shadow damage every <span class=\"item-number\">2</span> sec and applying <span style=\"color: #ffffff; display: inline\">Dark Oath</span> to you, reducing all damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Desecrate</span> within <span class=\"item-number\">8</span> seconds now restores <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum health and mana."
+        }
+      ]
+    },
+    {
+      "id": 29949,
+      "name": "Gaze of the Black Knight",
+      "spellId": 802138,
+      "spellIds": [
+        802138
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\gazeoftheblackknight",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7630
+      ],
+      "requiredIds": [],
+      "desc": "Apply a dark shield to yourself, absorbing 3255 + 700% Stamina + 41% AP damage and then gaze upon your party members, causing 25% of the damage they take to be transferred to you for 12 seconds.Damage which reduces your health below 20% will break the effect.Usable while stunned.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802138,
+          "description": "Apply a dark shield to yourself, absorbing <span class=\"item-number\">3255</span> + <span class=\"item-number\">700% Stamina</span> + <span class=\"item-number\">41% AP</span> damage and then gaze upon your party members, causing <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of the damage they take to be transferred to you for <span class=\"item-number\">12</span> seconds.<br /><br />Damage which reduces your health below <span class=\"item-number\">20</span><span class=\"item-number\">%</span> will break the effect.<br /><br />Usable while stunned."
+        }
+      ]
+    },
+    {
+      "id": 29950,
+      "name": "Darkslayer's Lantern",
+      "spellId": 802139,
+      "spellIds": [
+        802139
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_trinket6oih_lanternb1",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7063,
+        29988
+      ],
+      "requiredIds": [],
+      "desc": "Empower a lantern with your Flames of Sin and let it shine, dealing 291 + 15% AP Fire damage and stunning all enemies within 5 yds for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802139,
+          "description": "Empower a lantern with your <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and let it shine, dealing <span class=\"item-number\">291</span> + <span class=\"item-number\">15% AP</span> Fire damage and stunning all enemies within <span class=\"item-number\">5</span> yds for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29951,
+      "name": "Brooding Hatred",
+      "spellId": 301251,
+      "spellIds": [
+        301251,
+        301362
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7097
+      ],
+      "requiredIds": [],
+      "desc": "Increases your off-hand Weapon Damage by 20% and increases your chance to hit by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301251,
+          "description": "Increases your off-hand Weapon Damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301362,
+          "description": "Increases your off-hand Weapon Damage by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29952,
+      "name": "Trap Card",
+      "spellId": 680253,
+      "spellIds": [
+        680253
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_tarot_6omagecard",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6326
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Traps by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680253,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Traps</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29953,
+      "name": "Flexible Fighter",
+      "spellId": 681341,
+      "spellIds": [
+        681341
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_rollthebones02",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30851
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility by 6%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681341,
+          "description": "Increases your Agility by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29984,
+      "name": "Kennel Master",
+      "spellId": 706365,
+      "spellIds": [
+        706365,
+        707891
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Box_PetCarrier_01",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30188
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unleash The Hounds now has a 25% chance to summon an additional Lesser Shadow Hound for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706365,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unleash The Hounds</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to summon an additional <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds."
+        },
+        {
+          "rank": 2,
+          "spellId": 707891,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unleash The Hounds</span> now has a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to summon an additional <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29986,
+      "name": "Vampiric Tonic",
+      "spellId": 802276,
+      "spellIds": [
+        802276
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_potione5",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11218,
+        34556
+      ],
+      "requiredIds": [],
+      "desc": "Drink a vampiric tonic, allowing Physical damage dealt to heal you equal to 20% of the damage dealt for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802276,
+          "description": "Drink a vampiric tonic, allowing Physical damage dealt to heal you equal to <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt for <span class=\"item-number\">10</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29988,
+      "name": "Smite Evil",
+      "spellId": 802004,
+      "spellIds": [
+        802004
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_BlessedResillience",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29951
+      ],
+      "requiredIds": [],
+      "desc": "Strike an enemy with your blade, dealing Weapon Damage plus 25 as Holy damage to them and 5 nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802004,
+          "description": "Strike an enemy with your blade, dealing Weapon Damage plus <span class=\"item-number\">25</span> as Holy damage to them and <span class=\"item-number\">5</span> nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 30071,
+      "name": "Heavy Crossbows",
+      "spellId": 503681,
+      "spellIds": [
+        503681
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_weapon_crossbow_17",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7459,
+        12259,
+        30133
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Darkslayer by 50%, but increases its cast time by 0.5 sec.Your Heartseeking Bolt and Darkslayer now have a 25% chance to strike an additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503681,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkslayer</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but increases its cast time by <span class=\"item-number\">0.5</span> sec.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Heartseeking Bolt</span> and <span style=\"color: #ffffff; display: inline\">Darkslayer</span> now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike an additional time."
+        }
+      ]
+    },
+    {
+      "id": 30133,
+      "name": "Everything You Have",
+      "spellId": 503680,
+      "spellIds": [
+        503680
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_plate_pvpdeathknight_f_01",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30732,
+        34564
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Twilight Frenzy by 5 sec, and gives damage dealt by it a 15% chance to strike again.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503680,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Twilight Frenzy</span> by <span class=\"item-number\">5</span> sec, and gives damage dealt by it a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to strike again."
+        }
+      ]
+    },
+    {
+      "id": 30185,
+      "name": "Loksey's Journal",
+      "spellId": 504903,
+      "spellIds": [
+        504903
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book1_Purple",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7416,
+        7430
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Shadow Rage by 20% of your ranged attack power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504903,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> by <span class=\"item-number\">20%</span> of your ranged attack power."
+        }
+      ]
+    },
+    {
+      "id": 30186,
+      "name": "Deal With The Devil",
+      "spellId": 680255,
+      "spellIds": [
+        680255
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_06_summon_demon_Border",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7422
+      ],
+      "requiredIds": [],
+      "desc": "Your and your Shadow Hounds critical damage dealt with Shadow damage is increased by 50%, but the cost of your spells and abilities is increased by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680255,
+          "description": "Your and your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> critical damage dealt with Shadow damage is increased by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but the cost of your spells and abilities is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30187,
+      "name": "Shadow Trap",
+      "spellId": 680238,
+      "spellIds": [
+        680238
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_shadow_spell_07_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Place a dark trap on the ground lasting 30 seconds that will curse the first enemy to approach it and up to 5 enemies within 3 yds, stunning them for 4 seconds and dealing 461 + 136% AP Shadow damage over 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680238,
+          "description": "Place a dark trap on the ground lasting <span class=\"item-number\">30</span> seconds that will curse the first enemy to approach it and up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">3</span> yds, stunning them for <span class=\"item-number\">4</span> seconds and dealing <span class=\"item-number\">461</span> + <span class=\"item-number\">136% AP</span> Shadow damage over <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30188,
+      "name": "Decimate",
+      "spellId": 804194,
+      "spellIds": [
+        804194
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_foreshadowing_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7418,
+        29163
+      ],
+      "requiredIds": [],
+      "desc": "Empowers your Shadow Hounds for 20 seconds, granting them 30% increased damage and haste and allowing them to ignore Armor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804194,
+          "description": "Empowers your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> for <span class=\"item-number\">20</span> seconds, granting them <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and haste and allowing them to ignore Armor."
+        }
+      ]
+    },
+    {
+      "id": 30396,
+      "name": "Quickdraw",
+      "spellId": 804193,
+      "spellIds": [
+        804193
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_gun_b_05_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7875
+      ],
+      "requiredIds": [],
+      "desc": "Unleash a quick shot, dealing 175% Ranged Weapon Damage plus 16 + 20% ranged AP Physical damage and generates Rage.Only usable after critically striking with an ability.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804193,
+          "description": "Unleash a quick shot, dealing <span class=\"item-number\">175</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">16</span> + <span class=\"item-number\">20% ranged AP</span> Physical damage and generates Rage.<br /><br />Only usable after critically striking with an ability."
+        }
+      ]
+    },
+    {
+      "id": 30661,
+      "name": "Secret Society",
+      "spellId": 680611,
+      "spellIds": [
+        680611,
+        680514
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_shadowcup_Border",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7577
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Shadow critical strike chance and Shadow damage dealt by 4% and your expertise by 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680611,
+          "description": "Increases your Shadow critical strike chance and Shadow damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 680514,
+          "description": "Increases your Shadow critical strike chance and Shadow damage dealt by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 30732,
+      "name": "Slayer",
+      "spellId": 300968,
+      "spellIds": [
+        300968
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_assassinate",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29277
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300968,
+          "description": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30736,
+      "name": "Vampire Hunter",
+      "spellId": 803638,
+      "spellIds": [
+        803638
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(60)_Border",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34588
+      ],
+      "requiredIds": [],
+      "desc": "When an enemy applies a curse to you, your Magic damage taken is reduced by -10% for 8 seconds.The damage reduction is increased by 5% and duration is increased by 2 seconds for every curse active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803638,
+          "description": "When an enemy applies a curse to you, your Magic damage taken is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />The damage reduction is increased by <span class=\"item-number\">5%</span> and duration is increased by <span class=\"item-number\">2</span> seconds for every curse active."
+        }
+      ]
+    },
+    {
+      "id": 30738,
+      "name": "Smoke Grenade",
+      "spellId": 805756,
+      "spellIds": [
+        805756
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_pyriumgrenade",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7093,
+        9415
+      ],
+      "requiredIds": [],
+      "desc": "Throw down a smoke grenade, enemies are unable to target into or out of the Smoke for 8 seconds. Any damage caused will remove the effect.All allies in the Smoke area gain 40% increased movement speed and all enemies have their movement speed slowed by -60%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805756,
+          "description": "Throw down a smoke grenade, enemies are unable to target into or out of the <span style=\"color: #ffffff; display: inline\">Smoke</span> for <span class=\"item-number\">8</span> seconds. <br /><br />Any damage caused will remove the effect.<br /><br />All allies in the <span style=\"color: #ffffff; display: inline\">Smoke</span> area gain <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased movement speed and all enemies have their movement speed slowed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30739,
+      "name": "Silver Bolts",
+      "spellId": 804026,
+      "spellIds": [
+        804026
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_ironmaidens_ironshot",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5678,
+        7077
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Heartseeking Bolt and Damnation is increased by 15%, doubled against Undead or Demons or enemies affected by Shadow Trap.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804026,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Heartseeking Bolt</span> and <span style=\"color: #ffffff; display: inline\">Damnation</span> is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, doubled against Undead or Demons or enemies affected by <span style=\"color: #ffffff; display: inline\">Shadow Trap</span>."
+        }
+      ]
+    },
+    {
+      "id": 30748,
+      "name": "Dead and Gone",
+      "spellId": 705524,
+      "spellIds": [
+        705524
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_80_witch_skull",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7459,
+        12259
+      ],
+      "requiredIds": [],
+      "desc": "Your Bolt and Dash now affects an additional use of a Heartseeking Bolt.Your Pavise now lasts 2 additional sec and has a -30 sec reduced cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705524,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Bolt and Dash</span> now affects an additional use of a <span style=\"color: #FFFFFF; display: inline\">Heartseeking Bolt</span>.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Pavise</span> now lasts <span class=\"item-number\">2</span> additional sec and has a <span class=\"item-number\">-30</span> sec reduced cooldown."
+        }
+      ]
+    },
+    {
+      "id": 30851,
+      "name": "Sermon of Flame",
+      "spellId": 503655,
+      "spellIds": [
+        503655,
+        504890
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\custom_T_Nhance_RPG_Icons_SwordOfFlame_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7097
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Fire damage dealt by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503655,
+          "description": "Increases your Fire damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504890,
+          "description": "Increases your Fire damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30853,
+      "name": "Guardbreaker",
+      "spellId": 681097,
+      "spellIds": [
+        681097,
+        681493
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_warrior_intervene",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7583
+      ],
+      "requiredIds": [],
+      "desc": "Your Pommel Smash now strikes an additional nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681097,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Pommel Smash</span> now strikes an additional nearby enemy."
+        },
+        {
+          "rank": 2,
+          "spellId": 681493,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Pommel Smash</span> now strikes an additional nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 31006,
+      "name": "Slayer's Mark",
+      "spellId": 804068,
+      "spellIds": [
+        804068
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_blackhand_marked4death",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34557,
+        34593
+      ],
+      "requiredIds": [],
+      "desc": "Mark an enemy, increasing the attack power of all attackers against that target by 150 and your critical strike chance against them by 3%, increasing by 3% every 1 sec for 8 seconds.For the duration, the enemy is unable to stealth.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804068,
+          "description": "Mark an enemy, increasing the attack power of all attackers against that target by <span class=\"item-number\">150</span> and your critical strike chance against them by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, increasing by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">8</span> seconds.<br /><br />For the duration, the enemy is unable to stealth."
+        }
+      ]
+    },
+    {
+      "id": 31160,
+      "name": "Witchbane",
+      "spellId": 800165,
+      "spellIds": [
+        800165
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3rapidfire",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4010,
+        29150
+      ],
+      "desc": "Unleash a series of devastating shots dealing 60 + 45% ranged AP Physical damage over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800165,
+          "description": "Unleash a series of devastating shots dealing <span class=\"item-number\">60</span> + <span class=\"item-number\">45% ranged AP</span> Physical damage over <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31161,
+      "name": "Scent of Magic",
+      "spellId": 706260,
+      "spellIds": [
+        706260
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\artifactability_vengeancedemonhunter_painbringer",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29159
+      ],
+      "requiredIds": [
+        4011
+      ],
+      "desc": "Critical strikes now apply Scent of Magic for 15 seconds, causing your Shadow Hound's next Shadow Leap to incur a -10 sec reduced cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706260,
+          "description": "Critical strikes now apply <span style=\"color: #ffffff; display: inline\">Scent of Magic</span> for <span class=\"item-number\">15</span> seconds, causing your <span style=\"color: #ffffff; display: inline\">Shadow Hound's</span> next <span style=\"color: #FFFFFF; display: inline\">Shadow Leap</span> to incur a <span class=\"item-number\">-10</span> sec reduced cooldown."
+        }
+      ]
+    },
+    {
+      "id": 31213,
+      "name": "No Regrets",
+      "spellId": 681093,
+      "spellIds": [
+        681093
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_shadow_spell_08_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7575
+      ],
+      "requiredIds": [],
+      "desc": "Your March of the Black King now increases your Armor by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681093,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">March of the Black King</span> now increases your Armor by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34524,
+      "name": "Rampaging Hounds",
+      "spellId": 570726,
+      "spellIds": [
+        570726
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_sickem",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30185
+      ],
+      "requiredIds": [],
+      "desc": "Your Shadow Hounds melee attacks now cleave 1 additional nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570726,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> melee attacks now cleave <span class=\"item-number\">1</span> additional nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 34527,
+      "name": "Hail of Gunfire",
+      "spellId": 804187,
+      "spellIds": [
+        804187
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SmallGun_Orange",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6858,
+        30188
+      ],
+      "requiredIds": [],
+      "desc": "Increases your ranged haste by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804187,
+          "description": "Increases your ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34530,
+      "name": "Veiled in Darkness",
+      "spellId": 524854,
+      "spellIds": [
+        524854
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_surgeofdarkness",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29159
+      ],
+      "requiredIds": [],
+      "desc": "A veil of dark magic encircles you at all times, granting 5% increased Attack Power to party and raid members within 100 yds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524854,
+          "description": "A veil of dark magic encircles you at all times, granting <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased Attack Power to party and raid members within <span class=\"item-number\">100</span> yds.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": 34531,
+      "name": "Coordinated Killing",
+      "spellId": 705463,
+      "spellIds": [
+        705463
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_revendreth_demonhunter",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31161,
+        34524
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unleash the Hounds now casts Shadow Rage on you for 10 seconds.Shadow RageRanged auto attacks deal an additional 50 Shadow Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705463,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unleash the Hounds</span> now casts <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> on you for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_curseofshadow_border\" /><span class=\"name\">Shadow Rage</span></div><span class=\"desc\">Ranged auto attacks deal an additional <span class=\"item-number\">50</span> Shadow Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34532,
+      "name": "Silver Bullets",
+      "spellId": 574149,
+      "spellIds": [
+        574149,
+        574163
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_misc_ammo_bullet_05",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29159
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Darkslayer by 10%, increased by an additional 10% against Undead.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574149,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkslayer</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, increased by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against Undead."
+        },
+        {
+          "rank": 2,
+          "spellId": 574163,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkslayer</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, increased by an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against Undead."
+        }
+      ]
+    },
+    {
+      "id": 34538,
+      "name": "Night Stalker",
+      "spellId": 300792,
+      "spellIds": [
+        300792,
+        300793
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_rogue_nightblade",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29150,
+        30187
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300792,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 300793,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34540,
+      "name": "Dark Ranger",
+      "spellId": 705465,
+      "spellIds": [
+        705465,
+        707861
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_leader_sylvanas",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6334
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Shadow damage dealt by your Shadow Hounds by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705465,
+          "description": "Increases the Shadow damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707861,
+          "description": "Increases the Shadow damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34541,
+      "name": "Dawn",
+      "spellId": 705484,
+      "spellIds": [
+        705484
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_SunOrb_Border",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6610,
+        7066
+      ],
+      "requiredIds": [],
+      "desc": "Dealing Fire damage now increases the damage dealt by Torchlight and Dusk Blade by 2% for 5 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705484,
+          "description": "Dealing Fire damage now increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Torchlight</span> and <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34544,
+      "name": "Searing Hilt",
+      "spellId": 705480,
+      "spellIds": [
+        705480
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_pvppandarias1_c_02",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29907
+      ],
+      "requiredIds": [],
+      "desc": "Purifier's Edge now grants you Searing Hilt for 10 seconds.Searing HiltIncreases your melee attack speed by 10% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705480,
+          "description": "<span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> now grants you <span style=\"color: #ffffff; display: inline\">Searing Hilt</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_sword_1h_pvppandarias1_c_02\" /><span class=\"name\">Searing Hilt</span></div><span class=\"desc\">Increases your melee attack speed by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34545,
+      "name": "Flourish",
+      "spellId": 805365,
+      "spellIds": [
+        805365
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_UnfairAdvantage",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6618
+      ],
+      "requiredIds": [],
+      "desc": "Perform an advanced flourish, dealing 207 + 100% AP Fire damage to nearby enemies, repeating every 4 sec, and causing your Flames of Sin to cleave up to 3 additional enemies for 20 seconds.Grants you Flames of Sin and increases the duration by 10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805365,
+          "description": "Perform an advanced flourish, dealing <span class=\"item-number\">207</span> + <span class=\"item-number\">100% AP</span> Fire damage to nearby enemies, repeating every <span class=\"item-number\">4</span> sec, and causing your <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> to cleave up to <span class=\"item-number\">3</span> additional enemies for <span class=\"item-number\">20</span> seconds.<br /><br />Grants you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increases the duration by <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34547,
+      "name": "Dusk",
+      "spellId": 300571,
+      "spellIds": [
+        300571
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\World_Marker_Moon",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6610,
+        11197
+      ],
+      "requiredIds": [],
+      "desc": "Dealing Physical damage now increases the damage dealt by Stake and Dawn Blade by 2% for 5 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300571,
+          "description": "Dealing Physical damage now increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Stake</span> and <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34550,
+      "name": "Brushin' Off The Dusk",
+      "spellId": 681329,
+      "spellIds": [
+        681329,
+        681488
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_DarkHand_Fire",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7598
+      ],
+      "requiredIds": [],
+      "desc": "Your off-hand auto attacks now have a 10% chance to strike 2 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681329,
+          "description": "Your off-hand auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times."
+        },
+        {
+          "rank": 2,
+          "spellId": 681488,
+          "description": "Your off-hand auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": 34555,
+      "name": "Dark Intuition",
+      "spellId": 806195,
+      "spellIds": [
+        806195
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_darkness",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7095,
+        34588
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you parry or dodge an attack, your attack speed is increased by 5%, and your parry chance by 2% for 15 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806195,
+          "description": "Whenever you parry or dodge an attack, your attack speed is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, and your parry chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34556,
+      "name": "Alchemical Research",
+      "spellId": 705498,
+      "spellIds": [
+        705498,
+        707862
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_enchant_alchemistcauldron",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30736,
+        34555
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Tonics by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705498,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Tonics</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707862,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Tonics</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34557,
+      "name": "Slayer of Darkness",
+      "spellId": 804024,
+      "spellIds": [
+        804024
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_Retribution",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34556
+      ],
+      "requiredIds": [],
+      "desc": "Increases damage dealt by 5% when fighting Demons or Undead. Additionally, direct damage dealt with spells or abilities now has a 10% chance to deal 151 Holy damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804024,
+          "description": "Increases damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> when fighting Demons or Undead. <br /><br />Additionally, direct damage dealt with spells or abilities now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">151</span> Holy damage."
+        }
+      ]
+    },
+    {
+      "id": 34560,
+      "name": "Alertness",
+      "spellId": 681152,
+      "spellIds": [
+        681152
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Brainwash",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7095
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Witching Shroud by -10 sec when you are struck by a Shadow or Arcane critical strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681152,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Witching Shroud</span> by <span class=\"item-number\">-10</span> sec when you are struck by a Shadow or Arcane critical strike."
+        }
+      ]
+    },
+    {
+      "id": 34564,
+      "name": "Crossbow Expert",
+      "spellId": 680384,
+      "spellIds": [
+        680384,
+        681490
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_weapon_crossbow_07",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7852,
+        29277,
+        34561
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Shadowblast by 10% and Witchbane by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680384,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shadowblast</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Witchbane</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 681490,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shadowblast</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Witchbane</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34570,
+      "name": "My Trusty Arbalest",
+      "spellId": 503682,
+      "spellIds": [
+        503682,
+        504892
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_weapon_crossbow_32",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31160
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Rage cost of Witchbane and Shadowblast by -10% and increases your chance to hit by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503682,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Witchbane</span> and <span style=\"color: #ffffff; display: inline\">Shadowblast</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504892,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Witchbane</span> and <span style=\"color: #ffffff; display: inline\">Shadowblast</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34583,
+      "name": "Follow The Edict",
+      "spellId": 503698,
+      "spellIds": [
+        503698
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_WrongfullyAccused",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6326,
+        7424
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Edicts by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503698,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Edicts</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34587,
+      "name": "Trickster",
+      "spellId": 705526,
+      "spellIds": [
+        705526
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_smoke",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30738
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Smoke Grenade by -30 sec and increases its duration by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705526,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Smoke Grenade</span> by <span class=\"item-number\">-30</span> sec and increases its duration by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34588,
+      "name": "Brand of the Unworthy",
+      "spellId": 501380,
+      "spellIds": [
+        501380
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_skyreach_overwhelmed",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34583,
+        34595
+      ],
+      "requiredIds": [],
+      "desc": "Expose an enemy's darkest faults, disorienting them for 40 seconds (8 sec vs players).Damage caused will end this effect. Only usable on Humanoids, Demons, and Undead.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 501380,
+          "description": "Expose an enemy's darkest faults, disorienting them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players).<br /><br />Damage caused will end this effect. Only usable on Humanoids, Demons, and Undead.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34592,
+      "name": "Night Walker",
+      "spellId": 789256,
+      "spellIds": [
+        789256
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanespeed_Border",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29150
+      ],
+      "requiredIds": [],
+      "desc": "Increases the base range of Vault by 3 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 789256,
+          "description": "Increases the base range of <span style=\"color: #ffffff; display: inline\">Vault</span> by <span class=\"item-number\">3</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 34593,
+      "name": "Purified Bola",
+      "spellId": 707230,
+      "spellIds": [
+        707230
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_engineering_90_bola",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7093
+      ],
+      "requiredIds": [],
+      "desc": "Your Bola Throw now has 2 charges, deals additional damage, and lasts 2 additional sec, but now costs 10 Rage instead of mana.Purified Bola Throw2 Charges, 15 sec rechargeThrow a bola at an enemy, dealing 348 + 40% AP Holy damage and slowing movement speed by -60% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707230,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Bola Throw</span> now has <span class=\"item-number\">2</span> charges, deals additional damage, and lasts <span class=\"item-number\">2</span> additional sec, but now costs <span class=\"item-number\">10</span> Rage instead of mana.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_engineering_90_bola\" /><span class=\"name\">Purified Bola Throw</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">15</span> sec recharge</span><br />Throw a bola at an enemy, dealing <span class=\"item-number\">348</span> + <span class=\"item-number\">40% AP</span> Holy damage and slowing movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34595,
+      "name": "Vengeful Intent",
+      "spellId": 705534,
+      "spellIds": [
+        705534
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_Cleave_DeathKnight",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6413,
+        7424
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you take direct damage you have a 10% chance to strike back for 75% Weapon Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705534,
+          "description": "Whenever you take direct damage you have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike back for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Weapon Damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:39:707648",
+      "name": "Resourceful Pursuit / Witching Bolt",
+      "spellId": 707648,
+      "spellIds": [
+        707648
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Weapon_Crossbow_01",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9750
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Rage cost of Tormentor and Damnation by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707648,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Tormentor</span> and <span style=\"color: #ffffff; display: inline\">Damnation</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:39:520593",
+      "name": "Rapid / Relentless",
+      "spellId": 680323,
+      "spellIds": [
+        680323
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill02_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6856
+      ],
+      "requiredIds": [],
+      "desc": "Your Witchbane now deals its full damage over -1 second shorter period.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680323,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Witchbane</span> now deals its full damage over <span class=\"item-number\">-1</span> second shorter period."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:39:674312",
+      "name": "Evasive / Crossbow Frenzy",
+      "spellId": 805767,
+      "spellIds": [
+        805767
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Charm",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7078
+      ],
+      "requiredIds": [],
+      "desc": "Twilight Frenzy now grants you -20% reduced damage taken while active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805767,
+          "description": "<span style=\"color: #ffffff; display: inline\">Twilight Frenzy</span> now grants you <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> reduced damage taken while active."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:39:520865",
+      "name": "Bolt and Dash / Pavise Crossbowman",
+      "spellId": 520670,
+      "spellIds": [
+        520670
+      ],
+      "tabId": 39,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_bow_2h_crossbow_draenordungeon_c_01",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7458,
+        30732
+      ],
+      "requiredIds": [],
+      "desc": "Your next Heartseeking Bolt within 10 seconds deals 25% more damage and incurs no cooldown.When this buff is consumed you gain 50% increased movement speed for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520670,
+          "description": "Your next <span style=\"color: #ffffff; display: inline\">Heartseeking Bolt</span> within <span class=\"item-number\">10</span> seconds deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more damage and incurs no cooldown.<br /><br />When this buff is consumed you gain <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased movement speed for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:87:705528",
+      "name": "Just A Sip / Regenerative Elixirs",
+      "spellId": 705533,
+      "spellIds": [
+        705533
+      ],
+      "tabId": 87,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_potion_68",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6413
+      ],
+      "requiredIds": [],
+      "desc": "Drinking Tonics now also restores 5% of your maximum health and mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705533,
+          "description": "Drinking <span style=\"color: #ffffff; display: inline\">Tonics</span> now also restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum health and mana."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:40:804190",
+      "name": "Reload / Darkhunter",
+      "spellId": 804190,
+      "spellIds": [
+        804190
+      ],
+      "tabId": 40,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_bountyhunting",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29161
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Quickdraw by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804190,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Quickdraw</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:94:705520",
+      "name": "Calm Under Pressure / Dark Barrier",
+      "spellId": 705519,
+      "spellIds": [
+        705519
+      ],
+      "tabId": 94,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_deadlycalm",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9751,
+        29904
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Stoicism by -30 sec and Burrow Bolt by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705519,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Stoicism</span> by <span class=\"item-number\">-30</span> sec and <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:41:324782",
+      "name": "The Hunt Continues / Evil Never Sleeps",
+      "spellId": 560219,
+      "spellIds": [
+        560219
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3spiritwalk",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29950
+      ],
+      "requiredIds": [],
+      "desc": "Hunt now generates an additional 15 Rage and the mana cost is reduced by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560219,
+          "description": "<span style=\"color: #ffffff; display: inline\">Hunt</span> now generates an additional <span class=\"item-number\">15</span> Rage and the mana cost is reduced by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:15:41:584221",
+      "name": "Sinner / Sin Eater",
+      "spellId": 681411,
+      "spellIds": [
+        681411
+      ],
+      "tabId": 41,
+      "classId": 15,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_SealOfFire",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7066
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Torchlight by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681411,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torchlight</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    }
+  ]
+}

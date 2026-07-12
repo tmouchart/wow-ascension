@@ -1,0 +1,4207 @@
+{
+  "class": "Felsworn",
+  "classId": "14",
+  "specs": [
+    "Slayer",
+    "Infernal",
+    "Tyrant"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Slayer": 37,
+    "Infernal": 38,
+    "Tyrant": 18
+  },
+  "nodes": [
+    {
+      "id": 5685,
+      "name": "Chaotic",
+      "spellId": 681376,
+      "spellIds": [
+        681376
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_chaosfire_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5210,
+        6875,
+        11210,
+        30553
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage now has an 8% chance to increase your damage by 3% for 8 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681376,
+          "description": "Dealing damage now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to increase your damage by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6338,
+      "name": "Nether Disciple",
+      "spellId": 560576,
+      "spellIds": [
+        560576,
+        561343
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_felhound4_custom",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29845
+      ],
+      "requiredIds": [],
+      "desc": "Increases your dodge and parry chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560576,
+          "description": "Increases your dodge and parry chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561343,
+          "description": "Increases your dodge and parry chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6339,
+      "name": "Doomscarring",
+      "spellId": 685321,
+      "spellIds": [
+        685321
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_mogu_c_01",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7870,
+        9218,
+        12170
+      ],
+      "requiredIds": [],
+      "desc": "Twin Slice now deals an additional 1 + 30% AP Physical damage and scars enemies for 12 seconds, increasing your allies' attack power against them by 45 + 15% Agility.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 685321,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Twin Slice</span> now deals an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">30% AP</span> Physical damage and scars enemies for <span class=\"item-number\">12</span> seconds, increasing your allies' attack power against them by <span class=\"item-number\">45</span> + <span class=\"item-number\">15% Agility</span>."
+        }
+      ]
+    },
+    {
+      "id": 6340,
+      "name": "Fel Cannon",
+      "spellId": 802180,
+      "spellIds": [
+        802180
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Gizmo_FelIronBomb",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31291
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Fel Fireball and Ruin by 15% on enemies above 75% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802180,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Fel Fireball</span> and <span style=\"color: #FFFFFF; display: inline\">Ruin</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">75%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 6423,
+      "name": "Dark Teachings",
+      "spellId": 520251,
+      "spellIds": [
+        520251
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book2Motif_Illidan",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34212
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Intuitions by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520251,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Intuitions</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6512,
+      "name": "Slice & Dice",
+      "spellId": 704361,
+      "spellIds": [
+        704361,
+        707845
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_glaive_1h_demonhunter_a_01",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34243
+      ],
+      "requiredIds": [],
+      "desc": "Increases your off-hand weapon damage by 25% and reduces the Energy cost of Twin Slice by -5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704361,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Twin Slice</span> by <span class=\"item-number\">-5</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707845,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Twin Slice</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": 6513,
+      "name": "Fel Haze",
+      "spellId": 803903,
+      "spellIds": [
+        803903
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_FingerOfDeath",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29402,
+        29852,
+        31299
+      ],
+      "requiredIds": [],
+      "desc": "While active, Blood of Mannoroth now also causes you to ignore all enemy Armor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803903,
+          "description": "While active, <span style=\"color: #ffffff; display: inline\">Blood of Mannoroth</span> now also causes you to ignore all enemy Armor."
+        }
+      ]
+    },
+    {
+      "id": 6526,
+      "name": "Immolation Aura",
+      "spellId": 800207,
+      "spellIds": [
+        800207
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_felimmolation",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6512
+      ],
+      "requiredIds": [],
+      "desc": "Wreathe yourself in fire for up to 1 minute, dealing 23 + 30% fire SP + 23% AP Fire Damage to nearby enemies every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800207,
+          "description": "Wreathe yourself in fire for up to <span class=\"item-number\">1</span> minute, dealing <span class=\"item-number\">23</span> + <span class=\"item-number\">30% fire SP</span> + <span class=\"item-number\">23% AP</span> Fire Damage to nearby enemies every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6774,
+      "name": "Outland Slaver",
+      "spellId": 705123,
+      "spellIds": [
+        705123,
+        707846
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_felshieldemitter",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29442
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of your Felrend and Fel Fireball by -3 and increases their damage dealt by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705123,
+          "description": "Reduces the cost of your <span style=\"color: #FFFFFF; display: inline\">Felrend</span> and <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> by <span class=\"item-number\">-3</span> and increases their damage dealt by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707846,
+          "description": "Reduces the cost of your <span style=\"color: #FFFFFF; display: inline\">Felrend</span> and <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> by <span class=\"item-number\">-6</span> and increases their damage dealt by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6815,
+      "name": "Nether Strength",
+      "spellId": 520240,
+      "spellIds": [
+        520240
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_DarkHand_Fel",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30558
+      ],
+      "requiredIds": [],
+      "desc": "Casting Felfury spenders now reduces the cooldown of Burning Hatred, Hateforged Barrier, and Demonic Will by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520240,
+          "description": "Casting <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burning Hatred</span>, <span style=\"color: #ffffff; display: inline\">Hateforged Barrier</span>, and <span style=\"color: #ffffff; display: inline\">Demonic Will</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6868,
+      "name": "Whispers of the Pit",
+      "spellId": 805235,
+      "spellIds": [
+        805235
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_bossmannoroth_mannorothsgaze",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34205,
+        34211
+      ],
+      "requiredIds": [],
+      "desc": "Unleash fel energy upon enemies at target location, fearing them and slowing their movement speed by -80% for 8 seconds.Damage caused may interrupt the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805235,
+          "description": "Unleash fel energy upon enemies at target location, fearing them and slowing their movement speed by <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Damage caused may interrupt the effect."
+        }
+      ]
+    },
+    {
+      "id": 6875,
+      "name": "Fel Communion",
+      "spellId": 705105,
+      "spellIds": [
+        705105
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_moltencoregreen",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30565,
+        31294
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum Energy by 30.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705105,
+          "description": "Increases your maximum Energy by <span class=\"item-number\">30</span>."
+        }
+      ]
+    },
+    {
+      "id": 6876,
+      "name": "Vengeance Is Mine",
+      "spellId": 804822,
+      "spellIds": [
+        804822
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_brandofthehunt",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6339,
+        11111,
+        30561
+      ],
+      "requiredIds": [],
+      "desc": "Dodging or parrying an attack now gives you a 10% chance to make your next 10 instances of damage with Twin Slice deal 30% increased damage and generate 1 Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804822,
+          "description": "Dodging or parrying an attack now gives you a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to make your next <span class=\"item-number\">10</span> instances of damage with <span style=\"color: #ffffff; display: inline\">Twin Slice</span> deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 6877,
+      "name": "Expose",
+      "spellId": 300474,
+      "spellIds": [
+        300474
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_ManaBurn_Fel",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30557
+      ],
+      "requiredIds": [],
+      "desc": "Direct Fire and Shadow spell damage dealt now applies Expose to enemies.Expose (Proc)Damage taken from the Felsworn increased by 10% and the critical strike chance of all allies against this target is increased by 3% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300474,
+          "description": "Direct Fire and Shadow spell damage dealt now applies <span style=\"color: #ffffff; display: inline\">Expose</span> to enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _manaburn_fel\" /><span class=\"name\">Expose (Proc)</span></div><span class=\"desc\">Damage taken from the Felsworn increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and the critical strike chance of all allies against this target is increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6910,
+      "name": "Felshock",
+      "spellId": 806235,
+      "spellIds": [
+        806235
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fel_incinerate",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6912
+      ],
+      "requiredIds": [],
+      "desc": "Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806235,
+          "description": "Direct critical strikes with <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders now extend the duration of <span style=\"color: #32cd32; display: inline\">Inner Demon</span> by <span class=\"item-number\">1</span> sec and cause enemies struck to have a <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased chance to be hit by spells for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6911,
+      "name": "Illidari Smiter",
+      "spellId": 520246,
+      "spellIds": [
+        520246
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_leather_raiddemonhuntermythic_r_01",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30808,
+        34230
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Fel Fireball now generate 1 Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520246,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> now generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 6912,
+      "name": "The True Blessing",
+      "spellId": 560838,
+      "spellIds": [
+        560838
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_felfireraid_d_03",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29923
+      ],
+      "requiredIds": [],
+      "desc": "Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560838,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Annihilation</span> now grants you <span style=\"color: #ffffff; display: inline\">Sculptor of Doom</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_argus_felreaver\" /><span class=\"name\">Sculptor of Doom</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Ruin</span> within <span class=\"item-number\">8</span> seconds is instant cast.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6915,
+      "name": "Felwrath",
+      "spellId": 520236,
+      "spellIds": [
+        520236
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_FelFlameRing",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6931
+      ],
+      "requiredIds": [],
+      "desc": "Consumes 2 FelfuryBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.Inner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520236,
+          "description": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Blast an enemy and all enemies near them with fel magic, dealing <span class=\"item-number\">69</span> + <span class=\"item-number\">40% SP</span> Shadowflame Damage.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Striking at least <span class=\"item-number\">5</span> enemies with this spell causes it to deal an additional <span class=\"item-number\">108</span> + <span class=\"item-number\">10% SP</span> Shadowflame Damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6919,
+      "name": "A Thousand Cuts",
+      "spellId": 704610,
+      "spellIds": [
+        704610
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_glaive_1h_battledungeon_c_02",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29396,
+        31301
+      ],
+      "requiredIds": [],
+      "desc": "Azzinoth's Assault now has a 30% chance to hit an additional time with your main-hand Weapon.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704610,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Azzinoth's Assault</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to hit an additional time with your main-hand Weapon."
+        }
+      ]
+    },
+    {
+      "id": 6931,
+      "name": "Gul'dan's Prodigy",
+      "spellId": 704378,
+      "spellIds": [
+        704378
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warlock_demonicempowerment",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31297
+      ],
+      "requiredIds": [],
+      "desc": "Reduces Energy cost and cast time of Fel Fireball by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704378,
+          "description": "Reduces Energy cost and cast time of <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6968,
+      "name": "Azzinoth's Battery",
+      "spellId": 705137,
+      "spellIds": [
+        705137
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shoulder_leather_raiddemonhuntermythic_r_01",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6513,
+        29132,
+        34209
+      ],
+      "requiredIds": [],
+      "desc": "Your Azzinoth's Assault now has a 30% chance to not consume Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705137,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Azzinoth's Assault</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to not consume <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 7860,
+      "name": "Warlock Training",
+      "spellId": 560641,
+      "spellIds": [
+        560641
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Orc_09",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30553,
+        33674
+      ],
+      "requiredIds": [],
+      "desc": "Cripple now causes the enemy target to be unable to critically strike for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560641,
+          "description": "<span style=\"color: #ffffff; display: inline\">Cripple</span> now causes the enemy target to be unable to critically strike for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7861,
+      "name": "Cursed Flames",
+      "spellId": 300478,
+      "spellIds": [
+        300478
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_felflamestrike",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6340,
+        6915
+      ],
+      "requiredIds": [],
+      "desc": "Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300478,
+          "description": "Critically striking with <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> now increases the critical strike chance of your next <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7862,
+      "name": "Cruelty",
+      "spellId": 705109,
+      "spellIds": [
+        705109,
+        520249
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_Warlock_Imp",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29686
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 2% and an additional 3% against Demons.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705109,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and an additional <span class=\"item-number\">3</span><span class=\"item-number\">%</span> against Demons."
+        },
+        {
+          "rank": 2,
+          "spellId": 520249,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and an additional <span class=\"item-number\">6</span><span class=\"item-number\">%</span> against Demons."
+        }
+      ]
+    },
+    {
+      "id": 7863,
+      "name": "Infernal Armor",
+      "spellId": 300467,
+      "spellIds": [
+        300467
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_argus_felreaver",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34203
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Hateforged Barrier by -10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300467,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Hateforged Barrier</span> by <span class=\"item-number\">-10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7865,
+      "name": "Reckoning",
+      "spellId": 802058,
+      "spellIds": [
+        802058
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_felrainoffire",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5685,
+        7860
+      ],
+      "requiredIds": [],
+      "desc": "For 10 seconds, your Fel Fireball is free of cost, instant cast, and strikes up to 4 targets.For the duration, your falling speed is slowed and damage dealt by your Fel Fireball increases your damage dealt by 4% for 15 seconds, stacking 4 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802058,
+          "description": "For <span class=\"item-number\">10</span> seconds, your <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> is free of cost, instant cast, and strikes up to <span class=\"item-number\">4</span> targets.<br /><br />For the duration, your falling speed is slowed and damage dealt by your <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> increases your damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">4</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7868,
+      "name": "Mark of Chaos",
+      "spellId": 524947,
+      "spellIds": [
+        524947
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\70_inscription_glyph_demonhunter_minor",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5685
+      ],
+      "requiredIds": [],
+      "desc": "Using Chaos Rush increases the next instance of direct spell or ability damage within 5 seconds by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524947,
+          "description": "Using <span style=\"color: #FFFFFF; display: inline\">Chaos Rush</span> increases the next instance of direct spell or ability damage within <span class=\"item-number\">5</span> seconds by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7869,
+      "name": "Demon Hide",
+      "spellId": 520252,
+      "spellIds": [
+        520252,
+        520253
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Racial_Demonbane",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29845
+      ],
+      "requiredIds": [],
+      "desc": "While Inner Demon is active, your Armor contribution from cloth and leather items is increased by 120%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520252,
+          "description": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, your Armor contribution from cloth and leather items is increased by <span class=\"item-number\">120</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 520253,
+          "description": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, your Armor contribution from cloth and leather items is increased by <span class=\"item-number\">240</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9218,
+      "name": "Straight to the Nether",
+      "spellId": 560503,
+      "spellIds": [
+        560503
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DemonicCircleSummon",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29398
+      ],
+      "requiredIds": [],
+      "desc": "While Inner Demon is active, Carve and Sargeron Smite now leeches 20% of the damage dealt from the initial strike as Shadowflame Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560503,
+          "description": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, <span style=\"color: #ffffff; display: inline\">Carve</span> and <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now leeches <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt from the initial strike as Shadowflame Damage."
+        }
+      ]
+    },
+    {
+      "id": 9225,
+      "name": "Sculptor of Doom",
+      "spellId": 801235,
+      "spellIds": [
+        801235
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_argus_felreaver",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        11224
+      ],
+      "requiredIds": [],
+      "desc": "Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801235,
+          "description": "Landing <span class=\"item-number\">3</span> direct critical strikes now grants <span style=\"color: #FFFFFF; display: inline\">Sculptor of Doom</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_argus_felreaver\" /><span class=\"name\">Sculptor of Doom</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Ruin</span> within <span class=\"item-number\">8</span> seconds is instant cast.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 11814,
+      "name": "Consumed By Fel",
+      "spellId": 300485,
+      "spellIds": [
+        300485
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_FelSpikes_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34252
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of Immolation Aura by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300485,
+          "description": "Increases the tick rate of <span style=\"color: #FFFFFF; display: inline\">Immolation Aura</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29132,
+      "name": "Reckless Assault",
+      "spellId": 804610,
+      "spellIds": [
+        804610
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_spectralsight",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29396,
+        31299
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Azzinoth's Assault, Annihilan Strike, and Twin Slice by 15% against slowed enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804610,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Azzinoth's Assault</span>, <span style=\"color: #ffffff; display: inline\">Annihilan Strike</span>, and <span style=\"color: #ffffff; display: inline\">Twin Slice</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against slowed enemies."
+        }
+      ]
+    },
+    {
+      "id": 29367,
+      "name": "Manaburn",
+      "spellId": 805248,
+      "spellIds": [
+        805248
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_ManaBurn_Fel",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Burn an enemy's mana equal to 200% of your Stamina.Deals damage equal to the mana drained.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805248,
+          "description": "Burn an enemy's mana equal to <span class=\"item-number\">200%</span> of your Stamina.<br /><br />Deals damage equal to the mana drained."
+        }
+      ]
+    },
+    {
+      "id": 29387,
+      "name": "Annihilan Strike",
+      "spellId": 801903,
+      "spellIds": [
+        801903
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_glaive_1h_npc_d_02",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6512
+      ],
+      "requiredIds": [],
+      "desc": "Generates 2 FelfuryUnleash a devastating attack, dealing 145% Weapon Damage to your target with both weapons.This ability is guaranteed to critically strike against enemies above 75% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801903,
+          "description": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">2</span> Felfury</span><br />Unleash a devastating attack, dealing <span class=\"item-number\">145</span><span class=\"item-number\">%</span> Weapon Damage to your target with both weapons.<br /><br />This ability is guaranteed to critically strike against enemies above <span class=\"item-number\">75%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 29396,
+      "name": "Felhoof Charge",
+      "spellId": 800204,
+      "spellIds": [
+        800204
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_felrush",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29927,
+        31308,
+        34238
+      ],
+      "requiredIds": [],
+      "desc": "Generates 1 FelfuryCharge an enemy, dealing 60 + 28.5% AP Physical damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800204,
+          "description": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">1</span> Felfury</span><br />Charge an enemy, dealing <span class=\"item-number\">60</span> + <span class=\"item-number\">28.5% AP</span> Physical damage."
+        }
+      ]
+    },
+    {
+      "id": 29398,
+      "name": "Vengeance",
+      "spellId": 520817,
+      "spellIds": [
+        520817
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_polearm_2h_fellord_2",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6774,
+        30566,
+        34221
+      ],
+      "requiredIds": [],
+      "desc": "Your Twin Slice and Felrend now have a 60% chance to generate 1 additional Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520817,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Twin Slice</span> and <span style=\"color: #ffffff; display: inline\">Felrend</span> now have a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> additional <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 29399,
+      "name": "Legion March",
+      "spellId": 805244,
+      "spellIds": [
+        805244
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Warlock_RueeArdenteVerte",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29400
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of Chaos Rush by 3 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805244,
+          "description": "Increases the range of <span style=\"color: #ffffff; display: inline\">Chaos Rush</span> by <span class=\"item-number\">3</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 29400,
+      "name": "Doomstride",
+      "spellId": 804613,
+      "spellIds": [
+        804613
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_doublejump",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33670,
+        30559
+      ],
+      "requiredIds": [],
+      "desc": "Using Chaos Rush twice in a row now refreshes a charge of Chaos Rush.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804613,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Chaos Rush</span> twice in a row now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Chaos Rush</span>."
+        }
+      ]
+    },
+    {
+      "id": 29402,
+      "name": "Blighted Strikes",
+      "spellId": 570077,
+      "spellIds": [
+        570077
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill104_Border",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29852
+      ],
+      "requiredIds": [],
+      "desc": "While Inner Demon is active your melee attacks reduce the target's healing received by -20% for 8 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570077,
+          "description": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active your melee attacks reduce the target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29405,
+      "name": "Pit Lord's Strength",
+      "spellId": 802076,
+      "spellIds": [
+        802076,
+        802110
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_boss_hellfire_mannorothreanimated",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30300
+      ],
+      "requiredIds": [],
+      "desc": "Your Annihilation now affects 1 additional attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802076,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Annihilation</span> now affects <span class=\"item-number\">1</span> additional attack."
+        },
+        {
+          "rank": 2,
+          "spellId": 802110,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Annihilation</span> now affects <span class=\"item-number\">2</span> additional attack."
+        }
+      ]
+    },
+    {
+      "id": 29407,
+      "name": "Taskmaster's Army",
+      "spellId": 800220,
+      "spellIds": [
+        800220
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_hellfire_fellord",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34224
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Infernal Whipcrack by -30 sec and it now affects all allies and its radius is increased by 15 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800220,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Infernal Whipcrack</span> by <span class=\"item-number\">-30</span> sec and it now affects all allies and its radius is increased by <span class=\"item-number\">15</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 29409,
+      "name": "Illidari Barrier",
+      "spellId": 300468,
+      "spellIds": [
+        300468
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_vehicle_shellshieldgenerator_green",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5685,
+        30301
+      ],
+      "requiredIds": [],
+      "desc": "Casting Hateforged Barrier now also creates a damage absorption shield on all nearby allies within 15 yds, absorbing 328 + 100% Stamina + 20% SP + 8% AP damage for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300468,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Hateforged Barrier</span> now also creates a damage absorption shield on all nearby allies within <span class=\"item-number\">15</span> yds, absorbing <span class=\"item-number\">328</span> + <span class=\"item-number\">100% Stamina</span> + <span class=\"item-number\">20% SP</span> + <span class=\"item-number\">8% AP</span> damage for <span class=\"item-number\">5</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29442,
+      "name": "Felrend",
+      "spellId": 800210,
+      "spellIds": [
+        800210
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_chaosstrike",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11121,
+        30567
+      ],
+      "requiredIds": [],
+      "desc": "Generates 1 FelfuryErupt in a whirlwind of felfury, striking all enemies within 6 yds with both weapons, dealing Weapon Damage plus 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800210,
+          "description": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">1</span> Felfury</span><br />Erupt in a whirlwind of felfury, striking all enemies within <span class=\"item-number\">6</span> yds with both weapons, dealing Weapon Damage plus <span class=\"item-number\">5</span>."
+        }
+      ]
+    },
+    {
+      "id": 29445,
+      "name": "Sargeras Embrace",
+      "spellId": 800355,
+      "spellIds": [
+        800355
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_eyebeam",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29849,
+        34234
+      ],
+      "requiredIds": [],
+      "desc": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.For the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800355,
+          "description": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5.5</span> seconds and dealing <span class=\"item-number\">cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85)</span> Shadowflame Damage at the end of the duration.<br /><br />For the duration, you may instant cast <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> while channeling and they refund their cost."
+        }
+      ]
+    },
+    {
+      "id": 29686,
+      "name": "Annihilation",
+      "spellId": 803904,
+      "spellIds": [
+        803904
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_boss_lordanthricystgreen",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Gorge on fel energy, guaranteeing your next direct instance of damage to critically strike, but causing it to consume 5% of your maximum health. Lasts for 5 attacks or 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803904,
+          "description": "Gorge on fel energy, guaranteeing your next direct instance of damage to critically strike, but causing it to consume <span class=\"item-number\">5%</span> of your maximum health. Lasts for <span class=\"item-number\">5</span> attacks or <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29842,
+      "name": "Whirling Vengeance",
+      "spellId": 704602,
+      "spellIds": [
+        704602
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_CutToTheChase",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31392
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Fury Unleashed by -60 sec. When Fury Unleashed ends, you strike all nearby enemies for 757 + 56.14% AP Shadowflame Damage and increase their damage taken from Sunder by 100% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704602,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Fury Unleashed</span> by <span class=\"item-number\">-60</span> sec. <br /><br />When <span style=\"color: #FFFFFF; display: inline\">Fury Unleashed</span> ends, you strike all nearby enemies for <span class=\"item-number\">757</span> + <span class=\"item-number\">56.14% AP</span> Shadowflame Damage and increase their damage taken from <span style=\"color: #ffffff; display: inline\">Sunder</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29845,
+      "name": "Demonic Will",
+      "spellId": 800209,
+      "spellIds": [
+        800209
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_infernalchains",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31159
+      ],
+      "requiredIds": [],
+      "desc": "Generates 1 FelfuryStrengthen your will, reducing Physical damage taken by -30% for 10 seconds.While active, direct damaging abilities heal you for 3% of your maximum health. Can only occur once every 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800209,
+          "description": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">1</span> Felfury</span><br />Strengthen your will, reducing Physical damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />While active, direct damaging abilities heal you for <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum health. Can only occur once every <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29849,
+      "name": "Infernal Doom",
+      "spellId": 804219,
+      "spellIds": [
+        804219
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_05",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6910,
+        30874
+      ],
+      "requiredIds": [],
+      "desc": "Ruin now has a -25% chance not to consume Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804219,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Ruin</span> now has a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> chance not to consume <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 29852,
+      "name": "You Cheat, Gul'dan!",
+      "spellId": 705127,
+      "spellIds": [
+        705127
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_metamorphasistank",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29405,
+        31308,
+        34238
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical damage by 50% against enemies above 75% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705127,
+          "description": "Increases your critical damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> against enemies above <span class=\"item-number\">75%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 29922,
+      "name": "Chaotic Intuition",
+      "spellId": 300483,
+      "spellIds": [
+        300483
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ember_Fel",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34231,
+        34237
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300483,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Felstrikes</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Cripple</span> on the target by <span class=\"item-number\">1</span> sec and grants you <span class=\"item-number\">1</span><span class=\"item-number\">%</span> increased spell critical damage for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29923,
+      "name": "Shadow Magi",
+      "spellId": 803905,
+      "spellIds": [
+        803905
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SealOfKings",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7861,
+        31298
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803905,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Annihilation</span> by <span class=\"item-number\">-15</span> sec and <span style=\"color: #ffffff; display: inline\">Sunder</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29924,
+      "name": "Illidan's Guile",
+      "spellId": 806109,
+      "spellIds": [
+        806109
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_QirajiCrystal_03",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33668,
+        34212
+      ],
+      "requiredIds": [],
+      "desc": "Gorge on fel energy, becoming immune to all physical attacks and spells for 8 seconds, but during that time you cannot attack, move or cast spells.At the end of the duration, your next Chaos Rush within 5 seconds now dashes an additional 20 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806109,
+          "description": "Gorge on fel energy, becoming immune to all physical attacks and spells for <span class=\"item-number\">8</span> seconds, but during that time you cannot attack, move or cast spells.<br /><br />At the end of the duration, your next <span style=\"color: #FFFFFF; display: inline\">Chaos Rush</span> within <span class=\"item-number\">5</span> seconds now dashes an additional <span class=\"item-number\">20</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 29926,
+      "name": "Fury of the Illidari",
+      "spellId": 561216,
+      "spellIds": [
+        561216
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_03dual",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6968,
+        31392,
+        34249
+      ],
+      "requiredIds": [],
+      "desc": "2 Charges, 1.5 min rechargeMove quickly from enemy to enemy, attacking them every 1 sec with both weapons until 6 assaults are made, generating 1 Felfury with each strike. While active you are immune to crowd control effects.Can hit the same target multiple times. Cannot hit invisible or stealthed targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561216,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">1.5</span> min recharge</span><br />Move quickly from enemy to enemy, attacking them every <span class=\"item-number\">1</span> sec with both weapons until <span class=\"item-number\">6</span> assaults are made, generating <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span> with each strike. While active you are immune to crowd control effects.<br /><br />Can hit the same target multiple times. Cannot hit invisible or stealthed targets.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29927,
+      "name": "Legionfall",
+      "spellId": 801899,
+      "spellIds": [
+        801899
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_vengefulretreat",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34236
+      ],
+      "requiredIds": [],
+      "desc": "Melee ability damage now has a 15% chance to reset the cooldown of Annihilan Strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801899,
+          "description": "Melee ability damage now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Annihilan Strike</span>."
+        }
+      ]
+    },
+    {
+      "id": 29933,
+      "name": "Bane of Chaos",
+      "spellId": 704368,
+      "spellIds": [
+        704368
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\chaosincursion",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34256
+      ],
+      "requiredIds": [],
+      "desc": "Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704368,
+          "description": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">1</span> Felfury</span><br />Unleash fel magic on an enemy, dealing <span class=\"item-number\">114</span> Chaos damage over <span class=\"item-number\">18</span> seconds.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: The enemy takes an additional <span class=\"item-number\">13</span> + <span class=\"item-number\">100% SP</span> Chaos Damage every <span class=\"item-number\">6</span> sec.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Bane</span> active on a target at a time.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29968,
+      "name": "Illidari Magi",
+      "spellId": 560639,
+      "spellIds": [
+        560639
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_polearm_2h_fellord",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6915
+      ],
+      "requiredIds": [],
+      "desc": "Your periodic damage now has a 20% chance to generate 1 Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560639,
+          "description": "Your periodic damage now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 30200,
+      "name": "Fury of Archimonde",
+      "spellId": 706425,
+      "spellIds": [
+        706425
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_hellfire_archimonde",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29922,
+        34234
+      ],
+      "requiredIds": [],
+      "desc": "After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706425,
+          "description": "After generating <span class=\"item-number\">10</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>, your next <span style=\"color: #FFFFFF; display: inline\">Sargeron Smite</span> within <span class=\"item-number\">15</span> seconds gains <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased critical strike chance and damage."
+        }
+      ]
+    },
+    {
+      "id": 30299,
+      "name": "Chaos Soldier",
+      "spellId": 560057,
+      "spellIds": [
+        560057
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_felblade",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6526
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Azzinoth's Assault and Sargeron Smite by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560057,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Azzinoth's Assault</span> and <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30300,
+      "name": "Azzinoth's Rage",
+      "spellId": 804611,
+      "spellIds": [
+        804611,
+        807901,
+        807914
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\Achievement_Boss_OmarTheUnscarred_01",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6526,
+        29387
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor penetration by 10% and your expertise by 4.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804611,
+          "description": "Increases your Armor penetration by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807901,
+          "description": "Increases your Armor penetration by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">8</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 807914,
+          "description": "Increases your Armor penetration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">12</span>."
+        }
+      ]
+    },
+    {
+      "id": 30301,
+      "name": "Anti-Magic",
+      "spellId": 560822,
+      "spellIds": [
+        560822
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5210,
+        11210,
+        33671
+      ],
+      "requiredIds": [],
+      "desc": "When Hateforged Barrier is removed from you, you now reduce -10% of all Magic damage taken for 8 seconds.In addition, Hateforged Barrier now heals for an additional 2% of your maximum health each tick.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560822,
+          "description": "When <span style=\"color: #ffffff; display: inline\">Hateforged Barrier</span> is removed from you, you now reduce <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> of all Magic damage taken for <span class=\"item-number\">8</span> seconds.<br /><br />In addition, <span style=\"color: #FFFFFF; display: inline\">Hateforged Barrier</span> now heals for an additional <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum health each tick."
+        }
+      ]
+    },
+    {
+      "id": 30302,
+      "name": "Felforged",
+      "spellId": 300490,
+      "spellIds": [
+        300490
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_felfire",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29933
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have -30% reduced casting speed for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300490,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Felforged</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_felfire\" /><span class=\"name\">Felforged (Proc)</span></div><span class=\"desc\">Your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Fel Fireballs</span> have <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> reduced casting speed for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30404,
+      "name": "Mannoroth's Rage",
+      "spellId": 805255,
+      "spellIds": [
+        805255
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_FelFireNova",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11111,
+        30561
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Burning Hatred by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805255,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burning Hatred</span> by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30405,
+      "name": "Tyrannical Resolve",
+      "spellId": 804823,
+      "spellIds": [
+        804823
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_immolation",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6876
+      ],
+      "requiredIds": [],
+      "desc": "Taunt nearby enemies for 4 seconds and ignore -50% of all damage taken for 30 seconds, up to 100% of your maximum health.When this ends, you unleash a Felfire Blast that leeches health from nearby enemies based on how many times you took damage with the effect active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804823,
+          "description": "Taunt nearby enemies for <span class=\"item-number\">4</span> seconds and ignore <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> of all damage taken for <span class=\"item-number\">30</span> seconds, up to <span class=\"item-number\">100%</span> of your maximum health.<br /><br />When this ends, you unleash a <span style=\"color: #FFFFFF; display: inline\">Felfire Blast</span> that leeches health from nearby enemies based on how many times you took damage with the effect active."
+        }
+      ]
+    },
+    {
+      "id": 30552,
+      "name": "Felbane",
+      "spellId": 525001,
+      "spellIds": [
+        525001
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_warlock42_Border",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29400,
+        34213
+      ],
+      "requiredIds": [],
+      "desc": "Curse an enemy, causing the next spell they cast within 4 seconds to be reflected onto them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 525001,
+          "description": "Curse an enemy, causing the next spell they cast within <span class=\"item-number\">4</span> seconds to be reflected onto them."
+        }
+      ]
+    },
+    {
+      "id": 30553,
+      "name": "Magic Fiend",
+      "spellId": 704613,
+      "spellIds": [
+        704613
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DarkSummoning",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31294
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of beneficial magic effects stolen by your Consume Magic by 1.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704613,
+          "description": "Increases the amount of beneficial magic effects stolen by your <span style=\"color: #ffffff; display: inline\">Consume Magic</span> by <span class=\"item-number\">1</span>."
+        }
+      ]
+    },
+    {
+      "id": 30554,
+      "name": "Hateforged Barrier",
+      "spellId": 705129,
+      "spellIds": [
+        705129
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_felfireward",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Manifest a barrier of pure hatred, absorbing 177 + 200% Stamina damage, scaling with your Stamina, for 30 seconds.While the barrier holds, you regenerate 2% of your maximum health every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705129,
+          "description": "Manifest a barrier of pure hatred, absorbing <span class=\"item-number\">177</span> + <span class=\"item-number\">200% Stamina</span> damage, scaling with your Stamina, for <span class=\"item-number\">30</span> seconds.<br /><br />While the barrier holds, you regenerate <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum health every <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30556,
+      "name": "Felspill",
+      "spellId": 706267,
+      "spellIds": [
+        706267
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_yorsahj_bloodboil_greenoil",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34222
+      ],
+      "requiredIds": [],
+      "desc": "Generating Felfury now leeches 10% AP health from 3 nearby enemies within 6 yds, scaling with your attack power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706267,
+          "description": "Generating <span style=\"color: #32cd32; display: inline\">Felfury</span> now leeches <span class=\"item-number\">10% AP</span> health from <span class=\"item-number\">3</span> nearby enemies within <span class=\"item-number\">6</span> yds, scaling with your attack power."
+        }
+      ]
+    },
+    {
+      "id": 30557,
+      "name": "Tyrant's Gaze",
+      "spellId": 805240,
+      "spellIds": [
+        805240
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_summondemonictyrant",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11213,
+        30563,
+        34220
+      ],
+      "requiredIds": [],
+      "desc": "Set your fiery gaze upon an enemy and all enemies nearby, intimidating them and causing them to combust, dealing 220 + 35% AP Shadowflame Damage to them.Damaging an enemy in this way heals you for 146 + 50% AP and generates 1 Felfury.Only usable on enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805240,
+          "description": "Set your fiery gaze upon an enemy and all enemies nearby, intimidating them and causing them to combust, dealing <span class=\"item-number\">220</span> + <span class=\"item-number\">35% AP</span> Shadowflame Damage to them.<br /><br />Damaging an enemy in this way heals you for <span class=\"item-number\">146</span> + <span class=\"item-number\">50% AP</span> and generates <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 30558,
+      "name": "Burning Hatred",
+      "spellId": 805239,
+      "spellIds": [
+        805239
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warlock_demonicempowerment",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30556
+      ],
+      "requiredIds": [],
+      "desc": "Enrages you, instantly generating 6 Felfury and causing your melee damage to leech health to you equal to 50% of the damage dealt as Chaos damage for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805239,
+          "description": "Enrages you, instantly generating <span class=\"item-number\">6</span> <span style=\"color: #32cd32; display: inline\">Felfury</span> and causing your melee damage to leech health to you equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt as Chaos damage for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30559,
+      "name": "Skull of Gul'dan",
+      "spellId": 800225,
+      "spellIds": [
+        800225
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_03",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7863,
+        34205
+      ],
+      "requiredIds": [],
+      "desc": "Consume the essence of the skull of Gul'dan, increasing your maximum health and Energy by 25% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800225,
+          "description": "Consume the essence of the skull of Gul'dan, increasing your maximum health and Energy by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30560,
+      "name": "Eye of the Tyrant",
+      "spellId": 560549,
+      "spellIds": [
+        560549
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_fel_tainted_cache",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6877,
+        11217,
+        34217
+      ],
+      "requiredIds": [],
+      "desc": "Grant 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, your attack power is increased by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560549,
+          "description": "Grant <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee and ranged haste to party and raid members within <span class=\"item-number\">100</span> yds. Does not stack with similar effects.<br /><br />In addition, your attack power is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30565,
+      "name": "Pact Hunter",
+      "spellId": 704612,
+      "spellIds": [
+        704612
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_metamorphasistank",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29399,
+        30552
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Pacts by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704612,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Pacts</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30808,
+      "name": "Withering",
+      "spellId": 707416,
+      "spellIds": [
+        707416
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Zone_Shadowmoon",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30302
+      ],
+      "requiredIds": [],
+      "desc": "Your Fel Fireballs used with Felforged active now deal 30% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707416,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Fel Fireballs</span> used with <span style=\"color: #ffffff; display: inline\">Felforged</span> active now deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": 30811,
+      "name": "Pit Lord's Rage",
+      "spellId": 705141,
+      "spellIds": [
+        705141
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34249
+      ],
+      "requiredIds": [],
+      "desc": "Casting Chaos Rush now increases your Physical damage by 15% for 10 seconds.Casting Felhoof Charge increases your critical strike chance by 6% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705141,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Chaos Rush</span> now increases your Physical damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Casting <span style=\"color: #FFFFFF; display: inline\">Felhoof Charge</span> increases your critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30874,
+      "name": "Curse of Argus",
+      "spellId": 704370,
+      "spellIds": [
+        704370
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NatureBurn_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6909,
+        6911,
+        10909
+      ],
+      "requiredIds": [],
+      "desc": "Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704370,
+          "description": "Each time <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> deals damage its damage is increased on the target by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">20</span> times."
+        }
+      ]
+    },
+    {
+      "id": 31158,
+      "name": "Ruin",
+      "spellId": 801895,
+      "spellIds": [
+        801895
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_infernalmountgreen",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4008,
+        29686
+      ],
+      "desc": "Consumes 2 FelfuryBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.Inner Demon: Deals an additional 30% of the damage dealt over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801895,
+          "description": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Bring doom upon an enemy, dealing <span class=\"item-number\">cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32)</span> Shadowflame Damage to an enemy, piercing all absorption effects.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Deals an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31159,
+      "name": "Carve",
+      "spellId": 800206,
+      "spellIds": [
+        800206
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_infernalstrike2",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Consumes 2 FelfuryCharge up a powerful attack over 2.5 seconds. Upon ending the channel, slash in front of you, dealing increased Weapon Damage with both weapons based on how long you channel, dealing less damage with each target struck. Inner Demon: Reduces affected enemies melee and ranged haste by -20% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800206,
+          "description": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Charge up a powerful attack over <span class=\"item-number\">2.5</span> seconds. <br /><br />Upon ending the channel, slash in front of you, dealing increased Weapon Damage with both weapons based on how long you channel, dealing less damage with each target struck. <br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Reduces affected enemies melee and ranged haste by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 31291,
+      "name": "Felfire Adept",
+      "spellId": 560836,
+      "spellIds": [
+        560836,
+        561345
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Fire_FelHellfire",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31297,
+        34256
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Sargeron Smite by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560836,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561345,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31294,
+      "name": "Cunning",
+      "spellId": 300465,
+      "spellIds": [
+        300465
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_hellfire_felreaver",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6423,
+        29924
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of movement impairing effects on you by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300465,
+          "description": "Reduces the duration of movement impairing effects on you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31295,
+      "name": "Infernal",
+      "spellId": 560284,
+      "spellIds": [
+        560284
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_summoninfernal",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7861,
+        29968
+      ],
+      "requiredIds": [],
+      "desc": "Drop an infernal from the sky with grotesque magic, dealing 12 + 55% fire SP Fire damage to enemies in the radius, horrifying them for 4 seconds, and spawning an Infernal to fight by your side for 15 seconds.Inner Demon: Lasts 1 additional sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560284,
+          "description": "Drop an infernal from the sky with grotesque magic, dealing <span class=\"item-number\">12</span> + <span class=\"item-number\">55% fire SP</span> Fire damage to enemies in the radius, horrifying them for <span class=\"item-number\">4</span> seconds, and spawning an <span style=\"color: #FFFFFF; display: inline\">Infernal</span> to fight by your side for <span class=\"item-number\">15</span> seconds.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Lasts <span class=\"item-number\">1</span> additional sec."
+        }
+      ]
+    },
+    {
+      "id": 31297,
+      "name": "Wrath of Sargeras",
+      "spellId": 806103,
+      "spellIds": [
+        806103,
+        807902
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_dungeon_tombofsargeras",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31158
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Magic damage dealt by 3% and your spell hit chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806103,
+          "description": "Increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your spell hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807902,
+          "description": "Increases your Magic damage dealt by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your spell hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31298,
+      "name": "Black Magic",
+      "spellId": 524950,
+      "spellIds": [
+        524950,
+        525079
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_shoulder_plate_archimonde_d_01",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6340,
+        30302
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your Bane of Chaos and Ruin by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524950,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 525079,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31299,
+      "name": "Scars of the Past",
+      "spellId": 520805,
+      "spellIds": [
+        520805
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell-illidan-rosa",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29852
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Chaos Rush by -5 and casting Chaos Rush now heals you for 81 + 20% Stamina + 33% AP.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520805,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Chaos Rush</span> by <span class=\"item-number\">-5</span> and casting <span style=\"color: #FFFFFF; display: inline\">Chaos Rush</span> now heals you for <span class=\"item-number\">81</span> + <span class=\"item-number\">20% Stamina</span> + <span class=\"item-number\">33% AP</span>."
+        }
+      ]
+    },
+    {
+      "id": 31300,
+      "name": "Fel Instincts",
+      "spellId": 560645,
+      "spellIds": [
+        560645
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_argustalbukmount_felpurple",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6919
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Azzinoth's Assault by 10% and causes it to increase your melee haste by 20% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560645,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Azzinoth's Assault</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causes it to increase your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31301,
+      "name": "Spite",
+      "spellId": 800188,
+      "spellIds": [
+        800188,
+        803840
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_warlock_backdraftgreen",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29927
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility by 8% and dodge chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800188,
+          "description": "Increases your Agility by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and dodge chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 803840,
+          "description": "Increases your Agility by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and dodge chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31392,
+      "name": "Oblivion",
+      "spellId": 572889,
+      "spellIds": [
+        572889
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6524,
+        34209,
+        34251
+      ],
+      "requiredIds": [],
+      "desc": "Critically striking now increases your damage dealt by 1% for 4 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572889,
+          "description": "Critically striking now increases your damage dealt by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 33668,
+      "name": "Felgorged",
+      "spellId": 560573,
+      "spellIds": [
+        560573
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_feldevastation",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6868
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Cripple and Consume Magic by -10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560573,
+          "description": "Reduces the Energy cost of <span style=\"color: #FFFFFF; display: inline\">Cripple</span> and <span style=\"color: #ffffff; display: inline\">Consume Magic</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": 33670,
+      "name": "Embracing Evil",
+      "spellId": 800352,
+      "spellIds": [
+        800352
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_CasterCloak_Fel",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34205
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration and reduces the Energy cost of Banes by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800352,
+          "description": "Increases the duration and reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Banes</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33671,
+      "name": "Armaments of the Legion",
+      "spellId": 706266,
+      "spellIds": [
+        706266,
+        707844
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_plate_helmet_eredarargus_d_01",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11227,
+        34227
+      ],
+      "requiredIds": [],
+      "desc": "Reduces your chance to be hit by spells by -2% and increases the absorption value of Hateforged Barrier by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706266,
+          "description": "Reduces your chance to be hit by spells by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> and increases the absorption value of <span style=\"color: #FFFFFF; display: inline\">Hateforged Barrier</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707844,
+          "description": "Reduces your chance to be hit by spells by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> and increases the absorption value of <span style=\"color: #FFFFFF; display: inline\">Hateforged Barrier</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33674,
+      "name": "Elemental Bane",
+      "spellId": 704607,
+      "spellIds": [
+        704607
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fel_elementaldevastation",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34204
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical damage by 10% and additionally increases your critical strike chance by 15% while fighting Elementals.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704607,
+          "description": "Increases your critical damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and additionally increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> while fighting Elementals."
+        }
+      ]
+    },
+    {
+      "id": 34203,
+      "name": "Demonic Evasion",
+      "spellId": 705108,
+      "spellIds": [
+        705108
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_MonkSpecialAttack_DodgeNightElf",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30554
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to dodge by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705108,
+          "description": "Increases your chance to dodge by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34204,
+      "name": "Warden's End",
+      "spellId": 705125,
+      "spellIds": [
+        705125
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Fabric_Felcloth_Ebon",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29924
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Mana Burn and Illidan's Guile by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705125,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mana Burn</span> and <span style=\"color: #ffffff; display: inline\">Illidan's Guile</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34205,
+      "name": "Felwracked",
+      "spellId": 704374,
+      "spellIds": [
+        704374
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DemonicCircleTeleport",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34207
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd Twin Slice or Fel Fireball within 15 seconds now generates 1 additional Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704374,
+          "description": "Every 3rd <span style=\"color: #ffffff; display: inline\">Twin Slice</span> or <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> within <span class=\"item-number\">15</span> seconds now generates <span class=\"item-number\">1</span> additional <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 34207,
+      "name": "Demonborn",
+      "spellId": 705102,
+      "spellIds": [
+        705102,
+        707842
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_unholyswing_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29367,
+        29686,
+        30554
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Energy regeneration by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705102,
+          "description": "Increases your Energy regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707842,
+          "description": "Increases your Energy regeneration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34209,
+      "name": "Felguard",
+      "spellId": 560542,
+      "spellIds": [
+        560542
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_FelArmour",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29402,
+        34244
+      ],
+      "requiredIds": [],
+      "desc": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, while Inner Demon is active, you now heal for 15% of all melee damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560542,
+          "description": "Emanate a powerful aura, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee and ranged haste to party and raid members within <span class=\"item-number\">100</span> yds. Does not stack with similar effects.<br /><br />In addition, while <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, you now heal for <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of all melee damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 34211,
+      "name": "Focused Hatred",
+      "spellId": 704606,
+      "spellIds": [
+        704606
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_leather_raiddemonhuntermythic_q_02helm",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7862
+      ],
+      "requiredIds": [],
+      "desc": "Direct magical critical strikes now generate 5 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704606,
+          "description": "Direct magical critical strikes now generate <span class=\"item-number\">5</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 34212,
+      "name": "Felheart",
+      "spellId": 301287,
+      "spellIds": [
+        301287
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_dhmount_felsaber",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6868,
+        33670
+      ],
+      "requiredIds": [],
+      "desc": "Each Felfury active now increases your haste by 1%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301287,
+          "description": "Each <span style=\"color: #32cd32; display: inline\">Felfury</span> active now increases your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34213,
+      "name": "Demonic Embrace",
+      "spellId": 520257,
+      "spellIds": [
+        520257
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_worldinflamesgreen",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30559
+      ],
+      "requiredIds": [],
+      "desc": "Casting Inner Demon with at least 6 Felfury now restores 50 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520257,
+          "description": "Casting <span style=\"color: #32cd32; display: inline\">Inner Demon</span> with at least <span class=\"item-number\">6</span> <span style=\"color: #32cd32; display: inline\">Felfury</span> now restores <span class=\"item-number\">50</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 34219,
+      "name": "Bulwark of Azzinoth",
+      "spellId": 705122,
+      "spellIds": [
+        705122
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Armor_Shield_Naxxramas_D_01",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30556,
+        30566,
+        34221
+      ],
+      "requiredIds": [],
+      "desc": "Inner Demon now also reduces your damage taken by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705122,
+          "description": "<span style=\"color: #32cd32; display: inline\">Inner Demon</span> now also reduces your damage taken by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34220,
+      "name": "Infernal Constitution",
+      "spellId": 805256,
+      "spellIds": [
+        805256
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_glide",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34222,
+        34226
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum health by 10% and increases your off-hand weapon damage by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805256,
+          "description": "Increases your maximum health by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases your off-hand weapon damage by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34222,
+      "name": "Pure Hatred",
+      "spellId": 803478,
+      "spellIds": [
+        803478
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_metamorphasistank",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6338
+      ],
+      "requiredIds": [],
+      "desc": "Your Hateforged Barrier now also scales with your dodge rating.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803478,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Hateforged Barrier</span> now also scales with your dodge rating."
+        }
+      ]
+    },
+    {
+      "id": 34224,
+      "name": "Infernal Whipcrack",
+      "spellId": 805243,
+      "spellIds": [
+        805243
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_whiplash",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11111,
+        30560,
+        30561
+      ],
+      "requiredIds": [],
+      "desc": "Enrage up to 8 allies within 20 yds, reducing their damage taken by -15% and increasing their haste by 10% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805243,
+          "description": "Enrage up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">20</span> yds, reducing their damage taken by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and increasing their haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34226,
+      "name": "Burning Legionnaire",
+      "spellId": 520885,
+      "spellIds": [
+        520885
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Kiljaedan",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7869
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Twin Slice and Sunder by -10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520885,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Twin Slice</span> and <span style=\"color: #ffffff; display: inline\">Sunder</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": 34228,
+      "name": "Grommash's Folly",
+      "spellId": 805236,
+      "spellIds": [
+        805236
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Orc_06",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6876,
+        30404,
+        34224
+      ],
+      "requiredIds": [],
+      "desc": "While Inner Demon is active, your melee haste is now increased by 15% and you now heal equal to 50% of all damage dealt by critical strikes with auto attacks.In addition, critical strikes with Carve deal 5% increased damage, increasing up to 60% with each strike based on how long you channel.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805236,
+          "description": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, your melee haste is now increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and you now heal equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of all damage dealt by critical strikes with auto attacks.<br /><br />In addition, critical strikes with <span style=\"color: #ffffff; display: inline\">Carve</span> deal <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased damage, increasing up to <span class=\"item-number\">60%</span> with each strike based on how long you channel."
+        }
+      ]
+    },
+    {
+      "id": 34229,
+      "name": "Betrayer",
+      "spellId": 300476,
+      "spellIds": [
+        300476
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_unholy_smile_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30556,
+        34220
+      ],
+      "requiredIds": [],
+      "desc": "Dodging attacks causes 40% off-hand Weapon Damage to attackers and enrages your party and raid members within 20 yds, increasing their critical strike chance by 2% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300476,
+          "description": "Dodging attacks causes <span class=\"item-number\">40</span><span class=\"item-number\">%</span> off-hand Weapon Damage to attackers and enrages your party and raid members within <span class=\"item-number\">20</span> yds, increasing their critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34230,
+      "name": "Felbreak",
+      "spellId": 800203,
+      "spellIds": [
+        800203
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_deathsiphon",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30808,
+        31298
+      ],
+      "requiredIds": [],
+      "desc": "Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.Usable while moving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800203,
+          "description": "Interrupt a spell from being cast, preventing the target from casting spells of that school for <span class=\"item-number\">3</span> seconds and draining mana from the target based on your Spirit.<br /><br />Usable while moving."
+        }
+      ]
+    },
+    {
+      "id": 34231,
+      "name": "Fel Infusion",
+      "spellId": 560533,
+      "spellIds": [
+        560533
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_AuraCloak_Felfire",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6912
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560533,
+          "description": "Increases critical strike chance of all party and raid members within <span class=\"item-number\">100</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34232,
+      "name": "Malice of Gul'dan",
+      "spellId": 800214,
+      "spellIds": [
+        800214
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_thenighthold_guldan",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34234
+      ],
+      "requiredIds": [],
+      "desc": "Direct critical strikes now have a 60% chance to trigger a Felstrike and generate a Fragment of Malice.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.Fragment of MaliceRestores 5 Energy and increases your critical strike chance by 10% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800214,
+          "description": "Direct critical strikes now have a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Felstrike</span> and generate a <span style=\"color: #ffffff; display: inline\">Fragment of Malice</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _soulfire_green\" /><span class=\"name\">Felstrike</span></div><span class=\"desc\">Burn an enemy for <span class=\"item-number\">54</span> + <span class=\"item-number\">30% SP</span> Shadowflame Damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_misc_skullofguldanshattered\" /><span class=\"name\">Fragment of Malice</span></div><span class=\"desc\">Restores <span class=\"item-number\">5</span> Energy and increases your critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34234,
+      "name": "Nether Spirit",
+      "spellId": 300477,
+      "spellIds": [
+        300477
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_immolation",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6910,
+        34231
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell critical strike chance by 20% of your Spirit.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300477,
+          "description": "Increases your spell critical strike chance by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Spirit."
+        }
+      ]
+    },
+    {
+      "id": 34236,
+      "name": "Twin Fury",
+      "spellId": 801892,
+      "spellIds": [
+        801892
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_Felcano",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29387
+      ],
+      "requiredIds": [],
+      "desc": "Critically striking with Twin Slice or Annihilan Strike now generates an additional 1 Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801892,
+          "description": "Critically striking with <span style=\"color: #FFFFFF; display: inline\">Twin Slice</span> or <span style=\"color: #ffffff; display: inline\">Annihilan Strike</span> now generates an additional <span style=\"color: #32cd32; display: inline\"><span class=\"item-number\">1</span> Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": 34237,
+      "name": "Archimonde's Wrath",
+      "spellId": 300489,
+      "spellIds": [
+        300489
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_Exarch_Maladaar",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4292,
+        6914,
+        11292,
+        11914
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300489,
+          "description": "Increases the critical strike chance of your <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for every <span class=\"item-number\">10</span> points of Energy you have at the time of casting."
+        }
+      ]
+    },
+    {
+      "id": 34243,
+      "name": "Azzinoth's Assault",
+      "spellId": 801904,
+      "spellIds": [
+        801904
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_creature_felsunder",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Consumes 2 FelfuryStrike an enemy for Weapon Damage plus 15 + 10% AP with both weapons, additionally scaling with your attack power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801904,
+          "description": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Strike an enemy for Weapon Damage plus <span class=\"item-number\">15</span> + <span class=\"item-number\">10% AP</span> with both weapons, additionally scaling with your attack power."
+        }
+      ]
+    },
+    {
+      "id": 34244,
+      "name": "Fury Unleashed",
+      "spellId": 555738,
+      "spellIds": [
+        555738
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_03dual",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34245,
+        7432,
+        11814
+      ],
+      "requiredIds": [],
+      "desc": "Spin your glaives for 5 seconds, increasing movement speed by 30% and dealing 200% Weapon Damage every 1 sec with both weapons to all nearby enemies.You are immune to movement impairing and loss of control effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 555738,
+          "description": "Spin your glaives for <span class=\"item-number\">5</span> seconds, increasing movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and dealing <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage every <span class=\"item-number\">1</span> sec with both weapons to all nearby enemies.<br /><br />You are immune to movement impairing and loss of control effects."
+        }
+      ]
+    },
+    {
+      "id": 34249,
+      "name": "Reachwalker",
+      "spellId": 705135,
+      "spellIds": [
+        705135
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_blood_of_sargeras",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29132,
+        31300
+      ],
+      "requiredIds": [],
+      "desc": "Casting Chaos Rush now reduces the cooldown of Felhoof Charge by -2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705135,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Chaos Rush</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Felhoof Charge</span> by <span class=\"item-number\">-2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34252,
+      "name": "Burning Rage",
+      "spellId": 707907,
+      "spellIds": [
+        707907
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SummonImp",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30299
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage and reduces the cost of Sunder and Immolation Aura by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707907,
+          "description": "Increases the damage and reduces the cost of <span style=\"color: #ffffff; display: inline\">Sunder</span> and <span style=\"color: #ffffff; display: inline\">Immolation Aura</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34256,
+      "name": "Dark Magician",
+      "spellId": 560637,
+      "spellIds": [
+        560637
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_DeathGrip_Fel",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31158
+      ],
+      "requiredIds": [],
+      "desc": "While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560637,
+          "description": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, casting <span style=\"color: #ffffff; display: inline\">Ruin</span>, <span style=\"color: #ffffff; display: inline\">Sunder</span>, or <span style=\"color: #ffffff; display: inline\">Felwrath</span> now refunds <span class=\"item-number\">20</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:37:570158",
+      "name": "Scars of Suffering / Fel Blades",
+      "spellId": 570158,
+      "spellIds": [
+        570158
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_03",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30300
+      ],
+      "requiredIds": [],
+      "desc": "Casting Azzinoth's Assault now scars the enemy, increasing your allies' attack power against them by 15% Agility for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570158,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Azzinoth's Assault</span> now scars the enemy, increasing your allies' attack power against them by <span class=\"item-number\">15% Agility</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:37:705145",
+      "name": "Nether Champion / Demonic Machinations",
+      "spellId": 705145,
+      "spellIds": [
+        705145
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_worldinflamesgreen",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29405,
+        34252
+      ],
+      "requiredIds": [],
+      "desc": "Triggering Dancing Blades now increases the damage of next Sargeron Smite by 8% for 20 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705145,
+          "description": "Triggering <span style=\"color: #FFFFFF; display: inline\">Dancing Blades</span> now increases the damage of next <span style=\"color: #FFFFFF; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:37:520244",
+      "name": "Perpetual Fury / Glaiving",
+      "spellId": 520244,
+      "spellIds": [
+        520244
+      ],
+      "tabId": 37,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_thenighthold_tichondrius",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34244
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Dancing Blades reduces the cooldown of Fury Unleashed by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520244,
+          "description": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Dancing Blades</span> reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Fury Unleashed</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:87:178354",
+      "name": "Suffering / Gul'dan's Gift",
+      "spellId": 807430,
+      "spellIds": [
+        807430
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_negate",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30552
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Skull of Gul'dan by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807430,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Skull of Gul'dan</span> by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:87:922124",
+      "name": "Felguard / Felstrider",
+      "spellId": 704360,
+      "spellIds": [
+        704360
+      ],
+      "tabId": 87,
+      "classId": 14,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_explore_argus",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30565
+      ],
+      "requiredIds": [],
+      "desc": "Your Chaos Rush now reduces all damage taken by -3% for 5 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704360,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Chaos Rush</span> now reduces all damage taken by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:38:215789",
+      "name": "Fel Flamecasting / Herald of the Legion",
+      "spellId": 805998,
+      "spellIds": [
+        805998
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_unholy_spell_03_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34230
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805998,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now spreads your <span style=\"color: #ffffff; display: inline\">Cripple</span> to <span class=\"item-number\">2</span> nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:38:186540",
+      "name": "Infernal Summoner / Doomsayer",
+      "spellId": 300480,
+      "spellIds": [
+        300480
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_74_wings_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31295
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage dealt now has a 5% chance to reset the cooldown of Infernal.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300480,
+          "description": "Direct damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Infernal</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:38:254822",
+      "name": "Infernal Ruin / Oppressive Ruin",
+      "spellId": 560840,
+      "spellIds": [
+        560840
+      ],
+      "tabId": 38,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warlock_pvp_burninglegion",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29968,
+        31295
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560840,
+          "description": "Every 3rd <span style=\"color: #ffffff; display: inline\">Ruin</span> or <span style=\"color: #ffffff; display: inline\">Felwrath</span> now spawns an <span style=\"color: #ffffff; display: inline\">Infernal</span> to fight by your side for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:18:791213",
+      "name": "Annihilan Rituals / Quick Carving",
+      "spellId": 520831,
+      "spellIds": [
+        520831
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Mannoroth",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29845
+      ],
+      "requiredIds": [],
+      "desc": "Fully channeling Carve now refunds 1 Felfury.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520831,
+          "description": "Fully channeling <span style=\"color: #ffffff; display: inline\">Carve</span> now refunds <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:18:704611",
+      "name": "Battle Finesse / Unholy Endurance",
+      "spellId": 704611,
+      "spellIds": [
+        704611
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warlock_curse_weakness_aura",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29442,
+        34222
+      ],
+      "requiredIds": [],
+      "desc": "While channeling Carve, your chance to dodge is now increased by 1% based on how long you channel, up to a maximum of 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704611,
+          "description": "While channeling <span style=\"color: #ffffff; display: inline\">Carve</span>, your chance to dodge is now increased by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> based on how long you channel, up to a maximum of <span class=\"item-number\">10%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:18:178321",
+      "name": "Abyssal Conditioning / Illidari Training",
+      "spellId": 807431,
+      "spellIds": [
+        807431
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warlock_summonabyssal",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34226
+      ],
+      "requiredIds": [],
+      "desc": "Casting Felfury spenders now increases your Energy regeneration by 5% for 10 seconds, stacking up to 4 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807431,
+          "description": "Casting <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders now increases your Energy regeneration by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">4</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:18:500610",
+      "name": "Illidan's Favor / Fel Torpedo",
+      "spellId": 520592,
+      "spellIds": [
+        520592
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_Illidan",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29398,
+        34219
+      ],
+      "requiredIds": [],
+      "desc": "Removes the Energy cost of your Felbane and Manaburn and your Manaburn now strikes 4 additional enemies near the primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520592,
+          "description": "Removes the Energy cost of your <span style=\"color: #ffffff; display: inline\">Felbane</span> and <span style=\"color: #ffffff; display: inline\">Manaburn</span> and your <span style=\"color: #ffffff; display: inline\">Manaburn</span> now strikes <span class=\"item-number\">4</span> additional enemies near the primary target."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:18:29347",
+      "name": "Demonic Blood / Demonic Fortitude",
+      "spellId": 807438,
+      "spellIds": [
+        807438
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_brandofthehunt",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30557,
+        34229
+      ],
+      "requiredIds": [],
+      "desc": "Generating Felfury now extends the duration of Inner Demon by 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807438,
+          "description": "Generating <span style=\"color: #32cd32; display: inline\">Felfury</span> now extends the duration of <span style=\"color: #32cd32; display: inline\">Inner Demon</span> by <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:14:18:237822",
+      "name": "Fel Daze / Dark Lord",
+      "spellId": 705131,
+      "spellIds": [
+        705131
+      ],
+      "tabId": 18,
+      "classId": 14,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DeathCoil",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6815,
+        7870,
+        11217,
+        12170,
+        34217
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Fel Fireball by 10% and it's damage dealt now reduces the enemy's chance to hit by -3% for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705131,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and it's damage dealt now reduces the enemy's chance to hit by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5323 @@
+{
+  "class": "Primalist",
+  "classId": "31",
+  "specs": [
+    "Primal",
+    "Geomancy",
+    "Life",
+    "Mountain King"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Primal": 82,
+    "Geomancy": 83,
+    "Life": 84,
+    "Mountain King": 91
+  },
+  "nodes": [
+    {
+      "id": 2386,
+      "name": "Blessing of Therazane",
+      "spellId": 680439,
+      "spellIds": [
+        680439
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_PrincessTheradras",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6303,
+        9453
+      ],
+      "requiredIds": [],
+      "desc": "Each stack of Earthshaping now increases your critical damage dealt by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680439,
+          "description": "Each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> now increases your critical damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4384,
+      "name": "Frenzied Roar",
+      "spellId": 800133,
+      "spellIds": [
+        800133
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wolfdraenormountrustic",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6826,
+        30972
+      ],
+      "requiredIds": [],
+      "desc": "Roar with bestial fervor, generating 20 Rage and granting you 20% increased attack speed for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800133,
+          "description": "Roar with bestial fervor, generating <span class=\"item-number\">20</span> Rage and granting you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased attack speed for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 5008,
+      "name": "Son of Ursoc",
+      "spellId": 706176,
+      "spellIds": [
+        706176
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_Pet_Bear",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5151,
+        30969
+      ],
+      "requiredIds": [],
+      "desc": "Your Savage Frenzy now transforms you into a feast beast, freeing you of all movement impairing effects.In addition, increases the effectiveness of Savage Frenzy by 50%, and reduces its cooldown by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706176,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Savage Frenzy</span> now transforms you into a feast beast, freeing you of all movement impairing effects.<br /><br />In addition, increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Savage Frenzy</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, and reduces its cooldown by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 5151,
+      "name": "Totem Warrior",
+      "spellId": 704099,
+      "spellIds": [
+        704099
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_TotemOfWrath",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11207
+      ],
+      "requiredIds": [],
+      "desc": "While you have Boon of the Bear active, Wildclaw will now strike an additional time for 40% of the damage dealt with both weapons.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704099,
+          "description": "While you have <span style=\"color: #ffffff; display: inline\">Boon of the Bear</span> active, <span style=\"color: #ffffff; display: inline\">Wildclaw</span> will now strike an additional time for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt with both weapons."
+        }
+      ]
+    },
+    {
+      "id": 5532,
+      "name": "Nature's Will",
+      "spellId": 560140,
+      "spellIds": [
+        560140
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_tradeskillitem_lessersorcerersearth",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7357
+      ],
+      "requiredIds": [],
+      "desc": "Casting Seismic spells now extends the duration of Earthshaping by 4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560140,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Seismic</span> spells now extends the duration of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> by <span class=\"item-number\">4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 5544,
+      "name": "Magma Fissure",
+      "spellId": 802793,
+      "spellIds": [
+        802793
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_volcano",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6303,
+        6578,
+        9453
+      ],
+      "requiredIds": [],
+      "desc": "Stomp the ground and unleash a wave of earth and stone in a 20 yd line that knocks all enemies to the side and deals cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1) Fire damage, piercing absorption effects.Your next spell within 6 seconds is instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802793,
+          "description": "Stomp the ground and unleash a wave of earth and stone in a <span class=\"item-number\">20</span> yd line that knocks all enemies to the side and deals <span class=\"item-number\">cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1)</span> Fire damage, piercing absorption effects.<br /><br />Your next spell within <span class=\"item-number\">6</span> seconds is instant cast."
+        }
+      ]
+    },
+    {
+      "id": 6149,
+      "name": "Torn to Shreds",
+      "spellId": 500294,
+      "spellIds": [
+        500294
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_bearpaw_red",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6205
+      ],
+      "requiredIds": [],
+      "desc": "Totemic Smash and Rylak's Bite now causes enemies to bleed for 155 + 4.5% AP over 12 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500294,
+          "description": "<span style=\"color: #ffffff; display: inline\">Totemic Smash</span> and <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> now causes enemies to bleed for <span class=\"item-number\">155</span> + <span class=\"item-number\">4.5% AP</span> over <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6151,
+      "name": "Rexxar's Might",
+      "spellId": 806559,
+      "spellIds": [
+        806559
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_thrash",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30972
+      ],
+      "requiredIds": [],
+      "desc": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing 93 + 15% AP Physical damage every 2 sec for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806559,
+          "description": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing <span class=\"item-number\">93</span> + <span class=\"item-number\">15% AP</span> Physical damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6155,
+      "name": "Volcanic Blast",
+      "spellId": 680451,
+      "spellIds": [
+        680451,
+        681480
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_rhyolith_magmaflow_whole",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7358
+      ],
+      "requiredIds": [],
+      "desc": "Your Physical or Nature damaging critical strikes now deal an additional 10% of the damage dealt as Fire damage to the target and enemies nearby.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680451,
+          "description": "Your Physical or Nature damaging critical strikes now deal an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage to the target and enemies nearby."
+        },
+        {
+          "rank": 2,
+          "spellId": 681480,
+          "description": "Your Physical or Nature damaging critical strikes now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage to the target and enemies nearby."
+        }
+      ]
+    },
+    {
+      "id": 6201,
+      "name": "Wild At Heart",
+      "spellId": 524677,
+      "spellIds": [
+        524677
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill61_Border",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29382
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the global cooldown of Wildclaw by 0.-25 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524677,
+          "description": "Reduces the global cooldown of <span style=\"color: #ffffff; display: inline\">Wildclaw</span> by <span class=\"item-number\">0</span>.<span class=\"item-number\">-25</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6202,
+      "name": "Throat Clamp",
+      "spellId": 500764,
+      "spellIds": [
+        500764
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_Harass",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8008,
+        29349
+      ],
+      "requiredIds": [],
+      "desc": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500764,
+          "description": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6205,
+      "name": "Primal Shred",
+      "spellId": 500940,
+      "spellIds": [
+        500940
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_freshwound",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7109
+      ],
+      "requiredIds": [],
+      "desc": "Command your pet to shred up to 5 enemies within 8 yds, causing them to bleed, dealing 53 + 35% AP Physical damage over 21 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500940,
+          "description": "Command your pet to shred up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">8</span> yds, causing them to bleed, dealing <span class=\"item-number\">53</span> + <span class=\"item-number\">35% AP</span> Physical damage over <span class=\"item-number\">21</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6206,
+      "name": "Rush of the Hunt",
+      "spellId": 300691,
+      "spellIds": [
+        300691
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_bullrush",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29357,
+        31207
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Wildclaw and Rylak's Bite by 15% against bleeding enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300691,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wildclaw</span> and <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against bleeding enemies."
+        }
+      ]
+    },
+    {
+      "id": 6211,
+      "name": "Mineralization",
+      "spellId": 520464,
+      "spellIds": [
+        520464
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\hunter_pvp_diamondice",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6305,
+        29362
+      ],
+      "requiredIds": [],
+      "desc": "While at or below 35% health, your spells and abilities will increase your healing received by 10% for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520464,
+          "description": "While at or below <span class=\"item-number\">35%</span> health, your spells and abilities will increase your healing received by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6230,
+      "name": "Keeper of the Grove",
+      "spellId": 706137,
+      "spellIds": [
+        706137
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_tradeskillitem_lessersorcerersearth",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7334,
+        11334,
+        30966
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Bramblepatch by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706137,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6235,
+      "name": "Primordial Earth",
+      "spellId": 806536,
+      "spellIds": [
+        806536
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ore_Gold_Nugget2",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6234,
+        6240,
+        6242,
+        6662,
+        14234
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with melee attacks now summon 1 Spirit of Life that immediately casts a lesser Spirit Charge on a nearby ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806536,
+          "description": "Critical strikes with melee attacks now summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Spirit of Life</span> that immediately casts a lesser <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> on a nearby ally, healing them for <span class=\"item-number\">397</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">404</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> Nature damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 6236,
+      "name": "Spiritual Warrior",
+      "spellId": 504220,
+      "spellIds": [
+        504220
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritualarmor_Border",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29363
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Spirit Charge by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504220,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6238,
+      "name": "Battleweaver",
+      "spellId": 300733,
+      "spellIds": [
+        300733
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureroots_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6509,
+        9687,
+        30508
+      ],
+      "requiredIds": [],
+      "desc": "Effective healing now increases your melee haste and damage by 2% for 5 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300733,
+          "description": "Effective healing now increases your melee haste and damage by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6242,
+      "name": "Infusion of Neptulon",
+      "spellId": 300731,
+      "spellIds": [
+        300731
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_frost_summonwaterelemental",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7107
+      ],
+      "requiredIds": [],
+      "desc": "Critically healing an ally now increases your attack power by 15% for your next 3 attacks. Lasts 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300731,
+          "description": "Critically healing an ally now increases your attack power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for your next <span class=\"item-number\">3</span> attacks. Lasts <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6246,
+      "name": "Ring of Life",
+      "spellId": 804705,
+      "spellIds": [
+        804705
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturestone_Border",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6238,
+        30949
+      ],
+      "requiredIds": [],
+      "desc": "Allies within 40 yds receive 6% increased healing. Does not stack with similar effects.In addition, your Magic damage taken is reduced by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804705,
+          "description": "Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> increased healing. Does not stack with similar effects.<br /><br />In addition, your Magic damage taken is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6257,
+      "name": "Magmatism",
+      "spellId": 706174,
+      "spellIds": [
+        706174
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ChaoticSpikes_Border",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6788
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Eruption by -15 sec and causes Magma Geodes to deal 30% more damage to enemies above 75% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706174,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Eruption</span> by <span class=\"item-number\">-15</span> sec and causes <span style=\"color: #FFFFFF; display: inline\">Magma Geodes</span> to deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> more damage to enemies above <span class=\"item-number\">75%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 6261,
+      "name": "Pulverize",
+      "spellId": 706153,
+      "spellIds": [
+        706153,
+        707811
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_bear_paw_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29382
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Totemic Smash by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706153,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707811,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6262,
+      "name": "Therazane's Gift",
+      "spellId": 504219,
+      "spellIds": [
+        504219
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_giftearthmother",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7327
+      ],
+      "requiredIds": [],
+      "desc": "Therazane's Rage now generates an additional 5 Rage and 5% additional mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504219,
+          "description": "<span style=\"color: #ffffff; display: inline\">Therazane's Rage</span> now generates an additional <span class=\"item-number\">5</span> Rage and <span class=\"item-number\">5</span><span class=\"item-number\">%</span> additional mana."
+        }
+      ]
+    },
+    {
+      "id": 6267,
+      "name": "Cave In",
+      "spellId": 500615,
+      "spellIds": [
+        500615
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deepwinddunk_dunk",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5544,
+        29258,
+        31309
+      ],
+      "requiredIds": [],
+      "desc": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for 4 seconds.Successfully interrupting a target generates 1 stack of Earthshaping.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500615,
+          "description": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for <span class=\"item-number\">4</span> seconds.<br /><br />Successfully interrupting a target generates <span class=\"item-number\">1</span> stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>."
+        }
+      ]
+    },
+    {
+      "id": 6269,
+      "name": "Primal Totem",
+      "spellId": 504229,
+      "spellIds": [
+        504229
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_relics_totemofrebirth",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30591
+      ],
+      "requiredIds": [],
+      "desc": "Summon a Primal Totem that increases the primary stats of party and raid members by 20% within 40 yds for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504229,
+          "description": "Summon a <span style=\"color: #ffffff; display: inline\">Primal Totem</span> that increases the primary stats of party and raid members by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> within <span class=\"item-number\">40</span> yds for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6298,
+      "name": "Bountiful Boons",
+      "spellId": 706203,
+      "spellIds": [
+        706203,
+        706204
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_GiftoftheWild",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6445,
+        12208
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Boons and Instincts by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706203,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Boons</span> and <span style=\"color: #FFFFFF; display: inline\">Instincts</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 706204,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Boons</span> and <span style=\"color: #FFFFFF; display: inline\">Instincts</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6305,
+      "name": "Stonefaced",
+      "spellId": 706201,
+      "spellIds": [
+        706201
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_StoneTablet_05",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6590,
+        7327
+      ],
+      "requiredIds": [],
+      "desc": "Casting Seismic abilities now also grants 2 stacks of Earth's Rage.Earth&#39;s RageIncreases movement speed by 4% and haste by 2% for 8 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706201,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now also grants <span class=\"item-number\">2</span> stacks of <span style=\"color: #ffffff; display: inline\">Earth's Rage</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_archaeology_70_tauren_handsmoothedpyrestone\" /><span class=\"name\">Earth&#39;s Rage</span></div><span class=\"desc\">Increases movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6445,
+      "name": "Heavy Handed",
+      "spellId": 706344,
+      "spellIds": [
+        706344
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_misc_06",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30633
+      ],
+      "requiredIds": [],
+      "desc": "Hand of the Earthmother now increases the Armor of yourself and your target by 10% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706344,
+          "description": "<span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> now increases the Armor of yourself and your target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6509,
+      "name": "Tranquil Mind",
+      "spellId": 504223,
+      "spellIds": [
+        504223,
+        504882
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_zone_nagrand_02",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29230
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage and healing done by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504223,
+          "description": "Increases your damage and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504882,
+          "description": "Increases your damage and healing done by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6578,
+      "name": "Earth Pummeling",
+      "spellId": 560182,
+      "spellIds": [
+        560182
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_nature_spell_03_Border",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5532,
+        7538
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Geode Barrage and Geodes to increase the chance for the enemy to be critically hit with spells by 3% for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560182,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Geodes</span> to increase the chance for the enemy to be critically hit with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6586,
+      "name": "Dream",
+      "spellId": 680452,
+      "spellIds": [
+        680452
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_nature_hidden_Border",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7358
+      ],
+      "requiredIds": [],
+      "desc": "Generating Earthshaping while at or above 10 stacks now grants Dream.DreamIncreases the critical strike chance of your Seismic abilities and Lithic Lance by 10% for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680452,
+          "description": "Generating <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> while at or above <span class=\"item-number\">10</span> stacks now grants <span style=\"color: #ffffff; display: inline\">Dream</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_nature_hidden_border\" /><span class=\"name\">Dream</span></div><span class=\"desc\">Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities and <span style=\"color: #ffffff; display: inline\">Lithic Lance</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6587,
+      "name": "Heavy Earth",
+      "spellId": 706160,
+      "spellIds": [
+        706160
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elementalearth2",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6788,
+        7545,
+        30104
+      ],
+      "requiredIds": [],
+      "desc": "Your Terrasurge now consumes all stacks of Earthshaping to refresh the duration of Golem Form and grant you Heavy Earth.Heavy Earth (Proc)Each stack of Earthshaping consumed grants you 5% additional damage dealt with Stoneshard and Geode Barrage as Nature Damage while this is active. Lasts 8 seconds.While active you cannot generate Earthshaping.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706160,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Terrasurge</span> now consumes all stacks of <span style=\"color: #ffffff; display: inline\">Earthshaping</span> to refresh the duration of <span style=\"color: #ffffff; display: inline\">Golem Form</span> and grant you <span style=\"color: #ffffff; display: inline\">Heavy Earth</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elementalearth2\" /><span class=\"name\">Heavy Earth (Proc)</span></div><span class=\"desc\">Each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> consumed grants you <span class=\"item-number\">5%</span> additional damage dealt with <span style=\"color: #ffffff; display: inline\">Stoneshard</span> and <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> as Nature Damage while this is active. Lasts <span class=\"item-number\">8</span> seconds.<br /><br />While active you cannot generate <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6588,
+      "name": "Stone Tosser",
+      "spellId": 680862,
+      "spellIds": [
+        680862
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Stone_16",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6586,
+        7538
+      ],
+      "requiredIds": [],
+      "desc": "Increases spell bonus damage scaling of Geode Barrage, Stoneshard, and Seismic Crash by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680862,
+          "description": "Increases spell bonus damage scaling of <span style=\"color: #ffffff; display: inline\">Geode Barrage</span>, <span style=\"color: #ffffff; display: inline\">Stoneshard</span>, and <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6590,
+      "name": "Stone Cold",
+      "spellId": 560158,
+      "spellIds": [
+        560158,
+        560159
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_custom_hearthstone_nature",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30689,
+        12567
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum health by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560158,
+          "description": "Increases your maximum health by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 560159,
+          "description": "Increases your maximum health by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6594,
+      "name": "Therazane's Might",
+      "spellId": 805336,
+      "spellIds": [
+        805336
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elemental_mote_nether",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7357
+      ],
+      "requiredIds": [],
+      "desc": "Your Terrasurge will now always critically strike against targets affected by your Seismic Tremor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805336,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Terrasurge</span> will now always critically strike against targets affected by your <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span>."
+        }
+      ]
+    },
+    {
+      "id": 6600,
+      "name": "Stoneskin",
+      "spellId": 706162,
+      "spellIds": [
+        706162,
+        707809
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_SkinofEarth",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7533
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor by 200% of your Intellect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706162,
+          "description": "Increases your Armor by <span class=\"item-number\">200</span><span class=\"item-number\">%</span> of your Intellect."
+        },
+        {
+          "rank": 2,
+          "spellId": 707809,
+          "description": "Increases your Armor by <span class=\"item-number\">400</span><span class=\"item-number\">%</span> of your Intellect."
+        }
+      ]
+    },
+    {
+      "id": 6651,
+      "name": "Primal Power",
+      "spellId": 706216,
+      "spellIds": [
+        706216
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_water_eye_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6238
+      ],
+      "requiredIds": [],
+      "desc": "Casting Seismic Wave now causes your next Hand of the Earthmother within 8 seconds to cost -50% less Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706216,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now causes your next <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> within <span class=\"item-number\">8</span> seconds to cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Rage."
+        }
+      ]
+    },
+    {
+      "id": 6654,
+      "name": "Running on Instinct",
+      "spellId": 300744,
+      "spellIds": [
+        300744
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritliquid_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7334,
+        11334
+      ],
+      "requiredIds": [],
+      "desc": "Passing through allies with Primal Rush now heals up to 5 of them for 166 + 25% AP + 35% SP and grants a stack of Running on Instinct.Running on Instinct (Proc)Damage of Wildclaw and Seismic spells is increased by 5% for 20 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300744,
+          "description": "Passing through allies with <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now heals up to <span class=\"item-number\">5</span> of them for <span class=\"item-number\">166</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">35% SP</span> and grants a stack of <span style=\"color: #FFFFFF; display: inline\">Running on Instinct</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritliquid_border\" /><span class=\"name\">Running on Instinct (Proc)</span></div><span class=\"desc\">Damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> and <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6788,
+      "name": "Eruption",
+      "spellId": 802335,
+      "spellIds": [
+        802335
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\6bf_blackrock_nova",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5193,
+        6593,
+        7543,
+        12543
+      ],
+      "requiredIds": [],
+      "desc": "Launch 1 Magma Geode at your target every 0 sec for 0.2 seconds, dealing cond(gt(SPFI, SPN), 58+200+SPFI*0.2, 58+200+SPN*0.2) Firestorm Damage. Duration increased by 0.2 sec for each stack of Earthshaping.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802335,
+          "description": "Launch <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Magma Geode</span> at your target every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">0.2</span> seconds, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 58+200+SPFI*0.2, 58+200+SPN*0.2)</span> Firestorm Damage. <br /><br />Duration increased by <span class=\"item-number\">0.2</span> sec for each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>."
+        }
+      ]
+    },
+    {
+      "id": 6826,
+      "name": "Bestial Wrath",
+      "spellId": 803347,
+      "spellIds": [
+        803347
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_fervor",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6367,
+        7330,
+        8006,
+        12430
+      ],
+      "requiredIds": [],
+      "desc": "When you critically strike, your pet restores 10 Focus. When your pet critically strikes, you restore 2% maximum mana and increase the target's Physical damage taken by 4% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803347,
+          "description": "When you critically strike, your pet restores <span class=\"item-number\">10</span> Focus. <br /><br />When your pet critically strikes, you restore <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum mana and increase the target's Physical damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6831,
+      "name": "Raptor Talons",
+      "spellId": 704096,
+      "spellIds": [
+        704096,
+        707812
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Hunter_BeastMastery",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6205
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Strength by 5% and your expertise by 4.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704096,
+          "description": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707812,
+          "description": "Increases your Strength by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">8</span>."
+        }
+      ]
+    },
+    {
+      "id": 7105,
+      "name": "Tectonic Flow",
+      "spellId": 802494,
+      "spellIds": [
+        802494
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_assassinskill43_Border",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29252,
+        30254
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Primal Rush and Boulder Dash by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802494,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Primal Rush</span> and <span style=\"color: #ffffff; display: inline\">Boulder Dash</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7107,
+      "name": "Earthmother's Binding",
+      "spellId": 805107,
+      "spellIds": [
+        805107
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_symbiosis",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6246,
+        6651
+      ],
+      "requiredIds": [],
+      "desc": "Envelop a target in the Earthmother's love, healing them for 501 + 100% healing + 100% AP. If used on an ally, 30% of their damage taken is redirected to you for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805107,
+          "description": "Envelop a target in the Earthmother's love, healing them for <span class=\"item-number\">501</span> + <span class=\"item-number\">100% healing</span> + <span class=\"item-number\">100% AP</span>. <br /><br />If used on an ally, <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of their damage taken is redirected to you for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7108,
+      "name": "Grove Guardian",
+      "spellId": 503721,
+      "spellIds": [
+        503721
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_NaturesGuardian_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7323,
+        9843,
+        29231
+      ],
+      "requiredIds": [],
+      "desc": "Mark a location as your Grove for 20 seconds.Allies within gain 30% movement speed and are healed for 404 + 25% AP every 5 sec, removing 1 poison and disease effect.Enemies within are slowed by -30% and take 504 + 45% AP Nature damage every 5 sec and are rooted for 2 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503721,
+          "description": "Mark a location as your <span style=\"color: #ffffff; display: inline\">Grove</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Allies within gain <span class=\"item-number\">30</span><span class=\"item-number\">%</span> movement speed and are healed for <span class=\"item-number\">404</span> + <span class=\"item-number\">25% AP</span> every <span class=\"item-number\">5</span> sec, removing <span class=\"item-number\">1</span> poison and disease effect.<br /><br />Enemies within are slowed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> and take <span class=\"item-number\">504</span> + <span class=\"item-number\">45% AP</span> Nature damage every <span class=\"item-number\">5</span> sec and are rooted for <span class=\"item-number\">2</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7109,
+      "name": "Fury of the Wild",
+      "spellId": 801234,
+      "spellIds": [
+        801234
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\druid_stagstatue01",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29667
+      ],
+      "requiredIds": [],
+      "desc": "When you cast a Boon, you cast the same Boon on your pet at 50% effectiveness.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801234,
+          "description": "When you cast a <span style=\"color: #ffffff; display: inline\">Boon</span>, you cast the same <span style=\"color: #ffffff; display: inline\">Boon</span> on your pet at <span class=\"item-number\">50%</span> effectiveness."
+        }
+      ]
+    },
+    {
+      "id": 7321,
+      "name": "Rock Barrier",
+      "spellId": 503630,
+      "spellIds": [
+        503630
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_holiday_hearthstonemidsummerfirefestival",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7326,
+        7844
+      ],
+      "requiredIds": [],
+      "desc": "2 Charges, 20 sec rechargeRaise rocks from beneath you, increasing your Armor by 100 + 300% Stamina, scaling with your Stamina. Lasts for 10 attacks or 10 seconds.Expending a charge of Rock Barrier launches a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503630,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">20</span> sec recharge</span><br />Raise rocks from beneath you, increasing your Armor by <span class=\"item-number\">100</span> + <span class=\"item-number\">300% Stamina</span>, scaling with your Stamina. Lasts for <span class=\"item-number\">10</span> attacks or <span class=\"item-number\">10</span> seconds.<br /><br />Expending a charge of <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> launches a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7322,
+      "name": "Protector of the Grove",
+      "spellId": 504198,
+      "spellIds": [
+        504198
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_nature_growl_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7108,
+        30591
+      ],
+      "requiredIds": [],
+      "desc": "Dealing direct damage now reduces the cooldown of Bearskin, Primal Convergence, and Boulder Dash by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504198,
+          "description": "Dealing direct damage now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Bearskin</span>, <span style=\"color: #FFFFFF; display: inline\">Primal Convergence</span>, and <span style=\"color: #ffffff; display: inline\">Boulder Dash</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7326,
+      "name": "Keen Senses",
+      "spellId": 806533,
+      "spellIds": [
+        806533
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_assassinskill31_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7105,
+        12208
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance and haste by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806533,
+          "description": "Increases your critical strike chance and haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7327,
+      "name": "Protective Roar",
+      "spellId": 802782,
+      "spellIds": [
+        802782
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_KingoftheJungle",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6260,
+        12360,
+        12567,
+        30689
+      ],
+      "requiredIds": [],
+      "desc": "Roar with noble tenacity, generating 20 Rage and granting 10% increased maximum health to all party and raid members for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802782,
+          "description": "Roar with noble tenacity, generating <span class=\"item-number\">20</span> Rage and granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased maximum health to all party and raid members for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7332,
+      "name": "Savage Frenzy",
+      "spellId": 806549,
+      "spellIds": [
+        806549
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_bestialdiscipline",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6251,
+        9851
+      ],
+      "requiredIds": [],
+      "desc": "Enrage you and your pet for 18 seconds, increasing damage dealt by 20%, and attack speed and movement speed by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806549,
+          "description": "Enrage you and your pet for <span class=\"item-number\">18</span> seconds, increasing damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, and attack speed and movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7335,
+      "name": "Power Hammer",
+      "spellId": 303014,
+      "spellIds": [
+        303014
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_custom_naaru_hammer_yellow",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30785
+      ],
+      "requiredIds": [],
+      "desc": "You now generate 10% more Rage from damage dealt, increased by 15% while a two-handed weapon is equipped.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 303014,
+          "description": "You now generate <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more Rage from damage dealt, increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> while a two-handed weapon is equipped."
+        }
+      ]
+    },
+    {
+      "id": 7339,
+      "name": "Natural Efficiency",
+      "spellId": 706167,
+      "spellIds": [
+        706167
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_ProtectionformNature",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29362
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you are struck by a root, stun, or incapacitate effect you are now instantly healed for 4% of your maximum health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706167,
+          "description": "Whenever you are struck by a root, stun, or incapacitate effect you are now instantly healed for <span class=\"item-number\">4</span><span class=\"item-number\">%</span> of your maximum health."
+        }
+      ]
+    },
+    {
+      "id": 7357,
+      "name": "One With The Earth",
+      "spellId": 704402,
+      "spellIds": [
+        704402
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_03",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7532,
+        7797
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Stoneshard and Geode Barrage by 20% and Stoneshard now restores 4% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704402,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Stoneshard</span> and <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Stoneshard</span> now restores <span class=\"item-number\">4</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": 7358,
+      "name": "Primal Shaman's Mask",
+      "spellId": 800185,
+      "spellIds": [
+        800185
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Inv_Helm_Mask_ZulGurub_D_01",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6600,
+        7797
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage dealt now has a 10% chance to launch a Geode at the enemyGeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage..",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800185,
+          "description": "Direct damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to launch a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>."
+        }
+      ]
+    },
+    {
+      "id": 7487,
+      "name": "Tilling the Earth",
+      "spellId": 680409,
+      "spellIds": [
+        680409,
+        681375
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_shaman_unleashweapon_earth",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7494
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Bash by 3% and increases your expertise by 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680409,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Bash</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and increases your expertise by <span class=\"item-number\">5</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 681375,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Bash</span> by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and increases your expertise by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 7488,
+      "name": "Quake",
+      "spellId": 803974,
+      "spellIds": [
+        803974
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_earthquake",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "2 Charges, 8 sec rechargeStomp the ground, dealing Weapon Damage plus 13 + 20% nature SP + 10% AP Nature damage to enemies within 8 yds and reduces their melee and ranged haste by -20% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803974,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">8</span> sec recharge</span><br />Stomp the ground, dealing Weapon Damage plus <span class=\"item-number\">13</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage to enemies within <span class=\"item-number\">8</span> yds and reduces their melee and ranged haste by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7492,
+      "name": "Blessed by the Earth",
+      "spellId": 300695,
+      "spellIds": [
+        300695
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3earthquake",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7501
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Primal Rush and Quake now grant Earth's Rage.Earth&#39;s RageIncreases movement speed by 4% and haste by 2% for 8 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300695,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Primal Rush</span> and <span style=\"color: #ffffff; display: inline\">Quake</span> now grant <span style=\"color: #ffffff; display: inline\">Earth's Rage</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_archaeology_70_tauren_handsmoothedpyrestone\" /><span class=\"name\">Earth&#39;s Rage</span></div><span class=\"desc\">Increases movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7493,
+      "name": "Mountain Hammer",
+      "spellId": 681130,
+      "spellIds": [
+        681130
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_HammerThrow_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7501,
+        7507
+      ],
+      "requiredIds": [],
+      "desc": "Throw a hammer at an enemy dealing 49 + 35.5% nature SP + 15.5% AP Physical damage and stunning them for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681130,
+          "description": "Throw a hammer at an enemy dealing <span class=\"item-number\">49</span> + <span class=\"item-number\">35.5% nature SP</span> + <span class=\"item-number\">15.5% AP</span> Physical damage and stunning them for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7494,
+      "name": "Bash",
+      "spellId": 680964,
+      "spellIds": [
+        680964
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\mountainking_Bash",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7516
+      ],
+      "requiredIds": [],
+      "desc": "Your auto attacks have a 30% chance to deal 50% Weapon Damage and stun them for 1 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680964,
+          "description": "Your auto attacks have a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Weapon Damage and stun them for <span class=\"item-number\">1</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7499,
+      "name": "Terrasmash",
+      "spellId": 706220,
+      "spellIds": [
+        706220
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3hammeroftheancients",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7510,
+        7515
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your off hand weapon now has a 30% chance to launch a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706220,
+          "description": "Damage dealt by your off hand weapon now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to launch a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7500,
+      "name": "Resources of the Earth",
+      "spellId": 560548,
+      "spellIds": [
+        560548
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_tradeskillitem_sorcererearth",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7513
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes now grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560548,
+          "description": "Critical strikes now grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Restores <span class=\"item-number\">1</span><span class=\"item-number\">%</span> maximum mana every <span class=\"item-number\">5</span> sec to allies within <span class=\"item-number\">100</span> yds for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7501,
+      "name": "Stone Soldier",
+      "spellId": 570157,
+      "spellIds": [
+        570157,
+        570225
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_challengemode_blackrockdepot_silver",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7514
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your off hand weapon by 30% and your chance to hit by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570157,
+          "description": "Increases the damage of your off hand weapon by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 570225,
+          "description": "Increases the damage of your off hand weapon by <span class=\"item-number\">60</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7502,
+      "name": "Improved Ursoc's Bellow",
+      "spellId": 560505,
+      "spellIds": [
+        560505
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mount_viciousalliancebearmount",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7524
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Ursoc's Bellow by 40%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560505,
+          "description": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Ursoc's Bellow</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7503,
+      "name": "Mountain Mover",
+      "spellId": 805643,
+      "spellIds": [
+        805643
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_highmaul_earthenfury",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7524
+      ],
+      "requiredIds": [],
+      "desc": "Avoiding an attack grants a stack of Mountain Mover for 10 seconds, stacking 5 times.Wildclaw consumes Mountain Mover stacks to cost -10% less Rage per stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805643,
+          "description": "Avoiding an attack grants a stack of <span style=\"color: #ffffff; display: inline\">Mountain Mover</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br /><span style=\"color: #ffffff; display: inline\">Wildclaw</span> consumes <span style=\"color: #ffffff; display: inline\">Mountain Mover</span> stacks to cost <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> less Rage per stack."
+        }
+      ]
+    },
+    {
+      "id": 7505,
+      "name": "Earthmother's Protection",
+      "spellId": 560298,
+      "spellIds": [
+        560298
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_pandarenelemental_earth",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7506,
+        11196
+      ],
+      "requiredIds": [],
+      "desc": "While your Rock Barrier is active, the Rage cost of Hand of the Earthmother is reduced by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560298,
+          "description": "While your <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> is active, the Rage cost of <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> is reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7507,
+      "name": "Seismically Efficient",
+      "spellId": 680413,
+      "spellIds": [
+        680413
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_pandarenelementa_earthl",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7514
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Rage generated from Seismic Crash by 5 and Seismic Spike by 2.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680413,
+          "description": "Increases the Rage generated from <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> by <span class=\"item-number\">5</span> and <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> by <span class=\"item-number\">2</span>."
+        }
+      ]
+    },
+    {
+      "id": 7508,
+      "name": "Mountain Thane",
+      "spellId": 680404,
+      "spellIds": [
+        680404,
+        681479
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievements_zone_highmountain",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7515
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Stamina by 5% and causes Earth's Rage to stack 1 additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680404,
+          "description": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and causes <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> to stack <span class=\"item-number\">1</span> additional time."
+        },
+        {
+          "rank": 2,
+          "spellId": 681479,
+          "description": "Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causes <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> to stack <span class=\"item-number\">1</span> additional time."
+        }
+      ]
+    },
+    {
+      "id": 7510,
+      "name": "Thane's Guidance",
+      "spellId": 680410,
+      "spellIds": [
+        680410
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_IronDwarf_01",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7493
+      ],
+      "requiredIds": [],
+      "desc": "Auto attacks now reduce the cooldown of Mountain Hammer by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680410,
+          "description": "Auto attacks now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7513,
+      "name": "Earthbreaker",
+      "spellId": 560147,
+      "spellIds": [
+        560147
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Zone_BladesEdgeMtns_01",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7487,
+        7528
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee haste by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560147,
+          "description": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7514,
+      "name": "Unyielding Form",
+      "spellId": 706161,
+      "spellIds": [
+        706161,
+        707808
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_StoneSkinTotem",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7488
+      ],
+      "requiredIds": [],
+      "desc": "Increases your parry and dodge chance by 3% and your Armor contribution from mail and plate by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706161,
+          "description": "Increases your parry and dodge chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your Armor contribution from mail and plate by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707808,
+          "description": "Increases your parry and dodge chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your Armor contribution from mail and plate by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7515,
+      "name": "Stonebound",
+      "spellId": 680415,
+      "spellIds": [
+        680415
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_hearthstonecard_legendary",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7492
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Boon of the Turtle and Earth's Rage by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680415,
+          "description": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Boon of the Turtle</span> and <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7516,
+      "name": "Spiritbound",
+      "spellId": 681364,
+      "spellIds": [
+        681364
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_freedomwolf",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7507
+      ],
+      "requiredIds": [],
+      "desc": "Avoiding attacks now grants you 5 Rage and reduces the cooldown of your Seismic abilities by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681364,
+          "description": "Avoiding attacks now grants you <span class=\"item-number\">5</span> Rage and reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7517,
+      "name": "Fury of the Earthmother",
+      "spellId": 680412,
+      "spellIds": [
+        680412
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureempower_Border",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7506,
+        11196
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Geode Barrage or Geodes now generates increased threat and have a 15% chance to add 1 charge to an active Rock Barrier and extend its duration by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680412,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Geodes</span> now generates increased threat and have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to add <span class=\"item-number\">1</span> charge to an active <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> and extend its duration by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7518,
+      "name": "Earthen Avatar",
+      "spellId": 680421,
+      "spellIds": [
+        680421
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_avatar",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7510,
+        7527,
+        13527
+      ],
+      "requiredIds": [],
+      "desc": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by 15%, and increasing your melee haste by 20% for 20 seconds.Immune to stuns, roots, and snares for the duration.Usable while stunned.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680421,
+          "description": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, and increasing your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Immune to stuns, roots, and snares for the duration.<br /><br />Usable while stunned."
+        }
+      ]
+    },
+    {
+      "id": 7519,
+      "name": "Mountain Fury",
+      "spellId": 806185,
+      "spellIds": [
+        806185
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_earthwall_Border",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7505,
+        7517
+      ],
+      "requiredIds": [],
+      "desc": "Move the earth, dealing 502 + 65% SP + 17% AP + 125% Stamina Physical damage to up to 12 enemies in a 10 yd frontal cone, pulling them toward you, repeating every 2 sec for 4 seconds.Each time an enemy is pulled toward you, you gain -2% reduced damage taken for 3 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806185,
+          "description": "Move the earth, dealing <span class=\"item-number\">502</span> + <span class=\"item-number\">65% SP</span> + <span class=\"item-number\">17% AP</span> + <span class=\"item-number\">125% Stamina</span> Physical damage to up to <span class=\"item-number\">12</span> enemies in a <span class=\"item-number\">10</span> yd frontal cone, pulling them toward you, repeating every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">4</span> seconds.<br /><br />Each time an enemy is pulled toward you, you gain <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> reduced damage taken for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7520,
+      "name": "Earthmaker",
+      "spellId": 560150,
+      "spellIds": [
+        560150
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_volatileearth",
+      "x": 5,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7519,
+        7525
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Seismic abilities and Quake now reduces the cooldown of Earthen Avatar by -1 sec.Additionally, the cooldown of Seismic abilities is reduced by -3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560150,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities and <span style=\"color: #ffffff; display: inline\">Quake</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Earthen Avatar</span> by <span class=\"item-number\">-1</span> sec.<br /><br />Additionally, the cooldown of <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities is reduced by <span class=\"item-number\">-3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7521,
+      "name": "Earth Destroyer",
+      "spellId": 560508,
+      "spellIds": [
+        560508
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_blackrockcaverns_karshsteelbender",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7519
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Mountain Fury by -20 sec and increases the duration by 4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560508,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mountain Fury</span> by <span class=\"item-number\">-20</span> sec and increases the duration by <span class=\"item-number\">4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7524,
+      "name": "Primal Guardian",
+      "spellId": 300728,
+      "spellIds": [
+        300728
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\icon_upgradestone_undead_legendary",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7518
+      ],
+      "requiredIds": [],
+      "desc": "When Earthen Avatar, Bearskin or Rock Barrier is removed or expires, you now gain 10% melee haste and parry chance for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300728,
+          "description": "When <span style=\"color: #ffffff; display: inline\">Earthen Avatar</span>, <span style=\"color: #FFFFFF; display: inline\">Bearskin</span> or <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> is removed or expires, you now gain <span class=\"item-number\">10</span><span class=\"item-number\">%</span> melee haste and parry chance for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7525,
+      "name": "Legacy of the Bronzebeards",
+      "spellId": 680424,
+      "spellIds": [
+        680424
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_leader_king_magni_bronzebeard",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7502,
+        7503
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Earthen Avatar by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680424,
+          "description": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Earthen Avatar</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7528,
+      "name": "Raging Earth",
+      "spellId": 706622,
+      "spellIds": [
+        706622
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturelighting_Border",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7494,
+        7527,
+        13527
+      ],
+      "requiredIds": [],
+      "desc": "Your Quake now creates a fissure beneath you that deals an additional 73 + 8% AP Nature damage every 2 sec for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706622,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Quake</span> now creates a fissure beneath you that deals an additional <span class=\"item-number\">73</span> + <span class=\"item-number\">8% AP</span> Nature damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7531,
+      "name": "Rockslide",
+      "spellId": 560154,
+      "spellIds": [
+        560154
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3earthquake",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7797
+      ],
+      "requiredIds": [],
+      "desc": "Stoneshard now has a 15% chance to cast an additional time. This effect can trigger itself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560154,
+          "description": "<span style=\"color: #ffffff; display: inline\">Stoneshard</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to cast an additional time. This effect can trigger itself."
+        }
+      ]
+    },
+    {
+      "id": 7532,
+      "name": "Cataclysm",
+      "spellId": 680444,
+      "spellIds": [
+        680444
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_sandexplosion",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7801
+      ],
+      "requiredIds": [],
+      "desc": "Generating Earthshaping or casting Stoneshard now has a 10% chance to reset the cooldown of your Seismic abilities.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680444,
+          "description": "Generating <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> or casting <span style=\"color: #ffffff; display: inline\">Stoneshard</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities."
+        }
+      ]
+    },
+    {
+      "id": 7533,
+      "name": "Whispers of the Earth",
+      "spellId": 681494,
+      "spellIds": [
+        681494
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shaman_EarthlivingWeapon",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7535
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Geode Barrage and Stoneshard by 0.3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681494,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Stoneshard</span> by <span class=\"item-number\">0.3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7535,
+      "name": "Seismic Tremor",
+      "spellId": 680442,
+      "spellIds": [
+        680442
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Seismic_Tremor",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Send a tremor through the earth at an enemy, dealing 54 + 50% nature SP Physical damage, plus an additional 336 over 24 seconds. Damage is dealt slowly at first, and builds up over time.Damage dealt generates 1 Rage. Generates 2 stacks of Earthshaping.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680442,
+          "description": "Send a tremor through the earth at an enemy, dealing <span class=\"item-number\">54</span> + <span class=\"item-number\">50% nature SP</span> Physical damage, plus an additional <span class=\"item-number\">336</span> over <span class=\"item-number\">24</span> seconds. Damage is dealt slowly at first, and builds up over time.<br /><br />Damage dealt generates <span class=\"item-number\">1</span> Rage. <br /><br />Generates <span class=\"item-number\">2</span> stacks of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 7537,
+      "name": "Cave Dweller",
+      "spellId": 574314,
+      "spellIds": [
+        574314,
+        574361
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_shoulder_leather_pvpdruid_c_02",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5544
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum Rage by 15 and reduces spell pushback suffered from damaging attacks by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574314,
+          "description": "Increases your maximum Rage by <span class=\"item-number\">15</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 574361,
+          "description": "Increases your maximum Rage by <span class=\"item-number\">30</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7538,
+      "name": "Golem Form",
+      "spellId": 805335,
+      "spellIds": [
+        805335
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_nature_shapeshift_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7357,
+        7358,
+        7531
+      ],
+      "requiredIds": [],
+      "desc": "Transform into a being made of stone and earth for 20 seconds, increasing your haste by 20% and your Armor by 50%, and allowing you to cast damaging spells while moving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805335,
+          "description": "Transform into a being made of stone and earth for <span class=\"item-number\">20</span> seconds, increasing your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your Armor by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, and allowing you to cast damaging spells while moving."
+        }
+      ]
+    },
+    {
+      "id": 7545,
+      "name": "Geomolding",
+      "spellId": 560169,
+      "spellIds": [
+        560169
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Elemental_Primal_Earth",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        2386,
+        7537
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt by Seismic Tremor now grants Geomolding for 15 seconds.Geomolding (Proc)Your next Terrasurge costs 2 additional Rage and deals 3% increased damage. Stacks 20 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560169,
+          "description": "Periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> now grants <span style=\"color: #ffffff; display: inline\">Geomolding</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_earth\" /><span class=\"name\">Geomolding (Proc)</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Terrasurge</span> costs <span class=\"item-number\">2</span> additional Rage and deals <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased damage. Stacks <span class=\"item-number\">20</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7547,
+      "name": "Rupturer",
+      "spellId": 706208,
+      "spellIds": [
+        706208
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Stone_03",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7545
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Seismic Spike or Seismic Crash now generates a stack of Geomolding. Critically striking with Seismic Spike or Seismic Crash now generates an additional stack of Geomolding plus a stack of Earthshaping.Casting Lithic Lance now reduces the cooldown of Terrasurge by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706208,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> or <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates a stack of <span style=\"color: #ffffff; display: inline\">Geomolding</span>. <br /><br />Critically striking with <span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> or <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates an additional stack of <span style=\"color: #FFFFFF; display: inline\">Geomolding</span> plus a stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Lithic Lance</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Terrasurge</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7548,
+      "name": "Earthmother's Blessing",
+      "spellId": 560157,
+      "spellIds": [
+        560157
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_70_tauren_handsmoothedpyrestone",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6211,
+        7339
+      ],
+      "requiredIds": [],
+      "desc": "Attacks which would otherwise kill you now instead reform you in stone, healing for 30% maximum health and reducing your Physical damage taken by -70% for 3 seconds.Can only occur once every 2 min.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560157,
+          "description": "Attacks which would otherwise kill you now instead reform you in stone, healing for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> maximum health and reducing your Physical damage taken by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.<br /><br />Can only occur once every <span class=\"item-number\">2</span> min."
+        }
+      ]
+    },
+    {
+      "id": 7796,
+      "name": "Primal Convergence",
+      "spellId": 800181,
+      "spellIds": [
+        800181
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_shamanskill09_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7326
+      ],
+      "requiredIds": [],
+      "desc": "Ascend into a primal convergence, increasing the effectiveness of your Boons by 100% for 30 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800181,
+          "description": "Ascend into a primal convergence, increasing the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Boons</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7797,
+      "name": "Terrasurge",
+      "spellId": 681119,
+      "spellIds": [
+        681119
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_earth_icon_0003s_0000_light_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7533,
+        7801
+      ],
+      "requiredIds": [],
+      "desc": "Unleash a massive globule of earth at an enemy, dealing 140 + 130% nature SP Physical damage and reducing their Armor by -50% for 10 sec.Pierces through absorption, deflection, and reflection effects.Deals 5% additional damage for each Earthshaping stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681119,
+          "description": "Unleash a massive globule of earth at an enemy, dealing <span class=\"item-number\">140</span> + <span class=\"item-number\">130% nature SP</span> Physical damage and reducing their Armor by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> sec.<br /><br />Pierces through absorption, deflection, and reflection effects.<br /><br />Deals <span class=\"item-number\">5</span><span class=\"item-number\">%</span> additional damage for each <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> stack."
+        }
+      ]
+    },
+    {
+      "id": 7798,
+      "name": "Dreamslip",
+      "spellId": 805867,
+      "spellIds": [
+        805867
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_legion_faction_dreamweavers",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7843
+      ],
+      "requiredIds": [],
+      "desc": "Shifts a party member into the Emerald Dream for 15 seconds, making them immune to damage and unable to attack or cast spells.While active, the target quickly regenerates health and mana and cannot be seen by other players or creatures.Cannot be used on self.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805867,
+          "description": "Shifts a party member into the <span style=\"color: #FFFFFF; display: inline\">Emerald Dream</span> for <span class=\"item-number\">15</span> seconds, making them immune to damage and unable to attack or cast spells.<br /><br />While active, the target quickly regenerates health and mana and cannot be seen by other players or creatures.<br /><br />Cannot be used on self."
+        }
+      ]
+    },
+    {
+      "id": 7800,
+      "name": "Cracking the Earth",
+      "spellId": 560145,
+      "spellIds": [
+        560145
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shaman_LavaFlow",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6155
+      ],
+      "requiredIds": [],
+      "desc": "Striking at least 5 enemies with Volcanic Blast now grants you Cracking the Earth for 10 seconds.Cracking the Earth (Proc)Your Seismic Spike strikes 1 additional enemy. Stacks 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560145,
+          "description": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Volcanic Blast</span> now grants you <span style=\"color: #ffffff; display: inline\">Cracking the Earth</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shaman_lavaflow\" /><span class=\"name\">Cracking the Earth (Proc)</span></div><span class=\"desc\">Your <span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> strikes <span class=\"item-number\">1</span> additional enemy. Stacks <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7801,
+      "name": "Gaze of Therazane",
+      "spellId": 680453,
+      "spellIds": [
+        680453,
+        680458
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_naturevision_Border",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7535
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your Geomancy spells by 10% and of Seismic spells by 8 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680453,
+          "description": "Increases the range of your Geomancy spells by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and of <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells by <span class=\"item-number\">8</span> yds."
+        },
+        {
+          "rank": 2,
+          "spellId": 680458,
+          "description": "Increases the range of your Geomancy spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and of <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells by <span class=\"item-number\">16</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 7805,
+      "name": "Quakeformer",
+      "spellId": 680419,
+      "spellIds": [
+        680419
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_earthelemental_totem",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7513
+      ],
+      "requiredIds": [],
+      "desc": "Casting Wildclaw and Seismic abilities now has a 25% chance to refresh a charge of Quake.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680419,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Wildclaw</span> and <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to refresh a charge of <span style=\"color: #ffffff; display: inline\">Quake</span>."
+        }
+      ]
+    },
+    {
+      "id": 7843,
+      "name": "Nature's Call",
+      "spellId": 706150,
+      "spellIds": [
+        706150,
+        707807
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Misc_MonsterClaw_04",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6260,
+        12360
+      ],
+      "requiredIds": [],
+      "desc": "Increases your healing done and received by 6%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706150,
+          "description": "Increases your healing done and received by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707807,
+          "description": "Increases your healing done and received by <span class=\"item-number\">12</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7844,
+      "name": "Focus",
+      "spellId": 680936,
+      "spellIds": [
+        680936,
+        681477
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_druid_primalprecision",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6289,
+        6665,
+        7105
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Intellect and Stamina by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680936,
+          "description": "Increases your Intellect and Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 681477,
+          "description": "Increases your Intellect and Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 8000,
+      "name": "Judgement of The Three Hammers",
+      "spellId": 520466,
+      "spellIds": [
+        520466
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_01",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7500,
+        7805
+      ],
+      "requiredIds": [],
+      "desc": "While active, dealing direct damage has a 20% chance to hurl 3 hammers over 2 seconds, each dealing 100 + 32.5% SP + 27.8% AP Physical damage. Lasts for 15 seconds. Damage scales with modifiers to Mountain Hammer.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520466,
+          "description": "While active, dealing direct damage has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to hurl <span class=\"item-number\">3</span> hammers over <span class=\"item-number\">2</span> seconds, each dealing <span class=\"item-number\">100</span> + <span class=\"item-number\">32.5% SP</span> + <span class=\"item-number\">27.8% AP</span> Physical damage. Lasts for <span class=\"item-number\">15</span> seconds. <br /><br />Damage scales with modifiers to <span style=\"color: #FFFFFF; display: inline\">Mountain Hammer</span>."
+        }
+      ]
+    },
+    {
+      "id": 8001,
+      "name": "Shattering",
+      "spellId": 520469,
+      "spellIds": [
+        520469
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\archaeology_5_0_crackedmogurunestone",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8000
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by each hammer triggered by Judgment of The Three Hammers now grants you 1% increased critical strike chance and damage for 10 seconds, stacking up to 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520469,
+          "description": "Damage dealt by each hammer triggered by <span style=\"color: #FFFFFF; display: inline\">Judgment of The Three Hammers</span> now grants you <span class=\"item-number\">1</span><span class=\"item-number\">%</span> increased critical strike chance and damage for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 8008,
+      "name": "Elemental Berserker",
+      "spellId": 706338,
+      "spellIds": [
+        706338
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_focusedstrikes",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29296
+      ],
+      "requiredIds": [],
+      "desc": "Increases the area damage dealt by Totemic Smash by 30%, but it now costs 5 additional Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706338,
+          "description": "Increases the area damage dealt by <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, but it now costs <span class=\"item-number\">5</span> additional Rage."
+        }
+      ]
+    },
+    {
+      "id": 9908,
+      "name": "Spirit Stable",
+      "spellId": 573310,
+      "spellIds": [
+        573310
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_GhostWalk_Border",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        9208
+      ],
+      "requiredIds": [],
+      "desc": "Call forth a stabled animal spirit to replace your current one. Lasts 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573310,
+          "description": "Call forth a stabled animal spirit to replace your current one. Lasts <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 11207,
+      "name": "Killer's Path",
+      "spellId": 706633,
+      "spellIds": [
+        706633
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(27)_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6202,
+        7330,
+        12430
+      ],
+      "requiredIds": [],
+      "desc": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706633,
+          "description": "Increases the attack power of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 11236,
+      "name": "Druid Training",
+      "spellId": 707560,
+      "spellIds": [
+        707560
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_EmpoweredRejuvination",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11184,
+        30784
+      ],
+      "requiredIds": [],
+      "desc": "Your Geode Barrage now heals all allies within 20 yds equal to 10% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707560,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> now heals all allies within <span class=\"item-number\">20</span> yds equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 12208,
+      "name": "Environmentalist",
+      "spellId": 300729,
+      "spellIds": [
+        300729
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureclover_Border",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30254,
+        30633
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of your spells and abilities by -5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300729,
+          "description": "Reduces the cost of your spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29230,
+      "name": "Seismic Wave",
+      "spellId": 805462,
+      "spellIds": [
+        805462
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Seismic_Wave",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31209
+      ],
+      "requiredIds": [],
+      "desc": "Create a seismic wave of healing water around you, healing for 27 + 60% healing + 28% AP health to up to 8 allies and dealing 47 + 28% AP + 30% healing Nature damage to enemies in a 25 yd radius.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805462,
+          "description": "Create a seismic wave of healing water around you, healing for <span class=\"item-number\">27</span> + <span class=\"item-number\">60% healing</span> + <span class=\"item-number\">28% AP</span> health to up to <span class=\"item-number\">8</span> allies and dealing <span class=\"item-number\">47</span> + <span class=\"item-number\">28% AP</span> + <span class=\"item-number\">30% healing</span> Nature damage to enemies in a <span class=\"item-number\">25</span> yd radius.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29231,
+      "name": "Fae Presence",
+      "spellId": 681281,
+      "spellIds": [
+        681281
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ui_darkshore_warfront_alliance_faerie_dragon",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7798
+      ],
+      "requiredIds": [],
+      "desc": "Removes the reagent cost from Fae Dust and causes it to increase the target's stealth detection.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681281,
+          "description": "Removes the reagent cost from <span style=\"color: #ffffff; display: inline\">Fae Dust</span> and causes it to increase the target's stealth detection."
+        }
+      ]
+    },
+    {
+      "id": 29233,
+      "name": "Earthmother's Precision",
+      "spellId": 555723,
+      "spellIds": [
+        555723
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_NatureTouchDecay",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7327,
+        7843
+      ],
+      "requiredIds": [],
+      "desc": "Seismic Crash now increases the chance for allies to hit with all spells against the enemy by 3% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 555723,
+          "description": "<span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now increases the chance for allies to hit with all spells against the enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29252,
+      "name": "Boulder Dash",
+      "spellId": 500692,
+      "spellIds": [
+        500692
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_elementl(earth)_b_01_Border",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Raise a boulder out of the ground and encase yourself within it, preventing you from attacking or casting spells.For 10 seconds, you roll forward at 70% increased movement speed, dealing 1 + 50% AP + 100% SP Physical damage to enemies you roll over, and you are immune to crowd control effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500692,
+          "description": "Raise a boulder out of the ground and encase yourself within it, preventing you from attacking or casting spells.<br /><br />For <span class=\"item-number\">10</span> seconds, you roll forward at <span class=\"item-number\">70</span><span class=\"item-number\">%</span> increased movement speed, dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">50% AP</span> + <span class=\"item-number\">100% SP</span> Physical damage to enemies you roll over, and you are immune to crowd control effects."
+        }
+      ]
+    },
+    {
+      "id": 29258,
+      "name": "Molten Fervor",
+      "spellId": 680476,
+      "spellIds": [
+        680476
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elemental_crystal_fire",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 1,
+      "connectedNodeIds": [
+        6578,
+        6588
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your spell haste by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680476,
+          "description": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29296,
+      "name": "Pulverize",
+      "spellId": 301087,
+      "spellIds": [
+        301087
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_moltensmash_Border",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6261
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Totemic Smash now trigger the area of effect portion of its damage an additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301087,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now trigger the area of effect portion of its damage an additional time."
+        }
+      ]
+    },
+    {
+      "id": 29299,
+      "name": "Bramblepatch",
+      "spellId": 806415,
+      "spellIds": [
+        806415
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eng_bombroot",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6298,
+        7326
+      ],
+      "requiredIds": [],
+      "desc": "Grow a patch of brambles at your location for 12 seconds.Allies in the area are immune to grip and knockback effects.Enemies in the area are unable to leap, dash, or charge.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806415,
+          "description": "Grow a patch of brambles at your location for <span class=\"item-number\">12</span> seconds.<br /><br />Allies in the area are immune to grip and knockback effects.<br /><br />Enemies in the area are unable to leap, dash, or charge."
+        }
+      ]
+    },
+    {
+      "id": 29339,
+      "name": "Lacerations",
+      "spellId": 560286,
+      "spellIds": [
+        560286
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Warriorskill_28_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6149
+      ],
+      "requiredIds": [],
+      "desc": "Melee critical strikes now increase the effectiveness of bleed effects on the target by 30% for 15 seconds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560286,
+          "description": "Melee critical strikes now increase the effectiveness of bleed effects on the target by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": 29349,
+      "name": "Earthshaker",
+      "spellId": 300698,
+      "spellIds": [
+        300698
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_volatileearth",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6251,
+        6365,
+        9851,
+        31230
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Seismic abilities by 10% and allows their periodic damage to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300698,
+          "description": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows their periodic damage to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 29350,
+      "name": "Sacred Grove",
+      "spellId": 800180,
+      "spellIds": [
+        800180
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_reputation_guardiansofcenarius",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30949,
+        30966,
+        30968
+      ],
+      "requiredIds": [],
+      "desc": "Create a Sacred Grove in a 15 yd radius around you for 16 seconds, instantly healing all nearby party and raid members for 2002 + 100% AP.While active, up to 12 allies in the grove receive 25% increased healing, and regain 3% of their missing health, Rage, and mana every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800180,
+          "description": "Create a <span style=\"color: #ffffff; display: inline\">Sacred Grove</span> in a <span class=\"item-number\">15</span> yd radius around you for <span class=\"item-number\">16</span> seconds, instantly healing all nearby party and raid members for <span class=\"item-number\">2002</span> + <span class=\"item-number\">100% AP</span>.<br /><br />While active, up to <span class=\"item-number\">12</span> allies in the grove receive <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased healing, and regain <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of their missing health, Rage, and mana every <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29357,
+      "name": "Wild Rampage",
+      "spellId": 504197,
+      "spellIds": [
+        504197,
+        504881
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_naturestrike_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6251,
+        9851,
+        29339,
+        30971
+      ],
+      "requiredIds": [],
+      "desc": "Increases your attack power by 5% and your chance to hit by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504197,
+          "description": "Increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504881,
+          "description": "Increases your attack power by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29362,
+      "name": "Bearskin",
+      "spellId": 800094,
+      "spellIds": [
+        800094
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_primaltenacity",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6590
+      ],
+      "requiredIds": [],
+      "desc": "Reduces all damage taken by -60% and reduces the duration of root, stun, and incapacitate effects on you by -30% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800094,
+          "description": "Reduces all damage taken by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> and reduces the duration of root, stun, and incapacitate effects on you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29363,
+      "name": "Spirit Charge",
+      "spellId": 800144,
+      "spellIds": [
+        800144
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_pathofmists",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31209
+      ],
+      "requiredIds": [],
+      "desc": "Charge to an ally's aid, healing them for 53 + 20% healing + 20% AP and dealing 67 + 20% healing + 20% AP Nature damage to enemies within 5 yds of them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800144,
+          "description": "Charge to an ally's aid, healing them for <span class=\"item-number\">53</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">67</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">20% AP</span> Nature damage to enemies within <span class=\"item-number\">5</span> yds of them."
+        }
+      ]
+    },
+    {
+      "id": 29382,
+      "name": "Totemic Smash",
+      "spellId": 800178,
+      "spellIds": [
+        800178
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_smash",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7109
+      ],
+      "requiredIds": [],
+      "desc": "Smash an enemy for 140% Weapon Damage plus 20.Deals an additional 10 + 35% AP damage to up to 5 enemies within 8 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800178,
+          "description": "Smash an enemy for <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">20</span>.<br /><br />Deals an additional <span class=\"item-number\">10</span> + <span class=\"item-number\">35% AP</span> damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">8</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 29385,
+      "name": "Legacy of Rexxar",
+      "spellId": 800184,
+      "spellIds": [
+        800184
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_rexxar",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4384,
+        6151
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Primal Shred grant you and your pet Misha's Rage for 12 seconds, causing auto attacks to deal an additional 85 + 12.5% AP Physical damage.Critical strikes with Rylak's Bite grant you and your pet Leokk's Fury, increasing melee haste by 2% for 12 seconds, stacking 3 times.Critical strikes with Wildclaw grant you and your pet Huffer's Speed, increasing movement speed by 8% for 12 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800184,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Primal Shred</span> grant you and your pet <span style=\"color: #ffffff; display: inline\">Misha's Rage</span> for <span class=\"item-number\">12</span> seconds, causing auto attacks to deal an additional <span class=\"item-number\">85</span> + <span class=\"item-number\">12.5% AP</span> Physical damage.<br /><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> grant you and your pet <span style=\"color: #FFFFFF; display: inline\">Leokk's Fury</span>, increasing melee haste by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">3</span> times.<br /><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Wildclaw</span> grant you and your pet <span style=\"color: #ffffff; display: inline\">Huffer's Speed</span>, increasing movement speed by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29664,
+      "name": "Verdant Chase",
+      "spellId": 560305,
+      "spellIds": [
+        560305
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_evoker_spiritbloom",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6234,
+        11236,
+        14234,
+        30967
+      ],
+      "requiredIds": [],
+      "desc": "Your Spirit Charge and Primal Rush now cooldown faster.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560305,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now cooldown faster."
+        }
+      ]
+    },
+    {
+      "id": 29667,
+      "name": "Rylak's Bite",
+      "spellId": 706342,
+      "spellIds": [
+        706342
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_beastmaster_rylak",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "2 Charges, 10 sec rechargeYou and your pet rush towards an enemy and strike them, dealing 120% Weapon Damage plus 8.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706342,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br />You and your pet rush towards an enemy and strike them, dealing <span class=\"item-number\">120</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">8</span>."
+        }
+      ]
+    },
+    {
+      "id": 30020,
+      "name": "Eternally Chosen",
+      "spellId": 802888,
+      "spellIds": [
+        802888
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_ability_monk_jadefirestomp",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29664
+      ],
+      "requiredIds": [],
+      "desc": "Spirit Charge and Primal Rush now summons 2 Spirits of Life that immediately cast a lesser Spirit Charge on the nearest ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802888,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Spirit Charge</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now summons <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Spirits of Life</span> that immediately cast a lesser <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> on the nearest ally, healing them for <span class=\"item-number\">397</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">404</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> Nature damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 30104,
+      "name": "Journey To The Core",
+      "spellId": 560510,
+      "spellIds": [
+        560510
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rhyolith_lavapool",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5193,
+        6267,
+        6593,
+        7537
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Seismic Tremor now has a 20% chance to form a crag beneath your target that explodes after 3 seconds.Can only occur once every 3 sec.Crag (Damage)Deals 173 + 35% nature SP Physical Damage to up to 5 enemies within 5 yds and increases the damage they take from your Earthquake by 20% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560510,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to form a crag beneath your target that explodes after <span class=\"item-number\">3</span> seconds.<br /><br />Can only occur once every <span class=\"item-number\">3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthwall_border\" /><span class=\"name\">Crag (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">173</span> + <span class=\"item-number\">35% nature SP</span> Physical Damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">5</span> yds and increases the damage they take from your <span style=\"color: #ffffff; display: inline\">Earthquake</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30105,
+      "name": "Wildheart",
+      "spellId": 803980,
+      "spellIds": [
+        803980
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_ironbark",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7548,
+        30591
+      ],
+      "requiredIds": [],
+      "desc": "The Earthmother marks you as her chosen one, reducing the cooldown of all other non-damaging spells and abilities by 5%, repeating every 2 sec for 15 seconds.Instantly restores 5% missing health, mana, and Rage to you, repeating every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803980,
+          "description": "The Earthmother marks you as her chosen one, reducing the cooldown of all other non-damaging spells and abilities by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, repeating every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />Instantly restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> missing health, mana, and Rage to you, repeating every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30254,
+      "name": "Primal Rush",
+      "spellId": 500696,
+      "spellIds": [
+        500696
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_Berserk",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Rush forward 20 yd through enemies in a line, dealing 40 Nature damage.Generates 20 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500696,
+          "description": "Rush forward <span class=\"item-number\">20</span> yd through enemies in a line, dealing <span class=\"item-number\">40</span> Nature damage.<br /><br />Generates <span class=\"item-number\">20</span> Rage."
+        }
+      ]
+    },
+    {
+      "id": 30346,
+      "name": "Ancient Power",
+      "spellId": 300740,
+      "spellIds": [
+        300740,
+        301354
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_naturelighting_Border",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6236,
+        30785
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Strength by 5% and your hit chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300740,
+          "description": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301354,
+          "description": "Increases your Strength by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30591,
+      "name": "Earthmother's Pendant",
+      "spellId": 504446,
+      "spellIds": [
+        504446
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_HearthStone_Necklace_Warrior",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6211,
+        6262,
+        7323,
+        9843
+      ],
+      "requiredIds": [],
+      "desc": "With every strike, the Earthmother’s pendant restores what was lost, healing you equal to 10% of your damage dealt.Can only occur once every 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504446,
+          "description": "With every strike, the Earthmother’s pendant restores what was lost, healing you equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your damage dealt.<br /><br />Can only occur once every <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30628,
+      "name": "Verdant Warrior",
+      "spellId": 301299,
+      "spellIds": [
+        301299,
+        573132
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Druid_Cyclone",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6230,
+        6246,
+        29350
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Wildclaw by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301299,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 573132,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30633,
+      "name": "Grip",
+      "spellId": 800145,
+      "spellIds": [
+        800145
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_StoneClawTotem",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Summon a stone hand to grip the target, incapacitating them for 40 seconds (8 sec vs. players). Damage dealt will break the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800145,
+          "description": "Summon a stone hand to grip the target, incapacitating them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs. players). Damage dealt will break the effect."
+        }
+      ]
+    },
+    {
+      "id": 30785,
+      "name": "Nature's Fury",
+      "spellId": 300742,
+      "spellIds": [
+        300742
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_2h_pandariaquest_b_01",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29230,
+        29363
+      ],
+      "requiredIds": [],
+      "desc": "Auto attacks now have a 20% chance to deal Weapon Damage and restore 5% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300742,
+          "description": "Auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to deal Weapon Damage and restore <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": 30949,
+      "name": "Elemental Cascade",
+      "spellId": 504196,
+      "spellIds": [
+        504196
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_waterelementalmount",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9687,
+        30508
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Wildclaw now unleash an Elemental Cascade.Elemental CascadeRestores 32 + 10% AP + 10% healing health to allies in a 12 yd radius around you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504196,
+          "description": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> now unleash an <span style=\"color: #FFFFFF; display: inline\">Elemental Cascade</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_waterelementalmount\" /><span class=\"name\">Elemental Cascade</span></div><span class=\"desc\">Restores <span class=\"item-number\">32</span> + <span class=\"item-number\">10% AP</span> + <span class=\"item-number\">10% healing</span> health to allies in a <span class=\"item-number\">12</span> yd radius around you.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30966,
+      "name": "Earth's Guidance",
+      "spellId": 706138,
+      "spellIds": [
+        706138
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_ProtectionformNature",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30346
+      ],
+      "requiredIds": [],
+      "desc": "Damage and healing done by Seismic spells now has a 20% chance to reduce the cooldown of all Seismic spells by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706138,
+          "description": "Damage and healing done by <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reduce the cooldown of all <span style=\"color: #ffffff; display: inline\">Seismic</span> spells by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30967,
+      "name": "Shaman Training",
+      "spellId": 805445,
+      "spellIds": [
+        805445
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Shaman_Stormstrike",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6654,
+        11184,
+        30784
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Wildclaw now reduces the enemy's armor by -4% for 20 seconds, stacking up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805445,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Wildclaw</span> now reduces the enemy's armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30968,
+      "name": "Thorns",
+      "spellId": 504732,
+      "spellIds": [
+        504732
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_StrangleVines",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7335,
+        9687,
+        30346,
+        30508
+      ],
+      "requiredIds": [],
+      "desc": "Physical damage dealt or taken now has a 10% chance to unleash Thorns on an enemy.Thorns (Talent)Create thorns around an enemy, rooting them and dealing 270 Nature Damage over 6 seconds.Direct damage taken may end this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504732,
+          "description": "Physical damage dealt or taken now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #ffffff; display: inline\">Thorns</span> on an enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nature_stranglevines\" /><span class=\"name\">Thorns (Talent)</span></div><span class=\"desc\">Create thorns around an enemy, rooting them and dealing <span class=\"item-number\">270</span> Nature Damage over <span class=\"item-number\">6</span> seconds.<br /><br />Direct damage taken may end this effect.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30969,
+      "name": "Totemic Echoes",
+      "spellId": 500937,
+      "spellIds": [
+        500937
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_totemcooldownrefund",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6826,
+        11207
+      ],
+      "requiredIds": [],
+      "desc": "Totemic Smash now applies Totemic Crash to an enemy for 2 seconds.At the end of the duration, if you are within 5 yds of the target, you cast Totemic Smash against them for free.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500937,
+          "description": "<span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now applies <span style=\"color: #ffffff; display: inline\">Totemic Crash</span> to an enemy for <span class=\"item-number\">2</span> seconds.<br /><br />At the end of the duration, if you are within <span class=\"item-number\">5</span> yds of the target, you cast <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> against them for free."
+        }
+      ]
+    },
+    {
+      "id": 30971,
+      "name": "Bring Me Their Bones",
+      "spellId": 806552,
+      "spellIds": [
+        806552
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_necklace_bone04",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6149,
+        6831
+      ],
+      "requiredIds": [],
+      "desc": "Mark an enemy for 15 seconds, causing damage dealt by your pet's abilities to the target to add a stack of Bring Me Their Bones.At 5 stacks, your pet consumes this buff to deal 310 + 50% AP damage to the target, ignoring Armor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806552,
+          "description": "Mark an enemy for <span class=\"item-number\">15</span> seconds, causing damage dealt by your pet's abilities to the target to add a stack of <span style=\"color: #ffffff; display: inline\">Bring Me Their Bones</span>.<br /><br />At <span class=\"item-number\">5</span> stacks, your pet consumes this buff to deal <span class=\"item-number\">310</span> + <span class=\"item-number\">50% AP</span> damage to the target, ignoring Armor."
+        }
+      ]
+    },
+    {
+      "id": 30972,
+      "name": "Rylak's Blessing",
+      "spellId": 802595,
+      "spellIds": [
+        802595
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_feralchargecat",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6206,
+        6367,
+        8006
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Rylak's Bite now increases your pet's damage and critical strike chance by 2%, stacking 2 times, for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802595,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> now increases your pet's damage and critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">2</span> times, for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31207,
+      "name": "Spiritual Frenzy",
+      "spellId": 707367,
+      "spellIds": [
+        707367
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_71_spirit_wolves_nobg_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29339
+      ],
+      "requiredIds": [],
+      "desc": "Casting Primal Shred now empowers your pet, causing its auto attacks to strike up to 4 nearby enemies for 21 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707367,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Primal Shred</span> now empowers your pet, causing its auto attacks to strike up to <span class=\"item-number\">4</span> nearby enemies for <span class=\"item-number\">21</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31209,
+      "name": "Hammer of Life",
+      "spellId": 803973,
+      "spellIds": [
+        803973
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_draenorraid_d_04green",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 1,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4060,
+        30633
+      ],
+      "desc": "Your melee attacks and abilities now heal nearby allies and damage nearby enemies equal to 20% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803973,
+          "description": "Your melee attacks and abilities now heal nearby allies and damage nearby enemies equal to <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 31309,
+      "name": "Earth's Embrace",
+      "spellId": 806143,
+      "spellIds": [
+        806143
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Amber_stone_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6588,
+        7800
+      ],
+      "requiredIds": [],
+      "desc": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for 8 seconds, and healing you for 300 + 50% SP every 2 sec, but making you unable to move or act.Usable while stunned, feared, or polymorphed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806143,
+          "description": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for <span class=\"item-number\">8</span> seconds, and healing you for <span class=\"item-number\">300</span> + <span class=\"item-number\">50% SP</span> every <span class=\"item-number\">2</span> sec, but making you unable to move or act.<br /><br />Usable while stunned, feared, or polymorphed."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:82:300688",
+      "name": "Primal Resurgence / Rips and Tears",
+      "spellId": 300688,
+      "spellIds": [
+        300688
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_monsterclaw_05",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6201,
+        6261
+      ],
+      "requiredIds": [],
+      "desc": "Seismic Crash now generates an additional 10 Rage and Seismic Spike now generates 3 additional Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300688,
+          "description": "<span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates an additional <span class=\"item-number\">10</span> Rage and <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> now generates <span class=\"item-number\">3</span> additional Rage."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:82:434221",
+      "name": "Primal Rage / Wild Rage",
+      "spellId": 300690,
+      "spellIds": [
+        300690
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology_ancientorcshamanheaddress",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6201,
+        6831
+      ],
+      "requiredIds": [],
+      "desc": "Casting Totemic Smash now refreshes a charge of Rylak's Bite.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300690,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:82:504874",
+      "name": "Sharpened Claws / Bloody Claws",
+      "spellId": 504226,
+      "spellIds": [
+        504226
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_ghostclaw_Border",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7332,
+        29349
+      ],
+      "requiredIds": [],
+      "desc": "Your direct critical strikes now increase your and your pet's Armor penetration by 5% for 10 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504226,
+          "description": "Your direct critical strikes now increase your and your pet's Armor penetration by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:82:71147",
+      "name": "Spinebreaker / Wild Carnage",
+      "spellId": 537212,
+      "spellIds": [
+        537212
+      ],
+      "tabId": 82,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_skeletonspinepet_bone",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7332,
+        29357
+      ],
+      "requiredIds": [],
+      "desc": "Your Seismic Grasp now roots enemies for 3.5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 537212,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Seismic Grasp</span> now roots enemies for <span class=\"item-number\">3.5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:87:680446",
+      "name": "Rolling Momentum / Rage Rolling",
+      "spellId": 680446,
+      "spellIds": [
+        680446
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_assassinskill26_Border",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29252
+      ],
+      "requiredIds": [],
+      "desc": "Increases the movement speed granted by Boulder Dash by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680446,
+          "description": "Increases the movement speed granted by <span style=\"color: #ffffff; display: inline\">Boulder Dash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:87:681478",
+      "name": "Fury of the Elements / Untamed",
+      "spellId": 706165,
+      "spellIds": [
+        706165
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\monk_ability_fistoffury",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7796,
+        29299
+      ],
+      "requiredIds": [],
+      "desc": "Your Primal Rush now generates 10 additional Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706165,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Primal Rush</span> now generates <span class=\"item-number\">10</span> additional Rage."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:87:706171",
+      "name": "Primal Strikes / Primal Fury",
+      "spellId": 706171,
+      "spellIds": [
+        706171
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_unleashweapon_life",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7321,
+        7796
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with abilities that deal Physical damage now generate 3 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706171,
+          "description": "Critical strikes with abilities that deal Physical damage now generate <span class=\"item-number\">3</span> Rage."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:87:500302",
+      "name": "Mending Touch / Emerald Will",
+      "spellId": 524971,
+      "spellIds": [
+        524971
+      ],
+      "tabId": 87,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_undyingstrength",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7798,
+        29233
+      ],
+      "requiredIds": [],
+      "desc": "Soothing Touch now dispels an additional poison and disease effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524971,
+          "description": "<span style=\"color: #ffffff; display: inline\">Soothing Touch</span> now dispels an additional poison and disease effect."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:83:953231",
+      "name": "Trembling Rage / Everlasting Rage",
+      "spellId": 560135,
+      "spellIds": [
+        560135
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_halls_of_origination_earthrager_ptah",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6594
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of Rage generated by Seismic Tremor by 2.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560135,
+          "description": "Increases the amount of Rage generated by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> by <span class=\"item-number\">2</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:83:707810",
+      "name": "Tectonic Resonance / Tectonic Power",
+      "spellId": 707173,
+      "spellIds": [
+        707173
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_earthshock_Border",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7800
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount that Earthquake slows enemies by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707173,
+          "description": "Increases the amount that <span style=\"color: #ffffff; display: inline\">Earthquake</span> slows enemies by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:83:326282",
+      "name": "Embraced By Earth! / Cragforming",
+      "spellId": 561037,
+      "spellIds": [
+        561037
+      ],
+      "tabId": 83,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_archstone_01",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31309
+      ],
+      "requiredIds": [],
+      "desc": "At the end of the duration of Earth's Embrace, you now disorient all nearby enemies for 6 seconds. Damage dealt will end the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561037,
+          "description": "At the end of the duration of <span style=\"color: #ffffff; display: inline\">Earth's Embrace</span>, you now disorient all nearby enemies for <span class=\"item-number\">6</span> seconds. Damage dealt will end the effect."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:127887",
+      "name": "Vitality Surge / Grovekeeper's Presence",
+      "spellId": 504214,
+      "spellIds": [
+        504214
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_chaoshealing_Border",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 20,
+      "connectedNodeIds": [
+        4060
+      ],
+      "requiredIds": [],
+      "desc": "All effective healing done now has a 25% chance to increase the haste of party and raid members by 5% for 20 seconds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504214,
+          "description": "All effective healing done now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the haste of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:32211",
+      "name": "Hand of a God / Blessing of Neptulon",
+      "spellId": 561208,
+      "spellIds": [
+        561208
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_iceelementalprimal_green",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6509,
+        30785
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Rage cost of Hand of the Earthmother by -5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561208,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> by <span class=\"item-number\">-5</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:123788",
+      "name": "Crashing Out / Tears of the Earthmother",
+      "spellId": 574313,
+      "spellIds": [
+        574313
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_NaturalPerfection",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30346
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Seismic Crash by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574313,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Seismic Crash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:735421",
+      "name": "Infused With Power / Protector's Hand",
+      "spellId": 503718,
+      "spellIds": [
+        503718
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_nature_icon_0003s_0000_branch_Border",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        6243,
+        11243
+      ],
+      "requiredIds": [],
+      "desc": "Effectively healing allies with Hammer of Life or Hand of the Earthmother now has a 20% chance to apply Infused With Power.Infused With PowerIncreases the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503718,
+          "description": "Effectively healing allies with <span style=\"color: #FFFFFF; display: inline\">Hammer of Life</span> or <span style=\"color: #FFFFFF; display: inline\">Hand of the Earthmother</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #FFFFFF; display: inline\">Infused With Power</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 epic_rpg_icon_pack_nature_icon_0003s_0000_branch_border\" /><span class=\"name\">Infused With Power</span></div><span class=\"desc\">Increases the critical strike chance of all party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Does not stack with similar effects.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:111687",
+      "name": "Earthmother's Warden / Grove Tender",
+      "spellId": 707514,
+      "spellIds": [
+        707514
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Thorns",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6230,
+        6654
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Seismic abilities by -2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707514,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">-2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:856162",
+      "name": "Douse / Flourishing Growth",
+      "spellId": 807558,
+      "spellIds": [
+        807558
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shawaterelemental_reform",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        9193,
+        11193
+      ],
+      "requiredIds": [],
+      "desc": "Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807558,
+          "description": "Striking an enemy with <span style=\"color: #ffffff; display: inline\">Seismic</span> spells now deals an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">8% AP</span> Frost damage and reduces all resistances by <span class=\"item-number\">75</span> and increases their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:807466",
+      "name": "Ride the Wave / Nature's Blessing",
+      "spellId": 300867,
+      "spellIds": [
+        300867
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturewave_Border",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6651,
+        7107
+      ],
+      "requiredIds": [],
+      "desc": "Seismic Wave now increases the movement speed of affected allies by 30% for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300867,
+          "description": "<span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now increases the movement speed of affected allies by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:301306",
+      "name": "Earthmother's Empowerment / Earthmother's Roar",
+      "spellId": 300738,
+      "spellIds": [
+        300738
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureambush_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30628
+      ],
+      "requiredIds": [],
+      "desc": "Hand of the Earthmother now increases the target's dodge chance by 15% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300738,
+          "description": "<span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> now increases the target's dodge chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:856163",
+      "name": "Neptulon's Wrath / Primal Awakening",
+      "spellId": 807467,
+      "spellIds": [
+        807467
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_LiquidStone_Water",
+      "x": 10,
+      "y": 8,
+      "requiredLevel": 50,
+      "connectedNodeIds": [
+        9733,
+        11163
+      ],
+      "requiredIds": [],
+      "desc": "Emanate an aura for 15 seconds, causing allied players to deal 35% AP additional damage as Froststorm Damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807467,
+          "description": "Emanate an aura for <span class=\"item-number\">15</span> seconds, causing allied players to deal <span class=\"item-number\">35% AP</span> additional damage as Froststorm Damage when they deal direct damage.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:84:504222",
+      "name": "Ancient of Lore / Ancient of War",
+      "spellId": 805105,
+      "spellIds": [
+        805105
+      ],
+      "tabId": 84,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\AncientofLore",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6235
+      ],
+      "requiredIds": [],
+      "desc": "Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.While active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.While transformed, your movement speed is reduced by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805105,
+          "description": "Funnel nature's energies into yourself, transforming into an <span style=\"color: #FFFFFF; display: inline\">Ancient of Lore</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While active, your stats are increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and nearby party members have their costs reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />While transformed, your movement speed is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:91:681435",
+      "name": "Everythings A Nail / Hammer Time!",
+      "spellId": 680405,
+      "spellIds": [
+        680405
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_hammer_29",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7493
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Mountain Hammer by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680405,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:91:236189",
+      "name": "Earthenforged Barrier / Rock Solid",
+      "spellId": 680408,
+      "spellIds": [
+        680408
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_blackrockcaverns_ascendantlordobsidius",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7499,
+        7508
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Armor provided by Rock Barrier by 50% and it now reduces the cost of your spells and abilities by -25% for the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680408,
+          "description": "Increases the Armor provided by <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and it now reduces the cost of your spells and abilities by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> for the duration."
+        }
+      ]
+    },
+    {
+      "id": "choice:31:91:358123",
+      "name": "Seismic Smash / Quaking Thane",
+      "spellId": 300693,
+      "spellIds": [
+        300693
+      ],
+      "tabId": 91,
+      "classId": 31,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Seismic_Smash",
+      "x": 3,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7525,
+        8000
+      ],
+      "requiredIds": [],
+      "desc": "Raise the earth in a line in front of you with molten fury, dealing 94 + 22% AP + 50% Stamina Physical damage and granting you Thane's Rage and Aftershock.Thane&#39;s RageIncreases your attack power by 20% of your Stamina and your Stamina by 10% of your Strength for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300693,
+          "description": "Raise the earth in a line in front of you with molten fury, dealing <span class=\"item-number\">94</span> + <span class=\"item-number\">22% AP</span> + <span class=\"item-number\">50% Stamina</span> Physical damage and granting you <span style=\"color: #ffffff; display: inline\">Thane's Rage</span> and <span style=\"color: #ffffff; display: inline\">Aftershock</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_relics_totemofrage\" /><span class=\"name\">Thane&#39;s Rage</span></div><span class=\"desc\">Increases your attack power by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Stamina and your Stamina by <span class=\"item-number\">10%</span> of your Strength for <span class=\"item-number\">15</span> seconds.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthshock_border\" /><span class=\"name\">Aftershock</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Earthquake</span> within <span class=\"item-number\">15</span> seconds is now instant cast and costs <span class=\"item-number\">-75</span><span class=\"item-number\">%</span> less.</span></div><br /><br />"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4202 @@
+{
+  "class": "Witch Doctor",
+  "classId": "13",
+  "specs": [
+    "Voodoo",
+    "Brewing",
+    "Shadowhunting"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Voodoo": 34,
+    "Brewing": 35,
+    "Shadowhunting": 36
+  },
+  "nodes": [
+    {
+      "id": 1969,
+      "name": "Improved Malefic Arrow",
+      "spellId": 707855,
+      "spellIds": [
+        707855,
+        712478
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_misc_herb_arrowbloom",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12086
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Malefic Arrow by -2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707855,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span> by <span class=\"item-number\">-2</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 712478,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 4132,
+      "name": "Hastened",
+      "spellId": 705899,
+      "spellIds": [
+        705899
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_relics_totemofrebirth",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9347
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of all Wards, Idols, and Effigies by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705899,
+          "description": "Reduces the cooldown of all <span style=\"color: #ffffff; display: inline\">Wards</span>, <span style=\"color: #ffffff; display: inline\">Idols</span>, and <span style=\"color: #ffffff; display: inline\">Effigies</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4505,
+      "name": "Reclamation",
+      "spellId": 806288,
+      "spellIds": [
+        806288
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_natureshot_Border",
+      "x": 5,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4006,
+        29747
+      ],
+      "desc": "Shoot a quick voodoo arrow at an enemy dealing 100% Ranged Weapon Damage plus 15 as Nature damage and collecting a Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.Usable while moving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806288,
+          "description": "Shoot a quick voodoo arrow at an enemy dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">15</span> as Nature damage and collecting a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div><br /><br />Usable while moving."
+        }
+      ]
+    },
+    {
+      "id": 4572,
+      "name": "Eye of Kimbul",
+      "spellId": 503714,
+      "spellIds": [
+        503714
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_prideofthetiger",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5164,
+        11164
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes now apply Eye of Kimbul to enemies for 15 seconds.Eye of KimbulIncreases damage dealt and critical strike chance against this target by 1%, stacking 5 times.While affected, enemies cannot stealth or turn invisible.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503714,
+          "description": "Critical strikes now apply <span style=\"color: #ffffff; display: inline\">Eye of Kimbul</span> to enemies for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_monk_prideofthetiger\" /><span class=\"name\">Eye of Kimbul</span></div><span class=\"desc\">Increases damage dealt and critical strike chance against this target by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">5</span> times.<br /><br />While affected, enemies cannot stealth or turn invisible.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 5055,
+      "name": "Presence of the Loa",
+      "spellId": 572871,
+      "spellIds": [
+        572871
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_earthmask_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7131
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572871,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5113,
+      "name": "Cursed Effigy",
+      "spellId": 706542,
+      "spellIds": [
+        706542
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\WD_Cursed_Effigy",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6050,
+        29757,
+        30203
+      ],
+      "requiredIds": [],
+      "desc": "Drop a Cursed Effigy near you for 15 seconds.Enemies within 15 yds are unable to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706542,
+          "description": "Drop a <span style=\"color: #ffffff; display: inline\">Cursed Effigy</span> near you for <span class=\"item-number\">15</span> seconds.<br /><br />Enemies within <span class=\"item-number\">15</span> yds are unable to critically strike.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 5303,
+      "name": "Voodoo Hunger",
+      "spellId": 705942,
+      "spellIds": [
+        705942
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_shadowworld_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7102
+      ],
+      "requiredIds": [],
+      "desc": "While Shadowstalker or Mirage is active, every 1 sec you now gain a stack of Voodoo Hunger.Voodoo HungerIncreases the damage of your next Malefic Arrow by 10%, stacking 10 times. Lasts 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705942,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Shadowstalker</span> or <span style=\"color: #ffffff; display: inline\">Mirage</span> is active, every <span class=\"item-number\">1</span> sec you now gain a stack of <span style=\"color: #ffffff; display: inline\">Voodoo Hunger</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_shadowworld_border\" /><span class=\"name\">Voodoo Hunger</span></div><span class=\"desc\">Increases the damage of your next <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times. Lasts <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 5332,
+      "name": "Dark Loa's Blessing",
+      "spellId": 560545,
+      "spellIds": [
+        560545
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_wardoftheloashadow",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5333,
+        31347
+      ],
+      "requiredIds": [],
+      "desc": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your Shadow Puppets now deals damage -20% faster.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560545,
+          "description": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Shadow Puppets</span> now deals damage <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster."
+        }
+      ]
+    },
+    {
+      "id": 5333,
+      "name": "Voodoo Spirits",
+      "spellId": 704511,
+      "spellIds": [
+        704511
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_jadeserpent_2",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31347
+      ],
+      "requiredIds": [],
+      "desc": "Hexfire now snaps your Puppeteer's Threads on your target, unleashing its damage on them instantly and collecting one Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704511,
+          "description": "<span style=\"color: #ffffff; display: inline\">Hexfire</span> now snaps your <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span> on your target, unleashing its damage on them instantly and collecting one <span style=\"color: #FFFFFF; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6007,
+      "name": "Beware Da Voodoo",
+      "spellId": 707168,
+      "spellIds": [
+        707168,
+        707857
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_ZG_Hexxer",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6046,
+        30596
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Mimic Ward and Spirits by 4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707168,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Mimic Ward</span> and <span style=\"color: #ffffff; display: inline\">Spirits</span> by <span class=\"item-number\">4</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 707857,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Mimic Ward</span> and <span style=\"color: #ffffff; display: inline\">Spirits</span> by <span class=\"item-number\">8</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6009,
+      "name": "Mojo: Jungle Thistle",
+      "spellId": 500472,
+      "spellIds": [
+        500472
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_herb_tigerlily",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4112,
+        6015,
+        6021,
+        7130
+      ],
+      "requiredIds": [],
+      "desc": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Jungle Thistle to affected allies.Instantly swaps your Ingredients to Jungle Shrooms and Bloodthistle.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500472,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Jungle Thistle</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> and <span style=\"color: #ffffff; display: inline\">Bloodthistle</span>.<br />"
+        }
+      ]
+    },
+    {
+      "id": 6010,
+      "name": "Mojo High",
+      "spellId": 706488,
+      "spellIds": [
+        706488
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_EvilEye",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8574
+      ],
+      "requiredIds": [],
+      "desc": "Your Mimic Ward now summons 1 additional Mimic Ward and its duration is increased by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706488,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Mimic Ward</span> now summons <span class=\"item-number\">1</span> additional <span style=\"color: #ffffff; display: inline\">Mimic Ward</span> and its duration is increased by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6011,
+      "name": "Shadow Enchantments",
+      "spellId": 300662,
+      "spellIds": [
+        300662,
+        301361
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\5_shadow_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29729,
+        29977
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration and effectiveness of your Jinxes by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300662,
+          "description": "Increases the duration and effectiveness of your <span style=\"color: #ffffff; display: inline\">Jinxes</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301361,
+          "description": "Increases the duration and effectiveness of your <span style=\"color: #ffffff; display: inline\">Jinxes</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6014,
+      "name": "Sen'jin's Presence",
+      "spellId": 560544,
+      "spellIds": [
+        560544
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_mail_raidshamanmythic_s_01",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31137
+      ],
+      "requiredIds": [],
+      "desc": "Casting Potion Toss and Spirit in a Bottle now reduce the cast time of your next 2 Loa's Brews by -20% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560544,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> now reduce the cast time of your next <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Loa's Brews</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6015,
+      "name": "Mojo: Fish Bones",
+      "spellId": 705850,
+      "spellIds": [
+        705850
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_fish_bone",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6021,
+        6022
+      ],
+      "requiredIds": [],
+      "desc": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Fish Bones to affected allies.Instantly swaps your Ingredients to Fish Oil and Frog Bones.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705850,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Fish Bones</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Fish Oil</span> and <span style=\"color: #ffffff; display: inline\">Frog Bones</span>.<br />"
+        }
+      ]
+    },
+    {
+      "id": 6016,
+      "name": "Mojo: Frog Shrooms",
+      "spellId": 705851,
+      "spellIds": [
+        705851
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_mushroom_01",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6013,
+        6498,
+        7948,
+        29741
+      ],
+      "requiredIds": [],
+      "desc": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Frog Shrooms to affected allies.Instantly swaps your Ingredients to Jungle Shrooms and Frog Bones.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705851,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Frog Shrooms</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> and <span style=\"color: #ffffff; display: inline\">Frog Bones</span>.<br />"
+        }
+      ]
+    },
+    {
+      "id": 6021,
+      "name": "Ingredient: Bloodthistle",
+      "spellId": 801664,
+      "spellIds": [
+        801664
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Herb_11a",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7129
+      ],
+      "requiredIds": [],
+      "desc": "Brew Bloodthistle into your Cauldron.Cauldron: Allies within 40 yds receive 8% increased healing.Potion: Causes target ally to leech 5% of all damage they deal for 15 seconds. Can only occur once every 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801664,
+          "description": "Brew <span style=\"color: #ffffff; display: inline\">Bloodthistle</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">8</span><span class=\"item-number\">%</span> increased healing.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Causes target ally to leech <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of all damage they deal for <span class=\"item-number\">15</span> seconds. Can only occur once every <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6022,
+      "name": "Splash On 'Em",
+      "spellId": 802219,
+      "spellIds": [
+        802219
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_GhostWater_Border",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7128
+      ],
+      "requiredIds": [],
+      "desc": "Effective healing done by Loa's Brew and Mojo Beam reduce the cooldown of Potion Toss and Splash Potion by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802219,
+          "description": "Effective healing done by <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Mojo Beam</span> reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Potion Toss</span> and <span style=\"color: #FFFFFF; display: inline\">Splash Potion</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6023,
+      "name": "Disciple of Sseratus",
+      "spellId": 300660,
+      "spellIds": [
+        300660
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_sumsnakearmy_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7132,
+        29753
+      ],
+      "requiredIds": [],
+      "desc": "Increases the bonus healing scaling of Loa's Brew and Spirit in a Bottle by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300660,
+          "description": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6026,
+      "name": "Master of Concoctions",
+      "spellId": 801690,
+      "spellIds": [
+        801690
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_ironskinbrew",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6014,
+        6023
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Ingredients by 20% and causes allies affected by Jungle Shrooms to heal for 5% of the damage they deal with their next 3 offensive abilities or spells for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801690,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ingredients</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and causes allies affected by <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> to heal for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage they deal with their next <span class=\"item-number\">3</span> offensive abilities or spells for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6027,
+      "name": "Unstable Concoction",
+      "spellId": 802487,
+      "spellIds": [
+        802487
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_dpotion_c16",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30333
+      ],
+      "requiredIds": [],
+      "desc": "Potion Toss now applies Unstable Concoction to the target for 20 seconds. Using Loa's Brew or Spirit in a Bottle on the target will trigger an explosion of mojo around the target, healing nearby allies within 20 yds for 177 + 40% healing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802487,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Potion Toss</span> now applies <span style=\"color: #FFFFFF; display: inline\">Unstable Concoction</span> to the target for <span class=\"item-number\">20</span> seconds. <br /><br />Using <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> or <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> on the target will trigger an explosion of mojo around the target, healing nearby allies within <span class=\"item-number\">20</span> yds for <span class=\"item-number\">177</span> + <span class=\"item-number\">40% healing</span>."
+        }
+      ]
+    },
+    {
+      "id": 6030,
+      "name": "Chosen One",
+      "spellId": 503742,
+      "spellIds": [
+        503742
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_bloodtrollfemaleheaddire01",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29301
+      ],
+      "requiredIds": [],
+      "desc": "Your Mimic Ward will now summon 1 additional ward.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503742,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Mimic Ward</span> will now summon <span class=\"item-number\">1</span> additional ward."
+        }
+      ]
+    },
+    {
+      "id": 6031,
+      "name": "Amphibimorph",
+      "spellId": 500952,
+      "spellIds": [
+        500952
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_hypnotoad_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29309,
+        31118
+      ],
+      "requiredIds": [],
+      "desc": "Transform enemies at target location into a frog, making them unable to attack or cast spells, and slowing their movement speed by -25% for 40 seconds (8 sec vs players). While transformed into a frog the enemy is considered a Beast.Damage caused may interrupt the effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500952,
+          "description": "Transform enemies at target location into a frog, making them unable to attack or cast spells, and slowing their movement speed by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players). While transformed into a frog the enemy is considered a Beast.<br /><br />Damage caused may interrupt the effect."
+        }
+      ]
+    },
+    {
+      "id": 6042,
+      "name": "Vol'jin's Vigil",
+      "spellId": 504465,
+      "spellIds": [
+        504465
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_hand_1h_trollshaman_c_01",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6031,
+        7033
+      ],
+      "requiredIds": [],
+      "desc": "Embrace the way of Vol'jin, reducing your damage taken by -25% and healing you for 2% of your maximum health every 1 sec for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504465,
+          "description": "Embrace the way of Vol'jin, reducing your damage taken by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and healing you for <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum health every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6044,
+      "name": "Mojo Madness",
+      "spellId": 705871,
+      "spellIds": [
+        705871
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Troll_04",
+      "x": 3,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6030,
+        7088
+      ],
+      "requiredIds": [],
+      "desc": "Damage and healing done now have a 5% chance to reduce the cost of your next spell or ability by -100% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705871,
+          "description": "Damage and healing done now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reduce the cost of your next spell or ability by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6046,
+      "name": "Jin'do's Wrath",
+      "spellId": 707505,
+      "spellIds": [
+        707505
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Troll_01",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7157
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance and critical damage of Hexfire by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707505,
+          "description": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6047,
+      "name": "Wizened",
+      "spellId": 705903,
+      "spellIds": [
+        705903,
+        705904
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Staff_26",
+      "x": 5,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6030,
+        6054
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum mana by 5% and reduces the mana cost of spells and abilities by -3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705903,
+          "description": "Increases your maximum mana by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces the mana cost of spells and abilities by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705904,
+          "description": "Increases your maximum mana by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and reduces the mana cost of spells and abilities by <span class=\"item-number\">-6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6049,
+      "name": "For Da Loa!",
+      "spellId": 705906,
+      "spellIds": [
+        705906
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_zuldazar_loacouncil",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6050
+      ],
+      "requiredIds": [],
+      "desc": "Transforms Allcure Elixir into Mass Allcure Elixir.Mass Allcure ElixirRemoves all poison, disease and curse effects from party and raid members within 30 yds, and grants immunity to such effects for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705906,
+          "description": "Transforms <span style=\"color: #ffffff; display: inline\">Allcure Elixir</span> into <span style=\"color: #ffffff; display: inline\">Mass Allcure Elixir</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_arcanepotion_border\" /><span class=\"name\">Mass Allcure Elixir</span></div><span class=\"desc\">Removes all poison, disease and curse effects from party and raid members within <span class=\"item-number\">30</span> yds, and grants immunity to such effects for <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6050,
+      "name": "One Armed Waltz",
+      "spellId": 705909,
+      "spellIds": [
+        705909
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_Zuljin",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4132,
+        11323,
+        29743
+      ],
+      "requiredIds": [],
+      "desc": "Big Bad Voodoo now only reduces damage dealt by 25% and reduces damage taken by an additional -5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705909,
+          "description": "<span style=\"color: #ffffff; display: inline\">Big Bad Voodoo</span> now only reduces damage dealt by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and reduces damage taken by an additional <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6051,
+      "name": "Swift Idol",
+      "spellId": 804226,
+      "spellIds": [
+        804226
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\WD_Swift_Idol",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7033
+      ],
+      "requiredIds": [],
+      "desc": "Drop a Swift Idol near you for 10 seconds.Allies within 30 yds gain 25% increased movement speed and their chance to resist movement impairing effects is increased by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804226,
+          "description": "Drop a <span style=\"color: #ffffff; display: inline\">Swift Idol</span> near you for <span class=\"item-number\">10</span> seconds.<br /><br />Allies within <span class=\"item-number\">30</span> yds gain <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased movement speed and their chance to resist movement impairing effects is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6052,
+      "name": "Loa Communion",
+      "spellId": 705907,
+      "spellIds": [
+        705907
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SoulLeech_2",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30203
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Veil of Darkness by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705907,
+          "description": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Veil of Darkness</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6053,
+      "name": "Voodoo Unleashed",
+      "spellId": 705901,
+      "spellIds": [
+        705901
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_clonesnobg_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31350,
+        31343
+      ],
+      "requiredIds": [],
+      "desc": "Your Mimic Wards now also cast Bad Juju and casting Bad Juju now reduces the cooldown of Shadow Puppets by -3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705901,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Mimic Wards</span> now also cast <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and casting <span style=\"color: #ffffff; display: inline\">Bad Juju</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> by <span class=\"item-number\">-3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6054,
+      "name": "Spiritual Traditions",
+      "spellId": 705911,
+      "spellIds": [
+        705911
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_81_vantusrune_zuldazar",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29301,
+        29744
+      ],
+      "requiredIds": [],
+      "desc": "Allows 40% of your mana regeneration to continue while casting and reduces your spell pushback suffered from damaging attacks by 70%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705911,
+          "description": "Allows <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your mana regeneration to continue while casting and reduces your spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6055,
+      "name": "Soul Marionette",
+      "spellId": 704497,
+      "spellIds": [
+        704497
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3bigbadvoodoo",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5332,
+        31349
+      ],
+      "requiredIds": [],
+      "desc": "Root yourself for 8 sec and create 5 clones of yourself that channel on you, applying a stack of Soul Marionette.Soul Marionette (Stacks)Increases your haste by 1% per stack. At 20 stacks, you transform into a powerful spirit, increasing the damage of Malefic Wrath and Bad Juju by 30% and guaranteeing it to critically strike for 15 seconds.In addition, each Soul Marionette will explode, dealing 582 + 50% shadow SP Shadow Damage and stunning enemies within 5 yds for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704497,
+          "description": "Root yourself for <span class=\"item-number\">8</span> sec and create <span class=\"item-number\">5</span> clones of yourself that channel on you, applying a stack of <span style=\"color: #ffffff; display: inline\">Soul Marionette</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3bigbadvoodoo\" /><span class=\"name\">Soul Marionette (Stacks)</span></div><span class=\"desc\">Increases your haste by <span class=\"item-number\">1%</span> per stack. At <span class=\"item-number\">20</span> stacks, you transform into a powerful spirit, increasing the damage of <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and guaranteeing it to critically strike for <span class=\"item-number\">15</span> seconds.<br /><br />In addition, each <span style=\"color: #FFFFFF; display: inline\">Soul Marionette</span> will explode, dealing <span class=\"item-number\">582</span> + <span class=\"item-number\">50% shadow SP</span> Shadow Damage and stunning enemies within <span class=\"item-number\">5</span> yds for <span class=\"item-number\">4</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6057,
+      "name": "The Price of Power",
+      "spellId": 705916,
+      "spellIds": [
+        705916
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_ManaBurn_Shadow",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29768
+      ],
+      "requiredIds": [],
+      "desc": "Voice of Bwonsamdi now increases your Spirit by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705916,
+          "description": "<span style=\"color: #ffffff; display: inline\">Voice of Bwonsamdi</span> now increases your Spirit by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6058,
+      "name": "Dark Magic",
+      "spellId": 705922,
+      "spellIds": [
+        705922
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology_troll_tablet",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29928,
+        31340
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Malefic Wrath and Bad Juju by -0.3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705922,
+          "description": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #FFFFFF; display: inline\">Bad Juju</span> by <span class=\"item-number\">-0.3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6059,
+      "name": "Voodoo Mind",
+      "spellId": 504462,
+      "spellIds": [
+        504462
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_QirajIdol_Death",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6007,
+        31348
+      ],
+      "requiredIds": [],
+      "desc": "Shadow Puppets now ticks -10% faster and lasts 10% longer for each Spirit active on you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504462,
+          "description": "<span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> now ticks <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> faster and lasts <span class=\"item-number\">10</span><span class=\"item-number\">%</span> longer for each <span style=\"color: #ffffff; display: inline\">Spirit</span> active on you."
+        }
+      ]
+    },
+    {
+      "id": 6062,
+      "name": "Ritual Hexing",
+      "spellId": 705840,
+      "spellIds": [
+        705840,
+        705841
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_SpellCasting_Shadow",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29928
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Bad Juju, Malefic Wrath and Hexfire by 10% against enemies affected by Hex of Malice.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705840,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bad Juju</span>, <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705841,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bad Juju</span>, <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span>."
+        }
+      ]
+    },
+    {
+      "id": 6063,
+      "name": "Vol'jin's Blessing",
+      "spellId": 706577,
+      "spellIds": [
+        706577
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_armor_bloodtroll_c_01_helm",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6010,
+        30895
+      ],
+      "requiredIds": [],
+      "desc": "While Shadow Avatar is active, the cooldown of Spirit Glaive is now reduced by 20% every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706577,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Shadow Avatar</span> is active, the cooldown of <span style=\"color: #ffffff; display: inline\">Spirit Glaive</span> is now reduced by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> every <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6069,
+      "name": "Residual Energy",
+      "spellId": 706543,
+      "spellIds": [
+        706543
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_NetherCloak",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6063
+      ],
+      "requiredIds": [],
+      "desc": "At the end of Shadow Avatar's duration you become a Lesser Shadow Avatar.Lesser Shadow AvatarIncreases magic damage dealt by 10% and reduces the cooldown of Spirit Glaive by 20% every 1 sec. Lasts for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706543,
+          "description": "At the end of <span style=\"color: #ffffff; display: inline\">Shadow Avatar</span>'s duration you become a <span style=\"color: #ffffff; display: inline\">Lesser Shadow Avatar</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_nethercloak\" /><span class=\"name\">Lesser Shadow Avatar</span></div><span class=\"desc\">Increases magic damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Spirit Glaive</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> every <span class=\"item-number\">1</span> sec. Lasts for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6072,
+      "name": "Spiritual Devotee",
+      "spellId": 503727,
+      "spellIds": [
+        503727
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_embracetheloa",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7086
+      ],
+      "requiredIds": [],
+      "desc": "Collecting a Spirit now instantly restores 3% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503727,
+          "description": "Collecting a <span style=\"color: #ffffff; display: inline\">Spirit</span> now instantly restores <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": 6073,
+      "name": "Dark Loa's Incantation",
+      "spellId": 525377,
+      "spellIds": [
+        525377
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_chest_cloth_zandalarquest_b_01",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5253,
+        6069,
+        6853
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Shadowflare now applies Hex of Malice if it strikes at least 3 enemies.Hex of MaliceCurse an enemy, dealing 5 + 8% shadow SP + 10% ranged AP Shadow damage and an additional 96 Shadow damage over 24 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 525377,
+          "description": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Shadowflare</span> now applies <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> if it strikes at least <span class=\"item-number\">3</span> enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_warlock_demonwrath\" /><span class=\"name\">Hex of Malice</span></div><span class=\"desc\">Curse an enemy, dealing <span class=\"item-number\">5</span> + <span class=\"item-number\">8% shadow SP</span> + <span class=\"item-number\">10% ranged AP</span> Shadow damage and an additional <span class=\"item-number\">96</span> Shadow damage over <span class=\"item-number\">24</span> seconds.<br /><br /></span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6074,
+      "name": "Village Wisdom",
+      "spellId": 680882,
+      "spellIds": [
+        680882
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_ZG_Hexxer",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7086
+      ],
+      "requiredIds": [],
+      "desc": "Increases your hit chance by 5% and the damage of Reclamation by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680882,
+          "description": "Increases your hit chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and the damage of <span style=\"color: #ffffff; display: inline\">Reclamation</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6076,
+      "name": "A Price To Pay",
+      "spellId": 705948,
+      "spellIds": [
+        705948
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_raid_laststandzandalari",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5235,
+        6035,
+        6388
+      ],
+      "requiredIds": [],
+      "desc": "Casting Spirit Eclipse with 5 Spirits now resets the cooldown of Spirit Glaive and causes your next cast within 8 seconds to be guaranteed to critically strike.Spirit Glaives used in this way will reduce the cooldown of Shadowstalker by -15 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705948,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Spirit Eclipse</span> with <span class=\"item-number\">5</span> <span style=\"color: #ffffff; display: inline\">Spirits</span> now resets the cooldown of <span style=\"color: #FFFFFF; display: inline\">Spirit Glaive</span> and causes your next cast within <span class=\"item-number\">8</span> seconds to be guaranteed to critically strike.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Spirit Glaives</span> used in this way will reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Shadowstalker</span> by <span class=\"item-number\">-15</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6381,
+      "name": "Loa Empowerment",
+      "spellId": 706368,
+      "spellIds": [
+        706368
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_scrollofearth_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12749,
+        29749
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of your Wujus by -50% and increases the effectiveness of Power Wuju by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706368,
+          "description": "Reduces the cost of your <span style=\"color: #FFFFFF; display: inline\">Wujus</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> and increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Power Wuju</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6388,
+      "name": "Fool's Play",
+      "spellId": 681007,
+      "spellIds": [
+        681007
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_raisedspirit_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4572,
+        11330,
+        29930
+      ],
+      "requiredIds": [],
+      "desc": "Target an enemy and summon a copy of them for 20 seconds that attacks them and replicates their spells back on them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681007,
+          "description": "Target an enemy and summon a copy of them for <span class=\"item-number\">20</span> seconds that attacks them and replicates their spells back on them."
+        }
+      ]
+    },
+    {
+      "id": 6498,
+      "name": "Fresh Ingredients",
+      "spellId": 705856,
+      "spellIds": [
+        705856,
+        707858
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_thanksgiving_turkey_act",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29741
+      ],
+      "requiredIds": [],
+      "desc": "Increases the healing of your Jungle Shrooms from your Cauldron by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705856,
+          "description": "Increases the healing of your <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707858,
+          "description": "Increases the healing of your <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6644,
+      "name": "Malignant",
+      "spellId": 704503,
+      "spellIds": [
+        704503
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_80_zandalari_sanguinetotem",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31348
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Bad Juju and Hexfire now spreads Hex of Malice to up to 1 nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704503,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and <span style=\"color: #FFFFFF; display: inline\">Hexfire</span> now spreads <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> to up to <span class=\"item-number\">1</span> nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 6645,
+      "name": "Mixologist",
+      "spellId": 561069,
+      "spellIds": [
+        561069
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Potion_119",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12645,
+        12646
+      ],
+      "requiredIds": [],
+      "desc": "You can now add an additional Ingredient to your Cauldron, enhancing your brew.Teaches you Ingredient: Fish Oil.Ingredient: Fish OilBrew Fish Oil into your Cauldron.Cauldron: Increases the movement speed and swim speed of allies within 40 yds by 10%.Potion: Increases the target ally's movement speed by 20% and dodge chance by 5% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561069,
+          "description": "You can now add an additional <span style=\"color: #ffffff; display: inline\">Ingredient</span> to your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, enhancing your brew.<br /><br />Teaches you <span style=\"color: #ffffff; display: inline\">Ingredient: Fish Oil</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ascend_liquid_b_02\" /><span class=\"name\">Ingredient: Fish Oil</span></div><span class=\"desc\">Brew <span style=\"color: #ffffff; display: inline\">Fish Oil</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Increases the movement speed and swim speed of allies within <span class=\"item-number\">40</span> yds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Increases the target ally's movement speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and dodge chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6983,
+      "name": "Voodoo Fire",
+      "spellId": 802262,
+      "spellIds": [
+        802262,
+        803846
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_shaman_firenova",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30892
+      ],
+      "requiredIds": [],
+      "desc": "Your Serpent Ward's attacks now have a 20% chance to shoot Voodoo Fire, dealing cond(gt(SPFI, SPN), 73*1+ranged AP*0.03+SPFI*0.12, 73*1+ranged AP*0.03+SPN*0.12) Fire damage to up to 3 nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802262,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Serpent Ward's</span> attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to shoot <span style=\"color: #FFFFFF; display: inline\">Voodoo Fire</span>, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 73*1+ranged AP*0.03+SPFI*0.12, 73*1+ranged AP*0.03+SPN*0.12)</span> Fire damage to up to <span class=\"item-number\">3</span> nearby enemies."
+        },
+        {
+          "rank": 2,
+          "spellId": 803846,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Serpent Ward's</span> attacks now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to shoot <span style=\"color: #FFFFFF; display: inline\">Voodoo Fire</span>, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 73*1+ranged AP*0.03+SPFI*0.12, 73*1+ranged AP*0.03+SPN*0.12)</span> Fire damage to up to <span class=\"item-number\">3</span> nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 7031,
+      "name": "Darkspear Traditionalist",
+      "spellId": 503707,
+      "spellIds": [
+        503707
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_empowerwards",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6069,
+        6983
+      ],
+      "requiredIds": [],
+      "desc": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members. Does not stack with similar effects.Periodic damage dealt by Hex of Malice now has a 20% chance to collect a Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503707,
+          "description": "Emanate a powerful aura, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee and ranged haste to party and raid members. Does not stack with similar effects.<br /><br />Periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to collect a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7033,
+      "name": "Spirit Warden",
+      "spellId": 503774,
+      "spellIds": [
+        503774
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shaman_SpiritLink",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29309
+      ],
+      "requiredIds": [],
+      "desc": "Summoning an Idol now increases your Spirit by 10% for 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503774,
+          "description": "Summoning an <span style=\"color: #FFFFFF; display: inline\">Idol</span> now increases your Spirit by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">1</span> minute."
+        }
+      ]
+    },
+    {
+      "id": 7086,
+      "name": "Spirit Eclipse",
+      "spellId": 801607,
+      "spellIds": [
+        801607
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spiriteclipse",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7779
+      ],
+      "requiredIds": [],
+      "desc": "Unleash your Spirits on an enemy, dealing 8 + 7% ranged AP + 12% shadow SP Shadow damage every 0 sec for each active Spirit.Each Spirit explodes on impact, dealing 71 + 6% shadow SP + 3.5% ranged AP Shadow damage to other nearby enemies within 5 yds of the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801607,
+          "description": "Unleash your <span style=\"color: #ffffff; display: inline\">Spirits</span> on an enemy, dealing <span class=\"item-number\">8</span> + <span class=\"item-number\">7% ranged AP</span> + <span class=\"item-number\">12% shadow SP</span> Shadow damage every <span class=\"item-number\">0</span> sec for each active <span style=\"color: #ffffff; display: inline\">Spirit</span>.<br /><br />Each <span style=\"color: #ffffff; display: inline\">Spirit</span> explodes on impact, dealing <span class=\"item-number\">71</span> + <span class=\"item-number\">6% shadow SP</span> + <span class=\"item-number\">3.5% ranged AP</span> Shadow damage to other nearby enemies within <span class=\"item-number\">5</span> yds of the target."
+        }
+      ]
+    },
+    {
+      "id": 7088,
+      "name": "Juju Injection",
+      "spellId": 503608,
+      "spellIds": [
+        503608,
+        503609
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_potion_25",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29301,
+        29747
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility and Intellect by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503608,
+          "description": "Increases your Agility and Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 503609,
+          "description": "Increases your Agility and Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7092,
+      "name": "Seeker",
+      "spellId": 705880,
+      "spellIds": [
+        705880
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_wrathofair_totem",
+      "x": 8,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6054
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost of your Wards, Idols, and Effigies by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705880,
+          "description": "Reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Wards</span>, <span style=\"color: #ffffff; display: inline\">Idols</span>, and <span style=\"color: #ffffff; display: inline\">Effigies</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7100,
+      "name": "Dark Effigy",
+      "spellId": 707331,
+      "spellIds": [
+        707331
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv__faction_zandalariempire",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29121,
+        30889,
+        31349
+      ],
+      "requiredIds": [],
+      "desc": "Your Bad Juju and Hexfire now strike 2 additional nearby enemies.Shadowflare now deals 50% increased damage to enemies affected by Puppeteer's Threads.Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 10% of its value. When the effect ends the damage stored is dealt instantly.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707331,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> now strike <span class=\"item-number\">2</span> additional nearby enemies.<br /><br /><span style=\"color: #ffffff; display: inline\">Shadowflare</span> now deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_archaeology_troll_voodoodoll\" /><span class=\"name\">Puppeteer’s Threads (Debuff)</span></div><span class=\"desc\">Damage taken from the Witch Doctor stores <span class=\"item-number\">10%</span> of its value. When the effect ends the damage stored is dealt instantly.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7102,
+      "name": "Shadowstalker",
+      "spellId": 807040,
+      "spellIds": [
+        807040
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_CurseOfShadow_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6072,
+        6074
+      ],
+      "requiredIds": [],
+      "desc": "Disappear into darkness, entering an improved stealth mode, clearing all harmful effects, and increasing movement speed by 50% for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807040,
+          "description": "Disappear into darkness, entering an improved stealth mode, clearing all harmful effects, and increasing movement speed by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7128,
+      "name": "Splash Potion",
+      "spellId": 802710,
+      "spellIds": [
+        802710
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_potion_101",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7131,
+        29736,
+        30884
+      ],
+      "requiredIds": [],
+      "desc": "Fill a splash potion from your Cauldron, and toss it at a location, healing up to 8 allies for 54 + 22.45% healing + 8% Spirit.Potion effects from Ingredients used this way have reduced effectiveness.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802710,
+          "description": "Fill a splash potion from your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, and toss it at a location, healing up to <span class=\"item-number\">8</span> allies for <span class=\"item-number\">54</span> + <span class=\"item-number\">22.45% healing</span> + <span class=\"item-number\">8% Spirit</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span> effects from <span style=\"color: #ffffff; display: inline\">Ingredients</span> used this way have reduced effectiveness."
+        }
+      ]
+    },
+    {
+      "id": 7129,
+      "name": "Plentiful Potions",
+      "spellId": 803463,
+      "spellIds": [
+        803463
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_drink_32_disgustingrotgut",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29736
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of your Loa's Brew and Hexbreak by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803463,
+          "description": "Reduces the cost of your <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Hexbreak</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7131,
+      "name": "Potent Mixes",
+      "spellId": 503748,
+      "spellIds": [
+        503748,
+        504888
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Potion_110",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6645
+      ],
+      "requiredIds": [],
+      "desc": "Increases your healing done by 4% and reduces the threat generated by your spells by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503748,
+          "description": "Increases your healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the threat generated by your spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504888,
+          "description": "Increases your healing done by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and reduces the threat generated by your spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7133,
+      "name": "Tiki Splash",
+      "spellId": 500053,
+      "spellIds": [
+        500053
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_enchant_alchemistcauldron",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29754
+      ],
+      "requiredIds": [],
+      "desc": "While a Base is active, Spirit in a Bottle will now transform into Tiki Splash.Tiki SplashSplash target location with healing waters, healing for 34 + 25% SP every 1 sec for 5 seconds. Gains a new effect based on your currently active Base. Scales with modifiers to Spirit in a Bottle.Beast Blood: Grants you 5% increased critical strike chance for 15 seconds, stacking 2 times.Crystal Water: Grants you a shield that absorbs 422 + 75% SP Magic damage for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500053,
+          "description": "While a <span style=\"color: #ffffff; display: inline\">Base</span> is active, <span style=\"color: #ffffff; display: inline\">Spirit in a Bottle</span> will now transform into <span style=\"color: #ffffff; display: inline\">Tiki Splash</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helm_mask_zulgurub_d_01\" /><span class=\"name\">Tiki Splash</span></div><span class=\"desc\">Splash target location with healing waters, healing for <span class=\"item-number\">34</span> + <span class=\"item-number\">25% SP</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds. Gains a new effect based on your currently active <span style=\"color: #ffffff; display: inline\">Base</span>. Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Spirit in a Bottle</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Beast Blood:</span> Grants you <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased critical strike chance for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br /><span style=\"color: #ffffff; display: inline\">Crystal Water</span>: Grants you a shield that absorbs <span class=\"item-number\">422</span> + <span class=\"item-number\">75% SP</span> Magic damage for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7157,
+      "name": "Hexfire",
+      "spellId": 807042,
+      "spellIds": [
+        807042
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_nightmarepuppet_Border",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31344
+      ],
+      "requiredIds": [],
+      "desc": "Blast an enemy with hexfire, dealing cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5) Fire damage, scaling with your Spirit.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807042,
+          "description": "Blast an enemy with hexfire, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5)</span> Fire damage, scaling with your Spirit."
+        }
+      ]
+    },
+    {
+      "id": 7355,
+      "name": "Frenzied Spirits",
+      "spellId": 560748,
+      "spellIds": [
+        560748
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warlock_Eradication",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5235,
+        6035
+      ],
+      "requiredIds": [],
+      "desc": "Consumes your Spirits to increase your ranged critical strike rating by 10, critical damage by 5%, and causing you to heal for 2% of all damage dealt for each Spirit consumed.In addition, you gain 1 Spirit every 1 sec while active.Lasts for 3 sec per Spirit consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560748,
+          "description": "Consumes your <span style=\"color: #ffffff; display: inline\">Spirits</span> to increase your ranged critical strike rating by <span class=\"item-number\">10</span>, critical damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, and causing you to heal for <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of all damage dealt for each <span style=\"color: #ffffff; display: inline\">Spirit</span> consumed.<br /><br />In addition, you gain <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Spirit</span> every <span class=\"item-number\">1</span> sec while active.<br /><br />Lasts for <span class=\"item-number\">3</span> sec per <span style=\"color: #FFFFFF; display: inline\">Spirit</span> consumed."
+        }
+      ]
+    },
+    {
+      "id": 7779,
+      "name": "Loa's Strength",
+      "spellId": 705936,
+      "spellIds": [
+        705936,
+        705937
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_shadoweye_Border",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4505
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility and your Nature and Shadow damage dealt by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705936,
+          "description": "Increases your Agility and your Nature and Shadow damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705937,
+          "description": "Increases your Agility and your Nature and Shadow damage dealt by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7781,
+      "name": "Bwonsamdi's Gift",
+      "spellId": 707650,
+      "spellIds": [
+        707650
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_necro_bwonsamdisboon",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5235,
+        6035,
+        29981
+      ],
+      "requiredIds": [],
+      "desc": "While Mimic Ward is active, you now gain 15% increased ranged haste and your Reclamation transforms into Spirit Volley. Each Spirit now increases the damage of Spirit Volley by 3%.In addition, direct ranged abilty damage dealt now reduces the cooldown of Mimic Ward by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707650,
+          "description": "While <span style=\"color: #FFFFFF; display: inline\">Mimic Ward</span> is active, you now gain <span class=\"item-number\">15</span><span class=\"item-number\">%</span> increased ranged haste and your <span style=\"color: #ffffff; display: inline\">Reclamation</span> transforms into <span style=\"color: #ffffff; display: inline\">Spirit Volley</span>. <br /><br />Each <span style=\"color: #ffffff; display: inline\">Spirit</span> now increases the damage of <span style=\"color: #ffffff; display: inline\">Spirit Volley</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />In addition, direct ranged abilty damage dealt now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mimic Ward</span> by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 8574,
+      "name": "Spirit Glaive",
+      "spellId": 806289,
+      "spellIds": [
+        806289
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Godslayer",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1969
+      ],
+      "requiredIds": [],
+      "desc": "Toss spectral glaives that strikes enemies it passes through, dealing 66 + 50% ranged AP + 50% shadow SP Shadow damage, and reducing their Shadow Resistance by 61 for 5 seconds.Usable while moving. Cast time scales with your Agility.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806289,
+          "description": "Toss spectral glaives that strikes enemies it passes through, dealing <span class=\"item-number\">66</span> + <span class=\"item-number\">50% ranged AP</span> + <span class=\"item-number\">50% shadow SP</span> Shadow damage, and reducing their Shadow Resistance by <span class=\"item-number\">61</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Usable while moving. Cast time scales with your Agility."
+        }
+      ]
+    },
+    {
+      "id": 9347,
+      "name": "Spirit Walker",
+      "spellId": 504459,
+      "spellIds": [
+        504459,
+        504636
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_archaeology_70_spiritofechero",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6042,
+        6051
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration and effectiveness of Vol'jin's Vigil and Swift Idol by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504459,
+          "description": "Increases the duration and effectiveness of <span style=\"color: #ffffff; display: inline\">Vol'jin's Vigil</span> and <span style=\"color: #ffffff; display: inline\">Swift Idol</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504636,
+          "description": "Increases the duration and effectiveness of <span style=\"color: #ffffff; display: inline\">Vol'jin's Vigil</span> and <span style=\"color: #ffffff; display: inline\">Swift Idol</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12086,
+      "name": "Malefic Arrow",
+      "spellId": 707854,
+      "spellIds": [
+        707854
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_naturearrow_(2)_Border",
+      "x": 3,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4006,
+        29747
+      ],
+      "desc": "Transforms your Malefic Wrath into Malefic Arrow.Malefic ArrowLaunch a voodoo arrow at an enemy, dealing 85% Ranged Weapon Damage plus 25 + 20% ranged AP + 25% nature SP as Nature damage, healing you equal to 40% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707854,
+          "description": "Transforms your <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span> into <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_naturearrow__2__border\" /><span class=\"name\">Malefic Arrow</span></div><span class=\"desc\">Launch a voodoo arrow at an enemy, dealing <span class=\"item-number\">85</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">25</span> + <span class=\"item-number\">20% ranged AP</span> + <span class=\"item-number\">25% nature SP</span> as Nature damage, healing you equal to <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 12264,
+      "name": "Potent Mixes",
+      "spellId": 503748,
+      "spellIds": [
+        503748
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Potion_110",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6042,
+        6525,
+        12525
+      ],
+      "requiredIds": [],
+      "desc": "Increases your healing done by 4% and reduces the threat generated by your spells by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503748,
+          "description": "Increases your healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the threat generated by your spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12645,
+      "name": "Ingredient: Jungle Shrooms",
+      "spellId": 801660,
+      "spellIds": [
+        801660
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Mushroom_07",
+      "x": 3,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4005,
+        29744
+      ],
+      "desc": "Brew Jungle Shrooms into your Cauldron.Cauldron: Heal up to 8 allies within 30 yds for 34 + 15% healing every 8 sec.Potion Toss: Heal the target ally for -3.75 to -2.75 every 3 sec for 18 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801660,
+          "description": "Brew <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Heal up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">34</span> + <span class=\"item-number\">15% healing</span> every <span class=\"item-number\">8</span> sec.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion Toss</span>: Heal the target ally for <span class=\"item-number\">-3.75</span> to <span class=\"item-number\">-2.75</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 12646,
+      "name": "Potion Toss",
+      "spellId": 801661,
+      "spellIds": [
+        801661
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Potion_99",
+      "x": 5,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4005,
+        29744
+      ],
+      "desc": "Fill a potion from your Cauldron, and toss it at a friendly target, healing them for 108 + 40% healing + 10% Spirit.The effect of Potion Toss will change based on your active Ingredients.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801661,
+          "description": "Fill a potion from your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, and toss it at a friendly target, healing them for <span class=\"item-number\">108</span> + <span class=\"item-number\">40% healing</span> + <span class=\"item-number\">10% Spirit</span>.<br /><br />The effect of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> will change based on your active <span style=\"color: #ffffff; display: inline\">Ingredients</span>."
+        }
+      ]
+    },
+    {
+      "id": 29121,
+      "name": "Malignant Jinx",
+      "spellId": 803678,
+      "spellIds": [
+        803678
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_FingerOfDeath",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6045,
+        6059,
+        6644,
+        31341
+      ],
+      "requiredIds": [],
+      "desc": "Curse an enemy for 8 seconds, causing their next spell cast to silence them for 5 sec.Can only have 1 Jinx active on a target at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803678,
+          "description": "Curse an enemy for <span class=\"item-number\">8</span> seconds, causing their next spell cast to silence them for <span class=\"item-number\">5</span> sec.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Jinx</span> active on a target at a time."
+        }
+      ]
+    },
+    {
+      "id": 29301,
+      "name": "Mimic Ward",
+      "spellId": 707162,
+      "spellIds": [
+        707162
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_deadshadow_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Summon a mimic ward for 12 seconds. For the duration when you cast Malefic Wrath and Loa's Brew the ward will also cast it on your target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707162,
+          "description": "Summon a mimic ward for <span class=\"item-number\">12</span> seconds. For the duration when you cast <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> the ward will also cast it on your target.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29303,
+      "name": "Potion Boss",
+      "spellId": 561072,
+      "spellIds": [
+        561072
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_potione3",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7128
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Potion Toss and your tossed Ingredients by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561072,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and your tossed <span style=\"color: #FFFFFF; display: inline\">Ingredients</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29306,
+      "name": "Slither",
+      "spellId": 500947,
+      "spellIds": [
+        500947
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_PoisonCleansingTotem",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6381,
+        30147
+      ],
+      "requiredIds": [],
+      "desc": "Transform into a serpent, removing all movement impairing effects and increasing movement speed by 80% for 5 seconds.You cannot attack or cast spells, but chance to be hit by ranged attacks and spells is reduced by -100% for the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500947,
+          "description": "Transform into a serpent, removing all movement impairing effects and increasing movement speed by <span class=\"item-number\">80</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />You cannot attack or cast spells, but chance to be hit by ranged attacks and spells is reduced by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span> for the duration."
+        }
+      ]
+    },
+    {
+      "id": 29309,
+      "name": "Cleansing Idol",
+      "spellId": 504840,
+      "spellIds": [
+        504840
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\WD_Cleansing_Ward",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6047,
+        7092
+      ],
+      "requiredIds": [],
+      "desc": "Drop a Cleansing Idol near you for 1 minute.Allies within 30 yds have 1 poison and disease effect removed from them every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504840,
+          "description": "Drop a <span style=\"color: #ffffff; display: inline\">Cleansing Idol</span> near you for <span class=\"item-number\">1</span> minute.<br /><br />Allies within <span class=\"item-number\">30</span> yds have <span class=\"item-number\">1</span> poison and disease effect removed from them every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29310,
+      "name": "Base: Beast Blood",
+      "spellId": 705870,
+      "spellIds": [
+        705870
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_blooddrop_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6009,
+        7132,
+        29753
+      ],
+      "requiredIds": [],
+      "desc": "Infuse your Cauldron with Beast Blood for 10 seconds, causing 15% of the direct Physical damage taken by party and raid members within 40 yds to instead be dealt over time.Only 1 Base can be active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705870,
+          "description": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Beast Blood</span> for <span class=\"item-number\">10</span> seconds, causing <span class=\"item-number\">15%</span> of the direct Physical damage taken by party and raid members within <span class=\"item-number\">40</span> yds to instead be dealt over time.<br /><br />Only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Base</span> can be active at a time."
+        }
+      ]
+    },
+    {
+      "id": 29729,
+      "name": "Strength of Da Loa",
+      "spellId": 300871,
+      "spellIds": [
+        300871
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_embraceoftheloa_bwonsomdi",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5303,
+        6983
+      ],
+      "requiredIds": [],
+      "desc": "Increases the attack power of party and raid members by 5%.Does not stack with similar effects.In addition, health and mana restoration provided by your Spirits now occurs -50% more often.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300871,
+          "description": "Increases the attack power of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.<br /><br />In addition, health and mana restoration provided by your <span style=\"color: #FFFFFF; display: inline\">Spirits</span> now occurs <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> more often."
+        }
+      ]
+    },
+    {
+      "id": 29736,
+      "name": "Brewmaster",
+      "spellId": 704512,
+      "spellIds": [
+        704512,
+        707856
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_axe_2h_zandalarquest_b_01",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6645
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Loa's Brew by 0.25 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704512,
+          "description": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> by <span class=\"item-number\">0.25</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 707856,
+          "description": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> by <span class=\"item-number\">0.25</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29740,
+      "name": "Master Mixologist",
+      "spellId": 705864,
+      "spellIds": [
+        705864
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_AlchemyIngred_8",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6026
+      ],
+      "requiredIds": [],
+      "desc": "For 10 seconds, the effectiveness of all Cauldron effects and Ingredients is increased by 100% and you can cast Spirit in a Bottle while moving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705864,
+          "description": "For <span class=\"item-number\">10</span> seconds, the effectiveness of all <span style=\"color: #ffffff; display: inline\">Cauldron</span> effects and <span style=\"color: #ffffff; display: inline\">Ingredients</span> is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and you can cast <span style=\"color: #ffffff; display: inline\">Spirit in a Bottle</span> while moving."
+        }
+      ]
+    },
+    {
+      "id": 29741,
+      "name": "Ingredient: Frog Bones",
+      "spellId": 801663,
+      "spellIds": [
+        801663
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_boneshield",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5055
+      ],
+      "requiredIds": [],
+      "desc": "Brew Frog Bones into your Cauldron.Cauldron: Grants allies within 40 yds -3% reduced damage taken.Potion: Grants target ally an absorption shield, absorbing 50 + 35% Spirit damage, scaling with Spirit.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801663,
+          "description": "Brew <span style=\"color: #ffffff; display: inline\">Frog Bones</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Grants allies within <span class=\"item-number\">40</span> yds <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> reduced damage taken.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Grants target ally an absorption shield, absorbing <span class=\"item-number\">50</span> + <span class=\"item-number\">35% Spirit</span> damage, scaling with Spirit."
+        }
+      ]
+    },
+    {
+      "id": 29744,
+      "name": "Healing Ward",
+      "spellId": 500957,
+      "spellIds": [
+        500957
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Banner_01",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Drop a Healing Ward near you for 1 minute, healing 8 nearby allies within 30 yds for 48 + 20% SP + 12% ranged AP + 10% Spirit every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500957,
+          "description": "Drop a <span style=\"color: #ffffff; display: inline\">Healing Ward</span> near you for <span class=\"item-number\">1</span> minute, healing <span class=\"item-number\">8</span> nearby allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">48</span> + <span class=\"item-number\">20% SP</span> + <span class=\"item-number\">12% ranged AP</span> + <span class=\"item-number\">10% Spirit</span> every <span class=\"item-number\">3</span> sec.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29747,
+      "name": "Mirage",
+      "spellId": 501136,
+      "spellIds": [
+        501136
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturehide_Border",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Become invisible for 20 seconds, gaining 5 Spirits, leaving a copy of yourself behind, and reducing threat each second. Direct damage or healing done will end this effect.While invisible, you can only see other invisible targets and those who can see invisible.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 501136,
+          "description": "Become invisible for <span class=\"item-number\">20</span> seconds, gaining <span class=\"item-number\">5</span> <span style=\"color: #FFFFFF; display: inline\">Spirits</span>, leaving a copy of yourself behind, and reducing threat each second. Direct damage or healing done will end this effect.<br /><br />While invisible, you can only see other invisible targets and those who can see invisible."
+        }
+      ]
+    },
+    {
+      "id": 29754,
+      "name": "Base: Crystal Water",
+      "spellId": 500962,
+      "spellIds": [
+        500962
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_IceWaterBlast_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6023,
+        29310
+      ],
+      "requiredIds": [],
+      "desc": "Infuse your Cauldron with Crystal Water for 10 seconds, causing party and raid members within 40 yds to be shielded for 20% of their healing taken for 5 seconds.Only 1 Base can be active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500962,
+          "description": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Crystal Water</span> for <span class=\"item-number\">10</span> seconds, causing party and raid members within <span class=\"item-number\">40</span> yds to be shielded for <span class=\"item-number\">20%</span> of their healing taken for <span class=\"item-number\">5</span> seconds.<br /><br />Only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Base</span> can be active at a time."
+        }
+      ]
+    },
+    {
+      "id": 29757,
+      "name": "Devotion to Bwonsamdi",
+      "spellId": 802756,
+      "spellIds": [
+        802756
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Helmet_114",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11323,
+        29743
+      ],
+      "requiredIds": [],
+      "desc": "Your direct damage now heals you for 10% of the damage done.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802756,
+          "description": "Your direct damage now heals you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage done."
+        }
+      ]
+    },
+    {
+      "id": 29768,
+      "name": "Voice of Bwonsamdi",
+      "spellId": 801716,
+      "spellIds": [
+        801716
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_embraceoftheloa_bwonsomdi",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6053,
+        30889
+      ],
+      "requiredIds": [],
+      "desc": "Let the spirit of Bwonsamdi possess you for 15 seconds.Dealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for 162 + 25% shadow SP Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801716,
+          "description": "Let the spirit of Bwonsamdi possess you for <span class=\"item-number\">15</span> seconds.<br /><br />Dealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for <span class=\"item-number\">162</span> + <span class=\"item-number\">25% shadow SP</span> Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": 29928,
+      "name": "Bad Juju",
+      "spellId": 802087,
+      "spellIds": [
+        802087
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill5_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31345
+      ],
+      "requiredIds": [],
+      "desc": "Hurl a bolt of dark magic at an enemy, dealing 191 + 87.65% SP Shadow damage, scaling with your Spirit.If the target is affected by Hex of Malice it also reduces the target's healing received by -20% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802087,
+          "description": "Hurl a bolt of dark magic at an enemy, dealing <span class=\"item-number\">191</span> + <span class=\"item-number\">87.65% SP</span> Shadow damage, scaling with your Spirit.<br /><br />If the target is affected by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> it also reduces the target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29929,
+      "name": "Malicious Golems",
+      "spellId": 705912,
+      "spellIds": [
+        705912
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_Gundrak_Heroic",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6055
+      ],
+      "requiredIds": [],
+      "desc": "Summoning your War Golem now increases your spell haste by 30% for 20 seconds.In addition, periodic damage dealt by Hex of Malice and damage dealt by Shadow Puppets will reduce the cooldown of War Golem by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705912,
+          "description": "Summoning your <span style=\"color: #ffffff; display: inline\">War Golem</span> now increases your spell haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />In addition, periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> will reduce the cooldown of <span style=\"color: #ffffff; display: inline\">War Golem</span> by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29977,
+      "name": "Spirit Shock",
+      "spellId": 807743,
+      "spellIds": [
+        807743
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_mail_raidshaman_m_01",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4177,
+        5303,
+        11177
+      ],
+      "requiredIds": [],
+      "desc": "Shock an enemy's spirit, silencing them for 4 seconds and interrupting non-player spellcasting for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807743,
+          "description": "Shock an enemy's spirit, silencing them for <span class=\"item-number\">4</span> seconds and interrupting non-player spellcasting for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29978,
+      "name": "Berserking",
+      "spellId": 705925,
+      "spellIds": [
+        705925
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Troll_03",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5164,
+        11164
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 25% chance to increase the haste of your Serpent Wards by 3% for 15 seconds, stacking up to 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705925,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the haste of your <span style=\"color: #ffffff; display: inline\">Serpent Wards</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking up to <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29981,
+      "name": "Serpent's Guile",
+      "spellId": 705928,
+      "spellIds": [
+        705928
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_waepon_bow_zulgrub_d_01",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6011,
+        29978
+      ],
+      "requiredIds": [],
+      "desc": "Your Malefic Arrow now deals an additional 15% of its damage dealt every 1 sec for 4 seconds as Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705928,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span> now deals an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of its damage dealt every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">4</span> seconds as Nature damage."
+        }
+      ]
+    },
+    {
+      "id": 30147,
+      "name": "Alchemical Enhancement",
+      "spellId": 705921,
+      "spellIds": [
+        705921
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_alchemy_71_potion4",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6031,
+        12749,
+        29749
+      ],
+      "requiredIds": [],
+      "desc": "Increases your haste by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705921,
+          "description": "Increases your haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30203,
+      "name": "Veil of Darkness",
+      "spellId": 802100,
+      "spellIds": [
+        802100
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_GatherShadows",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6048,
+        11323,
+        12048,
+        29743
+      ],
+      "requiredIds": [],
+      "desc": "Envelop a target in a shadowy voodoo veil, increasing the damage you deal to them by 15% for 15 seconds.If you are within 40 yds of the target you deal 195 + 10% shadow SP + 4.5% AP Shadow damage to them every 2 second.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802100,
+          "description": "Envelop a target in a shadowy voodoo veil, increasing the damage you deal to them by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />If you are within <span class=\"item-number\">40</span> yds of the target you deal <span class=\"item-number\">195</span> + <span class=\"item-number\">10% shadow SP</span> + <span class=\"item-number\">4.5% AP</span> Shadow damage to them every <span class=\"item-number\">2</span> second."
+        }
+      ]
+    },
+    {
+      "id": 30333,
+      "name": "Voodoo Cauldron",
+      "spellId": 804684,
+      "spellIds": [
+        804684
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_enchanting_70_pet_cauldron",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6014,
+        6020,
+        29737
+      ],
+      "requiredIds": [],
+      "desc": "Place down a Voodoo Cauldron for 15 seconds, increasing allies' healing received by 20% while near the cauldron.Allies within 15 yds are healed for 300 + 60% healing every 1.5 sec for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804684,
+          "description": "Place down a <span style=\"color: #ffffff; display: inline\">Voodoo Cauldron</span> for <span class=\"item-number\">15</span> seconds, increasing allies' healing received by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> while near the cauldron.<br /><br />Allies within <span class=\"item-number\">15</span> yds are healed for <span class=\"item-number\">300</span> + <span class=\"item-number\">60% healing</span> every <span class=\"item-number\">1.5</span> sec for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30596,
+      "name": "Puppeteer's Grasp",
+      "spellId": 707209,
+      "spellIds": [
+        707209
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_unholyspirit_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6058,
+        30973
+      ],
+      "requiredIds": [],
+      "desc": "Transform into a malignant spirit for 30 seconds, allowing you to cast Malefic Wrath and Bad Juju while moving, and periodically granting you a Spirit every 2 sec.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707209,
+          "description": "Transform into a malignant spirit for <span class=\"item-number\">30</span> seconds, allowing you to cast <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> while moving, and periodically granting you a <span style=\"color: #ffffff; display: inline\">Spirit</span> every <span class=\"item-number\">2</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30823,
+      "name": "Mojo Beam",
+      "spellId": 500950,
+      "spellIds": [
+        500950
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_unholybeam_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6022,
+        7128,
+        29303
+      ],
+      "requiredIds": [],
+      "desc": "Bring mojo to an ally, healing for 174 + 18.5% SP every 1 sec for 4 seconds. While channeling, you can instantly cast Potion Toss, Splash Potion and Spirit in a Bottle at a 20% increased cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500950,
+          "description": "Bring mojo to an ally, healing for <span class=\"item-number\">174</span> + <span class=\"item-number\">18.5% SP</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">4</span> seconds. <br /><br />While channeling, you can instantly cast <span style=\"color: #FFFFFF; display: inline\">Potion Toss</span>, <span style=\"color: #FFFFFF; display: inline\">Splash Potion</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> at a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased cost.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30884,
+      "name": "Mojo Addiction",
+      "spellId": 503696,
+      "spellIds": [
+        503696,
+        504889
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\trade_archaeology_crackedcrystalvial",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6645
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum mana by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503696,
+          "description": "Increases your maximum mana by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504889,
+          "description": "Increases your maximum mana by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30889,
+      "name": "Prolonged Malice",
+      "spellId": 704505,
+      "spellIds": [
+        704505
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6644,
+        31343
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Hex of Malice by 6 sec and the range of your offensive Voodoo spells by 6 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704505,
+          "description": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> by <span class=\"item-number\">6</span> sec and the range of your offensive Voodoo spells by <span class=\"item-number\">6</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 30891,
+      "name": "Touch of Mueh'zala",
+      "spellId": 706538,
+      "spellIds": [
+        706538
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_80_zandalari_zandalariidol",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6525,
+        12525,
+        30147
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Stasis Ward's stun effect by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706538,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Stasis Ward</span>'s stun effect by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30892,
+      "name": "Call of Sseratus",
+      "spellId": 681222,
+      "spellIds": [
+        681222
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_sumsnakearmy_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6010,
+        6072
+      ],
+      "requiredIds": [],
+      "desc": "Summon 4 Serpent Wards near you for 15 seconds.Scales with modifiers to Serpent Ward.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681222,
+          "description": "Summon <span class=\"item-number\">4</span> <span style=\"color: #FFFFFF; display: inline\">Serpent Wards</span> near you for <span class=\"item-number\">15</span> seconds.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Serpent Ward</span>."
+        }
+      ]
+    },
+    {
+      "id": 30895,
+      "name": "Soul Feeder",
+      "spellId": 705894,
+      "spellIds": [
+        705894
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_glaive_1h_warfrontsforsaken_d_01",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8574
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Malefic Arrow by 5% for each active Spirit on you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705894,
+          "description": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each active <span style=\"color: #ffffff; display: inline\">Spirit</span> on you."
+        }
+      ]
+    },
+    {
+      "id": 30973,
+      "name": "Staff of the Coven",
+      "spellId": 806563,
+      "spellIds": [
+        806563,
+        807905,
+        807915
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_staff_2h_zandalarquest_b_02",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7157,
+        31340
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Spirit by 8% and your hit chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806563,
+          "description": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807905,
+          "description": "Increases your Spirit by <span class=\"item-number\">16</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 807915,
+          "description": "Increases your Spirit by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31118,
+      "name": "Death Draught",
+      "spellId": 602220,
+      "spellIds": [
+        602220
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanepotion_Border",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6044,
+        7154,
+        11154
+      ],
+      "requiredIds": [],
+      "desc": "Drink a potent voodoo draught that slows your body to a deathlike stillness for up to 5 minutes, causing you to feign death which may trick enemies into ignoring you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 602220,
+          "description": "Drink a potent voodoo draught that slows your body to a deathlike stillness for up to <span class=\"item-number\">5</span> minutes, causing you to feign death which may trick enemies into ignoring you."
+        }
+      ]
+    },
+    {
+      "id": 31137,
+      "name": "Jungle Secrets",
+      "spellId": 707212,
+      "spellIds": [
+        707212
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_food_cooked_jadewitchbrew",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30823
+      ],
+      "requiredIds": [],
+      "desc": "When you heal with Loa's Brew your Effigies will now heal an additional ally within 20 yds for 35% of the healing done, prioritizing allies with low health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707212,
+          "description": "When you heal with <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> your <span style=\"color: #ffffff; display: inline\">Effigies</span> will now heal an additional ally within <span class=\"item-number\">20</span> yds for <span class=\"item-number\">35</span><span class=\"item-number\">%</span> of the healing done, prioritizing allies with low health."
+        }
+      ]
+    },
+    {
+      "id": 31154,
+      "name": "Shadow Puppets",
+      "spellId": 500015,
+      "spellIds": [
+        500015
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_45_voodoo_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4004,
+        29301
+      ],
+      "desc": "Summon a Shadow Puppet that collects a Spirit and rushes towards your target, dealing 25 + 22% shadow SP Shadow damage, repeating every 1 sec for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500015,
+          "description": "Summon a <span style=\"color: #ffffff; display: inline\">Shadow Puppet</span> that collects a <span style=\"color: #ffffff; display: inline\">Spirit</span> and rushes towards your target, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">22% shadow SP</span> Shadow damage, repeating every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br />"
+        }
+      ]
+    },
+    {
+      "id": 31340,
+      "name": "Zalazane's Malice",
+      "spellId": 705902,
+      "spellIds": [
+        705902
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ImpPhaseShift",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31344,
+        31345
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Hex of Malice by 15% and the duration of Jinxes by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705902,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and the duration of <span style=\"color: #ffffff; display: inline\">Jinxes</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 31343,
+      "name": "Overflowing Juju",
+      "spellId": 707405,
+      "spellIds": [
+        707405
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Rejuvenation",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6062
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Malefic Wrath, Shadowflare, and Bad Juju by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707405,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span>, <span style=\"color: #ffffff; display: inline\">Shadowflare</span>, and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31344,
+      "name": "Stranglethorn Style",
+      "spellId": 705877,
+      "spellIds": [
+        705877
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_tanaanjungle",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31154
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 4% and reduces threat generated by your Voodoo spells by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705877,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces threat generated by your Voodoo spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31345,
+      "name": "Loa Spirits",
+      "spellId": 804620,
+      "spellIds": [
+        804620,
+        807904
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_spiritualrage_Border",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31154
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt and healing done now has a 8% chance to collect a Spirit.In addition, each active Spirit now increases your Spirit by 2%.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804620,
+          "description": "Damage dealt and healing done now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to collect a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<br /><br />In addition, each active <span style=\"color: #ffffff; display: inline\">Spirit</span> now increases your Spirit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        },
+        {
+          "rank": 2,
+          "spellId": 807904,
+          "description": "Damage dealt and healing done now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to collect a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<br /><br />In addition, each active <span style=\"color: #ffffff; display: inline\">Spirit</span> now increases your Spirit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31346,
+      "name": "De Other Side",
+      "spellId": 802092,
+      "spellIds": [
+        802092
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_05",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6055,
+        7100,
+        29768
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Shadow Puppets now increases your damage and critical strike chance by 1% for 20 seconds, stacking up to 10 times.Additional procs do not refresh the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802092,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> now increases your damage and critical strike chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Additional procs do not refresh the duration."
+        }
+      ]
+    },
+    {
+      "id": 31347,
+      "name": "Hexplosion",
+      "spellId": 704495,
+      "spellIds": [
+        704495
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_ShamanTotam_Wind",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6046
+      ],
+      "requiredIds": [],
+      "desc": "Your offensive critical strikes now increase your haste by 20% for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704495,
+          "description": "Your offensive critical strikes now increase your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31348,
+      "name": "Growing Malice",
+      "spellId": 706551,
+      "spellIds": [
+        706551
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_skullofhate_Border",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6062,
+        30596
+      ],
+      "requiredIds": [],
+      "desc": "Each tick of Hex of Malice increases the damage of the next tick on the enemy by 3%, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706551,
+          "description": "Each tick of <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> increases the damage of the next tick on the enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 31349,
+      "name": "War Golem",
+      "spellId": 800330,
+      "spellIds": [
+        800330
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_archaeology_trollgolem",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6045,
+        31341,
+        31347
+      ],
+      "requiredIds": [],
+      "desc": "Summon a War Golem for 10 seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800330,
+          "description": "Summon a <span style=\"color: #ffffff; display: inline\">War Golem</span> for <span class=\"item-number\">10</span> seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself."
+        }
+      ]
+    },
+    {
+      "id": 31350,
+      "name": "Voodoo Strings",
+      "spellId": 705910,
+      "spellIds": [
+        705910
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Thread_01",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31343
+      ],
+      "requiredIds": [],
+      "desc": "When Bad Juju is used on enemies affected by Puppeteer's Threads, it strikes an additional time every 1 sec for 30% of the damage dealt over 3 seconds as Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705910,
+          "description": "When <span style=\"color: #ffffff; display: inline\">Bad Juju</span> is used on enemies affected by <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span>, it strikes an additional time every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds as Nature damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:34:705917",
+      "name": "Hollow Spirit / It's Da Voodoo",
+      "spellId": 705917,
+      "spellIds": [
+        705917
+      ],
+      "tabId": 34,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_InstableAffliction_Purple",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6007
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Shadowflare and Hexfire now increases the chance enemies are critically struck by 3% for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705917,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Shadowflare</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> now increases the chance enemies are critically struck by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:87:627411",
+      "name": "Sen'jin's Swiftness / Sen'jin's Wisdom",
+      "spellId": 504426,
+      "spellIds": [
+        504426
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_wardoftheloafrost",
+      "x": 0,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7088
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Mirage by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504426,
+          "description": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Mirage</span> by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:87:681465",
+      "name": "Jinx of Decay / Will of the Serpent",
+      "spellId": 681465,
+      "spellIds": [
+        681465
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31118
+      ],
+      "requiredIds": [],
+      "desc": "Your Lethargy Jinx now also reduces the target's periodic healing received by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681465,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Lethargy Jinx</span> now also reduces the target's periodic healing received by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:87:807855",
+      "name": "Gonk's Blessing / Krag'wa's Blessing",
+      "spellId": 806469,
+      "spellIds": [
+        806469
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_pet_raptor",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6031
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Amphibimorph by -60 sec, but increases its cast time by 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806469,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Amphibimorph</span> by <span class=\"item-number\">-60</span> sec, but increases its cast time by <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:87:572870",
+      "name": "Dark Mojo / Blessing of Hir'eek",
+      "spellId": 712396,
+      "spellIds": [
+        712396
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Troll_06",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29306
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to resist magic and curse effects by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712396,
+          "description": "Increases your chance to resist magic and curse effects by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:87:845121",
+      "name": "Blatant Curse / Latent Curse",
+      "spellId": 301297,
+      "spellIds": [
+        301297
+      ],
+      "tabId": 87,
+      "classId": 13,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_RemoveCurse",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12264,
+        30891
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost of your Jinxes by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301297,
+          "description": "Reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Jinxes</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:35:578295",
+      "name": "Spirit Out Of The Bottle / Touch of the Spirits",
+      "spellId": 301175,
+      "spellIds": [
+        301175
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_soothingmists",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29303,
+        29741
+      ],
+      "requiredIds": [],
+      "desc": "Casting Spirit in a Bottle now grants Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.@ifknown:500950:In addition, channeling Mojo Beam causes Spirit in a Bottle to affect 3 additional allies near the primary target.:ifknown@",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301175,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> now grants <span style=\"color: #FFFFFF; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div><br /><br />@ifknown:500950:In addition, channeling <span style=\"color: #FFFFFF; display: inline\">Mojo Beam</span> causes <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> to affect <span class=\"item-number\">3</span> additional allies near the primary target.:ifknown@"
+        }
+      ]
+    },
+    {
+      "id": "choice:13:35:73434",
+      "name": "Spice: Peacebloom / Spice: Earthroot",
+      "spellId": 803700,
+      "spellIds": [
+        803700
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Flower_02",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6021
+      ],
+      "requiredIds": [],
+      "desc": "Infuse your Cauldron with Spice: Peacebloom.Reduces the duration of roots, stuns, and snares against allies within 40 yds by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803700,
+          "description": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Spice: Peacebloom</span>.<br /><br />Reduces the duration of roots, stuns, and snares against allies within <span class=\"item-number\">40</span> yds by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:35:988867",
+      "name": "Rage Brew / Arcane Brew",
+      "spellId": 503750,
+      "spellIds": [
+        503750
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Potion_11",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30823
+      ],
+      "requiredIds": [],
+      "desc": "Throw your Rage Brew at an ally, regenerating 50% of their maximum Rage, Energy, and Focus. Increases their attack power and ranged attack power by 15% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503750,
+          "description": "Throw your <span style=\"color: #ffffff; display: inline\">Rage Brew</span> at an ally, regenerating <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their maximum Rage, Energy, and Focus. <br /><br />Increases their attack power and ranged attack power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:35:706545",
+      "name": "Jungle Booms / Doctor of the Jungle",
+      "spellId": 705859,
+      "spellIds": [
+        705859
+      ],
+      "tabId": 35,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_chiwave",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6016,
+        31137
+      ],
+      "requiredIds": [],
+      "desc": "Jungle Shrooms when used with Potion Toss and Splash Potion now ticks -0.5 sec faster.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705859,
+          "description": "<span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> when used with <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> now ticks <span class=\"item-number\">-0.5</span> sec faster."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:36:345232",
+      "name": "Godslayer / The True Spirit",
+      "spellId": 802714,
+      "spellIds": [
+        802714
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_immerseus",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6063
+      ],
+      "requiredIds": [],
+      "desc": "Your Spirit Glaive now deals an additional 54 + 19% shadow SP + 14% ranged AP Shadow damage to up to 5 nearby enemies at the end of its duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802714,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Spirit Glaive</span> now deals an additional <span class=\"item-number\">54</span> + <span class=\"item-number\">19% shadow SP</span> + <span class=\"item-number\">14% ranged AP</span> Shadow damage to up to <span class=\"item-number\">5</span> nearby enemies at the end of its duration."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:36:164323",
+      "name": "Hex of Death / Spirit Hunting",
+      "spellId": 706557,
+      "spellIds": [
+        706557
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_deathbolt_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7102
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Malefic Arrow now reduces the targets healing received by -20% for 10 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706557,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Malefic Arrow</span> now reduces the targets healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:36:807450",
+      "name": "Spirit Striker / Hexfire Mass",
+      "spellId": 806286,
+      "spellIds": [
+        806286
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Warlock_PlaieFuneste2",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6983
+      ],
+      "requiredIds": [],
+      "desc": "Increases the proc chance of Voodoo Fire by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806286,
+          "description": "Increases the proc chance of <span style=\"color: #ffffff; display: inline\">Voodoo Fire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:36:378215",
+      "name": "Bwonsamdi's Edge / Dambala's Lethality",
+      "spellId": 712435,
+      "spellIds": [
+        712435
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Ice_Lament",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6073,
+        7031
+      ],
+      "requiredIds": [],
+      "desc": "Your Spirit Eclipse now deals 40% increased damage when it explodes on impact.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712435,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Spirit Eclipse</span> now deals <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased damage when it explodes on impact."
+        }
+      ]
+    },
+    {
+      "id": "choice:13:36:783222",
+      "name": "Viper Ward / Serpent Handler",
+      "spellId": 707329,
+      "spellIds": [
+        707329
+      ],
+      "tabId": 36,
+      "classId": 13,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_snakeman_c_01",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4572,
+        29978
+      ],
+      "requiredIds": [],
+      "desc": "Transforms Call of Sseratus into Viper Ward.Viper WardSummons a powerful and fast-attacking Viper Ward at target location for 20 seconds.Viper Wards have a 50% chance to unleash a Hexfire Blast, dealing 216 + 15% ranged AP Fire damage to an enemy.Chance increased based on your ranged critical strike rating.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707329,
+          "description": "Transforms <span style=\"color: #ffffff; display: inline\">Call of Sseratus</span> into <span style=\"color: #ffffff; display: inline\">Viper Ward</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_staff_2h_snakeman_c_01\" /><span class=\"name\">Viper Ward</span></div><span class=\"desc\">Summons a powerful and fast-attacking <span style=\"color: #ffffff; display: inline\">Viper Ward</span> at target location for <span class=\"item-number\">20</span> seconds.<br /><br /><span style=\"color: #ffffff; display: inline\">Viper Wards</span> have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to unleash a <span style=\"color: #ffffff; display: inline\">Hexfire Blast</span>, dealing <span class=\"item-number\">216</span> + <span class=\"item-number\">15% ranged AP</span> Fire damage to an enemy.<br /><br />Chance increased based on your ranged critical strike rating.</span></div>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4478 @@
+{
+  "class": "Barbarian",
+  "classId": "12",
+  "specs": [
+    "Brutality",
+    "Headhunting",
+    "Ancestry"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Brutality": 31,
+    "Headhunting": 32,
+    "Ancestry": 33
+  },
+  "nodes": [
+    {
+      "id": 4297,
+      "name": "Bloodbound",
+      "spellId": 801767,
+      "spellIds": [
+        801767
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3gargantuan",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7720
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Warband by -30 sec and Ancestral Roar by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801767,
+          "description": "Reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Warband</span> by <span class=\"item-number\">-30</span> sec and <span style=\"color: #ffffff; display: inline\">Ancestral Roar</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 4354,
+      "name": "Frost Giant's Fury",
+      "spellId": 805812,
+      "spellIds": [
+        805812
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_deathknight_icetouch",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34258
+      ],
+      "requiredIds": [],
+      "desc": "Casting Breath of the North now grants you 10% melee attack speed, plus an additional 20% when using a two-handed weapon, for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805812,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Breath of the North</span> now grants you <span class=\"item-number\">10</span><span class=\"item-number\">%</span> melee attack speed, plus an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> when using a two-handed weapon, for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 4720,
+      "name": "Thirst for Battle",
+      "spellId": 570236,
+      "spellIds": [
+        570236
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Racial_BloodRage",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        9170
+      ],
+      "requiredIds": [],
+      "desc": "Your Smash now regenerate 25% of your maximum Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570236,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now regenerate <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your maximum Energy."
+        }
+      ]
+    },
+    {
+      "id": 5318,
+      "name": "Strong Arm",
+      "spellId": 705176,
+      "spellIds": [
+        705176
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_StrengthOfArms",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34319
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Spears by 15% and your hit chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705176,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Spears</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5327,
+      "name": "Vital Spirit",
+      "spellId": 805835,
+      "spellIds": [
+        805835,
+        807864
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_Reincarnation",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31152,
+        34319
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your Spirit spells by 10 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805835,
+          "description": "Increases the range of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">10</span> yds."
+        },
+        {
+          "rank": 2,
+          "spellId": 807864,
+          "description": "Increases the range of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">20</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 5329,
+      "name": "Berserker Rush",
+      "spellId": 560518,
+      "spellIds": [
+        560518
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hanzandfranz_chestbump",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6803
+      ],
+      "requiredIds": [],
+      "desc": "Charge an enemy dealing 31 + 35% ranged AP Physical damage and rooting them for 2 seconds, then leap backwards.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560518,
+          "description": "Charge an enemy dealing <span class=\"item-number\">31</span> + <span class=\"item-number\">35% ranged AP</span> Physical damage and rooting them for <span class=\"item-number\">2</span> seconds, then leap backwards."
+        }
+      ]
+    },
+    {
+      "id": 5373,
+      "name": "Born Killer",
+      "spellId": 800131,
+      "spellIds": [
+        800131
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_trinket6oih_ironskull1",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11168,
+        13168,
+        34303
+      ],
+      "requiredIds": [],
+      "desc": "Killing an enemy that yields experience or honor now grants you 5% increased armor penetration and movement speed for 5 seconds, stacking 20 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800131,
+          "description": "Killing an enemy that yields experience or honor now grants you <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased armor penetration and movement speed for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">20</span> times."
+        }
+      ]
+    },
+    {
+      "id": 5608,
+      "name": "To The Bone",
+      "spellId": 560880,
+      "spellIds": [
+        560880
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_StrongBone_Red",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6799,
+        34293
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Guts Spilled by 10% and it now applies Break to the target and critically striking with it will apply an additional stack.BreakBreak an enemy's defenses, reducing their armor by -4% for 20 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560880,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #ffffff; display: inline\">Break</span> to the target and critically striking with it will apply an additional stack.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_icon_break\" /><span class=\"name\">Break</span></div><span class=\"desc\">Break an enemy's defenses, reducing their armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 5744,
+      "name": "Decapitate",
+      "spellId": 804414,
+      "spellIds": [
+        804414
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(47)_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Attempt to decapitate an injured enemy, dealing 200% Weapon Damage plus 27, and converting each extra point of Energy to deal additional damage (up to a maximum cost of 100 Energy).Only usable on enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804414,
+          "description": "Attempt to decapitate an injured enemy, dealing <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">27</span>, and converting each extra point of Energy to deal additional damage (up to a maximum cost of <span class=\"item-number\">100</span> Energy).<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 5794,
+      "name": "Impaling Spear",
+      "spellId": 500984,
+      "spellIds": [
+        500984
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Impaling_Spear",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34325
+      ],
+      "requiredIds": [],
+      "desc": "Hurl a spear in a 30 yd frontal line, dealing 131% Ranged Weapon Damage plus 23, dealing less damage with each enemy struck.At the spear's impact location the spear shatters, dealing 277 + 15% ranged AP Physical damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500984,
+          "description": "Hurl a spear in a <span class=\"item-number\">30</span> yd frontal line, dealing <span class=\"item-number\">131</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">23</span>, dealing less damage with each enemy struck.<br /><br />At the spear's impact location the spear shatters, dealing <span class=\"item-number\">277</span> + <span class=\"item-number\">15% ranged AP</span> Physical damage to nearby enemies.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 6350,
+      "name": "Headlopper",
+      "spellId": 300499,
+      "spellIds": [
+        300499
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(10)_Border",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29791
+      ],
+      "requiredIds": [],
+      "desc": "Your critical strikes with Decapitate now cause the enemy to bleed, dealing an additional 30% of the damage dealt over 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300499,
+          "description": "Your critical strikes with <span style=\"color: #ffffff; display: inline\">Decapitate</span> now cause the enemy to bleed, dealing an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6374,
+      "name": "Thick Skull",
+      "spellId": 801549,
+      "spellIds": [
+        801549
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_laughingskull_01",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6871
+      ],
+      "requiredIds": [],
+      "desc": "Your thick skull makes you immune to all stun effects for 10 seconds and while active taking direct damage grants you Born in Blood.Usable while stunned.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801549,
+          "description": "Your thick skull makes you immune to all stun effects for <span class=\"item-number\">10</span> seconds and while active taking direct damage grants you <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<br /><br />Usable while stunned.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">18</span> health and <span class=\"item-number\">12</span> Energy over <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6462,
+      "name": "Unstoppable Rage",
+      "spellId": 706353,
+      "spellIds": [
+        706353
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_InnerRage",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        14277,
+        34277
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Unbridled Rage by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706353,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6511,
+      "name": "Frothing Savage",
+      "spellId": 705234,
+      "spellIds": [
+        705234,
+        707779
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_bloodtrollfemalehead",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6785,
+        34325
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Spears and Berserker Axe by 8% against bleeding targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705234,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spears</span> and <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> against bleeding targets."
+        },
+        {
+          "rank": 2,
+          "spellId": 707779,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spears</span> and <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against bleeding targets."
+        }
+      ]
+    },
+    {
+      "id": 6608,
+      "name": "Deep Fury",
+      "spellId": 705240,
+      "spellIds": [
+        705240
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_warcry",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31152
+      ],
+      "requiredIds": [],
+      "desc": "Direct Physical damage dealt now reduces the cooldown of Unbridled Rage by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705240,
+          "description": "Direct Physical damage dealt now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6706,
+      "name": "Maximum Carnage",
+      "spellId": 561359,
+      "spellIds": [
+        561359
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warrior_paintrain",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        2277,
+        12277,
+        30374,
+        34313
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unbridled Rage now causes you to begin swinging your weapon around you dealing 47 + 25% AP Physical damage to up to 5 nearby enemies over 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561359,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now causes you to begin swinging your weapon around you dealing <span class=\"item-number\">47</span> + <span class=\"item-number\">25% AP</span> Physical damage to up to <span class=\"item-number\">5</span> nearby enemies over <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6713,
+      "name": "Fury of the North",
+      "spellId": 560938,
+      "spellIds": [
+        560938
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_frost_spell_10_Border",
+      "x": 5,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29366
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of the enrage effect from your Ramhorn Rage by 6 sec and causes it to increase your movement speed by 40% for its duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560938,
+          "description": "Increases the duration of the enrage effect from your <span style=\"color: #ffffff; display: inline\">Ramhorn Rage</span> by <span class=\"item-number\">6</span> sec and causes it to increase your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for its duration."
+        }
+      ]
+    },
+    {
+      "id": 6740,
+      "name": "Utter Devastation",
+      "spellId": 560910,
+      "spellIds": [
+        560910
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_EndlessRage",
+      "x": 3,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6706
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Maximum Carnage by 1 sec and it now grants Utter Devastation for 6 seconds. Utter DevastationInstantly removes all movement impairing effects, increases your movement speed by 25%, and makes you immune to slows.Can be consumed by Decapitate or Crush to guarantee them to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560910,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Maximum Carnage</span> by <span class=\"item-number\">1</span> sec and it now grants <span style=\"color: #ffffff; display: inline\">Utter Devastation</span> for <span class=\"item-number\">6</span> seconds. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_endlessrage\" /><span class=\"name\">Utter Devastation</span></div><span class=\"desc\">Instantly removes all movement impairing effects, increases your movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and makes you immune to slows.<br /><br />Can be consumed by <span style=\"color: #ffffff; display: inline\">Decapitate</span> or <span style=\"color: #ffffff; display: inline\">Crush</span> to guarantee them to critically strike.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6741,
+      "name": "Sustaining Swings",
+      "spellId": 520539,
+      "spellIds": [
+        520539
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Warriorskill_42_nobg_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29514
+      ],
+      "requiredIds": [],
+      "desc": "Melee attacks now have an 8% chance to heal you for 10% of the damage dealt and cause your next Ancestral Strike to deal 50% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520539,
+          "description": "Melee attacks now have an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to heal you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt and cause your next <span style=\"color: #FFFFFF; display: inline\">Ancestral Strike</span> to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": 6742,
+      "name": "Pure Power",
+      "spellId": 705173,
+      "spellIds": [
+        705173,
+        707761
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_revendreth_rogue",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6744
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Smash by 15% and your expertise by 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705173,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707761,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 6744,
+      "name": "Beheader",
+      "spellId": 705222,
+      "spellIds": [
+        705222
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_ogres_warmaul_chieftain",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5744
+      ],
+      "requiredIds": [],
+      "desc": "Scoring a kill blow with Decapitate now refunds 100% of your maximum Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705222,
+          "description": "Scoring a kill blow with <span style=\"color: #ffffff; display: inline\">Decapitate</span> now refunds <span class=\"item-number\">100%</span> of your maximum Energy."
+        }
+      ]
+    },
+    {
+      "id": 6750,
+      "name": "Bloody Fighter",
+      "spellId": 705167,
+      "spellIds": [
+        705167,
+        707760
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_mace_1h_pvpcataclysms3_c_02",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34268
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Brutal Swing and Smash by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705167,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707760,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6785,
+      "name": "Puncture Wounds",
+      "spellId": 805997,
+      "spellIds": [
+        805997
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_boilingblood",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34319
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Spears now causes enemies to bleed for 633 + 16.5% ranged AP over 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805997,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Spears</span> now causes enemies to bleed for <span class=\"item-number\">633</span> + <span class=\"item-number\">16.5% ranged AP</span> over <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6790,
+      "name": "War Tales",
+      "spellId": 706352,
+      "spellIds": [
+        706352
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Head_Dwarf_01",
+      "x": 8,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        14277
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to resist fear and horrify effects by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706352,
+          "description": "Increases your chance to resist fear and horrify effects by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6796,
+      "name": "You Want Axe?",
+      "spellId": 560564,
+      "spellIds": [
+        560564
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_1h_garrison_a_01",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30163
+      ],
+      "requiredIds": [],
+      "desc": "While enraged, casting Spears now refreshes 3 charges of Berserker Axe and your next 3 casts cost -50% less Energy. Lasts 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560564,
+          "description": "While enraged, casting <span style=\"color: #ffffff; display: inline\">Spears</span> now refreshes <span class=\"item-number\">3</span> charges of <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> and your next <span class=\"item-number\">3</span> casts cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Energy. Lasts <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6797,
+      "name": "Spear Shards",
+      "spellId": 805893,
+      "spellIds": [
+        805893
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_spear_06",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5794
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you shatter your Impaling Spear, affected enemies bleed for 100% of the damage dealt over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805893,
+          "description": "Whenever you shatter your <span style=\"color: #ffffff; display: inline\">Impaling Spear</span>, affected enemies bleed for <span class=\"item-number\">100%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6798,
+      "name": "Gurubashi Technique",
+      "spellId": 705198,
+      "spellIds": [
+        705198
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_mask_zulgurub_d_01",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7338,
+        34329
+      ],
+      "requiredIds": [],
+      "desc": "Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage. Grants Born in Blood. Scales with damage modifiers to Throw Weapon.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705198,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to transform your next cast of it within <span class=\"item-number\">8</span> seconds into <span style=\"color: #ffffff; display: inline\">Rapid Throw</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_axe__3__border\" /><span class=\"name\">Rapid Throw</span></div><span class=\"desc\">Throw your ranged weapon <span class=\"item-number\">3</span> times in quick succession, each dealing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">25</span> Physical damage. <br /><br />Grants <span style=\"color: #ffffff; display: inline\">Born in Blood</span>. Scales with damage modifiers to <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>.<br /></span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6799,
+      "name": "Gruesome",
+      "spellId": 705227,
+      "spellIds": [
+        705227,
+        707765
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_skeer_bloodletting",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6608,
+        6803
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705227,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707765,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6801,
+      "name": "Sen'jin's Guidance",
+      "spellId": 707661,
+      "spellIds": [
+        707661
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\archaeology_5_0_spearofxuen",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7338,
+        30167
+      ],
+      "requiredIds": [],
+      "desc": "Transforms your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241. Scales with damage modifiers to Throw Weapon and Spears. Usable while moving.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707661,
+          "description": "Transforms your <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> into <span style=\"color: #ffffff; display: inline\">Javelin Toss</span> and increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Javelin Toss</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_spear_11\" /><span class=\"name\">Javelin Toss</span></div><span class=\"desc\">Take aim and hurl a javelin at an enemy dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">241</span>. <br /><br />Scales with damage modifiers to <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> and <span style=\"color: #ffffff; display: inline\">Spears</span>. Usable while moving.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6802,
+      "name": "Strength of Goria",
+      "spellId": 705202,
+      "spellIds": [
+        705202
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_HighMaul_Butcher",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34277,
+        34291
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unbridled Rage now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705202,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now grants you <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">18</span> health and <span class=\"item-number\">12</span> Energy over <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6803,
+      "name": "Entrails",
+      "spellId": 705238,
+      "spellIds": [
+        705238
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_LifeDrain",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6608,
+        30771
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by bleed effects now increases your Agility by 1% for 8 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705238,
+          "description": "Damage dealt by bleed effects now increases your Agility by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6834,
+      "name": "Anger Issues",
+      "spellId": 560450,
+      "spellIds": [
+        560450
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0005s_0000_characterb_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6750
+      ],
+      "requiredIds": [],
+      "desc": "Scoring a critical strike against an enemy now reduces the cooldown of Carnage by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560450,
+          "description": "Scoring a critical strike against an enemy now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Carnage</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6844,
+      "name": "Savagery",
+      "spellId": 800943,
+      "spellIds": [
+        800943
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_garrosh_hellscreams_warsong",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29793,
+        30870
+      ],
+      "requiredIds": [],
+      "desc": "While below 35% health, your auto attacks, Ancestral Strike, and Throw Weapon now grant Born in Blood. Can only occur once every 2 sec.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800943,
+          "description": "While below <span class=\"item-number\">35%</span> health, your auto attacks, <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span>, and <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> now grant <span style=\"color: #ffffff; display: inline\">Born in Blood</span>. Can only occur once every <span class=\"item-number\">2</span> sec.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">18</span> health and <span class=\"item-number\">12</span> Energy over <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6871,
+      "name": "Knockout Artist",
+      "spellId": 705196,
+      "spellIds": [
+        705196
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\item_onepunch",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7720,
+        30870
+      ],
+      "requiredIds": [],
+      "desc": "Successfully interrupting a target with Jawbreaker now increases your haste by 30% for 4 seconds and refunds half its Energy cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705196,
+          "description": "Successfully interrupting a target with <span style=\"color: #ffffff; display: inline\">Jawbreaker</span> now increases your haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds and refunds half its Energy cost."
+        }
+      ]
+    },
+    {
+      "id": 7337,
+      "name": "Spite",
+      "spellId": 707584,
+      "spellIds": [
+        707584
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30167,
+        34321
+      ],
+      "requiredIds": [],
+      "desc": "Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707584,
+          "description": "Quickly unleash <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Berserker Throws</span> at your target and then fling yourself back a great distance, dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Ranged Weapon Damage, scaling with modifiers to <span style=\"color: #ffffff; display: inline\">Berserker Axe</span>."
+        }
+      ]
+    },
+    {
+      "id": 7338,
+      "name": "Brutal Form",
+      "spellId": 705235,
+      "spellIds": [
+        705235
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_1h_pvpdraenors2_d_01",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29468,
+        34275
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of Born in Blood by -25%, allows its healing to scale with your Agility, and it can now critically heal you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705235,
+          "description": "Increases the tick rate of <span style=\"color: #FFFFFF; display: inline\">Born in Blood</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, allows its healing to scale with your Agility, and it can now critically heal you."
+        }
+      ]
+    },
+    {
+      "id": 7720,
+      "name": "Warband",
+      "spellId": 560883,
+      "spellIds": [
+        560883
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_skullbanner",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6462,
+        6790
+      ],
+      "requiredIds": [],
+      "desc": "Bring all nearby allies into the warband for 12 seconds, granting them Born in Blood, repeating every 3 sec.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560883,
+          "description": "Bring all nearby allies into the warband for <span class=\"item-number\">12</span> seconds, granting them <span style=\"color: #FFFFFF; display: inline\">Born in Blood</span>, repeating every <span class=\"item-number\">3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">18</span> health and <span class=\"item-number\">12</span> Energy over <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7764,
+      "name": "Bloodthirsty",
+      "spellId": 300497,
+      "spellIds": [
+        300497
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_BullRush",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29322
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Outrage by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300497,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Outrage</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7846,
+      "name": "Rally Behind Me!",
+      "spellId": 712429,
+      "spellIds": [
+        712429
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_RapidKilling",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29782
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Warband by 3 sec.In addition, your first use of Warband will incur no cooldown. Can only occur once every 1.5 min.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712429,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Warband</span> by <span class=\"item-number\">3</span> sec.<br /><br />In addition, your first use of <span style=\"color: #ffffff; display: inline\">Warband</span> will incur no cooldown. Can only occur once every <span class=\"item-number\">1.5</span> min."
+        }
+      ]
+    },
+    {
+      "id": 7847,
+      "name": "Frozen Warlord",
+      "spellId": 560939,
+      "spellIds": [
+        560939
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frost_knight_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30767
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Hodir's Wrath now freezes enemies in place for 0 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560939,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Hodir's Wrath</span> now freezes enemies in place for <span class=\"item-number\">0</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7848,
+      "name": "Mak'Gora",
+      "spellId": 561360,
+      "spellIds": [
+        561360
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_leader_thrall",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29322,
+        29803,
+        30767
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes on enemies above 80% or below 20% health now challenges them to a Mak'Gora. Only 1 enemy can be challenged at a time.Mak&#39;gora (20%)Challenge an enemy to a duel to the death for 10 seconds, reducing their healing received by -20% and absorbing the next 1244 + 100% AP healing done to them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561360,
+          "description": "Critical strikes on enemies above <span class=\"item-number\">80%</span> or below <span class=\"item-number\">20%</span> health now challenges them to a <span style=\"color: #FFFFFF; display: inline\">Mak'Gora</span>. Only <span class=\"item-number\">1</span> enemy can be challenged at a time.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_leader_thrall\" /><span class=\"name\">Mak&#39;gora (<span class=\"item-number\">20%</span>)</span></div><span class=\"desc\">Challenge an enemy to a duel to the death for <span class=\"item-number\">10</span> seconds, reducing their healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and absorbing the next <span class=\"item-number\">1244</span> + <span class=\"item-number\">100% AP</span> healing done to them.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 12153,
+      "name": "Frozen Tankard",
+      "spellId": 805815,
+      "spellIds": [
+        805815
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\tankardtoss",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29799,
+        31220,
+        34258
+      ],
+      "requiredIds": [],
+      "desc": "Throw one of your extra tankards at an enemy, dealing 107 Frost damage and stunning them for 4 seconds. Stunned enemies are considered Frozen.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805815,
+          "description": "Throw one of your extra tankards at an enemy, dealing <span class=\"item-number\">107</span> Frost damage and stunning them for <span class=\"item-number\">4</span> seconds. <br /><br />Stunned enemies are considered <span style=\"color: #3399ff; display: inline\">Frozen</span>."
+        }
+      ]
+    },
+    {
+      "id": 12261,
+      "name": "Breaking Morale",
+      "spellId": 681473,
+      "spellIds": [
+        681473
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Racial_Avatar",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30763,
+        34263
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Break by -15.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681473,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Break</span> by <span class=\"item-number\">-15</span>."
+        }
+      ]
+    },
+    {
+      "id": 12563,
+      "name": "Skull Smash",
+      "spellId": 560532,
+      "spellIds": [
+        560532
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\SkullSmash2",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6844
+      ],
+      "requiredIds": [],
+      "desc": "Pick up a rock and hurl it at an enemy's skull, disorienting them for 40 seconds (8 sec vs players). Damage taken will end this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560532,
+          "description": "Pick up a rock and hurl it at an enemy's skull, disorienting them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players). <br /><br />Damage taken will end this effect."
+        }
+      ]
+    },
+    {
+      "id": 13572,
+      "name": "Keg Smash",
+      "spellId": 805808,
+      "spellIds": [
+        805808
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_elusiveale",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        30762,
+        4003
+      ],
+      "desc": "Smash an enemy for 21 + 15% AP Physical damage, plus an additional 17 + 25% AP Frost damage to up to 5 nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805808,
+          "description": "Smash an enemy for <span class=\"item-number\">21</span> + <span class=\"item-number\">15% AP</span> Physical damage, plus an additional <span class=\"item-number\">17</span> + <span class=\"item-number\">25% AP</span> Frost damage to up to <span class=\"item-number\">5</span> nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 13576,
+      "name": "Axe Twirling",
+      "spellId": 800401,
+      "spellIds": [
+        800401
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_104",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5318,
+        5327,
+        30771
+      ],
+      "requiredIds": [],
+      "desc": "Display mastery over throwing weapons for 10 seconds, causing Throw Weapon, Gutspiller, and Berserker Axe to strike 2 additional nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800401,
+          "description": "Display mastery over throwing weapons for <span class=\"item-number\">10</span> seconds, causing <span style=\"color: #FFFFFF; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #FFFFFF; display: inline\">Berserker Axe</span> to strike <span class=\"item-number\">2</span> additional nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 13958,
+      "name": "Crusher",
+      "spellId": 803817,
+      "spellIds": [
+        803817,
+        807875
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_D3seismicslam",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6737,
+        12737,
+        33958
+      ],
+      "requiredIds": [],
+      "desc": "Melee auto attacks now have a 10% chance to reset the cooldown of Crush.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803817,
+          "description": "Melee auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807875,
+          "description": "Melee auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span>."
+        }
+      ]
+    },
+    {
+      "id": 14277,
+      "name": "One With The Ancestors",
+      "spellId": 560452,
+      "spellIds": [
+        560452,
+        560889
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_helm_plate_pvpwarrior_d_01",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30762
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560452,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 560889,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 14303,
+      "name": "Battle Rhythm",
+      "spellId": 800193,
+      "spellIds": [
+        800193
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_2h_orcwarrior_c_01",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11168,
+        13168,
+        29608,
+        34320
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with abilities now generate 5 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800193,
+          "description": "Critical strikes with abilities now generate <span class=\"item-number\">5</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 14304,
+      "name": "Savage Cadence",
+      "spellId": 807861,
+      "spellIds": [
+        807861
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_05",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30870
+      ],
+      "requiredIds": [],
+      "desc": "Direct critical strikes now extend the duration of your Unbridled Rage by 0.5 sec. This effect can occur only once per sec.Killing blows extend the duration of your Unbridled Rage by 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807861,
+          "description": "Direct critical strikes now extend the duration of your <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> by <span class=\"item-number\">0.5</span> sec. This effect can occur only once per sec.<br /><br />Killing blows extend the duration of your <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> by <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29281,
+      "name": "Killing Spree",
+      "spellId": 850021,
+      "spellIds": [
+        850021
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3leapattack",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6744
+      ],
+      "requiredIds": [],
+      "desc": "Charge at an enemy, dealing 25 + 30% AP Physical damage.Can only be used within 6 seconds of scoring a killing blow or applying Born in Blood.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 850021,
+          "description": "Charge at an enemy, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">30% AP</span> Physical damage.<br /><br />Can only be used within <span class=\"item-number\">6</span> seconds of scoring a killing blow or applying <span style=\"color: #ffffff; display: inline\">Born in Blood</span>."
+        }
+      ]
+    },
+    {
+      "id": 29284,
+      "name": "Ale of The God-King",
+      "spellId": 805780,
+      "spellIds": [
+        805780
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\aleofgodking",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31153
+      ],
+      "requiredIds": [],
+      "desc": "Empower your Honored Ancestor's melee attacks to deal additional Frost damage scaling with your attack power. Lasts for 20 seconds or 10 attacks.This ability consumes Fill Level stacks and triggers a reduced cooldown based on stacks consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805780,
+          "description": "Empower your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span>'s melee attacks to deal additional Frost damage scaling with your attack power. Lasts for <span class=\"item-number\">20</span> seconds or <span class=\"item-number\">10</span> attacks.<br /><br />This ability consumes <span style=\"color: #ffffff; display: inline\">Fill Level</span> stacks and triggers a reduced cooldown based on stacks consumed."
+        }
+      ]
+    },
+    {
+      "id": 29322,
+      "name": "Outrage",
+      "spellId": 801759,
+      "spellIds": [
+        801759
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3frenzy",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5373,
+        14303
+      ],
+      "requiredIds": [],
+      "desc": "Requires EnragedIncreases your haste and critical strike chance by 20%, but increases your damage taken by 30% for 10 seconds. Physical critical strikes extend this effect by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801759,
+          "description": "<span style=\"color: #ffffff; display: inline\">Requires Enraged</span><br />Increases your haste and critical strike chance by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, but increases your damage taken by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. <br /><br />Physical critical strikes extend this effect by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29348,
+      "name": "Blind Stupor",
+      "spellId": 805811,
+      "spellIds": [
+        805811
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_drunkenhaze",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11219,
+        12261,
+        31219,
+        34304
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Keg Smash now reduces enemies' casting speed by -30% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805811,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Keg Smash</span> now reduces enemies' casting speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29366,
+      "name": "Ramhorn Rage",
+      "spellId": 805804,
+      "spellIds": [
+        805804
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_holiday_beerfest_maghar",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30754,
+        34261
+      ],
+      "requiredIds": [],
+      "desc": "Enrage EffectEnrage party and raid members within 8 yds for 3 seconds, regenerating 2% of their maximum health every 2 sec. Melee auto attacks extend the duration of this effect by 2 sec, up to a maximum of 15 seconds.This ability empties your Tankard, consuming Fill Level stacks and triggering with a reduced cooldown based on stacks consumed.Barbaric Rage (Passive)While enraged, the global cooldown of Barbarian abilities is reduced by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805804,
+          "description": "<span style=\"color: #ec8201; display: inline\">Enrage Effect</span><br />Enrage party and raid members within <span class=\"item-number\">8</span> yds for <span class=\"item-number\">3</span> seconds, regenerating <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of their maximum health every <span class=\"item-number\">2</span> sec. <br /><br />Melee auto attacks extend the duration of this effect by <span class=\"item-number\">2</span> sec, up to a maximum of <span class=\"item-number\">15</span> seconds.<br /><br />This ability empties your <span style=\"color: #ffffff; display: inline\">Tankard</span>, consuming <span style=\"color: #ffffff; display: inline\">Fill Level</span> stacks and triggering with a reduced cooldown based on stacks consumed.<br /><br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_focusedrage\" /><span class=\"name\">Barbaric Rage (Passive)</span></div><span class=\"desc\">While enraged, the global cooldown of Barbarian abilities is reduced by <span class=\"item-number\">30%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29468,
+      "name": "No Survivors",
+      "spellId": 805864,
+      "spellIds": [
+        805864
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_bg_interruptx_flagcapture_attempts_1game",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5124,
+        6794
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Axe Twirling, Maiming Spear, and Barbed Spear by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805864,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Axe Twirling</span>, <span style=\"color: #ffffff; display: inline\">Maiming Spear</span>, and <span style=\"color: #ffffff; display: inline\">Barbed Spear</span> by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29514,
+      "name": "Storm of Steel",
+      "spellId": 800637,
+      "spellIds": [
+        800637
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Warriorskill_21_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13958,
+        30374,
+        34274
+      ],
+      "requiredIds": [],
+      "desc": "Begin striking your target every 1 sec for 80% Weapon Damage for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800637,
+          "description": "Begin striking your target every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">80</span><span class=\"item-number\">%</span> Weapon Damage for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29608,
+      "name": "Face Smasher",
+      "spellId": 706354,
+      "spellIds": [
+        706354
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_innerrage",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6374
+      ],
+      "requiredIds": [],
+      "desc": "Your ability critical strikes now reduce the cooldown of your Battle Vigor and Thick Skull by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706354,
+          "description": "Your ability critical strikes now reduce the cooldown of your <span style=\"color: #ffffff; display: inline\">Battle Vigor</span> and <span style=\"color: #ffffff; display: inline\">Thick Skull</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29782,
+      "name": "War Cry",
+      "spellId": 500995,
+      "spellIds": [
+        500995
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_soulrenderdormazain_hellscream",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34309,
+        30754
+      ],
+      "requiredIds": [],
+      "desc": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by 20%, and attack power by 150 of party and raid members within 25 yds for 20 seconds.Allies cannot benefit from this spell again for 5 minutes.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500995,
+          "description": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, and attack power by <span class=\"item-number\">150</span> of party and raid members within <span class=\"item-number\">25</span> yds for <span class=\"item-number\">20</span> seconds.<br /><br />Allies cannot benefit from this spell again for <span class=\"item-number\">5</span> minutes."
+        }
+      ]
+    },
+    {
+      "id": 29783,
+      "name": "Jawbreaker",
+      "spellId": 802792,
+      "spellIds": [
+        802792
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_bastion_of_twilight_halfus_wyrmbreaker",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Attempt to break an enemy's jaw, interrupting them and preventing any spell from that school from being cast for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802792,
+          "description": "Attempt to break an enemy's jaw, interrupting them and preventing any spell from that school from being cast for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29791,
+      "name": "Overkill",
+      "spellId": 560444,
+      "spellIds": [
+        560444
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(16)_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6742,
+        29281,
+        30792
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Decapitate and Headhunter's Spear by 30% against targets below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560444,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Decapitate</span> and <span style=\"color: #ffffff; display: inline\">Headhunter's Spear</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against targets below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 29793,
+      "name": "Headhunter's Spear",
+      "spellId": 804137,
+      "spellIds": [
+        804137
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Headhunting_Spear",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6802,
+        34279
+      ],
+      "requiredIds": [],
+      "desc": "Hurl a light spear at an enemy dealing 140% Ranged Weapon Damage plus 21 and restores 30% of your maximum Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804137,
+          "description": "Hurl a light spear at an enemy dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">21</span> and restores <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum Energy.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29799,
+      "name": "Ancestral Combat",
+      "spellId": 801782,
+      "spellIds": [
+        801782
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3calloftheancients",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29284,
+        34306
+      ],
+      "requiredIds": [],
+      "desc": "Empower yourself, granting your Physical damage dealt a 25% chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of Fill Level.Lasts until triggered 20 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801782,
+          "description": "Empower yourself, granting your Physical damage dealt a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>.<br /><br />Lasts until triggered <span class=\"item-number\">20</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29800,
+      "name": "Improved Ancestral Combat",
+      "spellId": 705209,
+      "spellIds": [
+        705209,
+        705210,
+        707777
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_axe_82",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29799
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of your Ancestral Combat by -10 and allows it to trigger 3 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705209,
+          "description": "Reduces the Energy cost of your <span style=\"color: #ffffff; display: inline\">Ancestral Combat</span> by <span class=\"item-number\">-10</span> and allows it to trigger <span class=\"item-number\">3</span> additional times."
+        },
+        {
+          "rank": 2,
+          "spellId": 705210,
+          "description": "Reduces the Energy cost of your <span style=\"color: #ffffff; display: inline\">Ancestral Combat</span> by <span class=\"item-number\">-20</span> and allows it to trigger <span class=\"item-number\">6</span> additional times."
+        },
+        {
+          "rank": 3,
+          "spellId": 707777,
+          "description": "Reduces the Energy cost of your <span style=\"color: #ffffff; display: inline\">Ancestral Combat</span> by <span class=\"item-number\">-30</span> and allows it to trigger <span class=\"item-number\">10</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": 29803,
+      "name": "First Blood",
+      "spellId": 560906,
+      "spellIds": [
+        560906
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_skirmisher",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        14303
+      ],
+      "requiredIds": [],
+      "desc": "Increases all damage dealt to enemies above 80% health by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560906,
+          "description": "Increases all damage dealt to enemies above <span class=\"item-number\">80%</span> health by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30042,
+      "name": "Spiked Weapons",
+      "spellId": 705186,
+      "spellIds": [
+        705186
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_draenorhonors2_c_01",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29791
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of Crush, Brutal Swing, and Decapitate by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705186,
+          "description": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Crush</span>, <span style=\"color: #FFFFFF; display: inline\">Brutal Swing</span>, and <span style=\"color: #FFFFFF; display: inline\">Decapitate</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30162,
+      "name": "Maiming Spear",
+      "spellId": 804139,
+      "spellIds": [
+        804139
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Maiming_Spear",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Throw your ranged weapon at your enemy's legs, dealing 100% Ranged Weapon Damage plus 2 and slowing their movement speed by -50% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804139,
+          "description": "Throw your ranged weapon at your enemy's legs, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">2</span> and slowing their movement speed by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30163,
+      "name": "Berserker Axe",
+      "spellId": 804138,
+      "spellIds": [
+        804138
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_1h_draenorcrafted_d_02_a_horde",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4002,
+        30162
+      ],
+      "desc": "Requires Enraged3 Charges, 8 sec rechargeHurl two axes at an enemy, each dealing 16 + 40% ranged AP Physical damage and reducing their armor by -4% for 20 seconds, stacking up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804138,
+          "description": "<span style=\"color: #ffffff; display: inline\">Requires Enraged</span><br /><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">8</span> sec recharge</span><br />Hurl two axes at an enemy, each dealing <span class=\"item-number\">16</span> + <span class=\"item-number\">40% ranged AP</span> Physical damage and reducing their armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30166,
+      "name": "Legacy of the Amani",
+      "spellId": 706804,
+      "spellIds": [
+        706804
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(25)_Border",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6511,
+        6797
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Spears now has a 25% chance to cause you to quickly throw an additional spear that strikes for 40% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706804,
+          "description": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Spears</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to cause you to quickly throw an additional spear that strikes for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 30167,
+      "name": "Berserker",
+      "spellId": 561397,
+      "spellIds": [
+        561397
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Troll_03",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29468,
+        34326
+      ],
+      "requiredIds": [],
+      "desc": "While enraged, your ranged critical strikes now grant you Berserker. Once applied it cannot be applied again.BerserkerYour ranged abilities have a 20% chance to unleash Berserker Throw, dealing 75% Ranged Weapon Damage. Lasts 15 seconds.While active, every offensive ranged ability used increases its chance to trigger by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561397,
+          "description": "While enraged, your ranged critical strikes now grant you <span style=\"color: #ffffff; display: inline\">Berserker</span>. Once applied it cannot be applied again.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _troll_03\" /><span class=\"name\">Berserker</span></div><span class=\"desc\">Your ranged abilities have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #ffffff; display: inline\">Berserker Throw</span>, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Ranged Weapon Damage. Lasts <span class=\"item-number\">15</span> seconds.<br /><br />While active, every offensive ranged ability used increases its chance to trigger by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30374,
+      "name": "Symbol of the Warspear",
+      "spellId": 804730,
+      "spellIds": [
+        804730
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_banner_warspear",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34266
+      ],
+      "requiredIds": [],
+      "desc": "You are marked by the Warspear symbol, granting 10% increased attack power to party and raid members. Does not stack with similar effects.In addition, reduces the cooldown of Spears by -2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804730,
+          "description": "You are marked by the Warspear symbol, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased attack power to party and raid members. Does not stack with similar effects.<br /><br />In addition, reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Spears</span> by <span class=\"item-number\">-2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30377,
+      "name": "Whirling Assault",
+      "spellId": 560563,
+      "spellIds": [
+        560563
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_butcher_whirl",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30760
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Whirling Advance by 300% on enemies above 80% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560563,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Whirling Advance</span> by <span class=\"item-number\">300</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">80%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 30378,
+      "name": "Steelslinger",
+      "spellId": 804750,
+      "spellIds": [
+        804750
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Bladestorm",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6706
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Barbaric Whirl by -2 sec and increases its damage dealt by 100% on enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804750,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> by <span class=\"item-number\">-2</span> sec and increases its damage dealt by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 30386,
+      "name": "Ice Cold Bubbles",
+      "spellId": 705161,
+      "spellIds": [
+        705161,
+        707778
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_iceswirl_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11219,
+        31219,
+        34262,
+        34264
+      ],
+      "requiredIds": [],
+      "desc": "Each Fill Level stack now also increases Frost damage dealt by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705161,
+          "description": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now also increases Frost damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707778,
+          "description": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now also increases Frost damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30387,
+      "name": "Unified Rage",
+      "spellId": 705212,
+      "spellIds": [
+        705212
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(76)_Border",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11219,
+        31219
+      ],
+      "requiredIds": [],
+      "desc": "Your Unbridled Rage now increases your chance to trigger Ancestral Combat by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705212,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now increases your chance to trigger <span style=\"color: #FFFFFF; display: inline\">Ancestral Combat</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30754,
+      "name": "Cold Brew",
+      "spellId": 705211,
+      "spellIds": [
+        705211
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_monk_nimblebrew",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29348,
+        30387
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Frost damage now generate a stack of Fill Level. Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705211,
+          "description": "Critical strikes with Frost damage now generate a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>. <br /><br />Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": 30760,
+      "name": "Rancor",
+      "spellId": 704876,
+      "spellIds": [
+        704876
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology_generalbeauregardslaststand",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6750
+      ],
+      "requiredIds": [],
+      "desc": "Your Brutal Swing now triggers an additional auto attack on the primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704876,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> now triggers an additional auto attack on the primary target."
+        }
+      ]
+    },
+    {
+      "id": 30762,
+      "name": "Ancestral Roar",
+      "spellId": 500918,
+      "spellIds": [
+        500918
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3threateningshout",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Requires EnragedRoar with ancestral fervor, healing you for 100 + 50% AP.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500918,
+          "description": "<span style=\"color: #ffffff; display: inline\">Requires Enraged</span><br />Roar with ancestral fervor, healing you for <span class=\"item-number\">100</span> + <span class=\"item-number\">50% AP</span>."
+        }
+      ]
+    },
+    {
+      "id": 30763,
+      "name": "Cheers!",
+      "spellId": 805810,
+      "spellIds": [
+        805810
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\archaeology_5_0_twinsteinsetofbrewfatherquantoukuo",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29799,
+        34259,
+        34260
+      ],
+      "requiredIds": [],
+      "desc": "Designate an ally as your drinking partner for 30 minutes, reducing all damage they take by -5%, and causing 10% of all damage they take to be redirected to you.You can only have 1 ally designated at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805810,
+          "description": "Designate an ally as your drinking partner for <span class=\"item-number\">30</span> minutes, reducing all damage they take by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, and causing <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of all damage they take to be redirected to you.<br /><br />You can only have <span class=\"item-number\">1</span> ally designated at a time."
+        }
+      ]
+    },
+    {
+      "id": 30767,
+      "name": "Hodir's Wrath",
+      "spellId": 800152,
+      "spellIds": [
+        800152
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_icegiant_01",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        14303,
+        34295
+      ],
+      "requiredIds": [],
+      "desc": "Erupt with the power of Hodir, dealing 1361 + 120% AP Frost damage to nearby enemies and restoring 100% of your maximum Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800152,
+          "description": "Erupt with the power of Hodir, dealing <span class=\"item-number\">1361</span> + <span class=\"item-number\">120% AP</span> Frost damage to nearby enemies and restoring <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your maximum Energy."
+        }
+      ]
+    },
+    {
+      "id": 30771,
+      "name": "Guts Splatter",
+      "spellId": 560586,
+      "spellIds": [
+        560586,
+        561332
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_blackhand_marked4death",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31152
+      ],
+      "requiredIds": [],
+      "desc": "Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560586,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Gutspiller</span> now allows your abilities to ignore <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the enemy's Armor."
+        },
+        {
+          "rank": 2,
+          "spellId": 561332,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Gutspiller</span> now allows your abilities to ignore <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the enemy's Armor."
+        }
+      ]
+    },
+    {
+      "id": 30773,
+      "name": "Time To Kill!",
+      "spellId": 926591,
+      "spellIds": [
+        926591
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_hunter_focusingshot",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13576
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Axe Twirling by -15 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 926591,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Axe Twirling</span> by <span class=\"item-number\">-15</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30792,
+      "name": "Reckless Movements",
+      "spellId": 705204,
+      "spellIds": [
+        705204
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_blackhand",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6744
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Ancestral Strike and Barbaric Whirl by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705204,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30870,
+      "name": "Defiance",
+      "spellId": 806228,
+      "spellIds": [
+        806228
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_bloodsurge",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6462,
+        6802
+      ],
+      "requiredIds": [],
+      "desc": "Attempt to defy death, reducing all damage taken by 30% to 80% based on your current missing health for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806228,
+          "description": "Attempt to defy death, reducing all damage taken by <span class=\"item-number\">30%</span> to <span class=\"item-number\">80%</span> based on your current missing health for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31151,
+      "name": "Crush",
+      "spellId": 500915,
+      "spellIds": [
+        500915
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Mace_69",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6742
+      ],
+      "requiredIds": [
+        4001,
+        29783
+      ],
+      "desc": "Crush enemies in a frontal cone, dealing 250% Weapon Damage plus 30, knocking them down briefly and stunning them for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500915,
+          "description": "Crush enemies in a frontal cone, dealing <span class=\"item-number\">250</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">30</span>, knocking them down briefly and stunning them for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31152,
+      "name": "Gutspiller",
+      "spellId": 805832,
+      "spellIds": [
+        805832
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_weapon_(6)_Border",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6796
+      ],
+      "requiredIds": [],
+      "desc": "Launch a heavy axe at an enemy, causing them to bleed for 96 damage over 12 seconds.Every 6 sec the target has their Guts Spilled, causing them to bleed out for an additional 71 + 40% ranged AP damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805832,
+          "description": "Launch a heavy axe at an enemy, causing them to bleed for <span class=\"item-number\">96</span> damage over <span class=\"item-number\">12</span> seconds.<br /><br />Every <span class=\"item-number\">6</span> sec the target has their <span style=\"color: #ffffff; display: inline\">Guts Spilled</span>, causing them to bleed out for an additional <span class=\"item-number\">71</span> + <span class=\"item-number\">40% ranged AP</span> damage."
+        }
+      ]
+    },
+    {
+      "id": 31153,
+      "name": "Ancestor's Call",
+      "spellId": 804729,
+      "spellIds": [
+        804729
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helmet_158",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13572
+      ],
+      "requiredIds": [
+        4003,
+        30762
+      ],
+      "desc": "Teaches you Ancestor's Call.Ancestor&#39;s Call (Troll)Call an Honored Ancestor to aid you in battle until dismissed that scales with your Agility and attack power.Whenever you use Barbaric Whirl or Whirling Advance, your Honored Ancestor mimics it.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804729,
+          "description": "Teaches you <span style=\"color: #ffffff; display: inline\">Ancestor's Call</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helmet_158\" /><span class=\"name\">Ancestor&#39;s Call (Troll)</span></div><span class=\"desc\">Call an <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> to aid you in battle until dismissed that scales with your Agility and attack power.<br /><br />Whenever you use <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> or <span style=\"color: #ffffff; display: inline\">Whirling Advance</span>, your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> mimics it.<br /></span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31220,
+      "name": "Ancestral Fury",
+      "spellId": 804731,
+      "spellIds": [
+        804731
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_argus_aggramar",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34306
+      ],
+      "requiredIds": [],
+      "desc": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804731,
+          "description": "Emanate a powerful aura, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee and ranged haste to party and raid members within <span class=\"item-number\">100</span> yds.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": 33958,
+      "name": "Ancestral Trauma",
+      "spellId": 560446,
+      "spellIds": [
+        560446
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_blood_spell_10_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6739,
+        12739
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Ancestral Strike and Crush now scales with your Strength.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560446,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Crush</span> now scales with your Strength."
+        }
+      ]
+    },
+    {
+      "id": 34258,
+      "name": "Frostbite",
+      "spellId": 705158,
+      "spellIds": [
+        705158
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(74)_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34306
+      ],
+      "requiredIds": [],
+      "desc": "Breath of The North now causes the target to bleed for an additional 30% of its damage over 6 seconds as Frost damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705158,
+          "description": "<span style=\"color: #ffffff; display: inline\">Breath of The North</span> now causes the target to bleed for an additional <span class=\"item-number\">30%</span> of its damage over <span class=\"item-number\">6</span> seconds as Frost damage."
+        }
+      ]
+    },
+    {
+      "id": 34259,
+      "name": "Trip to the Alehouse",
+      "spellId": 705152,
+      "spellIds": [
+        705152,
+        707766
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_guildperk_bartering",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29284
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Keg Smash by 10% and its range by 3 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705152,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Keg Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its range by <span class=\"item-number\">3</span> yds."
+        },
+        {
+          "rank": 2,
+          "spellId": 707766,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Keg Smash</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and its range by <span class=\"item-number\">6</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 34260,
+      "name": "Drinking Frenzy",
+      "spellId": 706821,
+      "spellIds": [
+        706821
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_archaeology_vrykuldrinkinghorn",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29284
+      ],
+      "requiredIds": [],
+      "desc": "Your melee attacks now have a 15% chance to grant a stack of Fill Level.In addition, your chance to hit is increased by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706821,
+          "description": "Your melee attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>.<br /><br />In addition, your chance to hit is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34261,
+      "name": "Ancestor's Fury",
+      "spellId": 705168,
+      "spellIds": [
+        705168
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_generalbjarngrim",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30386,
+        30387
+      ],
+      "requiredIds": [],
+      "desc": "Unbridled Rage now also increases your Frost damage by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705168,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Unbridled Rage</span> now also increases your Frost damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34262,
+      "name": "Icebound Ancestry",
+      "spellId": 705216,
+      "spellIds": [
+        705216
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_forgemaster",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4354,
+        12153
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Breath of the North by 10%.In addition, your attacks now ignore Armor against Frozen targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705216,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Breath of the North</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />In addition, your attacks now ignore Armor against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 34263,
+      "name": "The Finest Ale",
+      "spellId": 705218,
+      "spellIds": [
+        705218
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Misc_Drink",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34260
+      ],
+      "requiredIds": [],
+      "desc": "Your Ale of The God-King no longer empties your Tankard.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705218,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Ale of The God-King</span> no longer empties your <span style=\"color: #FFFFFF; display: inline\">Tankard</span>."
+        }
+      ]
+    },
+    {
+      "id": 34264,
+      "name": "Hodir's Revenge",
+      "spellId": 705214,
+      "spellIds": [
+        705214
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12153
+      ],
+      "requiredIds": [],
+      "desc": "Enemies damaged by your Frozen Tankard now take 50% increased damage from you for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705214,
+          "description": "Enemies damaged by your <span style=\"color: #FFFFFF; display: inline\">Frozen Tankard</span> now take <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage from you for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34265,
+      "name": "Hail of Hammers",
+      "spellId": 807047,
+      "spellIds": [
+        807047
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_iron_hammer_b_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6739,
+        12739
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Crush by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807047,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Crush</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34266,
+      "name": "Efficient Killer",
+      "spellId": 803085,
+      "spellIds": [
+        803085
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warriorskill41_Border",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30760,
+        34265,
+        34271
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of your spells and abilities by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803085,
+          "description": "Reduces the Energy cost of your spells and abilities by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34268,
+      "name": "Brutal Swing",
+      "spellId": 500913,
+      "spellIds": [
+        500913
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_axe_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30792
+      ],
+      "requiredIds": [],
+      "desc": "Your next attack causes you to swing violently at an enemy and up to 2 nearby enemies, dealing 120% Weapon Damage plus 10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500913,
+          "description": "Your next attack causes you to swing violently at an enemy and up to <span class=\"item-number\">2</span> nearby enemies, dealing <span class=\"item-number\">120</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 34271,
+      "name": "Battering Ram",
+      "spellId": 561326,
+      "spellIds": [
+        561326,
+        561331
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\5_engineerskill03_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6350,
+        30042
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor penetration by 10% while wielding a two-handed mace or axe.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561326,
+          "description": "Increases your Armor penetration by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> while wielding a two-handed mace or axe."
+        },
+        {
+          "rank": 2,
+          "spellId": 561331,
+          "description": "Increases your Armor penetration by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> while wielding a two-handed mace or axe."
+        }
+      ]
+    },
+    {
+      "id": 34274,
+      "name": "Brutal Spirit",
+      "spellId": 706653,
+      "spellIds": [
+        706653
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Helmet_08",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6737,
+        12737
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Spirit spells by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706653,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34275,
+      "name": "Raging Spirit",
+      "spellId": 707410,
+      "spellIds": [
+        707410
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_innerrage",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5124,
+        6794,
+        6797
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unbridled Rage now grants you 30 Energy and it now also removes the Energy cost of your Spirit spells while active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707410,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now grants you <span class=\"item-number\">30</span> Energy and it now also removes the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells while active."
+        }
+      ]
+    },
+    {
+      "id": 34276,
+      "name": "Bellowing Voice",
+      "spellId": 561322,
+      "spellIds": [
+        561322
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_fomor_boss_shout",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4297
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Shouts by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561322,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Shouts</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34277,
+      "name": "Savage Strength",
+      "spellId": 560886,
+      "spellIds": [
+        560886,
+        561323
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_Character_Orc_Male",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29783
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560886,
+          "description": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561323,
+          "description": "Increases your Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34279,
+      "name": "Athleticism",
+      "spellId": 560456,
+      "spellIds": [
+        560456
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_run_Border",
+      "x": 0,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34291
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Energy regeneration by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560456,
+          "description": "Increases your Energy regeneration by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34291,
+      "name": "Unrelenting",
+      "spellId": 705169,
+      "spellIds": [
+        705169
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_RuneTap",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30162
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Physical damage dealt and taken by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705169,
+          "description": "Increases your Physical damage dealt and taken by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34293,
+      "name": "Vengeance For Zul'jin",
+      "spellId": 560205,
+      "spellIds": [
+        560205
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\racial_troll_berserk",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5329
+      ],
+      "requiredIds": [],
+      "desc": "Casting Berserker Rush now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560205,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Berserker Rush</span> now grants you <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">18</span> health and <span class=\"item-number\">12</span> Energy over <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34295,
+      "name": "Iron Gut",
+      "spellId": 707721,
+      "spellIds": [
+        707721
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warriorskill44_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6753,
+        12463,
+        29608
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of poison effects on you by -40%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707721,
+          "description": "Reduces the duration of poison effects on you by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34299,
+      "name": "Dauntless",
+      "spellId": 804746,
+      "spellIds": [
+        804746
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_ability_rogue_sturdyrecuperate_nightmare",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29793
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Whirling Advance now dispels 1 movement slowing effect from you and refunds 2 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804746,
+          "description": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Whirling Advance</span> now dispels <span class=\"item-number\">1</span> movement slowing effect from you and refunds <span class=\"item-number\">2</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 34303,
+      "name": "Blood and Glory",
+      "spellId": 805821,
+      "spellIds": [
+        805821
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_operator_thogar",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12563,
+        12770,
+        30770
+      ],
+      "requiredIds": [],
+      "desc": "While at or below 35% maximum health, you now gain 20% increased healing received and take -10% reduced damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805821,
+          "description": "While at or below <span class=\"item-number\">35%</span> maximum health, you now gain <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased healing received and take <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> reduced damage."
+        }
+      ]
+    },
+    {
+      "id": 34304,
+      "name": "Liquid Courage",
+      "spellId": 681060,
+      "spellIds": [
+        681060
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_fortifyingale_new",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30763
+      ],
+      "requiredIds": [],
+      "desc": "Each Fill Level stack now reduces your damage taken by -2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681060,
+          "description": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now reduces your damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34305,
+      "name": "Drunken Frenzy",
+      "spellId": 572799,
+      "spellIds": [
+        572799
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_offhand_1h_draenordungeon_c_02",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34262,
+        30386
+      ],
+      "requiredIds": [],
+      "desc": "Unbridled Rage now increases your Honored Ancestor's Physical damage by 15% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572799,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Unbridled Rage</span> now increases your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span>'s Physical damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34306,
+      "name": "Breath of The North",
+      "spellId": 800838,
+      "spellIds": [
+        800838
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_BlueFlameBreath",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31153
+      ],
+      "requiredIds": [],
+      "desc": "Unleashes a frost breath, dealing 31 + 20% AP Frost damage to enemies in a 12 yd cone and slowing them by -30% for 5 seconds.Can only be used after emptying your Tankard.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800838,
+          "description": "Unleashes a frost breath, dealing <span class=\"item-number\">31</span> + <span class=\"item-number\">20% AP</span> Frost damage to enemies in a <span class=\"item-number\">12</span> yd cone and slowing them by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Can only be used after emptying your <span style=\"color: #ffffff; display: inline\">Tankard</span>."
+        }
+      ]
+    },
+    {
+      "id": 34307,
+      "name": "Rage of the North",
+      "spellId": 705221,
+      "spellIds": [
+        705221
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_banner_tolbarad_alliance",
+      "x": 3,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29366
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of attacks that can trigger your Ale of The God-King by 10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705221,
+          "description": "Increases the amount of attacks that can trigger your <span style=\"color: #FFFFFF; display: inline\">Ale of The God-King</span> by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 34309,
+      "name": "Ancestral Spirit",
+      "spellId": 705153,
+      "spellIds": [
+        705153,
+        705154
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\5_druideskill22_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12261,
+        29348
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of your Spirit spells and increases the duration of your Shouts by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705153,
+          "description": "Reduces the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells and increases the duration of your <span style=\"color: #ffffff; display: inline\">Shouts</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705154,
+          "description": "Reduces the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells and increases the duration of your <span style=\"color: #ffffff; display: inline\">Shouts</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34311,
+      "name": "The Spins",
+      "spellId": 705208,
+      "spellIds": [
+        705208
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\skill_icon_skill14_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34261,
+        34305
+      ],
+      "requiredIds": [],
+      "desc": "Casting Keg Smash now causes your Honored Ancestor to perform an Ancestral Whirl attack upon nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705208,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Keg Smash</span> now causes your <span style=\"color: #FFFFFF; display: inline\">Honored Ancestor</span> to perform an <span style=\"color: #ffffff; display: inline\">Ancestral Whirl</span> attack upon nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 34312,
+      "name": "Might of Utgarde",
+      "spellId": 804768,
+      "spellIds": [
+        804768
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_Normal",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34311
+      ],
+      "requiredIds": [],
+      "desc": "Attacks from your Ancestral Combat now heal your Honored Ancestor for 5% maximum health and cause it to perform an Ancestral Whirl attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804768,
+          "description": "Attacks from your <span style=\"color: #FFFFFF; display: inline\">Ancestral Combat</span> now heal your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> maximum health and cause it to perform an <span style=\"color: #FFFFFF; display: inline\">Ancestral Whirl</span> attack."
+        }
+      ]
+    },
+    {
+      "id": 34313,
+      "name": "Reckful",
+      "spellId": 681063,
+      "spellIds": [
+        681063,
+        681466
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Warrior_BullRush",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6834,
+        30377
+      ],
+      "requiredIds": [],
+      "desc": "Your Smash now has a 30% chance to not trigger a cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681063,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to not trigger a cooldown."
+        },
+        {
+          "rank": 2,
+          "spellId": 681466,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to not trigger a cooldown."
+        }
+      ]
+    },
+    {
+      "id": 34314,
+      "name": "Steel Fury",
+      "spellId": 704240,
+      "spellIds": [
+        704240
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Warbringer",
+      "x": 5,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29514
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Storm of Steel increases the damage of its subsequent strikes by 4%, stacking 10 times.In addition, the duration of Storm of Steel is increased by 2.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704240,
+          "description": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Storm of Steel</span> increases the damage of its subsequent strikes by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.<br /><br />In addition, the duration of <span style=\"color: #ffffff; display: inline\">Storm of Steel</span> is increased by <span class=\"item-number\">2.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34319,
+      "name": "Barbed Spear",
+      "spellId": 560881,
+      "spellIds": [
+        560881
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Barbed_Spear",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6796
+      ],
+      "requiredIds": [],
+      "desc": "Throw a heavy spear with precision at an enemy, dealing 160% Ranged Weapon Damage plus 37, and reducing their healing received by -30% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560881,
+          "description": "Throw a heavy spear with precision at an enemy, dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">37</span>, and reducing their healing received by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34320,
+      "name": "Ogre's Endurance",
+      "spellId": 705206,
+      "spellIds": [
+        705206
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_highmaul_king",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11302,
+        34302
+      ],
+      "requiredIds": [],
+      "desc": "Increases your healing received by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705206,
+          "description": "Increases your healing received by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34321,
+      "name": "Payback",
+      "spellId": 705232,
+      "spellIds": [
+        705232
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_11",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5608,
+        34326
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by your Guts Spilled by 75%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705232,
+          "description": "Increases the damage dealt by your <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">75</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34325,
+      "name": "Headhunting",
+      "spellId": 500060,
+      "spellIds": [
+        500060
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill07_Border",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5318,
+        6785
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Throw Weapon by -20% and removes your spell pushback suffered from taking damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500060,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and removes your spell pushback suffered from taking damage."
+        }
+      ]
+    },
+    {
+      "id": 34326,
+      "name": "Manhunter",
+      "spellId": 300879,
+      "spellIds": [
+        300879
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warrior_gladiatorstance",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5124,
+        6794,
+        34293
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your damage dealt by 10% against Humanoids.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300879,
+          "description": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against Humanoids."
+        }
+      ]
+    },
+    {
+      "id": 34329,
+      "name": "Skullseeker",
+      "spellId": 560517,
+      "spellIds": [
+        560517
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_EnchantWeapon",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30166,
+        34275
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance against enemies above 80% health by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560517,
+          "description": "Increases your critical strike chance against enemies above <span class=\"item-number\">80%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:87:561321",
+      "name": "Rage Whirling / Forward Advance",
+      "spellId": 561321,
+      "spellIds": [
+        561321
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill45_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34299
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Whirling Advance by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561321,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Whirling Advance</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:87:707583",
+      "name": "Bloody Onslaught / Rapid Recovery",
+      "spellId": 707583,
+      "spellIds": [
+        707583
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_fishing_bait_spinefinpiranha",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6844,
+        6871,
+        14304
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Onslaught by 6 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707583,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Onslaught</span> by <span class=\"item-number\">6</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:87:561394",
+      "name": "Smasher / Plugging the Hole",
+      "spellId": 561394,
+      "spellIds": [
+        561394
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_Eviscerate",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12563
+      ],
+      "requiredIds": [],
+      "desc": "Removes the Energy cost from Skull Smash.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561394,
+          "description": "Removes the Energy cost from <span style=\"color: #ffffff; display: inline\">Skull Smash</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:87:804728",
+      "name": "Drunken Brawler / Powerful Grip",
+      "spellId": 560364,
+      "spellIds": [
+        560364
+      ],
+      "tabId": 87,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_MonkSpecialAttack_DodgePandaren",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6374,
+        34276
+      ],
+      "requiredIds": [],
+      "desc": "Taking direct damage now increases your chance to dodge by 1% for 3 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560364,
+          "description": "Taking direct damage now increases your chance to dodge by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:31:707762",
+      "name": "Horde Breaker / Power Swings",
+      "spellId": 804745,
+      "spellIds": [
+        804745
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_skullbanner",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31151
+      ],
+      "requiredIds": [],
+      "desc": "Your Crush now applies Wounded to enemies for 1 minute and is now guaranteed to critically strike enemies affected by Headbutt.Wounded (Proc)Increases Physical Damage taken by 4% for 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804745,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Crush</span> now applies <span style=\"color: #FFFFFF; display: inline\">Wounded</span> to enemies for <span class=\"item-number\">1</span> minute and is now guaranteed to critically strike enemies affected by <span style=\"color: #ffffff; display: inline\">Headbutt</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_wild_strike\" /><span class=\"name\">Wounded (Proc)</span></div><span class=\"desc\">Increases Physical Damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">1</span> minute.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:12:31:560450",
+      "name": "Mounting Fury / Savage",
+      "spellId": 805927,
+      "spellIds": [
+        805927
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_furyintheblood",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34265
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Born in Blood by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805927,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Born in Blood</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:31:807863",
+      "name": "Incredibly Strong / Giant Tosser",
+      "spellId": 804749,
+      "spellIds": [
+        804749
+      ],
+      "tabId": 31,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Devastate",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30377
+      ],
+      "requiredIds": [],
+      "desc": "Removes the minimum range from Maiming Spear, but reduces its maximum range by -5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804749,
+          "description": "Removes the minimum range from <span style=\"color: #ffffff; display: inline\">Maiming Spear</span>, but reduces its maximum range by <span class=\"item-number\">-5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:32:844333",
+      "name": "Furious Berserker / Hunting for Sport",
+      "spellId": 707389,
+      "spellIds": [
+        707389
+      ],
+      "tabId": 32,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_WarCry",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5329,
+        5794,
+        30773
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Barbed Spear now grants Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707389,
+          "description": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Barbed Spear</span> now grants <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">18</span> health and <span class=\"item-number\">12</span> Energy over <span class=\"item-number\">3</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:12:33:8456221",
+      "name": "Frozen Blades / Ancestral Wisdom",
+      "spellId": 573256,
+      "spellIds": [
+        573256
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_48",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 15,
+      "connectedNodeIds": [
+        4003
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes now grant party and raid members 5% critical strike chance for 8 seconds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573256,
+          "description": "Critical strikes now grant party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span> critical strike chance for <span class=\"item-number\">8</span> seconds.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:33:723711",
+      "name": "Crystal Enhancements / Uniting Voice",
+      "spellId": 707541,
+      "spellIds": [
+        707541
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_frostemblem_01",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        9172,
+        11172
+      ],
+      "requiredIds": [],
+      "desc": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707541,
+          "description": "You now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:33:803798",
+      "name": "Thane's Grip / Thane's Guard",
+      "spellId": 803798,
+      "spellIds": [
+        803798
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill33_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29800
+      ],
+      "requiredIds": [],
+      "desc": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand, but reduces your Physical Damage dealt by -8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803798,
+          "description": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand, but reduces your Physical Damage dealt by <span class=\"item-number\">-8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:33:326121",
+      "name": "To The Bone / Splash Zone",
+      "spellId": 712673,
+      "spellIds": [
+        712673
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frost_bonecrack_Border",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        34257,
+        11257
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Breath of the North now reduces enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712673,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Breath of the North</span> now reduces enemies' resistances by <span class=\"item-number\">75</span> and increases their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:12:33:934111",
+      "name": "Clanlord's Totem / Tavern Brawl!",
+      "spellId": 804737,
+      "spellIds": [
+        804737
+      ],
+      "tabId": 33,
+      "classId": 12,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_armor_orcclan_d_01",
+      "x": 10,
+      "y": 8,
+      "requiredLevel": 50,
+      "connectedNodeIds": [
+        30764,
+        9861
+      ],
+      "requiredIds": [],
+      "desc": "Drop the Clanlord's Totem at the target location where it will remain for 15 seconds.The totem emanates an aura for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Frost damage when they deal direct damage and gain 50% increased honor.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804737,
+          "description": "Drop the <span style=\"color: #FFFFFF; display: inline\">Clanlord's Totem</span> at the target location where it will remain for <span class=\"item-number\">15</span> seconds.<br /><br />The totem emanates an aura for <span class=\"item-number\">15</span> seconds, causing allied players within <span class=\"item-number\">100</span> yds to deal <span class=\"item-number\">35% AP</span> additional damage as Frost damage when they deal direct damage and gain <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased honor.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute."
+        }
+      ]
+    }
+  ]
+}

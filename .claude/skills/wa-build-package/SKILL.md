@@ -1,54 +1,45 @@
 ---
 name: wa-build-package
-description: Build and encode a WeakAuras import string for a class/spec — resource bars (primary power + segmented point resource) and an auto-arranging cooldown icon row — by cloning known-good region templates. Use when generating or iterating a WeakAura package, adding icons/bars/glows, or turning a scraped ability list into an importable `!WA:2!` string.
+description: Iterate on an EXISTING class WeakAura package — add/modify a bar, cooldown icon, tracked buff, proc, glow or condition in classes/<name>/build.js and re-encode. Use when tweaking an already-scaffolded package (colors, sizing, a new icon/element, a glow rule). To create a brand-new class/spec package from scratch, use wa-new-class.
 ---
 
-# Build a WeakAuras class package
+# Iterate on a class package
 
-Assemble a package as a Node build script that clones templates, overrides fields, and calls
-`encodeWA` from `weakauras/wa-codec.js`. Study `weakauras/build-v4.js` (the Felsworn reference) —
-prefer copying it to `build-v<N+1>.js` and editing, so versions diff/rollback.
+Edit the class's `classes/<name>/build.js` (data + layout on the shared engine), then re-encode with
+`node build.js <name>`. To scaffold a NEW class/spec, use **wa-new-class** instead.
 
-## Rules
+> Reference of record is **CLAUDE.md** — Element taxonomy, Glow taxonomy, Standard layout & sizing,
+> Icon source gotcha. Don't re-derive field shapes; copy the taxonomy recipe and the two worked examples
+> (`classes/felsworn/build.js`, `classes/runemaster/build.js`).
 
-- **Clone templates, don't author regions from scratch** — `weakauras/_template-{bar,icon,group,dyngroup}.json`
-  carry every internal field the target WA version (5.20.2 / toc 110200) requires. Override only what matters.
-- Each new version = a new `build-v<N>.js`. Keep prior ones.
-- **Always self-verify**: after `encodeWA`, `decodeWA` it back and assert deep-equality before writing
-  `.import.txt`. `build-v4.js` shows the one-liner.
-- `load` = load-always for custom classes (no class/spec gate — Ascension classes aren't standard):
-  `{use_never:false, size:{multi:[]}, talent:{multi:[]}, spec:{multi:[]}, class:{multi:[]}, zoneIds:"", role:[], use_petbattle:false, pvptalent:[]}`.
-- Anchor everything `anchorFrameType:"SCREEN"`, `anchorPoint/selfPoint:"CENTER"`; center rows around x=0.
-- Top-level export: `{ d:<root group>, c:[<all regions flat>], m:"d", s:"5.20.2", v:2000 }`. The root group's
-  `controlledChildren` lists direct children (bars + the dyngroup id); the dyngroup's `controlledChildren`
-  lists the icon ids; every region sets `parent` accordingly.
-- Never hand-edit the `.import.txt`.
+## Workflow
 
-## Building blocks (all validated on Ascension) — see CLAUDE.md for exact field lists
+1. Edit `classes/<name>/build.js` (never the `.import.txt`). Build regions with the `lib/builders.js`
+   helpers (`baseBar`/`segmentBar`/`chargeSegmentBar`/`iconBase`/`makeDynGroup`/`makeGroup`/`buildPackage`,
+   the `*Trigger` factories, `gradient`/`barText`/`glowChanges`/`chargesSubtext`/`subglow`).
+2. `node build.js <name>` — `buildPackage` re-decodes and asserts the round-trip, then writes
+   `dist/<name>.import.txt` (rotating the old one to `dist/<name>.prev.import.txt`).
+3. Hand the user `dist/<name>.import.txt`. uids are stable (`uidFor`), so a re-import says **Update**.
 
-- **Primary resource bar** — `aurabar`, `type:"unit"` / `event:"Power"` / `use_powertype:true` / `powertype:N`
-  (3=energy, 0=mana, 4=combo, 9=holy power).
-- **Segmented point resource** — one `aurabar` box per point. Trigger 1 = `aura2` on the buff name
-  (`matchesShowOn:"showAlways"`); trigger 2 = trivial custom stateupdate returning `value=1,total=1`
-  (keeps the bar full — no aura API, portable). Default `barColor` transparent + dark `backgroundColor`;
-  condition `{trigger:1, variable:"stacks", op:">=", value:"N"}` → `barColor` = fill color. `activeTriggerMode:2`.
-  Do NOT read auras in custom Lua (`C_UnitAuras` is absent on this client) — `aura2` is the portable detector.
-- **Cooldown icon** — `icon`, `auto:true`, `type:"spell"` / `event:"Cooldown Progress (Spell)"` /
-  `genericShowOn:"showAlways"`, `spellName:<id | "Name">`, `use_exact_spellName:true` (id) / `false` (name).
-  Condition `{trigger:1, variable:"onCooldown", value:1}` → `desaturate:true` (grey while on CD).
-- **Proc glow** — 2nd `aura2` trigger on the buff; condition `{trigger:2, variable:"show", value:1}` →
-  `sub.3.glow:true` (+ `glowType`, `glowColor`). (`sub.3` = the `subglow` subregion index in the icon template.)
-- **Charges** — append a `subtext` subregion `text_text:"%s"`.
-- **Auto-arranging icon row** — `dynamicgroup`, `grow:"CUSTOM"` + a self-contained `customGrow` Lua that
-  centers each row and wraps every N icons (Luxthos's own `customGrow` depends on their `LWA` addon — don't
-  reuse it). Fallback if custom layout misbehaves: native `grow:"GRID"`, `gridType:"RD"`, `gridWidth:N`.
+## Must-follow rules (details in CLAUDE.md)
 
-## Toward the generator (21 classes)
+- **Clone via builders, override only what matters** — templates carry every field WA 5.20.2 needs.
+- **Detect with `aura2`** (no `C_UnitAuras`): vars `stacks` / `buffed` / `expirationTime` (op `<=`) /
+  `show` / `percenthealth` / `onCooldown`; multi-condition = `{ checks:[...], trigger:-2, variable:"AND" }`.
+- **Keep uids stable** — they derive from the element `id`; renaming an element re-keys it (loses Update).
+- **ASCII only** in text/ids (codec won't round-trip UTF-8 — `buildPackage` refuses to write).
+- **Icon art** = `iconSource:-1` + `cooldownTrigger` fallback `displayIcon` **path**; never `iconSource:0`
+  with a path (`?`).
+- **Glow**: `buttonOverlay` = strong "act now" (white proc/ready, orange/gold dump); `Pixel` = passive state
+  (class-color buff-up, pulsing red buff-missing). Match the other classes.
+- **Compact sizing**: `BAR_W=250`; boxes span `BAR_W`; `dynamicgroup` `maxWidth:BAR_W`; icons 26/24; bar
+  heights 12–14; vertical gaps ~3px.
+- **Always** let `buildPackage` assert the self round-trip before the string reaches the user.
 
-Long-term this becomes data-driven. The checked-out WeakAuras source at `weakauras/weakauras2/` already
-defines the shape to mirror: `WeakAurasTemplates/TriggerTemplatesData.lua` lists per-spell entries
-`{spell, type=buff|debuff|ability, unit, flags}` grouped by section (Buffs/Debuffs/Cooldowns/Resources), and
-`WeakAurasTemplates/TriggerTemplates.lua` maps each type to a trigger (ability→cooldown, buff/debuff→aura2,
-resource→power). Build a **per-class registry** in that shape (retail spellIds are game-API-derived and
-useless for custom classes) and a generator that turns a registry entry into the cloned+overridden region.
-Keep the single-class reference (Felsworn Tyrant, `build-v4.js`) working as the ground truth.
+## Common edits
+
+- **Add a cooldown** → append to the class's `ICONS_MAIN` / `ICONS_SECONDARY` list.
+- **Add a proc row / glow** → copy the felsworn proc-icon block (alpha-gated + white Action Button Glow).
+- **Add a tracked buff bar / stacks / charges** → `baseBar`+`buffTrigger("showAlways")` /
+  `segmentBar` / `chargeSegmentBar`; drive states with `expirationTime` / `stacks` / `charges` conditions.
+- **Retune layout** → adjust the geometry constants (`BAR_W`, `*_Y`, `ICON_SIZE*`); keep gaps ~3px.

@@ -1,0 +1,5292 @@
+{
+  "class": "Cultist",
+  "classId": "25",
+  "specs": [
+    "Godblade",
+    "Corruption",
+    "Dreadnought",
+    "Heretic"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Godblade": 64,
+    "Corruption": 65,
+    "Dreadnought": 88,
+    "Heretic": 66
+  },
+  "nodes": [
+    {
+      "id": 1375,
+      "name": "Psychic Suppression",
+      "spellId": 800432,
+      "spellIds": [
+        800432
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_voidsear",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7071,
+        9935,
+        33938
+      ],
+      "requiredIds": [],
+      "desc": "Lift an enemy into the air, stunning them and dealing 30 + 55% shadow SP + 10% AP Shadow damage every 1 sec for 5 seconds. The target takes 15% more spell damage from all sources while you are channeling this spell.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800432,
+          "description": "Lift an enemy into the air, stunning them and dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">55% shadow SP</span> + <span class=\"item-number\">10% AP</span> Shadow damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds. <br /><br />The target takes <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more spell damage from all sources while you are channeling this spell."
+        }
+      ]
+    },
+    {
+      "id": 4041,
+      "name": "Corrupting Whispers",
+      "spellId": 92130,
+      "spellIds": [
+        92130
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\CThunIcon",
+      "x": 10,
+      "y": 0,
+      "requiredLevel": 10,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        29470
+      ],
+      "desc": "Damage dealt has a 15% chance to grant you Corrupting Whispers.Corrupting Whispers (Aura)Increases your Magic Damage dealt by 20% and reduces your mana costs by -30% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 92130,
+          "description": "Damage dealt has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Corrupting Whispers</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_magicspell__85__border\" /><span class=\"name\">Corrupting Whispers (Aura)</span></div><span class=\"desc\">Increases your Magic Damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 4196,
+      "name": "Void Power",
+      "spellId": 574147,
+      "spellIds": [
+        574147
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_armor_voidelf_d_01",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        9296
+      ],
+      "requiredIds": [],
+      "desc": "Your healing power is increased based on your main-hand weapon damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574147,
+          "description": "Your healing power is increased based on your main-hand weapon damage."
+        }
+      ]
+    },
+    {
+      "id": 4536,
+      "name": "Persistent Prayers",
+      "spellId": 302072,
+      "spellIds": [
+        302072,
+        302919
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ShadowWatcher_Border",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7083
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration and absorption amount of Void Shield and Forbidden Ritual by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 302072,
+          "description": "Increases the duration and absorption amount of <span style=\"color: #ffffff; display: inline\">Void Shield</span> and <span style=\"color: #ffffff; display: inline\">Forbidden Ritual</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 302919,
+          "description": "Increases the duration and absorption amount of <span style=\"color: #ffffff; display: inline\">Void Shield</span> and <span style=\"color: #ffffff; display: inline\">Forbidden Ritual</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4810,
+      "name": "Voidforged Edge",
+      "spellId": 704871,
+      "spellIds": [
+        704871,
+        707749,
+        707785
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_sword_02",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33894
+      ],
+      "requiredIds": [],
+      "desc": "Your auto attacks now deal an additional 10% of the damage dealt as Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704871,
+          "description": "Your auto attacks now deal an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt as Shadow damage."
+        },
+        {
+          "rank": 2,
+          "spellId": 707749,
+          "description": "Your auto attacks now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt as Shadow damage."
+        },
+        {
+          "rank": 3,
+          "spellId": 707785,
+          "description": "Your auto attacks now deal an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the damage dealt as Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": 4845,
+      "name": "Residual Energy",
+      "spellId": 681389,
+      "spellIds": [
+        681389
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_nightblade",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33976
+      ],
+      "requiredIds": [],
+      "desc": "Doubles the duration of Shadow of the Void.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681389,
+          "description": "Doubles the duration of <span style=\"color: #ffffff; display: inline\">Shadow of the Void</span>."
+        }
+      ]
+    },
+    {
+      "id": 4934,
+      "name": "Blade of the Depths",
+      "spellId": 300753,
+      "spellIds": [
+        300753
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_OrbofShadow_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33930
+      ],
+      "requiredIds": [],
+      "desc": "While Herald of the Depths is active, your Forbidden Ritual will cooldown faster.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300753,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Herald of the Depths</span> is active, your <span style=\"color: #ffffff; display: inline\">Forbidden Ritual</span> will cooldown faster."
+        }
+      ]
+    },
+    {
+      "id": 5172,
+      "name": "Entropic Singularity",
+      "spellId": 800430,
+      "spellIds": [
+        800430
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_void_blackhole_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6278,
+        9953,
+        11880,
+        12444,
+        29880
+      ],
+      "requiredIds": [],
+      "desc": "Create a void zone for 5 seconds at target location that slows enemies' movement speed while inside.The slow increases in intensity based on how close to the middle of the zone the enemy is.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800430,
+          "description": "Create a void zone for <span class=\"item-number\">5</span> seconds at target location that slows enemies' movement speed while inside.<br /><br />The slow increases in intensity based on how close to the middle of the zone the enemy is."
+        }
+      ]
+    },
+    {
+      "id": 5176,
+      "name": "Ancient Curse",
+      "spellId": 500712,
+      "spellIds": [
+        500712
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\void_hided_limb",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29476,
+        33953,
+        33959
+      ],
+      "requiredIds": [],
+      "desc": "Generates 20 InsanityCurse an enemy, dealing 326 + 100% SP Shadow damage and increasing all Shadow damage they take from you by 10% for 10 seconds.Upon expiration, it deals an additional 1233 + 100% shadow SP Shadow damage to the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500712,
+          "description": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">20</span> Insanity</span><br />Curse an enemy, dealing <span class=\"item-number\">326</span> + <span class=\"item-number\">100% SP</span> Shadow damage and increasing all Shadow damage they take from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Upon expiration, it deals an additional <span class=\"item-number\">1233</span> + <span class=\"item-number\">100% shadow SP</span> Shadow damage to the target."
+        }
+      ]
+    },
+    {
+      "id": 6272,
+      "name": "Mass Nightmare",
+      "spellId": 805114,
+      "spellIds": [
+        805114
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_volatileshadow",
+      "x": 3,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6283,
+        11892,
+        33892
+      ],
+      "requiredIds": [],
+      "desc": "Spread nightmares of the black empire to up to 5 nearby enemies, horrifying them for 5 seconds and interrupting non-player spellcasting for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805114,
+          "description": "Spread nightmares of the black empire to up to <span class=\"item-number\">5</span> nearby enemies, horrifying them for <span class=\"item-number\">5</span> seconds and interrupting non-player spellcasting for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6274,
+      "name": "Darkward",
+      "spellId": 706180,
+      "spellIds": [
+        706180,
+        706181
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Holy_MindSooth",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6281,
+        7899
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your damage absorption effects by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706180,
+          "description": "Increases the effectiveness of your damage absorption effects by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 706181,
+          "description": "Increases the effectiveness of your damage absorption effects by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6275,
+      "name": "Inner Darkness",
+      "spellId": 706182,
+      "spellIds": [
+        706182
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_entropicembrace",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7614,
+        9759,
+        33888
+      ],
+      "requiredIds": [],
+      "desc": "Blocking an attack now generates 3 Insanity.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706182,
+          "description": "Blocking an attack now generates <span style=\"color: #cfa6ff; display: inline\"><span class=\"item-number\">3</span> Insanity</span>."
+        }
+      ]
+    },
+    {
+      "id": 6276,
+      "name": "Eternal Grasp",
+      "spellId": 704878,
+      "spellIds": [
+        704878,
+        704879
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_nzothraid_carapace",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7084
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Tentacles by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704878,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 704879,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6277,
+      "name": "Embrace the Void",
+      "spellId": 582591,
+      "spellIds": [
+        582591
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\overwhelming_void_effigy",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30323
+      ],
+      "requiredIds": [],
+      "desc": "Become one with the void, preventing you from dying for 6 seconds, or until you take damage equal to a maximum of 100% of your total health.When the effect ends you instantly regenerate health equal to 50% of the damage taken while active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582591,
+          "description": "Become one with the void, preventing you from dying for <span class=\"item-number\">6</span> seconds, or until you take damage equal to a maximum of <span class=\"item-number\">100%</span> of your total health.<br /><br />When the effect ends you instantly regenerate health equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage taken while active."
+        }
+      ]
+    },
+    {
+      "id": 6280,
+      "name": "Grasp of Zek'voz",
+      "spellId": 573028,
+      "spellIds": [
+        573028
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_nazmir_boss_zekvoz",
+      "x": 5,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11892,
+        29263,
+        33892
+      ],
+      "requiredIds": [],
+      "desc": "Hinder an enemies momentum with void chains, slowing their movement speed by -30% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573028,
+          "description": "Hinder an enemies momentum with void chains, slowing their movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6281,
+      "name": "Doomsayer",
+      "spellId": 704880,
+      "spellIds": [
+        704880
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_heraldofnzoth",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33969
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost of your Presences by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704880,
+          "description": "Reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Presences</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6283,
+      "name": "Empire's Blessing",
+      "spellId": 704895,
+      "spellIds": [
+        704895
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AntiShadow",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29265
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the mana cost of Void Shield by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704895,
+          "description": "Reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Void Shield</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6310,
+      "name": "Dark Reservoir",
+      "spellId": 300284,
+      "spellIds": [
+        300284
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_battleground_templeofkotmogu_02_purple",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29344,
+        30036
+      ],
+      "requiredIds": [],
+      "desc": "Increases the bonus healing power scaling of Eldritch Mending by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300284,
+          "description": "Increases the bonus healing power scaling of <span style=\"color: #ffffff; display: inline\">Eldritch Mending</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6312,
+      "name": "Cunning Nature",
+      "spellId": 706915,
+      "spellIds": [
+        706915,
+        707784
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_shadowwatcher_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7052,
+        13052
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to hit by 3% and reduces threat generated by Shadow damage spells by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706915,
+          "description": "Increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and reduces threat generated by Shadow damage spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707784,
+          "description": "Increases your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and reduces threat generated by Shadow damage spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6327,
+      "name": "Feeding Darkness",
+      "spellId": 300302,
+      "spellIds": [
+        300302,
+        301347
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_shadow_mindtwisting",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31190
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your Corruption spells by 3 yds and their chance to critically strike by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300302,
+          "description": "Increases the range of your Corruption spells by <span class=\"item-number\">3</span> yds and their chance to critically strike by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301347,
+          "description": "Increases the range of your Corruption spells by <span class=\"item-number\">6</span> yds and their chance to critically strike by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6382,
+      "name": "Hallucination",
+      "spellId": 560301,
+      "spellIds": [
+        560301
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warlock28_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6959
+      ],
+      "requiredIds": [],
+      "desc": "Create 3 copies of yourself that run in a random direction for 3 seconds and may briefly trick enemies into ignoring you. Significantly reduces your threat and removes all movement impairing effects from you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560301,
+          "description": "Create <span class=\"item-number\">3</span> copies of yourself that run in a random direction for <span class=\"item-number\">3</span> seconds and may briefly trick enemies into ignoring you. <br /><br />Significantly reduces your threat and removes all movement impairing effects from you."
+        }
+      ]
+    },
+    {
+      "id": 6542,
+      "name": "Hysterical Momentum",
+      "spellId": 300275,
+      "spellIds": [
+        300275
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nzinsanity_shortsighted",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33976
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Blade of the Empire increases your melee haste by 3% for 8 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300275,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span> increases your melee haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6543,
+      "name": "Abyssal Edge",
+      "spellId": 582836,
+      "spellIds": [
+        582836,
+        582856
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_sword_1h_draenei_c_03",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33894
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Blade of the Empire by 2% and reduces its mana cost by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582836,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces its mana cost by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 582856,
+          "description": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces its mana cost by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6545,
+      "name": "Void Strikes",
+      "spellId": 680609,
+      "spellIds": [
+        680609
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_void_stab_Border",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7610,
+        9302
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Blade of the Empire and Entropic Slam is now increased based on your defense rating.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680609,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span> and <span style=\"color: #FFFFFF; display: inline\">Entropic Slam</span> is now increased based on your defense rating."
+        }
+      ]
+    },
+    {
+      "id": 6557,
+      "name": "Moment of Clarity",
+      "spellId": 706179,
+      "spellIds": [
+        706179,
+        707783
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Racial_ShadowMeld",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6559
+      ],
+      "requiredIds": [],
+      "desc": "Reduces spell pushback suffered from damaging attacks by 35% and increases mana generated by Sanity Tap by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706179,
+          "description": "Reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span> and increases mana generated by <span style=\"color: #FFFFFF; display: inline\">Sanity Tap</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707783,
+          "description": "Reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span> and increases mana generated by <span style=\"color: #FFFFFF; display: inline\">Sanity Tap</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6559,
+      "name": "Absolute Horror",
+      "spellId": 300309,
+      "spellIds": [
+        300309
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_volatileshadow",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31190
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Horrorbolt and Wrath of the Black Empire by 0.3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300309,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> and <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">0.3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6664,
+      "name": "Eldritch Obelisk",
+      "spellId": 560321,
+      "spellIds": [
+        560321
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_nzothraid_nyalothaguildrun",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7557,
+        7559,
+        33949
+      ],
+      "requiredIds": [],
+      "desc": "Create an Eldritch Obelisk beneath you for 20 seconds, increasing the damage of your Tentacles by 100% and the movement speed of allies by 40% while near it.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560321,
+          "description": "Create an <span style=\"color: #ffffff; display: inline\">Eldritch Obelisk</span> beneath you for <span class=\"item-number\">20</span> seconds, increasing the damage of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and the movement speed of allies by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> while near it."
+        }
+      ]
+    },
+    {
+      "id": 6666,
+      "name": "Twisted Sanity",
+      "spellId": 706187,
+      "spellIds": [
+        706187
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_void_flay",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30522
+      ],
+      "requiredIds": [],
+      "desc": "Allies affected by your Black Blood are now healed for 30% of the damage dealt by your Tentacles.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706187,
+          "description": "Allies affected by your <span style=\"color: #ffffff; display: inline\">Black Blood</span> are now healed for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the damage dealt by your <span style=\"color: #ffffff; display: inline\">Tentacles</span>."
+        }
+      ]
+    },
+    {
+      "id": 6771,
+      "name": "Boon of Y'shaarj",
+      "spellId": 560080,
+      "spellIds": [
+        560080,
+        561335
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_wand_1h_430oldgod_c_01",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7404
+      ],
+      "requiredIds": [],
+      "desc": "You now gain an additional 2 mana per point of Intellect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560080,
+          "description": "You now gain an additional <span class=\"item-number\">2</span> mana per point of Intellect."
+        },
+        {
+          "rank": 2,
+          "spellId": 561335,
+          "description": "You now gain an additional <span class=\"item-number\">4</span> mana per point of Intellect."
+        }
+      ]
+    },
+    {
+      "id": 6948,
+      "name": "Yogg-Saron's Embrace",
+      "spellId": 301984,
+      "spellIds": [
+        301984
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SummonVoidWalker",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7083
+      ],
+      "requiredIds": [],
+      "desc": "Increases your attack power and your maximum mana by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301984,
+          "description": "Increases your attack power and your maximum mana by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6959,
+      "name": "Gift of C'Thun",
+      "spellId": 706189,
+      "spellIds": [
+        706189
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\creatureportrait_sc_eyeofacherus_02",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6272,
+        29268
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Shadow damage dealt by 4% and healing done by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706189,
+          "description": "Increases your Shadow damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7056,
+      "name": "Obliteration Beam",
+      "spellId": 805572,
+      "spellIds": [
+        805572
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadoweye_Border",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7052,
+        13052,
+        33937
+      ],
+      "requiredIds": [],
+      "desc": "Generates 10 InsanityUnleash a beam of eldritch energy, dealing 126 + 65% shadow SP Shadow damage to an enemy and all nearby enemies.While above 60 Insanity, deals 20% more damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805572,
+          "description": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Unleash a beam of eldritch energy, dealing <span class=\"item-number\">126</span> + <span class=\"item-number\">65% shadow SP</span> Shadow damage to an enemy and all nearby enemies.<br /><br />While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> more damage."
+        }
+      ]
+    },
+    {
+      "id": 7057,
+      "name": "Corruptor's Gaze",
+      "spellId": 802048,
+      "spellIds": [
+        802048
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eyeofnzothpet",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29270,
+        33939
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your Tentacles by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802048,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7058,
+      "name": "Glimpse of Madness",
+      "spellId": 500719,
+      "spellIds": [
+        500719,
+        500767
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Hunter_MasterTactitian",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11935,
+        33938
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Obliteration Beam by -20% and it now applies Madness to all targets struck. MadnessYour Gaze of C'thun causes 3% increased damage, stacks up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500719,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #FFFFFF; display: inline\">Madness</span> to all targets struck. <br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nzinsanity_chasedbyshadows\" /><span class=\"name\">Madness</span></div><span class=\"desc\">Your <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> causes <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased damage, stacks up to <span class=\"item-number\">5</span> times.</span></div>"
+        },
+        {
+          "rank": 2,
+          "spellId": 500767,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #FFFFFF; display: inline\">Madness</span> to all targets struck. <br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nzinsanity_chasedbyshadows\" /><span class=\"name\">Madness</span></div><span class=\"desc\">Your <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> causes <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased damage, stacks up to <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7071,
+      "name": "Visions",
+      "spellId": 560526,
+      "spellIds": [
+        560526
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_void_whirl_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6312
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, your Shadow damage is increased by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560526,
+          "description": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your Shadow damage is increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7072,
+      "name": "Foulness",
+      "spellId": 706921,
+      "spellIds": [
+        706921
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(85)_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7057,
+        9935
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage bonus provided by your Corrupting Whispers by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706921,
+          "description": "Increases the damage bonus provided by your <span style=\"color: #ffffff; display: inline\">Corrupting Whispers</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7083,
+      "name": "As The Prophecy Foretold",
+      "spellId": 504642,
+      "spellIds": [
+        504642
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_scroll_fortitude",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7900,
+        29267,
+        33887,
+        33966
+      ],
+      "requiredIds": [],
+      "desc": "Melee critical strikes now refresh a charge of Blade of the Empire and restore 5% of your base mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504642,
+          "description": "Melee critical strikes now refresh a charge of <span style=\"color: #ffffff; display: inline\">Blade of the Empire</span> and restore <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your base mana."
+        }
+      ]
+    },
+    {
+      "id": 7084,
+      "name": "Dark Calling",
+      "spellId": 560715,
+      "spellIds": [
+        560715
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_04",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6277,
+        6278,
+        12444
+      ],
+      "requiredIds": [],
+      "desc": "Taking damage while below 35% health now summons 3 Manifestations of Y'shaarj for 10 sec, which will attack enemies and heal you for 2% of your base health.Can ony occur once every 2 minutes.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560715,
+          "description": "Taking damage while below <span class=\"item-number\">35%</span> health now summons <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Manifestations of Y'shaarj</span> for <span class=\"item-number\">10</span> sec, which will attack enemies and heal you for <span class=\"item-number\">2%</span> of your base health.<br /><br />Can ony occur once every <span class=\"item-number\">2</span> minutes."
+        }
+      ]
+    },
+    {
+      "id": 7278,
+      "name": "Saronite Blessing",
+      "spellId": 301262,
+      "spellIds": [
+        301262
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_ingot_yoggthorite",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6310,
+        30935
+      ],
+      "requiredIds": [],
+      "desc": "Melee critical strikes now apply Saronite Blessing to you.Saronite Blessing (Buff)Your melee attack speed is increased by 25% and your melee auto attacks heal the lowest health ally for an additional 100% of the damage dealt. Lasts for 15 seconds or 10 attacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301262,
+          "description": "Melee critical strikes now apply <span style=\"color: #ffffff; display: inline\">Saronite Blessing</span> to you.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_yoggthorite\" /><span class=\"name\">Saronite Blessing (Buff)</span></div><span class=\"desc\">Your melee attack speed is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and your melee auto attacks heal the lowest health ally for an additional <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the damage dealt. Lasts for <span class=\"item-number\">15</span> seconds or <span class=\"item-number\">10</span> attacks.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7404,
+      "name": "Twilight Shieldtoss",
+      "spellId": 524876,
+      "spellIds": [
+        524876
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_05",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Hurl a cursed shield, dealing 40 Shadow damage to up to 3 enemies, reduced by 20% with each jump.Damage increased by 1% for each stack of Insanity.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524876,
+          "description": "Hurl a cursed shield, dealing <span class=\"item-number\">40</span> Shadow damage to up to <span class=\"item-number\">3</span> enemies, reduced by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> with each jump.<br /><br />Damage increased by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #cfa6ff; display: inline\">Insanity</span>."
+        }
+      ]
+    },
+    {
+      "id": 7554,
+      "name": "Voidseeker",
+      "spellId": 560320,
+      "spellIds": [
+        560320
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_cloth_eyeballhat_b_01",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30881
+      ],
+      "requiredIds": [],
+      "desc": "Melee attacks now have a 10% chance to reset the cooldown of your Netherstrike, allowing the next use regardless of the target's health for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560320,
+          "description": "Melee attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #ffffff; display: inline\">Netherstrike</span>, allowing the next use regardless of the target's health for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7555,
+      "name": "Empire's Grasp",
+      "spellId": 500704,
+      "spellIds": [
+        500704
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_darkness",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6542,
+        7554,
+        10983
+      ],
+      "requiredIds": [],
+      "desc": "Teleport an enemy to your position and slow their movement speed by -60% for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500704,
+          "description": "Teleport an enemy to your position and slow their movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7556,
+      "name": "Teachings of Mythrax",
+      "spellId": 561035,
+      "spellIds": [
+        561035
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_nazmir_boss_mythraxtheunraveler",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4845,
+        6542
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Presence of N'Zoth and Presence of Y'Shaarj by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561035,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Presence of N'Zoth</span> and <span style=\"color: #ffffff; display: inline\">Presence of Y'Shaarj</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7558,
+      "name": "Voidborne",
+      "spellId": 681104,
+      "spellIds": [
+        681104
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_void_wraith_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13897,
+        30526,
+        33947
+      ],
+      "requiredIds": [],
+      "desc": "Tap into your inner voidborne rage, increasing your damage dealt and critical strike chance by 25%, and granting you immunity to stun effects for 15 seconds.Generates 1 Insanity every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681104,
+          "description": "Tap into your inner voidborne rage, increasing your damage dealt and critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and granting you immunity to stun effects for <span class=\"item-number\">15</span> seconds.<br /><br />Generates <span class=\"item-number\">1</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span> every <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7559,
+      "name": "Eye of N'zoth",
+      "spellId": 802728,
+      "spellIds": [
+        802728
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eyeofnzothpet",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30511,
+        30512
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance and critical damage of your Tentacles by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802728,
+          "description": "Increases the critical strike chance and critical damage of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7564,
+      "name": "Nutcase",
+      "spellId": 805117,
+      "spellIds": [
+        805117
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_dhmurloc_purple",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7557,
+        30526,
+        33949
+      ],
+      "requiredIds": [],
+      "desc": "Your Shadow of the Void now also increases your critical damage dealt by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805117,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Shadow of the Void</span> now also increases your critical damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7565,
+      "name": "Book of N'Zoth",
+      "spellId": 806768,
+      "spellIds": [
+        806768
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book2_Purple",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7564
+      ],
+      "requiredIds": [],
+      "desc": "Your Shadow of the Void now stacks 1 additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806768,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Shadow of the Void</span> now stacks <span class=\"item-number\">1</span> additional time."
+        }
+      ]
+    },
+    {
+      "id": 7606,
+      "name": "Eldritch Bastion",
+      "spellId": 560091,
+      "spellIds": [
+        560091,
+        561336
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_shadowtentacle_Border",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7611,
+        29918
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor contribution from your shield by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560091,
+          "description": "Increases your Armor contribution from your shield by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561336,
+          "description": "Increases your Armor contribution from your shield by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7608,
+      "name": "Abyssal Ward",
+      "spellId": 804670,
+      "spellIds": [
+        804670
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_shadoworbs",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Coalesce an Abyssal Ward reducing your damage taken by 50% for 10 seconds or 5 attacks. For the duration, each attack received will decrease the value by -10%.Usable while stunned.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804670,
+          "description": "Coalesce an <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> reducing your damage taken by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds or <span class=\"item-number\">5</span> attacks. For the duration, each attack received will decrease the value by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.<br /><br />Usable while stunned."
+        }
+      ]
+    },
+    {
+      "id": 7609,
+      "name": "Seething Void",
+      "spellId": 524804,
+      "spellIds": [
+        524804
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_twilighthellfire",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7555
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Empire's Grasp by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524804,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Empire's Grasp</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7610,
+      "name": "Voidwarding",
+      "spellId": 560002,
+      "spellIds": [
+        560002
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_glyph_primewarlock",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7606,
+        7615
+      ],
+      "requiredIds": [],
+      "desc": "Reduces damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases all of your resistances by 5, scaling with level.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560002,
+          "description": "Reduces damage taken by party and raid members by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases all of your resistances by <span class=\"item-number\">5</span>, scaling with level."
+        }
+      ]
+    },
+    {
+      "id": 7611,
+      "name": "Everpresent",
+      "spellId": 300272,
+      "spellIds": [
+        300272
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_darkmoon_eye",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9759,
+        29882,
+        33888
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Presences by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300272,
+          "description": "Increases the chance to trigger <span style=\"color: #FFFFFF; display: inline\">Presences</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7612,
+      "name": "Adaptive Combatant",
+      "spellId": 300268,
+      "spellIds": [
+        300268,
+        301348
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_sulfurelemental_void",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7404
+      ],
+      "requiredIds": [],
+      "desc": "Increases your parry chance by 3% and dodge chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300268,
+          "description": "Increases your parry chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and dodge chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301348,
+          "description": "Increases your parry chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and dodge chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7614,
+      "name": "Bulwark of Y'shaarj",
+      "spellId": 680558,
+      "spellIds": [
+        680558
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_73",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7612
+      ],
+      "requiredIds": [],
+      "desc": "Increases your block chance by 5%, plus an additional 10% while above 40 Insanity.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680558,
+          "description": "Increases your block chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, plus an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> while above <span class=\"item-number\">40</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>."
+        }
+      ]
+    },
+    {
+      "id": 7615,
+      "name": "Wavering Hope",
+      "spellId": 560502,
+      "spellIds": [
+        560502
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_grimbatol_drahga_the_shadowburner",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6275,
+        29918
+      ],
+      "requiredIds": [],
+      "desc": "While above 60 Insanity, the cooldown of your Twilight Shieldtoss and Gaze of C'thun is reduced by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560502,
+          "description": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Twilight Shieldtoss</span> and <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span> is reduced by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7616,
+      "name": "General of Y'shaarj",
+      "spellId": 680581,
+      "spellIds": [
+        680581
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_voidboss",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7610,
+        7619
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Twilight Shieldtoss now heals you for 10% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680581,
+          "description": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Twilight Shieldtoss</span> now heals you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 7617,
+      "name": "Malignant Armor",
+      "spellId": 680569,
+      "spellIds": [
+        680569
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_plate_nzothraidmythic_d_01",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7404
+      ],
+      "requiredIds": [],
+      "desc": "Increases your attack power by 2 for every 100 armor value you have.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680569,
+          "description": "Increases your attack power by <span class=\"item-number\">2</span> for every <span class=\"item-number\">100</span> armor value you have."
+        }
+      ]
+    },
+    {
+      "id": 7618,
+      "name": "Void-Enhanced Shield",
+      "spellId": 680555,
+      "spellIds": [
+        680555
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_draenei_a_02_uprez",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12219,
+        33893
+      ],
+      "requiredIds": [],
+      "desc": "Increases your block value by 20%.While above 60 Insanity, the value of this effect is doubled.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680555,
+          "description": "Increases your block value by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, the value of this effect is doubled."
+        }
+      ]
+    },
+    {
+      "id": 7619,
+      "name": "In And Out of Insanity",
+      "spellId": 582308,
+      "spellIds": [
+        582308
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DeathsEmbrace",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7606,
+        30520
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your damage absorption effects by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582308,
+          "description": "Increases the effectiveness of your damage absorption effects by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7620,
+      "name": "Bulwark of Horror",
+      "spellId": 300278,
+      "spellIds": [
+        300278
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowcatcher_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6771,
+        7612,
+        7617
+      ],
+      "requiredIds": [],
+      "desc": "Avoiding an attack now has a 40% chance to refresh a charge of Blade of the Empire.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300278,
+          "description": "Avoiding an attack now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refresh a charge of <span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span>."
+        }
+      ]
+    },
+    {
+      "id": 7622,
+      "name": "Dreadful",
+      "spellId": 680579,
+      "spellIds": [
+        680579
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_tentacles_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6545,
+        7624
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike rating equal to your block rating.In addition, critical strikes now reduce the cooldown of Dreadfall and Dreadnought by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680579,
+          "description": "Increases your critical strike rating equal to your block rating.<br /><br />In addition, critical strikes now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Dreadfall</span> and <span style=\"color: #ffffff; display: inline\">Dreadnought</span> by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7624,
+      "name": "Shadowy Symbiosis",
+      "spellId": 680574,
+      "spellIds": [
+        680574
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nzinsanity_stophittingyourself",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7618,
+        9302
+      ],
+      "requiredIds": [],
+      "desc": "Your successful blocks now have a 20% chance to critically block for twice the normal amount.This effect is doubled while above 60 Insanity.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680574,
+          "description": "Your successful blocks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to critically block for twice the normal amount.<br /><br />This effect is doubled while above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>."
+        }
+      ]
+    },
+    {
+      "id": 7625,
+      "name": "Void Augmentation",
+      "spellId": 680575,
+      "spellIds": [
+        680575
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_alliedrace_voidelf",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7627
+      ],
+      "requiredIds": [],
+      "desc": "While Dreadnought is active, your Twilight Shieldtoss has a -3 sec reduced cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680575,
+          "description": "While <span style=\"color: #FFFFFF; display: inline\">Dreadnought</span> is active, your <span style=\"color: #FFFFFF; display: inline\">Twilight Shieldtoss</span> has a <span class=\"item-number\">-3</span> sec reduced cooldown."
+        }
+      ]
+    },
+    {
+      "id": 7626,
+      "name": "Embodiment of Y'shaarj",
+      "spellId": 681088,
+      "spellIds": [
+        681088
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_thenighthold_chromaticanomaly",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29654
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount that Void Shield absorbs by 100%.Absorbing damage grants you 20% of the absorbed value as spell power for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681088,
+          "description": "Increases the amount that <span style=\"color: #ffffff; display: inline\">Void Shield</span> absorbs by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.<br /><br />Absorbing damage grants you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the absorbed value as spell power for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7627,
+      "name": "Twilight Guardian",
+      "spellId": 704889,
+      "spellIds": [
+        704889
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_twilightswrath",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6545,
+        7616
+      ],
+      "requiredIds": [],
+      "desc": "The first instance of damage dealt by Twilight Shieldtoss now shields you for 100% of the damage dealt for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704889,
+          "description": "The first instance of damage dealt by <span style=\"color: #FFFFFF; display: inline\">Twilight Shieldtoss</span> now shields you for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the damage dealt for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7629,
+      "name": "Eldritch Force",
+      "spellId": 681474,
+      "spellIds": [
+        681474
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowtentacle_Border",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7622
+      ],
+      "requiredIds": [],
+      "desc": "Every 5th critical strike with abilities now transforms your next Gaze of C'Thun into Eldritch Force.Eldritch ForceGenerates 30 InsanitySend out a wave of force, dealing 631 + 76.26% SP + 12.5% AP Shadow damage to enemies in front of you and reducing their movement speed by -30% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681474,
+          "description": "Every 5th critical strike with abilities now transforms your next <span style=\"color: #FFFFFF; display: inline\">Gaze of C'Thun</span> into <span style=\"color: #FFFFFF; display: inline\">Eldritch Force</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_shadowtentacle_border\" /><span class=\"name\">Eldritch Force</span></div><span class=\"desc\"><span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">30</span> Insanity</span><br />Send out a wave of force, dealing <span class=\"item-number\">631</span> + <span class=\"item-number\">76.26% SP</span> + <span class=\"item-number\">12.5% AP</span> Shadow damage to enemies in front of you and reducing their movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7894,
+      "name": "Abyssal Covenant",
+      "spellId": 500751,
+      "spellIds": [
+        500751
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_cloth_eyeballhat_b_01",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30522,
+        33935
+      ],
+      "requiredIds": [],
+      "desc": "Link yourself to an ally for 30 minutes, transfering 10% of all damage taken by them to you and causing 20% of all damage you deal to be converted into healing for them.Can only be applied to 1 ally at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500751,
+          "description": "Link yourself to an ally for <span class=\"item-number\">30</span> minutes, transfering <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of all damage taken by them to you and causing <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of all damage you deal to be converted into healing for them.<br /><br />Can only be applied to <span class=\"item-number\">1</span> ally at a time."
+        }
+      ]
+    },
+    {
+      "id": 7899,
+      "name": "Mind Games",
+      "spellId": 582589,
+      "spellIds": [
+        582589
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_shadowmend",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6382
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Hallucination by -5 sec and reduces its mana cost by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582589,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Hallucination</span> by <span class=\"item-number\">-5</span> sec and reduces its mana cost by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7901,
+      "name": "Dark Prophet",
+      "spellId": 301209,
+      "spellIds": [
+        301209
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_foreshadowing_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29915,
+        33926
+      ],
+      "requiredIds": [],
+      "desc": "Healing done by Abyssal Covenant now heals 5 of the lowest health nearby allies and healing done by Black Blood can now critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301209,
+          "description": "Healing done by <span style=\"color: #ffffff; display: inline\">Abyssal Covenant</span> now heals <span class=\"item-number\">5</span> of the lowest health nearby allies and healing done by <span style=\"color: #ffffff; display: inline\">Black Blood</span> can now critically strike.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 7938,
+      "name": "Horrorbolt Volley",
+      "spellId": 704892,
+      "spellIds": [
+        704892
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_normal20shadowrain_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33959
+      ],
+      "requiredIds": [],
+      "desc": "After casting 3 Horrorbolts, it transforms into Horrorbolt Volley for 15 seconds.Horrorbolt VolleyGenerates 10 InsanityInflict sheer horror on up to 5 enemies, dealing 607 + 28% shadow SP Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704892,
+          "description": "After casting <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Horrorbolts</span>, it transforms into <span style=\"color: #FFFFFF; display: inline\">Horrorbolt Volley</span> for <span class=\"item-number\">15</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_normal20shadowrain_border\" /><span class=\"name\">Horrorbolt Volley</span></div><span class=\"desc\"><span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Inflict sheer horror on up to <span class=\"item-number\">5</span> enemies, dealing <span class=\"item-number\">607</span> + <span class=\"item-number\">28% shadow SP</span> Shadow damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7940,
+      "name": "Twisted Seal",
+      "spellId": 525065,
+      "spellIds": [
+        525065
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_peacockmount_dark",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6279,
+        7465,
+        29479,
+        33968
+      ],
+      "requiredIds": [],
+      "desc": "Create a warped sigil that bends hostile force away from you, deflecting all spells for 5 seconds, but making you unable to attack or cast spells.Casters whose magic is deflected are silenced for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 525065,
+          "description": "Create a warped sigil that bends hostile force away from you, deflecting all spells for <span class=\"item-number\">5</span> seconds, but making you unable to attack or cast spells.<br /><br />Casters whose magic is deflected are silenced for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7941,
+      "name": "Twilight Domination",
+      "spellId": 520405,
+      "spellIds": [
+        520405
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mount_voidelfstridermount",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6664
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Tentacles reduces the cooldown of Eldritch Obelisk by -2 sec.In addition, increases the effectiveness of Eldritch Obelisk by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520405,
+          "description": "Damage dealt by your <span style=\"color: #FFFFFF; display: inline\">Tentacles</span> reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Eldritch Obelisk</span> by <span class=\"item-number\">-2</span> sec.<br /><br />In addition, increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Eldritch Obelisk</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9302,
+      "name": "Void Reaver",
+      "spellId": 800463,
+      "spellIds": [
+        800463
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_spell_shadow_shadesofdarkness",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7615,
+        12219
+      ],
+      "requiredIds": [],
+      "desc": "Avoiding or absorbing an attack now has a 20% chance to make your next Blade of the Empire deal 20% more damage and hit an additional nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800463,
+          "description": "Avoiding or absorbing an attack now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span> deal <span class=\"item-number\">20</span><span class=\"item-number\">%</span> more damage and hit an additional nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 9935,
+      "name": "Dread",
+      "spellId": 301315,
+      "spellIds": [
+        301315
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_BurningSpirit",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29270,
+        29471,
+        33939
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Darkwither by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301315,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkwither</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9953,
+      "name": "Overwhelming Void",
+      "spellId": 707429,
+      "spellIds": [
+        707429
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_FaerieFire",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6272
+      ],
+      "requiredIds": [],
+      "desc": "Your Mass Nightmare now triggers a 60 sec reduced cooldown when used at or above 80 Insanity.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707429,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Mass Nightmare</span> now triggers a <span class=\"item-number\">60</span> sec reduced cooldown when used at or above <span class=\"item-number\">80</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>."
+        }
+      ]
+    },
+    {
+      "id": 10983,
+      "name": "Touch of the Void",
+      "spellId": 680508,
+      "spellIds": [
+        680508
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_void_blackhole_Border",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12562
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Magic damage dealt by 3% and Hammer of Twilight now increases the target's spell damage taken by 10% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680508,
+          "description": "Increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Hammer of Twilight</span> now increases the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 11935,
+      "name": "Horrific Visions",
+      "spellId": 707753,
+      "spellIds": [
+        707753
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_UnholyFrenzy",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30671
+      ],
+      "requiredIds": [],
+      "desc": "While above 40 Insanity, your chance to trigger Dark Revelation is now increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707753,
+          "description": "While above <span class=\"item-number\">40</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, your chance to trigger <span style=\"color: #ffffff; display: inline\">Dark Revelation</span> is now increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12219,
+      "name": "Dreadfall",
+      "spellId": 806175,
+      "spellIds": [
+        806175
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ShadowGuard_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6275,
+        33893
+      ],
+      "requiredIds": [],
+      "desc": "Raise your shield and charge towards an enemy, dealing 50% AP Shadow damage to enemies you pass through, generating additional threat.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806175,
+          "description": "Raise your shield and charge towards an enemy, dealing <span class=\"item-number\">50% AP</span> Shadow damage to enemies you pass through, generating additional threat."
+        }
+      ]
+    },
+    {
+      "id": 12453,
+      "name": "Visions of the Empire",
+      "spellId": 806384,
+      "spellIds": [
+        806384
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_ability_rogue_bloodyeye_nightborne",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6982,
+        12982,
+        29344
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage converted into healing through Abyssal Covenant by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806384,
+          "description": "Increases the damage converted into healing through <span style=\"color: #ffffff; display: inline\">Abyssal Covenant</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12562,
+      "name": "Warrior of the Old Gods",
+      "spellId": 802047,
+      "spellIds": [
+        802047
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowasphyxiation_Border",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6543
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Weapon Damage dealt by Hammer of Twilight and Entropic Slam by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802047,
+          "description": "Increases the Weapon Damage dealt by <span style=\"color: #ffffff; display: inline\">Hammer of Twilight</span> and <span style=\"color: #ffffff; display: inline\">Entropic Slam</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12975,
+      "name": "Dark Matter",
+      "spellId": 806382,
+      "spellIds": [
+        806382
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Arcane_PrismaticCloak",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33931
+      ],
+      "requiredIds": [],
+      "desc": "Channeling Satiate now heals all allies within 30 yds for 208 + 20% healing every 1 sec for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806382,
+          "description": "Channeling <span style=\"color: #ffffff; display: inline\">Satiate</span> now heals all allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">208</span> + <span class=\"item-number\">20% healing</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29263,
+      "name": "Empire Commander",
+      "spellId": 704887,
+      "spellIds": [
+        704887,
+        707781,
+        712470
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 3,
+      "icon": "Interface\\icons\\nhi_shadowasphyxiation_Border",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7608
+      ],
+      "requiredIds": [],
+      "desc": "Increases all primary attributes by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704887,
+          "description": "Increases all primary attributes by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707781,
+          "description": "Increases all primary attributes by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712470,
+          "description": "Increases all primary attributes by <span class=\"item-number\">12</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29265,
+      "name": "Void Shield",
+      "spellId": 500715,
+      "spellIds": [
+        500715
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3energyarmor",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Shields an ally, absorbing 195 + 60% SP damage for 30 seconds and applying Wracked Mind.Wracked MindCannot be affected by Void Shield. Lasts for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500715,
+          "description": "Shields an ally, absorbing <span class=\"item-number\">195</span> + <span class=\"item-number\">60% SP</span> damage for <span class=\"item-number\">30</span> seconds and applying <span style=\"color: #ffffff; display: inline\">Wracked Mind</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_shadetruesight\" /><span class=\"name\">Wracked Mind</span></div><span class=\"desc\">Cannot be affected by <span style=\"color: #ffffff; display: inline\">Void Shield</span>. Lasts for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29266,
+      "name": "Sunderer of Realities",
+      "spellId": 301068,
+      "spellIds": [
+        301068
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ShadeTrueSight",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29476
+      ],
+      "requiredIds": [],
+      "desc": "Casting Wrath of the Black Empire now causes your subsequent Wraths of the Black Empire, within 15 seconds, to deal 15% more damage each and unleash Apocalyptic Skies upon the enemy.Apocalyptic SkiesSpawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301068,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> now causes your subsequent <span style=\"color: #ffffff; display: inline\">Wraths of the Black Empire</span>, within <span class=\"item-number\">15</span> seconds, to deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more damage each and unleash <span style=\"color: #ffffff; display: inline\">Apocalyptic Skies</span> upon the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_void_conquer_border\" /><span class=\"name\">Apocalyptic Skies</span></div><span class=\"desc\">Spawns a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29267,
+      "name": "Eldritch Eye",
+      "spellId": 802049,
+      "spellIds": [
+        802049
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eyeofnzothpet",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31324
+      ],
+      "requiredIds": [],
+      "desc": "Invoke the Old Gods for 15 seconds, removing the cast time of your next 3 Eldritch Mendings or Malevolences and causing them to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802049,
+          "description": "Invoke the Old Gods for <span class=\"item-number\">15</span> seconds, removing the cast time of your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Eldritch Mendings</span> or <span style=\"color: #ffffff; display: inline\">Malevolences</span> and causing them to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 29268,
+      "name": "Shadow Words",
+      "spellId": 706928,
+      "spellIds": [
+        706928
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_voidshift",
+      "x": 0,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6283
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Whispers by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706928,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Whispers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29272,
+      "name": "End Times",
+      "spellId": 805115,
+      "spellIds": [
+        805115
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_167_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7555,
+        33889
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of Blade of the Empire, Netherstrike, and Hammer of Twilight by 25 yds and reduces their mana costs by -50% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805115,
+          "description": "Increases the range of <span style=\"color: #ffffff; display: inline\">Blade of the Empire</span>, <span style=\"color: #ffffff; display: inline\">Netherstrike</span>, and <span style=\"color: #FFFFFF; display: inline\">Hammer of Twilight</span> by <span class=\"item-number\">25</span> yds and reduces their mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29273,
+      "name": "Eldritch Strength",
+      "spellId": 680600,
+      "spellIds": [
+        680600
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_ability_rogue_envelopingshadows",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29882
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Hammer of Twilight and Entropic Slam by 25% and they now generates a large amount of threat.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680600,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Hammer of Twilight</span> and <span style=\"color: #ffffff; display: inline\">Entropic Slam</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and they now generates a large amount of threat."
+        }
+      ]
+    },
+    {
+      "id": 29275,
+      "name": "Vision of Doom",
+      "spellId": 520388,
+      "spellIds": [
+        520388
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_twilightcano",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33951
+      ],
+      "requiredIds": [],
+      "desc": "Behold a vision of doom, causing direct damage or healing done to apply Vision of Doom to nearby targets for 3 seconds. Can only occur once every 3 sec.At the end of the duration, they are damaged or healed for 100% of the damage or healing that doomed them. Lasts for 1 minute or 5 instances of damage or healing.Doomed enemies are unable to be healed and the damage or healing done by this effect can critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520388,
+          "description": "Behold a vision of doom, causing direct damage or healing done to apply <span style=\"color: #FFFFFF; display: inline\">Vision of Doom</span> to nearby targets for <span class=\"item-number\">3</span> seconds. Can only occur once every <span class=\"item-number\">3</span> sec.<br /><br />At the end of the duration, they are damaged or healed for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the damage or healing that doomed them. Lasts for <span class=\"item-number\">1</span> minute or <span class=\"item-number\">5</span> instances of damage or healing.<br /><br />Doomed enemies are unable to be healed and the damage or healing done by this effect can critically strike."
+        }
+      ]
+    },
+    {
+      "id": 29344,
+      "name": "Dark Veil",
+      "spellId": 520345,
+      "spellIds": [
+        520345
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_burningwill_shadow",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4536,
+        6948
+      ],
+      "requiredIds": [],
+      "desc": "Channel a shield of void energies upon an ally, causing both you and them to absorb 875 + 100% healing + 25% AP damage, stacking 5 times, every 1 sec for 5 seconds.At the end of the duration, if the shield holds, you teleport to them.While channeling you are immune to stuns and silences.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520345,
+          "description": "Channel a shield of void energies upon an ally, causing both you and them to absorb <span class=\"item-number\">875</span> + <span class=\"item-number\">100% healing</span> + <span class=\"item-number\">25% AP</span> damage, stacking <span class=\"item-number\">5</span> times, every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds.<br /><br />At the end of the duration, if the shield holds, you teleport to them.<br /><br />While channeling you are immune to stuns and silences."
+        }
+      ]
+    },
+    {
+      "id": 29453,
+      "name": "Dark Chants",
+      "spellId": 712471,
+      "spellIds": [
+        712471
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill30_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6982,
+        12982
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Forbidden Ritual by 1 sec and allows Black Blood to stack up to 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712471,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Forbidden Ritual</span> by <span class=\"item-number\">1</span> sec and allows <span style=\"color: #ffffff; display: inline\">Black Blood</span> to stack up to <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29455,
+      "name": "Shroud of Pride",
+      "spellId": 805126,
+      "spellIds": [
+        805126
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_spell_fire_felfireward",
+      "x": 8,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29263
+      ],
+      "requiredIds": [],
+      "desc": "Your Abyssal Ward now stacks 3 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805126,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> now stacks <span class=\"item-number\">3</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": 29470,
+      "name": "Corrupt Mind",
+      "spellId": 560109,
+      "spellIds": [
+        560109
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_clarityofpower",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Generates 10 InsanityCorrupt the mind of an enemy and spread madness, fearing them in place for 40 seconds (8 sec vs players), bouncing to up to 2 nearby enemies.Damage dealt may end this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560109,
+          "description": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Corrupt the mind of an enemy and spread madness, fearing them in place for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players), bouncing to up to <span class=\"item-number\">2</span> nearby enemies.<br /><br />Damage dealt may end this effect."
+        }
+      ]
+    },
+    {
+      "id": 29471,
+      "name": "Eldritch Devastation",
+      "spellId": 802727,
+      "spellIds": [
+        802727
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_artifact_powerofthedarkside",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6557,
+        7052,
+        13052
+      ],
+      "requiredIds": [],
+      "desc": "Channel upon an enemy, chaining to nearby enemies, dealing 60 + 132% shadow SP Shadow damage over 6 seconds, dealing less damage with each enemy struck.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802727,
+          "description": "Channel upon an enemy, chaining to nearby enemies, dealing <span class=\"item-number\">60</span> + <span class=\"item-number\">132% shadow SP</span> Shadow damage over <span class=\"item-number\">6</span> seconds, dealing less damage with each enemy struck."
+        }
+      ]
+    },
+    {
+      "id": 29476,
+      "name": "Apocalyptic Skies",
+      "spellId": 301200,
+      "spellIds": [
+        301200
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_void_conquer_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31356,
+        33936
+      ],
+      "requiredIds": [],
+      "desc": "Casting Wrath of the Black Empire now spawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301200,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> now spawns a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing."
+        }
+      ]
+    },
+    {
+      "id": 29477,
+      "name": "Yawning Decay",
+      "spellId": 706909,
+      "spellIds": [
+        706909
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_void_blast",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7072,
+        33942
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd Horrorbolt cast causes your next successful Horrorbolt to deal an additional 50% of the initial damage to the target over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706909,
+          "description": "Every 3rd <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> cast causes your next successful <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> to deal an additional <span class=\"item-number\">50%</span> of the initial damage to the target over <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29478,
+      "name": "Embrace the Void",
+      "spellId": 300307,
+      "spellIds": [
+        300307
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_PainAndSuffering",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33942
+      ],
+      "requiredIds": [],
+      "desc": "Reaching 60 Insanity increases your damage dealt by 10% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300307,
+          "description": "Reaching <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span> increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29654,
+      "name": "Void Tolerance",
+      "spellId": 680570,
+      "spellIds": [
+        680570
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_legendary_chimeraoffear",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7616,
+        29916
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Abyssal Ward by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680570,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29882,
+      "name": "Tentacle of Y'shaarj",
+      "spellId": 802044,
+      "spellIds": [
+        802044
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_YoggSaron_01",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6771
+      ],
+      "requiredIds": [],
+      "desc": "Summon a Tentacle of Y'shaarj near you for 30 seconds.When summoned and whenever Gaze of C'thun is used, it slams the ground dealing Physical damage, scaling with Stamina, to all enemies in a 10 yd frontal cone.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802044,
+          "description": "Summon a <span style=\"color: #ffffff; display: inline\">Tentacle of Y'shaarj</span> near you for <span class=\"item-number\">30</span> seconds.<br /><br />When summoned and whenever <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span> is used, it slams the ground dealing Physical damage, scaling with Stamina, to all enemies in a <span class=\"item-number\">10</span> yd frontal cone.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29915,
+      "name": "Void Barrier",
+      "spellId": 300291,
+      "spellIds": [
+        300291
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_shadowbarrier_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12453,
+        29453
+      ],
+      "requiredIds": [],
+      "desc": "Casting Herald of the Depths now increases the absorption of your next Void Shield within 10 seconds by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300291,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Herald of the Depths</span> now increases the absorption of your next <span style=\"color: #ffffff; display: inline\">Void Shield</span> within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29916,
+      "name": "Eldritch Entities",
+      "spellId": 681425,
+      "spellIds": [
+        681425
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7619,
+        33896
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with abilities now summon a Manifestation of Y'shaarj for 10 seconds, which will attack enemies and heal you for 2% of your base health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681425,
+          "description": "Critical strikes with abilities now summon a <span style=\"color: #FFFFFF; display: inline\">Manifestation of Y'shaarj</span> for <span class=\"item-number\">10</span> seconds, which will attack enemies and heal you for <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your base health."
+        }
+      ]
+    },
+    {
+      "id": 29918,
+      "name": "Twilight Incarnate",
+      "spellId": 681087,
+      "spellIds": [
+        681087
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elemental_eternal_shadow",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9759,
+        33888
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Twilight Shieldtoss now generates 3 Insanity.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681087,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Twilight Shieldtoss</span> now generates <span class=\"item-number\">3</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>."
+        }
+      ]
+    },
+    {
+      "id": 29920,
+      "name": "Split Mind",
+      "spellId": 572064,
+      "spellIds": [
+        572064
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_soulbarrier",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30205,
+        33951
+      ],
+      "requiredIds": [],
+      "desc": "Void Shield now applies to an additional nearby ally but its duration is reduced by -30%.Killing an opponent that yields experience or honor removes Wracked Mind from you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572064,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Void Shield</span> now applies to an additional nearby ally but its duration is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />Killing an opponent that yields experience or honor removes <span style=\"color: #FFFFFF; display: inline\">Wracked Mind</span> from you."
+        }
+      ]
+    },
+    {
+      "id": 30036,
+      "name": "Dark Infusion",
+      "spellId": 500721,
+      "spellIds": [
+        500721
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_mage_thermalvoid",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12975,
+        33925,
+        33975
+      ],
+      "requiredIds": [],
+      "desc": "3 Charges, 30 sec rechargeInfuse an ally with dark energy, healing them for 44 the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500721,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">30</span> sec recharge</span><br />Infuse an ally with dark energy, healing them for <span class=\"item-number\">44</span> the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies."
+        }
+      ]
+    },
+    {
+      "id": 30205,
+      "name": "Crystalline Reflection",
+      "spellId": 525060,
+      "spellIds": [
+        525060
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_PrayerofShadowProtection",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6274,
+        31123
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance for Void Shield to resist dispel effects on allies by -50% and it now also reflects 50% of the damage absorbed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 525060,
+          "description": "Increases the chance for <span style=\"color: #ffffff; display: inline\">Void Shield</span> to resist dispel effects on allies by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> and it now also reflects <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage absorbed."
+        }
+      ]
+    },
+    {
+      "id": 30323,
+      "name": "Wicked Thoughts",
+      "spellId": 706190,
+      "spellIds": [
+        706190
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_LDAEye",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6280,
+        29455
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum mana, your movement speed, and mounted movement speed by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706190,
+          "description": "Increases your maximum mana, your movement speed, and mounted movement speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30511,
+      "name": "Tentacle of N'Zoth",
+      "spellId": 572103,
+      "spellIds": [
+        572103
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_voidtendrils",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7555,
+        7556
+      ],
+      "requiredIds": [],
+      "desc": "Target an enemy and summon a Tentacle of N'Zoth on the ground near them that will silence them and deal 117 + 75% SP Shadow damage every 2 sec for 8 seconds. If your target runs out of range, the tentacle will seek a new target.The tentacle gains health based on your Stamina. If the tentacle dies, the silence effect will end.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572103,
+          "description": "Target an enemy and summon a <span style=\"color: #FFFFFF; display: inline\">Tentacle of N'Zoth</span> on the ground near them that will silence them and deal <span class=\"item-number\">117</span> + <span class=\"item-number\">75% SP</span> Shadow damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">8</span> seconds. If your target runs out of range, the tentacle will seek a new target.<br /><br />The tentacle gains health based on your Stamina. If the tentacle dies, the silence effect will end.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30512,
+      "name": "Abyssal Cleave",
+      "spellId": 707604,
+      "spellIds": [
+        707604,
+        707748
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\custom_T_ShadowStab_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7556
+      ],
+      "requiredIds": [],
+      "desc": "Your Gaze of C'Thun now strikes 1 additional nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707604,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now strikes <span class=\"item-number\">1</span> additional nearby enemy."
+        },
+        {
+          "rank": 2,
+          "spellId": 707748,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now strikes <span class=\"item-number\">1</span> additional nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 30515,
+      "name": "Oblivion's Embrace",
+      "spellId": 680500,
+      "spellIds": [
+        680500
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nzinsanity_chasedbyshadows",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33889
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of your Hammer of Twilight by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680500,
+          "description": "Increases the critical damage of your <span style=\"color: #ffffff; display: inline\">Hammer of Twilight</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30516,
+      "name": "Shadow Fiend",
+      "spellId": 680487,
+      "spellIds": [
+        680487
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_stormdragonvoidmount",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7558
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Voidborne by -90 sec and increases its duration by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680487,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Voidborne</span> by <span class=\"item-number\">-90</span> sec and increases its duration by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30520,
+      "name": "Crushing Dissonance",
+      "spellId": 804056,
+      "spellIds": [
+        804056
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_kaztik_dominatemind",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7611,
+        29273
+      ],
+      "requiredIds": [],
+      "desc": "Unleash a wave of maddening resonance, interrupting the current spell cast of all enemies around you and preventing any spell in that school from being cast for 2 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804056,
+          "description": "Unleash a wave of maddening resonance, interrupting the current spell cast of all enemies around you and preventing any spell in that school from being cast for <span class=\"item-number\">2</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30522,
+      "name": "Shadow Pennant",
+      "spellId": 706926,
+      "spellIds": [
+        706926,
+        525307
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\mocking_banner",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31191
+      ],
+      "requiredIds": [],
+      "desc": "You now heal the lowest health ally affected by Black Blood for 50% of your auto attack damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706926,
+          "description": "You now heal the lowest health ally affected by <span style=\"color: #FFFFFF; display: inline\">Black Blood</span> for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your auto attack damage."
+        },
+        {
+          "rank": 2,
+          "spellId": 525307,
+          "description": "You now heal the lowest health ally affected by <span style=\"color: #FFFFFF; display: inline\">Black Blood</span> for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your auto attack damage."
+        }
+      ]
+    },
+    {
+      "id": 30523,
+      "name": "Blessing of Yogg-Saron",
+      "spellId": 807128,
+      "spellIds": [
+        807128
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_HeraldVolazj",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7278,
+        33926
+      ],
+      "requiredIds": [],
+      "desc": "While Herald of the Depths is active, you now transform into a Faceless Monstrosity, increasing your critical healing and critical strike chance by 20%, but reducing its duration by -5 sec.In addition, while active you are now immune to fear, horrify, and polymorph effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807128,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Herald of the Depths</span> is active, you now transform into a <span style=\"color: #ffffff; display: inline\">Faceless Monstrosity</span>, increasing your critical healing and critical strike chance by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, but reducing its duration by <span class=\"item-number\">-5</span> sec.<br /><br />In addition, while active you are now immune to fear, horrify, and polymorph effects."
+        }
+      ]
+    },
+    {
+      "id": 30526,
+      "name": "Instilling Fear",
+      "spellId": 527268,
+      "spellIds": [
+        527268
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ShadeTrueSight",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7609,
+        29272
+      ],
+      "requiredIds": [],
+      "desc": "While above 60 Insanity, your Netherstrike and Gaze of C'Thun now gain 10% increased critical strike chance.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 527268,
+          "description": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, your <span style=\"color: #FFFFFF; display: inline\">Netherstrike</span> and <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now gain <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased critical strike chance."
+        }
+      ]
+    },
+    {
+      "id": 30671,
+      "name": "Dark Revelation",
+      "spellId": 706245,
+      "spellIds": [
+        706245
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_summonvoidwalker",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7056,
+        33937
+      ],
+      "requiredIds": [],
+      "desc": "Grants your Horrorbolt and Wrath of the Black Empire a 20% chance to reset the cooldown of Gaze of C'thun.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706245,
+          "description": "Grants your <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> and <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span>."
+        }
+      ]
+    },
+    {
+      "id": 30845,
+      "name": "Encroaching Presence",
+      "spellId": 300280,
+      "spellIds": [
+        300280
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowwatcher_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12562
+      ],
+      "requiredIds": [],
+      "desc": "Your melee critical strikes reduce the cooldown of Rift and Gaze of C'Thun by -3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300280,
+          "description": "Your melee critical strikes reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Rift</span> and <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> by <span class=\"item-number\">-3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30881,
+      "name": "Netherstrike",
+      "spellId": 806222,
+      "spellIds": [
+        806222
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanearrow_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4810,
+        6543
+      ],
+      "requiredIds": [],
+      "desc": "Generates 10 InsanityStrike an enemy quickly for 125% Weapon Damage plus 48 Shadow damage, purging 1 beneficial magic effect from them.Only usable on enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806222,
+          "description": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Strike an enemy quickly for <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">48</span> Shadow damage, purging <span class=\"item-number\">1</span> beneficial magic effect from them.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 30935,
+      "name": "Ancient Rituals",
+      "spellId": 807877,
+      "spellIds": [
+        807877
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Twilight",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30036
+      ],
+      "requiredIds": [],
+      "desc": "Casting Satiate now refreshes the duration of Black Blood on all allies within 30 yds.Dark Infusion bounces one additional time after its third infusion, expanding to the three lowest-health nearby party or raid members.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807877,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Satiate</span> now refreshes the duration of <span style=\"color: #ffffff; display: inline\">Black Blood</span> on all allies within <span class=\"item-number\">30</span> yds.<br /><br /><span style=\"color: #ffffff; display: inline\">Dark Infusion</span> bounces one additional time after its third infusion, expanding to the three lowest-health nearby party or raid members."
+        }
+      ]
+    },
+    {
+      "id": 31123,
+      "name": "Devourer",
+      "spellId": 300265,
+      "spellIds": [
+        300265
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_eye_03",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6281,
+        33952
+      ],
+      "requiredIds": [],
+      "desc": "Your Devour Magic now dispels 1 additional magic effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300265,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Devour Magic</span> now dispels <span class=\"item-number\">1</span> additional magic effect."
+        }
+      ]
+    },
+    {
+      "id": 31189,
+      "name": "Rift",
+      "spellId": 806250,
+      "spellIds": [
+        806250
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_chest_armor_voidelf_d_01",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4040
+      ],
+      "desc": "Apply a dark boon to yourself for 15 seconds, causing your next Hammer of Twilight to deal an additional 80% of its damage dealt as Shadow damage.Creates a rift that absorbs the next 690 + 150% AP healing taken by enemies that step inside and reduces their periodic healing received by -50% for 10 seconds while inside.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806250,
+          "description": "Apply a dark boon to yourself for <span class=\"item-number\">15</span> seconds, causing your next <span style=\"color: #ffffff; display: inline\">Hammer of Twilight</span> to deal an additional <span class=\"item-number\">80</span><span class=\"item-number\">%</span> of its damage dealt as Shadow damage.<br /><br />Creates a rift that absorbs the next <span class=\"item-number\">690</span> + <span class=\"item-number\">150% AP</span> healing taken by enemies that step inside and reduces their periodic healing received by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds while inside."
+        }
+      ]
+    },
+    {
+      "id": 31190,
+      "name": "Darkwither",
+      "spellId": 800446,
+      "spellIds": [
+        800446
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_unstableaffliction_3_purple",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4041,
+        29470
+      ],
+      "desc": "Generates 10 InsanityWither an enemy, dealing 135 Shadow damage over 15 seconds. Each instance of damage reduces their periodic healing taken by -5%, stacking up to 4 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800446,
+          "description": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Wither an enemy, dealing <span class=\"item-number\">135</span> Shadow damage over <span class=\"item-number\">15</span> seconds. Each instance of damage reduces their periodic healing taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">4</span> times."
+        }
+      ]
+    },
+    {
+      "id": 31191,
+      "name": "Malevolence",
+      "spellId": 500714,
+      "spellIds": [
+        500714
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_orgrimmarraid_d_03",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4042,
+        29265
+      ],
+      "desc": "Generates 10 InsanitySmash an enemy with eldritch force, dealing 40 + 10% AP + 52% SP Shadow damage and applying Black Blood to 5 nearby allies, healing them for 25 + 10% AP, repeating every 3 sec for 15 seconds.Usable while moving.Additional applications of Black Blood do not refresh the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500714,
+          "description": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Smash an enemy with eldritch force, dealing <span class=\"item-number\">40</span> + <span class=\"item-number\">10% AP</span> + <span class=\"item-number\">52% SP</span> Shadow damage and applying <span style=\"color: #ffffff; display: inline\">Black Blood</span> to <span class=\"item-number\">5</span> nearby allies, healing them for <span class=\"item-number\">25</span> + <span class=\"item-number\">10% AP</span>, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />Usable while moving.<br /><br />Additional applications of <span style=\"color: #ffffff; display: inline\">Black Blood</span> do not refresh the duration."
+        }
+      ]
+    },
+    {
+      "id": 31324,
+      "name": "Malevolent Power",
+      "spellId": 301183,
+      "spellIds": [
+        301183
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_artifactashbringershadow_d_03",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33935
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd melee ability you cast now causes your next Eldritch Mending to become instant cast and cost -20% less mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301183,
+          "description": "Every 3rd melee ability you cast now causes your next <span style=\"color: #ffffff; display: inline\">Eldritch Mending</span> to become instant cast and cost <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> less mana."
+        }
+      ]
+    },
+    {
+      "id": 31356,
+      "name": "Occultism",
+      "spellId": 300305,
+      "spellIds": [
+        300305
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_book_b_03",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33945
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Wrath of the Black Empire by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300305,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33886,
+      "name": "Horrific Revelations",
+      "spellId": 524877,
+      "spellIds": [
+        524877
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_triumvirate_darknaaru",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33926
+      ],
+      "requiredIds": [],
+      "desc": "Every 1 sec while Hand of Yogg-Saron is active, you now trigger a Horrific Revelation on the target and generate 5 Insanity.Horrific RevelationHeals a friendly target for 144 + 67.85% SP, scaling with Insanity, and increases their critical strike chance by 1%, stacking 15 times, for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524877,
+          "description": "Every <span class=\"item-number\">1</span> sec while <span style=\"color: #ffffff; display: inline\">Hand of Yogg-Saron</span> is active, you now trigger a <span style=\"color: #FFFFFF; display: inline\">Horrific Revelation</span> on the target and generate <span class=\"item-number\">5</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_triumvirate_darknaaru\" /><span class=\"name\">Horrific Revelation</span></div><span class=\"desc\">Heals a friendly target for <span class=\"item-number\">144</span> + <span class=\"item-number\">67.85% SP</span>, scaling with <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, and increases their critical strike chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">15</span> times, for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 33889,
+      "name": "God Blade",
+      "spellId": 680377,
+      "spellIds": [
+        680377
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_60",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10983,
+        30845
+      ],
+      "requiredIds": [],
+      "desc": "Your Rift now guarantees your next Hammer of Twilight to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680377,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Rift</span> now guarantees your next <span style=\"color: #ffffff; display: inline\">Hammer of Twilight</span> to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 33893,
+      "name": "Entropic Retaliation",
+      "spellId": 802043,
+      "spellIds": [
+        802043
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowbarrier_Border",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7614
+      ],
+      "requiredIds": [],
+      "desc": "Blocking an attack now increases your critical strike chance by 2% for 6 seconds, stacking up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802043,
+          "description": "Blocking an attack now increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking up to <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 33894,
+      "name": "Hand of N'Zoth",
+      "spellId": 704869,
+      "spellIds": [
+        704869
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31189
+      ],
+      "requiredIds": [],
+      "desc": "Your Hammer of Twilight, Entropic Slam, and Gaze of C'Thun now refreshes a charge of Blade of the Empire.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704869,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Hammer of Twilight</span>, <span style=\"color: #ffffff; display: inline\">Entropic Slam</span>, and <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Blade of the Empire</span>."
+        }
+      ]
+    },
+    {
+      "id": 33896,
+      "name": "Bulwark of Shadow",
+      "spellId": 301182,
+      "spellIds": [
+        301182
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_draenorhonor_c_02",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29273,
+        30520
+      ],
+      "requiredIds": [],
+      "desc": "While above 80 Insanity, your Void Shield has 30% increased value.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301182,
+          "description": "While above <span class=\"item-number\">80</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, your <span style=\"color: #FFFFFF; display: inline\">Void Shield</span> has <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased value."
+        }
+      ]
+    },
+    {
+      "id": 33926,
+      "name": "Hand of Yogg-Saron",
+      "spellId": 704476,
+      "spellIds": [
+        704476
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Shadowfiend",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4868,
+        6310,
+        12453,
+        33928
+      ],
+      "requiredIds": [],
+      "desc": "Tether yourself to an ally for 15 seconds, increasing all damage they deal and reducing all damage they take by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704476,
+          "description": "Tether yourself to an ally for <span class=\"item-number\">15</span> seconds, increasing all damage they deal and reducing all damage they take by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33930,
+      "name": "Prophetic Compulsion",
+      "spellId": 300264,
+      "spellIds": [
+        300264
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_leader_prophet_velen",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33966
+      ],
+      "requiredIds": [],
+      "desc": "While Black Blood is active on an ally, healing done to them by your Gaze of C'Thun has a 15% increased chance to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300264,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Black Blood</span> is active on an ally, healing done to them by your <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> increased chance to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 33931,
+      "name": "Saronite Mind",
+      "spellId": 806266,
+      "spellIds": [
+        806266,
+        807879
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_priest_psychiclink",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29267
+      ],
+      "requiredIds": [],
+      "desc": "Your Eldritch Eye now has 1 additional charge.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806266,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Eldritch Eye</span> now has <span class=\"item-number\">1</span> additional charge."
+        },
+        {
+          "rank": 2,
+          "spellId": 807879,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Eldritch Eye</span> now has <span class=\"item-number\">1</span> additional charge."
+        }
+      ]
+    },
+    {
+      "id": 33935,
+      "name": "Blade of Yogg-Saron",
+      "spellId": 524887,
+      "spellIds": [
+        524887,
+        525078
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_52",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31191
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Blade of the Empire now heals the lowest health ally for 35% of the damage dealt plus 198 + 20% healing + 5% AP.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524887,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Blade of the Empire</span> now heals the lowest health ally for <span class=\"item-number\">35</span><span class=\"item-number\">%</span> of the damage dealt plus <span class=\"item-number\">198</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">5% AP</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 525078,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Blade of the Empire</span> now heals the lowest health ally for <span class=\"item-number\">70</span><span class=\"item-number\">%</span> of the damage dealt plus <span class=\"item-number\">198</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">5% AP</span>."
+        }
+      ]
+    },
+    {
+      "id": 33936,
+      "name": "Depths of Madness",
+      "spellId": 706911,
+      "spellIds": [
+        706911
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SoulHarvest2__Purple",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7058,
+        33945
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Gaze of C'Thun now has a 15% to chance to spawn a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706911,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> to chance to spawn a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing."
+        }
+      ]
+    },
+    {
+      "id": 33937,
+      "name": "Servant of C'Thun",
+      "spellId": 300296,
+      "spellIds": [
+        300296
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_GatherShadows",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6327
+      ],
+      "requiredIds": [],
+      "desc": "Casting Gaze of C'thun now always triggers your Presence of C'Thun while it is active.Presence of C&#39;Thun (Buff)Increases your haste by 20% for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300296,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> now always triggers your <span style=\"color: #ffffff; display: inline\">Presence of C'Thun</span> while it is active.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 cthunicon\" /><span class=\"name\">Presence of C&#39;Thun (Buff)</span></div><span class=\"desc\">Increases your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 33938,
+      "name": "Worrysome Idol",
+      "spellId": 706917,
+      "spellIds": [
+        706917
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(88)_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7056,
+        30671
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell haste by 4% and causes you to regenerate mana equal to 1% of your missing mana every 10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706917,
+          "description": "Increases your spell haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and causes you to regenerate mana equal to <span class=\"item-number\">1</span><span class=\"item-number\">%</span> of your missing mana every <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 33942,
+      "name": "Terror",
+      "spellId": 300304,
+      "spellIds": [
+        300304
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_howlofterror",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9935
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell damage bonus of Horrorbolt by 10% and Wrath of the Empire by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300304,
+          "description": "Increases the spell damage bonus of <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Wrath of the Empire</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33945,
+      "name": "Inner Turmoil",
+      "spellId": 706722,
+      "spellIds": [
+        706722
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowchains_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33938
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Wrath of the Black Empire by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706722,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33951,
+      "name": "Black Prayer",
+      "spellId": 805110,
+      "spellIds": [
+        805110
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\forbidding_void_dust",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7465,
+        31123,
+        33968
+      ],
+      "requiredIds": [],
+      "desc": "All direct damage dealt now has a 5% chance to unleash a Black Prayer on all enemies near the target for 9 seconds.Black PrayerDeals 136 + 12% shadow SP + 0.5% AP Shadow Damage every 3 sec and reduces attack speed by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805110,
+          "description": "All direct damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to unleash a <span style=\"color: #ffffff; display: inline\">Black Prayer</span> on all enemies near the target for <span class=\"item-number\">9</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 forbidding_void_dust\" /><span class=\"name\">Black Prayer</span></div><span class=\"desc\">Deals <span class=\"item-number\">136</span> + <span class=\"item-number\">12% shadow SP</span> + <span class=\"item-number\">0.5% AP</span> Shadow Damage every <span class=\"item-number\">3</span> sec and reduces attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 33952,
+      "name": "Void Hunger",
+      "spellId": 524879,
+      "spellIds": [
+        524879
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_surgeofdarkness",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5172,
+        7084,
+        33969
+      ],
+      "requiredIds": [],
+      "desc": "Satiate now also regenerates an additional 1% mana per tick and no longer increases damage taken during the channel.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524879,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Satiate</span> now also regenerates an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> mana per tick and no longer increases damage taken during the channel."
+        }
+      ]
+    },
+    {
+      "id": 33953,
+      "name": "Abyssal Destruction",
+      "spellId": 300308,
+      "spellIds": [
+        300308
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_shadow_mend",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29478,
+        31356,
+        33957
+      ],
+      "requiredIds": [],
+      "desc": "Periodic or channeled damage dealt now reduces the cooldown of your Obliteration Beam by -1 sec and grants 1 stack of Abyssal Destruction.Abyssal DestructionIncreases the damage dealt of your next Obliteration Beam by 5%, stacking 10 times, for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300308,
+          "description": "Periodic or channeled damage dealt now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-1</span> sec and grants <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Abyssal Destruction</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_priest_shadow_mend\" /><span class=\"name\">Abyssal Destruction</span></div><span class=\"desc\">Increases the damage dealt of your next <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times, for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 33957,
+      "name": "Misery",
+      "spellId": 300298,
+      "spellIds": [
+        300298
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_lordstormsong",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1375
+      ],
+      "requiredIds": [],
+      "desc": "Casting Gaze of C'Thun now reduces the cooldown of Psychic Suppression and Grasp of Zek'voz by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300298,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Gaze of C'Thun</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Psychic Suppression</span> and <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 33959,
+      "name": "Dark Whispers",
+      "spellId": 560977,
+      "spellIds": [
+        560977
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ShadowsRising_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29477,
+        29478
+      ],
+      "requiredIds": [],
+      "desc": "Casting Horrorbolt now grants Inspired Malice for 12 seconds.Inspired MaliceYour next Gaze of C'thun, Darkwither or Wrath of the Black Empire will be empowered.Gaze of C'thun: Critical strike chance increased by 20%.Darkwither: Shadow damage dealt increased by 5% and damage of Darkwither by an additional 15% for 10 seconds.Wrath of the Black Empire: Deals 25% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560977,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span> now grants <span style=\"color: #FFFFFF; display: inline\">Inspired Malice</span> for <span class=\"item-number\">12</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_shadowsrising_border\" /><span class=\"name\">Inspired Malice</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> or <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> will be empowered.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun:</span> Critical strike chance increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Darkwither:</span> Shadow damage dealt increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and damage of <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> by an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire:</span> Deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 33965,
+      "name": "Lost in the Void",
+      "spellId": 704881,
+      "spellIds": [
+        704881
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_arcanemask_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7940,
+        33951
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Embrace the Void by 4 sec and it now heals you for an additional 50% of the damage taken while active and its cooldown is reduced by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704881,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Embrace the Void</span> by <span class=\"item-number\">4</span> sec and it now heals you for an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage taken while active and its cooldown is reduced by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 33966,
+      "name": "Forbidden Ritual",
+      "spellId": 800105,
+      "spellIds": [
+        800105
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_nullstone_shadow",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6666
+      ],
+      "requiredIds": [],
+      "desc": "Chant a forbidden ritual that places a shield on all nearby party and raid members that absorbs 225 + 50% healing damage for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800105,
+          "description": "Chant a forbidden ritual that places a shield on all nearby party and raid members that absorbs <span class=\"item-number\">225</span> + <span class=\"item-number\">50% healing</span> damage for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 33967,
+      "name": "Improved Sermon of Dread",
+      "spellId": 706177,
+      "spellIds": [
+        706177
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SoulLeech_3",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6277
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Sermon of Dread by 40%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706177,
+          "description": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Sermon of Dread</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33969,
+      "name": "Embodied Presences",
+      "spellId": 803283,
+      "spellIds": [
+        803283
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warlock_houroftwilight",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6382,
+        9953
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger your Presences by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803283,
+          "description": "Increases the chance to trigger your <span style=\"color: #FFFFFF; display: inline\">Presences</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 33976,
+      "name": "Shadow Strikes",
+      "spellId": 707640,
+      "spellIds": [
+        707640
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_void_conquer_Border",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4810
+      ],
+      "requiredIds": [],
+      "desc": "Blade of the Empire now has a 30% chance to cause your next auto attack to hit twice.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707640,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Blade of the Empire</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to cause your next auto attack to hit twice."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:64:783231",
+      "name": "Who Needs Sanity? / Netherborne",
+      "spellId": 681106,
+      "spellIds": [
+        681106
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_netherstorm_01",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7609,
+        30511
+      ],
+      "requiredIds": [],
+      "desc": "Each stack of Insanity increases the critical damage of your Netherstrike by 1%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681106,
+          "description": "Each stack of <span style=\"color: #cfa6ff; display: inline\">Insanity</span> increases the critical damage of your <span style=\"color: #ffffff; display: inline\">Netherstrike</span> by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:64:681102",
+      "name": "Glory to N'Zoth / Void Rage",
+      "spellId": 681326,
+      "spellIds": [
+        681326
+      ],
+      "tabId": 64,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\potent_void_effigy",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29272,
+        30515
+      ],
+      "requiredIds": [],
+      "desc": "While Shadow of the Void is active, you now take -15% reduced damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681326,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Shadow of the Void</span> is active, you now take <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> reduced damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:87:525049",
+      "name": "Eldritch Screams / Stare Into The Abyss",
+      "spellId": 525049,
+      "spellIds": [
+        525049
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\impotent_void_effigy",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29470
+      ],
+      "requiredIds": [],
+      "desc": "Your Corrupt Mind now also applies Mind Rot to nearby enemies.Mind Rot (Trigger)Increases the chance for allies to hit with all spells against the afflicted enemy by 3% for 10 seconds.If this effect is dispelled, your critical strike chance is increased by 30% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 525049,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span> now also applies <span style=\"color: #ffffff; display: inline\">Mind Rot</span> to nearby enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _virus_purple\" /><span class=\"name\">Mind Rot (Trigger)</span></div><span class=\"desc\">Increases the chance for allies to hit with all spells against the afflicted enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />If this effect is dispelled, your critical strike chance is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:25:87:215678",
+      "name": "Rapid Incantations / Mind Leak",
+      "spellId": 301181,
+      "spellIds": [
+        301181
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_shadow_spell_08_nobg_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6272,
+        6280
+      ],
+      "requiredIds": [],
+      "desc": "While above 60 Insanity, you gain 5% increased haste.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301181,
+          "description": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, you gain <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased haste."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:87:707747",
+      "name": "Dismay / Disdain",
+      "spellId": 704885,
+      "spellIds": [
+        704885
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_assassinskill07_Border",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6280
+      ],
+      "requiredIds": [],
+      "desc": "Increases the movement speed slowed by Grasp of Zek'voz by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704885,
+          "description": "Increases the movement speed slowed by <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:87:302015",
+      "name": "Eyes of Eternity / Eldritch Command",
+      "spellId": 706188,
+      "spellIds": [
+        706188
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_eyes_01",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6276,
+        33952
+      ],
+      "requiredIds": [],
+      "desc": "Healing an ally with Gaze of C'Thun now additionally reveals nearby stealthed enemies for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706188,
+          "description": "Healing an ally with <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now additionally reveals nearby stealthed enemies for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:87:804633",
+      "name": "Void-Enchanted Armor / Ungodly Blessing",
+      "spellId": 804633,
+      "spellIds": [
+        804633
+      ],
+      "tabId": 87,
+      "classId": 25,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\pure_void_metal",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6276,
+        33967
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to resist dispel effects by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804633,
+          "description": "Increases your chance to resist dispel effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:65:301317",
+      "name": "Call of N'Zoth / Call of C'Thun",
+      "spellId": 300306,
+      "spellIds": [
+        300306
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_1h_nzothraid_d_01",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6327,
+        6559
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Darkwither by 9 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300306,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> by <span class=\"item-number\">9</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:65:704527",
+      "name": "Unrelenting Void / Mind Rot",
+      "spellId": 704527,
+      "spellIds": [
+        704527
+      ],
+      "tabId": 65,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_bossgorefiend_touchofdoom",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6557,
+        29471
+      ],
+      "requiredIds": [],
+      "desc": "Periodic or channeled damage now increases the damage the enemy takes from you by 2% for 10 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704527,
+          "description": "Periodic or channeled damage now increases the damage the enemy takes from you by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:88:97411",
+      "name": "Y'Shaarj's Enforcer / Bouncing Thoughts",
+      "spellId": 803236,
+      "spellIds": [
+        803236
+      ],
+      "tabId": 88,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_orgrimmarraid_d_01",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7620
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by your Twilight Shieldtoss by 100% but it to no longer bounces.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803236,
+          "description": "Increases the damage dealt by your <span style=\"color: #FFFFFF; display: inline\">Twilight Shieldtoss</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> but it to no longer bounces."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:66:51121",
+      "name": "Dark Protection / Lead the Covenant",
+      "spellId": 704897,
+      "spellIds": [
+        704897
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SealOfKings",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7894
+      ],
+      "requiredIds": [],
+      "desc": "Allies affected by Abyssal Covenant now also take 20% increased healing from you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704897,
+          "description": "Allies affected by <span style=\"color: #ffffff; display: inline\">Abyssal Covenant</span> now also take <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased healing from you."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:66:707788",
+      "name": "Protection From Light / Dark Rites",
+      "spellId": 704434,
+      "spellIds": [
+        704434
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_twilightimmolation",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33931
+      ],
+      "requiredIds": [],
+      "desc": "Reduces all damage taken by party and raid members by -3%.In addition, your Holy damage taken is reduced by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704434,
+          "description": "Reduces all damage taken by party and raid members by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.<br /><br />In addition, your Holy damage taken is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:66:931112",
+      "name": "Forbidden Strength / Forbidden Resilience",
+      "spellId": 301258,
+      "spellIds": [
+        301258
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_void_stab_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        33930
+      ],
+      "requiredIds": [],
+      "desc": "While Herald of the Depths is active, the critical strike chance of Blade of the Empire is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301258,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Herald of the Depths</span> is active, the critical strike chance of <span style=\"color: #ffffff; display: inline\">Blade of the Empire</span> is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:66:800402",
+      "name": "Saronite Cube / Devour Curse",
+      "spellId": 807307,
+      "spellIds": [
+        807307
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_cat_trinket05",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4934,
+        30936,
+        33934
+      ],
+      "requiredIds": [],
+      "desc": "Melee ability damage now reduces the duration of Wracked Mind by -1 sec on all allies within 30 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807307,
+          "description": "Melee ability damage now reduces the duration of <span style=\"color: #ffffff; display: inline\">Wracked Mind</span> by <span class=\"item-number\">-1</span> sec on all allies within <span class=\"item-number\">30</span> yds."
+        }
+      ]
+    },
+    {
+      "id": "choice:25:66:893211",
+      "name": "Corrupt Fate / Tales of Woe",
+      "spellId": 520810,
+      "spellIds": [
+        520810
+      ],
+      "tabId": 66,
+      "classId": 25,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_deadshadow_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29344
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Dark Veil by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520810,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Dark Veil</span> by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    }
+  ]
+}

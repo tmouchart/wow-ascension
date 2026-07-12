@@ -19,16 +19,16 @@ A `!WA:2!` string is NOT JSON. It is: a Lua table → **LibSerialize** (binary) 
 → **LibDeflate EncodeForPrint** (custom base64) → prefixed with `!WA:2!`. We reverse-engineered the full
 format and built a dependency-free Node codec that round-trips losslessly.
 
-### `weakauras/wa-codec.js` (the heart of the project)
+### `weakauras/lib/wa-codec.js` (the heart of the project)
 
 ```bash
-cd weakauras
+cd weakauras/lib
 node wa-codec.js decode <file>       # !WA:2! string  -> <basename>.decoded.json (human-readable)
 node wa-codec.js encode <json>       # decoded JSON    -> <basename>.import.txt   (importable string)
 node wa-codec.js roundtrip <file>    # decode->encode->decode deep-equality check
 ```
 
-Also usable as a module: `const { decodeWA, encodeWA } = require('./wa-codec.js')`.
+Also usable as a module: `const { decodeWA, encodeWA } = require('./lib/wa-codec.js')`.
 
 Format specifics (all handled by the codec — documented here so we never have to rediscover them):
 - **EncodeForPrint charset** (LibDeflate): `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789()`
@@ -49,9 +49,9 @@ Format specifics (all handled by the codec — documented here so we never have 
 Real, known-good retail WeakAuras packages we decode to copy exact field shapes (region types, triggers,
 conditions). `tocversion 110200` = WoW 11.2 / WeakAuras 5.20.2 — the format our generated strings target.
 The user's Ascension client accepts this format (validated by import).
-- `weakauras/luxthos-elemental.json` (+ `.decoded.json`) — Elemental Shaman.
-- `weakauras/luxthos/luxthos-{druid,paladin,rogue}.wa` (+ `.decoded.json`).
-- `weakauras/luxthos/ANALYSIS.md` — **read this** for segmented-resource + cooldown patterns
+- `weakauras/reference/luxthos-elemental.json` (+ `.decoded.json`) — Elemental Shaman.
+- `weakauras/reference/luxthos/luxthos-{druid,paladin,rogue}.wa` (+ `.decoded.json`).
+- `weakauras/reference/luxthos/ANALYSIS.md` — **read this** for segmented-resource + cooldown patterns
   (Rogue combo points, Paladin holy power, etc.).
 
 We do NOT reuse Luxthos Lua that references their addon namespace (`LWA`) — those functions (e.g. `customGrow`)
@@ -60,35 +60,80 @@ are not self-contained. We write our own equivalents.
 ## How a package is built
 
 We **clone known-good regions** from a decoded Luxthos file (so every internal field WeakAuras 5.x requires is
-present and correctly shaped), then override only what matters. Templates live in `weakauras/_template-*.json`:
-- `_template-bar.json` — an `aurabar` region (resource bars, Felfury boxes).
-- `_template-icon.json` — an `icon` region with a cooldown trigger + `subglow` at subRegion index 3.
-- `_template-group.json` — a static `group` (the root container; `controlledChildren` lists child ids).
-- `_template-dyngroup.json` — a `dynamicgroup` (auto-arranging rows).
+present and correctly shaped), then override only what matters. Templates live in `weakauras/lib/templates/`:
+- `bar.json` — an `aurabar` region (resource bars, Felfury boxes).
+- `icon.json` — an `icon` region with a cooldown trigger + `subglow` at subRegion index 3.
+- `group.json` — a static `group` (the root container; `controlledChildren` lists child ids).
+- `dyngroup.json` — a `dynamicgroup` (auto-arranging rows).
 
-A build script (see `weakauras/build-v*.js`) assembles the top-level export:
-`{ d: <root group>, c: [<all regions, flat>], m: "d", s: "5.20.2", v: 2000 }`, then `encodeWA` it.
-Every build re-decodes its own output and asserts deep-equality before writing the `.import.txt`.
+The shared engine `weakauras/lib/builders.js` exposes the region/trigger builders and `buildPackage()`,
+which assembles the top-level export `{ d: <root group>, c: [<all regions, flat>], m: "d", s: "5.20.2",
+v: 2000 }`, `encodeWA`s it, asserts the self round-trip, then writes `dist/<class>.import.txt` (rotating the
+prior string to `dist/<class>.prev.import.txt`). uids are **deterministic from each region's stable `id`**
+(`uidFor()`) so re-imports say "Update" instead of creating a new aura set — never bump uids per version.
 
-### Key region/trigger patterns (validated in-game on Ascension)
+### Element taxonomy — the reusable vocabulary (validated in-game on Ascension)
 
-- **Energy / primary resource bar** — `aurabar`, trigger `type:"unit"`, `event:"Power"`, `use_powertype:true`,
-  `powertype:3` (Energy; 0=mana, 4=combo, 9=holy power). `progressSource:[-1,""]` (auto).
-- **Point/stack resource (Felfury)** — one `aurabar` box per point. Trigger 1 = `aura2` on the buff name
-  (`auranames:["Felfury"]`, `matchesShowOn:"showAlways"`), trigger 2 = trivial custom stateupdate that keeps
-  the bar 100% full (`value=1,total=1` — no aura API, so it works on any client). Default `barColor` transparent;
-  a **condition** `{trigger:1, variable:"stacks", op:">=", value:"N"}` sets `barColor` to the fill color.
-  Dark `backgroundColor` gives the empty-box look. (We avoid reading auras in custom Lua — `C_UnitAuras`
-  does not exist on this client; the `aura2` trigger is the portable way to detect buffs/stacks.)
-- **Cooldown icon** — `icon`, `auto:true`, trigger `type:"spell"`, `event:"Cooldown Progress (Spell)"`,
-  `genericShowOn:"showAlways"`, `spellName:<id or "Name">`, `use_exact_spellName:true` for ids / `false` for
-  names. Condition `{trigger:1, variable:"onCooldown", value:1} -> desaturate:true` greys it while on CD.
-- **Glow on a proc/buff** — add a 2nd `aura2` trigger on the buff name and a condition
-  `{trigger:2, variable:"show", value:1} -> sub.3.glow:true` (+ `glowType`, `glowColor`).
-- **Charges** — add a `subtext` subregion with `text_text:"%s"` (shows the cooldown trigger's charge count).
-- **Auto-arranging icon row** — a `dynamicgroup` with `grow:"CUSTOM"` and our own `customGrow` Lua
-  (centered, wraps to a new row every N icons). Icons are children (`parent:<dyngroup id>`), the dyngroup is a
-  child of the root group.
+Every class package is assembled from these element types. Reuse the SAME element (builder + recipe +
+glow/color rule) across all classes so packages stay consistent — only the data (spellIds, buff names,
+colors, geometry) changes. Builders live in `lib/builders.js`; per-class data + wiring in `classes/<name>/build.js`.
+
+**Detection is always via the `aura2` trigger** (portable — `C_UnitAuras` does not exist on this client, and
+custom Lua can't read auras). Key condition variables: `stacks` (point count), `buffed` (0/1 presence, use with
+`matchesShowOn:"showAlways"`), `expirationTime` (seconds remaining, op `<=`), `show` (1 when a `showOnActive`
+aura is up), `percenthealth` (unit HP %), `onCooldown` (0/1). Combine checks with an AND wrapper:
+`{ checks:[...], trigger:-2, variable:"AND" }`.
+
+| Element | Region / builder | Recipe |
+|---|---|---|
+| **Resource (primary)** | `aurabar` · `baseBar`+`powerTrigger(pt)` | Gradient fill, text `%p`. `pt`: 0=Mana, 3=Energy, 4=Combo, 9=HolyPower. `progressSource:[-1,""]`. |
+| **HP** | `aurabar` · `baseBar`+`healthTrigger("player")` | Red gradient, text `%p`. |
+| **Resource à tracker** (point/stack, self) | N× `aurabar` · `segmentBar` | One box per point. `aura2` self-buff (`unit:"player"`, HELPFUL, `showAlways`) → `stacks`; trigger 2 = always-full stateupdate. Empty (transparent bar + dark bg); condition `stacks>=i` paints the gradient fill. |
+| **Debuff à tracker** (point/stack, target) | N× `aurabar` · `segmentBar` | Same as above but `unit:"target"`, HARMFUL, `unitExists:false` (drops to 0 when the debuff is consumed). |
+| **Charges à tracker** (spell charges) | N× `aurabar` · `chargeSegmentBar` | One box per charge of a *charged spell* (e.g. Runeblade 0..3). Trigger 1 = `cooldownTrigger`; condition `charges>=i` paints the fill. Pair with a **Charges** subtext on the spell's icon. |
+| **Buff à tracker** (maintenance uptime) | `aurabar` · `baseBar`+`buffTrigger(name,"showAlways")` | Duration countdown (`progressSource:[-1,""]`). Color by `expirationTime` (green→yellow `<=8`→red `<=4`). DOWN = condition `buffed==0` → deep red + pulsing red `subglow` + label subtext swap. |
+| **CD Offensif** | `icon` · `iconBase`+`cooldownTrigger` | `genericShowOn:"showAlways"`, `desaturate` while `onCooldown`. Optional execute-window glow (e.g. `targetHealthTrigger` + `percenthealth<35` → gold). |
+| **CD Défensif** | `icon` · `iconBase`+`cooldownTrigger` | Same base; when the self-buff it grants is active (`buffTrigger` trigger 2, `show==1`) → **Pixel glow, class color**. |
+| **Proc** (use-this-now) | `icon` on its own centered row above the CDs | Hidden by default (`alpha:0`); art from `cooldownTrigger` fallback `displayIcon` (path). Condition `buffed==1` on the proc buff → `alpha:1` + **Action Button Glow (`buttonOverlay`), WHITE**. |
+| **CD secondaires** | `icon` (smaller, ~26px) in a 2nd `dynamicgroup` below HP | Defensives / utility. Same icon recipe as CDs. |
+| **Charges** | `subtext` `text_text:"%s"` appended to a CD icon | Shows the cooldown trigger's charge count. |
+| **Row container** | `dynamicgroup` · `makeDynGroup` | `grow:"CUSTOM"` + our `customGrow` Lua (centered, wraps). Pass `maxWidth` (= bar width) so it derives how many icons fit per row and wraps beyond that; or pass an explicit `perRow`. Icons are its children; the dyngroup is a child of the root group. |
+| **Root** | `group` · `makeGroup` | Static container; `controlledChildren` lists the top-level element ids in display order. |
+
+### Glow taxonomy — keep it consistent across classes
+
+Glow = a `subglow` sub-region toggled by a condition (`glowChanges(color, glowType)` for icons at `sub.3`; add
+`subglow()` + hand-write `sub.N.glow*` for bars). **Glow style = urgency, color = meaning:**
+
+- **Action Button Glow** (`glowType:"buttonOverlay"`) = the **strong "act NOW" cue** (the "glow hard" François
+  wants). Use it for: a proc is up, a key spell is *ready*, or a resource is capped/spent and must be dumped.
+  Color it: **white** by default (proc up / spell ready), **orange or gold** for a specific dump/optimal cue
+  (e.g. Primordial Blast lights orange when Runeblade charges are spent).
+- **Pixel glow** = a **soft/passive state** (not an urgent action): **class color** = a defensive self-buff is
+  active ("is my buff up", e.g. Hateforged Barrier); **red (pulsing)** = a maintenance buff fell off (Inner Demon).
+
+> Consistency debt: felsworn's *situational cues* (Tyrant's Gaze `<35%`, Felfury capped@6) still use **Pixel gold**,
+> while runemaster's use the stronger **Action Button Glow**. Unify to Action Button Glow when revisiting felsworn.
+
+### Icon source gotcha
+
+To show a specific spell's art on a proc/manual icon: use `iconSource:-1` (auto) + a `cooldownTrigger` whose
+`displayIcon` is the fallback **texture path** (`"Interface\\Icons\\Spell_..."`). Do NOT use `iconSource:0`
+(manual) with a path — manual mode needs a **numeric fileID**, and a path renders as a `?`.
+
+### Standard layout & sizing (compact)
+
+Top → bottom: `Proc row` · `primary CD row` · `Buff à tracker bar(s)` · `primary Resource bar` ·
+`point/charge Resource boxes` · `HP bar` · `secondary CD row`. Sizing convention (keep it consistent —
+compact, everything within one width):
+- **Width = 250** for everything: bars are `BAR_W = 250`; segment/point boxes span the full `BAR_W`
+  (derive box width from it, e.g. `BOX_W = (BAR_W - (N-1)*gap) / N`); each `dynamicgroup` gets
+  `maxWidth: BAR_W` so a CD row never exceeds it (it wraps instead).
+- **Bar heights ~12–14**; **icons 26 primary / 24 secondary** (`~30` for a standalone proc icon).
+- **Vertical gaps ~3px** between adjacent elements (compute yOffsets from heights + a small gap).
+
+See `classes/felsworn/build.js` (Energy / Felfury stacks / Inner Demon uptime) and
+`classes/runemaster/build.js` (Mana / Runeblade *charge* segments) for the two worked examples.
 
 ### Colors / class identity
 
@@ -109,16 +154,51 @@ NOT in the DOM/`__NEXT_DATA__`; it lives in React fiber props. Using the browser
    Cripple, Consume Magic) are NOT scrapable this way; get their spellIds from the user (in-game tooltip/macro).
    Some may not resolve by name via `GetSpellInfo` — track those by name in the trigger and confirm in-game.
 
-Current Felsworn/Tyrant data: `weakauras/felsworn-tyrant-abilities.md` (67 abilities → castable spellIds).
+Current Felsworn/Tyrant data: `weakauras/classes/felsworn/abilities.md` (67 abilities → castable spellIds).
 
-## Current status — Felsworn Tyrant
+**ALL 21 classes are already scraped** → `weakauras/tools/coa-classes/<slug>/` (one folder per class), each with
+`<slug>-nodes.json` (full node data) + `<slug>-abilities.md` (readable, grouped by tree/spec), plus
+`tools/coa-classes/INDEX.md`. Master dump: `weakauras/tools/coa-all-classes.json` (~2.6 MB). ~3012 unique castable
+spellIds. Re-generate the folders from a dump with `node weakauras/tools/coa-process.js <dump.json>`.
+Key fact: **tabId 87 = the class tree** for every class (nodes cost Ability Essence, `aeCost>0`); each spec
+has its own tabId (nodes cost Talent Essence, `teCost>0`). Baseline/grimoire spells are NOT in the trees.
 
-Latest = **v4** (`weakauras/felsworn-v4.import.txt`, built by `build-v4.js`). Working in-game:
-Energy bar + 6 green Felfury boxes + 8-icon cooldown dynamicgroup row (30×30, centered, wrapping), with
-grey-on-cooldown, Chaos Rush charges, and green glow for Fel Fireball (on "Carve" buff) & Hateforged Barrier.
+Scrape reliability lesson: the CoA builder tab gets **background-throttled** by Chrome when hidden, which
+stalls a `setTimeout`-based in-page loop. Use a **`MessageChannel`-based `sleep`** (not throttled) for the
+scrape harness, let it run to completion, and DON'T poll it mid-run (polling starves the busy message loop
+and looks like a freeze). Have it auto-download the result (Blob → `a.click()`) — retrieving ~MBs of data
+through the truncated JS-eval channel isn't feasible. Harness lives inline in the session; see
+`wa-scrape-class` skill.
 
-Known open items: confirm the v4 `customGrow` renders correctly in-game (fallback = native `grow:"GRID"`);
-optional baseline abilities pending their spellIds; other 20 classes not started.
+## Project layout (`weakauras/`)
+
+```
+lib/            shared engine — wa-codec.js, builders.js, templates/{bar,icon,group,dyngroup}.json
+classes/<name>/ per-class package — build.js (data + layout) + abilities.md
+build.js        CLI: `node build.js [class...|all]` -> writes dist/
+dist/           generated output — <class>.import.txt (current) + <class>.prev.import.txt + <class>.decoded.json
+reference/      known-good decoded packages (luxthos/, luxthos-elemental*) + LibDeflate.lua
+tools/          coa-process.js + the scraped coa-classes/ + coa-all-classes.json dump
+```
+
+Add a class = new `classes/<name>/build.js` that `require('../../lib/builders.js')`, declares its colors/
+geometry/resource model/cooldown lists, and calls `B.buildPackage(...)`. No per-version files — the CLI
+rotates the previous string into `<class>.prev.import.txt` on each build.
+
+## Current status
+
+Two classes wired to the shared engine, both **compact (250px width, ~3px gaps)**:
+- **Felsworn — Tyrant** (`node build.js felsworn`): Fel Fireball proc row (shows only while "Carve" is up,
+  white Action-Button glow) · 8-icon primary CD row · Inner Demon uptime bar · Energy(gold) · 6 Felfury
+  stack boxes · Health(red) · 3-icon secondary row. Grey-on-cooldown, Chaos Rush charges; Felfury glows
+  gold when capped@6 AND Inner Demon missing; defensive buffs glow Pixel green.
+- **Runemaster — Runic** (`node build.js runemaster`): primary CD row · Runeblade 3-segment **charge** bar
+  (0..3) · Mana(blue) · Health(red) · secondary row. Runic Brand glows white (Action Button) when ready,
+  Primordial Blast glows orange when Runeblade charges are spent, Power Overwhelming is a proc-only icon.
+
+Known open items: some baseline spellIds tracked by name (Fel Fireball, Fel Bargain, Arcane Torrent,
+Runeblade, Primordial Blast) — cooldown/charge tracking needs a resolvable spell; unify the situational-cue
+glow style (see Glow taxonomy); other 19 classes not started.
 
 ## Generator architecture (long-term direction)
 
@@ -140,16 +220,19 @@ Key files:
   game API → **NOT usable for Ascension custom classes**. We must maintain our own per-class registry.
 
 Plan: build a **per-class registry** in the `{spell, type, unit, flags}` shape (populated by `wa-scrape-class`
-+ user-provided baseline ids), and a generator that turns each registry entry into a cloned+overridden region
-(the patterns already proven in `build-v4.js`). Only after the single-class generator generalizes cleanly do
-we add the fly.io web app + preview/customization frontend.
++ user-provided baseline ids), and a generator that turns each registry entry into a cloned+overridden region.
+The `lib/builders.js` engine + the `classes/<name>/build.js` data files are the first step toward this — the
+cooldown lists in each class file are already close to that registry shape. Only after the generator
+generalizes cleanly do we add the fly.io web app + preview/customization frontend.
 
 ## Conventions
 
 - Node.js only (v24 present), zero npm dependencies. Windows shell = PowerShell; `node` works from `weakauras/`.
-- Never hand-edit `.import.txt`. Edit a `build-*.js` (or the decoded JSON) and re-encode.
-- Each new package version = a new `build-vN.js` so we can diff/rollback; keep prior versions.
-- Always assert the self round-trip before handing a string to the user.
+- Never hand-edit `.import.txt`. Edit the class `build.js` (or the decoded JSON) and re-encode via `node build.js <class>`.
+- No per-version build files. One current output + one `.prev` per class (the CLI rotates it). Shared logic goes in `lib/`.
+- Keep uids stable (derived from ids via `uidFor`) so imports Update in place — never renumber per version.
+- Always assert the self round-trip before handing a string to the user (`buildPackage` does this and refuses to write on failure).
+- **ASCII only in generated text** (labels, `text_text`, ids). The codec does not round-trip multi-byte UTF-8 (e.g. `⚠`, `—`) — round-trip fails and `buildPackage` refuses to write. Use `!`, `-`, etc.
 - Reusable procedures are captured as skills in `.claude/skills/` — see below.
 
 ## Skills (in `.claude/skills/`)

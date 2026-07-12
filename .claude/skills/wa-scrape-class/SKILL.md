@@ -23,7 +23,9 @@ tools (load them via ToolSearch first; call `tabs_context_mcp` before anything e
    `window.__nodes`, build a compact string, and page it with `.slice(a,b)` across several calls.
    Compact line: `` `${spellId}|${name}|${isPassive?'P':'A'}|ae${aeCost}te${teCost}|mp${maxPoints}` ``.
    Pull descriptions separately, trimmed (`desc.slice(0,~150)`), only for the abilities you need to classify.
-4. Save the result to `weakauras/<class>-<spec>-abilities.md` (a table: spellId | name | rank, per tree).
+4. Save the result to `weakauras/classes/<name>/abilities.md` (a table: spellId | name | rank, per tree).
+   All 21 classes are already bulk-scraped under `weakauras/tools/coa-classes/<slug>/` (regenerate with
+   `node weakauras/tools/coa-process.js <dump.json>`) — check there first before re-scraping.
 
 ## Important gotchas
 
@@ -41,4 +43,4 @@ tools (load them via ToolSearch first; call `tabs_context_mcp` before anything e
 
 Produce, per class/spec: the ability→spellId map, the resource model, and a shortlist of
 cooldown-worthy abilities (defensives, big CDs, procs/glows). Feed these into `wa-build-package`.
-Reference example: `weakauras/felsworn-tyrant-abilities.md`.
+Reference example: `weakauras/classes/felsworn/abilities.md`.

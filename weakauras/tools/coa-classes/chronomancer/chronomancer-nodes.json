@@ -1,0 +1,4375 @@
+{
+  "class": "Chronomancer",
+  "classId": "22",
+  "specs": [
+    "Infinite",
+    "Time",
+    "Artificer"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Infinite": 56,
+    "Time": 58,
+    "Artificer": 57
+  },
+  "nodes": [
+    {
+      "id": 1802,
+      "name": "Time Means Nothing",
+      "spellId": 572357,
+      "spellIds": [
+        572357
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animamaw_groundstate",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7201
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Chromatic Shard now increases the target's spell damage taken by 10% for 30 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572357,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> now increases the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 2125,
+      "name": "Erasion",
+      "spellId": 704489,
+      "spellIds": [
+        704489
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animamaw_wave",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6159,
+        31334
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Anomaly Spikes by 5% and their damage by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704489,
+          "description": "Increases the chance to trigger <span style=\"color: #FFFFFF; display: inline\">Anomaly Spikes</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and their damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 3997,
+      "name": "Timerend",
+      "spellId": 707430,
+      "spellIds": [
+        707430
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animamaw_beam",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4031,
+        30249
+      ],
+      "desc": "Transforms your Wand of Time into Timerend.TimerendRend the fabric of time, dealing 36 Chromatic Damage over 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707430,
+          "description": "Transforms your <span style=\"color: #ffffff; display: inline\">Wand of Time</span> into <span style=\"color: #ffffff; display: inline\">Timerend</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_animamaw_beam\" /><span class=\"name\">Timerend</span></div><span class=\"desc\">Rend the fabric of time, dealing <span class=\"item-number\">36</span> Chromatic Damage over <span class=\"item-number\">6</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 4316,
+      "name": "Aeon Rend",
+      "spellId": 583248,
+      "spellIds": [
+        583248
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animamaw_orb",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6158,
+        7920
+      ],
+      "requiredIds": [],
+      "desc": "Your Chromatic Shard now has a 25% chance to strike again and incur no cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 583248,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again and incur no cooldown."
+        }
+      ]
+    },
+    {
+      "id": 4520,
+      "name": "Resonance",
+      "spellId": 706079,
+      "spellIds": [
+        706079
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_6_2raid_trinket_4a",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12279,
+        30279,
+        30857
+      ],
+      "requiredIds": [],
+      "desc": "Casting Artificer's Wand or Crystal Cannon now has a 35% chance to reduce the cooldown of Hasten by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706079,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> or <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span> now has a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Hasten</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 5168,
+      "name": "Incarnation of Chaos",
+      "spellId": 570067,
+      "spellIds": [
+        570067
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_armor_voidelf_d_01",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1802,
+        31336
+      ],
+      "requiredIds": [],
+      "desc": "Transform into an Incarnate of Chaos, instantly resetting the cooldown of Chromatic Shard and causing your next cast to not incur a cooldown.In addition, your damage dealt is increased by 15% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570067,
+          "description": "Transform into an <span style=\"color: #FFFFFF; display: inline\">Incarnate of Chaos</span>, instantly resetting the cooldown of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and causing your next cast to not incur a cooldown.<br /><br />In addition, your damage dealt is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 5367,
+      "name": "Black Hole",
+      "spellId": 707557,
+      "spellIds": [
+        707557
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_MindTwisting",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5168,
+        31336
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Chromatic Shard, Melt Reality and Unmake by 15% against slowed enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707557,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span>, <span style=\"color: #ffffff; display: inline\">Melt Reality</span> and <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against slowed enemies."
+        }
+      ]
+    },
+    {
+      "id": 5486,
+      "name": "Chaotic Time",
+      "spellId": 583245,
+      "spellIds": [
+        583245
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_chest_dragonblue_infinite",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        2125,
+        4316
+      ],
+      "requiredIds": [],
+      "desc": "While Incarnation of Chaos is active, your Melt Reality deals 30% increased damage and replicates an additional 20% In addition, periodic damage dealt now has a 5% chance to reduce the cooldown of Incarnation of Chaos by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 583245,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is active, your <span style=\"color: #ffffff; display: inline\">Melt Reality</span> deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and replicates an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> <br /><br />In addition, periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 5861,
+      "name": "Infinite Keeper",
+      "spellId": 806312,
+      "spellIds": [
+        806312
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_armorscroll02",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4316
+      ],
+      "requiredIds": [],
+      "desc": "Using Unmake on an enemy affected by your Timerend now causes the enemy to erupt in a vortex of sand, dealing 81 Chromatic Damage every 1 sec to up to 8 enemies for 6 seconds in an 8 yd radius.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806312,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Unmake</span> on an enemy affected by your <span style=\"color: #ffffff; display: inline\">Timerend</span> now causes the enemy to erupt in a vortex of sand, dealing <span class=\"item-number\">81</span> Chromatic Damage every <span class=\"item-number\">1</span> sec to up to <span class=\"item-number\">8</span> enemies for <span class=\"item-number\">6</span> seconds in an <span class=\"item-number\">8</span> yd radius."
+        }
+      ]
+    },
+    {
+      "id": 6156,
+      "name": "Anomaly Spikes",
+      "spellId": 503825,
+      "spellIds": [
+        503825,
+        504886
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_ingot_titansteel_dark",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7200
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 8% chance to launch an Anomaly Spike at your target.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503825,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at your target.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>"
+        },
+        {
+          "rank": 2,
+          "spellId": 504886,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at your target.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6158,
+      "name": "Infinite Horizon",
+      "spellId": 560528,
+      "spellIds": [
+        560528
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_triumvirate_shadowguardetherealmelee",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6514,
+        7209
+      ],
+      "requiredIds": [],
+      "desc": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your Unmake and Timerend gain an additional 20% bonus spell scaling.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560528,
+          "description": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Unmake</span> and <span style=\"color: #FFFFFF; display: inline\">Timerend</span> gain an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> bonus spell scaling."
+        }
+      ]
+    },
+    {
+      "id": 6159,
+      "name": "Shifting Chaos",
+      "spellId": 706059,
+      "spellIds": [
+        706059
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_jewelcrafting_shadowspirit_02",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5367,
+        7159,
+        11170,
+        11176
+      ],
+      "requiredIds": [],
+      "desc": "Your Chromatic Shard and Anomaly Spikes now deal an additional 20% their damage dealt as Chromatic Damage all nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706059,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> their damage dealt as Chromatic Damage all nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 6162,
+      "name": "Rippling Power",
+      "spellId": 806300,
+      "spellIds": [
+        806300,
+        807893
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_bossmagistrix_timewarp1",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6228,
+        7917,
+        30269
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Spirit by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806300,
+          "description": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807893,
+          "description": "Increases your Spirit by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6164,
+      "name": "Distorted Time",
+      "spellId": 707553,
+      "spellIds": [
+        707553
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ShadowPower",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6522,
+        12184
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Timerend by -2 sec and increases the duration of Decomposition by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707553,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Timerend</span> by <span class=\"item-number\">-2</span> sec and increases the duration of <span style=\"color: #ffffff; display: inline\">Decomposition</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6170,
+      "name": "Archaeology",
+      "spellId": 560130,
+      "spellIds": [
+        560130
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology_dwarf_artifactfragment",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6576
+      ],
+      "requiredIds": [],
+      "desc": "Your Discovery now also generates 3% of your base mana and health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560130,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Discovery</span> now also generates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your base mana and health."
+        }
+      ]
+    },
+    {
+      "id": 6171,
+      "name": "Temporal Convergence",
+      "spellId": 807588,
+      "spellIds": [
+        807588
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_MindVision",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30265
+      ],
+      "requiredIds": [],
+      "desc": "Your Wand of Time now has a 40% chance to reset its own cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807588,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Wand of Time</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to reset its own cooldown."
+        }
+      ]
+    },
+    {
+      "id": 6173,
+      "name": "Borrowed Time",
+      "spellId": 680373,
+      "spellIds": [
+        680373
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_29",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6175
+      ],
+      "requiredIds": [],
+      "desc": "Taking Physical damage now heals you equal to 10% of the damage dealt. Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680373,
+          "description": "Taking Physical damage now heals you equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt. Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": 6174,
+      "name": "Paradox Cannon",
+      "spellId": 806203,
+      "spellIds": [
+        806203
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_06",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6171,
+        30844
+      ],
+      "requiredIds": [],
+      "desc": "Continuum SpellGenerate 1 Echo Fragment every 3 sec for 5 seconds, plus an additional 5 sec per Echo Fragment consumed.Can only have 1 Continuum spell active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806203,
+          "description": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Generate <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">5</span> seconds, plus an additional <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time."
+        }
+      ]
+    },
+    {
+      "id": 6175,
+      "name": "Unstable Chronoglass",
+      "spellId": 503836,
+      "spellIds": [
+        503836
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanesandwatch_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6170,
+        30250
+      ],
+      "requiredIds": [],
+      "desc": "Place an Unstable Chronoglass at target location for 30 seconds that will redirect the next 3 offensive enemy spell casts onto itself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503836,
+          "description": "Place an <span style=\"color: #FFFFFF; display: inline\">Unstable Chronoglass</span> at target location for <span class=\"item-number\">30</span> seconds that will redirect the next <span class=\"item-number\">3</span> offensive enemy spell casts onto itself."
+        }
+      ]
+    },
+    {
+      "id": 6178,
+      "name": "Splitting Time",
+      "spellId": 706130,
+      "spellIds": [
+        706130
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_arcanebarrage_nightborne",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1803,
+        6884
+      ],
+      "requiredIds": [],
+      "desc": "Your Crystal Cannon now strikes 2 additional nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706130,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Crystal Cannon</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 6182,
+      "name": "The Vast Infinite",
+      "spellId": 706083,
+      "spellIds": [
+        706083
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_chillofnight",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7826
+      ],
+      "requiredIds": [],
+      "desc": "All party and raid members become one, equally sharing 25% of all damage dealt to them for 10 seconds, up to a maximum of 100% of their total health.At the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706083,
+          "description": "All party and raid members become one, equally sharing <span class=\"item-number\">25%</span> of all damage dealt to them for <span class=\"item-number\">10</span> seconds, up to a maximum of <span class=\"item-number\">100%</span> of their total health.<br /><br />At the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies."
+        }
+      ]
+    },
+    {
+      "id": 6183,
+      "name": "Time Wizard",
+      "spellId": 706779,
+      "spellIds": [
+        706779,
+        707829
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Holy_FlashHeal",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19980
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of your Reverse Wound, Epoch, and Correct the Mistake by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706779,
+          "description": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Reverse Wound</span>, <span style=\"color: #FFFFFF; display: inline\">Epoch</span>, and <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707829,
+          "description": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Reverse Wound</span>, <span style=\"color: #FFFFFF; display: inline\">Epoch</span>, and <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6184,
+      "name": "Timeline Tether",
+      "spellId": 804505,
+      "spellIds": [
+        804505
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_EnslaveSpell_Holy",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29570
+      ],
+      "requiredIds": [],
+      "desc": "Your periodic damage and healing reduces the cooldown of your Fortify Timeline by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804505,
+          "description": "Your periodic damage and healing reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6187,
+      "name": "Time Beacon",
+      "spellId": 574310,
+      "spellIds": [
+        574310,
+        574362
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyWhirlpool_Border",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19980
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of effects applied by your Aeons by 4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574310,
+          "description": "Increases the duration of effects applied by your <span style=\"color: #FFFFFF; display: inline\">Aeons</span> by <span class=\"item-number\">4</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 574362,
+          "description": "Increases the duration of effects applied by your <span style=\"color: #FFFFFF; display: inline\">Aeons</span> by <span class=\"item-number\">8</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6190,
+      "name": "Keep Accelerating",
+      "spellId": 520042,
+      "spellIds": [
+        520042
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\paladin_icon_speedoflight",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19980
+      ],
+      "requiredIds": [],
+      "desc": "Your Accelerated Recovery now applies to an additional nearby target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520042,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> now applies to an additional nearby target."
+        }
+      ]
+    },
+    {
+      "id": 6192,
+      "name": "Epic Recovery",
+      "spellId": 706098,
+      "spellIds": [
+        706098
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_1h_bastionquest_b_01",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6184,
+        6652,
+        30905
+      ],
+      "requiredIds": [],
+      "desc": "When you cast Epoch you now also cast a Rank 1 Epoch on up to 5 allies affected by Accelerated Recovery.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706098,
+          "description": "When you cast <span style=\"color: #ffffff; display: inline\">Epoch</span> you now also cast a Rank <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Epoch</span> on up to <span class=\"item-number\">5</span> allies affected by <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span>."
+        }
+      ]
+    },
+    {
+      "id": 6194,
+      "name": "The Bieko Effect",
+      "spellId": 706099,
+      "spellIds": [
+        706099
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_60pvp_trinket3b",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9547,
+        30267
+      ],
+      "requiredIds": [],
+      "desc": "While Hasten is active the cooldowns of Dimensional Divergence, Temporal Anomaly, and Temporal Focus are reduced by 10% every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706099,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Hasten</span> is active the cooldowns of <span style=\"color: #ffffff; display: inline\">Dimensional Divergence</span>, <span style=\"color: #ffffff; display: inline\">Temporal Anomaly</span>, and <span style=\"color: #ffffff; display: inline\">Temporal Focus</span> are reduced by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> every <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6195,
+      "name": "Charm of Power",
+      "spellId": 706100,
+      "spellIds": [
+        706100
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_trinket_healer",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30257
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Gravity Bomb by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706100,
+          "description": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Gravity Bomb</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6196,
+      "name": "Timeless",
+      "spellId": 706131,
+      "spellIds": [
+        706131
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_mentalquickness",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6190
+      ],
+      "requiredIds": [],
+      "desc": "While Endless Sands is active, the mana costs of your spells and abilities is reduced by -3% per stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706131,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Endless Sands</span> is active, the mana costs of your spells and abilities is reduced by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> per stack."
+        }
+      ]
+    },
+    {
+      "id": 6199,
+      "name": "Entropy Reversal",
+      "spellId": 520780,
+      "spellIds": [
+        520780
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_SpectralSight",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5122,
+        11122
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of disease effects by -40%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520780,
+          "description": "Reduces the duration of disease effects by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6200,
+      "name": "Hourglass of Eternity",
+      "spellId": 806337,
+      "spellIds": [
+        806337
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_relics_hourglass",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7216,
+        29680
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 5% chance to grant you 25% increased haste for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806337,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased haste for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6213,
+      "name": "Expediting Time",
+      "spellId": 706055,
+      "spellIds": [
+        706055
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_AshesToAshes",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6696
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the channel time of your Time Out! by -40%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706055,
+          "description": "Reduces the channel time of your <span style=\"color: #ffffff; display: inline\">Time Out!</span> by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6214,
+      "name": "Ahead of the Game",
+      "spellId": 560948,
+      "spellIds": [
+        560948
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_bg_win_av_x_times",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6698,
+        7226,
+        9198
+      ],
+      "requiredIds": [],
+      "desc": "Every 10th instance of your damage dealt or healing now gives you 60 increased spell power for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560948,
+          "description": "Every 10th instance of your damage dealt or healing now gives you <span class=\"item-number\">60</span> increased spell power for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6221,
+      "name": "Mass Babify",
+      "spellId": 520855,
+      "spellIds": [
+        520855
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\MassBabify",
+      "x": 3,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7915
+      ],
+      "requiredIds": [],
+      "desc": "Instantly transform all enemies into a baby, preventing them from acting for 40 seconds (8 sec vs players), damage dealt will interrupt this effect. While babified, enemies will rapidly regenerate health. Scales with modifiers to Babify.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520855,
+          "description": "Instantly transform all enemies into a baby, preventing them from acting for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players), damage dealt will interrupt this effect. <br /><br />While babified, enemies will rapidly regenerate health. <br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Babify</span>."
+        }
+      ]
+    },
+    {
+      "id": 6223,
+      "name": "Chaos Omen",
+      "spellId": 706063,
+      "spellIds": [
+        706063
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_starmetal",
+      "x": 5,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30257
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Gravity Bomb by -30 sec, and its explosion occurs -3 sec faster.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706063,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Gravity Bomb</span> by <span class=\"item-number\">-30</span> sec, and its explosion occurs <span class=\"item-number\">-3</span> sec faster."
+        }
+      ]
+    },
+    {
+      "id": 6226,
+      "name": "Perfect Timing",
+      "spellId": 520164,
+      "spellIds": [
+        520164,
+        520874
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_misc_head_dragon_bronze",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30249,
+        30855
+      ],
+      "requiredIds": [],
+      "desc": "Increases your haste by 4% and reduces your spell pushback suffered from damaging attacks by 35%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520164,
+          "description": "Increases your haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces your spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 520874,
+          "description": "Increases your haste by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and reduces your spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6228,
+      "name": "Fortify Timeline",
+      "spellId": 804491,
+      "spellIds": [
+        804491
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_guildperk_workingovertime_rank2",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6697,
+        7911
+      ],
+      "requiredIds": [],
+      "desc": "Fortify the current timeline, instantly healing all party and raid members for 100 + 40% SP and extending the duration of Accelerated Recovery on them by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804491,
+          "description": "Fortify the current timeline, instantly healing all party and raid members for <span class=\"item-number\">100</span> + <span class=\"item-number\">40% SP</span> and extending the duration of <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> on them by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6514,
+      "name": "Gift of the Timeways",
+      "spellId": 704487,
+      "spellIds": [
+        704487
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_persecution",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6522
+      ],
+      "requiredIds": [],
+      "desc": "Casting Melt Reality now causes your Timerend and Unmake's periodic damage to benefit from haste for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704487,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now causes your <span style=\"color: #FFFFFF; display: inline\">Timerend</span> and <span style=\"color: #FFFFFF; display: inline\">Unmake</span>'s periodic damage to benefit from haste for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6522,
+      "name": "Destabilize Time",
+      "spellId": 680971,
+      "spellIds": [
+        680971
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nzinsanity_desynchronized",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11175,
+        12184
+      ],
+      "requiredIds": [],
+      "desc": "Reduces enemy casting speed by -10% for 20 seconds, increasing by -10% every time they cast.Gaining stacks does not extend the duration of the spell.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680971,
+          "description": "Reduces enemy casting speed by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, increasing by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> every time they cast.<br /><br />Gaining stacks does not extend the duration of the spell."
+        }
+      ]
+    },
+    {
+      "id": 6574,
+      "name": "Concentrated Fate",
+      "spellId": 706122,
+      "spellIds": [
+        706122
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_1h_warfrontsalliance_c_01",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7391
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Echo Fragments by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706122,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Echo Fragments</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6575,
+      "name": "Elder Wand",
+      "spellId": 560129,
+      "spellIds": [
+        560129
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_wandshot_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6574,
+        30265
+      ],
+      "requiredIds": [],
+      "desc": "Your Wand attacks now have a 30% chance to increase the damage of Artificer's Wand against the target by 3% for 15 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560129,
+          "description": "Your Wand attacks now have a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to increase the damage of <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> against the target by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6576,
+      "name": "Discovery",
+      "spellId": 500116,
+      "spellIds": [
+        500116
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_wandshot_(2)_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7391
+      ],
+      "requiredIds": [],
+      "desc": "Casting Artificers's Wand and Wand of Time now grants Discovery for 30 seconds, stacking 4 times. DiscoveryAt 3 stacks, your next Wand of Time or Artificer's Wand causes an additional 1 + 21.2% arcane SP + 25% Spirit + 10% ranged AP Arcane Damage, scaling with Spirit.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500116,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Artificers's Wand</span> and <span style=\"color: #FFFFFF; display: inline\">Wand of Time</span> now grants <span style=\"color: #ffffff; display: inline\">Discovery</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">4</span> times. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_wandshot__2__border\" /><span class=\"name\">Discovery</span></div><span class=\"desc\">At <span class=\"item-number\">3</span> stacks, your next <span style=\"color: #FFFFFF; display: inline\">Wand of Time</span> or <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> causes an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">21.2% arcane SP</span> + <span class=\"item-number\">25% Spirit</span> + <span class=\"item-number\">10% ranged AP</span> Arcane Damage, scaling with Spirit.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6652,
+      "name": "Through The Aeons",
+      "spellId": 560310,
+      "spellIds": [
+        560310
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_timewarp_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6702
+      ],
+      "requiredIds": [],
+      "desc": "Activating an Aeon now increases your mana regeneration from Spirit by 100% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560310,
+          "description": "Activating an <span style=\"color: #ffffff; display: inline\">Aeon</span> now increases your mana regeneration from Spirit by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6696,
+      "name": "Desynchronization",
+      "spellId": 561310,
+      "spellIds": [
+        561310
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\novart_magicspell_(11)_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30269
+      ],
+      "requiredIds": [],
+      "desc": "Shift an enemy out of sync with the present, causing their grip to fail, disarming their melee and ranged weapons for 6 seconds.Upon removal, they are resynced, preventing them from regenerating their health for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561310,
+          "description": "Shift an enemy out of sync with the present, causing their grip to fail, disarming their melee and ranged weapons for <span class=\"item-number\">6</span> seconds.<br /><br />Upon removal, they are resynced, preventing them from regenerating their health for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6697,
+      "name": "Improved Reverse Wound",
+      "spellId": 706053,
+      "spellIds": [
+        706053
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_blessedrecovery",
+      "x": 0,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30277
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Reverse Wound by -0.3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706053,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> by <span class=\"item-number\">-0.3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6698,
+      "name": "Temporal Focus",
+      "spellId": 806165,
+      "spellIds": [
+        806165
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3serenity",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7198,
+        32547
+      ],
+      "requiredIds": [],
+      "desc": "You lock yourself into a perfect moment, removing and becoming immune to banish, silence, and interrupt effects for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806165,
+          "description": "You lock yourself into a perfect moment, removing and becoming immune to banish, silence, and interrupt effects for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6699,
+      "name": "Carbon Dating",
+      "spellId": 706102,
+      "spellIds": [
+        706102
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6190
+      ],
+      "requiredIds": [],
+      "desc": "Each stack of Sands of Time now also increases the healing of your Epoch by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706102,
+          "description": "Each stack of <span style=\"color: #ffffff; display: inline\">Sands of Time</span> now also increases the healing of your <span style=\"color: #ffffff; display: inline\">Epoch</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6700,
+      "name": "Endless Sands",
+      "spellId": 806338,
+      "spellIds": [
+        806338
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_enchant_dustspirit",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31182
+      ],
+      "requiredIds": [],
+      "desc": "Casting Epoch now grants you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806338,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now grants you <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6702,
+      "name": "Cycling Aeons",
+      "spellId": 570149,
+      "spellIds": [
+        570149
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill42_Border",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7912,
+        29571
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Aeons by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570149,
+          "description": "Reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Aeons</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6841,
+      "name": "Aeon of Oblivion",
+      "spellId": 806293,
+      "spellIds": [
+        806293
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_trinket_80_kultiras02e",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        9181
+      ],
+      "requiredIds": [],
+      "desc": "Increases Epoch's mana cost by 30%, critical strike chance by 10%, and healing done by 15%. In addition, healing with Epoch now increases the target's damage dealt by 3% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806293,
+          "description": "Increases <span style=\"color: #ffffff; display: inline\">Epoch</span>'s mana cost by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, and healing done by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>. <br /><br />In addition, healing with <span style=\"color: #ffffff; display: inline\">Epoch</span> now increases the target's damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 7159,
+      "name": "Paradox",
+      "spellId": 680946,
+      "spellIds": [
+        680946
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ShadowMend",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5168
+      ],
+      "requiredIds": [],
+      "desc": "Casting Melt Reality now causes your next Unmake or Reverse Wound within 6 seconds to become instant and cost -50% less mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680946,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now causes your next <span style=\"color: #ffffff; display: inline\">Unmake</span> or <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> within <span class=\"item-number\">6</span> seconds to become instant and cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less mana."
+        }
+      ]
+    },
+    {
+      "id": 7198,
+      "name": "Eternal",
+      "spellId": 706777,
+      "spellIds": [
+        706777
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ArcaneVision_Border",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6162
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Accelerated Recovery by 6 sec and Decomposition by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706777,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> by <span class=\"item-number\">6</span> sec and <span style=\"color: #ffffff; display: inline\">Decomposition</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7200,
+      "name": "Melt Reality",
+      "spellId": 806335,
+      "spellIds": [
+        806335
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_timewarp_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        3997
+      ],
+      "requiredIds": [],
+      "desc": "Melt the target's reality, dealing cond(gt(SPFR, SPS), 48+0+SPFR*0.23, 48+0+SPS*0.23) Chromatic Damage every 3 sec for 30 seconds.While active, periodic damage dealt to the target is replicated for 20% of the value to all enemies near them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806335,
+          "description": "Melt the target's reality, dealing <span class=\"item-number\">cond(gt(SPFR, SPS), 48+0+SPFR*0.23, 48+0+SPS*0.23)</span> Chromatic Damage every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">30</span> seconds.<br /><br />While active, periodic damage dealt to the target is replicated for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the value to all enemies near them."
+        }
+      ]
+    },
+    {
+      "id": 7201,
+      "name": "Chromatic Shard",
+      "spellId": 801292,
+      "spellIds": [
+        801292
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_enchanting_wod_crystalshard2",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6156
+      ],
+      "requiredIds": [],
+      "desc": "Fling a shard of chaos at an enemy, dealing 209 + 150% SP Chromatic Damage, piercing immunities and resistances.Dealing damage with Anomaly Spikes reduces the cast time of this ability by -10% for 30 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801292,
+          "description": "Fling a shard of chaos at an enemy, dealing <span class=\"item-number\">209</span> + <span class=\"item-number\">150% SP</span> Chromatic Damage, piercing immunities and resistances.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> reduces the cast time of this ability by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7209,
+      "name": "Slipstream",
+      "spellId": 707555,
+      "spellIds": [
+        707555
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_void_blast",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29677
+      ],
+      "requiredIds": [],
+      "desc": "Target an enemy and slip them into a pocket dimension for 5 seconds, banishing them and making them immune to damage.Activate this ability again before the duration expires to choose a new location to place that enemy within 20 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707555,
+          "description": "Target an enemy and slip them into a pocket dimension for <span class=\"item-number\">5</span> seconds, banishing them and making them immune to damage.<br /><br />Activate this ability again before the duration expires to choose a new location to place that enemy within <span class=\"item-number\">20</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 7216,
+      "name": "Warpstriker",
+      "spellId": 707556,
+      "spellIds": [
+        707556,
+        707830
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_jewelcrafting_shadowsongamethyst_02",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31139
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of your spells by -5% and the chance for your spells to be dispelled by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707556,
+          "description": "Reduces the cost of your spells by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> and the chance for your spells to be dispelled by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707830,
+          "description": "Reduces the cost of your spells by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and the chance for your spells to be dispelled by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7226,
+      "name": "Entropy Overload",
+      "spellId": 706084,
+      "spellIds": [
+        706084
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\novart_magicspell_(39)_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6696
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to resist movement slowing effects by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706084,
+          "description": "Increases your chance to resist movement slowing effects by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7391,
+      "name": "Artificer's Empowerment",
+      "spellId": 806167,
+      "spellIds": [
+        806167,
+        807895,
+        807896
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_azeritedebuff",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7853
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Spirit by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806167,
+          "description": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807895,
+          "description": "Increases your Spirit by <span class=\"item-number\">16</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 807896,
+          "description": "Increases your Spirit by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7826,
+      "name": "Converge the Infinite",
+      "spellId": 520045,
+      "spellIds": [
+        520045
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_arcanetwist_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6652,
+        29670
+      ],
+      "requiredIds": [],
+      "desc": "Casting Fortify Timeline now grants you Converge the Infinite.Converge the InfiniteYour next Correct the Mistake has a 1 sec increased cast time, but heals for 30% more and is guaranteed to critically strike.Successfully healing an ally in this way reduces the cooldown of Fortify Timeline by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520045,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> now grants you <span style=\"color: #ffffff; display: inline\">Converge the Infinite</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_arcanetwist_border\" /><span class=\"name\">Converge the Infinite</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Correct the Mistake</span> has a <span class=\"item-number\">1</span> sec increased cast time, but heals for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> more and is guaranteed to critically strike.<br /><br />Successfully healing an ally in this way reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7853,
+      "name": "Caverns of Time",
+      "spellId": 520166,
+      "spellIds": [
+        520166
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elementalearth2",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12853,
+        31183
+      ],
+      "requiredIds": [],
+      "desc": "Your Discordance now generates 1 Echo Fragment.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520166,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Discordance</span> now generates <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>."
+        }
+      ]
+    },
+    {
+      "id": 7854,
+      "name": "Singularity Core",
+      "spellId": 804438,
+      "spellIds": [
+        804438
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_jaina_d_01",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30256
+      ],
+      "requiredIds": [],
+      "desc": "Continuum SpellEmpower your Wand attacks to deal an additional 50% Ranged Weapon Damage plus 2 + 25% SP + 12% ranged AP additional Arcane damage for 3 sec plus 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804438,
+          "description": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Empower your Wand attacks to deal an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">2</span> + <span class=\"item-number\">25% SP</span> + <span class=\"item-number\">12% ranged AP</span> additional Arcane damage for <span class=\"item-number\">3</span> sec plus <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time."
+        }
+      ]
+    },
+    {
+      "id": 7855,
+      "name": "Aether Compression",
+      "spellId": 804436,
+      "spellIds": [
+        804436
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ui_profession_enchanting",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7914,
+        30282
+      ],
+      "requiredIds": [],
+      "desc": "Continuum SpellArtificer's Wand and Reverse Wound can be cast while moving for 5 seconds.Duration increased by 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804436,
+          "description": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br /><span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> and <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> can be cast while moving for <span class=\"item-number\">5</span> seconds.<br /><br />Duration increased by <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time."
+        }
+      ]
+    },
+    {
+      "id": 7856,
+      "name": "Arc Collision",
+      "spellId": 524853,
+      "spellIds": [
+        524853
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_arcaneburst_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6178,
+        31332
+      ],
+      "requiredIds": [],
+      "desc": "Distortion SpellCreate a timestorm around an enemy that causes them and up to 2 nearby enemies to take 270 + 24% SP Arcane damage, repeating over 4 seconds. Duration increased by 2 sec for each Echo Fragment consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524853,
+          "description": "<span style=\"color: #d480ff; display: inline\">Distortion Spell</span><br />Create a timestorm around an enemy that causes them and up to <span class=\"item-number\">2</span> nearby enemies to take <span class=\"item-number\">270</span> + <span class=\"item-number\">24% SP</span> Arcane damage, repeating over <span class=\"item-number\">4</span> seconds. <br /><br />Duration increased by <span class=\"item-number\">2</span> sec for each <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed."
+        }
+      ]
+    },
+    {
+      "id": 7873,
+      "name": "Cheating Time",
+      "spellId": 524945,
+      "spellIds": [
+        524945
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_18",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7855,
+        7856
+      ],
+      "requiredIds": [],
+      "desc": "Casting Shatter Echo now extends the duration of your Flux Emitter by 4 sec.Cannot be extended beyond maximum duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524945,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now extends the duration of your <span style=\"color: #ffffff; display: inline\">Flux Emitter</span> by <span class=\"item-number\">4</span> sec.<br /><br />Cannot be extended beyond maximum duration."
+        }
+      ]
+    },
+    {
+      "id": 7911,
+      "name": "Luck",
+      "spellId": 706085,
+      "spellIds": [
+        706085,
+        707828
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Racial_Dwarf_FindTreasure",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30249,
+        30277
+      ],
+      "requiredIds": [],
+      "desc": "Allows 40% of your mana regeneration to continue while in combat.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706085,
+          "description": "Allows <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your mana regeneration to continue while in combat."
+        },
+        {
+          "rank": 2,
+          "spellId": 707828,
+          "description": "Allows <span class=\"item-number\">80</span><span class=\"item-number\">%</span> of your mana regeneration to continue while in combat."
+        }
+      ]
+    },
+    {
+      "id": 7912,
+      "name": "Continuum Restoration",
+      "spellId": 801271,
+      "spellIds": [
+        801271
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_evoker_timedilation",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6196,
+        6699
+      ],
+      "requiredIds": [],
+      "desc": "Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.This dispel is potent enough to remove magic effects that are normally undispellable",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801271,
+          "description": "Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.<br /><br />This dispel is potent enough to remove magic effects that are normally undispellable"
+        }
+      ]
+    },
+    {
+      "id": 7914,
+      "name": "Fate Twister",
+      "spellId": 706133,
+      "spellIds": [
+        706133
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Arcane_Blast",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6173
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Unstable Chronoglass by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706133,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unstable Chronoglass</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7915,
+      "name": "Infinite Shield",
+      "spellId": 520457,
+      "spellIds": [
+        520457
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_spell_fire_felfireward",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6199,
+        9547,
+        30267
+      ],
+      "requiredIds": [],
+      "desc": "Shield an ally with 10 charges of Infinite Shield for 30 seconds. Each time they take damage, they will be healed for 190 + 25% SP and lose 1 charge.Can only occur once per sec and can only affect 1 target at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520457,
+          "description": "Shield an ally with <span class=\"item-number\">10</span> charges of <span style=\"color: #FFFFFF; display: inline\">Infinite Shield</span> for <span class=\"item-number\">30</span> seconds. Each time they take damage, they will be healed for <span class=\"item-number\">190</span> + <span class=\"item-number\">25% SP</span> and lose <span class=\"item-number\">1</span> charge.<br /><br />Can only occur once per sec and can only affect <span class=\"item-number\">1</span> target at a time."
+        }
+      ]
+    },
+    {
+      "id": 7916,
+      "name": "Infinity",
+      "spellId": 706128,
+      "spellIds": [
+        706128
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_thousandneedles_01",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7915
+      ],
+      "requiredIds": [],
+      "desc": "Removes the cooldown of Infinite Shield.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706128,
+          "description": "Removes the cooldown of <span style=\"color: #ffffff; display: inline\">Infinite Shield</span>."
+        }
+      ]
+    },
+    {
+      "id": 7917,
+      "name": "Impeccable Timing",
+      "spellId": 560949,
+      "spellIds": [
+        560949
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_DispelMagic",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6226,
+        7911,
+        30280
+      ],
+      "requiredIds": [],
+      "desc": "Your periodic damage and healing effects can now critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560949,
+          "description": "Your periodic damage and healing effects can now critically strike."
+        }
+      ]
+    },
+    {
+      "id": 7920,
+      "name": "Magic Erosion",
+      "spellId": 706046,
+      "spellIds": [
+        706046
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Charm",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4161,
+        6161,
+        6164,
+        6514
+      ],
+      "requiredIds": [],
+      "desc": "Your Decomposition now applies Magic Erosion to the target, increasing attackers chance to hit the target with spells by 3% for 30 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706046,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Decomposition</span> now applies <span style=\"color: #ffffff; display: inline\">Magic Erosion</span> to the target, increasing attackers chance to hit the target with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7937,
+      "name": "Clocked In",
+      "spellId": 706076,
+      "spellIds": [
+        706076
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_timeismoney",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30250
+      ],
+      "requiredIds": [],
+      "desc": "Casting Discordance now makes your next Artificer's Wand within 10 seconds instant cast and causes it to generate an additional Echo Fragment.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706076,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Discordance</span> now makes your next <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> within <span class=\"item-number\">10</span> seconds instant cast and causes it to generate an additional <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span>."
+        }
+      ]
+    },
+    {
+      "id": 9177,
+      "name": "Aeon of Protection",
+      "spellId": 806292,
+      "spellIds": [
+        806292
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_trinket_80_kultiras02d",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 15,
+      "connectedNodeIds": [
+        4032
+      ],
+      "requiredIds": [],
+      "desc": "Increases Epoch's cast time by 15%, healing done by 15%, and causes it to apply a damage absorption shield equal to 30% of the amount healed for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806292,
+          "description": "Increases <span style=\"color: #ffffff; display: inline\">Epoch</span>'s cast time by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, healing done by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, and causes it to apply a damage absorption shield equal to <span class=\"item-number\">30%</span> of the amount healed for <span class=\"item-number\">8</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 9181,
+      "name": "Aeon of Renewal",
+      "spellId": 806290,
+      "spellIds": [
+        806290
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_trinket_80_kultiras02b",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        9177
+      ],
+      "requiredIds": [],
+      "desc": "Reduces Epoch's healing by -30%, but causes it to heal for an additional 50% of the amount healed over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806290,
+          "description": "Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s healing by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>, but causes it to heal for an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the amount healed over <span class=\"item-number\">3</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 9198,
+      "name": "Mind Over Matter",
+      "spellId": 520923,
+      "spellIds": [
+        520923
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hibernation",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30260
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Wisdom spells by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520923,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Wisdom</span> spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9986,
+      "name": "Timeblender",
+      "spellId": 555737,
+      "spellIds": [
+        555737
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_guild_timeoff",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7826,
+        29682
+      ],
+      "requiredIds": [],
+      "desc": "Guarantees healing done by Fabric of Time to critically strike and gives it an additional charge.Fabric of Time (Timeblender)2 Charges, 15 sec rechargeAlter the fabric of time, healing an ally for 529 + 64% healing.Your next Aeon used within 8 seconds will trigger with no cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 555737,
+          "description": "Guarantees healing done by <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> to critically strike and gives it an additional charge.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_monk_diffusemagic\" /><span class=\"name\">Fabric of Time (Timeblender)</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">15</span> sec recharge</span><br />Alter the fabric of time, healing an ally for <span class=\"item-number\">529</span> + <span class=\"item-number\">64% healing</span>.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Aeon</span> used within <span class=\"item-number\">8</span> seconds will trigger with no cooldown.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 11175,
+      "name": "Excruciating Discord",
+      "spellId": 582356,
+      "spellIds": [
+        582356
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_pet_warpstalker",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30776
+      ],
+      "requiredIds": [],
+      "desc": "Your Discordances used with Chronological are now guaranteed to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582356,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Discordances</span> used with <span style=\"color: #ffffff; display: inline\">Chronological</span> are now guaranteed to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 12184,
+      "name": "Timelost Power",
+      "spellId": 807754,
+      "spellIds": [
+        807754
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_motorcyclefelreavermount_shadow",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30776
+      ],
+      "requiredIds": [],
+      "desc": "Your Discordance now strikes 3 additional enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807754,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Discordance</span> now strikes <span class=\"item-number\">3</span> additional enemies."
+        }
+      ]
+    },
+    {
+      "id": 12853,
+      "name": "Artificer's Wand",
+      "spellId": 804478,
+      "spellIds": [
+        804478
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_16",
+      "x": 5,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4033,
+        30855
+      ],
+      "desc": "Transforms your Unmake into Artificer's Wand.Artificer&#39;s WandFocus to unleash 2 wand attacks dealing Ranged Weapon damage plus 5 over 1 seconds.Generates 1 Echo Fragment.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804478,
+          "description": "Transforms your <span style=\"color: #ffffff; display: inline\">Unmake</span> into <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_wand_16\" /><span class=\"name\">Artificer&#39;s Wand</span></div><span class=\"desc\">Focus to unleash <span class=\"item-number\">2</span> wand attacks dealing Ranged Weapon damage plus <span class=\"item-number\">5</span> over <span class=\"item-number\">1</span> seconds.<br /><br />Generates <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 19978,
+      "name": "Fabric of Time",
+      "spellId": 806299,
+      "spellIds": [
+        806299
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_monk_diffusemagic",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6187
+      ],
+      "requiredIds": [],
+      "desc": "Alter the fabric of time, healing an ally for 158 + 64% healing.Your next Aeon used within 8 seconds will trigger with no cooldown or cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806299,
+          "description": "Alter the fabric of time, healing an ally for <span class=\"item-number\">158</span> + <span class=\"item-number\">64% healing</span>.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Aeon</span> used within <span class=\"item-number\">8</span> seconds will trigger with no cooldown or cost."
+        }
+      ]
+    },
+    {
+      "id": 19979,
+      "name": "Sands of Life",
+      "spellId": 560383,
+      "spellIds": [
+        560383,
+        560283
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_quicksand",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31182
+      ],
+      "requiredIds": [],
+      "desc": "Increases your healing power by 25% of your Spirit.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560383,
+          "description": "Increases your healing power by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Spirit."
+        },
+        {
+          "rank": 2,
+          "spellId": 560283,
+          "description": "Increases your healing power by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Spirit."
+        }
+      ]
+    },
+    {
+      "id": 19980,
+      "name": "Correct the Mistake",
+      "spellId": 572352,
+      "spellIds": [
+        572352
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_heal_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6700,
+        19979
+      ],
+      "requiredIds": [],
+      "desc": "Retell the fate of party members within 30 yds, healing them for 91 + 68.57% healing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572352,
+          "description": "Retell the fate of party members within <span class=\"item-number\">30</span> yds, healing them for <span class=\"item-number\">91</span> + <span class=\"item-number\">68.57% healing</span>."
+        }
+      ]
+    },
+    {
+      "id": 29570,
+      "name": "Shimmering Shard",
+      "spellId": 806302,
+      "spellIds": [
+        806302
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_gem_x4_uncommon_perfectcut_yellow",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29571,
+        30264
+      ],
+      "requiredIds": [],
+      "desc": "Activating Aeon spells now grants you 4% increased damage and healing for 20 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806302,
+          "description": "Activating <span style=\"color: #ffffff; display: inline\">Aeon</span> spells now grants you <span class=\"item-number\">4</span><span class=\"item-number\">%</span> increased damage and healing for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29571,
+      "name": "Time Skip",
+      "spellId": 804451,
+      "spellIds": [
+        804451
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcanespeed_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6196,
+        19978
+      ],
+      "requiredIds": [],
+      "desc": "Your Roll Back now removes 1 additional harmful effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804451,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Roll Back</span> now removes <span class=\"item-number\">1</span> additional harmful effect."
+        }
+      ]
+    },
+    {
+      "id": 29670,
+      "name": "Wonders of Time",
+      "spellId": 560541,
+      "spellIds": [
+        560541
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_readiness",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30780
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell haste of all party and raid members by 3%.Does not stack with similar effects.Additionally, all healing done now has a 10% chance to grant you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560541,
+          "description": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.<br /><br />Additionally, all healing done now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29677,
+      "name": "Infinity Crash",
+      "spellId": 706040,
+      "spellIds": [
+        706040
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1802,
+        6200,
+        11175
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of Discordance and Chromatic Shard by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706040,
+          "description": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Discordance</span> and <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29680,
+      "name": "Deconstruction",
+      "spellId": 805851,
+      "spellIds": [
+        805851,
+        807894
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_chest_armor_voidelf_d_01",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6156
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Unmake by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805851,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807894,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29681,
+      "name": "Cadence of Time",
+      "spellId": 560397,
+      "spellIds": [
+        560397
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_timeismoney",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6183
+      ],
+      "requiredIds": [],
+      "desc": "Your critical strikes with Epoch now grant Cadence of Time, increasing the healing of Ripple by 10% for 15 seconds. Stacks 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560397,
+          "description": "Your critical strikes with <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now grant <span style=\"color: #FFFFFF; display: inline\">Cadence of Time</span>, increasing the healing of <span style=\"color: #FFFFFF; display: inline\">Ripple</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29682,
+      "name": "Shield of the Ages",
+      "spellId": 804444,
+      "spellIds": [
+        804444
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_T_Nhance_RPG_Icons_HolyWatch_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10728,
+        10922,
+        29670,
+        30268,
+        30922
+      ],
+      "requiredIds": [],
+      "desc": "When hit by a damaging critical strike, your damage taken is reduced by -3%, and healing received is increased by 5% for 3 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804444,
+          "description": "When hit by a damaging critical strike, your damage taken is reduced by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>, and healing received is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29684,
+      "name": "Dimensional Divergence",
+      "spellId": 802790,
+      "spellIds": [
+        802790
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_dragonriding_bronzerewind01",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6194
+      ],
+      "requiredIds": [],
+      "desc": "Swap places with a target.If they're an enemy, you steal -80% of their movement speed for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802790,
+          "description": "Swap places with a target.<br /><br />If they're an enemy, you steal <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> of their movement speed for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30249,
+      "name": "Clasp of Infinity",
+      "spellId": 805847,
+      "spellIds": [
+        805847
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "interface\\icons\\HandBeamBlackHand",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Conjure a magical binding upon an enemy that bounces to nearby enemies, rooting them in place for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805847,
+          "description": "Conjure a magical binding upon an enemy that bounces to nearby enemies, rooting them in place for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30250,
+      "name": "Hyperwand",
+      "spellId": 706071,
+      "spellIds": [
+        706071
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_cat_trinket10",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6574
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage and critical damage of your Shatter Echo by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706071,
+          "description": "Increases the damage and critical damage of your <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30251,
+      "name": "Temporal Dissonance",
+      "spellId": 520922,
+      "spellIds": [
+        520922
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ManaBurn",
+      "x": 8,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30855
+      ],
+      "requiredIds": [],
+      "desc": "Chronostasis now slows your target's movement speed by an additional -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520922,
+          "description": "<span style=\"color: #ffffff; display: inline\">Chronostasis</span> now slows your target's movement speed by an additional <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30256,
+      "name": "Wand Master",
+      "spellId": 707551,
+      "spellIds": [
+        707551,
+        707831
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_Brilliance",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7853
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Wand of Time and Artificer's Wand by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707551,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707831,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30257,
+      "name": "Gravity Bomb",
+      "spellId": 801281,
+      "spellIds": [
+        801281
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill42_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9547,
+        30267,
+        31335
+      ],
+      "requiredIds": [],
+      "desc": "Place a gravity bomb on the target. After 6 seconds they explode for 979 + 120% SP + 30% ranged AP Chromatic Damage in a 10 yds radius.Directly before the explosion occurs, all enemies within 15 yds are teleported to the initial target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801281,
+          "description": "Place a gravity bomb on the target. After <span class=\"item-number\">6</span> seconds they explode for <span class=\"item-number\">979</span> + <span class=\"item-number\">120% SP</span> + <span class=\"item-number\">30% ranged AP</span> Chromatic Damage in a <span class=\"item-number\">10</span> yds radius.<br /><br />Directly before the explosion occurs, all enemies within <span class=\"item-number\">15</span> yds are teleported to the initial target."
+        }
+      ]
+    },
+    {
+      "id": 30260,
+      "name": "Temporal Anomaly",
+      "spellId": 806315,
+      "spellIds": [
+        806315
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(39)_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6228
+      ],
+      "requiredIds": [],
+      "desc": "Augment reality for 10 seconds, causing 50% of the damage taken to be absorbed and converted into healing at the end of the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806315,
+          "description": "Augment reality for <span class=\"item-number\">10</span> seconds, causing <span class=\"item-number\">50%</span> of the damage taken to be absorbed and converted into healing at the end of the duration."
+        }
+      ]
+    },
+    {
+      "id": 30261,
+      "name": "Buy Time",
+      "spellId": 520188,
+      "spellIds": [
+        520188
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_timeismoney",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6192,
+        7826
+      ],
+      "requiredIds": [],
+      "desc": "Put all enemies and allies in an 8 yd radius in target area into a stasis, banishing them for 6 seconds, making them invulnerable to all effects but unable to move.Casting Unmake on a target will remove this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520188,
+          "description": "Put all enemies and allies in an <span class=\"item-number\">8</span> yd radius in target area into a stasis, banishing them for <span class=\"item-number\">6</span> seconds, making them invulnerable to all effects but unable to move.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Unmake</span> on a target will remove this effect."
+        }
+      ]
+    },
+    {
+      "id": 30264,
+      "name": "Orderly Protector",
+      "spellId": 806162,
+      "spellIds": [
+        806162
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\icon_dragonflygold",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19978
+      ],
+      "requiredIds": [],
+      "desc": "Healing done by your Epoch now increases the healing of Fabric of Time by 10% for 10 seconds, stacking 10 times.Each stack gives you a 2% chance when you cast Fabric of Time to reset its own cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806162,
+          "description": "Healing done by your <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now increases the healing of <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Each stack gives you a <span class=\"item-number\">2</span><span class=\"item-number\">%</span> chance when you cast <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> to reset its own cooldown."
+        }
+      ]
+    },
+    {
+      "id": 30265,
+      "name": "Bronze Echoes",
+      "spellId": 520800,
+      "spellIds": [
+        520800
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_challengemode_bronze",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30256
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Artificer's Wand by -0.2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520800,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">-0.2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30269,
+      "name": "Timeguard",
+      "spellId": 804441,
+      "spellIds": [
+        804441
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6226,
+        30251
+      ],
+      "requiredIds": [],
+      "desc": "Place a magical guard on an ally for 2 minutes, causing the next 3 instances of direct damage that would reduce the target below 35% health to deal 40% less damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804441,
+          "description": "Place a magical guard on an ally for <span class=\"item-number\">2</span> minutes, causing the next <span class=\"item-number\">3</span> instances of direct damage that would reduce the target below <span class=\"item-number\">35%</span> health to deal <span class=\"item-number\">40</span><span class=\"item-number\">%</span> less damage."
+        }
+      ]
+    },
+    {
+      "id": 30276,
+      "name": "Constant Recovery",
+      "spellId": 555729,
+      "spellIds": [
+        555729
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_Purify",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30260
+      ],
+      "requiredIds": [],
+      "desc": "Healing done by Reverse Wound now increases all healing taken the target receives by 6% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 555729,
+          "description": "Healing done by <span style=\"color: #FFFFFF; display: inline\">Reverse Wound</span> now increases all healing taken the target receives by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30277,
+      "name": "Accelerated Recovery",
+      "spellId": 800857,
+      "spellIds": [
+        800857
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_HealingFocus",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Accelerates the bodies natural healing process, healing the target for 60 + 115% healing over 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800857,
+          "description": "Accelerates the bodies natural healing process, healing the target for <span class=\"item-number\">60</span> + <span class=\"item-number\">115% healing</span> over <span class=\"item-number\">15</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30280,
+      "name": "Unearthed Pools",
+      "spellId": 574309,
+      "spellIds": [
+        574309
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(48)_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30249
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Unmake by -15% and reduces the mana cost of your instant spells by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574309,
+          "description": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Unmake</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and reduces the mana cost of your instant spells by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30282,
+      "name": "Magic Sensitivity",
+      "spellId": 520171,
+      "spellIds": [
+        520171
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_EnslaveSpell_Arcane",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6173,
+        7937
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Shatter Echo now increases the enemy's damage taken from you by 10% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520171,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now increases the enemy's damage taken from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30776,
+      "name": "Chronological",
+      "spellId": 592008,
+      "spellIds": [
+        592008
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_62_light_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31139
+      ],
+      "requiredIds": [],
+      "desc": "Every 20 sec, your next Discordance within 10 seconds is instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 592008,
+          "description": "Every <span class=\"item-number\">20</span> sec, your next <span style=\"color: #ffffff; display: inline\">Discordance</span> within <span class=\"item-number\">10</span> seconds is instant cast."
+        }
+      ]
+    },
+    {
+      "id": 30780,
+      "name": "Mark of Order",
+      "spellId": 704488,
+      "spellIds": [
+        704488
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_80_vantusrune_uldir",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7912,
+        30903
+      ],
+      "requiredIds": [],
+      "desc": "Healing done by Fortify Timeline now applies Mark of Order.Mark of OrderIncreases the healing of your next Reverse Wound on the target by 10% for 20 seconds. Every 1 sec for the duration, they gain an additional stack of this effect, up to 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704488,
+          "description": "Healing done by <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> now applies <span style=\"color: #ffffff; display: inline\">Mark of Order</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_inscription_80_vantusrune_uldir\" /><span class=\"name\">Mark of Order</span></div><span class=\"desc\">Increases the healing of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wound</span> on the target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds. <br /><br />Every <span class=\"item-number\">1</span> sec for the duration, they gain an additional stack of this effect, up to <span class=\"item-number\">5</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30844,
+      "name": "Conduction Burst",
+      "spellId": 804452,
+      "spellIds": [
+        804452
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_chiexplosion",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7854
+      ],
+      "requiredIds": [],
+      "desc": "Your Shatter Echo now deals 20% additional damage while a Continuum spell is active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804452,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> now deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> additional damage while a <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell is active."
+        }
+      ]
+    },
+    {
+      "id": 30855,
+      "name": "Waves of Time",
+      "spellId": 801277,
+      "spellIds": [
+        801277
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_healingwave_Border",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Blast enemies in a frontal cone with time fractals, knocking them back slightly.The knockback repeats 1 additional time after 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801277,
+          "description": "Blast enemies in a frontal cone with time fractals, knocking them back slightly.<br /><br />The knockback repeats <span class=\"item-number\">1</span> additional time after <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30856,
+      "name": "Flux Emitter",
+      "spellId": 804435,
+      "spellIds": [
+        804435
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_25",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6171,
+        6575,
+        30250
+      ],
+      "requiredIds": [],
+      "desc": "Continuum SpellEmpower Wand attacks to affect up to 2 additional nearby enemies for 3 sec plus 5 sec per Echo Fragment. Affected attacks deal less damage per additional enemy hit.Can only have 1 Continuum spell active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804435,
+          "description": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Empower Wand attacks to affect up to <span class=\"item-number\">2</span> additional nearby enemies for <span class=\"item-number\">3</span> sec plus <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>. <br /><br />Affected attacks deal less damage per additional enemy hit.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time."
+        }
+      ]
+    },
+    {
+      "id": 30857,
+      "name": "Hands of Time",
+      "spellId": 524856,
+      "spellIds": [
+        524856
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyRain_Border",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6171
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Accelerate and Decelerate spells by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524856,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Accelerate</span> and <span style=\"color: #FFFFFF; display: inline\">Decelerate</span> spells by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30859,
+      "name": "Pulse Driver",
+      "spellId": 706121,
+      "spellIds": [
+        706121
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_wand_33",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4520,
+        31120
+      ],
+      "requiredIds": [],
+      "desc": "Singularity Core now increases the damage of Shatter Echo while its active by 30% and allows Shatter Echo to trigger its damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706121,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Singularity Core</span> now increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> while its active by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allows <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> to trigger its damage."
+        }
+      ]
+    },
+    {
+      "id": 30861,
+      "name": "Wand Mastery",
+      "spellId": 806216,
+      "spellIds": [
+        806216
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_wandshot_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7856,
+        30859
+      ],
+      "requiredIds": [],
+      "desc": "Wand of Time and Shatter Echo now have a 25% chance to unleash Crystal Cannon, launching 2 quick lesser Wand auto attacks at the enemy over 1 seconds, scaling with Spirit.While Paradox Cannon is active, the chance to trigger this effect is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806216,
+          "description": "<span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span>, launching <span class=\"item-number\">2</span> quick lesser Wand auto attacks at the enemy over <span class=\"item-number\">1</span> seconds, scaling with Spirit.<br /><br />While <span style=\"color: #ffffff; display: inline\">Paradox Cannon</span> is active, the chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30901,
+      "name": "A Ripple In Time",
+      "spellId": 706096,
+      "spellIds": [
+        706096
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Paladin_RighteousVengeance",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29681
+      ],
+      "requiredIds": [],
+      "desc": "Your damaging and healing critical strikes now reduce the remaining cooldown of Ripple by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706096,
+          "description": "Your damaging and healing critical strikes now reduce the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Ripple</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30902,
+      "name": "Displacement",
+      "spellId": 806727,
+      "spellIds": [
+        806727
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_teleport_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30901,
+        30903
+      ],
+      "requiredIds": [],
+      "desc": "Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806727,
+          "description": "Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them."
+        }
+      ]
+    },
+    {
+      "id": 30903,
+      "name": "Ideal Time",
+      "spellId": 807036,
+      "spellIds": [
+        807036
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_corruptionknowledge_Border",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6699,
+        29681
+      ],
+      "requiredIds": [],
+      "desc": "Every 30 sec, your next ability is guaranteed to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807036,
+          "description": "Every <span class=\"item-number\">30</span> sec, your next ability is guaranteed to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 30905,
+      "name": "Chronicler",
+      "spellId": 706134,
+      "spellIds": [
+        706134
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_bindingprayers",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29571
+      ],
+      "requiredIds": [],
+      "desc": "Casting Fortify Timeline now extends the duration of Accelerated Recovery on all targets within 40 yds by an additional 10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706134,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> now extends the duration of <span style=\"color: #FFFFFF; display: inline\">Accelerated Recovery</span> on all targets within <span class=\"item-number\">40</span> yds by an additional <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30908,
+      "name": "Null Orbs",
+      "spellId": 572722,
+      "spellIds": [
+        572722
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\scifi_skills_p_03_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        2125
+      ],
+      "requiredIds": [],
+      "desc": "Periodic critical damage dealt now has a 20% chance to grant Null Orbs for 15 seconds.Null Orbs (Proc)Increases the critical damage of Chromatic Shard and Anomaly Spikes based on your spell critical strike rating.Critically striking with Chromatic Shard removes your Null Orbs.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572722,
+          "description": "Periodic critical damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant <span style=\"color: #FFFFFF; display: inline\">Null Orbs</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 scifi_skills_p_03_border\" /><span class=\"name\">Null Orbs (Proc)</span></div><span class=\"desc\">Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> based on your spell critical strike rating.<br /><br />Critically striking with <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> removes your <span style=\"color: #ffffff; display: inline\">Null Orbs</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31120,
+      "name": "Timemage",
+      "spellId": 806753,
+      "spellIds": [
+        806753
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_goggles_draenortradeskill_d_01",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12279,
+        30279
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of harmful magic effects on you by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806753,
+          "description": "Reduces the duration of harmful magic effects on you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31139,
+      "name": "Mind Melt",
+      "spellId": 572771,
+      "spellIds": [
+        572771
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_brainwash",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7200
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Melt Reality now also reduces the target's primary attributes by -3% for 15 sec, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572771,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now also reduces the target's primary attributes by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> sec, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 31182,
+      "name": "Ripple",
+      "spellId": 806296,
+      "spellIds": [
+        806296
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_nazmirraid_d_01",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4032,
+        30277
+      ],
+      "desc": "Channel for up to 5 seconds. When the channel ends, if you channeled for at least 1.5 sec, allies within 40 yds are healed based on the duration of the channel.While channeling, you are immune to stun effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806296,
+          "description": "Channel for up to <span class=\"item-number\">5</span> seconds. When the channel ends, if you channeled for at least <span class=\"item-number\">1.5</span> sec, allies within <span class=\"item-number\">40</span> yds are healed based on the duration of the channel.<br /><br />While channeling, you are immune to stun effects."
+        }
+      ]
+    },
+    {
+      "id": 31183,
+      "name": "Shatter Echo",
+      "spellId": 804503,
+      "spellIds": [
+        804503
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ShatterEcho",
+      "x": 3,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4033,
+        30855
+      ],
+      "desc": "Distortion SpellLaunch a distorted echo from your wand at an enemy, dealing 90% Ranged Weapon damage plus cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3) Arcane damage.Damage increased by 40% for each Echo Fragment consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804503,
+          "description": "<span style=\"color: #d480ff; display: inline\">Distortion Spell</span><br />Launch a distorted echo from your wand at an enemy, dealing <span class=\"item-number\">90</span><span class=\"item-number\">%</span> Ranged Weapon damage plus <span class=\"item-number\">cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3)</span> Arcane damage.<br /><br />Damage increased by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for each <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed."
+        }
+      ]
+    },
+    {
+      "id": 31332,
+      "name": "Infinity Stone",
+      "spellId": 300873,
+      "spellIds": [
+        300873
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Gems_64",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1803,
+        6884
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300873,
+          "description": "Increases the critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31333,
+      "name": "Threads of Eternity",
+      "spellId": 806209,
+      "spellIds": [
+        806209
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_tailoring_80_nylonthread",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7856
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Discordance now applies Thread of Eternity to enemies.Thread of EternityMarked for 6 seconds. Damage taken from Wand of Time is increased by 30%.You may consume this debuff with Wand of Time to gain an additional effect based on your active Continuum Spell.Singularity Core: Triggers 3 instances of Singularity Core damage.Flux Emitter: Explodes on the enemy, dealing 50% of the damage dealt to all enemies within 8 yds.Paradox Cannon: Increases the damage of your next Shatter Echo within 6 sec by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806209,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Discordance</span> now applies <span style=\"color: #ffffff; display: inline\">Thread of Eternity</span> to enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_tailoring_80_nylonthread\" /><span class=\"name\">Thread of Eternity</span></div><span class=\"desc\">Marked for <span class=\"item-number\">6</span> seconds. Damage taken from <span style=\"color: #ffffff; display: inline\">Wand of Time</span> is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.<br /><br />You may consume this debuff with <span style=\"color: #ffffff; display: inline\">Wand of Time</span> to gain an additional effect based on your active <span style=\"color: #C49A6C; display: inline\">Continuum Spell</span>.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Singularity Core</span>: Triggers <span class=\"item-number\">3</span> instances of <span style=\"color: #FFFFFF; display: inline\">Singularity Core</span> damage.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Flux Emitter</span>: Explodes on the enemy, dealing <span class=\"item-number\">50%</span> of the damage dealt to all enemies within <span class=\"item-number\">8</span> yds.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Paradox Cannon</span>: Increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> within <span class=\"item-number\">6</span> sec by <span class=\"item-number\">25%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31334,
+      "name": "Crown of Power",
+      "spellId": 805854,
+      "spellIds": [
+        805854
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_crown_c_01_purple white",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7159,
+        7209
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of Melt Reality by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805854,
+          "description": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Melt Reality</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31335,
+      "name": "Life Cycles",
+      "spellId": 680808,
+      "spellIds": [
+        680808
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_babymurlocs_white",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6215,
+        12215
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of your Babify by 0.25 sec and its mana cost by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680808,
+          "description": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Babify</span> by <span class=\"item-number\">0.25</span> sec and its mana cost by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31336,
+      "name": "Unearthed Power",
+      "spellId": 503831,
+      "spellIds": [
+        503831
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7201
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Anomaly Spikes now also increases your damage and critical strike chance with Chromatic Shard by 6% per stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503831,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Anomaly Spikes</span> now also increases your damage and critical strike chance with <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack."
+        }
+      ]
+    },
+    {
+      "id": 32547,
+      "name": "Infinite Sands",
+      "spellId": 500115,
+      "spellIds": [
+        500115
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_voidshift",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6162
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Infinite Clone by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500115,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Infinite Clone</span> by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:56:23621",
+      "name": "Chaos Fusion / Pure Chaos",
+      "spellId": 807578,
+      "spellIds": [
+        807578
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowsun_Border",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5168
+      ],
+      "requiredIds": [],
+      "desc": "While Incarnation of Chaos is active, you may now cast Chromatic Shard while moving, but the duration of Incarnation of Chaos is reduced by -3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807578,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is active, you may now cast <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> while moving, but the duration of <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is reduced by <span class=\"item-number\">-3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:56:231221",
+      "name": "End of Time / Eternity",
+      "spellId": 807690,
+      "spellIds": [
+        807690
+      ],
+      "tabId": 56,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_infinitedragonmount",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6522
+      ],
+      "requiredIds": [],
+      "desc": "At the end of the duration of Clasp of Infinity, you launch an Anomaly Spike at affected enemies and their damage dealt is reduced by -10% for 4 seconds.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807690,
+          "description": "At the end of the duration of <span style=\"color: #ffffff; display: inline\">Clasp of Infinity</span>, you launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at affected enemies and their damage dealt is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:22:87:707656",
+      "name": "Unmaker of Realities / Maker of Realities",
+      "spellId": 706107,
+      "spellIds": [
+        706107
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9198,
+        30276
+      ],
+      "requiredIds": [],
+      "desc": "While Hasten is active the ally now has a 25% chance when they deal damage to strike the target an additional time equal to 30% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706107,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Hasten</span> is active the ally now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance when they deal damage to strike the target an additional time equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:87:520854",
+      "name": "Timekeeper / Procrastination",
+      "spellId": 680845,
+      "spellIds": [
+        680845
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eng_unstabletemporaltimeshifter",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6213,
+        7226
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Timeguard by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680845,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Timeguard</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:87:572527",
+      "name": "Timewalking / Tripping the Rift",
+      "spellId": 572527,
+      "spellIds": [
+        572527
+      ],
+      "tabId": 87,
+      "classId": 22,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_DivineProvidence",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6214
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Waves of Time by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572527,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Waves of Time</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:58:807691",
+      "name": "Nozdormu's Gaze / Titan's Gaze",
+      "spellId": 807691,
+      "spellIds": [
+        807691
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "interface\\icons\\inv_misc_head_dragon_bronze",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30902
+      ],
+      "requiredIds": [],
+      "desc": "Your Time Out! now regenerates -2% less mana per tick, but casting it now instantly restores 15% of your maximum mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807691,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Time Out!</span> now regenerates <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> less mana per tick, but casting it now instantly restores <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum mana."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:58:707657",
+      "name": "Overcorrection / Bronze Timeways",
+      "spellId": 707657,
+      "spellIds": [
+        707657
+      ],
+      "tabId": 58,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_priestskill27_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30903
+      ],
+      "requiredIds": [],
+      "desc": "Overhealing done by Correct the Mistake now applies a heal over time effect to the ally equal to 30% of the healing done over 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707657,
+          "description": "Overhealing done by <span style=\"color: #ffffff; display: inline\">Correct the Mistake</span> now applies a heal over time effect to the ally equal to <span class=\"item-number\">30%</span> of the healing done over <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:57:74821",
+      "name": "Sporadic Incantations / Tamed Incantations",
+      "spellId": 570061,
+      "spellIds": [
+        570061
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_SunDarkening_Border",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30856
+      ],
+      "requiredIds": [],
+      "desc": "Your Flux Emitter now strikes 1 additional enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570061,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Flux Emitter</span> now strikes <span class=\"item-number\">1</span> additional enemy."
+        }
+      ]
+    },
+    {
+      "id": "choice:22:57:520875",
+      "name": "Reverse Engineering / Erode Armaments",
+      "spellId": 520875,
+      "spellIds": [
+        520875
+      ],
+      "tabId": 57,
+      "classId": 22,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Engineering_TanarisTP",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6174
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage and healing now has a 15% chance to increase your haste by 15% for 6 seconds and grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520875,
+          "description": "Periodic damage and healing now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds and grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Restores <span class=\"item-number\">1</span><span class=\"item-number\">%</span> maximum mana every <span class=\"item-number\">5</span> sec to allies within <span class=\"item-number\">100</span> yds for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    }
+  ]
+}

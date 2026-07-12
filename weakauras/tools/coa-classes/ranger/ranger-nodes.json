@@ -1,0 +1,4395 @@
+{
+  "class": "Ranger",
+  "classId": "21",
+  "specs": [
+    "Archery",
+    "Brigand",
+    "Farstrider"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Archery": 54,
+    "Brigand": 55,
+    "Farstrider": 2
+  },
+  "nodes": [
+    {
+      "id": 1387,
+      "name": "Guile of the Cutthroat",
+      "spellId": 560531,
+      "spellIds": [
+        560531
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shoulder_mail_raidhunter_l_01",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13164,
+        34140,
+        34164
+      ],
+      "requiredIds": [],
+      "desc": "Increases party and raid member's melee and ranged attack power by 5%. Does not stack with similar effects.In addition, increases your damage dealt by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560531,
+          "description": "Increases party and raid member's melee and ranged attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 1388,
+      "name": "Dirty Fighter",
+      "spellId": 806978,
+      "spellIds": [
+        806978
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_quipunch",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11349,
+        34167
+      ],
+      "requiredIds": [],
+      "desc": "Every 2nd critical strike with Skullpiercer or Assault within 30 seconds now transforms your next Assault within 15 seconds into Sucker Punch. Sucker PunchSucker punch an enemy, dealing 291 + 35% AP Physical damage and generating 5 stacks of Advantage. Scales with modifiers to Assault.For 8 seconds, the critical strike chance of Assault is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806978,
+          "description": "Every 2nd critical strike with <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> or <span style=\"color: #ffffff; display: inline\">Assault</span> within <span class=\"item-number\">30</span> seconds now transforms your next <span style=\"color: #ffffff; display: inline\">Assault</span> within <span class=\"item-number\">15</span> seconds into <span style=\"color: #ffffff; display: inline\">Sucker Punch</span>. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_monk_quipunch\" /><span class=\"name\">Sucker Punch</span></div><span class=\"desc\">Sucker punch an enemy, dealing <span class=\"item-number\">291</span> + <span class=\"item-number\">35% AP</span> Physical damage and generating <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span>. Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Assault</span>.<br /><br />For <span class=\"item-number\">8</span> seconds, the critical strike chance of <span style=\"color: #ffffff; display: inline\">Assault</span> is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 1389,
+      "name": "Banditry",
+      "spellId": 520574,
+      "spellIds": [
+        520574,
+        520879
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Rogue_CheatDeath",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31179
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 2% and Focus regeneration by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520574,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and Focus regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 520879,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and Focus regeneration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 3924,
+      "name": "To The Skies!",
+      "spellId": 301365,
+      "spellIds": [
+        301365
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_butterfly_green",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30924,
+        34195
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Bushcraft Glider by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301365,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Bushcraft Glider</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 4156,
+      "name": "Elven Tactics",
+      "spellId": 560701,
+      "spellIds": [
+        560701
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ui_darkshore_warfront_alliance_archer",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6945,
+        7906
+      ],
+      "requiredIds": [],
+      "desc": "You now have a -20% chance to not consume Advantage on cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560701,
+          "description": "You now have a <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> chance to not consume <span style=\"color: #8fff7a; display: inline\">Advantage</span> on cast."
+        }
+      ]
+    },
+    {
+      "id": 4186,
+      "name": "Double The Pace",
+      "spellId": 705031,
+      "spellIds": [
+        705031
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_ArrowRain_Hunter",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5311,
+        6347
+      ],
+      "requiredIds": [],
+      "desc": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.In addition, increases your critical strike chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705031,
+          "description": "Increases all party and raid member's melee and ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4429,
+      "name": "Sniper's Focus",
+      "spellId": 680470,
+      "spellIds": [
+        680470
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_crossbow_2h_kultirasquest_b_01",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 20,
+      "connectedNodeIds": [
+        4028
+      ],
+      "requiredIds": [],
+      "desc": "Consuming Advantage now has a 20% chance per Archery Point spent to refund 20 Focus.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680470,
+          "description": "Consuming <span style=\"color: #8fff7a; display: inline\">Advantage</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance per <span style=\"color: #FFFFFF; display: inline\">Archery Point</span> spent to refund <span class=\"item-number\">20</span> Focus."
+        }
+      ]
+    },
+    {
+      "id": 4554,
+      "name": "Freedom",
+      "spellId": 520628,
+      "spellIds": [
+        520628
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_tournaments_symbol_bloodelf",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34192
+      ],
+      "requiredIds": [],
+      "desc": "Free up to 10 nearby allies within 15 yds of you for 8 seconds, causing them to become immune to roots and snares, and allowing their critical strikes to increase their movement speed by 30% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520628,
+          "description": "Free up to <span class=\"item-number\">10</span> nearby allies within <span class=\"item-number\">15</span> yds of you for <span class=\"item-number\">8</span> seconds, causing them to become immune to roots and snares, and allowing their critical strikes to increase their movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 4631,
+      "name": "Survivalist",
+      "spellId": 707418,
+      "spellIds": [
+        707418
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_NatureTouchGrow",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34184
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Survival Potion by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707418,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Survival Potion</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5045,
+      "name": "Outmaneuver",
+      "spellId": 557325,
+      "spellIds": [
+        557325
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_findweakness",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34167,
+        11167
+      ],
+      "requiredIds": [],
+      "desc": "Teleport to an enemy, summon a decoy beneath them, and mark them for 8 seconds. Dealing melee damage to them adds a stack to this effect, up to 20 stacks.Reactivating this ability within 8 seconds deals 1 + 55% AP Physical damage to your target, increased by 20% for each stack on the target, and then teleports you back to your decoy.Usable while in Elude.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 557325,
+          "description": "Teleport to an enemy, summon a decoy beneath them, and mark them for <span class=\"item-number\">8</span> seconds. Dealing melee damage to them adds a stack to this effect, up to <span class=\"item-number\">20</span> stacks.<br /><br />Reactivating this ability within <span class=\"item-number\">8</span> seconds deals <span class=\"item-number\">1</span> + <span class=\"item-number\">55% AP</span> Physical damage to your target, increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for each stack on the target, and then teleports you back to your decoy.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>."
+        }
+      ]
+    },
+    {
+      "id": 5054,
+      "name": "Venom-Coated Seeds",
+      "spellId": 807459,
+      "spellIds": [
+        807459
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Druideskill_01_Border",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6437,
+        11437
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Snapseed now reduces the enemy's chance to hit by -15% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807459,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Snapseed</span> now reduces the enemy's chance to hit by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 5311,
+      "name": "Endurance Training",
+      "spellId": 705039,
+      "spellIds": [
+        705039
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_recuperate",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5908,
+        7908,
+        30053
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum Focus by 20.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705039,
+          "description": "Increases your maximum Focus by <span class=\"item-number\">20</span>."
+        }
+      ]
+    },
+    {
+      "id": 5430,
+      "name": "Assault",
+      "spellId": 803108,
+      "spellIds": [
+        803108
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_ruthlessness",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34166
+      ],
+      "requiredIds": [],
+      "desc": "Assault a low health enemy, dealing 100% Weapon Damage (175% with a dagger equipped) plus an additional 8 + 100% AP Physical damage. If the target is bleeding, this deals 50% increased damage.Damage increased for each stack of Advantage.Only usable on enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803108,
+          "description": "Assault a low health enemy, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage (<span class=\"item-number\">175</span><span class=\"item-number\">%</span> with a dagger equipped) plus an additional <span class=\"item-number\">8</span> + <span class=\"item-number\">100% AP</span> Physical damage. If the target is bleeding, this deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 6346,
+      "name": "Hunting Tactics",
+      "spellId": 300897,
+      "spellIds": [
+        300897
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill08_Border",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30924
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Skullpiercer is increased by 30% against Poisoned targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300897,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> is increased by <span class=\"item-number\">30%</span> against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 6347,
+      "name": "Sly",
+      "spellId": 560339,
+      "spellIds": [
+        560339
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_disgustingpizza",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30053
+      ],
+      "requiredIds": [],
+      "desc": "Your Woodland Adept now triggers a -10% reduced cooldown for each stack of Advantage active when cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560339,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Woodland Adept</span> now triggers a <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> reduced cooldown for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> active when cast."
+        }
+      ]
+    },
+    {
+      "id": 6348,
+      "name": "Archery Master",
+      "spellId": 706281,
+      "spellIds": [
+        706281
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\artifactability_marksmanhunter_legacyofthewindrunners",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7789
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Quick Shot now generate an additional stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706281,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Quick Shot</span> now generate an additional stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 6670,
+      "name": "Elusive Character",
+      "spellId": 560340,
+      "spellIds": [
+        560340
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_16_shadow_swords_Border",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29337,
+        30352
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage dealt by 10% for 12 seconds after leaving Elude.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560340,
+          "description": "Increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds after leaving <span style=\"color: #ffffff; display: inline\">Elude</span>."
+        }
+      ]
+    },
+    {
+      "id": 6671,
+      "name": "Highwayman",
+      "spellId": 707744,
+      "spellIds": [
+        707744
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill44_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30049
+      ],
+      "requiredIds": [],
+      "desc": "Direct critical strikes while behind your target increase your haste by 15% for 5 seconds, or for your next 2 attacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707744,
+          "description": "Direct critical strikes while behind your target increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, or for your next <span class=\"item-number\">2</span> attacks."
+        }
+      ]
+    },
+    {
+      "id": 6672,
+      "name": "Close Quarters",
+      "spellId": 301146,
+      "spellIds": [
+        301146,
+        301248
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Warrior_Cleave",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29328
+      ],
+      "requiredIds": [],
+      "desc": "Increases your attack power and Agility by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301146,
+          "description": "Increases your attack power and Agility by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301248,
+          "description": "Increases your attack power and Agility by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6673,
+      "name": "Bounty Hunter",
+      "spellId": 803114,
+      "spellIds": [
+        803114
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_polearm_2h_pandariaquest_b_01",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5430
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Flank and Rusty Shiv now increases the target's damage taken from your Advantage spenders by 25% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803114,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Flank</span> and <span style=\"color: #FFFFFF; display: inline\">Rusty Shiv</span> now increases the target's damage taken from your <span style=\"color: #8fff7a; display: inline\">Advantage</span> spenders by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6675,
+      "name": "'Tactical' Advantage",
+      "spellId": 706748,
+      "spellIds": [
+        706748
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_passivemastery_(10)_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7428,
+        34139
+      ],
+      "requiredIds": [],
+      "desc": "Knockout and Bushwhack now increases your damage dealt against the target by 10% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706748,
+          "description": "<span style=\"color: #ffffff; display: inline\">Knockout</span> and <span style=\"color: #ffffff; display: inline\">Bushwhack</span> now increases your damage dealt against the target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6682,
+      "name": "Outlaw",
+      "spellId": 706277,
+      "spellIds": [
+        706277
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Human_04",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34159
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Adaptations by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706277,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Adaptations</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6941,
+      "name": "Pierced",
+      "spellId": 705033,
+      "spellIds": [
+        705033
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_blood_shot_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34152
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Skullpiercer and Precision Shot cause the enemy to bleed for an additional 50% damage of the damage dealt over 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705033,
+          "description": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Skullpiercer</span> and <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> cause the enemy to bleed for an additional <span class=\"item-number\">50%</span> damage of the damage dealt over <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6944,
+      "name": "An Arrow for Everything",
+      "spellId": 560812,
+      "spellIds": [
+        560812
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_ArrowRain_Hunter",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7789,
+        30046
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Quivers by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560812,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Quivers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6945,
+      "name": "Natural Disguise",
+      "spellId": 520585,
+      "spellIds": [
+        520585
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureambush_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4186,
+        6347
+      ],
+      "requiredIds": [],
+      "desc": "Instantly dispels all movement slowing effects from allies within 30 yds and transforms them into a bush, stealthing them for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520585,
+          "description": "Instantly dispels all movement slowing effects from allies within <span class=\"item-number\">30</span> yds and transforms them into a bush, stealthing them for <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6946,
+      "name": "Adrenaline Rush",
+      "spellId": 520578,
+      "spellIds": [
+        520578
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill19_Border",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5908,
+        7790,
+        7908
+      ],
+      "requiredIds": [],
+      "desc": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by 40% for 10 seconds.Usable while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520578,
+          "description": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Usable while stealthed."
+        }
+      ]
+    },
+    {
+      "id": 6947,
+      "name": "Forest Dweller",
+      "spellId": 524864,
+      "spellIds": [
+        524864
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_manatree",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6782,
+        9782,
+        30050
+      ],
+      "requiredIds": [],
+      "desc": "While in Elude, gain 20% increased movement speed and regenerate 3% maximum health every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524864,
+          "description": "While in <span style=\"color: #ffffff; display: inline\">Elude</span>, gain <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased movement speed and regenerate <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6952,
+      "name": "Onslaught",
+      "spellId": 801951,
+      "spellIds": [
+        801951
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_FocusedMind",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6947,
+        7906
+      ],
+      "requiredIds": [],
+      "desc": "Your senses heighten, causing you to instantly generate 5 Advantage and allowing the use of abilities that require Elude for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801951,
+          "description": "Your senses heighten, causing you to instantly generate <span class=\"item-number\">5</span> <span style=\"color: #8fff7a; display: inline\">Advantage</span> and allowing the use of abilities that require <span style=\"color: #ffffff; display: inline\">Elude</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7048,
+      "name": "Assassin",
+      "spellId": 803871,
+      "spellIds": [
+        803871
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_hunter_assassinate",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6671,
+        30459
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Instinct by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803871,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Instinct</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7050,
+      "name": "Blow the Horns!",
+      "spellId": 573042,
+      "spellIds": [
+        573042,
+        573074
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Ascend_horn_b_01",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31133
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Horn spells by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573042,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Horn</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 573074,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Horn</span> spells by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7258,
+      "name": "Survival Kit",
+      "spellId": 504329,
+      "spellIds": [
+        504329
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_bag_06_b",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30352
+      ],
+      "requiredIds": [],
+      "desc": "Your Survival Potion now also heals you for 10% of your maximum health with each tick.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504329,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Survival Potion</span> now also heals you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your maximum health with each tick."
+        }
+      ]
+    },
+    {
+      "id": 7428,
+      "name": "Throatpunch",
+      "spellId": 500617,
+      "spellIds": [
+        500617
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_Warriorskill_05_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6673,
+        34139
+      ],
+      "requiredIds": [],
+      "desc": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for 2 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500617,
+          "description": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for <span class=\"item-number\">2</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7429,
+      "name": "Viper's Bite",
+      "spellId": 803104,
+      "spellIds": [
+        803104
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_poisonedknife",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1388
+      ],
+      "requiredIds": [],
+      "desc": "Generates 2 AdvantageUnleash 4 quick strikes over 1 seconds to an enemy, each dealing 85% Weapon Damage.If the target is bleeding, each strike deals an additional 400 + 25% AP Physical damage.If the target is poisoned, each strike deals Nature damage instead of Physical damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803104,
+          "description": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Unleash <span class=\"item-number\">4</span> quick strikes over <span class=\"item-number\">1</span> seconds to an enemy, each dealing <span class=\"item-number\">85</span><span class=\"item-number\">%</span> Weapon Damage.<br /><br />If the target is bleeding, each strike deals an additional <span class=\"item-number\">400</span> + <span class=\"item-number\">25% AP</span> Physical damage.<br /><br />If the target is poisoned, each strike deals Nature damage instead of Physical damage."
+        }
+      ]
+    },
+    {
+      "id": 7787,
+      "name": "Swiftshot",
+      "spellId": 705028,
+      "spellIds": [
+        705028
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_combatexpertise",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29447,
+        34151
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Precision Shot now increases enemy Physical damage taken by 11% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705028,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Precision Shot</span> now increases enemy Physical damage taken by <span class=\"item-number\">11</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7788,
+      "name": "Boots of Elvenkind",
+      "spellId": 704317,
+      "spellIds": [
+        704317
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ivn_boot_cloth_warfrontshorde_b_01",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7787,
+        34153
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility by 5% and reduces the duration of movement slowing effects on you by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704317,
+          "description": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces the duration of movement slowing effects on you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7789,
+      "name": "Maximum Power",
+      "spellId": 560688,
+      "spellIds": [
+        560688
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_SniperTraining",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29914
+      ],
+      "requiredIds": [],
+      "desc": "Abilities used with 5 stacks of Advantage now refresh the duration of your active Skirmish by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560688,
+          "description": "Abilities used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now refresh the duration of your active <span style=\"color: #FFFFFF; display: inline\">Skirmish</span> by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7790,
+      "name": "Blur",
+      "spellId": 520369,
+      "spellIds": [
+        520369
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Invisibilty",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7791,
+        30051
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to dodge and parry by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520369,
+          "description": "Increases your chance to dodge and parry by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7791,
+      "name": "Survival Expert",
+      "spellId": 560959,
+      "spellIds": [
+        560959
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_NaturalPerfection",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29331
+      ],
+      "requiredIds": [],
+      "desc": "Increases the dodge chance provided by Briar Veil by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560959,
+          "description": "Increases the dodge chance provided by <span style=\"color: #ffffff; display: inline\">Briar Veil</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7792,
+      "name": "Brutal Shot",
+      "spellId": 570014,
+      "spellIds": [
+        570014
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill31_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7793
+      ],
+      "requiredIds": [],
+      "desc": "Fire a volley of powerful shots that pierce through Armor, dealing 450% Ranged Weapon Damage plus 300 to all targets in a 40 yd line.While Skirmish is active this ability is guaranteed to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570014,
+          "description": "Fire a volley of powerful shots that pierce through Armor, dealing <span class=\"item-number\">450</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">300</span> to all targets in a <span class=\"item-number\">40</span> yd line.<br /><br />While <span style=\"color: #ffffff; display: inline\">Skirmish</span> is active this ability is guaranteed to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 7793,
+      "name": "Headshots Only",
+      "spellId": 680931,
+      "spellIds": [
+        680931
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_headshot_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4794,
+        6941,
+        7794
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt with Serrated Shot and Toxic Dart now increases the damage of your next Precision Shot within 8 seconds by 10%, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680931,
+          "description": "Periodic damage dealt with <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> and <span style=\"color: #FFFFFF; display: inline\">Toxic Dart</span> now increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> within <span class=\"item-number\">8</span> seconds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7904,
+      "name": "Incendiary Shot",
+      "spellId": 524870,
+      "spellIds": [
+        524870
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_fire_shot_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34133,
+        34137
+      ],
+      "requiredIds": [],
+      "desc": "Shoot a burning arrow dealing 791 + 35% ranged AP + 45% fire SP Fire damage to an enemy and up to 5 enemies within 6 yds, and causing your next 3 direct damage Advantage spenders to deal 50% of their damage to nearby enemies.Direct damage increased by 20% for each stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524870,
+          "description": "Shoot a burning arrow dealing <span class=\"item-number\">791</span> + <span class=\"item-number\">35% ranged AP</span> + <span class=\"item-number\">45% fire SP</span> Fire damage to an enemy and up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">6</span> yds, and causing your next <span class=\"item-number\">3</span> direct damage <span style=\"color: #8fff7a; display: inline\">Advantage</span> spenders to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their damage to nearby enemies.<br /><br />Direct damage increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 7905,
+      "name": "Mortal Shots",
+      "spellId": 707380,
+      "spellIds": [
+        707380
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_arrow_spell_02_Border",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7789,
+        30350
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Crippling Shot by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707380,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7906,
+      "name": "Guile of the Ranger",
+      "spellId": 520353,
+      "spellIds": [
+        520353
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill27_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4186,
+        6938,
+        12938,
+        30050
+      ],
+      "requiredIds": [],
+      "desc": "Your Instinct now additionally increases your critical strike rating by 20% of your Agility.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520353,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Instinct</span> now additionally increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility."
+        }
+      ]
+    },
+    {
+      "id": 8009,
+      "name": "A Quick Demise",
+      "spellId": 560810,
+      "spellIds": [
+        560810
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_mongoosebite",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34153
+      ],
+      "requiredIds": [],
+      "desc": "Auto shots now have a 20% chance to extend the duration of your Serrated Shot by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560810,
+          "description": "Auto shots now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to extend the duration of your <span style=\"color: #FFFFFF; display: inline\">Serrated Shot</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 8010,
+      "name": "Trueshot Lodge Training",
+      "spellId": 803113,
+      "spellIds": [
+        803113,
+        803855
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_druid_improvedmoonkinform",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30461,
+        34139
+      ],
+      "requiredIds": [],
+      "desc": "Increases your off-hand weapon damage by 25%.While wielding a polearm, your Physical damage dealt is increased by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803113,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />While wielding a polearm, your Physical damage dealt is increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 803855,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.<br /><br />While wielding a polearm, your Physical damage dealt is increased by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 8358,
+      "name": "Falcon Charmer",
+      "spellId": 705076,
+      "spellIds": [
+        705076
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_archaeology_carved_wildhammer_gryphon_figurine",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34181
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of War Falcons by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705076,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">War Falcons</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 9274,
+      "name": "Thread The Needle",
+      "spellId": 524831,
+      "spellIds": [
+        524831
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritualarrow_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4554,
+        5054,
+        34195
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Quick Shot or Falconstrike now reduce the cast time and cost of your next ability that consumes Advantage by -34% for 15 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524831,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Quick Shot</span> or <span style=\"color: #ffffff; display: inline\">Falconstrike</span> now reduce the cast time and cost of your next ability that consumes <span style=\"color: #8fff7a; display: inline\">Advantage</span> by <span class=\"item-number\">-34</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 9454,
+      "name": "Petalkeeper",
+      "spellId": 520925,
+      "spellIds": [
+        520925
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_magicflower_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30925,
+        30929
+      ],
+      "requiredIds": [],
+      "desc": "Woodland Arrow now spawns a rare red Dream Flower at a random location near you for 30 seconds.Critical strikes will apply a stack of Petals to red Dream Flowers. PetalsAt 10 stacks, your next Ranger Horn will cause the flower to burst, granting a buff to allies within 20 yards that causes damage dealt to heal them for 10% of the damage dealt and preventing their movement speed from being reduced below 100% of normal speed, for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520925,
+          "description": "<span style=\"color: #ffffff; display: inline\">Woodland Arrow</span> now spawns a rare red <span style=\"color: #ffffff; display: inline\">Dream Flower</span> at a random location near you for <span class=\"item-number\">30</span> seconds.<br /><br />Critical strikes will apply a stack of <span style=\"color: #ffffff; display: inline\">Petals</span> to red <span style=\"color: #ffffff; display: inline\">Dream Flowers</span>. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_magicflower_border\" /><span class=\"name\">Petals</span></div><span class=\"desc\">At <span class=\"item-number\">10</span> stacks, your next <span style=\"color: #ffffff; display: inline\">Ranger Horn</span> will cause the flower to burst, granting a buff to allies within <span class=\"item-number\">20</span> yards that causes damage dealt to heal them for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt and preventing their movement speed from being reduced below <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of normal speed, for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 11349,
+      "name": "Quick-Witted",
+      "spellId": 704311,
+      "spellIds": [
+        704311
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_quiver_05",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34141,
+        6675
+      ],
+      "requiredIds": [],
+      "desc": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing 1 + 100% AP Physical damage and reducing their attack speed by -20% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704311,
+          "description": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">100% AP</span> Physical damage and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29144,
+      "name": "Crippling Shot",
+      "spellId": 804725,
+      "spellIds": [
+        804725
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Custom_dismounting_Shot",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Fire a crippling shot at an enemy slowing movement speed by -50% and knocking them off their mounts, making them unable to mount again for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804725,
+          "description": "Fire a crippling shot at an enemy slowing movement speed by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> and knocking them off their mounts, making them unable to mount again for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29148,
+      "name": "Hunting with Precision",
+      "spellId": 524867,
+      "spellIds": [
+        524867
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill28_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29660
+      ],
+      "requiredIds": [],
+      "desc": "Your Hunting Shot now deals 25% increased damage for each subsequent target it ricochets to.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524867,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Hunting Shot</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage for each subsequent target it ricochets to."
+        }
+      ]
+    },
+    {
+      "id": 29328,
+      "name": "Knuckleduster",
+      "spellId": 806957,
+      "spellIds": [
+        806957
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_leather_a_03defias",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31179
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now generates 5 Focus.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806957,
+          "description": "Periodic damage dealt now generates <span class=\"item-number\">5</span> Focus."
+        }
+      ]
+    },
+    {
+      "id": 29331,
+      "name": "Briar Veil",
+      "spellId": 800084,
+      "spellIds": [
+        800084
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureempower_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29416,
+        34169,
+        34172
+      ],
+      "requiredIds": [],
+      "desc": "Thorns and leaves swirl around you, masking your movements for 10 seconds, increasing your dodge chance by 50% and causing dodging attacks to restore 2% maximum health and 5 Focus.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800084,
+          "description": "Thorns and leaves swirl around you, masking your movements for <span class=\"item-number\">10</span> seconds, increasing your dodge chance by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and causing dodging attacks to restore <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum health and <span class=\"item-number\">5</span> Focus."
+        }
+      ]
+    },
+    {
+      "id": 29337,
+      "name": "Knockout",
+      "spellId": 801435,
+      "spellIds": [
+        801435
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_blackoutkick",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Knock an enemy out, incapacitating them for 4 seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.Usable while in Elude.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801435,
+          "description": "Knock an enemy out, incapacitating them for <span class=\"item-number\">4</span> seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>."
+        }
+      ]
+    },
+    {
+      "id": 29416,
+      "name": "Grace",
+      "spellId": 705092,
+      "spellIds": [
+        705092,
+        707848,
+        712477
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 3,
+      "icon": "Interface\\icons\\5_archerskill10_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6670,
+        7258,
+        30351
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility and movement speed by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705092,
+          "description": "Increases your Agility and movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707848,
+          "description": "Increases your Agility and movement speed by <span class=\"item-number\">7</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712477,
+          "description": "Increases your Agility and movement speed by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29447,
+      "name": "Deadeye",
+      "spellId": 300700,
+      "spellIds": [
+        300700
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_bloodyeye",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31178
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your ranged abilities and Auto Shot by 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300700,
+          "description": "Increases the range of your ranged abilities and <span style=\"color: #ffffff; display: inline\">Auto Shot</span> by <span class=\"item-number\">5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 29660,
+      "name": "Hunting Shot",
+      "spellId": 801191,
+      "spellIds": [
+        801191
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_arrow_spell_01_Border",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34153
+      ],
+      "requiredIds": [],
+      "desc": "Fire a shot that ricochets between 3 enemies, dealing Ranged Weapon Damage plus 6 to each enemy.Generates 1 stack of Advantage for each enemy hit.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801191,
+          "description": "Fire a shot that ricochets between <span class=\"item-number\">3</span> enemies, dealing Ranged Weapon Damage plus <span class=\"item-number\">6</span> to each enemy.<br /><br />Generates <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> for each enemy hit."
+        }
+      ]
+    },
+    {
+      "id": 29701,
+      "name": "Quills",
+      "spellId": 560966,
+      "spellIds": [
+        560966
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_FanOfKnives_Yellow",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6676,
+        8010,
+        34175
+      ],
+      "requiredIds": [],
+      "desc": "Launch darts at up to 5 nearby enemies, dealing 15 + 30% AP Ranged Physical damage.Damage increased and strikes 1 additional target for each stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560966,
+          "description": "Launch darts at up to <span class=\"item-number\">5</span> nearby enemies, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">30% AP</span> Ranged Physical damage.<br /><br />Damage increased and strikes <span class=\"item-number\">1</span> additional target for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 29914,
+      "name": "Skirmish",
+      "spellId": 802039,
+      "spellIds": [
+        802039
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_RunningShot",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7788,
+        31283
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 15% and reduces your Focus costs by -25%.Lasts 4 sec for each stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802039,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and reduces your Focus costs by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.<br /><br />Lasts <span class=\"item-number\">4</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 30045,
+      "name": "Instinctual Combatant",
+      "spellId": 707319,
+      "spellIds": [
+        707319
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_MirrorImage",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1388,
+        5045,
+        34176
+      ],
+      "requiredIds": [],
+      "desc": "Casting Instinct now also restores 40 extra Focus and guarantees your next 3 Skullpiercers or Assaults within 20 seconds to critically strike.In addition, Instinct now grants you an additional 10% of your Agility as melee attack power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707319,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Instinct</span> now also restores <span class=\"item-number\">40</span> extra Focus and guarantees your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Skullpiercers</span> or <span style=\"color: #FFFFFF; display: inline\">Assaults</span> within <span class=\"item-number\">20</span> seconds to critically strike.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Instinct</span> now grants you an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Agility as melee attack power."
+        }
+      ]
+    },
+    {
+      "id": 30046,
+      "name": "Corrosive Poison",
+      "spellId": 572372,
+      "spellIds": [
+        572372
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_PiercingShots",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34136
+      ],
+      "requiredIds": [],
+      "desc": "Your ranged abilities against Poisoned targets now ignores 25% of enemy armor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572372,
+          "description": "Your ranged abilities against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets now ignores <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of enemy armor."
+        }
+      ]
+    },
+    {
+      "id": 30049,
+      "name": "Dirty Blades",
+      "spellId": 680276,
+      "spellIds": [
+        680276
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_rollthebones02",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6672
+      ],
+      "requiredIds": [],
+      "desc": "For 4 seconds, your melee auto attacks deal an additional 30% (doubled with a dagger equipped) of the damage dealt as Nature damage and reduces your target's healing received by -20% for 8 seconds, stacking 2 times.Duration increased by 4 sec for each stack of Advantage.Usable while in Elude.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680276,
+          "description": "For <span class=\"item-number\">4</span> seconds, your melee auto attacks deal an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> (doubled with a dagger equipped) of the damage dealt as Nature damage and reduces your target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br />Duration increased by <span class=\"item-number\">4</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>."
+        }
+      ]
+    },
+    {
+      "id": 30050,
+      "name": "Woodland Stalker",
+      "spellId": 705034,
+      "spellIds": [
+        705034
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_StrangleVines",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1906,
+        4936,
+        6782,
+        9782
+      ],
+      "requiredIds": [],
+      "desc": "While in Elude, your critical strike chance is now increased by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705034,
+          "description": "While in <span style=\"color: #ffffff; display: inline\">Elude</span>, your critical strike chance is now increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30051,
+      "name": "Dirty Fighter",
+      "spellId": 705044,
+      "spellIds": [
+        705044
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_plunderarmor",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34172
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance for Flank to critically strike by 50% and increases your chance to resist root effects by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705044,
+          "description": "Increases the chance for <span style=\"color: #FFFFFF; display: inline\">Flank</span> to critically strike by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and increases your chance to resist root effects by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30053,
+      "name": "Woodland Adept",
+      "spellId": 570015,
+      "spellIds": [
+        570015
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturepoisonedstep_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34157,
+        34168,
+        34171
+      ],
+      "requiredIds": [],
+      "desc": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by 25% for 10 seconds, and applies Elude.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570015,
+          "description": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, and applies <span style=\"color: #ffffff; display: inline\">Elude</span>."
+        }
+      ]
+    },
+    {
+      "id": 30180,
+      "name": "Lethal Wounds",
+      "spellId": 705055,
+      "spellIds": [
+        705055
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_blood_spell_02_Border",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29148,
+        30350
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of your periodic damage effects by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705055,
+          "description": "Increases the tick rate of your periodic damage effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30350,
+      "name": "Serrations",
+      "spellId": 705050,
+      "spellIds": [
+        705050,
+        707850
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_knife_1h_thunderisleraid_d_02",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8009
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage against bleeding or Poisoned targets by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705050,
+          "description": "Increases your damage against bleeding or <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707850,
+          "description": "Increases your damage against bleeding or <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30351,
+      "name": "Improved Waterskins",
+      "spellId": 573057,
+      "spellIds": [
+        573057
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_drink_waterskin_03",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29144,
+        30352
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Waterskins by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573057,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Waterskins</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30352,
+      "name": "Survival Potion",
+      "spellId": 802839,
+      "spellIds": [
+        802839
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturecocktail_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Drink a survival potion, dispelling all poison and disease effects and removing 1 poison and disease effect every 3 sec for 9 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802839,
+          "description": "Drink a survival potion, dispelling all poison and disease effects and removing <span class=\"item-number\">1</span> poison and disease effect every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">9</span> seconds.<br />"
+        }
+      ]
+    },
+    {
+      "id": 30459,
+      "name": "Ambuscade",
+      "spellId": 705053,
+      "spellIds": [
+        705053
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_throwdown_2",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30049
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Skullpiercer and Flank by 20%, plus an additional 35% if you have a polearm equipped.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705053,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Flank</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, plus an additional <span class=\"item-number\">35</span><span class=\"item-number\">%</span> if you have a polearm equipped."
+        }
+      ]
+    },
+    {
+      "id": 30461,
+      "name": "Hookshot",
+      "spellId": 800360,
+      "spellIds": [
+        800360
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_versatility",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12449,
+        29449
+      ],
+      "requiredIds": [],
+      "desc": "Launch a hook at a target attempting to lodge it into an open wound, dealing 66 + 100% AP Physical damage. If the target is bleeding, you can reactivate this to pull yourself to them, dealing 150% Weapon Damage and generating 2 Advantage",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800360,
+          "description": "Launch a hook at a target attempting to lodge it into an open wound, dealing <span class=\"item-number\">66</span> + <span class=\"item-number\">100% AP</span> Physical damage. <br /><br />If the target is bleeding, you can reactivate this to pull yourself to them, dealing <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage and generating <span class=\"item-number\">2</span> <span style=\"color: #8fff7a; display: inline\">Advantage</span>"
+        }
+      ]
+    },
+    {
+      "id": 30462,
+      "name": "Barbed Quills",
+      "spellId": 800077,
+      "spellIds": [
+        800077
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Gouge",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34176
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Wild Strike and Quills will now tear into enemies, causing them to bleed for 78 Physical damage over 9 seconds, stacking 4 times.Damage dealt by Quills now spreads your periodic effects to 5 enemies within 10 yds and extends their duration by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800077,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Wild Strike</span> and <span style=\"color: #ffffff; display: inline\">Quills</span> will now tear into enemies, causing them to bleed for <span class=\"item-number\">78</span> Physical damage over <span class=\"item-number\">9</span> seconds, stacking <span class=\"item-number\">4</span> times.<br /><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Quills</span> now spreads your periodic effects to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">10</span> yds and extends their duration by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30924,
+      "name": "Highlander",
+      "spellId": 707534,
+      "spellIds": [
+        707534
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_jadeforest",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34185
+      ],
+      "requiredIds": [],
+      "desc": "Each time you spawn a green Dreamflower you are granted 1 stack of Highlander.Highlander (Stacks)At 3 stacks, your next Falconstrike within 10 seconds deals 25% increased damage and reduces the enemy's healing received by -40% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707534,
+          "description": "Each time you spawn a green <span style=\"color: #ffffff; display: inline\">Dreamflower</span> you are granted <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Highlander</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_zone_jadeforest\" /><span class=\"name\">Highlander (Stacks)</span></div><span class=\"desc\">At <span class=\"item-number\">3</span> stacks, your next <span style=\"color: #ffffff; display: inline\">Falconstrike</span> within <span class=\"item-number\">10</span> seconds deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage and reduces the enemy's healing received by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30925,
+      "name": "Plumes of War",
+      "spellId": 705071,
+      "spellIds": [
+        705071
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_AnimalHandler",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        3924,
+        9274,
+        34196
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Falconstrike and Emerald Arrow by 15%.In addition, critical strikes with Falconstrike now increase the damage of subsequent Falconstrikes by 5% for 15 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705071,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Falconstrike</span> and <span style=\"color: #ffffff; display: inline\">Emerald Arrow</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.<br /><br />In addition, critical strikes with <span style=\"color: #ffffff; display: inline\">Falconstrike</span> now increase the damage of subsequent <span style=\"color: #ffffff; display: inline\">Falconstrikes</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30926,
+      "name": "Cunning",
+      "spellId": 520615,
+      "spellIds": [
+        520615,
+        520878
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\misc_legionfall_hunter",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31133
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Focus regeneration by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520615,
+          "description": "Increases your Focus regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 520878,
+          "description": "Increases your Focus regeneration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30929,
+      "name": "Whipvine Arrow",
+      "spellId": 806342,
+      "spellIds": [
+        806342
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_herb_nightmarevine",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        3924,
+        6346
+      ],
+      "requiredIds": [],
+      "desc": "Launch an arrow with magical vines attached to it at your target, dealing 78 + 33% ranged AP Nature damage and rooting them for 40 seconds (8 sec vs players). Damage caused may interrupt the effect.Hits 1 additional nearby target per stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806342,
+          "description": "Launch an arrow with magical vines attached to it at your target, dealing <span class=\"item-number\">78</span> + <span class=\"item-number\">33% ranged AP</span> Nature damage and rooting them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players). Damage caused may interrupt the effect.<br /><br />Hits <span class=\"item-number\">1</span> additional nearby target per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 30931,
+      "name": "Pecking",
+      "spellId": 570737,
+      "spellIds": [
+        570737
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\artifactability_survivalhunter_eaglesbite",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34179,
+        34196
+      ],
+      "requiredIds": [],
+      "desc": "Your War Falcons and Dragonhawks now have a 25% chance to deal additional Physical damage to 3 nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570737,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">War Falcons</span> and <span style=\"color: #ffffff; display: inline\">Dragonhawks</span> now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to deal additional Physical damage to <span class=\"item-number\">3</span> nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 30932,
+      "name": "Woodland Arrow",
+      "spellId": 806368,
+      "spellIds": [
+        806368
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturegoldenarrow_Border",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7050
+      ],
+      "requiredIds": [],
+      "desc": "Shoot a magical arrow, dealing 38 + 35% ranged AP Physical damage and reducing the cooldown of active Horn spells by -15 sec.Damage increased for each stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806368,
+          "description": "Shoot a magical arrow, dealing <span class=\"item-number\">38</span> + <span class=\"item-number\">35% ranged AP</span> Physical damage and reducing the cooldown of active <span style=\"color: #FFFFFF; display: inline\">Horn</span> spells by <span class=\"item-number\">-15</span> sec.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 31133,
+      "name": "Falconstrike",
+      "spellId": 573060,
+      "spellIds": [
+        573060
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_felarakkoa_focusedblast",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 10,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Every 5th Quick Shot within 15 seconds transforms into Falconstrike.Using a Horn instantly transforms Quick Shot into Falconstrike.Falconstrike (Transform)Generates 2 AdvantageCall a cast of falcons to strike an enemy, dealing 121% Ranged Weapon Damage plus 10 Nature damage and calling 1 War Falcon to your aid for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573060,
+          "description": "Every 5th <span style=\"color: #ffffff; display: inline\">Quick Shot</span> within <span class=\"item-number\">15</span> seconds transforms into <span style=\"color: #ffffff; display: inline\">Falconstrike</span>.<br /><br />Using a <span style=\"color: #ffffff; display: inline\">Horn</span> instantly transforms <span style=\"color: #ffffff; display: inline\">Quick Shot</span> into <span style=\"color: #ffffff; display: inline\">Falconstrike</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_felarakkoa_focusedblast\" /><span class=\"name\">Falconstrike (Transform)</span></div><span class=\"desc\"><span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Call a cast of falcons to strike an enemy, dealing <span class=\"item-number\">121</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">10</span> Nature damage and calling <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">War Falcon</span> to your aid for <span class=\"item-number\">6</span> seconds.<br /><br /></span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31178,
+      "name": "Precision Shot",
+      "spellId": 500075,
+      "spellIds": [
+        500075
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill07_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4028,
+        29144
+      ],
+      "desc": "Precisely shoot an enemy from a great distance, inflicting 38 + 48.5% ranged AP Physical damage.Damage increased for each stack of Advantage.Usable while in Elude.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500075,
+          "description": "Precisely shoot an enemy from a great distance, inflicting <span class=\"item-number\">38</span> + <span class=\"item-number\">48.5% ranged AP</span> Physical damage.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>."
+        }
+      ]
+    },
+    {
+      "id": 31179,
+      "name": "Ravage",
+      "spellId": 803851,
+      "spellIds": [
+        803851
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_mongoosebite",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4029,
+        29337
+      ],
+      "desc": "Generates 1 AdvantageRavage an enemy, causing them to bleed out dealing 112 + 23.72% AP Physical damage over 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803851,
+          "description": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">1</span> Advantage</span><br />Ravage an enemy, causing them to bleed out dealing <span class=\"item-number\">112</span> + <span class=\"item-number\">23.72% AP</span> Physical damage over <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31280,
+      "name": "Elven Enchantments",
+      "spellId": 705054,
+      "spellIds": [
+        705054
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_character_nightelf_female",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7904
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by your Searing and Poison Quivers by 25%.In addition, dealing damage with Searing or Poison Quiver now grants a stack of Elven Enchantments.Elven EnchantmentsCast time of the next Incendiary Shot within 10 seconds is reduced by -10% and critical strike chance increased by 10%, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705054,
+          "description": "Increases the damage dealt by your <span style=\"color: #FFFFFF; display: inline\">Searing</span> and <span style=\"color: #FFFFFF; display: inline\">Poison Quivers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />In addition, dealing damage with <span style=\"color: #FFFFFF; display: inline\">Searing</span> or <span style=\"color: #ffffff; display: inline\">Poison Quiver</span> now grants a stack of <span style=\"color: #FFFFFF; display: inline\">Elven Enchantments</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_character_nightelf_female\" /><span class=\"name\">Elven Enchantments</span></div><span class=\"desc\">Cast time of the next <span style=\"color: #FFFFFF; display: inline\">Incendiary Shot</span> within <span class=\"item-number\">10</span> seconds is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and critical strike chance increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31281,
+      "name": "Pathfinder",
+      "spellId": 706284,
+      "spellIds": [
+        706284
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_jadeforest",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4794,
+        6348,
+        7794,
+        34133
+      ],
+      "requiredIds": [],
+      "desc": "Your Adrenaline Rush now incurs a -90% reduced cooldown when used while Elude is active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706284,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> now incurs a <span class=\"item-number\">-90</span><span class=\"item-number\">%</span> reduced cooldown when used while <span style=\"color: #ffffff; display: inline\">Elude</span> is active."
+        }
+      ]
+    },
+    {
+      "id": 31283,
+      "name": "Studded Arrows",
+      "spellId": 300706,
+      "spellIds": [
+        300706,
+        301359
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_D3hungeringarrow",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7787,
+        31284
+      ],
+      "requiredIds": [],
+      "desc": "Increases the ranged weapon damage dealt by Quick Shot by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300706,
+          "description": "Increases the ranged weapon damage dealt by <span style=\"color: #ffffff; display: inline\">Quick Shot</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301359,
+          "description": "Increases the ranged weapon damage dealt by <span style=\"color: #ffffff; display: inline\">Quick Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31284,
+      "name": "Superb Shot",
+      "spellId": 301249,
+      "spellIds": [
+        301249
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_ammo_arrow_04",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29447
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Auto Shot now restores 4 Focus.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301249,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Auto Shot</span> now restores <span class=\"item-number\">4</span> Focus."
+        }
+      ]
+    },
+    {
+      "id": 34133,
+      "name": "Strike Where It Hurts",
+      "spellId": 804178,
+      "spellIds": [
+        804178
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_KillCommand",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7905,
+        30180
+      ],
+      "requiredIds": [],
+      "desc": "Your ability critical strikes now increase the damage the target takes from bleeds by 30% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804178,
+          "description": "Your ability critical strikes now increase the damage the target takes from bleeds by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34136,
+      "name": "Deadshot",
+      "spellId": 520227,
+      "spellIds": [
+        520227
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_bloodarrow_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31284
+      ],
+      "requiredIds": [],
+      "desc": "Generates 2 AdvantageShoot a powerful arrow at the target dealing 250% Ranged Weapon Damage plus 20.1.Only usable on enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520227,
+          "description": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Shoot a powerful arrow at the target dealing <span class=\"item-number\">250</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">20.1</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 34137,
+      "name": "Hawkeye",
+      "spellId": 800358,
+      "spellIds": [
+        800358
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_SilentHunter",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30180
+      ],
+      "requiredIds": [],
+      "desc": "You now fire an arrow every 3 sec at enemies within 30 yds affected by your Hunting Shot, dealing 75% Ranged Weapon Damage.Scales with Hunting Shot modifiers.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800358,
+          "description": "You now fire an arrow every <span class=\"item-number\">3</span> sec at enemies within <span class=\"item-number\">30</span> yds affected by your <span style=\"color: #ffffff; display: inline\">Hunting Shot</span>, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Ranged Weapon Damage.<br /><br />Scales with <span style=\"color: #ffffff; display: inline\">Hunting Shot</span> modifiers."
+        }
+      ]
+    },
+    {
+      "id": 34139,
+      "name": "Dice Games",
+      "spellId": 801438,
+      "spellIds": [
+        801438
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_rollthebones",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5430
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Wild Strike and Assault by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801438,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Wild Strike</span> and <span style=\"color: #ffffff; display: inline\">Assault</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34140,
+      "name": "Underhanded",
+      "spellId": 705061,
+      "spellIds": [
+        705061,
+        707884
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_hunter_cobrashot",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6671,
+        7048
+      ],
+      "requiredIds": [],
+      "desc": "Increases the attack power scaling of Skullpiercer by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705061,
+          "description": "Increases the attack power scaling of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707884,
+          "description": "Increases the attack power scaling of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34141,
+      "name": "Stalker",
+      "spellId": 561110,
+      "spellIds": [
+        561110
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_Execute_Hunter",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7428
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Cutthroat by -15 sec, but reduces the range of Cutthroat by -10 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561110,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Cutthroat</span> by <span class=\"item-number\">-15</span> sec, but reduces the range of <span style=\"color: #ffffff; display: inline\">Cutthroat</span> by <span class=\"item-number\">-10</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 34147,
+      "name": "Quel'dorei Poison",
+      "spellId": 560802,
+      "spellIds": [
+        560802
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_SpiritualArrow_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30932
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Woodland Arrow and Emerald Arrow now poison enemies for 3 seconds, dealing 91 + 10% ranged AP Nature damage every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560802,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Woodland Arrow</span> and <span style=\"color: #FFFFFF; display: inline\">Emerald Arrow</span> now poison enemies for <span class=\"item-number\">3</span> seconds, dealing <span class=\"item-number\">91</span> + <span class=\"item-number\">10% ranged AP</span> Nature damage every <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34148,
+      "name": "Neurotoxin Arrow",
+      "spellId": 500071,
+      "spellIds": [
+        500071
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_naturearrow_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31284
+      ],
+      "requiredIds": [],
+      "desc": "Shoot at an enemy's throat with a toxin-laced arrow, dealing 25 + 36.07% ranged AP Nature damage and silencing them for 1 seconds.Duration increased by 1 sec per stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500071,
+          "description": "Shoot at an enemy's throat with a toxin-laced arrow, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">36.07% ranged AP</span> Nature damage and silencing them for <span class=\"item-number\">1</span> seconds.<br /><br />Duration increased by <span class=\"item-number\">1</span> sec per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 34151,
+      "name": "Devastating Shots",
+      "spellId": 705032,
+      "spellIds": [
+        705032,
+        707849
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_trickshot",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31178
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 2% and your hit chance by 1%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705032,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707849,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34152,
+      "name": "New-Age Archery",
+      "spellId": 704312,
+      "spellIds": [
+        704312
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_goldenarrow_Border",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30046,
+        34155
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Skullpiercer and Precision Shot by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704312,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34153,
+      "name": "Improved Serrated Shot",
+      "spellId": 707888,
+      "spellIds": [
+        707888
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_assassinate2",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34151
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Serrated Shot by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707888,
+          "description": "Increases the damage of <span style=\"color: #fffffF; display: inline\">Serrated Shot</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34155,
+      "name": "Opportunist",
+      "spellId": 807493,
+      "spellIds": [
+        807493
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill03_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34148
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Precision Shot by 50% on enemies above 80% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807493,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">80%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 34156,
+      "name": "Rapid Strikes",
+      "spellId": 560341,
+      "spellIds": [
+        560341
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_CrossingSwords_ColorsGreen",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7906
+      ],
+      "requiredIds": [],
+      "desc": "Melee and ranged auto attacks now have a 25% chance to strike an additional time for 50% of the damage dealt.Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560341,
+          "description": "Melee and ranged auto attacks now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike an additional time for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.<br /><br />Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": 34157,
+      "name": "Pinpoint Accuracy",
+      "spellId": 801468,
+      "spellIds": [
+        801468
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_weapon_bow_01",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34169
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with direct damaging abilities now generate 4 Focus.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801468,
+          "description": "Critical strikes with direct damaging abilities now generate <span class=\"item-number\">4</span> Focus."
+        }
+      ]
+    },
+    {
+      "id": 34159,
+      "name": "Deft Hands",
+      "spellId": 707417,
+      "spellIds": [
+        707417
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_handoflight",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34172
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee and ranged haste by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707417,
+          "description": "Increases your melee and ranged haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34166,
+      "name": "Jagged Cuts",
+      "spellId": 807668,
+      "spellIds": [
+        807668
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_SwiftStrike",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1389
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage and duration of Toxic Dart and Ravage by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807668,
+          "description": "Increases the damage and duration of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> and <span style=\"color: #ffffff; display: inline\">Ravage</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34168,
+      "name": "Camper",
+      "spellId": 705026,
+      "spellIds": [
+        705026
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_makecamp",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34171
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of your Bushcraft abilities by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705026,
+          "description": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Bushcraft</span> abilities by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34169,
+      "name": "Snapseed",
+      "spellId": 804027,
+      "spellIds": [
+        804027
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\twisted_seed",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30351
+      ],
+      "requiredIds": [],
+      "desc": "Toss a snapseed at an enemy, dealing 27 + 30% ranged AP Physical damage and knocking them back.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804027,
+          "description": "Toss a snapseed at an enemy, dealing <span class=\"item-number\">27</span> + <span class=\"item-number\">30% ranged AP</span> Physical damage and knocking them back."
+        }
+      ]
+    },
+    {
+      "id": 34171,
+      "name": "Resourceful",
+      "spellId": 504008,
+      "spellIds": [
+        504008
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_HealingTouch",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34169
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Crippling Shot and Snapseed by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504008,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> and <span style=\"color: #ffffff; display: inline\">Snapseed</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34172,
+      "name": "Cutthroat",
+      "spellId": 800359,
+      "spellIds": [
+        800359
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Archerskill_04_nobg_Border",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6670
+      ],
+      "requiredIds": [],
+      "desc": "Shoot a powerful arrow that deals Weapon Damage plus 40 and stuns the target for 1 seconds. Duration increased by 1 sec per stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800359,
+          "description": "Shoot a powerful arrow that deals Weapon Damage plus <span class=\"item-number\">40</span> and stuns the target for <span class=\"item-number\">1</span> seconds. <br /><br />Duration increased by <span class=\"item-number\">1</span> sec per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": 34176,
+      "name": "Stonemason's Secret",
+      "spellId": 524654,
+      "spellIds": [
+        524654
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_runescrolloffortitude_green",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1387,
+        34167,
+        11167
+      ],
+      "requiredIds": [],
+      "desc": "Your Skullpiercer used with 5 stacks of Advantage now extends the duration of Dirty Blades by 6 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524654,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Dirty Blades</span> by <span class=\"item-number\">6</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34179,
+      "name": "Phoenix Plumes",
+      "spellId": 705074,
+      "spellIds": [
+        705074
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_icon_feather06a",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5431,
+        11431
+      ],
+      "requiredIds": [],
+      "desc": "Your Skullpiercers and Woodland Arrows used with 5 stacks of Advantage now restore 3% Focus and summon a War Falcon for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705074,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Skullpiercers</span> and <span style=\"color: #ffffff; display: inline\">Woodland Arrows</span> used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> Focus and summon a <span style=\"color: #ffffff; display: inline\">War Falcon</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34180,
+      "name": "Thalassian Brand",
+      "spellId": 560805,
+      "spellIds": [
+        560805
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturetarget_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30925
+      ],
+      "requiredIds": [],
+      "desc": "Mark an enemy for total destruction, increasing your allies ranged attack power against the target by 300 and dealing 1120 Nature damage every 3 sec for 15 seconds.The marked target can always be seen by the Ranger whether it stealths or turns invisible",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560805,
+          "description": "Mark an enemy for total destruction, increasing your allies ranged attack power against the target by <span class=\"item-number\">300</span> and dealing <span class=\"item-number\">1120</span> Nature damage every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />The marked target can always be seen by the Ranger whether it stealths or turns invisible<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34181,
+      "name": "Falcon's Call",
+      "spellId": 804715,
+      "spellIds": [
+        804715
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_skyreach_castdown",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30926
+      ],
+      "requiredIds": [],
+      "desc": "Call down war falcons upon a targeted area, slowing up to 8 enemies within the area by -60% for 5 seconds.A Falcon is summoned for each enemy affected for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804715,
+          "description": "Call down war falcons upon a targeted area, slowing up to <span class=\"item-number\">8</span> enemies within the area by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />A <span style=\"color: #FFFFFF; display: inline\">Falcon</span> is summoned for each enemy affected for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34182,
+      "name": "Coordination",
+      "spellId": 520621,
+      "spellIds": [
+        520621
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Hunter_BeastWithin",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30925,
+        30931
+      ],
+      "requiredIds": [],
+      "desc": "Your War Falcons and Dragonhawks now grant you a stack of Coordination when they deal damage.Coordination (Proc)Increases your critical strike chance and critical damage by 1% for 15 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520621,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">War Falcons</span> and <span style=\"color: #ffffff; display: inline\">Dragonhawks</span> now grant you a stack of <span style=\"color: #ffffff; display: inline\">Coordination</span> when they deal damage.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_hunter_beastwithin\" /><span class=\"name\">Coordination (Proc)</span></div><span class=\"desc\">Increases your critical strike chance and critical damage by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">10</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34184,
+      "name": "Backstep",
+      "spellId": 800685,
+      "spellIds": [
+        800685
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_karoz_leap",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7050,
+        30926
+      ],
+      "requiredIds": [],
+      "desc": "Leap backwards up to 10 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800685,
+          "description": "Leap backwards up to <span class=\"item-number\">10</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 34185,
+      "name": "Forest Herald",
+      "spellId": 800150,
+      "spellIds": [
+        800150
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_treeoflife_Red",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19631,
+        29631,
+        34201
+      ],
+      "requiredIds": [],
+      "desc": "Casting Toxic Dart and abilities that spend stacks of Advantage now have a 20% chance to spawn a green Dreamflower at a random location nearby within 15 yds of you.Dream Flower (Spawner)When an ally runs over the flower, they consume it to heal for 3% maximum health and gain 40% increased movement speed for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800150,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> and abilities that spend stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to spawn a green <span style=\"color: #ffffff; display: inline\">Dreamflower</span> at a random location nearby within <span class=\"item-number\">15</span> yds of you.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_misc_trailofflowers\" /><span class=\"name\">Dream Flower (Spawner)</span></div><span class=\"desc\">When an ally runs over the flower, they consume it to heal for <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health and gain <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased movement speed for <span class=\"item-number\">5</span> seconds.</span></div><br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34188,
+      "name": "Snatch",
+      "spellId": 803115,
+      "spellIds": [
+        803115
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\rogue_subterfuge",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6682,
+        30051,
+        34159
+      ],
+      "requiredIds": [],
+      "desc": "Snatch an enemy's melee weapons, disarming them for 4 seconds.If you are disarmed, you also return your weapon to yourself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803115,
+          "description": "Snatch an enemy's melee weapons, disarming them for <span class=\"item-number\">4</span> seconds.<br /><br />If you are disarmed, you also return your weapon to yourself."
+        }
+      ]
+    },
+    {
+      "id": 34192,
+      "name": "Windrunner's Reach",
+      "spellId": 573043,
+      "spellIds": [
+        573043,
+        573069
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_HighElf_01",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6437,
+        11437,
+        19631,
+        29631
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your ranged abilities by 5 yds.In addition, your critical strike chance against Undead, Beasts, and Dragonkin is increased by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573043,
+          "description": "Increases the range of your ranged abilities by <span class=\"item-number\">5</span> yds.<br /><br />In addition, your critical strike chance against Undead, Beasts, and Dragonkin is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 573069,
+          "description": "Increases the range of your ranged abilities by <span class=\"item-number\">10</span> yds.<br /><br />In addition, your critical strike chance against Undead, Beasts, and Dragonkin is increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34195,
+      "name": "Falcon's Aid",
+      "spellId": 705075,
+      "spellIds": [
+        705075
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_aspectoftheironhawk",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19631,
+        29631
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 10% chance to summon a War Falcon to aid you in battle for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705075,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #ffffff; display: inline\">War Falcon</span> to aid you in battle for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34196,
+      "name": "Razorquills",
+      "spellId": 705072,
+      "spellIds": [
+        705072
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill43_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5054,
+        5431,
+        11431
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of Toxic Dart and Emerald Arrows by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705072,
+          "description": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> and <span style=\"color: #ffffff; display: inline\">Emerald Arrows</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34199,
+      "name": "Dragonhawk Tamer",
+      "spellId": 573056,
+      "spellIds": [
+        573056
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_pet_dragonhawk",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6436,
+        6437,
+        11336,
+        11437
+      ],
+      "requiredIds": [],
+      "desc": "Using a Horn now summons a Dragonhawk to assist you in combat for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573056,
+          "description": "Using a <span style=\"color: #ffffff; display: inline\">Horn</span> now summons a <span style=\"color: #ffffff; display: inline\">Dragonhawk</span> to assist you in combat for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34201,
+      "name": "Forest Fighter",
+      "spellId": 706282,
+      "spellIds": [
+        706282
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_accurate_bow_b_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34147
+      ],
+      "requiredIds": [],
+      "desc": "Your Skullpiercers or Emerald Arrows used with 5 stacks of Advantage now reduce the cooldown of Woodland Arrow by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706282,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Skullpiercers</span> or <span style=\"color: #FFFFFF; display: inline\">Emerald Arrows</span> used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Woodland Arrow</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:54:73322",
+      "name": "Light Arrows / Masterful Archery",
+      "spellId": 681292,
+      "spellIds": [
+        681292
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3elementalarrow",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6944,
+        34152
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Precision Shot by 20% when used from 40 yds or further away from your target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681292,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> when used from <span class=\"item-number\">40</span> yds or further away from your target."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:54:525048",
+      "name": "Silent, But Deadly / One Shot, One Kill",
+      "spellId": 524873,
+      "spellIds": [
+        524873
+      ],
+      "tabId": 54,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_archerskill13_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7793,
+        7904,
+        31281
+      ],
+      "requiredIds": [],
+      "desc": "Direct Physical damage dealt now has an 8% chance to allow you to use Deadshot regardless of the targets health for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524873,
+          "description": "Direct Physical damage dealt now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to allow you to use <span style=\"color: #ffffff; display: inline\">Deadshot</span> regardless of the targets health for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:87:842221",
+      "name": "Bloody Focus / No Mercy",
+      "spellId": 520804,
+      "spellIds": [
+        520804
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Gouge",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7791,
+        34157
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Focus cost of Toxic Dart by -15.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520804,
+          "description": "Reduces the Focus cost of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> by <span class=\"item-number\">-15</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:87:243621",
+      "name": "Guise / Lethal Cunning",
+      "spellId": 520753,
+      "spellIds": [
+        520753
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_StayofExecution",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7790,
+        34188
+      ],
+      "requiredIds": [],
+      "desc": "Instantly generates 5 stacks of Advantage and allows you see nearby stealthed enemies for 5 seconds.Usable while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520753,
+          "description": "Instantly generates <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> and allows you see nearby stealthed enemies for <span class=\"item-number\">5</span> seconds.<br /><br />Usable while stealthed."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:87:754321",
+      "name": "Whats Yours Is Mine / Grappling Arrows",
+      "spellId": 560495,
+      "spellIds": [
+        560495
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_edwinvancleef",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34188
+      ],
+      "requiredIds": [],
+      "desc": "Removes the Focus cost of Snatch.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560495,
+          "description": "Removes the Focus cost of <span style=\"color: #ffffff; display: inline\">Snatch</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:87:561320",
+      "name": "Surefooted / Heightened Senses",
+      "spellId": 560814,
+      "spellIds": [
+        560814
+      ],
+      "tabId": 87,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_hillsbradfoothills",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6946
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Adrenaline Rush by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560814,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:55:807626",
+      "name": "Assassin / Excessive But Necessary",
+      "spellId": 807626,
+      "spellIds": [
+        807626
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_deadliness",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1389,
+        29328
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Knockout and Crippling Shot by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807626,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Knockout</span> and <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:55:807206",
+      "name": "Focused Fighter / Wild Man",
+      "spellId": 807206,
+      "spellIds": [
+        807206
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_CheapShot",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6671,
+        30461
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Focus cost of Flank, Blackjack, and Wild Strike by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807206,
+          "description": "Reduces the Focus cost of <span style=\"color: #ffffff; display: inline\">Flank</span>, <span style=\"color: #ffffff; display: inline\">Blackjack</span>, and <span style=\"color: #ffffff; display: inline\">Wild Strike</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:55:707885",
+      "name": "Polearm Craft / Pilfering",
+      "spellId": 707885,
+      "spellIds": [
+        707885
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Spear_02",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7048
+      ],
+      "requiredIds": [],
+      "desc": "While a polearm is equipped, your chance to trigger your Weapon Crafts and their damage dealt is increased by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707885,
+          "description": "While a polearm is equipped, your chance to trigger your <span style=\"color: #ffffff; display: inline\">Weapon Crafts</span> and their damage dealt is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:55:807023",
+      "name": "Tip of the Spear / Marked for Death",
+      "spellId": 807023,
+      "spellIds": [
+        807023
+      ],
+      "tabId": 55,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_spear_01",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6675,
+        29701,
+        34140
+      ],
+      "requiredIds": [],
+      "desc": "While you have a polearm equipped, your Wild Strike now has a 15% chance to strike 3 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807023,
+          "description": "While you have a polearm equipped, your <span style=\"color: #FFFFFF; display: inline\">Wild Strike</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">3</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:247611",
+      "name": "Horn of War / Battle Prowess",
+      "spellId": 800086,
+      "spellIds": [
+        800086
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Horn_03",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 20,
+      "connectedNodeIds": [
+        4030
+      ],
+      "requiredIds": [],
+      "desc": "Generates 1 AdvantageEmanate an aura for 30 seconds that grants 5% increased critical strike chance to party and raid members. Does not stack with similar effects.While active, you generate 3 Focus every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800086,
+          "description": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">1</span> Advantage</span><br />Emanate an aura for <span class=\"item-number\">30</span> seconds that grants <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased critical strike chance to party and raid members. Does not stack with similar effects.<br /><br />While active, you generate <span class=\"item-number\">3</span> Focus every <span class=\"item-number\">1</span> sec.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:705068",
+      "name": "War Falconer / Aerial Assault",
+      "spellId": 705067,
+      "spellIds": [
+        705067
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_hunter_eagleeye",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8358
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldowns of Falcon's Call by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705067,
+          "description": "Reduces the cooldowns of <span style=\"color: #FFFFFF; display: inline\">Falcon's Call</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:854152",
+      "name": "Falcon Guide / Scavenger",
+      "spellId": 520586,
+      "spellIds": [
+        520586
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_redbird",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4631,
+        8358
+      ],
+      "requiredIds": [],
+      "desc": "Falconstrike and Battle Screech now increase your movement speed by 30% for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520586,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Falconstrike</span> and <span style=\"color: #ffffff; display: inline\">Battle Screech</span> now increase your movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:804712",
+      "name": "Emerald Arrow / Falcon Diving",
+      "spellId": 804712,
+      "spellIds": [
+        804712
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_emerald_staff_b_Border",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4631,
+        34147
+      ],
+      "requiredIds": [],
+      "desc": "Set up a powerful magical arrow and then shoot it, dealing 10 + 20% ranged AP Nature damage to the target, increased for each stack of Advantage.Creates an enchanted flare on the ground, causing nearby enemies to take 224 + 20% ranged AP Nature damage every 2 sec, lasting 2 sec for each stack of Advantage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804712,
+          "description": "Set up a powerful magical arrow and then shoot it, dealing <span class=\"item-number\">10</span> + <span class=\"item-number\">20% ranged AP</span> Nature damage to the target, increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Creates an enchanted flare on the ground, causing nearby enemies to take <span class=\"item-number\">224</span> + <span class=\"item-number\">20% ranged AP</span> Nature damage every <span class=\"item-number\">2</span> sec, lasting <span class=\"item-number\">2</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:231611",
+      "name": "Gutpiercer / Battle Screech",
+      "spellId": 573059,
+      "spellIds": [
+        573059
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_bloodsplatter",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        6955,
+        11255
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by War Falcons and Dragonhawks now has a 15% chance to reduce the enemy's resistances by 75 and increase their Magic damage taken by -2% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573059,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">War Falcons</span> and <span style=\"color: #ffffff; display: inline\">Dragonhawks</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reduce the enemy's resistances by <span class=\"item-number\">75</span> and increase their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:1367788",
+      "name": "Wingman / Guidance",
+      "spellId": 705098,
+      "spellIds": [
+        705098
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_icon_wing04d",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34199
+      ],
+      "requiredIds": [],
+      "desc": "Reduces all damage taken by -2% for each War Falcon or Dragonhawk you have active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705098,
+          "description": "Reduces all damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for each <span style=\"color: #ffffff; display: inline\">War Falcon</span> or <span style=\"color: #ffffff; display: inline\">Dragonhawk</span> you have active."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:158422",
+      "name": "Defense of the Ancients / Horn of Alacrity",
+      "spellId": 705094,
+      "spellIds": [
+        705094
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill118_Border",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        11955,
+        11956
+      ],
+      "requiredIds": [],
+      "desc": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705094,
+          "description": "You now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:21:2:264983",
+      "name": "Frenzy / Command Aura",
+      "spellId": 520492,
+      "spellIds": [
+        520492
+      ],
+      "tabId": 2,
+      "classId": 21,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_treeoflife_Red",
+      "x": 10,
+      "y": 8,
+      "requiredLevel": 50,
+      "connectedNodeIds": [
+        30930,
+        11930
+      ],
+      "requiredIds": [],
+      "desc": "Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520492,
+          "description": "Enrage all nearby allies, increasing their haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />After being affected by this spell, allies cannot benefit from similar effects for <span class=\"item-number\">5</span> minutes."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4129 @@
+{
+  "class": "Reaper",
+  "classId": "30",
+  "specs": [
+    "Harvest",
+    "Soul",
+    "Domination"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Harvest": 79,
+    "Soul": 80,
+    "Domination": 81
+  },
+  "nodes": [
+    {
+      "id": 4111,
+      "name": "To The Shadowlands",
+      "spellId": 707909,
+      "spellIds": [
+        707909
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_NightOfTheDead",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7876,
+        34474
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Soulslam by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707909,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Soulslam</span> by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 4223,
+      "name": "Warden of the Lost",
+      "spellId": 707116,
+      "spellIds": [
+        707116
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_spiritualskull_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30116
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Spectral Scythes and Spectral Wardens now reduces the cooldown of Spectral Warden by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707116,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Spectral Scythes</span> and <span style=\"color: #ffffff; display: inline\">Spectral Wardens</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Spectral Warden</span> by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 4266,
+      "name": "Sepulchral Renewal",
+      "spellId": 561102,
+      "spellIds": [
+        561102
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_soulblessing_Border",
+      "x": 10,
+      "y": 8,
+      "requiredLevel": 50,
+      "connectedNodeIds": [
+        4267
+      ],
+      "requiredIds": [],
+      "desc": "Resets the cooldown of Limbo, Soulslam, and Shade.Usable while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561102,
+          "description": "Resets the cooldown of <span style=\"color: #ffffff; display: inline\">Limbo</span>, <span style=\"color: #ffffff; display: inline\">Soulslam</span>, and <span style=\"color: #ffffff; display: inline\">Shade</span>.<br /><br />Usable while stealthed."
+        }
+      ]
+    },
+    {
+      "id": 5182,
+      "name": "Gravesite",
+      "spellId": 572213,
+      "spellIds": [
+        572213
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_soulgrave_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29601
+      ],
+      "requiredIds": [],
+      "desc": "Casting Endbringer now marks the ground beneath you as your Gravesite for 15 seconds.Direct critical strikes made against enemies within a Gravesite now deals 530 + 36% AP Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572213,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Endbringer</span> now marks the ground beneath you as your <span style=\"color: #ffffff; display: inline\">Gravesite</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Direct critical strikes made against enemies within a <span style=\"color: #ffffff; display: inline\">Gravesite</span> now deals <span class=\"item-number\">530</span> + <span class=\"item-number\">36% AP</span> Shadow damage.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 5464,
+      "name": "Sinister Litany",
+      "spellId": 805185,
+      "spellIds": [
+        805185
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_scrollofsoulbending_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13500,
+        34500
+      ],
+      "requiredIds": [],
+      "desc": "Embrace your sinister thoughts, instantly generating 3 Reaped Souls.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805185,
+          "description": "Embrace your sinister thoughts, instantly generating <span class=\"item-number\">3</span> <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span>."
+        }
+      ]
+    },
+    {
+      "id": 5470,
+      "name": "Spirit Chaser",
+      "spellId": 560434,
+      "spellIds": [
+        560434
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritwraith_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6755
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance and critical damage of Reap, Deathchaser, and Wraithblade by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560434,
+          "description": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Deathchaser</span>, and <span style=\"color: #FFFFFF; display: inline\">Wraithblade</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5495,
+      "name": "Soulstrider",
+      "spellId": 572340,
+      "spellIds": [
+        572340
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_spiritwalkersgrace",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6778
+      ],
+      "requiredIds": [],
+      "desc": "Increases the movement speed granted by Veilwalk by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572340,
+          "description": "Increases the movement speed granted by <span style=\"color: #ffffff; display: inline\">Veilwalk</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5600,
+      "name": "Limbo",
+      "spellId": 800845,
+      "spellIds": [
+        800845
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_ShadowDance",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6780,
+        7271
+      ],
+      "requiredIds": [],
+      "desc": "Rip out of your mortal shell for 5 seconds, making you immune to all harmful spell effects and instantly restoring 30% of your maximum health and Runic Power.Usable while stunned, feared, or polymorphed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800845,
+          "description": "Rip out of your mortal shell for <span class=\"item-number\">5</span> seconds, making you immune to all harmful spell effects and instantly restoring <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum health and Runic Power.<br /><br />Usable while stunned, feared, or polymorphed."
+        }
+      ]
+    },
+    {
+      "id": 5762,
+      "name": "Red Wake",
+      "spellId": 707707,
+      "spellIds": [
+        707707
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_revendreth_shaman",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31371
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage critical strikes now generate an additional Soul Fragment.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707707,
+          "description": "Direct damage critical strikes now generate an additional <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>."
+        }
+      ]
+    },
+    {
+      "id": 5767,
+      "name": "Haunter",
+      "spellId": 705410,
+      "spellIds": [
+        705410
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_vengefulretreat",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9270
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Soulrend by 10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705410,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> by <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6390,
+      "name": "Essence Harvest",
+      "spellId": 707908,
+      "spellIds": [
+        707908
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_alchemist_81_spiritedalchemiststone",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34507
+      ],
+      "requiredIds": [],
+      "desc": "Increases the additional Frost damage dealt by Ghostly Weapon by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707908,
+          "description": "Increases the additional Frost damage dealt by <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6521,
+      "name": "Purgatory",
+      "spellId": 504046,
+      "spellIds": [
+        504046
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_improvedsoulleech",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6390,
+        6709
+      ],
+      "requiredIds": [],
+      "desc": "When you gain Soul Infusion, the damage of your Soulrend and Reliquary of the Lost is increased by 20% for 6 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504046,
+          "description": "When you gain <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span>, the damage of your <span style=\"color: #ffffff; display: inline\">Soulrend</span> and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6643,
+      "name": "Ghostly Weapon",
+      "spellId": 803997,
+      "spellIds": [
+        803997
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_66_spirit_sword_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6716,
+        34466
+      ],
+      "requiredIds": [],
+      "desc": "2 Charges, 40 sec rechargeImbue your weapon with ghostly power for 15 seconds, causing melee attacks to deal 25% additional damage as Frost damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803997,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">40</span> sec recharge</span><br />Imbue your weapon with ghostly power for <span class=\"item-number\">15</span> seconds, causing melee attacks to deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> additional damage as Frost damage."
+        }
+      ]
+    },
+    {
+      "id": 6684,
+      "name": "Sever",
+      "spellId": 806125,
+      "spellIds": [
+        806125
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Virus_Red",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29250,
+        31373
+      ],
+      "requiredIds": [],
+      "desc": "Attempt to drain an enemies vitals, leeching 22 + 31.03% AP health, interrupting casting and preventing any spell from that school from being cast for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806125,
+          "description": "Attempt to drain an enemies vitals, leeching <span class=\"item-number\">22</span> + <span class=\"item-number\">31.03% AP</span> health, interrupting casting and preventing any spell from that school from being cast for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6703,
+      "name": "Jailer's Will",
+      "spellId": 524939,
+      "spellIds": [
+        524939
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_soulboundgoliath",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6730,
+        12330,
+        34521
+      ],
+      "requiredIds": [],
+      "desc": "Soul Strike now deals 30% Strength increased damage, scaling with Strength.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524939,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Soul Strike</span> now deals <span class=\"item-number\">30% Strength</span> increased damage, scaling with Strength."
+        }
+      ]
+    },
+    {
+      "id": 6708,
+      "name": "Backswing",
+      "spellId": 706790,
+      "spellIds": [
+        706790
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(32)_Border",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29248,
+        30107
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Runic Power generated by Reap by 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706790,
+          "description": "Increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Reap</span> by <span class=\"item-number\">5</span>."
+        }
+      ]
+    },
+    {
+      "id": 6709,
+      "name": "Chasing Death",
+      "spellId": 707455,
+      "spellIds": [
+        707455
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Ice_Lament",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6755
+      ],
+      "requiredIds": [],
+      "desc": "Deathchaser used against a target below 20% health will now reapply itself at the end of its duration until they die or until 5 seconds passes.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707455,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> used against a target below <span class=\"item-number\">20%</span> health will now reapply itself at the end of its duration until they die or until <span class=\"item-number\">5</span> seconds passes."
+        }
+      ]
+    },
+    {
+      "id": 6710,
+      "name": "Dark Soldier",
+      "spellId": 560490,
+      "spellIds": [
+        560490,
+        561338
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactthunderfury_d_01",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30720
+      ],
+      "requiredIds": [],
+      "desc": "Increases your hit chance by 3% and reduces your Magic damage taken by -2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560490,
+          "description": "Increases your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and reduces your Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561338,
+          "description": "Increases your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and reduces your Magic damage taken by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6716,
+      "name": "Soulforged Weaponry",
+      "spellId": 561127,
+      "spellIds": [
+        561127,
+        561340
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_105",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29689
+      ],
+      "requiredIds": [],
+      "desc": "Increases your off-hand weapon damage by 25%.While dual-wielding, your auto attacks now have a 8% chance to make your next Murder free of cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561127,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />While dual-wielding, your auto attacks now have a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Murder</span> free of cost."
+        },
+        {
+          "rank": 2,
+          "spellId": 561340,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.<br /><br />While dual-wielding, your auto attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Murder</span> free of cost."
+        }
+      ]
+    },
+    {
+      "id": 6719,
+      "name": "Veilwalk",
+      "spellId": 803990,
+      "spellIds": [
+        803990
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Diablo3_Thunderclap_Warlock",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6708,
+        30109
+      ],
+      "requiredIds": [],
+      "desc": "2 Charges, 60 sec rechargeMove with spectral agility, gaining 50% increased movement speed for 5 seconds, stacking 2 times.Removes all movement impairing effects. Usable while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803990,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">60</span> sec recharge</span><br />Move with spectral agility, gaining <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased movement speed for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br />Removes all movement impairing effects. Usable while stealthed."
+        }
+      ]
+    },
+    {
+      "id": 6722,
+      "name": "Soul Harvester",
+      "spellId": 804311,
+      "spellIds": [
+        804311
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_soulreaper",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29248,
+        30113
+      ],
+      "requiredIds": [],
+      "desc": "Landing the killing blow on a target that yields experience or honor now grants Soul Harvester for 10 seconds.Soul HarvesterAfter killing an enemy you generate 2 Runic Power every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804311,
+          "description": "Landing the killing blow on a target that yields experience or honor now grants <span style=\"color: #ffffff; display: inline\">Soul Harvester</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_deathknight_soulreaper\" /><span class=\"name\">Soul Harvester</span></div><span class=\"desc\">After killing an enemy you generate <span class=\"item-number\">2</span> Runic Power every <span class=\"item-number\">1</span> sec.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6723,
+      "name": "Shattered Souls",
+      "spellId": 705441,
+      "spellIds": [
+        705441
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_RagedSpirit_Border",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34466
+      ],
+      "requiredIds": [],
+      "desc": "Your Wraithblade now deals double damage to enemies affected by Soulrend.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705441,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Wraithblade</span> now deals double damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Soulrend</span>."
+        }
+      ]
+    },
+    {
+      "id": 6724,
+      "name": "Spectre's Call",
+      "spellId": 705386,
+      "spellIds": [
+        705386,
+        707802
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_ghostlycharger",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6709,
+        34470
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Deathwind, Murder, and Soul Strike by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705386,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Deathwind</span>, <span style=\"color: #ffffff; display: inline\">Murder</span>, and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707802,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Deathwind</span>, <span style=\"color: #ffffff; display: inline\">Murder</span>, and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6726,
+      "name": "Dark Passage",
+      "spellId": 704558,
+      "spellIds": [
+        704558
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_artifact_stolenpower",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5600
+      ],
+      "requiredIds": [],
+      "desc": "Dealing direct critical strikes with Shadow damage reduce the cooldown of Limbo by -2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704558,
+          "description": "Dealing direct critical strikes with Shadow damage reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Limbo</span> by <span class=\"item-number\">-2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6755,
+      "name": "Soulbender",
+      "spellId": 804004,
+      "spellIds": [
+        804004
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spirittranquility_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30111,
+        34464,
+        34465
+      ],
+      "requiredIds": [],
+      "desc": "Significantly increases the Runic Power generated by Deathchaser.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804004,
+          "description": "Significantly increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Deathchaser</span>."
+        }
+      ]
+    },
+    {
+      "id": 6765,
+      "name": "Deathbringer",
+      "spellId": 573040,
+      "spellIds": [
+        573040
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_bloodsword_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29688
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Blood Frenzy and Harvest Time by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573040,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Blood Frenzy</span> and <span style=\"color: #ffffff; display: inline\">Harvest Time</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6766,
+      "name": "Hungering Scythe",
+      "spellId": 801335,
+      "spellIds": [
+        801335
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_artifact_thalkielsdiscord",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5762,
+        34481
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Deathwind by 4 sec and Crow's Harvest now deals 15% additional damage to enemies inside.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801335,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Deathwind</span> by <span class=\"item-number\">4</span> sec and <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> now deals <span class=\"item-number\">15</span><span class=\"item-number\">%</span> additional damage to enemies inside."
+        }
+      ]
+    },
+    {
+      "id": 6768,
+      "name": "Soultaker",
+      "spellId": 704356,
+      "spellIds": [
+        704356
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_soulbarrier",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34515
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt with Dreadwake now reduces the cooldown of Tormented Souls by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704356,
+          "description": "Damage dealt with <span style=\"color: #ffffff; display: inline\">Dreadwake</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Tormented Souls</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6777,
+      "name": "Siphon Anima",
+      "spellId": 504309,
+      "spellIds": [
+        504309
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animabastion_debuff",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7784,
+        13784,
+        30116,
+        30119
+      ],
+      "requiredIds": [],
+      "desc": "When you summon a Spectral Scythe, you now heal for 5% of your damage dealt for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504309,
+          "description": "When you summon a <span style=\"color: #FFFFFF; display: inline\">Spectral Scythe</span>, you now heal for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your damage dealt for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6778,
+      "name": "Ghastly Form",
+      "spellId": 704357,
+      "spellIds": [
+        704357
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_argus_deathfog",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6719
+      ],
+      "requiredIds": [],
+      "desc": "After using Spectre Stride, Scythe Rush, or Veilwalk you now gain a shield that absorbs 114 + 33% AP damage for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704357,
+          "description": "After using <span style=\"color: #ffffff; display: inline\">Spectre Stride</span>, <span style=\"color: #ffffff; display: inline\">Scythe Rush</span>, or <span style=\"color: #ffffff; display: inline\">Veilwalk</span> you now gain a shield that absorbs <span class=\"item-number\">114</span> + <span class=\"item-number\">33% AP</span> damage for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6779,
+      "name": "Hard Bargain",
+      "spellId": 300569,
+      "spellIds": [
+        300569
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_trinket_mawraid_04_blue",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34474
+      ],
+      "requiredIds": [],
+      "desc": "While Tormented Souls is active on you, your melee attack speed is increased by 30% and your Dreadwake costs -5 less Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300569,
+          "description": "While <span style=\"color: #FFFFFF; display: inline\">Tormented Souls</span> is active on you, your melee attack speed is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your <span style=\"color: #FFFFFF; display: inline\">Dreadwake</span> costs <span class=\"item-number\">-5</span> less Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 6780,
+      "name": "Burial Rites",
+      "spellId": 560422,
+      "spellIds": [
+        560422
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_raid_torghast_thenine",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34505
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Rites by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560422,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Rites</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6838,
+      "name": "Hemorrhage",
+      "spellId": 705432,
+      "spellIds": [
+        705432
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_bloodsplatter",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30551
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage and critical strike chance of your abilities by 10% against enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705432,
+          "description": "Increases the damage and critical strike chance of your abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 6839,
+      "name": "Final Requiem",
+      "spellId": 560486,
+      "spellIds": [
+        560486,
+        561358
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_argus_soulbombdebuffsmall",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4111
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance with abilities that deal Shadow damage by 15% against enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560486,
+          "description": "Increases your critical strike chance with abilities that deal Shadow damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health."
+        },
+        {
+          "rank": 2,
+          "spellId": 561358,
+          "description": "Increases your critical strike chance with abilities that deal Shadow damage by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 7259,
+      "name": "Callous Soul",
+      "spellId": 705418,
+      "spellIds": [
+        705418
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animarevendreth_orb",
+      "x": 8,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5767
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of armor Soulrend causes you to ignore by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705418,
+          "description": "Increases the amount of armor <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> causes you to ignore by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7266,
+      "name": "Unbound",
+      "spellId": 706785,
+      "spellIds": [
+        706785
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(2)_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6684,
+        29617,
+        34477
+      ],
+      "requiredIds": [],
+      "desc": "Your Reliquary of the Lost is now guaranteed to critically strike for 25% increased damage on enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706785,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> is now guaranteed to critically strike for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage on enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 7271,
+      "name": "Dominion",
+      "spellId": 803999,
+      "spellIds": [
+        803999
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warlock_demonwrath",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34495,
+        34505
+      ],
+      "requiredIds": [],
+      "desc": "Gaining Soul Infusion now increases your Armor by 585 for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803999,
+          "description": "Gaining <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span> now increases your Armor by <span class=\"item-number\">585</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7272,
+      "name": "Damned",
+      "spellId": 706786,
+      "spellIds": [
+        706786
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(12)_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9321,
+        34489
+      ],
+      "requiredIds": [],
+      "desc": "When you gain Soul Infusion, you are protected from being slowed below 100% of normal speed for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706786,
+          "description": "When you gain <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span>, you are protected from being slowed below <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of normal speed for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7315,
+      "name": "Apparition",
+      "spellId": 705389,
+      "spellIds": [
+        705389
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_NightOfTheDead",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10543,
+        30112,
+        30543
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Spectre Stride by 30% and reduces the chance for enemies to see you while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705389,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Spectre Stride</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and reduces the chance for enemies to see you while stealthed."
+        }
+      ]
+    },
+    {
+      "id": 7782,
+      "name": "Soulrot",
+      "spellId": 805196,
+      "spellIds": [
+        805196
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_souldrain_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31366
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. Each instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805196,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> now applies <span style=\"color: #FFFFFF; display: inline\">Soulrot</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_souldrain_border\" /><span class=\"name\">Soulrot</span></div><span class=\"desc\">Rot the soul of your target, cursing them for <span class=\"item-number\">15</span> seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. <br /><br />Each instance of damage from <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> adds <span class=\"item-number\">1</span> stack to this effect, up to <span class=\"item-number\">20</span> stacks. Dispelling this effect causes the dispeller to instantly take <span class=\"item-number\">1200</span> + <span class=\"item-number\">200% AP</span> Shadow Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7783,
+      "name": "Ghost",
+      "spellId": 705426,
+      "spellIds": [
+        705426
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SoulsDevourer_Purple",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5464
+      ],
+      "requiredIds": [],
+      "desc": "Sinister Litany now increases the damage of your next spell or ability within 10 sec by 50% and casting it now grants you Ghost for 3 seconds.Ghost (Proc)Enter an enhanced stealth mode that does not break on damage dealt or taken.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705426,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Sinister Litany</span> now increases the damage of your next spell or ability within <span class=\"item-number\">10</span> sec by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and casting it now grants you <span style=\"color: #ffffff; display: inline\">Ghost</span> for <span class=\"item-number\">3</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _soulsdevourer_purple\" /><span class=\"name\">Ghost (Proc)</span></div><span class=\"desc\">Enter an enhanced stealth mode that does not break on damage dealt or taken.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7876,
+      "name": "Ethereal Guard",
+      "spellId": 300969,
+      "spellIds": [
+        300969
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_etherealconnection",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34473
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases your melee haste by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300969,
+          "description": "Reduces the damage taken by party and raid members by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7945,
+      "name": "From the Shadows",
+      "spellId": 561099,
+      "spellIds": [
+        561099
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_cascade_shadow",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6778,
+        34495
+      ],
+      "requiredIds": [],
+      "desc": "Exiting Underwalk increases your critical strike chance by 10% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561099,
+          "description": "Exiting <span style=\"color: #ffffff; display: inline\">Underwalk</span> increases your critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7946,
+      "name": "Dreadknight",
+      "spellId": 300560,
+      "spellIds": [
+        300560,
+        301352
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_spiritualarmor_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8293
+      ],
+      "requiredIds": [],
+      "desc": "Increases your armor contribution from mail and plate items by 20% and reduces the chance for spells to hit you by -2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300560,
+          "description": "Increases your armor contribution from mail and plate items by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces the chance for spells to hit you by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301352,
+          "description": "Increases your armor contribution from mail and plate items by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> and reduces the chance for spells to hit you by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 8293,
+      "name": "Requiem",
+      "spellId": 805717,
+      "spellIds": [
+        805717
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_supersoulash",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6710,
+        34515
+      ],
+      "requiredIds": [],
+      "desc": "Swing at enemies around you in a fury of souls, dealing 67 + 40% AP Shadowfrost Damage, reducing their melee and ranged attack speed by -20% for 15 seconds, and generating Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805717,
+          "description": "Swing at enemies around you in a fury of souls, dealing <span class=\"item-number\">67</span> + <span class=\"item-number\">40% AP</span> Shadowfrost Damage, reducing their melee and ranged attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, and generating Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 9270,
+      "name": "Bountiful Harvest",
+      "spellId": 706576,
+      "spellIds": [
+        706576
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_harvestgolempet",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29378
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Reap and Murder by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706576,
+          "description": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Reap</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9321,
+      "name": "Ghastly Screech",
+      "spellId": 806146,
+      "spellIds": [
+        806146
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3horrify",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5495,
+        7945
+      ],
+      "requiredIds": [],
+      "desc": "Screech with ghastly intent, silencing all nearby enemies for 4 seconds, and dealing 90 + 25% AP Shadowfrost Damage at the end of the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806146,
+          "description": "Screech with ghastly intent, silencing all nearby enemies for <span class=\"item-number\">4</span> seconds, and dealing <span class=\"item-number\">90</span> + <span class=\"item-number\">25% AP</span> Shadowfrost Damage at the end of the duration."
+        }
+      ]
+    },
+    {
+      "id": 9322,
+      "name": "Jailer's Bargain",
+      "spellId": 805718,
+      "spellIds": [
+        805718
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritarmor_Border",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6722,
+        34461
+      ],
+      "requiredIds": [],
+      "desc": "Beckon the jailer, gaining a shield that absorbs damage equal to 30% of your maximum health for 10 seconds.While this is active you are considered Undead and are immune to fear, sleep, and charm effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805718,
+          "description": "Beckon the jailer, gaining a shield that absorbs damage equal to <span class=\"item-number\">30%</span> of your maximum health for <span class=\"item-number\">10</span> seconds.<br /><br />While this is active you are considered Undead and are immune to fear, sleep, and charm effects."
+        }
+      ]
+    },
+    {
+      "id": 9831,
+      "name": "Dirge",
+      "spellId": 801328,
+      "spellIds": [
+        801328
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_soulcleave4",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6716
+      ],
+      "requiredIds": [],
+      "desc": "Generates 2 Soul FragmentsStrike the enemy with both weapons, dealing 70% (130% if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801328,
+          "description": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">2</span> Soul Fragments</span><br />Strike the enemy with both weapons, dealing <span class=\"item-number\">70</span><span class=\"item-number\">%</span> (<span class=\"item-number\">130</span><span class=\"item-number\">%</span> if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 12843,
+      "name": "Shade",
+      "spellId": 573038,
+      "spellIds": [
+        573038
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Shadow_LightBlue",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10543,
+        30543,
+        34469
+      ],
+      "requiredIds": [],
+      "desc": "Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573038,
+          "description": "Become a shade, entering an improved stealth mode for <span class=\"item-number\">10</span> seconds and entering <span style=\"color: #ffffff; display: inline\">Underwalk</span>. Removes all movement impairing effects."
+        }
+      ]
+    },
+    {
+      "id": 29246,
+      "name": "Maw Knight",
+      "spellId": 805204,
+      "spellIds": [
+        805204,
+        807888
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_helmet_plate_deathknight_m_01",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29378
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Doomrend by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805204,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Doomrend</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807888,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Doomrend</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29248,
+      "name": "Scythe Rush",
+      "spellId": 500359,
+      "spellIds": [
+        500359
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_demonhunter_bladedance",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Rush towards an enemy and generate 15 Runic Power.Cannot be used on the same target more than once every 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500359,
+          "description": "Rush towards an enemy and generate <span class=\"item-number\">15</span> Runic Power.<br /><br />Cannot be used on the same target more than once every <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29249,
+      "name": "Spectral Scythe",
+      "spellId": 500484,
+      "spellIds": [
+        500484
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_80_witch_bonescythe",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30722,
+        5722
+      ],
+      "requiredIds": [],
+      "desc": "Summons 1 Spectral Scythe for each Reaped Soul active which attack a nearby enemy for 20 seconds.Striking enemies with Soul Strike causes the Spectral Scythe to attack that enemy and 5 nearby enemies. Consumes Reaped Souls and Soul Infusion.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500484,
+          "description": "Summons <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Spectral Scythe</span> for each <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> active which attack a nearby enemy for <span class=\"item-number\">20</span> seconds.<br /><br />Striking enemies with <span style=\"color: #ffffff; display: inline\">Soul Strike</span> causes the <span style=\"color: #FFFFFF; display: inline\">Spectral Scythe</span> to attack that enemy and <span class=\"item-number\">5</span> nearby enemies. <br /><br />Consumes <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span> and <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span>.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29250,
+      "name": "Souls for the Slaughter",
+      "spellId": 705428,
+      "spellIds": [
+        705428
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_helmet_(7)_Border",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6838,
+        30517
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Slaughter now cause your auto attacks to deal an additional 85% Shadow damage for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705428,
+          "description": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> now cause your auto attacks to deal an additional <span class=\"item-number\">85</span><span class=\"item-number\">%</span> Shadow damage for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29378,
+      "name": "Doomrend",
+      "spellId": 800172,
+      "spellIds": [
+        800172
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_knife_1h_revendrethquest_b_03",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Rend an enemy dealing 140% Weapon Damage plus 17 + 35% AP, causing you to apply a dark shield to them that absorbs the next 75 + 100% Strength healing done to them for 5 seconds, and generates Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800172,
+          "description": "Rend an enemy dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">17</span> + <span class=\"item-number\">35% AP</span>, causing you to apply a dark shield to them that absorbs the next <span class=\"item-number\">75</span> + <span class=\"item-number\">100% Strength</span> healing done to them for <span class=\"item-number\">5</span> seconds, and generates Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 29379,
+      "name": "Soul Knight",
+      "spellId": 560487,
+      "spellIds": [
+        560487
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_artifactashbringerlightning_d_03",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6779,
+        6839,
+        30116
+      ],
+      "requiredIds": [],
+      "desc": "Your successful parries and dodges increase all healing you receive by 2% and reduce all Magic damage taken by -2% for 10 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560487,
+          "description": "Your successful parries and dodges increase all healing you receive by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduce all Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29564,
+      "name": "Soul Tap",
+      "spellId": 807397,
+      "spellIds": [
+        807397
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3soulharvest",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34489
+      ],
+      "requiredIds": [],
+      "desc": "Chip away at the very essence of your own soul, generating 50 Runic Power.Usable while stealthed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807397,
+          "description": "Chip away at the very essence of your own soul, generating <span class=\"item-number\">50</span> Runic Power.<br /><br />Usable while stealthed."
+        }
+      ]
+    },
+    {
+      "id": 29601,
+      "name": "Endbringer",
+      "spellId": 800922,
+      "spellIds": [
+        800922
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frozenghost_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8292,
+        30536,
+        30549
+      ],
+      "requiredIds": [],
+      "desc": "Become an Endbringer for 15 seconds, increasing the damage of Dirge by 30%, the range by 20 yds, and causes it to generate 3 Reaped Souls.For the duration, Dirge will heal you for 75% of its damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800922,
+          "description": "Become an <span style=\"color: #ffffff; display: inline\">Endbringer</span> for <span class=\"item-number\">15</span> seconds, increasing the damage of <span style=\"color: #ffffff; display: inline\">Dirge</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, the range by <span class=\"item-number\">20</span> yds, and causes it to generate <span class=\"item-number\">3</span> <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span>.<br /><br />For the duration, <span style=\"color: #ffffff; display: inline\">Dirge</span> will heal you for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of its damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 29688,
+      "name": "Blood Frenzy",
+      "spellId": 707899,
+      "spellIds": [
+        707899
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3mantraofretribution",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7266,
+        30545
+      ],
+      "requiredIds": [],
+      "desc": "Casting Harvest Time with an enemy targeted within 20 yds of you now unleashes a Blood Frenzy.Blood FrenzyDeals 1 + 36% AP Shadow Damage to your target every 0.75 sec for 7.5 seconds. At the end of the duration, the target takes an additional 457 + 45% AP Shadow Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707899,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Harvest Time</span> with an enemy targeted within <span class=\"item-number\">20</span> yds of you now unleashes a <span style=\"color: #ffffff; display: inline\">Blood Frenzy</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3mantraofretribution\" /><span class=\"name\">Blood Frenzy</span></div><span class=\"desc\">Deals <span class=\"item-number\">1</span> + <span class=\"item-number\">36% AP</span> Shadow Damage to your target every <span class=\"item-number\">0.75</span> sec for <span class=\"item-number\">7.5</span> seconds. At the end of the duration, the target takes an additional <span class=\"item-number\">457</span> + <span class=\"item-number\">45% AP</span> Shadow Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29689,
+      "name": "Deathchaser",
+      "spellId": 805190,
+      "spellIds": [
+        805190
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritstab_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Force death upon an enemy, dealing 13 + 8% AP Shadowfrost Damage, repeating every 0 sec for 1 seconds, and generates Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805190,
+          "description": "Force death upon an enemy, dealing <span class=\"item-number\">13</span> + <span class=\"item-number\">8% AP</span> Shadowfrost Damage, repeating every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">1</span> seconds, and generates Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 29693,
+      "name": "Painmail",
+      "spellId": 801325,
+      "spellIds": [
+        801325
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shoulder_armor_maw_c_14",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29379
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Reap, Dreadwake and Soul Strike now grants a stack of Painmail for 15 seconds, stacking up to 8 times. Additional applications do not refresh the effect.When Painmail stacks expire naturally, you are healed for 2% of your maximum health and reduce the cooldown of Bolstered Form by -0.5 sec for each stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801325,
+          "description": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Reap</span>, <span style=\"color: #FFFFFF; display: inline\">Dreadwake</span> and <span style=\"color: #FFFFFF; display: inline\">Soul Strike</span> now grants a stack of <span style=\"color: #ffffff; display: inline\">Painmail</span> for <span class=\"item-number\">15</span> seconds, stacking up to <span class=\"item-number\">8</span> times. Additional applications do not refresh the effect.<br /><br />When <span style=\"color: #ffffff; display: inline\">Painmail</span> stacks expire naturally, you are healed for <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum health and reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Bolstered Form</span> by <span class=\"item-number\">-0.5</span> sec for each stack."
+        }
+      ]
+    },
+    {
+      "id": 30038,
+      "name": "Darkrend Scythe",
+      "spellId": 805205,
+      "spellIds": [
+        805205
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_114",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6762,
+        29247,
+        30545
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Doomrend and Crow's Harvest now applies a bleed, dealing 56 + 8.5% AP Physical damage every 2 sec for 10 seconds, stacking 5 times.Additional applications do not refresh the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805205,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> now applies a bleed, dealing <span class=\"item-number\">56</span> + <span class=\"item-number\">8.5% AP</span> Physical damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh the duration."
+        }
+      ]
+    },
+    {
+      "id": 30107,
+      "name": "Wraithblade",
+      "spellId": 805258,
+      "spellIds": [
+        805258
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_orcclans_tattooknife",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Generates 3 Reaped SoulsStrike for 150% Weapon Damage plus 36 + 62.5% SP + 18% AP Shadow damage, ignoring resistances, absorption, and invulnerability effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805258,
+          "description": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">3</span> Reaped Souls</span><br />Strike for <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">36</span> + <span class=\"item-number\">62.5% SP</span> + <span class=\"item-number\">18% AP</span> Shadow damage, ignoring resistances, absorption, and invulnerability effects."
+        }
+      ]
+    },
+    {
+      "id": 30109,
+      "name": "Mysterious Omen",
+      "spellId": 561108,
+      "spellIds": [
+        561108
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_frozenghost_Border",
+      "x": 0,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30107
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of Murder and Soul Shock by 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561108,
+          "description": "Increases the range of <span style=\"color: #FFFFFF; display: inline\">Murder</span> and <span style=\"color: #ffffff; display: inline\">Soul Shock</span> by <span class=\"item-number\">5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 30111,
+      "name": "Deathwail",
+      "spellId": 300791,
+      "spellIds": [
+        300791
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_spirit_Border",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6723,
+        6643
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Runic Power cost of Wraithblade by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300791,
+          "description": "Reduces the Runic Power cost of <span style=\"color: #ffffff; display: inline\">Wraithblade</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30112,
+      "name": "Anima Ambusher",
+      "spellId": 705424,
+      "spellIds": [
+        705424
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_darkarts",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30118
+      ],
+      "requiredIds": [],
+      "desc": "Spectre Stride now deals an additional 125% of its damage dealt over 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705424,
+          "description": "<span style=\"color: #ffffff; display: inline\">Spectre Stride</span> now deals an additional <span class=\"item-number\">125</span><span class=\"item-number\">%</span> of its damage dealt over <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30113,
+      "name": "Tormented Souls",
+      "spellId": 500483,
+      "spellIds": [
+        500483
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SoulsDevourer_Blue",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Create 1 Tormented Soul and generate Runic Power for each Reaped Soul active.Consumes Reaped Souls and Soul Infusion.Tormented SoulsReduces all direct damage you take by -10% and heals you for 35 + 5.8% AP + 24% Stamina, removing 1 stack. Lasts 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500483,
+          "description": "Create <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Tormented Soul</span> and generate Runic Power for each <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> active.<br /><br />Consumes <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span> and <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _soulsdevourer_blue\" /><span class=\"name\">Tormented Souls</span></div><span class=\"desc\">Reduces all direct damage you take by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and heals you for <span class=\"item-number\">35</span> + <span class=\"item-number\">5.8% AP</span> + <span class=\"item-number\">24% Stamina</span>, removing <span class=\"item-number\">1</span> stack. Lasts <span class=\"item-number\">20</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30116,
+      "name": "Soulstorm",
+      "spellId": 705403,
+      "spellIds": [
+        705403
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_soulleech_2",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4111,
+        12516,
+        30550,
+        34516
+      ],
+      "requiredIds": [],
+      "desc": "Requiem and Soulrend now have a 40% chance to refund a Reaped Soul.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705403,
+          "description": "<span style=\"color: #ffffff; display: inline\">Requiem</span> and <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>."
+        }
+      ]
+    },
+    {
+      "id": 30118,
+      "name": "Ghostly Magic",
+      "spellId": 803998,
+      "spellIds": [
+        803998,
+        807889
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_warlock_shadowfurytga",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30315,
+        34464,
+        34465
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Reap, Dirge, and Reliquary of the Lost by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803998,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Dirge</span>, and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807889,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Dirge</span>, and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30119,
+      "name": "Soul Splinters",
+      "spellId": 805719,
+      "spellIds": [
+        805719
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\oshugun_crystalfragments",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6703
+      ],
+      "requiredIds": [],
+      "desc": "Erupt with ghastly force whenever you harvest a Reaped Soul, dealing 47 + 10.5% Stamina + 15% AP Spellshadow Damage to nearby enemies over 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805719,
+          "description": "Erupt with ghastly force whenever you harvest a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>, dealing <span class=\"item-number\">47</span> + <span class=\"item-number\">10.5% Stamina</span> + <span class=\"item-number\">15% AP</span> Spellshadow Damage to nearby enemies over <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30315,
+      "name": "Soul Generator",
+      "spellId": 520056,
+      "spellIds": [
+        520056
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\item_icecrownringd",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6643,
+        9831
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Dirge now generate 10 Runic Power.Critical strikes with Murder now generate 1 additional Reaped Soul.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520056,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Dirge</span> now generate <span class=\"item-number\">10</span> Runic Power.<br /><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Murder</span> now generate <span class=\"item-number\">1</span> additional <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>."
+        }
+      ]
+    },
+    {
+      "id": 30324,
+      "name": "Essence Invigoration",
+      "spellId": 805186,
+      "spellIds": [
+        805186
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_lesseressence",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6726,
+        34497
+      ],
+      "requiredIds": [],
+      "desc": "Casting abilities that require Soul Infusion now has a 50% chance to restore 5% of your missing health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805186,
+          "description": "Casting abilities that require <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span> now has a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to restore <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your missing health."
+        }
+      ]
+    },
+    {
+      "id": 30517,
+      "name": "Sanguine Harvester",
+      "spellId": 560892,
+      "spellIds": [
+        560892,
+        561339
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_bloodhand_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7259,
+        30551
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee haste by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560892,
+          "description": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561339,
+          "description": "Increases your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30533,
+      "name": "Eater of Souls",
+      "spellId": 805181,
+      "spellIds": [
+        805181
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_DevouringPlague.",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6777
+      ],
+      "requiredIds": [],
+      "desc": "Reaching 3 Reaped Souls now reduces your Physical damage taken by -10% and you regain 1% of your maximum health every 2 sec for 10 seconds. This will not trigger while already active.In addition, the healing done by Deathwind is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805181,
+          "description": "Reaching <span class=\"item-number\">3</span> <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span> now reduces your Physical damage taken by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and you regain <span class=\"item-number\">1</span><span class=\"item-number\">%</span> of your maximum health every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds. This will not trigger while already active.<br /><br />In addition, the healing done by <span style=\"color: #FFFFFF; display: inline\">Deathwind</span> is increased by <span class=\"item-number\">10%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30534,
+      "name": "Painbringer",
+      "spellId": 680995,
+      "spellIds": [
+        680995
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_reaperscythe_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30535
+      ],
+      "requiredIds": [],
+      "desc": "Generating Reaped Souls now has a 10% chance to trigger Masochistic Rage for 5 sec.If Masochistic Rage is already active, it will instead extend the duration by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680995,
+          "description": "Generating <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #ffffff; display: inline\">Masochistic Rage</span> for <span class=\"item-number\">5</span> sec.<br /><br />If <span style=\"color: #ffffff; display: inline\">Masochistic Rage</span> is already active, it will instead extend the duration by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30535,
+      "name": "Masochistic Rage",
+      "spellId": 803030,
+      "spellIds": [
+        803030
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_vendetta",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13500,
+        30324,
+        31125,
+        34500
+      ],
+      "requiredIds": [],
+      "desc": "After a 1 sec delay, you suffer 660 + 36% AP damage, enraging you and increasing your damage dealt by 20% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803030,
+          "description": "After a <span class=\"item-number\">1</span> sec delay, you suffer <span class=\"item-number\">660</span> + <span class=\"item-number\">36% AP</span> damage, enraging you and increasing your damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30536,
+      "name": "The Jailer's Call",
+      "spellId": 805195,
+      "spellIds": [
+        805195
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mawrat",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7315,
+        10543,
+        30543
+      ],
+      "requiredIds": [],
+      "desc": "Attacks against enemies below 20% health deal an additional 140 + 18% AP Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805195,
+          "description": "Attacks against enemies below <span class=\"item-number\">20%</span> health deal an additional <span class=\"item-number\">140</span> + <span class=\"item-number\">18% AP</span> Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": 30545,
+      "name": "Doomer",
+      "spellId": 704556,
+      "spellIds": [
+        704556
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_warfrontshorde_c_01",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29617,
+        31369,
+        34477
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Doomrend and Slaughter by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704556,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #ffffff; display: inline\">Slaughter</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30546,
+      "name": "Redshade",
+      "spellId": 524735,
+      "spellIds": [
+        524735
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_blood_c_02",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29688,
+        30038
+      ],
+      "requiredIds": [],
+      "desc": "Using Reap now transforms your Reap into Thresh for 10 sec.ThreshGenerates 1 Soul Fragment Strike enemies around you, dealing 110% Weapon Damage and generating Runic Power.Upon cast, this ability transforms into Bloodshatter for 10 sec.BloodshatterGenerates 1 Soul Fragment Strike enemies in front of you, dealing 329 + 20% AP Shadow damage and generating Runic Power.Your next Reliquary of the Lost within 10 seconds now triggers a -25% reduced cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524735,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Reap</span> now transforms your <span style=\"color: #ffffff; display: inline\">Reap</span> into <span style=\"color: #ffffff; display: inline\">Thresh</span> for <span class=\"item-number\">10</span> sec.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_sword_2h_artifactsoulrend_d_02\" /><span class=\"name\">Thresh</span></div><span class=\"desc\"><span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">1</span> Soul Fragment</span> <br />Strike enemies around you, dealing <span class=\"item-number\">110</span><span class=\"item-number\">%</span> Weapon Damage and generating Runic Power.<br /><br />Upon cast, this ability transforms into <span style=\"color: #ffffff; display: inline\">Bloodshatter</span> for <span class=\"item-number\">10</span> sec.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_skeer_bloodletting\" /><span class=\"name\">Bloodshatter</span></div><span class=\"desc\"><span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">1</span> Soul Fragment</span> <br />Strike enemies in front of you, dealing <span class=\"item-number\">329</span> + <span class=\"item-number\">20% AP</span> Shadow damage and generating Runic Power.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> within <span class=\"item-number\">10</span> seconds now triggers a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> reduced cooldown.</span></div></span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30548,
+      "name": "Lord of Death",
+      "spellId": 805194,
+      "spellIds": [
+        805194
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_cloth_raidpriest_r_01",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6724,
+        8292,
+        30549
+      ],
+      "requiredIds": [],
+      "desc": "Abilities affected by Ghostly Weapon now deal 25% more damage per additional target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805194,
+          "description": "Abilities affected by <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> now deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more damage per additional target."
+        }
+      ]
+    },
+    {
+      "id": 30550,
+      "name": "Spectral Warden",
+      "spellId": 805716,
+      "spellIds": [
+        805716
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_SpiritualArmor_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6703,
+        34472
+      ],
+      "requiredIds": [],
+      "desc": "Summon a spectral guardian to fight along side you for 20 seconds and apply an absorption shield to up to 8 allies within 20 yds, absorbing 199 + 150% Stamina damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805716,
+          "description": "Summon a spectral guardian to fight along side you for <span class=\"item-number\">20</span> seconds and apply an absorption shield to up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">20</span> yds, absorbing <span class=\"item-number\">199</span> + <span class=\"item-number\">150% Stamina</span> damage. <br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30551,
+      "name": "Crimson Death",
+      "spellId": 705414,
+      "spellIds": [
+        705414
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_revendreth_rogue",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31371
+      ],
+      "requiredIds": [],
+      "desc": "Your Slaughter now has a 20% chance to cast an additional time free of cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705414,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Slaughter</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to cast an additional time free of cost."
+        }
+      ]
+    },
+    {
+      "id": 30715,
+      "name": "Genocide",
+      "spellId": 560924,
+      "spellIds": [
+        560924
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(2)_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31371
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage and critical strike chance of Slaughter by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560924,
+          "description": "Increases the critical damage and critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30720,
+      "name": "Dreadwake",
+      "spellId": 803992,
+      "spellIds": [
+        803992
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_argus_edgeofobliteration",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Generates 1 Reaped SoulUnleash a wave of souls upon enemies in a 12 yd cone, causing 80% Weapon Damage plus 5 Frost damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803992,
+          "description": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">1</span> Reaped Soul</span><br />Unleash a wave of souls upon enemies in a <span class=\"item-number\">12</span> yd cone, causing <span class=\"item-number\">80</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">5</span> Frost damage."
+        }
+      ]
+    },
+    {
+      "id": 31125,
+      "name": "Mawborn",
+      "spellId": 805203,
+      "spellIds": [
+        805203
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Warlock_siphonlife",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29564
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of disarm and incapacitate effects against you by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805203,
+          "description": "Reduces the duration of disarm and incapacitate effects against you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31262,
+      "name": "Spirit Culling",
+      "spellId": 301986,
+      "spellIds": [
+        301986
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Haunting",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4223,
+        6777,
+        29379
+      ],
+      "requiredIds": [],
+      "desc": "For the duration of Spectral Scythe, the damage of Soul Strike is increased by 20%.In addition, generating a Reaped Soul now has a 10% chance to summon a Spectral Scythe to fight alongside you for 10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301986,
+          "description": "For the duration of <span style=\"color: #ffffff; display: inline\">Spectral Scythe</span>, the damage of <span style=\"color: #ffffff; display: inline\">Soul Strike</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />In addition, generating a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #ffffff; display: inline\">Spectral Scythe</span> to fight alongside you for <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 31289,
+      "name": "Bolstered Form",
+      "spellId": 680337,
+      "spellIds": [
+        680337
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_raid_torghast_shadowscourge_prisonofnerzhul",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6768
+      ],
+      "requiredIds": [],
+      "desc": "Assume a bolstered form for 15 seconds, generating 30 Runic Power, increasing your Armor by 25%, and increasing your parry chance by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680337,
+          "description": "Assume a bolstered form for <span class=\"item-number\">15</span> seconds, generating <span class=\"item-number\">30</span> Runic Power, increasing your Armor by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and increasing your parry chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31366,
+      "name": "The End Is Near",
+      "spellId": 680996,
+      "spellIds": [
+        680996
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_soullink",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8292,
+        30549
+      ],
+      "requiredIds": [],
+      "desc": "Wraithblade now creates a spectral version of yourself for 12 seconds that casts Dirge and Murder on enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680996,
+          "description": "<span style=\"color: #ffffff; display: inline\">Wraithblade</span> now creates a spectral version of yourself for <span class=\"item-number\">12</span> seconds that casts <span style=\"color: #ffffff; display: inline\">Dirge</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> on enemies."
+        }
+      ]
+    },
+    {
+      "id": 31368,
+      "name": "Ruin",
+      "spellId": 805198,
+      "spellIds": [
+        805198
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_Rupture",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7266,
+        7267,
+        29604
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Murder now applies Ruin to enemies for 10 seconds.RuinIncreases damage taken by Doomrend and Slaughter by 25% for 10 seconds.Using Doomrend on a target afflicted by Ruin will increase your haste by 15% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805198,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Murder</span> now applies <span style=\"color: #ffffff; display: inline\">Ruin</span> to enemies for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_rogue_rupture\" /><span class=\"name\">Ruin</span></div><span class=\"desc\">Increases damage taken by <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Using <span style=\"color: #ffffff; display: inline\">Doomrend</span> on a target afflicted by <span style=\"color: #ffffff; display: inline\">Ruin</span> will increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31369,
+      "name": "Harvesting Grounds",
+      "spellId": 705413,
+      "spellIds": [
+        705413
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shoulder_plate_raiddeathknightmythic_s_01",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31370,
+        31373
+      ],
+      "requiredIds": [],
+      "desc": "Create a harvesting ground at the target location for 10 seconds, enemies inside have their melee and ranged haste and movement speed reduced by -20%For the duration, enemies that try to exit the harvesting ground will be pulled back to its center.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705413,
+          "description": "Create a harvesting ground at the target location for <span class=\"item-number\">10</span> seconds, enemies inside have their melee and ranged haste and movement speed reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span><br /><br />For the duration, enemies that try to exit the harvesting ground will be pulled back to its center."
+        }
+      ]
+    },
+    {
+      "id": 31370,
+      "name": "Crimson Wraith",
+      "spellId": 504560,
+      "spellIds": [
+        504560,
+        504880
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_arcanewraith_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6766,
+        34476
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical stike damage by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504560,
+          "description": "Increases your critical stike damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504880,
+          "description": "Increases your critical stike damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31371,
+      "name": "Slaughter",
+      "spellId": 500373,
+      "spellIds": [
+        500373
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_revendreth_warrior",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9270,
+        29246
+      ],
+      "requiredIds": [],
+      "desc": "Generates 1 Reaped SoulEradicate an enemy with your scythe, dealing 130% Weapon Damage plus 14.Only usable on enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500373,
+          "description": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">1</span> Reaped Soul</span><br />Eradicate an enemy with your scythe, dealing <span class=\"item-number\">130</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">14</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 31373,
+      "name": "Harvest Time",
+      "spellId": 803995,
+      "spellIds": [
+        803995
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_revendreth_d_01",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6838,
+        30715,
+        34476
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage and critical strike chance by 15% and gives your spells that require Soul Infusion a -50% to not consume the effect for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803995,
+          "description": "Increases your damage and critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and gives your spells that require <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span> a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> to not consume the effect for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34460,
+      "name": "Beyond Death",
+      "spellId": 301193,
+      "spellIds": [
+        301193
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_shadowentagle_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30548
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Reliquary of the Lost now has a 8% chance to launch an additional Soul Bolt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301193,
+          "description": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Reliquary of the Lost</span> now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to launch an additional <span style=\"color: #FFFFFF; display: inline\">Soul Bolt</span>."
+        }
+      ]
+    },
+    {
+      "id": 34461,
+      "name": "Soulfused Constitution",
+      "spellId": 561100,
+      "spellIds": [
+        561100
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+      "x": 8,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30113
+      ],
+      "requiredIds": [],
+      "desc": "Your Tormented Souls now creates 1 additional soul for each Reaped Soul active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561100,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Tormented Souls</span> now creates <span class=\"item-number\">1</span> additional soul for each <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> active."
+        }
+      ]
+    },
+    {
+      "id": 34466,
+      "name": "Mark of Death",
+      "spellId": 560917,
+      "spellIds": [
+        560917
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_ghoststone_Border",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29689
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Deathchaser by 15% and your hit chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560917,
+          "description": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34469,
+      "name": "Reaver",
+      "spellId": 807419,
+      "spellIds": [
+        807419
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritualsummoning_Border",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34507
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Deathstalker, Soul Shear, and Soulstone Lure by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807419,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Deathstalker</span>, <span style=\"color: #ffffff; display: inline\">Soul Shear</span>, and <span style=\"color: #ffffff; display: inline\">Soulstone Lure</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34470,
+      "name": "Soul Bane",
+      "spellId": 705392,
+      "spellIds": [
+        705392
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_detectlesserinvisibility",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5470,
+        6709
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Reliquary of the Lost by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705392,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34472,
+      "name": "Fatesealer",
+      "spellId": 705442,
+      "spellIds": [
+        705442
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathknight_hungeringruneblade",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34521
+      ],
+      "requiredIds": [],
+      "desc": "Generating a Reaped Soul now reduces damage taken by -2% for 15 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705442,
+          "description": "Generating a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> now reduces damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34473,
+      "name": "Essence Binder",
+      "spellId": 560919,
+      "spellIds": [
+        560919
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(53)_Border",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7946,
+        31289
+      ],
+      "requiredIds": [],
+      "desc": "Soul Strike now steals some of the target's health and Strength for 12 seconds, granting it to you at increased value.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560919,
+          "description": "<span style=\"color: #ffffff; display: inline\">Soul Strike</span> now steals some of the target's health and Strength for <span class=\"item-number\">12</span> seconds, granting it to you at increased value."
+        }
+      ]
+    },
+    {
+      "id": 34474,
+      "name": "Harnessed Life",
+      "spellId": 705406,
+      "spellIds": [
+        705406
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_scrollofsouls_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34473,
+        34520
+      ],
+      "requiredIds": [],
+      "desc": "Your Tormented Souls now has a -25% chance to not consume a stack from damage taken.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705406,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Tormented Souls</span> now has a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> chance to not consume a stack from damage taken."
+        }
+      ]
+    },
+    {
+      "id": 34476,
+      "name": "Blood Fueled",
+      "spellId": 705416,
+      "spellIds": [
+        705416
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_BloodTap",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5762
+      ],
+      "requiredIds": [],
+      "desc": "Increases the healing absorbed by Doomrend by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705416,
+          "description": "Increases the healing absorbed by <span style=\"color: #FFFFFF; display: inline\">Doomrend</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34480,
+      "name": "Crow's Harvest",
+      "spellId": 504011,
+      "spellIds": [
+        504011
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_polearm_2h_warfrontshorde_c_01red",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29246
+      ],
+      "requiredIds": [],
+      "desc": "Strike all nearby enemies for 65% Weapon Damage plus 6.Damage dealt harvests a Soul Fragment, up to a maximum of 3.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504011,
+          "description": "Strike all nearby enemies for <span class=\"item-number\">65</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">6</span>.<br /><br />Damage dealt harvests a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>, up to a maximum of <span class=\"item-number\">3</span>."
+        }
+      ]
+    },
+    {
+      "id": 34481,
+      "name": "Dark Fate",
+      "spellId": 504037,
+      "spellIds": [
+        504037
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_blood_spell_10_Border",
+      "x": 0,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34480
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of Crow's Harvest by -10 Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504037,
+          "description": "Reduces the cost of <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> by <span class=\"item-number\">-10</span> Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 34489,
+      "name": "Spectre Strength",
+      "spellId": 804671,
+      "spellIds": [
+        804671,
+        807886
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\achievement_zone_ghostlands",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7271,
+        7945
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Strength by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804671,
+          "description": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807886,
+          "description": "Increases your Strength by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34492,
+      "name": "Ghastly Advance",
+      "spellId": 805192,
+      "spellIds": [
+        805192,
+        807885
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9321
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of Spectre Stride by 5 yds and causes it to generate 5 more Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805192,
+          "description": "Increases the range of <span style=\"color: #ffffff; display: inline\">Spectre Stride</span> by <span class=\"item-number\">5</span> yds and causes it to generate <span class=\"item-number\">5</span> more Runic Power."
+        },
+        {
+          "rank": 2,
+          "spellId": 807885,
+          "description": "Increases the range of <span style=\"color: #ffffff; display: inline\">Spectre Stride</span> by <span class=\"item-number\">10</span> yds and causes it to generate <span class=\"item-number\">10</span> more Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 34495,
+      "name": "Withering Touch",
+      "spellId": 573071,
+      "spellIds": [
+        573071
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3spiritbarrage",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34510
+      ],
+      "requiredIds": [],
+      "desc": "Your touch rots armor and resolve, reducing the target’s armor by -20% and increasing their Magic damage taken by 10% for 1 minute, and generates Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573071,
+          "description": "Your touch rots armor and resolve, reducing the target’s armor by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and increasing their Magic damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">1</span> minute, and generates Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 34497,
+      "name": "Soul Protector",
+      "spellId": 300553,
+      "spellIds": [
+        300553
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helmet_146",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5600,
+        34489
+      ],
+      "requiredIds": [],
+      "desc": "Increases Armor contribution from items by 25% and increases your magic resistances by 21.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300553,
+          "description": "Increases Armor contribution from items by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and increases your magic resistances by <span class=\"item-number\">21</span>."
+        }
+      ]
+    },
+    {
+      "id": 34499,
+      "name": "Soul Furnace",
+      "spellId": 805184,
+      "spellIds": [
+        805184
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritamulet_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34502
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount leeched from Soul Harvest by an additional 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805184,
+          "description": "Increases the amount leeched from <span style=\"color: #ffffff; display: inline\">Soul Harvest</span> by an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34502,
+      "name": "Soul Harvest",
+      "spellId": 504012,
+      "spellIds": [
+        504012
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spiritfire_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30324
+      ],
+      "requiredIds": [],
+      "desc": "Generating Reaped Souls now triggers Soul Harvest. Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504012,
+          "description": "Generating <span style=\"color: #FFFFFF; display: inline\">Reaped Souls</span> now triggers <span style=\"color: #FFFFFF; display: inline\">Soul Harvest</span>. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritfire_border\" /><span class=\"name\">Soul Harvest (Damage)</span></div><span class=\"desc\">Blasts your target for <span class=\"item-number\">1</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% shadow SP</span> Shadow Damage, healing for <span class=\"item-number\">100%</span> of the damage dealt.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34505,
+      "name": "Harvester's Scythe",
+      "spellId": 805188,
+      "spellIds": [
+        805188
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_restlessblades",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9322
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount leeched by Soul Strike by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805188,
+          "description": "Increases the amount leeched by <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34507,
+      "name": "Ghastly Hilt",
+      "spellId": 560927,
+      "spellIds": [
+        560927
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_qiraj_hiltornate",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34464,
+        34465
+      ],
+      "requiredIds": [],
+      "desc": "Ghostly Weapon now causes your melee abilities to strike up to 2 additional targets near the primary target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560927,
+          "description": "<span style=\"color: #ffffff; display: inline\">Ghostly Weapon</span> now causes your melee abilities to strike up to <span class=\"item-number\">2</span> additional targets near the primary target."
+        }
+      ]
+    },
+    {
+      "id": 34510,
+      "name": "Soul Warden",
+      "spellId": 560419,
+      "spellIds": [
+        560419,
+        561337
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_GhostLand_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6708,
+        6722
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee attack power by 1 for every 100 Armor you have.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560419,
+          "description": "Increases your melee attack power by <span class=\"item-number\">1</span> for every <span class=\"item-number\">100</span> Armor you have."
+        },
+        {
+          "rank": 2,
+          "spellId": 561337,
+          "description": "Increases your melee attack power by <span class=\"item-number\">1</span> for every <span class=\"item-number\">50</span> Armor you have."
+        }
+      ]
+    },
+    {
+      "id": 34515,
+      "name": "Empyrean Fortitude",
+      "spellId": 706795,
+      "spellIds": [
+        706795
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(20)_Border",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30720
+      ],
+      "requiredIds": [],
+      "desc": "Increases your parry chance by 5% and parrying an attack now generates 2 Runic Power.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706795,
+          "description": "Increases your parry chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and parrying an attack now generates <span class=\"item-number\">2</span> Runic Power."
+        }
+      ]
+    },
+    {
+      "id": 34516,
+      "name": "Spirit Realm",
+      "spellId": 705404,
+      "spellIds": [
+        705404
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_ShadowEmbrace",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7876,
+        30719,
+        34472
+      ],
+      "requiredIds": [],
+      "desc": "Your Deathwind now also increases your healing taken by 10% while you stand within its radius.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705404,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Deathwind</span> now also increases your healing taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> while you stand within its radius."
+        }
+      ]
+    },
+    {
+      "id": 34520,
+      "name": "Intimidating Presence",
+      "spellId": 560478,
+      "spellIds": [
+        560478
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_soulgrave_Border",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31289
+      ],
+      "requiredIds": [],
+      "desc": "Bolstered Form now increases the damage nearby enemies take from you by 15% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560478,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Bolstered Form</span> now increases the damage nearby enemies take from you by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34521,
+      "name": "Soulsight",
+      "spellId": 300565,
+      "spellIds": [
+        300565
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_eyes_02_Border",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7946,
+        29249
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, dealing direct damage now has a 15% chance to generate a Soul Fragment.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300565,
+          "description": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, dealing direct damage now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to generate a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:79:572879",
+      "name": "Blood Harvester / The Time Has Come",
+      "spellId": 300889,
+      "spellIds": [
+        300889
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_ironmaidens_whirlofblood",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31373
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300889,
+          "description": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:79:723411",
+      "name": "Blood Knight / Blood Wraith",
+      "spellId": 704552,
+      "spellIds": [
+        704552
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_bloodstrike_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31369,
+        31370
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Doomrend now refund a Reaped Soul.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704552,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Doomrend</span> now refund a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:79:705409",
+      "name": "The Grim Reaper / Ravenous Thirst",
+      "spellId": 504269,
+      "spellIds": [
+        504269
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_bloodrage_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6684,
+        29250
+      ],
+      "requiredIds": [],
+      "desc": "Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec rechargeChill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504269,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Ghost Claw</span> transforms into <span style=\"color: #ffffff; display: inline\">Wraith Claw</span> and now has <span class=\"item-number\">2</span> charges.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_ghostclaw_border\" /><span class=\"name\">Wraith Claw</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges,<span class=\"item-number\">15</span> sec recharge</span><br />Chill an enemy with a ghostly claw, slowing and stealing <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> of their movement speed for <span class=\"item-number\">8</span> seconds.<br /><br />Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Ghost Claw</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:30:79:841112",
+      "name": "Shudder Scythe / Crimson Thirst",
+      "spellId": 805708,
+      "spellIds": [
+        805708
+      ],
+      "tabId": 79,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_xavius_crushingshadows",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29688,
+        31368
+      ],
+      "requiredIds": [],
+      "desc": "Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 30% Weapon Damage, scaling with level, and granting you a Soul Fragment with each strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805708,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Murder</span> is transformed into <span style=\"color: #ffffff; display: inline\">Shudder Scythe</span>, which costs additional Runic Power but deals increased damage and generates <span style=\"color: #FFFFFF; display: inline\">Soul Fragments</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_xavius_crushingshadows\" /><span class=\"name\">Shudder Scythe (Transform)</span></div><span class=\"desc\">Strike an enemy <span class=\"item-number\">5</span> times, each dealing <span class=\"item-number\">30</span><span class=\"item-number\">%</span> Weapon Damage, scaling with level, and granting you a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span> with each strike.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:30:87:561342",
+      "name": "Into The Shadow Realm / Between Shadows",
+      "spellId": 561342,
+      "spellIds": [
+        561342
+      ],
+      "tabId": 87,
+      "classId": 30,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_spirit_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7272,
+        34492
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Deathstalker, Soulstone Lure, and Soul Shear by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 561342,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Deathstalker</span>, <span style=\"color: #ffffff; display: inline\">Soulstone Lure</span>, and <span style=\"color: #ffffff; display: inline\">Soul Shear</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:80:977768",
+      "name": "Lamenting / Death Dealer",
+      "spellId": 705397,
+      "spellIds": [
+        705397
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_PsychicScream",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6643
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Ghostly Weapon now heals for 50% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705397,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ghostly Weapon</span> now heals for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:80:712683",
+      "name": "Fleeting Soul / Soul Piercer",
+      "spellId": 712683,
+      "spellIds": [
+        712683
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Magic_LesserInvisibilty",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30118
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Soulslam by -15 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712683,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Soulslam</span> by <span class=\"item-number\">-15</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:80:99414",
+      "name": "Spiritual Reflexes / Death's Presence",
+      "spellId": 705436,
+      "spellIds": [
+        705436
+      ],
+      "tabId": 80,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_curseweak_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6521,
+        12843
+      ],
+      "requiredIds": [],
+      "desc": "While below 35% maximum health, your chance to dodge attacks is increased by 25% and dodging an attack unleashes Soul Harvest on the target.Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705436,
+          "description": "While below <span class=\"item-number\">35%</span> maximum health, your chance to dodge attacks is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and dodging an attack unleashes <span style=\"color: #ffffff; display: inline\">Soul Harvest</span> on the target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritfire_border\" /><span class=\"name\">Soul Harvest (Damage)</span></div><span class=\"desc\">Blasts your target for <span class=\"item-number\">1</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% shadow SP</span> Shadow Damage, healing for <span class=\"item-number\">100%</span> of the damage dealt.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:30:81:301366",
+      "name": "Lifestealer / Dominator",
+      "spellId": 301366,
+      "spellIds": [
+        301366
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6710
+      ],
+      "requiredIds": [],
+      "desc": "Increases the missing health generated by Soul Strike by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301366,
+          "description": "Increases the missing health generated by <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:81:706793",
+      "name": "Well of Souls / Well of Eternity",
+      "spellId": 706792,
+      "spellIds": [
+        706792
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(22)_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29249
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Soul Strike and Murder now reduces the cooldown of Spectral Scythe by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706792,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Soul Strike</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Spectral Scythe</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:30:81:707634",
+      "name": "Life Tap / Spirit Army",
+      "spellId": 706788,
+      "spellIds": [
+        706788
+      ],
+      "tabId": 81,
+      "classId": 30,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(41)_Border",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30550
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Spectral Warden by -60 sec and it now heals you equal to 200% of the damage it deals.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706788,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Spectral Warden</span> by <span class=\"item-number\">-60</span> sec and it now heals you equal to <span class=\"item-number\">200</span><span class=\"item-number\">%</span> of the damage it deals."
+        }
+      ]
+    }
+  ]
+}

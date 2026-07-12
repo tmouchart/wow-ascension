@@ -1,0 +1,4291 @@
+{
+  "class": "Stormbringer",
+  "classId": "16",
+  "specs": [
+    "Lightning",
+    "Wind",
+    "Maelstrom"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Lightning": 42,
+    "Wind": 43,
+    "Maelstrom": 44
+  },
+  "nodes": [
+    {
+      "id": 1930,
+      "name": "Flux Arc",
+      "spellId": 705643,
+      "spellIds": [
+        705643
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_03",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5738,
+        30408
+      ],
+      "requiredIds": [],
+      "desc": "Your Forked Lightning and Arm of Thorim now marks enemies for 6 sec. Your Call Lightning against marked enemies deals an additional 15% of its damage to them and nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705643,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> now marks enemies for <span class=\"item-number\">6</span> sec. <br /><br />Your <span style=\"color: #FFFFFF; display: inline\">Call Lightning</span> against marked enemies deals an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of its damage to them and nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 5475,
+      "name": "Titanstorm",
+      "spellId": 801869,
+      "spellIds": [
+        801869
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_titan_01",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34646,
+        34930
+      ],
+      "requiredIds": [],
+      "desc": "Casting Call Lightning or Electrocute now reduces the cooldown of Arm of Thorim and Lightning Cage by -1.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801869,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Call Lightning</span> or <span style=\"color: #ffffff; display: inline\">Electrocute</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> and <span style=\"color: #ffffff; display: inline\">Lightning Cage</span> by <span class=\"item-number\">-1.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 5738,
+      "name": "Voltaic Bursts",
+      "spellId": 705639,
+      "spellIds": [
+        705639
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_azerite_empowered_state",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34646,
+        34937
+      ],
+      "requiredIds": [],
+      "desc": "Increases the periodic damage of Shock by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705639,
+          "description": "Increases the periodic damage of <span style=\"color: #FFFFFF; display: inline\">Shock</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5934,
+      "name": "Spheres of Power",
+      "spellId": 706434,
+      "spellIds": [
+        706434
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_forcesphere",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7184,
+        30934
+      ],
+      "requiredIds": [],
+      "desc": "Your direct damage dealt now has a 25% chance to summon a Power Sphere that will move towards your target. Can only have 1 Power Sphere up at a time.Power Sphere will redirect its movement towards enemies you cast Stormflow on.Upon reaching the target, it deals cond(gt(SPA, SPN), 697+33+SPA*0.485, 697+33+SPN*0.485) Spellstorm Damage to them and enemies within 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706434,
+          "description": "Your direct damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #ffffff; display: inline\">Power Sphere</span> that will move towards your target. Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Power Sphere</span> up at a time.<br /><br /><span style=\"color: #ffffff; display: inline\">Power Sphere</span> will redirect its movement towards enemies you cast <span style=\"color: #ffffff; display: inline\">Stormflow</span> on.<br /><br />Upon reaching the target, it deals <span class=\"item-number\">cond(gt(SPA, SPN), 697+33+SPA*0.485, 697+33+SPN*0.485)</span> Spellstorm Damage to them and enemies within <span class=\"item-number\">5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 6418,
+      "name": "Gift of Air",
+      "spellId": 705715,
+      "spellIds": [
+        705715
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Scroll1_Custom_Air",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29137
+      ],
+      "requiredIds": [],
+      "desc": "Casting Kiss of the Clouds now empowers your Air Elemental with Gift of Air for 30 seconds.In addition, your critical strikes now extend the duration of your Tailwind by 1.5 sec.Gift of AirIncreases damage dealt by 20%, spell haste by 15%, and heals for 13.75 every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705715,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Kiss of the Clouds</span> now empowers your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> with <span style=\"color: #ffffff; display: inline\">Gift of Air</span> for <span class=\"item-number\">30</span> seconds.<br /><br />In addition, your critical strikes now extend the duration of your <span style=\"color: #FFFFFF; display: inline\">Tailwind</span> by <span class=\"item-number\">1.5</span> sec.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _scroll1_custom_air\" /><span class=\"name\">Gift of Air</span></div><span class=\"desc\">Increases damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, spell haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, and heals for <span class=\"item-number\">13.75</span> every <span class=\"item-number\">2</span> sec.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6425,
+      "name": "Wrath of Al'Akir",
+      "spellId": 300834,
+      "spellIds": [
+        300834
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helmet_69",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6427
+      ],
+      "requiredIds": [],
+      "desc": "Depleting Static extends the duration of your Unshackle by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300834,
+          "description": "Depleting <span style=\"color: #cc99ff; display: inline\">Static</span> extends the duration of your <span style=\"color: #FFFFFF; display: inline\">Unshackle</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6426,
+      "name": "Child of the Storm",
+      "spellId": 804038,
+      "spellIds": [
+        804038
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shaman_MaelstromWeapon",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30132
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Cloudburst and Windsurf by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804038,
+          "description": "Reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Cloudburst</span> and <span style=\"color: #FFFFFF; display: inline\">Windsurf</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6427,
+      "name": "Unshackle",
+      "spellId": 706625,
+      "spellIds": [
+        706625
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_alakir_the_windlord",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30819
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 50 StaticTransforms your Air Elemental into a more powerful form for 15 seconds, increasing damage dealt by 25% and spell haste by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706625,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Transforms your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> into a more powerful form for <span class=\"item-number\">15</span> seconds, increasing damage dealt by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and spell haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6466,
+      "name": "Mystic Thunder",
+      "spellId": 504846,
+      "spellIds": [
+        504846
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_manaentagle_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34679
+      ],
+      "requiredIds": [],
+      "desc": "Interrupt the target's current spell cast and then mark them for 5 seconds.If they cast again while marked they are silenced for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504846,
+          "description": "Interrupt the target's current spell cast and then mark them for <span class=\"item-number\">5</span> seconds.<br /><br />If they cast again while marked they are silenced for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6467,
+      "name": "Voltaic Mastery",
+      "spellId": 706661,
+      "spellIds": [
+        706661
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(55)_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29518
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Deluge is increased by 5% for each stack of Conductive.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706661,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Deluge</span> is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span>."
+        }
+      ]
+    },
+    {
+      "id": 6469,
+      "name": "Conductor In Charge",
+      "spellId": 300961,
+      "spellIds": [
+        300961
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_thunderking_balllightning",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30947,
+        34958
+      ],
+      "requiredIds": [],
+      "desc": "Increases all damage dealt by party and raid members by 3% and your Frost damage dealt by 5%.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300961,
+          "description": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your Frost damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": 6556,
+      "name": "Studious",
+      "spellId": 705657,
+      "spellIds": [
+        705657
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_LDAKnowledge",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30878,
+        34693,
+        34924
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Shock by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705657,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Shock</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6851,
+      "name": "Lightning Rod",
+      "spellId": 300609,
+      "spellIds": [
+        300609
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_rod_enchantedcobalt",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7769,
+        34674
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Forked Lightning now has a 20% chance to spread an active Volt on your target to each affected enemy.Chance increases based on Static level.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300609,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to spread an active <span style=\"color: #ffffff; display: inline\">Volt</span> on your target to each affected enemy.<br /><br />Chance increases based on <span style=\"color: #cc99ff; display: inline\">Static</span> level."
+        }
+      ]
+    },
+    {
+      "id": 7184,
+      "name": "Electrified Waters",
+      "spellId": 573436,
+      "spellIds": [
+        573436
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_deathelementalmount_blue",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6469,
+        30944
+      ],
+      "requiredIds": [],
+      "desc": "Your direct critical strikes against an enemy affected by Drown spawn an Electrified Water Elemental to aid you in combat for 20 seconds.When an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -1.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573436,
+          "description": "Your direct critical strikes against an enemy affected by <span style=\"color: #FFFFFF; display: inline\">Drown</span> spawn an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />When an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> dissipates, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Drown</span> is reduced by <span class=\"item-number\">-1.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7186,
+      "name": "Aeromancy",
+      "spellId": 705708,
+      "spellIds": [
+        705708
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_mage_icenova",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6337,
+        30139,
+        34955
+      ],
+      "requiredIds": [],
+      "desc": "Casting Updraft will now cause your Air Elemental to cast its own Updraft beneath you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705708,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Updraft</span> will now cause your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> to cast its own <span style=\"color: #ffffff; display: inline\">Updraft</span> beneath you."
+        }
+      ]
+    },
+    {
+      "id": 7473,
+      "name": "Lightning Cage",
+      "spellId": 560030,
+      "spellIds": [
+        560030
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_thunderking_thunderstruck",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7766,
+        30126,
+        34673
+      ],
+      "requiredIds": [],
+      "desc": "Generates 50 StaticAscend into the air and cage yourself in lightning for 30 seconds, locking yourself in place.While inside the cage, damaging spells generate 20 Static and their range is doubled.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560030,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Generates <span class=\"item-number\">50</span> Static</span><br />Ascend into the air and cage yourself in lightning for <span class=\"item-number\">30</span> seconds, locking yourself in place.<br /><br />While inside the cage, damaging spells generate <span class=\"item-number\">20</span> <span style=\"color: #cc99ff; display: inline\">Static</span> and their range is doubled."
+        }
+      ]
+    },
+    {
+      "id": 7474,
+      "name": "Storm Ascendance",
+      "spellId": 681110,
+      "spellIds": [
+        681110
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_AuraCloak_Lightning",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7858,
+        34912
+      ],
+      "requiredIds": [],
+      "desc": "Transform into a storm elemental for 15 seconds, increasing your Magic damage dealt by 20% and reducing your Magic damage taken by -50%.In addition, your damaging spells now generate an additional 10 Static. Can only occur once every sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681110,
+          "description": "Transform into a storm elemental for <span class=\"item-number\">15</span> seconds, increasing your Magic damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reducing your Magic damage taken by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.<br /><br />In addition, your damaging spells now generate an additional <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>. Can only occur once every sec."
+        }
+      ]
+    },
+    {
+      "id": 7763,
+      "name": "Sparks",
+      "spellId": 301298,
+      "spellIds": [
+        301298
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_arcaneburst_Border",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34696,
+        34911
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Electrocute and Arm of Thorim now increase the target's chance to be critically hit by spells by 3% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301298,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> now increase the target's chance to be critically hit by spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7768,
+      "name": "Electrical Charge",
+      "spellId": 704149,
+      "spellIds": [
+        704149
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3fistsofthunder",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5475,
+        34635
+      ],
+      "requiredIds": [],
+      "desc": "Standing still grants you Electrical Charge every second, increasing your haste by 1%. Upon reaching 20 stacks, your spells dont deplete Static for 10 seconds, after which the charges are depleted.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704149,
+          "description": "Standing still grants you <span style=\"color: #FFFFFF; display: inline\">Electrical Charge</span> every second, increasing your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>. Upon reaching <span class=\"item-number\">20</span> stacks, your spells dont deplete <span style=\"color: #cc99ff; display: inline\">Static</span> for <span class=\"item-number\">10</span> seconds, after which the charges are depleted."
+        }
+      ]
+    },
+    {
+      "id": 7769,
+      "name": "Stormy Days",
+      "spellId": 705655,
+      "spellIds": [
+        705655
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_ghostironrod",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34641
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of Conjure Storm by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705655,
+          "description": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Conjure Storm</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7837,
+      "name": "Comforting Winds",
+      "spellId": 704209,
+      "spellIds": [
+        704209
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_mage_iceflows",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29831,
+        34941
+      ],
+      "requiredIds": [],
+      "desc": "Your damage dealt now increases the haste of your Air Elemental by 1% for 10 seconds, stacking 5 times.Damage dealt by your Air Elemental now increases your haste by 1% for 10 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704209,
+          "description": "Your damage dealt now increases the haste of your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br />Damage dealt by your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> now increases your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7838,
+      "name": "Quickdraft",
+      "spellId": 705704,
+      "spellIds": [
+        705704,
+        707801
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_SnowWhirlwind_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34948
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Updraft by 3 sec and increases its tick rate by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705704,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Updraft</span> by <span class=\"item-number\">3</span> sec and increases its tick rate by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707801,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Updraft</span> by <span class=\"item-number\">6</span> sec and increases its tick rate by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7858,
+      "name": "Eye of the Tornado",
+      "spellId": 706297,
+      "spellIds": [
+        706297
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_EyeOfTheStorm",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12919,
+        34919
+      ],
+      "requiredIds": [],
+      "desc": "Your damaging critical strikes now refund 5 Static.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706297,
+          "description": "Your damaging critical strikes now refund <span class=\"item-number\">5</span> <span style=\"color: #cc99ff; display: inline\">Static</span>."
+        }
+      ]
+    },
+    {
+      "id": 8613,
+      "name": "Undertow",
+      "spellId": 705666,
+      "spellIds": [
+        705666,
+        707796
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_azerite_fireball",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30945
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Drown by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705666,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Drown</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707796,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Drown</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9050,
+      "name": "Lord of Lightning",
+      "spellId": 707618,
+      "spellIds": [
+        707618
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_06",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1930
+      ],
+      "requiredIds": [],
+      "desc": "Storm Ascendance now additionally grants you Lord of Lightning for 20 seconds.Lord of LightningIncreases the damage dealt by Forked Lightning, Call Lightning, and Electrocute by an additional 30% and allows Electrocute to strike 3 additional enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707618,
+          "description": "<span style=\"color: #ffffff; display: inline\">Storm Ascendance</span> now additionally grants you <span style=\"color: #ffffff; display: inline\">Lord of Lightning</span> for <span class=\"item-number\">20</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_shield_1h_artifactstormfist_d_06\" /><span class=\"name\">Lord of Lightning</span></div><span class=\"desc\">Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Forked Lightning</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> by an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allows <span style=\"color: #ffffff; display: inline\">Electrocute</span> to strike <span class=\"item-number\">3</span> additional enemies.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 9234,
+      "name": "Storm Bond",
+      "spellId": 500580,
+      "spellIds": [
+        500580
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Purge",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31164
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Air Elemental now generates you 2 Static.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500580,
+          "description": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> now generates you <span class=\"item-number\">2</span> <span style=\"color: #cc99ff; display: inline\">Static</span>."
+        }
+      ]
+    },
+    {
+      "id": 9265,
+      "name": "Air Flow",
+      "spellId": 707548,
+      "spellIds": [
+        707548
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Cyclone",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9234,
+        30141
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Aeroblast by -0.3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707548,
+          "description": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Aeroblast</span> by <span class=\"item-number\">-0.3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 9641,
+      "name": "Fulmination",
+      "spellId": 707055,
+      "spellIds": [
+        707055,
+        707792
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\novart_magicspell_(79)_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29290
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Call Lightning and Arm of Thorim by 15% against targets affected by your Volt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707055,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Call Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against targets affected by your <span style=\"color: #ffffff; display: inline\">Volt</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707792,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Call Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against targets affected by your <span style=\"color: #ffffff; display: inline\">Volt</span>."
+        }
+      ]
+    },
+    {
+      "id": 9930,
+      "name": "Wicked Storms",
+      "spellId": 705650,
+      "spellIds": [
+        705650
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_mindblow_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9641,
+        29290
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Nature damage dealt by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705650,
+          "description": "Increases your Nature damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 11857,
+      "name": "Aurat Scripts",
+      "spellId": 712431,
+      "spellIds": [
+        712431
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book5_White",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30410
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage gained per stack of Invigoration by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712431,
+          "description": "Increases the damage gained per stack of <span style=\"color: #FFFFFF; display: inline\">Invigoration</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 12317,
+      "name": "Storm Channeling",
+      "spellId": 804040,
+      "spellIds": [
+        804040
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shaman_ElementalOath",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29341
+      ],
+      "requiredIds": [],
+      "desc": "While Stormcloak is active your Armor is now increased by 500% of your Intellect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804040,
+          "description": "While <span style=\"color: #FFFFFF; display: inline\">Stormcloak</span> is active your Armor is now increased by <span class=\"item-number\">500</span><span class=\"item-number\">%</span> of your Intellect."
+        }
+      ]
+    },
+    {
+      "id": 19684,
+      "name": "Shockingly Powerful",
+      "spellId": 572310,
+      "spellIds": [
+        572310
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pandarenserpentmount_lightning_blue",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7184,
+        29835
+      ],
+      "requiredIds": [],
+      "desc": "Your Conduction now has a -25% chance to not consume Conductive.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572310,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Conduction</span> now has a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> chance to not consume <span style=\"color: #4fd1c5; display: inline\">Conductive</span>."
+        }
+      ]
+    },
+    {
+      "id": 29137,
+      "name": "Kiss of the Clouds",
+      "spellId": 500039,
+      "spellIds": [
+        500039
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_wind_icon_0003s_0000_wind_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7838
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 40 StaticGrant all party and raid members a shield that absorbs 101 + 100% Intellect damage, scaling with Intellect, for 10 seconds.While active, the target suffers no spell pushback from taking damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500039,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">40</span> Static</span><br />Grant all party and raid members a shield that absorbs <span class=\"item-number\">101</span> + <span class=\"item-number\">100% Intellect</span> damage, scaling with Intellect, for <span class=\"item-number\">10</span> seconds.<br /><br />While active, the target suffers no spell pushback from taking damage."
+        }
+      ]
+    },
+    {
+      "id": 29138,
+      "name": "Body of Lightning",
+      "spellId": 500041,
+      "spellIds": [
+        500041
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3stormarmor",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Depletes 25 StaticInfuse an ally with lightning for 12 seconds, regenerating 15% of their maximum mana plus 1% every 1 sec. While active, damage dealt deals an additional 75 + 15% nature SP Nature damage to nearby enemies",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500041,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">25</span> Static</span><br />Infuse an ally with lightning for <span class=\"item-number\">12</span> seconds, regenerating <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of their maximum mana plus <span class=\"item-number\">1</span><span class=\"item-number\">%</span> every <span class=\"item-number\">1</span> sec. <br /><br />While active, damage dealt deals an additional <span class=\"item-number\">75</span> + <span class=\"item-number\">15% nature SP</span> Nature damage to nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": 29139,
+      "name": "Eye of the Storm",
+      "spellId": 806307,
+      "spellIds": [
+        806307
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_UnrelentingStorm",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30878
+      ],
+      "requiredIds": [],
+      "desc": "Mark an enemy for 4 seconds. Every 1 sec, enemies near them take cond(gt(SPFR, SPN), 11+0+SPFR*0.42, 11+0+SPN*0.42) Nature damage.At the end of the duration, enemies near them also take cond(gt(SPFR, SPN), 42+0+SPFR*0.64, 42+0+SPN*0.64) Nature damage and are rooted for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806307,
+          "description": "Mark an enemy for <span class=\"item-number\">4</span> seconds. Every <span class=\"item-number\">1</span> sec, enemies near them take <span class=\"item-number\">cond(gt(SPFR, SPN), 11+0+SPFR*0.42, 11+0+SPN*0.42)</span> Nature damage.<br /><br />At the end of the duration, enemies near them also take <span class=\"item-number\">cond(gt(SPFR, SPN), 42+0+SPFR*0.64, 42+0+SPN*0.64)</span> Nature damage and are rooted for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29141,
+      "name": "Lethal Current",
+      "spellId": 705663,
+      "spellIds": [
+        705663,
+        707797
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_nature_lightningshield",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6466
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Electrocute by 30% against enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705663,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health."
+        },
+        {
+          "rank": 2,
+          "spellId": 707797,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">60</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 29290,
+      "name": "Volt",
+      "spellId": 500928,
+      "spellIds": [
+        500928
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\shaman_pvp_staticcling",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29837
+      ],
+      "requiredIds": [],
+      "desc": "Fuse lightning into an enemy, dealing 150 + 114% nature SP Nature damage over 18 seconds and slowing them by -40%.Generates 2 Static per tick.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500928,
+          "description": "Fuse lightning into an enemy, dealing <span class=\"item-number\">150</span> + <span class=\"item-number\">114% nature SP</span> Nature damage over <span class=\"item-number\">18</span> seconds and slowing them by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>.<br /><br />Generates <span class=\"item-number\">2</span> <span style=\"color: #cc99ff; display: inline\">Static</span> per tick.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29341,
+      "name": "Stormcloak",
+      "spellId": 804833,
+      "spellIds": [
+        804833
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_CasterCloak_Arcanes",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7858,
+        34931
+      ],
+      "requiredIds": [],
+      "desc": "Cover yourself in a barrier of volatile energy for 15 seconds, causing all attacks against you to have a 50% chance to deal half damage and generate 10 Static.Stormcloak has a 60% chance to resist dispel effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804833,
+          "description": "Cover yourself in a barrier of volatile energy for <span class=\"item-number\">15</span> seconds, causing all attacks against you to have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to deal half damage and generate <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Stormcloak</span> has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to resist dispel effects."
+        }
+      ]
+    },
+    {
+      "id": 29410,
+      "name": "Storm Rider",
+      "spellId": 705677,
+      "spellIds": [
+        705677
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\rogue_burstofspeed",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34922
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Gale Guard and Cloudburst by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705677,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Gale Guard</span> and <span style=\"color: #ffffff; display: inline\">Cloudburst</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29518,
+      "name": "Deluge",
+      "spellId": 806400,
+      "spellIds": [
+        806400
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Frost_SummonWaterElemental",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6850,
+        11151
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 50 StaticConsumes ConductiveEnvelop enemies in the target area in water, dealing cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3) Frost damage, triggering Conduction and reducing their attack power by -24 for 10 seconds.Conduction (Damage)Deals cond(gt(SPFR, SPN), 202*1+SPFR*0.585, 202*1+SPN*0.35) Frost Damage, increased by 25% for each stack of Conductive consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806400,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br /><span style=\"color: #4fd1c5; display: inline\">Consumes Conductive</span><br />Envelop enemies in the target area in water, dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3)</span> Frost damage, triggering <span style=\"color: #ffffff; display: inline\">Conduction</span> and reducing their attack power by <span class=\"item-number\">-24</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_shawaterelemental_reform\" /><span class=\"name\">Conduction (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPFR, SPN), 202*1+SPFR*0.585, 202*1+SPN*0.35)</span> Frost Damage, increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span> consumed.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29814,
+      "name": "Charge",
+      "spellId": 804826,
+      "spellIds": [
+        804826
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_staticshock",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Charge yourself with electricity, generating 100 Static and increasing your spell haste by 30% for your next cast. Lasts 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804826,
+          "description": "Charge yourself with electricity, generating <span class=\"item-number\">100</span> <span style=\"color: #cc99ff; display: inline\">Static</span> and increasing your spell haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for your next cast. Lasts <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29828,
+      "name": "Ride the Lightning",
+      "spellId": 800099,
+      "spellIds": [
+        800099
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_crashlightning",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1930,
+        7768,
+        34687
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 40 StaticInfuse yourself with lightning and blink forward a long distance, dealing 540 + 50% SP Nature damage to all enemies in your path.Scales with modifiers to Discharge",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800099,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">40</span> Static</span><br />Infuse yourself with lightning and blink forward a long distance, dealing <span class=\"item-number\">540</span> + <span class=\"item-number\">50% SP</span> Nature damage to all enemies in your path.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Discharge</span>"
+        }
+      ]
+    },
+    {
+      "id": 29830,
+      "name": "Invigorating Winds",
+      "spellId": 705661,
+      "spellIds": [
+        705661
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicStrike_Border",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34924
+      ],
+      "requiredIds": [],
+      "desc": "Envelop an ally in invigorating winds, granting them immunity to silence and interrupt effects and causes them to take no pushback from damaging attacks for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705661,
+          "description": "Envelop an ally in invigorating winds, granting them immunity to silence and interrupt effects and causes them to take no pushback from damaging attacks for <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29831,
+      "name": "Master Elementalist",
+      "spellId": 705662,
+      "spellIds": [
+        705662
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_nazmir_boss_mother",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7186,
+        31266
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell damage scaling of Shock by 10% and Aeroblast by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705662,
+          "description": "Increases the spell damage scaling of <span style=\"color: #FFFFFF; display: inline\">Shock</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Aeroblast</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29833,
+      "name": "Forked Lightning",
+      "spellId": 801851,
+      "spellIds": [
+        801851
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_lightningoverload",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29837
+      ],
+      "requiredIds": [],
+      "desc": "Shoot lightning at an enemy, dealing 69 + 49% SP Nature damage, bouncing to up to 4 enemies.Generates 5 Static for each enemy struck.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801851,
+          "description": "Shoot lightning at an enemy, dealing <span class=\"item-number\">69</span> + <span class=\"item-number\">49% SP</span> Nature damage, bouncing to up to <span class=\"item-number\">4</span> enemies.<br /><br />Generates <span class=\"item-number\">5</span> <span style=\"color: #cc99ff; display: inline\">Static</span> for each enemy struck."
+        }
+      ]
+    },
+    {
+      "id": 29834,
+      "name": "Amped Flow",
+      "spellId": 806411,
+      "spellIds": [
+        806411
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_94",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30946
+      ],
+      "requiredIds": [],
+      "desc": "While channeling Stormflow, your Shock now strikes 1 additional target at 75% value.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806411,
+          "description": "While channeling <span style=\"color: #FFFFFF; display: inline\">Stormflow</span>, your <span style=\"color: #ffffff; display: inline\">Shock</span> now strikes <span class=\"item-number\">1</span> additional target at <span class=\"item-number\">75</span><span class=\"item-number\">%</span> value."
+        }
+      ]
+    },
+    {
+      "id": 29835,
+      "name": "Stormfury",
+      "spellId": 532751,
+      "spellIds": [
+        532751
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_28_Storm2_Border",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6469,
+        34960
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 50 StaticSummon a flurry of rain, wind, and lightning from the sky for 20 seconds. Every 2 sec, enemies within 30 yds of the caster are zapped with lightning, dealing 540 + 55% nature SP Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 532751,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Summon a flurry of rain, wind, and lightning from the sky for <span class=\"item-number\">20</span> seconds. Every <span class=\"item-number\">2</span> sec, enemies within <span class=\"item-number\">30</span> yds of the caster are zapped with lightning, dealing <span class=\"item-number\">540</span> + <span class=\"item-number\">55% nature SP</span> Nature damage."
+        }
+      ]
+    },
+    {
+      "id": 29836,
+      "name": "Conduit",
+      "spellId": 806374,
+      "spellIds": [
+        806374
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_stormpeaks_12",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34676
+      ],
+      "requiredIds": [],
+      "desc": "Dealing Frost damage now has a 60% chance to increase the damage the target takes from Electrocute by 15% for 10 seconds, stacking up to 4 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806374,
+          "description": "Dealing Frost damage now has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to increase the damage the target takes from <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">4</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29837,
+      "name": "Superconductor",
+      "spellId": 705646,
+      "spellIds": [
+        705646
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_siege_engineer_magnetic_crush",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31163
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your Arm of Thorim by an additional 1% per Static depleted.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705646,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> per <span style=\"color: #cc99ff; display: inline\">Static</span> depleted."
+        }
+      ]
+    },
+    {
+      "id": 29839,
+      "name": "Wind Gate",
+      "spellId": 504401,
+      "spellIds": [
+        504401
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\WindGate",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6426,
+        31268,
+        34943
+      ],
+      "requiredIds": [],
+      "desc": "Place a Wind Gate at target location for 1 minute. You may cast Wind Gate: Evacuate on an ally to pull them to your Wind Gate.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504401,
+          "description": "Place a <span style=\"color: #ffffff; display: inline\">Wind Gate</span> at target location for <span class=\"item-number\">1</span> minute. <br /><br />You may cast <span style=\"color: #ffffff; display: inline\">Wind Gate: Evacuate</span> on an ally to pull them to your <span style=\"color: #ffffff; display: inline\">Wind Gate</span>."
+        }
+      ]
+    },
+    {
+      "id": 30126,
+      "name": "Electric Energy",
+      "spellId": 804278,
+      "spellIds": [
+        804278
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_atom_Border",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34691
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your Shock, Call Lightning, and Arm of Thorim by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804278,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30127,
+      "name": "Thunder Wave",
+      "spellId": 705692,
+      "spellIds": [
+        705692
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shaman_hightide",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7768
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Forked Lightning has a 5% chance to transform it into Thunder Wave.Thunder Wave (Spell)Bring lightning down upon an enemy and nearby enemies, dealing 206 + 65% arcane SP Spellstorm Damage and refreshing the duration of Volt on enemies struck.Deals 30% increased damage to enemies affected by Volt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705692,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Forked Lightning</span> has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to transform it into <span style=\"color: #FFFFFF; display: inline\">Thunder Wave</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shaman_hightide\" /><span class=\"name\">Thunder Wave (Spell)</span></div><span class=\"desc\">Bring lightning down upon an enemy and nearby enemies, dealing <span class=\"item-number\">206</span> + <span class=\"item-number\">65% arcane SP</span> Spellstorm Damage and refreshing the duration of <span style=\"color: #ffffff; display: inline\">Volt</span> on enemies struck.<br /><br />Deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Volt</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30132,
+      "name": "Windsurf",
+      "spellId": 500042,
+      "spellIds": [
+        500042
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_GaleWinds",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6418,
+        29137
+      ],
+      "requiredIds": [],
+      "desc": "Command your Air Elemental to windsurf to you, intercepting the next melee or ranged attack made against you, and allowing you to cast Shock and Call Lightning while moving for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500042,
+          "description": "Command your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> to windsurf to you, intercepting the next melee or ranged attack made against you, and allowing you to cast <span style=\"color: #ffffff; display: inline\">Shock</span> and <span style=\"color: #ffffff; display: inline\">Call Lightning</span> while moving for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30138,
+      "name": "Clearsky Pendant",
+      "spellId": 705709,
+      "spellIds": [
+        705709
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_HearthStone_Necklace_Mage",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7186,
+        11949,
+        34949
+      ],
+      "requiredIds": [],
+      "desc": "Ally movement speed is increased by an additional 25% to allies within your Updraft.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705709,
+          "description": "Ally movement speed is increased by an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> to allies within your <span style=\"color: #ffffff; display: inline\">Updraft</span>."
+        }
+      ]
+    },
+    {
+      "id": 30141,
+      "name": "Power the Elements",
+      "spellId": 705721,
+      "spellIds": [
+        705721,
+        707799
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_Book2Motif_PaladinSamwise",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31164
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by your Air Elemental's spells by 10% and your Nature damage dealt by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705721,
+          "description": "Increases the damage dealt by your <span style=\"color: #ffffff; display: inline\">Air Elemental</span>'s spells by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your Nature damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707799,
+          "description": "Increases the damage dealt by your <span style=\"color: #ffffff; display: inline\">Air Elemental</span>'s spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your Nature damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30288,
+      "name": "Cloudsurfer",
+      "spellId": 806414,
+      "spellIds": [
+        806414
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(57)_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6466,
+        8613
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Shock by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806414,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shock</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30295,
+      "name": "Residual Power",
+      "spellId": 804605,
+      "spellIds": [
+        804605
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_MoonGlow",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7029,
+        12317,
+        13029
+      ],
+      "requiredIds": [],
+      "desc": "Reduces your Magic damage taken by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804605,
+          "description": "Reduces your Magic damage taken by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30406,
+      "name": "Power Surge",
+      "spellId": 800699,
+      "spellIds": [
+        800699
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_manaballs_Border",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30295,
+        34917
+      ],
+      "requiredIds": [],
+      "desc": "Your Storm Ascendance now increases Nature damage dealt by an additional 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800699,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Storm Ascendance</span> now increases Nature damage dealt by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30408,
+      "name": "High Voltage",
+      "spellId": 570191,
+      "spellIds": [
+        570191
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eng_electroshockmountmotivator",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6851,
+        34937
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Arm of Thorim's stun effect by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570191,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Arm of Thorim's</span> stun effect by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30410,
+      "name": "Skyfall",
+      "spellId": 804830,
+      "spellIds": [
+        804830
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_tradeskill_81_breath_of_bwonsamdi_raid",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7837,
+        31268,
+        34957
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 40 StaticCommand your Air Elemental, causing its next instance of damage within 8 seconds to strike an enemy, dealing 1349 + 100% arcane SP Nature damage and increasing the movement speed of all nearby allies by 30% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804830,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">40</span> Static</span><br />Command your <span style=\"color: #ffffff; display: inline\">Air Elemental</span>, causing its next instance of damage within <span class=\"item-number\">8</span> seconds to strike an enemy, dealing <span class=\"item-number\">1349</span> + <span class=\"item-number\">100% arcane SP</span> Nature damage and increasing the movement speed of all nearby allies by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30807,
+      "name": "Nimbus",
+      "spellId": 704212,
+      "spellIds": [
+        704212
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_MonkAbility_ExpelHarm_XuenWhite",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29839
+      ],
+      "requiredIds": [],
+      "desc": "Instantly resets the cooldown of your Evacuate, Windsurf, and Unshackle.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704212,
+          "description": "Instantly resets the cooldown of your <span style=\"color: #ffffff; display: inline\">Evacuate</span>, <span style=\"color: #ffffff; display: inline\">Windsurf</span>, and <span style=\"color: #ffffff; display: inline\">Unshackle</span>."
+        }
+      ]
+    },
+    {
+      "id": 30819,
+      "name": "Everlasting Invigoration",
+      "spellId": 706628,
+      "spellIds": [
+        706628,
+        707800
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_magicstorm_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31264
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Invigoration by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706628,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Invigoration</span> by <span class=\"item-number\">5</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 707800,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Invigoration</span> by <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30868,
+      "name": "Predictable Weather",
+      "spellId": 807233,
+      "spellIds": [
+        807233
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_magicvortex_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34638,
+        34935
+      ],
+      "requiredIds": [],
+      "desc": "Every 30 sec, your next Storm Alert or Torrential Wrath is instant cast.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807233,
+          "description": "Every <span class=\"item-number\">30</span> sec, your next <span style=\"color: #ffffff; display: inline\">Storm Alert</span> or <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> is instant cast."
+        }
+      ]
+    },
+    {
+      "id": 30878,
+      "name": "Conjuration Mastery",
+      "spellId": 300595,
+      "spellIds": [
+        300595
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Shamanskill_30_Border",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29138
+      ],
+      "requiredIds": [],
+      "desc": "Your Conjure Storm now refunds 10 Static.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300595,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Conjure Storm</span> now refunds <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>."
+        }
+      ]
+    },
+    {
+      "id": 30906,
+      "name": "Thunder King",
+      "spellId": 804591,
+      "spellIds": [
+        804591
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_hammerofthunder_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30406,
+        34695
+      ],
+      "requiredIds": [],
+      "desc": "For 20 seconds, your Call Lightning strikes 3 additional nearby enemies, your movement speed is increased by 25%, and you generate 5 Static every 1 sec.While active, damaging critical strikes deal bonus Spellstorm Damage scaling with your spell power, and grant Raging Storm.Raging StormIncreases spell haste by 3%, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804591,
+          "description": "For <span class=\"item-number\">20</span> seconds, your <span style=\"color: #FFFFFF; display: inline\">Call Lightning</span> strikes <span class=\"item-number\">3</span> additional nearby enemies, your movement speed is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and you generate <span class=\"item-number\">5</span> <span style=\"color: #cc99ff; display: inline\">Static</span> every <span class=\"item-number\">1</span> sec.<br /><br />While active, damaging critical strikes deal bonus Spellstorm Damage scaling with your spell power, and grant <span style=\"color: #ffffff; display: inline\">Raging Storm</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_thunderking_balllightning\" /><span class=\"name\">Raging Storm</span></div><span class=\"desc\">Increases spell haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30934,
+      "name": "Binder of Storms",
+      "spellId": 707542,
+      "spellIds": [
+        707542
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\shaman_pvp_staticcling",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29834,
+        30944
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Conduction now has a 60% chance to summon a Thunder Orb.Summon: Thunder OrbSummon a Thunder Orb at the target location for 16 seconds that triggers an Orb Shock and generates 10 Static.Orb ShockDeals 16 + 4% nature SP Nature Damage to up to 3 enemies and increases damage taken from Thunder Orbs and Spheres of Power for 8 seconds, stacking 6 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707542,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Conduction</span> now has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #ffffff; display: inline\">Thunder Orb</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_animabastion_orb\" /><span class=\"name\">Summon: Thunder Orb</span></div><span class=\"desc\">Summon a <span style=\"color: #FFFFFF; display: inline\">Thunder Orb</span> at the target location for <span class=\"item-number\">16</span> seconds that triggers an <span style=\"color: #ffffff; display: inline\">Orb Shock</span> and generates <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nature_lightningoverload\" /><span class=\"name\">Orb Shock</span></div><span class=\"desc\">Deals <span class=\"item-number\">16</span> + <span class=\"item-number\">4% nature SP</span> Nature Damage to up to <span class=\"item-number\">3</span> enemies and increases damage taken from <span style=\"color: #FFFFFF; display: inline\">Thunder Orbs</span> and <span style=\"color: #ffffff; display: inline\">Spheres of Power</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">6</span> times.</span></div></span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30940,
+      "name": "Flow of Wrath",
+      "spellId": 801855,
+      "spellIds": [
+        801855
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\priest_icon_chakra_blue",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30945
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 15% against enemies affected by Drown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801855,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #ffffff; display: inline\">Drown</span>."
+        }
+      ]
+    },
+    {
+      "id": 30944,
+      "name": "Static Electricity",
+      "spellId": 524954,
+      "spellIds": [
+        524954
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_MonkAbility_CracklingLightning_XuenWhite",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30946,
+        34958
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Torrential Wrath now spawn an Electrified Water Elemental to aid you in combat for 20 sec.When an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -1.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524954,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> now spawn an <span style=\"color: #ffffff; display: inline\">Electrified Water Elemental</span> to aid you in combat for <span class=\"item-number\">20</span> sec.<br /><br />When an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> dissipates, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Drown</span> is reduced by <span class=\"item-number\">-1.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30945,
+      "name": "Drown",
+      "spellId": 806407,
+      "spellIds": [
+        806407
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_element(water)_b_01_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29836,
+        34685,
+        34686
+      ],
+      "requiredIds": [],
+      "desc": "Attempt to drown an enemy, reducing their healing received by -20% for 8 seconds. At the end of the duration, unleash a creature from the depths dealing cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1) Frost Damage.Each time you generate a stack of Conductive you increase their damage taken from this effect, stacking up to 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806407,
+          "description": "Attempt to drown an enemy, reducing their healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds. At the end of the duration, unleash a creature from the depths dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1)</span> Frost Damage.<br /><br />Each time you generate a stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span> you increase their damage taken from this effect, stacking up to <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30946,
+      "name": "Unstable",
+      "spellId": 705723,
+      "spellIds": [
+        705723
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_EnergeticOrbLightBlue",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6467,
+        6468,
+        11468,
+        34918
+      ],
+      "requiredIds": [],
+      "desc": "Your direct damage critical strikes cause your Stormflow to tick -20% faster for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705723,
+          "description": "Your direct damage critical strikes cause your <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> to tick <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30947,
+      "name": "Kinetic Energy",
+      "spellId": 806409,
+      "spellIds": [
+        806409
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_lightning_empower_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6468,
+        11468,
+        29141,
+        30288
+      ],
+      "requiredIds": [],
+      "desc": "Casting a spell that consumes Conductive now grants you a stack of Kinetic Energy.Kinetic EnergyCritical strike chance increased by 2%, stacking 3 times, for 10 seconds.Additional applications do not refresh the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806409,
+          "description": "Casting a spell that consumes <span style=\"color: #4fd1c5; display: inline\">Conductive</span> now grants you a stack of <span style=\"color: #ffffff; display: inline\">Kinetic Energy</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_lightning_empower_border\" /><span class=\"name\">Kinetic Energy</span></div><span class=\"desc\">Critical strike chance increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">3</span> times, for <span class=\"item-number\">10</span> seconds.<br /><br />Additional applications do not refresh the duration.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31163,
+      "name": "Arm of Thorim",
+      "spellId": 801847,
+      "spellIds": [
+        801847
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_wind_icon_0002s_0000_lightning_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4013,
+        29138
+      ],
+      "desc": "Depletes All StaticCall down a terrible beam of lightning upon an enemy, dealing 135 + 120% nature SP Nature damage and stunning them for 1 seconds.Damage and cast time increased based on Static level.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801847,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes All Static</span><br />Call down a terrible beam of lightning upon an enemy, dealing <span class=\"item-number\">135</span> + <span class=\"item-number\">120% nature SP</span> Nature damage and stunning them for <span class=\"item-number\">1</span> seconds.<br /><br />Damage and cast time increased based on <span style=\"color: #cc99ff; display: inline\">Static</span> level."
+        }
+      ]
+    },
+    {
+      "id": 31164,
+      "name": "Tempest Calling",
+      "spellId": 707615,
+      "spellIds": [
+        707615
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Tranquility",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4014
+      ],
+      "desc": "Enhances some of your spells with the power of the wind, tranforming your Conjure Storm into Updraft and Call Lightning into Aeroblast.UpdraftDepletes 20 Static2 Charges, 10 sec rechargeCreate an 8 yd Updraft at the target location for 20 seconds.Deals 160 + 68.3% nature SP Nature damage over the duration to enemies within the radius.Increases movement speed by 25% for allies within the radius.AeroblastDepletes 50 StaticCrush an enemy with the weight of the winds, dealing 109 + 63.5% nature SP Nature damage to them and then an additional time for 40% of the damage dealt after 1 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707615,
+          "description": "Enhances some of your spells with the power of the wind, tranforming your <span style=\"color: #ffffff; display: inline\">Conjure Storm</span> into <span style=\"color: #ffffff; display: inline\">Updraft</span> and <span style=\"color: #ffffff; display: inline\">Call Lightning</span> into <span style=\"color: #ffffff; display: inline\">Aeroblast</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_frost_windwalkon\" /><span class=\"name\">Updraft</span></div><span class=\"desc\"><span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">20</span> Static</span><br /><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br />Create an <span class=\"item-number\">8</span> yd <span style=\"color: #ffffff; display: inline\">Updraft</span> at the target location for <span class=\"item-number\">20</span> seconds.<br /><br />Deals <span class=\"item-number\">160</span> + <span class=\"item-number\">68.3% nature SP</span> Nature damage over the duration to enemies within the radius.<br /><br />Increases movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for allies within the radius.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_skyreach_flash_bang\" /><span class=\"name\">Aeroblast</span></div><span class=\"desc\"><span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Crush an enemy with the weight of the winds, dealing <span class=\"item-number\">109</span> + <span class=\"item-number\">63.5% nature SP</span> Nature damage to them and then an additional time for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt after <span class=\"item-number\">1</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31165,
+      "name": "Tempest Sovereign",
+      "spellId": 560020,
+      "spellIds": [
+        560020
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_LiquidStone_Water",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 1,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4015,
+        29814
+      ],
+      "desc": "Enhances some of your spells with the power of the maelstrom, transforming your Shock into Brine and Call Lightning into Torrential Wrath.BrineGenerates 25 StaticDouse an enemy, dealing cond(gt(SPFR, SPN), 89+0+SPFR*0.571, 89+0+SPN*0.871) Frost damage, scaling with your critical strike rating.Scales with modifiers to Shock.Torrential WrathDepletes 50 StaticBlast an enemy, dealing cond(gt(SPFR, SPN), 111+0+SPFR*1, 111+0+SPN*1.5) Frost damage, scaling with your haste rating.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560020,
+          "description": "Enhances some of your spells with the power of the maelstrom, transforming your <span style=\"color: #ffffff; display: inline\">Shock</span> into <span style=\"color: #ffffff; display: inline\">Brine</span> and <span style=\"color: #ffffff; display: inline\">Call Lightning</span> into <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_waterstrick_border\" /><span class=\"name\">Brine</span></div><span class=\"desc\"><span style=\"color: #cc99ff; display: inline\">Generates <span class=\"item-number\">25</span> Static</span><br />Douse an enemy, dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 89+0+SPFR*0.571, 89+0+SPN*0.871)</span> Frost damage, scaling with your critical strike rating.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Shock</span>.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 torrentialwrath\" /><span class=\"name\">Torrential Wrath</span></div><span class=\"desc\"><span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Blast an enemy, dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 111+0+SPFR*1, 111+0+SPN*1.5)</span> Frost damage, scaling with your haste rating.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31263,
+      "name": "Cloudburst",
+      "spellId": 801838,
+      "spellIds": [
+        801838
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_volatileair",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Create a mighty gust of wind that knocks away all nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801838,
+          "description": "Create a mighty gust of wind that knocks away all nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 31264,
+      "name": "Invigoration",
+      "spellId": 705700,
+      "spellIds": [
+        705700
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Vanish",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9234
+      ],
+      "requiredIds": [],
+      "desc": "Your Aeroblast now grants your Air Elemental a stack of Invigoration.InvigorationIncreases the damage of your Air Elemental by 3% for 15 seconds, stacking 10 times.Additional applications do not refresh duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705700,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Aeroblast</span> now grants your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> a stack of <span style=\"color: #ffffff; display: inline\">Invigoration</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_magicspell__82__border\" /><span class=\"name\">Invigoration</span></div><span class=\"desc\">Increases the damage of your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Additional applications do not refresh duration.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31266,
+      "name": "Windrunner",
+      "spellId": 707719,
+      "spellIds": [
+        707719
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_windwalktotem",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6427
+      ],
+      "requiredIds": [],
+      "desc": "The wind is always at your back, pushing you to move faster, increasing your movement speed and mounted movement speed by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707719,
+          "description": "The wind is always at your back, pushing you to move faster, increasing your movement speed and mounted movement speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31267,
+      "name": "Gale",
+      "spellId": 804036,
+      "spellIds": [
+        804036
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_tradeskillitem_sorcererswind_tong",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9265
+      ],
+      "requiredIds": [],
+      "desc": "3 Charges, 10 sec rechargeGenerates 20 StaticBlast an enemy and up to 2 nearby enemies with a powerful gust of wind for 53 + 42% nature SP Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804036,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br /><span style=\"color: #cc99ff; display: inline\">Generates <span class=\"item-number\">20</span> Static</span><br />Blast an enemy and up to <span class=\"item-number\">2</span> nearby enemies with a powerful gust of wind for <span class=\"item-number\">53</span> + <span class=\"item-number\">42% nature SP</span> Nature damage."
+        }
+      ]
+    },
+    {
+      "id": 31268,
+      "name": "Lexicon of Servitude",
+      "spellId": 520087,
+      "spellIds": [
+        520087
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_book_14_b",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29831,
+        30138
+      ],
+      "requiredIds": [],
+      "desc": "Read from your ancient lexicon, causing your next Summon: Air Elemental to be instant cast and cost no mana. Lasts 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520087,
+          "description": "Read from your ancient lexicon, causing your next <span style=\"color: #ffffff; display: inline\">Summon: Air Elemental</span> to be instant cast and cost no mana. Lasts <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34635,
+      "name": "Dark Skies",
+      "spellId": 300593,
+      "spellIds": [
+        300593
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_stormsongvalley",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7763,
+        34930
+      ],
+      "requiredIds": [],
+      "desc": "When your direct damage spells fail to critically strike, your critical strike chance is increased by 2% for 10 seconds, stacking up to 5 times.Critically striking removes this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300593,
+          "description": "When your direct damage spells fail to critically strike, your critical strike chance is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">5</span> times.<br /><br />Critically striking removes this effect."
+        }
+      ]
+    },
+    {
+      "id": 34638,
+      "name": "Heavy Winds",
+      "spellId": 567542,
+      "spellIds": [
+        567542
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_elemental_mote_air01",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29410,
+        34916
+      ],
+      "requiredIds": [],
+      "desc": "Increases the pushback reduction provided by Stabilizing Pressure by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 567542,
+          "description": "Increases the pushback reduction provided by <span style=\"color: #FFFFFF; display: inline\">Stabilizing Pressure</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34641,
+      "name": "Improved Forked Lightning",
+      "spellId": 300597,
+      "spellIds": [
+        300597
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_normal26biglightning_Border",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29833,
+        34692
+      ],
+      "requiredIds": [],
+      "desc": "Your Forked Lightning now affects 1 additional enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300597,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> now affects <span class=\"item-number\">1</span> additional enemy."
+        }
+      ]
+    },
+    {
+      "id": 34646,
+      "name": "Storm Barrier",
+      "spellId": 707204,
+      "spellIds": [
+        707204
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_LightningShield",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7473
+      ],
+      "requiredIds": [],
+      "desc": "While Lightning Cage is active your Magic Damage taken is now reduced by -25% and you are unable to be hit by ranged attacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707204,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Lightning Cage</span> is active your Magic Damage taken is now reduced by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and you are unable to be hit by ranged attacks."
+        }
+      ]
+    },
+    {
+      "id": 34650,
+      "name": "Storm Warning",
+      "spellId": 567533,
+      "spellIds": [
+        567533
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_02",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6556,
+        29830
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Storm Alert by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 567533,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Storm Alert</span> by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34674,
+      "name": "Invoking Storms",
+      "spellId": 705667,
+      "spellIds": [
+        705667,
+        707793
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_CallStorm",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30126,
+        34641
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell power scaling of Shock, Call Lightning, and Arm of Thorim by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705667,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707793,
+          "description": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34676,
+      "name": "Stormflow",
+      "spellId": 567555,
+      "spellIds": [
+        567555
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_mage_waterjet",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31165
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 20 StaticChannel a storm beam upon an enemy, dealing 112 + 160% SP Frost Damage over 8 seconds, scaling with your spell haste.Shock can be instantly cast while channeling.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 567555,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">20</span> Static</span><br />Channel a storm beam upon an enemy, dealing <span class=\"item-number\">112</span> + <span class=\"item-number\">160% SP</span> Frost Damage over <span class=\"item-number\">8</span> seconds, scaling with your spell haste.<br /><br /><span style=\"color: #ffffff; display: inline\">Shock</span> can be instantly cast while channeling."
+        }
+      ]
+    },
+    {
+      "id": 34679,
+      "name": "Raining and Pouring",
+      "spellId": 706660,
+      "spellIds": [
+        706660
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(54)_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34686
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of your Torrential Wrath and Electrocute by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706660,
+          "description": "Increases the critical damage of your <span style=\"color: #FFFFFF; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34684,
+      "name": "Stormcloud",
+      "spellId": 801859,
+      "spellIds": [
+        801859
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_SnowWhirlwind_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7184
+      ],
+      "requiredIds": [],
+      "desc": "Summon a cloud above an enemy target's head for 15 seconds, causing them to take 20% additional damage from your spells.Using Torrential Wrath on an enemy affected by Stormcloud causes a Geyser to erupt beneath them, dealing 571 + 25% frost SP Frost damage and knocking them up slightly.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801859,
+          "description": "Summon a cloud above an enemy target's head for <span class=\"item-number\">15</span> seconds, causing them to take <span class=\"item-number\">20</span><span class=\"item-number\">%</span> additional damage from your spells.<br /><br />Using <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> on an enemy affected by <span style=\"color: #ffffff; display: inline\">Stormcloud</span> causes a <span style=\"color: #ffffff; display: inline\">Geyser</span> to erupt beneath them, dealing <span class=\"item-number\">571</span> + <span class=\"item-number\">25% frost SP</span> Frost damage and knocking them up slightly."
+        }
+      ]
+    },
+    {
+      "id": 34685,
+      "name": "Torrential Rage",
+      "spellId": 807196,
+      "spellIds": [
+        807196,
+        807884
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_misc_herb_stormvine",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34676
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Torrential Wrath and Stormflow by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807196,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807884,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34686,
+      "name": "Disciple of Thorim",
+      "spellId": 705727,
+      "spellIds": [
+        705727,
+        707795,
+        707798
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\shaman_pvp_leaderclan",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34676
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of your Torrential Wrath by -0.2 sec and increases your hit chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705727,
+          "description": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.2</span> sec and increases your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707795,
+          "description": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.4</span> sec and increases your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 707798,
+          "description": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.6</span> sec and increases your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34687,
+      "name": "Crackling Devastation",
+      "spellId": 705645,
+      "spellIds": [
+        705645
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_WispHeal",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5475,
+        5738
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of Electrocute by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705645,
+          "description": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34690,
+      "name": "Waterfall",
+      "spellId": 806412,
+      "spellIds": [
+        806412
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_03",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34695
+      ],
+      "requiredIds": [],
+      "desc": "Dealing critical damage now reduces all of your cooldowns by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806412,
+          "description": "Dealing critical damage now reduces all of your cooldowns by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34691,
+      "name": "Titanic Thunderbolt",
+      "spellId": 705653,
+      "spellIds": [
+        705653,
+        707794
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_nature_lightning",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29290,
+        29833
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Shock, Conjure Storm, and Eye of the Storm by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705653,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Conjure Storm</span>, and <span style=\"color: #FFFFFF; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707794,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Conjure Storm</span>, and <span style=\"color: #FFFFFF; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34692,
+      "name": "Thorim's Gift",
+      "spellId": 570173,
+      "spellIds": [
+        570173
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Boss_Thorim",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29833
+      ],
+      "requiredIds": [],
+      "desc": "Your Arm of Thorim now leaves unstable electricity beneath the target, dealing damage equal to 10% of its damage dealt to enemies within every 1 sec for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570173,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> now leaves unstable electricity beneath the target, dealing damage equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of its damage dealt to enemies within every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34693,
+      "name": "Arcane Lightning",
+      "spellId": 300618,
+      "spellIds": [
+        300618
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ArcaneLightning_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29814
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Intellect and Spirit by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300618,
+          "description": "Increases your Intellect and Spirit by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34694,
+      "name": "Airing Out",
+      "spellId": 705675,
+      "spellIds": [
+        705675
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_wrathofair_totem",
+      "x": 0,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29830
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the duration of incapacitate and disorient effects by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705675,
+          "description": "Reduces the duration of incapacitate and disorient effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34695,
+      "name": "Lingering Storm",
+      "spellId": 705652,
+      "spellIds": [
+        705652
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_lightning_timewarp_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30295,
+        34935
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Stormcloak, Conjure Storm and Body of Lightning by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705652,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Stormcloak</span>, <span style=\"color: #ffffff; display: inline\">Conjure Storm</span> and <span style=\"color: #ffffff; display: inline\">Body of Lightning</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34696,
+      "name": "Never Strikes Twice?",
+      "spellId": 804828,
+      "spellIds": [
+        804828
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3electrocute",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7766,
+        9930,
+        34673
+      ],
+      "requiredIds": [],
+      "desc": "Your Electrocute now has a 25% chance to strike again.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804828,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again."
+        }
+      ]
+    },
+    {
+      "id": 34911,
+      "name": "Jolt",
+      "spellId": 707054,
+      "spellIds": [
+        707054,
+        707859
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\novart_magicspell_(74)_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9930
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage and critical strike chance of Electrocute by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707054,
+          "description": "Increases the damage and critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707859,
+          "description": "Increases the damage and critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34912,
+      "name": "Storm Chaser",
+      "spellId": 300612,
+      "spellIds": [
+        300612
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_fish_stormray",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12919,
+        34919,
+        34920,
+        34938
+      ],
+      "requiredIds": [],
+      "desc": "Dealing direct spell damage now has a 33% chance to reduce the cast time of your next Call Lightning by -15% for 10 seconds, stacking 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300612,
+          "description": "Dealing direct spell damage now has a <span class=\"item-number\">33</span><span class=\"item-number\">%</span> chance to reduce the cast time of your next <span style=\"color: #FFFFFF; display: inline\">Call Lightning</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34915,
+      "name": "Fog",
+      "spellId": 806100,
+      "spellIds": [
+        806100
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_shamanskill41nobg_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30868,
+        34695
+      ],
+      "requiredIds": [],
+      "desc": "Concentrate elemental magic to create an 8 yd wide cloudy barrier at your feet for 8 seconds.Enemies are unable to target into or out of the Fog.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806100,
+          "description": "Concentrate elemental magic to create an <span class=\"item-number\">8</span> yd wide cloudy barrier at your feet for <span class=\"item-number\">8</span> seconds.<br /><br />Enemies are unable to target into or out of the <span style=\"color: #ffffff; display: inline\">Fog</span>."
+        }
+      ]
+    },
+    {
+      "id": 34916,
+      "name": "Aether Mastery",
+      "spellId": 807462,
+      "spellIds": [
+        807462,
+        807887
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_Zone_Netherstorm_01",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29341,
+        34922
+      ],
+      "requiredIds": [],
+      "desc": "Allows 30% of your mana regeneration to continue while casting and increases your critical strike chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807462,
+          "description": "Allows <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your mana regeneration to continue while casting and increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807887,
+          "description": "Allows <span class=\"item-number\">60</span><span class=\"item-number\">%</span> of your mana regeneration to continue while casting and increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34917,
+      "name": "Thunder Grip",
+      "spellId": 301219,
+      "spellIds": [
+        301219
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_thunderking_balllightning",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7029,
+        13029,
+        34956
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage dealt now has a 30% chance to apply Thunder Grip to enemies.Thunder GripPrevents enemies from mounting, fleeing, and increasing their movement speed above normal movement speed for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301219,
+          "description": "Direct damage dealt now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Thunder Grip</span> to enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_thunderking_balllightning\" /><span class=\"name\">Thunder Grip</span></div><span class=\"desc\">Prevents enemies from mounting, fleeing, and increasing their movement speed above normal movement speed for <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34918,
+      "name": "Stormcaller",
+      "spellId": 300611,
+      "spellIds": [
+        300611,
+        300615
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_IceBall_Border",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29518,
+        30940
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown and mana cost of Eye of the Storm by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300611,
+          "description": "Reduces the cooldown and mana cost of <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 300615,
+          "description": "Reduces the cooldown and mana cost of <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34922,
+      "name": "Exhale",
+      "spellId": 705672,
+      "spellIds": [
+        705672
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_wind_icon_0000s_0000_elemental_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11926,
+        34926,
+        34931
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 20 StaticRelease the pressure from nearby allies, dispelling 1 movement slowing effect, repeating every 3 sec for 9 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705672,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">20</span> Static</span><br />Release the pressure from nearby allies, dispelling <span class=\"item-number\">1</span> movement slowing effect, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">9</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34924,
+      "name": "Wind Shift",
+      "spellId": 503596,
+      "spellIds": [
+        503596,
+        504879
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_Windfury",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31263
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell haste by 2% and reduces spell pushback suffered from damaging attacks by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503596,
+          "description": "Increases your spell haste by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504879,
+          "description": "Increases your spell haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34930,
+      "name": "Critical Circuit",
+      "spellId": 807314,
+      "spellIds": [
+        807314
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill39_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34696
+      ],
+      "requiredIds": [],
+      "desc": "Direct critical strikes with Static spenders now refund 10 Static.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807314,
+          "description": "Direct critical strikes with <span style=\"color: #cc99ff; display: inline\">Static</span> spenders now refund <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>."
+        }
+      ]
+    },
+    {
+      "id": 34931,
+      "name": "Aethermancy",
+      "spellId": 705690,
+      "spellIds": [
+        705690,
+        705691
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_shaman_improvedreincarnation",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34650
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of your Invigorating Surge by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705690,
+          "description": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Invigorating Surge</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705691,
+          "description": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Invigorating Surge</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34935,
+      "name": "Aviana's Blessing",
+      "spellId": 705720,
+      "spellIds": [
+        705720
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_eagle2windmount_white",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12317,
+        34916
+      ],
+      "requiredIds": [],
+      "desc": "Reduces your total threat generated by -30% and increases the range of Gust of Wind by 3 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705720,
+          "description": "Reduces your total threat generated by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> and increases the range of <span style=\"color: #ffffff; display: inline\">Gust of Wind</span> by <span class=\"item-number\">3</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 34937,
+      "name": "Thundershocker",
+      "spellId": 300610,
+      "spellIds": [
+        300610
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_manawave_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34674
+      ],
+      "requiredIds": [],
+      "desc": "While rooted by Eye of the Storm, affected enemies now take 30% increased damage from you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300610,
+          "description": "While rooted by <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span>, affected enemies now take <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage from you."
+        }
+      ]
+    },
+    {
+      "id": 34941,
+      "name": "Unbound Elementalist",
+      "spellId": 705702,
+      "spellIds": [
+        705702
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_murmur",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6425,
+        6427
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Unshackle by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705702,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Unshackle</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34943,
+      "name": "Storm Clouds",
+      "spellId": 705686,
+      "spellIds": [
+        705686
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_StoneTablet_ShamanAir",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30132,
+        30138
+      ],
+      "requiredIds": [],
+      "desc": "Your Body of Lightning is now automatically cast on you when you cast it on an ally.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705686,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Body of Lightning</span> is now automatically cast on you when you cast it on an ally."
+        }
+      ]
+    },
+    {
+      "id": 34948,
+      "name": "Flow",
+      "spellId": 570128,
+      "spellIds": [
+        570128
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_bg_dg_master_of_the_deepwind_gorge",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30141
+      ],
+      "requiredIds": [],
+      "desc": "Your Invigoration now stacks 5 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570128,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Invigoration</span> now stacks <span class=\"item-number\">5</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": 34951,
+      "name": "Raging Zephyr",
+      "spellId": 704222,
+      "spellIds": [
+        704222
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_skyreach_four_wind",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29839,
+        30410
+      ],
+      "requiredIds": [],
+      "desc": "Transforms your Whirlpool into Raging Zephyr.Raging Zephyr3 Charges, 35 sec rechargeSummon a Raging Zephyr at the targeted location for 12 seconds.Every 4 sec, it will pull all enemies within 10 yds inside of it.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704222,
+          "description": "Transforms your <span style=\"color: #ffffff; display: inline\">Whirlpool</span> into <span style=\"color: #ffffff; display: inline\">Raging Zephyr</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_skyreach_four_wind\" /><span class=\"name\">Raging Zephyr</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">35</span> sec recharge</span><br />Summon a <span style=\"color: #FFFFFF; display: inline\">Raging Zephyr</span> at the targeted location for <span class=\"item-number\">12</span> seconds.<br /><br />Every <span class=\"item-number\">4</span> sec, it will pull all enemies within <span class=\"item-number\">10</span> yds inside of it.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34955,
+      "name": "Master Airbender",
+      "spellId": 705719,
+      "spellIds": [
+        705719
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_pandarenelemental_air",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31267
+      ],
+      "requiredIds": [],
+      "desc": "Casting Gale now reduces the cooldown of abilities that deplete Static by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705719,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Gale</span> now reduces the cooldown of abilities that deplete <span style=\"color: #cc99ff; display: inline\">Static</span> by <span class=\"item-number\">-1</span> sec.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34956,
+      "name": "Spellstorm Mastery",
+      "spellId": 705659,
+      "spellIds": [
+        705659,
+        705660
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_01dual",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7474
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Aegis spells by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705659,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Aegis</span> spells by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705660,
+          "description": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Aegis</span> spells by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34957,
+      "name": "Hurricanes",
+      "spellId": 300839,
+      "spellIds": [
+        300839
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_ursolsvortex",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34941
+      ],
+      "requiredIds": [],
+      "desc": "Casting Unshackle now unshackles you, increasing your damage dealt by 15% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300839,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Unshackle</span> now unshackles you, increasing your damage dealt by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34958,
+      "name": "Thunder Ward",
+      "spellId": 800098,
+      "spellIds": [
+        800098
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_DeathKnight_AntiMagicZone",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6468,
+        11468
+      ],
+      "requiredIds": [],
+      "desc": "Depletes All StaticEncase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for 10 seconds.Cannot generate Static for the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800098,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes All Static</span><br />Encase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for <span class=\"item-number\">10</span> seconds.<br /><br />Cannot generate <span style=\"color: #cc99ff; display: inline\">Static</span> for the duration."
+        }
+      ]
+    },
+    {
+      "id": 34960,
+      "name": "Hydro Powered",
+      "spellId": 300616,
+      "spellIds": [
+        300616
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicStorm_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30947
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell critical damage by 35%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300616,
+          "description": "Increases your spell critical damage by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:42:732125",
+      "name": "Electrifying Aura / Tome of Lightning",
+      "spellId": 560568,
+      "spellIds": [
+        560568
+      ],
+      "tabId": 42,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_thunderking_rockfalllow",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34691
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560568,
+          "description": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:87:567542",
+      "name": "Concentrated Static / Altered Course",
+      "spellId": 570722,
+      "spellIds": [
+        570722
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_spirituallightning_Border",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6556,
+        29139
+      ],
+      "requiredIds": [],
+      "desc": "Casting Discharge now restores 5% more mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 570722,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Discharge</span> now restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> more mana."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:87:300596",
+      "name": "Surge Overload / Improved Body of Lightning",
+      "spellId": 300596,
+      "spellIds": [
+        300596
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_lightning_punch_Border",
+      "x": 8,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29139
+      ],
+      "requiredIds": [],
+      "desc": "Your Body of Lightning now regenerates 1% additional maximum mana per tick.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300596,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Body of Lightning</span> now regenerates <span class=\"item-number\">1</span><span class=\"item-number\">%</span> additional maximum mana per tick."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:87:707652",
+      "name": "Ionic Aura / Storm Sorcery",
+      "spellId": 707652,
+      "spellIds": [
+        707652
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_lightning_universe_Border",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34650,
+        34694
+      ],
+      "requiredIds": [],
+      "desc": "Increases the maximum mana, Rage, Energy, Focus, and Runic Power of allies within 40 yds by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707652,
+          "description": "Increases the maximum mana, Rage, Energy, Focus, and Runic Power of allies within <span class=\"item-number\">40</span> yds by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:87:707619",
+      "name": "Magic Elimination / Pulse Conversion",
+      "spellId": 705668,
+      "spellIds": [
+        705668
+      ],
+      "tabId": 87,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill87_Border",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7474,
+        29341
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of beneficial magic effects purged by your Stormbreaker by 1 and its range by 10 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705668,
+          "description": "Increases the amount of beneficial magic effects purged by your <span style=\"color: #FFFFFF; display: inline\">Stormbreaker</span> by <span class=\"item-number\">1</span> and its range by <span class=\"item-number\">10</span> yds."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:43:128464",
+      "name": "Clear Skies / Focal Point",
+      "spellId": 500069,
+      "spellIds": [
+        500069
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_deadwindpass",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 15,
+      "connectedNodeIds": [
+        4014
+      ],
+      "requiredIds": [],
+      "desc": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500069,
+          "description": "Increases chance to hit with all spells and attacks by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for you and party and raid members.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:43:704211",
+      "name": "Unrelenting Winds / Evergale",
+      "spellId": 704211,
+      "spellIds": [
+        704211
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_zenflight",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31267
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Gale by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704211,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Gale</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:43:342611",
+      "name": "Enveloping Winds / Tailwind",
+      "spellId": 707546,
+      "spellIds": [
+        707546
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_shaman_windwalktotem",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        11940,
+        34940
+      ],
+      "requiredIds": [],
+      "desc": "Casting Gale now causes your Air Elemental to cast Gale.Additionally, you now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707546,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Gale</span> now causes your <span style=\"color: #ffffff; display: inline\">Air Elemental</span> to cast <span style=\"color: #ffffff; display: inline\">Gale</span>.<br /><br />Additionally, you now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:43:301318",
+      "name": "Cyclone's Embrace / Cyclone's Recharge",
+      "spellId": 301318,
+      "spellIds": [
+        301318
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_EyeOfTheOwl",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29137
+      ],
+      "requiredIds": [],
+      "desc": "Increases the base amount absorbed by your Kiss of the Clouds by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301318,
+          "description": "Increases the base amount absorbed by your <span style=\"color: #FFFFFF; display: inline\">Kiss of the Clouds</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:43:126889",
+      "name": "Flurry / Aerodynamics",
+      "spellId": 707543,
+      "spellIds": [
+        707543
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Flurry",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        34914,
+        11584
+      ],
+      "requiredIds": [],
+      "desc": "Depletes 10 StaticCommand your Air Elemental, causing its next instance of damage to unleash a flurry of air on your target, dealing 763 + 140% nature SP Nature damage over 21 seconds, and reducing their resistances by 75, and increasing their Magic damage taken by -2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707543,
+          "description": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">10</span> Static</span><br />Command your <span style=\"color: #ffffff; display: inline\">Air Elemental</span>, causing its next instance of damage to unleash a flurry of air on your target, dealing <span class=\"item-number\">763</span> + <span class=\"item-number\">140% nature SP</span> Nature damage over <span class=\"item-number\">21</span> seconds, and reducing their resistances by <span class=\"item-number\">75</span>, and increasing their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:43:713421",
+      "name": "Tempest's Call / Surge of Might",
+      "spellId": 560567,
+      "spellIds": [
+        560567
+      ],
+      "tabId": 43,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Tempest's Call",
+      "x": 10,
+      "y": 8,
+      "requiredLevel": 50,
+      "connectedNodeIds": [
+        6435,
+        11235
+      ],
+      "requiredIds": [],
+      "desc": "Bring the power of wind and storm to all nearby allies, increasing haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560567,
+          "description": "Bring the power of wind and storm to all nearby allies, increasing haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />After being affected by this spell, allies cannot benefit from similar effects for <span class=\"item-number\">5</span> minutes."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:44:561228",
+      "name": "Prodigy of Lei Shen / Blessing of Lei Shen",
+      "spellId": 560023,
+      "spellIds": [
+        560023
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_stormreach",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34685
+      ],
+      "requiredIds": [],
+      "desc": "Allows your Stormflow to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560023,
+          "description": "Allows your <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> to critically strike."
+        }
+      ]
+    },
+    {
+      "id": "choice:16:44:807657",
+      "name": "Bursting / Washed Away",
+      "spellId": 806397,
+      "spellIds": [
+        806397
+      ],
+      "tabId": 44,
+      "classId": 16,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_WaterBomb_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        8613,
+        30940
+      ],
+      "requiredIds": [],
+      "desc": "Increases the stack value of Drowning by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806397,
+          "description": "Increases the stack value of <span style=\"color: #FFFFFF; display: inline\">Drowning</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    }
+  ]
+}

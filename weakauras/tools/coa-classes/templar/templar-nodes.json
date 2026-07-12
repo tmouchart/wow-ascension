@@ -1,0 +1,4249 @@
+{
+  "class": "Templar",
+  "classId": "19",
+  "specs": [
+    "Zealot",
+    "Oathkeeper",
+    "Crusader"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Zealot": 50,
+    "Oathkeeper": 16,
+    "Crusader": 51
+  },
+  "nodes": [
+    {
+      "id": 4348,
+      "name": "Pious",
+      "spellId": 706431,
+      "spellIds": [
+        706431
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_skyreach_fourblades",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31314
+      ],
+      "requiredIds": [],
+      "desc": "Increases all primary attributes by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706431,
+          "description": "Increases all primary attributes by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4364,
+      "name": "Scarlet Champion",
+      "spellId": 805415,
+      "spellIds": [
+        805415
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_surgeoflight",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6921,
+        30963
+      ],
+      "requiredIds": [],
+      "desc": "Your damaging critical strikes now increase your Holy damage dealt by 2% for 20 seconds. stacking 5 times. Can only occur once per sec.At 5 stacks, you are granted High General.High GeneralYour next Chastise consumes all stacks of Scarlet Champion to deal 25% increased direct damage, and be guaranteed to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805415,
+          "description": "Your damaging critical strikes now increase your Holy damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds. stacking <span class=\"item-number\">5</span> times. Can only occur once per sec.<br /><br />At <span class=\"item-number\">5</span> stacks, you are granted <span style=\"color: #ffffff; display: inline\">High General</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_bg_killxenemies_generalsroom\" /><span class=\"name\">High General</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Chastise</span> consumes all stacks of <span style=\"color: #ffffff; display: inline\">Scarlet Champion</span> to deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased direct damage, and be guaranteed to critically strike.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 5156,
+      "name": "Determined",
+      "spellId": 705256,
+      "spellIds": [
+        705256
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_heroism",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34345
+      ],
+      "requiredIds": [],
+      "desc": "Your Temple Guardian now makes your next ability within 5 seconds free of cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705256,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Temple Guardian</span> now makes your next ability within <span class=\"item-number\">5</span> seconds free of cost."
+        }
+      ]
+    },
+    {
+      "id": 5713,
+      "name": "Libram of Fervor",
+      "spellId": 805423,
+      "spellIds": [
+        805423
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book2Motif_Tyr",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6356
+      ],
+      "requiredIds": [],
+      "desc": "Read from your Libram of Fervor, granting you spell power equal to 30% of your Agility and attack power equal to 30% of your Intellect for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805423,
+          "description": "Read from your <span style=\"color: #ffffff; display: inline\">Libram of Fervor</span>, granting you spell power equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Agility and attack power equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Intellect for <span class=\"item-number\">20</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 6352,
+      "name": "Light's Echo",
+      "spellId": 520017,
+      "spellIds": [
+        520017,
+        520883
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_monk_clashingoxcharge",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30448,
+        34373
+      ],
+      "requiredIds": [],
+      "desc": "Argent Blade now has a 10% chance to strike an additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520017,
+          "description": "<span style=\"color: #ffffff; display: inline\">Argent Blade</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike an additional time."
+        },
+        {
+          "rank": 2,
+          "spellId": 520883,
+          "description": "<span style=\"color: #ffffff; display: inline\">Argent Blade</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike an additional time."
+        }
+      ]
+    },
+    {
+      "id": 6354,
+      "name": "Testament of Will",
+      "spellId": 801455,
+      "spellIds": [
+        801455
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3mystically",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6355,
+        6375
+      ],
+      "requiredIds": [],
+      "desc": "Break an ally free of worldly constraints, making them immune to all movement impairing effects for 10 seconds.Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801455,
+          "description": "Break an ally free of worldly constraints, making them immune to all movement impairing effects for <span class=\"item-number\">10</span> seconds.<br /><br />Applies <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> for <span class=\"item-number\">1</span> minute.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_sealoffury\" /><span class=\"name\">Sacred Restraint</span></div><span class=\"desc\">Cannot be targeted by <span style=\"color: #FFFFFF; display: inline\">Testaments</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6355,
+      "name": "Sacred Candle",
+      "spellId": 300501,
+      "spellIds": [
+        300501
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_misc_candle_a_01",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34377
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Testament of Faith by -60 sec and the duration of Sacred Restraint by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300501,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Testament of Faith</span> by <span class=\"item-number\">-60</span> sec and the duration of <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6356,
+      "name": "Deep Meditation",
+      "spellId": 300522,
+      "spellIds": [
+        300522
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holy_wraith_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6358,
+        34341
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Oath Chain by 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300522,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Oath Chain</span> by <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6358,
+      "name": "Spiritual",
+      "spellId": 560833,
+      "spellIds": [
+        560833
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_selflesshealer",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29704,
+        34402
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Energy regeneration by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560833,
+          "description": "Increases your Energy regeneration by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6375,
+      "name": "Tyr's Guard",
+      "spellId": 560649,
+      "spellIds": [
+        560649
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Jewelry_Talisman_01",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34368
+      ],
+      "requiredIds": [],
+      "desc": "Testament of Hope now summons an additional copy of yourself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560649,
+          "description": "<span style=\"color: #ffffff; display: inline\">Testament of Hope</span> now summons an additional copy of yourself."
+        }
+      ]
+    },
+    {
+      "id": 6376,
+      "name": "Reckoning",
+      "spellId": 805421,
+      "spellIds": [
+        805421
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyRod_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29717,
+        34395
+      ],
+      "requiredIds": [],
+      "desc": "Unleash a powerful Oath Breaker, dealing 27 + 17.5% AP + 50% Stamina Holy damage and restoring 15 Energy for each enemy struck.Consumes your Oaths, dealing additional damage for each consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805421,
+          "description": "Unleash a powerful <span style=\"color: #ffffff; display: inline\">Oath Breaker</span>, dealing <span class=\"item-number\">27</span> + <span class=\"item-number\">17.5% AP</span> + <span class=\"item-number\">50% Stamina</span> Holy damage and restoring <span class=\"item-number\">15</span> Energy for each enemy struck.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed."
+        }
+      ]
+    },
+    {
+      "id": 6401,
+      "name": "Solemn Soldier",
+      "spellId": 572546,
+      "spellIds": [
+        572546,
+        572555
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\5_assassinskill27_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29255
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee haste by 5% and expertise by 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572546,
+          "description": "Increases your melee haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">5</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 572555,
+          "description": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 6566,
+      "name": "Crusader's Brand",
+      "spellId": 300513,
+      "spellIds": [
+        300513
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holy_toglory_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5351,
+        6351,
+        34373
+      ],
+      "requiredIds": [],
+      "desc": "Brand an enemy for 20 seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take 243 + 27.5% holy SP + 18.5% AP Holy Damage.While marked enemies can always be seen by the Crusader even while stealthed or invisible.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300513,
+          "description": "Brand an enemy for <span class=\"item-number\">20</span> seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take <span class=\"item-number\">243</span> + <span class=\"item-number\">27.5% holy SP</span> + <span class=\"item-number\">18.5% AP</span> Holy Damage.<br /><br />While marked enemies can always be seen by the Crusader even while stealthed or invisible."
+        }
+      ]
+    },
+    {
+      "id": 6567,
+      "name": "Holy Combatant",
+      "spellId": 500011,
+      "spellIds": [
+        500011
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_28",
+      "x": 3,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6352
+      ],
+      "requiredIds": [],
+      "desc": "Your Argent Blade now also extends the duration of Interdict on your target by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500011,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Argent Blade</span> now also extends the duration of <span style=\"color: #ffffff; display: inline\">Interdict</span> on your target by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6861,
+      "name": "Paladin Training",
+      "spellId": 520009,
+      "spellIds": [
+        520009
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holy_beam_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30440
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Righteous Lunge and Argent Blade by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520009,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span> and <span style=\"color: #FFFFFF; display: inline\">Argent Blade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6862,
+      "name": "Call of the Monastery",
+      "spellId": 560550,
+      "spellIds": [
+        560550
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_veneration",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34386,
+        34397
+      ],
+      "requiredIds": [],
+      "desc": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your attack power by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560550,
+          "description": "Increases the attack power of all party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6920,
+      "name": "Tyr's Blessing",
+      "spellId": 705285,
+      "spellIds": [
+        705285
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Hammer_01",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5351,
+        6351
+      ],
+      "requiredIds": [],
+      "desc": "Condemn now stacks 1 additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705285,
+          "description": "<span style=\"color: #ffffff; display: inline\">Condemn</span> now stacks <span class=\"item-number\">1</span> additional time."
+        }
+      ]
+    },
+    {
+      "id": 6921,
+      "name": "Legacy of the Silver Hand",
+      "spellId": 806522,
+      "spellIds": [
+        806522
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_1h_silverhand_b_01",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31312,
+        34369
+      ],
+      "requiredIds": [],
+      "desc": "Casting Argent Blade or Scarlet Hammer now guarantees your next 2 instances of damage dealt by Scourgebane to critically strike.Increases the critical damage of Scourgebane by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806522,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Argent Blade</span> or <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now guarantees your next <span class=\"item-number\">2</span> instances of damage dealt by <span style=\"color: #ffffff; display: inline\">Scourgebane</span> to critically strike.<br /><br />Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6924,
+      "name": "Interdict",
+      "spellId": 560116,
+      "spellIds": [
+        560116
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_vowofunity",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34356,
+        34357
+      ],
+      "requiredIds": [],
+      "desc": "Forbid an enemy from sinning, silencing them for 6 seconds. If they are an Undead or Demon they are unable to be healed for the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560116,
+          "description": "Forbid an enemy from sinning, silencing them for <span class=\"item-number\">6</span> seconds. If they are an Undead or Demon they are unable to be healed for the duration."
+        }
+      ]
+    },
+    {
+      "id": 7024,
+      "name": "Templar's Might",
+      "spellId": 705291,
+      "spellIds": [
+        705291
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_reputation_argentcrusader",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6920
+      ],
+      "requiredIds": [],
+      "desc": "Your Righteous Lunge and Chastise used on enemies affected by your Condemn now deal 6% increased damage per stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705291,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span> and <span style=\"color: #ffffff; display: inline\">Chastise</span> used on enemies affected by your <span style=\"color: #ffffff; display: inline\">Condemn</span> now deal <span class=\"item-number\">6</span><span class=\"item-number\">%</span> increased damage per stack."
+        }
+      ]
+    },
+    {
+      "id": 7483,
+      "name": "Spiritual Abdicator",
+      "spellId": 803219,
+      "spellIds": [
+        803219
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_InnerFire",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19451,
+        30451
+      ],
+      "requiredIds": [],
+      "desc": "Your Testament of Hope now reduces damage taken by an additional 0% per copy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803219,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Testament of Hope</span> now reduces damage taken by an additional <span class=\"item-number\">0</span><span class=\"item-number\">%</span> per copy."
+        }
+      ]
+    },
+    {
+      "id": 7757,
+      "name": "One With The Light",
+      "spellId": 504807,
+      "spellIds": [
+        504807
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Paladinskill_01_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30067,
+        31254
+      ],
+      "requiredIds": [],
+      "desc": "Casting Oath Breakers now triggers Zealotry on your target and reduces the cooldown of Librams, Force of Golganneth, and Mortal Abdication by -1 sec.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504807,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now triggers <span style=\"color: #ffffff; display: inline\">Zealotry</span> on your target and reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Librams</span>, <span style=\"color: #ffffff; display: inline\">Force of Golganneth</span>, and <span style=\"color: #ffffff; display: inline\">Mortal Abdication</span> by <span class=\"item-number\">-1</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">40</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7758,
+      "name": "Fortified Body",
+      "spellId": 300515,
+      "spellIds": [
+        300515
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_brushitoff",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34386,
+        34391
+      ],
+      "requiredIds": [],
+      "desc": "Allies within 40 yds receive 6% more healing. Does not stack with similar effects.Additionally, increases your maximum health by 6%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300515,
+          "description": "Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> more healing. Does not stack with similar effects.<br /><br />Additionally, increases your maximum health by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7775,
+      "name": "Pulverizing",
+      "spellId": 524620,
+      "spellIds": [
+        524620
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_HealingAura",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5156,
+        34347
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Condemn now has a 15% chance to consecrate the earth around you with holy fervor, dealing 91 + 22.5% holy SP + 10% AP Holy damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524620,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Condemn</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to consecrate the earth around you with holy fervor, dealing <span class=\"item-number\">91</span> + <span class=\"item-number\">22.5% holy SP</span> + <span class=\"item-number\">10% AP</span> Holy damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 7813,
+      "name": "Might of Aggramar",
+      "spellId": 803163,
+      "spellIds": [
+        803163
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_InnerFire",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30070,
+        31254,
+        31256
+      ],
+      "requiredIds": [],
+      "desc": "Physical damage dealt now has a 25% chance to increase the tick rate and reduce cooldown of your next Blade of Faith by -10%, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803163,
+          "description": "Physical damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the tick rate and reduce cooldown of your next <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7814,
+      "name": "Sanctify",
+      "spellId": 705274,
+      "spellIds": [
+        705274
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_paladin_inquisition",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31313,
+        34347
+      ],
+      "requiredIds": [],
+      "desc": "Your Libram spells now grant you 10% increased melee haste for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705274,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Libram</span> spells now grant you <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee haste for <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7822,
+      "name": "Warrior of Tyr",
+      "spellId": 301253,
+      "spellIds": [
+        301253
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_holyhammer_Border",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31174
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 10% chance to generate 5 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301253,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">5</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 7823,
+      "name": "Scourge-Defense Training",
+      "spellId": 520608,
+      "spellIds": [
+        520608
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_Redemption",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30965
+      ],
+      "requiredIds": [],
+      "desc": "Warrior of Dawn now also increases the damage and critical strike chance of your next Argent Blade by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520608,
+          "description": "<span style=\"color: #ffffff; display: inline\">Warrior of Dawn</span> now also increases the damage and critical strike chance of your next <span style=\"color: #ffffff; display: inline\">Argent Blade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 9757,
+      "name": "Norgannon's Wrath",
+      "spellId": 524739,
+      "spellIds": [
+        524739
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holywhirlpool_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7757
+      ],
+      "requiredIds": [],
+      "desc": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.Damage dealt pierces all immunities, resistances, and damage absorption effects.Scales with modifiers to Chastise.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524739,
+          "description": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing <span class=\"item-number\">1506</span> + <span class=\"item-number\">100% holy SP</span> + <span class=\"item-number\">100% AP</span> Holy damage to up to <span class=\"item-number\">10</span> enemies within <span class=\"item-number\">5</span> yds and reduces their damage and healing done by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Damage dealt pierces all immunities, resistances, and damage absorption effects.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Chastise</span>."
+        }
+      ]
+    },
+    {
+      "id": 10913,
+      "name": "Disciplined Blows",
+      "spellId": 680397,
+      "spellIds": [
+        680397
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Hammer_18",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34397
+      ],
+      "requiredIds": [],
+      "desc": "Your healing done triggers a holy pulse around healed targets, dealing 89 + 5% AP + 20% Agility Holy damage to nearby enemies.Cnly occur once every 0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680397,
+          "description": "Your healing done triggers a holy pulse around healed targets, dealing <span class=\"item-number\">89</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">20% Agility</span> Holy damage to nearby enemies.<br /><br />Cnly occur once every <span class=\"item-number\">0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29255,
+      "name": "Righteous Upheaval",
+      "spellId": 501562,
+      "spellIds": [
+        501562
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_MonkAbility_Uplift_Yellow",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31172
+      ],
+      "requiredIds": [],
+      "desc": "Unleash a dominating Oath Breaker, dealing 31 + 45% AP + 45% SP Physical damage, increased by 3% for each time you triggered Zealotry during your Oath Chain.Consumes your Oaths, dealing additional damage for each consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 501562,
+          "description": "Unleash a dominating <span style=\"color: #FFFFFF; display: inline\">Oath Breaker</span>, dealing <span class=\"item-number\">31</span> + <span class=\"item-number\">45% AP</span> + <span class=\"item-number\">45% SP</span> Physical damage, increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for each time you triggered <span style=\"color: #ffffff; display: inline\">Zealotry</span> during your <span style=\"color: #ffffff; display: inline\">Oath Chain</span>.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed."
+        }
+      ]
+    },
+    {
+      "id": 29259,
+      "name": "Glory",
+      "spellId": 801481,
+      "spellIds": [
+        801481
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3innersanctuary",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7775,
+        7814
+      ],
+      "requiredIds": [],
+      "desc": "Bring glory to the holy light, increasing your attack speed by 30% for 5 seconds.After the duration, you gain Downfall. DownfallYou heal for 50% of all damage dealt for 5 seconds. After the duration, you gain Redemption.RedemptionIncreases attack speed by 30% and you heal for 50% of all damage dealt for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801481,
+          "description": "Bring glory to the holy light, increasing your attack speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />After the duration, you gain <span style=\"color: #FFFFFF; display: inline\">Downfall</span>. <br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_avengersshield\" /><span class=\"name\">Downfall</span></div><span class=\"desc\">You heal for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of all damage dealt for <span class=\"item-number\">5</span> seconds. After the duration, you gain <span style=\"color: #ffffff; display: inline\">Redemption</span>.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_holyguidance\" /><span class=\"name\">Redemption</span></div><span class=\"desc\">Increases attack speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and you heal for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of all damage dealt for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29704,
+      "name": "Blade of Faith",
+      "spellId": 803872,
+      "spellIds": [
+        803872
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Holy_Blade_Templar",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Unleash a devastating Oath Breaker on an enemy dealing 119 + 140% SP + 70% AP Holy damage over 21 seconds. This ability can critically strike.Consumes your Oaths, dealing additional damage for each consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803872,
+          "description": "Unleash a devastating <span style=\"color: #ffffff; display: inline\">Oath Breaker</span> on an enemy dealing <span class=\"item-number\">119</span> + <span class=\"item-number\">140% SP</span> + <span class=\"item-number\">70% AP</span> Holy damage over <span class=\"item-number\">21</span> seconds. This ability can critically strike.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed."
+        }
+      ]
+    },
+    {
+      "id": 29706,
+      "name": "Martyr",
+      "spellId": 300530,
+      "spellIds": [
+        300530
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_Fanaticism",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6924
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Gift of Zeal by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300530,
+          "description": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Gift of Zeal</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29707,
+      "name": "Mark of Aggramar",
+      "spellId": 804928,
+      "spellIds": [
+        804928
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_holyguidance",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6354,
+        34337
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of your Testaments by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804928,
+          "description": "Reduces the Energy cost of your <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29708,
+      "name": "Argent Blade",
+      "spellId": 804929,
+      "spellIds": [
+        804929
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Wakeoffashes",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34372
+      ],
+      "requiredIds": [],
+      "desc": "Crush an enemy with argent fervor, dealing 160% Weapon Damage plus 15 + 35% AP + 100% holy SP, healing you equal to the damage dealt, and extending the duration of your Oath Chain by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804929,
+          "description": "Crush an enemy with argent fervor, dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">15</span> + <span class=\"item-number\">35% AP</span> + <span class=\"item-number\">100% holy SP</span>, healing you equal to the damage dealt, and extending the duration of your <span style=\"color: #ffffff; display: inline\">Oath Chain</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29712,
+      "name": "Sacred Oath",
+      "spellId": 712346,
+      "spellIds": [
+        712346
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_warbreaker",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30437
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes now remove 1 sec from the duration of Oathkeeper when used.Oathkeeper40% of damage taken is now delayed and dealt to you over 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712346,
+          "description": "Critical strikes now remove <span class=\"item-number\">1</span> sec from the duration of <span style=\"color: #ffffff; display: inline\">Oathkeeper</span> when used.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_staff_2h_nazmirraid_d_01\" /><span class=\"name\">Oathkeeper</span></div><span class=\"desc\"><span class=\"item-number\">40%</span> of damage taken is now delayed and dealt to you over <span class=\"item-number\">8</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29714,
+      "name": "Blessed Strikes",
+      "spellId": 704180,
+      "spellIds": [
+        704180
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_vindication",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5713,
+        34356,
+        34357
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of your Oath Breakers by -10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704180,
+          "description": "Reduces the Energy cost of your <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": 29715,
+      "name": "Libram of Zeal",
+      "spellId": 801466,
+      "spellIds": [
+        801466
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book2Motif_BloodElf1",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4253,
+        31253,
+        33166
+      ],
+      "requiredIds": [],
+      "desc": "Read from your Libram of Mortal Abdication, increasing your melee haste by 20% and causes your damaging abilities to reduce the cooldown of Righteous Upheaval by -2 sec for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801466,
+          "description": "Read from your <span style=\"color: #ffffff; display: inline\">Libram of Mortal Abdication</span>, increasing your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and causes your damaging abilities to reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">-2</span> sec for <span class=\"item-number\">20</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29717,
+      "name": "Staffguard",
+      "spellId": 705295,
+      "spellIds": [
+        705295
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Staff_05",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31173
+      ],
+      "requiredIds": [],
+      "desc": "Casting Sacred Swing now grants you Staffguard, absorbing 125 + 30% Stamina damage, scaling with Stamina, parry and dodge rating, for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705295,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Sacred Swing</span> now grants you <span style=\"color: #ffffff; display: inline\">Staffguard</span>, absorbing <span class=\"item-number\">125</span> + <span class=\"item-number\">30% Stamina</span> damage, scaling with Stamina, parry and dodge rating, for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29720,
+      "name": "Fury of Aggramar",
+      "spellId": 801480,
+      "spellIds": [
+        801480
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_argus_aggramar",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34335
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Libram of Consecration by 100% and the effectiveness of your Librams by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801480,
+          "description": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Libram of Consecration</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and the effectiveness of your <span style=\"color: #ffffff; display: inline\">Librams</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30063,
+      "name": "Profound Enlightenment",
+      "spellId": 680953,
+      "spellIds": [
+        680953
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_corruptionmind_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29707,
+        34349
+      ],
+      "requiredIds": [],
+      "desc": "Attain enlightenment, reducing the remaining cooldown of Testaments by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680953,
+          "description": "Attain enlightenment, reducing the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30066,
+      "name": "One-Punch Man",
+      "spellId": 705284,
+      "spellIds": [
+        705284
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_gauntlets_25",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30960
+      ],
+      "requiredIds": [],
+      "desc": "Increases the the damage of Oath Breakers and Titanstrike by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705284,
+          "description": "Increases the the damage of <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> and <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30067,
+      "name": "Pious Sweep",
+      "spellId": 520034,
+      "spellIds": [
+        520034
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_lightforged_c_01",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5438,
+        30438,
+        34346
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Chastise by 25% on enemies above 75% health or affected by Tranquil Circle.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520034,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Chastise</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">75%</span> health or affected by <span style=\"color: #ffffff; display: inline\">Tranquil Circle</span>."
+        }
+      ]
+    },
+    {
+      "id": 30070,
+      "name": "Devotion of Khaz'goroth",
+      "spellId": 560096,
+      "spellIds": [
+        560096
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_IronSentinel_01",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30443,
+        34359
+      ],
+      "requiredIds": [],
+      "desc": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.Damage dealt with auto attacks reduce the cooldown of Libram spells by -0.5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560096,
+          "description": "Increases all party and raid member's melee and ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />Damage dealt with auto attacks reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Libram</span> spells by <span class=\"item-number\">-0.5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30287,
+      "name": "Parry Dance",
+      "spellId": 804912,
+      "spellIds": [
+        804912
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_whirlpool_b_01",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34391
+      ],
+      "requiredIds": [],
+      "desc": "When you critically strike with auto attacks or parry an attack, your chance to parry is now increased by 3% for 5 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804912,
+          "description": "When you critically strike with auto attacks or parry an attack, your chance to parry is now increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30436,
+      "name": "Bells of Light",
+      "spellId": 801204,
+      "spellIds": [
+        801204,
+        803842
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_bastion_paladin",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29717
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility, Intellect, and hit chance by 3%",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801204,
+          "description": "Increases your Agility, Intellect, and hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>"
+        },
+        {
+          "rank": 2,
+          "spellId": 803842,
+          "description": "Increases your Agility, Intellect, and hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>"
+        }
+      ]
+    },
+    {
+      "id": 30437,
+      "name": "Paragon",
+      "spellId": 706357,
+      "spellIds": [
+        706357
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_surgeoflight",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34395
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Stamina by 10, plus an additional amount equal to 10% of your Agility.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706357,
+          "description": "Increases your Stamina by <span class=\"item-number\">10</span>, plus an additional amount equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Agility."
+        }
+      ]
+    },
+    {
+      "id": 30439,
+      "name": "Templar Rituals",
+      "spellId": 520534,
+      "spellIds": [
+        520534
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_fire_solar_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30610,
+        30963
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Righteous Tempest now deals an additional 35 + 10% holy SP + 8.5% AP Holy damage, and upon dealing damage, you pull enemies within 15 yds towards you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520534,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Righteous Tempest</span> now deals an additional <span class=\"item-number\">35</span> + <span class=\"item-number\">10% holy SP</span> + <span class=\"item-number\">8.5% AP</span> Holy damage, and upon dealing damage, you pull enemies within <span class=\"item-number\">15</span> yds towards you.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30440,
+      "name": "Pure Focus",
+      "spellId": 705253,
+      "spellIds": [
+        705253,
+        707852
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Arcane_FocusedPower",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29708
+      ],
+      "requiredIds": [],
+      "desc": "Increases the chance to trigger Scourgebane by 5% and your chance to hit by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705253,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707852,
+          "description": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30443,
+      "name": "Condemnation",
+      "spellId": 704175,
+      "spellIds": [
+        704175
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_Heal",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11455,
+        30066,
+        30455
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance gained through Condemn by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704175,
+          "description": "Increases the critical strike chance gained through <span style=\"color: #FFFFFF; display: inline\">Condemn</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30445,
+      "name": "Eternal Blessing",
+      "spellId": 705300,
+      "spellIds": [
+        705300
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_spiritoftheredeemer",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7483,
+        34400
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Holy damage and healing done by 15% for 30 seconds.While active, Oath Breakers deal an additional 141 + 12% AP Holy damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705300,
+          "description": "Increases your Holy damage and healing done by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds.<br /><br />While active, <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> deal an additional <span class=\"item-number\">141</span> + <span class=\"item-number\">12% AP</span> Holy damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 30448,
+      "name": "Judgement",
+      "spellId": 300520,
+      "spellIds": [
+        300520
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_holyresistance",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7823,
+        34343
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Scourgebane, Scarlet Hammer, and Titanstrike by 25% on enemies below 20% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300520,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span>, and <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">20%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 30449,
+      "name": "Blade Sermon",
+      "spellId": 572548,
+      "spellIds": [
+        572548,
+        572554
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\5_druideskill26_Border",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34339
+      ],
+      "requiredIds": [],
+      "desc": "Increases the Weapon Damage dealt by Zealotry by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572548,
+          "description": "Increases the Weapon Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 572554,
+          "description": "Increases the Weapon Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30450,
+      "name": "Eternally Devoted",
+      "spellId": 573452,
+      "spellIds": [
+        573452
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3teleport",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30445
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt through Eternal Blessing now reduces the cooldown of Libram spells by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573452,
+          "description": "Damage dealt through <span style=\"color: #FFFFFF; display: inline\">Eternal Blessing</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Libram</span> spells by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30453,
+      "name": "Duty Calls",
+      "spellId": 705286,
+      "spellIds": [
+        705286
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_GreaterBlessingofLight",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29473,
+        30287,
+        34399
+      ],
+      "requiredIds": [],
+      "desc": "Casting abilities that grant an Oath now increases your damage dealt and movement speed by 2% for 15 seconds, stacking 5 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705286,
+          "description": "Casting abilities that grant an <span style=\"color: #ffffff; display: inline\">Oath</span> now increases your damage dealt and movement speed by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">5</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30607,
+      "name": "Radiant Blade",
+      "spellId": 524822,
+      "spellIds": [
+        524822,
+        525080
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_weapon_shortblade_99",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34371
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Oath: Righteous Lunge by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524822,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oath: Righteous Lunge</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 525080,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oath: Righteous Lunge</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30608,
+      "name": "Divine Charge",
+      "spellId": 527023,
+      "spellIds": [
+        527023
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Mount_Charger",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12361,
+        30448,
+        34361
+      ],
+      "requiredIds": [],
+      "desc": "You and your party members leap upon a divine steed, increasing their movement speed by 100% and causing them to trample nearby enemies for 119 + 20% AP + 40% holy SP Holy Damage every 1 sec for 15 seconds.While active, casting does not dismount you or your allies. Can only be used outdoors.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 527023,
+          "description": "You and your party members leap upon a divine steed, increasing their movement speed by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and causing them to trample nearby enemies for <span class=\"item-number\">119</span> + <span class=\"item-number\">20% AP</span> + <span class=\"item-number\">40% holy SP</span> Holy Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />While active, casting does not dismount you or your allies. Can only be used outdoors."
+        }
+      ]
+    },
+    {
+      "id": 30610,
+      "name": "Argent Knight",
+      "spellId": 300512,
+      "spellIds": [
+        300512
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_holypower_Border",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6567,
+        34381
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Righteous Tempest and Condemn by 30%.Additionally, Righteous Tempest now reduces all damage taken by -20% while active.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300512,
+          "description": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> and <span style=\"color: #ffffff; display: inline\">Condemn</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.<br /><br />Additionally, <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> now reduces all damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> while active."
+        }
+      ]
+    },
+    {
+      "id": 30611,
+      "name": "Liberty",
+      "spellId": 705266,
+      "spellIds": [
+        705266
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_weaponscroll03",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5713,
+        34340
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Libram spells by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705266,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Libram</span> spells by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30614,
+      "name": "Barrier of Light",
+      "spellId": 805417,
+      "spellIds": [
+        805417
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\misc_legionfall_paladin",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6862,
+        7758
+      ],
+      "requiredIds": [],
+      "desc": "Emit saving light, increasing the healing received by nearby party and raid members by 40% for 15 seconds.For the duration, threat generated by your allies is redirected to you.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805417,
+          "description": "Emit saving light, increasing the healing received by nearby party and raid members by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />For the duration, threat generated by your allies is redirected to you."
+        }
+      ]
+    },
+    {
+      "id": 30615,
+      "name": "Tome of Light",
+      "spellId": 805422,
+      "spellIds": [
+        805422
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_book_17",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30445,
+        31225,
+        31226
+      ],
+      "requiredIds": [],
+      "desc": "Grants a shield equal to 100% of your maximum health for 30 seconds, resets the cooldown of Barrier of Light and Tranquil Circle, and grants an additional effect for each.Tome of Light: Barrier of LightYour next Barrier of Light within 30 seconds removes the Oathkeeper stagger debuff.Tome of Light: Tranquil CircleYour next Tranquil Circle within 30 seconds triggers instantly.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805422,
+          "description": "Grants a shield equal to <span class=\"item-number\">100%</span> of your maximum health for <span class=\"item-number\">30</span> seconds, resets the cooldown of <span style=\"color: #ffffff; display: inline\">Barrier of Light</span> and <span style=\"color: #ffffff; display: inline\">Tranquil Circle</span>, and grants an additional effect for each.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 misc_legionfall_paladin\" /><span class=\"name\">Tome of Light: Barrier of Light</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Barrier of Light</span> within <span class=\"item-number\">30</span> seconds removes the <span style=\"color: #ffffff; display: inline\">Oathkeeper</span> stagger debuff.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_priest_chakra\" /><span class=\"name\">Tome of Light: Tranquil Circle</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Tranquil Circle</span> within <span class=\"item-number\">30</span> seconds triggers instantly.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30836,
+      "name": "Chakra of Light",
+      "spellId": 803159,
+      "spellIds": [
+        803159,
+        803844
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\priest_icon_chakra",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34338
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Testaments by -30 sec and Oath Breakers now heal allies around the target for 20 + 35% SP.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803159,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">-30</span> sec and <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now heal allies around the target for <span class=\"item-number\">20</span> + <span class=\"item-number\">35% SP</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 803844,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">-60</span> sec and <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now heal allies around the target for <span class=\"item-number\">50</span> + <span class=\"item-number\">35% SP</span>."
+        }
+      ]
+    },
+    {
+      "id": 30960,
+      "name": "Chakra of Power",
+      "spellId": 803158,
+      "spellIds": [
+        803158
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\priest_icon_chakra_red",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34338
+      ],
+      "requiredIds": [],
+      "desc": "Melee attacks now restore 1 Energy, plus an additional 2 Energy when they critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803158,
+          "description": "Melee attacks now restore <span class=\"item-number\">1</span> Energy, plus an additional <span class=\"item-number\">2</span> Energy when they critically strike."
+        }
+      ]
+    },
+    {
+      "id": 30963,
+      "name": "Testament of Strength",
+      "spellId": 300514,
+      "spellIds": [
+        300514
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_judgementsofthejust",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6567,
+        31312
+      ],
+      "requiredIds": [],
+      "desc": "Your next 3 Titanstrikes are usable regardless of your target's health percentage and deal 25% increased damage. Lasts 1 minute.Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300514,
+          "description": "Your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Titanstrikes</span> are usable regardless of your target's health percentage and deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage. Lasts <span class=\"item-number\">1</span> minute.<br /><br />Applies <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> for <span class=\"item-number\">1</span> minute.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_sealoffury\" /><span class=\"name\">Sacred Restraint</span></div><span class=\"desc\">Cannot be targeted by <span style=\"color: #FFFFFF; display: inline\">Testaments</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 30965,
+      "name": "Warrior of Dawn",
+      "spellId": 560648,
+      "spellIds": [
+        560648
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_deathknight_d_01",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30440,
+        31174
+      ],
+      "requiredIds": [],
+      "desc": "Melee damage dealt now has a 10% chance to reset the cooldown and reduce the Energy cost of your next Argent Blade by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560648,
+          "description": "Melee damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown and reduce the Energy cost of your next <span style=\"color: #FFFFFF; display: inline\">Argent Blade</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31172,
+      "name": "Vindication",
+      "spellId": 801446,
+      "spellIds": [
+        801446
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_holystrike_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4022,
+        29704
+      ],
+      "desc": "Strike an enemy with zeal, dealing 31 + 28.5% AP + 35% SP Physical damage, triggering Zealotry, and granting an Oath.Oath: Your damaging abilities have a 10% chance to trigger Zealotry.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801446,
+          "description": "Strike an enemy with zeal, dealing <span class=\"item-number\">31</span> + <span class=\"item-number\">28.5% AP</span> + <span class=\"item-number\">35% SP</span> Physical damage, triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span>, and granting an <span style=\"color: #ffffff; display: inline\">Oath</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Oath:</span> Your damaging abilities have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #ffffff; display: inline\">Zealotry</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">40</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31173,
+      "name": "Sacred Swing",
+      "spellId": 705293,
+      "spellIds": [
+        705293
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_staffstrike_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4023,
+        34402
+      ],
+      "desc": "Swing at enemies in front of you, dealing 125% High Threat Weapon Damage plus 9, slowing their attack and movement speed by -20% for 10 seconds.Only usable after avoiding an attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705293,
+          "description": "Swing at enemies in front of you, dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> High Threat Weapon Damage plus <span class=\"item-number\">9</span>, slowing their attack and movement speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Only usable after avoiding an attack."
+        }
+      ]
+    },
+    {
+      "id": 31174,
+      "name": "Aggramar's Rage",
+      "spellId": 560650,
+      "spellIds": [
+        560650,
+        561346
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Holy_RetributionAura",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29708
+      ],
+      "requiredIds": [
+        4024,
+        31314
+      ],
+      "desc": "Increases your Holy critical strike chance by 3% and your expertise by 5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560650,
+          "description": "Increases your Holy critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561346,
+          "description": "Increases your Holy critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": 31225,
+      "name": "Battlepriest",
+      "spellId": 801202,
+      "spellIds": [
+        801202
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_ThunderClap",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5227,
+        7486,
+        34396
+      ],
+      "requiredIds": [],
+      "desc": "While above 80% health or below 20% health, you now take 20% reduced Magic damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801202,
+          "description": "While above <span class=\"item-number\">80%</span> health or below <span class=\"item-number\">20%</span> health, you now take <span class=\"item-number\">20%</span> reduced Magic damage."
+        }
+      ]
+    },
+    {
+      "id": 31226,
+      "name": "Mending Ward",
+      "spellId": 806273,
+      "spellIds": [
+        806273
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_pureofheart",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10363,
+        30613,
+        34396,
+        34400
+      ],
+      "requiredIds": [],
+      "desc": "Oath Breakers now grant you a stack of Mending Ward for 15 seconds, stacking 3 times.Mending WardNext instance of direct damage taken while below 35% maximum health will consume these stacks to heal you for 395 + 25% Stamina. Healing scales with your Stamina and parry rating.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806273,
+          "description": "<span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now grant you a stack of <span style=\"color: #ffffff; display: inline\">Mending Ward</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_pureofheart\" /><span class=\"name\">Mending Ward</span></div><span class=\"desc\">Next instance of direct damage taken while below <span class=\"item-number\">35%</span> maximum health will consume these stacks to heal you for <span class=\"item-number\">395</span> + <span class=\"item-number\">25% Stamina</span>. <br /><br />Healing scales with your Stamina and parry rating.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31254,
+      "name": "Heaven's Finest",
+      "spellId": 806516,
+      "spellIds": [
+        806516
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyMeditation_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34346,
+        34358
+      ],
+      "requiredIds": [],
+      "desc": "Damaging abilities now grant Heaven's Finest for 12 seconds, stacking 6 times.Heaven&#39;s FinestIncreases your movement speed by 5%.At 6 stacks, increases your Energy regeneration by 100% for 8 seconds.Additional applications do not refresh the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806516,
+          "description": "Damaging abilities now grant <span style=\"color: #ffffff; display: inline\">Heaven's Finest</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">6</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_holymeditation_border\" /><span class=\"name\">Heaven&#39;s Finest</span></div><span class=\"desc\">Increases your movement speed by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />At <span class=\"item-number\">6</span> stacks, increases your Energy regeneration by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Additional applications do not refresh the duration.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31255,
+      "name": "Blessing of Aggramar",
+      "spellId": 300502,
+      "spellIds": [
+        300502
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Titan_01",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7757,
+        7813,
+        34335
+      ],
+      "requiredIds": [],
+      "desc": "Righteous Lunge now has a 25% chance to generate an additional stack of Oath: Righteous Lunge.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300502,
+          "description": "<span style=\"color: #FFFFFF; display: inline\">Righteous Lunge</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to generate an additional stack of <span style=\"color: #FFFFFF; display: inline\">Oath: Righteous Lunge</span>."
+        }
+      ]
+    },
+    {
+      "id": 31256,
+      "name": "Transcending Strikes",
+      "spellId": 804897,
+      "spellIds": [
+        804897
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_beaconofinsight",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30443,
+        34358
+      ],
+      "requiredIds": [],
+      "desc": "Your Divine Force will now trigger a -30 sec reduced cooldown when used on enemies affected by Blade of Faith.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804897,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Divine Force</span> will now trigger a <span class=\"item-number\">-30</span> sec reduced cooldown when used on enemies affected by <span style=\"color: #ffffff; display: inline\">Blade of Faith</span>."
+        }
+      ]
+    },
+    {
+      "id": 31312,
+      "name": "Serendipity",
+      "spellId": 300929,
+      "spellIds": [
+        300929
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyPeak_Border",
+      "x": 5,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6352
+      ],
+      "requiredIds": [],
+      "desc": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, reduces the cost of your spells and abilities by -5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300929,
+          "description": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, reduces the cost of your spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31313,
+      "name": "Finesse",
+      "spellId": 705271,
+      "spellIds": [
+        705271,
+        707851
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\5_paladinskill18_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34337
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 2% and reduces the duration of disarm effects against you by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705271,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces the duration of disarm effects against you by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707851,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the duration of disarm effects against you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31314,
+      "name": "Divine Force",
+      "spellId": 806153,
+      "spellIds": [
+        806153
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_pathofdevout",
+      "x": 6,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Leap at an enemy with divine force, stunning them for 6 seconds, dealing 20 + 100% SP + 55% AP Holy damage, and interrupting non-player spellcasting for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806153,
+          "description": "Leap at an enemy with divine force, stunning them for <span class=\"item-number\">6</span> seconds, dealing <span class=\"item-number\">20</span> + <span class=\"item-number\">100% SP</span> + <span class=\"item-number\">55% AP</span> Holy damage, and interrupting non-player spellcasting for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 33166,
+      "name": "Radiance",
+      "spellId": 706318,
+      "spellIds": [
+        706318
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Sword_49",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6401
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Vindication by -5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706318,
+          "description": "Reduces the Energy cost of <span style=\"color: #FFFFFF; display: inline\">Vindication</span> by <span class=\"item-number\">-5</span>."
+        }
+      ]
+    },
+    {
+      "id": 34334,
+      "name": "Combat Training",
+      "spellId": 706320,
+      "spellIds": [
+        706320
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_quipunch",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29255
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Oaths by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706320,
+          "description": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oaths</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34335,
+      "name": "Blessing of Eonar",
+      "spellId": 705290,
+      "spellIds": [
+        705290
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_argus_eonar",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11384,
+        30070,
+        34384
+      ],
+      "requiredIds": [],
+      "desc": "Using Libram spells now increases your damage dealt and healing done by 10% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705290,
+          "description": "Using <span style=\"color: #ffffff; display: inline\">Libram</span> spells now increases your damage dealt and healing done by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34337,
+      "name": "Tenacious Defender",
+      "spellId": 707385,
+      "spellIds": [
+        707385
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_SealOfFury",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34348
+      ],
+      "requiredIds": [],
+      "desc": "Casting Libram of Tenacity now also heals you for 20% of your maximum health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707385,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Libram of Tenacity</span> now also heals you for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your maximum health."
+        }
+      ]
+    },
+    {
+      "id": 34338,
+      "name": "Martial Paladin",
+      "spellId": 705250,
+      "spellIds": [
+        705250,
+        705251
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01dual",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34334
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility by 5% and your chance to hit by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705250,
+          "description": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 705251,
+          "description": "Increases your Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34339,
+      "name": "Bursting Impact",
+      "spellId": 705276,
+      "spellIds": [
+        705276
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_paladin_lightshammer",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34355
+      ],
+      "requiredIds": [],
+      "desc": "Increases your off-hand weapon damage by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705276,
+          "description": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34340,
+      "name": "Libram of Tenacity",
+      "spellId": 801461,
+      "spellIds": [
+        801461
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book2Motif_LordaeronCorrupted",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6356
+      ],
+      "requiredIds": [],
+      "desc": "Read from your Libram of Tenacity, reducing your Physical Damage taken by -30% for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801461,
+          "description": "Read from your <span style=\"color: #FFFFFF; display: inline\">Libram of Tenacity</span>, reducing your Physical Damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34341,
+      "name": "Courage",
+      "spellId": 707754,
+      "spellIds": [
+        707754,
+        712466
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_karoz_leap",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29704,
+        31314
+      ],
+      "requiredIds": [],
+      "desc": "Increases your movement speed and reduces the duration of movement slowing effects on you by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707754,
+          "description": "Increases your movement speed and reduces the duration of movement slowing effects on you by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 712466,
+          "description": "Increases your movement speed and reduces the duration of movement slowing effects on you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34342,
+      "name": "Holy Constitution",
+      "spellId": 706323,
+      "spellIds": [
+        706323
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_Power",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29714
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage dealt versus Undead by 5, scaling with level, and increases your chance to resist disease effects by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706323,
+          "description": "Increases your damage dealt versus Undead by <span class=\"item-number\">5</span>, scaling with level, and increases your chance to resist disease effects by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34343,
+      "name": "Righteousness",
+      "spellId": 680891,
+      "spellIds": [
+        680891
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helmet_74",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30440
+      ],
+      "requiredIds": [],
+      "desc": "Your Chastise now always triggers Scourgebane on your target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680891,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Chastise</span> now always triggers <span style=\"color: #ffffff; display: inline\">Scourgebane</span> on your target."
+        }
+      ]
+    },
+    {
+      "id": 34345,
+      "name": "Sturdy",
+      "spellId": 681009,
+      "spellIds": [
+        681009,
+        681537
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_monk_envelopingmist",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29706,
+        34342
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum health and Energy by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681009,
+          "description": "Increases your maximum health and Energy by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 681537,
+          "description": "Increases your maximum health and Energy by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34346,
+      "name": "Force of Golganneth",
+      "spellId": 500694,
+      "spellIds": [
+        500694
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holyinfusion_Border",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5438,
+        30438,
+        30449
+      ],
+      "requiredIds": [],
+      "desc": "Explode with holy power, dealing 310 + 25% AP + 25% holy SP Holy damage and triggering Zealotry every 1 sec to nearby enemies for 5 seconds.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.While active, your Temple Guardian spell has its Energy cost reduced by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500694,
+          "description": "Explode with holy power, dealing <span class=\"item-number\">310</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">25% holy SP</span> Holy damage and triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> every <span class=\"item-number\">1</span> sec to nearby enemies for <span class=\"item-number\">5</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">40</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div><br /><br />While active, your <span style=\"color: #ffffff; display: inline\">Temple Guardian</span> spell has its Energy cost reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34347,
+      "name": "Judgement of the Gods",
+      "spellId": 524767,
+      "spellIds": [
+        524767
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_skill_161_Border",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34337,
+        34345
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Titanstrike by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524767,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34348,
+      "name": "Deep Secrets",
+      "spellId": 705263,
+      "spellIds": [
+        705263
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\70_inscription_vantus_rune_light",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30611
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Librams and Testaments by 10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705263,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Librams</span> and <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34349,
+      "name": "Final Prayer",
+      "spellId": 705268,
+      "spellIds": [
+        705268
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_blessedlife",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6354
+      ],
+      "requiredIds": [],
+      "desc": "Doubles the healing done to you by Testament of Fortitude and Testament of Faith.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705268,
+          "description": "Doubles the healing done to you by <span style=\"color: #ffffff; display: inline\">Testament of Fortitude</span> and <span style=\"color: #ffffff; display: inline\">Testament of Faith</span>."
+        }
+      ]
+    },
+    {
+      "id": 34350,
+      "name": "Sacred Defense",
+      "spellId": 705306,
+      "spellIds": [
+        705306
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_trinket_bastion_01_gold",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29707,
+        31313
+      ],
+      "requiredIds": [],
+      "desc": "When you take Physical damage you now strike back at enemies for 15% of the damage dealt as Holy damage. Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705306,
+          "description": "When you take Physical damage you now strike back at enemies for <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the damage dealt as Holy damage. Can only occur once per sec. <br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34352,
+      "name": "Silverhand Incantation",
+      "spellId": 801465,
+      "spellIds": [
+        801465
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_paladinskill06_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30063,
+        34350
+      ],
+      "requiredIds": [],
+      "desc": "Chant a silverhand incantation and toss a holy hammer at your target, charging you to them and removing Sacred Restraint from you and them if they are an ally.Upon reaching your target you deal 300 + 200% AP Holy damage to all nearby enemies and heal nearby allies for the same amount.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801465,
+          "description": "Chant a silverhand incantation and toss a holy hammer at your target, charging you to them and removing <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> from you and them if they are an ally.<br /><br />Upon reaching your target you deal <span class=\"item-number\">300</span> + <span class=\"item-number\">200% AP</span> Holy damage to all nearby enemies and heal nearby allies for the same amount."
+        }
+      ]
+    },
+    {
+      "id": 34353,
+      "name": "Testament of Hope",
+      "spellId": 1397742,
+      "spellIds": [
+        1397742
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_PrayerofSpirit",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34379
+      ],
+      "requiredIds": [],
+      "desc": "Summons 2 copies of yourself that charge at a nearby enemy and aid you in combat for 20 seconds.While within 15 yds of you, each copy reduces all damage you take by -25%. Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 1397742,
+          "description": "Summons <span class=\"item-number\">2</span> copies of yourself that charge at a nearby enemy and aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />While within <span class=\"item-number\">15</span> yds of you, each copy reduces all damage you take by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>. <br /><br />Applies <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> for <span class=\"item-number\">1</span> minute.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_sealoffury\" /><span class=\"name\">Sacred Restraint</span></div><span class=\"desc\">Cannot be targeted by <span style=\"color: #FFFFFF; display: inline\">Testaments</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34355,
+      "name": "Oath Flow",
+      "spellId": 705283,
+      "spellIds": [
+        705283
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_BlindingHeal",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6401
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Oath Chain by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705283,
+          "description": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Oath Chain</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34358,
+      "name": "Deliverance",
+      "spellId": 704116,
+      "spellIds": [
+        704116
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_GreaterBlessingofSalvation",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11455,
+        30449,
+        30455
+      ],
+      "requiredIds": [],
+      "desc": "Critically striking with Vindication or Righteous Lunge now deals 50% additional Physical damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704116,
+          "description": "Critically striking with <span style=\"color: #ffffff; display: inline\">Vindication</span> or <span style=\"color: #FFFFFF; display: inline\">Righteous Lunge</span> now deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> additional Physical damage."
+        }
+      ]
+    },
+    {
+      "id": 34359,
+      "name": "Iron Penance",
+      "spellId": 523712,
+      "spellIds": [
+        523712
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Paladinskill_25_nobg_Border",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30066,
+        30836
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Zealotry now applies Iron Penance to the target, increasing their Physical damage taken by you by 1% for 3 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 523712,
+          "description": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Zealotry</span> now applies <span style=\"color: #ffffff; display: inline\">Iron Penance</span> to the target, increasing their Physical damage taken by you by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34366,
+      "name": "Titanfall",
+      "spellId": 300607,
+      "spellIds": [
+        300607
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Execution_White",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30963
+      ],
+      "requiredIds": [],
+      "desc": "Your Titanstrike now heals you for twice the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300607,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Titanstrike</span> now heals you for twice the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 34368,
+      "name": "Improved Benediction",
+      "spellId": 705287,
+      "spellIds": [
+        705287
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_ImprovedResistanceAuras",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34353
+      ],
+      "requiredIds": [],
+      "desc": "Benediction now grants your target armor based on your Agility and Stamina for 15 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705287,
+          "description": "<span style=\"color: #ffffff; display: inline\">Benediction</span> now grants your target armor based on your Agility and Stamina for <span class=\"item-number\">15</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34369,
+      "name": "Divine Strikes",
+      "spellId": 705255,
+      "spellIds": [
+        705255
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_2h_nazmirraid_d_01",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30607,
+        30608
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Scourgebane now increases the damage of Argent Blade by 5% for 6 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705255,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Scourgebane</span> now increases the damage of <span style=\"color: #ffffff; display: inline\">Argent Blade</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34371,
+      "name": "Focused",
+      "spellId": 300524,
+      "spellIds": [
+        300524
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_fierywhirl_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12361,
+        34361
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Blade of Faith and Righteous Tempest by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300524,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> and <span style=\"color: #FFFFFF; display: inline\">Righteous Tempest</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34372,
+      "name": "Righteous Tempest",
+      "spellId": 805409,
+      "spellIds": [
+        805409
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Whirlwind_Yellow",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4024,
+        31314
+      ],
+      "desc": "Unleash a whirling Oath Breaker, dealing Weapon Damage plus 71u+SP*0.25 damage to nearby enemies, scaling with spell power, every 1 sec for 3 seconds.Consumes your Oaths, dealing additional damage for each consumed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805409,
+          "description": "Unleash a whirling <span style=\"color: #ffffff; display: inline\">Oath Breaker</span>, dealing Weapon Damage plus <span class=\"item-number\">71u+SP*0.25</span> damage to nearby enemies, scaling with spell power, every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed."
+        }
+      ]
+    },
+    {
+      "id": 34373,
+      "name": "Retribution",
+      "spellId": 707391,
+      "spellIds": [
+        707391
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holyfire_00_Border",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7823,
+        34382
+      ],
+      "requiredIds": [],
+      "desc": "Melee damage dealt now has a 20% chance to strike 2 additional times for 30% of the damage dealt as Holy Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707391,
+          "description": "Melee damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the damage dealt as Holy Damage."
+        }
+      ]
+    },
+    {
+      "id": 34375,
+      "name": "Binding Scripture",
+      "spellId": 801457,
+      "spellIds": [
+        801457
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3breathofheaven",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7814,
+        34350
+      ],
+      "requiredIds": [],
+      "desc": "Healing an ally now redirects 10% of their damage taken to you and reduces your damage taken by -5% for 10 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801457,
+          "description": "Healing an ally now redirects <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of their damage taken to you and reduces your damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34377,
+      "name": "Judicator",
+      "spellId": 706359,
+      "spellIds": [
+        706359
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_ThunderClap",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34340,
+        34353
+      ],
+      "requiredIds": [],
+      "desc": "Increases your parry and dodge chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706359,
+          "description": "Increases your parry and dodge chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34379,
+      "name": "Sacred Style",
+      "spellId": 705278,
+      "spellIds": [
+        705278
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_PureOfHeart",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34402
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Holy healing done and received by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705278,
+          "description": "Increases your Holy healing done and received by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34381,
+      "name": "Holy Edge",
+      "spellId": 706312,
+      "spellIds": [
+        706312,
+        707853
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6566,
+        7024
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Scourgebane and Scarlet Hammer now strikes 1 additional nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706312,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Scourgebane</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now strikes <span class=\"item-number\">1</span> additional nearby enemy."
+        },
+        {
+          "rank": 2,
+          "spellId": 707853,
+          "description": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Scourgebane</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now strikes <span class=\"item-number\">2</span> additional nearby enemy."
+        }
+      ]
+    },
+    {
+      "id": 34382,
+      "name": "Chivalric",
+      "spellId": 705272,
+      "spellIds": [
+        705272
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_veneration",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31174
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical damage with Holy spells and abilities by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705272,
+          "description": "Increases your critical damage with Holy spells and abilities by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34385,
+      "name": "Sacred Resistance",
+      "spellId": 301309,
+      "spellIds": [
+        301309
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_staff_04_b",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6376
+      ],
+      "requiredIds": [],
+      "desc": "Casting Reckoning now increases your Armor by 15% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301309,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Reckoning</span> now increases your Armor by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34386,
+      "name": "Absolution",
+      "spellId": 800424,
+      "spellIds": [
+        800424
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Priestskill_03_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34385
+      ],
+      "requiredIds": [],
+      "desc": "Taunt all enemies within 8 yds for 4 seconds and increase your movement speed by 50% for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800424,
+          "description": "Taunt all enemies within <span class=\"item-number\">8</span> yds for <span class=\"item-number\">4</span> seconds and increase your movement speed by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34390,
+      "name": "Lightkeeper",
+      "spellId": 560835,
+      "spellIds": [
+        560835
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_priestmount_holy",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31225
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt by Condemn now has a 15% chance to increase your parry chance by 2% for 8 seconds, stacking 3 times.Periodic damage dealt by Condemn also has a 15% chance to burst, dealing 100 + 22% AP Holy damage to up to 5 enemies within 5 yds of the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560835,
+          "description": "Periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Condemn</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase your parry chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">3</span> times.<br /><br />Periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Condemn</span> also has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to burst, dealing <span class=\"item-number\">100</span> + <span class=\"item-number\">22% AP</span> Holy damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">5</span> yds of the target."
+        }
+      ]
+    },
+    {
+      "id": 34391,
+      "name": "Conviction",
+      "spellId": 712677,
+      "spellIds": [
+        712677
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_spearhand",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34385,
+        34392
+      ],
+      "requiredIds": [],
+      "desc": "Casting Sacred Swing now increases your melee haste by 5% for 15 seconds, stacking 4 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712677,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Sacred Swing</span> now increases your melee haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">4</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34392,
+      "name": "Grace of Aman'thul",
+      "spellId": 301059,
+      "spellIds": [
+        301059
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_trinket_80_titan01d",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30436
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Righteous Lunge by -5 and Sacred Swing by -10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301059,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span> by <span class=\"item-number\">-5</span> and <span style=\"color: #ffffff; display: inline\">Sacred Swing</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": 34395,
+      "name": "Blessed Padding",
+      "spellId": 301311,
+      "spellIds": [
+        301311,
+        301360
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Holy_PowerWordShield",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31173
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor contribution from mail items by 50% and reduces damage taken from area of effect attacks by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301311,
+          "description": "Increases your Armor contribution from mail items by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and reduces damage taken from area of effect attacks by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301360,
+          "description": "Increases your Armor contribution from mail items by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and reduces damage taken from area of effect attacks by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34396,
+      "name": "Uther's Legacy",
+      "spellId": 706385,
+      "spellIds": [
+        706385
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_uther_d_01",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30453,
+        30614
+      ],
+      "requiredIds": [],
+      "desc": "Your Condemn now heals you for 75% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706385,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Condemn</span> now heals you for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 34397,
+      "name": "Faith Guard",
+      "spellId": 705259,
+      "spellIds": [
+        705259
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_priest_angelicbulwark",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29712,
+        34385
+      ],
+      "requiredIds": [],
+      "desc": "While a Libram is active, your Chastise will now unleash a line of holy power, dealing 112 + 25% AP High Threat Holy damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705259,
+          "description": "While a <span style=\"color: #ffffff; display: inline\">Libram</span> is active, your <span style=\"color: #ffffff; display: inline\">Chastise</span> will now unleash a line of holy power, dealing <span class=\"item-number\">112</span> + <span class=\"item-number\">25% AP</span> High Threat Holy damage."
+        }
+      ]
+    },
+    {
+      "id": 34398,
+      "name": "Disciplined Mind",
+      "spellId": 680399,
+      "spellIds": [
+        680399,
+        681483
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_holy_absolution",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34397
+      ],
+      "requiredIds": [],
+      "desc": "Increases the healing of Benediction by 15% and causes it to dispel 1 poison and disease effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680399,
+          "description": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Benediction</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and causes it to dispel <span class=\"item-number\">1</span> poison and disease effect."
+        },
+        {
+          "rank": 2,
+          "spellId": 681483,
+          "description": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Benediction</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and causes it to dispel <span class=\"item-number\">1</span> poison and disease effect."
+        }
+      ]
+    },
+    {
+      "id": 34400,
+      "name": "Untainted",
+      "spellId": 705298,
+      "spellIds": [
+        705298
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_angelicbulwark",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        19451,
+        30451,
+        30614
+      ],
+      "requiredIds": [],
+      "desc": "Effectively healing yourself now reduces your Physical damage taken by -10 + 10% Stamina for 8 seconds.Can only occur every 15 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705298,
+          "description": "Effectively healing yourself now reduces your Physical damage taken by <span class=\"item-number\">-10</span> + <span class=\"item-number\">10% Stamina</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Can only occur every <span class=\"item-number\">15</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34402,
+      "name": "Testament of Fortitude",
+      "spellId": 500678,
+      "spellIds": [
+        500678
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holymeditation_Border",
+      "x": 2,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Meditate for 15 seconds, restoring 5% of your maximum health every 1 sec and reducing damage taken by -50%.Each second you will also remove 1 disease effect from yourself. Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500678,
+          "description": "Meditate for <span class=\"item-number\">15</span> seconds, restoring <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum health every <span class=\"item-number\">1</span> sec and reducing damage taken by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.<br /><br />Each second you will also remove <span class=\"item-number\">1</span> disease effect from yourself. <br /><br />Applies <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> for <span class=\"item-number\">1</span> minute.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_sealoffury\" /><span class=\"name\">Sacred Restraint</span></div><span class=\"desc\">Cannot be targeted by <span style=\"color: #FFFFFF; display: inline\">Testaments</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:19:50:351261",
+      "name": "Battle Hardened / Upheave!",
+      "spellId": 706309,
+      "spellIds": [
+        706309
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyArrow_Border",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34334
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Righteous Upheaval by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706309,
+          "description": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:50:732471",
+      "name": "Holy Light / Light's Guidance",
+      "spellId": 706449,
+      "spellIds": [
+        706449
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holy_tornado_Border",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34355
+      ],
+      "requiredIds": [],
+      "desc": "Your Benediction now has a 1.5 sec cast time, but now heals for 100% more.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706449,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Benediction</span> now has a <span class=\"item-number\">1.5</span> sec cast time, but now heals for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> more."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:50:504808",
+      "name": "Paladin Training / Priest Training",
+      "spellId": 504808,
+      "spellIds": [
+        504808
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Paladinskill_24_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29715
+      ],
+      "requiredIds": [],
+      "desc": "Triggering Zealotry now has an 8% chance to grant you an additional auto attack on your next strike.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504808,
+          "description": "Triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to grant you an additional auto attack on your next strike.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">40</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:19:50:707606",
+      "name": "Fervent Castigation / Condemnation",
+      "spellId": 707606,
+      "spellIds": [
+        707606
+      ],
+      "tabId": 50,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_AuraOfLight",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30836,
+        34359
+      ],
+      "requiredIds": [],
+      "desc": "Casting Righteous Upheaval or Blade of Faith now grants you Oath: Retribution and starts your Oath Chain.Oath: RetributionCritical damage increased by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707606,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Righteous Upheaval</span> or <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> now grants you <span style=\"color: #ffffff; display: inline\">Oath: Retribution</span> and starts your <span style=\"color: #FFFFFF; display: inline\">Oath Chain</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_artofwar\" /><span class=\"name\">Oath: Retribution</span></div><span class=\"desc\">Critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:19:87:762711",
+      "name": "Holy Crusader / Scarlet Judicator",
+      "spellId": 524747,
+      "spellIds": [
+        524747
+      ],
+      "tabId": 87,
+      "classId": 19,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holyring_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4348
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Divine Force by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524747,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Divine Force</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:16:332111",
+      "name": "Holy Warstaff / Way of the Monk",
+      "spellId": 705307,
+      "spellIds": [
+        705307
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_staff_28",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34391
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Reckoning by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705307,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Reckoning</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:16:707663",
+      "name": "Justicar of the Light / Guardian of the Light",
+      "spellId": 707663,
+      "spellIds": [
+        707663
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Paladin_InfusionofLight",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        10913,
+        34398
+      ],
+      "requiredIds": [],
+      "desc": "Removes the cooldown from Benediction, but increases its Energy cost by 10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707663,
+          "description": "Removes the cooldown from <span style=\"color: #ffffff; display: inline\">Benediction</span>, but increases its Energy cost by <span class=\"item-number\">10</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:16:188442",
+      "name": "Patience / Justice",
+      "spellId": 712678,
+      "spellIds": [
+        712678
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\monk_ability_avertharm",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30614
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Interdict by 2 sec and its cooldown by -5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712678,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Interdict</span> by <span class=\"item-number\">2</span> sec and its cooldown by <span class=\"item-number\">-5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:16:804930",
+      "name": "Transcendent Guardian / Armor of Faith",
+      "spellId": 804571,
+      "spellIds": [
+        804571
+      ],
+      "tabId": 16,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_bastion_priest",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30453
+      ],
+      "requiredIds": [],
+      "desc": "Charging to an ally with Temple Guardian now has a 40% chance to refresh a charge.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804571,
+          "description": "Charging to an ally with <span style=\"color: #ffffff; display: inline\">Temple Guardian</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refresh a charge."
+        }
+      ]
+    },
+    {
+      "id": "choice:19:51:172211",
+      "name": "Scarlet Secrets / Teachings of the Cathedral",
+      "spellId": 520812,
+      "spellIds": [
+        520812
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Letter_LordaeronScarletCrusade",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7822,
+        34382
+      ],
+      "requiredIds": [],
+      "desc": "Every 2nd cast of Argent Blade now grants you Oath: Retribution.Oath: RetributionCritical damage increased by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520812,
+          "description": "Every 2nd cast of <span style=\"color: #ffffff; display: inline\">Argent Blade</span> now grants you <span style=\"color: #ffffff; display: inline\">Oath: Retribution</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_artofwar\" /><span class=\"name\">Oath: Retribution</span></div><span class=\"desc\">Critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:19:51:301339",
+      "name": "Holy Tempest / Whirling Tempest",
+      "spellId": 301339,
+      "spellIds": [
+        301339
+      ],
+      "tabId": 51,
+      "classId": 19,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_holy_tornado_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6861,
+        34343
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Righteous Tempest now spreads Condemn on affected enemies to a nearby enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301339,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> now spreads <span style=\"color: #ffffff; display: inline\">Condemn</span> on affected enemies to a nearby enemy."
+        }
+      ]
+    }
+  ]
+}

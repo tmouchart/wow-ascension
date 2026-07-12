@@ -1,0 +1,4387 @@
+{
+  "class": "Guardian",
+  "classId": "18",
+  "specs": [
+    "Vanguard",
+    "Inspiration",
+    "Gladiator"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Vanguard": 7,
+    "Inspiration": 48,
+    "Gladiator": 49
+  },
+  "nodes": [
+    {
+      "id": 1719,
+      "name": "Seasoned Fighter",
+      "spellId": 704421,
+      "spellIds": [
+        704421
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_SteelMelee",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6712,
+        11060
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Pulverize, Ram, and Broad Sweep by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704421,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Pulverize</span>, <span style=\"color: #ffffff; display: inline\">Ram</span>, and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 1721,
+      "name": "Wreck Formation",
+      "spellId": 803126,
+      "spellIds": [
+        803126
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\6bf_explosive_shard",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7180,
+        19218,
+        29219
+      ],
+      "requiredIds": [],
+      "desc": "Melee critical strikes now have a 50% chance to reset the cooldown of Hammer of the Law.Casting Standard of Valiance now increases your attack power by 10% for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803126,
+          "description": "Melee critical strikes now have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Hammer of the Law</span>.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Standard of Valiance</span> now increases your attack power by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 1789,
+      "name": "Reverberations",
+      "spellId": 520650,
+      "spellIds": [
+        520650
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill121_Border",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29797,
+        34430
+      ],
+      "requiredIds": [],
+      "desc": "Casting Ram now causes your next 3 melee attacks to deal an additional 30 + 10% AP Magic damage for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520650,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Ram</span> now causes your next <span class=\"item-number\">3</span> melee attacks to deal an additional <span class=\"item-number\">30</span> + <span class=\"item-number\">10% AP</span> Magic damage for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 4123,
+      "name": "Overwhelming Presence",
+      "spellId": 712367,
+      "spellIds": [
+        712367
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\novart_shield_(8)_Border",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6431,
+        34450
+      ],
+      "requiredIds": [],
+      "desc": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your Agility by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 712367,
+          "description": "Increases the attack power of all party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4410,
+      "name": "Might",
+      "spellId": 300538,
+      "spellIds": [
+        300538,
+        301355
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_helm_crown_c_01_silver",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31170
+      ],
+      "requiredIds": [],
+      "desc": "Increases your attack power by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300538,
+          "description": "Increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301355,
+          "description": "Increases your attack power by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 4836,
+      "name": "Strength In Unison",
+      "spellId": 300860,
+      "spellIds": [
+        300860
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Drum_01",
+      "x": 1,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6432
+      ],
+      "requiredIds": [],
+      "desc": "Increases your melee haste by 1% for each ally within 20 yds, up to a maximum of 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300860,
+          "description": "Increases your melee haste by <span class=\"item-number\">1%</span> for each ally within <span class=\"item-number\">20</span> yds, up to a maximum of <span class=\"item-number\">20%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5349,
+      "name": "Built Different",
+      "spellId": 300545,
+      "spellIds": [
+        300545
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_engineerskill39_Border",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29661
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Strength and Stamina by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300545,
+          "description": "Increases your Strength and Stamina by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5433,
+      "name": "Axe Training",
+      "spellId": 704515,
+      "spellIds": [
+        704515,
+        707818,
+        712474
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\INV_Axe_12",
+      "x": 8,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29426
+      ],
+      "requiredIds": [],
+      "desc": "While an axe is equipped, your critical strike chance is increased by 2% and critical damage increased by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704515,
+          "description": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707818,
+          "description": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712474,
+          "description": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5825,
+      "name": "War's Muse",
+      "spellId": 505201,
+      "spellIds": [
+        505201
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Reincarnation",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30098
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical damage by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 505201,
+          "description": "Increases your critical damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6362,
+      "name": "Knightly Demeanor",
+      "spellId": 504148,
+      "spellIds": [
+        504148
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_sharp_blade_b_Border",
+      "x": 1,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29430
+      ],
+      "requiredIds": [],
+      "desc": "Your attack power is increased by 1 for every 50 Armor you have.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504148,
+          "description": "Your attack power is increased by <span class=\"item-number\">1</span> for every <span class=\"item-number\">50</span> Armor you have."
+        }
+      ]
+    },
+    {
+      "id": 6363,
+      "name": "Reflective Shield",
+      "spellId": 300927,
+      "spellIds": [
+        300927
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0003s_0000_fire_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29639
+      ],
+      "requiredIds": [],
+      "desc": "Raise your shield and reflect the next harmful spell cast on you within 3 seconds. While active, being hit by a spell restores 20 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300927,
+          "description": "Raise your shield and reflect the next harmful spell cast on you within <span class=\"item-number\">3</span> seconds. <br /><br />While active, being hit by a spell restores <span class=\"item-number\">20</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 6364,
+      "name": "Guardbreaker",
+      "spellId": 504385,
+      "spellIds": [
+        504385
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_BurningEyes_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6362,
+        6455
+      ],
+      "requiredIds": [],
+      "desc": "Casting Pulverize now has a 20% chance to reset the cooldown of Ram.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504385,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Pulverize</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Ram</span>."
+        }
+      ]
+    },
+    {
+      "id": 6428,
+      "name": "Into The Fray",
+      "spellId": 704525,
+      "spellIds": [
+        704525
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3wrathoftheberserker",
+      "x": 7,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6454
+      ],
+      "requiredIds": [],
+      "desc": "Triggering a Sound of War now grants you an additional auto attack on your next swing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704525,
+          "description": "Triggering a <span style=\"color: #ffffff; display: inline\">Sound of War</span> now grants you an additional auto attack on your next swing."
+        }
+      ]
+    },
+    {
+      "id": 6429,
+      "name": "One-Handed Mastery",
+      "spellId": 300541,
+      "spellIds": [
+        300541
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_unrelentingassault",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6547,
+        29998
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage dealt by 10% while a one-handed weapon is equipped.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300541,
+          "description": "Increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> while a one-handed weapon is equipped."
+        }
+      ]
+    },
+    {
+      "id": 6430,
+      "name": "Waste No Movement",
+      "spellId": 704516,
+      "spellIds": [
+        704516
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_35",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6431,
+        7307
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Broad Sweep, Spear Throw, and Centurion Strike by -5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704516,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Broad Sweep</span>, <span style=\"color: #FFFFFF; display: inline\">Spear Throw</span>, and <span style=\"color: #FFFFFF; display: inline\">Centurion Strike</span> by <span class=\"item-number\">-5</span>."
+        }
+      ]
+    },
+    {
+      "id": 6431,
+      "name": "Tactical Combat",
+      "spellId": 504503,
+      "spellIds": [
+        504503,
+        504884
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7038,
+        34410
+      ],
+      "requiredIds": [],
+      "desc": "Increases your block value by 8% and chance to block by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504503,
+          "description": "Increases your block value by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and chance to block by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504884,
+          "description": "Increases your block value by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and chance to block by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6432,
+      "name": "A Hero's Tale",
+      "spellId": 705361,
+      "spellIds": [
+        705361,
+        707825
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_PVP_Legion08",
+      "x": 2,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31171
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Energy regeneration by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705361,
+          "description": "Increases your Energy regeneration by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707825,
+          "description": "Increases your Energy regeneration by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6433,
+      "name": "Crashing Force",
+      "spellId": 705329,
+      "spellIds": [
+        705329,
+        707820
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_mace_124",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5349
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your Centurion Strike and Reprisal by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705329,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707820,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6434,
+      "name": "No Retreating!",
+      "spellId": 504139,
+      "spellIds": [
+        504139
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_iron_hl_b_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7307
+      ],
+      "requiredIds": [],
+      "desc": "While in combat, every 2 sec, increase the range and Energy cost of your next Spear Throw by 1 and its damage dealt by 3%, stacking up to 15 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504139,
+          "description": "While in combat, every <span class=\"item-number\">2</span> sec, increase the range and Energy cost of your next <span style=\"color: #ffffff; display: inline\">Spear Throw</span> by <span class=\"item-number\">1</span> and its damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">15</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6454,
+      "name": "Leading the March",
+      "spellId": 704423,
+      "spellIds": [
+        704423,
+        707826
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Warrior_VictoryRush",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31171
+      ],
+      "requiredIds": [],
+      "desc": "Increases your attack power and total Armor by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704423,
+          "description": "Increases your attack power and total Armor by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707826,
+          "description": "Increases your attack power and total Armor by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6455,
+      "name": "Gallant",
+      "spellId": 705368,
+      "spellIds": [
+        705368,
+        707813
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\INV_Chest_Plate04",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29796
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Strength by 4% and expertise by 2.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705368,
+          "description": "Increases your Strength by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">2</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707813,
+          "description": "Increases your Strength by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">4</span>."
+        }
+      ]
+    },
+    {
+      "id": 6456,
+      "name": "Valiant Effort",
+      "spellId": 706637,
+      "spellIds": [
+        706637
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_weapon_(2)_Border",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6455,
+        34427
+      ],
+      "requiredIds": [],
+      "desc": "Your auto attacks now have a 15% chance to allow the use of Reprisal as if you had recently blocked an attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706637,
+          "description": "Your auto attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to allow the use of <span style=\"color: #ffffff; display: inline\">Reprisal</span> as if you had recently blocked an attack."
+        }
+      ]
+    },
+    {
+      "id": 6547,
+      "name": "Deadly Blow",
+      "spellId": 706807,
+      "spellIds": [
+        706807
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_2h_draenorcrafted_d_01_b_alliance",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4123,
+        6430,
+        6989
+      ],
+      "requiredIds": [],
+      "desc": "Your Centurion Strike and Broad Sweep now bleed an additional 15% of the damage dealt over 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706807,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> now bleed an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6989,
+      "name": "Momentum",
+      "spellId": 504531,
+      "spellIds": [
+        504531
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_ShieldBash",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30003,
+        34450,
+        34453
+      ],
+      "requiredIds": [],
+      "desc": "Melee damage dealt now reduces the cooldown of your Chivlary by -2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504531,
+          "description": "Melee damage dealt now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Chivlary</span> by <span class=\"item-number\">-2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6990,
+      "name": "Myrmidon",
+      "spellId": 504530,
+      "spellIds": [
+        504530
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30003,
+        34453
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Ram and Broad Sweep by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504530,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Ram</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7038,
+      "name": "Champion",
+      "spellId": 300972,
+      "spellIds": [
+        300972
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_ImprovedDisciplines",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5349,
+        34458
+      ],
+      "requiredIds": [],
+      "desc": "Your Centurion Strike now extends the duration of Raise Shield on you by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300972,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Raise Shield</span> on you by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7180,
+      "name": "Lionheart",
+      "spellId": 531515,
+      "spellIds": [
+        531515
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv__faction_alliancewareffort",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29220,
+        30060,
+        30061
+      ],
+      "requiredIds": [],
+      "desc": "Your Shield of Denial now strikes 1 additional enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 531515,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Shield of Denial</span> now strikes <span class=\"item-number\">1</span> additional enemy."
+        }
+      ]
+    },
+    {
+      "id": 7306,
+      "name": "Polearm Training",
+      "spellId": 802299,
+      "spellIds": [
+        802299,
+        803832,
+        807892
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "interface\\icons\\GladiatorSpearGuy",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4410
+      ],
+      "requiredIds": [],
+      "desc": "Allows you to wield polearms and to wield them with a shield equipped.While a polearm is equipped, your melee abilities have 2 yds increased range.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802299,
+          "description": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">2</span> yds increased range."
+        },
+        {
+          "rank": 2,
+          "spellId": 803832,
+          "description": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">3</span> yds increased range."
+        },
+        {
+          "rank": 3,
+          "spellId": 807892,
+          "description": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">5</span> yds increased range."
+        }
+      ]
+    },
+    {
+      "id": 7307,
+      "name": "Spear Throw",
+      "spellId": 500463,
+      "spellIds": [
+        500463
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3ancientspear",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34410
+      ],
+      "requiredIds": [],
+      "desc": "Throw a massive spear at an enemy, dealing 45 + 35% AP Physical damage, reducing the effectiveness of any healing by -50% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500463,
+          "description": "Throw a massive spear at an enemy, dealing <span class=\"item-number\">45</span> + <span class=\"item-number\">35% AP</span> Physical damage, reducing the effectiveness of any healing by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7309,
+      "name": "Bannerman",
+      "spellId": 504144,
+      "spellIds": [
+        504144
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_magicbanner_Border",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34434,
+        34436
+      ],
+      "requiredIds": [],
+      "desc": "While affected by your Banner of Swiftness or Banner of Conquest, the initial damage dealt by your Standard of Valiance now deals 150% more damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504144,
+          "description": "While affected by your <span style=\"color: #ffffff; display: inline\">Banner of Swiftness</span> or <span style=\"color: #ffffff; display: inline\">Banner of Conquest</span>, the initial damage dealt by your <span style=\"color: #ffffff; display: inline\">Standard of Valiance</span> now deals <span class=\"item-number\">150</span><span class=\"item-number\">%</span> more damage."
+        }
+      ]
+    },
+    {
+      "id": 7310,
+      "name": "Glorious Arena",
+      "spellId": 300983,
+      "spellIds": [
+        300983
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Zone_BladesEdgeMtns_01",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6364,
+        30433
+      ],
+      "requiredIds": [],
+      "desc": "Create a 10 yd ring beneath you for 15 seconds. Enemies who stand inside will gain Peril every 1 sec. PerilEach stack can be consumed by Pulverize to deal an additional 10% AP Physical Damage and reduce the cooldown of Glorious Arena by 10%.Upon reaching 5 stacks, the stacks are instantly consumed to stun the enemy for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300983,
+          "description": "Create a <span class=\"item-number\">10</span> yd ring beneath you for <span class=\"item-number\">15</span> seconds. Enemies who stand inside will gain <span style=\"color: #ffffff; display: inline\">Peril</span> every <span class=\"item-number\">1</span> sec.<br /> <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_warriorskill48_border\" /><span class=\"name\">Peril</span></div><span class=\"desc\">Each stack can be consumed by <span style=\"color: #ffffff; display: inline\">Pulverize</span> to deal an additional <span class=\"item-number\">10% AP</span> Physical Damage and reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Glorious Arena</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />Upon reaching <span class=\"item-number\">5</span> stacks, the stacks are instantly consumed to stun the enemy for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7786,
+      "name": "Lord of the Arena",
+      "spellId": 802290,
+      "spellIds": [
+        802290
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_2h_war_b_02_hd",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7310
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of Pulverize and Broad Sweep by -5.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802290,
+          "description": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Pulverize</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">-5</span>."
+        }
+      ]
+    },
+    {
+      "id": 9279,
+      "name": "Show of Force",
+      "spellId": 573047,
+      "spellIds": [
+        573047
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Fire_FireArmor",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34430
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Ram now dispels 1 magic effect from the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573047,
+          "description": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Ram</span> now dispels <span class=\"item-number\">1</span> magic effect from the target."
+        }
+      ]
+    },
+    {
+      "id": 11797,
+      "name": "Battle Drums",
+      "spellId": 803683,
+      "spellIds": [
+        803683
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_archaeology_70_tauren_drum",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30145,
+        30825
+      ],
+      "requiredIds": [],
+      "desc": "Place down 3 Battle Drums around you for 1 minute. Allies may click on the drums to increase their critical strike chance, haste, damage, and healing done by 10% and causes their damage dealt to trigger a Sound of War for their next 5 instances of damage or 30 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803683,
+          "description": "Place down <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Battle Drums</span> around you for <span class=\"item-number\">1</span> minute. <br /><br />Allies may click on the drums to increase their critical strike chance, haste, damage, and healing done by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causes their damage dealt to trigger a <span style=\"color: #ffffff; display: inline\">Sound of War</span> for their next <span class=\"item-number\">5</span> instances of damage or <span class=\"item-number\">30</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 12431,
+      "name": "Knight's Calling",
+      "spellId": 504151,
+      "spellIds": [
+        504151
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Paladinskill_32_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34414,
+        34419,
+        34421
+      ],
+      "requiredIds": [],
+      "desc": "Embrace your calling, restoring 15% of your maximum health and Energy, repeating every 5 sec for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504151,
+          "description": "Embrace your calling, restoring <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum health and Energy, repeating every <span class=\"item-number\">5</span> sec for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29213,
+      "name": "Forceful Impact",
+      "spellId": 705346,
+      "spellIds": [
+        705346
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_passivemastery_(11)_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34438
+      ],
+      "requiredIds": [],
+      "desc": "Casting Raise Shield and Heavy Blow now extends the duration of your Brace by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705346,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Raise Shield</span> and <span style=\"color: #FFFFFF; display: inline\">Heavy Blow</span> now extends the duration of your <span style=\"color: #ffffff; display: inline\">Brace</span> by <span class=\"item-number\">1</span> sec.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29426,
+      "name": "Legionnaire",
+      "spellId": 504730,
+      "spellIds": [
+        504730,
+        504883
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_warrior_shieldbreak",
+      "x": 6,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31170
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical damage of Centurion Strike and Reprisal by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504730,
+          "description": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504883,
+          "description": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29427,
+      "name": "Refuse To Die",
+      "spellId": 804892,
+      "spellIds": [
+        804892
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\sha_ability_rogue_sturdyrecuperate",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29970,
+        34404
+      ],
+      "requiredIds": [],
+      "desc": "Casting Advance now resets the cooldown of Raise Shield.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804892,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Advance</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Raise Shield</span>."
+        }
+      ]
+    },
+    {
+      "id": 29429,
+      "name": "Standard Bearer",
+      "spellId": 806134,
+      "spellIds": [
+        806134
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_banner_02",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6363,
+        30316
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of Standards by 10 yds and increases the effectiveness of your Honor by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806134,
+          "description": "Increases the range of <span style=\"color: #FFFFFF; display: inline\">Standards</span> by <span class=\"item-number\">10</span> yds and increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Honor</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29430,
+      "name": "Net Throw",
+      "spellId": 802304,
+      "spellIds": [
+        802304
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Ensnare",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Toss a weighted net at an enemy that roots them for 4 seconds. While active, the target cannot dodge attacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802304,
+          "description": "Toss a weighted net at an enemy that roots them for <span class=\"item-number\">4</span> seconds. While active, the target cannot dodge attacks."
+        }
+      ]
+    },
+    {
+      "id": 29431,
+      "name": "Counter Stance",
+      "spellId": 802188,
+      "spellIds": [
+        802188
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\counterstanceguardian",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29971,
+        30316
+      ],
+      "requiredIds": [],
+      "desc": "You automatically parry the next attack against you. Lasts for 5 attacks or 15 seconds.When you expend a charge you deal 275 damage to attackers and heal for 366 + 100% AP health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802188,
+          "description": "You automatically parry the next attack against you. Lasts for <span class=\"item-number\">5</span> attacks or <span class=\"item-number\">15</span> seconds.<br /><br />When you expend a charge you deal <span class=\"item-number\">275</span> damage to attackers and heal for <span class=\"item-number\">366</span> + <span class=\"item-number\">100% AP</span> health."
+        }
+      ]
+    },
+    {
+      "id": 29432,
+      "name": "Echoes of War",
+      "spellId": 704539,
+      "spellIds": [
+        704539
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_lordstormsong",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        9450,
+        11797,
+        31315
+      ],
+      "requiredIds": [],
+      "desc": "Triggering a Sound of War now grants Echoes of War to nearby allies for 8 seconds.Echoes of WarNext direct ability or spell deals 15% of their damage as additional Magic Damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704539,
+          "description": "Triggering a <span style=\"color: #ffffff; display: inline\">Sound of War</span> now grants <span style=\"color: #FFFFFF; display: inline\">Echoes of War</span> to nearby allies for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_dungeon_lordstormsong\" /><span class=\"name\">Echoes of War</span></div><span class=\"desc\">Next direct ability or spell deals <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of their damage as additional Magic Damage.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29433,
+      "name": "Field Commander",
+      "spellId": 705320,
+      "spellIds": [
+        705320
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_PVP_A_06",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7309
+      ],
+      "requiredIds": [],
+      "desc": "Placing a Standard causes your next Song of Steel to unleash an additional unique effect.SpellwardingIncreases the magic resistance of party and raid members within 100 yds by 20 for 10 seconds.MightReduces the Armor of enemies within 100 yds by -15% for 10 seconds.RallyingIncreases the movement speed of party and raid members within 100 yds by 15% for 10 seconds.RecoveryReduces the melee and ranged attack speed of enemies within 100 yds by -10% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705320,
+          "description": "Placing a <span style=\"color: #ffffff; display: inline\">Standard</span> causes your next <span style=\"color: #ffffff; display: inline\">Song of Steel</span> to unleash an additional unique effect.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_strengthofarms\" /><span class=\"name\">Spellwarding</span></div><span class=\"desc\">Increases the magic resistance of party and raid members within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">20</span> for <span class=\"item-number\">10</span> seconds.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_secondwind\" /><span class=\"name\">Might</span></div><span class=\"desc\">Reduces the Armor of enemies within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_border\" /><span class=\"name\">Rallying</span></div><span class=\"desc\">Increases the movement speed of party and raid members within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_intervene\" /><span class=\"name\">Recovery</span></div><span class=\"desc\">Reduces the melee and ranged attack speed of enemies within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 29639,
+      "name": "Shield Wall",
+      "spellId": 705370,
+      "spellIds": [
+        705370,
+        707814
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Ability_Defend",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6456,
+        6818,
+        34422
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor contribution from your shield by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705370,
+          "description": "Increases your Armor contribution from your shield by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707814,
+          "description": "Increases your Armor contribution from your shield by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29661,
+      "name": "Supremacy",
+      "spellId": 504140,
+      "spellIds": [
+        504140
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_sword_b_07_Border",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4410,
+        29426
+      ],
+      "requiredIds": [],
+      "desc": "Casting Centurion Strike now refreshes a charge of Reprisal.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504140,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Reprisal</span>."
+        }
+      ]
+    },
+    {
+      "id": 29796,
+      "name": "Standard of Rallying",
+      "spellId": 500263,
+      "spellIds": [
+        500263
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Standard_Valiance",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Throw down a Standard of Rallying for 5 minutes, reducing damage taken by -3% and the duration of stun effects on them by -30% on all allies within 30 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500263,
+          "description": "Throw down a <span style=\"color: #ffffff; display: inline\">Standard of Rallying</span> for <span class=\"item-number\">5</span> minutes, reducing damage taken by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> and the duration of stun effects on them by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> on all allies within <span class=\"item-number\">30</span> yds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29797,
+      "name": "Hero's March",
+      "spellId": 801774,
+      "spellIds": [
+        801774
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_drum_03",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30829,
+        31361
+      ],
+      "requiredIds": [],
+      "desc": "Beat the drums of war, causing your auto attacks to trigger a Sound of War and increasing your haste by 15% for 15 seconds.In addition, allies within 10 yds of you have a 5% chance to trigger a Sound of War on any damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801774,
+          "description": "Beat the drums of war, causing your auto attacks to trigger a <span style=\"color: #ffffff; display: inline\">Sound of War</span> and increasing your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />In addition, allies within <span class=\"item-number\">10</span> yds of you have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Sound of War</span> on any damage dealt.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 29798,
+      "name": "Banner Boy",
+      "spellId": 705359,
+      "spellIds": [
+        705359,
+        707827
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_BG_captureflag_WSG",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1789,
+        9279
+      ],
+      "requiredIds": [],
+      "desc": "Increases your haste by 5% and the movement speed granted by Line Formation by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705359,
+          "description": "Increases your haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and the movement speed granted by <span style=\"color: #FFFFFF; display: inline\">Line Formation</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707827,
+          "description": "Increases your haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and the movement speed granted by <span style=\"color: #FFFFFF; display: inline\">Line Formation</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29969,
+      "name": "Paragon",
+      "spellId": 706514,
+      "spellIds": [
+        706514
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warriorskill16_Border",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30529,
+        34447
+      ],
+      "requiredIds": [],
+      "desc": "Blocking an attack grants you a stack of Paragon for 10 seconds. Can only occur once every 0.5 sec.At 10 stacks, your Heavy Blow transforms into Paragon Smash for 10 seconds.Paragon Smash (Damage)Deals 144 + 37% AP Physical damage to all nearby enemies.Increases your chance to block by 10% and each block reduces the cooldown of Brace by -2 sec. Lasts for 5 blocks or 10 seconds.Scales with modifiers to Heavy Blow.Casting Heavy Blow instantly grants 3 stacks of this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706514,
+          "description": "Blocking an attack grants you a stack of <span style=\"color: #ffffff; display: inline\">Paragon</span> for <span class=\"item-number\">10</span> seconds. Can only occur once every <span class=\"item-number\">0.5</span> sec.<br /><br />At <span class=\"item-number\">10</span> stacks, your <span style=\"color: #ffffff; display: inline\">Heavy Blow</span> transforms into <span style=\"color: #ffffff; display: inline\">Paragon Smash</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_warriorskill16_border\" /><span class=\"name\">Paragon Smash (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">144</span> + <span class=\"item-number\">37% AP</span> Physical damage to all nearby enemies.<br /><br />Increases your chance to block by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and each block reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Brace</span> by <span class=\"item-number\">-2</span> sec. Lasts for <span class=\"item-number\">5</span> blocks or <span class=\"item-number\">10</span> seconds.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Heavy Blow</span>.</span></div><br /><br />Casting <span style=\"color: #ffffff; display: inline\">Heavy Blow</span> instantly grants <span class=\"item-number\">3</span> stacks of this effect."
+        }
+      ]
+    },
+    {
+      "id": 29970,
+      "name": "Make Room! I'm Here.",
+      "spellId": 300543,
+      "spellIds": [
+        300543
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_featsofstrength_gladiator_08",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34414
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Standard of Valiance and Broad Sweep by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300543,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Standard of Valiance</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29971,
+      "name": "Unstoppable",
+      "spellId": 704513,
+      "spellIds": [
+        704513
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3furiouscharge",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6817,
+        7310,
+        29972
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Battle Rush by -5 sec and Advance by -30 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704513,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Battle Rush</span> by <span class=\"item-number\">-5</span> sec and <span style=\"color: #ffffff; display: inline\">Advance</span> by <span class=\"item-number\">-30</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29992,
+      "name": "Shieldlord’s Strength",
+      "spellId": 803738,
+      "spellIds": [
+        803738
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_hammer_10",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1721,
+        30529
+      ],
+      "requiredIds": [],
+      "desc": "You may now use two-handed Maces and can now equip two-handed Maces with a shield.Your Heavy Blow and Hammer of the Law now deal additional damage scaling with your Stamina and your Stamina is increased by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803738,
+          "description": "You may now use two-handed Maces and can now equip two-handed Maces with a shield.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Heavy Blow</span> and <span style=\"color: #ffffff; display: inline\">Hammer of the Law</span> now deal additional damage scaling with your Stamina and your Stamina is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29996,
+      "name": "Recuperation",
+      "spellId": 801121,
+      "spellIds": [
+        801121
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_skyreach_shielded",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6363
+      ],
+      "requiredIds": [],
+      "desc": "Taking Physical damage or blocking a physical attack now restores 2 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801121,
+          "description": "Taking Physical damage or blocking a physical attack now restores <span class=\"item-number\">2</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 29998,
+      "name": "Retiarius",
+      "spellId": 705338,
+      "spellIds": [
+        705338
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Warbringer",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6989,
+        6990
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum Energy by 25.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705338,
+          "description": "Increases your maximum Energy by <span class=\"item-number\">25</span>."
+        }
+      ]
+    },
+    {
+      "id": 29999,
+      "name": "Earthsplitter",
+      "spellId": 805155,
+      "spellIds": [
+        805155
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_kilruk_reave",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6429,
+        31352
+      ],
+      "requiredIds": [],
+      "desc": "Casting Broad Sweep now increases the amount of enemies struck by your next Broad Sweep by 1 and reduces its Energy cost by -10% for 6 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805155,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> now increases the amount of enemies struck by your next <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">1</span> and reduces its Energy cost by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 30000,
+      "name": "Sword Training",
+      "spellId": 802297,
+      "spellIds": [
+        802297,
+        803831,
+        807891
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\INV_Sword_40",
+      "x": 0,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4410
+      ],
+      "requiredIds": [],
+      "desc": "While a sword is equipped, your melee haste is increased by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802297,
+          "description": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 803831,
+          "description": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 807891,
+          "description": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30019,
+      "name": "Final Verdict",
+      "spellId": 500258,
+      "spellIds": [
+        500258
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31352
+      ],
+      "requiredIds": [],
+      "desc": "Give the final verdict to your target, dealing 1195 + 100% AP Physical damage and healing you for 15% of your maximum health.Only usable on enemies below 20% health. Killing blows reset the cooldown of this ability.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500258,
+          "description": "Give the final verdict to your target, dealing <span class=\"item-number\">1195</span> + <span class=\"item-number\">100% AP</span> Physical damage and healing you for <span class=\"item-number\">15%</span> of your maximum health.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health. Killing blows reset the cooldown of this ability."
+        }
+      ]
+    },
+    {
+      "id": 30056,
+      "name": "Iron Guardian",
+      "spellId": 705364,
+      "spellIds": [
+        705364,
+        707816,
+        712473
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\garrison_building_armory",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31169
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Stamina by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705364,
+          "description": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707816,
+          "description": "Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712473,
+          "description": "Increases your Stamina by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30057,
+      "name": "Brace",
+      "spellId": 800313,
+      "spellIds": [
+        800313
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Safeguard",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Fortify your defenses, reducing all damage taken by -50% and gaining immunity to stun effects for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800313,
+          "description": "Fortify your defenses, reducing all damage taken by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> and gaining immunity to stun effects for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30060,
+      "name": "The Green Tower",
+      "spellId": 560410,
+      "spellIds": [
+        560410
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warriorskill25_Border",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31318,
+        34445
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Energy cost of your Formations and increases their effectiveness by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560410,
+          "description": "Reduces the Energy cost of your <span style=\"color: #ffffff; display: inline\">Formations</span> and increases their effectiveness by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30097,
+      "name": "Song of Battle",
+      "spellId": 803956,
+      "spellIds": [
+        803956
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_pvp_legion04",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        11797,
+        34434
+      ],
+      "requiredIds": [],
+      "desc": "Every 2 sec you emanate Sounds of War, dealing 71 + 12.74% AP Physical damage to all enemies within 8 yds. Lasts 15 seconds.Upon expiration, stun all enemies within 8 yds for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803956,
+          "description": "Every <span class=\"item-number\">2</span> sec you emanate <span style=\"color: #ffffff; display: inline\">Sounds of War</span>, dealing <span class=\"item-number\">71</span> + <span class=\"item-number\">12.74% AP</span> Physical damage to all enemies within <span class=\"item-number\">8</span> yds. Lasts <span class=\"item-number\">15</span> seconds.<br /><br />Upon expiration, stun all enemies within <span class=\"item-number\">8</span> yds for <span class=\"item-number\">4</span> seconds.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 30098,
+      "name": "Powerful Voice",
+      "spellId": 705356,
+      "spellIds": [
+        705356
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_battleshout",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7040,
+        11040,
+        31359
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of your Ballads by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705356,
+          "description": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Ballads</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30100,
+      "name": "Valiant Warrior",
+      "spellId": 524694,
+      "spellIds": [
+        524694
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_skyreach_shielded",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29427,
+        34425,
+        34429
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Ram now have a 50% chance to strike again for 100% of the damage dealt.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524694,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Ram</span> now have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to strike again for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": 30144,
+      "name": "Footman's Call",
+      "spellId": 705376,
+      "spellIds": [
+        705376
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_blitz",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31319
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Pulverize is increased by 15, plus an additional amount scaling with your block value.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705376,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Pulverize</span> is increased by <span class=\"item-number\">15</span>, plus an additional amount scaling with your block value."
+        }
+      ]
+    },
+    {
+      "id": 30145,
+      "name": "Elegant Combat",
+      "spellId": 804047,
+      "spellIds": [
+        804047
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Warriorskill_35_Border",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1789,
+        12123,
+        34435
+      ],
+      "requiredIds": [],
+      "desc": "Casting a Ballad has a 20% chance to remove the cost of the next Ram and increase its critical chance by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804047,
+          "description": "Casting a <span style=\"color: #FFFFFF; display: inline\">Ballad</span> has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to remove the cost of the next <span style=\"color: #FFFFFF; display: inline\">Ram</span> and increase its critical chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30316,
+      "name": "Heroic Deeds",
+      "spellId": 804661,
+      "spellIds": [
+        804661
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_paladin_touchedbylight",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6817,
+        29639,
+        29972
+      ],
+      "requiredIds": [],
+      "desc": "Increases the reputation gains of your allies within 30 yds by 5% and reduces damage you take by -3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804661,
+          "description": "Increases the reputation gains of your allies within <span class=\"item-number\">30</span> yds by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces damage you take by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30433,
+      "name": "Light Nets",
+      "spellId": 704150,
+      "spellIds": [
+        704150
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\hunter_pvp_trackersnet",
+      "x": 0,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6362
+      ],
+      "requiredIds": [],
+      "desc": "Increases the range of your Net Throw by 15 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704150,
+          "description": "Increases the range of your <span style=\"color: #ffffff; display: inline\">Net Throw</span> by <span class=\"item-number\">15</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 30434,
+      "name": "Bastion",
+      "spellId": 802283,
+      "spellIds": [
+        802283
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\shield_draenorcrafted_d_02_a_alliance",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30529
+      ],
+      "requiredIds": [],
+      "desc": "Raise your shield and lead your allies within 12 yds, reducing their damage taken by -40% for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802283,
+          "description": "Raise your shield and lead your allies within <span class=\"item-number\">12</span> yds, reducing their damage taken by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30528,
+      "name": "Close Combat",
+      "spellId": 704514,
+      "spellIds": [
+        704514
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3groundstomp",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4654,
+        6547,
+        31354
+      ],
+      "requiredIds": [],
+      "desc": "Removes the shared cooldown of your Standards and reduces the cooldown of Guard by -10 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704514,
+          "description": "Removes the shared cooldown of your <span style=\"color: #FFFFFF; display: inline\">Standards</span> and reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Guard</span> by <span class=\"item-number\">-10</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30529,
+      "name": "Shield Unit",
+      "spellId": 804891,
+      "spellIds": [
+        804891
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_tailor_defenceup01",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7180,
+        29213,
+        31320
+      ],
+      "requiredIds": [],
+      "desc": "Each time you take damage, you gain 5% of the damage taken as attack power for 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804891,
+          "description": "Each time you take damage, you gain <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage taken as attack power for <span class=\"item-number\">1</span> minute."
+        }
+      ]
+    },
+    {
+      "id": 30530,
+      "name": "Retaliation",
+      "spellId": 582901,
+      "spellIds": [
+        582901
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_shieldreflection",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34417,
+        34439
+      ],
+      "requiredIds": [],
+      "desc": "Successful blocks now deal 51 + 5% AP Physical damage to the attacker, scaling with defense rating. Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582901,
+          "description": "Successful blocks now deal <span class=\"item-number\">51</span> + <span class=\"item-number\">5% AP</span> Physical damage to the attacker, scaling with defense rating. Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": 30802,
+      "name": "Heavy Expert",
+      "spellId": 803128,
+      "spellIds": [
+        803128
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Vigilance",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30056
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to parry and dodge by 4% and increase your Armor contribution from mail and plate items by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803128,
+          "description": "Increases your chance to parry and dodge by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and increase your Armor contribution from mail and plate items by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30825,
+      "name": "Little Drummer",
+      "spellId": 706636,
+      "spellIds": [
+        706636
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_misc_(15)_Border",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7040,
+        11040,
+        12123,
+        34435
+      ],
+      "requiredIds": [],
+      "desc": "Allies within 20 yds of you now gain 20% chance to resist curses.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706636,
+          "description": "Allies within <span class=\"item-number\">20</span> yds of you now gain <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to resist curses."
+        }
+      ]
+    },
+    {
+      "id": 30829,
+      "name": "Battle Bard",
+      "spellId": 806140,
+      "spellIds": [
+        806140
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_scrollofwisdom_01",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4836,
+        34433
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your Ballads by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806140,
+          "description": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Ballads</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31141,
+      "name": "Harrowing Melody",
+      "spellId": 572821,
+      "spellIds": [
+        572821
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_axe_2h_undeadguitar_c_01",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4836,
+        30829
+      ],
+      "requiredIds": [],
+      "desc": "Play a harrowing melody, dealing 191 + 42% AP Magic damage and reducing all healing received by enemies within 10 yds by -30% for 10 seconds.In addition, your next Ballad within 10 seconds is free of cost and deals 50% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 572821,
+          "description": "Play a harrowing melody, dealing <span class=\"item-number\">191</span> + <span class=\"item-number\">42% AP</span> Magic damage and reducing all healing received by enemies within <span class=\"item-number\">10</span> yds by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />In addition, your next <span style=\"color: #ffffff; display: inline\">Ballad</span> within <span class=\"item-number\">10</span> seconds is free of cost and deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": 31169,
+      "name": "Heavy Blow",
+      "spellId": 803129,
+      "spellIds": [
+        803129
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_paladin_hammerofwrath",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4019,
+        30057
+      ],
+      "desc": "Smash an enemy and enemies behind them in a line, dealing 23 + 45% AP High Threat Physical damage, scaling with defense rating.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803129,
+          "description": "Smash an enemy and enemies behind them in a line, dealing <span class=\"item-number\">23</span> + <span class=\"item-number\">45% AP</span> High Threat Physical damage, scaling with defense rating."
+        }
+      ]
+    },
+    {
+      "id": 31170,
+      "name": "Centurion Strike",
+      "spellId": 802286,
+      "spellIds": [
+        802286
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Warriorskill_02_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4020
+      ],
+      "desc": "Stab an enemy, dealing 110% Weapon Damage plus an additional effect based on your weapon.Sword: Triggers 3 additional auto attacks.Axe: Guaranteed to critically strike for 25% increased damage.Mace: Ignores -50% of your target's Armor.Polearm: Stabs the target and enemies behind them an additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802286,
+          "description": "Stab an enemy, dealing <span class=\"item-number\">110</span><span class=\"item-number\">%</span> Weapon Damage plus an additional effect based on your weapon.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Sword:</span> Triggers <span class=\"item-number\">3</span> additional auto attacks.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Axe:</span> Guaranteed to critically strike for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Mace:</span> Ignores <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> of your target's Armor.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Polearm:</span> Stabs the target and enemies behind them an additional time."
+        }
+      ]
+    },
+    {
+      "id": 31171,
+      "name": "Inspiring Leader",
+      "spellId": 505344,
+      "spellIds": [
+        505344
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_maldraxxus_warriorplantbanner",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4021,
+        29796
+      ],
+      "desc": "You pledge to inspire your allies in the midst of battle, transforming your Pulverize and your Broad Sweep into Ballads.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 505344,
+          "description": "You pledge to inspire your allies in the midst of battle, transforming your <span style=\"color: #ffffff; display: inline\">Pulverize</span> and your <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> into <span style=\"color: #ffffff; display: inline\">Ballads</span>."
+        }
+      ]
+    },
+    {
+      "id": 31285,
+      "name": "Calculated Strike",
+      "spellId": 705341,
+      "spellIds": [
+        705341
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_raregarrisonquests_x",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30528,
+        31352
+      ],
+      "requiredIds": [],
+      "desc": "Your Reprisal, Broad Sweep, and Spear Throw now deal an additional 2% Weapon Damage for each Energy point you have upon casting it.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705341,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Reprisal</span>, <span style=\"color: #ffffff; display: inline\">Broad Sweep</span>, and <span style=\"color: #ffffff; display: inline\">Spear Throw</span> now deal an additional <span class=\"item-number\">2%</span> Weapon Damage for each Energy point you have upon casting it."
+        }
+      ]
+    },
+    {
+      "id": 31316,
+      "name": "Voice of an Angel",
+      "spellId": 704420,
+      "spellIds": [
+        704420
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_priest_heavanlyvoice",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31364
+      ],
+      "requiredIds": [],
+      "desc": "Sing a beautiful song, instantly resetting the cooldown of Liberation, Harrowing Melody, and Hero's March.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704420,
+          "description": "Sing a beautiful song, instantly resetting the cooldown of <span style=\"color: #ffffff; display: inline\">Liberation</span>, <span style=\"color: #ffffff; display: inline\">Harrowing Melody</span>, and <span style=\"color: #ffffff; display: inline\">Hero's March</span>."
+        }
+      ]
+    },
+    {
+      "id": 31318,
+      "name": "Battle Wary",
+      "spellId": 705332,
+      "spellIds": [
+        705332
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_Warriorskill_22_Border",
+      "x": 8,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30144
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Advance and Battle Rush by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705332,
+          "description": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Advance</span> and <span style=\"color: #ffffff; display: inline\">Battle Rush</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31319,
+      "name": "With Honor",
+      "spellId": 504383,
+      "spellIds": [
+        504383
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shoulder_plate_raidpaladin_s_01",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30056
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Ram by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504383,
+          "description": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Ram</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 31320,
+      "name": "Resilient",
+      "spellId": 707137,
+      "spellIds": [
+        707137
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_warriorskill47_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30530,
+        34443
+      ],
+      "requiredIds": [],
+      "desc": "Blocking an attack while Raise Shield is active now increases your maximum health by 308 + 10% Stamina + 11% AP for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707137,
+          "description": "Blocking an attack while <span style=\"color: #ffffff; display: inline\">Raise Shield</span> is active now increases your maximum health by <span class=\"item-number\">308</span> + <span class=\"item-number\">10% Stamina</span> + <span class=\"item-number\">11% AP</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31352,
+      "name": "Heroism",
+      "spellId": 705323,
+      "spellIds": [
+        705323
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Racial_Avatar",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6547
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you reach 3 stacks of Glory or 20 stacks of Favor, your next 2 Pulverizes or Broad Sweeps within 10 seconds are free of cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705323,
+          "description": "Whenever you reach <span class=\"item-number\">3</span> stacks of <span style=\"color: #FFFFFF; display: inline\">Glory</span> or <span class=\"item-number\">20</span> stacks of <span style=\"color: #FFFFFF; display: inline\">Favor</span>, your next <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Pulverizes</span> or <span style=\"color: #FFFFFF; display: inline\">Broad Sweeps</span> within <span class=\"item-number\">10</span> seconds are free of cost."
+        }
+      ]
+    },
+    {
+      "id": 31358,
+      "name": "War Drums",
+      "spellId": 704524,
+      "spellIds": [
+        704524
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_leatherworking_drums",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29432,
+        30097
+      ],
+      "requiredIds": [],
+      "desc": "Adds 5% to the value of Echoes of War.In addition, performing a Sound of War now has a 40% chance to echo, striking an additional time after 0.5 sec. Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704524,
+          "description": "Adds <span class=\"item-number\">5</span><span class=\"item-number\">%</span> to the value of <span style=\"color: #FFFFFF; display: inline\">Echoes of War</span>.<br /><br />In addition, performing a <span style=\"color: #ffffff; display: inline\">Sound of War</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to echo, striking an additional time after <span class=\"item-number\">0.5</span> sec. Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": 31359,
+      "name": "Minstrel",
+      "spellId": 704533,
+      "spellIds": [
+        704533
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_racial_makecamp",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31141
+      ],
+      "requiredIds": [],
+      "desc": "Casting a Ballad now increases your haste by 3%, stacking 3 times, for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704533,
+          "description": "Casting a <span style=\"color: #ffffff; display: inline\">Ballad</span> now increases your haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">3</span> times, for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 31361,
+      "name": "Soundwave",
+      "spellId": 705318,
+      "spellIds": [
+        705318
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_animabastion_wave",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6428,
+        31362
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Sound of War by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705318,
+          "description": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Sound of War</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31362,
+      "name": "Dragonslayer",
+      "spellId": 706333,
+      "spellIds": [
+        706333
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\crest_warrior",
+      "x": 5,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6454
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Agility by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706333,
+          "description": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 31364,
+      "name": "Legion Commander",
+      "spellId": 704535,
+      "spellIds": [
+        704535
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_RallyingCry",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5825,
+        9450,
+        31315
+      ],
+      "requiredIds": [],
+      "desc": "The damage increase of Harrowing Melody now affects an additional 2 Ballad casts and guarantees them to critically strike and deal 100% more damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704535,
+          "description": "The damage increase of <span style=\"color: #FFFFFF; display: inline\">Harrowing Melody</span> now affects an additional <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Ballad</span> casts and guarantees them to critically strike and deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> more damage."
+        }
+      ]
+    },
+    {
+      "id": 34403,
+      "name": "Press the Attack",
+      "spellId": 801219,
+      "spellIds": [
+        801219
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(50)_Border",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29427
+      ],
+      "requiredIds": [],
+      "desc": "Raise your shield and press the attack, dealing 75% Weapon Damage plus 83 to enemies in front of you and draining 10 Energy every 1 sec. Lasts 5 seconds.While active you gain 100% increased block chance and you may block, dodge, and parry while channeling.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 801219,
+          "description": "Raise your shield and press the attack, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">83</span> to enemies in front of you and draining <span class=\"item-number\">10</span> Energy every <span class=\"item-number\">1</span> sec. Lasts <span class=\"item-number\">5</span> seconds.<br /><br />While active you gain <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased block chance and you may block, dodge, and parry while channeling.<br /><br />"
+        }
+      ]
+    },
+    {
+      "id": 34404,
+      "name": "Master of Arms",
+      "spellId": 705315,
+      "spellIds": [
+        705315
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_passivemastery_(35)_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34414
+      ],
+      "requiredIds": [],
+      "desc": "Your Turn the Blade now guarantees you to parry 1 additional attack and the duration of its parry window is increased by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705315,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Turn the Blade</span> now guarantees you to parry <span class=\"item-number\">1</span> additional attack and the duration of its parry window is increased by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34405,
+      "name": "Thick Shields",
+      "spellId": 807346,
+      "spellIds": [
+        807346
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_1h_newplayer_a_01",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34421
+      ],
+      "requiredIds": [],
+      "desc": "Increases your block value by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807346,
+          "description": "Increases your block value by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34407,
+      "name": "Valiance",
+      "spellId": 705324,
+      "spellIds": [
+        705324
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Shockwave",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7786,
+        29971
+      ],
+      "requiredIds": [],
+      "desc": "Reprisal now regenerates an additional 20 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705324,
+          "description": "<span style=\"color: #ffffff; display: inline\">Reprisal</span> now regenerates an additional <span class=\"item-number\">20</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 34410,
+      "name": "Double Duty",
+      "spellId": 504184,
+      "spellIds": [
+        504184
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactskywall_d_06dual",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34458
+      ],
+      "requiredIds": [],
+      "desc": "Increases your hit chance by 5% and expertise by 4.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504184,
+          "description": "Increases your hit chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">4</span>."
+        }
+      ]
+    },
+    {
+      "id": 34414,
+      "name": "Steel Riposte",
+      "spellId": 300534,
+      "spellIds": [
+        300534
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_MeleeDamage",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29429,
+        29431,
+        29996
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Counter Stance and Turn the Blade by -25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300534,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Counter Stance</span> and <span style=\"color: #ffffff; display: inline\">Turn the Blade</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34417,
+      "name": "Vanguard's Shield",
+      "spellId": 804383,
+      "spellIds": [
+        804383
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Shield_32",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6712,
+        11060
+      ],
+      "requiredIds": [],
+      "desc": "Blocking an attack or landing an auto attack now grants a stack of Vanguard for 1 minute, stacking 10 times.Vanguard&#39;s ShieldMagic Damage taken reduced by -2%. Whenever you are hit by a spell, you lose 1 stack of this effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804383,
+          "description": "Blocking an attack or landing an auto attack now grants a stack of <span style=\"color: #ffffff; display: inline\">Vanguard</span> for <span class=\"item-number\">1</span> minute, stacking <span class=\"item-number\">10</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_shield_32\" /><span class=\"name\">Vanguard&#39;s Shield</span></div><span class=\"desc\">Magic Damage taken reduced by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>. Whenever you are hit by a spell, you lose <span class=\"item-number\">1</span> stack of this effect.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 34419,
+      "name": "Knight's Advantage",
+      "spellId": 705378,
+      "spellIds": [
+        705378
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_LegionPVP2Tier1",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29431
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage dealt against Humanoids by 6%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705378,
+          "description": "Increases your damage dealt against Humanoids by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34421,
+      "name": "Energetic",
+      "spellId": 705316,
+      "spellIds": [
+        705316
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_passivemastery_(8)_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7320,
+        29431,
+        34407,
+        34415
+      ],
+      "requiredIds": [],
+      "desc": "Restores 5 of your Energy every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705316,
+          "description": "Restores <span class=\"item-number\">5</span> of your Energy every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34425,
+      "name": "Relentless",
+      "spellId": 705343,
+      "spellIds": [
+        705343
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\garrison_building_salvageyard",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7311,
+        34405,
+        30059
+      ],
+      "requiredIds": [],
+      "desc": "Your Pulverizes or Rams now ignores -15% of the target's Armor.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705343,
+          "description": "Your Pulverizes</span> or <span style=\"color: #ffffff; display: inline\">Rams</span> now ignores <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> of the target's Armor."
+        }
+      ]
+    },
+    {
+      "id": 34426,
+      "name": "Grand Entrance",
+      "spellId": 802870,
+      "spellIds": [
+        802870
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_stalwartprotector",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34425
+      ],
+      "requiredIds": [],
+      "desc": "Leap into the air, becoming immune to crowd control effects, and then crash back down with incredible speed at your location.Upon landing, deal 400% Weapon Damage to enemies in the impact area, plus an additional 611 + 77.25% AP over 6 seconds, ignoring Armor and knocking them into the air.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802870,
+          "description": "Leap into the air, becoming immune to crowd control effects, and then crash back down with incredible speed at your location.<br /><br />Upon landing, deal <span class=\"item-number\">400</span><span class=\"item-number\">%</span> Weapon Damage to enemies in the impact area, plus an additional <span class=\"item-number\">611</span> + <span class=\"item-number\">77.25% AP</span> over <span class=\"item-number\">6</span> seconds, ignoring Armor and knocking them into the air."
+        }
+      ]
+    },
+    {
+      "id": 34427,
+      "name": "Sturdy",
+      "spellId": 706639,
+      "spellIds": [
+        706639
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_shield_(3)_Border",
+      "x": 7,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30057
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum health by 6%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706639,
+          "description": "Increases your maximum health by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34429,
+      "name": "Honorable Demeanor",
+      "spellId": 705377,
+      "spellIds": [
+        705377
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_toughness",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34405,
+        12431,
+        29970
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you block an attack your Strength and Stamina are increased by 2% for 10 seconds, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705377,
+          "description": "Whenever you block an attack your Strength and Stamina are increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 34430,
+      "name": "Liberation",
+      "spellId": 803963,
+      "spellIds": [
+        803963
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_pvp_gladiatormedallion",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6428,
+        31361
+      ],
+      "requiredIds": [],
+      "desc": "Instantly breaks an ally free of any stun, fear, or polymorph effects and grants immunity to such effects for 5 seconds. Dispels 2 harmful magic effects from the ally.Usable while stunned, feared, or polymorphed.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803963,
+          "description": "Instantly breaks an ally free of any stun, fear, or polymorph effects and grants immunity to such effects for <span class=\"item-number\">5</span> seconds. <br /><br />Dispels <span class=\"item-number\">2</span> harmful magic effects from the ally.<br /><br />Usable while stunned, feared, or polymorphed."
+        }
+      ]
+    },
+    {
+      "id": 34433,
+      "name": "Veteran of the Third War",
+      "spellId": 300540,
+      "spellIds": [
+        300540
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_passivemastery_(4)_Border",
+      "x": 3,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6432
+      ],
+      "requiredIds": [],
+      "desc": "You now restore 3% of your base health whenever you block an attack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300540,
+          "description": "You now restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your base health whenever you block an attack."
+        }
+      ]
+    },
+    {
+      "id": 34434,
+      "name": "Fearless",
+      "spellId": 505199,
+      "spellIds": [
+        505199
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_Invisibilty",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29798,
+        30145
+      ],
+      "requiredIds": [],
+      "desc": "Each nearby enemy within 10 yds now reduces your damage taken by 1%, up to a maximum of 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 505199,
+          "description": "Each nearby enemy within <span class=\"item-number\">10</span> yds now reduces your damage taken by <span class=\"item-number\">1%</span>, up to a maximum of <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34436,
+      "name": "Cavalry Tactics",
+      "spellId": 503631,
+      "spellIds": [
+        503631
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_blacksmith_leystonehoofplates_blue",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29798
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of your Cavalry Charge by -30 sec and it now prevents root and slow effects on allies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503631,
+          "description": "Reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Cavalry Charge</span> by <span class=\"item-number\">-30</span> sec and it now prevents root and slow effects on allies."
+        }
+      ]
+    },
+    {
+      "id": 34438,
+      "name": "Stalwart",
+      "spellId": 704413,
+      "spellIds": [
+        704413,
+        707817
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\_D3revenge",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34439,
+        34445
+      ],
+      "requiredIds": [],
+      "desc": "Increases your block value by 10% and your expertise by 4.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704413,
+          "description": "Increases your block value by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707817,
+          "description": "Increases your block value by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">8</span>."
+        }
+      ]
+    },
+    {
+      "id": 34439,
+      "name": "Hold the Line",
+      "spellId": 803830,
+      "spellIds": [
+        803830
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warrior_shieldguard",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1719,
+        34441
+      ],
+      "requiredIds": [],
+      "desc": "Command nearby allies to hold the line, making them immune to incapacitate, disorient, knockback, and grip effects for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803830,
+          "description": "Command nearby allies to hold the line, making them immune to incapacitate, disorient, knockback, and grip effects for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34440,
+      "name": "Bring Down The Hammer!",
+      "spellId": 705379,
+      "spellIds": [
+        705379
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_hammer_1h_jiro_b_01",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30144
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Heavy Blow now deals an additional 20% of the damage dealt every 1 sec for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705379,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Heavy Blow</span> now deals an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34441,
+      "name": "Vanguard's Might",
+      "spellId": 705345,
+      "spellIds": [
+        705345
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_plate_raidwarrior_s_01helm",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34448
+      ],
+      "requiredIds": [],
+      "desc": "Your Heavy Blow now causes you to emanate an aura for 5 seconds that reduces all damage taken by -5% for party members.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705345,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Heavy Blow</span> now causes you to emanate an aura for <span class=\"item-number\">5</span> seconds that reduces all damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> for party members."
+        }
+      ]
+    },
+    {
+      "id": 34443,
+      "name": "Plate Buster",
+      "spellId": 705333,
+      "spellIds": [
+        705333
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_plate_raidwarrior_s_01helm",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34439
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Ram now reduces the remaining cooldown of your Challenging Cry and Hold the Line by -4 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705333,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Ram</span> now reduces the remaining cooldown of your <span style=\"color: #ffffff; display: inline\">Challenging Cry</span> and <span style=\"color: #ffffff; display: inline\">Hold the Line</span> by <span class=\"item-number\">-4</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 34445,
+      "name": "Hammer of the Law",
+      "spellId": 704418,
+      "spellIds": [
+        704418
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mace_1h_draenorguard_b_02_a",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7181,
+        34440,
+        34441
+      ],
+      "requiredIds": [],
+      "desc": "Smash an enemy and enemies behind them in a line, dealing 90 + 100% AP High Threat Physical damage and silencing them for 3.5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704418,
+          "description": "Smash an enemy and enemies behind them in a line, dealing <span class=\"item-number\">90</span> + <span class=\"item-number\">100% AP</span> High Threat Physical damage and silencing them for <span class=\"item-number\">3.5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34446,
+      "name": "Valorous Strikes",
+      "spellId": 524932,
+      "spellIds": [
+        524932
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shoulder_mail_bastion_d_01",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30530,
+        34417
+      ],
+      "requiredIds": [],
+      "desc": "Auto attacks now have a 10% chance to strike an additional time and reduce your target's chance to hit by -3% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 524932,
+          "description": "Auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike an additional time and reduce your target's chance to hit by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 34447,
+      "name": "King's Guard",
+      "spellId": 803134,
+      "spellIds": [
+        803134
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helmet_plate_raidpaladin_l_01",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31320,
+        34446
+      ],
+      "requiredIds": [],
+      "desc": "Your Pulverize and Ram now have a 10% chance to reset the cooldown of Raise Shield.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803134,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Pulverize</span> and <span style=\"color: #ffffff; display: inline\">Ram</span> now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #FFFFFF; display: inline\">Raise Shield</span>."
+        }
+      ]
+    },
+    {
+      "id": 34448,
+      "name": "Knight's Conviction",
+      "spellId": 705369,
+      "spellIds": [
+        705369,
+        707815
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_horsekultiran",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30802,
+        31319
+      ],
+      "requiredIds": [],
+      "desc": "Increases the block value provided by Raise Shield by 25% and your block chance by 1%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705369,
+          "description": "Increases the block value provided by <span style=\"color: #ffffff; display: inline\">Raise Shield</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and your block chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707815,
+          "description": "Increases the block value provided by <span style=\"color: #ffffff; display: inline\">Raise Shield</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and your block chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34450,
+      "name": "Heroic Effort",
+      "spellId": 301057,
+      "spellIds": [
+        301057
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES_A_HERO",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6433,
+        7038
+      ],
+      "requiredIds": [],
+      "desc": "Casting Centurion Strike now grants 1 stack of Glory.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301057,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now grants <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Glory</span>."
+        }
+      ]
+    },
+    {
+      "id": 34455,
+      "name": "Mace Training",
+      "spellId": 705336,
+      "spellIds": [
+        705336,
+        707819,
+        712475
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_mace_05",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29426
+      ],
+      "requiredIds": [],
+      "desc": "While a mace is equipped, your armor penetration is increased by 8%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705336,
+          "description": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707819,
+          "description": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">16</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712475,
+          "description": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 34458,
+      "name": "Upper Hand",
+      "spellId": 802295,
+      "spellIds": [
+        802295
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Relics_TotemofRage",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29661
+      ],
+      "requiredIds": [],
+      "desc": "Your melee auto attacks now have a 20% chance to strike 2 additional times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802295,
+          "description": "Your melee auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:7:803571",
+      "name": "Shieldbound / Honorbound",
+      "spellId": 706515,
+      "spellIds": [
+        706515
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_shield_draenorguard_b_01_a_alliance",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30802
+      ],
+      "requiredIds": [],
+      "desc": "Your Shield Challenge no longer has a cooldown, but now costs 10 additional Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706515,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Shield Challenge</span> no longer has a cooldown, but now costs <span class=\"item-number\">10</span> additional Energy."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:7:707716",
+      "name": "Unscuffable / Order In The Court",
+      "spellId": 503837,
+      "spellIds": [
+        503837
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\creatureportrait_blackrockv2_shieldgong",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34445
+      ],
+      "requiredIds": [],
+      "desc": "Allies within 30 yds now take -10% less Magic damage from area of effect attacks.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503837,
+          "description": "Allies within <span class=\"item-number\">30</span> yds now take <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> less Magic damage from area of effect attacks."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:7:582933",
+      "name": "Valiant Knight / Valiant Defender",
+      "spellId": 582937,
+      "spellIds": [
+        582937
+      ],
+      "tabId": 7,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill48_Border",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30060,
+        31318
+      ],
+      "requiredIds": [],
+      "desc": "Melee ability critical strikes now cause your next Pulverize within 6 seconds to be free of cost and deal 25% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 582937,
+          "description": "Melee ability critical strikes now cause your next <span style=\"color: #ffffff; display: inline\">Pulverize</span> within <span class=\"item-number\">6</span> seconds to be free of cost and deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:87:95021",
+      "name": "Resolve / Deflector",
+      "spellId": 706806,
+      "spellIds": [
+        706806
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\warrior_talent_icon_gladiatorsresolve",
+      "x": 8,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34427
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Raise Shield by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706806,
+          "description": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Raise Shield</span> by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:87:9501",
+      "name": "Press the Line! / Shrug It Off",
+      "spellId": 300542,
+      "spellIds": [
+        300542
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_archerskill20_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6364,
+        6456
+      ],
+      "requiredIds": [],
+      "desc": "While Line Formation is active, your movement speed cannot be reduced below 115%, but its cost is increased by 30 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300542,
+          "description": "While <span style=\"color: #ffffff; display: inline\">Line Formation</span> is active, your movement speed cannot be reduced below <span class=\"item-number\">115</span><span class=\"item-number\">%</span>, but its cost is increased by <span class=\"item-number\">30</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:87:84232",
+      "name": "Bloodletter / Myrmidon",
+      "spellId": 560093,
+      "spellIds": [
+        560093
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_sword_1h_artifactmagnar_d_02",
+      "x": 0,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7786
+      ],
+      "requiredIds": [],
+      "desc": "Avoiding an attack now reduces the remaining cooldown of Glorious Arena by 10%. Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560093,
+          "description": "Avoiding an attack now reduces the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Glorious Arena</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:87:705330",
+      "name": "Pit Fighter / Warstopper",
+      "spellId": 802296,
+      "spellIds": [
+        802296
+      ],
+      "tabId": 87,
+      "classId": 18,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_warrior_gladiatorstance",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        34421
+      ],
+      "requiredIds": [],
+      "desc": "Increases the movement speed slow of your Standard of Valiance by -15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802296,
+          "description": "Increases the movement speed slow of your <span style=\"color: #ffffff; display: inline\">Standard of Valiance</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:743521",
+      "name": "Spirit of Battle / Banner of Conquest",
+      "spellId": 504159,
+      "spellIds": [
+        504159
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Holy_SpellWarding",
+      "x": 10,
+      "y": 2,
+      "requiredLevel": 20,
+      "connectedNodeIds": [
+        4021
+      ],
+      "requiredIds": [],
+      "desc": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504159,
+          "description": "Increases chance to hit with all spells and attacks by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for you and party and raid members.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:821425",
+      "name": "Knight's Song / Banner of Swiftness",
+      "spellId": 505228,
+      "spellIds": [
+        505228
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_flute_01",
+      "x": 10,
+      "y": 4,
+      "requiredLevel": 30,
+      "connectedNodeIds": [
+        13616,
+        29216
+      ],
+      "requiredIds": [],
+      "desc": "Casting a Ballad now grants allies Knight's Song.Knight&#39;s SongEmanate an aura for 10 seconds that increases the Armor of party and raid members by 400.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 505228,
+          "description": "Casting a <span style=\"color: #ffffff; display: inline\">Ballad</span> now grants allies <span style=\"color: #ffffff; display: inline\">Knight's Song</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_misc_flute_01\" /><span class=\"name\">Knight&#39;s Song</span></div><span class=\"desc\">Emanate an aura for <span class=\"item-number\">10</span> seconds that increases the Armor of party and raid members by <span class=\"item-number\">400</span>.<br /><br />Does not stack with similar effects.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:621833",
+      "name": "Pied Piper / Frontliner",
+      "spellId": 705350,
+      "spellIds": [
+        705350
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_flute_01",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29797,
+        31141
+      ],
+      "requiredIds": [],
+      "desc": "Triggering a Sound of War now increases damage of your next Ram by 20% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705350,
+          "description": "Triggering a <span style=\"color: #FFFFFF; display: inline\">Sound of War</span> now increases damage of your next <span style=\"color: #FFFFFF; display: inline\">Ram</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:704526",
+      "name": "Bard's Manuscript / Warbringer's Manuscript",
+      "spellId": 704526,
+      "spellIds": [
+        704526
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\pvp_scroll_1",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29797
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cooldown of Hero's March by -60 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704526,
+          "description": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Hero's March</span> by <span class=\"item-number\">-60</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:563213",
+      "name": "Song of Steel / Dissonance",
+      "spellId": 704540,
+      "spellIds": [
+        704540
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\skill_icon_skill29_Border",
+      "x": 10,
+      "y": 6,
+      "requiredLevel": 40,
+      "connectedNodeIds": [
+        29214,
+        11214
+      ],
+      "requiredIds": [],
+      "desc": "Boost the morale of party and raid members, increasing their attack or spell power by 95 for 15 seconds.Does not stack with similar effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704540,
+          "description": "Boost the morale of party and raid members, increasing their attack or spell power by <span class=\"item-number\">95</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Does not stack with similar effects."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:806142",
+      "name": "Stand Your Ground! / You Shall Not Fall!",
+      "spellId": 806142,
+      "spellIds": [
+        806142
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_holy_heroism",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30098,
+        30825
+      ],
+      "requiredIds": [],
+      "desc": "While standing in your Standard of Valiance, your allies' Physical damage taken is reduced by -10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806142,
+          "description": "While standing in your <span style=\"color: #ffffff; display: inline\">Standard of Valiance</span>, your allies' Physical damage taken is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:48:125733",
+      "name": "Inspiring Presence / Champion's Presence",
+      "spellId": 705352,
+      "spellIds": [
+        705352
+      ],
+      "tabId": 48,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Human_07",
+      "x": 10,
+      "y": 8,
+      "requiredLevel": 50,
+      "connectedNodeIds": [
+        7836,
+        10836
+      ],
+      "requiredIds": [],
+      "desc": "Emanate an aura around you for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Holy damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705352,
+          "description": "Emanate an aura around you for <span class=\"item-number\">15</span> seconds, causing allied players within <span class=\"item-number\">100</span> yds to deal <span class=\"item-number\">35% AP</span> additional damage as Holy damage when they deal direct damage.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:49:966669",
+      "name": "No Escape / Bulwark Rush",
+      "spellId": 802300,
+      "spellIds": [
+        802300
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_physical_ability_(46)_Border",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6433
+      ],
+      "requiredIds": [],
+      "desc": "Ram now reduces the cooldown of your Battle Rush by -10 sec when used against a rooted enemy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 802300,
+          "description": "<span style=\"color: #ffffff; display: inline\">Ram</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Battle Rush</span> by <span class=\"item-number\">-10</span> sec when used against a rooted enemy."
+        }
+      ]
+    },
+    {
+      "id": "choice:18:49:235221",
+      "name": "Pinned Down! / Clinch Brawler",
+      "spellId": 301252,
+      "spellIds": [
+        301252
+      ],
+      "tabId": 49,
+      "classId": 18,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Warrior_Challange",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6430,
+        6434
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Spear Throw now refreshes the duration of Net Throw on your target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 301252,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Spear Throw</span> now refreshes the duration of <span style=\"color: #ffffff; display: inline\">Net Throw</span> on your target."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3568 @@
+{
+  "d": {
+    "yOffset": 0,
+    "version": 130,
+    "information": {
+      "forceEvents": true
+    },
+    "anchorFrameType": "SCREEN",
+    "animation": {
+      "main": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      },
+      "start": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      },
+      "finish": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      }
+    },
+    "controlledChildren": [
+      "Barbarian Unbridled Rage",
+      "Barbarian Energy",
+      "Barbarian Health",
+      "Barbarian CDs",
+      "Barbarian CDs (Secondary)"
+    ],
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderInset": 1,
+    "subRegions": [],
+    "actions": {
+      "start": {
+        "do_message": false,
+        "do_custom": false
+      },
+      "init": {
+        "do_custom": false
+      },
+      "finish": {
+        "do_message": false,
+        "do_custom": false
+      }
+    },
+    "config": [],
+    "borderSize": 2,
+    "groupIcon": "interface/icons/classicon_shaman.blp",
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "internalVersion": 85,
+    "border": false,
+    "sharedFrameLevel": true,
+    "alpha": 1,
+    "borderOffset": 4,
+    "xOffset": 0,
+    "uid": "TMJDFk7VwQe",
+    "frameStrata": 2,
+    "anchorPoint": "CENTER",
+    "tocversion": 110200,
+    "conditions": [],
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderEdge": "Square Full White",
+    "desc": "Created by Luxthos\nwww.twitch.tv/luxthos",
+    "authorOptions": [],
+    "load": {
+      "talent": {
+        "multi": []
+      },
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      }
+    },
+    "anchorFrameParent": false,
+    "triggers": [
+      {
+        "untrigger": [],
+        "trigger": {
+          "spellIds": [],
+          "type": "aura2",
+          "unit": "player",
+          "event": "Health",
+          "debuffType": "HELPFUL",
+          "subeventSuffix": "_CAST_START",
+          "subeventPrefix": "SPELL",
+          "names": []
+        }
+      }
+    ],
+    "id": "Barbarian Brutality",
+    "regionType": "group",
+    "selfPoint": "CENTER",
+    "scale": 1
+  },
+  "c": [
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0.3,
+        0.75,
+        0.15,
+        1
+      ],
+      "barColor2": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "variable": "expirationTime",
+            "value": "8"
+          },
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                1,
+                0.8,
+                0.1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "variable": "expirationTime",
+            "value": "4"
+          },
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                1,
+                0.35,
+                0.05,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "buffed",
+            "value": 0
+          },
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                0.7,
+                0.05,
+                0.05,
+                1
+              ]
+            },
+            {
+              "property": "backgroundColor",
+              "value": [
+                0.2,
+                0.02,
+                0.02,
+                0.9
+              ]
+            },
+            {
+              "property": "sub.4.text_visible",
+              "value": false
+            },
+            {
+              "property": "sub.5.text_visible",
+              "value": true
+            },
+            {
+              "property": "sub.6.glow",
+              "value": true
+            },
+            {
+              "property": "sub.6.glowType",
+              "value": "Pixel"
+            },
+            {
+              "property": "sub.6.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.6.glowColor",
+              "value": [
+                1,
+                0.15,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Unbridled Rage"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -164,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 2,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "Unbridled Rage  %p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subtext",
+          "text_text": "Rage DOWN",
+          "text_visible": false,
+          "text_color": [
+            1,
+            0.35,
+            0.3,
+            1
+          ],
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "anchor_point": "INNER_CENTER",
+          "text_selfPoint": "AUTO",
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 1,
+          "text_shadowYOffset": -1,
+          "text_justify": "CENTER",
+          "rotateText": "NONE",
+          "text_wordWrap": "WordWrap",
+          "text_automaticWidth": "Auto",
+          "text_fixedWidth": 64
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Barbarian Unbridled Rage",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Barbarian Brutality",
+      "backgroundColor": [
+        0.06,
+        0.05,
+        0.02,
+        0.85
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "QreX7nhl4Oy",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        1,
+        0.88,
+        0.15,
+        1
+      ],
+      "barColor2": [
+        0.72,
+        0.42,
+        0,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "use_unit": true,
+              "duration": "1",
+              "use_powertype": true,
+              "use_absorbMode": true,
+              "unevent": "auto",
+              "powertype": 3,
+              "unit": "player",
+              "type": "unit",
+              "event": "Power",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -181,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "%p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Barbarian Energy",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Barbarian Brutality",
+      "backgroundColor": [
+        0.12,
+        0.1,
+        0,
+        0.8
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": true,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "SRS7TJX1Mlb",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0.9,
+        0.16,
+        0.12,
+        1
+      ],
+      "barColor2": [
+        0.33,
+        0.02,
+        0.02,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "use_unit": true,
+              "use_absorbMode": true,
+              "unevent": "auto",
+              "unit": "player",
+              "type": "unit",
+              "event": "Health",
+              "use_healthpct": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -198,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "%p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Barbarian Health",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Barbarian Brutality",
+      "backgroundColor": [
+        0.12,
+        0.03,
+        0.03,
+        0.85
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": true,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "IcE0bPCFewl",
+      "version": 130
+    },
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Barbarian Brutality",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 8\n    local w, h = 26, 26\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Barbarian CD - Decapitate",
+        "Barbarian CD - Crush",
+        "Barbarian CD - Storm of Steel",
+        "Barbarian CD - Killing Spree",
+        "Barbarian CD - Brutal Swing",
+        "Barbarian CD - Smash",
+        "Barbarian CD - Carnage",
+        "Barbarian CD - Unbridled Rage"
+      ],
+      "borderInset": 1,
+      "desc": "Made by Luxthos - twitch.tv/luxthos",
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": -140,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Barbarian CDs",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "ILXRwT5FMTf",
+      "version": 130
+    },
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Barbarian Brutality",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 9\n    local w, h = 24, 24\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Barbarian CD - Defiance",
+        "Barbarian CD - Thick Skull",
+        "Barbarian CD - Hodirs Wrath"
+      ],
+      "borderInset": 1,
+      "desc": "Made by Luxthos - twitch.tv/luxthos",
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": -221,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Barbarian CDs (Secondary)",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "iJUL2RjAKXq",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "q4usJQLZVeq",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804414,
+              "realSpellName": 804414,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "unit",
+              "event": "Health",
+              "use_unit": true,
+              "unit": "target",
+              "use_absorbMode": true,
+              "unevent": "auto",
+              "use_percenthealth": false,
+              "unitExists": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "percenthealth",
+            "op": "<",
+            "value": "20"
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Decapitate",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "ixx8PGTSlJh",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 500915,
+              "realSpellName": 500915,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Crush",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "wtyNgfGFIVm",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 800637,
+              "realSpellName": 800637,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Storm of Steel",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "baGrERbE0qj",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 850021,
+              "realSpellName": 850021,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Killing Spree",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "8bvtcvMu7Az",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 500913,
+              "realSpellName": 500913,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Brutal Swing",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "ZfKpHjXEoss",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": "Smash",
+              "realSpellName": "Smash",
+              "use_exact_spellName": false,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "Interface\\Icons\\Ability_Warrior_Devastate",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Smash",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "GwFXAwo8bpj",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": "Carnage",
+              "realSpellName": "Carnage",
+              "use_exact_spellName": false,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "Interface\\Icons\\Ability_Warrior_Rampage",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Carnage",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "ID745HSKcea",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": "Unbridled Rage",
+              "realSpellName": "Unbridled Rage",
+              "use_exact_spellName": false,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Unbridled Rage"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "Interface\\Icons\\Ability_Warrior_InnerRage",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "buffed",
+            "value": 0
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Unbridled Rage",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "WV1X5NWnguh",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 806228,
+              "realSpellName": 806228,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Defiance"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "show",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "Pixel"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                0.78,
+                0.61,
+                0.43,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Defiance",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "4ImOGbO1Qbl",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 801549,
+              "realSpellName": 801549,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Thick Skull"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "show",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "Pixel"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                0.78,
+                0.61,
+                0.43,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Thick Skull",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Barbarian CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "bROjErVrL5j",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 800152,
+              "realSpellName": 800152,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Barbarian CD - Hodirs Wrath",
+      "anchorFrameType": "SCREEN"
+    }
+  ],
+  "m": "d",
+  "s": "5.20.2",
+  "v": 2000
+}

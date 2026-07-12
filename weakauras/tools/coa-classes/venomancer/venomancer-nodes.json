@@ -1,0 +1,5376 @@
+{
+  "class": "Venomancer",
+  "classId": "29",
+  "specs": [
+    "Venom",
+    "Stalking",
+    "Fortitude",
+    "Vizier"
+  ],
+  "classTreeTab": 87,
+  "specToTab": {
+    "Venom": 76,
+    "Stalking": 77,
+    "Fortitude": 78,
+    "Vizier": 92
+  },
+  "nodes": [
+    {
+      "id": 1788,
+      "name": "Mycelial Healing",
+      "spellId": 806449,
+      "spellIds": [
+        806449
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nethers_spore",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29598
+      ],
+      "requiredIds": [],
+      "desc": "All effective healing done now increases your periodic healing done to an ally by 1% for 30 seconds, stacking 8 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806449,
+          "description": "All effective healing done now increases your periodic healing done to an ally by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">8</span> times."
+        }
+      ]
+    },
+    {
+      "id": 4394,
+      "name": "Essence of Decay",
+      "spellId": 707382,
+      "spellIds": [
+        707382
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_CorrosiveBreath",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6078,
+        30863
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Widow's Kiss now apply 1 additional Brood Mark.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707382,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Widow's Kiss</span> now apply <span class=\"item-number\">1</span> additional <span style=\"color: #66ff66; display: inline\">Brood Mark</span>."
+        }
+      ]
+    },
+    {
+      "id": 5215,
+      "name": "Captivation",
+      "spellId": 503930,
+      "spellIds": [
+        503930
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureseye_Border",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30479
+      ],
+      "requiredIds": [],
+      "desc": "Increases Mycosis's damage through Fungal Growth stacks by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503930,
+          "description": "Increases <span style=\"color: #ffffff; display: inline\">Mycosis</span>'s damage through <span style=\"color: #ffffff; display: inline\">Fungal Growth</span> stacks by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 5291,
+      "name": "Sage",
+      "spellId": 680768,
+      "spellIds": [
+        680768
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_Border",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7217,
+        7734,
+        7735,
+        11735
+      ],
+      "requiredIds": [],
+      "desc": "Direct healing done by Alkahest now spreads an active Shadra's Balm from the primary target to a nearby ally.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680768,
+          "description": "Direct healing done by <span style=\"color: #ffffff; display: inline\">Alkahest</span> now spreads an active <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> from the primary target to a nearby ally."
+        }
+      ]
+    },
+    {
+      "id": 5575,
+      "name": "From Death Comes Life",
+      "spellId": 504355,
+      "spellIds": [
+        504355
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureempower_(2)_Border",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30483
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Spore now reduces the cooldown of Decay by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504355,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Spore</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Decay</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6078,
+      "name": "Boding Dread",
+      "spellId": 804975,
+      "spellIds": [
+        804975,
+        807920
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_tarantula2_green",
+      "x": 6,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29580
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Shadow damage dealt and your critical strike chance with Shadow spells by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804975,
+          "description": "Increases your Shadow damage dealt and your critical strike chance with Shadow spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 807920,
+          "description": "Increases your Shadow damage dealt and your critical strike chance with Shadow spells by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6079,
+      "name": "Burrow",
+      "spellId": 806154,
+      "spellIds": [
+        806154
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Burrow",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7147,
+        7244,
+        7247,
+        30465
+      ],
+      "requiredIds": [],
+      "desc": "Burrow beneath the ground for 8 seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.While burrowed, you can choose a new location within 30 yds to unburrow.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 806154,
+          "description": "Burrow beneath the ground for <span class=\"item-number\">8</span> seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.<br /><br />While burrowed, you can choose a new location within <span class=\"item-number\">30</span> yds to unburrow."
+        }
+      ]
+    },
+    {
+      "id": 6082,
+      "name": "Acute Senses",
+      "spellId": 300664,
+      "spellIds": [
+        300664,
+        300665
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_bonespider2_slate",
+      "x": 3,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7229,
+        29607
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Intellect and Agility by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300664,
+          "description": "Increases your Intellect and Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 300665,
+          "description": "Increases your Intellect and Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6086,
+      "name": "Adrenal Venom",
+      "spellId": 805775,
+      "spellIds": [
+        805775
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_dpotion_a26",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6096,
+        7235
+      ],
+      "requiredIds": [],
+      "desc": "Activate Adrenal Venom for 120 minutes, giving your casts a 25% chance to increase your haste by 6% for 6 seconds, stacking 3 times.You can have a maximum of 2 unique Venoms active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805775,
+          "description": "Activate <span style=\"color: #ffffff; display: inline\">Adrenal Venom</span> for <span class=\"item-number\">120</span> minutes, giving your casts a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.<br /><br />You can have a maximum of <span class=\"item-number\">2</span> unique <span style=\"color: #ffffff; display: inline\">Venoms</span> active at a time."
+        }
+      ]
+    },
+    {
+      "id": 6090,
+      "name": "Avatar of Shadra",
+      "spellId": 503856,
+      "spellIds": [
+        503856
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_monsterspidercarapace_01",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6097,
+        6331,
+        29574
+      ],
+      "requiredIds": [],
+      "desc": "Damage and healing done now has a 10% chance to apply Curse of Shadra for 10 seconds.Dealing damage or healing with Serpent's Fang, Claw Strike, or Venom Fang on an enemy that is cursed will deal damage or heal them for an additional 25% of the value and heal you for 90.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503856,
+          "description": "Damage and healing done now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Curse of Shadra</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Dealing damage or healing with <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Claw Strike</span>, or <span style=\"color: #ffffff; display: inline\">Venom Fang</span> on an enemy that is cursed will deal damage or heal them for an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of the value and heal you for <span class=\"item-number\">90</span>."
+        }
+      ]
+    },
+    {
+      "id": 6095,
+      "name": "Versatile and Deadly",
+      "spellId": 681052,
+      "spellIds": [
+        681052,
+        681492
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_fishing_f_seascorpion3",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6116,
+        7252
+      ],
+      "requiredIds": [],
+      "desc": "Reduce all damage taken while in Beetle Form by -3% and increases your movement speed while in Spider Form by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681052,
+          "description": "Reduce all damage taken while in <span style=\"color: #ffffff; display: inline\">Beetle Form</span> by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> and increases your movement speed while in <span style=\"color: #ffffff; display: inline\">Spider Form</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 681492,
+          "description": "Reduce all damage taken while in <span style=\"color: #ffffff; display: inline\">Beetle Form</span> by <span class=\"item-number\">-6</span><span class=\"item-number\">%</span> and increases your movement speed while in <span style=\"color: #ffffff; display: inline\">Spider Form</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6096,
+      "name": "Blightcap Injestion",
+      "spellId": 560282,
+      "spellIds": [
+        560282
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Mushrooms_14",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7249
+      ],
+      "requiredIds": [],
+      "desc": "Increases your chance to resist poison and disease effects by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560282,
+          "description": "Increases your chance to resist poison and disease effects by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6097,
+      "name": "Fury of Shadra",
+      "spellId": 503850,
+      "spellIds": [
+        503850
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_PoisonCleansingTotem",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5571,
+        6079,
+        7953
+      ],
+      "requiredIds": [],
+      "desc": "Increases your damage and healing against targets below 35% health by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503850,
+          "description": "Increases your damage and healing against targets below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6098,
+      "name": "Fury of Anub'Rekhan",
+      "spellId": 800894,
+      "spellIds": [
+        800894
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_mechanicalspiderpet",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7248
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum mana, Energy, and Rage by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800894,
+          "description": "Increases your maximum mana, Energy, and Rage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6099,
+      "name": "Charmed Plating",
+      "spellId": 300974,
+      "spellIds": [
+        300974
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_MonsterScales_01",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6104,
+        7160,
+        7455,
+        29589
+      ],
+      "requiredIds": [],
+      "desc": "Reduces damage taken by all party and raid members by -3%. Does not stack with similar effects.In addition, reduces your chance to be hit by spells by -2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300974,
+          "description": "Reduces damage taken by all party and raid members by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, reduces your chance to be hit by spells by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6101,
+      "name": "Reinforced Exoskeleton",
+      "spellId": 706002,
+      "spellIds": [
+        706002,
+        707873
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_cloth_outdooremeralddream_d_01_cape",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12325
+      ],
+      "requiredIds": [],
+      "desc": "Increases your maximum health and your dodge chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706002,
+          "description": "Increases your maximum health and your dodge chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707873,
+          "description": "Increases your maximum health and your dodge chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6102,
+      "name": "Shadra's Gift",
+      "spellId": 503812,
+      "spellIds": [
+        503812
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_LiquidStone_Poison",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6103,
+        6108
+      ],
+      "requiredIds": [],
+      "desc": "Dealing damage with Barbed Stinger now increases the target's Nature damage taken by 5% for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503812,
+          "description": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Barbed Stinger</span> now increases the target's Nature damage taken by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6103,
+      "name": "Wicked Barbs",
+      "spellId": 504402,
+      "spellIds": [
+        504402
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_poisons",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6110,
+        30080
+      ],
+      "requiredIds": [],
+      "desc": "Your Barbed Stinger and Chitin Rush now applies Wicked Poison.Wicked PoisonDeals 60 + 5.67% shadow SP + 3.2% AP Shadow Damage every 2 sec for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504402,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Barbed Stinger</span> and <span style=\"color: #ffffff; display: inline\">Chitin Rush</span> now applies <span style=\"color: #ffffff; display: inline\">Wicked Poison</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_creature_poison_05\" /><span class=\"name\">Wicked Poison</span></div><span class=\"desc\">Deals <span class=\"item-number\">60</span> + <span class=\"item-number\">5.67% shadow SP</span> + <span class=\"item-number\">3.2% AP</span> Shadow Damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6107,
+      "name": "Vile Fury",
+      "spellId": 706006,
+      "spellIds": [
+        706006,
+        707874
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Spell_Nature_RemoveDisease",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12325
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Rage cost of Hivebreak and Carapace Crash by -3 and increases your chance to hit by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706006,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Hivebreak</span> and <span style=\"color: #FFFFFF; display: inline\">Carapace Crash</span> by <span class=\"item-number\">-3</span> and increases your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707874,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Hivebreak</span> and <span style=\"color: #FFFFFF; display: inline\">Carapace Crash</span> by <span class=\"item-number\">-6</span> and increases your chance to hit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6108,
+      "name": "Toxic Expulsion",
+      "spellId": 705959,
+      "spellIds": [
+        705959
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\rogue_venomzest",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12485,
+        30485
+      ],
+      "requiredIds": [],
+      "desc": "Hivebreak now consumes -2 sec of Venomtip Poison's duration to gush toxic slime, dealing 20 Nature damage to 5 enemies within 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705959,
+          "description": "<span style=\"color: #ffffff; display: inline\">Hivebreak</span> now consumes <span class=\"item-number\">-2</span> sec of <span style=\"color: #ffffff; display: inline\">Venomtip Poison's</span> duration to gush toxic slime, dealing <span class=\"item-number\">20</span> Nature damage to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 6110,
+      "name": "Wicked Poison",
+      "spellId": 705982,
+      "spellIds": [
+        705982
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Creature_Poison_05",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6104,
+        6843,
+        7455
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Chitin Rush, Carapace Crash, and Hivebreak now apply Wicked Poison.Wicked PoisonDeals 60 + 5.67% shadow SP + 3.2% AP Shadow Damage every 2 sec for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705982,
+          "description": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Chitin Rush</span>, <span style=\"color: #FFFFFF; display: inline\">Carapace Crash</span>, and <span style=\"color: #FFFFFF; display: inline\">Hivebreak</span> now apply <span style=\"color: #ffffff; display: inline\">Wicked Poison</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_creature_poison_05\" /><span class=\"name\">Wicked Poison</span></div><span class=\"desc\">Deals <span class=\"item-number\">60</span> + <span class=\"item-number\">5.67% shadow SP</span> + <span class=\"item-number\">3.2% AP</span> Shadow Damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6112,
+      "name": "Molt",
+      "spellId": 805102,
+      "spellIds": [
+        805102
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_skinning_80_hardenedtempesthide",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30499
+      ],
+      "requiredIds": [],
+      "desc": "Shatters your exoskeleton, instantly applying 15 stacks of Exposed Flesh and increasing your movement speed by 30% for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805102,
+          "description": "Shatters your exoskeleton, instantly applying <span class=\"item-number\">15</span> stacks of <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span> and increasing your movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6113,
+      "name": "Spider Lord",
+      "spellId": 704264,
+      "spellIds": [
+        704264
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\CryptLord",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6119
+      ],
+      "requiredIds": [],
+      "desc": "Augments Beetle Form into a Spider Lord, reducing damage taken by -5%, and while Locust Swarm is active your summons now gain 30% increased haste and damage.Casting Hivebreak now has a 40% chance, and melee auto attacks now have a 5% chance, to summon 1 Scarab to aid you in combat for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704264,
+          "description": "Augments <span style=\"color: #ffffff; display: inline\">Beetle Form</span> into a <span style=\"color: #ffffff; display: inline\">Spider Lord</span>, reducing damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, and while <span style=\"color: #ffffff; display: inline\">Locust Swarm</span> is active your summons now gain <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased haste and damage.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Hivebreak</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance, and melee auto attacks now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance, to summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Scarab</span> to aid you in combat for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6115,
+      "name": "Venomics",
+      "spellId": 705975,
+      "spellIds": [
+        705975
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_renewingmists",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6125,
+        30078
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Venoms by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705975,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Venoms</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6116,
+      "name": "Weakening Venom",
+      "spellId": 805778,
+      "spellIds": [
+        805778
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\trade_alchemy_dpotion_a23",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6117,
+        29588
+      ],
+      "requiredIds": [],
+      "desc": "Activate Weakening Venom for 120 minutes, giving your casts a 35% chance to deal 59 + 12.5% SP Shadow damage and reduce an enemy's attack power by 234 for 8 seconds.You can have a maximum of 2 unique Venoms active at a time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805778,
+          "description": "Activate <span style=\"color: #ffffff; display: inline\">Weakening Venom</span> for <span class=\"item-number\">120</span> minutes, giving your casts a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">59</span> + <span class=\"item-number\">12.5% SP</span> Shadow damage and reduce an enemy's attack power by <span class=\"item-number\">234</span> for <span class=\"item-number\">8</span> seconds.<br /><br />You can have a maximum of <span class=\"item-number\">2</span> unique <span style=\"color: #ffffff; display: inline\">Venoms</span> active at a time."
+        }
+      ]
+    },
+    {
+      "id": 6117,
+      "name": "Genesis",
+      "spellId": 705962,
+      "spellIds": [
+        705962
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_venom_spell_08_Border",
+      "x": 3,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6082
+      ],
+      "requiredIds": [],
+      "desc": "Increases your haste by 4%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705962,
+          "description": "Increases your haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6118,
+      "name": "Tranquil Essence",
+      "spellId": 504799,
+      "spellIds": [
+        504799,
+        505204
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ui_notoriety_thevizier",
+      "x": 8,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7722
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the threat generated by your healing spells by -10% and increases your periodic healing by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504799,
+          "description": "Reduces the threat generated by your healing spells by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and increases your periodic healing by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 505204,
+          "description": "Reduces the threat generated by your healing spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and increases your periodic healing by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6119,
+      "name": "Locust Swarm",
+      "spellId": 560247,
+      "spellIds": [
+        560247
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_D3locustswarm",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7166
+      ],
+      "requiredIds": [],
+      "desc": "Leeches 67 + 10% SP + 3% AP health from nearby enemies every 2 sec for 10 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560247,
+          "description": "Leeches <span class=\"item-number\">67</span> + <span class=\"item-number\">10% SP</span> + <span class=\"item-number\">3% AP</span> health from nearby enemies every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6120,
+      "name": "Agitation",
+      "spellId": 705969,
+      "spellIds": [
+        705969
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_beetlemount",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6101
+      ],
+      "requiredIds": [],
+      "desc": "Dodging an attack now generates 3 Rage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705969,
+          "description": "Dodging an attack now generates <span class=\"item-number\">3</span> Rage."
+        }
+      ]
+    },
+    {
+      "id": 6122,
+      "name": "Enchanted Chitin",
+      "spellId": 706955,
+      "spellIds": [
+        706955,
+        707872
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_inscription_pigment_bug06",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12325
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Armor contribution from mail by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706955,
+          "description": "Increases your Armor contribution from mail by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707872,
+          "description": "Increases your Armor contribution from mail by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6125,
+      "name": "Charm of Warding",
+      "spellId": 705967,
+      "spellIds": [
+        705967
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Trinket_Naxxramas01",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6099,
+        7452
+      ],
+      "requiredIds": [],
+      "desc": "When a stack of Exposed Flesh is applied you are now healed for 1% of your maximum health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705967,
+          "description": "When a stack of <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span> is applied you are now healed for <span class=\"item-number\">1</span><span class=\"item-number\">%</span> of your maximum health."
+        }
+      ]
+    },
+    {
+      "id": 6128,
+      "name": "Soothing Venoms",
+      "spellId": 707726,
+      "spellIds": [
+        707726,
+        707869
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\ability_hunter_potentvenom",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29591
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical healing of Shadra's Prayer by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707726,
+          "description": "Increases the critical healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707869,
+          "description": "Increases the critical healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6130,
+      "name": "A Pit of Snakes",
+      "spellId": 706007,
+      "spellIds": [
+        706007
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_snake_yellowblack",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5215,
+        6646
+      ],
+      "requiredIds": [],
+      "desc": "Serpent's Fang now increases the damage of subsequent Serpent's Fangs by 15% for 8 seconds, stacking up to 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706007,
+          "description": "<span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now increases the damage of subsequent <span style=\"color: #FFFFFF; display: inline\">Serpent's Fangs</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking up to <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6131,
+      "name": "Venom Saturation",
+      "spellId": 804984,
+      "spellIds": [
+        804984
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_CorrosiveBreath",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6130,
+        6143,
+        6685
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of your poison effects by 25% against enemies above 50% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804984,
+          "description": "Increases the damage of your poison effects by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> against enemies above <span class=\"item-number\">50%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 6132,
+      "name": "Spirit of the Jungle",
+      "spellId": 681048,
+      "spellIds": [
+        681048
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_zone_tanaanjungle",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7732,
+        7738
+      ],
+      "requiredIds": [],
+      "desc": "Increases the proc chance of Rejuvenating Venom by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681048,
+          "description": "Increases the proc chance of <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6133,
+      "name": "Toxic Communion",
+      "spellId": 680767,
+      "spellIds": [
+        680767
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureunity_Border",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6132,
+        7723
+      ],
+      "requiredIds": [],
+      "desc": "Extend the duration of Shadra's Balm and Mending Mist by 15 sec on all allies within 30 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680767,
+          "description": "Extend the duration of <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> and <span style=\"color: #ffffff; display: inline\">Mending Mist</span> by <span class=\"item-number\">15</span> sec on all allies within <span class=\"item-number\">30</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 6137,
+      "name": "Fungal Growth",
+      "spellId": 804987,
+      "spellIds": [
+        804987
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_starspecklemushroom",
+      "x": 4,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30606
+      ],
+      "requiredIds": [],
+      "desc": "Shadow and Nature damage dealt now has a 35% chance to increase periodic damage you deal to the target by 2% for 30 seconds, stacking 10 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804987,
+          "description": "Shadow and Nature damage dealt now has a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to increase periodic damage you deal to the target by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">10</span> times."
+        }
+      ]
+    },
+    {
+      "id": 6138,
+      "name": "Envenom",
+      "spellId": 805900,
+      "spellIds": [
+        805900
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_venom_spell_01_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6687
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Venom Bolt by -0.3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805900,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Venom Bolt</span> by <span class=\"item-number\">-0.3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6139,
+      "name": "Serpent Lord's Ritual",
+      "spellId": 706018,
+      "spellIds": [
+        706018
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_monk_summonserpentstatue",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29596
+      ],
+      "requiredIds": [],
+      "desc": "Direct healing done now has a 5% chance to grant you 5 sec of Serpent Lord's Amulet.Serpent Lord&#39;s AmuletDraw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706018,
+          "description": "Direct healing done now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span class=\"item-number\">5</span> sec of <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helm_cloth_zandalardungeon_c_01\" /><span class=\"name\">Serpent Lord&#39;s Amulet</span></div><span class=\"desc\">Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>, increasing your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6140,
+      "name": "Advisor's Perfidy",
+      "spellId": 300684,
+      "spellIds": [
+        300684,
+        300685
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\Achievement_AQ_BugTrio",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6132
+      ],
+      "requiredIds": [],
+      "desc": "Increases the bonus healing scaling of Serpent's Fang, Mending Mist, and Shadra's Balm by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300684,
+          "description": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Mending Mist</span>, and <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 300685,
+          "description": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Mending Mist</span>, and <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6141,
+      "name": "Ritualistic",
+      "spellId": 503918,
+      "spellIds": [
+        503918
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_SpiritualSummoning_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7223
+      ],
+      "requiredIds": [],
+      "desc": "Casting Green Salve now also refunds you 20% of your base mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503918,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> now also refunds you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your base mana."
+        }
+      ]
+    },
+    {
+      "id": 6142,
+      "name": "Prophetic Speaker",
+      "spellId": 706956,
+      "spellIds": [
+        706956
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_AzjolLowercity_Heroic",
+      "x": 3,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6552,
+        7123
+      ],
+      "requiredIds": [],
+      "desc": "Each time you spawn a Mushroom, you now reduce the cooldown of Decay by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706956,
+          "description": "Each time you spawn a <span style=\"color: #ffffff; display: inline\">Mushroom</span>, you now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Decay</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6143,
+      "name": "Necessary Preparations",
+      "spellId": 503919,
+      "spellIds": [
+        503919
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SacrificialDagger_Unholy",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5215,
+        29584
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Wilt by 20% and it now increases the chance to hit the target with spells by 3% for 20 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503919,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wilt</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and it now increases the chance to hit the target with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6144,
+      "name": "Blistering Fangs",
+      "spellId": 706270,
+      "spellIds": [
+        706270
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_monsterfang_02",
+      "x": 6,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4394,
+        30975
+      ],
+      "requiredIds": [],
+      "desc": "Casting spells that consume Brood Marks now refunds 30 Energy when used with at least 5 Brood Marks on your target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706270,
+          "description": "Casting spells that consume <span style=\"color: #66ff66; display: inline\">Brood Marks</span> now refunds <span class=\"item-number\">30</span> Energy when used with at least <span class=\"item-number\">5</span> <span style=\"color: #66ff66; display: inline\">Brood Marks</span> on your target."
+        }
+      ]
+    },
+    {
+      "id": 6146,
+      "name": "Tunneler",
+      "spellId": 630932,
+      "spellIds": [
+        630932
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_55_bug_Border",
+      "x": 6,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29582,
+        6341
+      ],
+      "requiredIds": [],
+      "desc": "Your Spindlebind now has 2 charges, a 25 sec cooldown, and deals increased damage.Spindlebind (Tunneler)2 Charges, 25 sec rechargeCommand a tunnel beetle to attack your target from below, inflicting 159 + 65% nature SP Nature damage and rooting them for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 630932,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Spindlebind</span> now has <span class=\"item-number\">2</span> charges, a <span class=\"item-number\">25</span> sec cooldown, and deals increased damage.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_poisonweb_border\" /><span class=\"name\">Spindlebind (Tunneler)</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">25</span> sec recharge</span><br />Command a tunnel beetle to attack your target from below, inflicting <span class=\"item-number\">159</span> + <span class=\"item-number\">65% nature SP</span> Nature damage and rooting them for <span class=\"item-number\">4</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6148,
+      "name": "Rotting Sores",
+      "spellId": 807601,
+      "spellIds": [
+        807601
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_creature_poison_06",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30975
+      ],
+      "requiredIds": [],
+      "desc": "Increases the tick rate of Rotfang by -20% and allows its periodic damage dealt to critically strike.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807601,
+          "description": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Rotfang</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and allows its periodic damage dealt to critically strike."
+        }
+      ]
+    },
+    {
+      "id": 6324,
+      "name": "Blight Antidote",
+      "spellId": 520153,
+      "spellIds": [
+        520153
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Potions_02",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5291,
+        6607
+      ],
+      "requiredIds": [],
+      "desc": "Inject an ally with a powerful magic antidote, dispelling 2 curse effects from them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 520153,
+          "description": "Inject an ally with a powerful magic antidote, dispelling <span class=\"item-number\">2</span> curse effects from them."
+        }
+      ]
+    },
+    {
+      "id": 6331,
+      "name": "Surprise Strategy",
+      "spellId": 706035,
+      "spellIds": [
+        706035
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_fixated_state_green",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6079,
+        9590
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes now have a 15% chance to increase the healing of your next Shadra's Prayer by 20% and make it instant cast for 10 seconds.Can only occur once per 5 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706035,
+          "description": "Critical strikes now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and make it instant cast for <span class=\"item-number\">10</span> seconds.<br /><br />Can only occur once per <span class=\"item-number\">5</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6341,
+      "name": "Lethality",
+      "spellId": 503852,
+      "spellIds": [
+        503852
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_poisonbottle_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6148
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Widow's Kiss on Diseased targets by 30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503852,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Widow's Kiss</span> on <span style=\"color: #7fff00; display: inline\">Diseased</span> targets by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6342,
+      "name": "Shadra's Seance",
+      "spellId": 300678,
+      "spellIds": [
+        300678
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_HealingSwirl_Border",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30464
+      ],
+      "requiredIds": [],
+      "desc": "Facemelter now ticks -20% faster and the duration is increased by 6 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300678,
+          "description": "<span style=\"color: #ffffff; display: inline\">Facemelter</span> now ticks <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster and the duration is increased by <span class=\"item-number\">6</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6552,
+      "name": "Septic Trauma",
+      "spellId": 504361,
+      "spellIds": [
+        504361
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_deviouspoisons",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6143,
+        7726
+      ],
+      "requiredIds": [],
+      "desc": "Harmful critical strikes now increase the duration of Wilt by 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504361,
+          "description": "Harmful critical strikes now increase the duration of <span style=\"color: #ffffff; display: inline\">Wilt</span> by <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 6553,
+      "name": "Toxic Stride",
+      "spellId": 504347,
+      "spellIds": [
+        504347
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturepoisonedstep_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6331
+      ],
+      "requiredIds": [],
+      "desc": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504347,
+          "description": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 6605,
+      "name": "Sporelord",
+      "spellId": 804989,
+      "spellIds": [
+        804989
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_mushroom_02",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7727
+      ],
+      "requiredIds": [],
+      "desc": "Fungal Assailant now spawns 3 Mushrooms below the target.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804989,
+          "description": "<span style=\"color: #ffffff; display: inline\">Fungal Assailant</span> now spawns <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Mushrooms</span> below the target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 druid_ability_wildmushroom_b\" /><span class=\"name\">Mushroom (dmg)</span></div><span class=\"desc\">Drop a <span style=\"color: #ffffff; display: inline\">Mushroom</span> near the target that explodes after <span class=\"item-number\">2</span> sec, dealing <span class=\"item-number\">303</span> + <span class=\"item-number\">35% SP</span> Plague Damage to all nearby enemies.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6607,
+      "name": "Bountiful Gifts",
+      "spellId": 706009,
+      "spellIds": [
+        706009,
+        706010
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\nhi_natureseye_Border",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7735,
+        11735
+      ],
+      "requiredIds": [],
+      "desc": "Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706009,
+          "description": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span>, <span style=\"color: #ffffff; display: inline\">Green Salve</span>, and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 706010,
+          "description": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span>, <span style=\"color: #ffffff; display: inline\">Green Salve</span>, and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6646,
+      "name": "Serpent's Embrace",
+      "spellId": 560194,
+      "spellIds": [
+        560194,
+        561349
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\5_sumsnakearmy_Border",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6138
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Serpent's Fang and its spell power scaling by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560194,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> and its spell power scaling by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 561349,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> and its spell power scaling by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6685,
+      "name": "Sepsis Bloom",
+      "spellId": 504867,
+      "spellIds": [
+        504867
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_natureroots_Border",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5215
+      ],
+      "requiredIds": [],
+      "desc": "Create pustules that swell and then burst, disorienting a target enemy for 6 seconds.All of your Venomancer poison effects are purged from the target, dealing damage equal to their remaining duration at the end of the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504867,
+          "description": "Create pustules that swell and then burst, disorienting a target enemy for <span class=\"item-number\">6</span> seconds.<br /><br />All of your Venomancer poison effects are purged from the target, dealing damage equal to their remaining duration at the end of the duration."
+        }
+      ]
+    },
+    {
+      "id": 6687,
+      "name": "Acid Bolt",
+      "spellId": 706025,
+      "spellIds": [
+        706025,
+        707870,
+        712480
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 3,
+      "icon": "Interface\\Icons\\inv_alchemy_90_reagent_green",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30606
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Venom Bolt by 10% and its critical strike chance by 2%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706025,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Venom Bolt</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707870,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Venom Bolt</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and its critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 3,
+          "spellId": 712480,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Venom Bolt</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and its critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 6756,
+      "name": "Pinch",
+      "spellId": 704235,
+      "spellIds": [
+        704235
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_monsterclaw_10",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6095,
+        7237
+      ],
+      "requiredIds": [],
+      "desc": "Disarm an enemy's melee weapons with your claws for 5 seconds and apply Weakening Venom to them for 10 sec.Weakening Venom (Proc)Deals 59 + 12.5% SP Shadow Damage and reduces attack power by 23.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 704235,
+          "description": "Disarm an enemy's melee weapons with your claws for <span class=\"item-number\">5</span> seconds and apply <span style=\"color: #ffffff; display: inline\">Weakening Venom</span> to them for <span class=\"item-number\">10</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a23\" /><span class=\"name\">Weakening Venom (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">59</span> + <span class=\"item-number\">12.5% SP</span> Shadow Damage and reduces attack power by <span class=\"item-number\">23</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 6842,
+      "name": "Infestation",
+      "spellId": 706030,
+      "spellIds": [
+        706030
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_herb_evergreenmoss",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6130,
+        7210
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 10% chance to reduce the cooldown of Serpent's Fang and Fungal Assailant by 20% of the remaining cooldown.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706030,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> and <span style=\"color: #ffffff; display: inline\">Fungal Assailant</span> by <span class=\"item-number\">20%</span> of the remaining cooldown."
+        }
+      ]
+    },
+    {
+      "id": 6843,
+      "name": "Natural Weapons",
+      "spellId": 504393,
+      "spellIds": [
+        504393
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_felsaber_claw",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7170,
+        30793
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of all Beetle Form abilities by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504393,
+          "description": "Increases the critical strike chance of all <span style=\"color: #FFFFFF; display: inline\">Beetle Form</span> abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7120,
+      "name": "Widow's Watch",
+      "spellId": 706014,
+      "spellIds": [
+        706014
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Druid_ManaTree",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6607
+      ],
+      "requiredIds": [],
+      "desc": "Allies affected by Shadra's Balm now have a 20% increased chance to resist poison and curse effects.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706014,
+          "description": "Allies affected by <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased chance to resist poison and curse effects."
+        }
+      ]
+    },
+    {
+      "id": 7121,
+      "name": "Ophidian Renewal",
+      "spellId": 706938,
+      "spellIds": [
+        706938
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureentagle_Border",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6133,
+        6140
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Shadra's Balm and Mending Mist and Shadra's Prayer by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706938,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> and <span style=\"color: #ffffff; display: inline\">Mending Mist</span> and <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7122,
+      "name": "Shadra's Presence",
+      "spellId": 504348,
+      "spellIds": [
+        504348
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_plaguefall_dominavenomblade",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5291,
+        7723,
+        30749
+      ],
+      "requiredIds": [],
+      "desc": "Allies within 100 yds receive 6% more healing. Does not stack with similar effects.In addition, your Antivenom now dispels 1 additional effect.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504348,
+          "description": "Allies within <span class=\"item-number\">100</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> more healing. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Antivenom</span> now dispels <span class=\"item-number\">1</span> additional effect."
+        }
+      ]
+    },
+    {
+      "id": 7123,
+      "name": "Fungal Link",
+      "spellId": 300959,
+      "spellIds": [
+        300959
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Mushrooms_18",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6131
+      ],
+      "requiredIds": [],
+      "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Rot spells is increased by 20% and the threat they generate is reduced by -20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300959,
+          "description": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, the range of your Rot spells is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and the threat they generate is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7124,
+      "name": "Mycelial Synchronization",
+      "spellId": 504356,
+      "spellIds": [
+        504356
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_NatureTouchGrow",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30073
+      ],
+      "requiredIds": [],
+      "desc": "Casting Shadra's Aid on an ally now also casts it on yourself.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504356,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Shadra's Aid</span> on an ally now also casts it on yourself."
+        }
+      ]
+    },
+    {
+      "id": 7147,
+      "name": "Venomancy Expert",
+      "spellId": 706027,
+      "spellIds": [
+        706027
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_warlock_infernogreen",
+      "x": 2,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6098,
+        6756
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of all spells and abilities by -5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706027,
+          "description": "Reduces the cost of all spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7152,
+      "name": "Withering Venom",
+      "spellId": 706962,
+      "spellIds": [
+        706962
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Creature_Disease_03",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31201
+      ],
+      "requiredIds": [],
+      "desc": "Inject an enemy with a devastating venom, dealing 16 + 20% nature SP Nature damage every 3 sec for 21 seconds. Damage is dealt slowly at first, and builds up over time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706962,
+          "description": "Inject an enemy with a devastating venom, dealing <span class=\"item-number\">16</span> + <span class=\"item-number\">20% nature SP</span> Nature damage every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">21</span> seconds. Damage is dealt slowly at first, and builds up over time."
+        }
+      ]
+    },
+    {
+      "id": 7166,
+      "name": "Cover",
+      "spellId": 300680,
+      "spellIds": [
+        300680
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_chitin_b_01_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6106,
+        7169,
+        19106,
+        30081
+      ],
+      "requiredIds": [],
+      "desc": "Casting Harden now clears Exposed Flesh.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300680,
+          "description": "Casting <span style=\"color: #FFFFFF; display: inline\">Harden</span> now clears <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span>."
+        }
+      ]
+    },
+    {
+      "id": 7169,
+      "name": "Impale",
+      "spellId": 560248,
+      "spellIds": [
+        560248
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\impale",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6104,
+        7455
+      ],
+      "requiredIds": [],
+      "desc": "Fire spikes through the floor impaling all enemies in a 15 yd line for 83 + 51.07% shadow SP Shadow damage and stunning them for 3.5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560248,
+          "description": "Fire spikes through the floor impaling all enemies in a <span class=\"item-number\">15</span> yd line for <span class=\"item-number\">83</span> + <span class=\"item-number\">51.07% shadow SP</span> Shadow damage and stunning them for <span class=\"item-number\">3.5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7170,
+      "name": "Regrow Exoskeleton",
+      "spellId": 803197,
+      "spellIds": [
+        803197
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_stave_2h_pvppandarias2_c_03green",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6101,
+        6107,
+        6122
+      ],
+      "requiredIds": [],
+      "desc": "Clears Exposed Flesh stacks to reduce your damage taken by -20% for 5 seconds and an additional 1 sec per stack.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803197,
+          "description": "Clears <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span> stacks to reduce your damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds and an additional <span class=\"item-number\">1</span> sec per stack."
+        }
+      ]
+    },
+    {
+      "id": 7177,
+      "name": "Regenerative Properties",
+      "spellId": 803210,
+      "spellIds": [
+        803210
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_skinning_80_snakescales",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30084
+      ],
+      "requiredIds": [],
+      "desc": "Reduces all damage taken by -5%, but damage taken now has a 10% chance to shatter your exoskeleton, removing this damage reduction effect.When your exoskeleton shatters you regenerate 12% of your maximum health over 12 seconds, after this duration your exoskeleton regenerates.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803210,
+          "description": "Reduces all damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, but damage taken now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to shatter your exoskeleton, removing this damage reduction effect.<br /><br />When your exoskeleton shatters you regenerate <span class=\"item-number\">12</span><span class=\"item-number\">%</span> of your maximum health over <span class=\"item-number\">12</span> seconds, after this duration your exoskeleton regenerates."
+        }
+      ]
+    },
+    {
+      "id": 7188,
+      "name": "Brood Lord",
+      "spellId": 707668,
+      "spellIds": [
+        707668
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_WebSight",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7189,
+        7264,
+        30469
+      ],
+      "requiredIds": [],
+      "desc": "Augments Spider Form into a Brood Lord, causing your Brood Mark spenders to launch webs at the target, sticking to them for 10 seconds.Each webbed target has their movement speed slowed by -25%.Critically striking an enemy who is webbed summons 1 to 2 Spiderlings to aid you in combat for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707668,
+          "description": "Augments <span style=\"color: #ffffff; display: inline\">Spider Form</span> into a <span style=\"color: #ffffff; display: inline\">Brood Lord</span>, causing your <span style=\"color: #66ff66; display: inline\">Brood Mark</span> spenders to launch webs at the target, sticking to them for <span class=\"item-number\">10</span> seconds.<br /><br />Each webbed target has their movement speed slowed by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.<br /><br />Critically striking an enemy who is webbed summons <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Spiderlings</span> to aid you in combat for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7189,
+      "name": "Venomous Bite",
+      "spellId": 630900,
+      "spellIds": [
+        630900
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Poisons",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7190,
+        29586
+      ],
+      "requiredIds": [],
+      "desc": "Increases the amount of times Brood Marks can stack by 2.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 630900,
+          "description": "Increases the amount of times <span style=\"color: #66ff66; display: inline\">Brood Marks</span> can stack by <span class=\"item-number\">2</span>."
+        }
+      ]
+    },
+    {
+      "id": 7190,
+      "name": "Contagion",
+      "spellId": 503851,
+      "spellIds": [
+        503851
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_poisonwhirl_Border",
+      "x": 2,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6342,
+        7192
+      ],
+      "requiredIds": [],
+      "desc": "For 15 seconds, all periodic damage dealt now has a 30% chance to burst dealing 92 + 20% shadow SP Shadow damage to 8 enemies within 8 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503851,
+          "description": "For <span class=\"item-number\">15</span> seconds, all periodic damage dealt now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to burst dealing <span class=\"item-number\">92</span> + <span class=\"item-number\">20% shadow SP</span> Shadow damage to <span class=\"item-number\">8</span> enemies within <span class=\"item-number\">8</span> yds."
+        }
+      ]
+    },
+    {
+      "id": 7191,
+      "name": "Bile Eruption",
+      "spellId": 500230,
+      "spellIds": [
+        500230
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_poisonblister_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7192,
+        7204,
+        11804,
+        29582
+      ],
+      "requiredIds": [],
+      "desc": "Triggering a Venom now has a 25% chance to generate you 5 Energy.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 500230,
+          "description": "Triggering a <span style=\"color: #ffffff; display: inline\">Venom</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to generate you <span class=\"item-number\">5</span> Energy."
+        }
+      ]
+    },
+    {
+      "id": 7192,
+      "name": "Virulent Opening",
+      "spellId": 574353,
+      "spellIds": [
+        574353
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_dungeon_plaguefall_dominavenomblade",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29577,
+        30473
+      ],
+      "requiredIds": [],
+      "desc": "Increases the periodic damage dealt by your Facemelter and Rotfang by 30% while the enemy is above 75% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 574353,
+          "description": "Increases the periodic damage dealt by your <span style=\"color: #ffffff; display: inline\">Facemelter</span> and <span style=\"color: #ffffff; display: inline\">Rotfang</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> while the enemy is above <span class=\"item-number\">75%</span> health."
+        }
+      ]
+    },
+    {
+      "id": 7195,
+      "name": "Serpent Lord",
+      "spellId": 805104,
+      "spellIds": [
+        805104
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_giantsnake_green",
+      "x": 2,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7189
+      ],
+      "requiredIds": [],
+      "desc": "Augments Spider Form into a Serpent Lord, giving some of your Spider Form abilities a 1 second cast time and 10 yds of increased range.Damage is increased when attacking an enemy past 10 yds by 30% and spell pushback from enemy attacks is reduced by 50%.Increases the damage of Withering Venom by 50% and causes it to create a Miasma.Miasma (Talent)Create an 8 yd cloud of poison at a location for 12 seconds, causing 57 + 12.5% nature SP Nature Damage to 8 enemies within it every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805104,
+          "description": "Augments <span style=\"color: #ffffff; display: inline\">Spider Form</span> into a <span style=\"color: #ffffff; display: inline\">Serpent Lord</span>, giving some of your Spider Form abilities a <span class=\"item-number\">1</span> second cast time and <span class=\"item-number\">10</span> yds of increased range.<br /><br />Damage is increased when attacking an enemy past <span class=\"item-number\">10</span> yds by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and spell pushback from enemy attacks is reduced by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.<br /><br />Increases the damage of <span style=\"color: #ffffff; display: inline\">Withering Venom</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and causes it to create a <span style=\"color: #ffffff; display: inline\">Miasma</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _curse_green\" /><span class=\"name\">Miasma (Talent)</span></div><span class=\"desc\">Create an <span class=\"item-number\">8</span> yd cloud of poison at a location for <span class=\"item-number\">12</span> seconds, causing <span class=\"item-number\">57</span> + <span class=\"item-number\">12.5% nature SP</span> Nature Damage to <span class=\"item-number\">8</span> enemies within it every <span class=\"item-number\">2</span> sec.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7210,
+      "name": "Fungal Assailant",
+      "spellId": 504344,
+      "spellIds": [
+        504344
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_fungarian_blue",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6646,
+        7724
+      ],
+      "requiredIds": [],
+      "desc": "Summon a Fungarian to attack an enemy, dealing 226 + 65% SP Nature damage, and instantly apply Debilitating Venom to your target. Lasts 20 seconds.Debilitating Venom (Slow)Movement speed slowed by -40% for 8 seconds.Can be used in any form.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504344,
+          "description": "Summon a <span style=\"color: #ffffff; display: inline\">Fungarian</span> to attack an enemy, dealing <span class=\"item-number\">226</span> + <span class=\"item-number\">65% SP</span> Nature damage, and instantly apply <span style=\"color: #ffffff; display: inline\">Debilitating Venom</span> to your target. Lasts <span class=\"item-number\">20</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a22\" /><span class=\"name\">Debilitating Venom (Slow)</span></div><span class=\"desc\">Movement speed slowed by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div><br /><br />Can be used in any form."
+        }
+      ]
+    },
+    {
+      "id": 7219,
+      "name": "Protraction",
+      "spellId": 706942,
+      "spellIds": [
+        706942,
+        707871
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NaturePortal_Border",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30606
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Venomancer periodic damage effects by 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706942,
+          "description": "Increases the duration of your Venomancer periodic damage effects by <span class=\"item-number\">3</span> sec."
+        },
+        {
+          "rank": 2,
+          "spellId": 707871,
+          "description": "Increases the duration of your Venomancer periodic damage effects by <span class=\"item-number\">6</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 7221,
+      "name": "Mycelial Ring",
+      "spellId": 681056,
+      "spellIds": [
+        681056
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_Mushrooms_02",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6142,
+        7728
+      ],
+      "requiredIds": [],
+      "desc": "Create an 8 yd ring beneath you for 10 seconds that deals 59 Nature damage every 1 sec to enemies inside and immediately grows 12 Mushrooms in a circle around you.At the end of the duration, up to 15 allies inside are healed for 845 + 65% nature SP.Can be used in any form.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681056,
+          "description": "Create an <span class=\"item-number\">8</span> yd ring beneath you for <span class=\"item-number\">10</span> seconds that deals <span class=\"item-number\">59</span> Nature damage every <span class=\"item-number\">1</span> sec to enemies inside and immediately grows <span class=\"item-number\">12</span> <span style=\"color: #ffffff; display: inline\">Mushrooms</span> in a circle around you.<br /><br />At the end of the duration, up to <span class=\"item-number\">15</span> allies inside are healed for <span class=\"item-number\">845</span> + <span class=\"item-number\">65% nature SP</span>.<br /><br />Can be used in any form.<br />"
+        }
+      ]
+    },
+    {
+      "id": 7222,
+      "name": "Lethargy",
+      "spellId": 573307,
+      "spellIds": [
+        573307
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Shadow_PlagueCloud",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29575,
+        9575
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by your Wilt now applies Lethargy to affected enemies.Lethargy (Dummy)Reduces an enemy's chance to hit by -3% and increases their Nature Damage taken from you by 5% for 8 seconds.Dispelling this effect increases the dispeller's resource costs by 100% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 573307,
+          "description": "Damage dealt by your <span style=\"color: #FFFFFF; display: inline\">Wilt</span> now applies <span style=\"color: #ffffff; display: inline\">Lethargy</span> to affected enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_plaguecloud\" /><span class=\"name\">Lethargy (Dummy)</span></div><span class=\"desc\">Reduces an enemy's chance to hit by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> and increases their Nature Damage taken from you by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Dispelling this effect increases the dispeller's resource costs by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7223,
+      "name": "Shadra's Gift",
+      "spellId": 706937,
+      "spellIds": [
+        706937,
+        707868
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\spell_druid_symbiosis",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1788
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time of Shadra's Prayer by -10% and your spell pushback suffered from damaging attacks by 35%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706937,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and your spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 707868,
+          "description": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and your spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7225,
+      "name": "Fungal Allies",
+      "spellId": 681054,
+      "spellIds": [
+        681054
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_Border",
+      "x": 7,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7731,
+        30481
+      ],
+      "requiredIds": [],
+      "desc": "Fungal Assailant now summons 2 additional Fungarians.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681054,
+          "description": "<span style=\"color: #ffffff; display: inline\">Fungal Assailant</span> now summons <span class=\"item-number\">2</span> additional <span style=\"color: #ffffff; display: inline\">Fungarians</span>."
+        }
+      ]
+    },
+    {
+      "id": 7229,
+      "name": "Hive Instinct",
+      "spellId": 804968,
+      "spellIds": [
+        804968
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_pet_shalespider",
+      "x": 1,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "The swarm stirs within you, preparing you for battle, instantly generating 100 Rage or Energy.Usable while Skulking.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804968,
+          "description": "The swarm stirs within you, preparing you for battle, instantly generating <span class=\"item-number\">100</span> Rage or Energy.<br /><br />Usable while <span style=\"color: #ffffff; display: inline\">Skulking</span>."
+        }
+      ]
+    },
+    {
+      "id": 7231,
+      "name": "Venomizer",
+      "spellId": 680794,
+      "spellIds": [
+        680794
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_venom_spell_06_Border",
+      "x": 8,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6086
+      ],
+      "requiredIds": [],
+      "desc": "Increases the proc chance of all Venoms by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680794,
+          "description": "Increases the proc chance of all <span style=\"color: #ffffff; display: inline\">Venoms</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7235,
+      "name": "Tome of Ahn'kahet",
+      "spellId": 705993,
+      "spellIds": [
+        705993
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_Book4_Purple",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7249,
+        7252
+      ],
+      "requiredIds": [],
+      "desc": "Damage and effective healing done now has an 8% chance to grant Tome of Ahn'kahet for 15 seconds.Tome of Ahn&#39;kahetThe next spell has its costs reduced by -100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705993,
+          "description": "Damage and effective healing done now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to grant <span style=\"color: #ffffff; display: inline\">Tome of Ahn'kahet</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _book4_purple\" /><span class=\"name\">Tome of Ahn&#39;kahet</span></div><span class=\"desc\">The next spell has its costs reduced by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7237,
+      "name": "Chitinous Spikes",
+      "spellId": 504406,
+      "spellIds": [
+        504406
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_PoisonSpikes_Border",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6116
+      ],
+      "requiredIds": [],
+      "desc": "Taking direct damage has a 20% chance to retaliate for 5% of the damage taken.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504406,
+          "description": "Taking direct damage has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to retaliate for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage taken."
+        }
+      ]
+    },
+    {
+      "id": 7241,
+      "name": "Hallucinogenic Venom",
+      "spellId": 560188,
+      "spellIds": [
+        560188
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_inscription_pigment_bug07",
+      "x": 5,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30482
+      ],
+      "requiredIds": [],
+      "desc": "Allows 50% of your mana to regenerate while in combat.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560188,
+          "description": "Allows <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your mana to regenerate while in combat."
+        }
+      ]
+    },
+    {
+      "id": 7242,
+      "name": "Shadra's Lair",
+      "spellId": 804978,
+      "spellIds": [
+        804978
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_spiderweb_b_01",
+      "x": 1,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6097
+      ],
+      "requiredIds": [],
+      "desc": "Designate the area around you as your Lair for 8 seconds. Enemies are unable to target into or out of the Lair and their movement speed is slowed by -60%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804978,
+          "description": "Designate the area around you as your <span style=\"color: #FFFFFF; display: inline\">Lair</span> for <span class=\"item-number\">8</span> seconds. <br /><br />Enemies are unable to target into or out of the <span style=\"color: #ffffff; display: inline\">Lair</span> and their movement speed is slowed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7247,
+      "name": "Master of Venoms",
+      "spellId": 504326,
+      "spellIds": [
+        504326
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\rogue_venomzest",
+      "x": 6,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6086,
+        29576
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of your Venoms by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504326,
+          "description": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Venoms</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7248,
+      "name": "Skin Shedder",
+      "spellId": 705949,
+      "spellIds": [
+        705949
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_MoonGlow",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7252
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cost of shapeshift spells by -50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705949,
+          "description": "Reduces the cost of shapeshift spells by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 7249,
+      "name": "Shadra's Balm",
+      "spellId": 800901,
+      "spellIds": [
+        800901
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_naturepotion_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6118,
+        7241
+      ],
+      "requiredIds": [],
+      "desc": "Envelop an ally with a restorative balm, healing them for 14 + 25.17% healing every 3 sec for 18 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800901,
+          "description": "Envelop an ally with a restorative balm, healing them for <span class=\"item-number\">14</span> + <span class=\"item-number\">25.17% healing</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7252,
+      "name": "Spindlebind",
+      "spellId": 800887,
+      "spellIds": [
+        800887
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_poisonweb_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6117,
+        7241
+      ],
+      "requiredIds": [],
+      "desc": "Emit webs at all enemies behind you, rooting them for 4 seconds and inflicting 61 + 40% nature SP Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800887,
+          "description": "Emit webs at all enemies behind you, rooting them for <span class=\"item-number\">4</span> seconds and inflicting <span class=\"item-number\">61</span> + <span class=\"item-number\">40% nature SP</span> Nature damage."
+        }
+      ]
+    },
+    {
+      "id": 7263,
+      "name": "Potency",
+      "spellId": 503854,
+      "spellIds": [
+        503854
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_knife_1h_artifactfangs_d_02dual",
+      "x": 3,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30863
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Venom Fang by 15% and causes it to increase the target's chance to be critically struck by spells by 3% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503854,
+          "description": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Venom Fang</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and causes it to increase the target's chance to be critically struck by spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7264,
+      "name": "One Man's Poison...",
+      "spellId": 503799,
+      "spellIds": [
+        503799
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_deviouspoisons",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6146,
+        7190,
+        7191
+      ],
+      "requiredIds": [],
+      "desc": "Casting spells that consume Brood Marks now has a -25% chance to refund their Brood Mark cost.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503799,
+          "description": "Casting spells that consume <span style=\"color: #66ff66; display: inline\">Brood Marks</span> now has a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> chance to refund their <span style=\"color: #66ff66; display: inline\">Brood Mark</span> cost."
+        }
+      ]
+    },
+    {
+      "id": 7452,
+      "name": "Deadly Sting",
+      "spellId": 560264,
+      "spellIds": [
+        560264
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\hunter_pvp_vipersting",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6089,
+        7160,
+        29589,
+        30087
+      ],
+      "requiredIds": [],
+      "desc": "Dealing periodic damage now has a 10% chance to make your next Hivebreak within 8 seconds free of cost and deal 50% increased damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560264,
+          "description": "Dealing periodic damage now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Hivebreak</span> within <span class=\"item-number\">8</span> seconds free of cost and deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage."
+        }
+      ]
+    },
+    {
+      "id": 7453,
+      "name": "Runed Carapace",
+      "spellId": 705961,
+      "spellIds": [
+        705961
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Shield_21",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6756
+      ],
+      "requiredIds": [],
+      "desc": "Whenever you take Magic damage, reduce damage taken by that magic school by -10% for 10 seconds.Can only occur once every 30 sec per school of magic.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705961,
+          "description": "Whenever you take Magic damage, reduce damage taken by that magic school by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Can only occur once every <span class=\"item-number\">30</span> sec per school of magic."
+        }
+      ]
+    },
+    {
+      "id": 7722,
+      "name": "Green Salve",
+      "spellId": 800902,
+      "spellIds": [
+        800902
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_firstaid_healingsalve",
+      "x": 7,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Rapidly heal an ally for 30 over 6 seconds.At the end of the duration, this will seek another nearby ally with the lowest health and heal them for 47 + 24.46% healing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800902,
+          "description": "Rapidly heal an ally for <span class=\"item-number\">30</span> over <span class=\"item-number\">6</span> seconds.<br /><br />At the end of the duration, this will seek another nearby ally with the lowest health and heal them for <span class=\"item-number\">47</span> + <span class=\"item-number\">24.46% healing</span>."
+        }
+      ]
+    },
+    {
+      "id": 7723,
+      "name": "Worship",
+      "spellId": 706016,
+      "spellIds": [
+        706016
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_abolishmagic",
+      "x": 3,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6128,
+        7732,
+        7738
+      ],
+      "requiredIds": [],
+      "desc": "Allows all critical heals to increase periodic healing the target receives from you by 10% for 5 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706016,
+          "description": "Allows all critical heals to increase periodic healing the target receives from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7724,
+      "name": "Blightfang",
+      "spellId": 680763,
+      "spellIds": [
+        680763
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\druid_ability_wildmushroom_b",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6138
+      ],
+      "requiredIds": [],
+      "desc": "Casting Serpent's Fang now spawns a Mushroom below the target that will explode after 2 sec, dealing 303 + 12.5% SP Nature damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 680763,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now spawns a <span style=\"color: #ffffff; display: inline\">Mushroom</span> below the target that will explode after <span class=\"item-number\">2</span> sec, dealing <span class=\"item-number\">303</span> + <span class=\"item-number\">12.5% SP</span> Nature damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 7726,
+      "name": "Decay",
+      "spellId": 800910,
+      "spellIds": [
+        800910
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureritual_Border",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7222,
+        29584
+      ],
+      "requiredIds": [],
+      "desc": "Apply Wilt to up to 5 enemies at target location and drop a Mushroom that will explode after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800910,
+          "description": "Apply <span style=\"color: #ffffff; display: inline\">Wilt</span> to up to <span class=\"item-number\">5</span> enemies at target location and drop a <span style=\"color: #ffffff; display: inline\">Mushroom</span> that will explode after <span class=\"item-number\">2</span> sec, dealing <span class=\"item-number\">303</span> + <span class=\"item-number\">25% nature SP</span> Nature damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 7727,
+      "name": "Venoxis Rage",
+      "spellId": 707224,
+      "spellIds": [
+        707224
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_nature_poisoncleansingtotem",
+      "x": 7,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7210
+      ],
+      "requiredIds": [],
+      "desc": "Your Mycosis now enrages your Fungarians for 6 seconds, increasing its damage and attack speed by 30% for 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707224,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Mycosis</span> now enrages your <span style=\"color: #ffffff; display: inline\">Fungarians</span> for <span class=\"item-number\">6</span> seconds, increasing its damage and attack speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 7728,
+      "name": "Fungic",
+      "spellId": 706455,
+      "spellIds": [
+        706455
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_wildmushroom_bloom",
+      "x": 1,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5575,
+        6552
+      ],
+      "requiredIds": [],
+      "desc": "You now apply Fungic to enemies affected by Lethargy, dealing an additional 20% of the damage dealt by your Venom Bolt or Serpent's Fang as Nature damage over 3 seconds, stacking up to 2 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706455,
+          "description": "You now apply <span style=\"color: #ffffff; display: inline\">Fungic</span> to enemies affected by <span style=\"color: #ffffff; display: inline\">Lethargy</span>, dealing an additional <span class=\"item-number\">20%</span> of the damage dealt by your <span style=\"color: #ffffff; display: inline\">Venom Bolt</span> or <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> as Nature damage over <span class=\"item-number\">3</span> seconds, stacking up to <span class=\"item-number\">2</span> times."
+        }
+      ]
+    },
+    {
+      "id": 7730,
+      "name": "From Life Comes Death",
+      "spellId": 504855,
+      "spellIds": [
+        504855
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\custom_T_NaturesWrath_Border",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6142,
+        7731
+      ],
+      "requiredIds": [],
+      "desc": "For 20 seconds, when you kill an enemy that yields experience or honor they now spawn a Mushroom beneath them. Can only occur once per sec.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504855,
+          "description": "For <span class=\"item-number\">20</span> seconds, when you kill an enemy that yields experience or honor they now spawn a <span style=\"color: #ffffff; display: inline\">Mushroom</span> beneath them. Can only occur once per sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 druid_ability_wildmushroom_b\" /><span class=\"name\">Mushroom (dmg)</span></div><span class=\"desc\">Drop a <span style=\"color: #ffffff; display: inline\">Mushroom</span> near the target that explodes after <span class=\"item-number\">2</span> sec, dealing <span class=\"item-number\">303</span> + <span class=\"item-number\">35% SP</span> Plague Damage to all nearby enemies.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7731,
+      "name": "Suffocating Coils",
+      "spellId": 707233,
+      "spellIds": [
+        707233
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureweb_Border",
+      "x": 5,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6842,
+        7123
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage now has a 5% chance to cause you to launch webs at your target, wrapping them in a Suffocating Coil.Suffocating CoilLaunch a beam of webbing at an enemy, inflicting 91 + 12% nature SP Nature damage every 1 sec for 4 seconds.After 4 seconds, if Spore is active on the target, drop a Mushroom below them that will explode after 2 sec, dealing 303 + 12.5% nature SP Nature damage to all enemies within 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707233,
+          "description": "Periodic damage now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to cause you to launch webs at your target, wrapping them in a <span style=\"color: #ffffff; display: inline\">Suffocating Coil</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_natureweb_border\" /><span class=\"name\">Suffocating Coil</span></div><span class=\"desc\">Launch a beam of webbing at an enemy, inflicting <span class=\"item-number\">91</span> + <span class=\"item-number\">12% nature SP</span> Nature damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">4</span> seconds.<br /><br />After <span class=\"item-number\">4</span> seconds, if <span style=\"color: #ffffff; display: inline\">Spore</span> is active on the target, drop a <span style=\"color: #ffffff; display: inline\">Mushroom</span> below them that will explode after <span class=\"item-number\">2</span> sec, dealing <span class=\"item-number\">303</span> + <span class=\"item-number\">12.5% nature SP</span> Nature damage to all enemies within <span class=\"item-number\">5</span> yds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 7733,
+      "name": "Fangbinder",
+      "spellId": 560195,
+      "spellIds": [
+        560195
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_Border",
+      "x": 5,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7223
+      ],
+      "requiredIds": [],
+      "desc": "Increases the healing of Serpent's Fang by 50% and Serpent's Fang can no longer miss.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560195,
+          "description": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Serpent's Fang</span> can no longer miss."
+        }
+      ]
+    },
+    {
+      "id": 7736,
+      "name": "Venom Glands",
+      "spellId": 706015,
+      "spellIds": [
+        706015
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Creature_Poison_02",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29592
+      ],
+      "requiredIds": [],
+      "desc": "Increases your healing done by 15% on allies below 35% health or if they are Poisoned.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706015,
+          "description": "Increases your healing done by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> on allies below <span class=\"item-number\">35%</span> health or if they are <span style=\"color: #00ff00; display: inline\">Poisoned</span>."
+        }
+      ]
+    },
+    {
+      "id": 7737,
+      "name": "Cycle of Rebirth",
+      "spellId": 560200,
+      "spellIds": [
+        560200
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_LiquidStone_Poison",
+      "x": 4,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29596,
+        29599,
+        30073
+      ],
+      "requiredIds": [],
+      "desc": "Effective periodic healing with Shadra's Balm now has a 10% chance to make your next Alkahest within 8 seconds is free and instant.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560200,
+          "description": "Effective periodic healing with <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Alkahest</span> within <span class=\"item-number\">8</span> seconds is free and instant."
+        }
+      ]
+    },
+    {
+      "id": 9590,
+      "name": "Lifeblood",
+      "spellId": 804963,
+      "spellIds": [
+        804963
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_volatilelife_green",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7231,
+        7247
+      ],
+      "requiredIds": [],
+      "desc": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by -20% and causing all damage taken to cast Rejuvenating Venom. Lasts for 10 seconds.Rejuvenating Venom (Heal)Heal a random ally within 30 yds of your target for 67 + 9.2% healing over 6 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804963,
+          "description": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and causing all damage taken to cast <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span>. Lasts for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a21\" /><span class=\"name\">Rejuvenating Venom (Heal)</span></div><span class=\"desc\">Heal a random ally within <span class=\"item-number\">30</span> yds of your target for <span class=\"item-number\">67</span> + <span class=\"item-number\">9.2% healing</span> over <span class=\"item-number\">6</span> seconds.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 12201,
+      "name": "Widowmaker",
+      "spellId": 804961,
+      "spellIds": [
+        804961
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_spidermountc5",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        7229,
+        4053
+      ],
+      "desc": "Requires Spider FormConsumes Brood MarksInject shadow venom into an enemy, dealing Shadow damage and reducing their healing received by 50% for 8 seconds. 1 Mark: 55 + 56.25% shadow SP Shadow damage. 2 Marks: 70 + 72% shadow SP Shadow damage. 3 Marks: 90 + 92.25% shadow SP Shadow damage. 4 Marks: 114 + 117% shadow SP Shadow damage. 5 Marks: 154 + 157.5% shadow SP Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804961,
+          "description": "Requires Spider Form</span><br /><span style=\"color: #66ff66; display: inline\">Consumes Brood Marks</span><br />Inject shadow venom into an enemy, dealing Shadow damage and reducing their healing received by <span class=\"item-number\">50%</span> for <span class=\"item-number\">8</span> seconds.<br /> <span class=\"item-number\">1</span> Mark: <span class=\"item-number\">55</span> + <span class=\"item-number\">56.25% shadow SP</span> Shadow damage.<br /> <span class=\"item-number\">2</span> Marks: <span class=\"item-number\">70</span> + <span class=\"item-number\">72% shadow SP</span> Shadow damage.<br /> <span class=\"item-number\">3</span> Marks: <span class=\"item-number\">90</span> + <span class=\"item-number\">92.25% shadow SP</span> Shadow damage.<br /> <span class=\"item-number\">4</span> Marks: <span class=\"item-number\">114</span> + <span class=\"item-number\">117% shadow SP</span> Shadow damage.<br /> <span class=\"item-number\">5</span> Marks: <span class=\"item-number\">154</span> + <span class=\"item-number\">157.5% shadow SP</span> Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": 12223,
+      "name": "Extraction",
+      "spellId": 805884,
+      "spellIds": [
+        805884
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_nature_stab_Border",
+      "x": 4,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6133,
+        6324,
+        7122
+      ],
+      "requiredIds": [],
+      "desc": "For 15 seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores 5% of your missing mana.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805884,
+          "description": "For <span class=\"item-number\">15</span> seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your missing mana."
+        }
+      ]
+    },
+    {
+      "id": 12325,
+      "name": "Carapace Regeneration",
+      "spellId": 805931,
+      "spellIds": [
+        805931
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_vehicle_shellshieldgenerator_green",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31202
+      ],
+      "requiredIds": [],
+      "desc": "3 Charges, 20 sec rechargeRegenerate your carapace, reducing your Physical damage taken by -4% and restoring 1% maximum health every 1 sec, draining 10 Rage every tick to remain active, stacking 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805931,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">20</span> sec recharge</span><br />Regenerate your carapace, reducing your Physical damage taken by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> and restoring <span class=\"item-number\">1</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">1</span> sec, draining <span class=\"item-number\">10</span> Rage every tick to remain active, stacking <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29574,
+      "name": "Ambush Predator",
+      "spellId": 800878,
+      "spellIds": [
+        800878
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_assassinskill12_Border",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6079
+      ],
+      "requiredIds": [],
+      "desc": "Casting Burrow will now apply Tunnel Below to you.While Skulk is active every 1 sec you reduce the cooldown of Burrow by -1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800878,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Burrow</span> will now apply <span style=\"color: #ffffff; display: inline\">Tunnel Below</span> to you.<br /><br />While <span style=\"color: #ffffff; display: inline\">Skulk</span> is active every <span class=\"item-number\">1</span> sec you reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow</span> by <span class=\"item-number\">-1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29576,
+      "name": "Empowering Pheromones",
+      "spellId": 705996,
+      "spellIds": [
+        705996
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Ability_Rogue_DeadenedNerves",
+      "x": 5,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7248
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of your Pheromones by 20% and their duration by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705996,
+          "description": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Pheromones</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and their duration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29577,
+      "name": "Noxious Empowerment",
+      "spellId": 804964,
+      "spellIds": [
+        804964
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_battleground_templeofkotmogu_02_green",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        4394,
+        7263
+      ],
+      "requiredIds": [],
+      "desc": "Enrage for 12 seconds, increasing your chance to trigger Venoms by 50%, your Energy regeneration by 100%, and increasing your damage dealt by 20% for 12 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804964,
+          "description": "Enrage for <span class=\"item-number\">12</span> seconds, increasing your chance to trigger <span style=\"color: #ffffff; display: inline\">Venoms</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, your Energy regeneration by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>, and increasing your damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29580,
+      "name": "Nerubian Sting",
+      "spellId": 800882,
+      "spellIds": [
+        800882
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Misc_Head_Nerubian_01",
+      "x": 6,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        31201
+      ],
+      "requiredIds": [],
+      "desc": "Applies 1 Brood MarkSting an enemy, dealing 26 + 25% shadow SP Shadow damage and an additional 20 + 50% shadow SP over 15 seconds, stacking up to 3 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800882,
+          "description": "<span style=\"color: #66ff66; display: inline\">Applies <span class=\"item-number\">1</span> Brood Mark</span><br />Sting an enemy, dealing <span class=\"item-number\">26</span> + <span class=\"item-number\">25% shadow SP</span> Shadow damage and an additional <span class=\"item-number\">20</span> + <span class=\"item-number\">50% shadow SP</span> over <span class=\"item-number\">15</span> seconds, stacking up to <span class=\"item-number\">3</span> times."
+        }
+      ]
+    },
+    {
+      "id": 29582,
+      "name": "Deadly Kiss",
+      "spellId": 504704,
+      "spellIds": [
+        504704
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_fishbite_Border",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6144,
+        29577
+      ],
+      "requiredIds": [],
+      "desc": "Increases critical damage dealt by Widow's Kiss, Widowmaker and Venom Fang by 50% against Poisoned targets.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504704,
+          "description": "Increases critical damage dealt by <span style=\"color: #ffffff; display: inline\">Widow's Kiss</span>, <span style=\"color: #FFFFFF; display: inline\">Widowmaker</span> and <span style=\"color: #FFFFFF; display: inline\">Venom Fang</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets."
+        }
+      ]
+    },
+    {
+      "id": 29584,
+      "name": "Rotpriest",
+      "spellId": 706209,
+      "spellIds": [
+        706209
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_magicspell_(89)_Border",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29575,
+        9575
+      ],
+      "requiredIds": [],
+      "desc": "Increases your spell critical damage by 100%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706209,
+          "description": "Increases your spell critical damage by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29586,
+      "name": "Corrosive Bile",
+      "spellId": 630934,
+      "spellIds": [
+        630934
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_creature_poison_03",
+      "x": 0,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6342
+      ],
+      "requiredIds": [],
+      "desc": "After using Facemelter, your next Widowmaker within 15 seconds now deals 20% increased damage and strikes 2 additional nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 630934,
+          "description": "After using <span style=\"color: #ffffff; display: inline\">Facemelter</span>, your next <span style=\"color: #ffffff; display: inline\">Widowmaker</span> within <span class=\"item-number\">15</span> seconds now deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage and strikes <span class=\"item-number\">2</span> additional nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 29588,
+      "name": "Reinforced Shell",
+      "spellId": 705966,
+      "spellIds": [
+        705966
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_leather_shellfragment",
+      "x": 0,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7229
+      ],
+      "requiredIds": [],
+      "desc": "Increases your total armor by 20%.In addition, while Spider or Beetle form is active your attacks are unable to be parried or dodged.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705966,
+          "description": "Increases your total armor by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />In addition, while <span style=\"color: #ffffff; display: inline\">Spider</span> or <span style=\"color: #ffffff; display: inline\">Beetle</span> form is active your attacks are unable to be parried or dodged."
+        }
+      ]
+    },
+    {
+      "id": 29591,
+      "name": "Fang Blessing",
+      "spellId": 503970,
+      "spellIds": [
+        503970,
+        504898
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\Icons\\inv_inscription_deck_jadeserpent",
+      "x": 3,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29592
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503970,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 504898,
+          "description": "Increases your critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29592,
+      "name": "Mending Mist",
+      "spellId": 800899,
+      "spellIds": [
+        800899
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_druid_focusedgrowth",
+      "x": 2,
+      "y": 2,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        1788
+      ],
+      "requiredIds": [],
+      "desc": "Spread a precarious mist to up to 8 allies within 30 yds, healing them for 9 + 15% healing every 1 sec for 7 seconds.After 1.69 sec, all allies within 30 yds are healed for an additional 104 + 23.1% healing.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800899,
+          "description": "Spread a precarious mist to up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds, healing them for <span class=\"item-number\">9</span> + <span class=\"item-number\">15% healing</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">7</span> seconds.<br /><br />After <span class=\"item-number\">1.69</span> sec, all allies within <span class=\"item-number\">30</span> yds are healed for an additional <span class=\"item-number\">104</span> + <span class=\"item-number\">23.1% healing</span>."
+        }
+      ]
+    },
+    {
+      "id": 29596,
+      "name": "Serpent Lord's Amulet",
+      "spellId": 800914,
+      "spellIds": [
+        800914
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_helm_cloth_zandalardungeon_c_01",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        5302,
+        6302,
+        12223
+      ],
+      "requiredIds": [],
+      "desc": "Draw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800914,
+          "description": "Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>, increasing your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 29598,
+      "name": "Alkahest",
+      "spellId": 504342,
+      "spellIds": [
+        504342
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureburn_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        9951
+      ],
+      "desc": "2 Charges, 12 sec rechargeBless an ally with Shadra's grace, healing them for 85 + 31.44% healing and extending the duration of Shadra's Prayer on them by 9 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504342,
+          "description": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">12</span> sec recharge</span><br />Bless an ally with Shadra's grace, healing them for <span class=\"item-number\">85</span> + <span class=\"item-number\">31.44% healing</span> and extending the duration of <span style=\"color: #FFFFFF; display: inline\">Shadra's Prayer</span> on them by <span class=\"item-number\">9</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 29599,
+      "name": "Venom Weaving",
+      "spellId": 504736,
+      "spellIds": [
+        504736
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_ResistMagic",
+      "x": 4,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12223
+      ],
+      "requiredIds": [],
+      "desc": "Your Serpent's Fang now increases the healing of your next 2 Alkahests by 25%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504736,
+          "description": "Your <span style=\"color: #FFFFFF; display: inline\">Serpent's Fang</span> now increases the healing of your next <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Alkahests</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 29607,
+      "name": "Envenomed Weapons",
+      "spellId": 300855,
+      "spellIds": [
+        300855
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_rogue_creepingvenom",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [],
+      "desc": "Envenoms the weapons of all nearby allies for 30 minutes, giving them a 5% chance to launch a jet of poison at their target whenever they deal damage, dealing 8 + 10% nature SP + 10% AP Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300855,
+          "description": "Envenoms the weapons of all nearby allies for <span class=\"item-number\">30</span> minutes, giving them a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to launch a jet of poison at their target whenever they deal damage, dealing <span class=\"item-number\">8</span> + <span class=\"item-number\">10% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage."
+        }
+      ]
+    },
+    {
+      "id": 30073,
+      "name": "Shadra's Aid",
+      "spellId": 504352,
+      "spellIds": [
+        504352
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_natureempower_Border",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7121,
+        12223
+      ],
+      "requiredIds": [],
+      "desc": "Envelop an ally in Shadra's grace, reducing all damage taken by -20% and causing direct damage taken to restore 3% maximum health for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504352,
+          "description": "Envelop an ally in Shadra's grace, reducing all damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and causing direct damage taken to restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30078,
+      "name": "Potent Expulsion",
+      "spellId": 560266,
+      "spellIds": [
+        560266
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_ability_wildstalkerdruid_thrivinggrowth",
+      "x": 0,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6089,
+        30087
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage dealt by Expulsion by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 560266,
+          "description": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Expulsion</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30080,
+      "name": "Barbed Stinger",
+      "spellId": 803196,
+      "spellIds": [
+        803196
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_knife_1h_artifactfangs_d_02",
+      "x": 7,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6843,
+        12485,
+        30485
+      ],
+      "requiredIds": [],
+      "desc": "Clears Exposed Flesh stacks and flings a Barbed Stinger into an enemy for 10 seconds, plus an additional 1 sec per cleared stack.Recasting this ability on the same target will rip the stinger out, pulling them to you and dealing Nature damage, scaling based on how long the stinger was left in them.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803196,
+          "description": "Clears <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span> stacks and flings a <span style=\"color: #ffffff; display: inline\">Barbed Stinger</span> into an enemy for <span class=\"item-number\">10</span> seconds, plus an additional <span class=\"item-number\">1</span> sec per cleared stack.<br /><br />Recasting this ability on the same target will rip the stinger out, pulling them to you and dealing Nature damage, scaling based on how long the stinger was left in them."
+        }
+      ]
+    },
+    {
+      "id": 30081,
+      "name": "Beetle Poison",
+      "spellId": 705876,
+      "spellIds": [
+        705876
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_10_alchemy_bottle_shape1_green",
+      "x": 5,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6110
+      ],
+      "requiredIds": [],
+      "desc": "Allows Wicked Poison to stack an additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705876,
+          "description": "Allows <span style=\"color: #FFFFFF; display: inline\">Wicked Poison</span> to stack an additional time."
+        }
+      ]
+    },
+    {
+      "id": 30084,
+      "name": "Reconstructive Carapace",
+      "spellId": 705999,
+      "spellIds": [
+        705999
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_scales_stonygreen",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6102,
+        7166
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the amount of Rage drained by Carapace Regeneration by -3.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705999,
+          "description": "Reduces the amount of Rage drained by <span style=\"color: #FFFFFF; display: inline\">Carapace Regeneration</span> by <span class=\"item-number\">-3</span>."
+        }
+      ]
+    },
+    {
+      "id": 30464,
+      "name": "Facemelter",
+      "spellId": 800871,
+      "spellIds": [
+        800871
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_deathvortex",
+      "x": 1,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        13472,
+        30472
+      ],
+      "requiredIds": [],
+      "desc": "Requires Spider FormConsumes Brood MarksSpray poison upon an enemy and nearby enemies, dealing Nature damage over 15 seconds. 1 Mark: 88 + 93.75% nature SP Nature damage. 2 Marks: 112 + 120% nature SP Nature damage. 3 Marks: 144 + 153.75% nature SP Nature damage. 4 Marks: 182 + 195% nature SP Nature damage. 5 Marks: 245 + 262.5% nature SP Nature damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 800871,
+          "description": "Requires Spider Form</span><br /><span style=\"color: #66ff66; display: inline\">Consumes Brood Marks</span><br />Spray poison upon an enemy and nearby enemies, dealing Nature damage over <span class=\"item-number\">15</span> seconds.<br /> <span class=\"item-number\">1</span> Mark: <span class=\"item-number\">88</span> + <span class=\"item-number\">93.75% nature SP</span> Nature damage.<br /> <span class=\"item-number\">2</span> Marks: <span class=\"item-number\">112</span> + <span class=\"item-number\">120% nature SP</span> Nature damage.<br /> <span class=\"item-number\">3</span> Marks: <span class=\"item-number\">144</span> + <span class=\"item-number\">153.75% nature SP</span> Nature damage.<br /> <span class=\"item-number\">4</span> Marks: <span class=\"item-number\">182</span> + <span class=\"item-number\">195% nature SP</span> Nature damage.<br /> <span class=\"item-number\">5</span> Marks: <span class=\"item-number\">245</span> + <span class=\"item-number\">262.5% nature SP</span> Nature damage."
+        }
+      ]
+    },
+    {
+      "id": 30469,
+      "name": "Deadly Neurotoxins",
+      "spellId": 504375,
+      "spellIds": [
+        504375
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_creature_poison_06",
+      "x": 6,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6080,
+        6146,
+        6147
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Venom Fang and Nerubian Sting now deals an additional 25% of their direct damage instantly as Nature damage.Damage dealt in this way has a 40% chance to extend the duration of Rotfang by 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504375,
+          "description": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Venom Fang</span> and <span style=\"color: #FFFFFF; display: inline\">Nerubian Sting</span> now deals an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of their direct damage instantly as Nature damage.<br /><br />Damage dealt in this way has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to extend the duration of <span style=\"color: #FFFFFF; display: inline\">Rotfang</span> by <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30471,
+      "name": "Vile Fangs",
+      "spellId": 706036,
+      "spellIds": [
+        706036
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SoulFire_Shadow",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7152
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 10% chance to generate a Brood Mark.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706036,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to generate a <span style=\"color: #66ff66; display: inline\">Brood Mark</span>."
+        }
+      ]
+    },
+    {
+      "id": 30473,
+      "name": "Death Spray",
+      "spellId": 706271,
+      "spellIds": [
+        706271
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_creature_poison_01",
+      "x": 2,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7263,
+        13472,
+        30472
+      ],
+      "requiredIds": [],
+      "desc": "Periodic damage dealt now has a 5% chance to remove the Energy cost from your next Venom Fang or Widow's Kiss within 8 seconds and increase its damage by 20%.Can occur only once every 2 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706271,
+          "description": "Periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to remove the Energy cost from your next <span style=\"color: #FFFFFF; display: inline\">Venom Fang</span> or <span style=\"color: #FFFFFF; display: inline\">Widow's Kiss</span> within <span class=\"item-number\">8</span> seconds and increase its damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />Can occur only once every <span class=\"item-number\">2</span> sec."
+        }
+      ]
+    },
+    {
+      "id": 30477,
+      "name": "Wilt",
+      "spellId": 804982,
+      "spellIds": [
+        804982
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NatureWrath_Border",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4052,
+        29607
+      ],
+      "desc": "Wilt the life of an enemy with vile poison, dealing 144 Nature damage over 18 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804982,
+          "description": "Wilt the life of an enemy with vile poison, dealing <span class=\"item-number\">144</span> Nature damage over <span class=\"item-number\">18</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30479,
+      "name": "Mycosis",
+      "spellId": 804986,
+      "spellIds": [
+        804986
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_druid_wildmushroom",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6137
+      ],
+      "requiredIds": [],
+      "desc": "Fungus grows throughout the body of an enemy, dealing 153 + 65% nature SP Nature damage and applying a shield that absorbs the next 100 + 200% SP healing done to them for 8 seconds.Deals 20% increased damage for each stack of Fungal Growth on the target.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804986,
+          "description": "Fungus grows throughout the body of an enemy, dealing <span class=\"item-number\">153</span> + <span class=\"item-number\">65% nature SP</span> Nature damage and applying a shield that absorbs the next <span class=\"item-number\">100</span> + <span class=\"item-number\">200% SP</span> healing done to them for <span class=\"item-number\">8</span> seconds.<br /><br />Deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage for each stack of <span style=\"color: #ffffff; display: inline\">Fungal Growth</span> on the target."
+        }
+      ]
+    },
+    {
+      "id": 30481,
+      "name": "Serpent Lord's Ring",
+      "spellId": 503923,
+      "spellIds": [
+        503923
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_60pvp_ring3c",
+      "x": 7,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6605,
+        6842
+      ],
+      "requiredIds": [],
+      "desc": "Draw power from the Serpent Lord's Ring instantly regenerating 20% of your maximum mana and causing your Mycosiss to trigger no cooldown and be free of cost for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503923,
+          "description": "Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Ring</span> instantly regenerating <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your maximum mana and causing your <span style=\"color: #ffffff; display: inline\">Mycosiss</span> to trigger no cooldown and be free of cost for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30482,
+      "name": "Playing With Poison",
+      "spellId": 707563,
+      "spellIds": [
+        707563
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Ability",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_NullifyDisease",
+      "x": 5,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7722,
+        29607
+      ],
+      "requiredIds": [],
+      "desc": "Increases your Nature damage by 5% and healing done by 3%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 707563,
+          "description": "Increases your Nature damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and healing done by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30483,
+      "name": "Limb Decayer",
+      "spellId": 681057,
+      "spellIds": [
+        681057
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\uico_venom_spell_04_Border",
+      "x": 1,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7726
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the cast time and increases the mana cost of Decay by 50%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681057,
+          "description": "Reduces the cast time and increases the mana cost of <span style=\"color: #ffffff; display: inline\">Decay</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30499,
+      "name": "Unbreakable",
+      "spellId": 705991,
+      "spellIds": [
+        705991
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_scarabmount_green",
+      "x": 2,
+      "y": 8,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6115,
+        7166
+      ],
+      "requiredIds": [],
+      "desc": "Allows Exposed Flesh to stack 5 additional times and increase your Physical damage taken by -1% less.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705991,
+          "description": "Allows <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span> to stack <span class=\"item-number\">5</span> additional times and increase your Physical damage taken by <span class=\"item-number\">-1</span><span class=\"item-number\">%</span> less."
+        }
+      ]
+    },
+    {
+      "id": 30524,
+      "name": "Cunning of the Nerub'ar",
+      "spellId": 805140,
+      "spellIds": [
+        805140
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Achievement_Dungeon_AzjolLowercity_10man",
+      "x": 6,
+      "y": 9,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30469
+      ],
+      "requiredIds": [],
+      "desc": "Augments your Spider Form, increasing your damage dealt by 10% and causing it to allow your Nerubian Sting to stack 1 additional time.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805140,
+          "description": "Augments your <span style=\"color: #ffffff; display: inline\">Spider Form</span>, increasing your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causing it to allow your <span style=\"color: #ffffff; display: inline\">Nerubian Sting</span> to stack <span class=\"item-number\">1</span> additional time."
+        }
+      ]
+    },
+    {
+      "id": 30606,
+      "name": "Spore",
+      "spellId": 804983,
+      "spellIds": [
+        804983
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\nhi_unholy_mushroom_Border",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30477
+      ],
+      "requiredIds": [],
+      "desc": "Inject an enemy with parasitic spores, dealing 20 + 17.5% nature SP Shadow damage, plus an additional 231 over 21 seconds.After 10 sec, drop a Mushroom below the target that explodes after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804983,
+          "description": "Inject an enemy with parasitic spores, dealing <span class=\"item-number\">20</span> + <span class=\"item-number\">17.5% nature SP</span> Shadow damage, plus an additional <span class=\"item-number\">231</span> over <span class=\"item-number\">21</span> seconds.<br /><br />After <span class=\"item-number\">10</span> sec, drop a <span style=\"color: #ffffff; display: inline\">Mushroom</span> below the target that explodes after <span class=\"item-number\">2</span> sec, dealing <span class=\"item-number\">303</span> + <span class=\"item-number\">25% nature SP</span> Nature damage to nearby enemies."
+        }
+      ]
+    },
+    {
+      "id": 30749,
+      "name": "Mycelial Replenishment",
+      "spellId": 706021,
+      "spellIds": [
+        706021
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_fire_burnoutgreen",
+      "x": 4,
+      "y": 5,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6128,
+        7217,
+        7734
+      ],
+      "requiredIds": [],
+      "desc": "Increases your critical strike chance and critical healing done by 20% for 20 seconds and instantly restore 30% of your maximum mana, but consumes all stacks of Mycelial Healing on all nearby allies.While active, all periodic critical strikes heal for an additional 20% of the healing done.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706021,
+          "description": "Increases your critical strike chance and critical healing done by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds and instantly restore <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum mana, but consumes all stacks of <span style=\"color: #ffffff; display: inline\">Mycelial Healing</span> on all nearby allies.<br /><br />While active, all periodic critical strikes heal for an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the healing done."
+        }
+      ]
+    },
+    {
+      "id": 30793,
+      "name": "Venomtip Poison",
+      "spellId": 803195,
+      "spellIds": [
+        803195
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_poisonclaw_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6122
+      ],
+      "requiredIds": [],
+      "desc": "Spray poison on an enemy and all enemies near them, dealing 30 + 11% nature SP + 10% AP Nature damage and reducing their attack speed by -20% for 15 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 803195,
+          "description": "Spray poison on an enemy and all enemies near them, dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">11% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": 30794,
+      "name": "Glory To Shadra!",
+      "spellId": 706033,
+      "spellIds": [
+        706033
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\5_sumspiders_Border",
+      "x": 7,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29580
+      ],
+      "requiredIds": [],
+      "desc": "Increases the critical strike chance of Venom Fang and Nerubian Sting by 10%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706033,
+          "description": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Venom Fang</span> and <span style=\"color: #ffffff; display: inline\">Nerubian Sting</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30863,
+      "name": "Virulent Resonance",
+      "spellId": 804969,
+      "spellIds": [
+        804969
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\epic_rpg_icon_pack_poison_icon_0005s_0000_fire_Border",
+      "x": 4,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7152,
+        29580
+      ],
+      "requiredIds": [],
+      "desc": "Increases the effectiveness of Brood Marks by 10% and your hit chance by 5%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804969,
+          "description": "Increases the effectiveness of <span style=\"color: #66ff66; display: inline\">Brood Marks</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30974,
+      "name": "Venomagus",
+      "spellId": 300682,
+      "spellIds": [
+        300682,
+        301364
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 2,
+      "icon": "Interface\\icons\\novart_passivemastery_(23)_Border",
+      "x": 2,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7152
+      ],
+      "requiredIds": [],
+      "desc": "Increases the damage of Blight Venom by 20%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 300682,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blight Venom</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>."
+        },
+        {
+          "rank": 2,
+          "spellId": 301364,
+          "description": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blight Venom</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": 30975,
+      "name": "Rotfang",
+      "spellId": 804977,
+      "spellIds": [
+        804977
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_volatilefiregreen",
+      "x": 6,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6078,
+        30794
+      ],
+      "requiredIds": [],
+      "desc": "Requires Spider FormConsumes Brood MarksInject venom into an enemy that rots them from the inside out, dealing Plague damage over 24 seconds. 1 Mark: 240 + 220% SP Plague damage. 2 Marks: 307 + 281.6% SP Plague damage. 3 Marks: 394 + 360.8% SP Plague damage. 4 Marks: 499 + 457.6% SP Plague damage. 5 Marks: 672 + 616% SP Plague damage.Damage dealt pierces absorption effects and resistances.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804977,
+          "description": "Requires Spider Form</span><br /><span style=\"color: #66ff66; display: inline\">Consumes Brood Marks</span><br />Inject venom into an enemy that rots them from the inside out, dealing Plague damage over <span class=\"item-number\">24</span> seconds.<br /> <span class=\"item-number\">1</span> Mark: <span class=\"item-number\">240</span> + <span class=\"item-number\">220% SP</span> Plague damage.<br /> <span class=\"item-number\">2</span> Marks: <span class=\"item-number\">307</span> + <span class=\"item-number\">281.6% SP</span> Plague damage.<br /> <span class=\"item-number\">3</span> Marks: <span class=\"item-number\">394</span> + <span class=\"item-number\">360.8% SP</span> Plague damage.<br /> <span class=\"item-number\">4</span> Marks: <span class=\"item-number\">499</span> + <span class=\"item-number\">457.6% SP</span> Plague damage.<br /> <span class=\"item-number\">5</span> Marks: <span class=\"item-number\">672</span> + <span class=\"item-number\">616% SP</span> Plague damage.<br />Damage dealt pierces absorption effects and resistances."
+        }
+      ]
+    },
+    {
+      "id": 31201,
+      "name": "Widow's Kiss",
+      "spellId": 807600,
+      "spellIds": [
+        807600
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievement_boss_maexxna",
+      "x": 4,
+      "y": 1,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        12201
+      ],
+      "requiredIds": [],
+      "desc": "Every 3rd Venom Fang becomes Widow's Kiss, dealing increased damage and granting you increased haste.Widow&#39;s Kiss (Transform)Applies 1 Brood MarkBite an enemy for 91 + 50% shadow SP + 30% AP Shadow damage, increasing your haste by 20% for 4 seconds. Scales with modifiers to Venom Fang.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807600,
+          "description": "Every 3rd <span style=\"color: #ffffff; display: inline\">Venom Fang</span> becomes <span style=\"color: #ffffff; display: inline\">Widow's Kiss</span>, dealing increased damage and granting you increased haste.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_maexxna\" /><span class=\"name\">Widow&#39;s Kiss (Transform)</span></div><span class=\"desc\"><span style=\"color: #66ff66; display: inline\">Applies <span class=\"item-number\">1</span> Brood Mark</span><br />Bite an enemy for <span class=\"item-number\">91</span> + <span class=\"item-number\">50% shadow SP</span> + <span class=\"item-number\">30% AP</span> Shadow damage, increasing your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds. Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Venom Fang</span>.</span></div>"
+        }
+      ]
+    },
+    {
+      "id": 31202,
+      "name": "Expulsion",
+      "spellId": 805094,
+      "spellIds": [
+        805094
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\achievment_boss_wellofeternity",
+      "x": 4,
+      "y": 0,
+      "requiredLevel": 0,
+      "connectedNodeIds": [],
+      "requiredIds": [
+        4054,
+        7229
+      ],
+      "desc": "Clears Exposed Flesh stacks to poison nearby enemies for 5 seconds, and an additional 1 sec per cleared stack, dealing 15 + 10% nature SP + 5% AP Nature damage every 1 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805094,
+          "description": "Clears <span style=\"color: #66ff66; display: inline\">Exposed Flesh</span> stacks to poison nearby enemies for <span class=\"item-number\">5</span> seconds, and an additional <span class=\"item-number\">1</span> sec per cleared stack, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">10% nature SP</span> + <span class=\"item-number\">5% AP</span> Nature damage every <span class=\"item-number\">1</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:76:706370",
+      "name": "Rotting Away / Wilting Away",
+      "spellId": 706370,
+      "spellIds": [
+        706370
+      ],
+      "tabId": 76,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\crest_druid",
+      "x": 1,
+      "y": 3,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7219
+      ],
+      "requiredIds": [],
+      "desc": "Your Wilt now has a 15% chance when it deals damage to strike again as Shadow damage.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706370,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Wilt</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance when it deals damage to strike again as Shadow damage."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:87:111111",
+      "name": "Mamba Mentality / Celerity",
+      "spellId": 503976,
+      "spellIds": [
+        503976
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_giantsnake_green",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6098,
+        29576
+      ],
+      "requiredIds": [],
+      "desc": "Critical strikes with Venom Bolt, Hivebreak, or Venom Fang now increase your movement speed by 20% for 3 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503976,
+          "description": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Venom Bolt</span>, <span style=\"color: #ffffff; display: inline\">Hivebreak</span>, or <span style=\"color: #ffffff; display: inline\">Venom Fang</span> now increase your movement speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:87:33154",
+      "name": "Enduring Exoskeleton / Relentless",
+      "spellId": 503960,
+      "spellIds": [
+        503960
+      ],
+      "tabId": 87,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 1,
+      "teCost": 0,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_SkinofEarth",
+      "x": 1,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7147,
+        7453
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage taken now has a 30% chance to generate 2 Rage and 3% base mana.Can only occur once per sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 503960,
+          "description": "Direct damage taken now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">2</span> Rage and <span class=\"item-number\">3</span><span class=\"item-number\">%</span> base mana.<br /><br />Can only occur once per sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:77:745215",
+      "name": "Corrosive Toxin / Withered",
+      "spellId": 807243,
+      "spellIds": [
+        807243
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\_SkullCurse2_AcidIce",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30471,
+        30974
+      ],
+      "requiredIds": [],
+      "desc": "Withering Venom now deals an additional 1 + 125% shadow SP Shadow damage at the end of its duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 807243,
+          "description": "<span style=\"color: #ffffff; display: inline\">Withering Venom</span> now deals an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">125% shadow SP</span> Shadow damage at the end of its duration."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:77:237893",
+      "name": "Black Widow / Caustic",
+      "spellId": 805933,
+      "spellIds": [
+        805933
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\spell_shadow_deathsembrace",
+      "x": 4,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        29577
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt to enemies below 35% health now reduces the cooldown of Noxious Empowerment by -2 sec.In addition, your Widowmaker now deals 20% increased damage to enemies below 35% health.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 805933,
+          "description": "Damage dealt to enemies below <span class=\"item-number\">35%</span> health now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Noxious Empowerment</span> by <span class=\"item-number\">-2</span> sec.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Widowmaker</span> now deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage to enemies below <span class=\"item-number\">35%</span> health."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:77:706026",
+      "name": "Bugging / Nature Against Nature",
+      "spellId": 706026,
+      "spellIds": [
+        706026
+      ],
+      "tabId": 77,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_naturevision_Border",
+      "x": 8,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6341
+      ],
+      "requiredIds": [],
+      "desc": "Harmful spells cast out of Skulk increase the damage you deal to the enemy by 30% for 4 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706026,
+          "description": "Harmful spells cast out of <span style=\"color: #FFFFFF; display: inline\">Skulk</span> increase the damage you deal to the enemy by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:78:135541",
+      "name": "Slimy / Slimy Stingers",
+      "spellId": 705998,
+      "spellIds": [
+        705998
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\INV_Ascend_slime_b_01",
+      "x": 0,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6120
+      ],
+      "requiredIds": [],
+      "desc": "Direct damage taken now has a 20% chance to create a pool of Beetle Slime under the enemy.Beetle SlimeDeals 49 Nature Damage to up to 10 enemies within 5 yds every 2 sec for 8 seconds.Can only occur once every 3 sec.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705998,
+          "description": "Direct damage taken now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to create a pool of <span style=\"color: #ffffff; display: inline\">Beetle Slime</span> under the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_creature_poison_06\" /><span class=\"name\">Beetle Slime</span></div><span class=\"desc\">Deals <span class=\"item-number\">49</span> Nature Damage to up to <span class=\"item-number\">10</span> enemies within <span class=\"item-number\">5</span> yds every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">8</span> seconds.</span></div><br /><br />Can only occur once every <span class=\"item-number\">3</span> sec."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:78:988839",
+      "name": "Pendo's Charm / Catalyst",
+      "spellId": 504400,
+      "spellIds": [
+        504400
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_misc_necklace_shell01",
+      "x": 2,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6120,
+        7170
+      ],
+      "requiredIds": [],
+      "desc": "Increases the rage generated by your damage dealt by 15%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504400,
+          "description": "Increases the rage generated by your damage dealt by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:78:804993",
+      "name": "Empowered Exoskeleton / Chitinous Surge",
+      "spellId": 804993,
+      "spellIds": [
+        804993
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\inv_antorus_green",
+      "x": 4,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7170
+      ],
+      "requiredIds": [],
+      "desc": "Removes the Rage cost of Chitin Rush and increases its range by 5 yds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 804993,
+          "description": "Removes the Rage cost of <span style=\"color: #ffffff; display: inline\">Chitin Rush</span> and increases its range by <span class=\"item-number\">5</span> yds."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:78:504837",
+      "name": "Poison for Everyone! / Drown In Poison",
+      "spellId": 504837,
+      "spellIds": [
+        504837
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0004s_0000_arrow_Border",
+      "x": 8,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        30793
+      ],
+      "requiredIds": [],
+      "desc": "Reduces the Rage cost of Venomtip Poison by -10.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 504837,
+          "description": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Venomtip Poison</span> by <span class=\"item-number\">-10</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:78:705999",
+      "name": "Alacrity / Cunning",
+      "spellId": 705980,
+      "spellIds": [
+        705980
+      ],
+      "tabId": 78,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen",
+      "x": 3,
+      "y": 6,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6099
+      ],
+      "requiredIds": [],
+      "desc": "Damage dealt by Chitin Rush now increases your dodge chance by 1% for 5 seconds, stacking 8 times.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705980,
+          "description": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Chitin Rush</span> now increases your dodge chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">8</span> times."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:92:95221",
+      "name": "The Antidote / Good Venom",
+      "spellId": 681315,
+      "spellIds": [
+        681315
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\Spell_Nature_MagicImmunity",
+      "x": 1,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7736,
+        29591
+      ],
+      "requiredIds": [],
+      "desc": "Increases the duration of Rejuvenating Venom by 2 sec and increases its tick rate by -30%.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681315,
+          "description": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> by <span class=\"item-number\">2</span> sec and increases its tick rate by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:92:706477",
+      "name": "Melioration / Lifemender",
+      "spellId": 706945,
+      "spellIds": [
+        706945
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\nhi_deathblow_Border",
+      "x": 5,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        7733
+      ],
+      "requiredIds": [],
+      "desc": "Your Serpent's Fang now refreshes a charge of Alkahest.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 706945,
+          "description": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Alkahest</span>."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:92:707574",
+      "name": "Book of Shadra / Venomcult Scrolls",
+      "spellId": 705957,
+      "spellIds": [
+        705957
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\icons\\novart_books_(3)_Border",
+      "x": 7,
+      "y": 4,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6141,
+        7733
+      ],
+      "requiredIds": [],
+      "desc": "Doubles the duration, cooldown, and healing of Green Salve.In addition, it now seeks another nearby ally to heal every 6 sec, instead of at the end of the duration.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 705957,
+          "description": "Doubles the duration, cooldown, and healing of <span style=\"color: #ffffff; display: inline\">Green Salve</span>.<br /><br />In addition, it now seeks another nearby ally to heal every <span class=\"item-number\">6</span> sec, instead of at the end of the duration."
+        }
+      ]
+    },
+    {
+      "id": "choice:29:92:843311",
+      "name": "Sublime Extraction / Venom Fanatic",
+      "spellId": 681320,
+      "spellIds": [
+        681320
+      ],
+      "tabId": 92,
+      "classId": 29,
+      "entryType": "Talent",
+      "isPassive": false,
+      "aeCost": 0,
+      "teCost": 1,
+      "maxPoints": 1,
+      "icon": "Interface\\Icons\\5_druideskill10_Border",
+      "x": 7,
+      "y": 7,
+      "requiredLevel": 0,
+      "connectedNodeIds": [
+        6324,
+        7120
+      ],
+      "requiredIds": [],
+      "desc": "Casting Green Salve now resets the cooldown of Serpent's Fang and removes the cost of your next Serpent's Fang for 8 seconds.",
+      "rankDesc": [
+        {
+          "rank": 1,
+          "spellId": 681320,
+          "description": "Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> and removes the cost of your next <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> for <span class=\"item-number\">8</span> seconds."
+        }
+      ]
+    }
+  ]
+}

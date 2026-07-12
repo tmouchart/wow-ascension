@@ -5,13 +5,13 @@ description: Decode a WeakAuras `!WA:2!` import string into readable JSON, or in
 
 # Decode & inspect WeakAuras strings
 
-The codec is `weakauras/wa-codec.js` (Node, no deps). A `!WA:2!` string = Lua table → LibSerialize →
+The codec is `weakauras/lib/wa-codec.js` (Node, no deps). A `!WA:2!` string = Lua table → LibSerialize →
 raw deflate → EncodeForPrint. See `CLAUDE.md` for format internals.
 
 ## Decode a string/file
 
 ```bash
-cd weakauras
+cd weakauras/lib
 node wa-codec.js decode <path-to-file-containing-the-string>
 # -> writes <basename>.decoded.json next to it
 ```
@@ -42,9 +42,10 @@ node -e "const c=require('./x.decoded.json').c; const a=c.find(x=>x.id==='<id>')
 
 To learn a pattern to copy (a power bar, a segmented resource, a glow condition, a cooldown icon), grep
 across regions for the relevant `trigger.event` / `condition.changes[].property` and print trimmed snippets.
-`weakauras/luxthos/ANALYSIS.md` already summarizes rogue/paladin/druid resource + cooldown patterns.
+`weakauras/reference/luxthos/ANALYSIS.md` already summarizes rogue/paladin/druid resource + cooldown patterns.
 
 ## When extracting a reusable template
 
-Save a full representative region to `weakauras/_template-<kind>.json` (bar/icon/group/dyngroup) so build
-scripts can clone it — cloning guarantees every required internal field is present for the target WA version.
+Save a full representative region to `weakauras/lib/templates/<kind>.json` (bar/icon/group/dyngroup) so the
+shared engine (`lib/builders.js`) can clone it — cloning guarantees every required internal field is present
+for the target WA version.
