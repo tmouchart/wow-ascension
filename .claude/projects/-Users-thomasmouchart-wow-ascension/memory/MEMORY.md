@@ -1,0 +1,1 @@
+- [CoA baseline spells source](coa-baseline-spells-source.md) — get grimoire/baseline spellIds (not in trees) from db.ascension.gg aowow skill lines; `coa-baselines.js`
