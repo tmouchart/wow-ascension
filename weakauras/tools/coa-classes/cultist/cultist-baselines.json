@@ -1,0 +1,708 @@
+{
+  "class": "Cultist",
+  "skillLines": [
+    {
+      "title": "Cultist",
+      "id": 477
+    },
+    {
+      "title": "Dreadnought",
+      "id": 497
+    }
+  ],
+  "baselineCount": 16,
+  "abilities": [
+    {
+      "name": "Blade of the Empire",
+      "baseSpellId": 500720,
+      "icon": "inv_knife_1h_artifactcthun_d_01",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 500720,
+          "level": 1,
+          "rank": "Rank 1",
+          "source": []
+        },
+        {
+          "id": 502114,
+          "level": 6,
+          "rank": "Rank 2",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502115,
+          "level": 14,
+          "rank": "Rank 3",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502116,
+          "level": 22,
+          "rank": "Rank 4",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502117,
+          "level": 30,
+          "rank": "Rank 5",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502118,
+          "level": 38,
+          "rank": "Rank 6",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502119,
+          "level": 44,
+          "rank": "Rank 7",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502120,
+          "level": 50,
+          "rank": "Rank 8",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502121,
+          "level": 56,
+          "rank": "Rank 9",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502122,
+          "level": 60,
+          "rank": "Rank 10",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502123,
+          "level": 68,
+          "rank": "Rank 11",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502124,
+          "level": 76,
+          "rank": "Rank 12",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blood Pact",
+      "baseSpellId": 801964,
+      "icon": "ability_xavius_darkeningsoul",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 801964,
+          "level": 0,
+          "rank": "SLS",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Crushing Dissonance",
+      "baseSpellId": 804056,
+      "icon": "ability_kaztik_dominatemind",
+      "inTree": true,
+      "ranks": [
+        {
+          "id": 804056,
+          "level": 29,
+          "rank": "",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Devour Curse",
+      "baseSpellId": 800402,
+      "icon": "_curse_purple",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 800402,
+          "level": 31,
+          "rank": "",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Devour Magic",
+      "baseSpellId": 520151,
+      "icon": "nhi_void_circle_border",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 520151,
+          "level": 26,
+          "rank": "",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doomcloak",
+      "baseSpellId": 502134,
+      "icon": "sha_spell_shadow_shadesofdarkness",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 502134,
+          "level": 53,
+          "rank": "Rank 3",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Eldritch Mending",
+      "baseSpellId": 500711,
+      "icon": "nhi_voidwhirl_border",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 500711,
+          "level": 2,
+          "rank": "Rank 1",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502226,
+          "level": 8,
+          "rank": "Rank 2",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502227,
+          "level": 12,
+          "rank": "Rank 3",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502228,
+          "level": 18,
+          "rank": "Rank 4",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502229,
+          "level": 24,
+          "rank": "Rank 5",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502230,
+          "level": 30,
+          "rank": "Rank 6",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502231,
+          "level": 36,
+          "rank": "Rank 7",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502232,
+          "level": 42,
+          "rank": "Rank 8",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502233,
+          "level": 48,
+          "rank": "Rank 9",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502234,
+          "level": 54,
+          "rank": "Rank 10",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gaze of C'Thun",
+      "baseSpellId": 500110,
+      "icon": "achievement_boss_cthun",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 500110,
+          "level": 8,
+          "rank": "Rank 1",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502135,
+          "level": 14,
+          "rank": "Rank 2",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502136,
+          "level": 20,
+          "rank": "Rank 3",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502137,
+          "level": 28,
+          "rank": "Rank 4",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502138,
+          "level": 36,
+          "rank": "Rank 5",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502139,
+          "level": 44,
+          "rank": "Rank 6",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502140,
+          "level": 52,
+          "rank": "Rank 7",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502141,
+          "level": 58,
+          "rank": "Rank 8",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502142,
+          "level": 66,
+          "rank": "Rank 9",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502143,
+          "level": 74,
+          "rank": "Rank 10",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Horrifying Presence",
+      "baseSpellId": 500723,
+      "icon": "inv_elemental_primal_shadow",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 500723,
+          "level": 0,
+          "rank": "",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Horrorbolt",
+      "baseSpellId": 800416,
+      "icon": "uico_shadow_spell_01_border",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 800416,
+          "level": 2,
+          "rank": "Rank 1",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502173,
+          "level": 8,
+          "rank": "Rank 2",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502174,
+          "level": 14,
+          "rank": "Rank 3",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502175,
+          "level": 22,
+          "rank": "Rank 4",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502176,
+          "level": 28,
+          "rank": "Rank 5",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502177,
+          "level": 32,
+          "rank": "Rank 6",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502178,
+          "level": 38,
+          "rank": "Rank 7",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502179,
+          "level": 44,
+          "rank": "Rank 8",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502180,
+          "level": 50,
+          "rank": "Rank 9",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502181,
+          "level": 56,
+          "rank": "Rank 10",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502182,
+          "level": 60,
+          "rank": "Rank 11",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502183,
+          "level": 68,
+          "rank": "Rank 12",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 502184,
+          "level": 76,
+          "rank": "Rank 13",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oath: Condemn",
+      "baseSpellId": 805125,
+      "icon": "inv_sword_2h_artifactashbringerpurified_d_02",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 805125,
+          "level": 0,
+          "rank": "SLS Unused",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Restore Sanity",
+      "baseSpellId": 801157,
+      "icon": "inv_misc_questionmark",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 801157,
+          "level": 50,
+          "rank": "",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ritual of Awakening",
+      "baseSpellId": 801791,
+      "icon": "_demonhand_priest",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 801791,
+          "level": 10,
+          "rank": "Rank 1",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Satiate",
+      "baseSpellId": 804275,
+      "icon": "inv_misc_questionmark",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 804275,
+          "level": 32,
+          "rank": "",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Strength of the Sha",
+      "baseSpellId": 804286,
+      "icon": "ability_titankeeper_uncheckedcorruption",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 804286,
+          "level": 0,
+          "rank": "Specialization",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Test of Pride",
+      "baseSpellId": 800468,
+      "icon": "spell_shadow_skull",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 800468,
+          "level": 0,
+          "rank": "",
+          "source": []
+        },
+        {
+          "id": 804412,
+          "level": 14,
+          "rank": "",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twilight Shieldtoss",
+      "baseSpellId": 524876,
+      "icon": "inv_shield_1h_artifactstormfist_d_05",
+      "inTree": true,
+      "ranks": [
+        {
+          "id": 524876,
+          "level": 11,
+          "rank": "Rank 1",
+          "source": []
+        },
+        {
+          "id": 804208,
+          "level": 18,
+          "rank": "Rank 2",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 503487,
+          "level": 26,
+          "rank": "Rank 3",
+          "source": [
+            6
+          ]
+        },
+        {
+          "id": 503488,
+          "level": 34,
+          "rank": "Rank 4",
+          "source": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Void Blessing",
+      "baseSpellId": 800194,
+      "icon": "inv_misc_questionmark",
+      "inTree": false,
+      "ranks": [
+        {
+          "id": 800194,
+          "level": 14,
+          "rank": "Rank 1",
+          "source": []
+        },
+        {
+          "id": 560289,
+          "level": 24,
+          "rank": "Rank 2",
+          "source": []
+        },
+        {
+          "id": 560290,
+          "level": 34,
+          "rank": "Rank 3",
+          "source": []
+        },
+        {
+          "id": 560291,
+          "level": 44,
+          "rank": "Rank 4",
+          "source": []
+        },
+        {
+          "id": 560292,
+          "level": 54,
+          "rank": "Rank 5",
+          "source": []
+        },
+        {
+          "id": 560293,
+          "level": 60,
+          "rank": "Rank 6",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Void Reaver",
+      "baseSpellId": 502133,
+      "icon": "sha_spell_shadow_shadesofdarkness",
+      "inTree": true,
+      "ranks": [
+        {
+          "id": 502133,
+          "level": 0,
+          "rank": "",
+          "source": []
+        },
+        {
+          "id": 800463,
+          "level": 0,
+          "rank": "Passive",
+          "source": []
+        }
+      ]
+    },
+    {
+      "name": "Voidwarding",
+      "baseSpellId": 560002,
+      "icon": "inv_glyph_primewarlock",
+      "inTree": true,
+      "ranks": [
+        {
+          "id": 560002,
+          "level": 31,
+          "rank": "Passive",
+          "source": []
+        }
+      ]
+    }
+  ]
+}

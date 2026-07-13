@@ -1,5 +1,42 @@
 # WoW Ascension — WeakAuras Package Generator
 
+## Working principles (read first)
+
+**NO GUESSING. NO HALLUCINATING.** The full WeakAuras source is checked out at `weakauras/weakauras2/`
+(a clone of the official repo) — it is the schema of record. Before implementing anything about a region
+type, trigger prototype, condition variable, sub-region, or field shape, **go read the actual code**
+(`RegionTypes/`, `WeakAurasTemplates/`, `Types.lua`, and `docs/weakauras-format.md` which anchors into it).
+Never invent a field name, tag, or default from memory. If you can't confirm a shape in `weakauras2/` or a
+decoded reference package, say so — don't ship a plausible guess.
+
+**ASK QUESTIONS IF NOT CLEAR.** Don't assume, don't hide confusion, surface tradeoffs. If a request has
+multiple interpretations, present them — don't silently pick one. If something is unclear, stop and name
+what's confusing before writing code.
+
+### 1. Think before coding
+- State your assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop, name what's confusing, and ask.
+
+### 2. Simplicity first
+Minimum code that solves the problem. Nothing speculative.
+- No features beyond what was asked; no abstractions for single-use code.
+- No "flexibility"/"configurability" that wasn't requested; no error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it. Ask: "Would a senior engineer call this overcomplicated?" If yes, simplify.
+
+### 3. Surgical changes
+Touch only what you must; clean up only your own mess.
+- Don't "improve" adjacent code, comments, or formatting. Don't refactor what isn't broken. Match existing style.
+- Remove imports/variables/functions that YOUR changes made unused; don't delete pre-existing dead code unless asked (mention it instead).
+- The test: every changed line should trace directly to the request.
+
+### 4. Goal-driven execution
+Define success criteria, then loop until verified. Turn tasks into verifiable goals
+("fix the bug" → "write a test that reproduces it, then make it pass"). For multi-step work, state a brief
+plan with a `verify:` check per step. In this project the standard verification is the self round-trip:
+`buildPackage` decode→encode→decode-equality asserts before writing, and an in-game import confirms.
+
 ## Goal
 
 Generate **WeakAuras import strings** (`!WA:2!...`) for the custom classes of **Conquest of Azeroth**
@@ -81,8 +118,10 @@ colors, geometry) changes. Builders live in `lib/builders.js`; per-class data + 
 **Detection is always via the `aura2` trigger** (portable — `C_UnitAuras` does not exist on this client, and
 custom Lua can't read auras). Key condition variables: `stacks` (point count), `buffed` (0/1 presence, use with
 `matchesShowOn:"showAlways"`), `expirationTime` (seconds remaining, op `<=`), `show` (1 when a `showOnActive`
-aura is up), `percenthealth` (unit HP %), `onCooldown` (0/1). Combine checks with an AND wrapper:
-`{ checks:[...], trigger:-2, variable:"AND" }`.
+aura is up), `percenthealth` (unit HP %), `percentpower` (resource %, on a `powerTrigger` — e.g. `>=60`),
+`charges` (spell charge count), `onCooldown` (0/1). Combine checks with an AND wrapper:
+`{ checks:[...], trigger:-2, variable:"AND" }`. An `aura2` trigger can list **several `auranames`** to match
+ANY of them (one uptime bar tracking multiple interchangeable buffs — see **Buff à tracker (any-of)**).
 
 | Element | Region / builder | Recipe |
 |---|---|---|
@@ -92,12 +131,16 @@ aura is up), `percenthealth` (unit HP %), `onCooldown` (0/1). Combine checks wit
 | **Debuff à tracker** (point/stack, target) | N× `aurabar` · `segmentBar` | Same as above but `unit:"target"`, HARMFUL, `unitExists:false` (drops to 0 when the debuff is consumed). |
 | **Charges à tracker** (spell charges) | N× `aurabar` · `chargeSegmentBar` | One box per charge of a *charged spell* (e.g. Runeblade 0..3). Trigger 1 = `cooldownTrigger`; condition `charges>=i` paints the fill. Pair with a **Charges** subtext on the spell's icon. |
 | **Buff à tracker** (maintenance uptime) | `aurabar` · `baseBar`+`buffTrigger(name,"showAlways")` | Duration countdown (`progressSource:[-1,""]`). Color by `expirationTime` (green→yellow `<=8`→red `<=4`). DOWN = condition `buffed==0` → deep red + pulsing red `subglow` + label subtext swap. |
+| **Buff à tracker (any-of)** | `aurabar` · `baseBar`+ aura2 with **multiple `auranames`** | Same as above, but one bar tracks a *state* granted by several interchangeable buffs (e.g. "am I enraged?" = Unbridled Rage OR Onslaught OR Battle Vigor). `buffed==1` if any is up; `expirationTime` is whichever matched. See barbarian's "Rage" bar. |
 | **CD Offensif** | `icon` · `iconBase`+`cooldownTrigger` | `genericShowOn:"showAlways"`, `desaturate` while `onCooldown`. Optional execute-window glow (e.g. `targetHealthTrigger` + `percenthealth<35` → gold). |
 | **CD Défensif** | `icon` · `iconBase`+`cooldownTrigger` | Same base; when the self-buff it grants is active (`buffTrigger` trigger 2, `show==1`) → **Pixel glow, class color**. |
-| **Proc** (use-this-now) | `icon` on its own centered row above the CDs | Hidden by default (`alpha:0`); art from `cooldownTrigger` fallback `displayIcon` (path). Condition `buffed==1` on the proc buff → `alpha:1` + **Action Button Glow (`buttonOverlay`), WHITE**. |
+| **Featured CD** (hero spell) | one **standalone `icon`** (~40–46px), a direct child of the root group (not in a dyngroup), centered above the rows | Its own `xOffset/yOffset`. `glowReady` = white **Action Button Glow** while `onCooldown==0` (spell is up). Use for the spec's signature button (barbarian Crush). |
+| **Proc** (use-this-now) | `icon` on its own centered row / slot | Hidden by default (`alpha:0`); art from `cooldownTrigger` fallback `displayIcon` (path). Show + glow on a condition → `alpha:1` + **Action Button Glow (`buttonOverlay`), WHITE**. Buff proc: `buffed==1` on the proc buff. **Execute proc:** `targetHealthTrigger` + `percenthealth<N` (barbarian Decapitate <35%). |
+| **Buff indicator (self)** | small standalone `icon` (~20px) | "Is my buff up on me?" aura2 `showAlways`. `buffed==0` → `desaturate:true` + `alpha:0.4`; `buffed==1` → **Pixel glow, class color**. Compact single-buff presence (barbarian Warspear raid buff). |
 | **CD secondaires** | `icon` (smaller, ~26px) in a 2nd `dynamicgroup` below HP | Defensives / utility. Same icon recipe as CDs. |
 | **Charges** | `subtext` `text_text:"%s"` appended to a CD icon | Shows the cooldown trigger's charge count. |
-| **Row container** | `dynamicgroup` · `makeDynGroup` | `grow:"CUSTOM"` + our `customGrow` Lua (centered, wraps). Pass `maxWidth` (= bar width) so it derives how many icons fit per row and wraps beyond that; or pass an explicit `perRow`. Icons are its children; the dyngroup is a child of the root group. |
+| **Row container** (horizontal) | `dynamicgroup` · `makeDynGroup` | `grow:"CUSTOM"` + our `customGrow` Lua (centered, wraps). Pass `maxWidth` (= bar width) so it derives how many icons fit per row and wraps beyond that; or pass an explicit `perRow`. Icons are its children; the dyngroup is a child of the root group. |
+| **Column container** (vertical side rail) | `dynamicgroup` · `makeDynGroup` + a **vertical `customGrow`** | A stacked column flanking the WA — **DEF left, OFF right** (`xOffset:∓170`), centered on the group's `yOffset`. Build with `makeDynGroup({perRow:1,...})` then override `.xOffset` and `.customGrow = vGrowLua(iconSize)` (positions `{ 0, startY-(i-1)*(h+vSpace) }`, top→bottom). Extends beyond the 250px central stack by design. See barbarian. |
 | **Root** | `group` · `makeGroup` | Static container; `controlledChildren` lists the top-level element ids in display order. |
 
 ### Glow taxonomy — keep it consistent across classes
@@ -108,7 +151,8 @@ Glow = a `subglow` sub-region toggled by a condition (`glowChanges(color, glowTy
 - **Action Button Glow** (`glowType:"buttonOverlay"`) = the **strong "act NOW" cue** (the "glow hard" François
   wants). Use it for: a proc is up, a key spell is *ready*, or a resource is capped/spent and must be dumped.
   Color it: **white** by default (proc up / spell ready), **orange or gold** for a specific dump/optimal cue
-  (e.g. Primordial Blast lights orange when Runeblade charges are spent).
+  (e.g. Primordial Blast lights orange when Runeblade charges are spent; Decapitate lights **gold** at
+  `percentpower>=60` = enough Rage to hit hard).
 - **Pixel glow** = a **soft/passive state** (not an urgent action): **class color** = a defensive self-buff is
   active ("is my buff up", e.g. Hateforged Barrier); **red (pulsing)** = a maintenance buff fell off (Inner Demon).
 
@@ -132,8 +176,19 @@ compact, everything within one width):
 - **Bar heights ~12–14**; **icons 26 primary / 24 secondary** (`~30` for a standalone proc icon).
 - **Vertical gaps ~3px** between adjacent elements (compute yOffsets from heights + a small gap).
 
+**Two layout shells** (pick per class / per user taste):
+- **Central stack** (default, compact) — everything in one 250px-wide column, top→bottom as above.
+- **Side rails + central stack** — a **vertical Column container** on each flank (`DEF left @ xOffset -170`,
+  `OFF right @ +170`) with the central stack (featured CD · spell row · bars · proc) between them. The rails
+  extend past 250px on purpose. This is the barbarian "friend's design" shell.
+- **Combat-only package**: to make the *whole* WA vanish out of combat, set `load.use_combat = true` on
+  **every region** (all children **and** the root group), not just the group — children are independent
+  displays. Do it in one pass: `[group, ...children].forEach(r => { r.load.use_combat = true; })`.
+
 See `classes/felsworn/build.js` (Energy / Felfury stacks / Inner Demon uptime) and
-`classes/runemaster/build.js` (Mana / Runeblade *charge* segments) for the two worked examples.
+`classes/runemaster/build.js` (Mana / Runeblade *charge* segments) for the central-stack examples, and
+`classes/barbarian-brutality/build.js` for the **side-rail shell** + featured CD + execute proc + any-of
+Rage bar + combat-only load.
 
 ### Colors / class identity
 
@@ -151,8 +206,14 @@ NOT in the DOM/`__NEXT_DATA__`; it lives in React fiber props. Using the browser
    `node.spellId` is the one WeakAuras needs.
 3. Tool output truncates ~1000 chars — dump compact/paged (`window.__x` + `.slice()`), never whole objects.
 4. **Baseline** abilities (not in the talent tree — e.g. Felsworn's Twin Slice, Chaos Rush, Fel Fireball,
-   Cripple, Consume Magic) are NOT scrapable this way; get their spellIds from the user (in-game tooltip/macro).
-   Some may not resolve by name via `GetSpellInfo` — track those by name in the trigger and confirm in-game.
+   Cripple, Consume Magic) are NOT in the builder, but they ARE recoverable from the **Ascension spell DB**
+   `db.ascension.gg` (an aowow / Wowhead-clone). Each custom class's grimoire spells live under a per-class
+   **skill line** (`?skill=489` = Felsworn, 488 = Stormbringer, ... the CoA block is skill ids 475–502);
+   custom spells are name-prefixed `@` (the row `isCoaClass` flag is unreliable). `node weakauras/tools/coa-baselines.js all`
+   enumerates every class's skill line(s), subtracts the tree spellIds, and writes `<slug>-baselines.{md,json}`
+   (+ `coa-classes/BASELINES-INDEX.md`). Also usable ad-hoc: `?spells&filter=na=<Name>` resolves one spell by
+   name → spellId, `?spell=<id>` is the detail page. **Caveat:** Bloodmage has no base skill line (only its
+   Fleshweaver spec line) so its baseline set is incomplete — confirm in-game.
 
 Current Felsworn/Tyrant data: `weakauras/classes/felsworn/abilities.md` (67 abilities → castable spellIds).
 
@@ -178,7 +239,8 @@ classes/<name>/ per-class package — build.js (data + layout) + abilities.md
 build.js        CLI: `node build.js [class...|all]` -> writes dist/
 dist/           generated output — <class>.import.txt (current) + <class>.prev.import.txt + <class>.decoded.json
 reference/      known-good decoded packages (luxthos/, luxthos-elemental*) + LibDeflate.lua
-tools/          coa-process.js + the scraped coa-classes/ + coa-all-classes.json dump
+tools/          coa-process.js (tree scrape) + coa-baselines.js (grimoire spells from db.ascension.gg)
+                + scraped coa-classes/ (<slug>-nodes.json, <slug>-baselines.json, BASELINES-INDEX.md) + coa-all-classes.json
 ```
 
 Add a class = new `classes/<name>/build.js` that `require('../../lib/builders.js')`, declares its colors/
@@ -187,18 +249,34 @@ rotates the previous string into `<class>.prev.import.txt` on each build.
 
 ## Current status
 
-Two classes wired to the shared engine, both **compact (250px width, ~3px gaps)**:
+Three classes wired to the shared engine:
+- **Barbarian — Brutality** (`node build.js barbarian-brutality`): **side-rail shell** — DEF column (Battle
+  Vigor / Defiance / Thick Skull) vertical-left, OFF column (Unbridled Rage / Storm of Steel / Killing Spree /
+  Hodir's Wrath) vertical-right; central stack = Warspear buff indicator · big **Crush** featured CD (white
+  glow when up) · horizontal spell row (Whirling Advance / Decapitate / Headbutt / Jawbreaker; Decapitate
+  glows gold at `percentpower>=60`) · **any-of "Rage" bar** (Unbridled Rage OR Onslaught OR Battle Vigor) ·
+  big pink Rage bar · Health · **Decapitate execute proc** (`percenthealth<35`). Whole WA is **combat-only**
+  (`use_combat` on every region). By-name (confirm in-game): Unbridled Rage, Onslaught, Symbol of the Warspear,
+  and Kick was dropped from the layout. Resolved baseline ids: Headbutt 520523, Battle Vigor 801768,
+  Whirling Advance 500919.
 - **Felsworn — Tyrant** (`node build.js felsworn`): Fel Fireball proc row (shows only while "Carve" is up,
   white Action-Button glow) · 8-icon primary CD row · Inner Demon uptime bar · Energy(gold) · 6 Felfury
   stack boxes · Health(red) · 3-icon secondary row. Grey-on-cooldown, Chaos Rush charges; Felfury glows
   gold when capped@6 AND Inner Demon missing; defensive buffs glow Pixel green.
 - **Runemaster — Runic** (`node build.js runemaster`): primary CD row · Runeblade 3-segment **charge** bar
-  (0..3) · Mana(blue) · Health(red) · secondary row. Runic Brand glows white (Action Button) when ready,
-  Primordial Blast glows orange when Runeblade charges are spent, Power Overwhelming is a proc-only icon.
+  (0..3) · Mana(blue) · Health(red) · **weapon/tattoo buff row** · secondary row. Runic Brand glows white
+  (Action Button) when ready, Primordial Blast glows orange when Runeblade charges are spent, Power
+  Overwhelming is a proc-only icon. Runeblade (707141) and Primordial Blast (800732) now use resolved
+  baseline spellIds (was by-name). The buff row (under HP) is a centered dynamicgroup of showOnActive
+  icons: the active **Runic Tattoo** (aura2 by name, all 6 elements Fire/Water/Air/Earth/Frost/Arcane,
+  dynamic elemental icon) + **Weapon Engravings** MH & OH (the `item`/`Weapon Enchant` trigger, enchant
+  `""` = any, weapon-icon + `%n` name subtext + temp-enchant timer). Engraving detection depends on the
+  client exposing `GetWeaponEnchantInfo` — confirm in-game.
 
-Known open items: some baseline spellIds tracked by name (Fel Fireball, Fel Bargain, Arcane Torrent,
-Runeblade, Primordial Blast) — cooldown/charge tracking needs a resolvable spell; unify the situational-cue
-glow style (see Glow taxonomy); other 19 classes not started.
+Known open items: baseline spellIds previously tracked by name are now resolvable via the DB scrape
+(`coa-baselines.js` → e.g. Fel Fireball 801312, Primordial Blast 800732) — swap name-tracked triggers to
+these ids where cooldown/charge tracking needs a resolvable spell; unify the situational-cue glow style
+(see Glow taxonomy); other 19 classes not started.
 
 ## Generator architecture (long-term direction)
 
@@ -237,6 +315,10 @@ generalizes cleanly do we add the fly.io web app + preview/customization fronten
 
 ## Skills (in `.claude/skills/`)
 
-- **wa-decode** — decode a `!WA:2!` string / inspect a package's structure.
-- **wa-scrape-class** — pull a CoA class's abilities + castable spellIds (+ resource model) from the builder.
-- **wa-build-package** — assemble & encode a class package (resource bars + cooldown row) via template-cloning.
+- **wa-decode** — decode a `!WA:2!` string / inspect a package's structure (regions, triggers, conditions).
+- **wa-scrape-class** — pull a CoA class's talent-TREE abilities + castable spellIds (+ resource model) from the
+  builder via browser automation. (Baseline/grimoire spells come from `tools/coa-baselines.js` — see the scrape section.)
+- **wa-new-class** — create a brand-new class/spec package from scratch: scaffolds `classes/<name>/build.js` on the
+  shared engine, wires the element taxonomy, builds & self-verifies into `dist/`.
+- **wa-build-package** — iterate on an EXISTING class package (add/modify a bar, icon, tracked buff, proc, glow,
+  condition in `classes/<name>/build.js`) and re-encode.
