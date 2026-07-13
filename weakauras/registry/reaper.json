@@ -1,0 +1,1966 @@
+{
+ "slug": "reaper",
+ "class": "Reaper",
+ "classId": "30",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Harvest",
+   "tabId": 79
+  },
+  {
+   "name": "Soul",
+   "tabId": 80
+  },
+  {
+   "name": "Domination",
+   "tabId": 81
+  }
+ ],
+ "abilityCount": 137,
+ "abilities": [
+  {
+   "spellId": 707909,
+   "name": "To The Shadowlands",
+   "icon": "Interface\\Icons\\Spell_Shadow_NightOfTheDead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_nightofthedead.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Soulslam by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 707116,
+   "name": "Warden of the Lost",
+   "icon": "Interface\\Icons\\nhi_spiritualskull_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritualskull_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Spectral Scythes and Spectral Wardens now reduces the cooldown of Spectral Warden by -0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 561102,
+   "name": "Sepulchral Renewal",
+   "icon": "Interface\\Icons\\nhi_soulblessing_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_soulblessing_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Resets the cooldown of Limbo, Soulslam, and Shade.Usable while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 572213,
+   "name": "Gravesite",
+   "icon": "Interface\\icons\\nhi_soulgrave_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_soulgrave_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Endbringer now marks the ground beneath you as your Gravesite for 15 seconds.Direct critical strikes made against enemies within a Gravesite now deals 530 + 36% AP Shadow damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805185,
+   "name": "Sinister Litany",
+   "icon": "Interface\\icons\\nhi_scrollofsoulbending_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_scrollofsoulbending_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Embrace your sinister thoughts, instantly generating 3 Reaped Souls.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560434,
+   "name": "Spirit Chaser",
+   "icon": "Interface\\icons\\nhi_spiritwraith_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritwraith_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance and critical damage of Reap, Deathchaser, and Wraithblade by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 572340,
+   "name": "Soulstrider",
+   "icon": "Interface\\Icons\\spell_shaman_spiritwalkersgrace",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_spiritwalkersgrace.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the movement speed granted by Veilwalk by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800845,
+   "name": "Limbo",
+   "icon": "Interface\\Icons\\Ability_Rogue_ShadowDance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_shadowdance.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Rip out of your mortal shell for 5 seconds, making you immune to all harmful spell effects and instantly restoring 30% of your maximum health and Runic Power.Usable while stunned, feared, or polymorphed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707707,
+   "name": "Red Wake",
+   "icon": "Interface\\Icons\\ability_revendreth_shaman",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_shaman.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct damage critical strikes now generate an additional Soul Fragment.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 705410,
+   "name": "Haunter",
+   "icon": "Interface\\Icons\\ability_demonhunter_vengefulretreat",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_vengefulretreat.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Soulrend by 10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 707908,
+   "name": "Essence Harvest",
+   "icon": "Interface\\Icons\\inv_alchemist_81_spiritedalchemiststone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_alchemist_81_spiritedalchemiststone.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the additional Frost damage dealt by Ghostly Weapon by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 504046,
+   "name": "Purgatory",
+   "icon": "Interface\\Icons\\ability_warlock_improvedsoulleech",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_improvedsoulleech.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you gain Soul Infusion, the damage of your Soulrend and Reliquary of the Lost is increased by 20% for 6 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 803997,
+   "name": "Ghostly Weapon",
+   "icon": "Interface\\icons\\custom_66_spirit_sword_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_66_spirit_sword_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 40 sec rechargeImbue your weapon with ghostly power for 15 seconds, causing melee attacks to deal 25% additional damage as Frost damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 806125,
+   "name": "Sever",
+   "icon": "Interface\\Icons\\_Virus_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_virus_red.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Attempt to drain an enemies vitals, leeching 22 + 31.03% AP health, interrupting casting and preventing any spell from that school from being cast for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 524939,
+   "name": "Jailer's Will",
+   "icon": "Interface\\Icons\\achievement_dungeon_soulboundgoliath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_soulboundgoliath.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Soul Strike now deals 30% Strength increased damage, scaling with Strength.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 706790,
+   "name": "Backswing",
+   "icon": "Interface\\icons\\novart_magicspell_(32)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(32)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the Runic Power generated by Reap by 5.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707455,
+   "name": "Chasing Death",
+   "icon": "Interface\\Icons\\Spell_Ice_Lament",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_ice_lament.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Deathchaser used against a target below 20% health will now reapply itself at the end of its duration until they die or until 5 seconds passes.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 560490,
+   "name": "Dark Soldier",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactthunderfury_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactthunderfury_d_01.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your hit chance by 3% and reduces your Magic damage taken by -2%.",
+   "altSpellIds": [
+    561338
+   ],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 561127,
+   "name": "Soulforged Weaponry",
+   "icon": "Interface\\Icons\\inv_weapon_shortblade_105",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_105.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your off-hand weapon damage by 25%.While dual-wielding, your auto attacks now have a 8% chance to make your next Murder free of cost.",
+   "altSpellIds": [
+    561340
+   ],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 803990,
+   "name": "Veilwalk",
+   "icon": "Interface\\Icons\\_Diablo3_Thunderclap_Warlock",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_thunderclap_warlock.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "2 Charges, 60 sec rechargeMove with spectral agility, gaining 50% increased movement speed for 5 seconds, stacking 2 times.Removes all movement impairing effects. Usable while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804311,
+   "name": "Soul Harvester",
+   "icon": "Interface\\Icons\\ability_deathknight_soulreaper",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_soulreaper.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Landing the killing blow on a target that yields experience or honor now grants Soul Harvester for 10 seconds.Soul HarvesterAfter killing an enemy you generate 2 Runic Power every 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 705441,
+   "name": "Shattered Souls",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_RagedSpirit_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_ragedspirit_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Wraithblade now deals double damage to enemies affected by Soulrend.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 705386,
+   "name": "Spectre's Call",
+   "icon": "Interface\\Icons\\inv_ghostlycharger",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ghostlycharger.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Deathwind, Murder, and Soul Strike by 15%.",
+   "altSpellIds": [
+    707802
+   ],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 704558,
+   "name": "Dark Passage",
+   "icon": "Interface\\Icons\\inv_artifact_stolenpower",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_artifact_stolenpower.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Dealing direct critical strikes with Shadow damage reduce the cooldown of Limbo by -2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804004,
+   "name": "Soulbender",
+   "icon": "Interface\\icons\\nhi_spirittranquility_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spirittranquility_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Significantly increases the Runic Power generated by Deathchaser.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 573040,
+   "name": "Deathbringer",
+   "icon": "Interface\\Icons\\nhi_bloodsword_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodsword_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Blood Frenzy and Harvest Time by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 801335,
+   "name": "Hungering Scythe",
+   "icon": "Interface\\Icons\\inv_artifact_thalkielsdiscord",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_artifact_thalkielsdiscord.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Deathwind by 4 sec and Crow's Harvest now deals 15% additional damage to enemies inside.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 704356,
+   "name": "Soultaker",
+   "icon": "Interface\\Icons\\inv_soulbarrier",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_soulbarrier.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt with Dreadwake now reduces the cooldown of Tormented Souls by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 504309,
+   "name": "Siphon Anima",
+   "icon": "Interface\\Icons\\spell_animabastion_debuff",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_animabastion_debuff.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you summon a Spectral Scythe, you now heal for 5% of your damage dealt for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 704357,
+   "name": "Ghastly Form",
+   "icon": "Interface\\Icons\\ability_argus_deathfog",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_argus_deathfog.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "After using Spectre Stride, Scythe Rush, or Veilwalk you now gain a shield that absorbs 114 + 33% AP damage for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300569,
+   "name": "Hard Bargain",
+   "icon": "Interface\\Icons\\inv_trinket_mawraid_04_blue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_trinket_mawraid_04_blue.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Tormented Souls is active on you, your melee attack speed is increased by 30% and your Dreadwake costs -5 less Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 560422,
+   "name": "Burial Rites",
+   "icon": "Interface\\Icons\\achievement_raid_torghast_thenine",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raid_torghast_thenine.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Rites by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705432,
+   "name": "Hemorrhage",
+   "icon": "Interface\\Icons\\ability_rogue_bloodsplatter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_bloodsplatter.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage and critical strike chance of your abilities by 10% against enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 560486,
+   "name": "Final Requiem",
+   "icon": "Interface\\Icons\\ability_argus_soulbombdebuffsmall",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_argus_soulbombdebuffsmall.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance with abilities that deal Shadow damage by 15% against enemies below 20% health.",
+   "altSpellIds": [
+    561358
+   ],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 705418,
+   "name": "Callous Soul",
+   "icon": "Interface\\Icons\\spell_animarevendreth_orb",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_animarevendreth_orb.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the amount of armor Soulrend causes you to ignore by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 706785,
+   "name": "Unbound",
+   "icon": "Interface\\icons\\novart_magicspell_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(2)_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Reliquary of the Lost is now guaranteed to critically strike for 25% increased damage on enemies below 20% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 803999,
+   "name": "Dominion",
+   "icon": "Interface\\Icons\\spell_warlock_demonwrath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warlock_demonwrath.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Gaining Soul Infusion now increases your Armor by 585 for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706786,
+   "name": "Damned",
+   "icon": "Interface\\icons\\novart_magicspell_(12)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(12)_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you gain Soul Infusion, you are protected from being slowed below 100% of normal speed for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705389,
+   "name": "Apparition",
+   "icon": "Interface\\Icons\\Spell_Shadow_NightOfTheDead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_nightofthedead.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Spectre Stride by 30% and reduces the chance for enemies to see you while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805196,
+   "name": "Soulrot",
+   "icon": "Interface\\icons\\nhi_souldrain_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_souldrain_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. Each instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 705426,
+   "name": "Ghost",
+   "icon": "Interface\\Icons\\_SoulsDevourer_Purple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_soulsdevourer_purple.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Sinister Litany now increases the damage of your next spell or ability within 10 sec by 50% and casting it now grants you Ghost for 3 seconds.Ghost (Proc)Enter an enhanced stealth mode that does not break on damage dealt or taken.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300969,
+   "name": "Ethereal Guard",
+   "icon": "Interface\\Icons\\ability_racial_etherealconnection",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_etherealconnection.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases your melee haste by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 561099,
+   "name": "From the Shadows",
+   "icon": "Interface\\Icons\\ability_priest_cascade_shadow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_cascade_shadow.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Exiting Underwalk increases your critical strike chance by 10% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300560,
+   "name": "Dreadknight",
+   "icon": "Interface\\icons\\nhi_spiritualarmor_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritualarmor_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your armor contribution from mail and plate items by 20% and reduces the chance for spells to hit you by -2%.",
+   "altSpellIds": [
+    301352
+   ],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 805717,
+   "name": "Requiem",
+   "icon": "Interface\\Icons\\inv_misc_supersoulash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_supersoulash.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Swing at enemies around you in a fury of souls, dealing 67 + 40% AP Shadowfrost Damage, reducing their melee and ranged attack speed by -20% for 15 seconds, and generating Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 706576,
+   "name": "Bountiful Harvest",
+   "icon": "Interface\\Icons\\inv_harvestgolempet",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_harvestgolempet.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Reap and Murder by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 806146,
+   "name": "Ghastly Screech",
+   "icon": "Interface\\Icons\\_D3horrify",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3horrify.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Screech with ghastly intent, silencing all nearby enemies for 4 seconds, and dealing 90 + 25% AP Shadowfrost Damage at the end of the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805718,
+   "name": "Jailer's Bargain",
+   "icon": "Interface\\icons\\nhi_spiritarmor_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritarmor_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Beckon the jailer, gaining a shield that absorbs damage equal to 30% of your maximum health for 10 seconds.While this is active you are considered Undead and are immune to fear, sleep, and charm effects.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801328,
+   "name": "Dirge",
+   "icon": "Interface\\Icons\\ability_demonhunter_soulcleave4",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_soulcleave4.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 2 Soul FragmentsStrike the enemy with both weapons, dealing 70% (130% if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 573038,
+   "name": "Shade",
+   "icon": "Interface\\Icons\\_Shadow_LightBlue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_shadow_lightblue.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805204,
+   "name": "Maw Knight",
+   "icon": "Interface\\Icons\\inv_helmet_plate_deathknight_m_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helmet_plate_deathknight_m_01.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Doomrend by 5%.",
+   "altSpellIds": [
+    807888
+   ],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 500359,
+   "name": "Scythe Rush",
+   "icon": "Interface\\Icons\\ability_demonhunter_bladedance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_bladedance.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Rush towards an enemy and generate 15 Runic Power.Cannot be used on the same target more than once every 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500484,
+   "name": "Spectral Scythe",
+   "icon": "Interface\\Icons\\inv_archaeology_80_witch_bonescythe",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_80_witch_bonescythe.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summons 1 Spectral Scythe for each Reaped Soul active which attack a nearby enemy for 20 seconds.Striking enemies with Soul Strike causes the Spectral Scythe to attack that enemy and 5 nearby enemies. Consumes Reaped Souls and Soul Infusion.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 705428,
+   "name": "Souls for the Slaughter",
+   "icon": "Interface\\icons\\novart_helmet_(7)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_helmet_(7)_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Slaughter now cause your auto attacks to deal an additional 85% Shadow damage for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 800172,
+   "name": "Doomrend",
+   "icon": "Interface\\Icons\\inv_knife_1h_revendrethquest_b_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_knife_1h_revendrethquest_b_03.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Rend an enemy dealing 140% Weapon Damage plus 17 + 35% AP, causing you to apply a dark shield to them that absorbs the next 75 + 100% Strength healing done to them for 5 seconds, and generates Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 560487,
+   "name": "Soul Knight",
+   "icon": "Interface\\Icons\\inv_sword_2h_artifactashbringerlightning_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_artifactashbringerlightning_d_03.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your successful parries and dodges increase all healing you receive by 2% and reduce all Magic damage taken by -2% for 10 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 807397,
+   "name": "Soul Tap",
+   "icon": "Interface\\Icons\\_D3soulharvest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3soulharvest.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Chip away at the very essence of your own soul, generating 50 Runic Power.Usable while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800922,
+   "name": "Endbringer",
+   "icon": "Interface\\icons\\nhi_frozenghost_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frozenghost_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Become an Endbringer for 15 seconds, increasing the damage of Dirge by 30%, the range by 20 yds, and causes it to generate 3 Reaped Souls.For the duration, Dirge will heal you for 75% of its damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 707899,
+   "name": "Blood Frenzy",
+   "icon": "Interface\\Icons\\_D3mantraofretribution",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3mantraofretribution.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Harvest Time with an enemy targeted within 20 yds of you now unleashes a Blood Frenzy.Blood FrenzyDeals 1 + 36% AP Shadow Damage to your target every 0.75 sec for 7.5 seconds. At the end of the duration, the target takes an additional 457 + 45% AP Shadow Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 805190,
+   "name": "Deathchaser",
+   "icon": "Interface\\icons\\nhi_spiritstab_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritstab_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Force death upon an enemy, dealing 13 + 8% AP Shadowfrost Damage, repeating every 0 sec for 1 seconds, and generates Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 801325,
+   "name": "Painmail",
+   "icon": "Interface\\Icons\\inv_shoulder_armor_maw_c_14",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_armor_maw_c_14.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Reap, Dreadwake and Soul Strike now grants a stack of Painmail for 15 seconds, stacking up to 8 times. Additional applications do not refresh the effect.When Painmail stacks expire naturally, you are healed for 2% of your maximum health and reduce the cooldown of Bolstered Form by -0.5 sec for each stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 805205,
+   "name": "Darkrend Scythe",
+   "icon": "Interface\\Icons\\inv_staff_114",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_114.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Doomrend and Crow's Harvest now applies a bleed, dealing 56 + 8.5% AP Physical damage every 2 sec for 10 seconds, stacking 5 times.Additional applications do not refresh the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 805258,
+   "name": "Wraithblade",
+   "icon": "Interface\\Icons\\inv_archaeology_orcclans_tattooknife",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_orcclans_tattooknife.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Generates 3 Reaped SoulsStrike for 150% Weapon Damage plus 36 + 62.5% SP + 18% AP Shadow damage, ignoring resistances, absorption, and invulnerability effects.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561108,
+   "name": "Mysterious Omen",
+   "icon": "Interface\\icons\\nhi_frozenghost_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frozenghost_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the range of Murder and Soul Shock by 5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300791,
+   "name": "Deathwail",
+   "icon": "Interface\\Icons\\5_spirit_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_spirit_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Runic Power cost of Wraithblade by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 705424,
+   "name": "Anima Ambusher",
+   "icon": "Interface\\Icons\\ability_warlock_darkarts",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_darkarts.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Spectre Stride now deals an additional 125% of its damage dealt over 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 500483,
+   "name": "Tormented Souls",
+   "icon": "Interface\\Icons\\_SoulsDevourer_Blue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_soulsdevourer_blue.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Create 1 Tormented Soul and generate Runic Power for each Reaped Soul active.Consumes Reaped Souls and Soul Infusion.Tormented SoulsReduces all direct damage you take by -10% and heals you for 35 + 5.8% AP + 24% Stamina, removing 1 stack. Lasts 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705403,
+   "name": "Soulstorm",
+   "icon": "Interface\\Icons\\spell_shadow_soulleech_2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_soulleech_2.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Requiem and Soulrend now have a 40% chance to refund a Reaped Soul.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 803998,
+   "name": "Ghostly Magic",
+   "icon": "Interface\\Icons\\ability_warlock_shadowfurytga",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_shadowfurytga.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Reap, Dirge, and Reliquary of the Lost by 10%.",
+   "altSpellIds": [
+    807889
+   ],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805719,
+   "name": "Soul Splinters",
+   "icon": "Interface\\Icons\\oshugun_crystalfragments",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/oshugun_crystalfragments.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Erupt with ghastly force whenever you harvest a Reaped Soul, dealing 47 + 10.5% Stamina + 15% AP Spellshadow Damage to nearby enemies over 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 520056,
+   "name": "Soul Generator",
+   "icon": "Interface\\Icons\\item_icecrownringd",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/item_icecrownringd.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Dirge now generate 10 Runic Power.Critical strikes with Murder now generate 1 additional Reaped Soul.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805186,
+   "name": "Essence Invigoration",
+   "icon": "Interface\\Icons\\inv_misc_lesseressence",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_lesseressence.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting abilities that require Soul Infusion now has a 50% chance to restore 5% of your missing health.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560892,
+   "name": "Sanguine Harvester",
+   "icon": "Interface\\icons\\nhi_bloodhand_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodhand_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee haste by 10%.",
+   "altSpellIds": [
+    561339
+   ],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 805181,
+   "name": "Eater of Souls",
+   "icon": "Interface\\Icons\\Spell_Shadow_DevouringPlague.",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_devouringplague..jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reaching 3 Reaped Souls now reduces your Physical damage taken by -10% and you regain 1% of your maximum health every 2 sec for 10 seconds. This will not trigger while already active.In addition, the healing done by Deathwind is increased by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 680995,
+   "name": "Painbringer",
+   "icon": "Interface\\icons\\nhi_reaperscythe_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_reaperscythe_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Generating Reaped Souls now has a 10% chance to trigger Masochistic Rage for 5 sec.If Masochistic Rage is already active, it will instead extend the duration by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803030,
+   "name": "Masochistic Rage",
+   "icon": "Interface\\Icons\\ability_rogue_vendetta",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_vendetta.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "After a 1 sec delay, you suffer 660 + 36% AP damage, enraging you and increasing your damage dealt by 20% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805195,
+   "name": "The Jailer's Call",
+   "icon": "Interface\\Icons\\inv_mawrat",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mawrat.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Attacks against enemies below 20% health deal an additional 140 + 18% AP Shadow damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 704556,
+   "name": "Doomer",
+   "icon": "Interface\\Icons\\inv_sword_1h_warfrontshorde_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_warfrontshorde_c_01.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Doomrend and Slaughter by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 524735,
+   "name": "Redshade",
+   "icon": "Interface\\Icons\\inv_sword_2h_blood_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_blood_c_02.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Reap now transforms your Reap into Thresh for 10 sec.ThreshGenerates 1 Soul Fragment Strike enemies around you, dealing 110% Weapon Damage and generating Runic Power.Upon cast, this ability transforms into Bloodshatter for 10 sec.BloodshatterGenerates 1 Soul Fragment Strike enemies in front of you, dealing 329 + 20% AP Shadow damage and generating Runic Power.Your next Reliquary of the Lost within 10 seconds now triggers a -25% reduced cooldown.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 805194,
+   "name": "Lord of Death",
+   "icon": "Interface\\Icons\\inv_helm_cloth_raidpriest_r_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_cloth_raidpriest_r_01.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Abilities affected by Ghostly Weapon now deal 25% more damage per additional target.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805716,
+   "name": "Spectral Warden",
+   "icon": "Interface\\icons\\custom_T_SpiritualArmor_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_spiritualarmor_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summon a spectral guardian to fight along side you for 20 seconds and apply an absorption shield to up to 8 allies within 20 yds, absorbing 199 + 150% Stamina damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 705414,
+   "name": "Crimson Death",
+   "icon": "Interface\\Icons\\ability_revendreth_rogue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_rogue.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Slaughter now has a 20% chance to cast an additional time free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 560924,
+   "name": "Genocide",
+   "icon": "Interface\\icons\\novart_physical_ability_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(2)_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical damage and critical strike chance of Slaughter by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 803992,
+   "name": "Dreadwake",
+   "icon": "Interface\\Icons\\ability_argus_edgeofobliteration",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_argus_edgeofobliteration.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 Reaped SoulUnleash a wave of souls upon enemies in a 12 yd cone, causing 80% Weapon Damage plus 5 Frost damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 805203,
+   "name": "Mawborn",
+   "icon": "Interface\\Icons\\Warlock_siphonlife",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warlock_siphonlife.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the duration of disarm and incapacitate effects against you by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 301986,
+   "name": "Spirit Culling",
+   "icon": "Interface\\Icons\\Spell_Shadow_Haunting",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_haunting.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "For the duration of Spectral Scythe, the damage of Soul Strike is increased by 20%.In addition, generating a Reaped Soul now has a 10% chance to summon a Spectral Scythe to fight alongside you for 10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 680337,
+   "name": "Bolstered Form",
+   "icon": "Interface\\Icons\\achievement_raid_torghast_shadowscourge_prisonofnerzhul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raid_torghast_shadowscourge_prisonofnerzhul.jpg",
+   "source": "Domination",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Assume a bolstered form for 15 seconds, generating 30 Runic Power, increasing your Armor by 25%, and increasing your parry chance by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 680996,
+   "name": "The End Is Near",
+   "icon": "Interface\\Icons\\ability_warlock_soullink",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_soullink.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Wraithblade now creates a spectral version of yourself for 12 seconds that casts Dirge and Murder on enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 805198,
+   "name": "Ruin",
+   "icon": "Interface\\Icons\\Ability_Rogue_Rupture",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_rupture.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Murder now applies Ruin to enemies for 10 seconds.RuinIncreases damage taken by Doomrend and Slaughter by 25% for 10 seconds.Using Doomrend on a target afflicted by Ruin will increase your haste by 15% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 705413,
+   "name": "Harvesting Grounds",
+   "icon": "Interface\\Icons\\inv_shoulder_plate_raiddeathknightmythic_s_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_plate_raiddeathknightmythic_s_01.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create a harvesting ground at the target location for 10 seconds, enemies inside have their melee and ranged haste and movement speed reduced by -20%For the duration, enemies that try to exit the harvesting ground will be pulled back to its center.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 504560,
+   "name": "Crimson Wraith",
+   "icon": "Interface\\icons\\nhi_arcanewraith_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanewraith_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical stike damage by 10%.",
+   "altSpellIds": [
+    504880
+   ],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 500373,
+   "name": "Slaughter",
+   "icon": "Interface\\Icons\\ability_revendreth_warrior",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_warrior.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 Reaped SoulEradicate an enemy with your scythe, dealing 130% Weapon Damage plus 14.Only usable on enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 803995,
+   "name": "Harvest Time",
+   "icon": "Interface\\Icons\\inv_mace_1h_revendreth_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_revendreth_d_01.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your damage and critical strike chance by 15% and gives your spells that require Soul Infusion a -50% to not consume the effect for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 301193,
+   "name": "Beyond Death",
+   "icon": "Interface\\icons\\nhi_shadowentagle_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowentagle_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Reliquary of the Lost now has a 8% chance to launch an additional Soul Bolt.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 561100,
+   "name": "Soulfused Constitution",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_iceboundfortitude.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Tormented Souls now creates 1 additional soul for each Reaped Soul active.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560917,
+   "name": "Mark of Death",
+   "icon": "Interface\\icons\\nhi_ghoststone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_ghoststone_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Deathchaser by 15% and your hit chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 807419,
+   "name": "Reaver",
+   "icon": "Interface\\icons\\nhi_spiritualsummoning_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritualsummoning_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Deathstalker, Soul Shear, and Soulstone Lure by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 705392,
+   "name": "Soul Bane",
+   "icon": "Interface\\Icons\\spell_shadow_detectlesserinvisibility",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_detectlesserinvisibility.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Reliquary of the Lost by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 705442,
+   "name": "Fatesealer",
+   "icon": "Interface\\Icons\\ability_deathknight_hungeringruneblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_hungeringruneblade.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating a Reaped Soul now reduces damage taken by -2% for 15 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 560919,
+   "name": "Essence Binder",
+   "icon": "Interface\\icons\\novart_magicspell_(53)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(53)_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Soul Strike now steals some of the target's health and Strength for 12 seconds, granting it to you at increased value.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 705406,
+   "name": "Harnessed Life",
+   "icon": "Interface\\icons\\nhi_scrollofsouls_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_scrollofsouls_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Tormented Souls now has a -25% chance to not consume a stack from damage taken.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 705416,
+   "name": "Blood Fueled",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_BloodTap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_bloodtap.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the healing absorbed by Doomrend by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 504011,
+   "name": "Crow's Harvest",
+   "icon": "Interface\\Icons\\inv_polearm_2h_warfrontshorde_c_01red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_polearm_2h_warfrontshorde_c_01red.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Strike all nearby enemies for 65% Weapon Damage plus 6.Damage dealt harvests a Soul Fragment, up to a maximum of 3.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 504037,
+   "name": "Dark Fate",
+   "icon": "Interface\\icons\\uico_blood_spell_10_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_blood_spell_10_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of Crow's Harvest by -10 Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 804671,
+   "name": "Spectre Strength",
+   "icon": "Interface\\Icons\\achievement_zone_ghostlands",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_ghostlands.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Strength by 5%.",
+   "altSpellIds": [
+    807886
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805192,
+   "name": "Ghastly Advance",
+   "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_auraofdarkness.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the range of Spectre Stride by 5 yds and causes it to generate 5 more Runic Power.",
+   "altSpellIds": [
+    807885
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 573071,
+   "name": "Withering Touch",
+   "icon": "Interface\\Icons\\_D3spiritbarrage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3spiritbarrage.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your touch rots armor and resolve, reducing the target’s armor by -20% and increasing their Magic damage taken by 10% for 1 minute, and generates Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300553,
+   "name": "Soul Protector",
+   "icon": "Interface\\Icons\\inv_helmet_146",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helmet_146.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases Armor contribution from items by 25% and increases your magic resistances by 21.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805184,
+   "name": "Soul Furnace",
+   "icon": "Interface\\icons\\nhi_spiritamulet_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritamulet_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the amount leeched from Soul Harvest by an additional 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504012,
+   "name": "Soul Harvest",
+   "icon": "Interface\\icons\\nhi_spiritfire_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritfire_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Generating Reaped Souls now triggers Soul Harvest. Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805188,
+   "name": "Harvester's Scythe",
+   "icon": "Interface\\Icons\\ability_rogue_restlessblades",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_restlessblades.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the amount leeched by Soul Strike by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560927,
+   "name": "Ghastly Hilt",
+   "icon": "Interface\\Icons\\inv_qiraj_hiltornate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_qiraj_hiltornate.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Ghostly Weapon now causes your melee abilities to strike up to 2 additional targets near the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 560419,
+   "name": "Soul Warden",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_GhostLand_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_ghostland_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your melee attack power by 1 for every 100 Armor you have.",
+   "altSpellIds": [
+    561337
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706795,
+   "name": "Empyrean Fortitude",
+   "icon": "Interface\\icons\\novart_magicspell_(20)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(20)_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your parry chance by 5% and parrying an attack now generates 2 Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 705404,
+   "name": "Spirit Realm",
+   "icon": "Interface\\Icons\\Spell_Shadow_ShadowEmbrace",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_shadowembrace.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Deathwind now also increases your healing taken by 10% while you stand within its radius.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 560478,
+   "name": "Intimidating Presence",
+   "icon": "Interface\\icons\\nhi_soulgrave_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_soulgrave_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Bolstered Form now increases the damage nearby enemies take from you by 15% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 300565,
+   "name": "Soulsight",
+   "icon": "Interface\\icons\\custom_eyes_02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_eyes_02_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, dealing direct damage now has a 15% chance to generate a Soul Fragment.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 300889,
+   "name": "Blood Harvester / The Time Has Come",
+   "icon": "Interface\\Icons\\ability_ironmaidens_whirlofblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_whirlofblood.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 704552,
+   "name": "Blood Knight / Blood Wraith",
+   "icon": "Interface\\icons\\nhi_bloodstrike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodstrike_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Doomrend now refund a Reaped Soul.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 504269,
+   "name": "The Grim Reaper / Ravenous Thirst",
+   "icon": "Interface\\icons\\nhi_bloodrage_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodrage_border.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec rechargeChill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 805708,
+   "name": "Shudder Scythe / Crimson Thirst",
+   "icon": "Interface\\Icons\\ability_xavius_crushingshadows",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_xavius_crushingshadows.jpg",
+   "source": "Harvest",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 30% Weapon Damage, scaling with level, and granting you a Soul Fragment with each strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Harvest"
+   ]
+  },
+  {
+   "spellId": 561342,
+   "name": "Into The Shadow Realm / Between Shadows",
+   "icon": "Interface\\Icons\\5_spirit_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_spirit_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Deathstalker, Soulstone Lure, and Soul Shear by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705397,
+   "name": "Lamenting / Death Dealer",
+   "icon": "Interface\\Icons\\Spell_Shadow_PsychicScream",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_psychicscream.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Ghostly Weapon now heals for 50% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 712683,
+   "name": "Fleeting Soul / Soul Piercer",
+   "icon": "Interface\\Icons\\Spell_Magic_LesserInvisibilty",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_magic_lesserinvisibilty.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Soulslam by -15 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 705436,
+   "name": "Spiritual Reflexes / Death's Presence",
+   "icon": "Interface\\icons\\nhi_curseweak_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_curseweak_border.jpg",
+   "source": "Soul",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While below 35% maximum health, your chance to dodge attacks is increased by 25% and dodging an attack unleashes Soul Harvest on the target.Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Soul"
+   ]
+  },
+  {
+   "spellId": 301366,
+   "name": "Lifestealer / Dominator",
+   "icon": "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_metamorphosis.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the missing health generated by Soul Strike by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 706792,
+   "name": "Well of Souls / Well of Eternity",
+   "icon": "Interface\\icons\\novart_magicspell_(22)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(22)_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Soul Strike and Murder now reduces the cooldown of Spectral Scythe by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 706788,
+   "name": "Life Tap / Spirit Army",
+   "icon": "Interface\\icons\\novart_physical_ability_(41)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(41)_border.jpg",
+   "source": "Domination",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Spectral Warden by -60 sec and it now heals you equal to 200% of the damage it deals.",
+   "altSpellIds": [],
+   "sources": [
+    "Domination"
+   ]
+  },
+  {
+   "spellId": 500376,
+   "name": "Murder",
+   "icon": "_d3companion",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3companion.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500357,
+   "name": "Reap",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800198,
+   "name": "Rite of Resolve",
+   "icon": "ui_sigil_venthyr",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ui_sigil_venthyr.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706731,
+   "name": "Soul Collector",
+   "icon": "nhi_spiritfire_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritfire_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804672,
+   "name": "Spectral Eye",
+   "icon": "inv_elemental_spiritofharmony_2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_spiritofharmony_2.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 520046,
+   "name": "Spectral Hand",
+   "icon": "inv_mawguardhandmountblue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mawguardhandmountblue.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801624,
+   "name": "Spectre Stride",
+   "icon": "_d3haunt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3haunt.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800797,
+   "name": "Underwalk",
+   "icon": "ability_rogue_ghostpirate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_ghostpirate.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 520047,
+   "name": "Whisper of the Lost",
+   "icon": "achievement_ladydeathwhisper",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_ladydeathwhisper.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

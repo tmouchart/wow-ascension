@@ -1,0 +1,2068 @@
+{
+ "slug": "pyromancer",
+ "class": "Pyromancer",
+ "classId": "24",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Incineration",
+   "tabId": 62
+  },
+  {
+   "name": "Flameweaving",
+   "tabId": 19
+  },
+  {
+   "name": "Draconic",
+   "tabId": 63
+  }
+ ],
+ "abilityCount": 144,
+ "abilities": [
+  {
+   "spellId": 92124,
+   "name": "Infernus",
+   "icon": "Interface\\icons\\nhi_corruptionfire_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_corruptionfire_border.jpg",
+   "source": "Incineration",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Damage dealt by Lava Shard now applies Infernus, causing enemies to Burn, dealing an additional 1122 + 72% SP Fire damage over 18 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 681196,
+   "name": "Superheated",
+   "icon": "Interface\\icons\\novart_magicspell_(51)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(51)_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Consuming or generating an Ember now has a 10% chance to superheat you, increasing all damage and healing done by 10% for 6 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802791,
+   "name": "Firestorm",
+   "icon": "Interface\\Icons\\nhi_holy_tornado_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_tornado_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create a fiery tornado at a location for 10 seconds.Enemies who enter its radius suffer 313 + 40% fire SP Fire damage and are knocked back slightly.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520485,
+   "name": "Magnitude 10",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireRain_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_firerain_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Flare Bolt by 5%.",
+   "altSpellIds": [
+    520873
+   ],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704800,
+   "name": "Searing Speed",
+   "icon": "Interface\\icons\\nhi_holy_speed_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_speed_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing periodic damage or healing now has a 15% chance to grant you Searing Speed.Searing SpeedIncreases your movement speed by 50% for 2 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802167,
+   "name": "Grace of Alexstrasza",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_dragon_01.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Burns off all movement impairing effects from all party and raid members in a 20 yd radius around you and grants them stun, slow and root immunity for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804300,
+   "name": "Flamecasting",
+   "icon": "Interface\\Icons\\spell_fire_playingwithfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_playingwithfire.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Generating Heat now has a 25% chance to grant Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802068,
+   "name": "Wreath of Flames",
+   "icon": "Interface\\Icons\\Spell_Holy_InnerFire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_innerfire.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic Fire damage now has a 10% chance to grant a stack of Flamecasting, or 2 stacks if they critically strike.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 707482,
+   "name": "Roasted Alive",
+   "icon": "Interface\\Icons\\inv_misc_herb_cinderbloom_petal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_herb_cinderbloom_petal.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Fired Up by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 503915,
+   "name": "Sageweaving",
+   "icon": "Interface\\icons\\nhi_fire_solar_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fire_solar_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Consuming an Ember now reduces the cast time of your next Cinderheart or Kindle by -15% for 12 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 524818,
+   "name": "Dragonscales",
+   "icon": "Interface\\Icons\\inv_artifact_dragonscales",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_artifact_dragonscales.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "When you are stunned, damage taken is reduced by -20% for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704848,
+   "name": "Touched by Fire",
+   "icon": "Interface\\icons\\nhi_fire_phoenix_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fire_phoenix_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Cinderheart, Ember Touch, and Kindle now gains an additional 15% of your bonus healing spell power.",
+   "altSpellIds": [
+    704853
+   ],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 500166,
+   "name": "Pyromaniac",
+   "icon": "Interface\\Icons\\ability_ironmaidens_rapidfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_rapidfire.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Ember spenders by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 800816,
+   "name": "Kael's Command",
+   "icon": "Interface\\Icons\\Spell_Nature_UnleashedRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_unleashedrage.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 50 HeatCommand your Phoenix to go dormant for 10 seconds. While dormant, it radiates healing to nearby allies for 611 + 100% healing every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 707126,
+   "name": "Constant Burning",
+   "icon": "Interface\\Icons\\spell_fire_moltenblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_moltenblood.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Spellburn by -4 sec and increases its duration by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 525018,
+   "name": "Fiery Intent",
+   "icon": "Interface\\Icons\\ability_warlock_burningembers",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_burningembers.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Cataclysm by 30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800791,
+   "name": "Ignite",
+   "icon": "Interface\\Icons\\Ability_Mage_FieryPayback",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_fierypayback.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 10 Heat Per TickBurn an enemy, inflicting 119 Fire damage over 21 seconds. If Ignite is dispelled it will cause 816 + 150% fire SP Fire damage to the dispeller.Castable while moving.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706889,
+   "name": "Pyromantic Accelerants",
+   "icon": "Interface\\Icons\\Spell_Shadow_DestructiveSoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_destructivesoul.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Flames of Neltharion and Explode now deal 15% increased damage to Burning targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 800811,
+   "name": "Sizzle",
+   "icon": "Interface\\Icons\\Spell_Fire_FlameTounge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_flametounge.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When Flamecasting expires your active Pyromancer periodic effects flare up to 12 nearby enemies, instantly striking them with Flare Bolts.Flare BoltGenerates 20 HeatInvoke flames upon an enemy, dealing 19 + 57.1% fire SP Fire damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704807,
+   "name": "Magmatic",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_fire_0003s_0000_phoenix_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_fire_0003s_0000_phoenix_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "After casting Pillar of Flame, all periodic damage dealt now gives you a 10% chance to cast Pillar of Flame on the target free of cost for 5 seconds.Pillar of FlameGenerates 20 Heat Per TargetCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.Deals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 300757,
+   "name": "Melting Point",
+   "icon": "Interface\\Icons\\spell_shaman_stormearthfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_stormearthfire.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by 3% for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 706893,
+   "name": "Ignis Fatalis",
+   "icon": "Interface\\icons\\custom_T_Fireball_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_fireball_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Ignis Ultimatus is now guaranteed to critically strike, has 20% more critical damage, and channels 0.5 sec faster.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806148,
+   "name": "Gaze of Ysera",
+   "icon": "Interface\\Icons\\Ysera3",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ysera3.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Set Ysera's gaze upon an enemy, putting them to sleep for 40 seconds (8 sec vs players).Direct damage dealt may interrupt this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704804,
+   "name": "Critical Pressure",
+   "icon": "Interface\\Icons\\Achievement_Boss_Overlord_Wyrmthalak",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_overlord_wyrmthalak.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Intellect and critical strike chance by 3%.",
+   "altSpellIds": [
+    707789
+   ],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 560525,
+   "name": "Fiery Passion",
+   "icon": "Interface\\Icons\\ability_monk_breathoffire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_breathoffire.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, your spell haste is increased by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 520019,
+   "name": "Pyroclasm",
+   "icon": "Interface\\Icons\\Spell_Fire_Incinerate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_incinerate.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Consumes 1 EmberCreate a pyroclasm instantly consuming your Burning effects on a target to deal the two times total periodic damage plus an additional 2100 to 2220 over 10 seconds, piercing absorption effects and resistances.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 538441,
+   "name": "Flames of the Firelord",
+   "icon": "Interface\\Icons\\achievement_firelands_raid_ragnaros",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_firelands_raid_ragnaros.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your periodic damage dealt now has a 5% chance to grant you Eruption for 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704856,
+   "name": "Stoke",
+   "icon": "Interface\\Icons\\Spell_Fire_FlameShock",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_flameshock.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Ignite and Infernus now extend their own duration on the target by 3 sec, up to a maximum of 12 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704849,
+   "name": "Fire and Brimstone",
+   "icon": "Interface\\icons\\nhi_fireball_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fireball_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating an Ember now increases the damage and healing of Ember spenders by 1% for 10 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 802170,
+   "name": "Draconic Tempest",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireTwist_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_firetwist_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Dragon's Wrath now melts enemies, increasing their chance to be hit by spells by 3% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 802169,
+   "name": "Hasty Incantation",
+   "icon": "Interface\\Icons\\Spell_Fire_SealOfFire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_sealoffire.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of Flame Step by 10 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806747,
+   "name": "Fueling the Fire",
+   "icon": "Interface\\icons\\custom_T_FireInOurHands_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_fireinourhands_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Ember Touch on your Roaring Pyre or Phoenix will cause them to erupt in flames, healing 12 allies within 30 yds for 232 + 100% Spirit, additionally scaling with Spirit.Allied Pyromancers can also fuel the fire with your Roaring Pyre and Phoenix.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 500167,
+   "name": "Spirit of Fire",
+   "icon": "Interface\\icons\\novart_magicspell_(33)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(33)_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your absorption effects by 20%.",
+   "altSpellIds": [
+    500644
+   ],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 805448,
+   "name": "Rekindle",
+   "icon": "Interface\\Icons\\Spell_Fire_Fire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_fire.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Healing done by Kindle now increases your healing done on the target 5% for 20 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 680378,
+   "name": "Emberheart",
+   "icon": "Interface\\icons\\nhi_soulburn_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_soulburn_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Instantly gain 5 stacks of Flamecasting and then empower all nearby allies with magical fire, increasing their movement speed by 30% for 15 seconds.While under the effects of Emberheart direct damage dealt by allies deals 119 + 35% fire SP additional Fire damage.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 706859,
+   "name": "Veins of Fire",
+   "icon": "Interface\\icons\\novart_drinkable_(4)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_drinkable_(4)_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Flamecasting now also grants 3% increased Spirit per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 680369,
+   "name": "Ignis Ultimatus",
+   "icon": "Interface\\Icons\\Ability_Mage_FireStarter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_firestarter.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Channel for 2 seconds, gathering a surge of fiery power before unleashing it in a 50 yd line, dealing 1094 + 100% fire SP Fire damage to enemies while also healing allies for 814 + 200% healing.Ignores invulnerabilities, immunities, and resistances.Consumes Flamecasting stacks to increase this spell's damage and healing by 15% per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805477,
+   "name": "Volcanic Shell",
+   "icon": "Interface\\icons\\nhi_firestone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_firestone_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Generates 50 HeatConjure a shield of magma and fire around you, absorbing 500 + 200% fire SP damage. Lasts 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706650,
+   "name": "Lava-Drenched",
+   "icon": "Interface\\icons\\novart_physical_ability_(52)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(52)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the chance for your spells to be dispelled by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804617,
+   "name": "Cataclysmic Power",
+   "icon": "Interface\\Icons\\ability_siege_engineer_purification_beam",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_siege_engineer_purification_beam.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Flare Bolt by 3% for each periodic effect you have on the target.",
+   "altSpellIds": [
+    807882,
+    807912
+   ],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 706894,
+   "name": "Obliteration",
+   "icon": "Interface\\icons\\nhi_fire_rune_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fire_rune_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Eruption now also increases spell haste and movement speed by 20% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800807,
+   "name": "Circle of Fire",
+   "icon": "Interface\\icons\\nhi_firerune_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_firerune_(2)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Creates a circle of fire at the target location for 10 seconds, dealing 223 + 31% fire SP Fire damage and incapacitating all enemies inside for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802164,
+   "name": "Draconic Rage",
+   "icon": "Interface\\Icons\\achievement_boss_drakkisath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_drakkisath.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Consuming Embers now has a 25% chance to trigger Dragon's Wrath on all enemies affected by Blaze.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 503806,
+   "name": "Hot Headed",
+   "icon": "Interface\\Icons\\Ability_Warlock_FireandBrimstone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_fireandbrimstone.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Circle of Fire by -30 sec and increases its disorient duration by 1 sec. Enemies disoriented by Circle of Fire cannot receive any healing.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802107,
+   "name": "Destroyer's Maw",
+   "icon": "Interface\\Icons\\ability_deathwing_cataclysm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_cataclysm.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 30 HeatUnleash a vicious draconic maw on an enemy, dealing 103 + 100% fire SP Fire damage that cannot be resisted.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 706886,
+   "name": "Hellscape",
+   "icon": "Interface\\icons\\novart_magicspell_(9)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(9)_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Blaze by 4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705559,
+   "name": "Wild Magic",
+   "icon": "Interface\\icons\\novart_magicspell_(62)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(62)_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Dragon's Wrath now has a 50% chance to become unstable, dealing 50 + 16.5% Intellect% additional damage as Magic damage, but burning 85 + 40% Intellect mana.Both the damage dealt and mana burned scale with your Intellect.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 706875,
+   "name": "Cinderstorm",
+   "icon": "Interface\\icons\\nhi_fireblast_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fireblast_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces all threat generated by Firefall by -25% and increases its critical strike chance by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 802780,
+   "name": "Aspect of Earth",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_CoABlackDragonflight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_coablackdragonflight.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Flames of Neltharion or Echo of Nozdormu now grants a stack of Aspect of Earth for 15 seconds, stacking 3 times. Aspect of Earth (Stacker)At 3 stacks, the stacks are consumed to create a volcano beneath the primary target that erupts in an 8 yd radius dealing 1188 Fire Damage over 8 seconds.Damage dealt by the volcano generates 1 Heat and 1% of your missing mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 681334,
+   "name": "Aspect of Magic",
+   "icon": "Interface\\Icons\\MalygosIcon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/malygosicon.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Dragon's Wrath now increases your Intellect by 3% for 20 seconds, stacking 10 times.Consuming an Ember now increases your critical strike chance by 2% and your critical damage by 4% for 20 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 520402,
+   "name": "Death From Above",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireBreath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_firebreath_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Root enemies in a 40 yd line for 3.5 seconds and then soar forward in a blaze of glory, dealing 676 + 100% fire SP Fire damage every 1 sec to enemies beneath you for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 706239,
+   "name": "Earthwarder",
+   "icon": "Interface\\Icons\\inv_voiddredragonmount",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_voiddredragonmount.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Being struck by a melee attack while Draconic Aspect is active now has a 20% chance to make your next Flare Bolt within 8 seconds instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704831,
+   "name": "Pyromancy",
+   "icon": "Interface\\Icons\\Spell_Fire_SelfDestruct",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_selfdestruct.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical damage by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707493,
+   "name": "Flames of the Aspects",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_fire_0006s_0000_fire-elemental_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_fire_0006s_0000_fire-elemental_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Destroyer's Maw now grants 2 stacks of Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 706896,
+   "name": "Mad Aspect's Scepter",
+   "icon": "Interface\\Icons\\inv_stave_2h_deathwingraid_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_stave_2h_deathwingraid_d_03.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Destroyer's Maw by 20%.",
+   "altSpellIds": [
+    707790
+   ],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 801905,
+   "name": "Firefall",
+   "icon": "Interface\\Icons\\ability_ironmaidens_grapeshotblast",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_grapeshotblast.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 10 Heat Per TargetCall down streaks of fire upon an enemy and up to 8 enemies within 15 yds of them, dealing 79 + 31.24% fire SP Fire damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 800796,
+   "name": "Phoenix Egg",
+   "icon": "Interface\\Icons\\inv_misc_phoenixegg",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_phoenixegg.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summon a Phoenix for 1 minute at the target location that heals nearby party members for 117 + 15% healing every 5 sec.You may only have 1 Phoenix active at a time.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 805483,
+   "name": "Molten Storm",
+   "icon": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_offhand_1h_artifactdoomhammer_d_01.jpg",
+   "source": "Incineration",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance and damage of Lava Shard by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 706854,
+   "name": "Phoenix Dive",
+   "icon": "Interface\\icons\\novart_magicspell_(37)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(37)_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Command your Phoenix to swoop to the target ally and shield allies in their path with fire, absorbing 175 + 50% SP + 100% Spirit damage for 30 seconds, scaling with your Spirit.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 680959,
+   "name": "Searing Power",
+   "icon": "Interface\\icons\\uico_fire_spell_09_nobg_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_fire_spell_09_nobg_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Flare Bolt by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 525059,
+   "name": "Fiery Demeanor",
+   "icon": "Interface\\Icons\\_CasterCloak_Fire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_castercloak_fire.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces spell pushback suffered from damaging attacks by 50% and increases the pushback resistance provided by Ascension of Thaurissan by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802168,
+   "name": "Aspect's Blessing",
+   "icon": "Interface\\Icons\\ability_deathwing_assualtaspects",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_assualtaspects.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your next Echo of Nozdormu or Flames of Neltharion is guaranteed to critically strike and triggers Aspect of Time, casting an additional time for 30% of the damage dealt. Lasts 15 seconds.Damage dealt in this way can trigger up to 3 additional times.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704814,
+   "name": "Expediting Power",
+   "icon": "Interface\\icons\\nhi_orbofdragonscale_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_orbofdragonscale_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Echo of Nozdormu now reduces the cooldown of Aspect's Blessing by an additional 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704275,
+   "name": "Shielded by Flames",
+   "icon": "Interface\\icons\\5_normal03fireball_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_normal03fireball_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Healing critical strikes now apply an absorption shield to allies equal to 30% of the healing done for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 520488,
+   "name": "Neltharion's Resolve",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Dragon_Black_Nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_dragon_black_nightmare.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Place Neltharion's resolve on all party members, warding them against fear. The next fear effect used against the target will fail, using up the ward. Lasts 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 807146,
+   "name": "Sulfuron Harbinger",
+   "icon": "Interface\\Icons\\Achievement_MC_Lucifron",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_mc_lucifron.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Blaze and Ignite by 5% and increases their tick rate by -20% and reduces their durations by -25%.Periodic critical strikes apply Sulfur Fumes.Sulfur Fumes (Proc)Flare Bolt, Explode, or Flames of Neltharion will detonate the Sulfur Fumes to cause a Sulfuron Blast, dealing 263 Fire Damage to the target and extending the duration of Blaze on them by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 807126,
+   "name": "Shazzrah's Boon",
+   "icon": "Interface\\Icons\\Achievement_MC_Shazzrah",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_mc_shazzrah.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Consuming an Ember now regenerates 2% of your maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520884,
+   "name": "Combustion",
+   "icon": "Interface\\Icons\\Spell_Fire_Burnout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_burnout.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Explode is now increased by 15% for each of your Pyromancer periodic effects on the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 520937,
+   "name": "Echo of Nozdormu",
+   "icon": "Interface\\Icons\\NozdormuIcon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nozdormuicon.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Transforms your Explode into Echo of Nozdormu.Echo of NozdormuObliterate an enemy, dealing 120 + 105% SP Chromatic Damage and reducing all spell and ability cooldowns by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 806611,
+   "name": "Dragon Leap",
+   "icon": "Interface\\icons\\nhi_dragonwing_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_dragonwing_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Leap to a target location and come crashing down, dealing 29 + 30% fire SP Fire damage to up to 10 nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503863,
+   "name": "Searing Flames",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireRealm_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_firerealm_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell bonus scaling of Lava Shard by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 300956,
+   "name": "Alexstrasza's Gift",
+   "icon": "Interface\\Icons\\INV_Misc_FireDancer_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_firedancer_01.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage and healing of your Ember spenders by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 520218,
+   "name": "Cataclysm",
+   "icon": "Interface\\Icons\\achievement_zone_cataclysm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_cataclysm.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Launch into the air, dealing 11 Fire damage, knocking back enemies within 6 yds and dazing them for 6 sec.Upon landing, deal -5 Fire damage, knock back enemies within 6 yds and daze them for 6 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802119,
+   "name": "Draconic Invocation",
+   "icon": "Interface\\Icons\\spell_warrior_dragoncharge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warrior_dragoncharge.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Invoke all of the Dragon Aspects, instantly generating 5 Embers.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 803452,
+   "name": "Agonizing Burns",
+   "icon": "Interface\\Icons\\Spell_Fire_Immolation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_immolation.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Blaze by 20% and allows it to benefit from your spell haste.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 520770,
+   "name": "Aspect of Eternity",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze_Nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_dragon_bronze_nightmare.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows the periodic damage of Blaze to critically strike.In addition, damage dealt by Echo of Nozdormu or Aspect of Time now has a 20% chance to guarantee your next Blaze within 8 seconds to critically strike and increase its critical damage by 100% and duration by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 804230,
+   "name": "Sunstrider Array",
+   "icon": "Interface\\Icons\\inv_ability_sunfurymage_spellfirespheres",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ability_sunfurymage_spellfirespheres.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "For 15 seconds, you generate 1 Ember every 3 sec and your Cinderheart generates double the amount of Heat with each cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 800818,
+   "name": "Ember Touch",
+   "icon": "Interface\\icons\\nhi_firehands_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_firehands_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Consumes 1 EmberWarm an ally with everliving flames, healing them for 83 + 45% SP + 100% Spirit, additonally scaling with your Spirit.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503636,
+   "name": "Embrace the Fire",
+   "icon": "Interface\\icons\\5_dragonfirebreath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_dragonfirebreath_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Blaze and Ignite by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704824,
+   "name": "Legacy of Ragnaros",
+   "icon": "Interface\\Icons\\spell_fire_ragnaros_splittingblow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_ragnaros_splittingblow.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Pyroclasm now causes your next 3 Lava Shards within 12 seconds to trigger no cooldown and be free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 680977,
+   "name": "Flames of Focus",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireInYourHand_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_fireinyourhand_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Adds 1 additional stack to Flamecasting and increases its duration by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 805378,
+   "name": "Burning Crescendo",
+   "icon": "Interface\\Icons\\ability_siege_engineer_purification_beam",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_siege_engineer_purification_beam.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of your Phoenix Egg by -2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 704861,
+   "name": "Ember Charm",
+   "icon": "Interface\\Icons\\inv_misc_cat_trinket08",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_cat_trinket08.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Cinderheart and Kindle by -15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 706872,
+   "name": "Magma Guardian",
+   "icon": "Interface\\Icons\\inv_shield_pvp410_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_pvp410_c_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Skin spells by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704855,
+   "name": "Soothing Flames",
+   "icon": "Interface\\Icons\\ability_monk_breathoffire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_breathoffire.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Healing done by Kindle and Cinderheart now additionally heals the target for 30% of the healing done over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 560561,
+   "name": "From The Ashes",
+   "icon": "Interface\\icons\\nhi_phoenix_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_phoenix_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your healing done to allies below 35% health by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 802120,
+   "name": "Essence of Malygos",
+   "icon": "Interface\\Icons\\inv_misc_petdragonwhelptarecgosa",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_petdragonwhelptarecgosa.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Imbue an ally with the essence of Malygos, restoring 4% of their maximum mana every 1 sec for 6 seconds.If used on yourself this effect is doubled.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806736,
+   "name": "Inferno",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0009s_0000_fire_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_brutal_icon_0009s_0000_fire_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct healing critical strikes have a 50% chance to create an Inferno around the target. Can only occur once every 5 sec.InfernoEngulf an ally in cleansing flames for 5 seconds, healing them for 161 and party and raid members within 40 yds of them for 91 every 1 sec.At the end of the duration, party and raid members are healed for 383 to 403.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 524875,
+   "name": "Pyroclastic Flow",
+   "icon": "Interface\\icons\\custom_T_FlameWave_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_flamewave_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Flare Bolt now increases the damage of subsequent Flare Bolts by 3% for 10 seconds, stacking 5 times.Flames of Neltharion and Explode now increase the damage of subsequent Explodes or Flames of Neltharion by 3% for 5 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704845,
+   "name": "Explosive",
+   "icon": "Interface\\Icons\\custom_T_FireInOurHands_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_fireinourhands_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of Blaze and Ignite by -10%.",
+   "altSpellIds": [
+    707787
+   ],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 500135,
+   "name": "Meteor",
+   "icon": "Interface\\Icons\\_D3meteor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3meteor.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Generates 50 HeatCall down a meteor in an 8 yd area, dealing 122 + 125% fire SP Fire damage to 8 enemies and disorienting them for 4 seconds. Direct damage dealt will break the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806779,
+   "name": "Offering of Executus",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_InfernalMadness_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_infernalmadness_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When your Phoenix dies or expires, it now heals all allies within 30 yds equal to its maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 504394,
+   "name": "Rapid Incineration",
+   "icon": "Interface\\Icons\\Spell_Fire_FireBolt02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_firebolt02.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Consuming Embers now reduces the cooldown of Lava Shard and Pillar of Flame by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 504380,
+   "name": "Inferno Barrier",
+   "icon": "Interface\\Icons\\ability_rhyolith_magmaflow_wave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rhyolith_magmaflow_wave.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Generates 30 HeatShield an ally with molten lava, absorbing 84 + 55% fire SP damage. While active, attackers take 4 + 10% Spirit Fire damage each time they deal damage to them. Lasts 30 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805496,
+   "name": "Pillar of Flame",
+   "icon": "Interface\\icons\\nhi_fireblow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fireblow_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 20 Heat Per TargetCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.Deals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 706877,
+   "name": "Dragon's Bane",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Dragon_Blue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_dragon_blue.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Lava Shard and Cinderheart by 6% against Burning targets.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704278,
+   "name": "Roaring Pyre",
+   "icon": "Interface\\Icons\\inv_summerfest_firespirit",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_summerfest_firespirit.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Conjure a Roaring Pyre at the target location for 20 seconds. Allies within 30 yds of the bonfire are healed for 35 + 10% healing + 50% Spirit, scaling with your Spirit and healing spell power, every 2 sec and their Spirit is increased by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 805552,
+   "name": "Scorching Spirit",
+   "icon": "Interface\\Icons\\INV_Misc_FireDancer_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_firedancer_01.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Spirit by 10%.",
+   "altSpellIds": [
+    807935
+   ],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 520149,
+   "name": "Burn Impurities",
+   "icon": "Interface\\icons\\uico_fire_spell_04_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_fire_spell_04_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Burn away 1 harmful magic effect and 1 disease effect from an ally.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 706878,
+   "name": "Flaming Finesse",
+   "icon": "Interface\\icons\\nhi_fire_explosion_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fire_explosion_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Seal spells by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300759,
+   "name": "Bright Flames",
+   "icon": "Interface\\Icons\\Spell_Frost_FireResistanceTotem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frost_fireresistancetotem.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the amount absorbed by Inferno Barrier by 10% and the damage it deals by 15%.",
+   "altSpellIds": [
+    301351
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704812,
+   "name": "Timed Attacks",
+   "icon": "Interface\\Icons\\inv_misc_raptortalon_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_raptortalon_nightmare.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell haste by 4%.",
+   "altSpellIds": [
+    707803
+   ],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 807319,
+   "name": "Ascender",
+   "icon": "Interface\\Icons\\5_druideskill25_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill25_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Dragon Leap by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704809,
+   "name": "Invocation of Flames",
+   "icon": "Interface\\Icons\\Spell_Shadow_RainOfFire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_rainoffire.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Draconic Invocation now grants 5 stacks of Flamecasting.In addition, allows Flamecasting to stack 5 additional times and increases its duration by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704813,
+   "name": "Overwhelming Flames",
+   "icon": "Interface\\icons\\5_normal04firerain_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_normal04firerain_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Lava Shard now spreads Blaze to up to 1 additional enemy within 8 yds of the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 511109,
+   "name": "Breath of Neltharion",
+   "icon": "Interface\\Icons\\achievment_boss_madnessofdeathwing",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievment_boss_madnessofdeathwing.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Breath superheated flames in a cone in front of you that melts the weapons of affected enemies, disarming their melee and ranged weapons for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704823,
+   "name": "Fired Up!",
+   "icon": "Interface\\Icons\\achievement_dungeon_ignitionmagevalyri",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ignitionmagevalyri.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Ember spenders are now instant and have a 30% chance to refund their cost and increases your chance to critically strike by 20% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 805468,
+   "name": "Flamespiller",
+   "icon": "Interface\\Icons\\inv_misc_volatilefire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_volatilefire.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Explode or Flames of Neltharion now extend the duration of Fired Up by 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 503804,
+   "name": "Heat Wave",
+   "icon": "Interface\\icons\\nhi_fireball_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fireball_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Flamecasting stacks now also increase the damage of Explode and Flames of Neltharion by 4% per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 300975,
+   "name": "To Ashes",
+   "icon": "Interface\\Icons\\nhi_moltensmash_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_moltensmash_border.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damaging critical strikes now generate 10 Heat and restore 3% of your base mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 704273,
+   "name": "Tender Touch",
+   "icon": "Interface\\Icons\\INV_Misc_FireDancer_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_firedancer_01.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Effective healing done by Ember Touch now heals up to 3 of the lowest health allies near your target for an additional 15% of the amount healed.",
+   "altSpellIds": [
+    707786
+   ],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 300970,
+   "name": "Fire Safety",
+   "icon": "Interface\\icons\\nhi_firehands_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_firehands_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Fire damage and healing by 2% and reduces your threat generated by -10%.",
+   "altSpellIds": [
+    301350
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706862,
+   "name": "Chains of Fire",
+   "icon": "Interface\\icons\\novart_magicspell_(37)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(37)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Cindergrip by 0.25 sec and increases its range by 10 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680836,
+   "name": "Flamer",
+   "icon": "Interface\\Icons\\inv_elemental_mote_fire01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_mote_fire01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your spell haste by 4%.",
+   "altSpellIds": [
+    520546
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520381,
+   "name": "Black Magic",
+   "icon": "Interface\\Icons\\moutn-deathwing",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/moutn-deathwing.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating Heat now reduces the cooldown of Draconic Invocation and Essence of Malygos by 3%. Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 300932,
+   "name": "Lucifron's Rage",
+   "icon": "Interface\\Icons\\spell_burningbladeshaman_blazing_radiance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_burningbladeshaman_blazing_radiance.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Effective healing done by your Phoenix now causes allies to deal additional Fire damage with all attacks for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 704851,
+   "name": "Living Flame",
+   "icon": "Interface\\Icons\\inv_belt_leather_firelandsdruid_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_belt_leather_firelandsdruid_d_01.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Ember Touch by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 704863,
+   "name": "Invigoration",
+   "icon": "Interface\\icons\\custom_T_FireWorm_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_fireworm_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Healing done by your Phoenix now generates you 5 Heat.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 704862,
+   "name": "Lifebinder's Fire",
+   "icon": "Interface\\Icons\\inv_jewelry_trinket_09",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_jewelry_trinket_09.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating an Ember now increases your healing done by 3% for 8 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 681145,
+   "name": "Cleansing Flames",
+   "icon": "Interface\\icons\\nhi_firebreath_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_firebreath_(2)_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 10 Heat Each TickSpread cleansing flames on 5 allies and enemies in front of you, damaging or healing for 87 + 44.4% SP over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 706464,
+   "name": "Warmth",
+   "icon": "Interface\\Icons\\Spell_Fire_FlameShock",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_flameshock.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now radiate warmth to nearby allies, healing the lowest health nearby ally equal to 25% of your periodic damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 300751,
+   "name": "Residual Power / Arsonist",
+   "icon": "Interface\\Icons\\inv_jewelcrafting_dragonseye05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_jewelcrafting_dragonseye05.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each active Ember now reduces the cast time of Explode by -8%.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 680970,
+   "name": "Dark Iron Legacy / Destroyer's Legacy",
+   "icon": "Interface\\Icons\\inv_staff_2h_darkirondwarf_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_2h_darkirondwarf_d_01.jpg",
+   "source": "Incineration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Targets affected by the disorient from Meteor take an additional 40% increased damage from the next Explode or Lava Shard.",
+   "altSpellIds": [],
+   "sources": [
+    "Incineration"
+   ]
+  },
+  {
+   "spellId": 504754,
+   "name": "Heated / Blessing of the Firelands",
+   "icon": "Interface\\Icons\\Spell_Fire_Fireball02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_fireball02.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Damage dealt by Dragon Leap now generates 10 Heat.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807159,
+   "name": "Purifying Flames / Binding Flames",
+   "icon": "Interface\\Icons\\Spell_Nature_DryadDispelMagic",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_dryaddispelmagic.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Essence of Malygos by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704820,
+   "name": "Ysera's Blessing / Al Dente",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Dragon_Green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_dragon_green.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Gaze of Ysera by -0.5 sec and causes it to have a -10% reduced chance to break from damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807404,
+   "name": "Unfathomably Hot! / Concentrated Fire",
+   "icon": "Interface\\Icons\\Spell_Fire_SelfDestruct",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_selfdestruct.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each tick of Cleansing Flames now generates 5 additional Heat.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 570001,
+   "name": "Cauterizing Wounds / Brilliance",
+   "icon": "Interface\\Icons\\ability_butcher_gushingwounds",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_butcher_gushingwounds.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Healing done by Ember Touch now grants you Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 706860,
+   "name": "Scepter of Fire / Blessing of the Inferno",
+   "icon": "Interface\\icons\\novart_passivemastery_(17)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(17)_border.jpg",
+   "source": "Flameweaving",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Inferno by 5 sec, causing its end of duration explosion of healing to trigger every 5 sec instead.",
+   "altSpellIds": [],
+   "sources": [
+    "Flameweaving"
+   ]
+  },
+  {
+   "spellId": 707325,
+   "name": "Flames of Fate / Lifebringer's Blessing",
+   "icon": "Interface\\Icons\\Spell_Nature_UnleashedRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_unleashedrage.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Aspect's Blessing now affects 2 additional casts of Echo of Nozdormu, but its cooldown is doubled, and its mana cost is increased by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 707503,
+   "name": "Perpetual Burning / Flames of Execution",
+   "icon": "Interface\\Icons\\Spell_Fire_Burnout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_burnout.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "The duration of Blaze is now increased by 1 sec for each Ember you have when you cast it.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704818,
+   "name": "Molten Fury / Blackrock Mountaineer",
+   "icon": "Interface\\Icons\\ability_mount_fireravengodmount",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mount_fireravengodmount.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage and healing provided by Eruption by 15%, but reduces its duration by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 704816,
+   "name": "Soul of the Dragon / Inner Flame",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_fire_0008s_0000_breath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_fire_0008s_0000_breath_border.jpg",
+   "source": "Draconic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Flare Bolt now has a 15% chance to cast it again free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Draconic"
+   ]
+  },
+  {
+   "spellId": 800806,
+   "name": "Cinderheart",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 570121,
+   "name": "Conjure Campfire",
+   "icon": "inv_elemental_mote_fire01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_mote_fire01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804868,
+   "name": "Flame Seeker",
+   "icon": "nhi_fireghost_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fireghost_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800790,
+   "name": "Flare Bolt",
+   "icon": "custom_t_fireball_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_fireball_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 570170,
+   "name": "Greater Seal of Alysrazor",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 803950,
+   "name": "Lava Shard",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 501487,
+   "name": "Make Campfire",
+   "icon": "inv_elemental_mote_fire01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_mote_fire01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804662,
+   "name": "Melt Lock",
+   "icon": "ability_warlock_moltencore",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_moltencore.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800408,
+   "name": "Overheat Delayer",
+   "icon": "novart_magicspell_(51)_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(51)_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800196,
+   "name": "Seal of Alysrazor",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800808,
+   "name": "Spellburn",
+   "icon": "ability_mage_burnout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_burnout.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

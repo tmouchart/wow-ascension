@@ -1,0 +1,2508 @@
+{
+ "slug": "witch-hunter",
+ "class": "Witch Hunter",
+ "classId": "15",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Boltslinger",
+   "tabId": 39
+  },
+  {
+   "name": "Houndmaster",
+   "tabId": 40
+  },
+  {
+   "name": "Black Knight",
+   "tabId": 94
+  },
+  {
+   "name": "Inquisition",
+   "tabId": 41
+  }
+ ],
+ "abilityCount": 174,
+ "abilities": [
+  {
+   "spellId": 805773,
+   "name": "Bounty Hunter",
+   "icon": "Interface\\Icons\\nhi_corruptiongold_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_corruptiongold_border.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Darkslayer or Witchbane now applies a stack of Bounty Hunter to you for 8 seconds, which can be consumed by casting Heartseeking Bolt to deal an additional 305 + 45% SP + 30% ranged AP Physical damage, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705506,
+   "name": "Contract Killing",
+   "icon": "Interface\\Icons\\inv_garrison_blueprints2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_garrison_blueprints2.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases damage dealt against enemies above 75% health and below 35% health by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 300872,
+   "name": "Monster Hunting",
+   "icon": "Interface\\icons\\novart_physical_ability_(44)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(44)_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases melee and ranged haste of party and raid members within 100 yds by 10%. Does not stack with similar effects.In addition, increases your damage dealt against Undead and Demons by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 705514,
+   "name": "Mechanized Crossbows",
+   "icon": "Interface\\Icons\\ability_hunter_blindingshot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_blindingshot.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your ranged attack power by 10% and the range of your ranged abilities by 5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705500,
+   "name": "Bringing the Law",
+   "icon": "Interface\\Icons\\5_engineerskill41_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_engineerskill41_border.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Shadowblast by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705497,
+   "name": "Tonic Supply",
+   "icon": "Interface\\Icons\\inv_misc_5potionbag_special",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_5potionbag_special.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using a Tonic now reduces the cooldown of all other Tonics by -10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681445,
+   "name": "Inquisitor's Trap",
+   "icon": "Interface\\Icons\\inv_pet_pettrap02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_pettrap02.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Place a cruel trap on the ground lasting 1 minute that will curse the first enemy to approach it silencing them and all enemies in a 5 yd radius for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705455,
+   "name": "Shadow Rage",
+   "icon": "Interface\\icons\\custom_T_CurseOfShadow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_curseofshadow_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Shadowblast now grants Shadow Rage to your Shadow Hound.Shadow RageAuto attacks have a 50% chance to deal an additional 57*1+AP*0.07t Shadow Damage. Lasts 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 500101,
+   "name": "Bringer of Darkness",
+   "icon": "Interface\\icons\\uico_shadow_spell_04_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_shadow_spell_04_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Repulse now resets the cooldown of Vault and makes your next Vault within 6 seconds free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 705477,
+   "name": "Houndfeeder",
+   "icon": "Interface\\icons\\5_sumshadowwolf_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_sumshadowwolf_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of you and your Shadow Hound by 4%.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 802278,
+   "name": "Witchblood Tonic",
+   "icon": "Interface\\Icons\\trade_alchemy_potione2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_potione2.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Drink a shadowy tonic, removing all curse effects from you and reducing all Magic damage taken by -40% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680529,
+   "name": "Combat Training",
+   "icon": "Interface\\Icons\\INV_Sword_2H_Blood_C_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_blood_c_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Physical damage dealt and parry chance by 3%.",
+   "altSpellIds": [
+    681484
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300795,
+   "name": "Vishas' Memoir",
+   "icon": "Interface\\Icons\\custom_book_02_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_book_02_b_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Brand spells by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705496,
+   "name": "Brimming Hatred",
+   "icon": "Interface\\Icons\\_D3mantraofretribution",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3mantraofretribution.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your critical strikes now generate 10 Rage. Can only occur every 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681450,
+   "name": "Death Trap",
+   "icon": "Interface\\Icons\\ability_hunter_traplauncher",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_traplauncher.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Place a death trap on the ground lasting 1 minute that will curse the first enemy to approach it, marking them for death, causing them to take 3100 + 100% AP Shadow damage after 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681327,
+   "name": "Holy Frenzy",
+   "icon": "Interface\\Icons\\Ability_Warrior_Challange_yellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_challange_yellow.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee haste by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 805533,
+   "name": "Dark Penance",
+   "icon": "Interface\\Icons\\inv_helm_cloth_raidpriest_r_01_gold",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_cloth_raidpriest_r_01_gold.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility and your chance to parry and dodge by 2%.",
+   "altSpellIds": [
+    807907
+   ],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 802277,
+   "name": "Pyro Tonic",
+   "icon": "Interface\\Icons\\trade_alchemy_potione6",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_potione6.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Drink a fiery tonic, increasing your Fire damage dealt by 20% and your critical damage by 10% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 705512,
+   "name": "Rapid Reload",
+   "icon": "Interface\\Icons\\inv_crossbow_2h_maw_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_crossbow_2h_maw_c_01.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your ranged haste by 8%.",
+   "altSpellIds": [
+    707863,
+    712479
+   ],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 560207,
+   "name": "Flames of the Sinned",
+   "icon": "Interface\\Icons\\_AuraCloak_Fire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_auracloak_fire.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Smite Evil now has a 25% chance to strike again.While you have Flames of Sin active, the chance to trigger this effect is increased by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 802269,
+   "name": "Burrow Bolt",
+   "icon": "Interface\\Icons\\Burrow Bolt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/burrow%20bolt.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Shoot a bolt with a rope attached to it at an enemy dealing 6 + 25% AP Physical damage and pulling them to you.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560226,
+   "name": "Torch the Wicked!",
+   "icon": "Interface\\Icons\\inv_fishing_nethooks01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fishing_nethooks01.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Flames of Sin now grants 2% attack speed, stacking up to 12 times for 6 seconds. Application of this effect does not refresh the duration.Additionally, Pyro Tonic now also resets the cooldown of Torchlight.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 800162,
+   "name": "Tormentor",
+   "icon": "Interface\\Icons\\inv_ammo_arrow_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ammo_arrow_05.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Fire a deadly bolt dealing cond(gt(SPS, SPH), 5+0+SPS*0.175, 5+0+SPH*0.175) Twilight Damage plus 63 + 87.5% ranged AP over 14 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 707317,
+   "name": "Cinder and Ashes",
+   "icon": "Interface\\Icons\\5_druideskill26_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill26_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Purifier's Edge and Fiery Judgement by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 705453,
+   "name": "Darkrider",
+   "icon": "Interface\\Icons\\inv_skeletalwarhorse_01_brown",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_skeletalwarhorse_01_brown.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Rage cost of Shadowblast, Vault, and Unleash the Hounds by -10.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 680503,
+   "name": "Shadow Order",
+   "icon": "Interface\\Icons\\Spell_Shadow_AntiShadow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_antishadow.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Shadow Brand by 20% and your hit rating by 3% of your Agility.",
+   "altSpellIds": [
+    681486
+   ],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 572770,
+   "name": "Refined Combatant",
+   "icon": "Interface\\Icons\\Ability_Warrior_OffensiveStance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_offensivestance.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your expertise by 10.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 681100,
+   "name": "Noctis Protection",
+   "icon": "Interface\\Icons\\ability_priest_cascade_shadow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_cascade_shadow.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Noctis Blade now applies a shield absorbing 166 + 200% Stamina + 10% AP damage for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 503662,
+   "name": "Torchlight",
+   "icon": "Interface\\Icons\\inv_enchanting_70_pet_torch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_enchanting_70_pet_torch.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Throw a torch at an enemy, dealing 166 + 30% AP + 45% fire SP Fire damage, and causing up to 5 of the next attacks you make against them to grant you Flames of Sin and increasing the duration by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 705478,
+   "name": "Burned Alive",
+   "icon": "Interface\\Icons\\Spell_Fire_FlameBlades",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_flameblades.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 25% on enemies below 20% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 504470,
+   "name": "Hatred & Vitriol",
+   "icon": "Interface\\Icons\\_Diablo3_CursedMonster_Yellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_cursedmonster_yellow.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Stake now ignores enemy armor and its critical strikes refund half of its cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 705515,
+   "name": "Strafing Shot",
+   "icon": "Interface\\Icons\\_D3evasivefire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3evasivefire.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with ranged abilities now spread Tormentor to a nearby enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705490,
+   "name": "Escape Artist",
+   "icon": "Interface\\Icons\\Ability_Rogue_QuickRecovery",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_quickrecovery.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Daring Escape now resets the cooldown of Vault and generates 10 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 805751,
+   "name": "Twilight Frenzy",
+   "icon": "Interface\\Icons\\_Diablo3_ArrowRain_Warlock",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_arrowrain_warlock.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Spin around, unable to stop moving for 5 seconds, firing shots at nearby enemies for 50% Ranged Weapon Damage plus cond(gt(SPS, SPH), 15+31+SPS*0.2+ranged AP*0.1, 15+31+SPH*0.2+ranged AP*0.1) as Twilight Damage.Can dodge and parry while active.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 524812,
+   "name": "Renegade",
+   "icon": "Interface\\Icons\\ability_rogue_sinistercalling",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_sinistercalling.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now drop caltrops below you each time you use Vault that last 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805770,
+   "name": "Witching Shroud",
+   "icon": "Interface\\Icons\\_Sylvanas_Warlock",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_sylvanas_warlock.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Enter a powerful stealth mode for 3 seconds, granting immunity to all harmful magic effects.Only usable for 10 seconds after being hit by a magical critical strike. Usable while stunned or feared.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504677,
+   "name": "Duskwood Renegade",
+   "icon": "Interface\\Icons\\achievement_zone_duskwood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_duskwood.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Burrow Bolt by -5 sec.",
+   "altSpellIds": [
+    504891
+   ],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 802020,
+   "name": "Dusk Blade",
+   "icon": "Interface\\icons\\novart_passivemastery_(6)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(6)_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Strike an enemy with both weapons, dealing Weapon Damage plus 10 + 15% shadow SP Shadow damage, piercing resistances. Heals for 25% of damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 807918,
+   "name": "Unleash the Hounds",
+   "icon": "Interface\\Icons\\Shadowhound_Summon_Icon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/shadowhound_summon_icon.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summon 1 Lesser Shadow Hound to aid you in combat for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 680236,
+   "name": "Repulse",
+   "icon": "Interface\\icons\\novart_magicspell_(26)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(26)_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing 57 Shadow damage and knocking all affected targets back.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 705531,
+   "name": "Defender of Darkshire",
+   "icon": "Interface\\icons\\5_shieldnobg_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_shieldnobg_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with ranged auto attacks now increase the melee haste of your Shadow Hounds by 10% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 520270,
+   "name": "Darkflock",
+   "icon": "Interface\\icons\\custom_13_summon_raven_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_13_summon_raven_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Channel for 8 seconds, commanding a flock of crows to deal 50 + 15% ranged AP + 85% SP Shadow damage to enemies in a wide cone every 2 sec.Can channel while moving.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 681180,
+   "name": "Trapper",
+   "icon": "Interface\\Icons\\ability_hunter_steeltrap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_steeltrap.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Trap spells by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 680247,
+   "name": "Low Dawn",
+   "icon": "Interface\\icons\\custom_gun_b_03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_gun_b_03_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Sixfold Shot by 25% and causes it to channel 0.5 sec quicker.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 805738,
+   "name": "Rearmament",
+   "icon": "Interface\\icons\\nhi_shadowbombs_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowbombs_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Arm yourself against evil, resetting the cooldown of all Traps and Decimate.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 804185,
+   "name": "Evil Never Sleeps",
+   "icon": "Interface\\Icons\\Spell_Shadow_SpectralSight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_spectralsight.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "In the night time, your Agility is increased by 4%.In the day time, your haste is increased by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500056,
+   "name": "Feast of Talons",
+   "icon": "Interface\\Icons\\ability_mount_fireravengodmountpurple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mount_fireravengodmountpurple.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Striking at least 5 enemies with Darkflock now causes you to unleash a flock of crows around each enemy struck, dealing 762 + 78.75% SP + 45% ranged AP Twilight Damage over 9 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 504742,
+   "name": "Anguish",
+   "icon": "Interface\\Icons\\_DemonHand_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_demonhand_red.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Shadow damage dealt now has a 5% chance to reduce the channel time of your next Darkflock within 15 seconds by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 681169,
+   "name": "Plagueland Survivalist",
+   "icon": "Interface\\icons\\5_shadowworld_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_shadowworld_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the duration of disease effects on you by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500086,
+   "name": "Daring Escape",
+   "icon": "Interface\\Icons\\_D3vault",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3vault.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Jump backwards, causing all ranged attacks to miss you for 2 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 706240,
+   "name": "Arbalest Mastery",
+   "icon": "Interface\\Icons\\artifactability_marksmanhunter_legacyofthewindrunners",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/artifactability_marksmanhunter_legacyofthewindrunners.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each subsequent shot of a Witchbane cast deals 15% more damage, up to a maximum of 150%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 680331,
+   "name": "One Shot",
+   "icon": "Interface\\Icons\\inv_bow_1h_draenorraid_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_bow_1h_draenorraid_d_01.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Heartseeking Bolt by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 500055,
+   "name": "Bane of Witches",
+   "icon": "Interface\\Icons\\ability_demonhunter_darkness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_darkness.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Heartseeking Bolt now increases your Physical damage dealt by 10% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 802280,
+   "name": "Noctis Blade",
+   "icon": "Interface\\icons\\nhi_brokensword_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_brokensword_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Strike an enemy, dealing 100% Weapon Damage plus 26, scaling with your parry rating, and healing you for 50% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 503659,
+   "name": "Dark Riposte",
+   "icon": "Interface\\Icons\\inv_weapon_shortblade_110",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_110.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Parrying enemy attacks now restores 5% of your missing health and Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680516,
+   "name": "Shadow Brand",
+   "icon": "Interface\\icons\\5_shadow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_shadow_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct ability damage now applies Shadow Brand to enemies.Shadow BrandMarks the target for 12 seconds, dealing 36 High Threat Shadow Damage over 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 681095,
+   "name": "March of the Black King",
+   "icon": "Interface\\icons\\5_shadowclones_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_shadowclones_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Expel darkness from within you, dealing 55 Shadow damage to nearby enemies over 10 seconds.Generates 5 Rage every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680494,
+   "name": "Witchblight",
+   "icon": "Interface\\icons\\nhi_shadowbeam_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowbeam_(2)_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Explode with dark energy, dealing 51 + 50% shadow SP + 20% AP Shadow damage to up to to 10 nearby enemies and healing you for 20% of your maximum health.Each target struck is guaranteed to miss their next instance of damage within 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 804432,
+   "name": "Guard Strike",
+   "icon": "Interface\\Icons\\inv_qiraj_hiltornate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_qiraj_hiltornate.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Bash an enemy with your weapon's hilt, interrupting them and preventing any spell from that school of magic from being cast for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 707407,
+   "name": "Shadowy Tendrils",
+   "icon": "Interface\\Icons\\inv_weapon_shortblade_88",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_88.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Grasp of the Undying now strikes 2 additional nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 805346,
+   "name": "Witch Knight",
+   "icon": "Interface\\Icons\\inv_sword_161",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_161.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct ability damage with a two-handed weapon now reduces the remaining cooldown of your Tonics by -1 sec and grants Witching.WitchingIncreases magic resistances by 10%, and melee haste by 10% for 8 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680496,
+   "name": "Bulwark of Darkness",
+   "icon": "Interface\\Icons\\Spell_Shadow_SealOfKings",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_sealofkings.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Dawn Blade is now increased by 5% for each stack of Pommel Smash on the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680521,
+   "name": "Chains of Darkness",
+   "icon": "Interface\\icons\\nhi_shadowchains_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowchains_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Pull all nearby enemies to you, dealing 84 + 55% shadow SP + 15% AP Shadow damage and taunting them for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680528,
+   "name": "Destroyer of Evil",
+   "icon": "Interface\\icons\\uico_shadow_spell_03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_shadow_spell_03_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Dawn Blade now deals an additional 20% of the damage dealt as Twilight Damage every 1 sec for 3 seconds.Shadow BrandMarks the target for 12 seconds, dealing 36 High Threat Shadow Damage over 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680518,
+   "name": "Desecrate",
+   "icon": "Interface\\icons\\custom_sword_b_05_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_sword_b_05_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Desecrate up to 8 enemies in front of you, dealing Weapon Damage plus 18 as Shadow damage, piercing resistances.Only usable after avoiding an attack.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680492,
+   "name": "Clinch Fighting",
+   "icon": "Interface\\Icons\\inv_sword_2h_blood_c_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_blood_c_03.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Attacks which would otherwise kill you now heal you for 50% maximum health and increases the damage of Noctis Blade by 50% for 6 seconds.Can only occur once every 2 min.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 681156,
+   "name": "Strategist",
+   "icon": "Interface\\Icons\\ability_heroicleap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_heroicleap.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Vault now regenerates 5% maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680504,
+   "name": "Undying",
+   "icon": "Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_ritualofsacrifice.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While below 75% maximum health, Dawn Blade now increases the critical strike chance of Noctis Blade by 40% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680513,
+   "name": "Secret of Raven Hill",
+   "icon": "Interface\\icons\\nhi_shadowsilence_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowsilence_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Drinking a Tonic will transform your Dawn Blade into powerful damaging spells with unique effects for 30 seconds based on the last Tonic consumed.Surging BladeSlash an enemy for 280% Weapon Damage and increase your haste by 15% for 10 seconds.Witchblood FeverCurse all nearby enemies, dealing 104 + 12% AP Shadow damage every 1 sec for 8 seconds and increasing their Magic damage taken from you by 3%.Enemies affected by Witchblood Fever can be seen while stealthed.Dark PerilCrush nearby enemies, dealing 241 + 24% AP Shadow damage and stunning them for 3 seconds.Vampiric RageLeech the life from 10 enemies within 8 yds, dealing 279 + 28% AP Shadow damage and healing for 90% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 707067,
+   "name": "Night King",
+   "icon": "Interface\\icons\\novart_magicspell_(72)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(72)_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Noctis Blade now consumes Shadow Brand to deal 50% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 681098,
+   "name": "Wide Swings",
+   "icon": "Interface\\Icons\\INV_Weapon_Shortblade_28",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_28.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Noctis Blade and Grasp of the Undying by 20% on enemies affected by Shadow Brand.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680525,
+   "name": "Dark Chivalry",
+   "icon": "Interface\\icons\\nhi_shadowthrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowthrow_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Armor contribution from mail items by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680599,
+   "name": "Foresight",
+   "icon": "Interface\\icons\\novart_magicspell_(50)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(50)_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your direct Physical critical strikes now grant allies Replenishment.In addition, Dawn Blade is now guaranteed to critically strike against Undead or Demons.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680530,
+   "name": "Blade of the Misbegotten",
+   "icon": "Interface\\Icons\\INV_Weapon_Shortblade_60",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_60.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Dawn Blade now increases your health by 15% of the damage dealt for 8 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 300575,
+   "name": "Protector of Darkshire",
+   "icon": "Interface\\Icons\\_Diablo3_Cleave_Rogue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_cleave_rogue.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Dawn Blade and Dusk Blade by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 301338,
+   "name": "Scarlet Inquisitor",
+   "icon": "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_token_scarletcrusade.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the mana cost of your Traps and Brands by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 503664,
+   "name": "Cycle of Despair",
+   "icon": "Interface\\icons\\5_moon_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_moon_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the amount of stacks of Dawn and Dusk by 10.In addition, reaching 20 stacks with both buffs will consume them to grant you 20% increased damage, melee haste, movement speed, and critical strike chance for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 680544,
+   "name": "Purity & Wickedness",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_01dual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactfelomelorn_d_01dual.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Main-hand auto attacks now apply a stack of Purity to the target, increasing the Fire and Holy damage you deal to them by 2% per stack, stacking 6 times.Off-hand auto attacks now apply a stack of Wickedness to the target, increasing the Shadow and Physical damage you deal to them by 2% per stack, stacking 6 times.Torchlight can now consume these stacks to deal 1028 + 25% holy SP + 45% AP Holyflame or Shadowstrike damage to the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 680538,
+   "name": "Lightbringer",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyThrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holythrow_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Dusk Blade now has a 15% chance to reduce the mana cost of your next Purifier's Edge by -100%. This effect has a 25% chance to not be consumed by Purifier's Edge.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 520277,
+   "name": "Shadowstorm",
+   "icon": "Interface\\icons\\nhi_shadowstab_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowstab_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Pommel Smash now has a 20% chance to trigger a Shadowstorm.ShadowstormLeeches 350 + 30% SP + 10% AP health from enemies within 8 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804051,
+   "name": "Witching Idol",
+   "icon": "Interface\\Icons\\inv_archaeology_80_witch_fetishofthequestioningmind",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_80_witch_fetishofthequestioningmind.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Drop a Witching Idol that periodically dispels fear, sleep, and charm effects every 3 sec from party members within 20 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 705467,
+   "name": "Expert Shot",
+   "icon": "Interface\\Icons\\ability_hisek_aim",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hisek_aim.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Shadowblast by 10% and your hit chance by 2%.",
+   "altSpellIds": [
+    707889
+   ],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 572530,
+   "name": "Lethal Pursuit",
+   "icon": "Interface\\Icons\\ability_ironmaidens_darkhunt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_darkhunt.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Shadow Rage now also grants your Shadow Hounds 10% increased haste and it now stacks 3 additional times.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 802273,
+   "name": "Houndmaster's Call",
+   "icon": "Interface\\icons\\nhi_shadowroar_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowroar_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Command your Shadow Hounds to leap upon an enemy target, dealing two strikes for 1164 + 30% ranged AP Shadow damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 681092,
+   "name": "Resilient to Darkness",
+   "icon": "Interface\\Icons\\trade_archaeology_engravedscimitarpommel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_archaeology_engravedscimitarpommel.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Direct Magic damage taken now heals you and restores mana to you equal to 3% of the damage done.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300572,
+   "name": "Three Sevens",
+   "icon": "Interface\\icons\\custom_72_creating_shadow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_72_creating_shadow_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration that Traps last on the ground by 7 sec, reduces the cooldown of Burrow Bolt by -7 sec, and reduces the cost of Dawn Blade by -7.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520062,
+   "name": "Damnation",
+   "icon": "Interface\\Icons\\5_archerskill18_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill18_border.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Deplete your rage to shoot a powerful bolt dealing 130% Weapon Damage plus 6 Twilight Damage and converting each point of Rage into additional damage.Only usable on enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 504645,
+   "name": "Wicked Intent",
+   "icon": "Interface\\Icons\\inv_sword_61",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_61.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Desecrate now has a 15% chance to reset the cooldown of Noctis Blade.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 680537,
+   "name": "Stake",
+   "icon": "Interface\\Icons\\INV_Ascend_stake_02_b",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_stake_02_b.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Drive your concealed stake into the chest of an injured enemy, dealing 197 + 67.5% AP Physical damage.Grants Flames of Sin and increases the duration by 3 sec.Only usable on enemies at or below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 802011,
+   "name": "Dark Souls",
+   "icon": "Interface\\icons\\nhi_shadowbreath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowbreath_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Tonics by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802006,
+   "name": "Hunt",
+   "icon": "Interface\\icons\\5_run_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_run_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 25 sec rechargeCharge an enemy, slowing their movement speed by -70% for 2 seconds and generating 20 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 500085,
+   "name": "Vault",
+   "icon": "Interface\\Icons\\ability_demonhunter_vengefulretreat2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_vengefulretreat2.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Dash in the direction you are moving. Distance scales with movement speed.Not usable while rooted.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 680326,
+   "name": "Heartless",
+   "icon": "Interface\\Icons\\ability_boss_kilrogg_heartseeker",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_boss_kilrogg_heartseeker.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Physical ranged critical damage by 15%.",
+   "altSpellIds": [
+    680327
+   ],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705450,
+   "name": "Houndmaster",
+   "icon": "Interface\\Icons\\_HowlOfTerror_Purple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_howlofterror_purple.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Houndmaster's Call summons 1 Lesser Shadow Hound for 15 seconds that leaps at the target and deals 217 Shadow damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 300789,
+   "name": "Pure Agony",
+   "icon": "Interface\\Icons\\ability_priest_darkness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_darkness.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical damage of Quickdraw by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 139778,
+   "name": "Expulsion of Evil",
+   "icon": "Interface\\Icons\\_DarkHand_Sha",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_darkhand_sha.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct ranged attacks and abilities now have a 5% chance to reset the cooldown of Houndmaster's Call.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 520548,
+   "name": "Enchanted Bolts",
+   "icon": "Interface\\Icons\\5_archerskill47_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill47_border.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Magic damage dealt by 5% and your Armor penetration by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 524970,
+   "name": "Neverending Pursuit",
+   "icon": "Interface\\Icons\\achievement_boss_triumvirate_darknaaru",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_triumvirate_darknaaru.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critically striking with Damnation now refunds 40 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 805754,
+   "name": "Heartseeking Bolt",
+   "icon": "Interface\\Icons\\nhi_shadowarrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowarrow_border.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Charge up a powerful bolt that deals 200% Ranged Weapon Damage plus 40 + 50% ranged AP + 30% shadow SP to an enemy and reduces their healing received by -30% for 10 seconds.Generates Rage based on the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 802140,
+   "name": "Fiery Judgement",
+   "icon": "Interface\\icons\\novart_physical_ability_(37)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(37)_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Judge an enemy, dealing 361 + 40% AP + 100% fire SP Fire damage to them and nearby enemies.Grants Flames of Sin or increases the duration by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 560208,
+   "name": "Dark Juggernaut",
+   "icon": "Interface\\icons\\nhi_shadowentagle_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowentagle_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Desecrate now restores 10 + 20% shadow SP + 10% AP health plus an additional 1% maximum health for each target struck affected by Shadow Brand.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 802019,
+   "name": "Purifier's Edge",
+   "icon": "Interface\\Icons\\5_assassinskill28_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill28_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Strike an enemy with searing blades, dealing Weapon Damage plus 20 with both weapons as Fire damage.Grants Flames of Sin or increases the duration by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 680498,
+   "name": "Knight's Seal",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ShadowCatcher_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_shadowcatcher_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Curse an enemy, dealing 66 + 19.2% shadow SP + 14.6% AP Shadow damage every 2 sec and applying Dark Oath to you, reducing all damage taken by -5% for 8 seconds.Your next Desecrate within 8 seconds now restores 15% of your maximum health and mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 802138,
+   "name": "Gaze of the Black Knight",
+   "icon": "Interface\\Icons\\gazeoftheblackknight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/gazeoftheblackknight.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Apply a dark shield to yourself, absorbing 3255 + 700% Stamina + 41% AP damage and then gaze upon your party members, causing 25% of the damage they take to be transferred to you for 12 seconds.Damage which reduces your health below 20% will break the effect.Usable while stunned.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802139,
+   "name": "Darkslayer's Lantern",
+   "icon": "Interface\\Icons\\inv_misc_trinket6oih_lanternb1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_trinket6oih_lanternb1.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Empower a lantern with your Flames of Sin and let it shine, dealing 291 + 15% AP Fire damage and stunning all enemies within 5 yds for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 301251,
+   "name": "Brooding Hatred",
+   "icon": "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_metamorphosis.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your off-hand Weapon Damage by 20% and increases your chance to hit by 3%.",
+   "altSpellIds": [
+    301362
+   ],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 680253,
+   "name": "Trap Card",
+   "icon": "Interface\\Icons\\inv_inscription_tarot_6omagecard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_tarot_6omagecard.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of your Traps by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681341,
+   "name": "Flexible Fighter",
+   "icon": "Interface\\Icons\\ability_rogue_rollthebones02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_rollthebones02.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility by 6%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 706365,
+   "name": "Kennel Master",
+   "icon": "Interface\\Icons\\INV_Box_PetCarrier_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_box_petcarrier_01.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Unleash The Hounds now has a 25% chance to summon an additional Lesser Shadow Hound for 15 seconds.",
+   "altSpellIds": [
+    707891
+   ],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 802276,
+   "name": "Vampiric Tonic",
+   "icon": "Interface\\Icons\\trade_alchemy_potione5",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_potione5.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Drink a vampiric tonic, allowing Physical damage dealt to heal you equal to 20% of the damage dealt for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802004,
+   "name": "Smite Evil",
+   "icon": "Interface\\Icons\\Spell_Holy_BlessedResillience",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_blessedresillience.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Strike an enemy with your blade, dealing Weapon Damage plus 25 as Holy damage to them and 5 nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 503681,
+   "name": "Heavy Crossbows",
+   "icon": "Interface\\Icons\\inv_weapon_crossbow_17",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_crossbow_17.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Darkslayer by 50%, but increases its cast time by 0.5 sec.Your Heartseeking Bolt and Darkslayer now have a 25% chance to strike an additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 503680,
+   "name": "Everything You Have",
+   "icon": "Interface\\Icons\\inv_helm_plate_pvpdeathknight_f_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_plate_pvpdeathknight_f_01.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Twilight Frenzy by 5 sec, and gives damage dealt by it a 15% chance to strike again.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 504903,
+   "name": "Loksey's Journal",
+   "icon": "Interface\\Icons\\_Book1_Purple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book1_purple.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Shadow Rage by 20% of your ranged attack power.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 680255,
+   "name": "Deal With The Devil",
+   "icon": "Interface\\icons\\custom_06_summon_demon_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_06_summon_demon_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your and your Shadow Hounds critical damage dealt with Shadow damage is increased by 50%, but the cost of your spells and abilities is increased by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 680238,
+   "name": "Shadow Trap",
+   "icon": "Interface\\icons\\uico_shadow_spell_07_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_shadow_spell_07_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Place a dark trap on the ground lasting 30 seconds that will curse the first enemy to approach it and up to 5 enemies within 3 yds, stunning them for 4 seconds and dealing 461 + 136% AP Shadow damage over 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804194,
+   "name": "Decimate",
+   "icon": "Interface\\icons\\nhi_foreshadowing_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_foreshadowing_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Empowers your Shadow Hounds for 20 seconds, granting them 30% increased damage and haste and allowing them to ignore Armor.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 804193,
+   "name": "Quickdraw",
+   "icon": "Interface\\icons\\custom_gun_b_05_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_gun_b_05_border.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a quick shot, dealing 175% Ranged Weapon Damage plus 16 + 20% ranged AP Physical damage and generates Rage.Only usable after critically striking with an ability.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 680611,
+   "name": "Secret Society",
+   "icon": "Interface\\icons\\nhi_shadowcup_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowcup_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Shadow critical strike chance and Shadow damage dealt by 4% and your expertise by 5.",
+   "altSpellIds": [
+    680514
+   ],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 300968,
+   "name": "Slayer",
+   "icon": "Interface\\Icons\\ability_hunter_assassinate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_assassinate.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 803638,
+   "name": "Vampire Hunter",
+   "icon": "Interface\\icons\\novart_physical_ability_(60)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(60)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "When an enemy applies a curse to you, your Magic damage taken is reduced by -10% for 8 seconds.The damage reduction is increased by 5% and duration is increased by 2 seconds for every curse active.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805756,
+   "name": "Smoke Grenade",
+   "icon": "Interface\\Icons\\inv_misc_pyriumgrenade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_pyriumgrenade.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Throw down a smoke grenade, enemies are unable to target into or out of the Smoke for 8 seconds. Any damage caused will remove the effect.All allies in the Smoke area gain 40% increased movement speed and all enemies have their movement speed slowed by -60%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804026,
+   "name": "Silver Bolts",
+   "icon": "Interface\\Icons\\ability_ironmaidens_ironshot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_ironshot.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Damage dealt by Heartseeking Bolt and Damnation is increased by 15%, doubled against Undead or Demons or enemies affected by Shadow Trap.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705524,
+   "name": "Dead and Gone",
+   "icon": "Interface\\Icons\\inv_archaeology_80_witch_skull",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_80_witch_skull.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Bolt and Dash now affects an additional use of a Heartseeking Bolt.Your Pavise now lasts 2 additional sec and has a -30 sec reduced cooldown.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 503655,
+   "name": "Sermon of Flame",
+   "icon": "Interface\\Icons\\custom_T_Nhance_RPG_Icons_SwordOfFlame_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_swordofflame_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Fire damage dealt by 5%.",
+   "altSpellIds": [
+    504890
+   ],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 681097,
+   "name": "Guardbreaker",
+   "icon": "Interface\\Icons\\ability_warrior_intervene",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_intervene.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Pommel Smash now strikes an additional nearby enemy.",
+   "altSpellIds": [
+    681493
+   ],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 804068,
+   "name": "Slayer's Mark",
+   "icon": "Interface\\Icons\\ability_blackhand_marked4death",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_blackhand_marked4death.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Mark an enemy, increasing the attack power of all attackers against that target by 150 and your critical strike chance against them by 3%, increasing by 3% every 1 sec for 8 seconds.For the duration, the enemy is unable to stealth.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800165,
+   "name": "Witchbane",
+   "icon": "Interface\\Icons\\_D3rapidfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3rapidfire.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a series of devastating shots dealing 60 + 45% ranged AP Physical damage over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706260,
+   "name": "Scent of Magic",
+   "icon": "Interface\\Icons\\artifactability_vengeancedemonhunter_painbringer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/artifactability_vengeancedemonhunter_painbringer.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes now apply Scent of Magic for 15 seconds, causing your Shadow Hound's next Shadow Leap to incur a -10 sec reduced cooldown.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 681093,
+   "name": "No Regrets",
+   "icon": "Interface\\icons\\uico_shadow_spell_08_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_shadow_spell_08_border.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your March of the Black King now increases your Armor by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 570726,
+   "name": "Rampaging Hounds",
+   "icon": "Interface\\Icons\\ability_hunter_sickem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_sickem.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Shadow Hounds melee attacks now cleave 1 additional nearby enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 804187,
+   "name": "Hail of Gunfire",
+   "icon": "Interface\\Icons\\_SmallGun_Orange",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_smallgun_orange.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your ranged haste by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 524854,
+   "name": "Veiled in Darkness",
+   "icon": "Interface\\Icons\\ability_priest_surgeofdarkness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_surgeofdarkness.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "A veil of dark magic encircles you at all times, granting 5% increased Attack Power to party and raid members within 100 yds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 705463,
+   "name": "Coordinated Killing",
+   "icon": "Interface\\Icons\\ability_revendreth_demonhunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_demonhunter.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Unleash the Hounds now casts Shadow Rage on you for 10 seconds.Shadow RageRanged auto attacks deal an additional 50 Shadow Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 574149,
+   "name": "Silver Bullets",
+   "icon": "Interface\\Icons\\inv_misc_ammo_bullet_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_ammo_bullet_05.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Darkslayer by 10%, increased by an additional 10% against Undead.",
+   "altSpellIds": [
+    574163
+   ],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 300792,
+   "name": "Night Stalker",
+   "icon": "Interface\\Icons\\ability_rogue_nightblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_nightblade.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 3%.",
+   "altSpellIds": [
+    300793
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705465,
+   "name": "Dark Ranger",
+   "icon": "Interface\\Icons\\achievement_leader_sylvanas",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_leader_sylvanas.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the Shadow damage dealt by your Shadow Hounds by 5%.",
+   "altSpellIds": [
+    707861
+   ],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 705484,
+   "name": "Dawn",
+   "icon": "Interface\\icons\\custom_T_SunOrb_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_sunorb_border.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing Fire damage now increases the damage dealt by Torchlight and Dusk Blade by 2% for 5 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 705480,
+   "name": "Searing Hilt",
+   "icon": "Interface\\Icons\\inv_sword_1h_pvppandarias1_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_pvppandarias1_c_02.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Purifier's Edge now grants you Searing Hilt for 10 seconds.Searing HiltIncreases your melee attack speed by 10% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 805365,
+   "name": "Flourish",
+   "icon": "Interface\\Icons\\Ability_Rogue_UnfairAdvantage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_unfairadvantage.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Perform an advanced flourish, dealing 207 + 100% AP Fire damage to nearby enemies, repeating every 4 sec, and causing your Flames of Sin to cleave up to 3 additional enemies for 20 seconds.Grants you Flames of Sin and increases the duration by 10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 300571,
+   "name": "Dusk",
+   "icon": "Interface\\Icons\\World_Marker_Moon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/world_marker_moon.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing Physical damage now increases the damage dealt by Stake and Dawn Blade by 2% for 5 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 681329,
+   "name": "Brushin' Off The Dusk",
+   "icon": "Interface\\Icons\\_DarkHand_Fire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_darkhand_fire.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your off-hand auto attacks now have a 10% chance to strike 2 additional times.",
+   "altSpellIds": [
+    681488
+   ],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 806195,
+   "name": "Dark Intuition",
+   "icon": "Interface\\Icons\\ability_priest_darkness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_darkness.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Whenever you parry or dodge an attack, your attack speed is increased by 5%, and your parry chance by 2% for 15 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705498,
+   "name": "Alchemical Research",
+   "icon": "Interface\\Icons\\inv_enchant_alchemistcauldron",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_enchant_alchemistcauldron.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Tonics by 25%.",
+   "altSpellIds": [
+    707862
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804024,
+   "name": "Slayer of Darkness",
+   "icon": "Interface\\Icons\\Spell_Holy_Retribution",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_retribution.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases damage dealt by 5% when fighting Demons or Undead. Additionally, direct damage dealt with spells or abilities now has a 10% chance to deal 151 Holy damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681152,
+   "name": "Alertness",
+   "icon": "Interface\\Icons\\Spell_Shadow_Brainwash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_brainwash.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Witching Shroud by -10 sec when you are struck by a Shadow or Arcane critical strike.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680384,
+   "name": "Crossbow Expert",
+   "icon": "Interface\\Icons\\inv_weapon_crossbow_07",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_crossbow_07.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Shadowblast by 10% and Witchbane by 5%.",
+   "altSpellIds": [
+    681490
+   ],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 503682,
+   "name": "My Trusty Arbalest",
+   "icon": "Interface\\Icons\\inv_weapon_crossbow_32",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_crossbow_32.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Rage cost of Witchbane and Shadowblast by -10% and increases your chance to hit by 2%.",
+   "altSpellIds": [
+    504892
+   ],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 503698,
+   "name": "Follow The Edict",
+   "icon": "Interface\\Icons\\Ability_Rogue_WrongfullyAccused",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_wrongfullyaccused.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Edicts by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705526,
+   "name": "Trickster",
+   "icon": "Interface\\Icons\\ability_rogue_smoke",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_smoke.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Smoke Grenade by -30 sec and increases its duration by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 501380,
+   "name": "Brand of the Unworthy",
+   "icon": "Interface\\Icons\\ability_skyreach_overwhelmed",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skyreach_overwhelmed.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Expose an enemy's darkest faults, disorienting them for 40 seconds (8 sec vs players).Damage caused will end this effect. Only usable on Humanoids, Demons, and Undead.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 789256,
+   "name": "Night Walker",
+   "icon": "Interface\\icons\\nhi_arcanespeed_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanespeed_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the base range of Vault by 3 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707230,
+   "name": "Purified Bola",
+   "icon": "Interface\\Icons\\inv_engineering_90_bola",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_engineering_90_bola.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Bola Throw now has 2 charges, deals additional damage, and lasts 2 additional sec, but now costs 10 Rage instead of mana.Purified Bola Throw2 Charges, 15 sec rechargeThrow a bola at an enemy, dealing 348 + 40% AP Holy damage and slowing movement speed by -60% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705534,
+   "name": "Vengeful Intent",
+   "icon": "Interface\\Icons\\_Diablo3_Cleave_DeathKnight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_cleave_deathknight.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Whenever you take direct damage you have a 10% chance to strike back for 75% Weapon Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707648,
+   "name": "Resourceful Pursuit / Witching Bolt",
+   "icon": "Interface\\Icons\\INV_Weapon_Crossbow_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_crossbow_01.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Rage cost of Tormentor and Damnation by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 680323,
+   "name": "Rapid / Relentless",
+   "icon": "Interface\\Icons\\5_archerskill02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill02_border.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Witchbane now deals its full damage over -1 second shorter period.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 805767,
+   "name": "Evasive / Crossbow Frenzy",
+   "icon": "Interface\\Icons\\Spell_Shadow_Charm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_charm.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Twilight Frenzy now grants you -20% reduced damage taken while active.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 520670,
+   "name": "Bolt and Dash / Pavise Crossbowman",
+   "icon": "Interface\\Icons\\inv_bow_2h_crossbow_draenordungeon_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_bow_2h_crossbow_draenordungeon_c_01.jpg",
+   "source": "Boltslinger",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your next Heartseeking Bolt within 10 seconds deals 25% more damage and incurs no cooldown.When this buff is consumed you gain 50% increased movement speed for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Boltslinger"
+   ]
+  },
+  {
+   "spellId": 705533,
+   "name": "Just A Sip / Regenerative Elixirs",
+   "icon": "Interface\\Icons\\inv_potion_68",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_potion_68.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Drinking Tonics now also restores 5% of your maximum health and mana.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804190,
+   "name": "Reload / Darkhunter",
+   "icon": "Interface\\Icons\\inv_bountyhunting",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_bountyhunting.jpg",
+   "source": "Houndmaster",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Quickdraw by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Houndmaster"
+   ]
+  },
+  {
+   "spellId": 705519,
+   "name": "Calm Under Pressure / Dark Barrier",
+   "icon": "Interface\\Icons\\warrior_talent_icon_deadlycalm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_deadlycalm.jpg",
+   "source": "Black Knight",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Stoicism by -30 sec and Burrow Bolt by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Black Knight"
+   ]
+  },
+  {
+   "spellId": 560219,
+   "name": "The Hunt Continues / Evil Never Sleeps",
+   "icon": "Interface\\Icons\\_D3spiritwalk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3spiritwalk.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Hunt now generates an additional 15 Rage and the mana cost is reduced by -15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 681411,
+   "name": "Sinner / Sin Eater",
+   "icon": "Interface\\Icons\\Spell_Fire_SealOfFire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_sealoffire.jpg",
+   "source": "Inquisition",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Torchlight by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inquisition"
+   ]
+  },
+  {
+   "spellId": 802002,
+   "name": "Blade Stance",
+   "icon": "inv_sword_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804667,
+   "name": "Charming Conversation",
+   "icon": "achievement_halloween_smiley_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_halloween_smiley_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500082,
+   "name": "Coiling Shot",
+   "icon": "_d3hungeringarrow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3hungeringarrow.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800665,
+   "name": "Crossbow Stance",
+   "icon": "inv_crossbow_2h_maw_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_crossbow_2h_maw_c_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804179,
+   "name": "Darkslayer",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802281,
+   "name": "Infiltrate",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706741,
+   "name": "Inquisitor's Edict",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 572306,
+   "name": "Purge Evil",
+   "icon": "ability_paladin_longarmofthelaw",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_longarmofthelaw.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804191,
+   "name": "Shadowblast",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802013,
+   "name": "Vicious Mockery",
+   "icon": "spell_misc_emotionangry",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_misc_emotionangry.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804797,
+   "name": "Witchmail",
+   "icon": "novart_bodyarmor_(6)_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_bodyarmor_(6)_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

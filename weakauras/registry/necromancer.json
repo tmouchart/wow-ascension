@@ -1,0 +1,2125 @@
+{
+ "slug": "necromancer",
+ "class": "Necromancer",
+ "classId": "23",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Death",
+   "tabId": 59
+  },
+  {
+   "name": "Rime",
+   "tabId": 60
+  },
+  {
+   "name": "Animation",
+   "tabId": 61
+  }
+ ],
+ "abilityCount": 148,
+ "abilities": [
+  {
+   "spellId": 302923,
+   "name": "Putrifier",
+   "icon": "Interface\\Icons\\Spell_Shadow_DeathCoil",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the durations of Ghoulify and Mass Grave by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 802986,
+   "name": "Plague Horde",
+   "icon": "Interface\\Icons\\inv_belt_pvpwarlock_e_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_belt_pvpwarlock_e_01.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by your Undead minions now has a 10% chance to cast Plague Horde on themselves for 5 seconds and emit Zombie Plague, dealing 79 + 10% SP Plague damage to their target.Plague HordeEnrage for 5 seconds, increasing their critical strike chance by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 500981,
+   "name": "Lich Form",
+   "icon": "Interface\\Icons\\Achievement_Boss_Amnennar_the_Coldbringer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_amnennar_the_coldbringer.jpg",
+   "source": "Rime",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Transform into a Lich, becoming Undead increasing your Frost damage dealt by 10%.While active you generate 3 Runic Power every 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 301207,
+   "name": "Flesh Symbiosis",
+   "icon": "Interface\\Icons\\ReforgedAbomination",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/reforgedabomination.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each Abomination or Decaying Colossus active now increases your total Armor and magic resistance by 30% and causes you to periodically regenerate 2% maximum health every 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 500342,
+   "name": "Mutation",
+   "icon": "Interface\\Icons\\achievement_dungeon_plaguefall_stradamamargrave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_plaguefall_stradamamargrave.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "For the next 15 seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick -50% faster.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 504316,
+   "name": "Command: Hook",
+   "icon": "Interface\\Icons\\INV_MISC_HOOK_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_hook_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Command your Abominations to hook an enemy to their location, slowing their movement speed to a halt for 2 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561138,
+   "name": "Army of the North",
+   "icon": "Interface\\Icons\\nhi_frost_runedweapon_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_runedweapon_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Chant a powerful ritual that brings forth 1 Rotting Frost Giant near you to aid you in combat for 30 seconds and generate 30 Runic Power, repeating every 3 sec for 15 seconds.For the duration, your Undead minions are guaranteed to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 300960,
+   "name": "Creeping Crypt",
+   "icon": "Interface\\Icons\\ability_deathwing_sealarmorbreachgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_sealarmorbreachgreen.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Flesh to Worms by 25% against enemies below 35% maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 300241,
+   "name": "Vampiric Aura",
+   "icon": "Interface\\Icons\\spell_shadow_vampiricaura",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_vampiricaura.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While you are below 50% health, your Undead minions now heal you for 10% of their damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300234,
+   "name": "Icecrown Scriptures",
+   "icon": "Interface\\Icons\\_ScrollOfSpeed_LightBlue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_scrollofspeed_lightblue.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Shadow and Frost damage dealt against Humanoids and Undead by 4%.",
+   "altSpellIds": [
+    301325
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803291,
+   "name": "Hoarfrost Hands",
+   "icon": "Interface\\Icons\\Call_of_the_Sepulcher_64x64",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/call_of_the_sepulcher_64x64.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Lichfrost's movement speed slow by 4 sec and your hit chance by 4%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 806149,
+   "name": "Damnation",
+   "icon": "Interface\\Icons\\nhi_deathcoil_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_deathcoil_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Shadow damage by 5%, doubled against enemies below 35% health.",
+   "altSpellIds": [
+    807925
+   ],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 300748,
+   "name": "Hulking Hordes",
+   "icon": "Interface\\icons\\uico_unholy_spell_08_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_unholy_spell_08_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your maximum health and the maximum health of your summons by 5%.",
+   "altSpellIds": [
+    301326
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560595,
+   "name": "Putrid Summoner",
+   "icon": "Interface\\Icons\\_D3wallofzombies",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3wallofzombies.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Each Undead Stance now provides an additional bonus:Undead: Assault: Increases your critical strike chance against Humanoids by 5%.Undead: Protect: Reduces your threat generated by -75%.Undead: Pacify: Reduces your damage taken by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705747,
+   "name": "Unrelenting Army",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_ArmyOfTheDead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_armyofthedead.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Harvest Plague now has a 20% chance to summon a Lesser Zombie to aid you in combat for 15 seconds.",
+   "altSpellIds": [
+    707880
+   ],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 805649,
+   "name": "Raising the Kirin Tor",
+   "icon": "Interface\\Icons\\Spell_Nature_Brilliance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_brilliance.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Command spells now have a 40% chance to refund a portion of their Runic Power cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 704355,
+   "name": "Glacial Impact",
+   "icon": "Interface\\icons\\skill_icon_skill23_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill23_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Frozen TargetCall down icy boulders onto a Frozen enemy, dealing 84 + 100% frost SP Frost damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 807937,
+   "name": "Champion of Kel'Thuzad",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_MindFreeze",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_mindfreeze.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Skeletal Mages now only cost 1 Life Force.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 300940,
+   "name": "Refreshing Chill",
+   "icon": "Interface\\icons\\5_mageskill32_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_mageskill32_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells now has a 20% chance to reset the cooldown of Ice Barrage and make your cast next within 15 seconds free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 705746,
+   "name": "Life For Power",
+   "icon": "Interface\\Icons\\Spell_Shadow_CreepingPlague",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_creepingplague.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "You absorb 20% of healing taken and gain a shield for the amount absorbed, lasting 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704528,
+   "name": "Swarmer",
+   "icon": "Interface\\Icons\\Spell_Shadow_DarkSummoning",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_darksummoning.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the Runic Power generated by Crypt Swarm by 2 per tick.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 806324,
+   "name": "Festering Decay",
+   "icon": "Interface\\Icons\\_DeathCoilV2_Cyan",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_deathcoilv2_cyan.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of Command spells by -15% and causes them to increase the target's spell damage taken by 10% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 707113,
+   "name": "Touch of Death",
+   "icon": "Interface\\Icons\\5_druideskill47_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill47_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows Expunge to stack an additional time and increases the range of your Death spells by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 504431,
+   "name": "Master Animator",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0004s_0000_shadow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_death_icon_0004s_0000_shadow_border.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum Life Force by 1.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 503740,
+   "name": "Ghoul Mastery",
+   "icon": "Interface\\Icons\\ability_demonhunter_reversemagic",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_reversemagic.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by your Ghouls now has a 15% chance to transform them into a Frenzied Ghoul.Frenzied Ghoul (Proc)Transformed into a Frenzied Ghoul, increasing haste by 40% for 10 seconds. Immune to movement slowing effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 805038,
+   "name": "Summoning Ritual",
+   "icon": "Interface\\icons\\nhi_deathgolem_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_deathgolem_border.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summon a ritual circle at your location for 1 minute. While active, you may cast Ritual Return to return to it.Ritual ReturnTeleport back to the position of your Scourge Transporter and remove all movement slowing effects from you.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 707175,
+   "name": "Bone King",
+   "icon": "Interface\\Icons\\inv_custom_bonetattoo_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_custom_bonetattoo_green.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells now has a 15% chance to make your next Lichfrost or Blight free of cost and instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 707445,
+   "name": "Runic Animation",
+   "icon": "Interface\\Icons\\achievement_dungeon_thenecroticwake_stitchflesh",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_thenecroticwake_stitchflesh.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Animate: Skeletal Archers and Command: Hook by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 302518,
+   "name": "Skeletal Artillery",
+   "icon": "Interface\\Icons\\inv_misc_trinket6oog_cyclopianpig1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_trinket6oog_cyclopianpig1.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Animate: Skeletal Archers now summons 1 additional Skeletal Archer.",
+   "altSpellIds": [
+    302921
+   ],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 801739,
+   "name": "Heartchill",
+   "icon": "Interface\\Icons\\ability_deathknight_heartstopaura",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_heartstopaura.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Chill an enemy's heart, interrupting their current spell cast.Successfully interrupting a spell also reduces their movement speed and haste by -80% for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 805040,
+   "name": "Animate: Skeletal Archer",
+   "icon": "Interface\\Icons\\SkeletalArcher",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skeletalarcher.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Animate 3 Skeletal Archers to aid you in combat for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 570046,
+   "name": "Plague Protection",
+   "icon": "Interface\\Icons\\Spell_Deathknight_ClassIcon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_classicon.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Wards by 25%.",
+   "altSpellIds": [
+    570226
+   ],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 531126,
+   "name": "Scourge Disciple",
+   "icon": "Interface\\icons\\nhi_rottenflesh_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_rottenflesh_border.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each active Skeletal Archer now increases your haste by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 500989,
+   "name": "Raise: Decaying Colossus",
+   "icon": "Interface\\Icons\\achievement_dungeon_grimbatol_drahga_the_shadowburner",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_grimbatol_drahga_the_shadowburner.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Raise a Decaying Colossus to aid you in combat, occupying 3 Life Force. While active, 25% of all damage taken by the caster is taken by the Decaying Colossus.Command: Unleash a powerful attack dealing Weapon Damage plus 100 to all enemies in front of it.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503738,
+   "name": "Corpse Wagon",
+   "icon": "Interface\\Icons\\spell_shadow_corpseexplode",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_corpseexplode.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, increases the damage of Corpse Explosion by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 500933,
+   "name": "Phylactery",
+   "icon": "Interface\\Icons\\nhi_frost_phylactery_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_phylactery_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create a Phylactery near you for 2 minutes.Upon taking damage which would bring you below 10% health, become a Shade, protecting you from all physical attacks and spells, but during that time you cannot attack or cast spells.Reaching your Phylactery in this state revives you with 40% of your maximum health. If you do not reach it in time you will die.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802988,
+   "name": "Lich Essence",
+   "icon": "Interface\\Icons\\WC3LichReforged",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/wc3lichreforged.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Lichfrost by -15% and reduces your spell pushback suffered from taking damage by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707627,
+   "name": "Fiend",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_Thrash_Ghoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_thrash_ghoul.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage and critical damage of Lichfrost by 20% against diseased targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 301304,
+   "name": "Rotting Flesh",
+   "icon": "Interface\\Icons\\Spell_Shadow_RaiseDead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_raisedead.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Flesh to Worms by 25% and allows its periodic damage to scale with your spell haste.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 707588,
+   "name": "Arch Lich",
+   "icon": "Interface\\Icons\\inv_misc_food_109_honeylichen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_food_109_honeylichen.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Frost spells now refund 3% of your maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 300235,
+   "name": "Death Commander",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0005s_0000_grave_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_death_icon_0005s_0000_grave_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 10% chance to increase your and your Undead minion's haste by 20% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 531130,
+   "name": "Animate: Bone Construct",
+   "icon": "Interface\\Icons\\Bone_Construct",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/bone_construct.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Animate a Bone Construct to aid you in combat for 20 seconds.It moves at a slow speed, but upon reaching an enemy, deals 1560 + 200% SP + 50% AP Shadow damage, piercing all invulnerabilities, resistances, and immunities.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 560727,
+   "name": "Cycle of Death",
+   "icon": "Interface\\Icons\\Spell_holy_turnundead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_turnundead.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell haste by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 706472,
+   "name": "Sepulchral Might",
+   "icon": "Interface\\Icons\\_D3markedfordeath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3markedfordeath.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Stamina by 5%.Increases your spell damage by an amount equal to 15% of the total of your Raised minion's Stamina.",
+   "altSpellIds": [
+    572638
+   ],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 504489,
+   "name": "Command: Bonefreeze",
+   "icon": "Interface\\Icons\\Spell_Shadow_DarkRitual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_darkritual.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Command your Skeletal Mages to freeze enemies at target location for 40 seconds (8 sec vs players). Damage taken may end the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 707562,
+   "name": "Frozen Bodies",
+   "icon": "Interface\\Icons\\spell_holy_senseundead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_senseundead.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of Frozen Bodies.Frozen BodiesIncreases the damage of your next Glacial Impact by 3% for 20 seconds, stacking 10 times.Reaching 10 stacks causes your next Glacial Impact within until cancelled to critically strike for 50% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 500572,
+   "name": "Crypt Explosion",
+   "icon": "Interface\\Icons\\ability_necrolord_fleshcraft",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_necrolord_fleshcraft.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells on an enemy now applies Crypt Plague to 3 enemies near the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 707001,
+   "name": "Putricide's Formula",
+   "icon": "Interface\\Icons\\achievement_boss_profputricide",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_profputricide.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Undead minions has a 10% chance to blast up to 3 nearby enemies for 71 + 30% SP Plague damage.",
+   "altSpellIds": [
+    707882
+   ],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 680388,
+   "name": "Fetid Ward",
+   "icon": "Interface\\Icons\\inv_icon_shadowcouncilorb_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_icon_shadowcouncilorb_green.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Activate a Fetid Ward on yourself and your Undead minions for 30 minutes.While active, 30% of your damage dealt heals you and your minions, split evenly amongst them, and healing received is increased by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 572023,
+   "name": "Soulfreeze",
+   "icon": "Interface\\Icons\\ability_mage_rayoffrost",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_rayoffrost.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "All Frost damage you deal to Frozen targets now has a 25% chance to unleash Soulfreeze on them.SoulfreezeLaunch a chain of frost at an enemy, dealing 354 + 35% frost SP Frost Damage every 1 sec for 3 seconds.Each tick generates 3 to 8 Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 500335,
+   "name": "Raise: Abomination",
+   "icon": "Interface\\Icons\\ui_darkshore_warfront_horde_abomination",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ui_darkshore_warfront_horde_abomination.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Raise an Abomination to aid you in combat, occupying 3 Life Force.It is surrounded by a disease cloud, dealing 9 + 25% SP Nature damage to enemies when they deal damage and reducing their attack speed by -20% for 15 seconds.Command: Instantly unleashes an empowered disease cloud around it.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 301198,
+   "name": "Game of Bones",
+   "icon": "Interface\\Icons\\icon_petfamily_undead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/icon_petfamily_undead.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Champion spells by -60 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704681,
+   "name": "Permafrost",
+   "icon": "Interface\\Icons\\_ManaBurn_Frost",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_manaburn_frost.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Gives your spells a 15% chance to grant you the Permafrost, which treats your next 2 spells cast as if the target were Frozen. Lasts 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 560852,
+   "name": "Glacier Lord",
+   "icon": "Interface\\icons\\uico_frost_spell_03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_frost_spell_03_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Glacial Impact is now guaranteed to critically strike against Frozen targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 802121,
+   "name": "Bone Tithe",
+   "icon": "Interface\\Icons\\Ossuary_Bond",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ossuary_bond.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Siphon life from your undead minions, sacrificing 40% of their health to grant yourself an absorb shield equal to half of the health stolen for 20 seconds.Usable while stunned.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805427,
+   "name": "Giant Bones",
+   "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_icegiant_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_icegiant_01.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Unholy Frenzy now summons a Rotting Frost Giant to aid you in combat for the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 704669,
+   "name": "Frigidness",
+   "icon": "Interface\\Icons\\achievement_boss_forgemaster",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_forgemaster.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical damage by 50% against Frozen targets.",
+   "altSpellIds": [
+    707742
+   ],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 805369,
+   "name": "Glacial Tap",
+   "icon": "Interface\\Icons\\_SkullCurse2_Blue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_skullcurse2_blue.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Tap into necrotic energies, instantly regenerating 30 Runic Power.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807796,
+   "name": "Death's Due",
+   "icon": "Interface\\Icons\\nhi_deathpickaxe_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_deathpickaxe_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Force a target to accept the reality of death, removing any invulnerability or immunity effects from them and cursing them for 5 seconds.If the target's health is below 20% at the end of duration, they take 800 + 200% SP Shadowfrost Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805675,
+   "name": "Rot Fetishist",
+   "icon": "Interface\\Icons\\spell_rotting_breath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_rotting_breath.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Virulency now applies Rot Fetishist for 10 seconds, causing you to replicate 20% of your periodic damage dealt as direct damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 806321,
+   "name": "Plague Revenant",
+   "icon": "Interface\\Icons\\inv_helm_cloth_raidwarlockmythic_s_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_cloth_raidwarlockmythic_s_01.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes now apply a stack of Crypt Plague.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 704715,
+   "name": "Gravedigger",
+   "icon": "Interface\\Icons\\achievement_bg_xkills_avgraveyard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_bg_xkills_avgraveyard.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Sacrifice Undead by -0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500338,
+   "name": "Flesh to Worms",
+   "icon": "Interface\\Icons\\inv_pet_batpetmaldraxxus",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_batpetmaldraxxus.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Disease an enemy, dealing 15 + 11.06% shadow SP Plague damage and generating Runic Power every 3 sec for 18 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Death",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 707007,
+   "name": "March of the Dead",
+   "icon": "Interface\\Icons\\Spell_Shadow_DeadofNight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_deadofnight.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Beckon the restless dead to rise and march forward.When they reach an enemy they explode, dealing 700 + 75% SP Plague damage to nearby enemies and slowing their movement speed by -70% for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 560730,
+   "name": "Parasite Plague",
+   "icon": "Interface\\Icons\\Ability_Creature_Disease_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_disease_01.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt now has a 5% chance to apply Parasites for 8 seconds.ParasitesYour Undead minions feast upon the parasites on hit, leeching 15% of their damage dealt as Plague Damage to the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 503757,
+   "name": "Graverobber",
+   "icon": "Interface\\Icons\\ability_deathknight_deathsiphon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_deathsiphon.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the mana cost and cast time of your Raise and Animate spells by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 704717,
+   "name": "Long March",
+   "icon": "Interface\\Icons\\spell_deathknight_iceboundfortitude",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_iceboundfortitude.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Removes the cooldown from March of the Dead, but gives it a 1 sec cast time.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 706953,
+   "name": "Summoner",
+   "icon": "Interface\\Icons\\inv_misc_necklacea7",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_necklacea7.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the mana cost and cooldown of Sacrifice Undead by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 504866,
+   "name": "Anti-Magic Shell",
+   "icon": "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_antimagicshell.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you summon a Raised minion, it now raises with a shield absorbing Magic damage equal to 40% of their maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 561215,
+   "name": "Forbidden Technique",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_empowerruneblade.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells now reduces the cooldown of your Animates by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 537208,
+   "name": "Dominion of Frost",
+   "icon": "Interface\\Icons\\Spell_Frost_FreezingBreath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frost_freezingbreath.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes dealt by your Undead minions now reduce the cooldown of Unholy Frenzy by -3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 805428,
+   "name": "Animate: Frost Wyrm",
+   "icon": "Interface\\icons\\5_dragoncoldbreath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_dragoncoldbreath_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Animate a Frost Wyrm that flies behind the Necromancer that blasts nearby enemies every 2 sec for 30 seconds, dealing 1500 + 14.88% frost SP + 14.88% Intellect Frost damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805429,
+   "name": "Crown's Call",
+   "icon": "Interface\\Icons\\expansionicon_wrathofthelichking",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/expansionicon_wrathofthelichking.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Intellect by 5% and the Frost damage dealt by your Undead minions by 10%.",
+   "altSpellIds": [
+    807924
+   ],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 805424,
+   "name": "Deathly Chill",
+   "icon": "Interface\\icons\\nhi_frost_beam_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_beam_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the channel and cast time of Ice Barrage by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 705745,
+   "name": "Harrowing Winds",
+   "icon": "Interface\\icons\\custom_14_big_frost_arrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_14_big_frost_arrow_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Glacial Impact now deals an additional 50% of the damage dealt as Frost damage to enemies within 6 yds of the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 531135,
+   "name": "Icecrown",
+   "icon": "Interface\\Icons\\inv_helm_eternalwinter_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_eternalwinter_d_01.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by 1% for 10 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 500331,
+   "name": "Raise: Skeletal Mage",
+   "icon": "Interface\\Icons\\SkeletalIceMage2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skeletalicemage2.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Raise a Skeletal Mage to aid you in combat, occupying 2 Life Force.Command: Unleashes ice at your target and enemies within 6 yds, dealing 51 + 80% frost SP Frost damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 801938,
+   "name": "Virulency",
+   "icon": "Interface\\Icons\\ability_maldraxxus_shaman",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_maldraxxus_shaman.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.You may use this abilty again within 10 sec to Infest another target, applying the copied diseases.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 807960,
+   "name": "Dark Harvester",
+   "icon": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_auraofdarkness.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike and hit chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 500329,
+   "name": "Raise: Gargoyle",
+   "icon": "Interface\\Icons\\ability_deathknight_summongargoyle",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_summongargoyle.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Raise a fallen Gargoyle to aid you in combat, occupying 3 Life Force. Command: Shoots necrotic bile at an enemy, dealing 73 + 65% SP Plague damage, dealing 50% increased damage for each of your diseases on the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 302888,
+   "name": "Living Dead",
+   "icon": "Interface\\Icons\\achievement_zone_deadwindpass",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_deadwindpass.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the mana cost of Lichfrost and Crypt Swarm by -10%. Blight now refunds 25% of its base mana cost if it lasts the full duration.",
+   "altSpellIds": [
+    302920
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802132,
+   "name": "Lichplague",
+   "icon": "Interface\\icons\\5_warlock09_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warlock09_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Disease an enemy, dealing 151 + 22% SP Plague damage every 3 sec for 18 seconds. Damage increased by 4% for each Necromancer disease on the enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 806086,
+   "name": "Muck Summoner",
+   "icon": "Interface\\Icons\\inv_fishing_lure_worm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fishing_lure_worm.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has an 5% chance to summon 2 to 3 Rotlings that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 572130,
+   "name": "Creeping Plagues",
+   "icon": "Interface\\Icons\\spell_necro_necroticsmash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_necro_necroticsmash.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You may now Infest an additional target after using Virulency.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 560537,
+   "name": "Apothecary's Cauldron",
+   "icon": "Interface\\Icons\\spell_nature_nullifydisease",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_nullifydisease.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your Magic damage dealt by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 707670,
+   "name": "Reclaimed Life",
+   "icon": "Interface\\Icons\\_CallToArms_Forsaken_Green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_calltoarms_forsaken_green.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cast time of your Raise spells by -15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704729,
+   "name": "Ner'zhul's Blessing",
+   "icon": "Interface\\Icons\\achievement_raid_torghast_shadowscourge_prisonofnerzhul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raid_torghast_shadowscourge_prisonofnerzhul.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your maximum Runic Power by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801760,
+   "name": "Ice Barrage",
+   "icon": "Interface\\icons\\uico_frost_spell_09_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_frost_spell_09_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a relentless volley of glacial shards, dealing 19 + 35% SP Frost damage every 0 sec for 1 seconds.At the end of the duration, you entomb your target in ice, freezing them for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 801945,
+   "name": "Plague of Undeath",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0000s_0000_spirits_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_death_icon_0000s_0000_spirits_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Disease an enemy dealing 32 + 25% shadow SP Plague damage every 3 sec and reduces the targets Holy healing received by -40% for 20 seconds.If Plague of Undeath is dispelled, the enemy takes 456 + 125% shadow SP Plague damage and is stunned for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 704670,
+   "name": "Runic Reservoir",
+   "icon": "Interface\\Icons\\inv_misc_frostemblem_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_frostemblem_01.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Frost damage by 5% and your maximum Runic Power by 15.",
+   "altSpellIds": [
+    803850
+   ],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 300958,
+   "name": "Chilling Presence",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_iceboundfortitude.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases the critical strike chance of Ice Barrage by 20% against Frozen targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 707006,
+   "name": "Bone Legion",
+   "icon": "Interface\\icons\\novart_physical_ability_(38)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(38)_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Lichfrost by 10% and its Runic Power generated by 25%.",
+   "altSpellIds": [
+    707881
+   ],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 560620,
+   "name": "Frigid Power",
+   "icon": "Interface\\Icons\\Spell_Frost_Frostbolt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frost_frostbolt.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Lichfrost and Ice Barrage by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 804371,
+   "name": "Foul Invocation",
+   "icon": "Interface\\Icons\\achievement_boss_festergutrotface",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_festergutrotface.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Transform into an undead monstrosity for 20 seconds, increasing your maximum health by 30%.While transformed you are immune to Fear, Sleep, Charm, and Disease effects.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 301333,
+   "name": "Winds of Northrend",
+   "icon": "Interface\\Icons\\Spell_Ice_Lament",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_ice_lament.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the amount slowed by Lichfrost by -15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560848,
+   "name": "Master Lich",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_frost_0000s_0000_figure_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_frost_0000s_0000_figure_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Soulfreeze now increases the enemy's Frost damage taken by you by 5% per tick for 8 sec, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 300580,
+   "name": "Deadly Defense",
+   "icon": "Interface\\icons\\custom_04_summon_skeleton_army_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_04_summon_skeleton_army_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Each of your summons now reduces your damage taken by 1%, up to a maximum of 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805048,
+   "name": "Animate: Plaguefather",
+   "icon": "Interface\\Icons\\inv_helm_leather_maldraxxus_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_leather_maldraxxus_d_01.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Animate a Plaguefather to aid you in combat for 15 seconds. Damage dealt by this minion will emit Zombie Plague, dealing 79 + 10% SP Plague damage to nearby enemies, and reducing their attack power by 223.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 704701,
+   "name": "Underking",
+   "icon": "Interface\\icons\\5_sumzombie_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_sumzombie_border.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells now grants you a stack of Underking for 20 seconds.At 10 stacks, the cooldown of Animate: Tomb King, Animate: Bone Wraith or Animate: Plaguefather is reduced by -15 sec at random.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 570136,
+   "name": "Waking Crypts",
+   "icon": "Interface\\Icons\\inv_maldraxxus",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_maldraxxus.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Crypt Plague by 50% and Crypt Swarm now deals 4% more damage for each Necromancer disease you have on the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 300233,
+   "name": "Dead Man Walking",
+   "icon": "Interface\\Icons\\inv_plate_pvpdeathknight_g_01_boot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_plate_pvpdeathknight_g_01_boot.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the duration of root and slow effects against you by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806328,
+   "name": "Master of Death",
+   "icon": "Interface\\Icons\\Spell_Shadow_DeathAndDecay",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_deathanddecay.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells on an enemy now applies Crypt Plague.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 561353,
+   "name": "Unholy Runes",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_empowerruneblade.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Crypt Swarm by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 560798,
+   "name": "Pandemic",
+   "icon": "Interface\\Icons\\spell_nature_sicklypolymorph",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_sicklypolymorph.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by your Undead minions now reduces the cooldown of Virulency by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 560800,
+   "name": "Wormfood",
+   "icon": "Interface\\icons\\custom_worm_b_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_worm_b_01_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Upon fully channeling Crypt Swarm, you summon a Rotling that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 300941,
+   "name": "Fleshcrafting",
+   "icon": "Interface\\icons\\nhi_unholybird_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_unholybird_border.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration Unholy Frenzy by 5 sec and casting Command spells now reduces its cooldown by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 300236,
+   "name": "Expediting Death",
+   "icon": "Interface\\Icons\\inv_fishing_bait_spineworm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fishing_bait_spineworm.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each stack of Expunge now increases the target's damage taken from your Plague of Undeath by an additional 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 504050,
+   "name": "Command: Blight",
+   "icon": "Interface\\Icons\\spell_necro_deathrift",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_necro_deathrift.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Command your Decaying Colossus to blight the ground in a 10 yd radius beneath it, reducing healing received by -60% for enemies inside for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 705750,
+   "name": "Frost Runes",
+   "icon": "Interface\\Icons\\spell_deathknight_empowerruneblade2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_empowerruneblade2.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing Magic damage now has a 15% chance to increase your haste by 10% for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 302519,
+   "name": "Lich's Prodigy",
+   "icon": "Interface\\Icons\\inv_misc_herb_ancientlichen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_herb_ancientlichen.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Glacial Tap now generates an additional 20 Runic Power, but its cost is increased by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 704682,
+   "name": "Summoning Prodigy",
+   "icon": "Interface\\Icons\\Spell_Shadow_Requiem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_requiem.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Skeletal Archers by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 500971,
+   "name": "Raise: Ghoul",
+   "icon": "Interface\\Icons\\Ghoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ghoul.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Raise a Ghoul to aid you in combat occupying 1 Life Force. Its auto attacks restore 21 + 3.53% Intellect + 3.53% SP health to you.Command: Expels leeching plague that strikes up to 5 nearby enemies, dealing 30 + 15.68% Intellect + 15.68% SP Plague damage, and healing you for 35 + 22% SP + 50% Intellect for each Ghoul.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 504861,
+   "name": "Raise: Banshee",
+   "icon": "Interface\\Icons\\ui_darkshore_warfront_horde_banshee",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ui_darkshore_warfront_horde_banshee.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Raise a Banshee to aid you in combat, occupying 2 Life Force.It will channel on your target, dealing damage and draining their mana over time.Command: Drains 20% of your target's mana (up to a maximum of 40% of their own maximum mana) and deals Frost damage equal to the mana drained.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803741,
+   "name": "Mass Grave",
+   "icon": "Interface\\Icons\\spell_necro_deathlyecho",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_necro_deathlyecho.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Transform up to 5 nearby enemies into a ghoul, fearing them for 40 seconds (8). Only affects Humanoids.While above 50 Runic Power this spell is instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560615,
+   "name": "Disciple of Kel'thuzad",
+   "icon": "Interface\\Icons\\inv_belt_plate_raiddeathknightmythic_q_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_belt_plate_raiddeathknightmythic_q_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your spell haste by 4%.",
+   "altSpellIds": [
+    560616
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560613,
+   "name": "Improved Mandates",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0001s_0000_soul_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_death_icon_0001s_0000_soul_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Mandates by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300240,
+   "name": "Curse of the Lich",
+   "icon": "Interface\\Icons\\_CasterCloak_Ice",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_castercloak_ice.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of your Rime spells by 6 yds and increases the Frost critical strike chance of you and your summons by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 803772,
+   "name": "Create Frozen Reliquary",
+   "icon": "Interface\\Icons\\FrozenUrn",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/frozenurn.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Create 1 Frozen Reliquary that restores 30% of your missing mana.Allies may only use a Frozen Reliquary once per minute.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704721,
+   "name": "Study of Death",
+   "icon": "Interface\\Icons\\inv_misc_book_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_book_06.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "When you cast Unholy Frenzy you now summon 3 Greater Zombies to aid you in combat for 14 seconds.Damage dealt by your Undead minions now reduces the cooldown of Unholy Frenzy by -0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705754,
+   "name": "Expunge",
+   "icon": "Interface\\Icons\\_D3acidcloud",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3acidcloud.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Command spells on an enemy now applies Expunge if they are Diseased.Expunge (Talent)Increases the target's damage taken from your Necromancer diseases by 10% for 10 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 300965,
+   "name": "Foul Contagion / Necrosis",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_Explode_Ghoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_explode_ghoul.jpg",
+   "source": "Death",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Applying Crypt Plague now extends the duration of Flesh to Worms on the target by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Death"
+   ]
+  },
+  {
+   "spellId": 531128,
+   "name": "Overwhelming Force / Tears of Lordaeron",
+   "icon": "Interface\\icons\\nhi_raisedead_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_raisedead_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Damage dealt by your Undead minions now has a 5% chance to restore 2 Runic Power and 2% of your maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704713,
+   "name": "Lich Commander / Corpse Commander",
+   "icon": "Interface\\Icons\\inv_7af_deathknight_frostmournefragment",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_7af_deathknight_frostmournefragment.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the Runic Power cost of your Command spells by -5.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300945,
+   "name": "Cobalt-Plated Armor / Naxxramas Prodigy",
+   "icon": "Interface\\icons\\nhi_frost_knight_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_knight_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the Armor of your Undead minions by 300, scaling with your level.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504357,
+   "name": "Frigid Winds / Piercing Icicles",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_IceWave_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_icewave_border.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Refreshing Chill by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 560851,
+   "name": "Frigid Death / Freeze Dry",
+   "icon": "Interface\\Icons\\Spell_Ice_Lament",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_ice_lament.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Glacial Impact by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 801733,
+   "name": "Necrotic Chains / Ner'zhul's Blessing",
+   "icon": "Interface\\Icons\\achievement_boss_lichking",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_lichking.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 3rd Command spell now freezes the target in place for 5 seconds. Damage dealt may end this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 561164,
+   "name": "Blood and Ice / Death and Ice",
+   "icon": "Interface\\Icons\\inv_misc_herb_frostweedbranch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_herb_frostweedbranch.jpg",
+   "source": "Rime",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each Skeletal Warrior or Skeletal Rogue now increases the damage of your Ice Barrage by 8%.",
+   "altSpellIds": [],
+   "sources": [
+    "Rime"
+   ]
+  },
+  {
+   "spellId": 805032,
+   "name": "Animate: Bone Wraith / Animate: Tomb King",
+   "icon": "Interface\\Icons\\achievement_boss_lordmarrowgar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_lordmarrowgar.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Animate a Bone Wraith to aid you in combat for 15 seconds.While active, it will periodically unleash a Bonestorm, striking up to 5 nearby enemies for 30 + 40% SP Physical damage every 1 sec for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 638403,
+   "name": "Depravity / Mindless Fury",
+   "icon": "Interface\\Icons\\inv_mace_1h_warfrontsforsaken_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_warfrontsforsaken_d_01.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the melee haste of your Undead minions by 5% and gives their critical melee auto attacks an 50% chance to trigger Bone Club, dealing 40% of the damage dealt as Shadow Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 560596,
+   "name": "Crypt Keeper / Unrelenting",
+   "icon": "Interface\\Icons\\_Undead_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_undead_02.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Crypt Swarm now bounces to 2 additional nearby enemies, at 30% reduced value per enemy struck.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 525600,
+   "name": "Army of the Dead / Unstoppable Frenzy",
+   "icon": "Interface\\Icons\\_D3graspofthedead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3graspofthedead.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While only 1 Abomination is active, the critical strike chance of your Ghouls is increased by 10% and haste by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 707283,
+   "name": "Chomp / Fetid Mark",
+   "icon": "Interface\\icons\\nhi_necrodrain_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_necrodrain_border.jpg",
+   "source": "Animation",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes dealt by your Abominations and Decaying Collosi now Chomp your target, dealing 150 + 112.5% SP damage to them.",
+   "altSpellIds": [],
+   "sources": [
+    "Animation"
+   ]
+  },
+  {
+   "spellId": 804681,
+   "name": "Animate: Skeletal Smith",
+   "icon": "inv_blacksmithing_khazgoriananvil",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_blacksmithing_khazgoriananvil.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504319,
+   "name": "Command: Skeletal Archers",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504334,
+   "name": "Command: Skeletal Warriors",
+   "icon": "spell_deathknight_festering_strike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_festering_strike.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800199,
+   "name": "Foul Mandate",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500991,
+   "name": "Grave March",
+   "icon": "_d3zombiecharger",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3zombiecharger.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804360,
+   "name": "Necromancy",
+   "icon": "inv_misc_book_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_book_06.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500970,
+   "name": "Raise: Lesser Skeletal Warrior",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804535,
+   "name": "Ray of Rot",
+   "icon": "5_warlock43_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warlock43_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500967,
+   "name": "Razorice",
+   "icon": "spell_frost_frostarmor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frost_frostarmor.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805027,
+   "name": "Sacrifice Undead",
+   "icon": "_sacrificialdagger_unholy",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_sacrificialdagger_unholy.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801530,
+   "name": "Transfer Life",
+   "icon": "5_warlock10_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warlock10_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500982,
+   "name": "Undead: Assault",
+   "icon": "inv_knife_1h_warfrontsforsaken_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_knife_1h_warfrontsforsaken_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500983,
+   "name": "Undead: Pacify",
+   "icon": "inv_helm_plate_warfrontsforsakenmythic_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_plate_warfrontsforsakenmythic_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500985,
+   "name": "Undead: Protect",
+   "icon": "inv_shield_1h_warfrontsforsaken_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_1h_warfrontsforsaken_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804446,
+   "name": "Vanguard's Shield",
+   "icon": "inv_shield_32",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_32.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,412 @@
+{
+ "barbarian": {
+  "class": "Barbarian",
+  "confirmed": true,
+  "primary": {
+   "name": "Rage",
+   "index": 3
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 24,
+    "Rage": 12
+   },
+   "pointCandidates": []
+  }
+ },
+ "bloodmage": {
+  "class": "Bloodmage",
+  "confirmed": false,
+  "primary": {
+   "name": "Rage",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Rage": 19
+   },
+   "pointCandidates": []
+  }
+ },
+ "chronomancer": {
+  "class": "Chronomancer",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Mana": 11,
+    "Focus": 1
+   },
+   "pointCandidates": []
+  }
+ },
+ "cultist": {
+  "class": "Cultist",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [
+   {
+    "name": "Insanity",
+    "kind": "buffStacks"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 2,
+    "Mana": 15,
+    "Rage": 1
+   },
+   "pointCandidates": [
+    {
+     "name": "Insanity",
+     "count": 3
+    }
+   ]
+  }
+ },
+ "felsworn": {
+  "class": "Felsworn",
+  "confirmed": true,
+  "primary": {
+   "name": "Energy",
+   "index": 3
+  },
+  "points": [
+   {
+    "name": "Felfury",
+    "kind": "buffStacks"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 19,
+    "Mana": 4
+   },
+   "pointCandidates": [
+    {
+     "name": "Felfury",
+     "count": 9
+    }
+   ]
+  }
+ },
+ "guardian": {
+  "class": "Guardian",
+  "confirmed": false,
+  "primary": {
+   "name": "Energy",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 17
+   },
+   "pointCandidates": []
+  }
+ },
+ "knight-of-xoroth": {
+  "class": "Knight of Xoroth",
+  "confirmed": false,
+  "primary": {
+   "name": "Rage",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Rage": 15
+   },
+   "pointCandidates": []
+  }
+ },
+ "necromancer": {
+  "class": "Necromancer",
+  "confirmed": false,
+  "primary": {
+   "name": "Runic Power",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Mana": 11,
+    "Runic Power": 14
+   },
+   "pointCandidates": []
+  }
+ },
+ "primalist": {
+  "class": "Primalist",
+  "confirmed": false,
+  "primary": {
+   "name": "Rage",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Mana": 8,
+    "Rage": 32,
+    "Focus": 1
+   },
+   "pointCandidates": []
+  }
+ },
+ "pyromancer": {
+  "class": "Pyromancer",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [
+   {
+    "name": "Heat",
+    "kind": "buffStacks"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Mana": 7
+   },
+   "pointCandidates": [
+    {
+     "name": "Heat",
+     "count": 3
+    }
+   ]
+  }
+ },
+ "ranger": {
+  "class": "Ranger",
+  "confirmed": false,
+  "primary": {
+   "name": "Focus",
+   "index": null
+  },
+  "points": [
+   {
+    "name": "Advantage",
+    "kind": "buffStacks"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Focus": 15
+   },
+   "pointCandidates": [
+    {
+     "name": "Advantage",
+     "count": 4
+    }
+   ]
+  }
+ },
+ "reaper": {
+  "class": "Reaper",
+  "confirmed": false,
+  "primary": {
+   "name": "Runic Power",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Rage": 2,
+    "Runic Power": 22
+   },
+   "pointCandidates": []
+  }
+ },
+ "runemaster": {
+  "class": "Runemaster",
+  "confirmed": true,
+  "primary": {
+   "name": "Mana",
+   "index": 0
+  },
+  "points": [
+   {
+    "name": "Runeblade",
+    "kind": "spellCharges"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 1,
+    "Mana": 9
+   },
+   "pointCandidates": []
+  }
+ },
+ "starcaller": {
+  "class": "Starcaller",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [
+   {
+    "name": "Scattered",
+    "kind": "buffStacks"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 3,
+    "Mana": 31
+   },
+   "pointCandidates": [
+    {
+     "name": "Scattered",
+     "count": 6
+    }
+   ]
+  }
+ },
+ "stormbringer": {
+  "class": "Stormbringer",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [
+   {
+    "name": "Static",
+    "kind": "buffStacks"
+   }
+  ],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 3,
+    "Mana": 7,
+    "Rage": 1,
+    "Focus": 1,
+    "Runic Power": 1
+   },
+   "pointCandidates": [
+    {
+     "name": "Static",
+     "count": 6
+    }
+   ]
+  }
+ },
+ "sun-cleric": {
+  "class": "Sun Cleric",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 3,
+    "Mana": 23,
+    "Rage": 1,
+    "Focus": 1,
+    "Runic Power": 1
+   },
+   "pointCandidates": []
+  }
+ },
+ "templar": {
+  "class": "Templar",
+  "confirmed": false,
+  "primary": {
+   "name": "Energy",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 14
+   },
+   "pointCandidates": []
+  }
+ },
+ "tinker": {
+  "class": "Tinker",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 2,
+    "Mana": 10,
+    "Rage": 1,
+    "Focus": 1,
+    "Runic Power": 1
+   },
+   "pointCandidates": []
+  }
+ },
+ "venomancer": {
+  "class": "Venomancer",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 6,
+    "Mana": 10,
+    "Rage": 10
+   },
+   "pointCandidates": []
+  }
+ },
+ "witch-doctor": {
+  "class": "Witch Doctor",
+  "confirmed": false,
+  "primary": {
+   "name": "Mana",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 1,
+    "Mana": 14,
+    "Rage": 2,
+    "Focus": 1
+   },
+   "pointCandidates": []
+  }
+ },
+ "witch-hunter": {
+  "class": "Witch Hunter",
+  "confirmed": false,
+  "primary": {
+   "name": "Rage",
+   "index": null
+  },
+  "points": [],
+  "_inferred": {
+   "powerMentions": {
+    "Energy": 1,
+    "Mana": 9,
+    "Rage": 19
+   },
+   "pointCandidates": []
+  }
+ }
+}

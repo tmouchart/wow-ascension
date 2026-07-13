@@ -1,0 +1,2084 @@
+{
+ "slug": "templar",
+ "class": "Templar",
+ "classId": "19",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Zealot",
+   "tabId": 50
+  },
+  {
+   "name": "Oathkeeper",
+   "tabId": 16
+  },
+  {
+   "name": "Crusader",
+   "tabId": 51
+  }
+ ],
+ "abilityCount": 145,
+ "abilities": [
+  {
+   "spellId": 706431,
+   "name": "Pious",
+   "icon": "Interface\\Icons\\ability_skyreach_fourblades",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skyreach_fourblades.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases all primary attributes by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805415,
+   "name": "Scarlet Champion",
+   "icon": "Interface\\Icons\\spell_holy_surgeoflight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_surgeoflight.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your damaging critical strikes now increase your Holy damage dealt by 2% for 20 seconds. stacking 5 times. Can only occur once per sec.At 5 stacks, you are granted High General.High GeneralYour next Chastise consumes all stacks of Scarlet Champion to deal 25% increased direct damage, and be guaranteed to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 705256,
+   "name": "Determined",
+   "icon": "Interface\\Icons\\spell_holy_heroism",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_heroism.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Temple Guardian now makes your next ability within 5 seconds free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805423,
+   "name": "Libram of Fervor",
+   "icon": "Interface\\Icons\\_Book2Motif_Tyr",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book2motif_tyr.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Read from your Libram of Fervor, granting you spell power equal to 30% of your Agility and attack power equal to 30% of your Intellect for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520017,
+   "name": "Light's Echo",
+   "icon": "Interface\\Icons\\ability_monk_clashingoxcharge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_clashingoxcharge.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Argent Blade now has a 10% chance to strike an additional time.",
+   "altSpellIds": [
+    520883
+   ],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 801455,
+   "name": "Testament of Will",
+   "icon": "Interface\\Icons\\_D3mystically",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3mystically.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Break an ally free of worldly constraints, making them immune to all movement impairing effects for 10 seconds.Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300501,
+   "name": "Sacred Candle",
+   "icon": "Interface\\Icons\\inv_helm_misc_candle_a_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_misc_candle_a_01.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Testament of Faith by -60 sec and the duration of Sacred Restraint by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300522,
+   "name": "Deep Meditation",
+   "icon": "Interface\\icons\\nhi_holy_wraith_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_wraith_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of your Oath Chain by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560833,
+   "name": "Spiritual",
+   "icon": "Interface\\Icons\\ability_paladin_selflesshealer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_selflesshealer.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Energy regeneration by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560649,
+   "name": "Tyr's Guard",
+   "icon": "Interface\\Icons\\INV_Jewelry_Talisman_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_jewelry_talisman_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Testament of Hope now summons an additional copy of yourself.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805421,
+   "name": "Reckoning",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyRod_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holyrod_border.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a powerful Oath Breaker, dealing 27 + 17.5% AP + 50% Stamina Holy damage and restoring 15 Energy for each enemy struck.Consumes your Oaths, dealing additional damage for each consumed.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 572546,
+   "name": "Solemn Soldier",
+   "icon": "Interface\\Icons\\5_assassinskill27_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill27_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee haste by 5% and expertise by 5.",
+   "altSpellIds": [
+    572555
+   ],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 300513,
+   "name": "Crusader's Brand",
+   "icon": "Interface\\icons\\nhi_holy_toglory_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_toglory_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Brand an enemy for 20 seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take 243 + 27.5% holy SP + 18.5% AP Holy Damage.While marked enemies can always be seen by the Crusader even while stealthed or invisible.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 500011,
+   "name": "Holy Combatant",
+   "icon": "Interface\\Icons\\inv_sword_28",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_28.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Argent Blade now also extends the duration of Interdict on your target by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 520009,
+   "name": "Paladin Training",
+   "icon": "Interface\\icons\\nhi_holy_beam_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_beam_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Righteous Lunge and Argent Blade by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 560550,
+   "name": "Call of the Monastery",
+   "icon": "Interface\\Icons\\ability_paladin_veneration",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_veneration.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your attack power by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 705285,
+   "name": "Tyr's Blessing",
+   "icon": "Interface\\Icons\\INV_Hammer_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hammer_01.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Condemn now stacks 1 additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 806522,
+   "name": "Legacy of the Silver Hand",
+   "icon": "Interface\\Icons\\inv_shield_1h_silverhand_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_1h_silverhand_b_01.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Argent Blade or Scarlet Hammer now guarantees your next 2 instances of damage dealt by Scourgebane to critically strike.Increases the critical damage of Scourgebane by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 560116,
+   "name": "Interdict",
+   "icon": "Interface\\Icons\\spell_priest_vowofunity",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_priest_vowofunity.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Forbid an enemy from sinning, silencing them for 6 seconds. If they are an Undead or Demon they are unable to be healed for the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705291,
+   "name": "Templar's Might",
+   "icon": "Interface\\Icons\\achievement_reputation_argentcrusader",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_reputation_argentcrusader.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Righteous Lunge and Chastise used on enemies affected by your Condemn now deal 6% increased damage per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 803219,
+   "name": "Spiritual Abdicator",
+   "icon": "Interface\\Icons\\Spell_Holy_InnerFire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_innerfire.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Testament of Hope now reduces damage taken by an additional 0% per copy.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 504807,
+   "name": "One With The Light",
+   "icon": "Interface\\icons\\custom_Paladinskill_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_paladinskill_01_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Oath Breakers now triggers Zealotry on your target and reduces the cooldown of Librams, Force of Golganneth, and Mortal Abdication by -1 sec.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 300515,
+   "name": "Fortified Body",
+   "icon": "Interface\\Icons\\ability_racial_brushitoff",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_brushitoff.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Allies within 40 yds receive 6% more healing. Does not stack with similar effects.Additionally, increases your maximum health by 6%.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 524620,
+   "name": "Pulverizing",
+   "icon": "Interface\\Icons\\Spell_Holy_HealingAura",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_healingaura.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Condemn now has a 15% chance to consecrate the earth around you with holy fervor, dealing 91 + 22.5% holy SP + 10% AP Holy damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803163,
+   "name": "Might of Aggramar",
+   "icon": "Interface\\Icons\\Spell_Holy_InnerFire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_innerfire.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Physical damage dealt now has a 25% chance to increase the tick rate and reduce cooldown of your next Blade of Faith by -10%, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 705274,
+   "name": "Sanctify",
+   "icon": "Interface\\Icons\\spell_paladin_inquisition",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_paladin_inquisition.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Libram spells now grant you 10% increased melee haste for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 301253,
+   "name": "Warrior of Tyr",
+   "icon": "Interface\\Icons\\nhi_holyhammer_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holyhammer_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 10% chance to generate 5 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 520608,
+   "name": "Scourge-Defense Training",
+   "icon": "Interface\\Icons\\Spell_Holy_Redemption",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_redemption.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Warrior of Dawn now also increases the damage and critical strike chance of your next Argent Blade by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 524739,
+   "name": "Norgannon's Wrath",
+   "icon": "Interface\\icons\\nhi_holywhirlpool_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holywhirlpool_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.Damage dealt pierces all immunities, resistances, and damage absorption effects.Scales with modifiers to Chastise.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 680397,
+   "name": "Disciplined Blows",
+   "icon": "Interface\\Icons\\INV_Hammer_18",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hammer_18.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your healing done triggers a holy pulse around healed targets, dealing 89 + 5% AP + 20% Agility Holy damage to nearby enemies.Cnly occur once every 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 501562,
+   "name": "Righteous Upheaval",
+   "icon": "Interface\\Icons\\_MonkAbility_Uplift_Yellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_monkability_uplift_yellow.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a dominating Oath Breaker, dealing 31 + 45% AP + 45% SP Physical damage, increased by 3% for each time you triggered Zealotry during your Oath Chain.Consumes your Oaths, dealing additional damage for each consumed.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 801481,
+   "name": "Glory",
+   "icon": "Interface\\Icons\\_D3innersanctuary",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3innersanctuary.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Bring glory to the holy light, increasing your attack speed by 30% for 5 seconds.After the duration, you gain Downfall. DownfallYou heal for 50% of all damage dealt for 5 seconds. After the duration, you gain Redemption.RedemptionIncreases attack speed by 30% and you heal for 50% of all damage dealt for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803872,
+   "name": "Blade of Faith",
+   "icon": "Interface\\Icons\\Holy_Blade_Templar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/holy_blade_templar.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Unleash a devastating Oath Breaker on an enemy dealing 119 + 140% SP + 70% AP Holy damage over 21 seconds. This ability can critically strike.Consumes your Oaths, dealing additional damage for each consumed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300530,
+   "name": "Martyr",
+   "icon": "Interface\\Icons\\Spell_Holy_Fanaticism",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_fanaticism.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Gift of Zeal by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804928,
+   "name": "Mark of Aggramar",
+   "icon": "Interface\\Icons\\spell_holy_holyguidance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_holyguidance.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of your Testaments by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804929,
+   "name": "Argent Blade",
+   "icon": "Interface\\Icons\\Wakeoffashes",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/wakeoffashes.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Crush an enemy with argent fervor, dealing 160% Weapon Damage plus 15 + 35% AP + 100% holy SP, healing you equal to the damage dealt, and extending the duration of your Oath Chain by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 712346,
+   "name": "Sacred Oath",
+   "icon": "Interface\\Icons\\inv_warbreaker",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_warbreaker.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes now remove 1 sec from the duration of Oathkeeper when used.Oathkeeper40% of damage taken is now delayed and dealt to you over 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 704180,
+   "name": "Blessed Strikes",
+   "icon": "Interface\\Icons\\spell_holy_vindication",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_vindication.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of your Oath Breakers by -10.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801466,
+   "name": "Libram of Zeal",
+   "icon": "Interface\\Icons\\_Book2Motif_BloodElf1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book2motif_bloodelf1.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Read from your Libram of Mortal Abdication, increasing your melee haste by 20% and causes your damaging abilities to reduce the cooldown of Righteous Upheaval by -2 sec for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 705295,
+   "name": "Staffguard",
+   "icon": "Interface\\Icons\\INV_Staff_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_05.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Sacred Swing now grants you Staffguard, absorbing 125 + 30% Stamina damage, scaling with Stamina, parry and dodge rating, for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 801480,
+   "name": "Fury of Aggramar",
+   "icon": "Interface\\Icons\\achievement_boss_argus_aggramar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_argus_aggramar.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Libram of Consecration by 100% and the effectiveness of your Librams by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 680953,
+   "name": "Profound Enlightenment",
+   "icon": "Interface\\icons\\nhi_corruptionmind_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_corruptionmind_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Attain enlightenment, reducing the remaining cooldown of Testaments by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705284,
+   "name": "One-Punch Man",
+   "icon": "Interface\\Icons\\inv_gauntlets_25",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_gauntlets_25.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the the damage of Oath Breakers and Titanstrike by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 520034,
+   "name": "Pious Sweep",
+   "icon": "Interface\\Icons\\inv_sword_2h_lightforged_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_lightforged_c_01.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Chastise by 25% on enemies above 75% health or affected by Tranquil Circle.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 560096,
+   "name": "Devotion of Khaz'goroth",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_IronSentinel_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_ironsentinel_01.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.Damage dealt with auto attacks reduce the cooldown of Libram spells by -0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 804912,
+   "name": "Parry Dance",
+   "icon": "Interface\\Icons\\INV_Ascend_whirlpool_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_whirlpool_b_01.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you critically strike with auto attacks or parry an attack, your chance to parry is now increased by 3% for 5 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 801204,
+   "name": "Bells of Light",
+   "icon": "Interface\\Icons\\ability_bastion_paladin",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_bastion_paladin.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility, Intellect, and hit chance by 3%",
+   "altSpellIds": [
+    803842
+   ],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 706357,
+   "name": "Paragon",
+   "icon": "Interface\\Icons\\spell_holy_surgeoflight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_surgeoflight.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Stamina by 10, plus an additional amount equal to 10% of your Agility.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 520534,
+   "name": "Templar Rituals",
+   "icon": "Interface\\icons\\nhi_fire_solar_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fire_solar_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Righteous Tempest now deals an additional 35 + 10% holy SP + 8.5% AP Holy damage, and upon dealing damage, you pull enemies within 15 yds towards you.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 705253,
+   "name": "Pure Focus",
+   "icon": "Interface\\Icons\\Spell_Arcane_FocusedPower",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_arcane_focusedpower.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Scourgebane by 5% and your chance to hit by 2%.",
+   "altSpellIds": [
+    707852
+   ],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 704175,
+   "name": "Condemnation",
+   "icon": "Interface\\Icons\\Spell_Holy_Heal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_heal.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance gained through Condemn by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 705300,
+   "name": "Eternal Blessing",
+   "icon": "Interface\\Icons\\ability_priest_spiritoftheredeemer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_spiritoftheredeemer.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Holy damage and healing done by 15% for 30 seconds.While active, Oath Breakers deal an additional 141 + 12% AP Holy damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 300520,
+   "name": "Judgement",
+   "icon": "Interface\\Icons\\ability_racial_holyresistance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_holyresistance.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Scourgebane, Scarlet Hammer, and Titanstrike by 25% on enemies below 20% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 572548,
+   "name": "Blade Sermon",
+   "icon": "Interface\\Icons\\5_druideskill26_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill26_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the Weapon Damage dealt by Zealotry by 10%.",
+   "altSpellIds": [
+    572554
+   ],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 573452,
+   "name": "Eternally Devoted",
+   "icon": "Interface\\Icons\\_D3teleport",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3teleport.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt through Eternal Blessing now reduces the cooldown of Libram spells by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 705286,
+   "name": "Duty Calls",
+   "icon": "Interface\\Icons\\Spell_Holy_GreaterBlessingofLight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_greaterblessingoflight.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting abilities that grant an Oath now increases your damage dealt and movement speed by 2% for 15 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 524822,
+   "name": "Radiant Blade",
+   "icon": "Interface\\Icons\\inv_weapon_shortblade_99",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_99.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Oath: Righteous Lunge by 25%.",
+   "altSpellIds": [
+    525080
+   ],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 527023,
+   "name": "Divine Charge",
+   "icon": "Interface\\Icons\\Ability_Mount_Charger",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mount_charger.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "You and your party members leap upon a divine steed, increasing their movement speed by 100% and causing them to trample nearby enemies for 119 + 20% AP + 40% holy SP Holy Damage every 1 sec for 15 seconds.While active, casting does not dismount you or your allies. Can only be used outdoors.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 300512,
+   "name": "Argent Knight",
+   "icon": "Interface\\icons\\5_holypower_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_holypower_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Righteous Tempest and Condemn by 30%.Additionally, Righteous Tempest now reduces all damage taken by -20% while active.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 705266,
+   "name": "Liberty",
+   "icon": "Interface\\Icons\\inv_inscription_weaponscroll03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_weaponscroll03.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Libram spells by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805417,
+   "name": "Barrier of Light",
+   "icon": "Interface\\Icons\\misc_legionfall_paladin",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/misc_legionfall_paladin.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Emit saving light, increasing the healing received by nearby party and raid members by 40% for 15 seconds.For the duration, threat generated by your allies is redirected to you.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 805422,
+   "name": "Tome of Light",
+   "icon": "Interface\\Icons\\inv_misc_book_17",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_book_17.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Grants a shield equal to 100% of your maximum health for 30 seconds, resets the cooldown of Barrier of Light and Tranquil Circle, and grants an additional effect for each.Tome of Light: Barrier of LightYour next Barrier of Light within 30 seconds removes the Oathkeeper stagger debuff.Tome of Light: Tranquil CircleYour next Tranquil Circle within 30 seconds triggers instantly.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 803159,
+   "name": "Chakra of Light",
+   "icon": "Interface\\Icons\\priest_icon_chakra",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/priest_icon_chakra.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Testaments by -30 sec and Oath Breakers now heal allies around the target for 20 + 35% SP.",
+   "altSpellIds": [
+    803844
+   ],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 803158,
+   "name": "Chakra of Power",
+   "icon": "Interface\\Icons\\priest_icon_chakra_red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/priest_icon_chakra_red.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee attacks now restore 1 Energy, plus an additional 2 Energy when they critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 300514,
+   "name": "Testament of Strength",
+   "icon": "Interface\\Icons\\ability_paladin_judgementsofthejust",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_judgementsofthejust.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your next 3 Titanstrikes are usable regardless of your target's health percentage and deal 25% increased damage. Lasts 1 minute.Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 560648,
+   "name": "Warrior of Dawn",
+   "icon": "Interface\\Icons\\inv_sword_1h_deathknight_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_deathknight_d_01.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee damage dealt now has a 10% chance to reset the cooldown and reduce the Energy cost of your next Argent Blade by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 801446,
+   "name": "Vindication",
+   "icon": "Interface\\Icons\\nhi_holystrike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holystrike_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Strike an enemy with zeal, dealing 31 + 28.5% AP + 35% SP Physical damage, triggering Zealotry, and granting an Oath.Oath: Your damaging abilities have a 10% chance to trigger Zealotry.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 705293,
+   "name": "Sacred Swing",
+   "icon": "Interface\\icons\\5_staffstrike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_staffstrike_border.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Swing at enemies in front of you, dealing 125% High Threat Weapon Damage plus 9, slowing their attack and movement speed by -20% for 10 seconds.Only usable after avoiding an attack.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 560650,
+   "name": "Aggramar's Rage",
+   "icon": "Interface\\Icons\\Spell_Holy_RetributionAura",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_retributionaura.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Holy critical strike chance by 3% and your expertise by 5.",
+   "altSpellIds": [
+    561346
+   ],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 801202,
+   "name": "Battlepriest",
+   "icon": "Interface\\Icons\\Ability_ThunderClap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_thunderclap.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While above 80% health or below 20% health, you now take 20% reduced Magic damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 806273,
+   "name": "Mending Ward",
+   "icon": "Interface\\Icons\\spell_holy_pureofheart",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_pureofheart.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Oath Breakers now grant you a stack of Mending Ward for 15 seconds, stacking 3 times.Mending WardNext instance of direct damage taken while below 35% maximum health will consume these stacks to heal you for 395 + 25% Stamina. Healing scales with your Stamina and parry rating.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 806516,
+   "name": "Heaven's Finest",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyMeditation_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holymeditation_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damaging abilities now grant Heaven's Finest for 12 seconds, stacking 6 times.Heaven&#39;s FinestIncreases your movement speed by 5%.At 6 stacks, increases your Energy regeneration by 100% for 8 seconds.Additional applications do not refresh the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 300502,
+   "name": "Blessing of Aggramar",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Titan_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_titan_01.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Righteous Lunge now has a 25% chance to generate an additional stack of Oath: Righteous Lunge.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 804897,
+   "name": "Transcending Strikes",
+   "icon": "Interface\\Icons\\ability_paladin_beaconofinsight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_beaconofinsight.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Divine Force will now trigger a -30 sec reduced cooldown when used on enemies affected by Blade of Faith.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 300929,
+   "name": "Serendipity",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyPeak_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holypeak_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, reduces the cost of your spells and abilities by -5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 705271,
+   "name": "Finesse",
+   "icon": "Interface\\icons\\5_paladinskill18_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_paladinskill18_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 2% and reduces the duration of disarm effects against you by -15%.",
+   "altSpellIds": [
+    707851
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806153,
+   "name": "Divine Force",
+   "icon": "Interface\\Icons\\spell_priest_pathofdevout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_priest_pathofdevout.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Leap at an enemy with divine force, stunning them for 6 seconds, dealing 20 + 100% SP + 55% AP Holy damage, and interrupting non-player spellcasting for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706318,
+   "name": "Radiance",
+   "icon": "Interface\\Icons\\INV_Sword_49",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_49.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Vindication by -5.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 706320,
+   "name": "Combat Training",
+   "icon": "Interface\\Icons\\ability_monk_quipunch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_quipunch.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Oaths by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 705290,
+   "name": "Blessing of Eonar",
+   "icon": "Interface\\Icons\\achievement_boss_argus_eonar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_argus_eonar.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Libram spells now increases your damage dealt and healing done by 10% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 707385,
+   "name": "Tenacious Defender",
+   "icon": "Interface\\Icons\\Spell_Holy_SealOfFury",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_sealoffury.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Libram of Tenacity now also heals you for 20% of your maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705250,
+   "name": "Martial Paladin",
+   "icon": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01dual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glaive_1h_artifactaldrochi_d_01dual.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility by 5% and your chance to hit by 3%.",
+   "altSpellIds": [
+    705251
+   ],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 705276,
+   "name": "Bursting Impact",
+   "icon": "Interface\\Icons\\spell_paladin_lightshammer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_paladin_lightshammer.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your off-hand weapon damage by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 801461,
+   "name": "Libram of Tenacity",
+   "icon": "Interface\\Icons\\_Book2Motif_LordaeronCorrupted",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book2motif_lordaeroncorrupted.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Read from your Libram of Tenacity, reducing your Physical Damage taken by -30% for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707754,
+   "name": "Courage",
+   "icon": "Interface\\Icons\\ability_karoz_leap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_karoz_leap.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your movement speed and reduces the duration of movement slowing effects on you by -10%.",
+   "altSpellIds": [
+    712466
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706323,
+   "name": "Holy Constitution",
+   "icon": "Interface\\Icons\\Spell_Holy_Power",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_power.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your damage dealt versus Undead by 5, scaling with level, and increases your chance to resist disease effects by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680891,
+   "name": "Righteousness",
+   "icon": "Interface\\Icons\\inv_helmet_74",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helmet_74.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Chastise now always triggers Scourgebane on your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 681009,
+   "name": "Sturdy",
+   "icon": "Interface\\Icons\\spell_monk_envelopingmist",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_monk_envelopingmist.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your maximum health and Energy by 5%.",
+   "altSpellIds": [
+    681537
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500694,
+   "name": "Force of Golganneth",
+   "icon": "Interface\\icons\\nhi_holyinfusion_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holyinfusion_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Explode with holy power, dealing 310 + 25% AP + 25% holy SP Holy damage and triggering Zealotry every 1 sec to nearby enemies for 5 seconds.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.While active, your Temple Guardian spell has its Energy cost reduced by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 524767,
+   "name": "Judgement of the Gods",
+   "icon": "Interface\\icons\\custom_skill_161_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_skill_161_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Titanstrike by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705263,
+   "name": "Deep Secrets",
+   "icon": "Interface\\Icons\\70_inscription_vantus_rune_light",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/70_inscription_vantus_rune_light.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of your Librams and Testaments by 10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705268,
+   "name": "Final Prayer",
+   "icon": "Interface\\Icons\\spell_holy_blessedlife",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_blessedlife.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Doubles the healing done to you by Testament of Fortitude and Testament of Faith.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705306,
+   "name": "Sacred Defense",
+   "icon": "Interface\\Icons\\inv_trinket_bastion_01_gold",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_trinket_bastion_01_gold.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you take Physical damage you now strike back at enemies for 15% of the damage dealt as Holy damage. Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801465,
+   "name": "Silverhand Incantation",
+   "icon": "Interface\\icons\\5_paladinskill06_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_paladinskill06_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Chant a silverhand incantation and toss a holy hammer at your target, charging you to them and removing Sacred Restraint from you and them if they are an ally.Upon reaching your target you deal 300 + 200% AP Holy damage to all nearby enemies and heal nearby allies for the same amount.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 1397742,
+   "name": "Testament of Hope",
+   "icon": "Interface\\Icons\\Spell_Holy_PrayerofSpirit",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_prayerofspirit.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summons 2 copies of yourself that charge at a nearby enemy and aid you in combat for 20 seconds.While within 15 yds of you, each copy reduces all damage you take by -25%. Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705283,
+   "name": "Oath Flow",
+   "icon": "Interface\\Icons\\Spell_Holy_BlindingHeal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_blindingheal.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Oath Chain by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 704116,
+   "name": "Deliverance",
+   "icon": "Interface\\Icons\\Spell_Holy_GreaterBlessingofSalvation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_greaterblessingofsalvation.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critically striking with Vindication or Righteous Lunge now deals 50% additional Physical damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 523712,
+   "name": "Iron Penance",
+   "icon": "Interface\\icons\\custom_Paladinskill_25_nobg_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_paladinskill_25_nobg_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Zealotry now applies Iron Penance to the target, increasing their Physical damage taken by you by 1% for 3 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 300607,
+   "name": "Titanfall",
+   "icon": "Interface\\Icons\\_Execution_White",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_execution_white.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Titanstrike now heals you for twice the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 705287,
+   "name": "Improved Benediction",
+   "icon": "Interface\\Icons\\Spell_Holy_ImprovedResistanceAuras",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_improvedresistanceauras.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Benediction now grants your target armor based on your Agility and Stamina for 15 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705255,
+   "name": "Divine Strikes",
+   "icon": "Interface\\Icons\\inv_sword_2h_nazmirraid_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_nazmirraid_d_01.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Scourgebane now increases the damage of Argent Blade by 5% for 6 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 300524,
+   "name": "Focused",
+   "icon": "Interface\\Icons\\nhi_fierywhirl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fierywhirl_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Blade of Faith and Righteous Tempest by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 805409,
+   "name": "Righteous Tempest",
+   "icon": "Interface\\Icons\\_Whirlwind_Yellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_whirlwind_yellow.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a whirling Oath Breaker, dealing Weapon Damage plus 71u+SP*0.25 damage to nearby enemies, scaling with spell power, every 1 sec for 3 seconds.Consumes your Oaths, dealing additional damage for each consumed.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 707391,
+   "name": "Retribution",
+   "icon": "Interface\\icons\\nhi_holyfire_00_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holyfire_00_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee damage dealt now has a 20% chance to strike 2 additional times for 30% of the damage dealt as Holy Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 801457,
+   "name": "Binding Scripture",
+   "icon": "Interface\\Icons\\_D3breathofheaven",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3breathofheaven.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Healing an ally now redirects 10% of their damage taken to you and reduces your damage taken by -5% for 10 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706359,
+   "name": "Judicator",
+   "icon": "Interface\\Icons\\Ability_ThunderClap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_thunderclap.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your parry and dodge chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705278,
+   "name": "Sacred Style",
+   "icon": "Interface\\Icons\\Spell_Holy_PureOfHeart",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_pureofheart.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Holy healing done and received by 8%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706312,
+   "name": "Holy Edge",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactvigfus_d_01.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Scourgebane and Scarlet Hammer now strikes 1 additional nearby enemy.",
+   "altSpellIds": [
+    707853
+   ],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 705272,
+   "name": "Chivalric",
+   "icon": "Interface\\Icons\\ability_paladin_veneration",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_veneration.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical damage with Holy spells and abilities by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 301309,
+   "name": "Sacred Resistance",
+   "icon": "Interface\\Icons\\INV_Ascend_staff_04_b",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_staff_04_b.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Reckoning now increases your Armor by 15% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 800424,
+   "name": "Absolution",
+   "icon": "Interface\\icons\\custom_Priestskill_03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_priestskill_03_border.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Taunt all enemies within 8 yds for 4 seconds and increase your movement speed by 50% for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 560835,
+   "name": "Lightkeeper",
+   "icon": "Interface\\Icons\\inv_priestmount_holy",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_priestmount_holy.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt by Condemn now has a 15% chance to increase your parry chance by 2% for 8 seconds, stacking 3 times.Periodic damage dealt by Condemn also has a 15% chance to burst, dealing 100 + 22% AP Holy damage to up to 5 enemies within 5 yds of the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 712677,
+   "name": "Conviction",
+   "icon": "Interface\\Icons\\ability_monk_spearhand",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_spearhand.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Sacred Swing now increases your melee haste by 5% for 15 seconds, stacking 4 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 301059,
+   "name": "Grace of Aman'thul",
+   "icon": "Interface\\Icons\\inv_trinket_80_titan01d",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_trinket_80_titan01d.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Righteous Lunge by -5 and Sacred Swing by -10.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 301311,
+   "name": "Blessed Padding",
+   "icon": "Interface\\Icons\\Spell_Holy_PowerWordShield",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_powerwordshield.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Armor contribution from mail items by 50% and reduces damage taken from area of effect attacks by -10%.",
+   "altSpellIds": [
+    301360
+   ],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 706385,
+   "name": "Uther's Legacy",
+   "icon": "Interface\\Icons\\inv_mace_1h_uther_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_uther_d_01.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Condemn now heals you for 75% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 705259,
+   "name": "Faith Guard",
+   "icon": "Interface\\Icons\\spell_priest_angelicbulwark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_priest_angelicbulwark.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While a Libram is active, your Chastise will now unleash a line of holy power, dealing 112 + 25% AP High Threat Holy damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 680399,
+   "name": "Disciplined Mind",
+   "icon": "Interface\\Icons\\spell_holy_absolution",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_absolution.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the healing of Benediction by 15% and causes it to dispel 1 poison and disease effect.",
+   "altSpellIds": [
+    681483
+   ],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 705298,
+   "name": "Untainted",
+   "icon": "Interface\\Icons\\ability_priest_angelicbulwark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_angelicbulwark.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Effectively healing yourself now reduces your Physical damage taken by -10 + 10% Stamina for 8 seconds.Can only occur every 15 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 500678,
+   "name": "Testament of Fortitude",
+   "icon": "Interface\\icons\\nhi_holymeditation_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holymeditation_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Meditate for 15 seconds, restoring 5% of your maximum health every 1 sec and reducing damage taken by -50%.Each second you will also remove 1 disease effect from yourself. Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706309,
+   "name": "Battle Hardened / Upheave!",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyArrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holyarrow_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Righteous Upheaval by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 706449,
+   "name": "Holy Light / Light's Guidance",
+   "icon": "Interface\\icons\\nhi_holy_tornado_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_tornado_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Benediction now has a 1.5 sec cast time, but now heals for 100% more.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 504808,
+   "name": "Paladin Training / Priest Training",
+   "icon": "Interface\\icons\\custom_Paladinskill_24_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_paladinskill_24_border.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering Zealotry now has an 8% chance to grant you an additional auto attack on your next strike.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 707606,
+   "name": "Fervent Castigation / Condemnation",
+   "icon": "Interface\\Icons\\Spell_Holy_AuraOfLight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_auraoflight.jpg",
+   "source": "Zealot",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Righteous Upheaval or Blade of Faith now grants you Oath: Retribution and starts your Oath Chain.Oath: RetributionCritical damage increased by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Zealot"
+   ]
+  },
+  {
+   "spellId": 524747,
+   "name": "Holy Crusader / Scarlet Judicator",
+   "icon": "Interface\\icons\\nhi_holyring_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holyring_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Divine Force by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705307,
+   "name": "Holy Warstaff / Way of the Monk",
+   "icon": "Interface\\Icons\\inv_staff_28",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_28.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Reckoning by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 707663,
+   "name": "Justicar of the Light / Guardian of the Light",
+   "icon": "Interface\\Icons\\Ability_Paladin_InfusionofLight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_infusionoflight.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Removes the cooldown from Benediction, but increases its Energy cost by 10.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 712678,
+   "name": "Patience / Justice",
+   "icon": "Interface\\Icons\\monk_ability_avertharm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/monk_ability_avertharm.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Interdict by 2 sec and its cooldown by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 804571,
+   "name": "Transcendent Guardian / Armor of Faith",
+   "icon": "Interface\\Icons\\ability_bastion_priest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_bastion_priest.jpg",
+   "source": "Oathkeeper",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Charging to an ally with Temple Guardian now has a 40% chance to refresh a charge.",
+   "altSpellIds": [],
+   "sources": [
+    "Oathkeeper"
+   ]
+  },
+  {
+   "spellId": 520812,
+   "name": "Scarlet Secrets / Teachings of the Cathedral",
+   "icon": "Interface\\Icons\\_Letter_LordaeronScarletCrusade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_letter_lordaeronscarletcrusade.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 2nd cast of Argent Blade now grants you Oath: Retribution.Oath: RetributionCritical damage increased by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 301339,
+   "name": "Holy Tempest / Whirling Tempest",
+   "icon": "Interface\\icons\\nhi_holy_tornado_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holy_tornado_border.jpg",
+   "source": "Crusader",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Righteous Tempest now spreads Condemn on affected enemies to a nearby enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Crusader"
+   ]
+  },
+  {
+   "spellId": 801024,
+   "name": "Add 2 Felfury",
+   "icon": "classicon_demonhunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/classicon_demonhunter.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 704573,
+   "name": "Chakram",
+   "icon": "_d3chakram",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3chakram.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 803157,
+   "name": "Chastise",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706634,
+   "name": "Gift of Zeal",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804434,
+   "name": "Grave March",
+   "icon": "trade_engineering",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_engineering.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560653,
+   "name": "Harmonic Disposition",
+   "icon": "ability_priest_soulwarding",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_soulwarding.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801445,
+   "name": "Holy Cleave",
+   "icon": "nhi_holyslash_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_holyslash_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504120,
+   "name": "Kick",
+   "icon": "_monkability_roundhousekick_xuenwhite",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_monkability_roundhousekick_xuenwhite.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801443,
+   "name": "Righteous Lunge",
+   "icon": "inv_sword_2h_artifactashbringerpurified_d_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_2h_artifactashbringerpurified_d_02.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800518,
+   "name": "Sacred Strikes",
+   "icon": "custom_t_nhance_rpg_icons_holypeak_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holypeak_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560963,
+   "name": "Shackle The Unrepentant",
+   "icon": "custom_priestskill_03_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_priestskill_03_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805406,
+   "name": "Templar Strike",
+   "icon": "nhi_hammerofjustice_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_hammerofjustice_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801478,
+   "name": "Testament of Faith",
+   "icon": "_d3blindingflash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3blindingflash.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804781,
+   "name": "Tithe",
+   "icon": "custom_56_holy_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_56_holy_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

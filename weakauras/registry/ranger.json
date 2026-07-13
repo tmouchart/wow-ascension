@@ -1,0 +1,2135 @@
+{
+ "slug": "ranger",
+ "class": "Ranger",
+ "classId": "21",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Archery",
+   "tabId": 54
+  },
+  {
+   "name": "Brigand",
+   "tabId": 55
+  },
+  {
+   "name": "Farstrider",
+   "tabId": 2
+  }
+ ],
+ "abilityCount": 149,
+ "abilities": [
+  {
+   "spellId": 560531,
+   "name": "Guile of the Cutthroat",
+   "icon": "Interface\\Icons\\inv_shoulder_mail_raidhunter_l_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_mail_raidhunter_l_01.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases party and raid member's melee and ranged attack power by 5%. Does not stack with similar effects.In addition, increases your damage dealt by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 806978,
+   "name": "Dirty Fighter",
+   "icon": "Interface\\Icons\\ability_monk_quipunch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_quipunch.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 2nd critical strike with Skullpiercer or Assault within 30 seconds now transforms your next Assault within 15 seconds into Sucker Punch. Sucker PunchSucker punch an enemy, dealing 291 + 35% AP Physical damage and generating 5 stacks of Advantage. Scales with modifiers to Assault.For 8 seconds, the critical strike chance of Assault is increased by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 520574,
+   "name": "Banditry",
+   "icon": "Interface\\Icons\\Ability_Rogue_CheatDeath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_cheatdeath.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 2% and Focus regeneration by 15%.",
+   "altSpellIds": [
+    520879
+   ],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 301365,
+   "name": "To The Skies!",
+   "icon": "Interface\\Icons\\inv_pet_butterfly_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_butterfly_green.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Bushcraft Glider by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 560701,
+   "name": "Elven Tactics",
+   "icon": "Interface\\Icons\\ui_darkshore_warfront_alliance_archer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ui_darkshore_warfront_alliance_archer.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "You now have a -20% chance to not consume Advantage on cast.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705031,
+   "name": "Double The Pace",
+   "icon": "Interface\\Icons\\_Diablo3_ArrowRain_Hunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_arrowrain_hunter.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.In addition, increases your critical strike chance by 2%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680470,
+   "name": "Sniper's Focus",
+   "icon": "Interface\\Icons\\inv_crossbow_2h_kultirasquest_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_crossbow_2h_kultirasquest_b_01.jpg",
+   "source": "Archery",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Consuming Advantage now has a 20% chance per Archery Point spent to refund 20 Focus.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 520628,
+   "name": "Freedom",
+   "icon": "Interface\\Icons\\inv_misc_tournaments_symbol_bloodelf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_tournaments_symbol_bloodelf.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Free up to 10 nearby allies within 15 yds of you for 8 seconds, causing them to become immune to roots and snares, and allowing their critical strikes to increase their movement speed by 30% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 707418,
+   "name": "Survivalist",
+   "icon": "Interface\\Icons\\Spell_Nature_NatureTouchGrow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_naturetouchgrow.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Survival Potion by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 557325,
+   "name": "Outmaneuver",
+   "icon": "Interface\\Icons\\ability_rogue_findweakness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_findweakness.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Teleport to an enemy, summon a decoy beneath them, and mark them for 8 seconds. Dealing melee damage to them adds a stack to this effect, up to 20 stacks.Reactivating this ability within 8 seconds deals 1 + 55% AP Physical damage to your target, increased by 20% for each stack on the target, and then teleports you back to your decoy.Usable while in Elude.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 807459,
+   "name": "Venom-Coated Seeds",
+   "icon": "Interface\\icons\\custom_Druideskill_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_druideskill_01_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Snapseed now reduces the enemy's chance to hit by -15% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 705039,
+   "name": "Endurance Training",
+   "icon": "Interface\\Icons\\ability_rogue_recuperate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_recuperate.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum Focus by 20.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803108,
+   "name": "Assault",
+   "icon": "Interface\\Icons\\ability_rogue_ruthlessness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_ruthlessness.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Assault a low health enemy, dealing 100% Weapon Damage (175% with a dagger equipped) plus an additional 8 + 100% AP Physical damage. If the target is bleeding, this deals 50% increased damage.Damage increased for each stack of Advantage.Only usable on enemies below 20% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 300897,
+   "name": "Hunting Tactics",
+   "icon": "Interface\\Icons\\5_druideskill08_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill08_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Damage dealt by Skullpiercer is increased by 30% against Poisoned targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 560339,
+   "name": "Sly",
+   "icon": "Interface\\Icons\\inv_misc_disgustingpizza",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_disgustingpizza.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Woodland Adept now triggers a -10% reduced cooldown for each stack of Advantage active when cast.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706281,
+   "name": "Archery Master",
+   "icon": "Interface\\Icons\\artifactability_marksmanhunter_legacyofthewindrunners",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/artifactability_marksmanhunter_legacyofthewindrunners.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Quick Shot now generate an additional stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 560340,
+   "name": "Elusive Character",
+   "icon": "Interface\\icons\\custom_16_shadow_swords_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_16_shadow_swords_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your damage dealt by 10% for 12 seconds after leaving Elude.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707744,
+   "name": "Highwayman",
+   "icon": "Interface\\Icons\\5_druideskill44_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill44_border.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct critical strikes while behind your target increase your haste by 15% for 5 seconds, or for your next 2 attacks.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 301146,
+   "name": "Close Quarters",
+   "icon": "Interface\\Icons\\Ability_Warrior_Cleave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_cleave.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your attack power and Agility by 3%.",
+   "altSpellIds": [
+    301248
+   ],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 803114,
+   "name": "Bounty Hunter",
+   "icon": "Interface\\Icons\\inv_polearm_2h_pandariaquest_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_polearm_2h_pandariaquest_b_01.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Flank and Rusty Shiv now increases the target's damage taken from your Advantage spenders by 25% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 706748,
+   "name": "'Tactical' Advantage",
+   "icon": "Interface\\icons\\novart_passivemastery_(10)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(10)_border.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Knockout and Bushwhack now increases your damage dealt against the target by 10% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 706277,
+   "name": "Outlaw",
+   "icon": "Interface\\Icons\\_Human_04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_human_04.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Adaptations by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705033,
+   "name": "Pierced",
+   "icon": "Interface\\icons\\nhi_blood_shot_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blood_shot_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Critical strikes with Skullpiercer and Precision Shot cause the enemy to bleed for an additional 50% damage of the damage dealt over 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 560812,
+   "name": "An Arrow for Everything",
+   "icon": "Interface\\Icons\\_Diablo3_ArrowRain_Hunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_arrowrain_hunter.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Quivers by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 520585,
+   "name": "Natural Disguise",
+   "icon": "Interface\\icons\\nhi_natureambush_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureambush_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Instantly dispels all movement slowing effects from allies within 30 yds and transforms them into a bush, stealthing them for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520578,
+   "name": "Adrenaline Rush",
+   "icon": "Interface\\icons\\5_archerskill19_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill19_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by 40% for 10 seconds.Usable while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524864,
+   "name": "Forest Dweller",
+   "icon": "Interface\\Icons\\ability_druid_manatree",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_manatree.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While in Elude, gain 20% increased movement speed and regenerate 3% maximum health every 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801951,
+   "name": "Onslaught",
+   "icon": "Interface\\Icons\\Spell_Nature_FocusedMind",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_focusedmind.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your senses heighten, causing you to instantly generate 5 Advantage and allowing the use of abilities that require Elude for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803871,
+   "name": "Assassin",
+   "icon": "Interface\\Icons\\Ability_hunter_assassinate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_assassinate.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Instinct by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 573042,
+   "name": "Blow the Horns!",
+   "icon": "Interface\\Icons\\INV_Ascend_horn_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_horn_b_01.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Horn spells by -25%.",
+   "altSpellIds": [
+    573074
+   ],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 504329,
+   "name": "Survival Kit",
+   "icon": "Interface\\Icons\\INV_Ascend_bag_06_b",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_bag_06_b.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Survival Potion now also heals you for 10% of your maximum health with each tick.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500617,
+   "name": "Throatpunch",
+   "icon": "Interface\\Icons\\custom_Warriorskill_05_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_05_border.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for 2 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 803104,
+   "name": "Viper's Bite",
+   "icon": "Interface\\Icons\\ability_rogue_poisonedknife",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_poisonedknife.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 2 AdvantageUnleash 4 quick strikes over 1 seconds to an enemy, each dealing 85% Weapon Damage.If the target is bleeding, each strike deals an additional 400 + 25% AP Physical damage.If the target is poisoned, each strike deals Nature damage instead of Physical damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705028,
+   "name": "Swiftshot",
+   "icon": "Interface\\Icons\\ability_rogue_combatexpertise",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_combatexpertise.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Precision Shot now increases enemy Physical damage taken by 11% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 704317,
+   "name": "Boots of Elvenkind",
+   "icon": "Interface\\Icons\\ivn_boot_cloth_warfrontshorde_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ivn_boot_cloth_warfrontshorde_b_01.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility by 5% and reduces the duration of movement slowing effects on you by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 560688,
+   "name": "Maximum Power",
+   "icon": "Interface\\Icons\\Ability_Hunter_SniperTraining",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_snipertraining.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Abilities used with 5 stacks of Advantage now refresh the duration of your active Skirmish by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 520369,
+   "name": "Blur",
+   "icon": "Interface\\Icons\\Spell_Nature_Invisibilty",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_invisibilty.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your chance to dodge and parry by 4%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560959,
+   "name": "Survival Expert",
+   "icon": "Interface\\Icons\\Ability_Druid_NaturalPerfection",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_naturalperfection.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the dodge chance provided by Briar Veil by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 570014,
+   "name": "Brutal Shot",
+   "icon": "Interface\\icons\\5_archerskill31_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill31_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Fire a volley of powerful shots that pierce through Armor, dealing 450% Ranged Weapon Damage plus 300 to all targets in a 40 yd line.While Skirmish is active this ability is guaranteed to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 680931,
+   "name": "Headshots Only",
+   "icon": "Interface\\icons\\5_headshot_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_headshot_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt with Serrated Shot and Toxic Dart now increases the damage of your next Precision Shot within 8 seconds by 10%, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 524870,
+   "name": "Incendiary Shot",
+   "icon": "Interface\\icons\\nhi_fire_shot_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fire_shot_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Shoot a burning arrow dealing 791 + 35% ranged AP + 45% fire SP Fire damage to an enemy and up to 5 enemies within 6 yds, and causing your next 3 direct damage Advantage spenders to deal 50% of their damage to nearby enemies.Direct damage increased by 20% for each stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 707380,
+   "name": "Mortal Shots",
+   "icon": "Interface\\icons\\uico_arrow_spell_02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_arrow_spell_02_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Crippling Shot by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 520353,
+   "name": "Guile of the Ranger",
+   "icon": "Interface\\icons\\5_archerskill27_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill27_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Instinct now additionally increases your critical strike rating by 20% of your Agility.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560810,
+   "name": "A Quick Demise",
+   "icon": "Interface\\Icons\\ability_hunter_mongoosebite",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_mongoosebite.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Auto shots now have a 20% chance to extend the duration of your Serrated Shot by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 803113,
+   "name": "Trueshot Lodge Training",
+   "icon": "Interface\\Icons\\ability_druid_improvedmoonkinform",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_improvedmoonkinform.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your off-hand weapon damage by 25%.While wielding a polearm, your Physical damage dealt is increased by 3%.",
+   "altSpellIds": [
+    803855
+   ],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705076,
+   "name": "Falcon Charmer",
+   "icon": "Interface\\Icons\\trade_archaeology_carved_wildhammer_gryphon_figurine",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_archaeology_carved_wildhammer_gryphon_figurine.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of War Falcons by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 524831,
+   "name": "Thread The Needle",
+   "icon": "Interface\\icons\\nhi_spiritualarrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritualarrow_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Quick Shot or Falconstrike now reduce the cast time and cost of your next ability that consumes Advantage by -34% for 15 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 520925,
+   "name": "Petalkeeper",
+   "icon": "Interface\\icons\\nhi_magicflower_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_magicflower_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Woodland Arrow now spawns a rare red Dream Flower at a random location near you for 30 seconds.Critical strikes will apply a stack of Petals to red Dream Flowers. PetalsAt 10 stacks, your next Ranger Horn will cause the flower to burst, granting a buff to allies within 20 yards that causes damage dealt to heal them for 10% of the damage dealt and preventing their movement speed from being reduced below 100% of normal speed, for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 704311,
+   "name": "Quick-Witted",
+   "icon": "Interface\\Icons\\inv_misc_quiver_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_quiver_05.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing 1 + 100% AP Physical damage and reducing their attack speed by -20% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 804725,
+   "name": "Crippling Shot",
+   "icon": "Interface\\Icons\\Custom_dismounting_Shot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_dismounting_shot.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Fire a crippling shot at an enemy slowing movement speed by -50% and knocking them off their mounts, making them unable to mount again for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524867,
+   "name": "Hunting with Precision",
+   "icon": "Interface\\icons\\5_archerskill28_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill28_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Hunting Shot now deals 25% increased damage for each subsequent target it ricochets to.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 806957,
+   "name": "Knuckleduster",
+   "icon": "Interface\\Icons\\inv_leather_a_03defias",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_leather_a_03defias.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now generates 5 Focus.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 800084,
+   "name": "Briar Veil",
+   "icon": "Interface\\icons\\nhi_natureempower_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureempower_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Thorns and leaves swirl around you, masking your movements for 10 seconds, increasing your dodge chance by 50% and causing dodging attacks to restore 2% maximum health and 5 Focus.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801435,
+   "name": "Knockout",
+   "icon": "Interface\\Icons\\ability_monk_blackoutkick",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_blackoutkick.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Knock an enemy out, incapacitating them for 4 seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.Usable while in Elude.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705092,
+   "name": "Grace",
+   "icon": "Interface\\icons\\5_archerskill10_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill10_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Agility and movement speed by 4%.",
+   "altSpellIds": [
+    707848,
+    712477
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300700,
+   "name": "Deadeye",
+   "icon": "Interface\\Icons\\ability_rogue_bloodyeye",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_bloodyeye.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of your ranged abilities and Auto Shot by 5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 801191,
+   "name": "Hunting Shot",
+   "icon": "Interface\\icons\\uico_arrow_spell_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_arrow_spell_01_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Fire a shot that ricochets between 3 enemies, dealing Ranged Weapon Damage plus 6 to each enemy.Generates 1 stack of Advantage for each enemy hit.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 560966,
+   "name": "Quills",
+   "icon": "Interface\\Icons\\_FanOfKnives_Yellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_fanofknives_yellow.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Launch darts at up to 5 nearby enemies, dealing 15 + 30% AP Ranged Physical damage.Damage increased and strikes 1 additional target for each stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 802039,
+   "name": "Skirmish",
+   "icon": "Interface\\Icons\\Ability_Hunter_RunningShot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_runningshot.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 15% and reduces your Focus costs by -25%.Lasts 4 sec for each stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 707319,
+   "name": "Instinctual Combatant",
+   "icon": "Interface\\Icons\\Spell_Nature_MirrorImage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_mirrorimage.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Instinct now also restores 40 extra Focus and guarantees your next 3 Skullpiercers or Assaults within 20 seconds to critically strike.In addition, Instinct now grants you an additional 10% of your Agility as melee attack power.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 572372,
+   "name": "Corrosive Poison",
+   "icon": "Interface\\Icons\\Ability_Hunter_PiercingShots",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_piercingshots.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your ranged abilities against Poisoned targets now ignores 25% of enemy armor.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 680276,
+   "name": "Dirty Blades",
+   "icon": "Interface\\Icons\\ability_rogue_rollthebones02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_rollthebones02.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "For 4 seconds, your melee auto attacks deal an additional 30% (doubled with a dagger equipped) of the damage dealt as Nature damage and reduces your target's healing received by -20% for 8 seconds, stacking 2 times.Duration increased by 4 sec for each stack of Advantage.Usable while in Elude.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705034,
+   "name": "Woodland Stalker",
+   "icon": "Interface\\Icons\\Spell_Nature_StrangleVines",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_stranglevines.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While in Elude, your critical strike chance is now increased by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705044,
+   "name": "Dirty Fighter",
+   "icon": "Interface\\Icons\\ability_rogue_plunderarmor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_plunderarmor.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the chance for Flank to critically strike by 50% and increases your chance to resist root effects by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 570015,
+   "name": "Woodland Adept",
+   "icon": "Interface\\icons\\nhi_naturepoisonedstep_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturepoisonedstep_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by 25% for 10 seconds, and applies Elude.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705055,
+   "name": "Lethal Wounds",
+   "icon": "Interface\\icons\\uico_blood_spell_02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_blood_spell_02_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of your periodic damage effects by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 705050,
+   "name": "Serrations",
+   "icon": "Interface\\Icons\\inv_knife_1h_thunderisleraid_d_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_knife_1h_thunderisleraid_d_02.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your damage against bleeding or Poisoned targets by 5%.",
+   "altSpellIds": [
+    707850
+   ],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 573057,
+   "name": "Improved Waterskins",
+   "icon": "Interface\\Icons\\inv_drink_waterskin_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_drink_waterskin_03.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Waterskins by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802839,
+   "name": "Survival Potion",
+   "icon": "Interface\\icons\\nhi_naturecocktail_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturecocktail_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Drink a survival potion, dispelling all poison and disease effects and removing 1 poison and disease effect every 3 sec for 9 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705053,
+   "name": "Ambuscade",
+   "icon": "Interface\\Icons\\ability_warrior_throwdown_2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_throwdown_2.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Skullpiercer and Flank by 20%, plus an additional 35% if you have a polearm equipped.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 800360,
+   "name": "Hookshot",
+   "icon": "Interface\\Icons\\ability_rogue_versatility",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_versatility.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Launch a hook at a target attempting to lodge it into an open wound, dealing 66 + 100% AP Physical damage. If the target is bleeding, you can reactivate this to pull yourself to them, dealing 150% Weapon Damage and generating 2 Advantage",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 800077,
+   "name": "Barbed Quills",
+   "icon": "Interface\\Icons\\Ability_Gouge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_gouge.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Wild Strike and Quills will now tear into enemies, causing them to bleed for 78 Physical damage over 9 seconds, stacking 4 times.Damage dealt by Quills now spreads your periodic effects to 5 enemies within 10 yds and extends their duration by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 707534,
+   "name": "Highlander",
+   "icon": "Interface\\Icons\\achievement_zone_jadeforest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_jadeforest.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each time you spawn a green Dreamflower you are granted 1 stack of Highlander.Highlander (Stacks)At 3 stacks, your next Falconstrike within 10 seconds deals 25% increased damage and reduces the enemy's healing received by -40% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 705071,
+   "name": "Plumes of War",
+   "icon": "Interface\\Icons\\Ability_Hunter_AnimalHandler",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_animalhandler.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Falconstrike and Emerald Arrow by 15%.In addition, critical strikes with Falconstrike now increase the damage of subsequent Falconstrikes by 5% for 15 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 520615,
+   "name": "Cunning",
+   "icon": "Interface\\Icons\\misc_legionfall_hunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/misc_legionfall_hunter.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Focus regeneration by 15%.",
+   "altSpellIds": [
+    520878
+   ],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 806342,
+   "name": "Whipvine Arrow",
+   "icon": "Interface\\Icons\\inv_misc_herb_nightmarevine",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_herb_nightmarevine.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Launch an arrow with magical vines attached to it at your target, dealing 78 + 33% ranged AP Nature damage and rooting them for 40 seconds (8 sec vs players). Damage caused may interrupt the effect.Hits 1 additional nearby target per stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 570737,
+   "name": "Pecking",
+   "icon": "Interface\\Icons\\artifactability_survivalhunter_eaglesbite",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/artifactability_survivalhunter_eaglesbite.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your War Falcons and Dragonhawks now have a 25% chance to deal additional Physical damage to 3 nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 806368,
+   "name": "Woodland Arrow",
+   "icon": "Interface\\icons\\nhi_naturegoldenarrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturegoldenarrow_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Shoot a magical arrow, dealing 38 + 35% ranged AP Physical damage and reducing the cooldown of active Horn spells by -15 sec.Damage increased for each stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 573060,
+   "name": "Falconstrike",
+   "icon": "Interface\\Icons\\ability_felarakkoa_focusedblast",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_felarakkoa_focusedblast.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 5th Quick Shot within 15 seconds transforms into Falconstrike.Using a Horn instantly transforms Quick Shot into Falconstrike.Falconstrike (Transform)Generates 2 AdvantageCall a cast of falcons to strike an enemy, dealing 121% Ranged Weapon Damage plus 10 Nature damage and calling 1 War Falcon to your aid for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 500075,
+   "name": "Precision Shot",
+   "icon": "Interface\\icons\\5_archerskill07_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill07_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Precisely shoot an enemy from a great distance, inflicting 38 + 48.5% ranged AP Physical damage.Damage increased for each stack of Advantage.Usable while in Elude.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 803851,
+   "name": "Ravage",
+   "icon": "Interface\\Icons\\ability_hunter_mongoosebite",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_mongoosebite.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 AdvantageRavage an enemy, causing them to bleed out dealing 112 + 23.72% AP Physical damage over 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705054,
+   "name": "Elven Enchantments",
+   "icon": "Interface\\Icons\\achievement_character_nightelf_female",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_character_nightelf_female.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by your Searing and Poison Quivers by 25%.In addition, dealing damage with Searing or Poison Quiver now grants a stack of Elven Enchantments.Elven EnchantmentsCast time of the next Incendiary Shot within 10 seconds is reduced by -10% and critical strike chance increased by 10%, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 706284,
+   "name": "Pathfinder",
+   "icon": "Interface\\Icons\\achievement_zone_jadeforest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_jadeforest.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Adrenaline Rush now incurs a -90% reduced cooldown when used while Elude is active.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 300706,
+   "name": "Studded Arrows",
+   "icon": "Interface\\Icons\\_D3hungeringarrow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3hungeringarrow.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the ranged weapon damage dealt by Quick Shot by 10%.",
+   "altSpellIds": [
+    301359
+   ],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 301249,
+   "name": "Superb Shot",
+   "icon": "Interface\\Icons\\inv_misc_ammo_arrow_04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_ammo_arrow_04.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Auto Shot now restores 4 Focus.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 804178,
+   "name": "Strike Where It Hurts",
+   "icon": "Interface\\Icons\\Ability_Hunter_KillCommand",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_killcommand.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your ability critical strikes now increase the damage the target takes from bleeds by 30% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 520227,
+   "name": "Deadshot",
+   "icon": "Interface\\icons\\nhi_bloodarrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodarrow_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 2 AdvantageShoot a powerful arrow at the target dealing 250% Ranged Weapon Damage plus 20.1.Only usable on enemies below 20% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 800358,
+   "name": "Hawkeye",
+   "icon": "Interface\\Icons\\Ability_Hunter_SilentHunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_silenthunter.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now fire an arrow every 3 sec at enemies within 30 yds affected by your Hunting Shot, dealing 75% Ranged Weapon Damage.Scales with Hunting Shot modifiers.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 801438,
+   "name": "Dice Games",
+   "icon": "Interface\\Icons\\ability_rogue_rollthebones",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_rollthebones.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Wild Strike and Assault by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705061,
+   "name": "Underhanded",
+   "icon": "Interface\\Icons\\ability_hunter_cobrashot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_cobrashot.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the attack power scaling of Skullpiercer by 15%.",
+   "altSpellIds": [
+    707884
+   ],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 561110,
+   "name": "Stalker",
+   "icon": "Interface\\Icons\\_Diablo3_Execute_Hunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_execute_hunter.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Cutthroat by -15 sec, but reduces the range of Cutthroat by -10 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 560802,
+   "name": "Quel'dorei Poison",
+   "icon": "Interface\\icons\\custom_T_SpiritualArrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_spiritualarrow_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Woodland Arrow and Emerald Arrow now poison enemies for 3 seconds, dealing 91 + 10% ranged AP Nature damage every 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 500071,
+   "name": "Neurotoxin Arrow",
+   "icon": "Interface\\Icons\\nhi_naturearrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturearrow_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Shoot at an enemy's throat with a toxin-laced arrow, dealing 25 + 36.07% ranged AP Nature damage and silencing them for 1 seconds.Duration increased by 1 sec per stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 705032,
+   "name": "Devastating Shots",
+   "icon": "Interface\\Icons\\inv_trickshot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_trickshot.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 2% and your hit chance by 1%.",
+   "altSpellIds": [
+    707849
+   ],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 704312,
+   "name": "New-Age Archery",
+   "icon": "Interface\\icons\\nhi_goldenarrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_goldenarrow_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Skullpiercer and Precision Shot by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 707888,
+   "name": "Improved Serrated Shot",
+   "icon": "Interface\\Icons\\ability_hunter_assassinate2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_assassinate2.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Serrated Shot by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 807493,
+   "name": "Opportunist",
+   "icon": "Interface\\Icons\\5_archerskill03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill03_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Precision Shot by 50% on enemies above 80% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 560341,
+   "name": "Rapid Strikes",
+   "icon": "Interface\\Icons\\_CrossingSwords_ColorsGreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_crossingswords_colorsgreen.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Melee and ranged auto attacks now have a 25% chance to strike an additional time for 50% of the damage dealt.Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801468,
+   "name": "Pinpoint Accuracy",
+   "icon": "Interface\\Icons\\inv_weapon_bow_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_bow_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Critical strikes with direct damaging abilities now generate 4 Focus.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707417,
+   "name": "Deft Hands",
+   "icon": "Interface\\Icons\\ability_paladin_handoflight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_handoflight.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee and ranged haste by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807668,
+   "name": "Jagged Cuts",
+   "icon": "Interface\\Icons\\Ability_Hunter_SwiftStrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_swiftstrike.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage and duration of Toxic Dart and Ravage by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705026,
+   "name": "Camper",
+   "icon": "Interface\\Icons\\ability_racial_makecamp",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_makecamp.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cast time of your Bushcraft abilities by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804027,
+   "name": "Snapseed",
+   "icon": "Interface\\Icons\\twisted_seed",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/twisted_seed.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Toss a snapseed at an enemy, dealing 27 + 30% ranged AP Physical damage and knocking them back.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504008,
+   "name": "Resourceful",
+   "icon": "Interface\\Icons\\Spell_Nature_HealingTouch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_healingtouch.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Crippling Shot and Snapseed by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800359,
+   "name": "Cutthroat",
+   "icon": "Interface\\icons\\custom_Archerskill_04_nobg_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_archerskill_04_nobg_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Shoot a powerful arrow that deals Weapon Damage plus 40 and stuns the target for 1 seconds. Duration increased by 1 sec per stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524654,
+   "name": "Stonemason's Secret",
+   "icon": "Interface\\Icons\\inv_inscription_runescrolloffortitude_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_runescrolloffortitude_green.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Skullpiercer used with 5 stacks of Advantage now extends the duration of Dirty Blades by 6 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 705074,
+   "name": "Phoenix Plumes",
+   "icon": "Interface\\Icons\\inv_icon_feather06a",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_icon_feather06a.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Skullpiercers and Woodland Arrows used with 5 stacks of Advantage now restore 3% Focus and summon a War Falcon for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 560805,
+   "name": "Thalassian Brand",
+   "icon": "Interface\\icons\\nhi_naturetarget_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturetarget_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Mark an enemy for total destruction, increasing your allies ranged attack power against the target by 300 and dealing 1120 Nature damage every 3 sec for 15 seconds.The marked target can always be seen by the Ranger whether it stealths or turns invisible",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 804715,
+   "name": "Falcon's Call",
+   "icon": "Interface\\Icons\\ability_skyreach_castdown",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skyreach_castdown.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Call down war falcons upon a targeted area, slowing up to 8 enemies within the area by -60% for 5 seconds.A Falcon is summoned for each enemy affected for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 520621,
+   "name": "Coordination",
+   "icon": "Interface\\Icons\\Ability_Hunter_BeastWithin",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_beastwithin.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your War Falcons and Dragonhawks now grant you a stack of Coordination when they deal damage.Coordination (Proc)Increases your critical strike chance and critical damage by 1% for 15 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 800685,
+   "name": "Backstep",
+   "icon": "Interface\\Icons\\ability_karoz_leap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_karoz_leap.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Leap backwards up to 10 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 800150,
+   "name": "Forest Herald",
+   "icon": "Interface\\Icons\\ability_druid_treeoflife_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_treeoflife_red.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Toxic Dart and abilities that spend stacks of Advantage now have a 20% chance to spawn a green Dreamflower at a random location nearby within 15 yds of you.Dream Flower (Spawner)When an ally runs over the flower, they consume it to heal for 3% maximum health and gain 40% increased movement speed for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 803115,
+   "name": "Snatch",
+   "icon": "Interface\\Icons\\rogue_subterfuge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/rogue_subterfuge.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Snatch an enemy's melee weapons, disarming them for 4 seconds.If you are disarmed, you also return your weapon to yourself.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 573043,
+   "name": "Windrunner's Reach",
+   "icon": "Interface\\Icons\\_HighElf_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_highelf_01.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of your ranged abilities by 5 yds.In addition, your critical strike chance against Undead, Beasts, and Dragonkin is increased by 2%.",
+   "altSpellIds": [
+    573069
+   ],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 705075,
+   "name": "Falcon's Aid",
+   "icon": "Interface\\Icons\\ability_hunter_aspectoftheironhawk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_aspectoftheironhawk.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 10% chance to summon a War Falcon to aid you in battle for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 705072,
+   "name": "Razorquills",
+   "icon": "Interface\\icons\\5_archerskill43_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill43_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of Toxic Dart and Emerald Arrows by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 573056,
+   "name": "Dragonhawk Tamer",
+   "icon": "Interface\\Icons\\ability_hunter_pet_dragonhawk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_pet_dragonhawk.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using a Horn now summons a Dragonhawk to assist you in combat for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 706282,
+   "name": "Forest Fighter",
+   "icon": "Interface\\icons\\custom_accurate_bow_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_accurate_bow_b_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Skullpiercers or Emerald Arrows used with 5 stacks of Advantage now reduce the cooldown of Woodland Arrow by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 681292,
+   "name": "Light Arrows / Masterful Archery",
+   "icon": "Interface\\Icons\\_D3elementalarrow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3elementalarrow.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Precision Shot by 20% when used from 40 yds or further away from your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 524873,
+   "name": "Silent, But Deadly / One Shot, One Kill",
+   "icon": "Interface\\icons\\5_archerskill13_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill13_border.jpg",
+   "source": "Archery",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct Physical damage dealt now has an 8% chance to allow you to use Deadshot regardless of the targets health for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Archery"
+   ]
+  },
+  {
+   "spellId": 520804,
+   "name": "Bloody Focus / No Mercy",
+   "icon": "Interface\\Icons\\Ability_Gouge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_gouge.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Focus cost of Toxic Dart by -15.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520753,
+   "name": "Guise / Lethal Cunning",
+   "icon": "Interface\\Icons\\Ability_Rogue_StayofExecution",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_stayofexecution.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Instantly generates 5 stacks of Advantage and allows you see nearby stealthed enemies for 5 seconds.Usable while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560495,
+   "name": "Whats Yours Is Mine / Grappling Arrows",
+   "icon": "Interface\\Icons\\achievement_boss_edwinvancleef",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_edwinvancleef.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Removes the Focus cost of Snatch.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560814,
+   "name": "Surefooted / Heightened Senses",
+   "icon": "Interface\\Icons\\achievement_zone_hillsbradfoothills",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_hillsbradfoothills.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Adrenaline Rush by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807626,
+   "name": "Assassin / Excessive But Necessary",
+   "icon": "Interface\\Icons\\ability_rogue_deadliness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_deadliness.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Knockout and Crippling Shot by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 807206,
+   "name": "Focused Fighter / Wild Man",
+   "icon": "Interface\\Icons\\Ability_CheapShot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_cheapshot.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Focus cost of Flank, Blackjack, and Wild Strike by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 707885,
+   "name": "Polearm Craft / Pilfering",
+   "icon": "Interface\\Icons\\INV_Spear_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_spear_02.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While a polearm is equipped, your chance to trigger your Weapon Crafts and their damage dealt is increased by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 807023,
+   "name": "Tip of the Spear / Marked for Death",
+   "icon": "Interface\\Icons\\inv_spear_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_spear_01.jpg",
+   "source": "Brigand",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While you have a polearm equipped, your Wild Strike now has a 15% chance to strike 3 additional times.",
+   "altSpellIds": [],
+   "sources": [
+    "Brigand"
+   ]
+  },
+  {
+   "spellId": 800086,
+   "name": "Horn of War / Battle Prowess",
+   "icon": "Interface\\Icons\\INV_Misc_Horn_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_horn_03.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generates 1 AdvantageEmanate an aura for 30 seconds that grants 5% increased critical strike chance to party and raid members. Does not stack with similar effects.While active, you generate 3 Focus every 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 705067,
+   "name": "War Falconer / Aerial Assault",
+   "icon": "Interface\\Icons\\ability_hunter_eagleeye",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_eagleeye.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldowns of Falcon's Call by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 520586,
+   "name": "Falcon Guide / Scavenger",
+   "icon": "Interface\\Icons\\inv_redbird",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_redbird.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Falconstrike and Battle Screech now increase your movement speed by 30% for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 804712,
+   "name": "Emerald Arrow / Falcon Diving",
+   "icon": "Interface\\icons\\custom_emerald_staff_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_emerald_staff_b_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Set up a powerful magical arrow and then shoot it, dealing 10 + 20% ranged AP Nature damage to the target, increased for each stack of Advantage.Creates an enchanted flare on the ground, causing nearby enemies to take 224 + 20% ranged AP Nature damage every 2 sec, lasting 2 sec for each stack of Advantage.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 573059,
+   "name": "Gutpiercer / Battle Screech",
+   "icon": "Interface\\Icons\\ability_rogue_bloodsplatter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_bloodsplatter.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by War Falcons and Dragonhawks now has a 15% chance to reduce the enemy's resistances by 75 and increase their Magic damage taken by -2% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 705098,
+   "name": "Wingman / Guidance",
+   "icon": "Interface\\Icons\\inv_icon_wing04d",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_icon_wing04d.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces all damage taken by -2% for each War Falcon or Dragonhawk you have active.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 705094,
+   "name": "Defense of the Ancients / Horn of Alacrity",
+   "icon": "Interface\\icons\\skill_icon_skill118_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill118_border.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider"
+   ]
+  },
+  {
+   "spellId": 520492,
+   "name": "Frenzy / Command Aura",
+   "icon": "Interface\\Icons\\ability_druid_treeoflife_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_treeoflife_red.jpg",
+   "source": "Farstrider",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+   "altSpellIds": [],
+   "sources": [
+    "Farstrider",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804331,
+   "name": "Adventurer",
+   "icon": "ability_hunter_huntervswild",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_huntervswild.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801345,
+   "name": "Elude",
+   "icon": "ability_hunter_camouflage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_camouflage.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804940,
+   "name": "Flank",
+   "icon": "ability_rogue_surpriseattack2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_surpriseattack2.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 806360,
+   "name": "Horn of Alacrity",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 806359,
+   "name": "Horn of Endurance",
+   "icon": "inv_ascend_horn",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_horn.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800088,
+   "name": "Horn of Perseverance",
+   "icon": "inv_misc_horn_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_horn_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500074,
+   "name": "Quick Shot",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800087,
+   "name": "Ranger's Horn of Coordination",
+   "icon": "inv_ascend_horn",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_horn.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800085,
+   "name": "Reposition",
+   "icon": "ability_skyreach_flying_charge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skyreach_flying_charge.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802036,
+   "name": "Skullpiercer",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804669,
+   "name": "Sticky Fingers",
+   "icon": "inv_glove_armor_gnome_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glove_armor_gnome_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800083,
+   "name": "Wild Strike",
+   "icon": "ability_rogue_cuttothechase",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_cuttothechase.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800266,
+   "name": "Woodsman's Adaptation",
+   "icon": "misc_legionfall_hunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/misc_legionfall_hunter.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

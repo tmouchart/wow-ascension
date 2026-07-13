@@ -1,0 +1,2574 @@
+{
+ "slug": "primalist",
+ "class": "Primalist",
+ "classId": "31",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Primal",
+   "tabId": 82
+  },
+  {
+   "name": "Geomancy",
+   "tabId": 83
+  },
+  {
+   "name": "Life",
+   "tabId": 84
+  },
+  {
+   "name": "Mountain King",
+   "tabId": 91
+  }
+ ],
+ "abilityCount": 179,
+ "abilities": [
+  {
+   "spellId": 680439,
+   "name": "Blessing of Therazane",
+   "icon": "Interface\\Icons\\Achievement_Boss_PrincessTheradras",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_princesstheradras.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each stack of Earthshaping now increases your critical damage dealt by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 800133,
+   "name": "Frenzied Roar",
+   "icon": "Interface\\Icons\\inv_wolfdraenormountrustic",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_wolfdraenormountrustic.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Roar with bestial fervor, generating 20 Rage and granting you 20% increased attack speed for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 706176,
+   "name": "Son of Ursoc",
+   "icon": "Interface\\Icons\\Ability_Hunter_Pet_Bear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_pet_bear.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Savage Frenzy now transforms you into a feast beast, freeing you of all movement impairing effects.In addition, increases the effectiveness of Savage Frenzy by 50%, and reduces its cooldown by -60 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 704099,
+   "name": "Totem Warrior",
+   "icon": "Interface\\Icons\\Spell_Fire_TotemOfWrath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_totemofwrath.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While you have Boon of the Bear active, Wildclaw will now strike an additional time for 40% of the damage dealt with both weapons.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 560140,
+   "name": "Nature's Will",
+   "icon": "Interface\\Icons\\inv_tradeskillitem_lessersorcerersearth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_tradeskillitem_lessersorcerersearth.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Seismic spells now extends the duration of Earthshaping by 4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 802793,
+   "name": "Magma Fissure",
+   "icon": "Interface\\Icons\\spell_fire_volcano",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_volcano.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Stomp the ground and unleash a wave of earth and stone in a 20 yd line that knocks all enemies to the side and deals cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1) Fire damage, piercing absorption effects.Your next spell within 6 seconds is instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 500294,
+   "name": "Torn to Shreds",
+   "icon": "Interface\\Icons\\inv_misc_bearpaw_red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_bearpaw_red.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Totemic Smash and Rylak's Bite now causes enemies to bleed for 155 + 4.5% AP over 12 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 806559,
+   "name": "Rexxar's Might",
+   "icon": "Interface\\Icons\\spell_druid_thrash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_thrash.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing 93 + 15% AP Physical damage every 2 sec for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 680451,
+   "name": "Volcanic Blast",
+   "icon": "Interface\\Icons\\ability_rhyolith_magmaflow_whole",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rhyolith_magmaflow_whole.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Physical or Nature damaging critical strikes now deal an additional 10% of the damage dealt as Fire damage to the target and enemies nearby.",
+   "altSpellIds": [
+    681480
+   ],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 524677,
+   "name": "Wild At Heart",
+   "icon": "Interface\\icons\\skill_icon_skill61_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill61_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the global cooldown of Wildclaw by 0.-25 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 500764,
+   "name": "Throat Clamp",
+   "icon": "Interface\\Icons\\Ability_Hunter_Harass",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_harass.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 500940,
+   "name": "Primal Shred",
+   "icon": "Interface\\Icons\\ability_druid_freshwound",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_freshwound.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Command your pet to shred up to 5 enemies within 8 yds, causing them to bleed, dealing 53 + 35% AP Physical damage over 21 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 300691,
+   "name": "Rush of the Hunt",
+   "icon": "Interface\\Icons\\ability_racial_bullrush",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_bullrush.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Wildclaw and Rylak's Bite by 15% against bleeding enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 520464,
+   "name": "Mineralization",
+   "icon": "Interface\\Icons\\hunter_pvp_diamondice",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/hunter_pvp_diamondice.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While at or below 35% health, your spells and abilities will increase your healing received by 10% for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706137,
+   "name": "Keeper of the Grove",
+   "icon": "Interface\\Icons\\inv_tradeskillitem_lessersorcerersearth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_tradeskillitem_lessersorcerersearth.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Bramblepatch by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 806536,
+   "name": "Primordial Earth",
+   "icon": "Interface\\Icons\\INV_Ore_Gold_Nugget2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ore_gold_nugget2.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with melee attacks now summon 1 Spirit of Life that immediately casts a lesser Spirit Charge on a nearby ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 504220,
+   "name": "Spiritual Warrior",
+   "icon": "Interface\\icons\\nhi_spiritualarmor_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritualarmor_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Spirit Charge by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 300733,
+   "name": "Battleweaver",
+   "icon": "Interface\\icons\\nhi_natureroots_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureroots_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Effective healing now increases your melee haste and damage by 2% for 5 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 300731,
+   "name": "Infusion of Neptulon",
+   "icon": "Interface\\Icons\\spell_frost_summonwaterelemental",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frost_summonwaterelemental.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critically healing an ally now increases your attack power by 15% for your next 3 attacks. Lasts 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 804705,
+   "name": "Ring of Life",
+   "icon": "Interface\\icons\\nhi_naturestone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturestone_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Allies within 40 yds receive 6% increased healing. Does not stack with similar effects.In addition, your Magic damage taken is reduced by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 706174,
+   "name": "Magmatism",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ChaoticSpikes_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_chaoticspikes_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Eruption by -15 sec and causes Magma Geodes to deal 30% more damage to enemies above 75% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 706153,
+   "name": "Pulverize",
+   "icon": "Interface\\icons\\custom_bear_paw_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_bear_paw_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Totemic Smash by 10%.",
+   "altSpellIds": [
+    707811
+   ],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 504219,
+   "name": "Therazane's Gift",
+   "icon": "Interface\\Icons\\spell_shaman_giftearthmother",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_giftearthmother.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Therazane's Rage now generates an additional 5 Rage and 5% additional mana.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500615,
+   "name": "Cave In",
+   "icon": "Interface\\Icons\\ability_deepwinddunk_dunk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deepwinddunk_dunk.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for 4 seconds.Successfully interrupting a target generates 1 stack of Earthshaping.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 504229,
+   "name": "Primal Totem",
+   "icon": "Interface\\Icons\\inv_relics_totemofrebirth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_relics_totemofrebirth.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Summon a Primal Totem that increases the primary stats of party and raid members by 20% within 40 yds for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706203,
+   "name": "Bountiful Boons",
+   "icon": "Interface\\Icons\\Spell_Nature_GiftoftheWild",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_giftofthewild.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Boons and Instincts by 10%.",
+   "altSpellIds": [
+    706204
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706201,
+   "name": "Stonefaced",
+   "icon": "Interface\\Icons\\INV_Misc_StoneTablet_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_stonetablet_05.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Seismic abilities now also grants 2 stacks of Earth's Rage.Earth&#39;s RageIncreases movement speed by 4% and haste by 2% for 8 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706344,
+   "name": "Heavy Handed",
+   "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_misc_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_misc_06.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Hand of the Earthmother now increases the Armor of yourself and your target by 10% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504223,
+   "name": "Tranquil Mind",
+   "icon": "Interface\\Icons\\achievement_zone_nagrand_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_nagrand_02.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your damage and healing done by 4%.",
+   "altSpellIds": [
+    504882
+   ],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 560182,
+   "name": "Earth Pummeling",
+   "icon": "Interface\\icons\\uico_nature_spell_03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_nature_spell_03_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Damage dealt by Geode Barrage and Geodes to increase the chance for the enemy to be critically hit with spells by 3% for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680452,
+   "name": "Dream",
+   "icon": "Interface\\icons\\nhi_nature_hidden_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_nature_hidden_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating Earthshaping while at or above 10 stacks now grants Dream.DreamIncreases the critical strike chance of your Seismic abilities and Lithic Lance by 10% for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 706160,
+   "name": "Heavy Earth",
+   "icon": "Interface\\Icons\\inv_elementalearth2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elementalearth2.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Terrasurge now consumes all stacks of Earthshaping to refresh the duration of Golem Form and grant you Heavy Earth.Heavy Earth (Proc)Each stack of Earthshaping consumed grants you 5% additional damage dealt with Stoneshard and Geode Barrage as Nature Damage while this is active. Lasts 8 seconds.While active you cannot generate Earthshaping.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680862,
+   "name": "Stone Tosser",
+   "icon": "Interface\\Icons\\INV_Stone_16",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_stone_16.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases spell bonus damage scaling of Geode Barrage, Stoneshard, and Seismic Crash by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 560158,
+   "name": "Stone Cold",
+   "icon": "Interface\\Icons\\inv_custom_hearthstone_nature",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_custom_hearthstone_nature.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum health by 4%.",
+   "altSpellIds": [
+    560159
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805336,
+   "name": "Therazane's Might",
+   "icon": "Interface\\Icons\\inv_elemental_mote_nether",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_mote_nether.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Terrasurge will now always critically strike against targets affected by your Seismic Tremor.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 706162,
+   "name": "Stoneskin",
+   "icon": "Interface\\Icons\\Spell_Nature_SkinofEarth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_skinofearth.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Armor by 200% of your Intellect.",
+   "altSpellIds": [
+    707809
+   ],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 706216,
+   "name": "Primal Power",
+   "icon": "Interface\\icons\\nhi_water_eye_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_water_eye_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Seismic Wave now causes your next Hand of the Earthmother within 8 seconds to cost -50% less Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 300744,
+   "name": "Running on Instinct",
+   "icon": "Interface\\icons\\nhi_spiritliquid_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiritliquid_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Passing through allies with Primal Rush now heals up to 5 of them for 166 + 25% AP + 35% SP and grants a stack of Running on Instinct.Running on Instinct (Proc)Damage of Wildclaw and Seismic spells is increased by 5% for 20 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 802335,
+   "name": "Eruption",
+   "icon": "Interface\\Icons\\6bf_blackrock_nova",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/6bf_blackrock_nova.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Launch 1 Magma Geode at your target every 0 sec for 0.2 seconds, dealing cond(gt(SPFI, SPN), 58+200+SPFI*0.2, 58+200+SPN*0.2) Firestorm Damage. Duration increased by 0.2 sec for each stack of Earthshaping.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 803347,
+   "name": "Bestial Wrath",
+   "icon": "Interface\\Icons\\ability_hunter_fervor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_fervor.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you critically strike, your pet restores 10 Focus. When your pet critically strikes, you restore 2% maximum mana and increase the target's Physical damage taken by 4% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 704096,
+   "name": "Raptor Talons",
+   "icon": "Interface\\Icons\\Ability_Hunter_BeastMastery",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_beastmastery.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Strength by 5% and your expertise by 4.",
+   "altSpellIds": [
+    707812
+   ],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 802494,
+   "name": "Tectonic Flow",
+   "icon": "Interface\\Icons\\5_assassinskill43_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill43_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Primal Rush and Boulder Dash by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805107,
+   "name": "Earthmother's Binding",
+   "icon": "Interface\\Icons\\spell_druid_symbiosis",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_symbiosis.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Envelop a target in the Earthmother's love, healing them for 501 + 100% healing + 100% AP. If used on an ally, 30% of their damage taken is redirected to you for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 503721,
+   "name": "Grove Guardian",
+   "icon": "Interface\\icons\\custom_T_NaturesGuardian_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_naturesguardian_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Mark a location as your Grove for 20 seconds.Allies within gain 30% movement speed and are healed for 404 + 25% AP every 5 sec, removing 1 poison and disease effect.Enemies within are slowed by -30% and take 504 + 45% AP Nature damage every 5 sec and are rooted for 2 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801234,
+   "name": "Fury of the Wild",
+   "icon": "Interface\\Icons\\druid_stagstatue01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/druid_stagstatue01.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you cast a Boon, you cast the same Boon on your pet at 50% effectiveness.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 503630,
+   "name": "Rock Barrier",
+   "icon": "Interface\\Icons\\inv_holiday_hearthstonemidsummerfirefestival",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_holiday_hearthstonemidsummerfirefestival.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 20 sec rechargeRaise rocks from beneath you, increasing your Armor by 100 + 300% Stamina, scaling with your Stamina. Lasts for 10 attacks or 10 seconds.Expending a charge of Rock Barrier launches a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504198,
+   "name": "Protector of the Grove",
+   "icon": "Interface\\icons\\nhi_nature_growl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_nature_growl_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing direct damage now reduces the cooldown of Bearskin, Primal Convergence, and Boulder Dash by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806533,
+   "name": "Keen Senses",
+   "icon": "Interface\\Icons\\5_assassinskill31_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill31_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance and haste by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802782,
+   "name": "Protective Roar",
+   "icon": "Interface\\Icons\\Ability_Druid_KingoftheJungle",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_kingofthejungle.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Roar with noble tenacity, generating 20 Rage and granting 10% increased maximum health to all party and raid members for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806549,
+   "name": "Savage Frenzy",
+   "icon": "Interface\\Icons\\ability_hunter_bestialdiscipline",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_bestialdiscipline.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Enrage you and your pet for 18 seconds, increasing damage dealt by 20%, and attack speed and movement speed by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 303014,
+   "name": "Power Hammer",
+   "icon": "Interface\\Icons\\inv_custom_naaru_hammer_yellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_custom_naaru_hammer_yellow.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now generate 10% more Rage from damage dealt, increased by 15% while a two-handed weapon is equipped.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 706167,
+   "name": "Natural Efficiency",
+   "icon": "Interface\\Icons\\Spell_Nature_ProtectionformNature",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_protectionformnature.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Whenever you are struck by a root, stun, or incapacitate effect you are now instantly healed for 4% of your maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704402,
+   "name": "One With The Earth",
+   "icon": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_offhand_1h_artifactdoomhammer_d_03.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Stoneshard and Geode Barrage by 20% and Stoneshard now restores 4% of your maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 800185,
+   "name": "Primal Shaman's Mask",
+   "icon": "Interface\\Icons\\Inv_Helm_Mask_ZulGurub_D_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_mask_zulgurub_d_01.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct damage dealt now has a 10% chance to launch a Geode at the enemyGeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage..",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680409,
+   "name": "Tilling the Earth",
+   "icon": "Interface\\Icons\\spell_shaman_unleashweapon_earth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_unleashweapon_earth.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Bash by 3% and increases your expertise by 5.",
+   "altSpellIds": [
+    681375
+   ],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 803974,
+   "name": "Quake",
+   "icon": "Interface\\Icons\\spell_shaman_earthquake",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_earthquake.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 8 sec rechargeStomp the ground, dealing Weapon Damage plus 13 + 20% nature SP + 10% AP Nature damage to enemies within 8 yds and reduces their melee and ranged haste by -20% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 300695,
+   "name": "Blessed by the Earth",
+   "icon": "Interface\\Icons\\_D3earthquake",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3earthquake.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Primal Rush and Quake now grant Earth's Rage.Earth&#39;s RageIncreases movement speed by 4% and haste by 2% for 8 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 681130,
+   "name": "Mountain Hammer",
+   "icon": "Interface\\icons\\custom_T_HammerThrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_hammerthrow_border.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Throw a hammer at an enemy dealing 49 + 35.5% nature SP + 15.5% AP Physical damage and stunning them for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680964,
+   "name": "Bash",
+   "icon": "Interface\\Icons\\mountainking_Bash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/mountainking_bash.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your auto attacks have a 30% chance to deal 50% Weapon Damage and stun them for 1 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 706220,
+   "name": "Terrasmash",
+   "icon": "Interface\\Icons\\_D3hammeroftheancients",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3hammeroftheancients.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by your off hand weapon now has a 30% chance to launch a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 560548,
+   "name": "Resources of the Earth",
+   "icon": "Interface\\Icons\\inv_tradeskillitem_sorcererearth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_tradeskillitem_sorcererearth.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes now grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 570157,
+   "name": "Stone Soldier",
+   "icon": "Interface\\Icons\\achievement_challengemode_blackrockdepot_silver",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_challengemode_blackrockdepot_silver.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of your off hand weapon by 30% and your chance to hit by 3%.",
+   "altSpellIds": [
+    570225
+   ],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 560505,
+   "name": "Improved Ursoc's Bellow",
+   "icon": "Interface\\Icons\\inv_mount_viciousalliancebearmount",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mount_viciousalliancebearmount.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Ursoc's Bellow by 40%.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 805643,
+   "name": "Mountain Mover",
+   "icon": "Interface\\Icons\\achievement_boss_highmaul_earthenfury",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_highmaul_earthenfury.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Avoiding an attack grants a stack of Mountain Mover for 10 seconds, stacking 5 times.Wildclaw consumes Mountain Mover stacks to cost -10% less Rage per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 560298,
+   "name": "Earthmother's Protection",
+   "icon": "Interface\\Icons\\inv_pet_pandarenelemental_earth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_pandarenelemental_earth.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While your Rock Barrier is active, the Rage cost of Hand of the Earthmother is reduced by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680413,
+   "name": "Seismically Efficient",
+   "icon": "Interface\\Icons\\inv_pet_pandarenelementa_earthl",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_pandarenelementa_earthl.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the Rage generated from Seismic Crash by 5 and Seismic Spike by 2.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680404,
+   "name": "Mountain Thane",
+   "icon": "Interface\\Icons\\achievements_zone_highmountain",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievements_zone_highmountain.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Stamina by 5% and causes Earth's Rage to stack 1 additional time.",
+   "altSpellIds": [
+    681479
+   ],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680410,
+   "name": "Thane's Guidance",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_IronDwarf_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_irondwarf_01.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Auto attacks now reduce the cooldown of Mountain Hammer by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 560147,
+   "name": "Earthbreaker",
+   "icon": "Interface\\Icons\\Achievement_Zone_BladesEdgeMtns_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_bladesedgemtns_01.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee haste by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 706161,
+   "name": "Unyielding Form",
+   "icon": "Interface\\Icons\\Spell_Nature_StoneSkinTotem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_stoneskintotem.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your parry and dodge chance by 3% and your Armor contribution from mail and plate by 25%.",
+   "altSpellIds": [
+    707808
+   ],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680415,
+   "name": "Stonebound",
+   "icon": "Interface\\Icons\\inv_misc_hearthstonecard_legendary",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_hearthstonecard_legendary.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Boon of the Turtle and Earth's Rage by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 681364,
+   "name": "Spiritbound",
+   "icon": "Interface\\Icons\\ability_shaman_freedomwolf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shaman_freedomwolf.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Avoiding attacks now grants you 5 Rage and reduces the cooldown of your Seismic abilities by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680412,
+   "name": "Fury of the Earthmother",
+   "icon": "Interface\\icons\\nhi_natureempower_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureempower_border.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Geode Barrage or Geodes now generates increased threat and have a 15% chance to add 1 charge to an active Rock Barrier and extend its duration by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680421,
+   "name": "Earthen Avatar",
+   "icon": "Interface\\Icons\\ability_racial_avatar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_avatar.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by 15%, and increasing your melee haste by 20% for 20 seconds.Immune to stuns, roots, and snares for the duration.Usable while stunned.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 806185,
+   "name": "Mountain Fury",
+   "icon": "Interface\\icons\\nhi_earthwall_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_earthwall_border.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Move the earth, dealing 502 + 65% SP + 17% AP + 125% Stamina Physical damage to up to 12 enemies in a 10 yd frontal cone, pulling them toward you, repeating every 2 sec for 4 seconds.Each time an enemy is pulled toward you, you gain -2% reduced damage taken for 3 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560150,
+   "name": "Earthmaker",
+   "icon": "Interface\\Icons\\inv_misc_volatileearth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_volatileearth.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Seismic abilities and Quake now reduces the cooldown of Earthen Avatar by -1 sec.Additionally, the cooldown of Seismic abilities is reduced by -3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 560508,
+   "name": "Earth Destroyer",
+   "icon": "Interface\\Icons\\achievement_dungeon_blackrockcaverns_karshsteelbender",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_blackrockcaverns_karshsteelbender.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Mountain Fury by -20 sec and increases the duration by 4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 300728,
+   "name": "Primal Guardian",
+   "icon": "Interface\\Icons\\icon_upgradestone_undead_legendary",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/icon_upgradestone_undead_legendary.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When Earthen Avatar, Bearskin or Rock Barrier is removed or expires, you now gain 10% melee haste and parry chance for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680424,
+   "name": "Legacy of the Bronzebeards",
+   "icon": "Interface\\Icons\\achievement_leader_king_magni_bronzebeard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_leader_king_magni_bronzebeard.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Earthen Avatar by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 706622,
+   "name": "Raging Earth",
+   "icon": "Interface\\icons\\nhi_naturelighting_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturelighting_border.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Quake now creates a fissure beneath you that deals an additional 73 + 8% AP Nature damage every 2 sec for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 560154,
+   "name": "Rockslide",
+   "icon": "Interface\\Icons\\_D3earthquake",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3earthquake.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Stoneshard now has a 15% chance to cast an additional time. This effect can trigger itself.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680444,
+   "name": "Cataclysm",
+   "icon": "Interface\\Icons\\spell_sandexplosion",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_sandexplosion.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating Earthshaping or casting Stoneshard now has a 10% chance to reset the cooldown of your Seismic abilities.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 681494,
+   "name": "Whispers of the Earth",
+   "icon": "Interface\\Icons\\Spell_Shaman_EarthlivingWeapon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_earthlivingweapon.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Geode Barrage and Stoneshard by 0.3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680442,
+   "name": "Seismic Tremor",
+   "icon": "Interface\\Icons\\Seismic_Tremor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/seismic_tremor.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Send a tremor through the earth at an enemy, dealing 54 + 50% nature SP Physical damage, plus an additional 336 over 24 seconds. Damage is dealt slowly at first, and builds up over time.Damage dealt generates 1 Rage. Generates 2 stacks of Earthshaping.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 574314,
+   "name": "Cave Dweller",
+   "icon": "Interface\\Icons\\inv_shoulder_leather_pvpdruid_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_leather_pvpdruid_c_02.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum Rage by 15 and reduces spell pushback suffered from damaging attacks by 50%.",
+   "altSpellIds": [
+    574361
+   ],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 805335,
+   "name": "Golem Form",
+   "icon": "Interface\\icons\\nhi_nature_shapeshift_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_nature_shapeshift_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Transform into a being made of stone and earth for 20 seconds, increasing your haste by 20% and your Armor by 50%, and allowing you to cast damaging spells while moving.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 560169,
+   "name": "Geomolding",
+   "icon": "Interface\\Icons\\INV_Elemental_Primal_Earth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_primal_earth.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt by Seismic Tremor now grants Geomolding for 15 seconds.Geomolding (Proc)Your next Terrasurge costs 2 additional Rage and deals 3% increased damage. Stacks 20 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 706208,
+   "name": "Rupturer",
+   "icon": "Interface\\Icons\\INV_Ascend_Stone_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_stone_03.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Seismic Spike or Seismic Crash now generates a stack of Geomolding. Critically striking with Seismic Spike or Seismic Crash now generates an additional stack of Geomolding plus a stack of Earthshaping.Casting Lithic Lance now reduces the cooldown of Terrasurge by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 560157,
+   "name": "Earthmother's Blessing",
+   "icon": "Interface\\Icons\\inv_archaeology_70_tauren_handsmoothedpyrestone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_70_tauren_handsmoothedpyrestone.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Attacks which would otherwise kill you now instead reform you in stone, healing for 30% maximum health and reducing your Physical damage taken by -70% for 3 seconds.Can only occur once every 2 min.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800181,
+   "name": "Primal Convergence",
+   "icon": "Interface\\Icons\\5_shamanskill09_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_shamanskill09_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Ascend into a primal convergence, increasing the effectiveness of your Boons by 100% for 30 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681119,
+   "name": "Terrasurge",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_earth_icon_0003s_0000_light_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_earth_icon_0003s_0000_light_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a massive globule of earth at an enemy, dealing 140 + 130% nature SP Physical damage and reducing their Armor by -50% for 10 sec.Pierces through absorption, deflection, and reflection effects.Deals 5% additional damage for each Earthshaping stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 805867,
+   "name": "Dreamslip",
+   "icon": "Interface\\Icons\\inv_legion_faction_dreamweavers",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_legion_faction_dreamweavers.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Shifts a party member into the Emerald Dream for 15 seconds, making them immune to damage and unable to attack or cast spells.While active, the target quickly regenerates health and mana and cannot be seen by other players or creatures.Cannot be used on self.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560145,
+   "name": "Cracking the Earth",
+   "icon": "Interface\\Icons\\Spell_Shaman_LavaFlow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_lavaflow.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Striking at least 5 enemies with Volcanic Blast now grants you Cracking the Earth for 10 seconds.Cracking the Earth (Proc)Your Seismic Spike strikes 1 additional enemy. Stacks 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680453,
+   "name": "Gaze of Therazane",
+   "icon": "Interface\\icons\\nhi_naturevision_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturevision_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of your Geomancy spells by 10% and of Seismic spells by 8 yds.",
+   "altSpellIds": [
+    680458
+   ],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 680419,
+   "name": "Quakeformer",
+   "icon": "Interface\\Icons\\spell_nature_earthelemental_totem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_earthelemental_totem.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Wildclaw and Seismic abilities now has a 25% chance to refresh a charge of Quake.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 706150,
+   "name": "Nature's Call",
+   "icon": "Interface\\Icons\\INV_Misc_MonsterClaw_04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterclaw_04.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your healing done and received by 6%.",
+   "altSpellIds": [
+    707807
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680936,
+   "name": "Focus",
+   "icon": "Interface\\Icons\\ability_druid_primalprecision",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_primalprecision.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Intellect and Stamina by 5%.",
+   "altSpellIds": [
+    681477
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520466,
+   "name": "Judgement of The Three Hammers",
+   "icon": "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_artifactdoomhammer_d_01.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While active, dealing direct damage has a 20% chance to hurl 3 hammers over 2 seconds, each dealing 100 + 32.5% SP + 27.8% AP Physical damage. Lasts for 15 seconds. Damage scales with modifiers to Mountain Hammer.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 520469,
+   "name": "Shattering",
+   "icon": "Interface\\Icons\\archaeology_5_0_crackedmogurunestone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/archaeology_5_0_crackedmogurunestone.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by each hammer triggered by Judgment of The Three Hammers now grants you 1% increased critical strike chance and damage for 10 seconds, stacking up to 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 706338,
+   "name": "Elemental Berserker",
+   "icon": "Interface\\Icons\\spell_shaman_focusedstrikes",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_focusedstrikes.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the area damage dealt by Totemic Smash by 30%, but it now costs 5 additional Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 573310,
+   "name": "Spirit Stable",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_GhostWalk_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_ghostwalk_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Call forth a stabled animal spirit to replace your current one. Lasts 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 706633,
+   "name": "Killer's Path",
+   "icon": "Interface\\icons\\novart_magicspell_(27)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(27)_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 707560,
+   "name": "Druid Training",
+   "icon": "Interface\\Icons\\Ability_Druid_EmpoweredRejuvination",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_empoweredrejuvination.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Geode Barrage now heals all allies within 20 yds equal to 10% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 300729,
+   "name": "Environmentalist",
+   "icon": "Interface\\icons\\nhi_natureclover_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureclover_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cost of your spells and abilities by -5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805462,
+   "name": "Seismic Wave",
+   "icon": "Interface\\Icons\\Seismic_Wave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/seismic_wave.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create a seismic wave of healing water around you, healing for 27 + 60% healing + 28% AP health to up to 8 allies and dealing 47 + 28% AP + 30% healing Nature damage to enemies in a 25 yd radius.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 681281,
+   "name": "Fae Presence",
+   "icon": "Interface\\Icons\\ui_darkshore_warfront_alliance_faerie_dragon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ui_darkshore_warfront_alliance_faerie_dragon.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Removes the reagent cost from Fae Dust and causes it to increase the target's stealth detection.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 555723,
+   "name": "Earthmother's Precision",
+   "icon": "Interface\\Icons\\Spell_Nature_NatureTouchDecay",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_naturetouchdecay.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Seismic Crash now increases the chance for allies to hit with all spells against the enemy by 3% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500692,
+   "name": "Boulder Dash",
+   "icon": "Interface\\icons\\custom_elementl(earth)_b_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_elementl(earth)_b_01_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Raise a boulder out of the ground and encase yourself within it, preventing you from attacking or casting spells.For 10 seconds, you roll forward at 70% increased movement speed, dealing 1 + 50% AP + 100% SP Physical damage to enemies you roll over, and you are immune to crowd control effects.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680476,
+   "name": "Molten Fervor",
+   "icon": "Interface\\Icons\\inv_elemental_crystal_fire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_crystal_fire.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your spell haste by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 301087,
+   "name": "Pulverize",
+   "icon": "Interface\\Icons\\nhi_moltensmash_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_moltensmash_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Totemic Smash now trigger the area of effect portion of its damage an additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 806415,
+   "name": "Bramblepatch",
+   "icon": "Interface\\Icons\\inv_eng_bombroot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_eng_bombroot.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Grow a patch of brambles at your location for 12 seconds.Allies in the area are immune to grip and knockback effects.Enemies in the area are unable to leap, dash, or charge.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560286,
+   "name": "Lacerations",
+   "icon": "Interface\\icons\\custom_Warriorskill_28_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_28_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee critical strikes now increase the effectiveness of bleed effects on the target by 30% for 15 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 300698,
+   "name": "Earthshaker",
+   "icon": "Interface\\Icons\\inv_misc_volatileearth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_volatileearth.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Seismic abilities by 10% and allows their periodic damage to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 800180,
+   "name": "Sacred Grove",
+   "icon": "Interface\\Icons\\achievement_reputation_guardiansofcenarius",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_reputation_guardiansofcenarius.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create a Sacred Grove in a 15 yd radius around you for 16 seconds, instantly healing all nearby party and raid members for 2002 + 100% AP.While active, up to 12 allies in the grove receive 25% increased healing, and regain 3% of their missing health, Rage, and mana every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 504197,
+   "name": "Wild Rampage",
+   "icon": "Interface\\icons\\nhi_naturestrike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturestrike_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your attack power by 5% and your chance to hit by 2%.",
+   "altSpellIds": [
+    504881
+   ],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 800094,
+   "name": "Bearskin",
+   "icon": "Interface\\Icons\\spell_druid_primaltenacity",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_primaltenacity.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces all damage taken by -60% and reduces the duration of root, stun, and incapacitate effects on you by -30% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800144,
+   "name": "Spirit Charge",
+   "icon": "Interface\\Icons\\ability_monk_pathofmists",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_pathofmists.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Charge to an ally's aid, healing them for 53 + 20% healing + 20% AP and dealing 67 + 20% healing + 20% AP Nature damage to enemies within 5 yds of them.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 800178,
+   "name": "Totemic Smash",
+   "icon": "Interface\\Icons\\ability_smash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_smash.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Smash an enemy for 140% Weapon Damage plus 20.Deals an additional 10 + 35% AP damage to up to 5 enemies within 8 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 800184,
+   "name": "Legacy of Rexxar",
+   "icon": "Interface\\Icons\\inv_rexxar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_rexxar.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Critical strikes with Primal Shred grant you and your pet Misha's Rage for 12 seconds, causing auto attacks to deal an additional 85 + 12.5% AP Physical damage.Critical strikes with Rylak's Bite grant you and your pet Leokk's Fury, increasing melee haste by 2% for 12 seconds, stacking 3 times.Critical strikes with Wildclaw grant you and your pet Huffer's Speed, increasing movement speed by 8% for 12 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 560305,
+   "name": "Verdant Chase",
+   "icon": "Interface\\Icons\\ability_evoker_spiritbloom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_evoker_spiritbloom.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Spirit Charge and Primal Rush now cooldown faster.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 706342,
+   "name": "Rylak's Bite",
+   "icon": "Interface\\Icons\\spell_beastmaster_rylak",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_beastmaster_rylak.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 10 sec rechargeYou and your pet rush towards an enemy and strike them, dealing 120% Weapon Damage plus 8.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 802888,
+   "name": "Eternally Chosen",
+   "icon": "Interface\\Icons\\inv_ability_monk_jadefirestomp",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ability_monk_jadefirestomp.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Spirit Charge and Primal Rush now summons 2 Spirits of Life that immediately cast a lesser Spirit Charge on the nearest ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 560510,
+   "name": "Journey To The Core",
+   "icon": "Interface\\Icons\\ability_rhyolith_lavapool",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rhyolith_lavapool.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Seismic Tremor now has a 20% chance to form a crag beneath your target that explodes after 3 seconds.Can only occur once every 3 sec.Crag (Damage)Deals 173 + 35% nature SP Physical Damage to up to 5 enemies within 5 yds and increases the damage they take from your Earthquake by 20% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 803980,
+   "name": "Wildheart",
+   "icon": "Interface\\Icons\\spell_druid_ironbark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_ironbark.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "The Earthmother marks you as her chosen one, reducing the cooldown of all other non-damaging spells and abilities by 5%, repeating every 2 sec for 15 seconds.Instantly restores 5% missing health, mana, and Rage to you, repeating every 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500696,
+   "name": "Primal Rush",
+   "icon": "Interface\\Icons\\Ability_Druid_Berserk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_berserk.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Rush forward 20 yd through enemies in a line, dealing 40 Nature damage.Generates 20 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 300740,
+   "name": "Ancient Power",
+   "icon": "Interface\\icons\\nhi_naturelighting_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturelighting_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Strength by 5% and your hit chance by 3%.",
+   "altSpellIds": [
+    301354
+   ],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 504446,
+   "name": "Earthmother's Pendant",
+   "icon": "Interface\\Icons\\_HearthStone_Necklace_Warrior",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_hearthstone_necklace_warrior.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "With every strike, the Earthmother’s pendant restores what was lost, healing you equal to 10% of your damage dealt.Can only occur once every 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 301299,
+   "name": "Verdant Warrior",
+   "icon": "Interface\\Icons\\Ability_Druid_Cyclone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_cyclone.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Wildclaw by 15%.",
+   "altSpellIds": [
+    573132
+   ],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 800145,
+   "name": "Grip",
+   "icon": "Interface\\Icons\\Spell_Nature_StoneClawTotem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_stoneclawtotem.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Summon a stone hand to grip the target, incapacitating them for 40 seconds (8 sec vs. players). Damage dealt will break the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300742,
+   "name": "Nature's Fury",
+   "icon": "Interface\\Icons\\inv_mace_2h_pandariaquest_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_2h_pandariaquest_b_01.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Auto attacks now have a 20% chance to deal Weapon Damage and restore 5% of your maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 504196,
+   "name": "Elemental Cascade",
+   "icon": "Interface\\Icons\\inv_waterelementalmount",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_waterelementalmount.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Wildclaw now unleash an Elemental Cascade.Elemental CascadeRestores 32 + 10% AP + 10% healing health to allies in a 12 yd radius around you.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 706138,
+   "name": "Earth's Guidance",
+   "icon": "Interface\\Icons\\Spell_Nature_ProtectionformNature",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_protectionformnature.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage and healing done by Seismic spells now has a 20% chance to reduce the cooldown of all Seismic spells by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 805445,
+   "name": "Shaman Training",
+   "icon": "Interface\\Icons\\Ability_Shaman_Stormstrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shaman_stormstrike.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Wildclaw now reduces the enemy's armor by -4% for 20 seconds, stacking up to 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 504732,
+   "name": "Thorns",
+   "icon": "Interface\\Icons\\Spell_Nature_StrangleVines",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_stranglevines.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Physical damage dealt or taken now has a 10% chance to unleash Thorns on an enemy.Thorns (Talent)Create thorns around an enemy, rooting them and dealing 270 Nature Damage over 6 seconds.Direct damage taken may end this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 500937,
+   "name": "Totemic Echoes",
+   "icon": "Interface\\Icons\\ability_shaman_totemcooldownrefund",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shaman_totemcooldownrefund.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Totemic Smash now applies Totemic Crash to an enemy for 2 seconds.At the end of the duration, if you are within 5 yds of the target, you cast Totemic Smash against them for free.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 806552,
+   "name": "Bring Me Their Bones",
+   "icon": "Interface\\Icons\\inv_misc_necklace_bone04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_necklace_bone04.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Mark an enemy for 15 seconds, causing damage dealt by your pet's abilities to the target to add a stack of Bring Me Their Bones.At 5 stacks, your pet consumes this buff to deal 310 + 50% AP damage to the target, ignoring Armor.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 802595,
+   "name": "Rylak's Blessing",
+   "icon": "Interface\\Icons\\spell_druid_feralchargecat",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_feralchargecat.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Rylak's Bite now increases your pet's damage and critical strike chance by 2%, stacking 2 times, for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 707367,
+   "name": "Spiritual Frenzy",
+   "icon": "Interface\\Icons\\custom_71_spirit_wolves_nobg_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_71_spirit_wolves_nobg_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Primal Shred now empowers your pet, causing its auto attacks to strike up to 4 nearby enemies for 21 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 803973,
+   "name": "Hammer of Life",
+   "icon": "Interface\\Icons\\inv_mace_1h_draenorraid_d_04green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_draenorraid_d_04green.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your melee attacks and abilities now heal nearby allies and damage nearby enemies equal to 20% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 806143,
+   "name": "Earth's Embrace",
+   "icon": "Interface\\icons\\custom_Amber_stone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_amber_stone_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for 8 seconds, and healing you for 300 + 50% SP every 2 sec, but making you unable to move or act.Usable while stunned, feared, or polymorphed.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 300688,
+   "name": "Primal Resurgence / Rips and Tears",
+   "icon": "Interface\\Icons\\inv_misc_monsterclaw_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterclaw_05.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Seismic Crash now generates an additional 10 Rage and Seismic Spike now generates 3 additional Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 300690,
+   "name": "Primal Rage / Wild Rage",
+   "icon": "Interface\\Icons\\trade_archaeology_ancientorcshamanheaddress",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_archaeology_ancientorcshamanheaddress.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Totemic Smash now refreshes a charge of Rylak's Bite.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 504226,
+   "name": "Sharpened Claws / Bloody Claws",
+   "icon": "Interface\\icons\\nhi_ghostclaw_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_ghostclaw_border.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your direct critical strikes now increase your and your pet's Armor penetration by 5% for 10 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 537212,
+   "name": "Spinebreaker / Wild Carnage",
+   "icon": "Interface\\Icons\\inv_skeletonspinepet_bone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_skeletonspinepet_bone.jpg",
+   "source": "Primal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Seismic Grasp now roots enemies for 3.5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Primal"
+   ]
+  },
+  {
+   "spellId": 680446,
+   "name": "Rolling Momentum / Rage Rolling",
+   "icon": "Interface\\Icons\\5_assassinskill26_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill26_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the movement speed granted by Boulder Dash by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706165,
+   "name": "Fury of the Elements / Untamed",
+   "icon": "Interface\\Icons\\monk_ability_fistoffury",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/monk_ability_fistoffury.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Primal Rush now generates 10 additional Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706171,
+   "name": "Primal Strikes / Primal Fury",
+   "icon": "Interface\\Icons\\spell_shaman_unleashweapon_life",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_unleashweapon_life.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Critical strikes with abilities that deal Physical damage now generate 3 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524971,
+   "name": "Mending Touch / Emerald Will",
+   "icon": "Interface\\Icons\\spell_nature_undyingstrength",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_undyingstrength.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Soothing Touch now dispels an additional poison and disease effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560135,
+   "name": "Trembling Rage / Everlasting Rage",
+   "icon": "Interface\\Icons\\achievement_dungeon_halls_of_origination_earthrager_ptah",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_halls_of_origination_earthrager_ptah.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the amount of Rage generated by Seismic Tremor by 2.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 707173,
+   "name": "Tectonic Resonance / Tectonic Power",
+   "icon": "Interface\\icons\\nhi_earthshock_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_earthshock_border.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the amount that Earthquake slows enemies by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 561037,
+   "name": "Embraced By Earth! / Cragforming",
+   "icon": "Interface\\Icons\\inv_misc_archstone_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_archstone_01.jpg",
+   "source": "Geomancy",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "At the end of the duration of Earth's Embrace, you now disorient all nearby enemies for 6 seconds. Damage dealt will end the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Geomancy"
+   ]
+  },
+  {
+   "spellId": 504214,
+   "name": "Vitality Surge / Grovekeeper's Presence",
+   "icon": "Interface\\icons\\nhi_chaoshealing_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_chaoshealing_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "All effective healing done now has a 25% chance to increase the haste of party and raid members by 5% for 20 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 561208,
+   "name": "Hand of a God / Blessing of Neptulon",
+   "icon": "Interface\\Icons\\inv_iceelementalprimal_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_iceelementalprimal_green.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Rage cost of Hand of the Earthmother by -5.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 574313,
+   "name": "Crashing Out / Tears of the Earthmother",
+   "icon": "Interface\\Icons\\Ability_Druid_NaturalPerfection",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_naturalperfection.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Seismic Crash by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 503718,
+   "name": "Infused With Power / Protector's Hand",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_nature_icon_0003s_0000_branch_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_nature_icon_0003s_0000_branch_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Effectively healing allies with Hammer of Life or Hand of the Earthmother now has a 20% chance to apply Infused With Power.Infused With PowerIncreases the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 707514,
+   "name": "Earthmother's Warden / Grove Tender",
+   "icon": "Interface\\Icons\\Spell_Nature_Thorns",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_thorns.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Seismic abilities by -2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 807558,
+   "name": "Douse / Flourishing Growth",
+   "icon": "Interface\\Icons\\ability_shawaterelemental_reform",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shawaterelemental_reform.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 300867,
+   "name": "Ride the Wave / Nature's Blessing",
+   "icon": "Interface\\icons\\nhi_naturewave_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturewave_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Seismic Wave now increases the movement speed of affected allies by 30% for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 300738,
+   "name": "Earthmother's Empowerment / Earthmother's Roar",
+   "icon": "Interface\\icons\\nhi_natureambush_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureambush_border.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Hand of the Earthmother now increases the target's dodge chance by 15% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 807467,
+   "name": "Neptulon's Wrath / Primal Awakening",
+   "icon": "Interface\\Icons\\_LiquidStone_Water",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_liquidstone_water.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Emanate an aura for 15 seconds, causing allied players to deal 35% AP additional damage as Froststorm Damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 805105,
+   "name": "Ancient of Lore / Ancient of War",
+   "icon": "Interface\\Icons\\AncientofLore",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ancientoflore.jpg",
+   "source": "Life",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.While active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.While transformed, your movement speed is reduced by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Life"
+   ]
+  },
+  {
+   "spellId": 680405,
+   "name": "Everythings A Nail / Hammer Time!",
+   "icon": "Interface\\Icons\\inv_hammer_29",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hammer_29.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Mountain Hammer by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 680408,
+   "name": "Earthenforged Barrier / Rock Solid",
+   "icon": "Interface\\Icons\\achievement_dungeon_blackrockcaverns_ascendantlordobsidius",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_blackrockcaverns_ascendantlordobsidius.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the Armor provided by Rock Barrier by 50% and it now reduces the cost of your spells and abilities by -25% for the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 300693,
+   "name": "Seismic Smash / Quaking Thane",
+   "icon": "Interface\\Icons\\Seismic_Smash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/seismic_smash.jpg",
+   "source": "Mountain King",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Raise the earth in a line in front of you with molten fury, dealing 94 + 22% AP + 50% Stamina Physical damage and granting you Thane's Rage and Aftershock.Thane&#39;s RageIncreases your attack power by 20% of your Stamina and your Stamina by 10% of your Strength for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.",
+   "altSpellIds": [],
+   "sources": [
+    "Mountain King"
+   ]
+  },
+  {
+   "spellId": 500939,
+   "name": "Boon of the Bear",
+   "icon": "ability_hunter_pet_bear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_pet_bear.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500943,
+   "name": "Boon of the Hawk",
+   "icon": "spell_hunter_aspectoftheironhawk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_hunter_aspectoftheironhawk.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500935,
+   "name": "Boon of the Turtle",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800137,
+   "name": "Boon of the Wolf",
+   "icon": "ability_hunter_pet_wolf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_pet_wolf.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500307,
+   "name": "Expunge Blight - Caster Energize",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800136,
+   "name": "Fist of Ragnaros",
+   "icon": "ability_warlock_backdraft",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_backdraft.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805919,
+   "name": "Gaze of Theradras",
+   "icon": "achievement_boss_princesstheradras",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_princesstheradras.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500402,
+   "name": "Geode Barrage",
+   "icon": "ability_rogue_throwingspecialization",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_throwingspecialization.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800135,
+   "name": "Hand of the Earthmother",
+   "icon": "spell_shaman_spiritlink",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_spiritlink.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804155,
+   "name": "Mana Regeneration",
+   "icon": "inv_sword_1h_pvpdraenors2_d_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_pvpdraenors2_d_02.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800146,
+   "name": "Nature's Call",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800197,
+   "name": "Primal Instinct",
+   "icon": "ability_druid_predatoryinstincts",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_predatoryinstincts.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560512,
+   "name": "Stone Edge",
+   "icon": "inv_sword_1h_pvppandarias1_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_pvppandarias1_c_02.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 503736,
+   "name": "Therazane's Rage",
+   "icon": "nhi_earthrage_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_earthrage_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800140,
+   "name": "Wildclaw",
+   "icon": "inv_hand_1h_artifactursoc_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hand_1h_artifactursoc_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

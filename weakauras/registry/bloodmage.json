@@ -1,0 +1,2526 @@
+{
+ "slug": "bloodmage",
+ "class": "Bloodmage",
+ "classId": "20",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Sanguine",
+   "tabId": 26
+  },
+  {
+   "name": "Accursed",
+   "tabId": 52
+  },
+  {
+   "name": "Eternal",
+   "tabId": 53
+  },
+  {
+   "name": "Fleshweaver",
+   "tabId": 93
+  }
+ ],
+ "abilityCount": 176,
+ "abilities": [
+  {
+   "spellId": 680696,
+   "name": "Gruesome Rituals",
+   "icon": "Interface\\icons\\custom_T_BloodFog_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_bloodfog_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your damage dealt is now increased by 1% for each stack of Pooled Vitality.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 804726,
+   "name": "Vampiric Fang",
+   "icon": "Interface\\icons\\custom_T_BloodHaze_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_bloodhaze_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Expends Thirst StacksSteal 36 + 34% SP health from an enemy.Damage increased by 10% for each Thirst stack. Clears Insatiable and Thirst stacks.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 806423,
+   "name": "Bloodleaper",
+   "icon": "Interface\\Icons\\inv_boot_cloth_raidwarlock_r_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_boot_cloth_raidwarlock_r_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Lunge by -10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560257,
+   "name": "Blood Runs Cold",
+   "icon": "Interface\\Icons\\sha_ability_warrior_bloodnova",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_ability_warrior_bloodnova.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Blood Pact now also increases your healing received by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560073,
+   "name": "Crimson Terror",
+   "icon": "Interface\\icons\\nhi_bloodhand_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodhand_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Transgression now grants spell damage equal to 50% of your Spirit for the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704621,
+   "name": "Easy Prey",
+   "icon": "Interface\\Icons\\ability_mount_epicbatmount",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mount_epicbatmount.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Hemostasis by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804604,
+   "name": "Puncturing Fangs",
+   "icon": "Interface\\Icons\\ability_deathwing_bloodcorruption_death",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_bloodcorruption_death.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Bloodmoon Blast now generates 3 additional Rage per hit.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 560250,
+   "name": "Blood Banquet",
+   "icon": "Interface\\Icons\\Spell_Shadow_BloodBoil",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_bloodboil.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Valanar's Vengeance and Taldaram's Torment by 15%.",
+   "altSpellIds": [
+    561347
+   ],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704634,
+   "name": "Twisted Magic",
+   "icon": "Interface\\Icons\\_DeathCoilV2_Blood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_deathcoilv2_blood.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your direct harmful critical strikes increase the target's Shadow damage taken from you by 2%, stacking up to 5 times, for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 501132,
+   "name": "Fearmonger",
+   "icon": "Interface\\Icons\\5_assassinskill02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill02_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate and cost of Taldaram's Torment by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704623,
+   "name": "Rejuvenating Shadows",
+   "icon": "Interface\\Icons\\spell_shadow_antishadow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_antishadow.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Nearby party and raid members receive 6% more healing. Does not stack with similar effects.In addition, increases the health leeched by Bloodbolt by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 704654,
+   "name": "Ultra Instinct",
+   "icon": "Interface\\Icons\\Ability_Druid_PredatoryInstincts",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_predatoryinstincts.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by 3% for 10 sec.Each additional critical strike increases this by an additional 3%, but reduces its duration by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 560254,
+   "name": "Blood Rush",
+   "icon": "Interface\\Icons\\Ability_Rogue_BloodyEye",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_bloodyeye.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 20% chance to grant you Blood Rush. Can only occur once every 5 sec.Blood RushIncreases your haste by 20% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680680,
+   "name": "Atherann's Anguish",
+   "icon": "Interface\\Icons\\_BloodPlague_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_bloodplague_red.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a hemoplague upon the target area, accumulating 30% of the damage you deal to affected enemies for 10 seconds, and then exploding for that amount of Shadow damage.Damage caused by this ability cannot critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 680745,
+   "name": "Agonizing Pain",
+   "icon": "Interface\\Icons\\warlock_bloodstone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warlock_bloodstone.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by your Atherann's Anguish now causes enemies hit to bleed, dealing 1405 + 100% shadow SP Shadow damage over 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 504103,
+   "name": "The Council Assembled",
+   "icon": "Interface\\icons\\uico_blood_spell_06_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_blood_spell_06_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Atherann's Anguish now costs -25 less Rage.Taldaram's Torment now increases the damage of your next Valanar's Vengeance or Keleseth's Calamity by 3% per tick for 10 seconds, stacking 5 times.Valanar's Vengeance and Keleseth's Calamity now reduce the cooldown of Malediction by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704166,
+   "name": "Vitality",
+   "icon": "Interface\\Icons\\inv_expulsom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_expulsom.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Stamina while in Eternal Curse by an additional 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 806421,
+   "name": "Essence Harvester",
+   "icon": "Interface\\Icons\\spell_animarevendreth_debuff",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_animarevendreth_debuff.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Being struck by an enemy while below 35% health instantly resets the cooldown of your Vampiric Fang and grants you Wretched.Can only occur once per minute.WretchedGenerates 10 Rage and 1 stack of Thirst every 1 sec for 10 seconds. Vampiric Fang removes this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 553267,
+   "name": "Bloodsurge",
+   "icon": "Interface\\Icons\\_SkullCurse2_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_skullcurse2_red.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Requires Mortal FormEnter a bloodsurge, enraging you and increasing your Shadow damage dealt and your spell critical strike chance by 20% for 20 seconds.At the end of the duration, or whenever you trigger Accursed Form, gain Bloodchaser instead.BloodchaserEnrage, increasing your Physical Damage dealt by 20% for 30 secondsWhile active, Bloodfang Bite now launches 1 Blood Shard, dealing 18 + 15% AP + 35% SP Shadow Damage to your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 704627,
+   "name": "Heightened Reflexes",
+   "icon": "Interface\\Icons\\inv_skinning_80_coarsefur",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_skinning_80_coarsefur.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your chance to dodge by 4% and your expertise by 5.",
+   "altSpellIds": [
+    704628
+   ],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 805035,
+   "name": "Infected Blood",
+   "icon": "Interface\\Icons\\spell_yorsahj_bloodboil_orangeoil",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_yorsahj_bloodboil_orangeoil.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now reduces the enemy's movement speed by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681304,
+   "name": "Hemostasis",
+   "icon": "Interface\\icons\\nhi_bloodvision_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodvision_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Trap an enemy in a blood orb, horrifying them in place for 4 seconds.Reactivating this ability within 4 seconds, instantly pops the Hemostasis, dealing 137 + 43% AP + 103% shadow SP Shadow damage and reducing their healing received by -60% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807774,
+   "name": "Night Stalker",
+   "icon": "Interface\\Icons\\inv_misc_eye_04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_eye_04.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "All damage and healing done is increased by 5% at night.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704635,
+   "name": "Bloodbender",
+   "icon": "Interface\\icons\\nhi_handsofblood_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_handsofblood_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Offerings by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802576,
+   "name": "Lifedrinker",
+   "icon": "Interface\\icons\\nhi_blood_slash_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blood_slash_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of your Vampiric Fang by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704644,
+   "name": "Dark Frenzy",
+   "icon": "Interface\\Icons\\_Warlock_PlaieFuneste1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_warlock_plaiefuneste1.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, while a Cursed Form is active, your global cooldowns are reduced by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 504241,
+   "name": "Rage",
+   "icon": "Interface\\Icons\\inv_artifact_corruptedbloodofzakajz",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_artifact_corruptedbloodofzakajz.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell damage by 15% of your attack power and the damage dealt by Reave by 10%.",
+   "altSpellIds": [
+    504895
+   ],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 806212,
+   "name": "Aortic Assault",
+   "icon": "Interface\\Icons\\achievement_moguraid_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_moguraid_06.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Extend the duration of your active Cursed Form by 3 sec and strike nearby enemies every 1 sec for 3 seconds, each strike causing 20 + 12% AP Physical damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 523727,
+   "name": "Crimson Expedition",
+   "icon": "Interface\\Icons\\Ability_CriticalStrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_criticalstrike.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of your Bloodbolt, Blood Shards, and Aortic Assault by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 560259,
+   "name": "Vampyr Lord",
+   "icon": "Interface\\Icons\\spell_shadow_improvedvampiricembrace",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_improvedvampiricembrace.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by your Animated Blood by 35%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 504116,
+   "name": "Fang Over Fang",
+   "icon": "Interface\\Icons\\inv_misc_monsterfang_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterfang_02.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Bloodfang Bite now has a 20% chance to reset the cooldown of Reave.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 706619,
+   "name": "Enthraller",
+   "icon": "Interface\\Icons\\ability_rogue_deadliness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_deadliness.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Valanar's Vengeance and Keleseth's Calamity by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 681190,
+   "name": "Endure the Curse",
+   "icon": "Interface\\Icons\\inv_sulfurelemental_blood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sulfurelemental_blood.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Reduce all damage taken by -30% for 10 seconds.While active, taking damage that would reduce your health below 10% will instantly heal you for 30% of your maximum health. Can only occur once.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 681403,
+   "name": "Infuse",
+   "icon": "Interface\\icons\\nhi_shadowraise_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowraise_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Accumulates 10% of all damage dealt to the target and unleashes it after 10 seconds, dealing Shadow damage and absorbing healing done to the target equal to the damage done for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 706256,
+   "name": "Blood Redistribution",
+   "icon": "Interface\\Icons\\spell_druid_massentanglement_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_massentanglement_nightmare.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the maximum health restored by Fleshcraft by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 681336,
+   "name": "Raging Hunger",
+   "icon": "Interface\\Icons\\Spell_Holy_Silence",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_silence.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering Pooled Vitality now also generates 3 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 806274,
+   "name": "Aortic Aegis",
+   "icon": "Interface\\Icons\\ability_animusorbs",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_animusorbs.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Blood Veil now applies to the party members of the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 806049,
+   "name": "Sovereignty",
+   "icon": "Interface\\Icons\\_Seed_GraineDeCorruption",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_seed_grainedecorruption.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Crimson Tide now grants you Sovereignty.SovereigntyReduces the cost of your next Bloodbolt within 12 seconds by -10% and causes it to strike 1 additional nearby enemy for each target damaged, stacking up to 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 680732,
+   "name": "Dark Essence",
+   "icon": "Interface\\Icons\\ability_deathwing_bloodcorruption_earth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_bloodcorruption_earth.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Cursed Form abilities or Bloodbolt will now heal allies affected by Blood Rituals for 114 + 10% healing every 1 sec for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 704633,
+   "name": "Flesh Foundry",
+   "icon": "Interface\\Icons\\achievement_raid_hall_of_flesh",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raid_hall_of_flesh.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your critical strikes now reduce the cooldown of Fleshcraft and the duration of Sated on the target by -4 sec.In addition, increases your critical strike rating by 15% of your Spirit.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 807490,
+   "name": "Organ Orbs",
+   "icon": "Interface\\Icons\\Spell_Shadow_SoulGem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_soulgem.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each stack of Pooled Vitality now increases your Spirit by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 706598,
+   "name": "Gift of Lana'thel",
+   "icon": "Interface\\Icons\\lanathel2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/lanathel2.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Become blessed by Lana'thel, increasing your spell power by 25% of your Spirit and your hit rating by 4% of your Spirit.",
+   "altSpellIds": [
+    707864
+   ],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 803681,
+   "name": "Hemal Excision",
+   "icon": "Interface\\icons\\nhi_blood_blade_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blood_blade_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Cut into an ally's vital essence, siphoning all curse effects from them. You may reactivate this ability again within 10 seconds to place these curse effects on an enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 504275,
+   "name": "Vampyr's Kiss",
+   "icon": "Interface\\icons\\nhi_kiss_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_kiss_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Curse an enemy, causing them to bleed for 174 Shadow damage over 30 seconds.All periodic damage dealt to an enemy affected by Vampyr's Kiss is replicated on them equal to 25% of the value.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 680730,
+   "name": "Dissipation",
+   "icon": "Interface\\Icons\\inv_artifact_corruptedbloodofzakajz",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_artifact_corruptedbloodofzakajz.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Fleshcraft and the duration of the Sated debuff by -60 sec.",
+   "altSpellIds": [
+    681491
+   ],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 680731,
+   "name": "Black Heart",
+   "icon": "Interface\\Icons\\spell_misc_hearty_04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_misc_hearty_04.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Vampyr's Kiss now regenerates 20% of your maximum Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 504282,
+   "name": "Crimson Tide",
+   "icon": "Interface\\icons\\nhi_blood_slash_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blood_slash_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormCreate a pool of blood beneath up to 10 enemies within 10 yds of you, causing them to bleed for 165 + 140% SP Shadow damage over 15 seconds.Empowered: Radius increased by 5 yds and costs -100% less Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802315,
+   "name": "Blood Parasites",
+   "icon": "Interface\\Icons\\ability_mount_bloodtick_red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mount_bloodtick_red.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Taldaram's Torment now generates 3 additional Rage per tick and increases spell critical strike chance against the target by 3% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704659,
+   "name": "Night Hunter",
+   "icon": "Interface\\Icons\\spell_shadow_nethercloak",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_nethercloak.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Veinburst now has a 40% chance to not trigger a cooldown when cast.Your Bloodbolt now has a 40% chance to refund half of its Rage cost when cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 680695,
+   "name": "Lingering Essence",
+   "icon": "Interface\\Icons\\inv_misc_greateressence",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_greateressence.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage and healing done now has a 50% chance to reduce the cooldown of Vampyr's Kiss by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 681077,
+   "name": "Arterial Bind",
+   "icon": "Interface\\Icons\\_EnslaveSpell_Blood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_enslavespell_blood.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Place a pool of blood on the ground, instantly silencing all enemies for 4 seconds and healing allies for 203 + 33% healing every 1 sec for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 800780,
+   "name": "Blood Craving",
+   "icon": "Interface\\Icons\\spell_shadow_lifedrain",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_lifedrain.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormYou crave blood for 12 seconds, for the duration you cannot be interrupted or silenced, and you regain 5% of your maximum health and 15% of your missing Rage every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 560249,
+   "name": "Keleseth's Calamity",
+   "icon": "Interface\\Icons\\ability_revendreth_paladin",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_paladin.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormBend blood in an area, dealing 177 + 69% shadow SP Shadow damage to enemies.Each stack of Thirst reduces the cast time of this ability and increases its damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 806944,
+   "name": "Cardiac Arrest",
+   "icon": "Interface\\icons\\nhi_bloodeye_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodeye_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Valanar's Vengeance now deals an additional 50% of its initial damage dealt over 10 seconds, healing you for 50% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 504071,
+   "name": "Torture",
+   "icon": "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_offhand_1h_artifactskulloferedar_d_05.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the leech of Vampiric Feast by 50%.Consuming at least 9 stacks of Thirst with Vampiric Fang now extends the duration of Transgression by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 800781,
+   "name": "Dark Liturgy",
+   "icon": "Interface\\Icons\\sanctum_features_animadiversion_revendreth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sanctum_features_animadiversion_revendreth.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormForm a blood bond, healing a friendly target for 77 + 35% SP + 25% Spirit and applying Blood Rituals to them, bouncing to up to 10 nearby allies, healing for less for each target struck.Blood RitualsCauses Bloodmoon Blast to heal marked allies for 178 + 7% healing + 8.5% Stamina.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 680675,
+   "name": "Adrenaline Boost",
+   "icon": "Interface\\Icons\\Spell_Holy_SealOfSacrifice",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_sealofsacrifice.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of abilities that require Cursed Form on enemies above 75% or below 35% health by 20%.In addition, melee critical strikes now have a 50% chance to make your next Dark Liturgy or Bloodmoon Blast instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 680823,
+   "name": "Spice of Life",
+   "icon": "Interface\\Icons\\Ability_Rogue_BloodyEye",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_bloodyeye.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your periodic damage and healing now has a 10% chance to grant a stack of Pooled Vitality.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 706603,
+   "name": "Consolidation",
+   "icon": "Interface\\Icons\\Spell_Shadow_FelMending",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_felmending.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your haste by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 804805,
+   "name": "Gorge",
+   "icon": "Interface\\Icons\\sha_ability_rogue_sturdyrecuperate_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_ability_rogue_sturdyrecuperate_nightmare.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Instantly gain 10 stacks of Pooled Vitality every 5 sec for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804807,
+   "name": "Dark Blood",
+   "icon": "Interface\\Icons\\Spell_Shadow_DemonicFortitude",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_demonicfortitude.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of your abilities that require Cursed Form and increases the healing done by Blood Rituals by -25%.",
+   "altSpellIds": [
+    807919
+   ],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 680733,
+   "name": "Bloodcraft",
+   "icon": "Interface\\Icons\\ability_skeer_bloodletting",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skeer_bloodletting.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your damage dealt by Darkfallen Lament now applies Bloodcraft to affected enemies, reducing damage dealt by -2% for 5 seconds, stacking 4 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 505188,
+   "name": "Sanguine Essence",
+   "icon": "Interface\\Icons\\spell_animarevendreth_orb",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_animarevendreth_orb.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Transforms your Blood Curse into Sanguine Essence.Sanguine Essence (Cursed Form)Enter a unique Cursed Form that does not disable Mortal Form abilties, coalescing a blood orb that will float beside you.While active, you replicate 20% of healing or damage done by Sanguine Mend and Bloodmoon Blast on the target every 1 sec for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 680685,
+   "name": "Heart Rupturer",
+   "icon": "Interface\\Icons\\spell_shadow_lifedrain",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_lifedrain.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Claw Sweep, Sanguine Rupture, Ravenous Strike and Bloodmoon Blast by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 680828,
+   "name": "Darkfallen Lament",
+   "icon": "Interface\\Icons\\ability_venthyr_doorofshadows",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_venthyr_doorofshadows.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Chant a sinister ritual, healing up to 12 allies affected by Blood Rituals for 648 + 80% healing over 8 seconds and leeching 684 + 800% healing health from enemies within 10 yds over 8 seconds.While active, you are immune to silence and interrupt effects, but cannot move.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 800776,
+   "name": "Malediction",
+   "icon": "Interface\\Icons\\_SoulHarvest2__Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_soulharvest2__red.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Condemn an enemy, dealing 248 + 77.33% shadow SP Shadow damage over 12 seconds and increasing the damage they take from your next 5 direct damage spells by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 681026,
+   "name": "Vitality For Later",
+   "icon": "Interface\\icons\\nhi_bloodsacrifice_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodsacrifice_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Consuming Pooled Vitality now heals up to 10 allies within 30 yds for 176 + 25% SP + 50% Spirit, scaling with Spirit and healing power.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 804599,
+   "name": "Everhungry",
+   "icon": "Interface\\Icons\\inv_misc_food_legion_heartyfeast",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_food_legion_heartyfeast.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct critical strikes now increase your haste by 10% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504627,
+   "name": "Blood Bond",
+   "icon": "Interface\\icons\\nhi_bloodsacrifice_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodsacrifice_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Bond yourself to an ally for 30 minutes, causing direct damage taken by the ally to generate 1 Rage and 3% base health and redirect their threat generated to you.In addition, while out of combat, you and your bonded ally have 30% increased movement speed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704649,
+   "name": "Dark Curse",
+   "icon": "Interface\\Icons\\Ability_Racial_Cannibalize",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_cannibalize.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance by 3%.",
+   "altSpellIds": [
+    560252
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500124,
+   "name": "Night Hunter's Howl",
+   "icon": "Interface\\Icons\\achievement_raid_revendrethraid_huntsmangargon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raid_revendrethraid_huntsmangargon.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Howl into the souls of nearby enemies, dealing 71 + 28.5% AP Shadow damage and slowing their movement speed by -60% for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 706617,
+   "name": "Life Scent",
+   "icon": "Interface\\Icons\\Ability_Rogue_Garrote",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_garrote.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your stealth detection significantly.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561196,
+   "name": "Blood Constructor",
+   "icon": "Interface\\Icons\\Spell_Shadow_CorpseExplode",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_corpseexplode.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Animated Blood by 1 sec per stack of Thirst.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 563736,
+   "name": "Night Feast",
+   "icon": "Interface\\Icons\\ability_ironmaidens_maraksbloodcalling",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_maraksbloodcalling.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each point of Rage now increases the damage of Bloodbolt by 1%, but its Rage cost is increased by 10.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 681427,
+   "name": "Waves of Blood",
+   "icon": "Interface\\Icons\\inv_misc_boilingblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_boilingblood.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each tick of Crimson Tide now has a 10% chance to heal a nearby ally for 25% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 804207,
+   "name": "Wicked Howl",
+   "icon": "Interface\\icons\\custom_T_BloodMaw_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_bloodmaw_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Let loose a wicked howl, increasing your maximum health by 30% for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704642,
+   "name": "Atherann's Wickedness",
+   "icon": "Interface\\Icons\\Spell_Shadow_DestructiveSoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_destructivesoul.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Shadow damage dealt by 4% and increases your hit chance by 3%.",
+   "altSpellIds": [
+    707865
+   ],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 300226,
+   "name": "Nightmare",
+   "icon": "Interface\\Icons\\_DeathCoilV2_Blood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_deathcoilv2_blood.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While above 50% maximum health, abilities that cost Rage now consume 2% of your maximum health to damage or heal your target for an additional 10% of the value.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804199,
+   "name": "Blood Moon",
+   "icon": "Interface\\Icons\\ability_deathwing_bloodcorruption_earth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_bloodcorruption_earth.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Animated Blood now spawns an additional amalgam.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504710,
+   "name": "Accursed Form",
+   "icon": "Interface\\Icons\\achievement_dungeon_hallsofattonement_echelon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_hallsofattonement_echelon.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Transforms your Blood Curse into Accursed Form.Accursed Form (Cursed Form)Embrace your demonic curse for 30 seconds, entering an improved Cursed Form, increasing your attack power by 50% of your Agility and causing your melee attacks to reduce all healing done to the target by -20% for 10 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 570746,
+   "name": "Bloodguard",
+   "icon": "Interface\\Icons\\_MonkSpecialAttack_DodgeBloodElf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_monkspecialattack_dodgebloodelf.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Blood Pact by 4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 801074,
+   "name": "Scarlet Delirium",
+   "icon": "Interface\\icons\\nhi_blooddrop_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blooddrop_(2)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Requires Mortal FormFlood the minds of up to 5 nearby enemies with visions of unraveling flesh, fearing them for 40 seconds (8 sec versus players) while draining their life essence, siphoning 8 + 15% SP health every 3 sec.Damage caused may interrupt the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704660,
+   "name": "No Mercy",
+   "icon": "Interface\\icons\\INV_Ascend_Hunting_90",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_hunting_90.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows your Thick Pelt to affect an additional hit.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 806099,
+   "name": "Aneurysm",
+   "icon": "Interface\\Icons\\spell_argus_psychic_scarring",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_argus_psychic_scarring.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Counter the enemy's spellcast, preventing any spell from that school of magic from being cast for 4 seconds. Successfully interrupting an enemy heals you for 5% of your maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 801952,
+   "name": "Fleshcraft",
+   "icon": "Interface\\icons\\nhi_bloodtear_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodtear_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Mend blood and bone, healing an ally for 50% of their maximum health and applies Sated.SatedCannot be affected by Fleshcraft for 3 minutes.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800785,
+   "name": "Sacrificial Rite",
+   "icon": "Interface\\icons\\nhi_shadowtentacle_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowtentacle_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormInvoke a dark ritual, increasing your haste by 20% for 15 seconds.While active, attackers are afflicted with Cursed Blood. Can only occur once per sec.At the end of the duration, your healing done is increased by 15% and you are healed for 795 + 150% SP over 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 504285,
+   "name": "Alacrity",
+   "icon": "Interface\\icons\\5_run_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_run_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases all primary stats by 4%.",
+   "altSpellIds": [
+    504893
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804811,
+   "name": "Monstrous Hunger",
+   "icon": "Interface\\Icons\\achievement_dungeon_sanguinedepths_tarvold",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_sanguinedepths_tarvold.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Enrage for 10 seconds, causing the next 6 Bloodfang Bites to have a -50% reduced global cooldown and cost and to trigger Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 801959,
+   "name": "Eyes In The Night",
+   "icon": "Interface\\Icons\\sha_spell_shadow_shadesofdarkness_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_spell_shadow_shadesofdarkness_nightmare.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allies within 20 yds are protected by Shadow Colony, giving them a 40% chance to trigger a Call of the Darkwing when they take direct damage. Can only occur once every 5 sec.If allies have less health than you when this occurs, generate a large amount of threat against the enemy that triggered it.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 804197,
+   "name": "Rotclaw",
+   "icon": "Interface\\icons\\5_clawstrike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_clawstrike_border.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 6 sec rechargeRavage all nearby enemies, dealing 28 + 10% AP Shadow damage, generating Rage and infecting their wounds, causing them to bleed for 24 + 46% AP Shadow damage over 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 706683,
+   "name": "Festering Maw",
+   "icon": "Interface\\icons\\custom_fishbite_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_fishbite_border.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Healing with Bite Wound now reduces the cooldown of Lunge by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 704624,
+   "name": "Infection",
+   "icon": "Interface\\Icons\\inv_misc_monsterclaw_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterclaw_06.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Auto attacking a bleeding target will now infect the wound, increasing their chance to be critically struck from you by 1% for 6 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 300585,
+   "name": "Enduring",
+   "icon": "Interface\\Icons\\Spell_Shadow_PainAndSuffering",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_painandsuffering.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Bloodbolt by 25%, plus an additional 25% while below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 572783,
+   "name": "Iron Claws",
+   "icon": "Interface\\Icons\\spell_druid_malfurionstenacity",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_malfurionstenacity.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows Rotclaw's periodic effect to stack up 2 additional times for 50% longer duration and cause you to ignore 3% of the target's armor per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 500012,
+   "name": "Petrified Legions",
+   "icon": "Interface\\Icons\\inv_misc_reforgedarchstone_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_reforgedarchstone_01.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Physical damage you deal or take now has a 10% chance to trigger a Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 800782,
+   "name": "Blood Howl",
+   "icon": "Interface\\icons\\nhi_nightmarehowl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_nightmarehowl_border.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Taunts nearby enemies within 10 yds, forcing them to attack you for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 801963,
+   "name": "Battleweaver",
+   "icon": "Interface\\Icons\\warlock_charredremains",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warlock_charredremains.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Cursed Form abilities now has a 50% chance to generate 1 Blood Shard for 10 minutes, up to 8.Dealing damage with Bloodbolt will launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 560001,
+   "name": "Eternal Presence",
+   "icon": "Interface\\Icons\\inv_misc_trinket6oih_wolf1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_trinket6oih_wolf1.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.In addition, you now gain attack power equal to 15% of the damage taken for 10 seconds. Can only occur once every 10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 504260,
+   "name": "Veinburst",
+   "icon": "Interface\\Icons\\ability_ironmaidens_bloodritual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_bloodritual.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormBlast an enemy, dealing 123 + 25% AP + 85% shadow SP Shadow damage.Deals 25% increased damage to bleeding targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 704115,
+   "name": "Clotting",
+   "icon": "Interface\\Icons\\inv_hand_1h_pvpdraenors2_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hand_1h_pvpdraenors2_d_01.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "At the end of Aortic Assault's duration, all enemies in a 10 yd frontal cone suffer 600 + 50% AP Physical damage.Damage dealt by this effect is increased by 25% against bleeding targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 560074,
+   "name": "Veins of Vengeance",
+   "icon": "Interface\\Icons\\ability_rogue_sanguinaryvein",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_sanguinaryvein.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your chance to resist curse effects by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706247,
+   "name": "Darkcasting",
+   "icon": "Interface\\Icons\\_DevouringShadow_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_devouringshadow_red.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with abilities now spawn a Blood Orb near you for 15 seconds.Blood Orb (Spawn)When you run over this, restore 3% of your missing health and 5 Rage and gain a stack of Darkcasting for 1 minute, stacking 10 times.Darkcasting (Buff)Gaining a stack reduces the cooldown of Animated Blood by 1 sec and causes your next Animated Blood to spawn 1 blood worm to attack your enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 560315,
+   "name": "Valanar's Vengeance",
+   "icon": "Interface\\Icons\\ability_deathknight_necroticaura",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_necroticaura.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormLaunch a powerful blood bolt at an enemy, dealing 188 + 127.75% SP Shadow damage.Each stack of Thirst reduces the cast time of this ability and increases its damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 524907,
+   "name": "Hemoglobe",
+   "icon": "Interface\\icons\\custom_T_BloodEye_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_bloodeye_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Coalesce a powerful sanguine orb above you, healing up to 12 allies within 20 yds for 4247 + 84.38% healing + 337.5% Spirit + 262.5% Stamina over 15 seconds.Generates 2 stacks of Pooled Vitality, and 150 Rage every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504100,
+   "name": "Excess Blood",
+   "icon": "Interface\\Icons\\sha_inv_misc_slime_01_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_inv_misc_slime_01_nightmare.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your healing done now has a 10% chance to heal the target for an additional 240 + 3% healing over 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 800766,
+   "name": "Enraging Howls",
+   "icon": "Interface\\icons\\custom_08_Death_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_08_death_border.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Howl spells now increases the damage dealt and reduces damage taken by nearby party members by 5% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 524865,
+   "name": "Final Embrace",
+   "icon": "Interface\\Icons\\nhi_bloodmaw_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodmaw_border.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Mortal FormGorge on blood magic, entering a dramatically improved Cursed Form for 20 seconds, transforming your Bloodfang Bite into Crimson Maw, but draining your health over time.While active, every 1 sec you curse enemies within 8 yds, applying Hematoma for 6 seconds.Hematoma (Shadow Damage)Deals 55 + 15% shadow SP + 10% AP Shadow Damage and increases the damage the target takes from subsequent applications of Hematoma by 3%, stacking 10 times. Generates Rage based on damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 680661,
+   "name": "One Man's Curse...",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_BloodDrop_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_blooddrop_border.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Removes the health cost of Accursed Form and entering it now instantly restores 15% of your maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 572855,
+   "name": "Hemoburst",
+   "icon": "Interface\\icons\\nhi_bloodbolt_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodbolt_border.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Requires Mortal FormUnleash a powerful burst of blood at an enemy, dealing 1480 + 65% AP + 50% SP Shadow damage. This ability is guaranteed to critically strike against bleeding targets.Extends the duration of your next Cursed Form by 5 sec for 30 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 504758,
+   "name": "Hematoma",
+   "icon": "Interface\\Icons\\Spell_Shadow_Possession",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_possession.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Bloodbolt now heals for an additional 20% of the damage dealt.",
+   "altSpellIds": [
+    504896
+   ],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 504292,
+   "name": "Mortal Wounds",
+   "icon": "Interface\\Icons\\ability_deathwing_bloodcorruption_death",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_bloodcorruption_death.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your direct harmful critical strikes with spells and abilities now cause the target to bleed for 306 + 6% AP + 30% SP over 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560535,
+   "name": "Dark Sigil",
+   "icon": "Interface\\Icons\\_HearthStoneDark_DeathKnight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_hearthstonedark_deathknight.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, you now heal for 15% of all critical damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 804602,
+   "name": "Crimson Feast",
+   "icon": "Interface\\icons\\nhi_blood_grawl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blood_grawl_border.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 5 second you remain in a Cursed Form now reduces the cooldown of your Bloodsurge by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 300957,
+   "name": "Dark Presence",
+   "icon": "Interface\\Icons\\sha_ability_rogue_envelopingshadows_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_ability_rogue_envelopingshadows_nightmare.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your spell haste by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 680716,
+   "name": "Dominion of Blood",
+   "icon": "Interface\\Icons\\Achievement_Zone_BloodmystIsle_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_bloodmystisle_01.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Vampiric Fang now heals you for an additional 50% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 801955,
+   "name": "Blood Pact",
+   "icon": "Interface\\Icons\\ability_xavius_darkeningsoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_xavius_darkeningsoul.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Invoke a blood pact, exchanging health for enhanced reflexes, increasing your chance to dodge and reducing the chance for ranged attacks to hit you by 50% for 12 seconds.While active you can dodge or parry while casting.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504728,
+   "name": "Transgression",
+   "icon": "Interface\\Icons\\epic_rpg_icon_pack_blood_0002s_0000_foreground_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_blood_0002s_0000_foreground_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Transforms your Blood Curse into Transgression.Transgression (Cursed Form)Enter a unique Cursed Form for 30 seconds that does not disable the use of Mortal Form abilities and casts a free Vampiric Fang on your target.While active, direct spell damage triggers a Vampiric Feast, dealing 20% additional Shadow damage to enemies, healing you equal to 50% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 804858,
+   "name": "Blood Trails",
+   "icon": "Interface\\icons\\uico_blood_spell_07_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_blood_spell_07_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Periodic damage and healing now causes targets to spill a pool of blood beneath them.Allies in a Cursed Form who move through the pools of blood gain Trail of Blood for 6 seconds.Trail of BloodMovement speed cannot be reduced below 80%. Movement speed increased by 20%. Damage dealt increased by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 572800,
+   "name": "Bloody Claws",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_BloodTap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_bloodtap.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now generate 20% increased Rage from damage dealt and critical strikes with auto attacks now reduces the cooldown of Animated Blood, Blood Veil, and Blood Pact by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 804223,
+   "name": "Blood Scent",
+   "icon": "Interface\\Icons\\Ability_Physical_Taunt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_physical_taunt.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While in Accursed Form, you now deal 15% increased damage to targets below 35% maximum health.Dealing direct damage to enemies below 35% maximum health now leeches health equal to 10% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 575335,
+   "name": "Blood Plague",
+   "icon": "Interface\\Icons\\spell_shadow_creepingplague",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_creepingplague.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance and critical damage of Ravenous Strike and Claw Sweep by 10% against Diseased targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 560479,
+   "name": "Appetite for Blood",
+   "icon": "Interface\\Icons\\Ability_BullRush",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_bullrush.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Bloodfang Bite and Claw Sweep by 20% against Humanoids and Beasts.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 504290,
+   "name": "Packleader",
+   "icon": "Interface\\Icons\\_WorgenFlayer_Priest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_worgenflayer_priest.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Howl spell now enrages your summons, increasing their damage dealt by 10% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 804201,
+   "name": "Eternal Hunt",
+   "icon": "Interface\\Icons\\inv_helm_cloth_raidpriest_l_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_cloth_raidpriest_l_01.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum health and reduces the cost of your spells and abilities by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 704626,
+   "name": "Thick Pelt",
+   "icon": "Interface\\Icons\\inv_misc_pelt_15",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_pelt_15.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Physical damage taken now reduces the Physical damage taken from the next attack within 10 seconds by -15 + 20% AP. Can only occur once every 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 806310,
+   "name": "Liquify",
+   "icon": "Interface\\Icons\\ability_ironmaidens_corruptedblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ironmaidens_corruptedblood.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Requires Mortal FormDissipate into a pool of blood, making you immune to damage from spells and attacks, but preventing you from attacking or casting spells and slowing your movement speed by -30% for 6 seconds.Usable while stunned, feared or confused.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560261,
+   "name": "Darkfallen's Embrace",
+   "icon": "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_2h_artifactdeadwind_d_06.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell haste by 3% and increases the range of your Sanguine spells and Bloodbolt by 5 yds.",
+   "altSpellIds": [
+    561348
+   ],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 807544,
+   "name": "The Cup Runneth Over",
+   "icon": "Interface\\Icons\\INV_Misc_Cauldron_Fire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_cauldron_fire.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Bloodmoon Blast, Taldaram's Torment and Bloodbolt by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 704636,
+   "name": "Blood Lord",
+   "icon": "Interface\\Icons\\achievement_boss_kael'thassunstrider_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_kael'thassunstrider_01.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Grants your Bloodsore a -15% chance to provide its benefits without being consumed.",
+   "altSpellIds": [
+    707866
+   ],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 806210,
+   "name": "Terrorizer",
+   "icon": "Interface\\Icons\\Ability_Racial_BloodRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_bloodrage.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Veinburst, Bloodfang Bite, and Claw Sweep on enemies below 35% health by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 705732,
+   "name": "Rabid",
+   "icon": "Interface\\Icons\\Ability_Hunter_Pet_Wolf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_pet_wolf.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Howl spells by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 807491,
+   "name": "Uncanny Speed",
+   "icon": "Interface\\Icons\\Spell_Nature_SpiritWolf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_spiritwolf.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee haste by 5% and your movement speed and mounted movement speed by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 705733,
+   "name": "Dark Hunt",
+   "icon": "Interface\\Icons\\spell_deathknight_bladedarmor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_bladedarmor.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Shadow damage dealt by 10% against bleeding targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 807345,
+   "name": "Gore Barrage",
+   "icon": "Interface\\icons\\custom_T_BloodSpikes_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_bloodspikes_border.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of spells that cost health and Animated Blood by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 504254,
+   "name": "Barely Human",
+   "icon": "Interface\\Icons\\spell_nzinsanity_bloodthirst",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nzinsanity_bloodthirst.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your armor penetration and the damage of spells that cost health by 15%.",
+   "altSpellIds": [
+    504894
+   ],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 300260,
+   "name": "Screech of the Darkwing",
+   "icon": "Interface\\Icons\\Ability_Priest_ShadowyApparition",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_shadowyapparition.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your effects that trigger Call of the Darkwing now trigger an additional Call of the Darkwing.Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 806177,
+   "name": "Shadow Howl",
+   "icon": "Interface\\Icons\\ability_warlock_howlofterror",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_howlofterror.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Let loose a dark howl that inspires your allies, granting immunity to movement impairing effects to all allies for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801960,
+   "name": "Shadow Strength",
+   "icon": "Interface\\Icons\\inv_icon_shadowcouncilorb_purple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_icon_shadowcouncilorb_purple.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Howl spells now deal 65 + 25% Stamina + 25% Agility + 10% AP Shadow damage to all nearby enemies and triggering Call of the Darkwing now reduces the cooldown of all Howl spells by -1 sec.Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 300982,
+   "name": "Cursed Strikes",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_BloodBite_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_bloodbite_border.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Rotclaw and Hypovolemic Shock by 50%.",
+   "altSpellIds": [
+    301363
+   ],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 300986,
+   "name": "Adrenaline",
+   "icon": "Interface\\Icons\\Spell_Nature_Reincarnation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_reincarnation.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the duration of bleed, root, and movement slowing effects against you by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804851,
+   "name": "Sanguine Scripture",
+   "icon": "Interface\\Icons\\_Book6_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book6_red.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Upon exiting Accursed Form, you gain 70% movement speed and spell haste for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 807488,
+   "name": "Inhumane",
+   "icon": "Interface\\Icons\\achievement_boss_breaker_darmac",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_breaker_darmac.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Aortic Assault will now launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 704690,
+   "name": "Killer Instinct",
+   "icon": "Interface\\Icons\\ability_deathknight_roilingblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_roilingblood.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each point of Rage now increases the critical strike chance of Veinburst and Reave by 0.5%, up to a maximum of 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 800490,
+   "name": "Reave",
+   "icon": "Interface\\Icons\\INV_Weapon_Shortblade_40",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_40.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Lacerate an enemy, dealing 125% Weapon Damage plus 26.If the enemy is bleeding, below 35% health, or if you are behind them, deal 100% additional Shadow damage for each condition met.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 804686,
+   "name": "Everlasting Hunt",
+   "icon": "Interface\\Icons\\Ability_Hunter_RapidKilling",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_rapidkilling.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Blood Shards now reduces the cooldown of Veinburst and Reave by -1.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 705742,
+   "name": "Bloody Sacrifice",
+   "icon": "Interface\\Icons\\_SacrificialDagger_Blood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_sacrificialdagger_blood.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your healing received by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801962,
+   "name": "Eternal Resolve",
+   "icon": "Interface\\icons\\skill_icon_skill73_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill73_border.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Activate your eternal resolve for 30 seconds, sending you into a feral frenzy, increasing your melee attack speed, maximum health, and healing received by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 706656,
+   "name": "Crimson Curse",
+   "icon": "Interface\\icons\\novart_physical_ability_(14)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(14)_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your direct damage critical strikes increase the damage the target takes from bleed effects by 30% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300590,
+   "name": "Predator",
+   "icon": "Interface\\Icons\\Spell_Shadow_SummonFelHunter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_summonfelhunter.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Sanguine Mend now heals 9 additional nearby target.Increases the critical damage of Claw Sweep and Sanguine Rupture by 1%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705734,
+   "name": "Transfusion",
+   "icon": "Interface\\icons\\nhi_bloodboil_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_bloodboil_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Swap health percentages with an ally.Increases the lower health percentage of the two to 40%, if below that amount.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504263,
+   "name": "Blood Veil",
+   "icon": "Interface\\Icons\\nhi_blood_drain_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blood_drain_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Create a magical veil around an ally, absorbing 50% of incoming damage, up to a maximum of 511 + 150% Spirit + 75% AP for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800154,
+   "name": "Grim Omen",
+   "icon": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_chilltouch.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Ravenous Strike or Bloodfang Bite, or using Howl spells, now triggers Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 704641,
+   "name": "Blood Prince's Command / Swarm of Flies",
+   "icon": "Interface\\icons\\nhi_foreshadowblood_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_foreshadowblood_border.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Bloodbolt is now guaranteed to critically strike on enemies affected by Taldaram's Torment.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 560072,
+   "name": "Bloodwell Eruption / Cursed Ground",
+   "icon": "Interface\\Icons\\artifactability_blooddeathknight_umbilicuseternus",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/artifactability_blooddeathknight_umbilicuseternus.jpg",
+   "source": "Sanguine",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the radius of Sanguine Rupture by 5 yds and its critical strike chance by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Sanguine"
+   ]
+  },
+  {
+   "spellId": 680657,
+   "name": "Blood Clot / Mucking Around",
+   "icon": "Interface\\Icons\\_EnslaveSpell_Blood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_enslavespell_blood.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Scarlet Delirium now deals 100% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 570735,
+   "name": "Crimson Etchings / Bloodbound Etchings",
+   "icon": "Interface\\Icons\\5_engineerskill03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_engineerskill03_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Removes the health cost of your Blood Shield and Vital Shield.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561278,
+   "name": "Dark Mending / Saturating Sutures",
+   "icon": "Interface\\icons\\nhi_shadowtouch_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_shadowtouch_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Sanguine Mend by -0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504088,
+   "name": "Vampiric Pools / Bloodmoon Power",
+   "icon": "Interface\\Icons\\warlock_bloodstone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warlock_bloodstone.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "When Liquify ends, you now leech 474 + 100% SP health from nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707371,
+   "name": "Visceral Magic / Coagulation",
+   "icon": "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_bloodpresence.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Adds 40% to the Armor contribution from items by Blood Shield.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561227,
+   "name": "Shadow Pact / Blood Pact",
+   "icon": "Interface\\Icons\\Spell_Shadow_BlackPlague",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_blackplague.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Shields by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 807788,
+   "name": "Gore Tome / Leeching Tome",
+   "icon": "Interface\\Icons\\_Book2Motif_KaelThas",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book2motif_kaelthas.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "For the first 5 sec after activating a Cursed Form, your Bloodfang Bite is now guaranteed to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 707622,
+   "name": "Dark Intent / Cruel Intent",
+   "icon": "Interface\\Icons\\ability_deathknight_roilingblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_roilingblood.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you Lunge at an enemy you now heal for 5% of your maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 707435,
+   "name": "Cursed Blood / Corrupted Blood",
+   "icon": "Interface\\Icons\\Spell_Shadow_CurseOfTounges",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_curseoftounges.jpg",
+   "source": "Accursed",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Taldaram's Torment now has a 20% chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Accursed"
+   ]
+  },
+  {
+   "spellId": 707626,
+   "name": "Coated In Blood / Coated In Darkness",
+   "icon": "Interface\\Icons\\ability_racial_pureblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_pureblood.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Blood Pact by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 704662,
+   "name": "Shadows In The Night / Blood Moon",
+   "icon": "Interface\\Icons\\spell_nzinsanity_chasedbyshadows",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nzinsanity_chasedbyshadows.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While above 75% health, your damage taken is reduced by -5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 707624,
+   "name": "Blood Mark / Dark Mark",
+   "icon": "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_bloodpresence.jpg",
+   "source": "Eternal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the Physical damage taken by enemies within 5 yds of you by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Eternal"
+   ]
+  },
+  {
+   "spellId": 680684,
+   "name": "Fleshbending / Invigorated Flesh",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_RottenFlesh_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_rottenflesh_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your critical strikes now increase the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 684331,
+   "name": "Blood-Cursed Weapons / Blood-Cursed Armor",
+   "icon": "Interface\\Icons\\5_assassinskill09_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill09_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Crimson Tide now additionally increases the haste of all party and raid members by 5% for 15 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 806428,
+   "name": "Universal Donor / Acquired Taste",
+   "icon": "Interface\\Icons\\ability_animusdraw",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_animusdraw.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Infuse or Vampyr's Kiss now increases the healing received by all allies by 6% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 681792,
+   "name": "Cursed Blood / Heartbreak",
+   "icon": "Interface\\Icons\\5_assassinskill37_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill37_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the damage dealt and spell power scaling of Bloodbolt, Bloodmoon Blast, and Crimson Tide by 20%.In addition, damage dealt by Bloodbolt now reduces all resistances by 75 and increases the target's Magic damage taken by 2% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 807292,
+   "name": "Sanguine Scion / Crimson Scion",
+   "icon": "Interface\\Icons\\5_assassinskill37_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill37_border.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Sanguine Mend and Bloodbolt by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 520493,
+   "name": "Red Thirst / Purify Blood",
+   "icon": "Interface\\Icons\\ability_revendreth_priest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_priest.jpg",
+   "source": "Fleshweaver",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Enrage allies within 40 yds, increasing haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+   "altSpellIds": [],
+   "sources": [
+    "Fleshweaver"
+   ]
+  },
+  {
+   "spellId": 503134,
+   "name": "Hammer of Kings",
+   "icon": "custom_t_nhance_rpg_icons_holyhammer_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_holyhammer_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 520314,
+   "name": "Heartbreak",
+   "icon": "nhi_blooddrop_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_blooddrop_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 520154,
+   "name": "Suture",
+   "icon": "inv_skinning_80_bloodsoakedbone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_skinning_80_bloodsoakedbone.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 704686,
+   "name": "Teachings of Lana'thel",
+   "icon": "inv_misc_gem_bloodstone_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_gem_bloodstone_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

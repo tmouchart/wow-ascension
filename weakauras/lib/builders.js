@@ -11,13 +11,15 @@ const fs = require('fs');
 const path = require('path');
 const { encodeWA, decodeWA } = require('./wa-codec.js');
 
-const TPL_DIR = path.join(__dirname, 'templates');
 const DIST_DIR = path.join(__dirname, '..', 'dist');
+// Templates via require('*.json') (not fs) so the region builders are isomorphic — a browser bundler
+// (Vite/esbuild) inlines these JSON imports, letting the same builders run client-side. fs stays for
+// buildPackage's dist writing only (Node-side).
 const templates = {
-  bar: JSON.parse(fs.readFileSync(path.join(TPL_DIR, 'bar.json'), 'utf8')),
-  icon: JSON.parse(fs.readFileSync(path.join(TPL_DIR, 'icon.json'), 'utf8')),
-  group: JSON.parse(fs.readFileSync(path.join(TPL_DIR, 'group.json'), 'utf8')),
-  dyngroup: JSON.parse(fs.readFileSync(path.join(TPL_DIR, 'dyngroup.json'), 'utf8')),
+  bar: require('./templates/bar.json'),
+  icon: require('./templates/icon.json'),
+  group: require('./templates/group.json'),
+  dyngroup: require('./templates/dyngroup.json'),
 };
 
 const clone = o => JSON.parse(JSON.stringify(o));
@@ -478,9 +480,14 @@ function makeGroup(groupId, controlledChildren) {
 // ---------- assemble + encode + write (rotates the previous import) ----------
 // combatOnly: load every region (group + all children) only while in combat, so the whole package
 // hides out of combat. Children are independent displays, so the flag must be set on each of them.
-function buildPackage({ name, group, children, combatOnly }) {
+// Pure assembly of the top-level export envelope — no codec, no fs, so it runs client-side too. The
+// browser calls this then awaits its own (CompressionStream) encodeWA; Node's buildPackage encodes + writes.
+function assembleTop({ group, children, combatOnly }) {
   if (combatOnly) for (const r of [group, ...children]) { r.load = r.load || {}; r.load.use_combat = true; }
-  const top = { d: group, c: children, m: 'd', s: '5.20.2', v: 2000 };
+  return { d: group, c: children, m: 'd', s: '5.20.2', v: 2000 };
+}
+function buildPackage({ name, group, children, combatOnly }) {
+  const top = assembleTop({ group, children, combatOnly });
   const str = encodeWA(top);
   const ok = JSON.stringify(decodeWA(str).data) === JSON.stringify(top);
   if (!ok) throw new Error(`[${name}] self round-trip FAILED — refusing to write`);
@@ -503,6 +510,6 @@ module.exports = {
   powerTrigger, healthTrigger, cooldownTrigger, buffTrigger, targetDebuffTrigger, targetHealthTrigger,
   anyBuffTrigger, powerAtLeastTrigger, targetExecuteTrigger,
   chargesSubtext, warnSubtext, glowChanges, subglow, iconBase, cooldownIcon,
-  vGrowLua, makeDynGroup, makeColumn, makeGroup, buildPackage,
+  vGrowLua, makeDynGroup, makeColumn, makeGroup, assembleTop, buildPackage,
   DIST_DIR,
 };

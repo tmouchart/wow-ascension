@@ -1,0 +1,2061 @@
+{
+ "slug": "runemaster",
+ "class": "Runemaster",
+ "classId": "32",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Arcane",
+   "tabId": 11
+  },
+  {
+   "name": "Runic",
+   "tabId": 85
+  },
+  {
+   "name": "Riftblade",
+   "tabId": 86
+  }
+ ],
+ "abilityCount": 144,
+ "abilities": [
+  {
+   "spellId": 805796,
+   "name": "Fists of Power",
+   "icon": "Interface\\Icons\\inv_misc_trinket6oog_stonefist2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_trinket6oog_stonefist2.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Engrave your fists for 15 seconds, causing auto attacks to grant Earthen Fists for 10 seconds, increasing melee haste by 3% and the chance to trigger Weapon Engraving: Earth by 10%, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 800752,
+   "name": "Primordial Salvos",
+   "icon": "Interface\\Icons\\ability_shaman_ascendance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shaman_ascendance.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Unleashing a Glyph now deals an additional 115 + 6% SP damage of the same magic school to all enemies within 8 yds of the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 706671,
+   "name": "Elemental Acuity",
+   "icon": "Interface\\Icons\\spell_shaman_shockinglava",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shaman_shockinglava.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases all Fire, Frost, and Nature damage dealt by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 521219,
+   "name": "Explosive Runes",
+   "icon": "Interface\\icons\\nhi_fireinyourhand_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_fireinyourhand_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Weapon Engraving: Fire now detonates after 2 sec and its critical damage is increased by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 560036,
+   "name": "Runic Tempest",
+   "icon": "Interface\\Icons\\runictempest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/runictempest.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Harness the power of your runic tattoos, resetting the cooldown of Fist of the Ancients and allowing the use of abilities that require Runeshroud and making them able to be cast while moving for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705594,
+   "name": "Frostburn",
+   "icon": "Interface\\icons\\nhi_frost_knife_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_knife_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Removes the cast time of Glacial Rune and Permafrost Rune.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 300582,
+   "name": "Magic Etchings",
+   "icon": "Interface\\Icons\\_RuneSauvagePourpre",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_runesauvagepourpre.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Primordial Blast now reduces the affected target's armor by -4% for 12 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 806984,
+   "name": "Runelord",
+   "icon": "Interface\\Icons\\spell_nature_elementalprecision_2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_elementalprecision_2.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "After activating Zenith, deal 900 + 33% AP Elemental Damage to your target and increase the damage dealt by your Runic Brand and Weapon Engravings by 30% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 520917,
+   "name": "Stone Savant",
+   "icon": "Interface\\icons\\5_sumstonearmy_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_sumstonearmy_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Earthen Fists is active, critical strikes with Weapon Engraving: Earth now causes you to strike twice with your next auto attack.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705540,
+   "name": "Spellblade",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_SwordOfFlame_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_swordofflame_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility and Intellect by 5%.",
+   "altSpellIds": [
+    707878
+   ],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 806543,
+   "name": "Primordial Fury",
+   "icon": "Interface\\icons\\5_mageskill04_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_mageskill04_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your runic tattoos flare up for 15 seconds, causing Runeblade to strike up to 5 additional enemies.For the duration, your Runic Tattoos have 100% increased effectiveness.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 806711,
+   "name": "Elemental Mastery",
+   "icon": "Interface\\icons\\novart_magicspell_(58)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(58)_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Runic Brand now has a 33% chance to transform your Primordial Blast into a random unique elemental version of itself.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705592,
+   "name": "Frozen Earth",
+   "icon": "Interface\\icons\\nhi_frost_staff_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_staff_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Ice Rune and the stun effect from Palm Sigil: Earth by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 520145,
+   "name": "Glyphs of Power",
+   "icon": "Interface\\Icons\\inv_misc_rune_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_rune_03.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your direct damage dealt has a 10% chance to restore 3% of your maximum mana.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705605,
+   "name": "Master Engraver",
+   "icon": "Interface\\Icons\\inv_blacksmithing_greatersharpeningstone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_blacksmithing_greatersharpeningstone.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger your Weapon Engravings by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500250,
+   "name": "Ley Walker",
+   "icon": "interface\\icons\\LeyWalk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/leywalk.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting or reactivating Warpdagger now removes all root and snare effects from you.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 705575,
+   "name": "Turbulence",
+   "icon": "Interface\\icons\\skill_icon_skill79_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill79_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Send out a gust of wind from your weapon that strikes nearby enemies in a 6 yd radius for 200% Weapon Damage as Nature damage every 1 sec for 3 seconds.While active, you leave behind a Turbulent Spiral every 1 sec for 6 seconds.Turbulent Spiral (Damage)Enemies in the area take an additional 97 + 13.5% AP Nature Damage every 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 560039,
+   "name": "Frost Spectre",
+   "icon": "Interface\\icons\\novart_magicspell_(3)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(3)_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance and critical damage of Smolder and Primordial Blast against Frozen targets by 25%.",
+   "altSpellIds": [
+    561350
+   ],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705570,
+   "name": "Unbound Energy",
+   "icon": "Interface\\icons\\custom_T_ScrollofEarth_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_scrollofearth_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 3% and your expertise by 4.",
+   "altSpellIds": [
+    707877
+   ],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 707157,
+   "name": "Stone Petroglyph",
+   "icon": "Interface\\icons\\nhi_earthmask_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_earthmask_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While in Runic Tattoos: Earth, you now heal for 3% of your maximum health every 4 sec and you become immune to knockbacks.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707460,
+   "name": "Earthen Codex",
+   "icon": "Interface\\Icons\\custom_book_10_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_book_10_b_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When you active a Palm Sigil, you are now guaranteed to critically strike for 20% increased critical damage for 10 seconds or your next 3 attacks.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 520755,
+   "name": "Ancient Warrior",
+   "icon": "Interface\\icons\\5_warriorskill14_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warriorskill14_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Fist of the Ancients by -2 sec whenever you use Runeblade or Primordial Blast.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 706523,
+   "name": "Decoder",
+   "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_10",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_magicartifact_10.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Elemental Burst and Runeblade now have a 20% chance to instantly trigger your Weapon Engravings.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705586,
+   "name": "Sigilist",
+   "icon": "Interface\\Icons\\INV_Ascend_runestone_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_runestone_05.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "After using a Palm Sigil, the duration of your crowd control effects is increased by 20%.Reduces the cast time of all Palm Sigils by -0.5 sec and increases the duration of your Palm Sigil buffs by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706674,
+   "name": "Battle Engravings",
+   "icon": "Interface\\icons\\nhi_manaclone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_manaclone_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Removes the cast time from Ley Lock, but reduces its duration by 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 712308,
+   "name": "Leyfrost",
+   "icon": "Interface\\Icons\\nhi_magicstrike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_magicstrike_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Hoarfrost now cause your next spell within 15 seconds to cast as if the target were Frozen.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705619,
+   "name": "Alteration",
+   "icon": "Interface\\Icons\\inv_custom_hearthstone_frost",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_custom_hearthstone_frost.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Runic Tattoos by 25%.",
+   "altSpellIds": [
+    707875
+   ],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705632,
+   "name": "Wizardry",
+   "icon": "Interface\\icons\\nhi_arcanearrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanearrow_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Intellect by 10% and increases the mana gained for each point of Intellect by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 560527,
+   "name": "Runes of Quickness",
+   "icon": "Interface\\icons\\nhi_unholyrune_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_unholyrune_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Glyphic spells is increased by 6 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 500464,
+   "name": "Guarding Rune",
+   "icon": "Interface\\icons\\ever_probe_sprite_296_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ever_probe_sprite_296_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Inscribe a defensive rune beneath you in a 10 yd radius, summoning a barrier that causes allies within the radius to take -40% reduced Magic damage. Lasts 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 706531,
+   "name": "Earth, Wind, and Fire",
+   "icon": "Interface\\Icons\\ability_shaman_ascendance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shaman_ascendance.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Striking at least 5 enemies with Runic Explosion now unleashes Wild Steam.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705609,
+   "name": "Leyborn",
+   "icon": "Interface\\Icons\\achievement_zone_newshadowmoonvalley",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_newshadowmoonvalley.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Marked: Runic Brand now stacks 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 800736,
+   "name": "Runic Tattoos",
+   "icon": "Interface\\Icons\\70_inscription_vantus_rune_azure",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/70_inscription_vantus_rune_azure.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the resource costs of your spells and abilities by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 705581,
+   "name": "Prismatic Flow",
+   "icon": "Interface\\Icons\\Spell_shadow_manafeed",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_manafeed.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Phase Out now increases your movement speed by 40% for 2 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803018,
+   "name": "Fracture",
+   "icon": "Interface\\icons\\nhi_manaspike_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_manaspike_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Strike an enemy with frozen fury, dealing 921 + 100% AP Frost damage and burning 25 + 35% AP of the target's mana.Damage dealt is guaranteed to critically strike against frozen targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705634,
+   "name": "Kirin Tor Agent",
+   "icon": "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_2h_artifactaegwynsstaff_d_06.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Eye of the Beholder now rapidly reduces the coldown of your Rune spells and Phase Out for the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 804060,
+   "name": "Permafrost Rune",
+   "icon": "Interface\\icons\\nhi_icestone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_icestone_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Frozen TargetInscribe a rune of permafrost and unleash it on an enemy, incapacitating them for 40 seconds (10 sec vs players). Damage taken will end the effect. Affected enemies are considered Frozen.Using this while in Runeshroud causes it to incur an -80% reduced cooldown.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807505,
+   "name": "Expert Elementalist",
+   "icon": "Interface\\Icons\\inv_elemental_eternal_shadow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_elemental_eternal_shadow.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Elemental Burst and Glyphic Ruin by 0.5 sec and increases your chance to hit by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 805727,
+   "name": "Arcane Glyph",
+   "icon": "Interface\\Icons\\70_inscription_vantus_rune_suramar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/70_inscription_vantus_rune_suramar.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Elemental Burst or Primordial Blast while Flame Glyph is active now grants you Arcane Glyph.Arcane GlyphUnleash: Deals 276 + 18% arcane SP Arcane Damage to up to 0 enemies near the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 560995,
+   "name": "Concentrated Magic",
+   "icon": "Interface\\icons\\nhi_arcaneburst_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcaneburst_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Spirit by 5% and reduces spell pushback suffered from damaging attacks by 35%.",
+   "altSpellIds": [
+    561351
+   ],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 805726,
+   "name": "Cryomagi",
+   "icon": "Interface\\icons\\nhi_icelaser_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_icelaser_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of Cryobrand by 10 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 806718,
+   "name": "Unbound",
+   "icon": "Interface\\Icons\\inv_azerite_explosion",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_azerite_explosion.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the duration of harmful magic and curse effects on you by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806698,
+   "name": "Eternal Magic",
+   "icon": "Interface\\icons\\novart_magicspell_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(2)_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Primordial Blast by -4 sec and it now refreshes 3 charges of Runeblade.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705613,
+   "name": "Symbols of Power",
+   "icon": "Interface\\icons\\novart_magicspell_(17)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(17)_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Fist of the Ancients while you have Weapon Engraving: Fire active by 15%.",
+   "altSpellIds": [
+    705614
+   ],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705562,
+   "name": "Ley Constitution",
+   "icon": "Interface\\Icons\\spell_shadow_mindtwisting",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_mindtwisting.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Armor contribution from items is increased by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500121,
+   "name": "Eye of the Beholder",
+   "icon": "Interface\\icons\\nhi_arcanevision_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanevision_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell critical strike chance by 25% for 15 seconds.While active, the damage of your Glyphic Ruin and Primordial Blast is increased by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 500287,
+   "name": "Warpdagger",
+   "icon": "Interface\\Icons\\Warpblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warpblade.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Toss an enchanted dagger forward in a line. Upon reactivation, you instantly teleport to the location of the dagger and deal 124 + 44% SP + 20% AP Elemental Damage to nearby enemies.Usable while stealthed.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 567233,
+   "name": "Uncovered Engravings",
+   "icon": "Interface\\Icons\\ability_socererking_arcanemines",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_socererking_arcanemines.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Fist of the Ancients now increases your chance to trigger Weapon Engravings by 20% for 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 300584,
+   "name": "Bursting Pulses",
+   "icon": "Interface\\icons\\novart_magicspell_(57)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(57)_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each weapon enchanted by Weapon Engraving: Earth now reduces the cooldown of Primordial Pulse by -4 sec and increases it's damage by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 806797,
+   "name": "Ancient Teachings",
+   "icon": "Interface\\Icons\\ability_mage_potentspirit",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_potentspirit.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Etching of the Dextrous by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500296,
+   "name": "Power Engraving",
+   "icon": "Interface\\Icons\\ability_deathknight_hungeringruneblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_hungeringruneblade.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Create a Power Engraving beneath you for 20 seconds, granting 20% increased Magic Damage dealt and 20% increased critical strike chance to up to 5 allies standing in the area.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520156,
+   "name": "Glyph God",
+   "icon": "Interface\\Icons\\Ability_Racial_Ultravision",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_ultravision.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Glyphic Overload by -15 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 712325,
+   "name": "Zenith",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicKeeper_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_magickeeper_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "For 6 seconds, your runic tattoos flare up, increasing your chance to trigger your Weapon Engravings by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802631,
+   "name": "Silencing Rune",
+   "icon": "Interface\\Icons\\ability_mage_arcanesurge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_arcanesurge.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Inscribe a rune in a 5 yd radius at target location that activates after 1 sec, silencing all enemies within for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 705551,
+   "name": "Terraglyphs",
+   "icon": "Interface\\icons\\custom_T_ScrollofEarth_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_scrollofearth_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Weapon Engraving: Earth by 4%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 712299,
+   "name": "Runic Brand",
+   "icon": "Interface\\icons\\5_mageskill14_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_mageskill14_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Brand an enemy, dealing 10 + 26% AP Fire damage with each weapon, and marking the enemy for 8 seconds.Marked: Runic BrandYour next Runeblade on the enemy causes a Runic Explosion, dealing an additional 121 + 18.5% AP Spellfire Damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 712326,
+   "name": "Fist of the Ancients",
+   "icon": "Interface\\icons\\skill_icon_skill150_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill150_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Smash an enemy and 1 nearby enemy with your rune-engraved fists, dealing 40 + 40% AP Elemental Damage and triggering your Weapon Engraving.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705550,
+   "name": "Runeslinger",
+   "icon": "Interface\\Icons\\inv_archaeology_70_starlightbeacon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_70_starlightbeacon.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct damage dealt has a 5% chance to increase your spell haste by 20% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 500501,
+   "name": "Genesis",
+   "icon": "Interface\\icons\\novart_magicspell_(60)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(60)_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Apply a runic brand to an enemy for 8 seconds, accumulating 50% of your damage dealt, and unleashing after 8 seconds as Elemental Damage.When this deals damage, it triggers your Weapon Engraving.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 801086,
+   "name": "Convergence",
+   "icon": "Interface\\icons\\nhi_arcaneaid_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcaneaid_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "For 15 seconds, the next 10 Weapon Engravings you trigger will now deal an additional 348 + 30% SP + 20% AP Elemental Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524952,
+   "name": "Manuscription",
+   "icon": "Interface\\Icons\\inv_inscription_80_contract_vulpera",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_80_contract_vulpera.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Send manuscriptions to envelop an enemy and enemies around them, dealing 1620 + 190% SP Arcane damage over 5 seconds.When you cast this ability, you are granted Transcribing for 5 seconds.TranscribingWhile active, your next Thaumaturgy or Glyphic Ruin will now grant you a Chapter of the same school as your active Attunement, causing your next 10 direct spell casts to deal additional school damage to nearby enemies, reduced by 20% for each target hit past the initial.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 801104,
+   "name": "Hoarfrost",
+   "icon": "Interface\\icons\\nhi_iceempower_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_iceempower_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Slash in a frozen fury in front of you, dealing 7 + 33% AP Frost Damage to up to 3 nearby enemies, plus an additional 7 + 33% AP every 3 sec for 21 seconds.Enemies hit by the initial strike are frozen in place for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 807204,
+   "name": "Runic Invocation",
+   "icon": "Interface\\Icons\\INV_Ascend_rune_06_b",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_rune_06_b.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Hoarfrost by 10% and allows its periodic damage to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705572,
+   "name": "Primordial Echoes",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicVortex_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_magicvortex_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your critical strikes dealt with Primordial Blast now have a 40% chance to strike an additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 500270,
+   "name": "Echo Rune",
+   "icon": "Interface\\Icons\\EchoRune",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/echorune.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Mark your current location with an echo rune for 20 seconds.At the end of the duration or upon reactivation, warp back to the marked location and heal for 880 + 150% AP health.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 300944,
+   "name": "Runic Power",
+   "icon": "Interface\\icons\\nhi_arcane_scroll_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcane_scroll_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, Elemental Burst now increase the chance for the target to be critically struck by your spells by 3% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705565,
+   "name": "Waveforged",
+   "icon": "Interface\\icons\\nhi_watersword_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_watersword_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "After Hurricane ends, you may now use abilties that require Runeshroud for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 801103,
+   "name": "Speed Rune",
+   "icon": "Interface\\Icons\\runeofspeed",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/runeofspeed.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Conjure a path of runes in the direction you are facing for 10 seconds, increasing the movement speed of allies by 70%.This effect can persist for a short duration after leaving the runic path.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705564,
+   "name": "Focusing Crystals",
+   "icon": "Interface\\Icons\\Spell_Arcane_Blast",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_arcane_blast.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Magic Damage dealt by 3% and allows 30% of your mana regeneration to continue while in combat.",
+   "altSpellIds": [
+    707879
+   ],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 705546,
+   "name": "Magic Feeder",
+   "icon": "Interface\\Icons\\Ability_Racial_ShadowMeld",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_shadowmeld.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Leyfeed now steals 1 additional magic effect from the target.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560040,
+   "name": "Residual Power",
+   "icon": "Interface\\icons\\novart_magicspell_(17)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(17)_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage replicated by Weapon Engraving: Air by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 801096,
+   "name": "Ley Power",
+   "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_13",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_magicartifact_13.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Divert ley energy into your weapons, drawing power from enemies within 20 yds of you. For each enemy in the radius, your damage dealt deals an additional 10% of the damage as Arcane damage, up to 100%, for 15 seconds.While active, melee attacks and abilities grant you Harnessed Leylines.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 520229,
+   "name": "Granite Resolve",
+   "icon": "Interface\\icons\\nhi_earthtranquility_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_earthtranquility_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Become hard as stone, reducing your Physical damage taken by -30% for 8 seconds.Usable while stunned.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 807172,
+   "name": "Tempo",
+   "icon": "Interface\\Icons\\runeofimpermanence",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/runeofimpermanence.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Runeblade by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705615,
+   "name": "Volcanic Etching",
+   "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_3",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_magicartifact_3.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Weapon Engraving: Fire and Weapon Engraving: Earth by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 521211,
+   "name": "Echoes of Eternity",
+   "icon": "Interface\\Icons\\Mount_elementalfcca06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/mount_elementalfcca06.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Zenith now has 2 charges.Zenith2 Charges, 45 sec rechargeFor 6 seconds, your runic tattoos flare up, increasing your chance to trigger your Weapon Engravings by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 807842,
+   "name": "Glacial Rune",
+   "icon": "Interface\\Icons\\nhi_icespectator_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_icespectator_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Place a rune at the target location that explodes after 1 sec with frigid magic, dealing 128 + 30% SP Frost damage to enemies inside and freezing them in place for 40 seconds (8 sec vs players).Damage caused may interrupt the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804557,
+   "name": "Advanced Magi",
+   "icon": "Interface\\icons\\nhi_icetorch_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_icetorch_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Elemental Burst by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 800758,
+   "name": "Glyphic Destruction",
+   "icon": "Interface\\Icons\\Achievement_Zone_CrystalSong_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_crystalsong_01.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Glyphic Ruin by 100% against Frozen targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 500118,
+   "name": "Frigid Blast",
+   "icon": "Interface\\icons\\skill_icon_skill40_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill40_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Blast an enemy with frigid runic magic, dealing cond(gt(SPFR, SPA), 40+0+SPFR*0.65, 40+0+SPA*0.65) Frost damage and applying Frigid Fusion. Frigid Fusion (Aura)Accumulate 20% of your damage dealt to the target over 6 seconds.After the duration, deal it as Frost Damage to the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 705556,
+   "name": "Primordial Power",
+   "icon": "Interface\\Icons\\spell_mage_overpowered",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_mage_overpowered.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Frigid Fusion by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 804550,
+   "name": "Thaumaturgy",
+   "icon": "Interface\\Icons\\spell_nature_elementalprecision_2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_elementalprecision_2.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Blast an enemy for 67 + 41% arcane SP + 10% AP Arcane damage and unleash your active Glyph effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 801511,
+   "name": "Spellfire Runes",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireRune_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_firerune_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Runeblade now has a 20% chance, and Warpdagger a 100% chance, to reset the cooldown of Smolder, and increase the damage of your next Smolder by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 801087,
+   "name": "Smolder",
+   "icon": "Interface\\icons\\uico_fire_spell_02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_fire_spell_02_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Ignite your blade and strike an enemy, dealing 140% Weapon Damage plus 19 Fire Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705577,
+   "name": "Freezing Codex",
+   "icon": "Interface\\Icons\\item_icecrownringd",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/item_icecrownringd.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Ice Rune by -20 sec and increases the mana cost by 50%, but reduces its range by -10 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 805743,
+   "name": "Steam Conjurer",
+   "icon": "Interface\\icons\\novart_magicspell_(77)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(77)_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Weapon Engraving: Earth now has a 5% chance to cast Wild Steam. Can only occur once every 3 sec.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705636,
+   "name": "Primal Rune",
+   "icon": "Interface\\Icons\\ability_druid_fortifiedbark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_fortifiedbark.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Granite Resolve now reduces damage taken by an additional -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300578,
+   "name": "Primordial Pulse",
+   "icon": "Interface\\Icons\\primordialpulse",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/primordialpulse.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Inscribe an area with runes for 2 seconds, dealing 23 + 30% SP Elemental Damage every 0 sec to up to 5 enemies inside.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 300581,
+   "name": "Leystone Springs",
+   "icon": "Interface\\icons\\nhi_ghostwater_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_ghostwater_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your melee auto attacks now have a 15% chance to restore 49 + 5% AP mana. While Runic Tattoos: Water is active, the mana restored is increased by 200%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 560540,
+   "name": "Leyline Disturbance",
+   "icon": "Interface\\icons\\nhi_arcaneshuriken_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcaneshuriken_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases melee and ranged haste of party and raid members within 100 yds by 10%.Does not stack with similar effects.Additionally, the duration of stun effects on you is reduced by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705621,
+   "name": "Runic Affinity",
+   "icon": "Interface\\Icons\\INV_Misc_Rune_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_rune_05.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Zenith by 6 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706823,
+   "name": "Leyline Magician",
+   "icon": "Interface\\Icons\\spell_arcane_massdispel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_arcane_massdispel.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Primordial Blast now reduces the cooldown of Primordial Pulse by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 645435,
+   "name": "Hurricane",
+   "icon": "Interface\\icons\\skill_icon_skill153_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill153_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Strike an enemy 5 times over 2 seconds, each strike dealing 125% Weapon Damage as Nature Damage, scaling with level.While striking your target, your chance to dodge is increased by 100%, but you cannot use any spells or abilities.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 806704,
+   "name": "Elemental Strikes",
+   "icon": "Interface\\Icons\\Spell_Nature_ElementalPrecision_1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_elementalprecision_1.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance with Fire, Frost, and Nature spells by 3% and your expertise by 4.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 805724,
+   "name": "Phase Rush",
+   "icon": "Interface\\Icons\\ability_socererking_arcaneacceleration",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_socererking_arcaneacceleration.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Thaumaturgy now grants you 25% increased movement speed for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 705627,
+   "name": "Glyph Seeker",
+   "icon": "Interface\\Icons\\inv_pet_wretchedelf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_wretchedelf.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Primordial Blast and Thaumaturgy by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 804232,
+   "name": "Warding Rune",
+   "icon": "Interface\\Icons\\inv_qiraj_jewelglyphed",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_qiraj_jewelglyphed.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Engrave anti-magic runes around you, removing all harmful magic effects and causing harmful magic effects to have no duration when cast on you for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520237,
+   "name": "Blade Rift",
+   "icon": "Interface\\icons\\5_magicresistance_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_magicresistance_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While stealthed, using Warpdagger now increases your Magic Damage dealt by 10% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520054,
+   "name": "Primordialism",
+   "icon": "Interface\\Icons\\Spell_Nature_AstralRecalGroup",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_astralrecalgroup.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 10% for 5 seconds after leaving Runeshroud.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705563,
+   "name": "Shroudwalker",
+   "icon": "Interface\\Icons\\ability_rogue_shroudofconcealment",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_shroudofconcealment.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Warpdagger now incurs no cooldown if used while your Runeshroud is active.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707413,
+   "name": "Elements of Fury",
+   "icon": "Interface\\Icons\\ability_shaman_echooftheelements",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_shaman_echooftheelements.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Palm Sigils now affect 1 additional instance of damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705583,
+   "name": "Runic Breakout",
+   "icon": "Interface\\Icons\\Spell_Shadow_Teleport",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_teleport.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Abilities requiring Runeshroud can now be used for 3 sec and have no cast time after Runeshroud breaks.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705600,
+   "name": "Swift Etching",
+   "icon": "Interface\\Icons\\inv_misc_rune_14",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_rune_14.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "After Hurricane ends, your melee attack speed is increased by 15% and critical strike chance by 10% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 706670,
+   "name": "Elements, Heed My Call!",
+   "icon": "Interface\\Icons\\Spell_Nature_ElementalAbsorption",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_elementalabsorption.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical damage of Smolder, Hurricane, and Hoarfrost by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 705580,
+   "name": "Runic Omen",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicRune_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_magicrune_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 3rd cast of Runeblade now deals 30% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 806737,
+   "name": "Elemental Inscription",
+   "icon": "Interface\\Icons\\_Scroll3_Frostfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_scroll3_frostfire.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Smolder now reduces the cooldown of Primordial Fury by -10 sec and Zenith by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 806795,
+   "name": "Mystical Etchings",
+   "icon": "Interface\\icons\\nhi_arcanestone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanestone_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces all Fire, Nature, Frost, and Arcane damage taken by -8%.",
+   "altSpellIds": [
+    807921
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560992,
+   "name": "Warpmaster",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Archway_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_archway_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Warpdagger by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500671,
+   "name": "Phase Out",
+   "icon": "Interface\\Icons\\ability_mage_greaterinvisibility",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_greaterinvisibility.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Disappear from sight, entering an improved stealth for 6 seconds and applying Runeshroud.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520524,
+   "name": "Brandmaster",
+   "icon": "Interface\\Icons\\INV_Ascend_MagicArtifact_37",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_magicartifact_37.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance with Runic Brand's explosion effect by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 806708,
+   "name": "Graceful",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicInYourHands_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_magicinyourhands_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your haste by 5%.",
+   "altSpellIds": [
+    807922
+   ],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 560050,
+   "name": "Mark of Strength",
+   "icon": "Interface\\Icons\\spell_arcane_rune",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_arcane_rune.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Primordial Blast by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 560053,
+   "name": "Sky and Stone",
+   "icon": "Interface\\Icons\\_StoneTablet_ShamanAir",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_stonetablet_shamanair.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Weapon Engraving: Air and Weapon Engraving: Earth now have a 10% chance to increase the melee attack speed of your next 10 attacks within 10 seconds by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705543,
+   "name": "Forbidden Engraving",
+   "icon": "Interface\\icons\\novart_magicspell_(49)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(49)_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Weapon Engravings by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 705554,
+   "name": "Speedy Attuner",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicSpeed_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_magicspeed_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your movement speed by 8% and reduces the mana cost of your Runic Tattoos by -25%.",
+   "altSpellIds": [
+    707746
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705625,
+   "name": "Flame Glyph",
+   "icon": "Interface\\Icons\\70_inscription_vantus_rune_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/70_inscription_vantus_rune_nightmare.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Using Elemental Burst or Primordial Blast while Frost Glyph is active now grants you a Flame Glyph.Flame GlyphUnleash: Deals 250 + 65% fire SP Fire Damage and an additional 750 + 30% SP Fire Damage over 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 300576,
+   "name": "Arcane Student",
+   "icon": "Interface\\icons\\novart_books_(6)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_books_(6)_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Glyphic Overload is active, your Glyphic Ruin is guaranteed to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 802204,
+   "name": "Scroll of Magic",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ScrollOfMagic_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_scrollofmagic_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleashing a Glyph increases the damage of your Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 520099,
+   "name": "Glyphic Overload",
+   "icon": "Interface\\Icons\\glyphicoverload",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/glyphicoverload.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Instantly generate Frost Glyph, Flame Glyph, and Arcane Glyph on yourself and overload, granting all active Glyphs an additional effect the next time you unleash them on an enemy. Lasts 15 seconds.Usable while stealthed.Overloaded Arcane GlyphDeals 100% increased damage.Overloaded Flame GlyphFlame Glyph now affects 2 additional enemies, and deals an additional 475 + 200% fire SP Fire Damage over 5 seconds.Overloaded Frost GlyphFreeze an enemy in place for 3 seconds. At the end of this duration, their movement speed is reduced by -50% for 5 seconds. Does not break on damage taken.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 520015,
+   "name": "Glyph Master",
+   "icon": "Interface\\icons\\nhi_arcanestone_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanestone_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Scroll of Magic now also increases the critical damage and critical strike chance of Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 801179,
+   "name": "Glyphic Ruin",
+   "icon": "Interface\\Icons\\achievement_raidprimalist_council",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raidprimalist_council.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash your active Glyph effect on an enemy and deal 82 + 100% SP Elemental Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 707654,
+   "name": "Frigid Elements / Cold Elements",
+   "icon": "Interface\\icons\\nhi_magicdevour_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_magicdevour_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell power scaling of Frigid Blast by 50%, but the cast time is increased by 1 sec.Additionally, Frigid Fusion now accumulates 10% more damage on the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 704139,
+   "name": "Harnessing Leylines / Burned Etching",
+   "icon": "Interface\\icons\\novart_magicspell_(25)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(25)_border.jpg",
+   "source": "Arcane",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now gain a stack of Harnessed Leylines every 1 sec for until cancelled. After the duration, the stacks reset.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Arcane"
+   ]
+  },
+  {
+   "spellId": 707653,
+   "name": "Nomad's Scroll / Elemental Secrets",
+   "icon": "Interface\\Icons\\INV_Ascend_scroll_07_b",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_scroll_07_b.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Swapping to Runic Tattoos: Air now instantly dispels 1 movement slowing effect on you.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807376,
+   "name": "Wind Walker / Master of Runes",
+   "icon": "Interface\\Icons\\Spell_Frost_WindWalkOn",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frost_windwalkon.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While Runic Tattoos: Air is active, the cooldown of Rune spells is reduced by 5% every 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800757,
+   "name": "Mind Wrath / Mind Over Matter",
+   "icon": "Interface\\icons\\nhi_corruptionmind_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_corruptionmind_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Ley Lock now interrupts 1 additional enemy near your primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524697,
+   "name": "Flowing Rivers / Wind Surge",
+   "icon": "Interface\\icons\\nhi_waterstrick_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_waterstrick_border.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the chance to trigger Replenishment with Weapon Engravement: Water by 10% and the mana restored by Runic Tattoos: Water by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 806993,
+   "name": "Devastating Flames / Granite Shield",
+   "icon": "Interface\\Icons\\spell_burningsoul",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_burningsoul.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt of Weapon Engraving: Fire by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 800756,
+   "name": "Protective Warding / Runebound Surge",
+   "icon": "Interface\\Icons\\ability_bastion_mage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_bastion_mage.jpg",
+   "source": "Runic",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical damage taken reduces the cooldown of Rune of Guarding by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Runic"
+   ]
+  },
+  {
+   "spellId": 706458,
+   "name": "Cinderstorm Runes / Melting Runes",
+   "icon": "Interface\\icons\\nhi_firetwist_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_firetwist_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Hurricane and Smolder now deal 50% more damage against enemies below 20% maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 706672,
+   "name": "Wind Runes / Water Runes",
+   "icon": "Interface\\Icons\\_StoneTablet_ShamanAir",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_stonetablet_shamanair.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Hurricane by 1 sec, allowing it to strike 2 additional times.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 707463,
+   "name": "Rift Clones / Phaser",
+   "icon": "Interface\\Icons\\spell_nature_mirrorimage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_mirrorimage.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Phase Out now summons 10 clones of yourself that run in a random direction for 5 seconds.Rift Clones periodically explode dealing 1 + 19.5% AP Arcane damage to all enemies within 5 yds of them.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 804094,
+   "name": "Windbreaker / Magebreaker",
+   "icon": "Interface\\icons\\novart_magicspell_(28)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(28)_border.jpg",
+   "source": "Riftblade",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Weapon Engraving: Air is active, the damage of each strike of your Hurricane is increased by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Riftblade"
+   ]
+  },
+  {
+   "spellId": 804707,
+   "name": "Build: Portable Sawmill",
+   "icon": "garrison_building_workshop",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/garrison_building_workshop.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802202,
+   "name": "Elemental Burst",
+   "icon": "nhi_arcanebolt_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanebolt_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560295,
+   "name": "Etching of the Magi",
+   "icon": "inv_glyph_minorpaladin",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glyph_minorpaladin.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560316,
+   "name": "Homebound Runestone",
+   "icon": "spell_arcane_portaltheramore",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_arcane_portaltheramore.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800723,
+   "name": "Inscribe Rune",
+   "icon": "nhi_arcanestone_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_arcanestone_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800995,
+   "name": "Ley Lock",
+   "icon": "nhi_magicblock_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_magicblock_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 520269,
+   "name": "Leyfeed",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800732,
+   "name": "Primordial Blast",
+   "icon": "spell_frostfire_orb",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_frostfire_orb.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804156,
+   "name": "Runefeed",
+   "icon": "spell_mage_focusingcrystal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_mage_focusingcrystal.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804674,
+   "name": "Scrying Orb",
+   "icon": "spell_druid_momentofclarity",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_momentofclarity.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801092,
+   "name": "Wizardry",
+   "icon": "inv_staff_2h_artifactaegwynsstaff_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_2h_artifactaegwynsstaff_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

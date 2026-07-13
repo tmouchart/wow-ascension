@@ -1,0 +1,2062 @@
+{
+ "slug": "guardian",
+ "class": "Guardian",
+ "classId": "18",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Vanguard",
+   "tabId": 7
+  },
+  {
+   "name": "Inspiration",
+   "tabId": 48
+  },
+  {
+   "name": "Gladiator",
+   "tabId": 49
+  }
+ ],
+ "abilityCount": 143,
+ "abilities": [
+  {
+   "spellId": 704421,
+   "name": "Seasoned Fighter",
+   "icon": "Interface\\Icons\\Ability_SteelMelee",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_steelmelee.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Pulverize, Ram, and Broad Sweep by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 803126,
+   "name": "Wreck Formation",
+   "icon": "Interface\\Icons\\6bf_explosive_shard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/6bf_explosive_shard.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee critical strikes now have a 50% chance to reset the cooldown of Hammer of the Law.Casting Standard of Valiance now increases your attack power by 10% for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 520650,
+   "name": "Reverberations",
+   "icon": "Interface\\icons\\skill_icon_skill121_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill121_border.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Ram now causes your next 3 melee attacks to deal an additional 30 + 10% AP Magic damage for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 712367,
+   "name": "Overwhelming Presence",
+   "icon": "Interface\\Icons\\novart_shield_(8)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_shield_(8)_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your Agility by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 300538,
+   "name": "Might",
+   "icon": "Interface\\Icons\\inv_helm_crown_c_01_silver",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_crown_c_01_silver.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your attack power by 5%.",
+   "altSpellIds": [
+    301355
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 300860,
+   "name": "Strength In Unison",
+   "icon": "Interface\\Icons\\INV_Misc_Drum_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_drum_01.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your melee haste by 1% for each ally within 20 yds, up to a maximum of 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 300545,
+   "name": "Built Different",
+   "icon": "Interface\\Icons\\5_engineerskill39_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_engineerskill39_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Strength and Stamina by 4%.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 704515,
+   "name": "Axe Training",
+   "icon": "Interface\\Icons\\INV_Axe_12",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_12.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While an axe is equipped, your critical strike chance is increased by 2% and critical damage increased by 5%.",
+   "altSpellIds": [
+    707818,
+    712474
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 505201,
+   "name": "War's Muse",
+   "icon": "Interface\\Icons\\Spell_Nature_Reincarnation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_reincarnation.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical damage by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 504148,
+   "name": "Knightly Demeanor",
+   "icon": "Interface\\icons\\custom_sharp_blade_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_sharp_blade_b_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your attack power is increased by 1 for every 50 Armor you have.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300927,
+   "name": "Reflective Shield",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0003s_0000_fire_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_brutal_icon_0003s_0000_fire_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Raise your shield and reflect the next harmful spell cast on you within 3 seconds. While active, being hit by a spell restores 20 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504385,
+   "name": "Guardbreaker",
+   "icon": "Interface\\icons\\custom_T_BurningEyes_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_burningeyes_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Pulverize now has a 20% chance to reset the cooldown of Ram.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704525,
+   "name": "Into The Fray",
+   "icon": "Interface\\Icons\\_D3wrathoftheberserker",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3wrathoftheberserker.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering a Sound of War now grants you an additional auto attack on your next swing.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 300541,
+   "name": "One-Handed Mastery",
+   "icon": "Interface\\Icons\\ability_warrior_unrelentingassault",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_unrelentingassault.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your damage dealt by 10% while a one-handed weapon is equipped.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 704516,
+   "name": "Waste No Movement",
+   "icon": "Interface\\Icons\\inv_sword_35",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_35.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Broad Sweep, Spear Throw, and Centurion Strike by -5.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 504503,
+   "name": "Tactical Combat",
+   "icon": "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_bg_killxenemies_generalsroom.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your block value by 8% and chance to block by 2%.",
+   "altSpellIds": [
+    504884
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 705361,
+   "name": "A Hero's Tale",
+   "icon": "Interface\\Icons\\Achievement_PVP_Legion08",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_pvp_legion08.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Energy regeneration by 10%.",
+   "altSpellIds": [
+    707825
+   ],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705329,
+   "name": "Crashing Force",
+   "icon": "Interface\\Icons\\inv_mace_124",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_124.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of your Centurion Strike and Reprisal by 15%.",
+   "altSpellIds": [
+    707820
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 504139,
+   "name": "No Retreating!",
+   "icon": "Interface\\icons\\custom_iron_hl_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_iron_hl_b_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While in combat, every 2 sec, increase the range and Energy cost of your next Spear Throw by 1 and its damage dealt by 3%, stacking up to 15 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 704423,
+   "name": "Leading the March",
+   "icon": "Interface\\Icons\\Ability_Warrior_VictoryRush",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_victoryrush.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your attack power and total Armor by 4%.",
+   "altSpellIds": [
+    707826
+   ],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705368,
+   "name": "Gallant",
+   "icon": "Interface\\Icons\\INV_Chest_Plate04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_chest_plate04.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Strength by 4% and expertise by 2.",
+   "altSpellIds": [
+    707813
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706637,
+   "name": "Valiant Effort",
+   "icon": "Interface\\icons\\novart_weapon_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_weapon_(2)_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your auto attacks now have a 15% chance to allow the use of Reprisal as if you had recently blocked an attack.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706807,
+   "name": "Deadly Blow",
+   "icon": "Interface\\Icons\\inv_mace_2h_draenorcrafted_d_01_b_alliance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_2h_draenorcrafted_d_01_b_alliance.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Centurion Strike and Broad Sweep now bleed an additional 15% of the damage dealt over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 504531,
+   "name": "Momentum",
+   "icon": "Interface\\Icons\\Ability_Warrior_ShieldBash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_shieldbash.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee damage dealt now reduces the cooldown of your Chivlary by -2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 504530,
+   "name": "Myrmidon",
+   "icon": "Interface\\Icons\\epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Ram and Broad Sweep by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 300972,
+   "name": "Champion",
+   "icon": "Interface\\Icons\\Ability_Warrior_ImprovedDisciplines",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_improveddisciplines.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Centurion Strike now extends the duration of Raise Shield on you by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 531515,
+   "name": "Lionheart",
+   "icon": "Interface\\Icons\\inv__faction_alliancewareffort",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv__faction_alliancewareffort.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Shield of Denial now strikes 1 additional enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 802299,
+   "name": "Polearm Training",
+   "icon": "interface\\icons\\GladiatorSpearGuy",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/gladiatorspearguy.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows you to wield polearms and to wield them with a shield equipped.While a polearm is equipped, your melee abilities have 2 yds increased range.",
+   "altSpellIds": [
+    803832,
+    807892
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 500463,
+   "name": "Spear Throw",
+   "icon": "Interface\\Icons\\_D3ancientspear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3ancientspear.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Throw a massive spear at an enemy, dealing 45 + 35% AP Physical damage, reducing the effectiveness of any healing by -50% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 504144,
+   "name": "Bannerman",
+   "icon": "Interface\\icons\\nhi_magicbanner_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_magicbanner_border.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While affected by your Banner of Swiftness or Banner of Conquest, the initial damage dealt by your Standard of Valiance now deals 150% more damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 300983,
+   "name": "Glorious Arena",
+   "icon": "Interface\\Icons\\Achievement_Zone_BladesEdgeMtns_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_bladesedgemtns_01.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Create a 10 yd ring beneath you for 15 seconds. Enemies who stand inside will gain Peril every 1 sec. PerilEach stack can be consumed by Pulverize to deal an additional 10% AP Physical Damage and reduce the cooldown of Glorious Arena by 10%.Upon reaching 5 stacks, the stacks are instantly consumed to stun the enemy for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802290,
+   "name": "Lord of the Arena",
+   "icon": "Interface\\Icons\\inv_axe_2h_war_b_02_hd",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_2h_war_b_02_hd.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Pulverize and Broad Sweep by -5.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 573047,
+   "name": "Show of Force",
+   "icon": "Interface\\Icons\\Spell_Fire_FireArmor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_firearmor.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Ram now dispels 1 magic effect from the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 803683,
+   "name": "Battle Drums",
+   "icon": "Interface\\Icons\\inv_archaeology_70_tauren_drum",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_70_tauren_drum.jpg",
+   "source": "Inspiration",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Place down 3 Battle Drums around you for 1 minute. Allies may click on the drums to increase their critical strike chance, haste, damage, and healing done by 10% and causes their damage dealt to trigger a Sound of War for their next 5 instances of damage or 30 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 504151,
+   "name": "Knight's Calling",
+   "icon": "Interface\\icons\\custom_Paladinskill_32_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_paladinskill_32_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Embrace your calling, restoring 15% of your maximum health and Energy, repeating every 5 sec for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705346,
+   "name": "Forceful Impact",
+   "icon": "Interface\\icons\\novart_passivemastery_(11)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(11)_border.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Raise Shield and Heavy Blow now extends the duration of your Brace by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 504730,
+   "name": "Legionnaire",
+   "icon": "Interface\\Icons\\ability_warrior_shieldbreak",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_shieldbreak.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical damage of Centurion Strike and Reprisal by 10%.",
+   "altSpellIds": [
+    504883
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 804892,
+   "name": "Refuse To Die",
+   "icon": "Interface\\Icons\\sha_ability_rogue_sturdyrecuperate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_ability_rogue_sturdyrecuperate.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Advance now resets the cooldown of Raise Shield.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 806134,
+   "name": "Standard Bearer",
+   "icon": "Interface\\Icons\\inv_banner_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_banner_02.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the range of Standards by 10 yds and increases the effectiveness of your Honor by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802304,
+   "name": "Net Throw",
+   "icon": "Interface\\Icons\\Ability_Ensnare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_ensnare.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Toss a weighted net at an enemy that roots them for 4 seconds. While active, the target cannot dodge attacks.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802188,
+   "name": "Counter Stance",
+   "icon": "Interface\\Icons\\counterstanceguardian",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/counterstanceguardian.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "You automatically parry the next attack against you. Lasts for 5 attacks or 15 seconds.When you expend a charge you deal 275 damage to attackers and heal for 366 + 100% AP health.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704539,
+   "name": "Echoes of War",
+   "icon": "Interface\\Icons\\achievement_dungeon_lordstormsong",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_lordstormsong.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering a Sound of War now grants Echoes of War to nearby allies for 8 seconds.Echoes of WarNext direct ability or spell deals 15% of their damage as additional Magic Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705320,
+   "name": "Field Commander",
+   "icon": "Interface\\Icons\\Achievement_PVP_A_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_pvp_a_06.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Placing a Standard causes your next Song of Steel to unleash an additional unique effect.SpellwardingIncreases the magic resistance of party and raid members within 100 yds by 20 for 10 seconds.MightReduces the Armor of enemies within 100 yds by -15% for 10 seconds.RallyingIncreases the movement speed of party and raid members within 100 yds by 15% for 10 seconds.RecoveryReduces the melee and ranged attack speed of enemies within 100 yds by -10% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705370,
+   "name": "Shield Wall",
+   "icon": "Interface\\Icons\\Ability_Defend",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_defend.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Armor contribution from your shield by 20%.",
+   "altSpellIds": [
+    707814
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504140,
+   "name": "Supremacy",
+   "icon": "Interface\\icons\\custom_sword_b_07_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_sword_b_07_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Centurion Strike now refreshes a charge of Reprisal.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 500263,
+   "name": "Standard of Rallying",
+   "icon": "Interface\\Icons\\Standard_Valiance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/standard_valiance.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Throw down a Standard of Rallying for 5 minutes, reducing damage taken by -3% and the duration of stun effects on them by -30% on all allies within 30 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801774,
+   "name": "Hero's March",
+   "icon": "Interface\\Icons\\inv_misc_drum_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_drum_03.jpg",
+   "source": "Inspiration",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Beat the drums of war, causing your auto attacks to trigger a Sound of War and increasing your haste by 15% for 15 seconds.In addition, allies within 10 yds of you have a 5% chance to trigger a Sound of War on any damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705359,
+   "name": "Banner Boy",
+   "icon": "Interface\\Icons\\Achievement_BG_captureflag_WSG",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_bg_captureflag_wsg.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your haste by 5% and the movement speed granted by Line Formation by 8%.",
+   "altSpellIds": [
+    707827
+   ],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 706514,
+   "name": "Paragon",
+   "icon": "Interface\\icons\\5_warriorskill16_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warriorskill16_border.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Blocking an attack grants you a stack of Paragon for 10 seconds. Can only occur once every 0.5 sec.At 10 stacks, your Heavy Blow transforms into Paragon Smash for 10 seconds.Paragon Smash (Damage)Deals 144 + 37% AP Physical damage to all nearby enemies.Increases your chance to block by 10% and each block reduces the cooldown of Brace by -2 sec. Lasts for 5 blocks or 10 seconds.Scales with modifiers to Heavy Blow.Casting Heavy Blow instantly grants 3 stacks of this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 300543,
+   "name": "Make Room! I'm Here.",
+   "icon": "Interface\\Icons\\achievement_featsofstrength_gladiator_08",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_featsofstrength_gladiator_08.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Standard of Valiance and Broad Sweep by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704513,
+   "name": "Unstoppable",
+   "icon": "Interface\\Icons\\_D3furiouscharge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3furiouscharge.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Battle Rush by -5 sec and Advance by -30 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803738,
+   "name": "Shieldlord’s Strength",
+   "icon": "Interface\\Icons\\inv_hammer_10",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hammer_10.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You may now use two-handed Maces and can now equip two-handed Maces with a shield.Your Heavy Blow and Hammer of the Law now deal additional damage scaling with your Stamina and your Stamina is increased by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 801121,
+   "name": "Recuperation",
+   "icon": "Interface\\Icons\\ability_skyreach_shielded",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skyreach_shielded.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Taking Physical damage or blocking a physical attack now restores 2 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705338,
+   "name": "Retiarius",
+   "icon": "Interface\\Icons\\Ability_Warrior_Warbringer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_warbringer.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum Energy by 25.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 805155,
+   "name": "Earthsplitter",
+   "icon": "Interface\\Icons\\ability_kilruk_reave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_kilruk_reave.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Broad Sweep now increases the amount of enemies struck by your next Broad Sweep by 1 and reduces its Energy cost by -10% for 6 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 802297,
+   "name": "Sword Training",
+   "icon": "Interface\\Icons\\INV_Sword_40",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_40.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While a sword is equipped, your melee haste is increased by 10%.",
+   "altSpellIds": [
+    803831,
+    807891
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 500258,
+   "name": "Final Verdict",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Give the final verdict to your target, dealing 1195 + 100% AP Physical damage and healing you for 15% of your maximum health.Only usable on enemies below 20% health. Killing blows reset the cooldown of this ability.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 705364,
+   "name": "Iron Guardian",
+   "icon": "Interface\\Icons\\garrison_building_armory",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/garrison_building_armory.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Stamina by 5%.",
+   "altSpellIds": [
+    707816,
+    712473
+   ],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 800313,
+   "name": "Brace",
+   "icon": "Interface\\Icons\\Ability_Warrior_Safeguard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_safeguard.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Fortify your defenses, reducing all damage taken by -50% and gaining immunity to stun effects for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560410,
+   "name": "The Green Tower",
+   "icon": "Interface\\icons\\5_warriorskill25_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warriorskill25_border.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of your Formations and increases their effectiveness by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 803956,
+   "name": "Song of Battle",
+   "icon": "Interface\\Icons\\achievement_pvp_legion04",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_pvp_legion04.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 2 sec you emanate Sounds of War, dealing 71 + 12.74% AP Physical damage to all enemies within 8 yds. Lasts 15 seconds.Upon expiration, stun all enemies within 8 yds for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705356,
+   "name": "Powerful Voice",
+   "icon": "Interface\\Icons\\ability_warrior_battleshout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_battleshout.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of your Ballads by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 524694,
+   "name": "Valiant Warrior",
+   "icon": "Interface\\Icons\\ability_skyreach_shielded",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skyreach_shielded.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Critical strikes with Ram now have a 50% chance to strike again for 100% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705376,
+   "name": "Footman's Call",
+   "icon": "Interface\\Icons\\warrior_talent_icon_blitz",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_blitz.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Damage dealt by Pulverize is increased by 15, plus an additional amount scaling with your block value.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 804047,
+   "name": "Elegant Combat",
+   "icon": "Interface\\icons\\custom_Warriorskill_35_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_35_border.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting a Ballad has a 20% chance to remove the cost of the next Ram and increase its critical chance by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 804661,
+   "name": "Heroic Deeds",
+   "icon": "Interface\\Icons\\ability_paladin_touchedbylight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_paladin_touchedbylight.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the reputation gains of your allies within 30 yds by 5% and reduces damage you take by -3%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704150,
+   "name": "Light Nets",
+   "icon": "Interface\\Icons\\hunter_pvp_trackersnet",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/hunter_pvp_trackersnet.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the range of your Net Throw by 15 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802283,
+   "name": "Bastion",
+   "icon": "Interface\\Icons\\shield_draenorcrafted_d_02_a_alliance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/shield_draenorcrafted_d_02_a_alliance.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Raise your shield and lead your allies within 12 yds, reducing their damage taken by -40% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 704514,
+   "name": "Close Combat",
+   "icon": "Interface\\Icons\\_D3groundstomp",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3groundstomp.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Removes the shared cooldown of your Standards and reduces the cooldown of Guard by -10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 804891,
+   "name": "Shield Unit",
+   "icon": "Interface\\Icons\\spell_tailor_defenceup01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_tailor_defenceup01.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each time you take damage, you gain 5% of the damage taken as attack power for 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 582901,
+   "name": "Retaliation",
+   "icon": "Interface\\Icons\\ability_warrior_shieldreflection",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_shieldreflection.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Successful blocks now deal 51 + 5% AP Physical damage to the attacker, scaling with defense rating. Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 803128,
+   "name": "Heavy Expert",
+   "icon": "Interface\\Icons\\Ability_Warrior_Vigilance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_vigilance.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your chance to parry and dodge by 4% and increase your Armor contribution from mail and plate items by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 706636,
+   "name": "Little Drummer",
+   "icon": "Interface\\icons\\novart_misc_(15)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_misc_(15)_border.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allies within 20 yds of you now gain 20% chance to resist curses.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 806140,
+   "name": "Battle Bard",
+   "icon": "Interface\\Icons\\inv_inscription_scrollofwisdom_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_scrollofwisdom_01.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of your Ballads by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 572821,
+   "name": "Harrowing Melody",
+   "icon": "Interface\\Icons\\inv_axe_2h_undeadguitar_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_2h_undeadguitar_c_01.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Play a harrowing melody, dealing 191 + 42% AP Magic damage and reducing all healing received by enemies within 10 yds by -30% for 10 seconds.In addition, your next Ballad within 10 seconds is free of cost and deals 50% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 803129,
+   "name": "Heavy Blow",
+   "icon": "Interface\\Icons\\spell_paladin_hammerofwrath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_paladin_hammerofwrath.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Smash an enemy and enemies behind them in a line, dealing 23 + 45% AP High Threat Physical damage, scaling with defense rating.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 802286,
+   "name": "Centurion Strike",
+   "icon": "Interface\\icons\\custom_Warriorskill_02_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_02_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Stab an enemy, dealing 110% Weapon Damage plus an additional effect based on your weapon.Sword: Triggers 3 additional auto attacks.Axe: Guaranteed to critically strike for 25% increased damage.Mace: Ignores -50% of your target's Armor.Polearm: Stabs the target and enemies behind them an additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 505344,
+   "name": "Inspiring Leader",
+   "icon": "Interface\\Icons\\ability_maldraxxus_warriorplantbanner",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_maldraxxus_warriorplantbanner.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "You pledge to inspire your allies in the midst of battle, transforming your Pulverize and your Broad Sweep into Ballads.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705341,
+   "name": "Calculated Strike",
+   "icon": "Interface\\Icons\\achievement_raregarrisonquests_x",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_raregarrisonquests_x.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Reprisal, Broad Sweep, and Spear Throw now deal an additional 2% Weapon Damage for each Energy point you have upon casting it.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 704420,
+   "name": "Voice of an Angel",
+   "icon": "Interface\\Icons\\ability_priest_heavanlyvoice",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_priest_heavanlyvoice.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Sing a beautiful song, instantly resetting the cooldown of Liberation, Harrowing Melody, and Hero's March.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705332,
+   "name": "Battle Wary",
+   "icon": "Interface\\icons\\custom_Warriorskill_22_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_22_border.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Advance and Battle Rush by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 504383,
+   "name": "With Honor",
+   "icon": "Interface\\Icons\\inv_shoulder_plate_raidpaladin_s_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_plate_raidpaladin_s_01.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Ram by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 707137,
+   "name": "Resilient",
+   "icon": "Interface\\icons\\5_warriorskill47_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warriorskill47_border.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Blocking an attack while Raise Shield is active now increases your maximum health by 308 + 10% Stamina + 11% AP for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 705323,
+   "name": "Heroism",
+   "icon": "Interface\\Icons\\Ability_Racial_Avatar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_avatar.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Whenever you reach 3 stacks of Glory or 20 stacks of Favor, your next 2 Pulverizes or Broad Sweeps within 10 seconds are free of cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 704524,
+   "name": "War Drums",
+   "icon": "Interface\\Icons\\inv_leatherworking_drums",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_leatherworking_drums.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Adds 5% to the value of Echoes of War.In addition, performing a Sound of War now has a 40% chance to echo, striking an additional time after 0.5 sec. Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 704533,
+   "name": "Minstrel",
+   "icon": "Interface\\Icons\\ability_racial_makecamp",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_makecamp.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting a Ballad now increases your haste by 3%, stacking 3 times, for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705318,
+   "name": "Soundwave",
+   "icon": "Interface\\Icons\\spell_animabastion_wave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_animabastion_wave.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Sound of War by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 706333,
+   "name": "Dragonslayer",
+   "icon": "Interface\\Icons\\crest_warrior",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/crest_warrior.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 704535,
+   "name": "Legion Commander",
+   "icon": "Interface\\Icons\\Ability_Warrior_RallyingCry",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_rallyingcry.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "The damage increase of Harrowing Melody now affects an additional 2 Ballad casts and guarantees them to critically strike and deal 100% more damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 801219,
+   "name": "Press the Attack",
+   "icon": "Interface\\icons\\novart_physical_ability_(50)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(50)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Raise your shield and press the attack, dealing 75% Weapon Damage plus 83 to enemies in front of you and draining 10 Energy every 1 sec. Lasts 5 seconds.While active you gain 100% increased block chance and you may block, dodge, and parry while channeling.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705315,
+   "name": "Master of Arms",
+   "icon": "Interface\\icons\\novart_passivemastery_(35)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(35)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Turn the Blade now guarantees you to parry 1 additional attack and the duration of its parry window is increased by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807346,
+   "name": "Thick Shields",
+   "icon": "Interface\\Icons\\inv_shield_1h_newplayer_a_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_1h_newplayer_a_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your block value by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705324,
+   "name": "Valiance",
+   "icon": "Interface\\Icons\\Ability_Warrior_Shockwave",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_shockwave.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reprisal now regenerates an additional 20 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504184,
+   "name": "Double Duty",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactskywall_d_06dual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactskywall_d_06dual.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your hit chance by 5% and expertise by 4.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 300534,
+   "name": "Steel Riposte",
+   "icon": "Interface\\Icons\\Ability_MeleeDamage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_meleedamage.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Counter Stance and Turn the Blade by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804383,
+   "name": "Vanguard's Shield",
+   "icon": "Interface\\Icons\\INV_Shield_32",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_32.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Blocking an attack or landing an auto attack now grants a stack of Vanguard for 1 minute, stacking 10 times.Vanguard&#39;s ShieldMagic Damage taken reduced by -2%. Whenever you are hit by a spell, you lose 1 stack of this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 705378,
+   "name": "Knight's Advantage",
+   "icon": "Interface\\Icons\\Achievement_LegionPVP2Tier1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_legionpvp2tier1.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your damage dealt against Humanoids by 6%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705316,
+   "name": "Energetic",
+   "icon": "Interface\\icons\\novart_passivemastery_(8)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(8)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Restores 5 of your Energy every 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705343,
+   "name": "Relentless",
+   "icon": "Interface\\Icons\\garrison_building_salvageyard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/garrison_building_salvageyard.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Pulverizes or Rams now ignores -15% of the target's Armor.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802870,
+   "name": "Grand Entrance",
+   "icon": "Interface\\Icons\\ability_warrior_stalwartprotector",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_stalwartprotector.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Leap into the air, becoming immune to crowd control effects, and then crash back down with incredible speed at your location.Upon landing, deal 400% Weapon Damage to enemies in the impact area, plus an additional 611 + 77.25% AP over 6 seconds, ignoring Armor and knocking them into the air.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706639,
+   "name": "Sturdy",
+   "icon": "Interface\\icons\\novart_shield_(3)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_shield_(3)_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your maximum health by 6%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705377,
+   "name": "Honorable Demeanor",
+   "icon": "Interface\\Icons\\ability_toughness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_toughness.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Whenever you block an attack your Strength and Stamina are increased by 2% for 10 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 803963,
+   "name": "Liberation",
+   "icon": "Interface\\Icons\\ability_pvp_gladiatormedallion",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_pvp_gladiatormedallion.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Instantly breaks an ally free of any stun, fear, or polymorph effects and grants immunity to such effects for 5 seconds. Dispels 2 harmful magic effects from the ally.Usable while stunned, feared, or polymorphed.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 300540,
+   "name": "Veteran of the Third War",
+   "icon": "Interface\\icons\\novart_passivemastery_(4)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(4)_border.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now restore 3% of your base health whenever you block an attack.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 505199,
+   "name": "Fearless",
+   "icon": "Interface\\Icons\\Spell_Nature_Invisibilty",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_invisibilty.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each nearby enemy within 10 yds now reduces your damage taken by 1%, up to a maximum of 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 503631,
+   "name": "Cavalry Tactics",
+   "icon": "Interface\\Icons\\inv_blacksmith_leystonehoofplates_blue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_blacksmith_leystonehoofplates_blue.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Cavalry Charge by -30 sec and it now prevents root and slow effects on allies.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 704413,
+   "name": "Stalwart",
+   "icon": "Interface\\Icons\\_D3revenge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3revenge.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your block value by 10% and your expertise by 4.",
+   "altSpellIds": [
+    707817
+   ],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 803830,
+   "name": "Hold the Line",
+   "icon": "Interface\\Icons\\ability_warrior_shieldguard",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_shieldguard.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Command nearby allies to hold the line, making them immune to incapacitate, disorient, knockback, and grip effects for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 705379,
+   "name": "Bring Down The Hammer!",
+   "icon": "Interface\\Icons\\inv_hammer_1h_jiro_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_hammer_1h_jiro_b_01.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Heavy Blow now deals an additional 20% of the damage dealt every 1 sec for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 705345,
+   "name": "Vanguard's Might",
+   "icon": "Interface\\Icons\\inv_plate_raidwarrior_s_01helm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_plate_raidwarrior_s_01helm.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Heavy Blow now causes you to emanate an aura for 5 seconds that reduces all damage taken by -5% for party members.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 705333,
+   "name": "Plate Buster",
+   "icon": "Interface\\Icons\\inv_plate_raidwarrior_s_01helm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_plate_raidwarrior_s_01helm.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Ram now reduces the remaining cooldown of your Challenging Cry and Hold the Line by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 704418,
+   "name": "Hammer of the Law",
+   "icon": "Interface\\Icons\\inv_mace_1h_draenorguard_b_02_a",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_draenorguard_b_02_a.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Smash an enemy and enemies behind them in a line, dealing 90 + 100% AP High Threat Physical damage and silencing them for 3.5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 524932,
+   "name": "Valorous Strikes",
+   "icon": "Interface\\Icons\\inv_shoulder_mail_bastion_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_mail_bastion_d_01.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Auto attacks now have a 10% chance to strike an additional time and reduce your target's chance to hit by -3% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 803134,
+   "name": "King's Guard",
+   "icon": "Interface\\Icons\\inv_helmet_plate_raidpaladin_l_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helmet_plate_raidpaladin_l_01.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Pulverize and Ram now have a 10% chance to reset the cooldown of Raise Shield.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 705369,
+   "name": "Knight's Conviction",
+   "icon": "Interface\\Icons\\inv_horsekultiran",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_horsekultiran.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the block value provided by Raise Shield by 25% and your block chance by 1%.",
+   "altSpellIds": [
+    707815
+   ],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 301057,
+   "name": "Heroic Effort",
+   "icon": "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES_A_HERO",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_guildperk_everyones_a_hero.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Centurion Strike now grants 1 stack of Glory.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 705336,
+   "name": "Mace Training",
+   "icon": "Interface\\Icons\\inv_mace_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_05.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While a mace is equipped, your armor penetration is increased by 8%.",
+   "altSpellIds": [
+    707819,
+    712475
+   ],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 802295,
+   "name": "Upper Hand",
+   "icon": "Interface\\Icons\\INV_Relics_TotemofRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_relics_totemofrage.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your melee auto attacks now have a 20% chance to strike 2 additional times.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 706515,
+   "name": "Shieldbound / Honorbound",
+   "icon": "Interface\\Icons\\inv_shield_draenorguard_b_01_a_alliance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_draenorguard_b_01_a_alliance.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Shield Challenge no longer has a cooldown, but now costs 10 additional Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 503837,
+   "name": "Unscuffable / Order In The Court",
+   "icon": "Interface\\Icons\\creatureportrait_blackrockv2_shieldgong",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/creatureportrait_blackrockv2_shieldgong.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allies within 30 yds now take -10% less Magic damage from area of effect attacks.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 582937,
+   "name": "Valiant Knight / Valiant Defender",
+   "icon": "Interface\\Icons\\5_archerskill48_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill48_border.jpg",
+   "source": "Vanguard",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee ability critical strikes now cause your next Pulverize within 6 seconds to be free of cost and deal 25% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Vanguard"
+   ]
+  },
+  {
+   "spellId": 706806,
+   "name": "Resolve / Deflector",
+   "icon": "Interface\\Icons\\warrior_talent_icon_gladiatorsresolve",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_gladiatorsresolve.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of your Raise Shield by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300542,
+   "name": "Press the Line! / Shrug It Off",
+   "icon": "Interface\\Icons\\5_archerskill20_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill20_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While Line Formation is active, your movement speed cannot be reduced below 115%, but its cost is increased by 30 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560093,
+   "name": "Bloodletter / Myrmidon",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactmagnar_d_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactmagnar_d_02.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Avoiding an attack now reduces the remaining cooldown of Glorious Arena by 10%. Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802296,
+   "name": "Pit Fighter / Warstopper",
+   "icon": "Interface\\Icons\\spell_warrior_gladiatorstance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warrior_gladiatorstance.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the movement speed slow of your Standard of Valiance by -15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504159,
+   "name": "Spirit of Battle / Banner of Conquest",
+   "icon": "Interface\\Icons\\Spell_Holy_SpellWarding",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_spellwarding.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 505228,
+   "name": "Knight's Song / Banner of Swiftness",
+   "icon": "Interface\\Icons\\inv_misc_flute_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_flute_01.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting a Ballad now grants allies Knight's Song.Knight&#39;s SongEmanate an aura for 10 seconds that increases the Armor of party and raid members by 400.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705350,
+   "name": "Pied Piper / Frontliner",
+   "icon": "Interface\\Icons\\inv_misc_flute_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_flute_01.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering a Sound of War now increases damage of your next Ram by 20% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 704526,
+   "name": "Bard's Manuscript / Warbringer's Manuscript",
+   "icon": "Interface\\Icons\\pvp_scroll_1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/pvp_scroll_1.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Hero's March by -60 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 704540,
+   "name": "Song of Steel / Dissonance",
+   "icon": "Interface\\icons\\skill_icon_skill29_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill29_border.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Boost the morale of party and raid members, increasing their attack or spell power by 95 for 15 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 806142,
+   "name": "Stand Your Ground! / You Shall Not Fall!",
+   "icon": "Interface\\Icons\\spell_holy_heroism",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_holy_heroism.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While standing in your Standard of Valiance, your allies' Physical damage taken is reduced by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 705352,
+   "name": "Inspiring Presence / Champion's Presence",
+   "icon": "Interface\\Icons\\_Human_07",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_human_07.jpg",
+   "source": "Inspiration",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Emanate an aura around you for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Holy damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "Inspiration"
+   ]
+  },
+  {
+   "spellId": 802300,
+   "name": "No Escape / Bulwark Rush",
+   "icon": "Interface\\icons\\novart_physical_ability_(46)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(46)_border.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Ram now reduces the cooldown of your Battle Rush by -10 sec when used against a rooted enemy.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 301252,
+   "name": "Pinned Down! / Clinch Brawler",
+   "icon": "Interface\\Icons\\Ability_Warrior_Challange",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_challange.jpg",
+   "source": "Gladiator",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Spear Throw now refreshes the duration of Net Throw on your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Gladiator"
+   ]
+  },
+  {
+   "spellId": 500170,
+   "name": "Advance",
+   "icon": "_d3sprint",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3sprint.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500344,
+   "name": "Assume Peak Posture",
+   "icon": "ability_pvp_hardiness",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_pvp_hardiness.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804723,
+   "name": "Call To Arms",
+   "icon": "inv_misc_questionmark",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_questionmark.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804691,
+   "name": "Cavalry Charge",
+   "icon": "garrison_building_stables",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/garrison_building_stables.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802293,
+   "name": "Defensive Pose",
+   "icon": "achievement_bg_killflagcarriers_grabflag_capit",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_bg_killflagcarriers_grabflag_capit.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802282,
+   "name": "Offensive Pose",
+   "icon": "achievement_bg_killxenemies_generalsroom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_bg_killxenemies_generalsroom.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500168,
+   "name": "Raise Shield",
+   "icon": "custom_17_shield_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_17_shield_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 802284,
+   "name": "Ram",
+   "icon": "novart_passivemastery_(11)_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(11)_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 704159,
+   "name": "Shield of Denial",
+   "icon": "inv_shield_64",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_64.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

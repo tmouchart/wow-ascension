@@ -1,0 +1,2059 @@
+{
+ "slug": "barbarian",
+ "class": "Barbarian",
+ "classId": "12",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Brutality",
+   "tabId": 31
+  },
+  {
+   "name": "Headhunting",
+   "tabId": 32
+  },
+  {
+   "name": "Ancestry",
+   "tabId": 33
+  }
+ ],
+ "abilityCount": 143,
+ "abilities": [
+  {
+   "spellId": 801767,
+   "name": "Bloodbound",
+   "icon": "Interface\\Icons\\_D3gargantuan",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3gargantuan.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Warband by -30 sec and Ancestral Roar by -5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805812,
+   "name": "Frost Giant's Fury",
+   "icon": "Interface\\Icons\\spell_deathknight_icetouch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_icetouch.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Breath of the North now grants you 10% melee attack speed, plus an additional 20% when using a two-handed weapon, for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 570236,
+   "name": "Thirst for Battle",
+   "icon": "Interface\\Icons\\Ability_Racial_BloodRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_bloodrage.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Smash now regenerate 25% of your maximum Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 705176,
+   "name": "Strong Arm",
+   "icon": "Interface\\Icons\\Ability_Warrior_StrengthOfArms",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_strengthofarms.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Spears by 15% and your hit chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 805835,
+   "name": "Vital Spirit",
+   "icon": "Interface\\Icons\\Spell_Nature_Reincarnation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_reincarnation.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the range of your Spirit spells by 10 yds.",
+   "altSpellIds": [
+    807864
+   ],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 560518,
+   "name": "Berserker Rush",
+   "icon": "Interface\\Icons\\ability_hanzandfranz_chestbump",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hanzandfranz_chestbump.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Charge an enemy dealing 31 + 35% ranged AP Physical damage and rooting them for 2 seconds, then leap backwards.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 800131,
+   "name": "Born Killer",
+   "icon": "Interface\\Icons\\inv_misc_trinket6oih_ironskull1",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_trinket6oih_ironskull1.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Killing an enemy that yields experience or honor now grants you 5% increased armor penetration and movement speed for 5 seconds, stacking 20 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560880,
+   "name": "To The Bone",
+   "icon": "Interface\\Icons\\_StrongBone_Red",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_strongbone_red.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Guts Spilled by 10% and it now applies Break to the target and critically striking with it will apply an additional stack.BreakBreak an enemy's defenses, reducing their armor by -4% for 20 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 804414,
+   "name": "Decapitate",
+   "icon": "Interface\\icons\\novart_physical_ability_(47)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(47)_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Attempt to decapitate an injured enemy, dealing 200% Weapon Damage plus 27, and converting each extra point of Energy to deal additional damage (up to a maximum cost of 100 Energy).Only usable on enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 500984,
+   "name": "Impaling Spear",
+   "icon": "Interface\\Icons\\Impaling_Spear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/impaling_spear.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Hurl a spear in a 30 yd frontal line, dealing 131% Ranged Weapon Damage plus 23, dealing less damage with each enemy struck.At the spear's impact location the spear shatters, dealing 277 + 15% ranged AP Physical damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 300499,
+   "name": "Headlopper",
+   "icon": "Interface\\icons\\novart_physical_ability_(10)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(10)_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your critical strikes with Decapitate now cause the enemy to bleed, dealing an additional 30% of the damage dealt over 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 801549,
+   "name": "Thick Skull",
+   "icon": "Interface\\Icons\\inv_helm_laughingskull_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_laughingskull_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your thick skull makes you immune to all stun effects for 10 seconds and while active taking direct damage grants you Born in Blood.Usable while stunned.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706353,
+   "name": "Unstoppable Rage",
+   "icon": "Interface\\Icons\\Ability_Warrior_InnerRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_innerrage.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Unbridled Rage by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705234,
+   "name": "Frothing Savage",
+   "icon": "Interface\\Icons\\inv_bloodtrollfemalehead",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_bloodtrollfemalehead.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Spears and Berserker Axe by 8% against bleeding targets.",
+   "altSpellIds": [
+    707779
+   ],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705240,
+   "name": "Deep Fury",
+   "icon": "Interface\\Icons\\ability_warrior_warcry",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_warcry.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct Physical damage dealt now reduces the cooldown of Unbridled Rage by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 561359,
+   "name": "Maximum Carnage",
+   "icon": "Interface\\Icons\\spell_warrior_paintrain",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warrior_paintrain.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Unbridled Rage now causes you to begin swinging your weapon around you dealing 47 + 25% AP Physical damage to up to 5 nearby enemies over 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 560938,
+   "name": "Fury of the North",
+   "icon": "Interface\\icons\\uico_frost_spell_10_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_frost_spell_10_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of the enrage effect from your Ramhorn Rage by 6 sec and causes it to increase your movement speed by 40% for its duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 560910,
+   "name": "Utter Devastation",
+   "icon": "Interface\\Icons\\Ability_Warrior_EndlessRage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_endlessrage.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Maximum Carnage by 1 sec and it now grants Utter Devastation for 6 seconds. Utter DevastationInstantly removes all movement impairing effects, increases your movement speed by 25%, and makes you immune to slows.Can be consumed by Decapitate or Crush to guarantee them to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 520539,
+   "name": "Sustaining Swings",
+   "icon": "Interface\\icons\\custom_Warriorskill_42_nobg_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_42_nobg_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee attacks now have an 8% chance to heal you for 10% of the damage dealt and cause your next Ancestral Strike to deal 50% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 705173,
+   "name": "Pure Power",
+   "icon": "Interface\\Icons\\ability_revendreth_rogue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_revendreth_rogue.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Smash by 15% and your expertise by 5.",
+   "altSpellIds": [
+    707761
+   ],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 705222,
+   "name": "Beheader",
+   "icon": "Interface\\Icons\\inv_archaeology_ogres_warmaul_chieftain",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_ogres_warmaul_chieftain.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Scoring a kill blow with Decapitate now refunds 100% of your maximum Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 705167,
+   "name": "Bloody Fighter",
+   "icon": "Interface\\Icons\\inv_mace_1h_pvpcataclysms3_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_pvpcataclysms3_c_02.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Brutal Swing and Smash by 5%.",
+   "altSpellIds": [
+    707760
+   ],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 805997,
+   "name": "Puncture Wounds",
+   "icon": "Interface\\Icons\\inv_misc_boilingblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_boilingblood.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Spears now causes enemies to bleed for 633 + 16.5% ranged AP over 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 706352,
+   "name": "War Tales",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Dwarf_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_dwarf_01.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your chance to resist fear and horrify effects by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560564,
+   "name": "You Want Axe?",
+   "icon": "Interface\\Icons\\inv_axe_1h_garrison_a_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_1h_garrison_a_01.jpg",
+   "source": "Headhunting",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While enraged, casting Spears now refreshes 3 charges of Berserker Axe and your next 3 casts cost -50% less Energy. Lasts 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 805893,
+   "name": "Spear Shards",
+   "icon": "Interface\\Icons\\inv_spear_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_spear_06.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Whenever you shatter your Impaling Spear, affected enemies bleed for 100% of the damage dealt over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705198,
+   "name": "Gurubashi Technique",
+   "icon": "Interface\\Icons\\inv_helm_mask_zulgurub_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_mask_zulgurub_d_01.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage. Grants Born in Blood. Scales with damage modifiers to Throw Weapon.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705227,
+   "name": "Gruesome",
+   "icon": "Interface\\Icons\\ability_skeer_bloodletting",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_skeer_bloodletting.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 10%.",
+   "altSpellIds": [
+    707765
+   ],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 707661,
+   "name": "Sen'jin's Guidance",
+   "icon": "Interface\\Icons\\archaeology_5_0_spearofxuen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/archaeology_5_0_spearofxuen.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Transforms your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241. Scales with damage modifiers to Throw Weapon and Spears. Usable while moving.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705202,
+   "name": "Strength of Goria",
+   "icon": "Interface\\Icons\\Achievement_Boss_HighMaul_Butcher",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_highmaul_butcher.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Unbridled Rage now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705238,
+   "name": "Entrails",
+   "icon": "Interface\\Icons\\Spell_Shadow_LifeDrain",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_lifedrain.jpg",
+   "source": "Headhunting",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Damage dealt by bleed effects now increases your Agility by 1% for 8 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 560450,
+   "name": "Anger Issues",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0005s_0000_characterb_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_brutal_icon_0005s_0000_characterb_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Scoring a critical strike against an enemy now reduces the cooldown of Carnage by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 800943,
+   "name": "Savagery",
+   "icon": "Interface\\Icons\\ability_garrosh_hellscreams_warsong",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_garrosh_hellscreams_warsong.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While below 35% health, your auto attacks, Ancestral Strike, and Throw Weapon now grant Born in Blood. Can only occur once every 2 sec.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 705196,
+   "name": "Knockout Artist",
+   "icon": "Interface\\Icons\\item_onepunch",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/item_onepunch.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Successfully interrupting a target with Jawbreaker now increases your haste by 30% for 4 seconds and refunds half its Energy cost.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707584,
+   "name": "Spite",
+   "icon": "Interface\\Icons\\epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_border.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705235,
+   "name": "Brutal Form",
+   "icon": "Interface\\Icons\\inv_axe_1h_pvpdraenors2_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_1h_pvpdraenors2_d_01.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of Born in Blood by -25%, allows its healing to scale with your Agility, and it can now critically heal you.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 560883,
+   "name": "Warband",
+   "icon": "Interface\\Icons\\warrior_skullbanner",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_skullbanner.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Bring all nearby allies into the warband for 12 seconds, granting them Born in Blood, repeating every 3 sec.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300497,
+   "name": "Bloodthirsty",
+   "icon": "Interface\\Icons\\Ability_BullRush",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_bullrush.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Outrage by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 712429,
+   "name": "Rally Behind Me!",
+   "icon": "Interface\\Icons\\Ability_Hunter_RapidKilling",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_rapidkilling.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Warband by 3 sec.In addition, your first use of Warband will incur no cooldown. Can only occur once every 1.5 min.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 560939,
+   "name": "Frozen Warlord",
+   "icon": "Interface\\icons\\nhi_frost_knight_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_knight_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Hodir's Wrath now freezes enemies in place for 0 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561360,
+   "name": "Mak'Gora",
+   "icon": "Interface\\Icons\\achievement_leader_thrall",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_leader_thrall.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes on enemies above 80% or below 20% health now challenges them to a Mak'Gora. Only 1 enemy can be challenged at a time.Mak&#39;gora (20%)Challenge an enemy to a duel to the death for 10 seconds, reducing their healing received by -20% and absorbing the next 1244 + 100% AP healing done to them.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805815,
+   "name": "Frozen Tankard",
+   "icon": "Interface\\Icons\\tankardtoss",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/tankardtoss.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Throw one of your extra tankards at an enemy, dealing 107 Frost damage and stunning them for 4 seconds. Stunned enemies are considered Frozen.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 681473,
+   "name": "Breaking Morale",
+   "icon": "Interface\\Icons\\Ability_Racial_Avatar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_avatar.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Break by -15.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 560532,
+   "name": "Skull Smash",
+   "icon": "Interface\\Icons\\SkullSmash2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skullsmash2.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Pick up a rock and hurl it at an enemy's skull, disorienting them for 40 seconds (8 sec vs players). Damage taken will end this effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805808,
+   "name": "Keg Smash",
+   "icon": "Interface\\Icons\\ability_monk_elusiveale",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_elusiveale.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Smash an enemy for 21 + 15% AP Physical damage, plus an additional 17 + 25% AP Frost damage to up to 5 nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 800401,
+   "name": "Axe Twirling",
+   "icon": "Interface\\Icons\\inv_axe_104",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_104.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Display mastery over throwing weapons for 10 seconds, causing Throw Weapon, Gutspiller, and Berserker Axe to strike 2 additional nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 803817,
+   "name": "Crusher",
+   "icon": "Interface\\Icons\\_D3seismicslam",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3seismicslam.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee auto attacks now have a 10% chance to reset the cooldown of Crush.",
+   "altSpellIds": [
+    807875
+   ],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 560452,
+   "name": "One With The Ancestors",
+   "icon": "Interface\\Icons\\inv_helm_plate_pvpwarrior_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_plate_pvpwarrior_d_01.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 2%.",
+   "altSpellIds": [
+    560889
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800193,
+   "name": "Battle Rhythm",
+   "icon": "Interface\\Icons\\inv_axe_2h_orcwarrior_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_2h_orcwarrior_c_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Critical strikes with abilities now generate 5 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 807861,
+   "name": "Savage Cadence",
+   "icon": "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_offhand_1h_artifactskulloferedar_d_05.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Direct critical strikes now extend the duration of your Unbridled Rage by 0.5 sec. This effect can occur only once per sec.Killing blows extend the duration of your Unbridled Rage by 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 850021,
+   "name": "Killing Spree",
+   "icon": "Interface\\Icons\\_D3leapattack",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3leapattack.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Charge at an enemy, dealing 25 + 30% AP Physical damage.Can only be used within 6 seconds of scoring a killing blow or applying Born in Blood.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 805780,
+   "name": "Ale of The God-King",
+   "icon": "Interface\\Icons\\aleofgodking",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/aleofgodking.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Empower your Honored Ancestor's melee attacks to deal additional Frost damage scaling with your attack power. Lasts for 20 seconds or 10 attacks.This ability consumes Fill Level stacks and triggers a reduced cooldown based on stacks consumed.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 801759,
+   "name": "Outrage",
+   "icon": "Interface\\Icons\\_D3frenzy",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3frenzy.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Requires EnragedIncreases your haste and critical strike chance by 20%, but increases your damage taken by 30% for 10 seconds. Physical critical strikes extend this effect by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805811,
+   "name": "Blind Stupor",
+   "icon": "Interface\\Icons\\ability_monk_drunkenhaze",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_drunkenhaze.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Keg Smash now reduces enemies' casting speed by -30% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 805804,
+   "name": "Ramhorn Rage",
+   "icon": "Interface\\Icons\\inv_holiday_beerfest_maghar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_holiday_beerfest_maghar.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Enrage EffectEnrage party and raid members within 8 yds for 3 seconds, regenerating 2% of their maximum health every 2 sec. Melee auto attacks extend the duration of this effect by 2 sec, up to a maximum of 15 seconds.This ability empties your Tankard, consuming Fill Level stacks and triggering with a reduced cooldown based on stacks consumed.Barbaric Rage (Passive)While enraged, the global cooldown of Barbarian abilities is reduced by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 805864,
+   "name": "No Survivors",
+   "icon": "Interface\\Icons\\achievement_bg_interruptx_flagcapture_attempts_1game",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_bg_interruptx_flagcapture_attempts_1game.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Axe Twirling, Maiming Spear, and Barbed Spear by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 800637,
+   "name": "Storm of Steel",
+   "icon": "Interface\\icons\\custom_Warriorskill_21_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_warriorskill_21_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Begin striking your target every 1 sec for 80% Weapon Damage for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 706354,
+   "name": "Face Smasher",
+   "icon": "Interface\\Icons\\warrior_talent_icon_innerrage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_innerrage.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your ability critical strikes now reduce the cooldown of your Battle Vigor and Thick Skull by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500995,
+   "name": "War Cry",
+   "icon": "Interface\\Icons\\ability_soulrenderdormazain_hellscream",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_soulrenderdormazain_hellscream.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by 20%, and attack power by 150 of party and raid members within 25 yds for 20 seconds.Allies cannot benefit from this spell again for 5 minutes.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 802792,
+   "name": "Jawbreaker",
+   "icon": "Interface\\Icons\\achievement_dungeon_bastion_of_twilight_halfus_wyrmbreaker",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_bastion_of_twilight_halfus_wyrmbreaker.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Attempt to break an enemy's jaw, interrupting them and preventing any spell from that school from being cast for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560444,
+   "name": "Overkill",
+   "icon": "Interface\\icons\\novart_magicspell_(16)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(16)_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Decapitate and Headhunter's Spear by 30% against targets below 20% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 804137,
+   "name": "Headhunter's Spear",
+   "icon": "Interface\\Icons\\Headhunting_Spear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/headhunting_spear.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Hurl a light spear at an enemy dealing 140% Ranged Weapon Damage plus 21 and restores 30% of your maximum Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801782,
+   "name": "Ancestral Combat",
+   "icon": "Interface\\Icons\\_D3calloftheancients",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3calloftheancients.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Empower yourself, granting your Physical damage dealt a 25% chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of Fill Level.Lasts until triggered 20 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705209,
+   "name": "Improved Ancestral Combat",
+   "icon": "Interface\\Icons\\inv_axe_82",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_82.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of your Ancestral Combat by -10 and allows it to trigger 3 additional times.",
+   "altSpellIds": [
+    705210,
+    707777
+   ],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 560906,
+   "name": "First Blood",
+   "icon": "Interface\\Icons\\warrior_talent_icon_skirmisher",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_skirmisher.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases all damage dealt to enemies above 80% health by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705186,
+   "name": "Spiked Weapons",
+   "icon": "Interface\\Icons\\inv_mace_1h_draenorhonors2_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_draenorhonors2_c_01.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical damage of Crush, Brutal Swing, and Decapitate by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 804139,
+   "name": "Maiming Spear",
+   "icon": "Interface\\Icons\\Maiming_Spear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/maiming_spear.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Throw your ranged weapon at your enemy's legs, dealing 100% Ranged Weapon Damage plus 2 and slowing their movement speed by -50% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804138,
+   "name": "Berserker Axe",
+   "icon": "Interface\\Icons\\inv_axe_1h_draenorcrafted_d_02_a_horde",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_1h_draenorcrafted_d_02_a_horde.jpg",
+   "source": "Headhunting",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Requires Enraged3 Charges, 8 sec rechargeHurl two axes at an enemy, each dealing 16 + 40% ranged AP Physical damage and reducing their armor by -4% for 20 seconds, stacking up to 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 706804,
+   "name": "Legacy of the Amani",
+   "icon": "Interface\\icons\\novart_physical_ability_(25)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_physical_ability_(25)_border.jpg",
+   "source": "Headhunting",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Damage dealt by your Spears now has a 25% chance to cause you to quickly throw an additional spear that strikes for 40% of the damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 561397,
+   "name": "Berserker",
+   "icon": "Interface\\Icons\\_Troll_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_troll_03.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While enraged, your ranged critical strikes now grant you Berserker. Once applied it cannot be applied again.BerserkerYour ranged abilities have a 20% chance to unleash Berserker Throw, dealing 75% Ranged Weapon Damage. Lasts 15 seconds.While active, every offensive ranged ability used increases its chance to trigger by 2%.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 804730,
+   "name": "Symbol of the Warspear",
+   "icon": "Interface\\Icons\\inv_banner_warspear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_banner_warspear.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You are marked by the Warspear symbol, granting 10% increased attack power to party and raid members. Does not stack with similar effects.In addition, reduces the cooldown of Spears by -2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 560563,
+   "name": "Whirling Assault",
+   "icon": "Interface\\Icons\\ability_butcher_whirl",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_butcher_whirl.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Whirling Advance by 300% on enemies above 80% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 804750,
+   "name": "Steelslinger",
+   "icon": "Interface\\Icons\\Ability_Warrior_Bladestorm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_bladestorm.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Barbaric Whirl by -2 sec and increases its damage dealt by 100% on enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 705161,
+   "name": "Ice Cold Bubbles",
+   "icon": "Interface\\icons\\nhi_iceswirl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_iceswirl_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each Fill Level stack now also increases Frost damage dealt by 2%.",
+   "altSpellIds": [
+    707778
+   ],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705212,
+   "name": "Unified Rage",
+   "icon": "Interface\\icons\\novart_magicspell_(76)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(76)_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Unbridled Rage now increases your chance to trigger Ancestral Combat by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705211,
+   "name": "Cold Brew",
+   "icon": "Interface\\Icons\\spell_monk_nimblebrew",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_monk_nimblebrew.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Frost damage now generate a stack of Fill Level. Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 704876,
+   "name": "Rancor",
+   "icon": "Interface\\Icons\\trade_archaeology_generalbeauregardslaststand",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_archaeology_generalbeauregardslaststand.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Brutal Swing now triggers an additional auto attack on the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 500918,
+   "name": "Ancestral Roar",
+   "icon": "Interface\\Icons\\_D3threateningshout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3threateningshout.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Requires EnragedRoar with ancestral fervor, healing you for 100 + 50% AP.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805810,
+   "name": "Cheers!",
+   "icon": "Interface\\Icons\\archaeology_5_0_twinsteinsetofbrewfatherquantoukuo",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/archaeology_5_0_twinsteinsetofbrewfatherquantoukuo.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Designate an ally as your drinking partner for 30 minutes, reducing all damage they take by -5%, and causing 10% of all damage they take to be redirected to you.You can only have 1 ally designated at a time.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 800152,
+   "name": "Hodir's Wrath",
+   "icon": "Interface\\Icons\\achievement_dungeon_ulduarraid_icegiant_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_ulduarraid_icegiant_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Erupt with the power of Hodir, dealing 1361 + 120% AP Frost damage to nearby enemies and restoring 100% of your maximum Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560586,
+   "name": "Guts Splatter",
+   "icon": "Interface\\Icons\\ability_blackhand_marked4death",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_blackhand_marked4death.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor.",
+   "altSpellIds": [
+    561332
+   ],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 926591,
+   "name": "Time To Kill!",
+   "icon": "Interface\\Icons\\spell_hunter_focusingshot",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_hunter_focusingshot.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Axe Twirling by -15 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705204,
+   "name": "Reckless Movements",
+   "icon": "Interface\\Icons\\achievement_boss_blackhand",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_blackhand.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Ancestral Strike and Barbaric Whirl by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 806228,
+   "name": "Defiance",
+   "icon": "Interface\\Icons\\ability_warrior_bloodsurge",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_bloodsurge.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Attempt to defy death, reducing all damage taken by 30% to 80% based on your current missing health for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 500915,
+   "name": "Crush",
+   "icon": "Interface\\Icons\\INV_Mace_69",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_69.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Crush enemies in a frontal cone, dealing 250% Weapon Damage plus 30, knocking them down briefly and stunning them for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805832,
+   "name": "Gutspiller",
+   "icon": "Interface\\icons\\novart_weapon_(6)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_weapon_(6)_border.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Launch a heavy axe at an enemy, causing them to bleed for 96 damage over 12 seconds.Every 6 sec the target has their Guts Spilled, causing them to bleed out for an additional 71 + 40% ranged AP damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 804729,
+   "name": "Ancestor's Call",
+   "icon": "Interface\\Icons\\inv_helmet_158",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helmet_158.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Teaches you Ancestor's Call.Ancestor&#39;s Call (Troll)Call an Honored Ancestor to aid you in battle until dismissed that scales with your Agility and attack power.Whenever you use Barbaric Whirl or Whirling Advance, your Honored Ancestor mimics it.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 804731,
+   "name": "Ancestral Fury",
+   "icon": "Interface\\Icons\\achievement_boss_argus_aggramar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_argus_aggramar.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 560446,
+   "name": "Ancestral Trauma",
+   "icon": "Interface\\icons\\uico_blood_spell_10_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_blood_spell_10_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Ancestral Strike and Crush now scales with your Strength.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 705158,
+   "name": "Frostbite",
+   "icon": "Interface\\icons\\novart_magicspell_(74)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(74)_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Breath of The North now causes the target to bleed for an additional 30% of its damage over 6 seconds as Frost damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705152,
+   "name": "Trip to the Alehouse",
+   "icon": "Interface\\Icons\\achievement_guildperk_bartering",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_guildperk_bartering.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Keg Smash by 10% and its range by 3 yds.",
+   "altSpellIds": [
+    707766
+   ],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 706821,
+   "name": "Drinking Frenzy",
+   "icon": "Interface\\Icons\\inv_misc_archaeology_vrykuldrinkinghorn",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_archaeology_vrykuldrinkinghorn.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your melee attacks now have a 15% chance to grant a stack of Fill Level.In addition, your chance to hit is increased by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705168,
+   "name": "Ancestor's Fury",
+   "icon": "Interface\\Icons\\achievement_boss_generalbjarngrim",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_generalbjarngrim.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Unbridled Rage now also increases your Frost damage by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705216,
+   "name": "Icebound Ancestry",
+   "icon": "Interface\\Icons\\achievement_boss_forgemaster",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_forgemaster.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Breath of the North by 10%.In addition, your attacks now ignore Armor against Frozen targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705218,
+   "name": "The Finest Ale",
+   "icon": "Interface\\Icons\\Spell_Misc_Drink",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_misc_drink.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Ale of The God-King no longer empties your Tankard.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705214,
+   "name": "Hodir's Revenge",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_iceboundfortitude.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Enemies damaged by your Frozen Tankard now take 50% increased damage from you for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 807047,
+   "name": "Hail of Hammers",
+   "icon": "Interface\\icons\\custom_iron_hammer_b_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_iron_hammer_b_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Crush by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 803085,
+   "name": "Efficient Killer",
+   "icon": "Interface\\icons\\5_warriorskill41_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warriorskill41_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of your spells and abilities by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 500913,
+   "name": "Brutal Swing",
+   "icon": "Interface\\icons\\5_axe_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_axe_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your next attack causes you to swing violently at an enemy and up to 2 nearby enemies, dealing 120% Weapon Damage plus 10.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 561326,
+   "name": "Battering Ram",
+   "icon": "Interface\\Icons\\5_engineerskill03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_engineerskill03_border.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Armor penetration by 10% while wielding a two-handed mace or axe.",
+   "altSpellIds": [
+    561331
+   ],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 706653,
+   "name": "Brutal Spirit",
+   "icon": "Interface\\Icons\\INV_Helmet_08",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helmet_08.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Spirit spells by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 707410,
+   "name": "Raging Spirit",
+   "icon": "Interface\\Icons\\warrior_talent_icon_innerrage",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_innerrage.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Unbridled Rage now grants you 30 Energy and it now also removes the Energy cost of your Spirit spells while active.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 561322,
+   "name": "Bellowing Voice",
+   "icon": "Interface\\Icons\\ability_fomor_boss_shout",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_fomor_boss_shout.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Shouts by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560886,
+   "name": "Savage Strength",
+   "icon": "Interface\\Icons\\Achievement_Character_Orc_Male",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_character_orc_male.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility by 5%.",
+   "altSpellIds": [
+    561323
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560456,
+   "name": "Athleticism",
+   "icon": "Interface\\icons\\5_run_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_run_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Energy regeneration by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705169,
+   "name": "Unrelenting",
+   "icon": "Interface\\Icons\\Spell_DeathKnight_RuneTap",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathknight_runetap.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Physical damage dealt and taken by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560205,
+   "name": "Vengeance For Zul'jin",
+   "icon": "Interface\\Icons\\racial_troll_berserk",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/racial_troll_berserk.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Berserker Rush now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 707721,
+   "name": "Iron Gut",
+   "icon": "Interface\\icons\\5_warriorskill44_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warriorskill44_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the duration of poison effects on you by -40%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804746,
+   "name": "Dauntless",
+   "icon": "Interface\\Icons\\sha_ability_rogue_sturdyrecuperate_nightmare",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/sha_ability_rogue_sturdyrecuperate_nightmare.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Dealing damage with Whirling Advance now dispels 1 movement slowing effect from you and refunds 2 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805821,
+   "name": "Blood and Glory",
+   "icon": "Interface\\Icons\\achievement_boss_operator_thogar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_operator_thogar.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "While at or below 35% maximum health, you now gain 20% increased healing received and take -10% reduced damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681060,
+   "name": "Liquid Courage",
+   "icon": "Interface\\Icons\\ability_monk_fortifyingale_new",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_fortifyingale_new.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each Fill Level stack now reduces your damage taken by -2%.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 572799,
+   "name": "Drunken Frenzy",
+   "icon": "Interface\\Icons\\inv_offhand_1h_draenordungeon_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_offhand_1h_draenordungeon_c_02.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Unbridled Rage now increases your Honored Ancestor's Physical damage by 15% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 800838,
+   "name": "Breath of The North",
+   "icon": "Interface\\Icons\\Spell_Fire_BlueFlameBreath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_blueflamebreath.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Unleashes a frost breath, dealing 31 + 20% AP Frost damage to enemies in a 12 yd cone and slowing them by -30% for 5 seconds.Can only be used after emptying your Tankard.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705221,
+   "name": "Rage of the North",
+   "icon": "Interface\\Icons\\inv_banner_tolbarad_alliance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_banner_tolbarad_alliance.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the amount of attacks that can trigger your Ale of The God-King by 10.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705153,
+   "name": "Ancestral Spirit",
+   "icon": "Interface\\Icons\\5_druideskill22_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill22_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of your Spirit spells and increases the duration of your Shouts by -50%.",
+   "altSpellIds": [
+    705154
+   ],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 705208,
+   "name": "The Spins",
+   "icon": "Interface\\Icons\\skill_icon_skill14_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill14_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Keg Smash now causes your Honored Ancestor to perform an Ancestral Whirl attack upon nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 804768,
+   "name": "Might of Utgarde",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_Normal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_utgardepinnacle_normal.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Attacks from your Ancestral Combat now heal your Honored Ancestor for 5% maximum health and cause it to perform an Ancestral Whirl attack.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 681063,
+   "name": "Reckful",
+   "icon": "Interface\\Icons\\Ability_Warrior_BullRush",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_bullrush.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Smash now has a 30% chance to not trigger a cooldown.",
+   "altSpellIds": [
+    681466
+   ],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 704240,
+   "name": "Steel Fury",
+   "icon": "Interface\\Icons\\Ability_Warrior_Warbringer",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_warbringer.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Storm of Steel increases the damage of its subsequent strikes by 4%, stacking 10 times.In addition, the duration of Storm of Steel is increased by 2.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 560881,
+   "name": "Barbed Spear",
+   "icon": "Interface\\Icons\\Barbed_Spear",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/barbed_spear.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Throw a heavy spear with precision at an enemy, dealing 160% Ranged Weapon Damage plus 37, and reducing their healing received by -30% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 705206,
+   "name": "Ogre's Endurance",
+   "icon": "Interface\\Icons\\achievement_boss_highmaul_king",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_highmaul_king.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your healing received by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705232,
+   "name": "Payback",
+   "icon": "Interface\\Icons\\inv_axe_11",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_axe_11.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by your Guts Spilled by 75%.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 500060,
+   "name": "Headhunting",
+   "icon": "Interface\\Icons\\5_archerskill07_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill07_border.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Throw Weapon by -20% and removes your spell pushback suffered from taking damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 300879,
+   "name": "Manhunter",
+   "icon": "Interface\\Icons\\spell_warrior_gladiatorstance",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warrior_gladiatorstance.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your damage dealt by 10% against Humanoids.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 560517,
+   "name": "Skullseeker",
+   "icon": "Interface\\Icons\\Spell_Fire_EnchantWeapon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_enchantweapon.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance against enemies above 80% health by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 561321,
+   "name": "Rage Whirling / Forward Advance",
+   "icon": "Interface\\Icons\\5_druideskill45_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill45_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Whirling Advance by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707583,
+   "name": "Bloody Onslaught / Rapid Recovery",
+   "icon": "Interface\\Icons\\inv_fishing_bait_spinefinpiranha",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fishing_bait_spinefinpiranha.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Onslaught by 6 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561394,
+   "name": "Smasher / Plugging the Hole",
+   "icon": "Interface\\Icons\\Ability_Rogue_Eviscerate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Removes the Energy cost from Skull Smash.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560364,
+   "name": "Drunken Brawler / Powerful Grip",
+   "icon": "Interface\\Icons\\_MonkSpecialAttack_DodgePandaren",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_monkspecialattack_dodgepandaren.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Taking direct damage now increases your chance to dodge by 1% for 3 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804745,
+   "name": "Horde Breaker / Power Swings",
+   "icon": "Interface\\Icons\\warrior_skullbanner",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_skullbanner.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Crush now applies Wounded to enemies for 1 minute and is now guaranteed to critically strike enemies affected by Headbutt.Wounded (Proc)Increases Physical Damage taken by 4% for 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 805927,
+   "name": "Mounting Fury / Savage",
+   "icon": "Interface\\Icons\\warrior_talent_icon_furyintheblood",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warrior_talent_icon_furyintheblood.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Born in Blood by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 804749,
+   "name": "Incredibly Strong / Giant Tosser",
+   "icon": "Interface\\Icons\\Ability_Warrior_Devastate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_devastate.jpg",
+   "source": "Brutality",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Removes the minimum range from Maiming Spear, but reduces its maximum range by -5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Brutality"
+   ]
+  },
+  {
+   "spellId": 707389,
+   "name": "Furious Berserker / Hunting for Sport",
+   "icon": "Interface\\Icons\\Ability_Warrior_WarCry",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warrior_warcry.jpg",
+   "source": "Headhunting",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Barbed Spear now grants Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Headhunting"
+   ]
+  },
+  {
+   "spellId": 573256,
+   "name": "Frozen Blades / Ancestral Wisdom",
+   "icon": "Interface\\Icons\\inv_weapon_shortblade_48",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_weapon_shortblade_48.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes now grant party and raid members 5% critical strike chance for 8 seconds.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 707541,
+   "name": "Crystal Enhancements / Uniting Voice",
+   "icon": "Interface\\Icons\\inv_misc_frostemblem_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_frostemblem_01.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 803798,
+   "name": "Thane's Grip / Thane's Guard",
+   "icon": "Interface\\Icons\\5_archerskill33_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_archerskill33_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand, but reduces your Physical Damage dealt by -8%.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 712673,
+   "name": "To The Bone / Splash Zone",
+   "icon": "Interface\\icons\\nhi_frost_bonecrack_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_frost_bonecrack_border.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Breath of the North now reduces enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 804737,
+   "name": "Clanlord's Totem / Tavern Brawl!",
+   "icon": "Interface\\Icons\\inv_belt_armor_orcclan_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_belt_armor_orcclan_d_01.jpg",
+   "source": "Ancestry",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Drop the Clanlord's Totem at the target location where it will remain for 15 seconds.The totem emanates an aura for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Frost damage when they deal direct damage and gain 50% increased honor.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+   "altSpellIds": [],
+   "sources": [
+    "Ancestry"
+   ]
+  },
+  {
+   "spellId": 801576,
+   "name": "Ancestral Strike",
+   "icon": "_diablo3_execute_druid",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_diablo3_execute_druid.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804765,
+   "name": "Grisly Meal",
+   "icon": "inv_misc_food_meat_raw_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_food_meat_raw_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 570122,
+   "name": "Smash Lock",
+   "icon": "inv_mace_1h_pvppandarias1_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mace_1h_pvppandarias1_d_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804136,
+   "name": "Throw Weapon",
+   "icon": "ability_hunter_hatchettoss",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_hatchettoss.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500919,
+   "name": "Whirling Advance",
+   "icon": "_d3whirlwind",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3whirlwind.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

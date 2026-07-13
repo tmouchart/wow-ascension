@@ -1,0 +1,2068 @@
+{
+ "slug": "felsworn",
+ "class": "Felsworn",
+ "classId": "14",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Slayer",
+   "tabId": 37
+  },
+  {
+   "name": "Infernal",
+   "tabId": 38
+  },
+  {
+   "name": "Tyrant",
+   "tabId": 18
+  }
+ ],
+ "abilityCount": 144,
+ "abilities": [
+  {
+   "spellId": 681376,
+   "name": "Chaotic",
+   "icon": "Interface\\Icons\\nhi_chaosfire_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_chaosfire_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Dealing damage now has an 8% chance to increase your damage by 3% for 8 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560576,
+   "name": "Nether Disciple",
+   "icon": "Interface\\Icons\\inv_felhound4_custom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_felhound4_custom.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your dodge and parry chance by 3%.",
+   "altSpellIds": [
+    561343
+   ],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 685321,
+   "name": "Doomscarring",
+   "icon": "Interface\\Icons\\inv_shield_mogu_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_mogu_c_01.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Twin Slice now deals an additional 1 + 30% AP Physical damage and scars enemies for 12 seconds, increasing your allies' attack power against them by 45 + 15% Agility.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 802180,
+   "name": "Fel Cannon",
+   "icon": "Interface\\Icons\\INV_Gizmo_FelIronBomb",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_gizmo_felironbomb.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Fel Fireball and Ruin by 15% on enemies above 75% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 520251,
+   "name": "Dark Teachings",
+   "icon": "Interface\\Icons\\_Book2Motif_Illidan",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book2motif_illidan.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Intuitions by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704361,
+   "name": "Slice & Dice",
+   "icon": "Interface\\Icons\\inv_glaive_1h_demonhunter_a_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glaive_1h_demonhunter_a_01.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your off-hand weapon damage by 25% and reduces the Energy cost of Twin Slice by -5.",
+   "altSpellIds": [
+    707845
+   ],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 803903,
+   "name": "Fel Haze",
+   "icon": "Interface\\Icons\\Spell_Shadow_FingerOfDeath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_fingerofdeath.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While active, Blood of Mannoroth now also causes you to ignore all enemy Armor.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 800207,
+   "name": "Immolation Aura",
+   "icon": "Interface\\Icons\\spell_fire_felimmolation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felimmolation.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Wreathe yourself in fire for up to 1 minute, dealing 23 + 30% fire SP + 23% AP Fire Damage to nearby enemies every 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 705123,
+   "name": "Outland Slaver",
+   "icon": "Interface\\Icons\\ability_felshieldemitter",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_felshieldemitter.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of your Felrend and Fel Fireball by -3 and increases their damage dealt by 15%.",
+   "altSpellIds": [
+    707846
+   ],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 520240,
+   "name": "Nether Strength",
+   "icon": "Interface\\Icons\\_DarkHand_Fel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_darkhand_fel.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Felfury spenders now reduces the cooldown of Burning Hatred, Hateforged Barrier, and Demonic Will by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805235,
+   "name": "Whispers of the Pit",
+   "icon": "Interface\\Icons\\ability_bossmannoroth_mannorothsgaze",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_bossmannoroth_mannorothsgaze.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Unleash fel energy upon enemies at target location, fearing them and slowing their movement speed by -80% for 8 seconds.Damage caused may interrupt the effect.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705105,
+   "name": "Fel Communion",
+   "icon": "Interface\\Icons\\ability_warlock_moltencoregreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_moltencoregreen.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your maximum Energy by 30.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804822,
+   "name": "Vengeance Is Mine",
+   "icon": "Interface\\Icons\\ability_demonhunter_brandofthehunt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_brandofthehunt.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dodging or parrying an attack now gives you a 10% chance to make your next 10 instances of damage with Twin Slice deal 30% increased damage and generate 1 Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 300474,
+   "name": "Expose",
+   "icon": "Interface\\Icons\\_ManaBurn_Fel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_manaburn_fel.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct Fire and Shadow spell damage dealt now applies Expose to enemies.Expose (Proc)Damage taken from the Felsworn increased by 10% and the critical strike chance of all allies against this target is increased by 3% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 806235,
+   "name": "Felshock",
+   "icon": "Interface\\Icons\\spell_fel_incinerate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fel_incinerate.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 520246,
+   "name": "Illidari Smiter",
+   "icon": "Interface\\Icons\\inv_belt_leather_raiddemonhuntermythic_r_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_belt_leather_raiddemonhuntermythic_r_01.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Fel Fireball now generate 1 Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 560838,
+   "name": "The True Blessing",
+   "icon": "Interface\\Icons\\inv_sword_1h_felfireraid_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_felfireraid_d_03.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 520236,
+   "name": "Felwrath",
+   "icon": "Interface\\Icons\\Spell_Fire_FelFlameRing",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felflamering.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Consumes 2 FelfuryBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.Inner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 704610,
+   "name": "A Thousand Cuts",
+   "icon": "Interface\\Icons\\inv_glaive_1h_battledungeon_c_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glaive_1h_battledungeon_c_02.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Azzinoth's Assault now has a 30% chance to hit an additional time with your main-hand Weapon.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 704378,
+   "name": "Gul'dan's Prodigy",
+   "icon": "Interface\\Icons\\spell_warlock_demonicempowerment",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warlock_demonicempowerment.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces Energy cost and cast time of Fel Fireball by -15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 705137,
+   "name": "Azzinoth's Battery",
+   "icon": "Interface\\Icons\\inv_shoulder_leather_raiddemonhuntermythic_r_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_leather_raiddemonhuntermythic_r_01.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Azzinoth's Assault now has a 30% chance to not consume Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 560641,
+   "name": "Warlock Training",
+   "icon": "Interface\\Icons\\_Orc_09",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_orc_09.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Cripple now causes the enemy target to be unable to critically strike for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300478,
+   "name": "Cursed Flames",
+   "icon": "Interface\\Icons\\spell_fire_felflamestrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felflamestrike.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 705109,
+   "name": "Cruelty",
+   "icon": "Interface\\Icons\\_Warlock_Imp",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_warlock_imp.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 2% and an additional 3% against Demons.",
+   "altSpellIds": [
+    520249
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300467,
+   "name": "Infernal Armor",
+   "icon": "Interface\\Icons\\achievement_boss_argus_felreaver",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_argus_felreaver.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of your Hateforged Barrier by -10 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 802058,
+   "name": "Reckoning",
+   "icon": "Interface\\Icons\\spell_fire_felrainoffire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felrainoffire.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "For 10 seconds, your Fel Fireball is free of cost, instant cast, and strikes up to 4 targets.For the duration, your falling speed is slowed and damage dealt by your Fel Fireball increases your damage dealt by 4% for 15 seconds, stacking 4 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 524947,
+   "name": "Mark of Chaos",
+   "icon": "Interface\\Icons\\70_inscription_glyph_demonhunter_minor",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/70_inscription_glyph_demonhunter_minor.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Using Chaos Rush increases the next instance of direct spell or ability damage within 5 seconds by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520252,
+   "name": "Demon Hide",
+   "icon": "Interface\\Icons\\Ability_Racial_Demonbane",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_racial_demonbane.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Inner Demon is active, your Armor contribution from cloth and leather items is increased by 120%.",
+   "altSpellIds": [
+    520253
+   ],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 560503,
+   "name": "Straight to the Nether",
+   "icon": "Interface\\Icons\\Spell_Shadow_DemonicCircleSummon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_demoniccirclesummon.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Inner Demon is active, Carve and Sargeron Smite now leeches 20% of the damage dealt from the initial strike as Shadowflame Damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 801235,
+   "name": "Sculptor of Doom",
+   "icon": "Interface\\Icons\\achievement_boss_argus_felreaver",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_argus_felreaver.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 300485,
+   "name": "Consumed By Fel",
+   "icon": "Interface\\icons\\custom_T_FelSpikes_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_felspikes_border.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of Immolation Aura by -25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 804610,
+   "name": "Reckless Assault",
+   "icon": "Interface\\Icons\\ability_demonhunter_spectralsight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_spectralsight.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Azzinoth's Assault, Annihilan Strike, and Twin Slice by 15% against slowed enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 805248,
+   "name": "Manaburn",
+   "icon": "Interface\\Icons\\_ManaBurn_Fel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_manaburn_fel.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Burn an enemy's mana equal to 200% of your Stamina.Deals damage equal to the mana drained.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 801903,
+   "name": "Annihilan Strike",
+   "icon": "Interface\\Icons\\inv_glaive_1h_npc_d_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glaive_1h_npc_d_02.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 2 FelfuryUnleash a devastating attack, dealing 145% Weapon Damage to your target with both weapons.This ability is guaranteed to critically strike against enemies above 75% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 800204,
+   "name": "Felhoof Charge",
+   "icon": "Interface\\Icons\\ability_demonhunter_felrush",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_felrush.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 FelfuryCharge an enemy, dealing 60 + 28.5% AP Physical damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 520817,
+   "name": "Vengeance",
+   "icon": "Interface\\Icons\\inv_polearm_2h_fellord_2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_polearm_2h_fellord_2.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Twin Slice and Felrend now have a 60% chance to generate 1 additional Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805244,
+   "name": "Legion March",
+   "icon": "Interface\\Icons\\_Warlock_RueeArdenteVerte",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_warlock_rueeardenteverte.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the range of Chaos Rush by 3 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804613,
+   "name": "Doomstride",
+   "icon": "Interface\\Icons\\ability_demonhunter_doublejump",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_doublejump.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Using Chaos Rush twice in a row now refreshes a charge of Chaos Rush.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 570077,
+   "name": "Blighted Strikes",
+   "icon": "Interface\\icons\\skill_icon_skill104_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/skill_icon_skill104_border.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Inner Demon is active your melee attacks reduce the target's healing received by -20% for 8 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 802076,
+   "name": "Pit Lord's Strength",
+   "icon": "Interface\\Icons\\achievement_boss_hellfire_mannorothreanimated",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_hellfire_mannorothreanimated.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Annihilation now affects 1 additional attack.",
+   "altSpellIds": [
+    802110
+   ],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 800220,
+   "name": "Taskmaster's Army",
+   "icon": "Interface\\Icons\\achievement_boss_hellfire_fellord",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_hellfire_fellord.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Infernal Whipcrack by -30 sec and it now affects all allies and its radius is increased by 15 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 300468,
+   "name": "Illidari Barrier",
+   "icon": "Interface\\Icons\\ability_vehicle_shellshieldgenerator_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_vehicle_shellshieldgenerator_green.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Hateforged Barrier now also creates a damage absorption shield on all nearby allies within 15 yds, absorbing 328 + 100% Stamina + 20% SP + 8% AP damage for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800210,
+   "name": "Felrend",
+   "icon": "Interface\\Icons\\ability_demonhunter_chaosstrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_chaosstrike.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 FelfuryErupt in a whirlwind of felfury, striking all enemies within 6 yds with both weapons, dealing Weapon Damage plus 5.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800355,
+   "name": "Sargeras Embrace",
+   "icon": "Interface\\Icons\\ability_demonhunter_eyebeam",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_eyebeam.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.For the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 803904,
+   "name": "Annihilation",
+   "icon": "Interface\\Icons\\ability_boss_lordanthricystgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_boss_lordanthricystgreen.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Gorge on fel energy, guaranteeing your next direct instance of damage to critically strike, but causing it to consume 5% of your maximum health. Lasts for 5 attacks or 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704602,
+   "name": "Whirling Vengeance",
+   "icon": "Interface\\Icons\\Ability_Rogue_CutToTheChase",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_cuttothechase.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Fury Unleashed by -60 sec. When Fury Unleashed ends, you strike all nearby enemies for 757 + 56.14% AP Shadowflame Damage and increase their damage taken from Sunder by 100% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 800209,
+   "name": "Demonic Will",
+   "icon": "Interface\\Icons\\ability_demonhunter_infernalchains",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_infernalchains.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 FelfuryStrengthen your will, reducing Physical damage taken by -30% for 10 seconds.While active, direct damaging abilities heal you for 3% of your maximum health. Can only occur once every 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 804219,
+   "name": "Infernal Doom",
+   "icon": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glaive_1h_artifactaldrochi_d_05.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Ruin now has a -25% chance not to consume Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 705127,
+   "name": "You Cheat, Gul'dan!",
+   "icon": "Interface\\Icons\\ability_demonhunter_metamorphasistank",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_metamorphasistank.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical damage by 50% against enemies above 75% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 300483,
+   "name": "Chaotic Intuition",
+   "icon": "Interface\\Icons\\INV_Ember_Fel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ember_fel.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 803905,
+   "name": "Shadow Magi",
+   "icon": "Interface\\Icons\\Spell_Shadow_SealOfKings",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_sealofkings.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 806109,
+   "name": "Illidan's Guile",
+   "icon": "Interface\\Icons\\INV_Misc_QirajiCrystal_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_qirajicrystal_03.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Gorge on fel energy, becoming immune to all physical attacks and spells for 8 seconds, but during that time you cannot attack, move or cast spells.At the end of the duration, your next Chaos Rush within 5 seconds now dashes an additional 20 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 561216,
+   "name": "Fury of the Illidari",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_03dual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactfelomelorn_d_03dual.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "2 Charges, 1.5 min rechargeMove quickly from enemy to enemy, attacking them every 1 sec with both weapons until 6 assaults are made, generating 1 Felfury with each strike. While active you are immune to crowd control effects.Can hit the same target multiple times. Cannot hit invisible or stealthed targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 801899,
+   "name": "Legionfall",
+   "icon": "Interface\\Icons\\ability_demonhunter_vengefulretreat",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_vengefulretreat.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Melee ability damage now has a 15% chance to reset the cooldown of Annihilan Strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 704368,
+   "name": "Bane of Chaos",
+   "icon": "Interface\\Icons\\chaosincursion",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/chaosincursion.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 560639,
+   "name": "Illidari Magi",
+   "icon": "Interface\\Icons\\inv_polearm_2h_fellord",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_polearm_2h_fellord.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your periodic damage now has a 20% chance to generate 1 Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 706425,
+   "name": "Fury of Archimonde",
+   "icon": "Interface\\Icons\\achievement_boss_hellfire_archimonde",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_hellfire_archimonde.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 560057,
+   "name": "Chaos Soldier",
+   "icon": "Interface\\Icons\\ability_demonhunter_felblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_felblade.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Azzinoth's Assault and Sargeron Smite by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 804611,
+   "name": "Azzinoth's Rage",
+   "icon": "Interface\\Icons\\Achievement_Boss_OmarTheUnscarred_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_omartheunscarred_01.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Armor penetration by 10% and your expertise by 4.",
+   "altSpellIds": [
+    807901,
+    807914
+   ],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 560822,
+   "name": "Anti-Magic",
+   "icon": "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_antimagicshell.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "When Hateforged Barrier is removed from you, you now reduce -10% of all Magic damage taken for 8 seconds.In addition, Hateforged Barrier now heals for an additional 2% of your maximum health each tick.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300490,
+   "name": "Felforged",
+   "icon": "Interface\\Icons\\spell_fire_felfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felfire.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have -30% reduced casting speed for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 805255,
+   "name": "Mannoroth's Rage",
+   "icon": "Interface\\Icons\\Spell_Fire_FelFireNova",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felfirenova.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Burning Hatred by -60 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 804823,
+   "name": "Tyrannical Resolve",
+   "icon": "Interface\\Icons\\ability_demonhunter_immolation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_immolation.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Taunt nearby enemies for 4 seconds and ignore -50% of all damage taken for 30 seconds, up to 100% of your maximum health.When this ends, you unleash a Felfire Blast that leeches health from nearby enemies based on how many times you took damage with the effect active.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 525001,
+   "name": "Felbane",
+   "icon": "Interface\\Icons\\5_warlock42_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_warlock42_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Curse an enemy, causing the next spell they cast within 4 seconds to be reflected onto them.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704613,
+   "name": "Magic Fiend",
+   "icon": "Interface\\Icons\\Spell_Shadow_DarkSummoning",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_darksummoning.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the amount of beneficial magic effects stolen by your Consume Magic by 1.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705129,
+   "name": "Hateforged Barrier",
+   "icon": "Interface\\Icons\\spell_fire_felfireward",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felfireward.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Manifest a barrier of pure hatred, absorbing 177 + 200% Stamina damage, scaling with your Stamina, for 30 seconds.While the barrier holds, you regenerate 2% of your maximum health every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706267,
+   "name": "Felspill",
+   "icon": "Interface\\Icons\\spell_yorsahj_bloodboil_greenoil",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_yorsahj_bloodboil_greenoil.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating Felfury now leeches 10% AP health from 3 nearby enemies within 6 yds, scaling with your attack power.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805240,
+   "name": "Tyrant's Gaze",
+   "icon": "Interface\\Icons\\inv_summondemonictyrant",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_summondemonictyrant.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Set your fiery gaze upon an enemy and all enemies nearby, intimidating them and causing them to combust, dealing 220 + 35% AP Shadowflame Damage to them.Damaging an enemy in this way heals you for 146 + 50% AP and generates 1 Felfury.Only usable on enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805239,
+   "name": "Burning Hatred",
+   "icon": "Interface\\Icons\\spell_warlock_demonicempowerment",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warlock_demonicempowerment.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Enrages you, instantly generating 6 Felfury and causing your melee damage to leech health to you equal to 50% of the damage dealt as Chaos damage for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 800225,
+   "name": "Skull of Gul'dan",
+   "icon": "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_offhand_1h_artifactskulloferedar_d_03.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Consume the essence of the skull of Gul'dan, increasing your maximum health and Energy by 25% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560549,
+   "name": "Eye of the Tyrant",
+   "icon": "Interface\\Icons\\inv_misc_fel_tainted_cache",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_fel_tainted_cache.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Grant 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, your attack power is increased by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 704612,
+   "name": "Pact Hunter",
+   "icon": "Interface\\Icons\\ability_demonhunter_metamorphasistank",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_metamorphasistank.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Pacts by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 707416,
+   "name": "Withering",
+   "icon": "Interface\\Icons\\Achievement_Zone_Shadowmoon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_shadowmoon.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Fel Fireballs used with Felforged active now deal 30% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 705141,
+   "name": "Pit Lord's Rage",
+   "icon": "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_2h_felfireraid_d_03.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Chaos Rush now increases your Physical damage by 15% for 10 seconds.Casting Felhoof Charge increases your critical strike chance by 6% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 704370,
+   "name": "Curse of Argus",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NatureBurn_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_natureburn_border.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 801895,
+   "name": "Ruin",
+   "icon": "Interface\\Icons\\inv_infernalmountgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_infernalmountgreen.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Consumes 2 FelfuryBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.Inner Demon: Deals an additional 30% of the damage dealt over 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 800206,
+   "name": "Carve",
+   "icon": "Interface\\Icons\\ability_demonhunter_infernalstrike2",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_infernalstrike2.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Consumes 2 FelfuryCharge up a powerful attack over 2.5 seconds. Upon ending the channel, slash in front of you, dealing increased Weapon Damage with both weapons based on how long you channel, dealing less damage with each target struck. Inner Demon: Reduces affected enemies melee and ranged haste by -20% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 560836,
+   "name": "Felfire Adept",
+   "icon": "Interface\\Icons\\Spell_Fire_FelHellfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felhellfire.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Sargeron Smite by 10%.",
+   "altSpellIds": [
+    561345
+   ],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 300465,
+   "name": "Cunning",
+   "icon": "Interface\\Icons\\achievement_boss_hellfire_felreaver",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_hellfire_felreaver.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the duration of movement impairing effects on you by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560284,
+   "name": "Infernal",
+   "icon": "Interface\\Icons\\spell_shadow_summoninfernal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_summoninfernal.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Drop an infernal from the sky with grotesque magic, dealing 12 + 55% fire SP Fire damage to enemies in the radius, horrifying them for 4 seconds, and spawning an Infernal to fight by your side for 15 seconds.Inner Demon: Lasts 1 additional sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 806103,
+   "name": "Wrath of Sargeras",
+   "icon": "Interface\\Icons\\achievement_dungeon_tombofsargeras",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_tombofsargeras.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Magic damage dealt by 3% and your spell hit chance by 2%.",
+   "altSpellIds": [
+    807902
+   ],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 524950,
+   "name": "Black Magic",
+   "icon": "Interface\\Icons\\inv_shoulder_plate_archimonde_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shoulder_plate_archimonde_d_01.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of your Bane of Chaos and Ruin by 10%.",
+   "altSpellIds": [
+    525079
+   ],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 520805,
+   "name": "Scars of the Past",
+   "icon": "Interface\\Icons\\spell-illidan-rosa",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell-illidan-rosa.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Chaos Rush by -5 and casting Chaos Rush now heals you for 81 + 20% Stamina + 33% AP.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 560645,
+   "name": "Fel Instincts",
+   "icon": "Interface\\Icons\\inv_argustalbukmount_felpurple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_argustalbukmount_felpurple.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Azzinoth's Assault by 10% and causes it to increase your melee haste by 20% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 800188,
+   "name": "Spite",
+   "icon": "Interface\\Icons\\ability_warlock_backdraftgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_backdraftgreen.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Agility by 8% and dodge chance by 3%.",
+   "altSpellIds": [
+    803840
+   ],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 572889,
+   "name": "Oblivion",
+   "icon": "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_staff_2h_felfireraid_d_03.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critically striking now increases your damage dealt by 1% for 4 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 560573,
+   "name": "Felgorged",
+   "icon": "Interface\\Icons\\ability_demonhunter_feldevastation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_feldevastation.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Cripple and Consume Magic by -10.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800352,
+   "name": "Embracing Evil",
+   "icon": "Interface\\Icons\\_CasterCloak_Fel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_castercloak_fel.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration and reduces the Energy cost of Banes by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706266,
+   "name": "Armaments of the Legion",
+   "icon": "Interface\\Icons\\inv_plate_helmet_eredarargus_d_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_plate_helmet_eredarargus_d_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces your chance to be hit by spells by -2% and increases the absorption value of Hateforged Barrier by 10%.",
+   "altSpellIds": [
+    707844
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704607,
+   "name": "Elemental Bane",
+   "icon": "Interface\\Icons\\spell_fel_elementaldevastation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fel_elementaldevastation.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your critical damage by 10% and additionally increases your critical strike chance by 15% while fighting Elementals.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705108,
+   "name": "Demonic Evasion",
+   "icon": "Interface\\Icons\\_MonkSpecialAttack_DodgeNightElf",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_monkspecialattack_dodgenightelf.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your chance to dodge by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705125,
+   "name": "Warden's End",
+   "icon": "Interface\\Icons\\INV_Fabric_Felcloth_Ebon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fabric_felcloth_ebon.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the cooldown of Mana Burn and Illidan's Guile by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704374,
+   "name": "Felwracked",
+   "icon": "Interface\\Icons\\Spell_Shadow_DemonicCircleTeleport",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_demoniccircleteleport.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Every 3rd Twin Slice or Fel Fireball within 15 seconds now generates 1 additional Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705102,
+   "name": "Demonborn",
+   "icon": "Interface\\icons\\nhi_unholyswing_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_unholyswing_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Energy regeneration by 15%.",
+   "altSpellIds": [
+    707842
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560542,
+   "name": "Felguard",
+   "icon": "Interface\\Icons\\Spell_Shadow_FelArmour",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_felarmour.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, while Inner Demon is active, you now heal for 15% of all melee damage dealt.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 704606,
+   "name": "Focused Hatred",
+   "icon": "Interface\\Icons\\inv_leather_raiddemonhuntermythic_q_02helm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_leather_raiddemonhuntermythic_q_02helm.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct magical critical strikes now generate 5 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 301287,
+   "name": "Felheart",
+   "icon": "Interface\\Icons\\inv_dhmount_felsaber",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_dhmount_felsaber.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Each Felfury active now increases your haste by 1%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 520257,
+   "name": "Demonic Embrace",
+   "icon": "Interface\\Icons\\ability_mage_worldinflamesgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_worldinflamesgreen.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Inner Demon with at least 6 Felfury now restores 50 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705122,
+   "name": "Bulwark of Azzinoth",
+   "icon": "Interface\\Icons\\INV_Armor_Shield_Naxxramas_D_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_armor_shield_naxxramas_d_01.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Inner Demon now also reduces your damage taken by -10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805256,
+   "name": "Infernal Constitution",
+   "icon": "Interface\\Icons\\ability_demonhunter_glide",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_glide.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum health by 10% and increases your off-hand weapon damage by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 803478,
+   "name": "Pure Hatred",
+   "icon": "Interface\\Icons\\ability_demonhunter_metamorphasistank",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_metamorphasistank.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Hateforged Barrier now also scales with your dodge rating.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805243,
+   "name": "Infernal Whipcrack",
+   "icon": "Interface\\Icons\\ability_warlock_whiplash",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_whiplash.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Enrage up to 8 allies within 20 yds, reducing their damage taken by -15% and increasing their haste by 10% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 520885,
+   "name": "Burning Legionnaire",
+   "icon": "Interface\\Icons\\Kiljaedan",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/kiljaedan.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Energy cost of Twin Slice and Sunder by -10.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 805236,
+   "name": "Grommash's Folly",
+   "icon": "Interface\\Icons\\_Orc_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_orc_06.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Inner Demon is active, your melee haste is now increased by 15% and you now heal equal to 50% of all damage dealt by critical strikes with auto attacks.In addition, critical strikes with Carve deal 5% increased damage, increasing up to 60% with each strike based on how long you channel.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 300476,
+   "name": "Betrayer",
+   "icon": "Interface\\icons\\nhi_unholy_smile_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_unholy_smile_border.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Dodging attacks causes 40% off-hand Weapon Damage to attackers and enrages your party and raid members within 20 yds, increasing their critical strike chance by 2% for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 800203,
+   "name": "Felbreak",
+   "icon": "Interface\\Icons\\ability_deathknight_deathsiphon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathknight_deathsiphon.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.Usable while moving.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560533,
+   "name": "Fel Infusion",
+   "icon": "Interface\\Icons\\_AuraCloak_Felfire",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_auracloak_felfire.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 800214,
+   "name": "Malice of Gul'dan",
+   "icon": "Interface\\Icons\\achievement_thenighthold_guldan",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_thenighthold_guldan.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct critical strikes now have a 60% chance to trigger a Felstrike and generate a Fragment of Malice.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.Fragment of MaliceRestores 5 Energy and increases your critical strike chance by 10% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 300477,
+   "name": "Nether Spirit",
+   "icon": "Interface\\Icons\\ability_demonhunter_immolation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_immolation.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell critical strike chance by 20% of your Spirit.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 801892,
+   "name": "Twin Fury",
+   "icon": "Interface\\Icons\\Spell_Fire_Felcano",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felcano.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critically striking with Twin Slice or Annihilan Strike now generates an additional 1 Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 300489,
+   "name": "Archimonde's Wrath",
+   "icon": "Interface\\Icons\\Achievement_Boss_Exarch_Maladaar",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_exarch_maladaar.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 801904,
+   "name": "Azzinoth's Assault",
+   "icon": "Interface\\Icons\\ability_creature_felsunder",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_felsunder.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Consumes 2 FelfuryStrike an enemy for Weapon Damage plus 15 + 10% AP with both weapons, additionally scaling with your attack power.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 555738,
+   "name": "Fury Unleashed",
+   "icon": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_03dual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_glaive_1h_artifactaldrochi_d_03dual.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Spin your glaives for 5 seconds, increasing movement speed by 30% and dealing 200% Weapon Damage every 1 sec with both weapons to all nearby enemies.You are immune to movement impairing and loss of control effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 705135,
+   "name": "Reachwalker",
+   "icon": "Interface\\Icons\\inv_blood_of_sargeras",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_blood_of_sargeras.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Chaos Rush now reduces the cooldown of Felhoof Charge by -2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 707907,
+   "name": "Burning Rage",
+   "icon": "Interface\\Icons\\Spell_Shadow_SummonImp",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_summonimp.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage and reduces the cost of Sunder and Immolation Aura by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 560637,
+   "name": "Dark Magician",
+   "icon": "Interface\\Icons\\_DeathGrip_Fel",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_deathgrip_fel.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 570158,
+   "name": "Scars of Suffering / Fel Blades",
+   "icon": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_sword_1h_artifactfelomelorn_d_03.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Azzinoth's Assault now scars the enemy, increasing your allies' attack power against them by 15% Agility for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 705145,
+   "name": "Nether Champion / Demonic Machinations",
+   "icon": "Interface\\Icons\\ability_mage_worldinflamesgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_mage_worldinflamesgreen.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering Dancing Blades now increases the damage of next Sargeron Smite by 8% for 20 seconds, stacking 5 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 520244,
+   "name": "Perpetual Fury / Glaiving",
+   "icon": "Interface\\Icons\\achievement_thenighthold_tichondrius",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_thenighthold_tichondrius.jpg",
+   "source": "Slayer",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Dancing Blades reduces the cooldown of Fury Unleashed by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Slayer"
+   ]
+  },
+  {
+   "spellId": 807430,
+   "name": "Suffering / Gul'dan's Gift",
+   "icon": "Interface\\Icons\\ability_hunter_negate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_negate.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of Skull of Gul'dan by 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 704360,
+   "name": "Felguard / Felstrider",
+   "icon": "Interface\\Icons\\Achievement_explore_argus",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_explore_argus.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Your Chaos Rush now reduces all damage taken by -3% for 5 seconds, stacking 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805998,
+   "name": "Fel Flamecasting / Herald of the Legion",
+   "icon": "Interface\\icons\\uico_unholy_spell_03_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_unholy_spell_03_border.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 300480,
+   "name": "Infernal Summoner / Doomsayer",
+   "icon": "Interface\\icons\\custom_74_wings_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_74_wings_border.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct damage dealt now has a 5% chance to reset the cooldown of Infernal.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 560840,
+   "name": "Infernal Ruin / Oppressive Ruin",
+   "icon": "Interface\\Icons\\warlock_pvp_burninglegion",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warlock_pvp_burninglegion.jpg",
+   "source": "Infernal",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Infernal"
+   ]
+  },
+  {
+   "spellId": 520831,
+   "name": "Annihilan Rituals / Quick Carving",
+   "icon": "Interface\\Icons\\Mannoroth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/mannoroth.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Fully channeling Carve now refunds 1 Felfury.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 704611,
+   "name": "Battle Finesse / Unholy Endurance",
+   "icon": "Interface\\Icons\\warlock_curse_weakness_aura",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/warlock_curse_weakness_aura.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "While channeling Carve, your chance to dodge is now increased by 1% based on how long you channel, up to a maximum of 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 807431,
+   "name": "Abyssal Conditioning / Illidari Training",
+   "icon": "Interface\\Icons\\spell_warlock_summonabyssal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_warlock_summonabyssal.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Felfury spenders now increases your Energy regeneration by 5% for 10 seconds, stacking up to 4 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 520592,
+   "name": "Illidan's Favor / Fel Torpedo",
+   "icon": "Interface\\Icons\\Achievement_Boss_Illidan",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_illidan.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Removes the Energy cost of your Felbane and Manaburn and your Manaburn now strikes 4 additional enemies near the primary target.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 807438,
+   "name": "Demonic Blood / Demonic Fortitude",
+   "icon": "Interface\\Icons\\ability_demonhunter_brandofthehunt",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_brandofthehunt.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Generating Felfury now extends the duration of Inner Demon by 0.5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 705131,
+   "name": "Fel Daze / Dark Lord",
+   "icon": "Interface\\Icons\\Spell_Shadow_DeathCoil",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
+   "source": "Tyrant",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Fel Fireball by 10% and it's damage dealt now reduces the enemy's chance to hit by -3% for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Tyrant"
+   ]
+  },
+  {
+   "spellId": 804758,
+   "name": "Betrayer's Inclinations",
+   "icon": "inv_archaeology_70_demon_malformedabyssal",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_archaeology_70_demon_malformedabyssal.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800205,
+   "name": "Breath of Mannoroth",
+   "icon": "achievement_boss_magtheridon",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_magtheridon.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 500028,
+   "name": "Chaos Rush",
+   "icon": "ability_rogue_quickrecovery",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_quickrecovery.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800353,
+   "name": "Consume Magic",
+   "icon": "ability_demonhunter_feldevastation",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_feldevastation.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800031,
+   "name": "Demonfire Pact",
+   "icon": "ability_demonhunter_sigilyellow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_sigilyellow.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804052,
+   "name": "Eye of Archimonde",
+   "icon": "inv_pet_inquisitoreye",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_inquisitoreye.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804334,
+   "name": "Fel Empowerment",
+   "icon": "spell_shadow_zdemonformgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_zdemonformgreen.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801312,
+   "name": "Fel Fireball",
+   "icon": "spell_fire_fireballgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_fireballgreen.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801890,
+   "name": "Felstrikes",
+   "icon": "spell_fire_felflamestrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_felflamestrike.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800212,
+   "name": "Illidari Intuition",
+   "icon": "ability_warlock_demonicpower",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_demonicpower.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804764,
+   "name": "Legionfel Pact",
+   "icon": "ability_demonhunter_sigilpurple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_sigilpurple.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800222,
+   "name": "The Demon Within",
+   "icon": "ability_demonhunter_blur",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_blur.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 801901,
+   "name": "Twin Slice",
+   "icon": "ability_demonhunter_hatefulstrike",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_hatefulstrike.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800029,
+   "name": "Vengeful Pact",
+   "icon": "ability_demonhunter_sigilofinquisition",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_demonhunter_sigilofinquisition.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}

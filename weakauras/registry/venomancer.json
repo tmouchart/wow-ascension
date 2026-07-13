@@ -1,0 +1,2618 @@
+{
+ "slug": "venomancer",
+ "class": "Venomancer",
+ "classId": "29",
+ "classTreeTab": 87,
+ "specs": [
+  {
+   "name": "Venom",
+   "tabId": 76
+  },
+  {
+   "name": "Stalking",
+   "tabId": 77
+  },
+  {
+   "name": "Fortitude",
+   "tabId": 78
+  },
+  {
+   "name": "Vizier",
+   "tabId": 92
+  }
+ ],
+ "abilityCount": 182,
+ "abilities": [
+  {
+   "spellId": 806449,
+   "name": "Mycelial Healing",
+   "icon": "Interface\\Icons\\nethers_spore",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nethers_spore.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "All effective healing done now increases your periodic healing done to an ally by 1% for 30 seconds, stacking 8 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 707382,
+   "name": "Essence of Decay",
+   "icon": "Interface\\Icons\\Spell_Nature_CorrosiveBreath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_corrosivebreath.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Widow's Kiss now apply 1 additional Brood Mark.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 503930,
+   "name": "Captivation",
+   "icon": "Interface\\icons\\nhi_natureseye_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureseye_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases Mycosis's damage through Fungal Growth stacks by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 680768,
+   "name": "Sage",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct healing done by Alkahest now spreads an active Shadra's Balm from the primary target to a nearby ally.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 504355,
+   "name": "From Death Comes Life",
+   "icon": "Interface\\icons\\nhi_natureempower_(2)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureempower_(2)_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Spore now reduces the cooldown of Decay by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 804975,
+   "name": "Boding Dread",
+   "icon": "Interface\\Icons\\inv_tarantula2_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_tarantula2_green.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Shadow damage dealt and your critical strike chance with Shadow spells by 3%.",
+   "altSpellIds": [
+    807920
+   ],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 806154,
+   "name": "Burrow",
+   "icon": "Interface\\Icons\\Burrow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/burrow.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Burrow beneath the ground for 8 seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.While burrowed, you can choose a new location within 30 yds to unburrow.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300664,
+   "name": "Acute Senses",
+   "icon": "Interface\\Icons\\inv_bonespider2_slate",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_bonespider2_slate.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Intellect and Agility by 5%.",
+   "altSpellIds": [
+    300665
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 805775,
+   "name": "Adrenal Venom",
+   "icon": "Interface\\Icons\\trade_alchemy_dpotion_a26",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_dpotion_a26.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Activate Adrenal Venom for 120 minutes, giving your casts a 25% chance to increase your haste by 6% for 6 seconds, stacking 3 times.You can have a maximum of 2 unique Venoms active at a time.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 503856,
+   "name": "Avatar of Shadra",
+   "icon": "Interface\\Icons\\inv_misc_monsterspidercarapace_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterspidercarapace_01.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Damage and healing done now has a 10% chance to apply Curse of Shadra for 10 seconds.Dealing damage or healing with Serpent's Fang, Claw Strike, or Venom Fang on an enemy that is cursed will deal damage or heal them for an additional 25% of the value and heal you for 90.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681052,
+   "name": "Versatile and Deadly",
+   "icon": "Interface\\Icons\\inv_fishing_f_seascorpion3",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fishing_f_seascorpion3.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Reduce all damage taken while in Beetle Form by -3% and increases your movement speed while in Spider Form by 5%.",
+   "altSpellIds": [
+    681492
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560282,
+   "name": "Blightcap Injestion",
+   "icon": "Interface\\Icons\\INV_Ascend_Mushrooms_14",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_mushrooms_14.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your chance to resist poison and disease effects by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503850,
+   "name": "Fury of Shadra",
+   "icon": "Interface\\Icons\\Spell_Nature_PoisonCleansingTotem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_poisoncleansingtotem.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your damage and healing against targets below 35% health by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800894,
+   "name": "Fury of Anub'Rekhan",
+   "icon": "Interface\\Icons\\inv_mechanicalspiderpet",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mechanicalspiderpet.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your maximum mana, Energy, and Rage by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 300974,
+   "name": "Charmed Plating",
+   "icon": "Interface\\Icons\\INV_Misc_MonsterScales_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterscales_01.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces damage taken by all party and raid members by -3%. Does not stack with similar effects.In addition, reduces your chance to be hit by spells by -2%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 706002,
+   "name": "Reinforced Exoskeleton",
+   "icon": "Interface\\Icons\\inv_cloth_outdooremeralddream_d_01_cape",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_cloth_outdooremeralddream_d_01_cape.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your maximum health and your dodge chance by 3%.",
+   "altSpellIds": [
+    707873
+   ],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 503812,
+   "name": "Shadra's Gift",
+   "icon": "Interface\\Icons\\_LiquidStone_Poison",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_liquidstone_poison.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing damage with Barbed Stinger now increases the target's Nature damage taken by 5% for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 504402,
+   "name": "Wicked Barbs",
+   "icon": "Interface\\Icons\\ability_poisons",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_poisons.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Barbed Stinger and Chitin Rush now applies Wicked Poison.Wicked PoisonDeals 60 + 5.67% shadow SP + 3.2% AP Shadow Damage every 2 sec for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 706006,
+   "name": "Vile Fury",
+   "icon": "Interface\\Icons\\Spell_Nature_RemoveDisease",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_removedisease.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Rage cost of Hivebreak and Carapace Crash by -3 and increases your chance to hit by 2%.",
+   "altSpellIds": [
+    707874
+   ],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705959,
+   "name": "Toxic Expulsion",
+   "icon": "Interface\\Icons\\rogue_venomzest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/rogue_venomzest.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Hivebreak now consumes -2 sec of Venomtip Poison's duration to gush toxic slime, dealing 20 Nature damage to 5 enemies within 5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705982,
+   "name": "Wicked Poison",
+   "icon": "Interface\\Icons\\Ability_Creature_Poison_05",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_poison_05.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Chitin Rush, Carapace Crash, and Hivebreak now apply Wicked Poison.Wicked PoisonDeals 60 + 5.67% shadow SP + 3.2% AP Shadow Damage every 2 sec for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 805102,
+   "name": "Molt",
+   "icon": "Interface\\Icons\\inv_skinning_80_hardenedtempesthide",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_skinning_80_hardenedtempesthide.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Shatters your exoskeleton, instantly applying 15 stacks of Exposed Flesh and increasing your movement speed by 30% for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 704264,
+   "name": "Spider Lord",
+   "icon": "Interface\\Icons\\CryptLord",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/cryptlord.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Augments Beetle Form into a Spider Lord, reducing damage taken by -5%, and while Locust Swarm is active your summons now gain 30% increased haste and damage.Casting Hivebreak now has a 40% chance, and melee auto attacks now have a 5% chance, to summon 1 Scarab to aid you in combat for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705975,
+   "name": "Venomics",
+   "icon": "Interface\\Icons\\ability_monk_renewingmists",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_renewingmists.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Venoms by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 805778,
+   "name": "Weakening Venom",
+   "icon": "Interface\\Icons\\trade_alchemy_dpotion_a23",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_dpotion_a23.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Activate Weakening Venom for 120 minutes, giving your casts a 35% chance to deal 59 + 12.5% SP Shadow damage and reduce an enemy's attack power by 234 for 8 seconds.You can have a maximum of 2 unique Venoms active at a time.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705962,
+   "name": "Genesis",
+   "icon": "Interface\\icons\\uico_venom_spell_08_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_venom_spell_08_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your haste by 4%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504799,
+   "name": "Tranquil Essence",
+   "icon": "Interface\\Icons\\ui_notoriety_thevizier",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ui_notoriety_thevizier.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Reduces the threat generated by your healing spells by -10% and increases your periodic healing by 3%.",
+   "altSpellIds": [
+    505204
+   ],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560247,
+   "name": "Locust Swarm",
+   "icon": "Interface\\Icons\\_D3locustswarm",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_d3locustswarm.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Leeches 67 + 10% SP + 3% AP health from nearby enemies every 2 sec for 10 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705969,
+   "name": "Agitation",
+   "icon": "Interface\\Icons\\inv_beetlemount",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_beetlemount.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dodging an attack now generates 3 Rage.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 706955,
+   "name": "Enchanted Chitin",
+   "icon": "Interface\\Icons\\inv_inscription_pigment_bug06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_pigment_bug06.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your Armor contribution from mail by 25%.",
+   "altSpellIds": [
+    707872
+   ],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705967,
+   "name": "Charm of Warding",
+   "icon": "Interface\\Icons\\INV_Trinket_Naxxramas01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_trinket_naxxramas01.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "When a stack of Exposed Flesh is applied you are now healed for 1% of your maximum health.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 707726,
+   "name": "Soothing Venoms",
+   "icon": "Interface\\Icons\\ability_hunter_potentvenom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_potentvenom.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical healing of Shadra's Prayer by 25%.",
+   "altSpellIds": [
+    707869
+   ],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 706007,
+   "name": "A Pit of Snakes",
+   "icon": "Interface\\Icons\\inv_snake_yellowblack",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_snake_yellowblack.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Serpent's Fang now increases the damage of subsequent Serpent's Fangs by 15% for 8 seconds, stacking up to 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 804984,
+   "name": "Venom Saturation",
+   "icon": "Interface\\Icons\\Spell_Nature_CorrosiveBreath",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_corrosivebreath.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of your poison effects by 25% against enemies above 50% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 681048,
+   "name": "Spirit of the Jungle",
+   "icon": "Interface\\Icons\\achievement_zone_tanaanjungle",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_zone_tanaanjungle.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the proc chance of Rejuvenating Venom by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 680767,
+   "name": "Toxic Communion",
+   "icon": "Interface\\icons\\nhi_natureunity_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureunity_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Extend the duration of Shadra's Balm and Mending Mist by 15 sec on all allies within 30 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 804987,
+   "name": "Fungal Growth",
+   "icon": "Interface\\Icons\\inv_misc_starspecklemushroom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_starspecklemushroom.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Shadow and Nature damage dealt now has a 35% chance to increase periodic damage you deal to the target by 2% for 30 seconds, stacking 10 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 805900,
+   "name": "Envenom",
+   "icon": "Interface\\icons\\uico_venom_spell_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_venom_spell_01_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Venom Bolt by -0.3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706018,
+   "name": "Serpent Lord's Ritual",
+   "icon": "Interface\\Icons\\ability_monk_summonserpentstatue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_monk_summonserpentstatue.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct healing done now has a 5% chance to grant you 5 sec of Serpent Lord's Amulet.Serpent Lord&#39;s AmuletDraw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 300684,
+   "name": "Advisor's Perfidy",
+   "icon": "Interface\\Icons\\Achievement_AQ_BugTrio",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_aq_bugtrio.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the bonus healing scaling of Serpent's Fang, Mending Mist, and Shadra's Balm by 10%.",
+   "altSpellIds": [
+    300685
+   ],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 503918,
+   "name": "Ritualistic",
+   "icon": "Interface\\icons\\custom_T_SpiritualSummoning_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_spiritualsummoning_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Green Salve now also refunds you 20% of your base mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 706956,
+   "name": "Prophetic Speaker",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_AzjolLowercity_Heroic",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_azjollowercity_heroic.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Each time you spawn a Mushroom, you now reduce the cooldown of Decay by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 503919,
+   "name": "Necessary Preparations",
+   "icon": "Interface\\Icons\\_SacrificialDagger_Unholy",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_sacrificialdagger_unholy.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Wilt by 20% and it now increases the chance to hit the target with spells by 3% for 20 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706270,
+   "name": "Blistering Fangs",
+   "icon": "Interface\\Icons\\inv_misc_monsterfang_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterfang_02.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting spells that consume Brood Marks now refunds 30 Energy when used with at least 5 Brood Marks on your target.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 630932,
+   "name": "Tunneler",
+   "icon": "Interface\\icons\\custom_55_bug_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_55_bug_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Spindlebind now has 2 charges, a 25 sec cooldown, and deals increased damage.Spindlebind (Tunneler)2 Charges, 25 sec rechargeCommand a tunnel beetle to attack your target from below, inflicting 159 + 65% nature SP Nature damage and rooting them for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 807601,
+   "name": "Rotting Sores",
+   "icon": "Interface\\Icons\\ability_creature_poison_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_poison_06.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the tick rate of Rotfang by -20% and allows its periodic damage dealt to critically strike.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 520153,
+   "name": "Blight Antidote",
+   "icon": "Interface\\Icons\\INV_Ascend_Potions_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_potions_02.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Inject an ally with a powerful magic antidote, dispelling 2 curse effects from them.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706035,
+   "name": "Surprise Strategy",
+   "icon": "Interface\\Icons\\ability_fixated_state_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_fixated_state_green.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Critical strikes now have a 15% chance to increase the healing of your next Shadra's Prayer by 20% and make it instant cast for 10 seconds.Can only occur once per 5 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503852,
+   "name": "Lethality",
+   "icon": "Interface\\icons\\nhi_poisonbottle_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_poisonbottle_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Widow's Kiss on Diseased targets by 30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 300678,
+   "name": "Shadra's Seance",
+   "icon": "Interface\\icons\\custom_T_HealingSwirl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_healingswirl_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Facemelter now ticks -20% faster and the duration is increased by 6 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 504361,
+   "name": "Septic Trauma",
+   "icon": "Interface\\Icons\\ability_rogue_deviouspoisons",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_deviouspoisons.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Harmful critical strikes now increase the duration of Wilt by 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 504347,
+   "name": "Toxic Stride",
+   "icon": "Interface\\icons\\nhi_naturepoisonedstep_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturepoisonedstep_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804989,
+   "name": "Sporelord",
+   "icon": "Interface\\Icons\\INV_Ascend_mushroom_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_mushroom_02.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Fungal Assailant now spawns 3 Mushrooms below the target.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706009,
+   "name": "Bountiful Gifts",
+   "icon": "Interface\\icons\\nhi_natureseye_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureseye_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 10%.",
+   "altSpellIds": [
+    706010
+   ],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 560194,
+   "name": "Serpent's Embrace",
+   "icon": "Interface\\icons\\5_sumsnakearmy_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_sumsnakearmy_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Serpent's Fang and its spell power scaling by 15%.",
+   "altSpellIds": [
+    561349
+   ],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 504867,
+   "name": "Sepsis Bloom",
+   "icon": "Interface\\Icons\\nhi_natureroots_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureroots_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create pustules that swell and then burst, disorienting a target enemy for 6 seconds.All of your Venomancer poison effects are purged from the target, dealing damage equal to their remaining duration at the end of the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706025,
+   "name": "Acid Bolt",
+   "icon": "Interface\\Icons\\inv_alchemy_90_reagent_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_alchemy_90_reagent_green.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Venom Bolt by 10% and its critical strike chance by 2%.",
+   "altSpellIds": [
+    707870,
+    712480
+   ],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 704235,
+   "name": "Pinch",
+   "icon": "Interface\\Icons\\inv_misc_monsterclaw_10",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_monsterclaw_10.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Disarm an enemy's melee weapons with your claws for 5 seconds and apply Weakening Venom to them for 10 sec.Weakening Venom (Proc)Deals 59 + 12.5% SP Shadow Damage and reduces attack power by 23.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706030,
+   "name": "Infestation",
+   "icon": "Interface\\Icons\\inv_misc_herb_evergreenmoss",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_herb_evergreenmoss.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 10% chance to reduce the cooldown of Serpent's Fang and Fungal Assailant by 20% of the remaining cooldown.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 504393,
+   "name": "Natural Weapons",
+   "icon": "Interface\\Icons\\inv_misc_felsaber_claw",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_felsaber_claw.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of all Beetle Form abilities by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 706014,
+   "name": "Widow's Watch",
+   "icon": "Interface\\Icons\\Ability_Druid_ManaTree",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_manatree.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allies affected by Shadra's Balm now have a 20% increased chance to resist poison and curse effects.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 706938,
+   "name": "Ophidian Renewal",
+   "icon": "Interface\\icons\\nhi_natureentagle_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureentagle_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Shadra's Balm and Mending Mist and Shadra's Prayer by 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 504348,
+   "name": "Shadra's Presence",
+   "icon": "Interface\\Icons\\achievement_dungeon_plaguefall_dominavenomblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_plaguefall_dominavenomblade.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allies within 100 yds receive 6% more healing. Does not stack with similar effects.In addition, your Antivenom now dispels 1 additional effect.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 300959,
+   "name": "Fungal Link",
+   "icon": "Interface\\Icons\\INV_Ascend_Mushrooms_18",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_mushrooms_18.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Rot spells is increased by 20% and the threat they generate is reduced by -20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 504356,
+   "name": "Mycelial Synchronization",
+   "icon": "Interface\\Icons\\Spell_Nature_NatureTouchGrow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_naturetouchgrow.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Shadra's Aid on an ally now also casts it on yourself.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 706027,
+   "name": "Venomancy Expert",
+   "icon": "Interface\\Icons\\ability_warlock_infernogreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_warlock_infernogreen.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of all spells and abilities by -5%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 706962,
+   "name": "Withering Venom",
+   "icon": "Interface\\Icons\\Ability_Creature_Disease_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_disease_03.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Inject an enemy with a devastating venom, dealing 16 + 20% nature SP Nature damage every 3 sec for 21 seconds. Damage is dealt slowly at first, and builds up over time.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 300680,
+   "name": "Cover",
+   "icon": "Interface\\Icons\\custom_chitin_b_01_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_chitin_b_01_border.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Harden now clears Exposed Flesh.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 560248,
+   "name": "Impale",
+   "icon": "Interface\\Icons\\impale",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/impale.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Fire spikes through the floor impaling all enemies in a 15 yd line for 83 + 51.07% shadow SP Shadow damage and stunning them for 3.5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 803197,
+   "name": "Regrow Exoskeleton",
+   "icon": "Interface\\Icons\\inv_stave_2h_pvppandarias2_c_03green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_stave_2h_pvppandarias2_c_03green.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Clears Exposed Flesh stacks to reduce your damage taken by -20% for 5 seconds and an additional 1 sec per stack.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 803210,
+   "name": "Regenerative Properties",
+   "icon": "Interface\\Icons\\inv_skinning_80_snakescales",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_skinning_80_snakescales.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces all damage taken by -5%, but damage taken now has a 10% chance to shatter your exoskeleton, removing this damage reduction effect.When your exoskeleton shatters you regenerate 12% of your maximum health over 12 seconds, after this duration your exoskeleton regenerates.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 707668,
+   "name": "Brood Lord",
+   "icon": "Interface\\Icons\\_WebSight",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_websight.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Augments Spider Form into a Brood Lord, causing your Brood Mark spenders to launch webs at the target, sticking to them for 10 seconds.Each webbed target has their movement speed slowed by -25%.Critically striking an enemy who is webbed summons 1 to 2 Spiderlings to aid you in combat for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 630900,
+   "name": "Venomous Bite",
+   "icon": "Interface\\Icons\\Ability_Poisons",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_poisons.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the amount of times Brood Marks can stack by 2.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 503851,
+   "name": "Contagion",
+   "icon": "Interface\\icons\\nhi_poisonwhirl_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_poisonwhirl_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "For 15 seconds, all periodic damage dealt now has a 30% chance to burst dealing 92 + 20% shadow SP Shadow damage to 8 enemies within 8 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 500230,
+   "name": "Bile Eruption",
+   "icon": "Interface\\Icons\\nhi_poisonblister_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_poisonblister_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Triggering a Venom now has a 25% chance to generate you 5 Energy.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 574353,
+   "name": "Virulent Opening",
+   "icon": "Interface\\Icons\\achievement_dungeon_plaguefall_dominavenomblade",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_plaguefall_dominavenomblade.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the periodic damage dealt by your Facemelter and Rotfang by 30% while the enemy is above 75% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 805104,
+   "name": "Serpent Lord",
+   "icon": "Interface\\Icons\\inv_giantsnake_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_giantsnake_green.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Augments Spider Form into a Serpent Lord, giving some of your Spider Form abilities a 1 second cast time and 10 yds of increased range.Damage is increased when attacking an enemy past 10 yds by 30% and spell pushback from enemy attacks is reduced by 50%.Increases the damage of Withering Venom by 50% and causes it to create a Miasma.Miasma (Talent)Create an 8 yd cloud of poison at a location for 12 seconds, causing 57 + 12.5% nature SP Nature Damage to 8 enemies within it every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 504344,
+   "name": "Fungal Assailant",
+   "icon": "Interface\\Icons\\inv_fungarian_blue",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_fungarian_blue.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Summon a Fungarian to attack an enemy, dealing 226 + 65% SP Nature damage, and instantly apply Debilitating Venom to your target. Lasts 20 seconds.Debilitating Venom (Slow)Movement speed slowed by -40% for 8 seconds.Can be used in any form.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706942,
+   "name": "Protraction",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NaturePortal_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_natureportal_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of your Venomancer periodic damage effects by 3 sec.",
+   "altSpellIds": [
+    707871
+   ],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 681056,
+   "name": "Mycelial Ring",
+   "icon": "Interface\\Icons\\INV_Ascend_Mushrooms_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_mushrooms_02.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Create an 8 yd ring beneath you for 10 seconds that deals 59 Nature damage every 1 sec to enemies inside and immediately grows 12 Mushrooms in a circle around you.At the end of the duration, up to 15 allies inside are healed for 845 + 65% nature SP.Can be used in any form.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 573307,
+   "name": "Lethargy",
+   "icon": "Interface\\Icons\\Spell_Shadow_PlagueCloud",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_plaguecloud.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by your Wilt now applies Lethargy to affected enemies.Lethargy (Dummy)Reduces an enemy's chance to hit by -3% and increases their Nature Damage taken from you by 5% for 8 seconds.Dispelling this effect increases the dispeller's resource costs by 100% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706937,
+   "name": "Shadra's Gift",
+   "icon": "Interface\\Icons\\spell_druid_symbiosis",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_symbiosis.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time of Shadra's Prayer by -10% and your spell pushback suffered from damaging attacks by 35%.",
+   "altSpellIds": [
+    707868
+   ],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 681054,
+   "name": "Fungal Allies",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Fungal Assailant now summons 2 additional Fungarians.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 804968,
+   "name": "Hive Instinct",
+   "icon": "Interface\\Icons\\inv_pet_shalespider",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_pet_shalespider.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "The swarm stirs within you, preparing you for battle, instantly generating 100 Rage or Energy.Usable while Skulking.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 680794,
+   "name": "Venomizer",
+   "icon": "Interface\\icons\\uico_venom_spell_06_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_venom_spell_06_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the proc chance of all Venoms by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705993,
+   "name": "Tome of Ahn'kahet",
+   "icon": "Interface\\Icons\\_Book4_Purple",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_book4_purple.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage and effective healing done now has an 8% chance to grant Tome of Ahn'kahet for 15 seconds.Tome of Ahn&#39;kahetThe next spell has its costs reduced by -100%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504406,
+   "name": "Chitinous Spikes",
+   "icon": "Interface\\icons\\custom_T_PoisonSpikes_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_poisonspikes_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Taking direct damage has a 20% chance to retaliate for 5% of the damage taken.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 560188,
+   "name": "Hallucinogenic Venom",
+   "icon": "Interface\\Icons\\inv_inscription_pigment_bug07",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_pigment_bug07.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows 50% of your mana to regenerate while in combat.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804978,
+   "name": "Shadra's Lair",
+   "icon": "Interface\\Icons\\INV_Ascend_spiderweb_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_spiderweb_b_01.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Designate the area around you as your Lair for 8 seconds. Enemies are unable to target into or out of the Lair and their movement speed is slowed by -60%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504326,
+   "name": "Master of Venoms",
+   "icon": "Interface\\Icons\\rogue_venomzest",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/rogue_venomzest.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the duration of your Venoms by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705949,
+   "name": "Skin Shedder",
+   "icon": "Interface\\Icons\\Spell_Nature_MoonGlow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_moonglow.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cost of shapeshift spells by -50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800901,
+   "name": "Shadra's Balm",
+   "icon": "Interface\\Icons\\nhi_naturepotion_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturepotion_border.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Envelop an ally with a restorative balm, healing them for 14 + 25.17% healing every 3 sec for 18 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800887,
+   "name": "Spindlebind",
+   "icon": "Interface\\Icons\\nhi_poisonweb_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_poisonweb_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Emit webs at all enemies behind you, rooting them for 4 seconds and inflicting 61 + 40% nature SP Nature damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503854,
+   "name": "Potency",
+   "icon": "Interface\\Icons\\inv_knife_1h_artifactfangs_d_02dual",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_knife_1h_artifactfangs_d_02dual.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Venom Fang by 15% and causes it to increase the target's chance to be critically struck by spells by 3% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 503799,
+   "name": "One Man's Poison...",
+   "icon": "Interface\\Icons\\ability_rogue_deviouspoisons",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_deviouspoisons.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting spells that consume Brood Marks now has a -25% chance to refund their Brood Mark cost.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 560264,
+   "name": "Deadly Sting",
+   "icon": "Interface\\Icons\\hunter_pvp_vipersting",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/hunter_pvp_vipersting.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Dealing periodic damage now has a 10% chance to make your next Hivebreak within 8 seconds free of cost and deal 50% increased damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705961,
+   "name": "Runed Carapace",
+   "icon": "Interface\\Icons\\INV_Shield_21",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_shield_21.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Whenever you take Magic damage, reduce damage taken by that magic school by -10% for 10 seconds.Can only occur once every 30 sec per school of magic.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 800902,
+   "name": "Green Salve",
+   "icon": "Interface\\Icons\\inv_firstaid_healingsalve",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_firstaid_healingsalve.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Rapidly heal an ally for 30 over 6 seconds.At the end of the duration, this will seek another nearby ally with the lowest health and heal them for 47 + 24.46% healing.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 706016,
+   "name": "Worship",
+   "icon": "Interface\\Icons\\spell_nature_abolishmagic",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_abolishmagic.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows all critical heals to increase periodic healing the target receives from you by 10% for 5 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 680763,
+   "name": "Blightfang",
+   "icon": "Interface\\Icons\\druid_ability_wildmushroom_b",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/druid_ability_wildmushroom_b.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Serpent's Fang now spawns a Mushroom below the target that will explode after 2 sec, dealing 303 + 12.5% SP Nature damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 800910,
+   "name": "Decay",
+   "icon": "Interface\\icons\\nhi_natureritual_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureritual_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Apply Wilt to up to 5 enemies at target location and drop a Mushroom that will explode after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 707224,
+   "name": "Venoxis Rage",
+   "icon": "Interface\\Icons\\spell_nature_poisoncleansingtotem",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_poisoncleansingtotem.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Mycosis now enrages your Fungarians for 6 seconds, increasing its damage and attack speed by 30% for 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706455,
+   "name": "Fungic",
+   "icon": "Interface\\Icons\\spell_druid_wildmushroom_bloom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_wildmushroom_bloom.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "You now apply Fungic to enemies affected by Lethargy, dealing an additional 20% of the damage dealt by your Venom Bolt or Serpent's Fang as Nature damage over 3 seconds, stacking up to 2 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 504855,
+   "name": "From Life Comes Death",
+   "icon": "Interface\\Icons\\custom_T_NaturesWrath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_natureswrath_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "For 20 seconds, when you kill an enemy that yields experience or honor they now spawn a Mushroom beneath them. Can only occur once per sec.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 707233,
+   "name": "Suffocating Coils",
+   "icon": "Interface\\icons\\nhi_natureweb_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureweb_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage now has a 5% chance to cause you to launch webs at your target, wrapping them in a Suffocating Coil.Suffocating CoilLaunch a beam of webbing at an enemy, inflicting 91 + 12% nature SP Nature damage every 1 sec for 4 seconds.After 4 seconds, if Spore is active on the target, drop a Mushroom below them that will explode after 2 sec, dealing 303 + 12.5% nature SP Nature damage to all enemies within 5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 560195,
+   "name": "Fangbinder",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the healing of Serpent's Fang by 50% and Serpent's Fang can no longer miss.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 706015,
+   "name": "Venom Glands",
+   "icon": "Interface\\Icons\\Ability_Creature_Poison_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_poison_02.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your healing done by 15% on allies below 35% health or if they are Poisoned.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 560200,
+   "name": "Cycle of Rebirth",
+   "icon": "Interface\\Icons\\_LiquidStone_Poison",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_liquidstone_poison.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Effective periodic healing with Shadra's Balm now has a 10% chance to make your next Alkahest within 8 seconds is free and instant.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 804963,
+   "name": "Lifeblood",
+   "icon": "Interface\\Icons\\inv_misc_volatilelife_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_volatilelife_green.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": true,
+   "desc": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by -20% and causing all damage taken to cast Rejuvenating Venom. Lasts for 10 seconds.Rejuvenating Venom (Heal)Heal a random ally within 30 yds of your target for 67 + 9.2% healing over 6 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 804961,
+   "name": "Widowmaker",
+   "icon": "Interface\\Icons\\inv_spidermountc5",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_spidermountc5.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Spider FormConsumes Brood MarksInject shadow venom into an enemy, dealing Shadow damage and reducing their healing received by 50% for 8 seconds. 1 Mark: 55 + 56.25% shadow SP Shadow damage. 2 Marks: 70 + 72% shadow SP Shadow damage. 3 Marks: 90 + 92.25% shadow SP Shadow damage. 4 Marks: 114 + 117% shadow SP Shadow damage. 5 Marks: 154 + 157.5% shadow SP Shadow damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 805884,
+   "name": "Extraction",
+   "icon": "Interface\\icons\\nhi_nature_stab_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_nature_stab_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "For 15 seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores 5% of your missing mana.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805931,
+   "name": "Carapace Regeneration",
+   "icon": "Interface\\Icons\\ability_vehicle_shellshieldgenerator_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_vehicle_shellshieldgenerator_green.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "3 Charges, 20 sec rechargeRegenerate your carapace, reducing your Physical damage taken by -4% and restoring 1% maximum health every 1 sec, draining 10 Rage every tick to remain active, stacking 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 800878,
+   "name": "Ambush Predator",
+   "icon": "Interface\\Icons\\5_assassinskill12_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_assassinskill12_border.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Casting Burrow will now apply Tunnel Below to you.While Skulk is active every 1 sec you reduce the cooldown of Burrow by -1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 705996,
+   "name": "Empowering Pheromones",
+   "icon": "Interface\\Icons\\Ability_Rogue_DeadenedNerves",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_deadenednerves.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of your Pheromones by 20% and their duration by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 804964,
+   "name": "Noxious Empowerment",
+   "icon": "Interface\\Icons\\achievement_battleground_templeofkotmogu_02_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_battleground_templeofkotmogu_02_green.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Enrage for 12 seconds, increasing your chance to trigger Venoms by 50%, your Energy regeneration by 100%, and increasing your damage dealt by 20% for 12 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 800882,
+   "name": "Nerubian Sting",
+   "icon": "Interface\\Icons\\INV_Misc_Head_Nerubian_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_head_nerubian_01.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Applies 1 Brood MarkSting an enemy, dealing 26 + 25% shadow SP Shadow damage and an additional 20 + 50% shadow SP over 15 seconds, stacking up to 3 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 504704,
+   "name": "Deadly Kiss",
+   "icon": "Interface\\Icons\\5_fishbite_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_fishbite_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases critical damage dealt by Widow's Kiss, Widowmaker and Venom Fang by 50% against Poisoned targets.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 706209,
+   "name": "Rotpriest",
+   "icon": "Interface\\icons\\novart_magicspell_(89)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_magicspell_(89)_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your spell critical damage by 100%.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 630934,
+   "name": "Corrosive Bile",
+   "icon": "Interface\\Icons\\ability_creature_poison_03",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_poison_03.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "After using Facemelter, your next Widowmaker within 15 seconds now deals 20% increased damage and strikes 2 additional nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 705966,
+   "name": "Reinforced Shell",
+   "icon": "Interface\\Icons\\inv_misc_leather_shellfragment",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_leather_shellfragment.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your total armor by 20%.In addition, while Spider or Beetle form is active your attacks are unable to be parried or dodged.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503970,
+   "name": "Fang Blessing",
+   "icon": "Interface\\Icons\\inv_inscription_deck_jadeserpent",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_inscription_deck_jadeserpent.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance by 3%.",
+   "altSpellIds": [
+    504898
+   ],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 800899,
+   "name": "Mending Mist",
+   "icon": "Interface\\Icons\\ability_druid_focusedgrowth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_focusedgrowth.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Spread a precarious mist to up to 8 allies within 30 yds, healing them for 9 + 15% healing every 1 sec for 7 seconds.After 1.69 sec, all allies within 30 yds are healed for an additional 104 + 23.1% healing.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800914,
+   "name": "Serpent Lord's Amulet",
+   "icon": "Interface\\Icons\\inv_helm_cloth_zandalardungeon_c_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_helm_cloth_zandalardungeon_c_01.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Draw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504342,
+   "name": "Alkahest",
+   "icon": "Interface\\icons\\nhi_natureburn_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureburn_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "2 Charges, 12 sec rechargeBless an ally with Shadra's grace, healing them for 85 + 31.44% healing and extending the duration of Shadra's Prayer on them by 9 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 504736,
+   "name": "Venom Weaving",
+   "icon": "Interface\\Icons\\Spell_Nature_ResistMagic",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_resistmagic.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Serpent's Fang now increases the healing of your next 2 Alkahests by 25%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 300855,
+   "name": "Envenomed Weapons",
+   "icon": "Interface\\Icons\\ability_rogue_creepingvenom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_creepingvenom.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Envenoms the weapons of all nearby allies for 30 minutes, giving them a 5% chance to launch a jet of poison at their target whenever they deal damage, dealing 8 + 10% nature SP + 10% AP Nature damage.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 504352,
+   "name": "Shadra's Aid",
+   "icon": "Interface\\icons\\nhi_natureempower_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_natureempower_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Envelop an ally in Shadra's grace, reducing all damage taken by -20% and causing direct damage taken to restore 3% maximum health for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier",
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 560266,
+   "name": "Potent Expulsion",
+   "icon": "Interface\\Icons\\inv_ability_wildstalkerdruid_thrivinggrowth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ability_wildstalkerdruid_thrivinggrowth.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage dealt by Expulsion by 20%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 803196,
+   "name": "Barbed Stinger",
+   "icon": "Interface\\Icons\\inv_knife_1h_artifactfangs_d_02",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_knife_1h_artifactfangs_d_02.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Clears Exposed Flesh stacks and flings a Barbed Stinger into an enemy for 10 seconds, plus an additional 1 sec per cleared stack.Recasting this ability on the same target will rip the stinger out, pulling them to you and dealing Nature damage, scaling based on how long the stinger was left in them.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705876,
+   "name": "Beetle Poison",
+   "icon": "Interface\\Icons\\inv_10_alchemy_bottle_shape1_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_10_alchemy_bottle_shape1_green.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows Wicked Poison to stack an additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705999,
+   "name": "Reconstructive Carapace",
+   "icon": "Interface\\Icons\\inv_misc_scales_stonygreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_scales_stonygreen.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the amount of Rage drained by Carapace Regeneration by -3.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 800871,
+   "name": "Facemelter",
+   "icon": "Interface\\Icons\\spell_deathvortex",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_deathvortex.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Spider FormConsumes Brood MarksSpray poison upon an enemy and nearby enemies, dealing Nature damage over 15 seconds. 1 Mark: 88 + 93.75% nature SP Nature damage. 2 Marks: 112 + 120% nature SP Nature damage. 3 Marks: 144 + 153.75% nature SP Nature damage. 4 Marks: 182 + 195% nature SP Nature damage. 5 Marks: 245 + 262.5% nature SP Nature damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 504375,
+   "name": "Deadly Neurotoxins",
+   "icon": "Interface\\Icons\\ability_creature_poison_06",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_poison_06.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Venom Fang and Nerubian Sting now deals an additional 25% of their direct damage instantly as Nature damage.Damage dealt in this way has a 40% chance to extend the duration of Rotfang by 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 706036,
+   "name": "Vile Fangs",
+   "icon": "Interface\\Icons\\_SoulFire_Shadow",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_soulfire_shadow.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 10% chance to generate a Brood Mark.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 706271,
+   "name": "Death Spray",
+   "icon": "Interface\\Icons\\ability_creature_poison_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_creature_poison_01.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Periodic damage dealt now has a 5% chance to remove the Energy cost from your next Venom Fang or Widow's Kiss within 8 seconds and increase its damage by 20%.Can occur only once every 2 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 804982,
+   "name": "Wilt",
+   "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NatureWrath_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/custom_t_nhance_rpg_icons_naturewrath_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Wilt the life of an enemy with vile poison, dealing 144 Nature damage over 18 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 804986,
+   "name": "Mycosis",
+   "icon": "Interface\\Icons\\spell_druid_wildmushroom",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_druid_wildmushroom.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Fungus grows throughout the body of an enemy, dealing 153 + 65% nature SP Nature damage and applying a shield that absorbs the next 100 + 200% SP healing done to them for 8 seconds.Deals 20% increased damage for each stack of Fungal Growth on the target.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 503923,
+   "name": "Serpent Lord's Ring",
+   "icon": "Interface\\Icons\\inv_60pvp_ring3c",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_60pvp_ring3c.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Draw power from the Serpent Lord's Ring instantly regenerating 20% of your maximum mana and causing your Mycosiss to trigger no cooldown and be free of cost for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 707563,
+   "name": "Playing With Poison",
+   "icon": "Interface\\Icons\\Spell_Nature_NullifyDisease",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_nullifydisease.jpg",
+   "source": "class",
+   "entryType": "Ability",
+   "guessActive": false,
+   "desc": "Increases your Nature damage by 5% and healing done by 3%.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 681057,
+   "name": "Limb Decayer",
+   "icon": "Interface\\icons\\uico_venom_spell_04_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_venom_spell_04_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the cast time and increases the mana cost of Decay by 50%.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 705991,
+   "name": "Unbreakable",
+   "icon": "Interface\\Icons\\inv_scarabmount_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_scarabmount_green.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Allows Exposed Flesh to stack 5 additional times and increase your Physical damage taken by -1% less.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 805140,
+   "name": "Cunning of the Nerub'ar",
+   "icon": "Interface\\Icons\\Achievement_Dungeon_AzjolLowercity_10man",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_dungeon_azjollowercity_10man.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Augments your Spider Form, increasing your damage dealt by 10% and causing it to allow your Nerubian Sting to stack 1 additional time.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 804983,
+   "name": "Spore",
+   "icon": "Interface\\Icons\\nhi_unholy_mushroom_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_unholy_mushroom_border.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Inject an enemy with parasitic spores, dealing 20 + 17.5% nature SP Shadow damage, plus an additional 231 over 21 seconds.After 10 sec, drop a Mushroom below the target that explodes after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 706021,
+   "name": "Mycelial Replenishment",
+   "icon": "Interface\\Icons\\spell_fire_burnoutgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_fire_burnoutgreen.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases your critical strike chance and critical healing done by 20% for 20 seconds and instantly restore 30% of your maximum mana, but consumes all stacks of Mycelial Healing on all nearby allies.While active, all periodic critical strikes heal for an additional 20% of the healing done.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 803195,
+   "name": "Venomtip Poison",
+   "icon": "Interface\\icons\\5_poisonclaw_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_poisonclaw_border.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Spray poison on an enemy and all enemies near them, dealing 30 + 11% nature SP + 10% AP Nature damage and reducing their attack speed by -20% for 15 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 706033,
+   "name": "Glory To Shadra!",
+   "icon": "Interface\\icons\\5_sumspiders_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_sumspiders_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the critical strike chance of Venom Fang and Nerubian Sting by 10%.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 804969,
+   "name": "Virulent Resonance",
+   "icon": "Interface\\Icons\\epic_rpg_icon_pack_poison_icon_0005s_0000_fire_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_poison_icon_0005s_0000_fire_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the effectiveness of Brood Marks by 10% and your hit chance by 5%.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 300682,
+   "name": "Venomagus",
+   "icon": "Interface\\icons\\novart_passivemastery_(23)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_passivemastery_(23)_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the damage of Blight Venom by 20%.",
+   "altSpellIds": [
+    301364
+   ],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 804977,
+   "name": "Rotfang",
+   "icon": "Interface\\Icons\\spell_volatilefiregreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_volatilefiregreen.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Requires Spider FormConsumes Brood MarksInject venom into an enemy that rots them from the inside out, dealing Plague damage over 24 seconds. 1 Mark: 240 + 220% SP Plague damage. 2 Marks: 307 + 281.6% SP Plague damage. 3 Marks: 394 + 360.8% SP Plague damage. 4 Marks: 499 + 457.6% SP Plague damage. 5 Marks: 672 + 616% SP Plague damage.Damage dealt pierces absorption effects and resistances.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 807600,
+   "name": "Widow's Kiss",
+   "icon": "Interface\\Icons\\achievement_boss_maexxna",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_maexxna.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Every 3rd Venom Fang becomes Widow's Kiss, dealing increased damage and granting you increased haste.Widow&#39;s Kiss (Transform)Applies 1 Brood MarkBite an enemy for 91 + 50% shadow SP + 30% AP Shadow damage, increasing your haste by 20% for 4 seconds. Scales with modifiers to Venom Fang.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 805094,
+   "name": "Expulsion",
+   "icon": "Interface\\Icons\\achievment_boss_wellofeternity",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievment_boss_wellofeternity.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Clears Exposed Flesh stacks to poison nearby enemies for 5 seconds, and an additional 1 sec per cleared stack, dealing 15 + 10% nature SP + 5% AP Nature damage every 1 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 706370,
+   "name": "Rotting Away / Wilting Away",
+   "icon": "Interface\\Icons\\crest_druid",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/crest_druid.jpg",
+   "source": "Venom",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Wilt now has a 15% chance when it deals damage to strike again as Shadow damage.",
+   "altSpellIds": [],
+   "sources": [
+    "Venom"
+   ]
+  },
+  {
+   "spellId": 503976,
+   "name": "Mamba Mentality / Celerity",
+   "icon": "Interface\\Icons\\inv_giantsnake_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_giantsnake_green.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Critical strikes with Venom Bolt, Hivebreak, or Venom Fang now increase your movement speed by 20% for 3 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 503960,
+   "name": "Enduring Exoskeleton / Relentless",
+   "icon": "Interface\\Icons\\Spell_Nature_SkinofEarth",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_skinofearth.jpg",
+   "source": "class",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct damage taken now has a 30% chance to generate 2 Rage and 3% base mana.Can only occur once per sec.",
+   "altSpellIds": [],
+   "sources": [
+    "class"
+   ]
+  },
+  {
+   "spellId": 807243,
+   "name": "Corrosive Toxin / Withered",
+   "icon": "Interface\\Icons\\_SkullCurse2_AcidIce",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_skullcurse2_acidice.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Withering Venom now deals an additional 1 + 125% shadow SP Shadow damage at the end of its duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 805933,
+   "name": "Black Widow / Caustic",
+   "icon": "Interface\\Icons\\spell_shadow_deathsembrace",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_shadow_deathsembrace.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt to enemies below 35% health now reduces the cooldown of Noxious Empowerment by -2 sec.In addition, your Widowmaker now deals 20% increased damage to enemies below 35% health.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 706026,
+   "name": "Bugging / Nature Against Nature",
+   "icon": "Interface\\icons\\nhi_naturevision_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturevision_border.jpg",
+   "source": "Stalking",
+   "entryType": "Talent",
+   "guessActive": true,
+   "desc": "Harmful spells cast out of Skulk increase the damage you deal to the enemy by 30% for 4 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Stalking"
+   ]
+  },
+  {
+   "spellId": 705998,
+   "name": "Slimy / Slimy Stingers",
+   "icon": "Interface\\Icons\\INV_Ascend_slime_b_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_ascend_slime_b_01.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Direct damage taken now has a 20% chance to create a pool of Beetle Slime under the enemy.Beetle SlimeDeals 49 Nature Damage to up to 10 enemies within 5 yds every 2 sec for 8 seconds.Can only occur once every 3 sec.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 504400,
+   "name": "Pendo's Charm / Catalyst",
+   "icon": "Interface\\Icons\\inv_misc_necklace_shell01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_necklace_shell01.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the rage generated by your damage dealt by 15%.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 804993,
+   "name": "Empowered Exoskeleton / Chitinous Surge",
+   "icon": "Interface\\Icons\\inv_antorus_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_antorus_green.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Removes the Rage cost of Chitin Rush and increases its range by 5 yds.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 504837,
+   "name": "Poison for Everyone! / Drown In Poison",
+   "icon": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0004s_0000_arrow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_poison_icon_0004s_0000_arrow_border.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Reduces the Rage cost of Venomtip Poison by -10.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 705980,
+   "name": "Alacrity / Cunning",
+   "icon": "Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_deathwing_grasping_tendrilsgreen.jpg",
+   "source": "Fortitude",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Damage dealt by Chitin Rush now increases your dodge chance by 1% for 5 seconds, stacking 8 times.",
+   "altSpellIds": [],
+   "sources": [
+    "Fortitude"
+   ]
+  },
+  {
+   "spellId": 681315,
+   "name": "The Antidote / Good Venom",
+   "icon": "Interface\\Icons\\Spell_Nature_MagicImmunity",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/spell_nature_magicimmunity.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Increases the duration of Rejuvenating Venom by 2 sec and increases its tick rate by -30%.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 706945,
+   "name": "Melioration / Lifemender",
+   "icon": "Interface\\icons\\nhi_deathblow_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_deathblow_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Your Serpent's Fang now refreshes a charge of Alkahest.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 705957,
+   "name": "Book of Shadra / Venomcult Scrolls",
+   "icon": "Interface\\icons\\novart_books_(3)_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/novart_books_(3)_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Doubles the duration, cooldown, and healing of Green Salve.In addition, it now seeks another nearby ally to heal every 6 sec, instead of at the end of the duration.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 681320,
+   "name": "Sublime Extraction / Venom Fanatic",
+   "icon": "Interface\\Icons\\5_druideskill10_Border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/5_druideskill10_border.jpg",
+   "source": "Vizier",
+   "entryType": "Talent",
+   "guessActive": false,
+   "desc": "Casting Green Salve now resets the cooldown of Serpent's Fang and removes the cost of your next Serpent's Fang for 8 seconds.",
+   "altSpellIds": [],
+   "sources": [
+    "Vizier"
+   ]
+  },
+  {
+   "spellId": 803179,
+   "name": "Champion of the Spider",
+   "icon": "epic_rpg_icon_pack_poison_icon_0001s_0000_spider_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/epic_rpg_icon_pack_poison_icon_0001s_0000_spider_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805731,
+   "name": "Debilitating Venom",
+   "icon": "trade_alchemy_dpotion_a22",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_dpotion_a22.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 503907,
+   "name": "Disciple of Shadra",
+   "icon": "inv_mechanicalspider",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_mechanicalspider.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 570123,
+   "name": "Mantid Descent",
+   "icon": "inv_misc_archaeology_mantidpollencollector_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_misc_archaeology_mantidpollencollector_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 572304,
+   "name": "Myotoxin",
+   "icon": "uico_venom_spell_04_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/uico_venom_spell_04_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805096,
+   "name": "Nullifying Toxin",
+   "icon": "ability_rogue_deviouspoisons",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_rogue_deviouspoisons.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 630868,
+   "name": "Rejuvenating Venom",
+   "icon": "trade_alchemy_dpotion_a21",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/trade_alchemy_dpotion_a21.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 630872,
+   "name": "Remove Venoms",
+   "icon": "inv_potion_166",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_potion_166.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 520514,
+   "name": "Ritual Cleansing",
+   "icon": "nhi_naturestaff_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_naturestaff_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800870,
+   "name": "Shadra's Prayer",
+   "icon": "ability_hunter_onewithnature",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_hunter_onewithnature.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805568,
+   "name": "Spawn",
+   "icon": "achievement_halloween_rottenegg_01",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_halloween_rottenegg_01.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 803177,
+   "name": "Spider Pheromones",
+   "icon": "nhi_spiderweb_border",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/nhi_spiderweb_border.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800904,
+   "name": "Unity",
+   "icon": "ability_druid_cyclone",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/ability_druid_cyclone.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800869,
+   "name": "Venom Bolt",
+   "icon": "_venomorb_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/_venomorb_green.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 800912,
+   "name": "Vizier Form",
+   "icon": "achievement_boss_eldernadox",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/achievement_boss_eldernadox.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  },
+  {
+   "spellId": 805141,
+   "name": "Wasp Form",
+   "icon": "inv_giantwasp_green",
+   "iconUrl": "https://db.ascension.gg/static/images/wow/icons/medium/inv_giantwasp_green.jpg",
+   "source": "baseline",
+   "entryType": "Baseline",
+   "guessActive": true,
+   "desc": "",
+   "altSpellIds": [],
+   "sources": [
+    "baseline"
+   ]
+  }
+ ]
+}
