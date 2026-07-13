@@ -23,11 +23,16 @@ const RUNE_EMPTY = [0.12, 0.07, 0.02, 0.9];
 const BAR_W = 250;
 const MANA_H = 14, HEALTH_H = 14, SEG_H = 12;
 const ICON_SIZE = 26, ICON_SIZE_2 = 24;
-const CD_Y = -140, SEG_Y = -162, MANA_Y = -178, HEALTH_Y = -195, CD2_Y = -218;
+const CD_Y = -140, SEG_Y = -162, MANA_Y = -178, HEALTH_Y = -195;
+const BUFF_Y = -219;    // weapon-engraving + tattoo buff row (directly under HP)
+const CD2_Y = -248;     // secondary CD row (shifted down to make room for the buff row)
 
 // Runeblade is a charged spell (up to 3 charges); spend at 3 charges with Primordial Blast.
-// (baseline ability, tracked by name — confirm it resolves in-game / adjust the charge count.)
-const RUNEBLADE_SPELL = 'Runeblade';
+// Baseline spellId resolved from db.ascension.gg (coa-baselines): @Runeblade rank 1 = 707141 (learned
+// lvl 1, so always known). Ranked spell (7 ranks) — cooldown/charges are shared across ranks, so the
+// rank-1 id tracks fine; if in-game charge tracking is off at max level, fall back to byName 'Runeblade'.
+const RUNEBLADE_SPELL = 707141;
+const RUNEBLADE_BYNAME = false;
 const RUNEBLADE_MAX = 3;
 
 // ---------- Mana bar ----------
@@ -54,68 +59,168 @@ const runebladeBoxes = [];
 for (let i = 1; i <= RUNEBLADE_MAX; i++) {
   runebladeBoxes.push(B.chargeSegmentBar(GROUP_ID, {
     id: 'Runic Runeblade Seg ' + i, index: i,
-    spell: RUNEBLADE_SPELL, byName: true,
+    spell: RUNEBLADE_SPELL, byName: RUNEBLADE_BYNAME,
     hiColor: RUNE_HI, loColor: RUNE_LO, emptyBg: RUNE_EMPTY,
     width: SEG_W, height: SEG_H, xOffset: segStartX + (i - 1) * (SEG_W + SEG_GAP), yOffset: SEG_Y
   }));
 }
 
-// ---------- cooldown icons ----------
-function makeIcon(cfg, parentId, size) {
-  const b = B.iconBase(GROUP_ID, { id: 'Runic - ' + cfg.label, parentId, size, fallbackIcon: cfg.fallbackIcon });
-  let triggerArr, conditions;
-
-  if (cfg.proc) {
-    // proc-only icon: appears + glows (Action Button Glow, white) only while the self buff is active
-    triggerArr = [B.T(B.buffTrigger(cfg.proc))];
-    conditions = [{ check: { trigger: 1, variable: 'show', value: 1 }, changes: B.glowChanges(cfg.glowColor || WHITE_GLOW, cfg.glowType || STRONG_GLOW) }];
-  } else {
-    triggerArr = [B.T(B.cooldownTrigger(cfg.spell, cfg.byName))];
-    conditions = [{ check: { trigger: 1, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] }];
-
-    if (cfg.glowWhenReady) {
-      // strong Action Button Glow while the spell is UP (off cooldown / ready to cast)
-      conditions.push({ check: { trigger: 1, variable: 'onCooldown', value: 0 }, changes: B.glowChanges(cfg.glowColor || WHITE_GLOW, cfg.glowType || STRONG_GLOW) });
-    }
-    if (cfg.glowOnCharges) {
-      // glow hard based on a (charged) spell's charge count — Primordial Blast lights up when
-      // Runeblade's charges are exhausted (charges == 0)
-      const g = cfg.glowOnCharges;
-      triggerArr.push(B.T(B.cooldownTrigger(g.spell, g.byName)));
-      conditions.push({ check: { op: g.op || '>=', trigger: triggerArr.length, variable: 'charges', value: String(g.value) }, changes: B.glowChanges(g.color || ORANGE_GLOW, g.glowType || STRONG_GLOW) });
-    }
-  }
-
-  b.triggers = B.wrap(triggerArr, 1);
-  b.conditions = conditions;
-  if (cfg.charges) { b.subRegions = [...(b.subRegions || []), B.chargesSubtext()]; }
-  return b;
-}
+// ---------- cooldown icons (shared B.cooldownIcon; glow color/style is explicit data) ----------
+// glowReady -> strong white Action Button Glow while the spell is off cooldown (ready to cast).
+// glowOnCharges -> glow hard by another spell's charge count (Primordial Blast @ 0 Runeblade charges).
+// proc -> proc-only icon: appears + glows only while the self buff is active.
+const mk = (cfg, parentId, size) => B.cooldownIcon({ ...cfg, id: 'Runic - ' + cfg.label, parentId, size });
+const READY_GLOW = { glowColor: WHITE_GLOW, glowType: STRONG_GLOW };
 
 const ICONS_MAIN = [
-  { label: 'Runic Brand', spell: 712299, glowWhenReady: true },                       // strong white glow when UP
-  { label: 'Runeblade', spell: RUNEBLADE_SPELL, byName: true, charges: true,           // shows charge count (0..3)
+  { label: 'Runic Brand', spell: 712299, glowReady: true, ...READY_GLOW },             // strong white glow when UP
+  { label: 'Runeblade', spell: RUNEBLADE_SPELL, byName: RUNEBLADE_BYNAME, charges: true, // shows charge count (0..3)
     fallbackIcon: 'Interface\\Icons\\INV_Sword_48' },
   { label: 'Zenith', spell: 712325 },
-  { label: 'Primordial Blast', spell: 'Primordial Blast', byName: true,                // glows hard when Runeblade charges are spent (0)
-    glowOnCharges: { spell: RUNEBLADE_SPELL, byName: true, op: '==', value: 0, color: ORANGE_GLOW },
+  { label: 'Primordial Blast', spell: 800732,                                          // baseline id (was by-name); glows hard when Runeblade charges are spent (0)
+    glowOnCharges: { spell: RUNEBLADE_SPELL, byName: RUNEBLADE_BYNAME, op: '==', value: 0, color: ORANGE_GLOW },
     fallbackIcon: 'Interface\\Icons\\Spell_Fire_Fireball02' },
   { label: 'Fist of the Ancients', spell: 712326 },
-  { label: 'Power Overwhelming', proc: 'Power Overwhelming', fallbackIcon: 'Interface\\Icons\\Spell_Shadow_UnholyFrenzy' }
+  { label: 'Power Overwhelming', proc: 'Power Overwhelming', ...READY_GLOW, fallbackIcon: 'Interface\\Icons\\Spell_Shadow_UnholyFrenzy' }
 ];
 const ICONS_SECONDARY = [
   { label: 'Guarding Rune', spell: 500464 },
   { label: 'Granite Resolve', spell: 520229 }
 ];
 
-const mainIcons = ICONS_MAIN.map(c => makeIcon(c, CD_GROUP_ID, ICON_SIZE));
-const secIcons = ICONS_SECONDARY.map(c => makeIcon(c, CD2_GROUP_ID, ICON_SIZE_2));
+const mainIcons = ICONS_MAIN.map(c => mk(c, CD_GROUP_ID, ICON_SIZE));
+const secIcons = ICONS_SECONDARY.map(c => mk(c, CD2_GROUP_ID, ICON_SIZE_2));
+
+// ---------- weapon-engraving + tattoo buff row (under HP) ----------
+// Francois: "affiche celui que j'ai" — show the currently-active Runic Tattoo (self buff) and the
+// currently-active Weapon Engravings (temporary weapon enchants, MH + OH). All three are showOnActive
+// icons in a centered dynamicgroup, so only the active ones appear and the row re-centers.
+//   - Tattoo: aura2 matches the elemental tattoo buffs by name; iconSource -1 shows the real elemental
+//     buff icon of whichever is up (+ swipe timer if the buff has a duration).
+//   - Engraving MH/OH: the "Weapon Enchant" trigger (WA reads GetWeaponEnchantInfo + scans the weapon
+//     tooltip). enchant "" = match any engraving. MVP look: the WEAPON'S icon (that's all the trigger
+//     exposes) + the enchant name as a subtext (%n, e.g. "Earth Engraving") + the temp-enchant timer.
+const BUFF_GROUP_ID = 'Runic Weapon/Tattoo Buffs';
+const BUFF_SIZE = 26;
+// Full elemental set enumerated from db.ascension.gg (@Runic Tattoos: <element>). Detection is by buff
+// NAME via aura2 (spellId not needed); the '@' is the DB's custom-marker, not part of the in-game name.
+const TATTOO_NAMES = [
+  'Runic Tattoos: Fire', 'Runic Tattoos: Water', 'Runic Tattoos: Air',
+  'Runic Tattoos: Earth', 'Runic Tattoos: Frost', 'Runic Tattoos: Arcane'
+];
+
+function tattooAura() {
+  return {
+    type: 'aura2', unit: 'player', debuffType: 'HELPFUL', useName: true,
+    auranames: TATTOO_NAMES.slice(), names: [], spellIds: [], auraspellids: [],
+    matchesShowOn: 'showOnActive', ownOnly: true, unitExists: true,
+    subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', event: 'Health'
+  };
+}
+function weaponEnchantTrigger(weapon) {   // weapon: 'main' | 'off'
+  return {
+    type: 'item', event: 'Weapon Enchant', weapon,
+    use_enchant: false, enchant: '', showOn: 'showOnActive',
+    use_stacks: false, use_remaining: false,
+    subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', names: [], spellIds: []
+  };
+}
+// Francois: the full engraving name ("Fire Engraving") is ugly — show only a short letter (F, E, W, ...).
+// There is NO "Custom" string-format type (verified in weakauras2 Types.lua: format_types.string only
+// truncates via _abbreviate, which would collide Fire/Frost->F and Air/Arcane->A). Instead we use the
+// custom-text %c placeholder: a subtext of "%c" invokes the PARENT icon's `customText` Lua function, which
+// WeakAuras calls as f(expirationTime, duration, progress, dur, name, icon, stacks) (see WeakAuras.lua
+// Private.RunCustomTextFunc). We read arg 5 (`name` = the weapon-enchant name) and map it to a letter;
+// Fire/Frost and Air/Arcane get a 2-char tag (Fr / Ar) to stay unambiguous. ASCII only (codec round-trip).
+const ENGRAVING_LETTER_FN = [
+  'function(expirationTime, duration, progress, dur, name, icon, stacks)',
+  '  if not name then return "" end',
+  '  name = string.lower(name)',
+  '  if string.find(name, "frost") then return "Fr" end',
+  '  if string.find(name, "fire") then return "F" end',
+  '  if string.find(name, "arcane") then return "Ar" end',
+  '  if string.find(name, "air") then return "A" end',
+  '  if string.find(name, "water") then return "W" end',
+  '  if string.find(name, "earth") then return "E" end',
+  '  return string.upper(string.sub(name, 1, 1))',
+  'end'
+].join('\n');
+
+function nameSubtext() {   // shows a short letter for the matched engraving element (F, E, W, ...) via %c
+  return {
+    type: 'subtext', text_text: '%c', text_visible: true, text_color: [1, 1, 1, 1],
+    text_font: 'Friz Quadrata TT', text_fontSize: 12, text_fontType: 'OUTLINE',
+    anchor_point: 'INNER_BOTTOM', text_selfPoint: 'AUTO', anchorXOffset: 0, anchorYOffset: -1,
+    text_shadowColor: [0, 0, 0, 1], text_shadowXOffset: 1, text_shadowYOffset: -1,
+    text_justify: 'CENTER', rotateText: 'NONE', text_wordWrap: 'WordWrap',
+    text_automaticWidth: 'Auto', text_fixedWidth: 64, text_text_format_c_format: 'none'
+  };
+}
+// Attach the letter-mapping custom-text function to an engraving icon (drives its "%c" subtext).
+function withEngravingLetter(icon) {
+  icon.customText = ENGRAVING_LETTER_FN;
+  icon.customTextUpdate = 'event';   // recompute on trigger-state change (enchant swap), not every frame
+  icon.subRegions = [...(icon.subRegions || []), nameSubtext()];
+  return icon;
+}
+
+const tattooIcon = B.iconBase(GROUP_ID, {
+  id: 'Runic - Tattoo', parentId: BUFF_GROUP_ID, size: BUFF_SIZE,
+  fallbackIcon: 'Interface\\Icons\\Spell_Shadow_DeathPact'
+});
+tattooIcon.triggers = B.wrap([B.T(tattooAura())], 1);
+tattooIcon.conditions = [];
+
+const engMH = B.iconBase(GROUP_ID, {
+  id: 'Runic - Engraving MH', parentId: BUFF_GROUP_ID, size: BUFF_SIZE,
+  fallbackIcon: 'Interface\\Icons\\INV_Sword_48'
+});
+engMH.triggers = B.wrap([B.T(weaponEnchantTrigger('main'))], 1);
+engMH.conditions = [];
+withEngravingLetter(engMH);
+
+const engOH = B.iconBase(GROUP_ID, {
+  id: 'Runic - Engraving OH', parentId: BUFF_GROUP_ID, size: BUFF_SIZE,
+  fallbackIcon: 'Interface\\Icons\\INV_Sword_48'
+});
+engOH.triggers = B.wrap([B.T(weaponEnchantTrigger('off'))], 1);
+engOH.conditions = [];
+withEngravingLetter(engOH);
+
+// ---------- Water tattoo reminder (always visible; glows hard at low mana) ----------
+// Francois: keep the Water tattoo visible at all times and make it glow when I drop to 25% mana. Water
+// regens mana, but running it permanently costs the movespeed / crit tattoos, so it's a "swap NOW" cue.
+// Recipe = "buff indicator (self)" element: aura2 (showAlways) so the icon is always shown and exposes
+// `buffed`; when NOT on Water -> desaturate + dim (passive reminder); low mana -> Action Button Glow (blue).
+const WATER_TATTOO_NAME = 'Runic Tattoos: Water';
+const WATER_ICON = 'Interface\\Icons\\70_inscription_vantus_rune_azure';  // the Runic Tattoos azure rune (blue)
+const WATER_GLOW = [0.30, 0.70, 1.00, 1];   // water blue "swap now" cue
+const LOW_MANA_PCT = 25;
+
+const waterReminder = B.iconBase(GROUP_ID, {
+  id: 'Runic - Water Tattoo Reminder', parentId: BUFF_GROUP_ID, size: BUFF_SIZE, fallbackIcon: WATER_ICON
+});
+waterReminder.triggers = B.wrap([
+  B.T(B.buffTrigger(WATER_TATTOO_NAME, 'showAlways')),   // trigger 1 (main): always shown; `buffed` + real icon when active
+  B.T(B.powerTrigger(0))                                 // trigger 2: Mana -> `percentpower`
+], 1);
+waterReminder.conditions = [
+  // not currently on the Water tattoo -> dim, desaturated reminder
+  { check: { trigger: 1, variable: 'buffed', value: 0 },
+    changes: [{ property: 'desaturate', value: true }, { property: 'alpha', value: 0.5 }] },
+  // low on mana -> swap to Water now: strong Action Button Glow, blue
+  { check: { trigger: 2, variable: 'percentpower', op: '<=', value: String(LOW_MANA_PCT) },
+    changes: B.glowChanges(WATER_GLOW, STRONG_GLOW) }
+];
+
+const buffIcons = [tattooIcon, waterReminder, engMH, engOH];
 
 // ---------- dynamic groups + root ----------
 const cdGroup = B.makeDynGroup(GROUP_ID, CD_GROUP_ID, mainIcons, { yOffset: CD_Y, maxWidth: BAR_W, iconSize: ICON_SIZE });
 const cd2Group = B.makeDynGroup(GROUP_ID, CD2_GROUP_ID, secIcons, { yOffset: CD2_Y, maxWidth: BAR_W, iconSize: ICON_SIZE_2 });
+const buffGroup = B.makeDynGroup(GROUP_ID, BUFF_GROUP_ID, buffIcons, { yOffset: BUFF_Y, maxWidth: BAR_W, iconSize: BUFF_SIZE });
 
-const group = B.makeGroup(GROUP_ID, [cdGroup.id, ...runebladeBoxes.map(b => b.id), mana.id, health.id, cd2Group.id]);
-const children = [mana, health, ...runebladeBoxes, cdGroup, cd2Group, ...mainIcons, ...secIcons];
+const group = B.makeGroup(GROUP_ID, [cdGroup.id, ...runebladeBoxes.map(b => b.id), mana.id, health.id, buffGroup.id, cd2Group.id]);
+const children = [mana, health, ...runebladeBoxes, cdGroup, cd2Group, buffGroup, ...mainIcons, ...secIcons, ...buffIcons];
 
 module.exports = B.buildPackage({ name: 'runemaster', group, children });

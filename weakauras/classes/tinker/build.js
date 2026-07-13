@@ -38,34 +38,11 @@ health.triggers = B.wrap([B.T(B.healthTrigger('player'))], -10);
 B.barText(health, '%p', 11);
 
 // ---------- cooldown icons ----------
-function makeIcon(cfg, parentId, size) {
-  const b = B.iconBase(GROUP_ID, { id: 'Tinker - ' + cfg.label, parentId, size, fallbackIcon: cfg.fallbackIcon });
-  let triggerArr, conditions;
-
-  if (cfg.proc) {
-    // proc-only icon: appears + glows (Action Button Glow, white) only while the self buff is active
-    triggerArr = [B.T(B.buffTrigger(cfg.proc))];
-    conditions = [{ check: { trigger: 1, variable: 'show', value: 1 }, changes: B.glowChanges(cfg.glowColor || WHITE_GLOW, cfg.glowType || STRONG_GLOW) }];
-  } else {
-    triggerArr = [B.T(B.cooldownTrigger(cfg.spell, cfg.byName))];
-    conditions = [{ check: { trigger: 1, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] }];
-
-    if (cfg.glowWhenReady) {
-      // strong Action Button Glow while the spell is UP (off cooldown / ready to cast)
-      conditions.push({ check: { trigger: 1, variable: 'onCooldown', value: 0 }, changes: B.glowChanges(cfg.glowColor || WHITE_GLOW, cfg.glowType || STRONG_GLOW) });
-    }
-    if (cfg.glowBuff) {
-      // Pixel class-color glow while the defensive self-buff it grants is active
-      triggerArr.push(B.T(B.buffTrigger(cfg.glowBuff)));
-      conditions.push({ check: { trigger: triggerArr.length, variable: 'show', value: 1 }, changes: B.glowChanges(cfg.glowColor || TINKER_COPPER, cfg.glowType || 'Pixel') });
-    }
-  }
-
-  b.triggers = B.wrap(triggerArr, 1);
-  b.conditions = conditions;
-  if (cfg.charges) { b.subRegions = [...(b.subRegions || []), B.chargesSubtext()]; }
-  return b;
-}
+// shared B.cooldownIcon; glow color/style is explicit data.
+// glowReady -> strong white Action Button Glow while the spell is ready. glowBuff -> Pixel copper while up.
+const mk = (cfg, parentId, size) => B.cooldownIcon({ ...cfg, id: 'Tinker - ' + cfg.label, parentId, size });
+const READY_GLOW = { glowColor: WHITE_GLOW, glowType: STRONG_GLOW };
+const BUFF_GLOW = { glowColor: TINKER_COPPER, glowType: 'Pixel' };
 
 // Demolition core offensive kit (castable spellIds from tools/coa-classes/tinker/tinker-abilities.md).
 const ICONS_MAIN = [
@@ -74,22 +51,22 @@ const ICONS_MAIN = [
   { label: 'Firepot Drone', spell: 500600, charges: true,                           // 3 charges, 10s recharge
     fallbackIcon: 'Interface\\Icons\\INV_Misc_Bomb_08' },
   { label: 'Spider Bomb', spell: 500535 },
-  { label: 'Hyperblast Barrage', spell: 500249, glowWhenReady: true },              // white glow when READY (big cd)
-  { label: 'Rockadier', spell: 801827, glowWhenReady: true },                       // white glow when READY (empower)
+  { label: 'Hyperblast Barrage', spell: 500249, glowReady: true, ...READY_GLOW },   // white glow when READY (big cd)
+  { label: 'Rockadier', spell: 801827, glowReady: true, ...READY_GLOW },            // white glow when READY (empower)
   { label: 'Rocket Barrage', spell: 805314 },
   { label: 'Spider Bomb Factory', spell: 802052 }
 ];
 // Class-tree defensives / utility.
 const ICONS_SECONDARY = [
-  { label: 'Kinetic Shield', spell: 806224, glowBuff: 'Kinetic Shield' },           // Pixel copper while shield is up
+  { label: 'Kinetic Shield', spell: 806224, glowBuff: 'Kinetic Shield', ...BUFF_GLOW },  // Pixel copper while shield is up
   { label: 'Med Pack', spell: 800347, fallbackIcon: 'Interface\\Icons\\INV_Misc_Bandage_15' },
   { label: 'Rocket Boots', spell: 500241, charges: true,                            // 3 charges mobility
     fallbackIcon: 'Interface\\Icons\\Ability_Rogue_Sprint' },
   { label: 'Air Strike', spell: 801744 }
 ];
 
-const mainIcons = ICONS_MAIN.map(c => makeIcon(c, CD_GROUP_ID, ICON_SIZE));
-const secIcons = ICONS_SECONDARY.map(c => makeIcon(c, CD2_GROUP_ID, ICON_SIZE_2));
+const mainIcons = ICONS_MAIN.map(c => mk(c, CD_GROUP_ID, ICON_SIZE));
+const secIcons = ICONS_SECONDARY.map(c => mk(c, CD2_GROUP_ID, ICON_SIZE_2));
 
 // ---------- dynamic groups + root ----------
 const cdGroup = B.makeDynGroup(GROUP_ID, CD_GROUP_ID, mainIcons, { yOffset: CD_Y, maxWidth: BAR_W, iconSize: ICON_SIZE });

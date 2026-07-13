@@ -81,77 +81,18 @@ B.barText(health, '%p', 11);
 // buff (drives the duration progress + up/down state). green -> yellow (<=8s) -> red (<=4s); when it
 // falls off the bar goes deep red, a red pixel glow pulses, and the label swaps to "Inner demon missing".
 // (The "refresh at 6 Felfury" cue lives on the Felfury boxes, not here.)
-const ID_GREEN = [0.30, 0.75, 0.15, 1], ID_YELLOW = [1, 0.80, 0.10, 1];
-const ID_RED = [1, 0.35, 0.05, 1], ID_DOWN = [0.70, 0.05, 0.05, 1];
-const ID_GLOW = [1, 0.15, 0.10, 1];
+const inner = B.uptimeBar(GROUP_ID, { id: 'Felsworn Inner Demon', yOffset: INNER_Y, width: BAR_W, height: INNER_H,
+  buff: 'Inner Demon', label: 'Inner Demon  %p', warnText: 'Inner Demon', bg: [0.05, 0.08, 0.03, 0.85] });
 
-function warnSubtext() {
-  return {
-    type: 'subtext', text_text: 'Inner Demon', text_visible: false, text_color: [1, 0.35, 0.30, 1],
-    text_font: 'Friz Quadrata TT', text_fontSize: 12, text_fontType: 'OUTLINE',
-    anchor_point: 'INNER_CENTER', text_selfPoint: 'AUTO', anchorXOffset: 0, anchorYOffset: 0,
-    text_shadowColor: [0, 0, 0, 1], text_shadowXOffset: 1, text_shadowYOffset: -1,
-    text_justify: 'CENTER', rotateText: 'NONE', text_wordWrap: 'WordWrap',
-    text_automaticWidth: 'Auto', text_fixedWidth: 64
-  };
-}
-
-const inner = B.baseBar(GROUP_ID, 'Felsworn Inner Demon');
-inner.yOffset = INNER_Y; inner.width = BAR_W; inner.height = INNER_H;
-inner.enableGradient = false; inner.barColor = ID_GREEN.slice(); inner.backgroundColor = [0.05, 0.08, 0.03, 0.85];
-inner.triggers = B.wrap([B.T(B.buffTrigger('Inner Demon', 'showAlways'))], 1);
-inner.progressSource = [-1, ''];
-// subRegions: [1 bg, 2 fg, 3 border, 4 label] + append (5) warning text, (6) glow
-const idLabel = inner.subRegions.find(s => s.type === 'subtext');
-idLabel.text_text = 'Inner Demon  %p'; idLabel.text_fontSize = 11; idLabel.text_visible = true;
-idLabel.anchor_point = 'INNER_CENTER'; idLabel.text_color = [1, 1, 1, 1];
-inner.subRegions = [...inner.subRegions, warnSubtext(), B.subglow()];
-inner.conditions = [
-  { check: { op: '<=', trigger: 1, variable: 'expirationTime', value: '8' }, changes: [{ property: 'barColor', value: ID_YELLOW.slice() }] },
-  { check: { op: '<=', trigger: 1, variable: 'expirationTime', value: '4' }, changes: [{ property: 'barColor', value: ID_RED.slice() }] },
-  { check: { trigger: 1, variable: 'buffed', value: 0 },
-    changes: [
-      { property: 'barColor', value: ID_DOWN.slice() },
-      { property: 'backgroundColor', value: [0.20, 0.02, 0.02, 0.9] },
-      { property: 'sub.4.text_visible', value: false },
-      { property: 'sub.5.text_visible', value: true },
-      { property: 'sub.6.glow', value: true },
-      { property: 'sub.6.glowType', value: 'Pixel' },
-      { property: 'sub.6.useGlowColor', value: true },
-      { property: 'sub.6.glowColor', value: ID_GLOW.slice() }
-    ] }
-];
-
-// ---------- cooldown icons ----------
-function makeIcon(cfg, parentId, size) {
-  const b = B.iconBase(GROUP_ID, { id: 'Felsworn CD - ' + cfg.label, parentId, size, fallbackIcon: cfg.fallbackIcon });
-  const triggerArr = [B.T(B.cooldownTrigger(cfg.spell, cfg.byName))];
-  const conditions = [
-    { check: { trigger: 1, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] }
-  ];
-  // Action Button Glow (buttonOverlay) only for "use this ability now" procs/windows; defensive
-  // self-buffs fall back to the Pixel green glow ("comme avant").
-  const glowType = cfg.glowType || 'Pixel';
-  const glowColor = cfg.glowColor || FELSWORN_GREEN;
-  if (cfg.glowBuff) {
-    triggerArr.push(B.T(B.buffTrigger(cfg.glowBuff)));
-    conditions.push({ check: { trigger: 2, variable: 'show', value: 1 }, changes: B.glowChanges(glowColor, glowType) });
-  } else if (cfg.glowTargetHealthBelow) {
-    triggerArr.push(B.T(B.targetHealthTrigger()));
-    conditions.push({
-      check: { trigger: 2, variable: 'percenthealth', op: '<', value: String(cfg.glowTargetHealthBelow) },
-      changes: B.glowChanges(glowColor, glowType)
-    });
-  }
-  b.triggers = B.wrap(triggerArr, 1);
-  b.conditions = conditions;
-  if (cfg.charges) { b.subRegions = [...(b.subRegions || []), B.chargesSubtext()]; }
-  return b;
-}
+// ---------- cooldown icons (shared B.cooldownIcon; glow color/style is explicit data) ----------
+// glowBuff -> Pixel green while the defensive self-buff it grants is active ("comme avant").
+// glowTargetHealthBelow -> gold accent while the target is in the execute window.
+const mk = (cfg, parentId, size) => B.cooldownIcon({ ...cfg, id: 'Felsworn CD - ' + cfg.label, parentId, size });
+const BUFF_GLOW = { glowColor: FELSWORN_GREEN, glowType: 'Pixel' };
 
 const ICONS_MAIN = [
-  { label: 'Hateforged Barrier', spell: 705129, glowBuff: 'Hateforged Barrier' },
-  { label: 'Demonic Will', spell: 800209, glowBuff: 'Demonic Will' },
+  { label: 'Hateforged Barrier', spell: 705129, glowBuff: 'Hateforged Barrier', ...BUFF_GLOW },
+  { label: 'Demonic Will', spell: 800209, glowBuff: 'Demonic Will', ...BUFF_GLOW },
   { label: 'Skull of Guldan', spell: 800225 },
   { label: 'Annihilation', spell: 803904 },
   { label: 'Tyrants Gaze', spell: 805240, glowTargetHealthBelow: 35, glowColor: GOLD_GLOW, glowType: 'Pixel' },
@@ -165,8 +106,8 @@ const ICONS_SECONDARY = [
   { label: 'Arcane Torrent', spell: 'Arcane Torrent', byName: true, fallbackIcon: 'Interface\\Icons\\Spell_Shadow_Teleport' }
 ];
 
-const mainIcons = ICONS_MAIN.map(c => makeIcon(c, CD_GROUP_ID, ICON_SIZE));
-const secIcons = ICONS_SECONDARY.map(c => makeIcon(c, CD2_GROUP_ID, ICON_SIZE_2));
+const mainIcons = ICONS_MAIN.map(c => mk(c, CD_GROUP_ID, ICON_SIZE));
+const secIcons = ICONS_SECONDARY.map(c => mk(c, CD2_GROUP_ID, ICON_SIZE_2));
 
 // ---------- Fel Fireball proc icon (own row above the CDs, centered; shows ONLY while Carve is up) ----------
 // The Fel Fireball art comes from the cooldown trigger's fallback displayIcon (the by-name spell doesn't

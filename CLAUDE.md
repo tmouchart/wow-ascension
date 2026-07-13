@@ -130,17 +130,16 @@ ANY of them (one uptime bar tracking multiple interchangeable buffs — see **Bu
 | **Resource à tracker** (point/stack, self) | N× `aurabar` · `segmentBar` | One box per point. `aura2` self-buff (`unit:"player"`, HELPFUL, `showAlways`) → `stacks`; trigger 2 = always-full stateupdate. Empty (transparent bar + dark bg); condition `stacks>=i` paints the gradient fill. |
 | **Debuff à tracker** (point/stack, target) | N× `aurabar` · `segmentBar` | Same as above but `unit:"target"`, HARMFUL, `unitExists:false` (drops to 0 when the debuff is consumed). |
 | **Charges à tracker** (spell charges) | N× `aurabar` · `chargeSegmentBar` | One box per charge of a *charged spell* (e.g. Runeblade 0..3). Trigger 1 = `cooldownTrigger`; condition `charges>=i` paints the fill. Pair with a **Charges** subtext on the spell's icon. |
-| **Buff à tracker** (maintenance uptime) | `aurabar` · `baseBar`+`buffTrigger(name,"showAlways")` | Duration countdown (`progressSource:[-1,""]`). Color by `expirationTime` (green→yellow `<=8`→red `<=4`). DOWN = condition `buffed==0` → deep red + pulsing red `subglow` + label subtext swap. |
-| **Buff à tracker (any-of)** | `aurabar` · `baseBar`+ aura2 with **multiple `auranames`** | Same as above, but one bar tracks a *state* granted by several interchangeable buffs (e.g. "am I enraged?" = Unbridled Rage OR Onslaught OR Battle Vigor). `buffed==1` if any is up; `expirationTime` is whichever matched. See barbarian's "Rage" bar. |
-| **CD Offensif** | `icon` · `iconBase`+`cooldownTrigger` | `genericShowOn:"showAlways"`, `desaturate` while `onCooldown`. Optional execute-window glow (e.g. `targetHealthTrigger` + `percenthealth<35` → gold). |
-| **CD Défensif** | `icon` · `iconBase`+`cooldownTrigger` | Same base; when the self-buff it grants is active (`buffTrigger` trigger 2, `show==1`) → **Pixel glow, class color**. |
-| **Featured CD** (hero spell) | one **standalone `icon`** (~40–46px), a direct child of the root group (not in a dyngroup), centered above the rows | Its own `xOffset/yOffset`. `glowReady` = white **Action Button Glow** while `onCooldown==0` (spell is up). Use for the spec's signature button (barbarian Crush). |
-| **Proc** (use-this-now) | `icon` on its own centered row / slot | Hidden by default (`alpha:0`); art from `cooldownTrigger` fallback `displayIcon` (path). Show + glow on a condition → `alpha:1` + **Action Button Glow (`buttonOverlay`), WHITE**. Buff proc: `buffed==1` on the proc buff. **Execute proc:** `targetHealthTrigger` + `percenthealth<N` (barbarian Decapitate <35%). |
+| **Buff à tracker** (maintenance uptime) | `aurabar` · **`B.uptimeBar`** (`buff:name`) | Duration countdown (`progressSource:[-1,""]`). Color by `expirationTime` (green→yellow `<=8`→red `<=4`). DOWN = `buffed==0` → deep red + pulsing red `subglow` + warn subtext (sub.5) swap. Pass `bg`, `label`, `warnText`. |
+| **Buff à tracker (any-of)** | `aurabar` · **`B.uptimeBar`** (`buff:[names]`) | Same, but one bar tracks a *state* from several interchangeable buffs (e.g. enraged = Unbridled Rage OR Onslaught OR Battle Vigor). `buffed==1` if any is up; `expirationTime` is whichever matched. See barbarian's Enrage bar. |
+| **CD Offensif / Défensif** | `icon` · **`B.cooldownIcon(cfg)`** | The one unified icon builder (all 4 classes). Base = cooldown trigger + `desaturate` while `onCooldown`, plus AT MOST ONE glow rule (`glowBuff`/`glowBuffMissing`/`glowReady`/`glowReadyPower`/`glowPowerPct`/`glowTargetHealthBelow`/`glowOnCharges`) with explicit `glowColor`/`glowType`, optional `charges`, optional `showPowerAbove` gate, optional `proc` (proc-only base). Défensif = `glowBuff` → Pixel class color. |
+| **Featured CD** (hero spell) | one **standalone `B.cooldownIcon`** (~40–46px), a direct child of the root group, with its own `xOffset/yOffset` | Not in a dyngroup. `glowReady` (or `glowReadyPower:N` = ready AND ≥N power) = white **Action Button Glow**. Spec's signature button (barbarian Crush). |
+| **Proc** (use-this-now) | `icon` on its own centered row / slot | Hidden by default (`alpha:0`); art from `cooldownTrigger` fallback `displayIcon` (path). Show + glow on a condition → `alpha:1` + **Action Button Glow (`buttonOverlay`), WHITE**. Buff proc: `buffed==1` on the proc buff. **Execute proc:** gate the whole icon with **`B.targetExecuteTrigger(pct)`** as the show-controlling trigger (a custom `UnitHealth("target")` stateupdate — the built-in Health `%` filter does NOT gate on this client), art from a 2nd `cooldownTrigger` (`iconSource:2`). Barbarian Decapitate <35%. |
 | **Buff indicator (self)** | small standalone `icon` (~20px) | "Is my buff up on me?" aura2 `showAlways`. `buffed==0` → `desaturate:true` + `alpha:0.4`; `buffed==1` → **Pixel glow, class color**. Compact single-buff presence (barbarian Warspear raid buff). |
 | **CD secondaires** | `icon` (smaller, ~26px) in a 2nd `dynamicgroup` below HP | Defensives / utility. Same icon recipe as CDs. |
 | **Charges** | `subtext` `text_text:"%s"` appended to a CD icon | Shows the cooldown trigger's charge count. |
 | **Row container** (horizontal) | `dynamicgroup` · `makeDynGroup` | `grow:"CUSTOM"` + our `customGrow` Lua (centered, wraps). Pass `maxWidth` (= bar width) so it derives how many icons fit per row and wraps beyond that; or pass an explicit `perRow`. Icons are its children; the dyngroup is a child of the root group. |
-| **Column container** (vertical side rail) | `dynamicgroup` · `makeDynGroup` + a **vertical `customGrow`** | A stacked column flanking the WA — **DEF left, OFF right** (`xOffset:∓170`), centered on the group's `yOffset`. Build with `makeDynGroup({perRow:1,...})` then override `.xOffset` and `.customGrow = vGrowLua(iconSize)` (positions `{ 0, startY-(i-1)*(h+vSpace) }`, top→bottom). Extends beyond the 250px central stack by design. See barbarian. |
+| **Column container** (vertical side rail) | `dynamicgroup` · **`B.makeColumn(groupId, id, children, {xOffset,yOffset,iconSize})`** | A stacked column flanking the WA — **DEF left, OFF right** (`xOffset:∓170`), centered on the group's `yOffset` (top→bottom). Extends beyond the 250px central stack by design. See barbarian. |
 | **Root** | `group` · `makeGroup` | Static container; `controlledChildren` lists the top-level element ids in display order. |
 
 ### Glow taxonomy — keep it consistent across classes
@@ -181,9 +180,12 @@ compact, everything within one width):
 - **Side rails + central stack** — a **vertical Column container** on each flank (`DEF left @ xOffset -170`,
   `OFF right @ +170`) with the central stack (featured CD · spell row · bars · proc) between them. The rails
   extend past 250px on purpose. This is the barbarian "friend's design" shell.
-- **Combat-only package**: to make the *whole* WA vanish out of combat, set `load.use_combat = true` on
-  **every region** (all children **and** the root group), not just the group — children are independent
-  displays. Do it in one pass: `[group, ...children].forEach(r => { r.load.use_combat = true; })`.
+- **Combat-only package**: to make the *whole* WA vanish out of combat, pass **`combatOnly: true`** to
+  `B.buildPackage(...)` — it sets `load.use_combat = true` on **every region** (all children **and** the
+  root group), since children are independent displays. See barbarian.
+- **Energy show-gate**: to only show an icon once you have enough resource, use `B.cooldownIcon({ showPowerAbove:N })`
+  — it gates the icon with **`B.powerAtLeastTrigger(N, powertype)`** (a custom `UnitPower` stateupdate; the
+  built-in Power `%` filter does NOT gate on this client). Barbarian Whirling Advance @ 45 Energy.
 
 See `classes/felsworn/build.js` (Energy / Felfury stacks / Inner Demon uptime) and
 `classes/runemaster/build.js` (Mana / Runeblade *charge* segments) for the central-stack examples, and
@@ -241,7 +243,16 @@ dist/           generated output — <class>.import.txt (current) + <class>.prev
 reference/      known-good decoded packages (luxthos/, luxthos-elemental*) + LibDeflate.lua
 tools/          coa-process.js (tree scrape) + coa-baselines.js (grimoire spells from db.ascension.gg)
                 + scraped coa-classes/ (<slug>-nodes.json, <slug>-baselines.json, BASELINES-INDEX.md) + coa-all-classes.json
+                + verify-unchanged.js (+ golden/) — refactor guardrail: rebuild all & assert decoded output
+                  is byte-identical to the golden snapshot (`--snapshot` to re-baseline after intended changes)
 ```
+
+`lib/builders.js` shared element helpers: bars `baseBar`/`gradient`/`barText`/`segmentBar`/`chargeSegmentBar`/
+**`uptimeBar`**; icons **`cooldownIcon`** (the one unified CD/proc/featured icon builder) + `iconBase`;
+triggers `powerTrigger`/`healthTrigger`/`cooldownTrigger`/`buffTrigger`/`anyBuffTrigger`/`powerAtLeastTrigger`/
+`targetExecuteTrigger`; sub-regions `chargesSubtext`/`warnSubtext`/`glowChanges`/`subglow`; containers
+`makeDynGroup`/**`makeColumn`**/`makeGroup`; assembly `buildPackage({..., combatOnly?})`. A class `build.js`
+is data + geometry + wiring — reuse these, don't re-implement a per-class `makeIcon`/`warnSubtext`/grow Lua.
 
 Add a class = new `classes/<name>/build.js` that `require('../../lib/builders.js')`, declares its colors/
 geometry/resource model/cooldown lists, and calls `B.buildPackage(...)`. No per-version files — the CLI

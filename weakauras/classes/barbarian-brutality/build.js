@@ -1,38 +1,51 @@
-// Barbarian — Brutality. Layout top -> bottom:
-//   [ primary cooldowns ]  Unbridled Rage(uptime)  Energy(gold)  Health(red)  [ secondary CDs ]
-// Brutality is a pure Energy execute spec (Decapitate converts extra Energy to damage; no combo-point
-// resource). Unbridled Rage is the keep-up-24/7 maintenance buff (many talents extend it).
-// Glow = Action Button Glow (buttonOverlay) for "act now" cues (Decapitate execute window < 20% HP =
-// gold; Unbridled Rage cast when its buff has dropped = white). Pixel class-color for defensive buffs.
+// Barbarian — Brutality. Layout (friend's design):
+//
+//                 [ Warspear self-buff ]
+//                     [ CRUSH (big) ]
+//   DEF               [ spell row ]                OFF
+//  column   Whirling Adv · Decap · Headbutt · Jaw  column
+// (vertical)     [ Rage uptime ("Rage") bar ]    (vertical)
+//   left         [ Rage bar (pink, big) ]         right
+//                [ Health bar ]
+//                [ Decapitate PROC (target <35%) ]
+//
+// Brutality is a pure Energy ("Rage") execute spec. Everything loads IN COMBAT ONLY (use_combat)
+// so the whole package hides out of combat. Glow = Action Button Glow (buttonOverlay) for "act
+// now" cues (Crush ready = white; Decapitate usable at >=60% Rage = gold; Decapitate execute proc
+// <35% = white; Unbridled Rage dropped = white). Pixel class-color = a defensive/raid self-buff up.
 const B = require('../../lib/builders.js');
 
 const GROUP_ID = 'Barbarian Brutality';
-const CD_GROUP_ID = 'Barbarian CDs';
-const CD2_GROUP_ID = 'Barbarian CDs (Secondary)';
+const CD_OFF_ID = 'Barbarian CDs (Offensive)';
+const CD_DEF_ID = 'Barbarian CDs (Defensive)';
+const SPELL_ID = 'Barbarian Spells';
 
 // --- colors ---
-const GOLD_HI = [1, 0.88, 0.15, 1], GOLD_LO = [0.72, 0.42, 0.0, 1];   // energy gradient
-const HP_HI = [0.90, 0.16, 0.12, 1], HP_LO = [0.33, 0.02, 0.02, 1];   // health gradient
-const BARB_COLOR = [0.78, 0.61, 0.43, 1];          // class identity (warrior tan) - defensive Pixel glow
-const GOLD_GLOW = [1, 0.82, 0.10, 1];              // execute-window cue (Decapitate < 20% HP)
-const WHITE_GLOW = [1, 1, 1, 1];                   // "act now" cue (recast Unbridled Rage)
+const RAGE_HI = [0.98, 0.42, 0.72, 1], RAGE_LO = [0.60, 0.10, 0.38, 1];   // Rage bar = pink gradient
+const HP_HI = [0.90, 0.16, 0.12, 1], HP_LO = [0.33, 0.02, 0.02, 1];       // health gradient
+const BARB_COLOR = [0.78, 0.61, 0.43, 1];          // class identity (warrior tan) - defensive/raid Pixel glow
+const GOLD_GLOW = [1, 0.82, 0.10, 1];              // Decapitate usable (>=60% Rage)
+const WHITE_GLOW = [1, 1, 1, 1];                   // "act now" cue (Crush ready / execute proc / recast)
 
-// --- geometry (compact: everything within a 250px width, tight vertical gaps) ---
+// --- geometry ---
 const BAR_W = 250;
-const UR_H = 14, ENERGY_H = 14, HEALTH_H = 14;
-const CD_Y = -140;                                   // primary cooldown row
-const UR_Y = -164;                                   // Unbridled Rage uptime bar
-const ENERGY_Y = -181, HEALTH_Y = -198;
-const CD2_Y = -221;
-const ICON_SIZE = 26, ICON_SIZE_2 = 24;
+const RAGE_W = 280, RAGE_H = 22;                   // Rage bar enlarged again (bigger + pink)
+const UR_H = 14, HEALTH_H = 14;
+const ICON_FEAT = 46, ICON_SPELL = 30, ICON_CD = 26, ICON_BUFF = 20, ICON_PROC = 34;
+// central column (x ~ 0), top -> bottom
+const WARN_Y = -58, FEAT_Y = -104, SPELL_Y = -146;
+const UR_Y = -172, RAGE_Y = -197, HEALTH_Y = -221, PROC_Y = -250;
+// vertical side columns flanking the whole WA
+const DEF_X = -170, OFF_X = 170;
+const DEF_Y = -180, OFF_Y = -185;
 
-// ---------- Energy bar ----------
-const energy = B.baseBar(GROUP_ID, 'Barbarian Energy');
-energy.yOffset = ENERGY_Y; energy.width = BAR_W; energy.height = ENERGY_H;
-B.gradient(energy, GOLD_HI, GOLD_LO);
-energy.backgroundColor = [0.12, 0.1, 0.0, 0.8];
-energy.triggers = B.wrap([B.T(B.powerTrigger(3))], -10);   // 3 = Energy
-B.barText(energy, '%p', 11);
+// ---------- Rage (Energy) bar — enlarged + pink ----------
+const rage = B.baseBar(GROUP_ID, 'Barbarian Energy');
+rage.yOffset = RAGE_Y; rage.width = RAGE_W; rage.height = RAGE_H;
+B.gradient(rage, RAGE_HI, RAGE_LO);
+rage.backgroundColor = [0.14, 0.03, 0.09, 0.85];
+rage.triggers = B.wrap([B.T(B.powerTrigger(3))], -10);   // 3 = Energy
+B.barText(rage, '%p', 13);
 
 // ---------- Health bar ----------
 const health = B.baseBar(GROUP_ID, 'Barbarian Health');
@@ -42,118 +55,113 @@ health.backgroundColor = [0.12, 0.03, 0.03, 0.85];
 health.triggers = B.wrap([B.T(B.healthTrigger('player'))], -10);
 B.barText(health, '%p', 11);
 
-// ---------- Unbridled Rage uptime bar (KEEP UP 24/7) ----------
-// Sits between the cooldown row and Energy. Trigger 1 = the Unbridled Rage buff (duration progress +
-// up/down state). green -> yellow (<=8s) -> red (<=4s); when it falls off the bar goes deep red, a red
-// pixel glow pulses, and the label swaps to "Unbridled Rage missing". (The recast cue also lights the
-// Unbridled Rage icon in the CD row.)
-const UR_GREEN = [0.30, 0.75, 0.15, 1], UR_YELLOW = [1, 0.80, 0.10, 1];
-const UR_RED = [1, 0.35, 0.05, 1], UR_DOWN = [0.70, 0.05, 0.05, 1];
-const UR_GLOW = [1, 0.15, 0.10, 1];
-const UR_BUFF = 'Unbridled Rage';   // baseline buff, tracked by name - confirm the name resolves in-game
+// ---------- Enrage uptime bar ----------
+// "Am I in a Rage phase?" — up while ANY of Unbridled Rage / Onslaught / Battle Vigor is active.
+// green -> yellow (<=8s) -> red (<=4s); DOWN -> deep red + "NOT ENRAGED" + pulsing red glow.
+const RAGE_BUFFS = ['Unbridled Rage', 'Onslaught', 'Battle Vigor'];   // any of these = a Rage phase
+const ur = B.uptimeBar(GROUP_ID, { id: 'Barbarian Unbridled Rage', yOffset: UR_Y, width: BAR_W, height: UR_H,
+  buff: RAGE_BUFFS, label: 'Enrage  %p', warnText: 'NOT ENRAGED', bg: [0.06, 0.05, 0.02, 0.85] });
 
-function warnSubtext() {
-  return {
-    type: 'subtext', text_text: 'Rage DOWN', text_visible: false, text_color: [1, 0.35, 0.30, 1],
-    text_font: 'Friz Quadrata TT', text_fontSize: 12, text_fontType: 'OUTLINE',
-    anchor_point: 'INNER_CENTER', text_selfPoint: 'AUTO', anchorXOffset: 0, anchorYOffset: 0,
-    text_shadowColor: [0, 0, 0, 1], text_shadowXOffset: 1, text_shadowYOffset: -1,
-    text_justify: 'CENTER', rotateText: 'NONE', text_wordWrap: 'WordWrap',
-    text_automaticWidth: 'Auto', text_fixedWidth: 64
-  };
-}
+// ---------- cooldown icons (shared B.cooldownIcon; glow color/style is explicit data) ----------
+// glowReadyPower -> white Action Button Glow while ready AND Energy >= N (Crush).
+// glowPowerPct   -> gold Action Button Glow while Energy% >= N (Decapitate worth casting).
+// glowBuffMissing-> white Action Button Glow when a maintenance buff has dropped (recast now).
+// glowBuff       -> Pixel class-color while a defensive/raid self-buff is active.
+// showPowerAbove -> only shown once Energy >= N (Whirling Advance dash).
+const mk = cfg => B.cooldownIcon({ ...cfg, id: 'Barbarian CD - ' + cfg.label });
 
-const ur = B.baseBar(GROUP_ID, 'Barbarian Unbridled Rage');
-ur.yOffset = UR_Y; ur.width = BAR_W; ur.height = UR_H;
-ur.enableGradient = false; ur.barColor = UR_GREEN.slice(); ur.backgroundColor = [0.06, 0.05, 0.02, 0.85];
-ur.triggers = B.wrap([B.T(B.buffTrigger(UR_BUFF, 'showAlways'))], 1);
-ur.progressSource = [-1, ''];
-// subRegions: [1 bg, 2 fg, 3 border, 4 label] + append (5) warning text, (6) glow
-const urLabel = ur.subRegions.find(s => s.type === 'subtext');
-urLabel.text_text = 'Unbridled Rage  %p'; urLabel.text_fontSize = 11; urLabel.text_visible = true;
-urLabel.anchor_point = 'INNER_CENTER'; urLabel.text_color = [1, 1, 1, 1];
-ur.subRegions = [...ur.subRegions, warnSubtext(), B.subglow()];
-ur.conditions = [
-  { check: { op: '<=', trigger: 1, variable: 'expirationTime', value: '8' }, changes: [{ property: 'barColor', value: UR_YELLOW.slice() }] },
-  { check: { op: '<=', trigger: 1, variable: 'expirationTime', value: '4' }, changes: [{ property: 'barColor', value: UR_RED.slice() }] },
-  { check: { trigger: 1, variable: 'buffed', value: 0 },
-    changes: [
-      { property: 'barColor', value: UR_DOWN.slice() },
-      { property: 'backgroundColor', value: [0.20, 0.02, 0.02, 0.9] },
-      { property: 'sub.4.text_visible', value: false },
-      { property: 'sub.5.text_visible', value: true },
-      { property: 'sub.6.glow', value: true },
-      { property: 'sub.6.glowType', value: 'Pixel' },
-      { property: 'sub.6.useGlowColor', value: true },
-      { property: 'sub.6.glowColor', value: UR_GLOW.slice() }
-    ] }
+// ---------- Featured: CRUSH (big, centered, glow when up) ----------
+const crush = mk({ label: 'Crush', spell: 500915, parentId: GROUP_ID, size: ICON_FEAT,
+  xOffset: 0, yOffset: FEAT_Y, glowReadyPower: 63, glowColor: WHITE_GLOW, glowType: 'buttonOverlay' });
+
+// ---------- "CRY MISSING" warning text (top) ----------
+// Brutal Shout is the keep-up shout. Instead of a small icon (confusing), show a big red text at the
+// very top that appears ONLY while the buff is ABSENT — so you never forget to recast your cry.
+// Built as a fully transparent aurabar used purely as a text carrier (no text-region template exists).
+const TRACK_BUFF = 'Brutal Shout';   // tracked by name
+const cryWarn = B.baseBar(GROUP_ID, 'Barbarian Warn - Cry');
+cryWarn.yOffset = WARN_Y; cryWarn.width = 250; cryWarn.height = 22;
+cryWarn.enableGradient = false;
+cryWarn.barColor = [0, 0, 0, 0]; cryWarn.backgroundColor = [0, 0, 0, 0];   // invisible bar
+cryWarn.triggers = B.wrap([B.T(B.buffTrigger(TRACK_BUFF, 'showAlways'))], 1);
+cryWarn.progressSource = [-1, ''];
+const warnLabel = cryWarn.subRegions.find(s => s.type === 'subtext');
+warnLabel.text_text = 'CRY MISSING'; warnLabel.text_fontSize = 20; warnLabel.text_fontType = 'OUTLINE';
+warnLabel.text_color = [1, 0.2, 0.15, 1]; warnLabel.anchor_point = 'INNER_CENTER'; warnLabel.text_visible = false;
+const warnBorder = cryWarn.subRegions.find(s => s.type === 'subborder');
+if (warnBorder) warnBorder.border_visible = false;
+cryWarn.conditions = [
+  // shown only when the buff is missing (buffed==0); reverts to hidden when it's up
+  { check: { trigger: 1, variable: 'buffed', value: 0 }, changes: [{ property: 'sub.4.text_visible', value: true }] }
 ];
 
-// ---------- cooldown icons ----------
-// glowTargetHealthBelow -> gold Action Button Glow while target is in the execute window.
-// glowBuffMissing       -> white Action Button Glow when a maintenance buff has dropped (recast now).
-// glowBuff              -> Pixel class-color while a defensive self-buff is active.
-function makeIcon(cfg, parentId, size) {
-  const b = B.iconBase(GROUP_ID, { id: 'Barbarian CD - ' + cfg.label, parentId, size, fallbackIcon: cfg.fallbackIcon });
-  const triggerArr = [B.T(B.cooldownTrigger(cfg.spell, cfg.byName))];
-  const conditions = [
-    { check: { trigger: 1, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] }
-  ];
-  if (cfg.glowTargetHealthBelow) {
-    triggerArr.push(B.T(B.targetHealthTrigger()));
-    conditions.push({
-      check: { trigger: triggerArr.length, variable: 'percenthealth', op: '<', value: String(cfg.glowTargetHealthBelow) },
-      changes: B.glowChanges(GOLD_GLOW, 'buttonOverlay')
-    });
-  }
-  if (cfg.glowBuffMissing) {
-    triggerArr.push(B.T(B.buffTrigger(cfg.glowBuffMissing, 'showAlways')));
-    conditions.push({
-      check: { trigger: triggerArr.length, variable: 'buffed', value: 0 },
-      changes: B.glowChanges(WHITE_GLOW, 'buttonOverlay')
-    });
-  }
-  if (cfg.glowBuff) {
-    triggerArr.push(B.T(B.buffTrigger(cfg.glowBuff)));
-    conditions.push({
-      check: { trigger: triggerArr.length, variable: 'show', value: 1 },
-      changes: B.glowChanges(BARB_COLOR, 'Pixel')
-    });
-  }
-  b.triggers = B.wrap(triggerArr, 1);
-  b.conditions = conditions;
-  if (cfg.charges) { b.subRegions = [...(b.subRegions || []), B.chargesSubtext()]; }
-  return b;
+// ---------- Decapitate PROC (bottom) — execute window, target below 35% life ----------
+// (targetExecuteTrigger lives in lib/builders.js — a custom stateupdate reading UnitHealth("target")
+// directly, so the icon is active ONLY in the execute window.)
+const proc = B.iconBase(GROUP_ID, {
+  id: 'Barbarian Proc - Decapitate', parentId: GROUP_ID, size: ICON_PROC,
+  fallbackIcon: 'Interface\\Icons\\Ability_Warrior_DecisiveStrike'
+});
+proc.xOffset = 0; proc.yOffset = PROC_Y; proc.iconSource = 2;   // use Decapitate (trigger 2) art
+proc.cooldownTextDisabled = true;   // no stray "34m" cooldown number on the proc
+proc.triggers = B.wrap([
+  B.T(B.targetExecuteTrigger(35)),   // trigger 1 (controls show): target < 35% HP
+  B.T(B.cooldownTrigger(804414))   // trigger 2: Decapitate art + cooldown
+], 1);
+// permanent white Action Button Glow — only renders while the icon is shown (execute window)
+for (const sr of proc.subRegions) {
+  if (sr.type === 'subglow') { sr.glow = true; sr.glowType = 'buttonOverlay'; sr.useGlowColor = true; sr.glowColor = WHITE_GLOW.slice(); }
 }
+proc.conditions = [
+  { check: { trigger: 2, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] }
+];
 
-// Primary row. Talent spells carry real castable spellIds; baseline (Smash/Carnage/Unbridled Rage) are
-// tracked by name (flagged) with a fallback texture path so they never render as "?".
-const ICONS_MAIN = [
-  { label: 'Decapitate', spell: 804414, glowTargetHealthBelow: 20 },   // execute; gold glow < 20% HP
-  { label: 'Crush', spell: 500915 },
+// ---------- Middle spell row (horizontal, centered) ----------
+const ICONS_SPELL = [
+  { label: 'Whirling Advance', spell: 500919, showPowerAbove: 45 },   // dash: only shown at >=45 Energy
+  { label: 'Decapitate', spell: 804414, glowPowerPct: 60, glowColor: GOLD_GLOW, glowType: 'buttonOverlay' },   // gold glow at >=60% Energy
+  { label: 'Headbutt', spell: 520523 },
+  { label: 'Kick', spell: 'Kick', byName: true, fallbackIcon: 'Interface\\Icons\\Ability_Kick' },
+  { label: 'Jawbreaker', spell: 802792 }
+];   // all rendered at ICON_SPELL -> Kick is the same size as the rest of the row
+// ---------- Offensive column (RIGHT, vertical) : offensive CDs + Enrage effect ----------
+const ICONS_OFF = [
+  { label: 'Unbridled Rage', spell: 'Unbridled Rage', byName: true, glowBuffMissing: 'Unbridled Rage',
+    glowColor: WHITE_GLOW, glowType: 'buttonOverlay',
+    fallbackIcon: 'Interface\\Icons\\Ability_Warrior_InnerRage' },   // the Enrage effect
   { label: 'Storm of Steel', spell: 800637 },
   { label: 'Killing Spree', spell: 850021 },
-  { label: 'Brutal Swing', spell: 500913 },
-  { label: 'Smash', spell: 'Smash', byName: true, fallbackIcon: 'Interface\\Icons\\Ability_Warrior_Devastate' },
-  { label: 'Carnage', spell: 'Carnage', byName: true, fallbackIcon: 'Interface\\Icons\\Ability_Warrior_Rampage' },
-  { label: 'Unbridled Rage', spell: 'Unbridled Rage', byName: true, glowBuffMissing: UR_BUFF,
-    fallbackIcon: 'Interface\\Icons\\Ability_Warrior_InnerRage' }
+  { label: 'Hodirs Wrath', spell: 800152 }
 ];
-// Secondary row: defensives / utility (real talent spellIds).
-const ICONS_SECONDARY = [
-  { label: 'Defiance', spell: 806228, glowBuff: 'Defiance' },     // damage-reduction defensive
-  { label: 'Thick Skull', spell: 801549, glowBuff: 'Thick Skull' },  // stun immunity
-  { label: 'Hodirs Wrath', spell: 800152 }                        // AoE burst + full Energy restore
+// ---------- Defensive column (LEFT, vertical) : Battle Vigor / Defiance / Thick Skull ----------
+const DEF_GLOW = { glowColor: BARB_COLOR, glowType: 'Pixel' };   // Pixel class-color while the buff is up
+const ICONS_DEF = [
+  { label: 'Battle Vigor', spell: 801768, glowBuff: 'Battle Vigor', ...DEF_GLOW },
+  { label: 'Defiance', spell: 806228, glowBuff: 'Defiance', ...DEF_GLOW },
+  { label: 'Thick Skull', spell: 801549, glowBuff: 'Thick Skull', ...DEF_GLOW }
 ];
 
-const mainIcons = ICONS_MAIN.map(c => makeIcon(c, CD_GROUP_ID, ICON_SIZE));
-const secIcons = ICONS_SECONDARY.map(c => makeIcon(c, CD2_GROUP_ID, ICON_SIZE_2));
+const spellIcons = ICONS_SPELL.map(c => mk({ ...c, parentId: SPELL_ID, size: ICON_SPELL }));
+const offIcons = ICONS_OFF.map(c => mk({ ...c, parentId: CD_OFF_ID, size: ICON_CD }));
+const defIcons = ICONS_DEF.map(c => mk({ ...c, parentId: CD_DEF_ID, size: ICON_CD }));
 
-// ---------- dynamic groups + root ----------
-const cdGroup = B.makeDynGroup(GROUP_ID, CD_GROUP_ID, mainIcons, { yOffset: CD_Y, maxWidth: BAR_W, iconSize: ICON_SIZE });
-const cd2Group = B.makeDynGroup(GROUP_ID, CD2_GROUP_ID, secIcons, { yOffset: CD2_Y, maxWidth: BAR_W, iconSize: ICON_SIZE_2 });
+// ---------- dynamic groups ----------
+// spell row = horizontal, centered
+const spellGroup = B.makeDynGroup(GROUP_ID, SPELL_ID, spellIcons, { yOffset: SPELL_Y, perRow: spellIcons.length, iconSize: ICON_SPELL });
+// def / off = vertical columns flanking the WA (override grow with a vertical layout)
+const offGroup = B.makeColumn(GROUP_ID, CD_OFF_ID, offIcons, { xOffset: OFF_X, yOffset: OFF_Y, iconSize: ICON_CD });
+const defGroup = B.makeColumn(GROUP_ID, CD_DEF_ID, defIcons, { xOffset: DEF_X, yOffset: DEF_Y, iconSize: ICON_CD });
 
-const group = B.makeGroup(GROUP_ID, [ur.id, energy.id, health.id, cdGroup.id, cd2Group.id]);
-const children = [ur, energy, health, cdGroup, cd2Group, ...mainIcons, ...secIcons];
+const group = B.makeGroup(GROUP_ID, [
+  cryWarn.id, crush.id, spellGroup.id, defGroup.id, offGroup.id,
+  ur.id, rage.id, health.id, proc.id
+]);
 
-module.exports = B.buildPackage({ name: 'barbarian-brutality', group, children });
+const children = [
+  cryWarn, crush, proc, ur, rage, health,
+  spellGroup, defGroup, offGroup,
+  ...spellIcons, ...offIcons, ...defIcons
+];
+
+// combatOnly:true -> hide the entire package out of combat
+module.exports = B.buildPackage({ name: 'barbarian-brutality', group, children, combatOnly: true });

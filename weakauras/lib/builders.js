@@ -140,6 +140,42 @@ function chargeSegmentBar(groupId, o) {
   return b;
 }
 
+// A maintenance-buff UPTIME bar (keep-it-up-24/7). Duration countdown that colors green -> yellow (<=8s)
+// -> red (<=4s); when the buff is DOWN the bar goes deep red, swaps the label to a warning subtext, and
+// pulses a red Pixel glow. Tracks one buff by name, or ANY of several (buff: string | string[]).
+//   cfg: { id, yOffset, width, height, buff, label, warnText, bg, downBg?, colors? }
+// warnSubtext -> sub.5, subglow -> sub.6 (the label is sub.4). colors default to the shared green/red set.
+function uptimeBar(groupId, cfg) {
+  const C = cfg.colors || { green: [0.30, 0.75, 0.15, 1], yellow: [1, 0.80, 0.10, 1],
+    red: [1, 0.35, 0.05, 1], down: [0.70, 0.05, 0.05, 1], glow: [1, 0.15, 0.10, 1] };
+  const b = baseBar(groupId, cfg.id);
+  b.yOffset = cfg.yOffset; b.width = cfg.width; b.height = cfg.height;
+  b.enableGradient = false; b.barColor = C.green.slice(); b.backgroundColor = cfg.bg.slice();
+  const trig = Array.isArray(cfg.buff) ? anyBuffTrigger(cfg.buff) : buffTrigger(cfg.buff, 'showAlways');
+  b.triggers = wrap([T(trig)], 1);
+  b.progressSource = [-1, ''];
+  const label = b.subRegions.find(s => s.type === 'subtext');
+  label.text_text = cfg.label; label.text_fontSize = 11; label.text_visible = true;
+  label.anchor_point = 'INNER_CENTER'; label.text_color = [1, 1, 1, 1];
+  b.subRegions = [...b.subRegions, warnSubtext(cfg.warnText), subglow()];
+  b.conditions = [
+    { check: { op: '<=', trigger: 1, variable: 'expirationTime', value: '8' }, changes: [{ property: 'barColor', value: C.yellow.slice() }] },
+    { check: { op: '<=', trigger: 1, variable: 'expirationTime', value: '4' }, changes: [{ property: 'barColor', value: C.red.slice() }] },
+    { check: { trigger: 1, variable: 'buffed', value: 0 },
+      changes: [
+        { property: 'barColor', value: C.down.slice() },
+        { property: 'backgroundColor', value: (cfg.downBg || [0.20, 0.02, 0.02, 0.9]).slice() },
+        { property: 'sub.4.text_visible', value: false },
+        { property: 'sub.5.text_visible', value: true },
+        { property: 'sub.6.glow', value: true },
+        { property: 'sub.6.glowType', value: 'Pixel' },
+        { property: 'sub.6.useGlowColor', value: true },
+        { property: 'sub.6.glowColor', value: C.glow.slice() }
+      ] }
+  ];
+  return b;
+}
+
 // ---------- triggers ----------
 function powerTrigger(powertype) {
   return {
@@ -189,8 +225,60 @@ function targetHealthTrigger() {
     subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', names: [], spellIds: []
   };
 }
+// self buff matching ANY of several names (one uptime state from interchangeable buffs — e.g. "enraged")
+function anyBuffTrigger(names) {
+  return {
+    type: 'aura2', unit: 'player', debuffType: 'HELPFUL', useName: true, auranames: names.slice(),
+    names: [], spellIds: [], auraspellids: [], matchesShowOn: 'showAlways', ownOnly: true,
+    unitExists: true, subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', event: 'Health'
+  };
+}
+// Custom stateupdate: shown only while UnitPower(player, powertype) >= amount. Reads the raw power API
+// directly — a built-in Power/Health "min value" trigger filter does NOT gate on the Ascension client.
+function powerAtLeastTrigger(amount, powertype) {
+  return {
+    type: 'custom', custom_type: 'stateupdate', check: 'event', custom_hide: 'custom',
+    events: 'UNIT_POWER_UPDATE, UNIT_POWER_FREQUENT, UNIT_MAXPOWER, PLAYER_ENTERING_WORLD',
+    custom: `function(allstates, event, ...)
+    local p = UnitPower("player", ${powertype})
+    allstates[""] = { show = (p >= ${amount}), changed = true }
+    return true
+end`,
+    unit: 'player', debuffType: 'HELPFUL', subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', names: [], spellIds: []
+  };
+}
+// Custom stateupdate: shown only while the TARGET is under pct% HP (execute window). Reads UnitHealth
+// directly (same reason as above — the built-in Health percent filter does not gate on this client).
+function targetExecuteTrigger(pct) {
+  const frac = pct / 100;
+  return {
+    type: 'custom', custom_type: 'stateupdate', check: 'event', custom_hide: 'custom',
+    events: 'UNIT_HEALTH, UNIT_MAXHEALTH, PLAYER_TARGET_CHANGED, PLAYER_ENTERING_WORLD',
+    custom: `function(allstates, event, ...)
+    local show = false
+    if UnitExists("target") and UnitHealthMax("target") > 0 then
+        show = (UnitHealth("target") / UnitHealthMax("target")) < ${frac}
+    end
+    allstates[""] = { show = show, changed = true }
+    return true
+end`,
+    unit: 'target', debuffType: 'HELPFUL', subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', names: [], spellIds: []
+  };
+}
 
 // ---------- sub-regions / conditions ----------
+// A hidden centered warning subtext for a bar's DOWN state (buff fell off). Toggled visible by a
+// condition. Reddish, outlined; append after the bar's stock subRegions (becomes sub.5).
+function warnSubtext(text) {
+  return {
+    type: 'subtext', text_text: text, text_visible: false, text_color: [1, 0.35, 0.30, 1],
+    text_font: 'Friz Quadrata TT', text_fontSize: 12, text_fontType: 'OUTLINE',
+    anchor_point: 'INNER_CENTER', text_selfPoint: 'AUTO', anchorXOffset: 0, anchorYOffset: 0,
+    text_shadowColor: [0, 0, 0, 1], text_shadowXOffset: 1, text_shadowYOffset: -1,
+    text_justify: 'CENTER', rotateText: 'NONE', text_wordWrap: 'WordWrap',
+    text_automaticWidth: 'Auto', text_fixedWidth: 64
+  };
+}
 function chargesSubtext() {
   return {
     type: 'subtext', text_text: '%s', text_visible: true, text_color: [1, 1, 1, 1],
@@ -235,6 +323,72 @@ function iconBase(groupId, o) {
   b.desaturate = false; b.color = [1, 1, 1, 1];
   b.config = []; b.authorOptions = []; b.information = {};
   for (const sr of (b.subRegions || [])) { if (sr.type === 'subglow') { sr.glow = false; } }
+  return b;
+}
+
+// The unified cooldown-icon element (replaces the per-class makeIcon). Base = iconBase + a Cooldown
+// Progress (Spell) trigger + "desaturate while onCooldown", then AT MOST ONE glow rule (every class
+// icon uses exactly one), an optional charge subtext, and optional Energy show-gating. Glow color/style
+// are explicit data (glowColor/glowType) — no per-class defaults live here.
+//   cfg: { id, parentId, size, spell, byName?, fallbackIcon?, charges?, xOffset?, yOffset?,
+//          showPowerAbove?, powerType? (default 3),   // gate: only shown at >= N power
+//          proc?,                                      // proc-only base (buff show==1), no cooldown trigger
+//          glowColor?, glowType?,                      // color/style for the ONE glow rule below
+//          glowReady? | glowReadyPower? | glowPowerPct? | glowBuff? | glowBuffMissing? |
+//          glowTargetHealthBelow? | glowOnCharges?({spell,byName?,op?,value,color,glowType?}) }
+function cooldownIcon(cfg) {
+  const b = iconBase(cfg.parentId, { id: cfg.id, parentId: cfg.parentId, size: cfg.size, fallbackIcon: cfg.fallbackIcon });
+  if (cfg.xOffset !== undefined) b.xOffset = cfg.xOffset;
+  if (cfg.yOffset !== undefined) b.yOffset = cfg.yOffset;
+  const glow = () => glowChanges(cfg.glowColor, cfg.glowType);
+  let triggerArr, conditions;
+
+  if (cfg.proc) {
+    triggerArr = [T(buffTrigger(cfg.proc))];
+    conditions = [{ check: { trigger: 1, variable: 'show', value: 1 }, changes: glow() }];
+  } else {
+    const pt = cfg.powerType || 3;
+    let cdIdx;
+    triggerArr = [];
+    if (cfg.showPowerAbove) {
+      triggerArr.push(T(powerAtLeastTrigger(cfg.showPowerAbove, pt)));   // trigger 1 gates show
+      triggerArr.push(T(cooldownTrigger(cfg.spell, cfg.byName)));
+      cdIdx = 2; b.iconSource = 2;
+    } else {
+      triggerArr.push(T(cooldownTrigger(cfg.spell, cfg.byName)));
+      cdIdx = 1;
+    }
+    conditions = [{ check: { trigger: cdIdx, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] }];
+
+    if (cfg.glowReady) {
+      conditions.push({ check: { trigger: cdIdx, variable: 'onCooldown', value: 0 }, changes: glow() });
+    } else if (cfg.glowReadyPower) {
+      triggerArr.push(T(powerTrigger(pt)));
+      conditions.push({ check: { trigger: -2, variable: 'AND', checks: [
+        { trigger: cdIdx, variable: 'onCooldown', value: 0 },
+        { trigger: triggerArr.length, variable: 'power', op: '>=', value: String(cfg.glowReadyPower) }
+      ] }, changes: glow() });
+    } else if (cfg.glowPowerPct) {
+      triggerArr.push(T(powerTrigger(pt)));
+      conditions.push({ check: { trigger: triggerArr.length, variable: 'percentpower', op: '>=', value: String(cfg.glowPowerPct) }, changes: glow() });
+    } else if (cfg.glowBuff) {
+      triggerArr.push(T(buffTrigger(cfg.glowBuff)));
+      conditions.push({ check: { trigger: triggerArr.length, variable: 'show', value: 1 }, changes: glow() });
+    } else if (cfg.glowBuffMissing) {
+      triggerArr.push(T(buffTrigger(cfg.glowBuffMissing, 'showAlways')));
+      conditions.push({ check: { trigger: triggerArr.length, variable: 'buffed', value: 0 }, changes: glow() });
+    } else if (cfg.glowTargetHealthBelow) {
+      triggerArr.push(T(targetHealthTrigger()));
+      conditions.push({ check: { trigger: triggerArr.length, variable: 'percenthealth', op: '<', value: String(cfg.glowTargetHealthBelow) }, changes: glow() });
+    } else if (cfg.glowOnCharges) {
+      const g = cfg.glowOnCharges;
+      triggerArr.push(T(cooldownTrigger(g.spell, g.byName)));
+      conditions.push({ check: { op: g.op || '>=', trigger: triggerArr.length, variable: 'charges', value: String(g.value) }, changes: glowChanges(g.color, g.glowType) });
+    }
+  }
+  b.triggers = wrap(triggerArr, 1);
+  b.conditions = conditions;
+  if (cfg.charges) b.subRegions = [...(b.subRegions || []), chargesSubtext()];
   return b;
 }
 
@@ -286,6 +440,28 @@ function makeDynGroup(groupId, id, children, o) {
   return dg;
 }
 
+// vertical (top->bottom) grow, icons centered on the group's yOffset. For side-rail columns.
+function vGrowLua(iconSize) {
+  return `function(newPositions, activeRegions)
+    local h = ${iconSize}
+    local vSpace = 4
+    local n = #activeRegions
+    local totalH = n * h + (n - 1) * vSpace
+    local startY = totalH / 2 - h / 2
+    for i = 1, n do
+        newPositions[i] = { 0, startY - (i - 1) * (h + vSpace) }
+    end
+end`;
+}
+// A vertical Column container (side rail) — a dynamicgroup that stacks its icons top->bottom, offset to
+// one flank of the WA. o = { xOffset, yOffset, iconSize }. Left column: negative xOffset; right: positive.
+function makeColumn(groupId, id, children, o) {
+  const dg = makeDynGroup(groupId, id, children, { yOffset: o.yOffset, perRow: 1, iconSize: o.iconSize });
+  dg.xOffset = o.xOffset;
+  dg.customGrow = vGrowLua(o.iconSize);
+  return dg;
+}
+
 // ---------- root group ----------
 function makeGroup(groupId, controlledChildren) {
   const group = clone(templates.group);
@@ -300,7 +476,10 @@ function makeGroup(groupId, controlledChildren) {
 }
 
 // ---------- assemble + encode + write (rotates the previous import) ----------
-function buildPackage({ name, group, children }) {
+// combatOnly: load every region (group + all children) only while in combat, so the whole package
+// hides out of combat. Children are independent displays, so the flag must be set on each of them.
+function buildPackage({ name, group, children, combatOnly }) {
+  if (combatOnly) for (const r of [group, ...children]) { r.load = r.load || {}; r.load.use_combat = true; }
   const top = { d: group, c: children, m: 'd', s: '5.20.2', v: 2000 };
   const str = encodeWA(top);
   const ok = JSON.stringify(decodeWA(str).data) === JSON.stringify(top);
@@ -320,8 +499,10 @@ function buildPackage({ name, group, children }) {
 module.exports = {
   clone, uidFor, loadAlways, safeActions, stripMeta, wrap, T,
   templates, ALWAYS_FULL_LUA,
-  baseBar, gradient, barText, segmentBar, chargeSegmentBar,
+  baseBar, gradient, barText, segmentBar, chargeSegmentBar, uptimeBar,
   powerTrigger, healthTrigger, cooldownTrigger, buffTrigger, targetDebuffTrigger, targetHealthTrigger,
-  chargesSubtext, glowChanges, subglow, iconBase, makeDynGroup, makeGroup, buildPackage,
+  anyBuffTrigger, powerAtLeastTrigger, targetExecuteTrigger,
+  chargesSubtext, warnSubtext, glowChanges, subglow, iconBase, cooldownIcon,
+  vGrowLua, makeDynGroup, makeColumn, makeGroup, buildPackage,
   DIST_DIR,
 };
