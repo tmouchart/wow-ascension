@@ -312,6 +312,8 @@ generalizes cleanly do we add the fly.io web app + preview/customization fronten
 - Always assert the self round-trip before handing a string to the user (`buildPackage` does this and refuses to write on failure).
 - **ASCII only in generated text** (labels, `text_text`, ids). The codec does not round-trip multi-byte UTF-8 (e.g. `⚠`, `—`) — round-trip fails and `buildPackage` refuses to write. Use `!`, `-`, etc.
 - Reusable procedures are captured as skills in `.claude/skills/` — see below.
+- **Git: this is a solo hobby project — commit directly to `main`, no branches, no PRs.** Commit when asked;
+  don't create feature branches or open pull requests.
 
 ## Skills (in `.claude/skills/`)
 
