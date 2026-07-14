@@ -7,6 +7,7 @@ const loaders = import.meta.glob('../../registry/*.json');
 export type Ability = {
   spellId: number; name: string; iconUrl: string;
   source?: string; guessActive?: boolean; desc?: string;
+  entryType?: string; level?: number; essence?: number;
 };
 type Registry = { slug: string; class: string; abilities: Ability[] };
 

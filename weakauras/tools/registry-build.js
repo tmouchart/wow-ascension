@@ -50,6 +50,7 @@ function buildClass(slug) {
     push({
       spellId: n.spellId, name: n.name, icon: n.icon, iconUrl: iconUrl(n.icon),
       source, entryType: n.entryType, guessActive: guessActive(n.desc), desc: n.desc || '',
+      level: n.requiredLevel || 0, essence: n.aeCost || n.teCost || 0, maxPoints: n.maxPoints || 1,
       altSpellIds: (n.spellIds || []).filter(x => x !== n.spellId),
     });
   }
@@ -59,7 +60,9 @@ function buildClass(slug) {
     for (const a of (bj.abilities || [])) {
       push({
         spellId: a.baseSpellId, name: a.name, icon: a.icon, iconUrl: iconUrl(a.icon),
-        source: 'baseline', entryType: 'Baseline', guessActive: true, desc: '', altSpellIds: [],
+        source: 'baseline', entryType: 'Baseline', guessActive: true, desc: '',
+        level: (a.ranks && a.ranks[0] && a.ranks[0].level) || 0, essence: 0, maxPoints: 1,
+        altSpellIds: [],
       });
     }
   }
