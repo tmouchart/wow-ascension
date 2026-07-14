@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* shadcn/ui token system (Tailwind v4, CSS-first). Two themes only:
+   :root = Light (parchemin / teal), .dark = Dark (arcane / azure). The WoW identity lives in the token
+   VALUES; components only ever consume the semantic tokens. Dark is the default (<html class="dark">). */
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-mono: var(--mono);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Light — parchemin */
+  --background: #f3efe6;
+  --foreground: #1b1917;
+  --card: #fbf9f4;
+  --card-foreground: #1b1917;
+  --popover: #fbf9f4;
+  --popover-foreground: #1b1917;
+  --primary: #12726b;
+  --primary-foreground: #fbf9f4;
+  --secondary: #ede8dc;
+  --secondary-foreground: #1b1917;
+  --muted: #ede8dc;
+  --muted-foreground: #6b6558;
+  --accent: #e2ece6;
+  --accent-foreground: #0c5b54;
+  --destructive: #c4443b;
+  --destructive-foreground: #fbf9f4;
+  --border: #dad3c4;
+  --input: #dad3c4;
+  --ring: #12726b;
+
+  /* preview-only extras (the WoW render surface keeps a couple of non-shadcn vars) */
+  --preview-bg: #14161b;
+  --shadow: rgba(60, 50, 30, 0.12);
+
+  /* gradients — primary buttons (135deg 2-stop) + subtle vertical lift on chrome surfaces */
+  --grad-primary: linear-gradient(135deg, #178e85 0%, #0c5b54 100%);
+  --grad-primary-hover: linear-gradient(135deg, #1c9e94 0%, #106760 100%);
+  --grad-bar: linear-gradient(180deg, #fbf9f4, #ede8dc);
+  --grad-pane: linear-gradient(180deg, #ede8dc, #f3efe6);
+}
+
+.dark {
+  /* Dark — arcane */
+  --background: #15121f;
+  --foreground: #e9e5f2;
+  --card: #201b30;
+  --card-foreground: #e9e5f2;
+  --popover: #241e36;
+  --popover-foreground: #e9e5f2;
+  --primary: #4176f0;
+  --primary-foreground: #eaf1ff;
+  --secondary: #2b2440;
+  --secondary-foreground: #e9e5f2;
+  --muted: #241e36;
+  --muted-foreground: #9a93ae;
+  --accent: #2b2440;
+  --accent-foreground: #e9e5f2;
+  --destructive: #e6564c;
+  --destructive-foreground: #ffffff;
+  --border: #342b4a;
+  --input: #3a3152;
+  --ring: #4176f0;
+
+  --preview-bg: #0c0a14;
+  --shadow: rgba(0, 0, 0, 0.5);
+
+  --grad-primary: linear-gradient(135deg, #4176f0 0%, #14205a 100%);
+  --grad-primary-hover: linear-gradient(135deg, #4f82f5 0%, #1b2c74 100%);
+  --grad-bar: linear-gradient(180deg, #201b30, #17131f);
+  --grad-pane: linear-gradient(180deg, #1b1729, #15121f);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html, body, #root { height: 100%; }
+  /* every interactive control gets a pointer cursor (Tailwind's reset makes <button> default) — covers
+     shadcn Button, Switch (role=switch), Slider thumb (role=slider), Select trigger/items, ToggleGroup. */
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  [role='switch'], [role='slider'], [role='option'], [role='tab'], [role='radio'],
+  label:has(> input[type='color']), input[type='color'], input[type='range'], summary {
+    cursor: pointer;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* subtle arcane ambiance — a faint brand-tinted radial, kept behind everything */
+    background-image:
+      radial-gradient(1100px 600px at 8% -10%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 60%),
+      radial-gradient(900px 700px at 104% 112%, color-mix(in srgb, var(--primary) 7%, transparent), transparent 55%);
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Themed scrollbars — thin, thumb uses the border token so it reads on both themes. */
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border); border-radius: 8px;
+  border: 2px solid transparent; background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); background-clip: padding-box; }
+::-webkit-scrollbar-corner { background: transparent; }

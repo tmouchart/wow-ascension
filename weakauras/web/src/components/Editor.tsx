@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors, pointerWithin, closestCenter, type CollisionDetection, type DragStartEvent, type DragEndEvent, type Modifier } from '@dnd-kit/core';
 import { getEventCoordinates } from '@dnd-kit/utilities';
-import s from '../editor.module.css';
 
 // Center the (44px) drag overlay on the cursor, wherever in the (wide) palette row the drag started. Stock
 // snapCenterToCursor centers using the SOURCE node's width — the palette row is ~280px wide, so grabbing on
@@ -114,21 +113,25 @@ export function Editor({ slug }: { slug: string }) {
 
   return (
     <DndContext sensors={sensors} collisionDetection={collisionByType} onDragStart={onDragStart} onDragEnd={onDragEnd} onDragCancel={() => { setDragging(false); setOverlay(null); }}>
-      <div className={s.body}>
+      <div className="grid h-full min-h-0 grid-cols-[312px_1fr_336px]">
         <Palette abilities={abilities} loading={loading} />
-        <main className={`${s.pane} ${s.center}`}>
-          <div className={s.canvasTools}>
+        <main className="flex min-h-0 flex-col overflow-auto">
+          <div className="flex items-center gap-2.5 border-b bg-[image:var(--grad-bar)] px-4 py-3 text-[13px] text-muted-foreground">
             <span>Central stack</span>
-            <span style={{ marginLeft: 'auto', fontFamily: 'var(--mono)' }}>{'250 × auto'}</span>
+            <span className="ml-auto font-mono">250 × auto</span>
           </div>
-          <div className={s.canvasScroll}><Preview resolve={resolveIcon} dragging={dragging} /></div>
+          <div className="grid min-h-0 flex-1 place-items-center overflow-auto p-6">
+            <Preview resolve={resolveIcon} dragging={dragging} />
+          </div>
         </main>
         <Inspector slug={slug} />
       </div>
       <DragOverlay modifiers={[centerOverlayOnCursor]} dropAnimation={null}>
         {overlay ? (
-          <div className={s.dragfly}>
-            {overlay.icon ? <img src={overlay.icon} alt="" draggable={false} /> : <span className={s.dragchip}>{overlay.label}</span>}
+          <div className="pointer-events-none">
+            {overlay.icon
+              ? <img src={overlay.icon} alt="" draggable={false} className="block size-11 rounded-md border border-black shadow-lg [-webkit-user-drag:none]" />
+              : <span className="inline-block whitespace-nowrap rounded-md border bg-card px-3 py-1.5 text-sm text-foreground shadow-lg">{overlay.label}</span>}
           </div>
         ) : null}
       </DragOverlay>

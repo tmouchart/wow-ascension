@@ -1,6 +1,19 @@
-import s from '../editor.module.css';
+import type { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
+import { X } from 'lucide-react';
 import { useStore, elementLabel, type El, type Spec, type Ref, type IconCfg } from '../store';
 import { powerIndexConfirmed, BAR_PRESETS } from '../lib/defaultSpec';
+import { Button } from './ui/button';
+import { Input } from './ui/input';
+import { Slider } from './ui/slider';
+import { Switch } from './ui/switch';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from './ui/select';
 
 const SLIDERS: { key: string; label: string; min: number; max: number }[] = [
   { key: 'barWidth', label: 'Bar width', min: 150, max: 320 },
@@ -34,11 +47,39 @@ const GLOW_RULES: [string, string][] = [
   ['targetHealthBelow', 'Target HP % <'],
 ];
 const GLOW_STYLES = ['buttonOverlay', 'Pixel', 'ACShine'];
+const NONE = '__none__'; // Radix Select forbids an empty-string item value; map the "None" glow rule to this
 
 const toHex = (c?: number[]) =>
   '#' + (c ?? [1, 1, 1]).slice(0, 3).map((v) => Math.round(v * 255).toString(16).padStart(2, '0')).join('');
 const fromHex = (h: string): number[] =>
   [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255).concat(1);
+
+// ---- small presentational helpers (shared across the inspector) ----
+const Group = ({ title, children }: { title: string; children: ReactNode }) => (
+  <div className="mb-6">
+    <h3 className="mb-3 text-[13px] font-semibold uppercase tracking-wide text-muted-foreground">{title}</h3>
+    {children}
+  </div>
+);
+const Field = ({ label, children, className }: { label: ReactNode; children: ReactNode; className?: string }) => (
+  <div className={cn('mb-3.5 grid grid-cols-[1fr_auto] items-center gap-2.5', className)}>
+    <label className="text-sm">{label}</label>
+    {children}
+  </div>
+);
+const Note = ({ children }: { children: ReactNode }) => (
+  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{children}</p>
+);
+const ToggleRow = ({ label, on, onToggle, extra }: { label: ReactNode; on: boolean; onToggle: () => void; extra?: ReactNode }) => (
+  <div className="flex items-center justify-between border-t py-2.5 text-sm first:border-t-0">
+    <span>{label}</span>
+    <span className="flex items-center gap-2.5">
+      {extra}
+      <Switch checked={on} onCheckedChange={onToggle} />
+    </span>
+  </div>
+);
+const numCls = 'h-8 w-[74px] text-right font-mono';
 
 function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: IconCfg }) {
   const setIconField = useStore((st) => st.setIconField);
@@ -65,64 +106,60 @@ function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: 
 
   const rule = glow?.type ?? '';
   return (
-    <div className={s.group}>
-      <h3>Icon: {icon.label ?? String(icon.spell)}</h3>
-      <div className={s.field}>
-        <label>Glow rule</label>
-        <select className={s.tin} value={rule} onChange={(e) => pickRule(e.target.value)}>
-          {GLOW_RULES.map(([v, label]) => <option key={v} value={v}>{label}</option>)}
-        </select>
-      </div>
+    <Group title={`Icon: ${icon.label ?? String(icon.spell)}`}>
+      <Field label="Glow rule">
+        <Select value={rule || NONE} onValueChange={(v) => pickRule(v === NONE ? '' : v)}>
+          <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
+          <SelectContent>
+            {GLOW_RULES.map(([v, label]) => <SelectItem key={v} value={v || NONE}>{label}</SelectItem>)}
+          </SelectContent>
+        </Select>
+      </Field>
       {(rule === 'buff' || rule === 'buffMissing') && (
-        <div className={s.field}>
-          <label>Buff name</label>
-          <input className={s.tin} type="text" value={glow?.buff ?? ''}
+        <Field label="Buff name">
+          <Input className="h-8 w-[150px]" type="text" value={glow?.buff ?? ''}
             onChange={(e) => setGlow({ buff: e.target.value })} />
-        </div>
+        </Field>
       )}
       {rule === 'readyPower' && (
-        <div className={s.field}>
-          <label>Power &gt;=</label>
-          <input className={s.num} type="number" value={glow?.power ?? 50}
+        <Field label="Power >=">
+          <Input className={numCls} type="number" value={glow?.power ?? 50}
             onChange={(e) => setGlow({ power: Number(e.target.value) })} />
-        </div>
+        </Field>
       )}
       {(rule === 'powerPct' || rule === 'targetHealthBelow') && (
-        <div className={s.field}>
-          <label>{rule === 'powerPct' ? 'Power % >=' : 'Target HP % <'}</label>
-          <input className={s.num} type="number" min={1} max={100} value={glow?.pct ?? 35}
+        <Field label={rule === 'powerPct' ? 'Power % >=' : 'Target HP % <'}>
+          <Input className={numCls} type="number" min={1} max={100} value={glow?.pct ?? 35}
             onChange={(e) => setGlow({ pct: Number(e.target.value) })} />
-        </div>
+        </Field>
       )}
       {rule && (
         <>
-          <div className={s.field}>
-            <label>Glow style</label>
-            <select className={s.tin} value={glow?.glowType ?? 'buttonOverlay'} onChange={(e) => setGlow({ glowType: e.target.value })}>
-              {GLOW_STYLES.map((v) => <option key={v} value={v}>{v === 'buttonOverlay' ? 'Action Button' : v}</option>)}
-            </select>
-          </div>
-          <div className={s.field}>
-            <label>Glow color</label>
-            <input type="color" value={toHex(glow?.color)} onChange={(e) => setGlow({ color: fromHex(e.target.value) })} />
-          </div>
+          <Field label="Glow style">
+            <Select value={glow?.glowType ?? 'buttonOverlay'} onValueChange={(v) => setGlow({ glowType: v })}>
+              <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
+              <SelectContent>
+                {GLOW_STYLES.map((v) => <SelectItem key={v} value={v}>{v === 'buttonOverlay' ? 'Action Button' : v}</SelectItem>)}
+              </SelectContent>
+            </Select>
+          </Field>
+          <Field label="Glow color">
+            <input type="color" value={toHex(glow?.color)} onChange={(e) => setGlow({ color: fromHex(e.target.value) })}
+              className="h-8 w-12 cursor-pointer rounded-md border border-input bg-transparent p-0.5" />
+          </Field>
         </>
       )}
-      <div className={s.toggle}>
-        <span>Charge count</span>
-        <button className={s.tk} aria-pressed={!!icon.charges} onClick={() => setF('charges', icon.charges ? undefined : true)} />
-      </div>
-      <div className={s.field}>
-        <label>Show at power &gt;=</label>
-        <input className={s.num} type="number" min={0} placeholder="off"
+      <ToggleRow label="Charge count" on={!!icon.charges} onToggle={() => setF('charges', icon.charges ? undefined : true)} />
+      <Field label="Show at power >=">
+        <Input className={numCls} type="number" min={0} placeholder="off"
           value={Number(icon.showPowerAbove ?? 0)}
           onChange={(e) => setF('showPowerAbove', Number(e.target.value) || undefined)} />
+      </Field>
+      <Note>0 = always shown. One glow rule per icon (glow style = urgency, color = meaning).</Note>
+      <div className="mt-3 flex gap-2">
+        <Button variant="outline" size="sm" onClick={() => select(null)}>Done</Button>
       </div>
-      <p className={s.note}>0 = always shown. One glow rule per icon (glow style = urgency, color = meaning).</p>
-      <div className={s.addrow}>
-        <button className={s.add} onClick={() => select(null)}>Done</button>
-      </div>
-    </div>
+    </Group>
   );
 }
 
@@ -131,29 +168,27 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   const setElementField = useStore((st) => st.setElementField);
   if (el.kind === 'uptimeBar' && typeof el.buff === 'string') {
     return (
-      <div className={s.field}>
-        <label>Buff</label>
-        <input className={s.tin} type="text" value={el.buff}
+      <Field label="Buff">
+        <Input className="h-8 w-[150px]" type="text" value={el.buff}
           onChange={(e) => {
             setElementField(index, 'buff', e.target.value);
             setElementField(index, 'label', `${e.target.value}  %p`);
             setElementField(index, 'warnText', e.target.value.toUpperCase() + ' MISSING');
           }} />
-      </div>
+      </Field>
     );
   }
   if (el.kind === 'stacks') {
     return (
-      <div className={s.field}>
-        <label>Buff</label>
-        <span className={s.rowActs}>
-          <input className={s.tin} style={{ width: 96 }} type="text" value={(el.auraNames as string[])?.[0] ?? ''}
+      <Field label="Buff">
+        <span className="flex items-center gap-2.5">
+          <Input className="h-8 w-24" type="text" value={(el.auraNames as string[])?.[0] ?? ''}
             onChange={(e) => setElementField(index, 'auraNames', [e.target.value])} />
-          <input className={s.num} style={{ width: 52 }} type="number" min={2} max={12} title="Boxes"
+          <Input className="h-8 w-[52px] text-right font-mono" type="number" min={2} max={12} title="Boxes"
             value={Number(el.count ?? 5)}
             onChange={(e) => setElementField(index, 'count', Number(e.target.value))} />
         </span>
-      </div>
+      </Field>
     );
   }
   return null;
@@ -184,65 +219,66 @@ export function Inspector({ slug }: { slug: string }) {
   }
 
   return (
-    <aside className={`${s.pane} ${s.right}`}>
-      <div className={s.paneHead}><h2>Inspector</h2><span className={s.hint}>{sel && selIcon ? 'Icon' : 'Global'}</span></div>
-      <div className={s.insp}>
+    <aside className="min-h-0 overflow-auto border-l bg-[image:var(--grad-pane)]">
+      <div className="sticky top-0 z-[2] flex items-center justify-between border-b bg-[image:var(--grad-bar)] px-4 py-3">
+        <h2 className="text-[13px] font-semibold uppercase tracking-wide text-muted-foreground">Inspector</h2>
+        <span className="text-[13px] text-muted-foreground">{sel && selIcon ? 'Icon' : 'Global'}</span>
+      </div>
+      <div className="p-4">
         {sel && selIcon && <IconPanel sel={sel} icon={selIcon} />}
 
-        <div className={s.group}>
-          <h3>Layout</h3>
+        <Group title="Layout">
           {SLIDERS.map(({ key, label, min, max }) => (
-            <div className={s.field} key={key}>
-              <label>{label}</label>
-              <span className={s.val}>{spec.global[key]}</span>
-              <input type="range" min={min} max={max} value={spec.global[key]}
-                onChange={(e) => setGlobal(key, Number(e.target.value))} />
+            <div className="mb-3.5" key={key}>
+              <div className="mb-2 flex items-center justify-between">
+                <label className="text-sm">{label}</label>
+                <span className="font-mono text-[13px] text-muted-foreground">{spec.global[key]}</span>
+              </div>
+              <Slider min={min} max={max} value={[Number(spec.global[key])]}
+                onValueChange={([v]) => setGlobal(key, v)} />
             </div>
           ))}
-          <div className={s.toggle}>
-            <span>Combat only</span>
-            <button className={s.tk} aria-pressed={!!spec.combatOnly} onClick={() => setCombatOnly(!spec.combatOnly)} />
-          </div>
-        </div>
+          <ToggleRow label="Combat only" on={!!spec.combatOnly} onToggle={() => setCombatOnly(!spec.combatOnly)} />
+        </Group>
 
         {powerBars.length > 0 && (
-          <div className={s.group}>
-            <h3>Resource</h3>
+          <Group title="Resource">
             {powerBars.map(([el, i]) => (
-              <div className={s.field} key={el._uid ?? i}>
-                <label>{elementLabel(el)} index</label>
-                <input className={s.num} type="number" min={0} max={20}
+              <Field label={`${elementLabel(el)} index`} key={el._uid ?? i}>
+                <Input className={numCls} type="number" min={0} max={20}
                   value={Number(el.powerType ?? 0)}
                   onChange={(e) => setElementField(i, 'powerType', Number(e.target.value))} />
-              </div>
+              </Field>
             ))}
-            {!confirmed && <p className={s.note}>Unconfirmed for this class — verify in-game (UnitPower) and set the right index. Names don't map to standard indices on this realm.</p>}
-          </div>
+            {!confirmed && <Note>Unconfirmed for this class — verify in-game (UnitPower) and set the right index. Names don't map to standard indices on this realm.</Note>}
+          </Group>
         )}
 
-        <div className={s.group}>
-          <h3>Elements</h3>
+        <Group title="Elements">
           {spec.stack.map((el, i) => (
             <div key={el._uid ?? i}>
-              <div className={s.toggle}>
-                <span>{elementLabel(el)}</span>
-                <span className={s.rowActs}>
-                  {REMOVABLE.has(el.kind) && (
-                    <button className={s.del} title="Remove" onClick={() => removeElement(i)}>&times;</button>
-                  )}
-                  <button className={s.tk} aria-pressed={el.enabled !== false} onClick={() => toggleElement(i)} />
-                </span>
-              </div>
+              <ToggleRow
+                label={elementLabel(el)}
+                on={el.enabled !== false}
+                onToggle={() => toggleElement(i)}
+                extra={REMOVABLE.has(el.kind) ? (
+                  <Button variant="ghost" size="icon" className="size-6 text-muted-foreground hover:bg-destructive hover:text-destructive-foreground"
+                    title="Remove" onClick={() => removeElement(i)}>
+                    <X className="size-3.5" />
+                  </Button>
+                ) : undefined}
+              />
               <ElementFields el={el} index={i} />
             </div>
           ))}
-          <div className={s.addrow} style={{ flexWrap: 'wrap' }}>
+          <div className="mt-3 flex flex-wrap gap-2">
             {(Object.keys(BAR_PRESETS) as (keyof typeof BAR_PRESETS)[]).map((k) => (
-              <button key={k} className={s.add} onClick={() => addBar(k)}>+ {BAR_PRESETS[k].title}</button>
+              <Button key={k} variant="outline" size="sm" className="border-dashed text-muted-foreground"
+                onClick={() => addBar(k)}>+ {BAR_PRESETS[k].title}</Button>
             ))}
           </div>
-          <p className={s.note}>Drag an element's grip in the preview to reorder the stack (bars above or below any CD row). Side columns stay put. Click an icon to edit its glow.</p>
-        </div>
+          <Note>Drag an element's grip in the preview to reorder the stack (bars above or below any CD row). Side columns stay put. Click an icon to edit its glow.</Note>
+        </Group>
       </div>
     </aside>
   );

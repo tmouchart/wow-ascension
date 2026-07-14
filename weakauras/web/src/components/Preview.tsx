@@ -47,7 +47,7 @@ function IconCell({ id, url, size, containerRef, iconIndex }: { id: string; url:
       style={{
         width: px(size), height: px(size), backgroundImage: `url(${url})`, cursor: 'grab',
         transform: CSS.Transform.toString(transform), transition, opacity: isDragging ? 0.4 : 1,
-        boxShadow: isSel ? '0 0 0 2px var(--accent)' : undefined,
+        boxShadow: isSel ? '0 0 0 2px var(--ring)' : undefined,
       }}>
       {/* stopPropagation so clicking the remove button never starts a drag */}
       <button className={s.rm} title="Remove" onPointerDown={(e) => e.stopPropagation()} onClick={(e) => { e.stopPropagation(); removeIcon(containerRef, iconIndex); }}>&times;</button>
