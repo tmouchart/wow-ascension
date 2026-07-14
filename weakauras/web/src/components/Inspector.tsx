@@ -1,12 +1,11 @@
-import type { ReactNode } from 'react';
-import { cn } from '@/lib/utils';
 import { X } from 'lucide-react';
 import { useStore, elementLabel, type El, type Spec, type Ref, type IconCfg } from '../store';
 import { powerIndexConfirmed, BAR_PRESETS } from '../lib/defaultSpec';
+import { Group, Field, Note, ToggleRow, numCls, toHex, fromHex, GLOW_STYLES, NONE } from './inspector-bits';
+import { ProcPanel } from './ProcPanel';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Slider } from './ui/slider';
-import { Switch } from './ui/switch';
 import {
   Select,
   SelectContent,
@@ -23,7 +22,7 @@ const SLIDERS: { key: string; label: string; min: number; max: number }[] = [
 ];
 
 // The kinds the user can freely add (and therefore remove); the rest ships with the class SPEC.
-const REMOVABLE = new Set(['powerBar', 'healthBar', 'uptimeBar', 'stacks']);
+const REMOVABLE = new Set(['powerBar', 'healthBar', 'uptimeBar', 'stacks', 'procRow']);
 
 // The generator derives a region id from el.id (or a per-kind default like "<spec> Power") — two bars with
 // the same effective id would collide (same region id -> same uid). Mirror those defaults when uniquifying.
@@ -33,6 +32,7 @@ const effectiveId = (spec: Spec, el: El): string | undefined =>
     : el.kind === 'healthBar' ? `${spec.id} Health`
     : el.kind === 'stacks' ? `${spec.id} Stack`
     : el.kind === 'uptimeBar' ? `${spec.id} ${typeof el.buff === 'string' ? el.buff : 'Uptime'}`
+    : el.kind === 'procRow' ? `${spec.id} Procs`
     : undefined);
 
 // ---- per-icon glow editing (cdRow / side-rail icons -> the spec-builder `glow` object) ----
@@ -46,40 +46,8 @@ const GLOW_RULES: [string, string][] = [
   ['powerPct', 'Power % >='],
   ['targetHealthBelow', 'Target HP % <'],
 ];
-const GLOW_STYLES = ['buttonOverlay', 'Pixel', 'ACShine'];
-const NONE = '__none__'; // Radix Select forbids an empty-string item value; map the "None" glow rule to this
-
-const toHex = (c?: number[]) =>
-  '#' + (c ?? [1, 1, 1]).slice(0, 3).map((v) => Math.round(v * 255).toString(16).padStart(2, '0')).join('');
-const fromHex = (h: string): number[] =>
-  [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255).concat(1);
-
-// ---- small presentational helpers (shared across the inspector) ----
-const Group = ({ title, children }: { title: string; children: ReactNode }) => (
-  <div className="mb-6">
-    <h3 className="mb-3 text-[13px] font-semibold uppercase tracking-wide text-muted-foreground">{title}</h3>
-    {children}
-  </div>
-);
-const Field = ({ label, children, className }: { label: ReactNode; children: ReactNode; className?: string }) => (
-  <div className={cn('mb-3.5 grid grid-cols-[1fr_auto] items-center gap-2.5', className)}>
-    <label className="text-sm">{label}</label>
-    {children}
-  </div>
-);
-const Note = ({ children }: { children: ReactNode }) => (
-  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{children}</p>
-);
-const ToggleRow = ({ label, on, onToggle, extra }: { label: ReactNode; on: boolean; onToggle: () => void; extra?: ReactNode }) => (
-  <div className="flex items-center justify-between border-t py-2.5 text-sm first:border-t-0">
-    <span>{label}</span>
-    <span className="flex items-center gap-2.5">
-      {extra}
-      <Switch checked={on} onCheckedChange={onToggle} />
-    </span>
-  </div>
-);
-const numCls = 'h-8 w-[74px] text-right font-mono';
+// (Group / Field / Note / ToggleRow / numCls / toHex / fromHex / GLOW_STYLES / NONE live in inspector-bits.tsx,
+// shared with ProcPanel.tsx.)
 
 function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: IconCfg }) {
   const setIconField = useStore((st) => st.setIconField);
@@ -206,8 +174,10 @@ export function Inspector({ slug }: { slug: string }) {
 
   const powerBars = spec.stack.map((el, i) => [el, i] as const).filter(([el]) => el.kind === 'powerBar');
   const confirmed = powerIndexConfirmed(slug);
-  const selIcon = sel == null ? undefined
-    : (sel.ref === 'left' ? spec.left : sel.ref === 'right' ? spec.right : spec.stack[sel.ref])?.icons?.[sel.iconIndex];
+  const selContainer = sel == null ? undefined
+    : (sel.ref === 'left' ? spec.left : sel.ref === 'right' ? spec.right : spec.stack[sel.ref]);
+  const selIcon = selContainer?.icons?.[sel!.iconIndex];
+  const selIsProc = selContainer?.kind === 'procRow';
 
   function addBar(key: keyof typeof BAR_PRESETS) {
     const preset = BAR_PRESETS[key];
@@ -222,10 +192,10 @@ export function Inspector({ slug }: { slug: string }) {
     <aside className="min-h-0 overflow-auto border-l bg-[image:var(--grad-pane)]">
       <div className="sticky top-0 z-[2] flex items-center justify-between border-b bg-[image:var(--grad-bar)] px-4 py-3">
         <h2 className="text-[13px] font-semibold uppercase tracking-wide text-muted-foreground">Inspector</h2>
-        <span className="text-[13px] text-muted-foreground">{sel && selIcon ? 'Icon' : 'Global'}</span>
+        <span className="text-[13px] text-muted-foreground">{sel && selIcon ? (selIsProc ? 'Proc' : 'Icon') : 'Global'}</span>
       </div>
       <div className="p-4">
-        {sel && selIcon && <IconPanel sel={sel} icon={selIcon} />}
+        {sel && selIcon && (selIsProc ? <ProcPanel sel={sel} icon={selIcon} /> : <IconPanel sel={sel} icon={selIcon} />)}
 
         <Group title="Layout">
           {SLIDERS.map(({ key, label, min, max }) => (

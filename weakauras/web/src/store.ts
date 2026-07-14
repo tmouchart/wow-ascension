@@ -21,6 +21,28 @@ function ensureEl(spec: Spec, ref: Ref): El {
   return spec.stack[ref];
 }
 
+// procRow icons carry the composable proc DSL (`when` clauses); other containers carry cdRow-style cfg.
+// Normalize an icon as it enters/leaves a procRow (palette drop or cross-row drag) so it is always a valid
+// config for its container — the generator fails loudly on a procRow icon with no when/legacy config.
+function normalizeForContainer(el: El, ic: IconCfg) {
+  if (el.kind === 'procRow') {
+    const g = ic.glow as { type?: string; color?: number[]; glowType?: string } | undefined;
+    if (g?.type) ic.glow = { ...(g.color ? { color: g.color } : {}), ...(g.glowType ? { glowType: g.glowType } : {}) };
+    if (ic.charges) { ic.display = { ...(ic.display as object), stacks: true }; delete ic.charges; }
+    delete ic.showPowerAbove;
+    if (!ic.when && !ic.buff && ic.execute == null && !ic.stealable) {
+      ic.when = [{ buff: (ic.label as string) ?? String(ic.spell) }];
+      if (ic.glow === undefined) ic.glow = {};   // glow (white Action Button) whenever shown
+    }
+  } else {
+    const d = ic.display as { stacks?: boolean } | undefined;
+    if (d?.stacks) ic.charges = true;
+    for (const k of ['when', 'hide', 'display', 'buff', 'execute', 'stealable', 'glowAlways', 'glowColor', 'glowType']) delete ic[k];
+    const g = ic.glow as { type?: string } | undefined;
+    if (g && !g.type) delete ic.glow;   // a proc-shaped glow (no rule type) isn't a cdRow glow rule
+  }
+}
+
 // Stable ids for @dnd-kit/sortable (position-based keys break reorder tracking): one per icon AND one per
 // stack element (the vertical containers are themselves sortable). Editor-only — stripped in
 // activeStack/activeSpec before the SPEC is generated.
@@ -81,14 +103,18 @@ export const useStore = create<Store>((set) => ({
     const spec = clone(st.spec);
     const el = ensureEl(spec, ref);
     if (!el.icons) el.icons = [];
-    el.icons.push({ ...icon, _uid: nextUid() });
+    const ic = { ...icon, _uid: nextUid() };
+    normalizeForContainer(el, ic);
+    el.icons.push(ic);
     return { spec };
   }),
   insertIcon: (ref, index, icon) => set((st) => {
     const spec = clone(st.spec);
     const el = ensureEl(spec, ref);
     if (!el.icons) el.icons = [];
-    el.icons.splice(index, 0, { ...icon, _uid: nextUid() });
+    const ic = { ...icon, _uid: nextUid() };
+    normalizeForContainer(el, ic);
+    el.icons.splice(index, 0, ic);
     return { spec };
   }),
   removeIcon: (ref, iconIndex) => set((st) => {
@@ -115,6 +141,7 @@ export const useStore = create<Store>((set) => ({
     const [item] = src.splice(fromIndex, 1);
     if (!item) return { spec };
     const dstEl = ensureEl(spec, to);
+    if (dstEl.kind !== readEl(spec, from)?.kind) normalizeForContainer(dstEl, item);
     const dst = dstEl.icons ?? (dstEl.icons = []);
     let idx = toIndex ?? dst.length;
     if (from === to && fromIndex < idx) idx--;   // account for the removal shift

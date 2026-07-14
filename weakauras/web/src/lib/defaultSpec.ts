@@ -38,6 +38,7 @@ export const BAR_PRESETS: Record<string, { title: string; el: El }> = {
   energy: { title: 'Energy', el: { kind: 'powerBar', title: 'Energy', powerType: 3, hi: POWER_COLOR.Energy[0], lo: POWER_COLOR.Energy[1], bg: [0.1, 0.1, 0.12, 0.8] } },
   uptime: { title: 'Uptime bar', el: { kind: 'uptimeBar', buff: 'Buff name', label: 'Buff name  %p', warnText: 'MISSING', bg: [0.05, 0.08, 0.03, 0.85] } },
   stacks: { title: 'Stack boxes', el: { kind: 'stacks', auraNames: ['Buff name'], count: 5, hi: [0.45, 0.9, 0.06, 1], lo: [0.1, 0.32, 0, 1] } },
+  proc: { title: 'Proc row', el: { kind: 'procRow', icons: [] } },
 };
 
 // Is this class's power index confirmed in-game? (drives the inspector's "verify" hint)

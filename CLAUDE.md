@@ -255,8 +255,15 @@ web/            the Vite/React editor. Presets = the classes/*/spec.json files (
 
 **SPEC-first workflow (since 2026-07-14):** every class package is a declarative `spec.json` consumed
 verbatim by BOTH the Node build and the web app — never duplicate spec data in web/src. The DSL
-(`lib/spec-builder.js`) mirrors the element taxonomy: kinds `procRow` (icon variants: `buff:` proc /
-`execute: pct` (+`glowAlways`) / `stealable: true`), `cdRow` (cooldownIcon + one `glow: {type: buff|
+(`lib/spec-builder.js`) mirrors the element taxonomy: kinds `procRow` (composable proc DSL — AND-ed
+`when: [clauses]` with clauses `buff` / `buffMissing` / `anyBuff` / `buffStacks:{name,op,value}` /
+`targetHpBelow` / `powerAtLeast` / `spellReady` / `charges:{op,value}` / `stealable`, + `hide: slot|collapse`
+(slot = alpha-gated, keeps its row slot; collapse = show-gated via disjunctive `all`, row recenters — only
+show-capable clauses), + `glow: {color, glowType, when: [extra clauses]}` (empty `glow.when` = glow whenever
+shown), + `display: {timer: cooldown|buff|none, stacks (a `%N.s` per-trigger subtext), cooldownNumbers,
+desaturateOnCd}`; legacy sugar `buff:` proc / `execute: pct` (+`glowAlways`) / `stealable: true` still
+accepted and byte-frozen; the web ProcPanel edits procs per-icon and converts legacy to `when` on first
+edit), `cdRow` (cooldownIcon + one `glow: {type: buff|
 buffMissing|ready|readyPower|powerPct|targetHealthBelow|onCharges}` + `proc:`/`charges`/`showPowerAbove`),
 `buffRow` (`anyOf:[names]` / `weaponEnchant: main|off` / `indicator:` + `lowPowerGlow`), `powerBar`,
 `stackBar` (aura-stack resource, cultist Insanity), `healthBar`, `uptimeBar`, `stacks` (+`capGlow`),

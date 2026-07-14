@@ -312,6 +312,19 @@ function chargesSubtext() {
     text_automaticWidth: 'Auto', text_fixedWidth: 64, text_text_format_s_format: 'none'
   };
 }
+// A stack-count subtext for an icon. With a triggerIndex, uses the per-trigger dynamic-text ref ("%N.s",
+// format key "text_text_format_N.s_format" — shape confirmed in the Luxthos reference packages) so it reads
+// THAT trigger's stacks (e.g. a proc buff) whatever trigger drives the display; without one, plain "%s"
+// reads the display trigger's stacks/charges (same as chargesSubtext).
+function stacksSubtext(triggerIndex) {
+  const sr = chargesSubtext();
+  if (triggerIndex) {
+    delete sr.text_text_format_s_format;
+    sr.text_text = `%${triggerIndex}.s`;
+    sr[`text_text_format_${triggerIndex}.s_format`] = 'none';
+  }
+  return sr;
+}
 // Weapon-engraving element letter (F / E / W / A / Fr / Ar) shown via the %c custom-text placeholder:
 // a "%c" subtext invokes the parent icon's `customText` Lua, called by WeakAuras as
 // f(expirationTime, duration, progress, dur, name, icon, stacks) — we map arg 5 (the enchant name) to a
@@ -570,6 +583,6 @@ module.exports = {
   powerTrigger, healthTrigger, cooldownTrigger, buffTrigger, targetDebuffTrigger, targetHealthTrigger,
   anyBuffTrigger, powerAtLeastTrigger, targetExecuteTrigger, stealableTargetTrigger,
   weaponEnchantTrigger, withEngravingLetter,
-  chargesSubtext, warnSubtext, glowChanges, subglow, iconBase, cooldownIcon,
+  chargesSubtext, stacksSubtext, warnSubtext, glowChanges, subglow, iconBase, cooldownIcon,
   vGrowLua, makeDynGroup, makeColumn, makeGroup, assembleTop,
 };

@@ -9,7 +9,8 @@
 //      (top-level display order) and the flat children[] array. No more parallel id lists to keep in sync.
 //
 // Vocabulary (mirrors the CLAUDE.md element taxonomy; each kind clones a recipe validated in-game):
-//   procRow (buff proc / execute proc / stealable indicator), cdRow (cooldownIcon + one glow rule),
+//   procRow (composable `when` clause DSL, + legacy buff proc / execute proc / stealable indicator),
+//   cdRow (cooldownIcon + one glow rule),
 //   buffRow (anyOf / weaponEnchant / indicator), powerBar, stackBar (aura-stack resource), healthBar,
 //   uptimeBar, stacks (+capGlow), chargeStacks, buffWarnText, + optional side columns (left/right).
 // Browser-safe: uses only the isomorphic builders (builders-core, no fs). The Node writer
@@ -50,6 +51,149 @@ function cdIconCfg(spec, c, parentId, size) {
   return applyGlow(cfg, c.glow);
 }
 
+// ---- composable proc DSL (procRow icons with a `when` array) ----
+// A proc = an icon + AND-ed `when` clauses controlling when it lights up, an optional glow (with its own
+// extra clauses in glow.when), and display options:
+//   { label, spell?, byName?, fallbackIcon?,
+//     when: [clause...],                   // ALL must pass
+//     hide?: 'slot' | 'collapse',          // slot (default): alpha 0, keeps its slot in the row
+//                                          // collapse: triggers drive show, the row recenters (legacy execute shape)
+//     glow?: { color?, glowType?, when?: [clause...] },   // glow.when empty/absent = glow whenever the when[] passes
+//     display?: { timer?: 'cooldown'|'buff'|'none', stacks?: true, cooldownNumbers?: false, desaturateOnCd?: true } }
+// Clauses (exactly ONE key each — all trigger/variable shapes are validated in-game or present in the
+// Luxthos reference packages, incl. `show` checks on custom stateupdate triggers and `%N.s` subtexts):
+//   { buff: name } / { buffMissing: name } / { anyBuff: [names] }
+//   { buffStacks: { name, op?, value } }         (op defaults '>=')
+//   { targetHpBelow: pct }                       (custom UnitHealth — built-in % filter doesn't gate here)
+//   { powerAtLeast: N, powerType? }              (custom UnitPower — same reason; powerType defaults 3)
+//   { spellReady: true } / { charges: { op?, value } }   (read the icon's own cooldown trigger)
+//   { stealable: true }                          (target has ANY spell-stealable buff)
+const GATING_CLAUSES = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable']);  // can drive show ('collapse')
+const AURA_CLAUSES = new Set(['buff', 'anyBuff', 'buffStacks']);   // buff-family (drives timer:'buff' + the stacks subtext)
+const ALL_CLAUSES = new Set([...GATING_CLAUSES, ...AURA_CLAUSES, 'buffMissing', 'spellReady', 'charges']);
+function clauseKind(cl, at) {
+  const keys = [...ALL_CLAUSES].filter(k => cl[k] !== undefined);
+  if (keys.length !== 1) throw new Error(`${at}: each when-clause needs exactly one of ${[...ALL_CLAUSES].join(', ')}`);
+  return keys[0];
+}
+
+function whenProcIcon(spec, c, parentId, size) {
+  const at = `proc "${c.label}"`;
+  const collapse = (c.hide || 'slot') === 'collapse';
+  const d = c.display || {};
+  const b = B.iconBase(parentId, { id: `${spec.id} Proc - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
+
+  // triggers are deduped by shape so `when` and `glow.when` clauses on the same buff share one trigger
+  const triggerArr = [], trigIdx = new Map();
+  const addTrigger = (def) => {
+    const k = JSON.stringify(def);
+    if (!trigIdx.has(k)) { triggerArr.push(B.T(def)); trigIdx.set(k, triggerArr.length); }
+    return trigIdx.get(k);
+  };
+  const cdIdx = c.spell != null ? addTrigger(B.cooldownTrigger(c.spell, c.byName)) : 0;
+
+  let auraIdx = 0;   // first buff-family trigger (timer:'buff' + stacks subtext read it)
+  const checkFor = (cl) => {
+    switch (clauseKind(cl, at)) {
+      case 'buff': {
+        // slot: showAlways (always active, read `buffed`); collapse: showOnActive drives show
+        const idx = addTrigger(B.buffTrigger(cl.buff, collapse ? undefined : 'showAlways'));
+        if (!auraIdx) auraIdx = idx;
+        return collapse ? { trigger: idx, variable: 'show', value: 1 } : { trigger: idx, variable: 'buffed', value: 1 };
+      }
+      case 'anyBuff': {
+        const idx = addTrigger(B.anyBuffTrigger(cl.anyBuff, collapse ? 'showOnActive' : 'showAlways'));
+        if (!auraIdx) auraIdx = idx;
+        return collapse ? { trigger: idx, variable: 'show', value: 1 } : { trigger: idx, variable: 'buffed', value: 1 };
+      }
+      case 'buffMissing':
+        return { trigger: addTrigger(B.buffTrigger(cl.buffMissing, 'showAlways')), variable: 'buffed', value: 0 };
+      case 'buffStacks': {
+        const s = cl.buffStacks;
+        const idx = addTrigger(B.buffTrigger(s.name, 'showAlways'));
+        if (!auraIdx) auraIdx = idx;
+        return { op: s.op || '>=', trigger: idx, variable: 'stacks', value: String(s.value) };
+      }
+      case 'targetHpBelow':
+        return { trigger: addTrigger(B.targetExecuteTrigger(cl.targetHpBelow)), variable: 'show', value: 1 };
+      case 'powerAtLeast':
+        return { trigger: addTrigger(B.powerAtLeastTrigger(cl.powerAtLeast, cl.powerType != null ? cl.powerType : 3)), variable: 'show', value: 1 };
+      case 'stealable':
+        return { trigger: addTrigger(B.stealableTargetTrigger()), variable: 'show', value: 1 };
+      case 'spellReady':
+        return { trigger: cdIdx, variable: 'onCooldown', value: 0 };
+      case 'charges':
+        return { op: cl.charges.op || '>=', trigger: cdIdx, variable: 'charges', value: String(cl.charges.value) };
+    }
+  };
+  const AND = (checks) => checks.length > 1 ? { checks, trigger: -2, variable: 'AND' } : checks[0];
+
+  const whenChecks = c.when.map(checkFor);   // in collapse mode this still registers the triggers
+  const glow = c.glow;
+  const glowChecks = (glow && Array.isArray(glow.when)) ? glow.when.map(checkFor) : [];
+
+  const conditions = [];
+  if (cdIdx && d.desaturateOnCd) {
+    conditions.push({ check: { trigger: cdIdx, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] });
+  }
+  if (collapse) {
+    // visibility handled by the show-driving triggers (disjunctive 'all'); glow is static while shown,
+    // or conditional on the extra glow.when clauses
+    if (glow && !glowChecks.length) {
+      for (const sr of b.subRegions) {
+        if (sr.type === 'subglow') { sr.glow = true; sr.glowType = glow.glowType || 'buttonOverlay'; sr.useGlowColor = true; sr.glowColor = (glow.color || WHITE).slice(); }
+      }
+    } else if (glow) {
+      conditions.push({ check: AND(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
+    }
+  } else {
+    b.alpha = 0;
+    const showChanges = [{ property: 'alpha', value: 1 }];
+    if (glow && !glowChecks.length) showChanges.push(...B.glowChanges(glow.color || WHITE, glow.glowType));
+    conditions.push({ check: AND(whenChecks), changes: showChanges });
+    if (glow && glowChecks.length) {
+      conditions.push({ check: AND([...whenChecks, ...glowChecks]), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
+    }
+  }
+
+  let mode = cdIdx || 1;                     // display trigger: the cooldown by default (spell art + swipe)
+  if (d.timer === 'buff') mode = auraIdx;    // swipe/countdown = the proc buff's remaining time
+  if (d.timer === 'none') b.cooldown = false;
+  b.triggers = B.wrap(triggerArr, mode);
+  if (collapse) b.triggers.disjunctive = 'all';   // 'any' would show the icon permanently (cd trigger is always active)
+  b.conditions = conditions;
+  if (d.stacks) b.subRegions = [...b.subRegions, B.stacksSubtext(auraIdx)];
+  if (d.cooldownNumbers === false) b.cooldownTextDisabled = true;
+  return b;
+}
+
+// validation for a when-DSL proc icon (loud, before building any region)
+function validateWhenProc(ic, at, need) {
+  need(Array.isArray(ic.when) && ic.when.length, 'needs a non-empty when[]');
+  if (ic.hide) need(ic.hide === 'slot' || ic.hide === 'collapse', `unknown hide "${ic.hide}" (slot | collapse)`);
+  const kinds = ic.when.map(cl => clauseKind(cl, at));
+  const glowKinds = (ic.glow && Array.isArray(ic.glow.when)) ? ic.glow.when.map(cl => clauseKind(cl, at)) : [];
+  for (const cl of [...ic.when, ...((ic.glow && ic.glow.when) || [])]) {
+    const k = clauseKind(cl, at);
+    if (k === 'buffStacks') need(cl.buffStacks && cl.buffStacks.name && cl.buffStacks.value != null, 'buffStacks needs { name, value }');
+    if (k === 'charges') need(cl.charges && cl.charges.value != null, 'charges needs { value }');
+    if (k === 'anyBuff') need(Array.isArray(cl.anyBuff) && cl.anyBuff.length, 'anyBuff needs a non-empty [names]');
+  }
+  const d = ic.display || {};
+  if (ic.spell == null) {
+    need(![...kinds, ...glowKinds].some(k => k === 'spellReady' || k === 'charges'), 'spellReady/charges clauses need a spell');
+    need(!d.desaturateOnCd && d.timer !== 'cooldown', 'display.desaturateOnCd / timer "cooldown" need a spell');
+  }
+  if (ic.hide === 'collapse') {
+    for (const k of kinds) need(GATING_CLAUSES.has(k), `clause "${k}" cannot gate show — use hide "slot" (collapse allows: ${[...GATING_CLAUSES].join(', ')})`);
+  } else {
+    need(ic.spell != null || kinds.some(k => AURA_CLAUSES.has(k) || k === 'buffMissing'),
+      'hide "slot" needs a spell or a buff-family clause (something must keep the icon active to hold its slot)');
+  }
+  if (d.timer) need(['cooldown', 'buff', 'none'].includes(d.timer), `unknown display.timer "${d.timer}"`);
+  if (d.timer === 'buff') need(kinds.some(k => AURA_CLAUSES.has(k)), 'display.timer "buff" needs a buff/anyBuff/buffStacks clause in when[]');
+}
+
 // A proc icon, three variants (mirrors classes/felsworn/build.js — Fel Fireball / Tyrant's Gaze / Consume Magic):
 //  - buff proc (c.buff): hidden (alpha 0) until the buff is up, then fades in + glows. Art comes from the
 //    cooldown trigger's fallback texture (by-name spell doesn't resolve on this client).
@@ -59,6 +203,7 @@ function cdIconCfg(spec, c, parentId, size) {
 //  - stealable indicator (c.stealable): shown only while the target has ANY spell-stealable buff (the
 //    trigger's showOnActive drives show/hide); iconSource -1 pulls the matched buff's own icon; glows.
 function procIcon(spec, c, parentId, size) {
+  if (c.when) return whenProcIcon(spec, c, parentId, size);   // the composable DSL (see above)
   const b = B.iconBase(parentId, { id: `${spec.id} Proc - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
   const glow = B.glowChanges(c.glowColor || WHITE, c.glowType || 'buttonOverlay');
   if (c.stealable) {
@@ -340,7 +485,16 @@ function validateSpec(spec) {
     const need = (ok, msg) => { if (!ok) throw new Error(`${at}: ${msg}`); };
     need(KINDS.has(el.kind), `unknown kind (known: ${[...KINDS].join(', ')})`);
     switch (el.kind) {
-      case 'procRow': case 'cdRow': case 'buffRow': need(Array.isArray(el.icons), 'needs icons[]'); break;
+      case 'procRow':
+        need(Array.isArray(el.icons), 'needs icons[]');
+        el.icons.forEach((ic, j) => {
+          const iat = `${at} icons[${j}] "${ic.label}"`;
+          const ineed = (ok, msg) => { if (!ok) throw new Error(`${iat}: ${msg}`); };
+          if (ic.when) validateWhenProc(ic, iat, ineed);
+          else ineed(ic.buff || ic.execute != null || ic.stealable, 'needs when[] (or legacy buff / execute / stealable)');
+        });
+        break;
+      case 'cdRow': case 'buffRow': need(Array.isArray(el.icons), 'needs icons[]'); break;
       case 'powerBar': need(el.powerType != null, 'needs powerType (a power index)'); break;
       case 'stackBar': need(el.aura && el.max, 'needs aura (buff name) + max'); break;
       case 'uptimeBar': need(el.buff, 'needs buff (a name or [names])'); break;

@@ -55,7 +55,7 @@ function IconCell({ id, url, size, containerRef, iconIndex }: { id: string; url:
   );
 }
 
-// A cdRow: drop target for palette abilities and a horizontal sortable list of its icons.
+// A cdRow / procRow: drop target for palette abilities and a horizontal sortable list of its icons.
 function IconRow({ el, index, size, W, gap, resolve, dragging }: { el: El; index: number; size: number; W: number; gap: number; resolve: IconResolver; dragging: boolean }) {
   const { setNodeRef, isOver } = useDroppable({ id: `row:${index}`, data: { type: 'row', ref: index } });
   const icons = el.icons ?? [];
@@ -128,8 +128,10 @@ export function Preview({ resolve, dragging }: { resolve: IconResolver; dragging
   function renderEl(el: El, i: number) {
     switch (el.kind) {
       case 'procRow':
+        // a full IconRow: proc icons are selectable (per-proc inspector), sortable, and a palette drop target
+        return <IconRow el={el} index={i} size={(el.size as number) ?? g.procSize} W={W} gap={GAP} resolve={resolve} dragging={dragging} />;
       case 'buffRow':
-        return <ProcRow el={el} size={(el.size as number) ?? (el.kind === 'buffRow' ? g.iconSize : g.procSize)} W={W} gap={GAP} resolve={resolve} />;
+        return <ProcRow el={el} size={(el.size as number) ?? g.iconSize} W={W} gap={GAP} resolve={resolve} />;
       case 'cdRow':
         return <IconRow el={el} index={i} size={(el.size as number) ?? (el.secondary ? g.secIconSize : g.iconSize)} W={W} gap={GAP} resolve={resolve} dragging={dragging} />;
       case 'uptimeBar':
