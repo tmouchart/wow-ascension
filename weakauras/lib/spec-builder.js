@@ -8,8 +8,10 @@
 //   2. AUTO-WIRING   — one pass builds all regions, then derives the root group's controlledChildren
 //      (top-level display order) and the flat children[] array. No more parallel id lists to keep in sync.
 //
-// Scope = the "basics" vocabulary: procRow, cdRow, powerBar, healthBar, stacks, + optional side columns.
-// (Uptime bars / execute procs / stack-cap glows are on-demand extras, not modelled here yet.)
+// Vocabulary (mirrors the CLAUDE.md element taxonomy; each kind clones a recipe validated in-game):
+//   procRow (buff proc / execute proc / stealable indicator), cdRow (cooldownIcon + one glow rule),
+//   buffRow (anyOf / weaponEnchant / indicator), powerBar, stackBar (aura-stack resource), healthBar,
+//   uptimeBar, stacks (+capGlow), chargeStacks, buffWarnText, + optional side columns (left/right).
 // Browser-safe: uses only the isomorphic builders (builders-core, no fs). The Node writer
 // (specToPackage = specToParts + buildPackage + dist write) lives in lib/spec-node.js.
 const B = require('./builders-core.js');
@@ -28,27 +30,106 @@ function applyGlow(cfg, g) {
     case 'readyPower': cfg.glowReadyPower = g.power; break;
     case 'powerPct': cfg.glowPowerPct = g.pct; break;
     case 'targetHealthBelow': cfg.glowTargetHealthBelow = g.pct; break;
+    case 'onCharges': cfg.glowOnCharges = { spell: g.spell, byName: g.byName, op: g.op, value: g.value, color: g.color || WHITE, glowType: g.glowType }; break;
     default: throw new Error(`unknown glow.type "${g.type}"`);
   }
   return cfg;
 }
 function cdIconCfg(spec, c, parentId, size) {
-  return applyGlow({
+  const cfg = {
     id: `${spec.id} - ${c.label}`, parentId, size,
     spell: c.spell, byName: c.byName, charges: c.charges, fallbackIcon: c.fallbackIcon,
-  }, c.glow);
+    showPowerAbove: c.showPowerAbove, powerType: c.powerType,
+  };
+  if (c.proc) {   // proc-only icon (see cooldownIcon): appears + glows only while the buff is active
+    cfg.proc = c.proc;
+    cfg.glowColor = (c.glow && c.glow.color) || WHITE;
+    cfg.glowType = (c.glow && c.glow.glowType) || 'buttonOverlay';
+    return cfg;
+  }
+  return applyGlow(cfg, c.glow);
 }
 
-// A proc icon: hidden (alpha 0) until its buff is up, then fades in + glows (Action Button Glow).
-// Art comes from the cooldown trigger's fallback texture (by-name spell doesn't resolve on this client).
+// A proc icon, three variants (mirrors classes/felsworn/build.js — Fel Fireball / Tyrant's Gaze / Consume Magic):
+//  - buff proc (c.buff): hidden (alpha 0) until the buff is up, then fades in + glows. Art comes from the
+//    cooldown trigger's fallback texture (by-name spell doesn't resolve on this client).
+//  - execute proc (c.execute = pct): targetExecuteTrigger controls show, so the icon only exists while the
+//    target is under pct% HP; trigger 2 supplies the spell art + cooldown swipe (iconSource 2,
+//    activeTriggerMode 2). Desaturated while on cooldown, glows when ready.
+//  - stealable indicator (c.stealable): shown only while the target has ANY spell-stealable buff (the
+//    trigger's showOnActive drives show/hide); iconSource -1 pulls the matched buff's own icon; glows.
 function procIcon(spec, c, parentId, size) {
   const b = B.iconBase(parentId, { id: `${spec.id} Proc - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
-  b.alpha = 0;
-  b.triggers = B.wrap([B.T(B.cooldownTrigger(c.spell, c.byName)), B.T(B.buffTrigger(c.buff, 'showAlways'))], 1);
-  b.conditions = [{
-    check: { trigger: 2, variable: 'buffed', value: 1 },
-    changes: [{ property: 'alpha', value: 1 }, ...B.glowChanges(c.glowColor || WHITE, c.glowType || 'buttonOverlay')],
-  }];
+  const glow = B.glowChanges(c.glowColor || WHITE, c.glowType || 'buttonOverlay');
+  if (c.stealable) {
+    b.triggers = B.wrap([B.T(B.stealableTargetTrigger())], 1);
+    b.conditions = [{ check: { trigger: 1, variable: 'show', value: 1 }, changes: glow }];
+  } else if (c.execute != null) {
+    b.iconSource = 2;
+    // glowAlways (barbarian Decapitate): permanent glow while shown (the execute window IS the cue), no
+    // cooldown number; the cooldown trigger only drives desaturation. Default (felsworn Tyrant's Gaze):
+    // the cooldown trigger drives the display (activeTriggerMode 2 -> swipe + countdown), glow when ready.
+    b.triggers = B.wrap([B.T(B.targetExecuteTrigger(c.execute)), B.T(B.cooldownTrigger(c.spell, c.byName))], c.glowAlways ? 1 : 2);
+    // 'all', NOT 'any': the cooldown trigger is always active, so 'any' would show the icon permanently.
+    b.triggers.disjunctive = 'all';
+    if (c.glowAlways) {
+      b.cooldownTextDisabled = true;
+      for (const sr of b.subRegions) {
+        if (sr.type === 'subglow') { sr.glow = true; sr.glowType = c.glowType || 'buttonOverlay'; sr.useGlowColor = true; sr.glowColor = (c.glowColor || WHITE).slice(); }
+      }
+      b.conditions = [
+        { check: { trigger: 2, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] },
+      ];
+    } else {
+      b.conditions = [
+        { check: { trigger: 2, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] },
+        { check: { trigger: 2, variable: 'onCooldown', value: 0 }, changes: glow },
+      ];
+    }
+  } else {
+    b.alpha = 0;
+    b.triggers = B.wrap([B.T(B.cooldownTrigger(c.spell, c.byName)), B.T(B.buffTrigger(c.buff, 'showAlways'))], 1);
+    b.conditions = [{
+      check: { trigger: 2, variable: 'buffed', value: 1 },
+      changes: [{ property: 'alpha', value: 1 }, ...glow],
+    }];
+  }
+  return b;
+}
+
+// A buff-row icon, three variants (mirrors classes/runemaster/build.js — tattoo / engravings / water reminder):
+//  - anyOf ([names]): shown only while ANY of the buffs is up (showOnActive); iconSource -1 shows the
+//    matched buff's own icon (e.g. whichever Runic Tattoo is active).
+//  - weaponEnchant ('main'|'off'): the currently-active temporary weapon enchant (engraving), with the
+//    element letter (%c custom text) as a subtext.
+//  - indicator (buffName): always shown; desaturated + dimmed while the buff is missing. Optional
+//    lowPowerGlow { pct, powerType?, color?, glowType? } = strong glow when power% drops to pct ("swap now").
+function buffRowIcon(spec, c, parentId, size) {
+  const b = B.iconBase(parentId, { id: `${spec.id} Buff - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
+  if (c.anyOf) {
+    b.triggers = B.wrap([B.T(B.anyBuffTrigger(c.anyOf, 'showOnActive'))], 1);
+    b.conditions = [];
+  } else if (c.weaponEnchant) {
+    b.triggers = B.wrap([B.T(B.weaponEnchantTrigger(c.weaponEnchant))], 1);
+    b.conditions = [];
+    B.withEngravingLetter(b);
+  } else if (c.indicator) {
+    b.triggers = B.wrap([B.T(B.buffTrigger(c.indicator, 'showAlways'))], 1);
+    b.conditions = [
+      { check: { trigger: 1, variable: 'buffed', value: 0 },
+        changes: [{ property: 'desaturate', value: true }, { property: 'alpha', value: 0.5 }] },
+    ];
+    if (c.lowPowerGlow) {
+      const lp = c.lowPowerGlow;
+      b.triggers.__array.push(B.T(B.powerTrigger(lp.powerType != null ? lp.powerType : 0)));
+      b.conditions.push({
+        check: { trigger: 2, variable: 'percentpower', op: '<=', value: String(lp.pct) },
+        changes: B.glowChanges(lp.color || WHITE, lp.glowType || 'buttonOverlay'),
+      });
+    }
+  } else {
+    throw new Error(`buffRow icon "${c.label}": needs one of anyOf / weaponEnchant / indicator`);
+  }
   return b;
 }
 
@@ -57,12 +138,16 @@ function elementHeight(el, g) {
   switch (el.kind) {
     case 'powerBar':
     case 'healthBar':
+    case 'stackBar':
     case 'uptimeBar': return el.height || 14;
-    case 'stacks': return el.height || 12;
+    case 'stacks':
+    case 'chargeStacks': return el.height || 12;
+    case 'buffWarnText': return el.height || 22;
     case 'procRow': {
       const size = el.size || g.procSize || 30;
       return rowHeight(el.icons.length, size, g.barWidth);
     }
+    case 'buffRow':
     case 'cdRow': {
       const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
       return rowHeight(el.icons.length, size, g.barWidth);
@@ -83,11 +168,48 @@ function buildElement(spec, el, centerY, g, gx) {
   switch (el.kind) {
     case 'powerBar': {
       const bar = B.baseBar(spec.id, el.id || `${spec.id} Power`);
-      bar.width = g.barWidth; bar.height = el.height || 14;
+      bar.width = el.width || g.barWidth; bar.height = el.height || 14;
       B.gradient(bar, el.hi, el.lo);
       bar.backgroundColor = (el.bg || [0.1, 0.1, 0.1, 0.8]).slice();
       bar.triggers = B.wrap([B.T(B.powerTrigger(el.powerType))], -10);
-      B.barText(bar, el.text || '%p', 11);
+      B.barText(bar, el.text || '%p', el.textSize || 11);
+      bar.xOffset = gx; bar.yOffset = centerY;
+      return { rootIds: [bar.id], regions: [bar] };
+    }
+    case 'stackBar': {
+      // a resource that is an AURA'S STACK COUNT, not a power type (e.g. cultist Insanity 0..100):
+      // fill driven by trigger 1 "stacks", max pinned to el.max. debuffType BOTH scans buffs AND debuffs.
+      const bar = B.baseBar(spec.id, el.id || `${spec.id} ${el.aura}`);
+      bar.width = el.width || g.barWidth; bar.height = el.height || 14;
+      B.gradient(bar, el.hi, el.lo);
+      bar.backgroundColor = (el.bg || [0.1, 0.1, 0.1, 0.8]).slice();
+      const trig = B.anyBuffTrigger([el.aura]);
+      trig.debuffType = el.debuffType || 'BOTH';
+      bar.triggers = B.wrap([B.T(trig)], 1);
+      bar.progressSource = [1, 'stacks'];
+      bar.useAdjustededMax = true; bar.adjustedMax = String(el.max);
+      B.barText(bar, el.text || '%p', el.textSize || 11);
+      bar.xOffset = gx; bar.yOffset = centerY;
+      return { rootIds: [bar.id], regions: [bar] };
+    }
+    case 'buffWarnText': {
+      // a big warning text shown ONLY while a maintenance buff is ABSENT (barbarian "CRY MISSING").
+      // Built as a fully transparent aurabar used purely as a text carrier (no text-region template).
+      const bar = B.baseBar(spec.id, el.id || `${spec.id} Warn - ${el.buff}`);
+      bar.width = el.width || g.barWidth; bar.height = el.height || 22;
+      bar.enableGradient = false;
+      bar.barColor = [0, 0, 0, 0]; bar.backgroundColor = [0, 0, 0, 0];   // invisible bar
+      bar.triggers = B.wrap([B.T(B.buffTrigger(el.buff, 'showAlways'))], 1);
+      bar.progressSource = [-1, ''];
+      const label = bar.subRegions.find(s => s.type === 'subtext');
+      label.text_text = el.text; label.text_fontSize = el.fontSize || 20; label.text_fontType = 'OUTLINE';
+      label.text_color = (el.color || [1, 0.2, 0.15, 1]).slice();
+      label.anchor_point = 'INNER_CENTER'; label.text_visible = false;
+      const border = bar.subRegions.find(s => s.type === 'subborder');
+      if (border) border.border_visible = false;
+      bar.conditions = [
+        { check: { trigger: 1, variable: 'buffed', value: 0 }, changes: [{ property: 'sub.4.text_visible', value: true }] },
+      ];
       bar.xOffset = gx; bar.yOffset = centerY;
       return { rootIds: [bar.id], regions: [bar] };
     }
@@ -119,14 +241,61 @@ function buildElement(spec, el, centerY, g, gx) {
       const startX = -((n - 1) * pitch) / 2 + gx;
       const boxes = [];
       for (let i = 1; i <= n; i++) {
-        boxes.push(B.segmentBar(spec.id, {
+        const box = B.segmentBar(spec.id, {
           id: `${el.id || spec.id + ' Stack'} ${i}`, index: i,
           unit: el.unit || 'player', debuffType: el.debuffType || 'HELPFUL', auraNames: el.auraNames.slice(),
           unitExists: el.unitExists, hiColor: el.hi, loColor: el.lo, emptyBg: el.emptyBg || [0.09, 0.11, 0.09, 0.9],
           width: boxW, height, xOffset: startX + (i - 1) * pitch, yOffset: centerY,
+        });
+        // capGlow = { at?, unlessBuff?, color?, glowType? }: every box glows when the stack count reaches
+        // `at` (default = count) — AND `unlessBuff` is missing, if given (e.g. Felfury capped at 6 while
+        // Inner Demon is down = dump now). Mirrors classes/felsworn/build.js.
+        if (el.capGlow) {
+          const cg = el.capGlow;
+          const checks = [{ op: '>=', trigger: 1, variable: 'stacks', value: String(cg.at != null ? cg.at : n) }];
+          if (cg.unlessBuff) {
+            box.triggers.__array.push(B.T(B.buffTrigger(cg.unlessBuff, 'showAlways')));   // -> trigger 3
+            checks.push({ trigger: 3, variable: 'buffed', value: 0 });
+          }
+          box.subRegions = [...box.subRegions, B.subglow()];   // -> sub.5
+          box.conditions.push({
+            check: checks.length > 1 ? { checks, trigger: -2, variable: 'AND' } : checks[0],
+            changes: [
+              { property: 'sub.5.glow', value: true },
+              { property: 'sub.5.glowType', value: cg.glowType || 'Pixel' },
+              { property: 'sub.5.useGlowColor', value: true },
+              { property: 'sub.5.glowColor', value: (cg.color || WHITE).slice() },
+            ],
+          });
+        }
+        boxes.push(box);
+      }
+      return { rootIds: boxes.map(b => b.id), regions: boxes };
+    }
+    case 'chargeStacks': {
+      // segmented boxes driven by a SPELL'S CHARGES (runemaster Runeblade 0..3) — see chargeSegmentBar.
+      const n = el.count, gap = el.gap || 4, height = el.height || 12;
+      const boxW = (g.barWidth - (n - 1) * gap) / n, pitch = boxW + gap;
+      const startX = -((n - 1) * pitch) / 2 + gx;
+      const boxes = [];
+      for (let i = 1; i <= n; i++) {
+        boxes.push(B.chargeSegmentBar(spec.id, {
+          id: `${el.id || spec.id + ' Charge'} ${i}`, index: i,
+          spell: el.spell, byName: el.byName,
+          hiColor: el.hi, loColor: el.lo, emptyBg: el.emptyBg || [0.09, 0.11, 0.09, 0.9],
+          width: boxW, height, xOffset: startX + (i - 1) * pitch, yOffset: centerY,
         }));
       }
       return { rootIds: boxes.map(b => b.id), regions: boxes };
+    }
+    case 'buffRow': {
+      // a centered row of buff-state icons (showOnActive any-of / weapon enchants / indicator) — see buffRowIcon.
+      const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
+      const dgId = el.id || `${spec.id} Buffs`;
+      const icons = el.icons.map(c => buffRowIcon(spec, c, dgId, size));
+      const dg = B.makeDynGroup(spec.id, dgId, icons, { yOffset: centerY, maxWidth: g.barWidth, iconSize: size });
+      dg.xOffset = gx;
+      return { rootIds: [dg.id], regions: [dg, ...icons] };
     }
     case 'cdRow': {
       const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
@@ -160,9 +329,35 @@ function buildColumn(spec, col, side, g, gx, gy) {
   return { rootIds: [dg.id], regions: [dg, ...icons] };
 }
 
+// ---- SPEC validation: fail with a clear message BEFORE building any region ----
+// (The UI edits SPECs as data; an incoherent one must produce a loud error, not a broken import string.)
+const KINDS = new Set(['procRow', 'cdRow', 'buffRow', 'powerBar', 'healthBar', 'stackBar', 'uptimeBar', 'stacks', 'chargeStacks', 'buffWarnText']);
+function validateSpec(spec) {
+  if (!spec || !spec.id) throw new Error('SPEC needs an `id`');
+  if (!Array.isArray(spec.stack) || !spec.stack.length) throw new Error('SPEC needs a non-empty `stack`');
+  spec.stack.forEach((el, i) => {
+    const at = `stack[${i}] "${el.kind}"`;
+    const need = (ok, msg) => { if (!ok) throw new Error(`${at}: ${msg}`); };
+    need(KINDS.has(el.kind), `unknown kind (known: ${[...KINDS].join(', ')})`);
+    switch (el.kind) {
+      case 'procRow': case 'cdRow': case 'buffRow': need(Array.isArray(el.icons), 'needs icons[]'); break;
+      case 'powerBar': need(el.powerType != null, 'needs powerType (a power index)'); break;
+      case 'stackBar': need(el.aura && el.max, 'needs aura (buff name) + max'); break;
+      case 'uptimeBar': need(el.buff, 'needs buff (a name or [names])'); break;
+      case 'stacks': need(Array.isArray(el.auraNames) && el.count, 'needs auraNames[] + count'); break;
+      case 'chargeStacks': need(el.spell && el.count, 'needs spell + count'); break;
+      case 'buffWarnText': need(el.buff && el.text, 'needs buff + text'); break;
+    }
+  });
+  for (const side of ['left', 'right']) {
+    if (spec[side] && !Array.isArray(spec[side].icons)) throw new Error(`${side} column: needs icons[]`);
+  }
+}
+
 // Pure: SPEC -> { name, group, children, combatOnly } (all regions built, no codec, no fs). Both the
 // Node writer (specToPackage) and the browser (assembleTop + async encodeWA) consume this.
 function specToParts(spec) {
+  validateSpec(spec);
   const g = {
     barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3,
     xOffset: 0, yOffset: 0, ...(spec.global || {}),
@@ -187,7 +382,15 @@ function specToParts(spec) {
     rootIds.push(...r); children.push(...regions);
   }
 
-  // 3. auto-wire the root group
+  // 3. duplicate region ids would collide on uids (uidFor derives from id) and corrupt the import —
+  // fail loudly instead (e.g. two procRows both defaulting to "<spec.id> Procs": give one an explicit id).
+  const seen = new Set();
+  for (const r of children) {
+    if (seen.has(r.id)) throw new Error(`duplicate region id "${r.id}" — set an explicit id on one of the elements`);
+    seen.add(r.id);
+  }
+
+  // 4. auto-wire the root group
   const group = B.makeGroup(spec.id, rootIds);
   return { name: spec.name || spec.id, group, children, combatOnly: spec.combatOnly };
 }

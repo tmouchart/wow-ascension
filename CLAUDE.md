@@ -236,16 +236,34 @@ through the truncated JS-eval channel isn't feasible. Harness lives inline in th
 ## Project layout (`weakauras/`)
 
 ```
-lib/            shared engine — wa-codec.js, builders.js, templates/{bar,icon,group,dyngroup}.json
-classes/<name>/ per-class package — build.js (data + layout) + abilities.md
-build.js        CLI: `node build.js [class...|all]` -> writes dist/
-dist/           generated output — <class>.import.txt (current) + <class>.prev.import.txt + <class>.decoded.json
+lib/            shared engine — wa-codec.js, builders.js, builders-core.js (isomorphic), spec-builder.js
+                (SPEC -> regions: layout engine + auto-wiring + validator), spec-node.js, templates/
+classes/<name>/ per-class package — spec.json (THE declarative SPEC, single source for Node AND web)
+                + spec.js (2-line Node writer) + build.js (frozen hand-built reference; retires once the
+                spec package is confirmed in-game) + abilities.md
+build.js        CLI: `node build.js [class...|all]` -> writes dist/ (hand-built); specs: `node classes/<n>/spec.js`
+dist/           generated output — <class>.import.txt + <class>-spec.import.txt (+ .prev, .decoded.json)
 reference/      known-good decoded packages (luxthos/, luxthos-elemental*) + LibDeflate.lua
 tools/          coa-process.js (tree scrape) + coa-baselines.js (grimoire spells from db.ascension.gg)
                 + scraped coa-classes/ (<slug>-nodes.json, <slug>-baselines.json, BASELINES-INDEX.md) + coa-all-classes.json
-                + verify-unchanged.js (+ golden/) — refactor guardrail: rebuild all & assert decoded output
-                  is byte-identical to the golden snapshot (`--snapshot` to re-baseline after intended changes)
+                + verify-unchanged.js (+ golden/) — refactor guardrail: rebuilds all build.js AND spec.js
+                  packages & asserts decoded output is byte-identical to the golden snapshot
+                  (`--snapshot` to re-baseline after intended changes)
+web/            the Vite/React editor. Presets = the classes/*/spec.json files (import.meta.glob), edited
+                as a SPEC in a zustand store, generated client-side (specToParts + assembleTop + web codec).
 ```
+
+**SPEC-first workflow (since 2026-07-14):** every class package is a declarative `spec.json` consumed
+verbatim by BOTH the Node build and the web app — never duplicate spec data in web/src. The DSL
+(`lib/spec-builder.js`) mirrors the element taxonomy: kinds `procRow` (icon variants: `buff:` proc /
+`execute: pct` (+`glowAlways`) / `stealable: true`), `cdRow` (cooldownIcon + one `glow: {type: buff|
+buffMissing|ready|readyPower|powerPct|targetHealthBelow|onCharges}` + `proc:`/`charges`/`showPowerAbove`),
+`buffRow` (`anyOf:[names]` / `weaponEnchant: main|off` / `indicator:` + `lowPowerGlow`), `powerBar`,
+`stackBar` (aura-stack resource, cultist Insanity), `healthBar`, `uptimeBar`, `stacks` (+`capGlow`),
+`chargeStacks`, `buffWarnText`, + side columns `left`/`right` and `combatOnly`. specToParts validates the
+SPEC (unknown kind / missing fields / duplicate region ids -> loud error). Structural parity spec vs
+hand-built was verified region-by-region for all 5 classes (2026-07-14); the golden guardrail keeps both
+families frozen. All 5 spec packages await one in-game import confirmation each, then build.js files retire.
 
 `lib/builders.js` shared element helpers: bars `baseBar`/`gradient`/`barText`/`segmentBar`/`chargeSegmentBar`/
 **`uptimeBar`**; icons **`cooldownIcon`** (the one unified CD/proc/featured icon builder) + `iconBase`;

@@ -1,0 +1,38 @@
+{
+  "slug": "felsworn",
+  "id": "Felsworn Tyrant SPEC",
+  "name": "felsworn-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "id": "Felsworn Tyrant SPEC Steal", "size": 32, "icons": [
+      { "label": "Consume Magic", "stealable": true, "fallbackIcon": "Interface\\Icons\\Spell_Arcane_ManaTap",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "procRow", "icons": [
+      { "label": "Fel Fireball", "spell": "Fel Fireball", "byName": true, "buff": "Carve",
+        "fallbackIcon": "Interface\\Icons\\Spell_Fire_FelFireBolt", "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" },
+      { "label": "Tyrants Gaze", "spell": 805240, "execute": 35,
+        "fallbackIcon": "Interface\\Icons\\inv_summondemonictyrant", "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Hateforged Barrier", "spell": 705129, "glow": { "type": "buff", "buff": "Hateforged Barrier", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Demonic Will", "spell": 800209, "glow": { "type": "buff", "buff": "Demonic Will", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Skull of Guldan", "spell": 800225, "glow": { "type": "buff", "buff": "Skull of Gul'dan", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Annihilation", "spell": 803904, "glow": { "type": "buff", "buff": "Annihilation", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Blood of Mannoroth", "spell": 802075 },
+      { "label": "Reckoning", "spell": 802058 },
+      { "label": "Chaos Rush", "spell": "Chaos Rush", "byName": true, "charges": true }
+    ] },
+    { "kind": "uptimeBar", "buff": "Inner Demon", "label": "Inner Demon  %p", "warnText": "Inner Demon", "bg": [0.05, 0.08, 0.03, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.88, 0.15, 1], "lo": [0.72, 0.42, 0.0, 1], "bg": [0.12, 0.1, 0.0, 0.8] },
+    { "kind": "stacks", "auraNames": ["Felfury"], "count": 6, "hi": [0.45, 0.9, 0.06, 1], "lo": [0.1, 0.32, 0.0, 1],
+      "capGlow": { "at": 6, "unlessBuff": "Inner Demon", "color": [1, 0.82, 0.1, 1], "glowType": "Pixel" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Whispers of the Pit", "spell": 805235 },
+      { "label": "Manaburn", "spell": 805248 },
+      { "label": "Fel Bargain", "spell": "Fel Bargain", "byName": true, "fallbackIcon": "Interface\\Icons\\Spell_Shadow_DemonicPact" },
+      { "label": "Arcane Torrent", "spell": "Arcane Torrent", "byName": true, "fallbackIcon": "Interface\\Icons\\Spell_Shadow_Teleport" }
+    ] }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "runemaster",
+  "id": "Runemaster Runic SPEC",
+  "name": "runemaster-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Runic Brand", "spell": 712299, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Runeblade", "spell": 707141, "charges": true, "fallbackIcon": "Interface\\Icons\\INV_Sword_48" },
+      { "label": "Zenith", "spell": 712325 },
+      { "label": "Primordial Blast", "spell": 800732, "fallbackIcon": "Interface\\Icons\\Spell_Fire_Fireball02",
+        "glow": { "type": "onCharges", "spell": 707141, "op": "==", "value": 0, "color": [1, 0.45, 0.05, 1] } },
+      { "label": "Fist of the Ancients", "spell": 712326 },
+      { "label": "Power Overwhelming", "proc": "Power Overwhelming",
+        "fallbackIcon": "Interface\\Icons\\Spell_Shadow_UnholyFrenzy", "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } }
+    ] },
+    { "kind": "chargeStacks", "spell": 707141, "count": 3, "gap": 6,
+      "hi": [1, 0.58, 0.12, 1], "lo": [0.55, 0.2, 0, 1], "emptyBg": [0.12, 0.07, 0.02, 0.9] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "buffRow", "icons": [
+      { "label": "Tattoo", "anyOf": [
+        "Runic Tattoos: Fire", "Runic Tattoos: Water", "Runic Tattoos: Air",
+        "Runic Tattoos: Earth", "Runic Tattoos: Frost", "Runic Tattoos: Arcane"
+      ], "fallbackIcon": "Interface\\Icons\\Spell_Shadow_DeathPact" },
+      { "label": "Water Tattoo Reminder", "indicator": "Runic Tattoos: Water",
+        "fallbackIcon": "Interface\\Icons\\70_inscription_vantus_rune_azure",
+        "lowPowerGlow": { "pct": 25, "powerType": 0, "color": [0.3, 0.7, 1, 1] } },
+      { "label": "Engraving MH", "weaponEnchant": "main", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" },
+      { "label": "Engraving OH", "weaponEnchant": "off", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" }
+    ] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Guarding Rune", "spell": 500464 },
+      { "label": "Granite Resolve", "spell": 520229 }
+    ] }
+  ]
+}

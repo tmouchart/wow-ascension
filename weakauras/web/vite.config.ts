@@ -6,5 +6,7 @@ import react from '@vitejs/plugin-react';
 // (registry/INDEX.json) from the weakauras root, one level up from web/.
 export default defineConfig({
   plugins: [react()],
-  server: { fs: { allow: ['..'] } },
+  // Fixed non-standard ports so the dev/preview servers never collide with other local projects.
+  server: { port: 8372, strictPort: true, fs: { allow: ['..'] } },
+  preview: { port: 8373, strictPort: true },
 });

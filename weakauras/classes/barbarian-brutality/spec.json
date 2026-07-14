@@ -1,0 +1,41 @@
+{
+  "slug": "barbarian",
+  "id": "Barbarian Brutality SPEC",
+  "name": "barbarian-brutality-spec",
+  "combatOnly": true,
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "buffWarnText", "buff": "Brutal Shout", "text": "CRY MISSING" },
+    { "kind": "cdRow", "id": "Barbarian Brutality SPEC Featured", "size": 46, "icons": [
+      { "label": "Crush", "spell": 500915, "glow": { "type": "readyPower", "power": 63, "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } }
+    ] },
+    { "kind": "cdRow", "size": 30, "icons": [
+      { "label": "Whirling Advance", "spell": 500919, "showPowerAbove": 45 },
+      { "label": "Decapitate", "spell": 804414, "glow": { "type": "powerPct", "pct": 60, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Headbutt", "spell": 520523 },
+      { "label": "Kick", "spell": "Kick", "byName": true, "fallbackIcon": "Interface\\Icons\\Ability_Kick" },
+      { "label": "Jawbreaker", "spell": 802792 }
+    ] },
+    { "kind": "uptimeBar", "buff": ["Unbridled Rage", "Onslaught", "Battle Vigor"], "label": "Enrage  %p", "warnText": "NOT ENRAGED", "bg": [0.06, 0.05, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "width": 280, "height": 22, "textSize": 13,
+      "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "procRow", "size": 34, "icons": [
+      { "label": "Decapitate", "spell": 804414, "execute": 35, "glowAlways": true,
+        "fallbackIcon": "Interface\\Icons\\Ability_Warrior_DecisiveStrike", "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] }
+  ],
+  "left": { "icons": [
+    { "label": "Battle Vigor", "spell": 801768, "glow": { "type": "buff", "buff": "Battle Vigor", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } },
+    { "label": "Defiance", "spell": 806228, "glow": { "type": "buff", "buff": "Defiance", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } },
+    { "label": "Thick Skull", "spell": 801549, "glow": { "type": "buff", "buff": "Thick Skull", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } }
+  ] },
+  "right": { "icons": [
+    { "label": "Unbridled Rage", "spell": "Unbridled Rage", "byName": true,
+      "glow": { "type": "buffMissing", "buff": "Unbridled Rage", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" },
+      "fallbackIcon": "Interface\\Icons\\Ability_Warrior_InnerRage" },
+    { "label": "Storm of Steel", "spell": 800637 },
+    { "label": "Killing Spree", "spell": 850021 },
+    { "label": "Hodirs Wrath", "spell": 800152 }
+  ] }
+}

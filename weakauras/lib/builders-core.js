@@ -235,12 +235,25 @@ function targetHealthTrigger() {
     subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', names: [], spellIds: []
   };
 }
-// self buff matching ANY of several names (one uptime state from interchangeable buffs — e.g. "enraged")
-function anyBuffTrigger(names) {
+// self buff matching ANY of several names (one uptime state from interchangeable buffs — e.g. "enraged").
+// matchesShowOn defaults to 'showAlways' (state always active, read `buffed`); pass 'showOnActive' for an
+// icon that only exists while one of the buffs is up (e.g. the runemaster tattoo icon).
+function anyBuffTrigger(names, matchesShowOn) {
   return {
     type: 'aura2', unit: 'player', debuffType: 'HELPFUL', useName: true, auranames: names.slice(),
-    names: [], spellIds: [], auraspellids: [], matchesShowOn: 'showAlways', ownOnly: true,
+    names: [], spellIds: [], auraspellids: [], matchesShowOn: matchesShowOn || 'showAlways', ownOnly: true,
     unitExists: true, subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', event: 'Health'
+  };
+}
+// Temporary weapon enchant (engraving) on the main/off hand — WA reads GetWeaponEnchantInfo + scans the
+// weapon tooltip. enchant '' = match any. showOnActive: the icon only exists while an enchant is up.
+//   weapon: 'main' | 'off'
+function weaponEnchantTrigger(weapon) {
+  return {
+    type: 'item', event: 'Weapon Enchant', weapon,
+    use_enchant: false, enchant: '', showOn: 'showOnActive',
+    use_stacks: false, use_remaining: false,
+    subeventPrefix: 'SPELL', subeventSuffix: '_CAST_START', names: [], spellIds: []
   };
 }
 // Custom stateupdate: shown only while UnitPower(player, powertype) >= amount. Reads the raw power API
@@ -299,6 +312,42 @@ function chargesSubtext() {
     text_automaticWidth: 'Auto', text_fixedWidth: 64, text_text_format_s_format: 'none'
   };
 }
+// Weapon-engraving element letter (F / E / W / A / Fr / Ar) shown via the %c custom-text placeholder:
+// a "%c" subtext invokes the parent icon's `customText` Lua, called by WeakAuras as
+// f(expirationTime, duration, progress, dur, name, icon, stacks) — we map arg 5 (the enchant name) to a
+// short tag. Fire/Frost and Air/Arcane get 2-char tags to stay unambiguous. ASCII only (codec round-trip).
+// (There is NO "Custom" string-format type — Types.lua only truncates, which would collide F/A.)
+const ENGRAVING_LETTER_FN = [
+  'function(expirationTime, duration, progress, dur, name, icon, stacks)',
+  '  if not name then return "" end',
+  '  name = string.lower(name)',
+  '  if string.find(name, "frost") then return "Fr" end',
+  '  if string.find(name, "fire") then return "F" end',
+  '  if string.find(name, "arcane") then return "Ar" end',
+  '  if string.find(name, "air") then return "A" end',
+  '  if string.find(name, "water") then return "W" end',
+  '  if string.find(name, "earth") then return "E" end',
+  '  return string.upper(string.sub(name, 1, 1))',
+  'end'
+].join('\n');
+function engravingNameSubtext() {
+  return {
+    type: 'subtext', text_text: '%c', text_visible: true, text_color: [1, 1, 1, 1],
+    text_font: 'Friz Quadrata TT', text_fontSize: 12, text_fontType: 'OUTLINE',
+    anchor_point: 'INNER_BOTTOM', text_selfPoint: 'AUTO', anchorXOffset: 0, anchorYOffset: -1,
+    text_shadowColor: [0, 0, 0, 1], text_shadowXOffset: 1, text_shadowYOffset: -1,
+    text_justify: 'CENTER', rotateText: 'NONE', text_wordWrap: 'WordWrap',
+    text_automaticWidth: 'Auto', text_fixedWidth: 64, text_text_format_c_format: 'none'
+  };
+}
+// Attach the letter-mapping custom-text function to a weapon-enchant icon (drives its "%c" subtext).
+function withEngravingLetter(icon) {
+  icon.customText = ENGRAVING_LETTER_FN;
+  icon.customTextUpdate = 'event';   // recompute on trigger-state change (enchant swap), not every frame
+  icon.subRegions = [...(icon.subRegions || []), engravingNameSubtext()];
+  return icon;
+}
+
 // A glow sub-region (works on bars too — anchor_area 'bar'). Off by default; a condition turns it on.
 function subglow() {
   return {
@@ -520,6 +569,7 @@ module.exports = {
   baseBar, gradient, barText, segmentBar, chargeSegmentBar, uptimeBar,
   powerTrigger, healthTrigger, cooldownTrigger, buffTrigger, targetDebuffTrigger, targetHealthTrigger,
   anyBuffTrigger, powerAtLeastTrigger, targetExecuteTrigger, stealableTargetTrigger,
+  weaponEnchantTrigger, withEngravingLetter,
   chargesSubtext, warnSubtext, glowChanges, subglow, iconBase, cooldownIcon,
   vGrowLua, makeDynGroup, makeColumn, makeGroup, assembleTop,
 };
