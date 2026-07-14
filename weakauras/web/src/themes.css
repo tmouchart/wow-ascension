@@ -1,32 +1,45 @@
 /* Theme token sets — one per data-theme on <html>. Components consume the vars, never the hex.
-   Values from docs/webapp-plan.md §5. Default theme is set on <html data-theme="atelier"> in index.html. */
-:root[data-theme="atelier"] {
-  --canvas: #17191F; --canvas-2: #1E2129; --surface: #262A33; --surface-2: #2C313C;
-  --border: #343A45; --text: #E7E2D6; --muted: #8A8578; --accent: #FF6A5A;
-  --accent-ink: #17191F; --shadow: rgba(0,0,0,.45); --preview-bg: #0D0F13;
-}
+   Two themes: parchemin = "Light", arcane = "Dark". Default set on <html data-theme="arcane"> in index.html. */
 :root[data-theme="parchemin"] {
   --canvas: #F3EFE6; --canvas-2: #EDE8DC; --surface: #FBF9F4; --surface-2: #F5F1E8;
   --border: #DAD3C4; --text: #1B1917; --muted: #6B6558; --accent: #12726B;
   --accent-ink: #FBF9F4; --shadow: rgba(60,50,30,.12); --preview-bg: #14161B;
+  --grad-app:
+    radial-gradient(1200px 620px at 12% -12%, #FDFBF5, transparent 60%),
+    radial-gradient(1000px 720px at 104% 112%, #E4EEE9, transparent 55%),
+    var(--canvas);
+  --grad-accent:   linear-gradient(135deg, #178E85 0%, #0C5B54 100%);
+  --grad-accent-h: linear-gradient(135deg, #1C9E94 0%, #106760 100%);
 }
 :root[data-theme="arcane"] {
   --canvas: #15121F; --canvas-2: #1B1729; --surface: #241E36; --surface-2: #2B2440;
-  --border: #342B4A; --text: #E9E5F2; --muted: #8B84A0; --accent: #4FE0C2;
-  --accent-ink: #15121F; --shadow: rgba(0,0,0,.5); --preview-bg: #0C0A14;
+  --border: #342B4A; --text: #E9E5F2; --muted: #8B84A0; --accent: #3F73E8;
+  --accent-ink: #EAF1FF; --shadow: rgba(0,0,0,.5); --preview-bg: #0C0A14;
+  --grad-app:
+    radial-gradient(1150px 620px at 10% -12%, #281D42, transparent 60%),
+    radial-gradient(950px 720px at 104% 112%, #171C3A, transparent 55%),
+    var(--canvas);
+  /* deep-blue accent gradient for buttons — royal azure -> navy */
+  --grad-accent:   linear-gradient(135deg, #3468E6 0%, #14205A 100%);
+  --grad-accent-h: linear-gradient(135deg, #4176F0 0%, #1B2C74 100%);
 }
 
 :root {
   --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --r: 6px; --r-sm: 4px;
+  /* generic gradients derived from per-theme tokens — subtle vertical lift on surfaces/bars/panes */
+  --grad-surface:   linear-gradient(180deg, var(--surface-2), var(--surface));
+  --grad-surface-h: linear-gradient(180deg, var(--surface-2), var(--surface-2));
+  --grad-bar:       linear-gradient(180deg, var(--surface), var(--canvas-2));
+  --grad-pane:      linear-gradient(180deg, var(--canvas-2), var(--canvas));
 }
 
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }
 body {
   margin: 0; font-family: var(--sans); font-size: 15px; line-height: 1.45;
-  background: var(--canvas); color: var(--text);
+  background: var(--grad-app) fixed; color: var(--text);
   -webkit-font-smoothing: antialiased;
 }
 
