@@ -285,7 +285,8 @@ rotates the previous string into `<class>.prev.import.txt` on each build.
 
 ## Current status
 
-Three classes wired to the shared engine:
+Five classes wired to the shared engine (each has a hand-built `build.js` AND a declarative `spec.json`;
+all await one in-game import confirmation each — nothing is game-validated yet, see the two blind spots below):
 - **Barbarian — Brutality** (`node build.js barbarian-brutality`): **side-rail shell** — DEF column (Battle
   Vigor / Defiance / Thick Skull) vertical-left, OFF column (Unbridled Rage / Storm of Steel / Killing Spree /
   Hodir's Wrath) vertical-right; central stack = Warspear buff indicator · big **Crush** featured CD (white
@@ -308,11 +309,33 @@ Three classes wired to the shared engine:
   dynamic elemental icon) + **Weapon Engravings** MH & OH (the `item`/`Weapon Enchant` trigger, enchant
   `""` = any, weapon-icon + `%n` name subtext + temp-enchant timer). Engraving detection depends on the
   client exposing `GetWeaponEnchantInfo` — confirm in-game.
+- **Cultist** (`node build.js cultist`): **Insanity** as a `stackBar` resource (aura-stack 0..100, no
+  confirmed power index) + defensive glows (Abyssal Ward / Doomcloak / Embrace the Void). Its `spec.json`
+  `id` is the generic "Cultist SPEC" — not tied to one of the 4 specs (Godblade/Corruption/Dreadnought/
+  Heretic); pick a spec name if/when confirmed (note: changing the id shifts uids).
+- **Tinker — Demolition** (`node build.js tinker`): CD rows + Kinetic Shield glow; Mana primary (index
+  unconfirmed).
+
+Blind spots to close before scaling (the two hypotheses nothing has validated yet):
+1. **Aura names** — all detection is `aura2` by exact name. Run `node tools/audit-aura-names.js` →
+   `tools/AURA-NAMES-CHECKLIST.md` (23 aura names + 5 by-name spells across the 5 packages) and tick each
+   in-game; a buff name != spell name is common and a mismatch fails silently.
+2. **Resource power index** — only barbarian & felsworn have a `confirmed` primary index in
+   `registry/resource-model.json`; the other 19 are inferred (`index: null`) so a `powerBar` for them would
+   be a guess. `node tools/coverage-report.js` → `tools/COVERAGE.md` maps done vs remaining (4/70 named
+   specs packaged) + a next-up queue.
+
+Tooling added 2026-07-14: `tools/audit-aura-names.js` (buff-name checklist), `tools/coverage-report.js`
+(coverage map), and a fixed `tools/verify-unchanged.js` (now normalizes CRLF so the golden guardrail isn't a
+false-red on Windows — it had been red at HEAD purely from line endings). Web app deploy is prepared but
+unshipped: `Dockerfile` + `fly.toml` + `web/nginx.conf` at the repo root serve the static SPA on fly.io
+(`fly launch --no-deploy` once, then `fly deploy`); the Vite build itself is verified, the container build
+is not (Docker daemon was down).
 
 Known open items: baseline spellIds previously tracked by name are now resolvable via the DB scrape
 (`coa-baselines.js` → e.g. Fel Fireball 801312, Primordial Blast 800732) — swap name-tracked triggers to
 these ids where cooldown/charge tracking needs a resolvable spell; unify the situational-cue glow style
-(see Glow taxonomy); other 19 classes not started.
+(see Glow taxonomy); other 16 classes not started.
 
 ## Generator architecture (long-term direction)
 

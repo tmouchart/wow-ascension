@@ -1,0 +1,20 @@
+# fly.io deploy for the WA-Forge web editor. Static SPA behind nginx (see Dockerfile). Machines
+# auto-stop when idle and cold-start on request — a hobby app costs ~nothing at rest.
+#   fly launch --no-deploy    # first time only: creates the app + picks a name/region (edit `app` below)
+#   fly deploy                # build the Docker image and ship it
+app = "wa-forge"
+primary_region = "cdg"        # Paris — closest to the user; change if desired
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

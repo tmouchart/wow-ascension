@@ -1,0 +1,4 @@
+# Golden snapshots and generated JSON are byte-compared by tools/verify-unchanged.js — pin them to LF so a
+# Windows checkout (git autocrlf) can't turn a line-ending change into a false "package changed" diff.
+tools/golden/*.json text eol=lf
+*.decoded.json text eol=lf

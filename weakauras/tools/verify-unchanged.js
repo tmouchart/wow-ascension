@@ -36,8 +36,11 @@ for (const c of targets) {
   const goldPath = path.join(GOLD, `${c}.decoded.json`);
   const curPath = path.join(DIST, `${c}.decoded.json`);
   if (!fs.existsSync(goldPath)) { console.log(`?  ${c}: no golden snapshot (run --snapshot)`); bad++; continue; }
-  const gold = fs.readFileSync(goldPath, 'utf8');
-  const cur = fs.readFileSync(curPath, 'utf8');
+  // normalize line endings: git may check the golden out as CRLF on Windows while the fresh dist is LF —
+  // that difference is not a package change, so compare content only.
+  const norm = (s) => s.replace(/\r\n/g, '\n');
+  const gold = norm(fs.readFileSync(goldPath, 'utf8'));
+  const cur = norm(fs.readFileSync(curPath, 'utf8'));
   if (gold === cur) { console.log(`OK ${c}: identical`); continue; }
   bad++;
   // report the first differing line for a quick locate
