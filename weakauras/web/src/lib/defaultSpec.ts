@@ -1,4 +1,4 @@
-import type { Spec } from '../store';
+import type { El, Spec } from '../store';
 import type { Ability } from '../registry';
 import RESOURCE from '../../../registry/resource-model.json';
 
@@ -30,6 +30,16 @@ const DEFAULT_COLOR: [number[], number[]] = [[0.55, 0.55, 0.62, 1], [0.15, 0.15,
 const CD_CAP = 12;
 const ascii = (s: string) => s.replace(/[^\x20-\x7E]/g, '').trim() || 'Ability';
 
+// Bars the user can always add from the inspector, whatever the class. `title` drives both the region-id
+// suffix and the inspector label; powerType stays user-editable (the name→index gotcha above applies).
+export const BAR_PRESETS: Record<string, { title: string; el: El }> = {
+  hp: { title: 'Health', el: { kind: 'healthBar', hi: HP_HI, lo: HP_LO } },
+  mana: { title: 'Mana', el: { kind: 'powerBar', title: 'Mana', powerType: 0, hi: POWER_COLOR.Mana[0], lo: POWER_COLOR.Mana[1], bg: [0.1, 0.1, 0.12, 0.8] } },
+  energy: { title: 'Energy', el: { kind: 'powerBar', title: 'Energy', powerType: 3, hi: POWER_COLOR.Energy[0], lo: POWER_COLOR.Energy[1], bg: [0.1, 0.1, 0.12, 0.8] } },
+  uptime: { title: 'Uptime bar', el: { kind: 'uptimeBar', buff: 'Buff name', label: 'Buff name  %p', warnText: 'MISSING', bg: [0.05, 0.08, 0.03, 0.85] } },
+  stacks: { title: 'Stack boxes', el: { kind: 'stacks', auraNames: ['Buff name'], count: 5, hi: [0.45, 0.9, 0.06, 1], lo: [0.1, 0.32, 0, 1] } },
+};
+
 // Is this class's power index confirmed in-game? (drives the inspector's "verify" hint)
 export function powerIndexConfirmed(slug: string): boolean {
   const r = RES[slug];
@@ -55,7 +65,7 @@ export function buildDefaultSpec(slug: string, className: string, abilities: Abi
     global: { barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3 },
     stack: [
       { kind: 'cdRow', icons: cds },
-      { kind: 'powerBar', powerType, hi, lo, bg: [0.1, 0.1, 0.12, 0.8] },
+      { kind: 'powerBar', title: name, powerType, hi, lo, bg: [0.1, 0.1, 0.12, 0.8] },
       { kind: 'healthBar', hi: HP_HI, lo: HP_LO },
     ],
   };
