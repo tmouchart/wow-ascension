@@ -1,0 +1,92 @@
+/* 3-pane editor. Chrome consumes theme vars; the preview uses fixed WoW class colors (passed inline). */
+.body { display: grid; grid-template-columns: 312px 1fr 336px; min-height: 0; height: 100%; }
+.pane { min-height: 0; overflow: auto; }
+/* center column: flex so the preview area fills the height and can center vertically */
+.center { display: flex; flex-direction: column; }
+.left { border-right: 1px solid var(--border); background: var(--canvas-2); }
+.right { border-left: 1px solid var(--border); background: var(--canvas-2); }
+
+.paneHead {
+  position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 15px; background: var(--canvas-2); border-bottom: 1px solid var(--border);
+}
+.paneHead h2 { margin: 0; font-size: 13px; letter-spacing: .7px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.paneHead .hint { font-size: 13px; color: var(--muted); }
+
+/* ---- palette ---- */
+.search {
+  width: 100%; background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  border-radius: var(--r-sm); padding: 9px 11px; font-size: 14px;
+}
+.search::placeholder { color: var(--muted); }
+.pillrow { display: flex; gap: 7px; padding: 10px 14px; }
+.pill {
+  border: 1px solid var(--border); background: transparent; color: var(--muted);
+  padding: 6px 13px; border-radius: 20px; font-size: 13px; cursor: pointer; font-family: inherit;
+}
+.pill[aria-pressed="true"] { background: var(--surface); color: var(--text); border-color: var(--muted); }
+.palwrap { padding: 0 10px 18px; }
+.abil {
+  display: flex; align-items: center; gap: 11px; padding: 8px 9px; border-radius: var(--r-sm);
+  cursor: grab; border: 1px solid transparent; user-select: none;
+}
+.abil:hover { background: var(--surface); border-color: var(--border); }
+.abil.dragging { opacity: .4; }
+.abil img { width: 34px; height: 34px; border-radius: 4px; border: 1px solid var(--border); display: block; background: var(--surface); flex: none; }
+.abil .nm { font-size: 14px; line-height: 1.2; }
+.abil .mt { font-size: 12px; color: var(--muted); }
+
+/* ---- canvas + preview ---- */
+.canvasTools {
+  display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+  border-bottom: 1px solid var(--border); background: var(--canvas-2); color: var(--muted); font-size: 13px;
+}
+/* fills the remaining height of the flex center column, so the preview centers both axes */
+.canvasScroll { flex: 1; min-height: 0; padding: 24px; display: grid; place-items: center; overflow: auto; }
+
+.preview {
+  background: linear-gradient(0deg, rgba(255,255,255,.015), rgba(255,255,255,.015)), var(--preview-bg);
+  border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 14px 40px var(--shadow);
+  padding: 26px; display: flex; flex-direction: column; align-items: center;
+  /* NO zoom / transform:scale here — both break dnd-kit's drag coordinate math. The preview is enlarged by
+     rendering at real WA size x PREVIEW_Z px (see Preview.tsx), which keeps element geometry native. */
+}
+.el { position: relative; display: flex; justify-content: center; border-radius: 3px; }
+.dropzone { outline: 1px dashed transparent; outline-offset: 4px; padding: 2px 0; border-radius: 4px; transition: outline-color .1s, background .1s; }
+.dropOver { outline-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+
+.iconrow { display: flex; gap: 3px; justify-content: center; flex-wrap: wrap; }
+.wicon { border-radius: 3px; border: 1px solid #000; position: relative; background-size: cover; box-shadow: 0 0 0 1px rgba(255,255,255,.05); }
+.wicon .rm {
+  position: absolute; top: -6px; right: -6px; width: 15px; height: 15px; border-radius: 50%;
+  background: #E6564C; color: #fff; border: 1px solid #000; font-size: 11px; line-height: 13px; text-align: center;
+  cursor: pointer; opacity: 0; z-index: 3; padding: 0;
+}
+.wicon:hover .rm { opacity: 1; }
+.empty { color: var(--muted); font-size: 10px; font-family: var(--mono); padding: 6px 0; opacity: .6; }
+
+.wbar { border-radius: 2px; background: rgba(0,0,0,.6); border: 1px solid #000; position: relative; overflow: hidden; }
+.wbar .fill { position: absolute; left: 0; top: 0; bottom: 0; }
+.wbar .txt { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 10px; color: #fff; text-shadow: 0 1px 2px #000; }
+.stacks { display: flex; gap: 3px; }
+.stbox { flex: 1; border-radius: 2px; border: 1px solid #000; }
+
+.dragfly { pointer-events: none; }
+.dragfly img { width: 44px; height: 44px; border-radius: 5px; border: 1px solid #000; box-shadow: 0 4px 12px rgba(0,0,0,.5); display: block; }
+
+/* ---- inspector ---- */
+.insp { padding: 16px; }
+.group { margin-bottom: 22px; }
+.group h3 { margin: 0 0 11px; font-size: 13px; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.field { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 9px; margin-bottom: 15px; }
+.field label { font-size: 14px; }
+.field .val { font-family: var(--mono); font-size: 13px; color: var(--muted); text-align: right; }
+.field input[type=range] { grid-column: 1 / 3; width: 100%; accent-color: var(--accent); height: 4px; }
+.num { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: var(--r-sm); padding: 6px 8px; font-size: 14px; width: 74px; text-align: right; font-family: var(--mono); }
+.note { font-size: 12px; color: var(--muted); margin: 6px 0 0; line-height: 1.45; }
+.toggle { display: flex; align-items: center; justify-content: space-between; padding: 11px 0; border-top: 1px solid var(--border); font-size: 14px; }
+.toggle:first-of-type { border-top: 0; }
+.tk { width: 40px; height: 22px; border-radius: 20px; background: var(--surface); border: 1px solid var(--border); position: relative; cursor: pointer; flex: none; }
+.tk::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--muted); transition: .15s; }
+.tk[aria-pressed="true"] { background: var(--accent); border-color: transparent; }
+.tk[aria-pressed="true"]::after { left: 18px; background: var(--accent-ink); }

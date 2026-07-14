@@ -10,7 +10,9 @@
 //
 // Scope = the "basics" vocabulary: procRow, cdRow, powerBar, healthBar, stacks, + optional side columns.
 // (Uptime bars / execute procs / stack-cap glows are on-demand extras, not modelled here yet.)
-const B = require('./builders.js');
+// Browser-safe: uses only the isomorphic builders (builders-core, no fs). The Node writer
+// (specToPackage = specToParts + buildPackage + dist write) lives in lib/spec-node.js.
+const B = require('./builders-core.js');
 
 const WHITE = [1, 1, 1, 1];
 
@@ -190,9 +192,4 @@ function specToParts(spec) {
   return { name: spec.name || spec.id, group, children, combatOnly: spec.combatOnly };
 }
 
-// Node path: build + encode (sync) + assert round-trip + write dist.
-function specToPackage(spec) {
-  return B.buildPackage(specToParts(spec));
-}
-
-module.exports = { specToParts, specToPackage };
+module.exports = { specToParts };

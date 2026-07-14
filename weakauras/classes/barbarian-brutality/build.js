@@ -105,9 +105,12 @@ const proc = B.iconBase(GROUP_ID, {
 proc.xOffset = 0; proc.yOffset = PROC_Y; proc.iconSource = 2;   // use Decapitate (trigger 2) art
 proc.cooldownTextDisabled = true;   // no stray "34m" cooldown number on the proc
 proc.triggers = B.wrap([
-  B.T(B.targetExecuteTrigger(35)),   // trigger 1 (controls show): target < 35% HP
+  B.T(B.targetExecuteTrigger(35)),   // trigger 1 (controls show): target exists AND < 35% HP
   B.T(B.cooldownTrigger(804414))   // trigger 2: Decapitate art + cooldown
 ], 1);
+// 'all', NOT 'any': the cooldown trigger is showAlways (always active), so with 'any' the icon would show
+// permanently. 'all' means shown only when the execute trigger is ALSO active (target < 35% HP).
+proc.triggers.disjunctive = 'all';
 // permanent white Action Button Glow — only renders while the icon is shown (execute window)
 for (const sr of proc.subRegions) {
   if (sr.type === 'subglow') { sr.glow = true; sr.glowType = 'buttonOverlay'; sr.useGlowColor = true; sr.glowColor = WHITE_GLOW.slice(); }

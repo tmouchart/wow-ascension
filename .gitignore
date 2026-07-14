@@ -9,3 +9,8 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 *.swp
+
+# Generated WeakAuras artifacts — derived from *.import.txt / build.js, not versioned.
+# We keep dist/<class>.import.txt (the deliverable) but not these derived/churn files.
+weakauras/dist/*.decoded.json
+weakauras/dist/*.prev.import.txt

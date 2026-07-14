@@ -1,17 +1,14 @@
-// Felsworn — Tyrant, expressed as a declarative SPEC (basics only) to prove lib/spec-builder.js.
-// Top -> bottom: Fel Fireball proc row | primary CD row | Energy | Felfury x6 | Health | secondary CD row.
-// Outputs dist/felsworn-spec.* (kept separate from the known-good hand-built `felsworn`).
-const { specToPackage } = require('../../lib/spec-node.js');
-
-// colors (same identity as classes/felsworn/build.js)
+// Felsworn — Tyrant SPEC (basics), data-only port of classes/felsworn/spec.js (the Node module there
+// calls specToPackage at load time, which needs fs — so the browser keeps its own data copy).
+// Top -> bottom: Fel Fireball proc row | primary CD row | Inner Demon uptime | Energy | Felfury x6 | HP | secondary CD row.
 const GOLD_HI = [1, 0.88, 0.15, 1], GOLD_LO = [0.72, 0.42, 0.0, 1];
 const FEL_HI = [0.45, 0.90, 0.06, 1], FEL_LO = [0.10, 0.32, 0.0, 1];
 const HP_HI = [0.90, 0.16, 0.12, 1], HP_LO = [0.33, 0.02, 0.02, 1];
-const GREEN = [0.337, 0.729, 0.016, 1];   // defensive self-buff glow
+const GREEN = [0.337, 0.729, 0.016, 1];
 const GOLD_GLOW = [1, 0.82, 0.10, 1];
 const WHITE = [1, 1, 1, 1];
 
-const spec = {
+export const felswornSpec = {
   id: 'Felsworn Tyrant SPEC',
   name: 'felsworn-spec',
   global: { barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3 },
@@ -41,5 +38,3 @@ const spec = {
     ] },
   ],
 };
-
-module.exports = specToPackage(spec);

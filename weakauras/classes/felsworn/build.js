@@ -21,6 +21,7 @@ const EMPTY_BG = [0.09, 0.11, 0.09, 0.9];
 // --- geometry (compact: everything within a 250px width, tight vertical gaps) ---
 const BAR_W = 250;
 const ENERGY_H = 14, FELFURY_H = 12, HEALTH_H = 14, INNER_H = 14;
+const STEAL_Y = -78, STEAL_SIZE = 32;                // Consume Magic steal indicator (top of the stack)
 const FELFIRE_Y = -110;                              // Fel Fireball proc row (above the CD row)
 const CD_Y = -141;                                   // primary cooldown row
 const INNER_Y = -164;                                // Inner Demon bar (between CDs and Energy)
@@ -90,18 +91,20 @@ const inner = B.uptimeBar(GROUP_ID, { id: 'Felsworn Inner Demon', yOffset: INNER
 const mk = (cfg, parentId, size) => B.cooldownIcon({ ...cfg, id: 'Felsworn CD - ' + cfg.label, parentId, size });
 const BUFF_GLOW = { glowColor: FELSWORN_GREEN, glowType: 'Pixel' };
 
+// Icons that grant a self-buff carry glowBuff: while the buff is up the icon shows the BUFF's duration +
+// glows Pixel green (Skull of Gul'dan / Annihilation buff names assumed = spell name; CONFIRM IN-GAME).
 const ICONS_MAIN = [
   { label: 'Hateforged Barrier', spell: 705129, glowBuff: 'Hateforged Barrier', ...BUFF_GLOW },
   { label: 'Demonic Will', spell: 800209, glowBuff: 'Demonic Will', ...BUFF_GLOW },
-  { label: 'Skull of Guldan', spell: 800225 },
-  { label: 'Annihilation', spell: 803904 },
-  { label: 'Tyrants Gaze', spell: 805240, glowTargetHealthBelow: 35, glowColor: GOLD_GLOW, glowType: 'Pixel' },
+  { label: 'Skull of Guldan', spell: 800225, glowBuff: "Skull of Gul'dan", ...BUFF_GLOW },
+  { label: 'Annihilation', spell: 803904, glowBuff: 'Annihilation', ...BUFF_GLOW },
+  { label: 'Blood of Mannoroth', spell: 802075 },                // offensive CD (custom @ spell)
   { label: 'Reckoning', spell: 802058 },
-  { label: 'Whispers of the Pit', spell: 805235 },
   { label: 'Chaos Rush', spell: 'Chaos Rush', byName: true, charges: true }
 ];
 const ICONS_SECONDARY = [
-  { label: 'Manaburn', spell: 805248 },                          // "brûlure de mana"
+  { label: 'Whispers of the Pit', spell: 805235 },               // moved down to the secondary row
+  { label: 'Manaburn', spell: 805248 },                          // "brulure de mana"
   { label: 'Fel Bargain', spell: 'Fel Bargain', byName: true, fallbackIcon: 'Interface\\Icons\\Spell_Shadow_DemonicPact' },
   { label: 'Arcane Torrent', spell: 'Arcane Torrent', byName: true, fallbackIcon: 'Interface\\Icons\\Spell_Shadow_Teleport' }
 ];
@@ -109,17 +112,16 @@ const ICONS_SECONDARY = [
 const mainIcons = ICONS_MAIN.map(c => mk(c, CD_GROUP_ID, ICON_SIZE));
 const secIcons = ICONS_SECONDARY.map(c => mk(c, CD2_GROUP_ID, ICON_SIZE_2));
 
-// ---------- Fel Fireball proc icon (own row above the CDs, centered; shows ONLY while Carve is up) ----------
-// The Fel Fireball art comes from the cooldown trigger's fallback displayIcon (the by-name spell doesn't
-// resolve on this client, so it falls back to the texture path — this is exactly what worked before; a
-// manual iconSource:0 needs a numeric fileID, not a path, which is why it showed a "?").
-// Visibility is gated by alpha: the icon is invisible (alpha 0) until the Carve proc is up, then it fades
-// in + glows gold (Action Button Glow) = "cast Fel Fireball now".
+// ---------- proc row (above the CDs): Fel Fireball (left) + Tyrant's Gaze execute proc (right) ----------
+// Fel Fireball: art from the cooldown trigger's fallback displayIcon (the by-name spell doesn't resolve on
+// this client, so it falls back to the texture path — a manual iconSource:0 needs a numeric fileID, not a
+// path, which is why it showed a "?"). Visibility gated by alpha: invisible (alpha 0) until the Carve proc
+// is up, then it fades in + glows white (Action Button Glow) = "cast Fel Fireball now".
 const procFire = B.iconBase(GROUP_ID, {
   id: 'Felsworn Proc - Fel Fireball', parentId: GROUP_ID, size: PROC_SIZE,
   fallbackIcon: 'Interface\\Icons\\Spell_Fire_FelFireBolt'
 });
-procFire.yOffset = FELFIRE_Y;
+procFire.xOffset = -17; procFire.yOffset = FELFIRE_Y;   // left half of the proc row
 procFire.alpha = 0;   // hidden until Carve is up
 procFire.triggers = B.wrap([
   B.T(B.cooldownTrigger('Fel Fireball', true)),   // trigger 1: supplies the Fel Fireball icon (via fallback)
@@ -130,11 +132,49 @@ procFire.conditions = [
     changes: [{ property: 'alpha', value: 1 }, ...B.glowChanges(WHITE_GLOW, 'buttonOverlay')] }
 ];
 
+// Tyrant's Gaze execute proc (right half of the proc row) — moved OUT of the cooldown row: it's an
+// execute-window tool. targetExecuteTrigger(35) (custom UnitHealth stateupdate) controls show, so the icon
+// only exists while the target is under 35% HP; trigger 2 supplies the spell art (iconSource 2) + cooldown.
+// activeTriggerMode 2 = the cooldown trigger drives the display, so while it's on cooldown the icon shows
+// the cooldown swipe + countdown (desaturated); when ready it goes full-color + white Action Button Glow.
+const procTyrant = B.iconBase(GROUP_ID, {
+  id: 'Felsworn Proc - Tyrants Gaze', parentId: GROUP_ID, size: PROC_SIZE,
+  fallbackIcon: 'Interface\\Icons\\inv_summondemonictyrant'
+});
+procTyrant.xOffset = 17; procTyrant.yOffset = FELFIRE_Y; procTyrant.iconSource = 2;
+procTyrant.triggers = B.wrap([
+  B.T(B.targetExecuteTrigger(35)),   // trigger 1 (controls show): target exists AND < 35% HP
+  B.T(B.cooldownTrigger(805240))     // trigger 2: Tyrant's Gaze art + cooldown (drives the swipe)
+], 2);
+// 'all', NOT 'any': the cooldown trigger is showAlways (always active), so with 'any' the icon would
+// show permanently. 'all' means shown only when the execute trigger is ALSO active (target < 35% HP).
+procTyrant.triggers.disjunctive = 'all';
+procTyrant.conditions = [
+  { check: { trigger: 2, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] },   // down -> grey + show CD swipe
+  { check: { trigger: 2, variable: 'onCooldown', value: 0 }, changes: B.glowChanges(WHITE_GLOW, 'buttonOverlay') }   // ready -> white glow
+];
+
+// ---------- Consume Magic steal indicator (standalone icon at the top of the stack) ----------
+// "Can I steal a buff off my target?" A single aura2 trigger with the `use_stealable` filter matches ANY
+// stealable (magic) buff on the target — not by name — so it catches every one. matchesShowOn 'showOnActive'
+// means the icon only exists while such a buff is up (no alpha gating needed: the trigger itself drives
+// show/hide). iconSource -1 pulls the matched buff's OWN icon, and it glows white (Action Button Glow) =
+// "Consume Magic this now". Depends on the client exposing aura stealable-ness to WeakAuras — confirm in-game.
+const procSteal = B.iconBase(GROUP_ID, {
+  id: 'Felsworn Proc - Consume Magic', parentId: GROUP_ID, size: STEAL_SIZE,
+  fallbackIcon: 'Interface\\Icons\\Spell_Arcane_ManaTap'
+});
+procSteal.yOffset = STEAL_Y;
+procSteal.triggers = B.wrap([B.T(B.stealableTargetTrigger())], 1);
+procSteal.conditions = [
+  { check: { trigger: 1, variable: 'show', value: 1 }, changes: B.glowChanges(WHITE_GLOW, 'buttonOverlay') }
+];
+
 // ---------- dynamic groups + root ----------
 const cdGroup = B.makeDynGroup(GROUP_ID, CD_GROUP_ID, mainIcons, { yOffset: CD_Y, maxWidth: BAR_W, iconSize: ICON_SIZE });
 const cd2Group = B.makeDynGroup(GROUP_ID, CD2_GROUP_ID, secIcons, { yOffset: CD2_Y, maxWidth: BAR_W, iconSize: ICON_SIZE_2 });
 
-const group = B.makeGroup(GROUP_ID, [procFire.id, inner.id, energy.id, ...felBoxes.map(b => b.id), health.id, cdGroup.id, cd2Group.id]);
-const children = [procFire, inner, energy, ...felBoxes, health, cdGroup, cd2Group, ...mainIcons, ...secIcons];
+const group = B.makeGroup(GROUP_ID, [procSteal.id, procFire.id, procTyrant.id, inner.id, energy.id, ...felBoxes.map(b => b.id), health.id, cdGroup.id, cd2Group.id]);
+const children = [procSteal, procFire, procTyrant, inner, energy, ...felBoxes, health, cdGroup, cd2Group, ...mainIcons, ...secIcons];
 
 module.exports = B.buildPackage({ name: 'felsworn', group, children });

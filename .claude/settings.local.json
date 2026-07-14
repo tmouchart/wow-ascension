@@ -10,7 +10,17 @@
       "WebFetch(domain:github.com)",
       "Bash(node -e \"const j=require\\('./_template-icon.json'\\); \\(j.subRegions||[]\\).forEach\\(\\(s,i\\)=>console.log\\(i,'=> sub.'+\\(i+1\\), s.type\\)\\);\")",
       "Read(//c/c/Users/thomu/wow-ascension/weakauras/**)",
-      "Read(//c/c/Users/thomu/wow-ascension/weakauras/tools/**)"
+      "Read(//c/c/Users/thomu/wow-ascension/weakauras/tools/**)",
+      "PowerShell(git config *)",
+      "PowerShell(\\(Get-Command winget -ErrorAction SilentlyContinue\\).Source; echo \"---\"; \\(Get-Command scoop -ErrorAction SilentlyContinue\\).Source; \\(Get-Command choco -ErrorAction SilentlyContinue\\).Source)",
+      "Bash(winget install *)",
+      "Bash(/c/Program Files/GitHub CLI/gh.exe *)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(gh repo *)",
+      "PowerShell(Write-Output \"=== python ===\"; \\(Get-Command python -ErrorAction SilentlyContinue\\).Source; Write-Output \"=== python3 ===\"; \\(Get-Command python3 -ErrorAction SilentlyContinue\\).Source; Write-Output \"=== py ===\"; \\(Get-Command py -ErrorAction SilentlyContinue\\).Source; Write-Output \"=== winget ===\"; \\(Get-Command winget -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(python --version)"
     ]
   }
 }

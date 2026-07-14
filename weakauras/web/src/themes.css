@@ -1,0 +1,43 @@
+/* Theme token sets — one per data-theme on <html>. Components consume the vars, never the hex.
+   Values from docs/webapp-plan.md §5. Default theme is set on <html data-theme="atelier"> in index.html. */
+:root[data-theme="atelier"] {
+  --canvas: #17191F; --canvas-2: #1E2129; --surface: #262A33; --surface-2: #2C313C;
+  --border: #343A45; --text: #E7E2D6; --muted: #8A8578; --accent: #FF6A5A;
+  --accent-ink: #17191F; --shadow: rgba(0,0,0,.45); --preview-bg: #0D0F13;
+}
+:root[data-theme="parchemin"] {
+  --canvas: #F3EFE6; --canvas-2: #EDE8DC; --surface: #FBF9F4; --surface-2: #F5F1E8;
+  --border: #DAD3C4; --text: #1B1917; --muted: #6B6558; --accent: #12726B;
+  --accent-ink: #FBF9F4; --shadow: rgba(60,50,30,.12); --preview-bg: #14161B;
+}
+:root[data-theme="arcane"] {
+  --canvas: #15121F; --canvas-2: #1B1729; --surface: #241E36; --surface-2: #2B2440;
+  --border: #342B4A; --text: #E9E5F2; --muted: #8B84A0; --accent: #4FE0C2;
+  --accent-ink: #15121F; --shadow: rgba(0,0,0,.5); --preview-bg: #0C0A14;
+}
+
+:root {
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r: 6px; --r-sm: 4px;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0; font-family: var(--sans); font-size: 15px; line-height: 1.45;
+  background: var(--canvas); color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Themed scrollbars — thin, rounded, track blends with the (theme-colored) surface beneath, thumb uses
+   the theme border/muted tokens so it's dark on dark themes and light on Parchemin. */
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border); border-radius: 8px;
+  border: 2px solid transparent; background-clip: padding-box;   /* padding -> visually ~6px, floating */
+}
+::-webkit-scrollbar-thumb:hover { background: var(--muted); background-clip: padding-box; }
+::-webkit-scrollbar-corner { background: transparent; }

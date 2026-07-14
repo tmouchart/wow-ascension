@@ -80,7 +80,6 @@
     "conditions": [],
     "borderBackdrop": "Blizzard Tooltip",
     "borderEdge": "Square Full White",
-    "desc": "Created by Luxthos\nwww.twitch.tv/luxthos",
     "authorOptions": [],
     "load": {
       "talent": {
@@ -116,7 +115,8 @@
     "id": "Barbarian Brutality",
     "regionType": "group",
     "selfPoint": "CENTER",
-    "scale": 1
+    "scale": 1,
+    "desc": "Made by Sheikz - inspired by Luxthos weakaura style"
   },
   "c": [
     {
@@ -721,7 +721,7 @@
             }
           }
         ],
-        "disjunctive": "any",
+        "disjunctive": "all",
         "activeTriggerMode": 1
       },
       "auto": true,
@@ -1721,7 +1721,6 @@
         "Barbarian CD - Jawbreaker"
       ],
       "borderInset": 1,
-      "desc": "Made by Luxthos - twitch.tv/luxthos",
       "tocversion": 110200,
       "scale": 1,
       "internalVersion": 85,
@@ -1891,7 +1890,6 @@
         "Barbarian CD - Thick Skull"
       ],
       "borderInset": 1,
-      "desc": "Made by Luxthos - twitch.tv/luxthos",
       "tocversion": 110200,
       "scale": 1,
       "internalVersion": 85,
@@ -2062,7 +2060,6 @@
         "Barbarian CD - Hodirs Wrath"
       ],
       "borderInset": 1,
-      "desc": "Made by Luxthos - twitch.tv/luxthos",
       "tocversion": 110200,
       "scale": 1,
       "internalVersion": 85,
@@ -4030,7 +4027,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": -1,
+      "iconSource": 2,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -4062,6 +4059,27 @@
           {
             "untrigger": [],
             "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Battle Vigor"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
               "type": "spell",
               "event": "Cooldown Progress (Spell)",
               "use_genericShowOn": true,
@@ -4081,31 +4099,10 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
-          },
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "aura2",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "useName": true,
-              "auranames": [
-                "Battle Vigor"
-              ],
-              "names": [],
-              "spellIds": [],
-              "auraspellids": [],
-              "matchesShowOn": "showOnActive",
-              "ownOnly": true,
-              "unitExists": true,
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "event": "Health"
-            }
           }
         ],
         "disjunctive": "any",
-        "activeTriggerMode": 1
+        "activeTriggerMode": -10
       },
       "auto": true,
       "tocversion": 110200,
@@ -4115,7 +4112,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 1,
+            "trigger": 2,
             "variable": "onCooldown",
             "value": 1
           },
@@ -4128,11 +4125,15 @@
         },
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "show",
             "value": 1
           },
           "changes": [
+            {
+              "property": "desaturate",
+              "value": false
+            },
             {
               "property": "sub.3.glow",
               "value": true
@@ -4268,7 +4269,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": -1,
+      "iconSource": 2,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -4300,6 +4301,27 @@
           {
             "untrigger": [],
             "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Defiance"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
               "type": "spell",
               "event": "Cooldown Progress (Spell)",
               "use_genericShowOn": true,
@@ -4319,31 +4341,10 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
-          },
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "aura2",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "useName": true,
-              "auranames": [
-                "Defiance"
-              ],
-              "names": [],
-              "spellIds": [],
-              "auraspellids": [],
-              "matchesShowOn": "showOnActive",
-              "ownOnly": true,
-              "unitExists": true,
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "event": "Health"
-            }
           }
         ],
         "disjunctive": "any",
-        "activeTriggerMode": 1
+        "activeTriggerMode": -10
       },
       "auto": true,
       "tocversion": 110200,
@@ -4353,7 +4354,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 1,
+            "trigger": 2,
             "variable": "onCooldown",
             "value": 1
           },
@@ -4366,11 +4367,15 @@
         },
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "show",
             "value": 1
           },
           "changes": [
+            {
+              "property": "desaturate",
+              "value": false
+            },
             {
               "property": "sub.3.glow",
               "value": true
@@ -4506,7 +4511,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": -1,
+      "iconSource": 2,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -4538,6 +4543,27 @@
           {
             "untrigger": [],
             "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Thick Skull"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
               "type": "spell",
               "event": "Cooldown Progress (Spell)",
               "use_genericShowOn": true,
@@ -4557,31 +4583,10 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
-          },
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "aura2",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "useName": true,
-              "auranames": [
-                "Thick Skull"
-              ],
-              "names": [],
-              "spellIds": [],
-              "auraspellids": [],
-              "matchesShowOn": "showOnActive",
-              "ownOnly": true,
-              "unitExists": true,
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "event": "Health"
-            }
           }
         ],
         "disjunctive": "any",
-        "activeTriggerMode": 1
+        "activeTriggerMode": -10
       },
       "auto": true,
       "tocversion": 110200,
@@ -4591,7 +4596,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 1,
+            "trigger": 2,
             "variable": "onCooldown",
             "value": 1
           },
@@ -4604,11 +4609,15 @@
         },
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "show",
             "value": 1
           },
           "changes": [
+            {
+              "property": "desaturate",
+              "value": false
+            },
             {
               "property": "sub.3.glow",
               "value": true

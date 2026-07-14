@@ -56,22 +56,31 @@ Example SPEC: `classes/felsworn/spec.js` (felsworn basics — zero hand geometry
   Hotlink via `<img>` works (no CORS needed for display); fallback = self-host all 2744 (~14MB) if throttled.
 - **B1 client-side generation** — DONE, the frontend's #1 risk eliminated:
   - `web/src/lib/wa-codec.js` = **zero-dep browser port** of the codec (CompressionStream 'deflate-raw'
-    instead of zlib; Uint8Array/DataView instead of Buffer; `encodeWA`/`decodeWA` are **async**). Cross-tested
-    in Node: Node/zlib codec decodes web-encoded felsworn == top (bytes differ, both valid).
-  - Isomorphic refactor (Node regression-free — golden guardrail: 4 hand-built classes byte-identical):
-    `lib/builders.js` loads templates via `require('*.json')` (not fs) + new pure `assembleTop(...)`;
-    `lib/spec-builder.js` new pure `specToParts(spec)`. Node path (`specToPackage`/`buildPackage`) still
-    writes dist unchanged. Browser path = `specToParts -> assembleTop -> await webEncode`.
-  - Full browser pipeline tested headless (fresh SPEC -> regions -> valid string).
-- **B2 the actual frontend** — NEXT (not started). See §5.
-- **M5 deploy static on fly.io** — later.
+    instead of zlib; Uint8Array/DataView instead of Buffer; `encodeWA`/`decodeWA` are **async**, ESM).
+    Cross-tested against the Node codec in `tools/webcodec-crosstest.mjs` (4/4): web-encode->node-decode,
+    node-encode->web-decode, web full-circle, all == felsworn-spec top (web string ~16 chars longer, both valid).
+  - Isomorphic split DONE (Node regression-free — golden guardrail: 4 hand-built classes byte-identical):
+    **`lib/builders-core.js`** = all region/trigger builders + pure `assembleTop`, **no fs/path/zlib** (browser-safe;
+    templates via `require('*.json')` which Vite inlines). `lib/builders.js` = thin Node wrapper (`buildPackage` +
+    `DIST_DIR`) that `require`s core and re-exports it, so class `build.js` call sites are unchanged.
+    `lib/spec-builder.js` `specToParts` now imports from **core**; `specToPackage` lazily requires builders.js.
+    Browser path = `specToParts -> assembleTop -> await webEncode`.
+- **B2 the actual frontend** — IN PROGRESS. See §5.
+  - Step 1 DONE: static 3-theme editor-shell mockup at **`web/mockup.html`** (real felsworn abilities +
+    hotlinked db.ascension.gg icons + DOM preview of the felsworn stack; switcher for Atelier/Parchemin/Arcane).
+  - Decisions made (§7): **keep all 3 themes + shipped switcher (default Atelier)**; **CSS Modules + CSS-var tokens**.
+  - Scaffold + minimal slice + full editor for all 21 classes are DONE (see step 5). NEXT = M5 deploy.
+- **M5 deploy static on fly.io** — NEXT.
 
 ## 4. Two data blockers (need in-game curation, deferred)
 
 - **A — power indices per class.** The scrape has NO power-type data. GOTCHA: the resource NAME != the WoW
   power INDEX on this client (barbarian "Rage" reads power index 3=Energy). `resource-model.json` has
   `powerIndex` confirmed only for felsworn(3)/barbarian(3)/runemaster(0); the other 18 = `null`, need a
-  UnitPower probe in-game.
+  UnitPower probe in-game. **Neutralized in the editor**: confirmed index is used where known; otherwise a
+  best-guess (standard name->index) is applied AND the **Power index is a user-editable field in the inspector**
+  (with a "verify in-game" hint for unconfirmed classes). So all classes are usable; the user corrects the
+  index after checking. `defaultSpec.ts` `powerIndexConfirmed(slug)` drives the hint.
 - **B (icons)** — RESOLVED (see M3).
 - Minor: proc buff-NAMES (needed for proc-glow) aren't scraped; default = ability name (felsworn proc keys
   off buff "Carve" != ability name). Per-class curation, in-game.
@@ -118,31 +127,59 @@ toggle "show all") · **canvas + live preview center** (a DOM/CSS mock — WA ca
 *representative, not pixel-perfect*; truth = in-game import) · **inspector right** (global knobs). Plus a
 **top bar** (class/spec selector · theme switcher · export/copy button).
 
-### Bundling note for B2
-The browser needs the region builders + `assembleTop` but NOT `buildPackage` (fs). `lib/builders.js` still
-has top-level `require('fs'/'path')` + `const DIST_DIR = path.join(__dirname,...)` + `require('./wa-codec.js')`
-(zlib). To bundle for the browser, prefer **splitting `builders-core.js`** (pure, isomorphic: all region
-builders + `assembleTop`, no fs/path/zlib) vs `builders.js` (core + Node-only `buildPackage`), rather than
-Vite-aliasing fs/path/zlib to stubs. `spec-builder.js`'s `specToParts` then imports from core.
+### Bundling note for B2 — DONE
+The browser needs the region builders + `assembleTop` but NOT `buildPackage` (fs). Resolved by the
+**`builders-core.js`** split (see B1): the browser imports `specToParts` (spec-builder) + `assembleTop`
+(builders-core), which never pull fs/path/zlib. No Vite fs/path/zlib aliasing needed.
 
 ### B2 step order
-1. Static HTML mockup of the editor shell in all 3 themes (artifact) → user picks direction.
-2. Decide CSS Modules vs Tailwind.
-3. Scaffold Vite/React/TS; split `builders-core.js`; wire the web codec.
-4. Minimal working slice: pick class → generate → copy string (proves client-side gen in a real app).
-5. Iterate: palette + dnd-kit drag-drop into containers → resource toggles → global knobs → DOM preview.
-6. M5 deploy static on fly.io.
+1. ✅ Static HTML mockup of the editor shell in all 3 themes → `web/mockup.html` (user picked: keep all 3 + switcher).
+2. ✅ CSS Modules vs Tailwind → **CSS Modules + CSS-var tokens**.
+3. ✅ Scaffolded Vite/React/TS (`web/`); split `builders-core.js`; wired the web codec (cross-tested).
+4. ✅ Minimal working slice DONE: pick class → **Generate** → **Copy** string, 100% client-side. Validated in-browser
+   (`localhost:5173`) — the generated `!WA:2!` decodes through the Node codec to the **exact same top** as the
+   Node build of the same SPEC. Prod build passes (`npm run build`: tsc + vite, 185 kB JS / 59 kB gzip).
+   - Generator bundling: esbuild pre-bundles `lib/browser-entry.mjs` (re-exports `specToParts` + `assembleTop`
+     from the CJS core, inlining the JSON templates) → `web/src/generated/generator.js` (gitignored). Rebuilt by
+     `npm run gen`, auto-run via the `predev`/`prebuild` hooks. Chosen over vite-plugin-commonjs (which only does
+     esbuild *transform*, not bundle → couldn't emit named exports for external `/@fs/` CJS files).
+   - App shape: top bar (class/spec selects from `registry/INDEX.json` + 3-theme switcher + Copy-string) then the
+     Felsworn editor (step 5) or a gated card. `web/src/specs/felsworn.ts` = the data-only SPEC the editor loads.
+   - Web app files (all `web/src/`): `store.ts` (Zustand SPEC + setClass/addIcon/insertIcon/removeIcon/moveIcon/
+     toggleElement/setElementField/setGlobal + `activeStack` which strips editor-only `enabled`/`_uid`),
+     `registry.ts` (`useRegistry` slug-gated lazy loader + icon resolver, `pathToIconUrl`), `lib/generate.ts`,
+     `lib/defaultSpec.ts` (per-class auto SPEC + `powerIndexConfirmed`), `specs/felsworn.ts` (curated reference),
+     `App.tsx`, `components/{Editor,Palette,Preview,Inspector}.tsx`, `App.module.css` + `editor.module.css` +
+     `themes.css`. Generator bundle built by `scripts/gen.mjs` (esbuild JS API, not the CLI — no `.bin` PATH dep).
+5. ✅ Editor DONE — **all 21 classes**: 3-pane shell + **Zustand** SPEC store + **registry-driven palette** (lazy
+   `import.meta.glob` per class, guessActive/All filter + search, dnd-kit draggable) + **live DOM preview**
+   driven by the store + **full dnd-kit drag-drop** (palette→cdRow add; reorder within a row; move between rows
+   via the multi-container `onDragOver` pattern + stable per-icon `_uid`; overlay centered on cursor via
+   `snapCenterToCursor`; MouseSensor+TouchSensor) + **inspector** (global sliders, resource toggles, editable
+   **Power index**). Preview enlarged at native ×1.7 (not CSS zoom/transform — those break dnd-kit). Themed
+   scrollbars. Class switch loads a SPEC: **felsworn = curated reference** (`specs/felsworn.ts`, with proc/uptime/
+   stacks/glows), **every other class = auto-default** from its registry (`lib/defaultSpec.ts`: cdRow of guessed-
+   active abilities + power bar + health bar). Validated in-browser + Node round-trip: barbarian auto-spec decodes
+   to 15 valid regions, real spellIds present, no `_uid`/placeholder leak; a class-switch race (stale abilities
+   seeding the wrong class) was fixed in `useRegistry` (only use data whose slug matches).
+   Remaining polish (later): side-rail columns, per-icon glow/proc/charges config, color pickers, procRow drop,
+   stacks/uptime auto-add (need buff names), spec-tab filtering of the palette, icon 404 fallback, save/load + import.
+6. M5 deploy static on fly.io.  ← NEXT
 
 ## 6. Key files
-- `lib/spec-builder.js` — the DSL compiler (`specToParts` pure, `specToPackage` Node writer).
-- `lib/builders.js` — region/trigger builders (`assembleTop` pure; `buildPackage` Node writer).
-- `lib/wa-codec.js` — Node codec (zlib). `web/src/lib/wa-codec.js` — browser codec (CompressionStream, async).
+- `lib/spec-builder.js` — the DSL compiler (`specToParts` pure [imports builders-core], `specToPackage` Node writer).
+- `lib/builders-core.js` — **isomorphic** region/trigger builders + pure `assembleTop` (no fs/path/zlib; browser-safe).
+- `lib/builders.js` — thin Node wrapper: `buildPackage` + `DIST_DIR`, re-exports all of builders-core.
+- `lib/wa-codec.js` — Node codec (zlib). `web/src/lib/wa-codec.js` — browser codec (CompressionStream, async, ESM).
+- `tools/webcodec-crosstest.mjs` — asserts web codec == Node codec (run after touching either codec).
+- `web/mockup.html` — static 3-theme editor-shell mockup (design reference for the React build).
 - `classes/felsworn/spec.js` — first SPEC (felsworn basics); builds `dist/felsworn-spec.import.txt`.
 - `registry/<slug>.json` ×21 + `INDEX.json` + `resource-model.json` — frontend data.
 - `tools/registry-build.js`, `tools/resource-infer.js` — regenerate the registry.
 - `tools/verify-unchanged.js` (+ `tools/golden/`) — refactor guardrail (rebuild all == golden snapshot).
 
 ## 7. Open decisions before writing B2 code
-1. **CSS Modules vs Tailwind** (styling method over Radix). Reco: CSS Modules.
-2. Final theme pick (after seeing the 3-theme mockup) — or keep the switcher as a shipped feature.
-3. Font pick.
+1. ✅ **CSS Modules + CSS-var tokens** (styling method over Radix).
+2. ✅ **Keep all 3 themes + shipped switcher** (default Atelier); user picks the winner visually later.
+3. Font pick — still open (avoid Inter; candidates: IBM Plex Sans/Mono, Geist, General Sans, Space Grotesk).
+   Deferred: scaffold with a neutral system stack + one distinctive title face, swap later.

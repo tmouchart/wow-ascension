@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en" data-theme="atelier">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WA Forge — editor shell mockup (3 themes)</title>
+<style>
+/* ============================================================================
+   THEME TOKENS — one set per data-theme. Components below are theme-agnostic:
+   they only consume these vars. Exact hex values from docs/webapp-plan.md §5.
+   ========================================================================== */
+:root[data-theme="atelier"]{
+  --canvas:#17191F; --canvas-2:#1E2129; --surface:#262A33; --surface-2:#2C313C;
+  --border:#343A45; --text:#E7E2D6; --muted:#8A8578; --accent:#FF6A5A;
+  --accent-ink:#17191F; --shadow:rgba(0,0,0,.45); --preview-bg:#0D0F13;
+}
+:root[data-theme="parchemin"]{
+  --canvas:#F3EFE6; --canvas-2:#EDE8DC; --surface:#FBF9F4; --surface-2:#F5F1E8;
+  --border:#DAD3C4; --text:#1B1917; --muted:#6B6558; --accent:#12726B;
+  --accent-ink:#FBF9F4; --shadow:rgba(60,50,30,.12); --preview-bg:#14161B;
+}
+:root[data-theme="arcane"]{
+  --canvas:#15121F; --canvas-2:#1B1729; --surface:#241E36; --surface-2:#2B2440;
+  --border:#342B4A; --text:#E9E5F2; --muted:#8B84A0; --accent:#4FE0C2;
+  --accent-ink:#15121F; --shadow:rgba(0,0,0,.5); --preview-bg:#0C0A14;
+}
+/* Shared WoW class colors — the ONLY strong color, and only inside the preview */
+:root{
+  --fel:#56BA04; --fel-lo:#1a5200; --rage:#E0559A; --mana:#3B82F6;
+  --hp:#E6291F; --hp-lo:#541010; --gold:#FFC10A; --gold-lo:#B76B00;
+  --white:#ffffff;
+  --r:6px; --r-sm:4px;
+  --mono:ui-monospace,"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:var(--sans); font-size:13px; line-height:1.4;
+  background:var(--canvas); color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+button{font-family:inherit}
+
+/* ============================================================================
+   APP SHELL
+   ========================================================================== */
+.app{display:grid; grid-template-rows:auto 1fr; height:100vh}
+
+/* --- top bar --- */
+.topbar{
+  display:flex; align-items:center; gap:16px; height:48px; padding:0 14px;
+  background:var(--canvas-2); border-bottom:1px solid var(--border);
+}
+.brand{display:flex; align-items:center; gap:9px; font-weight:600; letter-spacing:.2px}
+.brand .mark{
+  width:22px; height:22px; border-radius:5px; display:grid; place-items:center;
+  background:var(--accent); color:var(--accent-ink); font-weight:700; font-size:13px;
+}
+.brand small{color:var(--muted); font-weight:400; letter-spacing:.4px; text-transform:uppercase; font-size:10px}
+
+.selectgrp{display:flex; gap:6px; align-items:center}
+.sel{
+  appearance:none; background:var(--surface); color:var(--text);
+  border:1px solid var(--border); border-radius:var(--r-sm);
+  padding:6px 26px 6px 10px; font-size:12px; cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+  background-position:calc(100% - 14px) 51%,calc(100% - 9px) 51%;
+  background-size:5px 5px,5px 5px; background-repeat:no-repeat;
+}
+.sep{width:1px; height:22px; background:var(--border)}
+.spacer{flex:1}
+
+.themesw{display:flex; background:var(--surface); border:1px solid var(--border); border-radius:var(--r-sm); padding:2px}
+.themesw button{
+  border:0; background:transparent; color:var(--muted); cursor:pointer;
+  padding:4px 11px; font-size:11.5px; border-radius:3px; letter-spacing:.2px;
+}
+.themesw button[aria-pressed="true"]{background:var(--accent); color:var(--accent-ink); font-weight:600}
+
+.btn{
+  border:1px solid var(--border); background:var(--surface); color:var(--text);
+  padding:7px 12px; border-radius:var(--r-sm); cursor:pointer; font-size:12px;
+  display:inline-flex; align-items:center; gap:7px;
+}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent); color:var(--accent-ink); border-color:transparent; font-weight:600}
+.btn.primary:hover{filter:brightness(1.06)}
+
+/* --- 3-pane body --- */
+.body{display:grid; grid-template-columns:264px 1fr 288px; min-height:0}
+.pane{min-height:0; overflow:auto; background:var(--canvas)}
+.pane.left{border-right:1px solid var(--border); background:var(--canvas-2)}
+.pane.right{border-left:1px solid var(--border); background:var(--canvas-2)}
+
+.pane-head{
+  position:sticky; top:0; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  padding:10px 12px; background:var(--canvas-2); border-bottom:1px solid var(--border);
+}
+.pane-head h2{margin:0; font-size:11px; letter-spacing:.7px; text-transform:uppercase; color:var(--muted); font-weight:600}
+
+/* --- palette (left) --- */
+.search{
+  width:100%; background:var(--surface); border:1px solid var(--border); color:var(--text);
+  border-radius:var(--r-sm); padding:7px 9px; font-size:12px; margin:10px 0 8px;
+}
+.search::placeholder{color:var(--muted)}
+.pillrow{display:flex; gap:6px; padding:0 12px 8px}
+.pill{
+  border:1px solid var(--border); background:transparent; color:var(--muted);
+  padding:4px 10px; border-radius:20px; font-size:11px; cursor:pointer;
+}
+.pill[aria-pressed="true"]{background:var(--surface); color:var(--text); border-color:var(--muted)}
+.palwrap{padding:0 8px 16px}
+.abil{
+  display:flex; align-items:center; gap:9px; padding:6px 7px; border-radius:var(--r-sm);
+  cursor:grab; border:1px solid transparent;
+}
+.abil:hover{background:var(--surface); border-color:var(--border)}
+.abil img{width:26px; height:26px; border-radius:4px; border:1px solid var(--border); display:block; background:var(--surface)}
+.abil .nm{font-size:12px; line-height:1.15}
+.abil .mt{font-size:10px; color:var(--muted)}
+.abil .drag{margin-left:auto; color:var(--muted); opacity:0; font-size:14px; letter-spacing:-2px}
+.abil:hover .drag{opacity:.7}
+
+/* --- center: canvas + preview --- */
+.canvas-tools{
+  display:flex; align-items:center; gap:10px; padding:9px 14px;
+  border-bottom:1px solid var(--border); background:var(--canvas-2); color:var(--muted); font-size:11.5px;
+}
+.canvas-tools .grp{display:flex; gap:6px; align-items:center}
+.chip{border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:20px; padding:3px 9px; font-size:11px; cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent); color:var(--accent-ink); border-color:transparent}
+.canvas-scroll{padding:34px 20px; display:grid; place-items:start center; min-height:100%}
+
+/* the dark inset that mimics the in-game frame */
+.preview{
+  --w:250px;
+  background:
+    linear-gradient(0deg, rgba(255,255,255,.015), rgba(255,255,255,.015)),
+    var(--preview-bg);
+  border:1px solid var(--border); border-radius:8px; box-shadow:0 10px 30px var(--shadow);
+  padding:16px; width:calc(var(--w) + 32px);
+  display:flex; flex-direction:column; align-items:center; gap:3px;
+}
+.preview .lbl{position:absolute}
+.el{position:relative; width:var(--w); display:flex; justify-content:center; outline-offset:3px; border-radius:3px}
+.el.selected{outline:2px solid var(--accent)}
+.el .tag{
+  position:absolute; left:-9px; top:50%; transform:translate(-100%,-50%);
+  font-size:9px; color:var(--muted); white-space:nowrap; font-family:var(--mono);
+  opacity:0; pointer-events:none;
+}
+.preview:hover .el .tag{opacity:.75}
+
+/* icon rows */
+.iconrow{display:flex; gap:3px; justify-content:center; flex-wrap:wrap; width:var(--w)}
+.wicon{width:26px; height:26px; border-radius:3px; border:1px solid #000; position:relative; background-size:cover; box-shadow:0 0 0 1px rgba(255,255,255,.05)}
+.wicon.sec{width:24px; height:24px}
+.wicon.proc{width:30px; height:30px}
+.wicon.cd::after{content:""; position:absolute; inset:0; background:rgba(0,0,0,.55); border-radius:2px}
+.wicon .cdtext{position:absolute; inset:0; display:grid; place-items:center; font-family:var(--mono); font-size:11px; color:#fff; text-shadow:0 1px 2px #000; z-index:2}
+.wicon .sub{position:absolute; right:1px; bottom:0; font-family:var(--mono); font-size:9px; color:#fff; text-shadow:0 1px 2px #000; z-index:2}
+.glow-white{box-shadow:0 0 0 1px #000,0 0 7px 2px rgba(255,255,255,.9),0 0 3px #fff}
+.glow-gold{box-shadow:0 0 0 1px #000,0 0 7px 2px rgba(255,193,10,.85)}
+.glow-fel{box-shadow:0 0 0 1px #000,0 0 6px 1px rgba(86,186,4,.85)}
+
+/* bars */
+.wbar{width:var(--w); height:13px; border-radius:2px; background:rgba(0,0,0,.6); border:1px solid #000; position:relative; overflow:hidden}
+.wbar .fill{position:absolute; left:0; top:0; bottom:0}
+.wbar .txt{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:10px; color:#fff; text-shadow:0 1px 2px #000; letter-spacing:.3px}
+.fill.energy{width:78%; background:linear-gradient(180deg,var(--gold),var(--gold-lo))}
+.fill.hp{width:64%; background:linear-gradient(180deg,var(--hp),var(--hp-lo))}
+.fill.uptime{width:52%; background:linear-gradient(180deg,var(--fel),var(--fel-lo))}
+.stacks{display:flex; gap:3px; width:var(--w)}
+.stbox{flex:1; height:11px; border-radius:2px; border:1px solid #000; background:rgba(0,0,0,.55)}
+.stbox.on{background:linear-gradient(180deg,var(--fel),var(--fel-lo))}
+
+/* --- inspector (right) --- */
+.insp{padding:12px}
+.group{margin-bottom:18px}
+.group h3{margin:0 0 9px; font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--muted); font-weight:600}
+.field{display:grid; grid-template-columns:1fr auto; align-items:center; gap:8px; margin-bottom:10px}
+.field label{font-size:12px; color:var(--text)}
+.field .val{font-family:var(--mono); font-size:11px; color:var(--muted); min-width:34px; text-align:right}
+.field input[type=range]{grid-column:1/3; width:100%; accent-color:var(--accent); height:3px}
+.swatches{display:flex; gap:7px; flex-wrap:wrap}
+.sw{width:24px; height:24px; border-radius:5px; border:1px solid var(--border); cursor:pointer}
+.sw[aria-pressed="true"]{outline:2px solid var(--accent); outline-offset:1px}
+.toggle{display:flex; align-items:center; justify-content:space-between; padding:7px 0; border-top:1px solid var(--border)}
+.toggle:first-of-type{border-top:0}
+.tk{width:34px; height:19px; border-radius:20px; background:var(--surface); border:1px solid var(--border); position:relative; cursor:pointer}
+.tk::after{content:""; position:absolute; top:2px; left:2px; width:13px; height:13px; border-radius:50%; background:var(--muted); transition:.15s}
+.tk[aria-pressed="true"]{background:var(--accent); border-color:transparent}
+.tk[aria-pressed="true"]::after{left:16px; background:var(--accent-ink)}
+
+.export{margin-top:6px}
+.export .str{
+  font-family:var(--mono); font-size:10.5px; color:var(--muted); background:var(--canvas);
+  border:1px solid var(--border); border-radius:var(--r-sm); padding:8px; word-break:break-all;
+  max-height:66px; overflow:auto; line-height:1.5;
+}
+.hint{font-size:11px; color:var(--muted); margin:2px 0 12px}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="brand"><span class="mark">W</span> Forge <small>CoA WeakAuras</small></div>
+    <span class="sep"></span>
+    <div class="selectgrp">
+      <select class="sel" title="Class">
+        <option>Felsworn</option><option>Barbarian</option><option>Runemaster</option>
+        <option>Necromancer</option><option>Chronomancer</option><option>Ranger</option>
+      </select>
+      <select class="sel" title="Spec">
+        <option>Tyrant</option><option>Slayer</option><option>Infernal</option>
+      </select>
+    </div>
+    <div class="spacer"></div>
+    <div class="themesw" id="themesw">
+      <button data-t="atelier" aria-pressed="true">Atelier</button>
+      <button data-t="parchemin" aria-pressed="false">Parchemin</button>
+      <button data-t="arcane" aria-pressed="false">Arcane</button>
+    </div>
+    <button class="btn">Reset</button>
+    <button class="btn primary">Copy import string</button>
+  </header>
+
+  <!-- ================= 3-PANE BODY ================= -->
+  <div class="body">
+
+    <!-- ---- LEFT: palette ---- -->
+    <aside class="pane left">
+      <div class="pane-head"><h2>Abilities</h2><span style="font-size:11px;color:var(--muted)">Felsworn</span></div>
+      <div style="padding:0 12px"><input class="search" placeholder="Search abilities..."></div>
+      <div class="pillrow">
+        <button class="pill" aria-pressed="true">Active</button>
+        <button class="pill" aria-pressed="false">All 144</button>
+        <button class="pill" aria-pressed="false">Buffs</button>
+      </div>
+      <div class="palwrap" id="palette"></div>
+    </aside>
+
+    <!-- ---- CENTER: canvas + live preview ---- -->
+    <main class="pane">
+      <div class="canvas-tools">
+        <div class="grp"><span>Layout:</span>
+          <button class="chip" aria-pressed="true">Central stack</button>
+          <button class="chip" aria-pressed="false">Side rails</button>
+        </div>
+        <div class="grp" style="margin-left:auto">
+          <button class="chip">Combat only</button>
+          <span style="font-family:var(--mono)">250 &times; auto</span>
+        </div>
+      </div>
+      <div class="canvas-scroll">
+        <div class="preview" id="preview"></div>
+      </div>
+    </main>
+
+    <!-- ---- RIGHT: inspector ---- -->
+    <aside class="pane right">
+      <div class="pane-head"><h2>Inspector</h2><span style="font-size:11px;color:var(--muted)">Global</span></div>
+      <div class="insp">
+
+        <div class="group">
+          <h3>Layout</h3>
+          <div class="field"><label>Bar width</label><span class="val">250</span>
+            <input type="range" min="150" max="320" value="250"></div>
+          <div class="field"><label>Icon size</label><span class="val">26</span>
+            <input type="range" min="18" max="44" value="26"></div>
+          <div class="field"><label>Secondary icon</label><span class="val">24</span>
+            <input type="range" min="16" max="40" value="24"></div>
+          <div class="field"><label>Gap</label><span class="val">3</span>
+            <input type="range" min="0" max="10" value="3"></div>
+        </div>
+
+        <div class="group">
+          <h3>Selected — Energy bar</h3>
+          <p class="hint">Primary resource · power index 3</p>
+          <div class="swatches">
+            <span class="sw" style="background:var(--gold)" aria-pressed="true" title="Gold"></span>
+            <span class="sw" style="background:var(--fel)" title="Fel"></span>
+            <span class="sw" style="background:var(--mana)" title="Mana"></span>
+            <span class="sw" style="background:var(--rage)" title="Rage"></span>
+            <span class="sw" style="background:var(--hp)" title="Health"></span>
+          </div>
+        </div>
+
+        <div class="group">
+          <h3>Elements</h3>
+          <div class="toggle"><span>Proc row</span><span class="tk" aria-pressed="true"></span></div>
+          <div class="toggle"><span>Cooldown row</span><span class="tk" aria-pressed="true"></span></div>
+          <div class="toggle"><span>Uptime bar</span><span class="tk" aria-pressed="true"></span></div>
+          <div class="toggle"><span>Energy bar</span><span class="tk" aria-pressed="true"></span></div>
+          <div class="toggle"><span>Felfury stacks</span><span class="tk" aria-pressed="true"></span></div>
+          <div class="toggle"><span>Health bar</span><span class="tk" aria-pressed="true"></span></div>
+          <div class="toggle"><span>Secondary row</span><span class="tk" aria-pressed="true"></span></div>
+        </div>
+
+        <div class="group export">
+          <h3>Export</h3>
+          <div class="str">!WA:2!vvVU3TrqiZDCHoL3aRfLqYQ0oiiajZ5tWm4nabIY8s2XgAaL( ... 4.1 KB ... )0nabIY8s2Xg</div>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<script>
+/* ---- theme switcher ---- */
+const sw = document.getElementById('themesw');
+sw.addEventListener('click', e=>{
+  const b = e.target.closest('button[data-t]'); if(!b) return;
+  document.documentElement.setAttribute('data-theme', b.dataset.t);
+  sw.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
+});
+
+/* ---- palette (real felsworn abilities, hotlinked db.ascension.gg icons) ---- */
+const ABIL = [
+ ["Fel Fireball","spell_fire_fireballgreen","proc"],
+ ["Hateforged Barrier","spell_fire_felfireward","buff"],
+ ["Demonic Will","ability_demonhunter_infernalchains","buff"],
+ ["Skull of Gul'dan","inv_offhand_1h_artifactskulloferedar_d_03","cd"],
+ ["Annihilation","ability_boss_lordanthricystgreen","cd"],
+ ["Tyrant's Gaze","inv_summondemonictyrant","cd"],
+ ["Reckoning","spell_fire_felrainoffire","cd"],
+ ["Whispers of the Pit","ability_bossmannoroth_mannorothsgaze","cd"],
+ ["Chaos Rush","ability_rogue_quickrecovery","charges"],
+ ["Immolation Aura","spell_fire_felimmolation","cd"],
+ ["Felwrath","spell_fire_felflamering","cd"],
+ ["Fury of the Illidari","inv_sword_1h_artifactfelomelorn_d_03dual","cd"],
+ ["Sargeras Embrace","ability_demonhunter_eyebeam","cd"],
+ ["Manaburn","_manaburn_fel","util"],
+ ["Fel Bargain","spell_shadow_demonicpact","util"],
+ ["Arcane Torrent","spell_shadow_teleport","util"],
+ ["Carve","ability_demonhunter_infernalstrike2","buff"],
+ ["Twin Slice","ability_demonhunter_hatefulstrike","ability"],
+];
+const iurl = n=>`https://db.ascension.gg/static/images/wow/icons/medium/${n}.jpg`;
+document.getElementById('palette').innerHTML = ABIL.map(([nm,ic,type])=>`
+  <div class="abil" draggable="true">
+    <img src="${iurl(ic)}" alt="" loading="lazy">
+    <div><div class="nm">${nm}</div><div class="mt">${type}</div></div>
+    <span class="drag">⋮⋮</span>
+  </div>`).join('');
+
+/* ---- live preview: the felsworn stack (representative DOM mock) ---- */
+const bg = n=>`background-image:url(${iurl(n)})`;
+const CD = [
+ ["spell_fire_felfireward","glow-fel"],["ability_demonhunter_infernalchains","glow-fel"],
+ ["inv_offhand_1h_artifactskulloferedar_d_03",""],["ability_boss_lordanthricystgreen",""],
+ ["inv_summondemonictyrant","glow-gold"],["spell_fire_felrainoffire",""],
+ ["ability_bossmannoroth_mannorothsgaze",""],["ability_rogue_quickrecovery",""],
+];
+const SEC = ["_manaburn_fel","spell_shadow_demonicpact","spell_shadow_teleport"];
+document.getElementById('preview').innerHTML = `
+  <div class="el" data-name="procRow"><span class="tag">procRow</span>
+    <div class="iconrow"><div class="wicon proc glow-white" style="${bg('spell_fire_fireballgreen')}"></div></div>
+  </div>
+  <div class="el selected" data-name="cdRow"><span class="tag">cdRow</span>
+    <div class="iconrow">${CD.map(([ic,g],i)=>`
+      <div class="wicon ${i%3===2?'cd':''} ${g}" style="${bg(ic)}">
+        ${i%3===2?'<span class="cdtext">'+(i+2)+'</span>':''}
+        ${ic==='ability_rogue_quickrecovery'?'<span class="sub">2</span>':''}
+      </div>`).join('')}</div>
+  </div>
+  <div class="el" data-name="uptimeBar"><span class="tag">uptimeBar</span>
+    <div class="wbar"><div class="fill uptime"></div><div class="txt">Inner Demon  6.4</div></div>
+  </div>
+  <div class="el" data-name="powerBar"><span class="tag">powerBar</span>
+    <div class="wbar"><div class="fill energy"></div><div class="txt">78</div></div>
+  </div>
+  <div class="el" data-name="stacks"><span class="tag">stacks x6</span>
+    <div class="stacks">${[1,1,1,1,0,0].map(o=>`<div class="stbox ${o?'on':''}"></div>`).join('')}</div>
+  </div>
+  <div class="el" data-name="healthBar"><span class="tag">healthBar</span>
+    <div class="wbar"><div class="fill hp"></div><div class="txt">64%</div></div>
+  </div>
+  <div class="el" data-name="cdRow2"><span class="tag">cdRow (sec)</span>
+    <div class="iconrow">${SEC.map(ic=>`<div class="wicon sec" style="${bg(ic)}"></div>`).join('')}</div>
+  </div>`;
+
+/* click-to-select an element in the preview */
+document.getElementById('preview').addEventListener('click', e=>{
+  const el = e.target.closest('.el'); if(!el) return;
+  document.querySelectorAll('.el').forEach(x=>x.classList.toggle('selected', x===el));
+});
+
+/* toggles + pills + chips + swatches — cosmetic only in the mockup */
+document.addEventListener('click', e=>{
+  const t = e.target.closest('.tk, .pill, .chip, .sw');
+  if(!t) return;
+  if(t.classList.contains('sw')){
+    t.parentElement.querySelectorAll('.sw').forEach(s=>s.removeAttribute('aria-pressed'));
+    t.setAttribute('aria-pressed','true'); return;
+  }
+  if(t.classList.contains('pill')){
+    t.parentElement.querySelectorAll('.pill').forEach(s=>s.setAttribute('aria-pressed','false'));
+    t.setAttribute('aria-pressed','true'); return;
+  }
+  const on = t.getAttribute('aria-pressed')==='true';
+  t.setAttribute('aria-pressed', String(!on));
+});
+
+/* live-update the slider value readouts */
+document.querySelectorAll('.field input[type=range]').forEach(r=>{
+  const val = r.parentElement.querySelector('.val');
+  r.addEventListener('input', ()=> val.textContent = r.value);
+});
+</script>
+</body>
+</html>
