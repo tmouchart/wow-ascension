@@ -20,6 +20,7 @@ const centerOverlayOnCursor: Modifier = ({ activatorEvent, draggingNodeRect, ove
 import { Palette } from './Palette';
 import { Preview } from './Preview';
 import { Inspector } from './Inspector';
+import { AgentPanel } from './AgentPanel';
 import { useRegistry, type Ability } from '../registry';
 import { useStore, elementLabel, type Ref } from '../store';
 import { buildDefaultSpec } from '../lib/defaultSpec';
@@ -123,6 +124,7 @@ export function Editor({ slug }: { slug: string }) {
           <div className="grid min-h-0 flex-1 place-items-center overflow-auto p-6">
             <Preview resolve={resolveIcon} dragging={dragging} />
           </div>
+          <AgentPanel slug={slug} />
         </main>
         <Inspector slug={slug} />
       </div>
