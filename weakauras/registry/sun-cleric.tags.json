@@ -1,0 +1,1804 @@
+{
+ "slug": "sun-cleric",
+ "class": "Sun Cleric",
+ "count": 178,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "804057": {
+   "name": "Calm",
+   "source": "Seraphim",
+   "primary": "Control",
+   "tags": ["Holy", "Melee", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Disarms melee/ranged for 6s; roots Undead/Demon"
+  },
+  "807749": {
+   "name": "Vow of the Valkyr",
+   "source": "Valkyrie",
+   "primary": "Buff",
+   "tags": ["Holy", "Generator", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Maintained Vow toggle; auto attacks generate 1 Solar Power"
+  },
+  "680618": {
+   "name": "Gift of the Sun",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805301": {
+   "name": "Holy Form",
+   "source": "Blessings",
+   "primary": "Buff",
+   "tags": ["Holy", "Defensive", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Self toggle form: +10% healing, +5% Holy crit, -50% threat"
+  },
+  "804032": {
+   "name": "Blessed Hammer",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cooldown of Solar Invocation spells by 10s; also buffs Gavel of Grace crit"
+  },
+  "560857": {
+   "name": "Burn The Heretics",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire", "Holy", "Execute"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Increases damage and healing vs targets below 35% health; Scorch Mark consume grants 10% Magic damage buff"
+  },
+  "300336": {
+   "name": "Light The Way",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Buff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shine/Illumination heals increase target movement speed by 20% for 3s"
+  },
+  "572885": {
+   "name": "Touch of Light",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Enemies struck by Blessing of Absolution deal -20% reduced damage for 5s (proc trigger)"
+  },
+  "560534": {
+   "name": "March of the Valkyr",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% raid damage done aura + 5% parry; does not stack"
+  },
+  "704942": {
+   "name": "Impartial",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Strength, +5% max mana, +5 expertise"
+  },
+  "807507": {
+   "name": "Valkyr's Grip",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% off-hand weapon damage; reduces disarm duration"
+  },
+  "560861": {
+   "name": "The Coming Dawn",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Radiant Flame hits during Dawn reduce Dawnfall/Solar Concord CD by 1s (proc)"
+  },
+  "707767": {
+   "name": "Devotee",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases effectiveness of Devotions by 20%"
+  },
+  "704579": {
+   "name": "Twilight",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Slow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Applying Vow of the Eclipse blinds enemies (-10% hit chance, 5 stacks); also doubles Fulfillment effect"
+  },
+  "805816": {
+   "name": "Valkyrie's Watch",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Damage reduction below 35% health threshold passive"
+  },
+  "504248": {
+   "name": "Holy Conquest",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces mana cost of Paragon, Chosen of the Light, Judgement Day by 50%"
+  },
+  "300355": {
+   "name": "Stalwart",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Melee crits vs you prevent being crit again for 4s"
+  },
+  "560492": {
+   "name": "Protector of the Flame",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Fire", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Avoiding an attack deals Fire damage to attacker (proc, 1s ICD)"
+  },
+  "805581": {
+   "name": "Trial of Valor",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fulfilling a Vow reduces Horusath Blast CD by 2s"
+  },
+  "806116": {
+   "name": "Duality of Light",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Holy damage in Sunset grants Twin Flame stacks; Fire damage in Sunrise grants Sun Power stacks (proc)"
+  },
+  "301267": {
+   "name": "Wrath of God",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit chance for Sunflare and Dawnsear; reduces spell pushback 50%"
+  },
+  "704563": {
+   "name": "Warmth",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Direct healing increases target max health by 300 for 15s (proc)"
+  },
+  "707078": {
+   "name": "Stand Against Darkness",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Holy damage during day and -10% periodic damage taken (periodic trigger)"
+  },
+  "300363": {
+   "name": "Photosynthetic",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% spell haste plus +1% during day"
+  },
+  "806477": {
+   "name": "Rapture",
+   "source": "Piety",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; AoE Fire damage, pierces immunities, diminishing hits"
+  },
+  "805583": {
+   "name": "Glare",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Holy", "AoE", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; AoE stun 5s within 8 yds + Holy damage"
+  },
+  "800654": {
+   "name": "Dawnbreak",
+   "source": "Seraphim",
+   "primary": "Rotational",
+   "tags": ["Holy", "Fire", "Melee", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "6s CD; frontal Holyfire melee AoE, scales with block value; requires shield"
+  },
+  "570027": {
+   "name": "A Pious Life",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% damage to Horusath Blast and Rapture"
+  },
+  "804628": {
+   "name": "Suncharged",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Judgement Day applies stacking Suncharged debuff on target; explodes for Holy damage at end"
+  },
+  "704905": {
+   "name": "Champion's Arrival",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases duration of Champion of the Sun and Chains of Light by 5s"
+  },
+  "704585": {
+   "name": "Gleaming Vigil",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-5% Physical damage taken; extra -5% while above 80% health"
+  },
+  "680650": {
+   "name": "Grace",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% dodge chance"
+  },
+  "704932": {
+   "name": "Heat Death",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Solar Eclipse now also reduces enemy hit chance by -3% for 15s (modifies duration)"
+  },
+  "704934": {
+   "name": "Sunwalker",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Melee damage generates Sunwalker stacks (-20% cast time/mana of next Shine per stack, up to 5)"
+  },
+  "806699": {
+   "name": "Odyn's Vanguard",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Melee attacks 20% chance to reset Glorious Execution cooldown"
+  },
+  "520359": {
+   "name": "Justice",
+   "source": "Valkyrie",
+   "primary": "Rotational",
+   "tags": ["Physical", "Fire", "Melee", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s CD; dual-weapon spin hits up to 5 enemies; main-hand Fire, off-hand Physical"
+  },
+  "681252": {
+   "name": "Radiant Halberd",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Direct Physical hits reduce Champion of the Sun CD by 1s"
+  },
+  "300318": {
+   "name": "Light's Blessing",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Casting Sunslam reduces Pendant of the Sun CD by 10s"
+  },
+  "680624": {
+   "name": "Divine Retribution",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Accumulates 25% of damage dealt on target; releases as AoE Holy after 8s",
+   "confidence": "low"
+  },
+  "680663": {
+   "name": "Blessed Bulwark",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dodging/parrying/blocking has 25% chance to regenerate 5% base mana"
+  },
+  "805267": {
+   "name": "Gleaming Armor",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-5% spell damage taken; extra -5% above 80% health (periodic proc)"
+  },
+  "680621": {
+   "name": "Solar Nova",
+   "source": "Seraphim",
+   "primary": "Rotational",
+   "tags": ["Holy", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "No listed CD (no details); AoE Holy, reduces Solar Invocation CD per target hit; crits vs Undead/Demon",
+   "confidence": "low"
+  },
+  "680641": {
+   "name": "Sun Strider",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Gavel/Dawnbreak crits stack Illumination bonus; consuming stacks grants crit block + movement speed"
+  },
+  "704903": {
+   "name": "Adjudicator",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Justicar's Wrath deals +50% splash damage and heals you for 10% of damage dealt"
+  },
+  "681253": {
+   "name": "Together In Conquest",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Solar Invocation spells cause Illumination to heal additional ally at 70%; Illumination also reduces Solar Invocation CD"
+  },
+  "680648": {
+   "name": "Sacred Vessel",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spending Angelic Presence stacks crit chance + healing up to 10 times"
+  },
+  "680646": {
+   "name": "Scroll of Hope",
+   "source": "Seraphim",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "AoE", "Heal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "No explicit CD listed (no details); AoE Magic damage reduction for 10s; emergency heal below 35%",
+   "confidence": "low"
+  },
+  "704928": {
+   "name": "Bastion of Hope",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Critical strikes proc mana regen and +10% primary stats for 5s"
+  },
+  "680647": {
+   "name": "Paying The Tithe",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Dawnbreak crit; Seraphic Bulwark lasts 2 extra blocks"
+  },
+  "704936": {
+   "name": "The Chosen",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Illumination now shields you for 30% of heal amount"
+  },
+  "680645": {
+   "name": "Judgement",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% Gavel critical damage; guaranteed crit vs Undead"
+  },
+  "804751": {
+   "name": "Hammer of Kings",
+   "source": "Seraphim",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; periodic Holyfire damage around you every 3s for 12s"
+  },
+  "804253": {
+   "name": "Blessing of Purity",
+   "source": "Blessings",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5min CD; makes Blessed ally immune to all damage for 4s (reduces their dmg/heal by 25%)"
+  },
+  "300344": {
+   "name": "Sanctified",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Healing Bless-buffed target refunds 25% mana cost"
+  },
+  "804254": {
+   "name": "Blessing of Retribution",
+   "source": "Blessings",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Reflect"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; deflects next harmful spell cast on Blessed ally within 1 minute"
+  },
+  "560547": {
+   "name": "Sun Disc",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Raidbuff", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+6% healing received raid aura; +20% Illumination healing; does not stack"
+  },
+  "800054": {
+   "name": "Radiance",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "Heal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; 10s AoE every 2s healing allies and damaging enemies within range; also heals"
+  },
+  "704941": {
+   "name": "Light of the Sun",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Selfheal", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Parrying restores 3% max health and grants +30% parry chance next attack (proc, 1s ICD)"
+  },
+  "707613": {
+   "name": "Radiant Power",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each Sunwalker stack increases Shine crit chance by 3%"
+  },
+  "806458": {
+   "name": "Flames of the Father",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Fire damage vs Burning targets; also adds Hammer of Kings crit chance"
+  },
+  "807963": {
+   "name": "Improved Radiant Cascade",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces mana cost and increases healing of Radiant Cascade by 15%"
+  },
+  "704945": {
+   "name": "Unbreakable Focus",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cooldown of Gavels and Horusath Blast by 20%"
+  },
+  "800600": {
+   "name": "New Day",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Holy"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10min CD; resets cooldowns of Paragon, Chosen of the Light, Judgement Day"
+  },
+  "300324": {
+   "name": "Guiding Glow",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dawn affects 3 additional casts (per rank)"
+  },
+  "706735": {
+   "name": "Divine Vision",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% Holy damage and healing"
+  },
+  "804257": {
+   "name": "Glaring Rays",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% spell haste raid aura + 3% self spell haste; does not stack"
+  },
+  "704929": {
+   "name": "Solar Eclipse",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dawnbreak triggers burst of Holy damage to nearby enemies after 1s delay (proc)"
+  },
+  "534267": {
+   "name": "Heat Wave",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Illumination and Shine heals also heal nearby allies for 10%"
+  },
+  "806159": {
+   "name": "Solar Invocation: Resplendence",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "30s CD; 8s buff making Illuminations instant cast and guaranteed crit (costs 100% more mana)"
+  },
+  "572752": {
+   "name": "Sun Down",
+   "source": "Piety",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Fire", "AoE", "DoT", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; channeled ground AoE Holyflame zone for 9s with periodic Solar Flares"
+  },
+  "704582": {
+   "name": "Angelic",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time of Illumination by 0.25s per rank"
+  },
+  "805647": {
+   "name": "Knight of Dawn",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Glorious Execution has 20% chance to strike 1 additional time (proc)"
+  },
+  "500154": {
+   "name": "Horusath Blast",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25s CD; Holy damage + reduces target AP by 235 for 15s"
+  },
+  "704916": {
+   "name": "Solar Might",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Strength and +5% Intellect"
+  },
+  "560095": {
+   "name": "Seraphic Bulwark",
+   "source": "Seraphim",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Shield", "Absorb", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges / 25s recharge; +100% block value for 5 blocks or 10s; requires shield"
+  },
+  "300365": {
+   "name": "Sunburn",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time of Rapture by 0.5s"
+  },
+  "504070": {
+   "name": "Grace",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire", "Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% spell damage bonus for Dawnsear, +10% for Sunflare"
+  },
+  "300348": {
+   "name": "Sun Shield",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-3% chance to be hit by spells"
+  },
+  "503651": {
+   "name": "Solar Invocation: Revelation",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Holy", "Root", "Heal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; roots enemy for 4s OR heals ally for 10% max health and +50% speed for 4s"
+  },
+  "520639": {
+   "name": "Nysoni's Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dawn gains an additional spec-based effect"
+  },
+  "681064": {
+   "name": "An'she's Guidance",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+2% Holy crit per rank; reduces spell pushback 50%"
+  },
+  "804250": {
+   "name": "Blessing of Triumph",
+   "source": "Blessings",
+   "primary": "Buff",
+   "tags": ["Holy", "Haste", "Heal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; +25% haste and +10% damage to Blessed ally for 20s; leech vs target below 35%"
+  },
+  "300349": {
+   "name": "Hope",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Critical heals reduce Solar Invocation CD by 1s (once per sec)"
+  },
+  "300343": {
+   "name": "Savior",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% healing on targets below 20% health (execute-range heal boost)"
+  },
+  "804249": {
+   "name": "Blessing of Absolution",
+   "source": "Blessings",
+   "primary": "Rotational",
+   "tags": ["Holy", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; causes Blessed ally to unleash frontal Holy cone damage + high threat"
+  },
+  "560859": {
+   "name": "Burning Cascade",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire", "Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time and mana cost of Dawnsear and Sunflare by 10% per rank"
+  },
+  "680652": {
+   "name": "Enveloped in Light",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% armor from mail/plate; -3% Shadow damage taken"
+  },
+  "560276": {
+   "name": "Sun's Hope",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Solar Flare damage grants 1 Solar Power (Generator) + increases target spell crit taken by 3%"
+  },
+  "300321": {
+   "name": "Solar Conduit",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Dawnsear cast time by 20% while Dawn is active"
+  },
+  "806024": {
+   "name": "Purgation",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Radiant Flame hits stack Purgation debuff on target (+1% Holy/Fire damage taken, 8 stacks)"
+  },
+  "503690": {
+   "name": "Dawn's Arrival",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Dawnbreak has 40% chance to reset Gavel cooldown and make next one free of CD"
+  },
+  "806980": {
+   "name": "Justicar's Wrath",
+   "source": "Seraphim",
+   "primary": "Rotational",
+   "tags": ["Holy", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "6s CD; high-threat Holy melee; debuffs target for +10% spell damage taken for 15s"
+  },
+  "707081": {
+   "name": "Solar Empowerment",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Cleave"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Fulfilling Vow chains Holy damage to up to 5 additional enemies (proc)"
+  },
+  "800612": {
+   "name": "Champion of the Sun",
+   "source": "Valkyrie",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "2min CD; 20s steroid: auto attacks deal +50% Holy bonus damage"
+  },
+  "806058": {
+   "name": "Herald of Purity",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Fire", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Justice damage has 8% chance to reset its own CD (proc)"
+  },
+  "520647": {
+   "name": "Circle of Valor",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Holy", "AoE", "HoT", "Shield"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE holy circle 15s; allies inside receive HoT and divert 30% of their damage to caster",
+   "confidence": "low"
+  },
+  "301266": {
+   "name": "Solar Concord",
+   "source": "Piety",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Fire"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "30s CD; 15s buff that resets Horusath Blast/Rapture CD and causes their hits to launch Solar Flares"
+  },
+  "804629": {
+   "name": "Spears of Glory",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Radiant Flame has 15% chance to grant Spears of Glory: next Dawnsear is instant and +25% damage"
+  },
+  "300323": {
+   "name": "Holy Fervor",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases effectiveness of Sunrise and Sunset by 20%"
+  },
+  "804630": {
+   "name": "Adjudication",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Rapture makes next Dawnsear strike twice and launch Solar Flare (proc)"
+  },
+  "560123": {
+   "name": "Sunwell",
+   "source": "Piety",
+   "primary": "Utility",
+   "tags": ["Holy", "Dispel", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; 30s AoE aura dispelling fear/sleep/charm every 3s from allies within 40 yds"
+  },
+  "802161": {
+   "name": "Sun Gate",
+   "source": "Piety",
+   "primary": "Movement",
+   "tags": ["Holy", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; blink 25 yds forward, removes roots; leaves portal allies can use every 90s"
+  },
+  "300334": {
+   "name": "Blessed Armor",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+1 spell power per 125 Armor"
+  },
+  "707077": {
+   "name": "Faith",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Direct healing increases target Armor by 10% for 20s (proc)"
+  },
+  "807874": {
+   "name": "Sunbeams",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time of Radiant Cascade by 15%"
+  },
+  "800602": {
+   "name": "Empowered Holy Form",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Doubles the effectiveness of Holy Form"
+  },
+  "806060": {
+   "name": "Radiant Flame",
+   "source": "Piety",
+   "primary": "Rotational",
+   "tags": ["Holy", "Fire", "Channel", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "No explicit CD; channeled Holyflame projectiles repeating every 1s for 4s"
+  },
+  "680634": {
+   "name": "Glorious Defender",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% effectiveness of Gavels (Gavel of Light, etc.)"
+  },
+  "560111": {
+   "name": "Blessed Magic",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Casting Horusath Blast resets the cooldown of Glorious Execution"
+  },
+  "680700": {
+   "name": "Sun Stride",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Rush forward at high speed for 2 seconds (no CD visible)",
+   "confidence": "low"
+  },
+  "500146": {
+   "name": "Dawnsear",
+   "source": "Piety",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3.5s cast, no CD; primary Fire damage filler for Piety spec"
+  },
+  "804247": {
+   "name": "Bless",
+   "source": "Blessings",
+   "primary": "Buff",
+   "tags": ["Holy", "HoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "15s CD; 5min HoT on ally (5% max health every 10s); enables Blessings spec interactions"
+  },
+  "800626": {
+   "name": "Glorious Execution",
+   "source": "Valkyrie",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s CD; dual weapon strike + 5% mana regen from damage dealt"
+  },
+  "301256": {
+   "name": "Hot Spot",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Daybreak causes next 2 Shines within 10s to cast 25% faster (proc)"
+  },
+  "805628": {
+   "name": "Fanaticism",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% effectiveness of Gavels and Horusath Blast; -20% mana cost"
+  },
+  "520024": {
+   "name": "Valkyr's Calling",
+   "source": "Valkyrie",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "Immunity", "Charge"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; leap to target; immune for 2s; crash down dealing AoE Holy damage"
+  },
+  "680670": {
+   "name": "Blessed One",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% block chance; reduces duration of slowing effects by 20%"
+  },
+  "704947": {
+   "name": "Radiant Marks",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Sunslam channel time by 1s"
+  },
+  "806479": {
+   "name": "Solar Prayer",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Holy", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; instant self-heal for 25% max health + 100 + 100% SP; usable while stunned"
+  },
+  "680622": {
+   "name": "Fervor of the Sun",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fulfilling a Vow increases Sunslam damage by 10% for 1min, stacking 5 times"
+  },
+  "680630": {
+   "name": "Pendant of the Sun",
+   "source": "Valkyrie",
+   "primary": "CD Offensif",
+   "tags": ["Holy"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Activates pendant to refresh duration and all charges of Dawn",
+   "confidence": "low"
+  },
+  "802935": {
+   "name": "Sunsworn",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+6% Physical damage; 10% chance on auto-attack to restore 3% max mana"
+  },
+  "800764": {
+   "name": "Solar Invocation: Conquest",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; instantly generates 10 Solar Power and refunds 10% max mana"
+  },
+  "300341": {
+   "name": "Exorcism",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sanctify now dispels 1 additional effect"
+  },
+  "805629": {
+   "name": "Sunslam",
+   "source": "Valkyrie",
+   "primary": "Control",
+   "tags": ["Physical", "Holy", "Melee", "Stun", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD; channeled melee, stuns for 1s per tick over 4s; requires Dawn"
+  },
+  "500147": {
+   "name": "Daybreak",
+   "source": "Blessings",
+   "primary": "Heal",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; instant targeted heal for ally (155 + 59.5% healing)"
+  },
+  "704938": {
+   "name": "Vindicator",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Physical", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Glorious Execution ignores -10% target armor while Vow of the Valkyr is active (per rank)"
+  },
+  "680637": {
+   "name": "Hope",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "When The Chosen absorb shield depletes it explodes for AoE Holy damage split among nearby enemies"
+  },
+  "704562": {
+   "name": "Dawnguard",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fulfilling a Vow increases block chance by 2% for 15s, stacking 5 times"
+  },
+  "704586": {
+   "name": "Shining Shield",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Shield", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Activating Dawn grants Shining Shield for 8s (+50% shield armor contribution)"
+  },
+  "680631": {
+   "name": "Divine Right",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+2% crit and parry per rank; +5% spell hit"
+  },
+  "680643": {
+   "name": "Valiance",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Physical", "Haste", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% melee attack speed; first auto attack on a target hits twice"
+  },
+  "547214": {
+   "name": "Luminary Mendicant",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% mana restored by Vow of Grace"
+  },
+  "300322": {
+   "name": "Swift Justice",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% haste per rank"
+  },
+  "300367": {
+   "name": "Moment of Triumph",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Horusath Blast or Rapture have 20% chance to not incur a cooldown on cast"
+  },
+  "300371": {
+   "name": "Censure",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Direct damage to Chains of Light target chains it to a nearby enemy (once per sec)"
+  },
+  "704909": {
+   "name": "Sintorcher",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% damage and healing; +2% crit chance vs Undead"
+  },
+  "300314": {
+   "name": "Pure Light",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% damage and healing while above 80% health"
+  },
+  "704581": {
+   "name": "Solar Guardian",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces stun duration on you by 20%"
+  },
+  "300347": {
+   "name": "Solar Priest",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Solar Invigoration CD by 30s; allies healing with Shine trigger Illumination (6s ICD)"
+  },
+  "704568": {
+   "name": "Gleaming Light",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% healing of Illumination and Daybreak"
+  },
+  "504848": {
+   "name": "Mercy",
+   "source": "Blessings",
+   "primary": "Utility",
+   "tags": ["Holy", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "No CD; dispels 2 disease effects every 3s for 12s"
+  },
+  "300351": {
+   "name": "Ancient Rites",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+2% Intellect per rank; regenerate 1% max mana every 20s"
+  },
+  "704920": {
+   "name": "Cultivate Divinity",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Radiant Cascade heal has 20% chance to boost next Illumination by 20%; Illumination has 40% chance to boost next Radiant Cascade"
+  },
+  "806123": {
+   "name": "Solar Invigoration",
+   "source": "Blessings",
+   "primary": "Heal",
+   "tags": ["Holy", "AoE", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; 15s raid buff: allies take 20% increased healing; direct damage casts Shine on them (2s ICD)"
+  },
+  "300357": {
+   "name": "Lead Me Not Astray",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal", "HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Doubles the healing done by Bless"
+  },
+  "300360": {
+   "name": "Learning Light",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Entering Sunset or Sunrise grants 20% spell haste for 10s or 3 casts"
+  },
+  "807964": {
+   "name": "Soul of Light",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cooldown of An'she's Blessing by 60s"
+  },
+  "806021": {
+   "name": "Scorch Marks",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire", "Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dawnsear/Sunflare casts have 40% chance to grant Scorch Marks (empowers next Radiant Flame)"
+  },
+  "804625": {
+   "name": "Harsh Lessons",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Casting Dawn always grants Scorch Marks"
+  },
+  "704908": {
+   "name": "Burning Heat",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sunflare has 30% chance (Horusath Blast guarantees) to transform next Sunflare into Sun Ray (big Holy hit + Scorch Marks)"
+  },
+  "504734": {
+   "name": "Solar Champion",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% range of Piety spells; -20% threat from them"
+  },
+  "301239": {
+   "name": "City of Light / Radiant Fury",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Radiant Flame damage restores 3% missing health and mana per hit (proc)"
+  },
+  "807343": {
+   "name": "Lights of Absolution / Flames of Absolution",
+   "source": "Piety",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Horusath Blast grants Light of Absolution buff; Solar Flares then restore resources to allies (proc)"
+  },
+  "681436": {
+   "name": "Devoted to the Light / Devoted to the Sun",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Solar Invocation spells cost 0 mana and generate 5% missing mana when cast"
+  },
+  "561328": {
+   "name": "Fortuitous / Angelic Light",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes cast time of Glare while above 80% health (periodic check)"
+  },
+  "560113": {
+   "name": "Zealous / Hegemony",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Radiance CD by 30s but also reduces its duration by 4s"
+  },
+  "707528": {
+   "name": "Final Vows / Taking Vows",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fulfilling Vow of Grace reduces triggered ability CD by 10%"
+  },
+  "582832": {
+   "name": "Pure Heart / Lightward",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes the damage penalty from Blessing of Purity"
+  },
+  "707517": {
+   "name": "Sun Strength / Everglow",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Heal", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Radiant Cascade is guaranteed to crit on Bless-buffed allies"
+  },
+  "300350": {
+   "name": "Blazing Chariot / Gateway to Heaven",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+125% healing and damage of Radiance"
+  },
+  "707433": {
+   "name": "Blightbreaker / Harmonious Bells",
+   "source": "Blessings",
+   "primary": "Passive",
+   "tags": ["Holy", "Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Mercy tick rate by 50% but doubles its mana cost"
+  },
+  "707414": {
+   "name": "It's Always Sunny / Atone, Or Else",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Activating Dawn reduces Radiance, Valkyr's Calling, and Sunslam CDs by 10% (proc)"
+  },
+  "301313": {
+   "name": "Arbiter of Grace / Arbiter of Light",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Glorious Execution regenerates additional 15% mana from damage while Vow of Grace is active"
+  },
+  "300315": {
+   "name": "Judgement of the Valkyrie / Leap of the Valkyrie",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Judgement Day CD by 15s"
+  },
+  "680620": {
+   "name": "By The Light / Last Call",
+   "source": "Valkyrie",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% crit chance for Valkyr's Calling"
+  },
+  "800039": {
+   "name": "Sun Warrior's Guidance / The Chosen King",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% crit chance for Gavels and Dawnbreak"
+  },
+  "707629": {
+   "name": "Sunflare Aegis / Blessing of Kings",
+   "source": "Seraphim",
+   "primary": "Passive",
+   "tags": ["Holy", "Fire", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blocking has 30% chance to grant Hammer of Kings for 4s or extend its duration (proc)"
+  },
+  "804584": {
+   "name": "Dawn",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Holy"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Baseline; core Dawn buff toggle (no desc; instant, 1.5s GCD); enables Dawn-gated abilities",
+   "confidence": "low"
+  },
+  "800852": {
+   "name": "Devotion of Grace",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Holy", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30min buff on ally; +5 mana regen and -5% spell cost"
+  },
+  "800611": {
+   "name": "Gavel of Light",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5s CD; baseline melee Gavel weapon strike (80% weapon damage)"
+  },
+  "500143": {
+   "name": "Illumination",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline; 2s cast single-target heal (primary heal spell)"
+  },
+  "806121": {
+   "name": "Judgement Day",
+   "source": "baseline",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "Control"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD; AoE incapacitate in 8 yd radius (Incapacitated mechanic)"
+  },
+  "801428": {
+   "name": "Ray of Illumination",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Holy", "AoE", "Tracking"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; 15s AoE stealth/invisibility reveal in 10 yd radius"
+  },
+  "801790": {
+   "name": "Revivify",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline; 8s cast resurrection spell"
+  },
+  "524968": {
+   "name": "Sanctify",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Holy", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dispels 1 Disease, 1 Poison, 1 Magic from target ally"
+  },
+  "800231": {
+   "name": "Sunflare",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline; 2s cast Holy damage filler (54.62% SP scaling)"
+  },
+  "704395": {
+   "name": "Sunwalker's Grace",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline passive (Dummy aura); no desc"
+  }
+ }
+}

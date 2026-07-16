@@ -1,0 +1,1729 @@
+{
+ "slug": "reaper",
+ "class": "Reaper",
+ "count": 137,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "707909": {
+   "name": "To The Shadowlands",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707116": {
+   "name": "Warden of the Lost",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "561102": {
+   "name": "Sepulchral Renewal",
+   "source": "Soul",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Physical"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10-min CD: resets cooldowns of Limbo, Soulslam, and Shade"
+  },
+  "572213": {
+   "name": "Gravesite",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Endbringer cast marks ground as Gravesite; crit strikes inside deal bonus Shadow damage"
+  },
+  "805185": {
+   "name": "Sinister Litany",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "instantly generates 3 Reaped Souls; also grants 50% damage buff on next ability"
+  },
+  "560434": {
+   "name": "Spirit Chaser",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "572340": {
+   "name": "Soulstrider",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800845": {
+   "name": "Limbo",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Immunity",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "immune to harmful spells 5s + 30% hp heal + restore Runic Power; usable while CC'd"
+  },
+  "707707": {
+   "name": "Red Wake",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit strikes generate bonus Soul Fragment"
+  },
+  "705410": {
+   "name": "Haunter",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707908": {
+   "name": "Essence Harvest",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504046": {
+   "name": "Purgatory",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Buff"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Soul Infusion gain procs 20% damage buff to Soulrend/Reliquary, stacks 2x"
+  },
+  "803997": {
+   "name": "Ghostly Weapon",
+   "source": "Soul",
+   "primary": "Buff",
+   "tags": [
+    "Frost",
+    "Melee",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "2 charges; imbue weapon 15s - melee deal +25% Frost; costs 20 Runic Power; maintenance combat buff"
+  },
+  "806125": {
+   "name": "Sever",
+   "source": "Harvest",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Interrupt",
+    "Melee",
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee interrupt + silence 3s + drain health; 20s CD"
+  },
+  "524939": {
+   "name": "Jailer's Will",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706790": {
+   "name": "Backswing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707455": {
+   "name": "Chasing Death",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Deathchaser reapplies on targets below 20% until they die"
+  },
+  "560490": {
+   "name": "Dark Soldier",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "561127": {
+   "name": "Soulforged Weaponry",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "off-hand damage + 8% proc chance to make Murder free"
+  },
+  "803990": {
+   "name": "Veilwalk",
+   "source": "class",
+   "primary": "Movement",
+   "tags": [
+    "Shadow",
+    "Dispel"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges; +50% move speed 5s, removes roots/snares; usable stealthed"
+  },
+  "804311": {
+   "name": "Soul Harvester",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "killing blow grants 10s buff: generate 2 Runic Power/sec"
+  },
+  "705441": {
+   "name": "Shattered Souls",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Wraithblade deals double damage to Soulrend targets"
+  },
+  "705386": {
+   "name": "Spectre's Call",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704558": {
+   "name": "Dark Passage",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shadow crit reduces Limbo CD by 2s"
+  },
+  "804004": {
+   "name": "Soulbender",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "significantly increases Runic Power generated by Deathchaser"
+  },
+  "573040": {
+   "name": "Deathbringer",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801335": {
+   "name": "Hungering Scythe",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704356": {
+   "name": "Soultaker",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dreadwake damage reduces Tormented Souls CD"
+  },
+  "504309": {
+   "name": "Siphon Anima",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "summon Spectral Scythe -> 10s leech 5% damage as healing"
+  },
+  "704357": {
+   "name": "Ghastly Form",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shield",
+    "Absorb",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spectre Stride/Scythe Rush/Veilwalk use -> absorb shield 6s"
+  },
+  "300569": {
+   "name": "Hard Bargain",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; while Tormented Souls active: +30% melee speed, -5 Dreadwake cost",
+   "confidence": "low"
+  },
+  "561099": {
+   "name": "From the Shadows",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "exit Underwalk -> +10% crit 5s"
+  },
+  "300560": {
+   "name": "Dreadknight",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; +20% armor from mail/plate, -2% spell hit chance taken",
+   "confidence": "low"
+  },
+  "805717": {
+   "name": "Requiem",
+   "source": "Domination",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Frost",
+    "AoE",
+    "Melee",
+    "Slow"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadowfrost AoE melee swing; -20% attack speed on enemies 15s; generates Runic Power; no CD"
+  },
+  "706576": {
+   "name": "Bountiful Harvest",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806146": {
+   "name": "Ghastly Screech",
+   "source": "class",
+   "primary": "Control",
+   "tags": [
+    "Shadow",
+    "Frost",
+    "Silence",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE silence 4s + Shadowfrost damage after; 1.5min CD; 20 Runic Power"
+  },
+  "805718": {
+   "name": "Jailer's Bargain",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Shield",
+    "Absorb",
+    "Immunity"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30% max hp absorb 10s + immune to fear/sleep/charm; 2min CD"
+  },
+  "801328": {
+   "name": "Dirge",
+   "source": "Soul",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Frost",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dual-weapon Shadowfrost strike; generates 2 Soul Fragments + Runic Power; no CD"
+  },
+  "573038": {
+   "name": "Shade",
+   "source": "Soul",
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Dispel"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "improved stealth 10s + Underwalk; removes movement impairments; 3min CD"
+  },
+  "805204": {
+   "name": "Maw Knight",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500359": {
+   "name": "Scythe Rush",
+   "source": "class",
+   "primary": "Movement",
+   "tags": [
+    "Physical",
+    "Charge",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "charge to enemy + 15 Runic Power; can't target same enemy within 20s"
+  },
+  "500484": {
+   "name": "Spectral Scythe",
+   "source": "Domination",
+   "primary": "CD Offensif",
+   "tags": [
+    "Physical",
+    "Summon",
+    "Spender",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "summons scythes per Reaped Soul; consumes Reaped Souls + Soul Infusion; 45s CD"
+  },
+  "705428": {
+   "name": "Souls for the Slaughter",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Melee"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Slaughter crit -> auto attacks deal +85% Shadow damage 5s"
+  },
+  "800172": {
+   "name": "Doomrend",
+   "source": "Harvest",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "weapon attack + anti-heal absorb shield on target; generates Runic Power; no CD"
+  },
+  "560487": {
+   "name": "Soul Knight",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "parry/dodge -> +2% healing received + -2% magic damage taken, stacks 5x"
+  },
+  "807397": {
+   "name": "Soul Tap",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "generates 50 Runic Power; 30s CD; usable while stealthed"
+  },
+  "800922": {
+   "name": "Endbringer",
+   "source": "Soul",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Selfheal",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s buff: Dirge +30% dmg, +20yd range, heals 75% dmg dealt, generates Reaped Souls; 3min CD"
+  },
+  "707899": {
+   "name": "Blood Frenzy",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Harvest Time cast with target nearby -> Blood Frenzy DoT + burst Shadow at end"
+  },
+  "805190": {
+   "name": "Deathchaser",
+   "source": "Soul",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Frost",
+    "Melee",
+    "DoT",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadowfrost periodic melee; generates Runic Power; no CD"
+  },
+  "801325": {
+   "name": "Painmail",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Reap/Dreadwake/Soul Strike damage stacks Painmail; stacks expire -> heal + reduce Bolstered Form CD"
+  },
+  "805205": {
+   "name": "Darkrend Scythe",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Doomrend/Crow's Harvest apply bleed DoT stacking 5x"
+  },
+  "805258": {
+   "name": "Wraithblade",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "big Shadow melee hit; generates 3 Reaped Souls; costs 40 Runic Power; 30s CD"
+  },
+  "561108": {
+   "name": "Mysterious Omen",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300791": {
+   "name": "Deathwail",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; reduces Wraithblade Runic Power cost by 50%",
+   "confidence": "low"
+  },
+  "705424": {
+   "name": "Anima Ambusher",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spectre Stride deals additional 125% damage over 5s"
+  },
+  "500483": {
+   "name": "Tormented Souls",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Physical",
+    "Selfheal",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "consumes Reaped Souls -> stacking Tormented Souls buff (-10% dmg taken, heal on trigger); 20s CD"
+  },
+  "705403": {
+   "name": "Soulstorm",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Requiem/Soulrend 40% chance to refund a Reaped Soul"
+  },
+  "803998": {
+   "name": "Ghostly Magic",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805719": {
+   "name": "Soul Splinters",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "harvesting a Reaped Soul erupts Spellshadow AoE DoT on nearby enemies"
+  },
+  "520056": {
+   "name": "Soul Generator",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dirge crit -> 10 Runic Power; Murder crit -> +1 Reaped Soul"
+  },
+  "805186": {
+   "name": "Essence Invigoration",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "50% chance to restore 5% missing HP when spending Soul Infusion"
+  },
+  "560892": {
+   "name": "Sanguine Harvester",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805181": {
+   "name": "Eater of Souls",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Defensive",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "reaching 3 Reaped Souls -> -10% phys dmg taken + regen 1% hp/2s for 10s"
+  },
+  "680995": {
+   "name": "Painbringer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; generating Reaped Souls 10% chance to trigger Masochistic Rage; extends if active",
+   "confidence": "low"
+  },
+  "803030": {
+   "name": "Masochistic Rage",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": [
+    "Physical",
+    "Enrage"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1s delay -> self damage + enrage +20% damage 15s; 1.5min CD (triggered by Painbringer)"
+  },
+  "805195": {
+   "name": "The Jailer's Call",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "attacks on enemies below 20% hp deal bonus Shadow damage proc"
+  },
+  "704556": {
+   "name": "Doomer",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524735": {
+   "name": "Redshade",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Shadow",
+    "AoE",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Reap use transforms it into Thresh (AoE) -> Bloodshatter (cone Shadow); each generates Soul Fragment"
+  },
+  "805194": {
+   "name": "Lord of Death",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ghostly Weapon abilities deal +25% per additional target; proc for extra Soul Bolt"
+  },
+  "805716": {
+   "name": "Spectral Warden",
+   "source": "Domination",
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Shield",
+    "Absorb",
+    "Summon",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "summons guardian + absorb shield on up to 8 allies; 3min CD; 20 Runic Power"
+  },
+  "705414": {
+   "name": "Crimson Death",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Slaughter 20% chance to cast an additional time free"
+  },
+  "560924": {
+   "name": "Genocide",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803992": {
+   "name": "Dreadwake",
+   "source": "Domination",
+   "primary": "Rotational",
+   "tags": [
+    "Frost",
+    "AoE",
+    "Melee",
+    "Generator",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "cone AoE weapon + Frost damage; generates 1 Reaped Soul; costs 30 Runic Power"
+  },
+  "805203": {
+   "name": "Mawborn",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301986": {
+   "name": "Spirit Culling",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Summon",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; Soul Strike +20% during Spectral Scythe; 10% chance to summon Scythe on Reaped Soul",
+   "confidence": "low"
+  },
+  "680337": {
+   "name": "Bolstered Form",
+   "source": "Domination",
+   "primary": "CD Defensif",
+   "tags": [
+    "Defensive",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; 15s: +30 Runic Power + 25% Armor + 25% parry; confirmed active from desc",
+   "confidence": "low"
+  },
+  "680996": {
+   "name": "The End Is Near",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Summon",
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Wraithblade summons spectral clone 12s casting Dirge/Murder",
+   "confidence": "low"
+  },
+  "805198": {
+   "name": "Ruin",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Murder applies Ruin debuff (Doomrend/Slaughter +25% dmg); Doomrend on Ruin target -> +15% haste 5s"
+  },
+  "705413": {
+   "name": "Harvesting Grounds",
+   "source": "Harvest",
+   "primary": "Control",
+   "tags": [
+    "Shadow",
+    "AoE",
+    "Slow",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "placed AoE zone 10s: -20% haste/move speed + pulls enemies back to center; 2min CD"
+  },
+  "504560": {
+   "name": "Crimson Wraith",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500373": {
+   "name": "Slaughter",
+   "source": "Harvest",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Execute",
+    "Generator",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "execute only below 35% hp; generates 1 Reaped Soul; costs 20 Runic Power"
+  },
+  "803995": {
+   "name": "Harvest Time",
+   "source": "Harvest",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Buff",
+    "Crit"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s: +15% dmg + crit; 50% chance Soul Infusion spells don't consume; 3min CD"
+  },
+  "301193": {
+   "name": "Beyond Death",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Reliquary of the Lost 8% chance to launch extra Soul Bolt"
+  },
+  "561100": {
+   "name": "Soulfused Constitution",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560917": {
+   "name": "Mark of Death",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807419": {
+   "name": "Reaver",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705392": {
+   "name": "Soul Bane",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705442": {
+   "name": "Fatesealer",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "generating Reaped Soul -> -2% damage taken 15s, stacks 3x"
+  },
+  "560919": {
+   "name": "Essence Binder",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Soul Strike steals target health + Strength 12s"
+  },
+  "705406": {
+   "name": "Harnessed Life",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Tormented Souls 25% chance to not consume a stack from damage taken"
+  },
+  "705416": {
+   "name": "Blood Fueled",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504011": {
+   "name": "Crow's Harvest",
+   "source": "Harvest",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "AoE",
+    "Generator",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE melee; harvests Soul Fragments (up to 3); costs 30 Runic Power"
+  },
+  "504037": {
+   "name": "Dark Fate",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804671": {
+   "name": "Spectre Strength",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805192": {
+   "name": "Ghastly Advance",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "573071": {
+   "name": "Withering Touch",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Melee"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "applies curse: -20% armor + +10% magic dmg taken 1min; generates Runic Power; 15s CD"
+  },
+  "300553": {
+   "name": "Soul Protector",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; +25% armor from items + magic resistance",
+   "confidence": "low"
+  },
+  "805184": {
+   "name": "Soul Furnace",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504012": {
+   "name": "Soul Harvest",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Selfheal",
+    "Leech",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; generating Reaped Souls triggers Soul Harvest: Shadow dmg + 100% leech on target"
+  },
+  "805188": {
+   "name": "Harvester's Scythe",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Leech",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560927": {
+   "name": "Ghastly Hilt",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ghostly Weapon melee abilities cleave 2 additional targets"
+  },
+  "560419": {
+   "name": "Soul Warden",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706795": {
+   "name": "Empyrean Fortitude",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+5% parry; parry -> 2 Runic Power"
+  },
+  "705404": {
+   "name": "Spirit Realm",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560478": {
+   "name": "Intimidating Presence",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Bolstered Form -> enemies take +15% damage from you 15s"
+  },
+  "300565": {
+   "name": "Soulsight",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Crit",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; +3% crit to party/raid (does not stack); 15% chance on direct damage to generate Soul Fragment"
+  },
+  "300889": {
+   "name": "Blood Harvester / The Time Has Come",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; +3% crit to party/raid (does not stack)"
+  },
+  "704552": {
+   "name": "Blood Knight / Blood Wraith",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Doomrend crit refunds a Reaped Soul"
+  },
+  "504269": {
+   "name": "The Grim Reaper / Ravenous Thirst",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Control",
+    "Slow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "transforms Ghost Claw into Wraith Claw (2 charges, slow/steal speed 8s); kill refunds charge"
+  },
+  "805708": {
+   "name": "Shudder Scythe / Crimson Thirst",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "transforms Murder into Shudder Scythe: 5-hit physical + generates Soul Fragments"
+  },
+  "561342": {
+   "name": "Into The Shadow Realm / Between Shadows",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705397": {
+   "name": "Lamenting / Death Dealer",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ghostly Weapon damage heals for 50% of damage dealt"
+  },
+  "712683": {
+   "name": "Fleeting Soul / Soul Piercer",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705436": {
+   "name": "Spiritual Reflexes / Death's Presence",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Defensive",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "below 35% hp: +25% dodge; dodge -> Soul Harvest on target (dmg + 100% leech)"
+  },
+  "301366": {
+   "name": "Lifestealer / Dominator",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706792": {
+   "name": "Well of Souls / Well of Eternity",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Soul Strike/Murder damage reduces Spectral Scythe CD by 1s"
+  },
+  "706788": {
+   "name": "Life Tap / Spirit Army",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; reduces Spectral Warden CD by 60s; Warden heals 200% damage dealt"
+  },
+  "500376": {
+   "name": "Murder",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Ranged",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged Shadow attack; costs 30 Runic Power; no CD; no desc - verified via details"
+  },
+  "500357": {
+   "name": "Reap",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline melee builder; no cost; primary generator"
+  },
+  "800198": {
+   "name": "Rite of Resolve",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Shadow",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30-min party Stamina buff (Rite); castable on ally at 40yd range"
+  },
+  "706731": {
+   "name": "Soul Collector",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no desc; proc trigger Soul Fragment generation - passive kill/hit collection"
+  },
+  "804672": {
+   "name": "Spectral Eye",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Tracking",
+    "Channel"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "channeled far sight + detect stealth; 10s CD; 1min duration"
+  },
+  "520046": {
+   "name": "Spectral Hand",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Physical",
+    "Melee"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pickpocket"
+  },
+  "801624": {
+   "name": "Spectre Stride",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": [
+    "Shadow",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 25yd shadow movement/dash ability; generates Runic Power"
+  },
+  "800797": {
+   "name": "Underwalk",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Physical"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "stealth mode with -20% move speed; 15s CD; the class stealth baseline"
+  },
+  "520047": {
+   "name": "Whisper of the Lost",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Physical",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE distract 10s; 8s CD; 40yd range"
+  },
+  "560422": {
+   "name": "Burial Rites",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases effectiveness of Rites (Rite of Resolve etc) by 20%"
+  },
+  "705432": {
+   "name": "Hemorrhage",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; +10% damage and crit chance against enemies below 35% health"
+  },
+  "560486": {
+   "name": "Final Requiem",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Crit",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% crit chance with Shadow abilities against enemies below 20% health"
+  },
+  "705418": {
+   "name": "Callous Soul",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Soulrend ignores +10% more armor"
+  },
+  "706785": {
+   "name": "Unbound",
+   "source": "Harvest",
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reliquary of the Lost guaranteed crit +25% dmg on enemies below 20% health"
+  },
+  "803999": {
+   "name": "Dominion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Soul Infusion gain -> +585 Armor 6s proc"
+  },
+  "706786": {
+   "name": "Damned",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Soul Infusion gain -> immune to slowing below 100% move speed 5s"
+  },
+  "705389": {
+   "name": "Apparition",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spectre Stride +30% damage; reduces stealth detection chance"
+  },
+  "805196": {
+   "name": "Soulrot",
+   "source": "Soul",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Deathchaser hits apply Soulrot: stacking curse DoT (up to 20 stacks); explodes at end; anti-dispel damage"
+  },
+  "705426": {
+   "name": "Ghost",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Buff"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sinister Litany now also grants Ghost proc: 3s enhanced stealth (no break on damage)"
+  },
+  "300969": {
+   "name": "Ethereal Guard",
+   "source": "Domination",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Haste",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; -3% damage taken to party/raid (no stack); +10% melee haste self"
+  }
+ }
+}

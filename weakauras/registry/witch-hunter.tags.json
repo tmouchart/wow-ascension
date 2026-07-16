@@ -1,0 +1,1779 @@
+{
+ "slug": "witch-hunter",
+ "class": "Witch Hunter",
+ "count": 174,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "805773": {
+   "name": "Bounty Hunter",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "proc: Bounty Hunter stacks consumed by Heartseeking Bolt"
+  },
+  "705506": {
+   "name": "Contract Killing",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Execute", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300872": {
+   "name": "Monster Hunting",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10% melee+ranged haste raid aura"
+  },
+  "705514": {
+   "name": "Mechanized Crossbows",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705500": {
+   "name": "Bringing the Law",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705497": {
+   "name": "Tonic Supply",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681445": {
+   "name": "Inquisitor's Trap",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "AoE", "Silence"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "place trap: silences first enemy + 5yd radius for 6s"
+  },
+  "705455": {
+   "name": "Shadow Rage",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shadowblast grants Shadow Rage proc to Shadow Hound"
+  },
+  "500101": {
+   "name": "Bringer of Darkness",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Repulse resets Vault cooldown and makes next Vault free"
+  },
+  "705477": {
+   "name": "Houndfeeder",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802278": {
+   "name": "Witchblood Tonic",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Dispel", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes curses + -40% magic dmg taken 10s, 2min cd"
+  },
+  "680529": {
+   "name": "Combat Training",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300795": {
+   "name": "Vishas' Memoir",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705496": {
+   "name": "Brimming Hatred",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits generate 10 Rage every 3s"
+  },
+  "681450": {
+   "name": "Death Trap",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "trap: marks enemy for death, 3100+100%AP Shadow dmg after 1 min"
+  },
+  "681327": {
+   "name": "Holy Frenzy",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805533": {
+   "name": "Dark Penance",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Defensive", "Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802277": {
+   "name": "Pyro Tonic",
+   "source": "Inquisition",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Fire dmg, +10% crit dmg for 15s; 2min cd"
+  },
+  "705512": {
+   "name": "Rapid Reload",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Haste", "Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560207": {
+   "name": "Flames of the Sinned",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance Smite Evil strikes again; synergizes with Flames of Sin"
+  },
+  "802269": {
+   "name": "Burrow Bolt",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pulls enemy to you; 40s cd"
+  },
+  "560226": {
+   "name": "Torch the Wicked!",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Flames of Sin hits grant 2% attack speed stacking 12x; Pyro Tonic resets Torchlight"
+  },
+  "800162": {
+   "name": "Tormentor",
+   "source": "Boltslinger",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20 Rage cost; shadow DoT + debuff vs Witchbane; Twilight dmg"
+  },
+  "707317": {
+   "name": "Cinder and Ashes",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705453": {
+   "name": "Darkrider",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Rage cost of Shadowblast, Vault, Unleash the Hounds"
+  },
+  "680503": {
+   "name": "Shadow Order",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "572770": {
+   "name": "Refined Combatant",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681100": {
+   "name": "Noctis Protection",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Noctis Blade applies shield absorbing Stam+AP dmg for 4s"
+  },
+  "503662": {
+   "name": "Torchlight",
+   "source": "Inquisition",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "fire nuke + grants/extends Flames of Sin; 20s cd; feeds Inquisition buffs"
+  },
+  "705478": {
+   "name": "Burned Alive",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Crit", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% crit chance vs enemies below 20% hp"
+  },
+  "504470": {
+   "name": "Hatred & Vitriol",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Stake ignores armor; crits refund half cost"
+  },
+  "705515": {
+   "name": "Strafing Shot",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "ranged crits spread Tormentor to nearby enemy"
+  },
+  "705490": {
+   "name": "Escape Artist",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Daring Escape resets Vault cd and generates 10 Rage"
+  },
+  "805751": {
+   "name": "Twilight Frenzy",
+   "source": "Boltslinger",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Holy", "AoE", "Channel", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5s channel spin-to-win; forced movement; Twilight dmg (Holy+Shadow); 10 Rage + 100/s"
+  },
+  "524812": {
+   "name": "Renegade",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Vault drops caltrops below you"
+  },
+  "805770": {
+   "name": "Witching Shroud",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s stealth + magic immunity; 1.5min cd; only usable after magic crit; usable while CC'd"
+  },
+  "504677": {
+   "name": "Duskwood Renegade",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802020": {
+   "name": "Dusk Blade",
+   "source": "Inquisition",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dual weapon strike; 30 Rage; heals 25% of dmg dealt"
+  },
+  "807918": {
+   "name": "Unleash the Hounds",
+   "source": "Houndmaster",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "summons 1 Lesser Shadow Hound for 20s; 10s cd; 40 Rage"
+  },
+  "680236": {
+   "name": "Repulse",
+   "source": "Houndmaster",
+   "primary": "Control",
+   "tags": ["Shadow", "AoE", "Knockback", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; cone knockback from musket; 57 Shadow dmg"
+  },
+  "705531": {
+   "name": "Defender of Darkshire",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "ranged auto crits grant hounds 10% haste for 5s"
+  },
+  "520270": {
+   "name": "Darkflock",
+   "source": "Houndmaster",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s channel cone Shadow dmg every 2s; usable while moving; no cooldown"
+  },
+  "681180": {
+   "name": "Trapper",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680247": {
+   "name": "Low Dawn",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Sixfold Shot damage by 25% and channels 0.5s faster"
+  },
+  "805738": {
+   "name": "Rearmament",
+   "source": "Houndmaster",
+   "primary": "Utility",
+   "tags": ["Shadow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "resets all Trap cooldowns and Decimate; 5min cd"
+  },
+  "804185": {
+   "name": "Evil Never Sleeps",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Agility", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+4% Agility at night / +3% haste by day; periodic check"
+  },
+  "500056": {
+   "name": "Feast of Talons",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "hitting 5+ with Darkflock unleashes crows DoT on each enemy"
+  },
+  "504742": {
+   "name": "Anguish",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on Shadow dmg to reduce next Darkflock channel time -50%"
+  },
+  "681169": {
+   "name": "Plagueland Survivalist",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-30% disease duration on you",
+   "confidence": "low"
+  },
+  "500086": {
+   "name": "Daring Escape",
+   "source": "Boltslinger",
+   "primary": "Movement",
+   "tags": ["Physical", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "jump backwards; all ranged attacks miss for 2s; 30s cd"
+  },
+  "706240": {
+   "name": "Arbalest Mastery",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "each Witchbane shot deals 15% more dmg up to +150%"
+  },
+  "680331": {
+   "name": "One Shot",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Crit", "Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +20% crit chance on Heartseeking Bolt"
+  },
+  "500055": {
+   "name": "Bane of Witches",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Heartseeking Bolt grants +10% Physical dmg buff 8s"
+  },
+  "802280": {
+   "name": "Noctis Blade",
+   "source": "Black Knight",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "100% weapon + shadow dmg; heals 50% of dmg dealt; 6s cd; scales with parry"
+  },
+  "503659": {
+   "name": "Dark Riposte",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "parrying restores 5% missing hp and Rage"
+  },
+  "680516": {
+   "name": "Shadow Brand",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct dmg applies Shadow Brand DoT 12s on target",
+   "confidence": "low"
+  },
+  "681095": {
+   "name": "March of the Black King",
+   "source": "Black Knight",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE Shadow dmg over 10s; generates 5 Rage every 2s; no details confirmed",
+   "confidence": "low"
+  },
+  "680494": {
+   "name": "Witchblight",
+   "source": "Black Knight",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "AoE", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE shadow burst heals 20% max hp; each enemy misses next attack within 6s",
+   "confidence": "low"
+  },
+  "804432": {
+   "name": "Guard Strike",
+   "source": "Black Knight",
+   "primary": "Utility",
+   "tags": ["Shadow", "Interrupt", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "interrupt + 3s school lockout; 18s cd; 10 Rage"
+  },
+  "707407": {
+   "name": "Shadowy Tendrils",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Grasp of the Undying now hits 2 additional nearby enemies"
+  },
+  "805346": {
+   "name": "Witch Knight",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "2h direct dmg reduces Tonic cds -1s and grants Witching (magic resist+melee haste stacking)"
+  },
+  "680496": {
+   "name": "Bulwark of Darkness",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dawn Blade deals +5% dmg per Pommel Smash stack",
+   "confidence": "low"
+  },
+  "680521": {
+   "name": "Chains of Darkness",
+   "source": "Black Knight",
+   "primary": "Utility",
+   "tags": ["Shadow", "AoE", "Taunt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pulls nearby enemies to you + AoE shadow dmg + 3s taunt",
+   "confidence": "low"
+  },
+  "680528": {
+   "name": "Destroyer of Evil",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dawn Blade hits apply Twilight DoT 3s; also applies Shadow Brand",
+   "confidence": "low"
+  },
+  "680518": {
+   "name": "Desecrate",
+   "source": "Black Knight",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "frontal cleave up to 8 enemies; only usable after avoiding an attack; no cooldown",
+   "confidence": "low"
+  },
+  "680492": {
+   "name": "Clinch Fighting",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "cheat death: lethal hit heals 50% max hp; 2min internal cd"
+  },
+  "681156": {
+   "name": "Strategist",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Vault regenerates 5% max mana",
+   "confidence": "low"
+  },
+  "680504": {
+   "name": "Undying",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "below 75% hp: Dawn Blade grants +40% Noctis Blade crit chance for 10s"
+  },
+  "680513": {
+   "name": "Secret of Raven Hill",
+   "source": "Black Knight",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "AoE", "Selfheal", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Tonic transforms Dawn Blade into powerful effect for 30s (4 variants based on last Tonic)"
+  },
+  "707067": {
+   "name": "Night King",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Noctis Blade consumes Shadow Brand for +50% dmg"
+  },
+  "681098": {
+   "name": "Wide Swings",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% dmg on Noctis Blade and Grasp of Undying vs Shadow Brand targets",
+   "confidence": "low"
+  },
+  "680525": {
+   "name": "Dark Chivalry",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% Armor contribution from mail items",
+   "confidence": "low"
+  },
+  "680599": {
+   "name": "Foresight",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Physical crits grant Replenishment raid-wide; Dawn Blade crits vs Undead/Demon",
+   "confidence": "low"
+  },
+  "680530": {
+   "name": "Blade of the Misbegotten",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dawn Blade hits stack +15% max hp for 8s x3",
+   "confidence": "low"
+  },
+  "300575": {
+   "name": "Protector of Darkshire",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% dmg Dawn Blade and Dusk Blade",
+   "confidence": "low"
+  },
+  "301338": {
+   "name": "Scarlet Inquisitor",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503664": {
+   "name": "Cycle of Despair",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Crit", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20 stacks each of Dawn+Dusk consumed for +20% dmg/haste/movespeed/crit 6s"
+  },
+  "680544": {
+   "name": "Purity & Wickedness",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Physical", "Fire", "Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "auto attacks apply Purity/Wickedness stacks amplifying respective dmg types; Torchlight can consume",
+   "confidence": "low"
+  },
+  "680538": {
+   "name": "Lightbringer",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dusk Blade 15% chance: next Purifier's Edge free (25% chance not consumed)",
+   "confidence": "low"
+  },
+  "520277": {
+   "name": "Shadowstorm",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Pommel Smash 20% chance: AoE leech around enemies"
+  },
+  "804051": {
+   "name": "Witching Idol",
+   "source": "Black Knight",
+   "primary": "Utility",
+   "tags": ["Holy", "AoE", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s summon: dispels fear/sleep/charm every 3s from party within 20yd"
+  },
+  "705467": {
+   "name": "Expert Shot",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "572530": {
+   "name": "Lethal Pursuit",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadow Rage also grants hounds +10% haste and stacks 3 more times"
+  },
+  "802273": {
+   "name": "Houndmaster's Call",
+   "source": "Houndmaster",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "hounds leap on target; 2 strikes; 20s cd"
+  },
+  "681092": {
+   "name": "Resilient to Darkness",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "magic dmg taken heals and restores mana equal to 3%",
+   "confidence": "low"
+  },
+  "300572": {
+   "name": "Three Sevens",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520062": {
+   "name": "Damnation",
+   "source": "Boltslinger",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Holy", "Ranged", "Execute", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "execute only <35% hp; dumps Rage into Twilight dmg; 25 Rage"
+  },
+  "504645": {
+   "name": "Wicked Intent",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Desecrate 15% chance to reset Noctis Blade cd"
+  },
+  "680537": {
+   "name": "Stake",
+   "source": "Inquisition",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Execute"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "execute <35% hp; grants/extends Flames of Sin",
+   "confidence": "low"
+  },
+  "802011": {
+   "name": "Dark Souls",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802006": {
+   "name": "Hunt",
+   "source": "Inquisition",
+   "primary": "Movement",
+   "tags": ["Physical", "Charge", "Slow", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges; charge into range; -70% slow 2s; +20 Rage"
+  },
+  "500085": {
+   "name": "Vault",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Shadow", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dash in movement direction; 12s cd; 15 Rage; signature mobility"
+  },
+  "680326": {
+   "name": "Heartless",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit", "Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +15% ranged Physical critical damage"
+  },
+  "705450": {
+   "name": "Houndmaster",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Houndmaster's Call summons additional Lesser Shadow Hound"
+  },
+  "300789": {
+   "name": "Pure Agony",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% crit damage on Quickdraw",
+   "confidence": "low"
+  },
+  "139778": {
+   "name": "Expulsion of Evil",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on ranged attacks/abilities to reset Houndmaster's Call cd"
+  },
+  "520548": {
+   "name": "Enchanted Bolts",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +5% magic dmg; +10% armor penetration"
+  },
+  "524970": {
+   "name": "Neverending Pursuit",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Damnation crits refund 40 Rage"
+  },
+  "805754": {
+   "name": "Heartseeking Bolt",
+   "source": "Boltslinger",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s cast; 200% weapon + heavy nuke; -30% healing on target; generates Rage; 15s cd"
+  },
+  "802140": {
+   "name": "Fiery Judgement",
+   "source": "Inquisition",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "fire AoE nuke + grants/extends Flames of Sin; 30s cd"
+  },
+  "560208": {
+   "name": "Dark Juggernaut",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Desecrate restores hp; bonus per Shadow Brand target hit"
+  },
+  "802019": {
+   "name": "Purifier's Edge",
+   "source": "Inquisition",
+   "primary": "Rotational",
+   "tags": ["Fire", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dual weapon fire strike; 6s cd; grants/extends Flames of Sin; spammable filler for Inquisition"
+  },
+  "680498": {
+   "name": "Knight's Seal",
+   "source": "Black Knight",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT", "Ranged", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "curse DoT + Dark Oath -5% dmg taken; empowers Desecrate to heal 15% hp+mana",
+   "confidence": "low"
+  },
+  "802138": {
+   "name": "Gaze of the Black Knight",
+   "source": "Black Knight",
+   "primary": "CD Defensif",
+   "tags": ["Absorb", "Shield", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "absorb + 25% party dmg redirected to you for 12s; 3min cd; usable while stunned"
+  },
+  "802139": {
+   "name": "Darkslayer's Lantern",
+   "source": "Inquisition",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE fire dmg + 5s stun in 5yd; requires Flames of Sin; 2min cd"
+  },
+  "301251": {
+   "name": "Brooding Hatred",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680253": {
+   "name": "Trap Card",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +50% Trap duration"
+  },
+  "681341": {
+   "name": "Flexible Fighter",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706365": {
+   "name": "Kennel Master",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unleash the Hounds 25% chance to summon extra hound"
+  },
+  "802276": {
+   "name": "Vampiric Tonic",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Leech", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Physical dmg heals 20% of dealt for 10s; 2min cd"
+  },
+  "802004": {
+   "name": "Smite Evil",
+   "source": "Inquisition",
+   "primary": "Rotational",
+   "tags": ["Holy", "Melee", "Cleave", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "holy weapon strike hitting 5 nearby enemies; 40 Rage"
+  },
+  "503681": {
+   "name": "Heavy Crossbows",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+50% Darkslayer dmg (but +0.5s cast); 25% chance both Heartseeking/Darkslayer extra strike"
+  },
+  "503680": {
+   "name": "Everything You Have",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+5s Twilight Frenzy duration; 15% chance each tick strikes again"
+  },
+  "504903": {
+   "name": "Loksey's Journal",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+20% RAP scaling to Shadow Rage; periodic proc"
+  },
+  "680255": {
+   "name": "Deal With The Devil",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% Shadow crit dmg but +25% all ability costs",
+   "confidence": "low"
+  },
+  "680238": {
+   "name": "Shadow Trap",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "AoE", "Stun", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "trap: stuns up to 6 targets 4s + Shadow DoT 8s",
+   "confidence": "low"
+  },
+  "804194": {
+   "name": "Decimate",
+   "source": "Houndmaster",
+   "primary": "CD Offensif",
+   "tags": ["Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "empower Shadow Hounds: +30% dmg/haste, ignore Armor for 20s; 2min cd"
+  },
+  "804193": {
+   "name": "Quickdraw",
+   "source": "Houndmaster",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "175% weapon shot; only usable after critting; 10s cd; 30 Rage; generates Rage"
+  },
+  "680611": {
+   "name": "Secret Society",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Shadow", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +4% Shadow crit + Shadow dmg; +5 expertise"
+  },
+  "300968": {
+   "name": "Slayer",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit to raid + self",
+   "confidence": "low"
+  },
+  "803638": {
+   "name": "Vampire Hunter",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "curses applied to you reduce magic dmg taken -10% (stacks per curse)"
+  },
+  "805756": {
+   "name": "Smoke Grenade",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["AoE", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s area: enemies can't target in/out; allies +40% speed; enemies -60% speed; 2min cd"
+  },
+  "804026": {
+   "name": "Silver Bolts",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% dmg Heartseeking Bolt+Damnation (doubled vs Undead/Demons or Shadow Trap targets)"
+  },
+  "705524": {
+   "name": "Dead and Gone",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503655": {
+   "name": "Sermon of Flame",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681097": {
+   "name": "Guardbreaker",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Pommel Smash hits 1 additional nearby enemy",
+   "confidence": "low"
+  },
+  "804068": {
+   "name": "Slayer's Mark",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Ranged", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid AP buff 150 + ramp crit vs target; 1.5min cd; prevents stealth"
+  },
+  "800165": {
+   "name": "Witchbane",
+   "source": "Boltslinger",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Channel", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s channel; 40 Rage; rapid shot barrage; baseline ranged rotational"
+  },
+  "706260": {
+   "name": "Scent of Magic",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits apply Scent of Magic: reduces hound Shadow Leap cd"
+  },
+  "681093": {
+   "name": "No Regrets",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "March of the Black King now +15% Armor",
+   "confidence": "low"
+  },
+  "570726": {
+   "name": "Rampaging Hounds",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadow Hound melee attacks cleave 1 additional enemy"
+  },
+  "804187": {
+   "name": "Hail of Gunfire",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Haste", "Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524854": {
+   "name": "Veiled in Darkness",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on +5% AP to raid"
+  },
+  "705463": {
+   "name": "Coordinated Killing",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unleash the Hounds also applies Shadow Rage to player for 10s"
+  },
+  "574149": {
+   "name": "Silver Bullets",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Darkslayer dmg (doubled vs Undead)"
+  },
+  "300792": {
+   "name": "Night Stalker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +3% crit chance"
+  },
+  "705465": {
+   "name": "Dark Ranger",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Shadow dmg to Shadow Hounds"
+  },
+  "705484": {
+   "name": "Dawn",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Fire dmg grants Dawn stacks +2% Torchlight/Dusk Blade dmg (10 stacks)"
+  },
+  "705480": {
+   "name": "Searing Hilt",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Purifier's Edge grants Searing Hilt: +10% melee haste 10s"
+  },
+  "805365": {
+   "name": "Flourish",
+   "source": "Inquisition",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "fire AoE + 20s Flames of Sin cleave to 3 extra targets; 1min cd"
+  },
+  "300571": {
+   "name": "Dusk",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Physical dmg grants Dusk stacks +2% Stake/Dawn Blade dmg (10 stacks)",
+   "confidence": "low"
+  },
+  "681329": {
+   "name": "Brushin' Off The Dusk",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "off-hand auto 10% chance to strike 2 additional times"
+  },
+  "806195": {
+   "name": "Dark Intuition",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "parry/dodge: +5% attack speed and +2% parry for 15s (stacks 2x)"
+  },
+  "705498": {
+   "name": "Alchemical Research",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Tonic effectiveness"
+  },
+  "804024": {
+   "name": "Slayer of Darkness",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+5% dmg vs Demons/Undead; 10% chance to deal 151 Holy dmg on direct hits"
+  },
+  "681152": {
+   "name": "Alertness",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-10s Witching Shroud cd when hit by Shadow/Arcane crit",
+   "confidence": "low"
+  },
+  "680384": {
+   "name": "Crossbow Expert",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no details; +10% Shadowblast, +5% Witchbane dmg"
+  },
+  "503682": {
+   "name": "My Trusty Arbalest",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-10% Witchbane/Shadowblast Rage cost; +2% hit"
+  },
+  "503698": {
+   "name": "Follow The Edict",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Edict effectiveness"
+  },
+  "705526": {
+   "name": "Trickster",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-30s Smoke Grenade cd; +1s duration"
+  },
+  "501380": {
+   "name": "Brand of the Unworthy",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40s disorient (8s vs players); only Humanoids/Demons/Undead; 1min cd"
+  },
+  "789256": {
+   "name": "Night Walker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3yd base range on Vault"
+  },
+  "707230": {
+   "name": "Purified Bola",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "upgrades Bola Throw: 2 charges, more dmg, +2s slow, Rage cost instead of mana"
+  },
+  "705534": {
+   "name": "Vengeful Intent",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance when hit to counterstrike for 75% weapon dmg"
+  },
+  "707648": {
+   "name": "Resourceful Pursuit / Witching Bolt",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-20% Rage cost on Tormentor and Damnation"
+  },
+  "680323": {
+   "name": "Rapid / Relentless",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Witchbane deals full dmg over 1s shorter",
+   "confidence": "low"
+  },
+  "805767": {
+   "name": "Evasive / Crossbow Frenzy",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Twilight Frenzy grants -20% dmg taken while active"
+  },
+  "520670": {
+   "name": "Bolt and Dash / Pavise Crossbowman",
+   "source": "Boltslinger",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "next Heartseeking Bolt +25% dmg + no cd; consume: +50% move speed 3s",
+   "confidence": "low"
+  },
+  "705533": {
+   "name": "Just A Sip / Regenerative Elixirs",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Tonic use also restores 5% max hp and mana"
+  },
+  "804190": {
+   "name": "Reload / Darkhunter",
+   "source": "Houndmaster",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-4s Quickdraw cd"
+  },
+  "705519": {
+   "name": "Calm Under Pressure / Dark Barrier",
+   "source": "Black Knight",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-30s Stoicism cd; -5s Burrow Bolt cd"
+  },
+  "560219": {
+   "name": "The Hunt Continues / Evil Never Sleeps",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hunt generates +15 Rage; -15% mana cost"
+  },
+  "681411": {
+   "name": "Sinner / Sin Eater",
+   "source": "Inquisition",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% Torchlight damage"
+  },
+  "802002": {
+   "name": "Blade Stance",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "confidence": "low",
+   "notes": "DB-404; baseline stance; likely a melee-focused stance toggle"
+  },
+  "804667": {
+   "name": "Charming Conversation",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404; 45min cd; +5% rep in AoE; social/out-of-combat utility"
+  },
+  "500082": {
+   "name": "Coiling Shot",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404; 1.7s cast basic ranged shot; likely Rage generator or baseline"
+  },
+  "800665": {
+   "name": "Crossbow Stance",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "confidence": "low",
+   "notes": "DB-404; baseline crossbow stance toggle"
+  },
+  "804179": {
+   "name": "Darkslayer",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404; 1.5s cast; 100% weapon + 4 flat; baseline ranged shot; generates Rage"
+  },
+  "802281": {
+   "name": "Infiltrate",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404; 2s cast; 1min cd; 10-40yd; likely a stealth approach ability"
+  },
+  "706741": {
+   "name": "Inquisitor's Edict",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Fire", "Agility"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404; 30min +3 Agility aura on target; baseline long buff"
+  },
+  "572306": {
+   "name": "Purge Evil",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Holy", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "DB-404; dispels Enrage; 20s cd; Holy"
+  },
+  "804191": {
+   "name": "Shadowblast",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "DB-404; 40 Rage; 100% weapon Shadow shot; core ranged spender"
+  },
+  "802013": {
+   "name": "Vicious Mockery",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Shadow", "Taunt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged taunt; 8s cd; 3s taunt duration"
+  },
+  "804797": {
+   "name": "Witchmail",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404; no desc; shadow school; self-only; likely a passive armor/resist bonus"
+  }
+ }
+}

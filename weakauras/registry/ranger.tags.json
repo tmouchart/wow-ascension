@@ -1,0 +1,1504 @@
+{
+ "slug": "ranger",
+ "class": "Ranger",
+ "count": 149,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "560531": {
+   "name": "Guile of the Cutthroat",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid melee+ranged AP aura; also increases own damage by 3%"
+  },
+  "806978": {
+   "name": "Dirty Fighter",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Crit", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 2nd crit with Skullpiercer/Assault transforms next Assault into Sucker Punch (5 Advantage)"
+  },
+  "520574": {
+   "name": "Banditry",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301365": {
+   "name": "To The Skies!",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "reduces Bushcraft Glider CD; procs Rhythm of War and Rhythm of Endurance"
+  },
+  "560701": {
+   "name": "Elven Tactics",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20% chance NOT to consume Advantage on cast"
+  },
+  "705031": {
+   "name": "Double The Pace",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid melee+ranged haste aura 10%"
+  },
+  "680470": {
+   "name": "Sniper's Focus",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "consuming Advantage has 20% chance per point to refund 20 Focus"
+  },
+  "520628": {
+   "name": "Freedom",
+   "source": "Farstrider",
+   "primary": "Utility",
+   "tags": ["AoE", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "frees up to 10 allies of roots/snares for 8 sec within 15 yds"
+  },
+  "707418": {
+   "name": "Survivalist",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Survival Potion CD by 25%"
+  },
+  "557325": {
+   "name": "Outmaneuver",
+   "source": "Brigand",
+   "primary": "Movement",
+   "tags": ["Physical", "Melee", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "teleport to enemy + decoy; reactivate to deal burst damage and teleport back"
+  },
+  "807459": {
+   "name": "Venom-Coated Seeds",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Snapseed damage reduces enemy hit chance by 15%"
+  },
+  "705039": {
+   "name": "Endurance Training",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases max Focus by 20"
+  },
+  "803108": {
+   "name": "Assault",
+   "source": "Brigand",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Execute", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "execute finisher usable below 20% HP; damage increased per Advantage stack"
+  },
+  "300897": {
+   "name": "Hunting Tactics",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skullpiercer deals 30% more damage vs Poisoned targets"
+  },
+  "560339": {
+   "name": "Sly",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Woodland Adept triggers -10% cooldown per Advantage stack"
+  },
+  "706281": {
+   "name": "Archery Master",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Generator", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Quick Shot crits generate an extra Advantage stack"
+  },
+  "560340": {
+   "name": "Elusive Character",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "leaving Elude grants 10% damage buff for 12 sec"
+  },
+  "707744": {
+   "name": "Highwayman",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits from behind give 15% haste for 5 sec or next 2 attacks"
+  },
+  "301146": {
+   "name": "Close Quarters",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803114": {
+   "name": "Bounty Hunter",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Flank/Rusty Shiv increase target's damage taken from Advantage spenders by 25%"
+  },
+  "706748": {
+   "name": "'Tactical' Advantage",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Knockout and Bushwhack increase damage dealt vs target by 10% for 5 sec"
+  },
+  "706277": {
+   "name": "Outlaw",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases effectiveness of Adaptations by 20%"
+  },
+  "705033": {
+   "name": "Pierced",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Skullpiercer/Precision Shot crits apply bleed DoT for 50% of damage dealt"
+  },
+  "560812": {
+   "name": "An Arrow for Everything",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Quiver effectiveness by 25%"
+  },
+  "520585": {
+   "name": "Natural Disguise",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["AoE", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dispels slows from nearby allies and stealths them for 20 sec"
+  },
+  "520578": {
+   "name": "Adrenaline Rush",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dispels all harmful effects + 40% movement speed 10 sec; usable in stealth"
+  },
+  "524864": {
+   "name": "Forest Dweller",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "while in Elude: +20% move speed + 3% max HP regen per 3 sec"
+  },
+  "801951": {
+   "name": "Onslaught",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "instantly generates 5 Advantage + simulates Elude for 15 sec; 3 min CD"
+  },
+  "803871": {
+   "name": "Assassin",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Instinct effectiveness by 25%"
+  },
+  "573042": {
+   "name": "Blow the Horns!",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Horn spell CDs by 25%"
+  },
+  "504329": {
+   "name": "Survival Kit",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Survival Potion also heals 10% max HP per tick"
+  },
+  "500617": {
+   "name": "Throatpunch",
+   "source": "Brigand",
+   "primary": "Utility",
+   "tags": ["Physical", "Melee", "Interrupt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee interrupt 12 sec CD; locks school 2 sec"
+  },
+  "803104": {
+   "name": "Viper's Bite",
+   "source": "Brigand",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Generator", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "4 quick strikes over 1 sec; generates 2 Advantage; bonus Nature dmg vs Poisoned"
+  },
+  "705028": {
+   "name": "Swiftshot",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Precision Shot increases target Physical damage taken by 11% for 10 sec"
+  },
+  "704317": {
+   "name": "Boots of Elvenkind",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560688": {
+   "name": "Maximum Power",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5-Advantage abilities refresh Skirmish duration by 5 sec"
+  },
+  "520369": {
+   "name": "Blur",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560959": {
+   "name": "Survival Expert",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Briar Veil dodge chance by 25%"
+  },
+  "570014": {
+   "name": "Brutal Shot",
+   "source": "Archery",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "line AoE 450% weapon dmg; guaranteed crit while Skirmish active; 25 sec CD"
+  },
+  "680931": {
+   "name": "Headshots Only",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic dmg from Serrated Shot/Toxic Dart stacks up to 10 charges for next Precision Shot"
+  },
+  "524870": {
+   "name": "Incendiary Shot",
+   "source": "Archery",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "fire shot + AoE splash; next 3 Advantage spenders deal 50% AoE splash"
+  },
+  "707380": {
+   "name": "Mortal Shots",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Crippling Shot CD by 4 sec"
+  },
+  "520353": {
+   "name": "Guile of the Ranger",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Instinct also adds 20% Agility as crit rating"
+  },
+  "560810": {
+   "name": "A Quick Demise",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "auto shots have 20% chance to extend Serrated Shot duration by 2 sec"
+  },
+  "803113": {
+   "name": "Trueshot Lodge Training",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases off-hand weapon damage by 25%"
+  },
+  "705076": {
+   "name": "Falcon Charmer",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases War Falcon duration by 3 sec"
+  },
+  "524831": {
+   "name": "Thread The Needle",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Quick Shot/Falconstrike crits reduce cost and cast time of next Advantage spender; stacks 3 times"
+  },
+  "520925": {
+   "name": "Petalkeeper",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Heal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Woodland Arrow spawns red Dream Flower; at 10 Petal stacks next Horn bursts it for party leech+speed"
+  },
+  "704311": {
+   "name": "Quick-Witted",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Physical", "Slow", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "dodging triggers arrow stab dealing AP damage and -20% attack speed on target"
+  },
+  "804725": {
+   "name": "Crippling Shot",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Ranged", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged -50% slow + dismount; 10 sec CD"
+  },
+  "524867": {
+   "name": "Hunting with Precision",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hunting Shot deals 25% more dmg per subsequent ricochet target"
+  },
+  "806957": {
+   "name": "Knuckleduster",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic damage generates 5 Focus"
+  },
+  "800084": {
+   "name": "Briar Veil",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Selfheal", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% dodge for 10 sec; dodging restores 2% HP + 5 Focus; 2 min CD"
+  },
+  "801435": {
+   "name": "Knockout",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Melee", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee incapacitate 4 sec; usable in Elude; 18 sec CD"
+  },
+  "705092": {
+   "name": "Grace",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300700": {
+   "name": "Deadeye",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases range of ranged abilities and Auto Shot by 5 yds"
+  },
+  "801191": {
+   "name": "Hunting Shot",
+   "source": "Archery",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Cleave", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ricochet between 3 enemies; 1 Advantage per enemy hit"
+  },
+  "560966": {
+   "name": "Quills",
+   "source": "Brigand",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "launch darts at up to 5 enemies; damage and target count scale with Advantage"
+  },
+  "802039": {
+   "name": "Skirmish",
+   "source": "Archery",
+   "primary": "Buff",
+   "tags": ["Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "+15% crit chance, -25% Focus cost; lasts 4 sec per Advantage stack; core maintenance buff"
+  },
+  "707319": {
+   "name": "Instinctual Combatant",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Instinct now also restores 40 Focus and guarantees next 3 Skullpiercer/Assault crits"
+  },
+  "572372": {
+   "name": "Corrosive Poison",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged abilities vs Poisoned targets ignore 25% armor"
+  },
+  "680276": {
+   "name": "Dirty Blades",
+   "source": "Brigand",
+   "primary": "Rotational",
+   "tags": ["Nature", "Melee", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee auto attacks deal +30% Nature damage and -20% healing received for 4+ sec; usable in Elude"
+  },
+  "705034": {
+   "name": "Woodland Stalker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "while in Elude, crit chance increased by 20%"
+  },
+  "705044": {
+   "name": "Dirty Fighter",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flank crit chance +50%; resist root effects by 25%"
+  },
+  "570015": {
+   "name": "Woodland Adept",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "enters improved stealth (Elude) + 25% move speed 10 sec; 3 min CD"
+  },
+  "705055": {
+   "name": "Lethal Wounds",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases tick rate of periodic damage effects by 20%"
+  },
+  "705050": {
+   "name": "Serrations",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5% more damage vs bleeding or Poisoned targets"
+  },
+  "573057": {
+   "name": "Improved Waterskins",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Waterskin effectiveness by 25%"
+  },
+  "802839": {
+   "name": "Survival Potion",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Nature", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dispels poison and disease; removes 1 per 3 sec for 9 sec; 1 min CD"
+  },
+  "705053": {
+   "name": "Ambuscade",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skullpiercer and Flank deal 20% more damage (35% more with polearm)"
+  },
+  "800360": {
+   "name": "Hookshot",
+   "source": "Brigand",
+   "primary": "Movement",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged shot; if target is bleeding, reactivate to pull yourself to them + 2 Advantage"
+  },
+  "800077": {
+   "name": "Barbed Quills",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Wild Strike and Quills apply stacking bleed; Quills spread periodic effects to 5 nearby enemies"
+  },
+  "707534": {
+   "name": "Highlander",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "spawning green Dreamflower grants Highlander stacks; 3 stacks empower next Falconstrike"
+  },
+  "705071": {
+   "name": "Plumes of War",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Falconstrike/Emerald Arrow crit chance +15%; crits stack 5% more Falconstrike damage"
+  },
+  "520615": {
+   "name": "Cunning",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Focus regeneration by 15%"
+  },
+  "806342": {
+   "name": "Whipvine Arrow",
+   "source": "Farstrider",
+   "primary": "Control",
+   "tags": ["Nature", "Ranged", "Root", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged root 40 sec (8 sec vs players); hits 1 extra target per Advantage stack"
+  },
+  "570737": {
+   "name": "Pecking",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Physical", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "War Falcons/Dragonhawks have 25% chance to deal bonus AoE Physical damage"
+  },
+  "806368": {
+   "name": "Woodland Arrow",
+   "source": "Farstrider",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged shot; damage scales with Advantage; reduces Horn CD by 15 sec; 15 sec CD"
+  },
+  "573060": {
+   "name": "Falconstrike",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Nature", "Generator", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 5th Quick Shot or using a Horn transforms it into Falconstrike; generates 2 Advantage + summons War Falcon"
+  },
+  "500075": {
+   "name": "Precision Shot",
+   "source": "Archery",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "hard-hitting ranged shot; 3 sec cast; damage scales with Advantage; usable in Elude"
+  },
+  "803851": {
+   "name": "Ravage",
+   "source": "Brigand",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "DoT", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "applies 12 sec bleed; generates 1 Advantage"
+  },
+  "705054": {
+   "name": "Elven Enchantments",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Searing/Poison Quiver damage stacks Elven Enchantments reducing Incendiary Shot cast time and increasing crit chance"
+  },
+  "706284": {
+   "name": "Pathfinder",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Adrenaline Rush used in Elude has 90% reduced cooldown"
+  },
+  "300706": {
+   "name": "Studded Arrows",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Ranged", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Quick Shot ranged weapon damage +10%"
+  },
+  "301249": {
+   "name": "Superb Shot",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Auto Shot damage restores 4 Focus"
+  },
+  "804178": {
+   "name": "Strike Where It Hurts",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "ability crits increase target bleed damage taken by 30% for 15 sec"
+  },
+  "520227": {
+   "name": "Deadshot",
+   "source": "Archery",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Execute", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged execute usable below 20% HP; 250% weapon damage; generates 2 Advantage"
+  },
+  "800358": {
+   "name": "Hawkeye",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "fires auto-arrow every 3 sec at enemies affected by your Hunting Shot"
+  },
+  "801438": {
+   "name": "Dice Games",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Wild Strike and Assault crit chance +5%"
+  },
+  "705061": {
+   "name": "Underhanded",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases AP scaling of Skullpiercer by 15%"
+  },
+  "561110": {
+   "name": "Stalker",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Cutthroat CD by 15 sec (reduces range by 10 yds)"
+  },
+  "560802": {
+   "name": "Quel'dorei Poison",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Woodland Arrow/Emerald Arrow poison targets for 3 sec Nature DoT"
+  },
+  "500071": {
+   "name": "Neurotoxin Arrow",
+   "source": "Archery",
+   "primary": "Control",
+   "tags": ["Nature", "Ranged", "Silence"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged Nature shot + silence; duration scales with Advantage; 2 min CD"
+  },
+  "705032": {
+   "name": "Devastating Shots",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704312": {
+   "name": "New-Age Archery",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skullpiercer and Precision Shot damage +20%"
+  },
+  "707888": {
+   "name": "Improved Serrated Shot",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Serrated Shot damage +30%"
+  },
+  "807493": {
+   "name": "Opportunist",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Precision Shot crit chance +50% on enemies above 80% health"
+  },
+  "560341": {
+   "name": "Rapid Strikes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee/ranged auto attacks have 25% chance to strike again for 50% damage"
+  },
+  "801468": {
+   "name": "Pinpoint Accuracy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct ability crits generate 4 Focus"
+  },
+  "707417": {
+   "name": "Deft Hands",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807668": {
+   "name": "Jagged Cuts",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Toxic Dart and Ravage damage/duration +25%"
+  },
+  "705026": {
+   "name": "Camper",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces cast time of Bushcraft abilities by 50%"
+  },
+  "804027": {
+   "name": "Snapseed",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Ranged", "Knockback"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged shot + knockback; 20 sec CD"
+  },
+  "504008": {
+   "name": "Resourceful",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Crippling Shot and Snapseed CDs by 20%"
+  },
+  "800359": {
+   "name": "Cutthroat",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Ranged", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged shot + stun 1+ sec (1 sec per Advantage); 1 min CD"
+  },
+  "524654": {
+   "name": "Stonemason's Secret",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5-Advantage Skullpiercer extends Dirty Blades by 6 sec"
+  },
+  "705074": {
+   "name": "Phoenix Plumes",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5-Advantage Skullpiercer/Woodland Arrow restores 3% Focus and summons War Falcon"
+  },
+  "560805": {
+   "name": "Thalassian Brand",
+   "source": "Farstrider",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Ranged", "DoT", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "marks target: allies gain +300 ranged AP vs it + 1120 Nature dmg per 3 sec for 15 sec; 2 min CD"
+  },
+  "804715": {
+   "name": "Falcon's Call",
+   "source": "Farstrider",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Ranged", "AoE", "Slow", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE slow -60% for 5 sec + summons 1 Falcon per enemy hit for 12 sec; 1.5 min CD"
+  },
+  "520621": {
+   "name": "Coordination",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "War Falcon/Dragonhawk hits stack Coordination: +1% crit and crit dmg for 15 sec; stacks 10"
+  },
+  "800685": {
+   "name": "Backstep",
+   "source": "Farstrider",
+   "primary": "Movement",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "leap backwards 10 yds; 20 sec CD"
+  },
+  "800150": {
+   "name": "Forest Herald",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Heal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Toxic Dart and Advantage spenders have 20% chance to spawn green Dreamflower that heals allies"
+  },
+  "803115": {
+   "name": "Snatch",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "disarms enemy for 4 sec; 45 sec CD"
+  },
+  "573043": {
+   "name": "Windrunner's Reach",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Ranged", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged ability range +5 yds; +2% crit vs Undead/Beasts/Dragonkin"
+  },
+  "705075": {
+   "name": "Falcon's Aid",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic damage has 10% chance to summon War Falcon for 6 sec"
+  },
+  "705072": {
+   "name": "Razorquills",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases tick rate of Toxic Dart and Emerald Arrow by 20%"
+  },
+  "573056": {
+   "name": "Dragonhawk Tamer",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "using a Horn summons a Dragonhawk for 15 sec"
+  },
+  "706282": {
+   "name": "Forest Fighter",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5-Advantage Skullpiercer/Emerald Arrow reduces Woodland Arrow CD by 5 sec"
+  },
+  "681292": {
+   "name": "Light Arrows / Masterful Archery",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Precision Shot damage +20% from 40+ yds"
+  },
+  "524873": {
+   "name": "Silent, But Deadly / One Shot, One Kill",
+   "source": "Archery",
+   "primary": "Passive",
+   "tags": ["Execute"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct Physical damage has 8% chance to make Deadshot usable regardless of target HP for 8 sec"
+  },
+  "520804": {
+   "name": "Bloody Focus / No Mercy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Focus cost of Toxic Dart by 15"
+  },
+  "520753": {
+   "name": "Guise / Lethal Cunning",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "instantly generates 5 Advantage + reveals nearby stealthed enemies for 5 sec; usable stealthed"
+  },
+  "560495": {
+   "name": "Whats Yours Is Mine / Grappling Arrows",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes Focus cost of Snatch"
+  },
+  "560814": {
+   "name": "Surefooted / Heightened Senses",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Adrenaline Rush CD by 30 sec"
+  },
+  "807626": {
+   "name": "Assassin / Excessive But Necessary",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Knockout and Crippling Shot duration +1 sec"
+  },
+  "807206": {
+   "name": "Focused Fighter / Wild Man",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Focus cost of Flank, Blackjack, and Wild Strike by 10%"
+  },
+  "707885": {
+   "name": "Polearm Craft / Pilfering",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "with polearm equipped, Weapon Craft chance and damage +25%"
+  },
+  "807023": {
+   "name": "Tip of the Spear / Marked for Death",
+   "source": "Brigand",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Wild Strike has 15% chance to strike 3 additional times with polearm equipped"
+  },
+  "800086": {
+   "name": "Horn of War / Battle Prowess",
+   "source": "Farstrider",
+   "primary": "Buff",
+   "tags": ["Raidbuff", "Crit", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid +5% crit aura for 30 sec + generates 3 Focus/sec while active; 1 min CD"
+  },
+  "705067": {
+   "name": "War Falconer / Aerial Assault",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Falcon's Call CD by 30 sec"
+  },
+  "520586": {
+   "name": "Falcon Guide / Scavenger",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Falconstrike and Battle Screech increase movement speed by 30% for 3 sec"
+  },
+  "804712": {
+   "name": "Emerald Arrow / Falcon Diving",
+   "source": "Farstrider",
+   "primary": "Rotational",
+   "tags": ["Nature", "Ranged", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Nature arrow + leaves AoE flare DoT; damage and flare duration scale with Advantage"
+  },
+  "573059": {
+   "name": "Gutpiercer / Battle Screech",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "War Falcon/Dragonhawk hits have 15% chance to reduce enemy resistances by 75 + magic dmg taken debuff"
+  },
+  "705098": {
+   "name": "Wingman / Guidance",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-2% damage taken per active War Falcon or Dragonhawk"
+  },
+  "705094": {
+   "name": "Defense of the Ancients / Horn of Alacrity",
+   "source": "Farstrider",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid armor aura +390 Armor"
+  },
+  "520492": {
+   "name": "Frenzy / Command Aura",
+   "source": "Farstrider",
+   "primary": "CD Offensif",
+   "tags": ["Haste", "Enrage", "AoE", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "enrages nearby allies for +30% haste 20 sec; 5 min CD; raid CD"
+  },
+  "804331": {
+   "name": "Adventurer",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Safe Fall passive",
+   "confidence": "low"
+  },
+  "801345": {
+   "name": "Elude",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "baseline stealth mode; reduces Brutal Shot cast time while active; 10 sec CD"
+  },
+  "804940": {
+   "name": "Flank",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline melee strike 150% weapon dmg",
+   "confidence": "low"
+  },
+  "806360": {
+   "name": "Horn of Alacrity",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid +5% haste aura for 30 sec + 3 Focus/sec; 1 min CD"
+  },
+  "806359": {
+   "name": "Horn of Endurance",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "party endurance aura for 30 sec + 3 Focus/sec; 1 min CD",
+   "confidence": "low"
+  },
+  "800088": {
+   "name": "Horn of Perseverance",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "party -10% spell cost for 30 sec + 3 Focus/sec; 1 min CD"
+  },
+  "500074": {
+   "name": "Quick Shot",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline ranged filler; 40 Focus; generates Advantage"
+  },
+  "800087": {
+   "name": "Ranger's Horn of Coordination",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "party +40% run speed for 30 sec; 1 min CD"
+  },
+  "800085": {
+   "name": "Reposition",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "jump behind target; 15 sec CD"
+  },
+  "802036": {
+   "name": "Skullpiercer",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline ranged shot; generates Advantage"
+  },
+  "804669": {
+   "name": "Sticky Fingers",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pickpocket ability"
+  },
+  "800083": {
+   "name": "Wild Strike",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline melee strike + off-hand proc; consumes Advantage"
+  },
+  "800266": {
+   "name": "Woodsman's Adaptation",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "30 min self buff +30 AP and ranged AP; 6 selectable Adaptations; baseline maintenance buff"
+  }
+ }
+}

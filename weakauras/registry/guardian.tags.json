@@ -1,0 +1,1400 @@
+{
+ "slug": "guardian",
+ "class": "Guardian",
+ "count": 143,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "704421": {
+   "name": "Seasoned Fighter",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803126": {
+   "name": "Wreck Formation",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "50% proc resets Hammer of the Law cooldown; also buffs AP on Standard cast"
+  },
+  "520650": {
+   "name": "Reverberations",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ram empowers next 3 melee attacks with magic damage"
+  },
+  "712367": {
+   "name": "Overwhelming Presence",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300538": {
+   "name": "Might",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300860": {
+   "name": "Strength In Unison",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300545": {
+   "name": "Built Different",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704515": {
+   "name": "Axe Training",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "505201": {
+   "name": "War's Muse",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504148": {
+   "name": "Knightly Demeanor",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300927": {
+   "name": "Reflective Shield",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Reflect", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reflect next harmful spell; restores 20 Energy on trigger"
+  },
+  "504385": {
+   "name": "Guardbreaker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance Pulverize resets Ram cooldown"
+  },
+  "704525": {
+   "name": "Into The Fray",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sound of War proc grants extra auto attack"
+  },
+  "300541": {
+   "name": "One-Handed Mastery",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704516": {
+   "name": "Waste No Movement",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504503": {
+   "name": "Tactical Combat",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705361": {
+   "name": "A Hero's Tale",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Energy regeneration"
+  },
+  "705329": {
+   "name": "Crashing Force",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504139": {
+   "name": "No Retreating!",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "stacking buff on Spear Throw range/damage while in combat"
+  },
+  "704423": {
+   "name": "Leading the March",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705368": {
+   "name": "Gallant",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706637": {
+   "name": "Valiant Effort",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% auto-attack proc enables Reprisal"
+  },
+  "706807": {
+   "name": "Deadly Blow",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504531": {
+   "name": "Momentum",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee damage reduces Chivalry cooldown"
+  },
+  "504530": {
+   "name": "Myrmidon",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300972": {
+   "name": "Champion",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Centurion Strike extends Raise Shield duration"
+  },
+  "531515": {
+   "name": "Lionheart",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shield of Denial strikes 1 additional enemy"
+  },
+  "802299": {
+   "name": "Polearm Training",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500463": {
+   "name": "Spear Throw",
+   "source": "Gladiator",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged Physical damage + 50% healing reduction debuff"
+  },
+  "504144": {
+   "name": "Bannerman",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300983": {
+   "name": "Glorious Arena",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ring AoE that stacks Peril; consumes stacks with Pulverize; stun at 5 stacks"
+  },
+  "802290": {
+   "name": "Lord of the Arena",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "573047": {
+   "name": "Show of Force",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ram dispels 1 magic effect from target on damage"
+  },
+  "803683": {
+   "name": "Battle Drums",
+   "source": "Inspiration",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Haste", "Crit", "AoE", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; summons clickable drums granting 10% crit/haste/damage/healing + Sound of War for allies"
+  },
+  "504151": {
+   "name": "Knight's Calling",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; 15% max HP + Energy every 5s for 10s"
+  },
+  "705346": {
+   "name": "Forceful Impact",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Raise Shield and Heavy Blow extend Brace duration"
+  },
+  "504730": {
+   "name": "Legionnaire",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804892": {
+   "name": "Refuse To Die",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Advance resets Raise Shield cooldown"
+  },
+  "806134": {
+   "name": "Standard Bearer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802304": {
+   "name": "Net Throw",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Root", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "root 4s; target loses dodge chance"
+  },
+  "802188": {
+   "name": "Counter Stance",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Selfheal", "Reflect"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; 5-charge parry for 15s; each parry deals damage and heals"
+  },
+  "704539": {
+   "name": "Echoes of War",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sound of War grants allies Echoes of War (15% extra magic damage)"
+  },
+  "705320": {
+   "name": "Field Commander",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Standard placement amplifies next Song of Steel with one of 4 unique raid effects"
+  },
+  "705370": {
+   "name": "Shield Wall",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Armor contribution from shield by 20%"
+  },
+  "504140": {
+   "name": "Supremacy",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Centurion Strike refreshes a charge of Reprisal"
+  },
+  "500263": {
+   "name": "Standard of Rallying",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Physical", "Raidbuff", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5-min placeable standard; -3% dmg taken + -30% stun duration for allies in 30 yds"
+  },
+  "801774": {
+   "name": "Hero's March",
+   "source": "Inspiration",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; auto attacks trigger Sound of War + 15% haste 15s; nearby allies 5% chance to trigger Sound of War"
+  },
+  "705359": {
+   "name": "Banner Boy",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706514": {
+   "name": "Paragon",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "block stacks grant Paragon; at 10 stacks transforms Heavy Blow into Paragon Smash"
+  },
+  "300543": {
+   "name": "Make Room! I'm Here.",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704513": {
+   "name": "Unstoppable",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803738": {
+   "name": "Shieldlord's Strength",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "unlocks 2H maces with shield; Heavy Blow/Hammer of Law scale with Stamina; +15% Stamina"
+  },
+  "801121": {
+   "name": "Recuperation",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "block or physical hit restores 2 Energy"
+  },
+  "705338": {
+   "name": "Retiarius",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases max Energy by 25"
+  },
+  "805155": {
+   "name": "Earthsplitter",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Broad Sweep casts stack Earthsplitter buff (more targets, lower cost)"
+  },
+  "802297": {
+   "name": "Sword Training",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500258": {
+   "name": "Final Verdict",
+   "source": "Gladiator",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Execute", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "execute below 20% HP; heals 15% max HP; kills reset cooldown"
+  },
+  "705364": {
+   "name": "Iron Guardian",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800313": {
+   "name": "Brace",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Defensive", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; -50% all damage 10s + stun immunity"
+  },
+  "560410": {
+   "name": "The Green Tower",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803956": {
+   "name": "Song of Battle",
+   "source": "Inspiration",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; periodic AoE Sound of War 15s; stuns all nearby on expiration"
+  },
+  "705356": {
+   "name": "Powerful Voice",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524694": {
+   "name": "Valiant Warrior",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ram crits have 50% chance to strike again for 100% damage"
+  },
+  "705376": {
+   "name": "Footman's Call",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Pulverize damage scales with block value"
+  },
+  "804047": {
+   "name": "Elegant Combat",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance Ballad cast makes next Ram free + 10% crit"
+  },
+  "804661": {
+   "name": "Heroic Deeds",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704150": {
+   "name": "Light Nets",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802283": {
+   "name": "Bastion",
+   "source": "Vanguard",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Raidbuff", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5-min CD; -40% damage for all allies within 12 yds for 10s"
+  },
+  "704514": {
+   "name": "Close Combat",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804891": {
+   "name": "Shield Unit",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "damage taken converts to temporary AP stacks"
+  },
+  "582901": {
+   "name": "Retaliation",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Physical", "Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "blocks deal Physical damage back to attacker"
+  },
+  "803128": {
+   "name": "Heavy Expert",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706636": {
+   "name": "Little Drummer",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "allies within 20 yds gain 20% curse resist"
+  },
+  "806140": {
+   "name": "Battle Bard",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "572821": {
+   "name": "Harrowing Melody",
+   "source": "Inspiration",
+   "primary": "CD Offensif",
+   "tags": ["AoE", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25s CD; AoE magic damage + -30% healing on enemies 10s; next Ballad free and 50% more damage"
+  },
+  "803129": {
+   "name": "Heavy Blow",
+   "source": "Vanguard",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; line cleave melee; high threat; scales with defense"
+  },
+  "802286": {
+   "name": "Centurion Strike",
+   "source": "Gladiator",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; weapon-type bonus effect"
+  },
+  "505344": {
+   "name": "Inspiring Leader",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "transforms Pulverize and Broad Sweep into Ballads"
+  },
+  "705341": {
+   "name": "Calculated Strike",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reprisal/Broad Sweep/Spear Throw scale with current Energy"
+  },
+  "704420": {
+   "name": "Voice of an Angel",
+   "source": "Inspiration",
+   "primary": "CD Offensif",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5-min CD; resets Liberation, Harrowing Melody, and Hero's March cooldowns"
+  },
+  "705332": {
+   "name": "Battle Wary",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504383": {
+   "name": "With Honor",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707137": {
+   "name": "Resilient",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "block while Raise Shield active increases max HP temporarily"
+  },
+  "705323": {
+   "name": "Heroism",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 stacks of Glory or 20 Favor makes next 2 Pulverize/Broad Sweep free"
+  },
+  "704524": {
+   "name": "War Drums",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sound of War has 40% chance to echo; amplifies Echoes of War"
+  },
+  "704533": {
+   "name": "Minstrel",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ballad casts grant stacking haste buff (3 stacks)"
+  },
+  "705318": {
+   "name": "Soundwave",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706333": {
+   "name": "Dragonslayer",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704535": {
+   "name": "Legion Commander",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801219": {
+   "name": "Press the Attack",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Melee", "AoE", "Channel", "Shield"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; 5s channel; cleave enemies in front + 100% block chance while channeling"
+  },
+  "705315": {
+   "name": "Master of Arms",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807346": {
+   "name": "Thick Shields",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705324": {
+   "name": "Valiance",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reprisal regenerates 20 additional Energy"
+  },
+  "504184": {
+   "name": "Double Duty",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300534": {
+   "name": "Steel Riposte",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804383": {
+   "name": "Vanguard's Shield",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "block/auto-attack stacks reduce magic damage taken; lost on spell hit"
+  },
+  "705378": {
+   "name": "Knight's Advantage",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705316": {
+   "name": "Energetic",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "restores 5 Energy every 3 sec passively"
+  },
+  "705343": {
+   "name": "Relentless",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802870": {
+   "name": "Grand Entrance",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "DoT", "Knockback"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD; leap + slam AoE, DoT, knocks up; immune to CC during leap"
+  },
+  "706639": {
+   "name": "Sturdy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705377": {
+   "name": "Honorable Demeanor",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "blocking grants stacking Str/Stam buff up to 3 stacks"
+  },
+  "803963": {
+   "name": "Liberation",
+   "source": "Inspiration",
+   "primary": "Utility",
+   "tags": ["Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; ally CC break + immunity 5s; dispels 2 harmful magic effects; usable while CC'd"
+  },
+  "300540": {
+   "name": "Veteran of the Third War",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "restores 3% base HP on block"
+  },
+  "505199": {
+   "name": "Fearless",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503631": {
+   "name": "Cavalry Tactics",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704413": {
+   "name": "Stalwart",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803830": {
+   "name": "Hold the Line",
+   "source": "Vanguard",
+   "primary": "CD Defensif",
+   "tags": ["Raidbuff", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; all nearby allies immune to incapacitate/knockback/disorient/grip 15s"
+  },
+  "705379": {
+   "name": "Bring Down The Hammer!",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705345": {
+   "name": "Vanguard's Might",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Heavy Blow triggers 5s raid aura -5% damage to party"
+  },
+  "705333": {
+   "name": "Plate Buster",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ram crits reduce Challenging Cry and Hold the Line cooldown"
+  },
+  "704418": {
+   "name": "Hammer of the Law",
+   "source": "Vanguard",
+   "primary": "Control",
+   "tags": ["Physical", "Melee", "Silence", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40s CD; line cleave + 3.5s silence; high threat"
+  },
+  "524932": {
+   "name": "Valorous Strikes",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% auto-attack extra strike proc + target miss debuff"
+  },
+  "803134": {
+   "name": "King's Guard",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance Pulverize/Ram resets Raise Shield"
+  },
+  "705369": {
+   "name": "Knight's Conviction",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301057": {
+   "name": "Heroic Effort",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Centurion Strike grants 1 stack of Glory"
+  },
+  "705336": {
+   "name": "Mace Training",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802295": {
+   "name": "Upper Hand",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% auto-attack proc extra 2 strikes"
+  },
+  "706515": {
+   "name": "Shieldbound / Honorbound",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shield Challenge loses cooldown but costs 10 more Energy"
+  },
+  "503837": {
+   "name": "Unscuffable / Order In The Court",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid aura: -10% magic AoE damage for allies in 30 yds"
+  },
+  "582937": {
+   "name": "Valiant Knight / Valiant Defender",
+   "source": "Vanguard",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee crit procs free+25% dmg Pulverize for 6s"
+  },
+  "706806": {
+   "name": "Resolve / Deflector",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300542": {
+   "name": "Press the Line! / Shrug It Off",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "movement speed floor while Line Formation active"
+  },
+  "560093": {
+   "name": "Bloodletter / Myrmidon",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "dodge/parry/miss reduces Glorious Arena cooldown"
+  },
+  "802296": {
+   "name": "Pit Fighter / Warstopper",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Standard of Valiance movement slow"
+  },
+  "504159": {
+   "name": "Spirit of Battle / Banner of Conquest",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid +1% hit aura"
+  },
+  "505228": {
+   "name": "Knight's Song / Banner of Swiftness",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ballad grants Knight's Song: +400 Armor aura to raid 10s"
+  },
+  "705350": {
+   "name": "Pied Piper / Frontliner",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sound of War proc buffs next Ram +20% damage 15s"
+  },
+  "704526": {
+   "name": "Bard's Manuscript / Warbringer's Manuscript",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704540": {
+   "name": "Song of Steel / Dissonance",
+   "source": "Inspiration",
+   "primary": "Buff",
+   "tags": ["Physical", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no cooldown; 30 Energy; +95 AP/SP to raid for 15s (like Battle Shout)"
+  },
+  "806142": {
+   "name": "Stand Your Ground! / You Shall Not Fall!",
+   "source": "Inspiration",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "allies in Standard of Valiance take -10% Physical damage"
+  },
+  "705352": {
+   "name": "Inspiring Presence / Champion's Presence",
+   "source": "Inspiration",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1-min CD; 25 Energy; 15s raid aura: allied direct damage triggers 35% AP Holy bonus"
+  },
+  "802300": {
+   "name": "No Escape / Bulwark Rush",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ram on rooted enemy reduces Battle Rush cooldown"
+  },
+  "301252": {
+   "name": "Pinned Down! / Clinch Brawler",
+   "source": "Gladiator",
+   "primary": "Passive",
+   "tags": ["Root"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spear Throw damage refreshes Net Throw duration"
+  },
+  "500170": {
+   "name": "Advance",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": ["Physical", "Charge"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; sprint 100% speed 5s",
+   "confidence": "low"
+  },
+  "500344": {
+   "name": "Assume Peak Posture",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1-min CD; channeled stance toggle; size +30%; periodic trigger - likely a stance/posture buff",
+   "confidence": "low"
+  },
+  "804723": {
+   "name": "Call To Arms",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Nature"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5s cast; summons a player; no desc - verify in-game",
+   "confidence": "low"
+  },
+  "804691": {
+   "name": "Cavalry Charge",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; +50% mounted/flight/vehicle speed aura for raid 10s"
+  },
+  "802293": {
+   "name": "Defensive Pose",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "stance toggle; increases Raise Shield effectiveness; no desc",
+   "confidence": "low"
+  },
+  "802282": {
+   "name": "Offensive Pose",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "stance toggle; buffs Pulverize damage; no desc",
+   "confidence": "low"
+  },
+  "500168": {
+   "name": "Raise Shield",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Shield", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25s CD; 20 Energy; 4s 100% block chance; keystone defensive"
+  },
+  "802284": {
+   "name": "Ram",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; 30 Energy; primary melee attack; core rotational"
+  },
+  "704159": {
+   "name": "Shield of Denial",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Physical", "Interrupt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; 15 Energy; ranged 20yd interrupt + physical damage"
+  }
+ }
+}

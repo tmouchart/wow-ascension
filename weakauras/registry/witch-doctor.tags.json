@@ -1,0 +1,1751 @@
+{
+ "slug": "witch-doctor",
+ "class": "Witch Doctor",
+ "count": 139,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "707855": {
+   "name": "Improved Malefic Arrow",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705899": {
+   "name": "Hastened",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806288": {
+   "name": "Reclamation",
+   "source": "Shadowhunting",
+   "primary": "Rotational",
+   "tags": [
+    "Nature",
+    "Ranged",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged builder with self-leech HoT (Spirit)"
+  },
+  "503714": {
+   "name": "Eye of Kimbul",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "DoT",
+    "Tracking"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "applies Eye of Kimbul debuff on crits - prevents stealth"
+  },
+  "572871": {
+   "name": "Presence of the Loa",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706542": {
+   "name": "Cursed Effigy",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Nature",
+    "AoE",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE anti-crit zone totem"
+  },
+  "705942": {
+   "name": "Voodoo Hunger",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "stacking damage buff on Malefic Arrow from stealth"
+  },
+  "560545": {
+   "name": "Dark Loa's Blessing",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on 3% raid damage aura"
+  },
+  "704511": {
+   "name": "Voodoo Spirits",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hexfire procs Puppeteer Threads burst + Spirit"
+  },
+  "707168": {
+   "name": "Beware Da Voodoo",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500472": {
+   "name": "Mojo: Jungle Thistle",
+   "source": "Brewing",
+   "primary": "CD Offensif",
+   "tags": [
+    "Nature",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, resets Potion Toss/Splash and swaps Ingredients to Thistle mix"
+  },
+  "706488": {
+   "name": "Mojo High",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300662": {
+   "name": "Shadow Enchantments",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560544": {
+   "name": "Sen'jin's Presence",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "cast-speed proc after Potion Toss / Spirit in a Bottle"
+  },
+  "705850": {
+   "name": "Mojo: Fish Bones",
+   "source": "Brewing",
+   "primary": "CD Offensif",
+   "tags": [
+    "Nature",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, resets Potion Toss/Splash and swaps Ingredients to Fish Bones mix"
+  },
+  "705851": {
+   "name": "Mojo: Frog Shrooms",
+   "source": "Brewing",
+   "primary": "CD Offensif",
+   "tags": [
+    "Nature",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, resets Potion Toss/Splash and swaps Ingredients to Frog Shrooms mix"
+  },
+  "801664": {
+   "name": "Ingredient: Bloodthistle",
+   "source": "Brewing",
+   "primary": "Buff",
+   "tags": [
+    "Nature",
+    "Leech",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cauldron: +8% healing taken; Potion: 5% leech for ally"
+  },
+  "802219": {
+   "name": "Splash On 'Em",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "healing procs Potion Toss/Splash CD reduction"
+  },
+  "300660": {
+   "name": "Disciple of Sseratus",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "HoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801690": {
+   "name": "Master of Concoctions",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Jungle Shrooms causes allies to leech on next 3 attacks"
+  },
+  "802487": {
+   "name": "Unstable Concoction",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "AoE",
+    "HoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Potion Toss places exploding debuff that triggers AoE heal"
+  },
+  "503742": {
+   "name": "Chosen One",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500952": {
+   "name": "Amphibimorph",
+   "source": "class",
+   "primary": "Control",
+   "tags": [
+    "Nature",
+    "AoE",
+    "Slow"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD AoE polymorph into frog (Curse dispellable)"
+  },
+  "504465": {
+   "name": "Vol'jin's Vigil",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Physical",
+    "HoT",
+    "Selfheal",
+    "Defensive"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-25% damage taken + 2% HP/s HoT for 10s, 2min CD"
+  },
+  "705871": {
+   "name": "Mojo Madness",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on dmg/heal: next spell free for 10s"
+  },
+  "707505": {
+   "name": "Jin'do's Wrath",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705903": {
+   "name": "Wizened",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705906": {
+   "name": "For Da Loa!",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Nature",
+    "Dispel",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "upgrades Allcure Elixir to mass AoE dispel (poison/disease/curse)"
+  },
+  "705909": {
+   "name": "One Armed Waltz",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "improves Big Bad Voodoo: -25% dmg dealt but extra -5% dmg taken"
+  },
+  "804226": {
+   "name": "Swift Idol",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Nature",
+    "Summon",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD, totem: +25% move speed + snare resist to raid for 10s"
+  },
+  "705907": {
+   "name": "Loa Communion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705901": {
+   "name": "Voodoo Unleashed",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Mimic Wards also cast Bad Juju; Bad Juju reduces Shadow Puppets CD"
+  },
+  "705911": {
+   "name": "Spiritual Traditions",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704497": {
+   "name": "Soul Marionette",
+   "source": "Voodoo",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Stun",
+    "AoE",
+    "Haste"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD, root self 8s, summon 5 clones, stacks Haste; at 20 stacks AoE stun + damage buff 15s"
+  },
+  "705916": {
+   "name": "The Price of Power",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705922": {
+   "name": "Dark Magic",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504462": {
+   "name": "Voodoo Mind",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705840": {
+   "name": "Ritual Hexing",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706577": {
+   "name": "Vol'jin's Blessing",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706543": {
+   "name": "Residual Energy",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "end of Shadow Avatar grants Lesser Shadow Avatar: +10% magic dmg + Spirit Glaive CD reduction"
+  },
+  "503727": {
+   "name": "Spiritual Devotee",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "525377": {
+   "name": "Dark Loa's Incantation",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shadowflare hitting 3+ enemies procs Hex of Malice"
+  },
+  "680882": {
+   "name": "Village Wisdom",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705948": {
+   "name": "A Price To Pay",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spirit Eclipse with 5 Spirits resets Spirit Glaive + guaranteed crit proc"
+  },
+  "706368": {
+   "name": "Loa Empowerment",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681007": {
+   "name": "Fool's Play",
+   "source": "Shadowhunting",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "summons enemy clone that attacks enemy and reflects their spells"
+  },
+  "705856": {
+   "name": "Fresh Ingredients",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "HoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704503": {
+   "name": "Malignant",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Bad Juju/Hexfire spreads Hex of Malice to nearby enemy"
+  },
+  "561069": {
+   "name": "Mixologist",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "Buff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "teaches Fish Oil Ingredient (Cauldron: move speed; Potion: dodge)"
+  },
+  "802262": {
+   "name": "Voodoo Fire",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Serpent Ward 20% chance: Fire splash to 3 enemies"
+  },
+  "503707": {
+   "name": "Darkspear Traditionalist",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Haste",
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on 10% melee/ranged haste raid aura + Spirit proc from Hex ticks"
+  },
+  "503774": {
+   "name": "Spirit Warden",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "summoning Idol grants +10% Spirit buff for 1 min"
+  },
+  "801607": {
+   "name": "Spirit Eclipse",
+   "source": "Shadowhunting",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "AoE",
+    "Ranged",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "unleashes stacked Spirits on target; spends Spirit stacks"
+  },
+  "503608": {
+   "name": "Juju Injection",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Agility"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705880": {
+   "name": "Seeker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707331": {
+   "name": "Dark Effigy",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Bad Juju/Hexfire cleave to 2 extra; Shadowflare +50% on Puppeteer Threads target"
+  },
+  "807040": {
+   "name": "Shadowstalker",
+   "source": "Shadowhunting",
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Dispel",
+    "Movement"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD, stealth + 50% move speed 20s, clears all debuffs"
+  },
+  "802710": {
+   "name": "Splash Potion",
+   "source": "Brewing",
+   "primary": "Heal",
+   "tags": [
+    "Nature",
+    "AoE",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD, AoE heal up to 8 allies at target location"
+  },
+  "803463": {
+   "name": "Plentiful Potions",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503748": {
+   "name": "Potent Mixes",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500053": {
+   "name": "Tiki Splash",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "HoT",
+    "Shield"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spirit in a Bottle transforms to HoT/Shield depending on Base active"
+  },
+  "807042": {
+   "name": "Hexfire",
+   "source": "Voodoo",
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD, instant Fire nuke scaling with Spirit"
+  },
+  "560748": {
+   "name": "Frenzied Spirits",
+   "source": "Shadowhunting",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Crit",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD, consumes Spirits: ranged crit buff + 2% leech per Spirit consumed for duration"
+  },
+  "705936": {
+   "name": "Loa's Strength",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "Shadow",
+    "Agility"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707650": {
+   "name": "Bwonsamdi's Gift",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "while Mimic Ward active: +15% ranged haste, Reclamation becomes Spirit Volley"
+  },
+  "806289": {
+   "name": "Spirit Glaive",
+   "source": "Shadowhunting",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Ranged",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD, piercing glaive through enemies; reduces shadow resist"
+  },
+  "504459": {
+   "name": "Spirit Walker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707854": {
+   "name": "Malefic Arrow",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "Ranged",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "transforms Malefic Wrath into Malefic Arrow (ranged, self-heal)"
+  },
+  "801660": {
+   "name": "Ingredient: Jungle Shrooms",
+   "source": "Brewing",
+   "primary": "Heal",
+   "tags": [
+    "Nature",
+    "HoT",
+    "AoE",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cauldron: periodic AoE HoT to 8 allies; Potion Toss: HoT on target"
+  },
+  "801661": {
+   "name": "Potion Toss",
+   "source": "Brewing",
+   "primary": "Heal",
+   "tags": [
+    "Nature",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD, ranged instant heal; effect changes per Ingredient"
+  },
+  "803678": {
+   "name": "Malignant Jinx",
+   "source": "Voodoo",
+   "primary": "Control",
+   "tags": [
+    "Shadow",
+    "Silence",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD, curses enemy - their next spellcast silences them for 5s"
+  },
+  "707162": {
+   "name": "Mimic Ward",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Haste"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD, summons Mimic Ward that mirrors Malefic Wrath and Loa's Brew for 12s"
+  },
+  "561072": {
+   "name": "Potion Boss",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500947": {
+   "name": "Slither",
+   "source": "class",
+   "primary": "Movement",
+   "tags": [
+    "Nature",
+    "Dispel"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD, serpent form 5s: 80% move speed, -100% ranged/spell hit chance, removes snares"
+  },
+  "504840": {
+   "name": "Cleansing Idol",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Nature",
+    "Dispel",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "totem: removes 1 poison/disease from nearby allies every 3s for 1 min"
+  },
+  "705870": {
+   "name": "Base: Beast Blood",
+   "source": "Brewing",
+   "primary": "CD Defensif",
+   "tags": [
+    "Physical",
+    "Raidbuff",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD, 10s: 15% direct physical dmg to raid converted to DoT (damage mitigation)"
+  },
+  "300871": {
+   "name": "Strength of Da Loa",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on +5% AP to raid; Spirit ticks 50% faster"
+  },
+  "704512": {
+   "name": "Brewmaster",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705864": {
+   "name": "Master Mixologist",
+   "source": "Brewing",
+   "primary": "CD Offensif",
+   "tags": [
+    "Nature",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD, 10s: Cauldron effects 100% stronger + Spirit in a Bottle on move"
+  },
+  "801663": {
+   "name": "Ingredient: Frog Bones",
+   "source": "Brewing",
+   "primary": "Buff",
+   "tags": [
+    "Nature",
+    "Absorb",
+    "Defensive",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cauldron: -3% dmg taken raid aura; Potion: absorb shield on ally"
+  },
+  "500957": {
+   "name": "Healing Ward",
+   "source": "class",
+   "primary": "Heal",
+   "tags": [
+    "Nature",
+    "HoT",
+    "AoE",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "totem: heals 8 nearby allies every 3s for 1 min"
+  },
+  "501136": {
+   "name": "Mirage",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Nature",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD, invisibility 20s, gains 5 Spirits, leaves decoy, drops threat"
+  },
+  "500962": {
+   "name": "Base: Crystal Water",
+   "source": "Brewing",
+   "primary": "CD Defensif",
+   "tags": [
+    "Nature",
+    "Shadow",
+    "Shield",
+    "Raidbuff",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD, 10s: raid members shielded for 20% of healing received for 5s"
+  },
+  "802756": {
+   "name": "Devotion to Bwonsamdi",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on: direct damage heals you for 10%"
+  },
+  "801716": {
+   "name": "Voice of Bwonsamdi",
+   "source": "Voodoo",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "DoT",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD, 15s: periodic dmg unleashes Shadow spirit AoE explosions"
+  },
+  "802087": {
+   "name": "Bad Juju",
+   "source": "Voodoo",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD, heavy Shadow bolt; healing reduction if Hex of Malice on target"
+  },
+  "705912": {
+   "name": "Malicious Golems",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Summon",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "War Golem gives +30% spell haste buff; periodic dmg reduces War Golem CD"
+  },
+  "807743": {
+   "name": "Spirit Shock",
+   "source": "Shadowhunting",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Silence",
+    "Interrupt",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "28s CD, silence + interrupt for 4s"
+  },
+  "705925": {
+   "name": "Berserking",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic dmg 25% chance: Serpent Ward haste buff stacking 3x"
+  },
+  "705928": {
+   "name": "Serpent's Guile",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705921": {
+   "name": "Alchemical Enhancement",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802100": {
+   "name": "Veil of Darkness",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "DoT",
+    "Ranged",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD, 15s: +15% dmg taken debuff + Shadow DoT while in range"
+  },
+  "804684": {
+   "name": "Voodoo Cauldron",
+   "source": "Brewing",
+   "primary": "Heal",
+   "tags": [
+    "Nature",
+    "HoT",
+    "AoE",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD, 15s: AoE periodic heal + 20% healing received buff in area"
+  },
+  "707209": {
+   "name": "Puppeteer's Grasp",
+   "source": "Voodoo",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD, 30s: transform + cast while moving + gain Spirit every 2s"
+  },
+  "500950": {
+   "name": "Mojo Beam",
+   "source": "Brewing",
+   "primary": "Heal",
+   "tags": [
+    "Nature",
+    "HoT",
+    "Channel",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD, 4s channel HoT on target; allows free instant heals during channel"
+  },
+  "503696": {
+   "name": "Mojo Addiction",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704505": {
+   "name": "Prolonged Malice",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706538": {
+   "name": "Touch of Mueh'zala",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Stun"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681222": {
+   "name": "Call of Sseratus",
+   "source": "Shadowhunting",
+   "primary": "CD Offensif",
+   "tags": [
+    "Nature",
+    "Summon",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40s CD, summons 4 Serpent Wards for 15s"
+  },
+  "705894": {
+   "name": "Soul Feeder",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Nature"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806563": {
+   "name": "Staff of the Coven",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "602220": {
+   "name": "Death Draught",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Nature"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD, feign death for up to 5 min"
+  },
+  "707212": {
+   "name": "Jungle Secrets",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "HoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Loa's Brew heals additional nearby ally via Effigy"
+  },
+  "500015": {
+   "name": "Shadow Puppets",
+   "source": "Voodoo",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "18s CD, summons Shadow Puppet that deals pulsing AoE Shadow dmg for 3s + collects Spirit"
+  },
+  "705902": {
+   "name": "Zalazane's Malice",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707405": {
+   "name": "Overflowing Juju",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705877": {
+   "name": "Stranglethorn Style",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804620": {
+   "name": "Loa Spirits",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "8% chance on dmg/heal to collect Spirit; Spirits boost Spirit stat"
+  },
+  "802092": {
+   "name": "De Other Side",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shadow Puppets procs stacking dmg+crit buff (max 10 stacks)"
+  },
+  "704495": {
+   "name": "Hexplosion",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "offensive crit procs +20% haste for 6s"
+  },
+  "706551": {
+   "name": "Growing Malice",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "each Hex of Malice tick stacks increasing damage on next tick"
+  },
+  "800330": {
+   "name": "War Golem",
+   "source": "Voodoo",
+   "primary": "CD Defensif",
+   "tags": [
+    "Arcane",
+    "Summon",
+    "Absorb"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD, 10s: summons golem that absorbs dmg (scales INT) + redirects spells from nearby allies"
+  },
+  "705910": {
+   "name": "Voodoo Strings",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705917": {
+   "name": "Hollow Spirit / It's Da Voodoo",
+   "source": "Voodoo",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Fire",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shadowflare/Hexfire damage applies target crit debuff"
+  },
+  "504426": {
+   "name": "Sen'jin's Swiftness / Sen'jin's Wisdom",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681465": {
+   "name": "Jinx of Decay / Will of the Serpent",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806469": {
+   "name": "Gonk's Blessing / Krag'wa's Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "712396": {
+   "name": "Dark Mojo / Blessing of Hir'eek",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301297": {
+   "name": "Blatant Curse / Latent Curse",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301175": {
+   "name": "Spirit Out Of The Bottle / Touch of the Spirits",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "HoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spirit in a Bottle grants Spirit; Mojo Beam AoE splash upgrade"
+  },
+  "803700": {
+   "name": "Spice: Peacebloom / Spice: Earthroot",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cauldron aura: -25% duration of roots/stuns/snares on raid"
+  },
+  "503750": {
+   "name": "Rage Brew / Arcane Brew",
+   "source": "Brewing",
+   "primary": "Buff",
+   "tags": [
+    "Physical",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD, ranged: restore 50% Energy/Rage/Focus + +15% AP for 10s to ally"
+  },
+  "705859": {
+   "name": "Jungle Booms / Doctor of the Jungle",
+   "source": "Brewing",
+   "primary": "Passive",
+   "tags": [
+    "Nature",
+    "HoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802714": {
+   "name": "Godslayer / The True Spirit",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706557": {
+   "name": "Hex of Death / Spirit Hunting",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Malefic Arrow applies healing reduction debuff"
+  },
+  "806286": {
+   "name": "Spirit Striker / Hexfire Mass",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "712435": {
+   "name": "Bwonsamdi's Edge / Dambala's Lethality",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707329": {
+   "name": "Viper Ward / Serpent Handler",
+   "source": "Shadowhunting",
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Summon",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "transforms Call of Sseratus to Viper Ward with Hexfire Blast proc"
+  },
+  "801582": {
+   "name": "Censure",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Holy",
+    "Ranged",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; Holy ranged AoE - likely a dispel/purge or mark; verify in-game"
+  },
+  "801685": {
+   "name": "Devotion of Bwonsamdi",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 5% mana, 10s CD, procs Devotion of Bwonsamdi - likely leech or lifesteal baseline"
+  },
+  "800195": {
+   "name": "Greater Resourceful Wuju",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30min raid Wuju buff: -5% spell cost to raid"
+  },
+  "801693": {
+   "name": "Hex of Malice",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "DoT",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline maintainable Shadow DoT (curse) + dmg taken debuff; core Voodoo/Shadowhunting enabler"
+  },
+  "806240": {
+   "name": "Hexbreak",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Nature",
+    "Dispel",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "instant ranged curse dispel"
+  },
+  "801796": {
+   "name": "Reclaim Soul",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cast resurrect"
+  },
+  "500960": {
+   "name": "Serpent Ward",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Summon",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "core ward totem: summons autoattacking Serpent Ward for 1 min"
+  },
+  "806294": {
+   "name": "Spirit Shock",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Interrupt",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "24s CD baseline interrupt (no silence unlike talent version)"
+  },
+  "560294": {
+   "name": "Spirit Wuju",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Holy",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30min Spirit + resistance Wuju buff on target"
+  },
+  "520307": {
+   "name": "Venomwing Form",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": [
+    "Nature"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "shapeshift with +40% move speed + hover"
+  },
+  "563122": {
+   "name": "Voodoo Concoctions",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline passive: -50% cast time on abilities"
+  }
+ }
+}

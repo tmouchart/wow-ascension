@@ -1,0 +1,1460 @@
+{
+ "slug": "pyromancer",
+ "class": "Pyromancer",
+ "count": 144,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "92124": {
+   "name": "Infernus",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Lava Shard damage now applies Infernus DoT"
+  },
+  "681196": {
+   "name": "Superheated",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on Ember consume/generate to proc 10% dmg+healing buff"
+  },
+  "802791": {
+   "name": "Firestorm",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD, 10s fire tornado area"
+  },
+  "520485": {
+   "name": "Magnitude 10",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704800": {
+   "name": "Searing Speed",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% proc on periodic dmg/heal: +50% move speed 2s"
+  },
+  "802167": {
+   "name": "Grace of Alexstrasza",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Fire", "Dispel", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min CD; AoE dispel movement impairment + stun/slow/root immunity 4s for raid"
+  },
+  "804300": {
+   "name": "Flamecasting",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "25% on Heat gen: Flamecasting stacking haste buff (key maintenance buff)"
+  },
+  "802068": {
+   "name": "Wreath of Flames",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Periodic fire crits grant Flamecasting stacks"
+  },
+  "707482": {
+   "name": "Roasted Alive",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Fired Up! proc chance by 20%"
+  },
+  "503915": {
+   "name": "Sageweaving",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ember consume: next Cinderheart/Kindle cast time -15% (stacking)"
+  },
+  "524818": {
+   "name": "Dragonscales",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "When stunned: -20% dmg taken for 3s"
+  },
+  "704848": {
+   "name": "Touched by Fire",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cinderheart, Ember Touch, Kindle +15% bonus healing SP"
+  },
+  "500166": {
+   "name": "Pyromaniac",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember spender crit +5%; Blaze DoT +10% damage"
+  },
+  "800816": {
+   "name": "Kael's Command",
+   "source": "Flameweaving",
+   "primary": "Heal",
+   "tags": ["Fire", "HoT", "Generator", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; generates 50 Heat; commands Phoenix dormant 10s, heals nearby allies"
+  },
+  "707126": {
+   "name": "Constant Burning",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spellburn CD -4s, duration +1s"
+  },
+  "525018": {
+   "name": "Fiery Intent",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cataclysm CD -30s"
+  },
+  "800791": {
+   "name": "Ignite",
+   "source": "Incineration",
+   "primary": "Rotational",
+   "tags": ["Fire", "DoT", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "21s DoT; generates 10 Heat per tick; punishes dispels"
+  },
+  "706889": {
+   "name": "Pyromantic Accelerants",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flames of Neltharion and Explode +15% vs Burning targets"
+  },
+  "800811": {
+   "name": "Sizzle",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "On Flamecasting expiry: fires Flare Bolts at up to 12 nearby enemies"
+  },
+  "704807": {
+   "name": "Magmatic",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "After Pillar of Flame: 10% chance for free Pillar of Flame on periodic ticks for 5s"
+  },
+  "300757": {
+   "name": "Melting Point",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fire crit strikes: target +3% spell crit chance taken for 12s"
+  },
+  "706893": {
+   "name": "Ignis Fatalis",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ignis Ultimatus guaranteed crit, +20% crit dmg, channels 0.5s faster"
+  },
+  "806148": {
+   "name": "Gaze of Ysera",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; sleep 40s (8s PvP); breakable by direct damage"
+  },
+  "704804": {
+   "name": "Critical Pressure",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% Int and +3% crit"
+  },
+  "560525": {
+   "name": "Fiery Passion",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Always-on raid +3% spell haste aura; self +3% spell haste"
+  },
+  "520019": {
+   "name": "Pyroclasm",
+   "source": "Incineration",
+   "primary": "Rotational",
+   "tags": ["Fire", "DoT", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 Ember; consumes Burning effects for burst DoT; 1 min CD"
+  },
+  "538441": {
+   "name": "Flames of the Firelord",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% on periodic dmg: Eruption proc 5s"
+  },
+  "704856": {
+   "name": "Stoke",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ignite/Infernus crits: extend their own duration by 3s (max 12s)"
+  },
+  "704849": {
+   "name": "Fire and Brimstone",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "Spender"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Generating Ember: Ember spenders +1% dmg+heal for 10s (5 stacks)"
+  },
+  "802170": {
+   "name": "Draconic Tempest",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dragon's Wrath damage: target +3% spell hit chance for 10s"
+  },
+  "802169": {
+   "name": "Hasty Incantation",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Movement"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flame Step range +10 yds"
+  },
+  "806747": {
+   "name": "Fueling the Fire",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Heal", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember Touch on Roaring Pyre/Phoenix erupts, healing 12 allies"
+  },
+  "500167": {
+   "name": "Spirit of Fire",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Absorption effects +20% effectiveness"
+  },
+  "805448": {
+   "name": "Rekindle",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Kindle healing: +5% healing done on target for 20s (2 stacks)"
+  },
+  "680378": {
+   "name": "Emberheart",
+   "source": "Flameweaving",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Instant 5 Flamecasting stacks; raid +30% move speed 15s + fire dmg bonus"
+  },
+  "706859": {
+   "name": "Veins of Fire",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flamecasting also grants +3% Spirit per stack"
+  },
+  "680369": {
+   "name": "Ignis Ultimatus",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Channel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s channel, 50-yd line; dmg enemies, heals allies; consumes Flamecasting for +15% per stack; no details (DB-404)"
+  },
+  "805477": {
+   "name": "Volcanic Shell",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Fire", "Absorb", "Shield", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; 10s absorb shield; generates 50 Heat"
+  },
+  "706650": {
+   "name": "Lava-Drenched",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spells -30% chance to be dispelled"
+  },
+  "804617": {
+   "name": "Cataclysmic Power",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flare Bolt +3% dmg per active periodic on target"
+  },
+  "706894": {
+   "name": "Obliteration",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Eruption also grants +20% spell haste + move speed 10s"
+  },
+  "800807": {
+   "name": "Circle of Fire",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Fire", "AoE", "Ranged", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; 10s zone, damages+incapacitates enemies inside 6s"
+  },
+  "802164": {
+   "name": "Draconic Rage",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% on Ember consume: Dragon's Wrath on all Blaze-affected enemies"
+  },
+  "503806": {
+   "name": "Hot Headed",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Circle of Fire CD -30s, disorient +1s, disoriented cannot receive healing"
+  },
+  "802107": {
+   "name": "Destroyer's Maw",
+   "source": "Draconic",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD, 2s cast, generates 30 Heat, unresistable"
+  },
+  "706886": {
+   "name": "Hellscape",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blaze duration +4s"
+  },
+  "705559": {
+   "name": "Wild Magic",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dragon's Wrath: 50% chance for bonus Arcane damage + mana burn"
+  },
+  "706875": {
+   "name": "Cinderstorm",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Firefall: -25% threat, +10% crit"
+  },
+  "802780": {
+   "name": "Aspect of Earth",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE", "DoT", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "3-stack proc from Flames of Neltharion/Echo of Nozdormu: volcano erupts 8-yd DoT, generates Heat"
+  },
+  "681334": {
+   "name": "Aspect of Magic",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dragon's Wrath: +3% Int stacking; Ember consume: +2% crit/+4% crit dmg stacking"
+  },
+  "520402": {
+   "name": "Death From Above",
+   "source": "Draconic",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Root", "Movement"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; root 40-yd line 3.5s then soar dealing DoT 10s"
+  },
+  "706239": {
+   "name": "Earthwarder",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% on melee hit while Draconic Aspect: next Flare Bolt instant within 8s"
+  },
+  "704831": {
+   "name": "Pyromancy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% critical damage"
+  },
+  "707493": {
+   "name": "Flames of the Aspects",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Casting Destroyer's Maw: +2 Flamecasting stacks"
+  },
+  "706896": {
+   "name": "Mad Aspect's Scepter",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Destroyer's Maw +20% damage"
+  },
+  "801905": {
+   "name": "Firefall",
+   "source": "Draconic",
+   "primary": "Rotational",
+   "tags": ["Fire", "AoE", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s CD; AoE fire strike 9 targets, generates 10 Heat per target"
+  },
+  "800796": {
+   "name": "Phoenix Egg",
+   "source": "Flameweaving",
+   "primary": "Heal",
+   "tags": ["Fire", "HoT", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Summons healing Phoenix for 1 min"
+  },
+  "805483": {
+   "name": "Molten Storm",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Lava Shard +10% crit chance and damage"
+  },
+  "706854": {
+   "name": "Phoenix Dive",
+   "source": "Flameweaving",
+   "primary": "CD Defensif",
+   "tags": ["Fire", "Absorb", "Shield"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Phoenix swoops to ally, shielding allies in path"
+  },
+  "680959": {
+   "name": "Searing Power",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flare Bolt +20% SP scaling"
+  },
+  "525059": {
+   "name": "Fiery Demeanor",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-50% spell pushback; Ascension of Thaurissan pushback resist +15%"
+  },
+  "802168": {
+   "name": "Aspect's Blessing",
+   "source": "Draconic",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; next Echo of Nozdormu/Flames of Neltharion guaranteed crit + Aspect of Time chain"
+  },
+  "704814": {
+   "name": "Expediting Power",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Echo of Nozdormu reduces Aspect's Blessing CD by additional 5%"
+  },
+  "704275": {
+   "name": "Shielded by Flames",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Absorb", "Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Healing crits apply absorb shield to ally = 30% of healing done for 8s"
+  },
+  "520488": {
+   "name": "Neltharion's Resolve",
+   "source": "Flameweaving",
+   "primary": "Utility",
+   "tags": ["Fire", "Dispel", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; party AoE ward vs fear for 1 min"
+  },
+  "807146": {
+   "name": "Sulfuron Harbinger",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blaze/Ignite +5% crit, faster tick, periodic crits: Sulfur Fumes proc"
+  },
+  "807126": {
+   "name": "Shazzrah's Boon",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember consume: +2% max mana restore"
+  },
+  "520884": {
+   "name": "Combustion",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Explode +15% dmg per Pyromancer periodic on target"
+  },
+  "520937": {
+   "name": "Echo of Nozdormu",
+   "source": "Draconic",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Fire", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Explode; Chromatic dmg + CDR 5%"
+  },
+  "806611": {
+   "name": "Dragon Leap",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Fire", "AoE", "Charge"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; leap to location, Fire dmg to 10 nearby enemies"
+  },
+  "503863": {
+   "name": "Searing Flames",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Lava Shard +30% SP scaling"
+  },
+  "300956": {
+   "name": "Alexstrasza's Gift",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember spenders +15% dmg and healing"
+  },
+  "520218": {
+   "name": "Cataclysm",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Knockback"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; launch+land AoE knockback + daze"
+  },
+  "802119": {
+   "name": "Draconic Invocation",
+   "source": "Draconic",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; instantly generates 5 Embers"
+  },
+  "803452": {
+   "name": "Agonizing Burns",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blaze duration +20%, benefits from spell haste"
+  },
+  "520770": {
+   "name": "Aspect of Eternity",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blaze can crit; Echo of Nozdormu/Aspect of Time: 20% proc for guaranteed Blaze crit+extended"
+  },
+  "804230": {
+   "name": "Sunstrider Array",
+   "source": "Flameweaving",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; 15s: gen 1 Ember per 3s, Cinderheart double Heat"
+  },
+  "800818": {
+   "name": "Ember Touch",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Fire", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 Ember; instant heal on ally"
+  },
+  "503636": {
+   "name": "Embrace the Fire",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blaze and Ignite +20% damage"
+  },
+  "704824": {
+   "name": "Legacy of Ragnaros",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Pyroclasm: next 3 Lava Shards within 12s are free and no CD"
+  },
+  "680977": {
+   "name": "Flames of Focus",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "Flamecasting +1 max stack, +5s duration; no details, classified from desc"
+  },
+  "805378": {
+   "name": "Burning Crescendo",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Phoenix Egg tick rate -2s"
+  },
+  "704861": {
+   "name": "Ember Charm",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cinderheart and Kindle cast time -15%"
+  },
+  "706872": {
+   "name": "Magma Guardian",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skin spells (Ashen Skin) +50% effectiveness"
+  },
+  "704855": {
+   "name": "Soothing Flames",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Kindle/Cinderheart healing: +30% HoT over 3s on target"
+  },
+  "560561": {
+   "name": "From The Ashes",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% healing done to allies below 35% HP"
+  },
+  "802120": {
+   "name": "Essence of Malygos",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Fire", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; restore 4% max mana/s for 6s on ally (doubled on self)"
+  },
+  "806736": {
+   "name": "Inferno",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "HoT", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "50% on healing crit: Inferno 5s HoT on target + AoE heal burst at end"
+  },
+  "524875": {
+   "name": "Pyroclastic Flow",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Flare Bolt/Explode/Flames of Neltharion: stacking dmg buff on subsequent casts"
+  },
+  "704845": {
+   "name": "Explosive",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blaze and Ignite tick rate -10%"
+  },
+  "500135": {
+   "name": "Meteor",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Fire", "AoE", "Ranged", "Generator", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; 8-yd AoE, disorients 4s, generates 50 Heat"
+  },
+  "806779": {
+   "name": "Offering of Executus",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Heal", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Phoenix death/expiry heals all allies within 30 yds for Phoenix max HP"
+  },
+  "504394": {
+   "name": "Rapid Incineration",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember consume: Lava Shard and Pillar of Flame CD -10%"
+  },
+  "504380": {
+   "name": "Inferno Barrier",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Fire", "Absorb", "Shield", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; shields ally, attackers take Fire dmg; generates 30 Heat"
+  },
+  "805496": {
+   "name": "Pillar of Flame",
+   "source": "Incineration",
+   "primary": "Rotational",
+   "tags": ["Fire", "AoE", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; AoE lava pillar, generates 20 Heat per target"
+  },
+  "706877": {
+   "name": "Dragon's Bane",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Lava Shard and Cinderheart +6% crit vs Burning targets"
+  },
+  "704278": {
+   "name": "Roaring Pyre",
+   "source": "Flameweaving",
+   "primary": "Heal",
+   "tags": ["Fire", "HoT", "AoE", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; summons bonfire 20s, heals allies within 30 yds every 2s + Spirit buff"
+  },
+  "805552": {
+   "name": "Scorching Spirit",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Spirit stat"
+  },
+  "520149": {
+   "name": "Burn Impurities",
+   "source": "Flameweaving",
+   "primary": "Utility",
+   "tags": ["Fire", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dispel 1 magic + 1 disease from ally"
+  },
+  "706878": {
+   "name": "Flaming Finesse",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seal of Al'ar spells +20% effectiveness"
+  },
+  "300759": {
+   "name": "Bright Flames",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Inferno Barrier absorb +10%, damage +15%"
+  },
+  "704812": {
+   "name": "Timed Attacks",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% spell haste"
+  },
+  "807319": {
+   "name": "Ascender",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Movement"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dragon Leap CD -5s"
+  },
+  "704809": {
+   "name": "Invocation of Flames",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Draconic Invocation: +5 Flamecasting stacks; Flamecasting max +5 stacks, +5s duration"
+  },
+  "704813": {
+   "name": "Overwhelming Flames",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Lava Shard spreads Blaze to 1 additional nearby enemy"
+  },
+  "511109": {
+   "name": "Breath of Neltharion",
+   "source": "Draconic",
+   "primary": "Utility",
+   "tags": ["Fire", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; cone disarms enemies (melee+ranged) 6s"
+  },
+  "704823": {
+   "name": "Fired Up!",
+   "source": "Incineration",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Crit", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; 15s: Ember spenders instant+30% refund chance, +20% crit chance"
+  },
+  "805468": {
+   "name": "Flamespiller",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Explode/Flames of Neltharion crits: Fired Up! +0.5s"
+  },
+  "503804": {
+   "name": "Heat Wave",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flamecasting stacks boost Explode/Flames of Neltharion +4% per stack; Fired Up! proc chance +20%"
+  },
+  "300975": {
+   "name": "To Ashes",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Damaging crits: +10 Heat, +3% base mana"
+  },
+  "704273": {
+   "name": "Tender Touch",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Heal", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember Touch effective healing: also heals 3 lowest-HP nearby allies for 15%"
+  },
+  "300970": {
+   "name": "Fire Safety",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+2% Fire dmg+heal, -10% threat"
+  },
+  "706862": {
+   "name": "Chains of Fire",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cindergrip cast time -0.25s, range +10 yds"
+  },
+  "680836": {
+   "name": "Flamer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% spell haste"
+  },
+  "520381": {
+   "name": "Black Magic",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Heat generation: Draconic Invocation and Essence of Malygos CD -3% (1/s)"
+  },
+  "300932": {
+   "name": "Lucifron's Rage",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Phoenix effective healing: allies deal Fire dmg for 6s",
+   "confidence": "low"
+  },
+  "704851": {
+   "name": "Living Flame",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ember Touch +10% crit chance"
+  },
+  "704863": {
+   "name": "Invigoration",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Phoenix healing: +5 Heat per heal"
+  },
+  "704862": {
+   "name": "Lifebinder's Fire",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ember gen: +3% healing done 8s (5 stacks)"
+  },
+  "681145": {
+   "name": "Cleansing Flames",
+   "source": "Flameweaving",
+   "primary": "Rotational",
+   "tags": ["Fire", "AoE", "Channel", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE cleave-heal/dmg channel; generates 10 Heat per tick; hits 5 targets"
+  },
+  "706464": {
+   "name": "Warmth",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Heal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Periodic dmg heals lowest-HP nearby ally for 25%"
+  },
+  "300751": {
+   "name": "Residual Power / Arsonist",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each active Ember: Explode cast time -8%"
+  },
+  "680970": {
+   "name": "Dark Iron Legacy / Destroyer's Legacy",
+   "source": "Incineration",
+   "primary": "Passive",
+   "tags": ["Fire", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Meteor-disoriented targets: next Explode/Lava Shard +40% dmg"
+  },
+  "504754": {
+   "name": "Heated / Blessing of the Firelands",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dragon Leap dmg generates 10 Heat"
+  },
+  "807159": {
+   "name": "Purifying Flames / Binding Flames",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Essence of Malygos duration +3s"
+  },
+  "704820": {
+   "name": "Ysera's Blessing / Al Dente",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Gaze of Ysera cast time -0.5s, -10% break chance from damage"
+  },
+  "807404": {
+   "name": "Unfathomably Hot! / Concentrated Fire",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each Cleansing Flames tick: +5 Heat"
+  },
+  "570001": {
+   "name": "Cauterizing Wounds / Brilliance",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ember Touch healing: grants Flamecasting stack"
+  },
+  "706860": {
+   "name": "Scepter of Fire / Blessing of the Inferno",
+   "source": "Flameweaving",
+   "primary": "Passive",
+   "tags": ["Fire", "HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Inferno duration +5s, end-burst triggers every 5s"
+  },
+  "707325": {
+   "name": "Flames of Fate / Lifebringer's Blessing",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Aspect's Blessing: +2 charges, CD doubled, cost +50%"
+  },
+  "707503": {
+   "name": "Perpetual Burning / Flames of Execution",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blaze duration +1s per Ember held when casting"
+  },
+  "704818": {
+   "name": "Molten Fury / Blackrock Mountaineer",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Eruption +15% dmg+heal but -50% duration"
+  },
+  "704816": {
+   "name": "Soul of the Dragon / Inner Flame",
+   "source": "Draconic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Flare Bolt: 15% chance to recast free"
+  },
+  "800806": {
+   "name": "Cinderheart",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Fire", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s cast heal on ally; baseline heal"
+  },
+  "570121": {
+   "name": "Conjure Campfire",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Fire"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Summons campfire (rest/vendor-style utility)"
+  },
+  "804868": {
+   "name": "Flame Seeker",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Fire", "Tracking"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Track Dragonkin and Elementals"
+  },
+  "800790": {
+   "name": "Flare Bolt",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Core 1.5s fire nuke; main filler, generates Heat"
+  },
+  "570170": {
+   "name": "Greater Seal of Alysrazor",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff", "Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min AoE intellect buff (raid blessing)"
+  },
+  "803950": {
+   "name": "Lava Shard",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; instant cast, generates 1 Ember"
+  },
+  "501487": {
+   "name": "Make Campfire",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Fire"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Crafts a campfire (out-of-combat utility)"
+  },
+  "804662": {
+   "name": "Melt Lock",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Fire"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fire-powered lockpicking"
+  },
+  "800408": {
+   "name": "Overheat Delayer",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "No desc; internal Heat overflow delay mechanic (1s aura, Unknown Effect)"
+  },
+  "800196": {
+   "name": "Seal of Alysrazor",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff", "Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min single-target Intellect buff (lower rank of Greater Seal)"
+  },
+  "800808": {
+   "name": "Spellburn",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Fire", "Interrupt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25s CD; Fire interrupt, 5s lockout"
+  }
+ }
+}

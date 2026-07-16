@@ -1,0 +1,1678 @@
+{
+ "slug": "starcaller",
+ "class": "Starcaller",
+ "count": 175,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "805546": {
+   "name": "Moonlit Slumber",
+   "source": "Moon Priest",
+   "primary": "Control",
+   "tags": ["Arcane", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "sleep 30s (6 vs players), mana drain while sleeping"
+  },
+  "706572": {
+   "name": "Tyrande's Guidance",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300237": {
+   "name": "Elune's Favor",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801231": {
+   "name": "Celestial Form",
+   "source": "Moon Priest",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15s self buff: +10% crit, crits reduce heal CD, applies Scattered Stars"
+  },
+  "300258": {
+   "name": "Protected by the Stars",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704776": {
+   "name": "Star Citizen",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800508": {
+   "name": "Galaxy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706230": {
+   "name": "Unleashed Wisps",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Arcane", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "704790": {
+   "name": "Warden Training",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300251": {
+   "name": "The Stars Align",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806738": {
+   "name": "Scattering Blades",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802203": {
+   "name": "Aspect of the Goddess",
+   "source": "Moon Priest",
+   "primary": "Buff",
+   "tags": ["Arcane", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "10s self buff: +10% healing, spells cannot miss, consumes Scattered Stars to heal allies"
+  },
+  "801226": {
+   "name": "Bright Moon",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704774": {
+   "name": "Mu'sha's Resilience",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801134": {
+   "name": "Cosmic Shift",
+   "source": "Moon Priest",
+   "primary": "Utility",
+   "tags": ["Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "grants improved stealth to ally for 10s, 3 min CD"
+  },
+  "300876": {
+   "name": "Elune's Blessing",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid melee/ranged haste aura"
+  },
+  "804733": {
+   "name": "Rippling Moonwater",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "healing applies Moonwater stacks; dealing damage consumes to heal you"
+  },
+  "500582": {
+   "name": "Goddess Watch Over",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300250": {
+   "name": "Moonstone Hilt",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704745": {
+   "name": "Final Prayer",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524642": {
+   "name": "Star-Guided Arrows",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680788": {
+   "name": "Will of Elune",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801123": {
+   "name": "Aspect of the Cosmos",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Arcane", "Slow"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "toggleable aspect: 40% proc on melee/ranged to apply Scattered Stars + slow enemy"
+  },
+  "520482": {
+   "name": "Omnipresent Moon",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560951": {
+   "name": "Moonwell Tides",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "680775": {
+   "name": "Wrath of the Moon",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680215": {
+   "name": "Lunar Charge",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "after Shooting Star, next melee/spell deals bonus Arcane dmg scaled by distance"
+  },
+  "680704": {
+   "name": "Umbral Blade",
+   "source": "Warden",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee AoE that consumes Scattered Stars"
+  },
+  "800505": {
+   "name": "Shooting Star",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+60% speed 4s, cannot be slowed, cannot stop; 1 min CD"
+  },
+  "707639": {
+   "name": "Starfire Power",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on Starfire Shot to grant Drawstring of Elune buff"
+  },
+  "704798": {
+   "name": "Warrior of Elune",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680773": {
+   "name": "Celestial Surge",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680711": {
+   "name": "Spirit of Vengeance",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704603": {
+   "name": "Fury of the Stars",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680770": {
+   "name": "Lethal Pursuit",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680212": {
+   "name": "Warden's Precision",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680771": {
+   "name": "Highest Order",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704389": {
+   "name": "Aspect Mastery",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680774": {
+   "name": "Elune's Presence",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% max HP to all raid/party within 40 yds for 10s"
+  },
+  "680708": {
+   "name": "Pierce The Night",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680777": {
+   "name": "Moontouched Weapons",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503637": {
+   "name": "Dance In The Starlight",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802680": {
+   "name": "Blade of the Moon",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on consuming Scattered Stars to unlock Moonblade proc"
+  },
+  "560319": {
+   "name": "Celestial Divination",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560501": {
+   "name": "Moonflares",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "dodge/parry proc drops Moonflare AoE on attacker"
+  },
+  "680786": {
+   "name": "Coalesced Resilience",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704787": {
+   "name": "Starbound",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805505": {
+   "name": "Starlight Duelist",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Buff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "block/parry proc: +10% damage 6s"
+  },
+  "680742": {
+   "name": "Font of Magic",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804385": {
+   "name": "Cosmic Crown",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680791": {
+   "name": "Lunar Knight",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680755": {
+   "name": "Chosen of the Moon",
+   "source": "Moon Guard",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Taunt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-60% physical dmg taken 10s + AoE taunt 8 yds"
+  },
+  "704604": {
+   "name": "Flow of Mana",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680801": {
+   "name": "Tyrande's Vigilance",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524638": {
+   "name": "Ishnu-alah",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800504": {
+   "name": "Eclipsing Arrows",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Heal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "marks healed allies; Huntress Shot then heals them"
+  },
+  "500206": {
+   "name": "Cycle of the Moon",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "alternates Full Moon (+5% crit) and New Moon (25% chance Scattered Stars) every 10s"
+  },
+  "300995": {
+   "name": "Phase Guider",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "561062": {
+   "name": "Lunar Splinters",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704739": {
+   "name": "Starfire Barrage",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Arcane", "Ranged", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 3rd Starfire Shot triggers enhanced Starfire Barrage proc"
+  },
+  "680820": {
+   "name": "Enchanted Well",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680822": {
+   "name": "Avatar of Vengeance",
+   "source": "Warden",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "teleport to target + 25% Int 30s + Astral Blade range/teleport; DoT while active"
+  },
+  "704783": {
+   "name": "Eye of Elune",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "561022": {
+   "name": "Hunter's Sight",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "575030": {
+   "name": "Moonflow",
+   "source": "Moon Priest",
+   "primary": "Heal",
+   "tags": ["Arcane", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE heal up to party/raid within 40 yds; Lunar Eclipse consumes Scattered Stars for damage + mana"
+  },
+  "504628": {
+   "name": "Cosmic Duality",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "damage grants Cosmic Harmony (+5% next heal); healing grants Cosmic Wrath (+5% next damage)"
+  },
+  "504006": {
+   "name": "On The Hunt",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "706232": {
+   "name": "Moonblessed Aspects",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704756": {
+   "name": "Lunar Blessing",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707751": {
+   "name": "Tyrande's Training",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807741": {
+   "name": "Halt",
+   "source": "Warden",
+   "primary": "Control",
+   "tags": ["Arcane", "Silence", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "teleport + silence nearby enemies 4s, 2 min CD"
+  },
+  "805433": {
+   "name": "Moonlit Bulwark",
+   "source": "Moon Guard",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Shield", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "mana-scaled absorb shield 10s, usable while stunned, 3 min CD"
+  },
+  "504003": {
+   "name": "Enchanted Stream",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704741": {
+   "name": "Blessed By The Stars",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "300249": {
+   "name": "Rapid Cycle",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800497": {
+   "name": "Starcall",
+   "source": "Sentinel",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE arcane nuke applying Scattered Stars; consuming a star reduces CD by 1.5s"
+  },
+  "300252": {
+   "name": "Second Moon",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 10th consumed Scattered Star launches comet at 5 nearby enemies"
+  },
+  "801989": {
+   "name": "Lunar Resplendence",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800506": {
+   "name": "Sentinel Glaive",
+   "source": "Warden",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Ranged", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD, ranged throw, mana-drain debuff on target"
+  },
+  "503584": {
+   "name": "Continual Starfall",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Astral Flares from Aspect of the Stars grant stacking +3% haste proc"
+  },
+  "574350": {
+   "name": "Starlit Finesse",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704777": {
+   "name": "Infused Aegis",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Reflect"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s melee counterattack aura (Arcane dmg), drains 30% max mana; 30s CD"
+  },
+  "680703": {
+   "name": "Fan of Knives",
+   "source": "Warden",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE mana-scaled dmg applying 1 Scattered Star per hit; consuming Scattered Star reduces CD"
+  },
+  "704755": {
+   "name": "Enchanted Water",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520481": {
+   "name": "Arrows In The Night",
+   "source": "Sentinel",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "AoE", "Ranged", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s buff: Huntress Shot cleaves 3 extra enemies + AoE explosion; 1 min CD"
+  },
+  "801976": {
+   "name": "Way of the Goddess",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "570231": {
+   "name": "Reverse Magic",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Reflect"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reflect next spell cast on you within 3s; drains attacker mana"
+  },
+  "801135": {
+   "name": "Starshatter",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Arcane", "Stun", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "line AoE stun 5s + Scattered Star; 1.5 min CD"
+  },
+  "704793": {
+   "name": "Improved Eclipse of Fury",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "563725": {
+   "name": "Arrow of the Goddess",
+   "source": "Sentinel",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "line-piercing 400% Weapon Dmg + mana-scaled Arcane; 1 min CD, 2s cast"
+  },
+  "804381": {
+   "name": "Blanket of Stars",
+   "source": "Moon Guard",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% block chance and block value 8s; 35s CD; requires shield"
+  },
+  "300994": {
+   "name": "Astral Projection",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704725": {
+   "name": "Lunar Cascade",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit heals from Moonflow/Prayer of Elune apply Eclipsing Arrows mark"
+  },
+  "520590": {
+   "name": "Trueshot",
+   "source": "Sentinel",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges; AoE ranged, consumes Scattered Stars; drains 20% max mana"
+  },
+  "801987": {
+   "name": "Prayer of Elune",
+   "source": "Moon Priest",
+   "primary": "Heal",
+   "tags": ["Holy", "AoE", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE heal 12 allies within 40 yds + dispel 1 magic effect; 30s CD"
+  },
+  "704759": {
+   "name": "Teachings of Elune",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504004": {
+   "name": "Exemplary Draw",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Moon Arrow deals 20% more + applies spell-dmg-taken debuff proc"
+  },
+  "560440": {
+   "name": "Enduring Moon",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit strikes apply +10% spell damage taken debuff proc on target"
+  },
+  "801996": {
+   "name": "Starburst",
+   "source": "Moon Guard",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "Melee", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE melee Arcane dmg, -20% attack speed 10s; consumes Scattered Star reduces CD"
+  },
+  "801155": {
+   "name": "Astral Reconstitution",
+   "source": "Moon Guard",
+   "primary": "CD Defensif",
+   "tags": ["Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30% of damage taken converted to mana 10s; 1 min CD"
+  },
+  "536216": {
+   "name": "Mooncharged Blades",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "blocking grants: next Starsunder hits extra enemy + -30% cost"
+  },
+  "680784": {
+   "name": "Vengeful Inspiration",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+10% attack speed; melee crits apply Scattered Stars"
+  },
+  "804739": {
+   "name": "Moonwell",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s AoE zone: +25% healing + 100% mana regen for allies inside; 2 min CD"
+  },
+  "801978": {
+   "name": "Starfire Shot",
+   "source": "Sentinel",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "main Sentinel ranged nuke + Scattered Stars consumer"
+  },
+  "704740": {
+   "name": "Sentinel's Focus",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on Starfire Shot to fire free Huntress Shot"
+  },
+  "805437": {
+   "name": "Pulverizing Blade",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Warden's Blade grants Pulverizing Blade: next 5 Starsunders deal scaling bonus Arcane dmg"
+  },
+  "805439": {
+   "name": "Shadowsong's Mandate",
+   "source": "Warden",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% crit 10s; crits have 40% chance to trigger Warden's Blade; 2 min CD"
+  },
+  "807160": {
+   "name": "Infused Blades",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance Astral Blade resets its CD and refunds mana"
+  },
+  "704795": {
+   "name": "Enchanted Aegis",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805508": {
+   "name": "Warden's Blade",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD weapon attack 150% Weapon Dmg; effect varies by active Aspect (mana regen/debuff/Scattered Star/root/drain)"
+  },
+  "801146": {
+   "name": "Night Hunter",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680810": {
+   "name": "Moonmancer",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805550": {
+   "name": "Starsweep",
+   "source": "Moon Guard",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee AoE Arcane; consumes Scattered Stars reducing CD; 20s CD"
+  },
+  "805563": {
+   "name": "Astral Blade",
+   "source": "Warden",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "heavy melee strike: 100%SP + 100%AP Arcane + 15% dmg taken debuff 5s; drains 25% max mana; 20s CD"
+  },
+  "704778": {
+   "name": "Starbarian",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806155": {
+   "name": "Astral Aegis",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Reflect", "Silence"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s: magic dmg silences attacker 1s + deals Arcane dmg back; drains 30% max mana; 30s CD"
+  },
+  "804652": {
+   "name": "Vial of Moonwell Water",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes all CC + 3s immunity; usable while stunned/feared/polymorphed; 3 min CD"
+  },
+  "574328": {
+   "name": "Touch of Moonlight",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "single-target mana-scaled heal, 1.5s cast"
+  },
+  "805503": {
+   "name": "Moonstone",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680813": {
+   "name": "Lunar Amplification",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "572784": {
+   "name": "Stellar Convergence",
+   "source": "Moon Priest",
+   "primary": "Buff",
+   "tags": ["AoE", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "applies Eclipsing Arrows to all raid/party within 40 yds; 1.5 min CD"
+  },
+  "561222": {
+   "name": "Moonlit Impaler",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704343": {
+   "name": "Full Cycle",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560896": {
+   "name": "Tear Drops",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704769": {
+   "name": "Huntress of Elune",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680812": {
+   "name": "Lunar Phasing",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801143": {
+   "name": "Stellar Amplification",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on consuming Scattered Stars to make next Astral Blade free"
+  },
+  "704785": {
+   "name": "Shrouded Stars",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on: -3% damage taken for all party/raid members"
+  },
+  "680805": {
+   "name": "Healing Prayers",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704771": {
+   "name": "Shattered Stars",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680223": {
+   "name": "Enduring Hunt",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801975": {
+   "name": "Drawstring of Elune",
+   "source": "Sentinel",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Ranged", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s buff: Huntress Shot/Starcall apply extra Scattered Star + range to 50 yds; 2 min CD"
+  },
+  "681521": {
+   "name": "Lunar Revelation",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560956": {
+   "name": "Rampaging Waters",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "consuming Scattered Stars stacks +1% heal and +1% crit proc (10 stacks)"
+  },
+  "500608": {
+   "name": "Star-Charged",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503779": {
+   "name": "Lunar Swiftness",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Moon Arrow procs Lunar Swiftness: reduces Hand of Elune cast time -20% (stacks 5)"
+  },
+  "504001": {
+   "name": "Elune's Grace",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit heals from Hand of Elune apply +10% armor buff on target"
+  },
+  "560539": {
+   "name": "Flow of Waters",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on: +3% crit for self + raid"
+  },
+  "704764": {
+   "name": "Lunar Prophecy",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300262": {
+   "name": "Universal Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503583": {
+   "name": "Moonlight Ripple",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704765": {
+   "name": "Cascade",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 8th consumed Scattered Star empowers next Starcall +50%"
+  },
+  "680789": {
+   "name": "Nightborne Armaments",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300259": {
+   "name": "Constellation Barrier",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504694": {
+   "name": "Pouch of Stardust",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "561206": {
+   "name": "Celestial Prowess",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560721": {
+   "name": "Starcrash",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680709": {
+   "name": "Vigil of the Watchers",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on: +3% crit for all party/raid"
+  },
+  "704784": {
+   "name": "Rally The Sentinels",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680779": {
+   "name": "Moonveil Screen",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704786": {
+   "name": "Wrath of Elune",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "503639": {
+   "name": "Starcovered Night",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706575": {
+   "name": "Star Pupil",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "damaging crits proc Star Pupil: stacking Moonwell Splash cast-time reduction"
+  },
+  "704794": {
+   "name": "Pulsar Explosion",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704788": {
+   "name": "Tyrande's Guidance",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704792": {
+   "name": "Starburst Invigoration",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% Energy regeneration"
+  },
+  "300992": {
+   "name": "Nebula",
+   "source": "Moon Guard",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680705": {
+   "name": "Bonds of Justice",
+   "source": "Warden",
+   "primary": "Control",
+   "tags": ["Arcane", "Root", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "tether enemy 8s; if tether broken or target runs 10 yds, grip + heavy Arcane dmg",
+   "confidence": "low"
+  },
+  "300989": {
+   "name": "Lunar Anomaly / Moonlit Lancer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300256": {
+   "name": "Moonwalk / Twinkle Toes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680738": {
+   "name": "Guided Blades / Glaive Tossing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300772": {
+   "name": "Cosmic Strides / Moon Runner",
+   "source": "Sentinel",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707637": {
+   "name": "Last Prayer / Mending Surge",
+   "source": "Moon Priest",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704789": {
+   "name": "Astral Onslaught / Astral Finesse",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706574": {
+   "name": "Astral Combatant / Maiev's Guard",
+   "source": "Warden",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Lunar Lance/Umbral Blade apply +10% Scattered Star dmg taken debuff on enemy"
+  },
+  "800510": {
+   "name": "Aspect of the Stars",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Arcane"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "toggleable aspect: 25% proc on attacks to call Astral Flare + apply Scattered Stars; 10s CD",
+   "confidence": "low"
+  },
+  "801128": {
+   "name": "Aspect of the Warden",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "toggleable warden aspect (no desc); effects unspecified in DB entry",
+   "confidence": "low"
+  },
+  "801795": {
+   "name": "Celestial Awakening",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Holy"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "resurrect spell: 8s cast, +200% mana regen aura 10s after; 60% mana cost"
+  },
+  "800496": {
+   "name": "Celestial Strike",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40 Energy melee attack; baseline builder"
+  },
+  "501486": {
+   "name": "Grace of the Moon",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min party water walking aura",
+   "confidence": "low"
+  },
+  "805432": {
+   "name": "Halt",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Interrupt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "interrupt (Mechanic: Interrupted); 15s CD"
+  },
+  "801132": {
+   "name": "Lunar Lance",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Ranged", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "instant ranged Arcane dmg + DoT + consumes Scattered Stars; baseline filler"
+  },
+  "800370": {
+   "name": "Moonwell Splash",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "single-target heal; 2.5s cast"
+  },
+  "800292": {
+   "name": "Mu'sha's Blessing",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "party water walking + swim speed + underwater breathing; utility self/party buff",
+   "confidence": "low"
+  },
+  "801127": {
+   "name": "Starsunder",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "instant melee Arcane attack; baseline builder"
+  }
+ }
+}

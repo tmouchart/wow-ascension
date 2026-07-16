@@ -1,0 +1,1768 @@
+{
+ "slug": "cultist",
+ "class": "Cultist",
+ "count": 180,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "800432": {
+   "name": "Psychic Suppression",
+   "source": "Corruption",
+   "primary": "Control",
+   "tags": ["Shadow", "Channel", "Ranged", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "levitate+stun channel, AoE spell damage amp"
+  },
+  "92130": {
+   "name": "Corrupting Whispers",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "proc: 20% magic dmg + -30% mana cost for 8s"
+  },
+  "574147": {
+   "name": "Void Power",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "healing power scales with weapon dmg"
+  },
+  "302072": {
+   "name": "Persistent Prayers",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Absorb", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704871": {
+   "name": "Voidforged Edge",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Shadow", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681389": {
+   "name": "Residual Energy",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300753": {
+   "name": "Blade of the Depths",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800430": {
+   "name": "Entropic Singularity",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "AoE", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "void zone slow field, 1 min cd"
+  },
+  "500712": {
+   "name": "Ancient Curse",
+   "source": "Corruption",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "DoT", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "generates 20 Insanity; debuff + delayed burst dmg"
+  },
+  "805114": {
+   "name": "Mass Nightmare",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "AoE", "Horrify", "Interrupt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE horrify 5 enemies + interrupt, 3 min cd"
+  },
+  "706180": {
+   "name": "Darkward",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706182": {
+   "name": "Inner Darkness",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "proc: block generates 3 Insanity"
+  },
+  "704878": {
+   "name": "Eternal Grasp",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Tentacle duration"
+  },
+  "582591": {
+   "name": "Embrace the Void",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Absorb", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pseudo-immunity absorb up to 100% HP, then 50% selfheal, 5 min cd"
+  },
+  "573028": {
+   "name": "Grasp of Zek'voz",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704880": {
+   "name": "Doomsayer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Presence mana cost"
+  },
+  "704895": {
+   "name": "Empire's Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300284": {
+   "name": "Dark Reservoir",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706915": {
+   "name": "Cunning Nature",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300302": {
+   "name": "Feeding Darkness",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Crit", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560301": {
+   "name": "Hallucination",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Shadow", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "mirrors + threat drop + root/charm immunity, 30s cd"
+  },
+  "300275": {
+   "name": "Hysterical Momentum",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blade of the Empire grants stacking haste proc"
+  },
+  "582836": {
+   "name": "Abyssal Edge",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680609": {
+   "name": "Void Strikes",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blade/Entropic Slam scale with defense rating"
+  },
+  "706179": {
+   "name": "Moment of Clarity",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300309": {
+   "name": "Absolute Horror",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560321": {
+   "name": "Eldritch Obelisk",
+   "source": "Godblade",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Summon", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; summons obelisk empowering Tentacles + ally movement speed"
+  },
+  "706187": {
+   "name": "Twisted Sanity",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Tentacles heal allies affected by Black Blood"
+  },
+  "560080": {
+   "name": "Boon of Y'shaarj",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301984": {
+   "name": "Yogg-Saron's Embrace",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706189": {
+   "name": "Gift of C'Thun",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805572": {
+   "name": "Obliteration Beam",
+   "source": "Corruption",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "generates 10 Insanity; 20s cd AoE nuke, bonus dmg above 60 Insanity"
+  },
+  "802048": {
+   "name": "Corruptor's Gaze",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Tentacle damage"
+  },
+  "500719": {
+   "name": "Glimpse of Madness",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Obliteration Beam cd reduction + Madness debuff proc"
+  },
+  "560526": {
+   "name": "Visions",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Haste", "Raidbuff", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid spell haste aura"
+  },
+  "706921": {
+   "name": "Foulness",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504642": {
+   "name": "As The Prophecy Foretold",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee crit refreshes Blade of the Empire charge"
+  },
+  "560715": {
+   "name": "Dark Calling",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Summon", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "proc: below 35% HP summons Y'shaarj manifestations (2 min icd)"
+  },
+  "301262": {
+   "name": "Saronite Blessing",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Haste", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee crit proc: +25% attack speed + auto attack heals lowest ally"
+  },
+  "524876": {
+   "name": "Twilight Shieldtoss",
+   "source": "Dreadnought",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "AoE", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cd; bouncing shield throw, dmg scales with Insanity"
+  },
+  "560320": {
+   "name": "Voidseeker",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on melee to reset Netherstrike cd"
+  },
+  "500704": {
+   "name": "Empire's Grasp",
+   "source": "Godblade",
+   "primary": "Control",
+   "tags": ["Shadow", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "teleports enemy to you + 60% slow, 35s cd"
+  },
+  "561035": {
+   "name": "Teachings of Mythrax",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Buff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Presence duration"
+  },
+  "681104": {
+   "name": "Voidborne",
+   "source": "Godblade",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Crit", "Immunity", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% dmg/crit + stun immunity 15s, generates 1 Insanity/s; no details in DB",
+   "confidence": "low"
+  },
+  "802728": {
+   "name": "Eye of N'zoth",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805117": {
+   "name": "Nutcase",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadow of the Void also grants +10% crit damage"
+  },
+  "806768": {
+   "name": "Book of N'Zoth",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadow of the Void stacks +1"
+  },
+  "560091": {
+   "name": "Eldritch Bastion",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases shield armor contribution"
+  },
+  "804670": {
+   "name": "Abyssal Ward",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "-50% dmg taken 10s/5 attacks; usable while stunned; tracked maintenance CD"
+  },
+  "524804": {
+   "name": "Seething Void",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Empire's Grasp cd"
+  },
+  "560002": {
+   "name": "Voidwarding",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on -3% raid dmg taken aura (does not stack)"
+  },
+  "300272": {
+   "name": "Everpresent",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Presence trigger chance"
+  },
+  "300268": {
+   "name": "Adaptive Combatant",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680558": {
+   "name": "Bulwark of Y'shaarj",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increased block chance scaling with Insanity"
+  },
+  "560502": {
+   "name": "Wavering Hope",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680581": {
+   "name": "General of Y'shaarj",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680569": {
+   "name": "Malignant Armor",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "armor converts to AP"
+  },
+  "680555": {
+   "name": "Void-Enhanced Shield",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "582308": {
+   "name": "In And Out of Insanity",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300278": {
+   "name": "Bulwark of Horror",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "avoid refreshes Blade of the Empire charge"
+  },
+  "680579": {
+   "name": "Dreadful",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Crit", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "block rating -> crit rating; crits reduce Dreadfall/Dreadnought cd"
+  },
+  "680574": {
+   "name": "Shadowy Symbiosis",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680575": {
+   "name": "Void Augmentation",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681088": {
+   "name": "Embodiment of Y'shaarj",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Absorb", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Void Shield absorb doubled; absorbing grants SP"
+  },
+  "704889": {
+   "name": "Twilight Guardian",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shieldtoss first hit generates a self shield"
+  },
+  "681474": {
+   "name": "Eldritch Force",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE", "Generator", "Slow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 5th ability crit transforms Gaze of C'Thun into Eldritch Force AoE"
+  },
+  "500751": {
+   "name": "Abyssal Covenant",
+   "source": "Heretic",
+   "primary": "Buff",
+   "tags": ["Shadow", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "link to ally: damage-share 10% + 20% dmg->healing for 30 min"
+  },
+  "582589": {
+   "name": "Mind Games",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Hallucination cd and mana cost"
+  },
+  "301209": {
+   "name": "Dark Prophet",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704892": {
+   "name": "Horrorbolt Volley",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "after 3 Horrorbolts transforms to AoE Volley proc"
+  },
+  "525065": {
+   "name": "Twisted Seal",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Reflect", "Silence"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "deflect all spells 5s (pacify+silence self), silences caster, 2 min cd"
+  },
+  "520405": {
+   "name": "Twilight Domination",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800463": {
+   "name": "Void Reaver",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Arcane", "Cleave"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on avoid/absorb to buff next Blade of the Empire"
+  },
+  "301315": {
+   "name": "Dread",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707429": {
+   "name": "Overwhelming Void",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Mass Nightmare cd at 80+ Insanity"
+  },
+  "680508": {
+   "name": "Touch of the Void",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Shadow", "Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707753": {
+   "name": "Horrific Visions",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Dark Revelation proc chance above 40 Insanity"
+  },
+  "806175": {
+   "name": "Dreadfall",
+   "source": "Dreadnought",
+   "primary": "Movement",
+   "tags": ["Shadow", "AoE", "Charge", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "tank charge with AoE damage + threat, 25s cd"
+  },
+  "806384": {
+   "name": "Visions of the Empire",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802047": {
+   "name": "Warrior of the Old Gods",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Physical", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806382": {
+   "name": "Dark Matter",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Satiate channel now also heals nearby allies"
+  },
+  "704887": {
+   "name": "Empire Commander",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500715": {
+   "name": "Void Shield",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Absorb", "Shield", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "cast on ally, absorb 195+60%SP; applies Wracked Mind ICD on target"
+  },
+  "301068": {
+   "name": "Sunderer of Realities",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "successive Wrath casts ramp + spawn void portal proc"
+  },
+  "802049": {
+   "name": "Eldritch Eye",
+   "source": "Heretic",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; next 3 Eldritch Mendings/Malevolences instant + guaranteed crit"
+  },
+  "706928": {
+   "name": "Shadow Words",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805115": {
+   "name": "End Times",
+   "source": "Godblade",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min cd; extends range + halves mana cost of Blade/Netherstrike/Hammer for 15s"
+  },
+  "680600": {
+   "name": "Eldritch Strength",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Physical", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520388": {
+   "name": "Vision of Doom",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "AoE", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min cd; dooms nearby targets for delayed 100% dmg replay; blocks healing on enemies"
+  },
+  "520345": {
+   "name": "Dark Veil",
+   "source": "Heretic",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Absorb", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min cd; channel stacking absorb on self+ally, teleport if holds; stun/silence immune"
+  },
+  "712471": {
+   "name": "Dark Chants",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805126": {
+   "name": "Shroud of Pride",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Abyssal Ward stacks +3"
+  },
+  "560109": {
+   "name": "Corrupt Mind",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Fear", "Root", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "generates 10 Insanity; 1 min cd, bouncing fear-in-place AoE root"
+  },
+  "802727": {
+   "name": "Eldritch Devastation",
+   "source": "Corruption",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Channel", "AoE", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "channeled chain DoT, no cd"
+  },
+  "301200": {
+   "name": "Apocalyptic Skies",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Wrath cast spawns void portal casting extra abilities"
+  },
+  "706909": {
+   "name": "Yawning Decay",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 3rd Horrorbolt empowers next with DoT"
+  },
+  "300307": {
+   "name": "Embrace the Void",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reaching 60 Insanity buffs damage 10s; no DB details",
+   "confidence": "low"
+  },
+  "680570": {
+   "name": "Void Tolerance",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Abyssal Ward cd"
+  },
+  "802044": {
+   "name": "Tentacle of Y'shaarj",
+   "source": "Dreadnought",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "summons tank tentacle 30s, AoE slam on Gaze; no DB details",
+   "confidence": "low"
+  },
+  "300291": {
+   "name": "Void Barrier",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "681425": {
+   "name": "Eldritch Entities",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Summon", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "ability crit summons Manifestation of Y'shaarj (heals 2% hp)"
+  },
+  "681087": {
+   "name": "Twilight Incarnate",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shieldtoss generates 3 Insanity"
+  },
+  "572064": {
+   "name": "Split Mind",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Void Shield hits +1 extra ally but shorter duration"
+  },
+  "500721": {
+   "name": "Dark Infusion",
+   "source": "Heretic",
+   "primary": "Heal",
+   "tags": ["Arcane", "HoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 charges/30s recharge; absorb-trigger heal that cascades to nearby allies"
+  },
+  "525060": {
+   "name": "Crystalline Reflection",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb", "Reflect"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Void Shield reflects 50% absorbed dmg"
+  },
+  "706190": {
+   "name": "Wicked Thoughts",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% max mana and movement speed passive"
+  },
+  "572103": {
+   "name": "Tentacle of N'Zoth",
+   "source": "Godblade",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "Silence", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min cd; summons silencing DoT tentacle 8s"
+  },
+  "707604": {
+   "name": "Abyssal Cleave",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Shadow", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680500": {
+   "name": "Oblivion's Embrace",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680487": {
+   "name": "Shadow Fiend",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804056": {
+   "name": "Crushing Dissonance",
+   "source": "Dreadnought",
+   "primary": "Utility",
+   "tags": ["Shadow", "Interrupt", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE interrupt + school lockout, 30s cd"
+  },
+  "706926": {
+   "name": "Shadow Pennant",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "auto attack heals lowest ally with Black Blood"
+  },
+  "807128": {
+   "name": "Blessing of Yogg-Saron",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Crit", "Immunity"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "while Herald of Depths: transform to Faceless Monstrosity, +20% crit/crit heal, fear/horrify/poly immune"
+  },
+  "527268": {
+   "name": "Instilling Fear",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706245": {
+   "name": "Dark Revelation",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance Horrorbolt/Wrath resets Gaze of C'thun cd"
+  },
+  "300280": {
+   "name": "Encroaching Presence",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806222": {
+   "name": "Netherstrike",
+   "source": "Godblade",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Execute", "Dispel", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "generates 10 Insanity; execute <35% HP, purges 1 buff, 6s cd"
+  },
+  "807877": {
+   "name": "Ancient Rituals",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Satiate refreshes Black Blood on allies; Dark Infusion extra bounce"
+  },
+  "300265": {
+   "name": "Devourer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Devour Magic dispels 1 additional magic; no DB details"
+  },
+  "806250": {
+   "name": "Rift",
+   "source": "Godblade",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s cd; self boon (+80% Hammer shadow dmg) + void zone that absorbs enemy healing"
+  },
+  "800446": {
+   "name": "Darkwither",
+   "source": "Corruption",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "generates 10 Insanity; 15s DoT + stacking healing reduction debuff"
+  },
+  "500714": {
+   "name": "Malevolence",
+   "source": "Heretic",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "generates 10 Insanity; melee + applies Black Blood HoT to 5 nearby allies; maintenance for Heretic"
+  },
+  "301183": {
+   "name": "Malevolent Power",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 3rd melee ability: instant/cheap Eldritch Mending proc"
+  },
+  "300305": {
+   "name": "Occultism",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Crit", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524877": {
+   "name": "Horrific Revelations",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hand of Yogg-Saron: Horrific Revelation heal proc every 1s + 5 Insanity"
+  },
+  "680377": {
+   "name": "God Blade",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802043": {
+   "name": "Entropic Retaliation",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "blocking stacks crit chance buff"
+  },
+  "704869": {
+   "name": "Hand of N'Zoth",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hammer/Entropic/Gaze refresh Blade charge"
+  },
+  "301182": {
+   "name": "Bulwark of Shadow",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704476": {
+   "name": "Hand of Yogg-Saron",
+   "source": "Heretic",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min cd; tether ally 15s: +15% dmg dealt, -15% dmg taken"
+  },
+  "300264": {
+   "name": "Prophetic Compulsion",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806266": {
+   "name": "Saronite Mind",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Eldritch Eye +1 charge"
+  },
+  "524887": {
+   "name": "Blade of Yogg-Saron",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blade of the Empire heals lowest ally for 35% of dmg dealt"
+  },
+  "706911": {
+   "name": "Depths of Madness",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Gaze 15% chance to spawn void portal"
+  },
+  "300296": {
+   "name": "Servant of C'Thun",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Gaze always procs Presence of C'Thun (+20% haste 6s)"
+  },
+  "706917": {
+   "name": "Worrysome Idol",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300304": {
+   "name": "Terror",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706722": {
+   "name": "Inner Turmoil",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805110": {
+   "name": "Black Prayer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% proc on direct dmg: AoE DoT + attack speed slow"
+  },
+  "524879": {
+   "name": "Void Hunger",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Satiate: extra mana/tick, removes increased-dmg-taken penalty"
+  },
+  "300308": {
+   "name": "Abyssal Destruction",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "DoT/channel ticks reduce Obliteration Beam cd + stack Abyssal Destruction buff; no DB details"
+  },
+  "300298": {
+   "name": "Misery",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560977": {
+   "name": "Dark Whispers",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Horrorbolt triggers Inspired Malice proc (empowers next Gaze/Darkwither/Wrath)"
+  },
+  "704881": {
+   "name": "Lost in the Void",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "improves Embrace the Void: +4s, extra 50% selfheal, -60s cd"
+  },
+  "800105": {
+   "name": "Forbidden Ritual",
+   "source": "Heretic",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Absorb", "Shield", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; raid-wide absorb shield for 10s"
+  },
+  "706177": {
+   "name": "Improved Sermon of Dread",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803283": {
+   "name": "Embodied Presences",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% chance to trigger Presences"
+  },
+  "707640": {
+   "name": "Shadow Strikes",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Shadow", "Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blade of the Empire 30% chance to make next auto attack hit twice"
+  },
+  "681106": {
+   "name": "Who Needs Sanity? / Netherborne",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Insanity stacks -> Netherstrike crit damage"
+  },
+  "681326": {
+   "name": "Glory to N'Zoth / Void Rage",
+   "source": "Godblade",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "525049": {
+   "name": "Eldritch Screams / Stare Into The Abyss",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Corrupt Mind applies Mind Rot debuff; if dispelled, +30% crit 5s"
+  },
+  "301181": {
+   "name": "Rapid Incantations / Mind Leak",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% haste above 60 Insanity"
+  },
+  "704885": {
+   "name": "Dismay / Disdain",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706188": {
+   "name": "Eyes of Eternity / Eldritch Command",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Tracking"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Gaze of C'Thun heals also reveal nearby stealthed enemies"
+  },
+  "804633": {
+   "name": "Void-Enchanted Armor / Ungodly Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% dispel resistance on self buffs"
+  },
+  "300306": {
+   "name": "Call of N'Zoth / Call of C'Thun",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704527": {
+   "name": "Unrelenting Void / Mind Rot",
+   "source": "Corruption",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "DoT/channel stacks damage-taken debuff on target"
+  },
+  "803236": {
+   "name": "Y'Shaarj's Enforcer / Bouncing Thoughts",
+   "source": "Dreadnought",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shieldtoss: +100% dmg, no longer bounces"
+  },
+  "704897": {
+   "name": "Dark Protection / Lead the Covenant",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704434": {
+   "name": "Protection From Light / Dark Rites",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on -3% raid dmg taken + self Holy resist"
+  },
+  "301258": {
+   "name": "Forbidden Strength / Forbidden Resilience",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807307": {
+   "name": "Saronite Cube / Devour Curse",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee ability dmg reduces Wracked Mind duration on allies"
+  },
+  "520810": {
+   "name": "Corrupt Fate / Tales of Woe",
+   "source": "Heretic",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Dark Veil cd"
+  },
+  "500720": {
+   "name": "Blade of the Empire",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "primary melee builder; mana cost, instant, 5yd range"
+  },
+  "801964": {
+   "name": "Blood Pact",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd, 12s; no desc - verify effect in-game",
+   "confidence": "low"
+  },
+  "800402": {
+   "name": "Devour Curse",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Dispel", "Selfheal", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "dispels 2 curses from ally + heals self"
+  },
+  "520151": {
+   "name": "Devour Magic",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "502134": {
+   "name": "Doomcloak",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Absorb", "Shield"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s cd; absorb + -20% magic dmg taken 12s; requires shield"
+  },
+  "500711": {
+   "name": "Eldritch Mending",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "primary heal spell, 2s cast"
+  },
+  "500110": {
+   "name": "Gaze of C'Thun",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Generator", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s cd; damages target + heals nearby ally; generates Insanity (implied)"
+  },
+  "500723": {
+   "name": "Horrifying Presence",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Taunt", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE taunt, 30s cd"
+  },
+  "800416": {
+   "name": "Horrorbolt",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "primary shadow nuke; 1.5s cast, generates Insanity (implied)"
+  },
+  "805125": {
+   "name": "Oath: Condemn",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Holy"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "self oath buff affecting Benediction/Blade of Faith; no desc",
+   "confidence": "low"
+  },
+  "801157": {
+   "name": "Restore Sanity",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Holy", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min cd; removes Total Madness/Insane debuffs from ally"
+  },
+  "801791": {
+   "name": "Ritual of Awakening",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Shadow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "resurrection spell, 8s cast"
+  },
+  "804275": {
+   "name": "Satiate",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; channeled mana regen + amplifies Eldritch Devastation, but increases dmg taken"
+  },
+  "804286": {
+   "name": "Strength of the Sha",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Strength -> SP%; Intellect -> Spell Hit%; passive stat conversion"
+  },
+  "800468": {
+   "name": "Test of Pride",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cd, low mana; triggers Wavering Pride - verify exact effect in-game",
+   "confidence": "low"
+  },
+  "800194": {
+   "name": "Void Blessing",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min mana regen blessing on ally"
+  },
+  "502133": {
+   "name": "Void Reaver",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "proc buff state: Blade of the Empire gains +1 jump target + flat dmg bonus"
+  }
+ }
+}

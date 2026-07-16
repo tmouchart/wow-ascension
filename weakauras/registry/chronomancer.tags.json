@@ -1,0 +1,1483 @@
+{
+ "slug": "chronomancer",
+ "class": "Chronomancer",
+ "count": 146,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "572357": {
+   "name": "Time Means Nothing",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc Trigger Spell on Chromatic Shard crit chance + debuff proc"
+  },
+  "704489": {
+   "name": "Erasion",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707430": {
+   "name": "Timerend",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Wand of Time into Timerend (DoT upgrade passive node)"
+  },
+  "583248": {
+   "name": "Aeon Rend",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance Chromatic Shard strikes again (proc reset)"
+  },
+  "706079": {
+   "name": "Resonance",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "35% chance on Artificer's Wand/Crystal Cannon to reduce Hasten CD"
+  },
+  "570067": {
+   "name": "Incarnation of Chaos",
+   "source": "Infinite",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Buff", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% damage 15s, resets Chromatic Shard CD; 3 min CD"
+  },
+  "707557": {
+   "name": "Black Hole",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% dmg on slowed enemies for Chromatic Shard/Melt Reality/Unmake"
+  },
+  "583245": {
+   "name": "Chaotic Time",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "During Incarnation: Melt Reality +30% dmg + 5% chance per periodic tick to reduce Incarnation CD"
+  },
+  "806312": {
+   "name": "Infinite Keeper",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["AoE", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unmake on Timerend target erupts in AoE vortex DoT"
+  },
+  "503825": {
+   "name": "Anomaly Spikes",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "8% chance per periodic tick to launch Anomaly Spike (proc nuke)"
+  },
+  "560528": {
+   "name": "Infinite Horizon",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% raid damage aura; does not stack with similar"
+  },
+  "706059": {
+   "name": "Shifting Chaos",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chromatic Shard/Anomaly Spikes deal 20% splash to nearby enemies"
+  },
+  "806300": {
+   "name": "Rippling Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+8% Spirit/Intellect stat node"
+  },
+  "707553": {
+   "name": "Distorted Time",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Timerend CD -2s; Decomposition duration +3s"
+  },
+  "560130": {
+   "name": "Archaeology",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Discovery now also restores 3% base mana and health"
+  },
+  "807588": {
+   "name": "Temporal Convergence",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "40% chance Wand of Time resets its own CD"
+  },
+  "680373": {
+   "name": "Borrowed Time",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Taking Physical damage heals for 10% of damage dealt; 1/s limit; no details"
+  },
+  "806203": {
+   "name": "Paradox Cannon",
+   "source": "Artificer",
+   "primary": "Buff",
+   "tags": ["Arcane", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Continuum spell: generates 1 Echo Fragment every 3s for 5s+5s/fragment; 15s CD"
+  },
+  "503836": {
+   "name": "Unstable Chronoglass",
+   "source": "Artificer",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Summon", "Reflect"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Summons object that absorbs next 3 enemy spell casts; 1 min CD"
+  },
+  "706130": {
+   "name": "Splitting Time",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Crystal Cannon now strikes 2 additional nearby enemies"
+  },
+  "706083": {
+   "name": "The Vast Infinite",
+   "source": "Time",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Arcane", "Absorb", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "All raid members share 25% of all incoming damage for 10s, then heal for total shared; 5 min CD"
+  },
+  "706779": {
+   "name": "Time Wizard",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+8% crit chance on Reverse Wound/Epoch/Correct the Mistake"
+  },
+  "804505": {
+   "name": "Timeline Tether",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Periodic dmg/healing reduces Fortify Timeline CD by -1s"
+  },
+  "574310": {
+   "name": "Time Beacon",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases duration of Aeon effects by 4s"
+  },
+  "520042": {
+   "name": "Keep Accelerating",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Accelerated Recovery now applies to 1 additional nearby target"
+  },
+  "706098": {
+   "name": "Epic Recovery",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Epoch triggers Rank 1 Epoch on up to 5 allies with Accelerated Recovery"
+  },
+  "706099": {
+   "name": "The Bieko Effect",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "While Hasten active, reduces CD of major CDs by 10% every 2s"
+  },
+  "706100": {
+   "name": "Charm of Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% damage to Gravity Bomb"
+  },
+  "706131": {
+   "name": "Timeless",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While Endless Sands active, mana costs reduced by -3% per stack"
+  },
+  "520780": {
+   "name": "Entropy Reversal",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces duration of disease effects on self by -40%; no details"
+  },
+  "806337": {
+   "name": "Hourglass of Eternity",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on periodic dmg to gain +25% haste for 5s"
+  },
+  "706055": {
+   "name": "Expediting Time",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces channel time of Time Out! by -40%"
+  },
+  "560948": {
+   "name": "Ahead of the Game",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Every 10th instance of dmg/healing grants +60 SP for 10s"
+  },
+  "520855": {
+   "name": "Mass Babify",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["AoE", "Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Polymorphs all nearby enemies for 40s (8s vs players); no details - from desc",
+   "confidence": "low"
+  },
+  "706063": {
+   "name": "Chaos Omen",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Gravity Bomb CD by -30s and detonation time by -3s"
+  },
+  "520164": {
+   "name": "Perfect Timing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% haste + reduces spell pushback by 35%"
+  },
+  "804491": {
+   "name": "Fortify Timeline",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Holy", "AoE", "HoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Instant AoE heal + extends Accelerated Recovery on all; 1 min CD"
+  },
+  "704487": {
+   "name": "Gift of the Timeways",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Melt Reality makes Timerend/Unmake periodic benefit from haste 10s"
+  },
+  "680971": {
+   "name": "Destabilize Time",
+   "source": "Infinite",
+   "primary": "Utility",
+   "tags": ["Arcane", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces enemy casting speed -10% stacking per cast, 20s; no details",
+   "confidence": "low"
+  },
+  "706122": {
+   "name": "Concentrated Fate",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% effectiveness of Echo Fragments"
+  },
+  "560129": {
+   "name": "Elder Wand",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance on Wand attack to apply stacking debuff increasing Artificer's Wand dmg by 3% (10 stacks)"
+  },
+  "500116": {
+   "name": "Discovery",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Arcane", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Wand attacks grant Discovery stacks; at 3 stacks triggers proc nuke"
+  },
+  "560310": {
+   "name": "Through The Aeons",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Activating an Aeon grants +100% mana regen from Spirit for 8s"
+  },
+  "561310": {
+   "name": "Desynchronization",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Arcane", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Disarms enemy melee+ranged 6s; on removal prevents health regen 6s; 1.5 min CD"
+  },
+  "706053": {
+   "name": "Improved Reverse Wound",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time of Reverse Wound by -0.3s"
+  },
+  "806165": {
+   "name": "Temporal Focus",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Immunity", "Silence"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Immune to banish/silence/interrupt 10s; 2 min CD"
+  },
+  "706102": {
+   "name": "Carbon Dating",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each stack of Sands of Time increases Epoch healing by 10%"
+  },
+  "806338": {
+   "name": "Endless Sands",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Epoch grants Endless Sands: reduces cast time of next 5 Reverse Wounds by -20%/stack"
+  },
+  "570149": {
+   "name": "Cycling Aeons",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Aeon CDs by -50%"
+  },
+  "806293": {
+   "name": "Aeon of Oblivion",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Aeon toggle: Epoch +mana cost, +10% crit, +15% healing, and healed targets deal +3% dmg 15s"
+  },
+  "680946": {
+   "name": "Paradox",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Melt Reality makes next Unmake/Reverse Wound instant and -50% mana; no details"
+  },
+  "706777": {
+   "name": "Eternal",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+6s Accelerated Recovery duration, +3s Decomposition duration"
+  },
+  "806335": {
+   "name": "Melt Reality",
+   "source": "Infinite",
+   "primary": "Rotational",
+   "tags": ["Fire", "Nature", "Frost", "Shadow", "Arcane", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chromatic DoT 30s + replicates 20% periodic dmg to nearby; 40s CD"
+  },
+  "801292": {
+   "name": "Chromatic Shard",
+   "source": "Infinite",
+   "primary": "Rotational",
+   "tags": ["Fire", "Nature", "Frost", "Shadow", "Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Main nuke 209+150% SP Chromatic dmg; 30s CD; pierces immunities"
+  },
+  "707555": {
+   "name": "Slipstream",
+   "source": "Infinite",
+   "primary": "Control",
+   "tags": ["Arcane", "Root", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Banishes target 5s (stun+immune); reactivate to teleport to new location; 2 min CD"
+  },
+  "707556": {
+   "name": "Warpstriker",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-5% spell cost, +10% dispel resistance"
+  },
+  "706084": {
+   "name": "Entropy Overload",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% chance to resist movement slowing effects"
+  },
+  "806167": {
+   "name": "Artificer's Empowerment",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+8% Spirit stat node (up to 3 ranks)"
+  },
+  "520045": {
+   "name": "Converge the Infinite",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "After Fortify Timeline, next Correct the Mistake is guaranteed crit +30% heal; critting reduces Fortify CD by 8%"
+  },
+  "520166": {
+   "name": "Caverns of Time",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Discordance now generates 1 Echo Fragment"
+  },
+  "804438": {
+   "name": "Singularity Core",
+   "source": "Artificer",
+   "primary": "Buff",
+   "tags": ["Arcane", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Continuum spell: empowers Wand attacks +50% weapon dmg+arcane for 3s+5s/fragment; 15s CD"
+  },
+  "804436": {
+   "name": "Aether Compression",
+   "source": "Artificer",
+   "primary": "Buff",
+   "tags": ["Holy", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Continuum spell: cast Artificer's Wand/Reverse Wound while moving for 5s+5s/fragment; 15s CD"
+  },
+  "524853": {
+   "name": "Arc Collision",
+   "source": "Artificer",
+   "primary": "Rotational",
+   "tags": ["Arcane", "AoE", "DoT", "Spender", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Distortion Spell: AoE arcane DoT around target; duration +2s/fragment consumed"
+  },
+  "524945": {
+   "name": "Cheating Time",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Shatter Echo extends Flux Emitter duration by 4s"
+  },
+  "706085": {
+   "name": "Luck",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40% of mana regen continues during combat"
+  },
+  "801271": {
+   "name": "Continuum Restoration",
+   "source": "Time",
+   "primary": "Utility",
+   "tags": ["Arcane", "Dispel", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE dispel: removes beneficial magic from enemies and harmful magic from allies; even undispellable; 1.5 min CD"
+  },
+  "706133": {
+   "name": "Fate Twister",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Unstable Chronoglass CD by -30s"
+  },
+  "520457": {
+   "name": "Infinite Shield",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Holy", "Shield", "HoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10-charge reactive heal on ally (190+25% SP per hit); 30s duration; 15s CD"
+  },
+  "706128": {
+   "name": "Infinity",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes cooldown of Infinite Shield"
+  },
+  "560949": {
+   "name": "Impeccable Timing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Periodic damage and healing effects can now critically strike"
+  },
+  "706046": {
+   "name": "Magic Erosion",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Decomposition applies Magic Erosion debuff: +3% spell hit chance vs target"
+  },
+  "706076": {
+   "name": "Clocked In",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Discordance: next Artificer's Wand within 10s is instant + generates extra Echo Fragment"
+  },
+  "806292": {
+   "name": "Aeon of Protection",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Holy", "Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Aeon toggle: Epoch +15% heal, +15% cast time, applies absorb shield 30% of heal; 10s CD"
+  },
+  "806290": {
+   "name": "Aeon of Renewal",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Holy", "HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Aeon toggle: Epoch -30% heal but adds 50% as HoT over 3s; 10s CD"
+  },
+  "520923": {
+   "name": "Mind Over Matter",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% effectiveness of Wisdom spells; no details"
+  },
+  "555737": {
+   "name": "Timeblender",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fabric of Time: guaranteed crit + extra charge; upgrade passive"
+  },
+  "582356": {
+   "name": "Excruciating Discord",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Discordances used during Chronological proc are guaranteed crits"
+  },
+  "807754": {
+   "name": "Timelost Power",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Discordance now strikes 3 additional enemies"
+  },
+  "804478": {
+   "name": "Artificer's Wand",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Unmake into Artificer's Wand (passive upgrade node); generates 1 Echo Fragment"
+  },
+  "806299": {
+   "name": "Fabric of Time",
+   "source": "Time",
+   "primary": "Heal",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Instant single-target heal 158+64% healing; enables no-CD Aeon on next cast; 15s CD"
+  },
+  "560383": {
+   "name": "Sands of Life",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% of Spirit to healing power"
+  },
+  "572352": {
+   "name": "Correct the Mistake",
+   "source": "Time",
+   "primary": "Heal",
+   "tags": ["Holy", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE party heal 30 yds; 2.5s cast"
+  },
+  "806302": {
+   "name": "Shimmering Shard",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Buff", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Activating Aeons grants +4% dmg/healing, stacks 3x"
+  },
+  "804451": {
+   "name": "Time Skip",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Roll Back removes 1 additional harmful effect"
+  },
+  "560541": {
+   "name": "Wonders of Time",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Haste", "Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+3% raid spell haste aura; 10% chance on healing to grant Endless Sands"
+  },
+  "706040": {
+   "name": "Infinity Crash",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% critical damage bonus on Discordance/Chromatic Shard"
+  },
+  "805851": {
+   "name": "Deconstruction",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% crit chance on Unmake (up to 2 ranks)"
+  },
+  "560397": {
+   "name": "Cadence of Time",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Epoch crits grant Cadence of Time: +10% Ripple healing stacking 5x"
+  },
+  "804444": {
+   "name": "Shield of the Ages",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "When hit by damaging crit: -3% dmg taken and +5% healing received for 3s, stacking 3x"
+  },
+  "802790": {
+   "name": "Dimensional Divergence",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Arcane", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Teleport swap with target; if enemy steals -80% movement speed 3s; 2 min CD"
+  },
+  "805847": {
+   "name": "Clasp of Infinity",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Arcane", "Root", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Instant AoE root bouncing to nearby enemies 4s; 20s CD"
+  },
+  "706071": {
+   "name": "Hyperwand",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% damage and critical damage of Shatter Echo"
+  },
+  "520922": {
+   "name": "Temporal Dissonance",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chronostasis slows target movement speed by additional -10%; no details"
+  },
+  "707551": {
+   "name": "Wand Master",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% damage to Wand of Time and Artificer's Wand (up to 2 ranks)"
+  },
+  "801281": {
+   "name": "Gravity Bomb",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Delayed detonation AoE 979+120% SP+30% RAP; teleports enemies to target before explosion; 1.5 min CD"
+  },
+  "806315": {
+   "name": "Temporal Anomaly",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Absorb", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Absorbs 50% of damage taken and converts to healing at end of 10s; 2 min CD"
+  },
+  "520188": {
+   "name": "Buy Time",
+   "source": "Time",
+   "primary": "Control",
+   "tags": ["Arcane", "AoE", "Stun"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE 8 yd stasis/banish on enemies AND allies for 6s; 3 min CD"
+  },
+  "806162": {
+   "name": "Orderly Protector",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Epoch heals stack buff on self: +10% Fabric of Time heal per stack; stacks give 2% chance to reset Fabric of Time CD"
+  },
+  "520800": {
+   "name": "Bronze Echoes",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time of Artificer's Wand by -0.2s; no details"
+  },
+  "804441": {
+   "name": "Timeguard",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Absorb", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ally absorbs next 3 hits that would reduce HP below 35% by 40%; 2 min duration+CD"
+  },
+  "555729": {
+   "name": "Constant Recovery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Reverse Wound healing increases all healing taken by target by 6% for 10s"
+  },
+  "800857": {
+   "name": "Accelerated Recovery",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Holy", "HoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Main HoT: 60+115% healing over 15s; instant cast; core maintenance buff"
+  },
+  "574309": {
+   "name": "Unearthed Pools",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-15% Unmake cast time; -10% mana cost of instant spells"
+  },
+  "520171": {
+   "name": "Magic Sensitivity",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shatter Echo crits apply Magic Sensitivity: +10% damage taken from you 8s"
+  },
+  "592008": {
+   "name": "Chronological",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Every 20s, next Discordance within 10s is instant cast"
+  },
+  "704488": {
+   "name": "Mark of Order",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Fortify Timeline healing applies Mark of Order: stacking buff increasing next Reverse Wound healing"
+  },
+  "804452": {
+   "name": "Conduction Burst",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shatter Echo deals +20% additional damage while a Continuum spell is active"
+  },
+  "801277": {
+   "name": "Waves of Time",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Arcane", "AoE", "Knockback"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Frontal cone knockback, repeats after 2s; 20s CD"
+  },
+  "804435": {
+   "name": "Flux Emitter",
+   "source": "Artificer",
+   "primary": "Buff",
+   "tags": ["Arcane", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Continuum spell: Wand attacks hit up to 2 additional enemies for 3s+5s/fragment; 15s CD"
+  },
+  "804503": {
+   "name": "Shatter Echo",
+   "source": "Artificer",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Distortion Spell: instant wand+arcane nuke; +40% per Echo Fragment consumed; 3s CD"
+  },
+  "300873": {
+   "name": "Infinity Stone",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Crit", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% raid crit + self +3% crit; no details"
+  },
+  "806209": {
+   "name": "Threads of Eternity",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Discordance applies Thread of Eternity debuff; consumed by Wand of Time for bonus effect based on active Continuum"
+  },
+  "805854": {
+   "name": "Crown of Power",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases tick rate of Melt Reality by -25% (faster ticks)"
+  },
+  "680808": {
+   "name": "Life Cycles",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Babify cast time -0.25s and mana cost -15%; no details"
+  },
+  "503831": {
+   "name": "Unearthed Power",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Anomaly Spikes hits stack: +6% dmg and crit per stack on Chromatic Shard"
+  },
+  "500115": {
+   "name": "Infinite Sands",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Infinite Clone CD by -60s"
+  },
+  "807578": {
+   "name": "Chaos Fusion / Pure Chaos",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "During Incarnation of Chaos: Chromatic Shard can be cast while moving; -3s Incarnation duration"
+  },
+  "807690": {
+   "name": "End of Time / Eternity",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Clasp of Infinity expiry launches Anomaly Spike at targets + -10% damage dealt debuff 4s"
+  },
+  "706107": {
+   "name": "Unmaker of Realities / Maker of Realities",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "While Hasten is active: ally has 25% chance on damage to strike again for 30% extra"
+  },
+  "680845": {
+   "name": "Timekeeper / Procrastination",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% effectiveness of Timeguard; no details"
+  },
+  "572527": {
+   "name": "Timewalking / Tripping the Rift",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Waves of Time CD by -4s"
+  },
+  "807691": {
+   "name": "Nozdormu's Gaze / Titan's Gaze",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Time Out!: -2% mana regen per tick but instantly restores 15% mana on cast"
+  },
+  "707657": {
+   "name": "Overcorrection / Bronze Timeways",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Correct the Mistake overhealing applies HoT equal to 30% over 5s"
+  },
+  "570061": {
+   "name": "Sporadic Incantations / Tamed Incantations",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flux Emitter strikes 1 additional enemy"
+  },
+  "524856": {
+   "name": "Hands of Time",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% effectiveness of Accelerate and Decelerate spells"
+  },
+  "706121": {
+   "name": "Pulse Driver",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Singularity Core: +30% Shatter Echo dmg while active; allows Shatter Echo to trigger SC procs"
+  },
+  "806216": {
+   "name": "Wand Mastery",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance Wand of Time/Shatter Echo trigger Crystal Cannon (2 auto-attacks)"
+  },
+  "706096": {
+   "name": "A Ripple In Time",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Damaging/healing crits reduce Ripple CD by -1s"
+  },
+  "806727": {
+   "name": "Displacement",
+   "source": "Time",
+   "primary": "Utility",
+   "tags": ["Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Pulls party/raid member to you + dispels root/snare; no details",
+   "confidence": "low"
+  },
+  "807036": {
+   "name": "Ideal Time",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Every 30s, next ability is guaranteed crit"
+  },
+  "706134": {
+   "name": "Chronicler",
+   "source": "Time",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fortify Timeline extends Accelerated Recovery on all nearby targets by +10s"
+  },
+  "572722": {
+   "name": "Null Orbs",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on periodic crit to grant Null Orbs: boosts Chromatic Shard/Anomaly Spikes crit dmg"
+  },
+  "806753": {
+   "name": "Timemage",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-30% duration of harmful magic effects; no details"
+  },
+  "572771": {
+   "name": "Mind Melt",
+   "source": "Infinite",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Melt Reality also applies Mind Melt debuff: -3% primary attrs stacking 5x"
+  },
+  "806296": {
+   "name": "Ripple",
+   "source": "Time",
+   "primary": "Heal",
+   "tags": ["Arcane", "AoE", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Channeled AoE heal (up to 5s); stun immune while channeling; 30s CD"
+  },
+  "520875": {
+   "name": "Reverse Engineering / Erode Armaments",
+   "source": "Artificer",
+   "primary": "Passive",
+   "tags": ["Haste", "Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on periodic dmg/heal: +15% haste 6s + raid Replenishment; no details"
+  },
+  "801523": {
+   "name": "Chromie's Wisdom",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Holy", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30-min Spirit buff on ally (similar to wisdom-type blessing); no desc"
+  },
+  "706969": {
+   "name": "Chronostasis",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline slow: -60% movement speed 8s; no desc - from details"
+  },
+  "800856": {
+   "name": "Decomposition",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Nature", "Frost", "Shadow", "Arcane", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline Chromatic DoT 21s; no desc"
+  },
+  "800669": {
+   "name": "Do Over",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cast resurrection (single target); no desc"
+  },
+  "804513": {
+   "name": "Order and Chaos",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Passive baseline node (Dummy effect); no desc",
+   "confidence": "low"
+  },
+  "804495": {
+   "name": "Resynchronize",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Holy", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30-min CD mass resurrection (100 yds); no desc"
+  },
+  "801303": {
+   "name": "Reverse Wound",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Main single-target direct heal; 1.5s cast; baseline spell"
+  },
+  "801294": {
+   "name": "Rewind",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes Infinite Clone stacks; 10s CD; appears to be defensive reset; no desc",
+   "confidence": "low"
+  },
+  "524966": {
+   "name": "Roll Back",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dispel harmful effect on ally; no desc - from name/context; no Effects listed",
+   "confidence": "low"
+  },
+  "501921": {
+   "name": "Sandblast",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Ranged", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Baseline damage nuke with slow effect; no desc"
+  }
+ }
+}

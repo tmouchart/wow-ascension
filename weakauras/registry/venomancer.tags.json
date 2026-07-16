@@ -1,0 +1,1857 @@
+{
+ "slug": "venomancer",
+ "class": "Venomancer",
+ "count": 182,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "806449": {
+   "name": "Mycelial Healing",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT", "Buff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "707382": {
+   "name": "Essence of Decay",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Nature", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crit with Widow's Kiss applies extra Brood Mark"
+  },
+  "503930": {
+   "name": "Captivation",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "680768": {
+   "name": "Sage",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Alkahest healing spreads Shadra's Balm"
+  },
+  "504355": {
+   "name": "From Death Comes Life",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spore damage reduces Decay cooldown"
+  },
+  "804975": {
+   "name": "Boding Dread",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Shadow", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806154": {
+   "name": "Burrow",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min CD, immune to all damage 8s but immobile"
+  },
+  "300664": {
+   "name": "Acute Senses",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805775": {
+   "name": "Adrenal Venom",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Haste"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "2h self-venom; 25% proc chance on casts to gain haste stacking 3x"
+  },
+  "503856": {
+   "name": "Avatar of Shadra",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance to apply Curse of Shadra, bonus dmg/heal on cursed target"
+  },
+  "681052": {
+   "name": "Versatile and Deadly",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Beetle Form dmg reduction; Spider Form move speed"
+  },
+  "560282": {
+   "name": "Blightcap Injestion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% resist to poison and disease"
+  },
+  "503850": {
+   "name": "Fury of Shadra",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% dmg/healing on targets below 35% hp"
+  },
+  "800894": {
+   "name": "Fury of Anub'Rekhan",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% max Mana/Energy/Rage"
+  },
+  "300974": {
+   "name": "Charmed Plating",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-3% party/raid dmg taken; does not stack"
+  },
+  "706002": {
+   "name": "Reinforced Exoskeleton",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% max health and +3% dodge"
+  },
+  "503812": {
+   "name": "Shadra's Gift",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Nature", "Slow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Barbed Stinger hit applies +5% Nature dmg taken debuff"
+  },
+  "504402": {
+   "name": "Wicked Barbs",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT", "Poison"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Barbed Stinger and Chitin Rush apply Wicked Poison DoT"
+  },
+  "706006": {
+   "name": "Vile Fury",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Rage cost of Hivebreak and Carapace Crash"
+  },
+  "705959": {
+   "name": "Toxic Expulsion",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hivebreak consumes Venomtip Poison to deal AoE nature dmg"
+  },
+  "705982": {
+   "name": "Wicked Poison",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT", "Poison"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crits with Chitin Rush/Carapace Crash/Hivebreak apply Wicked Poison"
+  },
+  "805102": {
+   "name": "Molt",
+   "source": "Fortitude",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD; shatters exoskeleton applying 15 stacks Exposed Flesh, +30% move speed 8s"
+  },
+  "704264": {
+   "name": "Spider Lord",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Nature", "Summon", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Augments Beetle Form; -5% dmg taken; summons Scarabs on Hivebreak"
+  },
+  "705975": {
+   "name": "Venomics",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% effectiveness of Venoms"
+  },
+  "805778": {
+   "name": "Weakening Venom",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Shadow", "Poison"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "2h self-venom; 35% proc chance to deal shadow dmg and reduce target AP"
+  },
+  "705962": {
+   "name": "Genesis",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504799": {
+   "name": "Tranquil Essence",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-10% threat from healing spells; +3% periodic healing"
+  },
+  "560247": {
+   "name": "Locust Swarm",
+   "source": "Fortitude",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "Leech", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; 25 Rage; leech health from nearby enemies every 2s for 10s"
+  },
+  "705969": {
+   "name": "Agitation",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dodging generates 3 Rage"
+  },
+  "706955": {
+   "name": "Enchanted Chitin",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% armor from mail"
+  },
+  "705967": {
+   "name": "Charm of Warding",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Heals 1% max hp when Exposed Flesh stack is applied"
+  },
+  "707726": {
+   "name": "Soothing Venoms",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% critical healing of Shadra's Prayer"
+  },
+  "706007": {
+   "name": "A Pit of Snakes",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Serpent's Fang stacks +15% dmg buff up to 3x"
+  },
+  "804984": {
+   "name": "Venom Saturation",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Poison", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% poison dmg against enemies above 50% hp"
+  },
+  "681048": {
+   "name": "Spirit of the Jungle",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Rejuvenating Venom proc chance"
+  },
+  "680767": {
+   "name": "Toxic Communion",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Extends Shadra's Balm and Mending Mist by 15s on nearby allies"
+  },
+  "804987": {
+   "name": "Fungal Growth",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "35% chance on dmg to grant +2% periodic dmg stacking 10x on target"
+  },
+  "805900": {
+   "name": "Envenom",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-0.3s cast time on Venom Bolt"
+  },
+  "706018": {
+   "name": "Serpent Lord's Ritual",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["Nature", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% proc on direct heal grants Serpent Lord's Amulet (haste/cost reduction)"
+  },
+  "300684": {
+   "name": "Advisor's Perfidy",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% bonus healing scaling on Serpent's Fang/Mending Mist/Shadra's Balm"
+  },
+  "503918": {
+   "name": "Ritualistic",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Green Salve refunds 20% base mana"
+  },
+  "706956": {
+   "name": "Prophetic Speaker",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spawning Mushroom reduces Decay cooldown by 1s"
+  },
+  "503919": {
+   "name": "Necessary Preparations",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Wilt damage; Wilt now increases spell hit chance on target"
+  },
+  "706270": {
+   "name": "Blistering Fangs",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Brood Mark spenders refund 30 Energy when used with 5+ marks"
+  },
+  "630932": {
+   "name": "Tunneler",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Nature", "Root"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Upgrades Spindlebind to 2 charges with 25s cooldown and increased dmg"
+  },
+  "807601": {
+   "name": "Rotting Sores",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Poison", "DoT", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Rotfang ticks -20% faster and can critically strike"
+  },
+  "520153": {
+   "name": "Blight Antidote",
+   "source": "Vizier",
+   "primary": "Utility",
+   "tags": ["Nature", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Dispels 2 curse effects from ally"
+  },
+  "706035": {
+   "name": "Surprise Strategy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on crit to make next Shadra's Prayer instant/+20% healing"
+  },
+  "503852": {
+   "name": "Lethality",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% crit chance of Widow's Kiss on Diseased targets"
+  },
+  "300678": {
+   "name": "Shadra's Seance",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Facemelter ticks -20% faster and +6s duration"
+  },
+  "504361": {
+   "name": "Septic Trauma",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Harmful crits extend Wilt duration by 2s"
+  },
+  "504347": {
+   "name": "Toxic Stride",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; immune to silence/interrupt, cast while moving 15s"
+  },
+  "804989": {
+   "name": "Sporelord",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Fungal Assailant spawns 3 Mushrooms below target"
+  },
+  "706009": {
+   "name": "Bountiful Gifts",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% healing of Shadra's Prayer/Green Salve/Alkahest"
+  },
+  "560194": {
+   "name": "Serpent's Embrace",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% damage and SP scaling for Serpent's Fang"
+  },
+  "504867": {
+   "name": "Sepsis Bloom",
+   "source": "Venom",
+   "primary": "Control",
+   "tags": ["Nature", "Poison", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; disorient target 6s; purges all Venomancer poisons dealing burst dmg"
+  },
+  "706025": {
+   "name": "Acid Bolt",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Venom Bolt dmg and +2% crit chance"
+  },
+  "704235": {
+   "name": "Pinch",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Melee", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; disarm enemy 5s + apply Weakening Venom"
+  },
+  "706030": {
+   "name": "Infestation",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Periodic dmg 10% chance to reduce Serpent's Fang/Fungal Assailant CD"
+  },
+  "504393": {
+   "name": "Natural Weapons",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit chance on Beetle Form abilities"
+  },
+  "706014": {
+   "name": "Widow's Watch",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shadra's Balm targets have +20% resist to poison/curse"
+  },
+  "706938": {
+   "name": "Ophidian Renewal",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3s duration on Shadra's Balm/Mending Mist/Shadra's Prayer"
+  },
+  "504348": {
+   "name": "Shadra's Presence",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Raid aura: allies receive 6% more healing; Antivenom dispels 1 extra effect"
+  },
+  "300959": {
+   "name": "Fungal Link",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% spell haste to raid; does not stack"
+  },
+  "504356": {
+   "name": "Mycelial Synchronization",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Casting Shadra's Aid on ally also casts it on self"
+  },
+  "706027": {
+   "name": "Venomancy Expert",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "-5% cost of all spells and abilities"
+  },
+  "706962": {
+   "name": "Withering Venom",
+   "source": "Stalking",
+   "primary": "Rotational",
+   "tags": ["Nature", "Poison", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25 Energy; nature poison DoT 21s ramping damage"
+  },
+  "300680": {
+   "name": "Cover",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Casting Harden clears Exposed Flesh"
+  },
+  "560248": {
+   "name": "Impale",
+   "source": "Fortitude",
+   "primary": "Control",
+   "tags": ["Shadow", "Stun", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40s CD; 14% mana; shadow AoE stun 3.5s in 15yd line"
+  },
+  "803197": {
+   "name": "Regrow Exoskeleton",
+   "source": "Fortitude",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; clears Exposed Flesh, -20% physical dmg taken 5s +1s per stack"
+  },
+  "803210": {
+   "name": "Regenerative Properties",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Defensive", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "-5% all dmg taken; 10% chance on hit to shatter and regen 12% hp over 12s"
+  },
+  "707668": {
+   "name": "Brood Lord",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Nature", "Slow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Augments Spider Form; Brood Mark spenders apply web slow; crits on webbed summon spiderlings"
+  },
+  "630900": {
+   "name": "Venomous Bite",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Brood Marks can stack 2 more times"
+  },
+  "503851": {
+   "name": "Contagion",
+   "source": "Stalking",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "DoT", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; 30% chance per DoT tick to burst AoE shadow dmg 8 enemies 8yd, 15s"
+  },
+  "500230": {
+   "name": "Bile Eruption",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance on Venom trigger to generate 5 Energy"
+  },
+  "574353": {
+   "name": "Virulent Opening",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Poison", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% periodic dmg of Facemelter and Rotfang on enemies above 75% hp"
+  },
+  "805104": {
+   "name": "Serpent Lord",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT", "Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Augments Spider Form for ranged style; +50% Withering Venom dmg; creates Miasma AoE"
+  },
+  "504344": {
+   "name": "Fungal Assailant",
+   "source": "Venom",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Summon", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD; summons Fungarian, applies Debilitating Venom slow"
+  },
+  "706942": {
+   "name": "Protraction",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3s duration on Venomancer periodic effects"
+  },
+  "681056": {
+   "name": "Mycelial Ring",
+   "source": "Venom",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "AoE", "Heal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "No CD listed; AoE nature dmg ring 10s; heals allies at end; Mushroom explosion"
+  },
+  "573307": {
+   "name": "Lethargy",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "Slow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Wilt damage applies Lethargy: -3% hit chance, +5% Nature dmg taken 8s"
+  },
+  "706937": {
+   "name": "Shadra's Gift",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-10% cast time on Shadra's Prayer; -35% spell pushback"
+  },
+  "681054": {
+   "name": "Fungal Allies",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fungal Assailant summons 2 additional Fungarians"
+  },
+  "804968": {
+   "name": "Hive Instinct",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; instantly generates 100 Rage or Energy; usable while Skulking"
+  },
+  "680794": {
+   "name": "Venomizer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% proc chance of all Venoms"
+  },
+  "705993": {
+   "name": "Tome of Ahn'kahet",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "8% chance on dmg/heal to grant next spell free for 15s"
+  },
+  "504406": {
+   "name": "Chitinous Spikes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20% chance on direct dmg taken to retaliate for 5% damage"
+  },
+  "560188": {
+   "name": "Hallucinogenic Venom",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "50% mana regen in combat"
+  },
+  "804978": {
+   "name": "Shadra's Lair",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Nature", "Slow", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; AoE -60% speed zone 8 yd 8s; enemies cannot target into/out of Lair"
+  },
+  "504326": {
+   "name": "Master of Venoms",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% duration of Venoms"
+  },
+  "705949": {
+   "name": "Skin Shedder",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-50% cost of shapeshift spells"
+  },
+  "800901": {
+   "name": "Shadra's Balm",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Nature", "HoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Instant cast HoT on ally 18s; also grants poison/curse resist"
+  },
+  "800887": {
+   "name": "Spindlebind",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Nature", "Root", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "16s CD; 30 Energy; webs enemies behind you rooting 4s + nature dmg"
+  },
+  "503854": {
+   "name": "Potency",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+15% Venom Fang dmg; +3% spell crit chance on target for 15s"
+  },
+  "503799": {
+   "name": "One Man's Poison...",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-25% chance to refund Brood Mark cost when consuming marks"
+  },
+  "560264": {
+   "name": "Deadly Sting",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Poison", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on periodic dmg to make next Hivebreak free and +50% dmg"
+  },
+  "705961": {
+   "name": "Runed Carapace",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "-10% dmg taken from magic school for 10s when hit by it (30s per school)"
+  },
+  "800902": {
+   "name": "Green Salve",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Nature", "HoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; HoT on ally 6s then jumps to lowest-hp ally"
+  },
+  "706016": {
+   "name": "Worship",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Critical heals increase periodic healing target receives by 10% for 5s"
+  },
+  "680763": {
+   "name": "Blightfang",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Serpent's Fang spawns Mushroom AoE explosion below target"
+  },
+  "800910": {
+   "name": "Decay",
+   "source": "Venom",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "DoT", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD; 2.5s cast; applies Wilt to 5 enemies + Mushroom AoE explosion"
+  },
+  "707224": {
+   "name": "Venoxis Rage",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "Enrage"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Mycosis enrages Fungarians for 6s (+30% dmg/attack speed)"
+  },
+  "706455": {
+   "name": "Fungic",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Applies Fungic DoT on Lethargy-affected enemies hit by Venom Bolt/Serpent's Fang"
+  },
+  "504855": {
+   "name": "From Life Comes Death",
+   "source": "Venom",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Shadow", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; 20s buff: enemy kills spawn Mushroom AoE explosions"
+  },
+  "707233": {
+   "name": "Suffocating Coils",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on periodic dmg to launch web beam DoT; spawns Mushroom if Spore active"
+  },
+  "560195": {
+   "name": "Fangbinder",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% Serpent's Fang healing; Serpent's Fang cannot miss"
+  },
+  "706015": {
+   "name": "Venom Glands",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% healing on allies below 35% hp or if Poisoned"
+  },
+  "560200": {
+   "name": "Cycle of Rebirth",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on Shadra's Balm periodic heal to make next Alkahest free/instant"
+  },
+  "804963": {
+   "name": "Lifeblood",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Defensive", "HoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD; -20% dmg taken 10s; dmg taken procs Rejuvenating Venom on allies"
+  },
+  "804961": {
+   "name": "Widowmaker",
+   "source": "Stalking",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spider Form; 20 Energy; consumes Brood Marks; shadow dmg scaling with marks; -50% healing on target"
+  },
+  "805884": {
+   "name": "Extraction",
+   "source": "Vizier",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min CD; +100% Int/Spirit, critical periodic heals restore 5% missing mana for 15s"
+  },
+  "805931": {
+   "name": "Carapace Regeneration",
+   "source": "Fortitude",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Selfheal", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 charges 20s recharge; -4% dmg taken + 1% max hp/s; drains 10 Rage/tick"
+  },
+  "800878": {
+   "name": "Ambush Predator",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Burrow applies Tunnel Below; Skulk reduces Burrow CD by 1s/s"
+  },
+  "705996": {
+   "name": "Empowering Pheromones",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% effectiveness and +50% duration of Pheromones"
+  },
+  "804964": {
+   "name": "Noxious Empowerment",
+   "source": "Stalking",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; Enrage 12s: +50% venom proc chance, +100% Energy regen, +20% dmg"
+  },
+  "800882": {
+   "name": "Nerubian Sting",
+   "source": "Stalking",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "DoT", "Poison", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "35 Energy; applies 1 Brood Mark; shadow dmg + poison DoT stacking 3x"
+  },
+  "504704": {
+   "name": "Deadly Kiss",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% crit dmg of Widow's Kiss/Widowmaker/Venom Fang on Poisoned targets"
+  },
+  "706209": {
+   "name": "Rotpriest",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% spell critical damage"
+  },
+  "630934": {
+   "name": "Corrosive Bile",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "After Facemelter, next Widowmaker +20% dmg and cleaves 2 extra enemies"
+  },
+  "705966": {
+   "name": "Reinforced Shell",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% armor; Spider/Beetle attacks cannot be parried/dodged"
+  },
+  "503970": {
+   "name": "Fang Blessing",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800899": {
+   "name": "Mending Mist",
+   "source": "Vizier",
+   "primary": "Heal",
+   "tags": ["Nature", "HoT", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.8s cast; AoE HoT to up to 8 allies 7s + burst heal all allies after 1.69s"
+  },
+  "800914": {
+   "name": "Serpent Lord's Amulet",
+   "source": "Vizier",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD; +20% spell haste, -50% mana costs 15s"
+  },
+  "504342": {
+   "name": "Alkahest",
+   "source": "Vizier",
+   "primary": "Heal",
+   "tags": ["Nature", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges 12s recharge; direct heal + extends Shadra's Prayer on target"
+  },
+  "504736": {
+   "name": "Venom Weaving",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Serpent's Fang makes next 2 Alkahests +25% healing"
+  },
+  "300855": {
+   "name": "Envenomed Weapons",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Nature", "Poison", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min buff to all allies; 5% proc chance to fire poison jet on attacks"
+  },
+  "504352": {
+   "name": "Shadra's Aid",
+   "source": "Vizier",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Defensive", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; -20% all dmg taken 15s; direct dmg taken restores 3% max hp"
+  },
+  "560266": {
+   "name": "Potent Expulsion",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Expulsion damage"
+  },
+  "803196": {
+   "name": "Barbed Stinger",
+   "source": "Fortitude",
+   "primary": "Rotational",
+   "tags": ["Nature", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; clears Exposed Flesh; lodges stinger 10s+; rip out to pull + deal nature dmg"
+  },
+  "705876": {
+   "name": "Beetle Poison",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Poison", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Wicked Poison can stack one additional time"
+  },
+  "705999": {
+   "name": "Reconstructive Carapace",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Carapace Regeneration Rage drain by 3"
+  },
+  "800871": {
+   "name": "Facemelter",
+   "source": "Stalking",
+   "primary": "Rotational",
+   "tags": ["Nature", "Poison", "DoT", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spider Form; consumes Brood Marks; AoE nature poison DoT 15s scaling with marks"
+  },
+  "504375": {
+   "name": "Deadly Neurotoxins",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Nature", "Poison"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crits with Venom Fang/Nerubian Sting deal 25% bonus nature dmg; 40% chance to extend Rotfang"
+  },
+  "706036": {
+   "name": "Vile Fangs",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Periodic dmg 10% chance to generate a Brood Mark"
+  },
+  "706271": {
+   "name": "Death Spray",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on periodic dmg (2s ICD) to make next Venom Fang/Widow's Kiss free +20% dmg"
+  },
+  "804982": {
+   "name": "Wilt",
+   "source": "Venom",
+   "primary": "Rotational",
+   "tags": ["Nature", "Poison", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10% mana; instant; nature poison DoT 18s"
+  },
+  "804986": {
+   "name": "Mycosis",
+   "source": "Venom",
+   "primary": "Rotational",
+   "tags": ["Nature", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; 2.5s cast; nature nuke that applies absorption shield on target"
+  },
+  "503923": {
+   "name": "Serpent Lord's Ring",
+   "source": "Venom",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD; 20% mana restore; Mycosis no CD/free for 15s"
+  },
+  "707563": {
+   "name": "Playing With Poison",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Nature dmg; +3% healing done"
+  },
+  "681057": {
+   "name": "Limb Decayer",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Decay cast time -50% but mana cost +50%"
+  },
+  "705991": {
+   "name": "Unbreakable",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Exposed Flesh stacks 5 more times; -1% less physical dmg increase per stack"
+  },
+  "805140": {
+   "name": "Cunning of the Nerub'ar",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Augments Spider Form: +10% dmg; Nerubian Sting stacks +1 more"
+  },
+  "804983": {
+   "name": "Spore",
+   "source": "Venom",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "DoT", "Poison", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5s cast; shadow dmg + parasitic DoT 21s; spawns Mushroom after 10s"
+  },
+  "706021": {
+   "name": "Mycelial Replenishment",
+   "source": "Vizier",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; +20% crit/crit healing 20s; +30% mana; consumes Mycelial Healing stacks"
+  },
+  "803195": {
+   "name": "Venomtip Poison",
+   "source": "Fortitude",
+   "primary": "Rotational",
+   "tags": ["Nature", "Poison", "Slow", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20 Rage; AoE nature dmg + -20% attack speed on hit enemies 15s"
+  },
+  "706033": {
+   "name": "Glory To Shadra!",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit chance on Venom Fang and Nerubian Sting"
+  },
+  "804969": {
+   "name": "Virulent Resonance",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Brood Mark effectiveness; +5% hit chance"
+  },
+  "300682": {
+   "name": "Venomagus",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Poison", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% damage of Blight Venom"
+  },
+  "804977": {
+   "name": "Rotfang",
+   "source": "Stalking",
+   "primary": "Rotational",
+   "tags": ["Poison", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spider Form; consumes Brood Marks; Plague damage DoT 24s scaling with marks; pierces absorbs"
+  },
+  "807600": {
+   "name": "Widow's Kiss",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Shadow", "Melee", "Haste", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Every 3rd Venom Fang transforms to Widow's Kiss: higher dmg + +20% haste 4s + applies Brood Mark"
+  },
+  "805094": {
+   "name": "Expulsion",
+   "source": "Fortitude",
+   "primary": "Rotational",
+   "tags": ["Nature", "Poison", "DoT", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; 20 Rage; clears Exposed Flesh; poisons nearby enemies DoT 5s+1s/stack"
+  },
+  "706370": {
+   "name": "Rotting Away / Wilting Away",
+   "source": "Venom",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Wilt has 15% chance on tick to strike again as Shadow dmg"
+  },
+  "503976": {
+   "name": "Mamba Mentality / Celerity",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crits with Venom Bolt/Hivebreak/Venom Fang grant +20% move speed 3s"
+  },
+  "503960": {
+   "name": "Enduring Exoskeleton / Relentless",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance on direct dmg taken to generate 2 Rage + 3% base mana (1s ICD)"
+  },
+  "807243": {
+   "name": "Corrosive Toxin / Withered",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Shadow", "Poison"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Withering Venom deals +shadow dmg at end of duration"
+  },
+  "805933": {
+   "name": "Black Widow / Caustic",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": ["Execute"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Dmg to enemies <35% hp reduces Noxious Empowerment CD; Widowmaker +20% dmg below 35%"
+  },
+  "706026": {
+   "name": "Bugging / Nature Against Nature",
+   "source": "Stalking",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spells cast out of Skulk grant +30% dmg to that enemy for 4s"
+  },
+  "705998": {
+   "name": "Slimy / Slimy Stingers",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on direct dmg taken to spawn Beetle Slime AoE DoT pool (3s ICD)"
+  },
+  "504400": {
+   "name": "Pendo's Charm / Catalyst",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% Rage generated from damage dealt"
+  },
+  "804993": {
+   "name": "Empowered Exoskeleton / Chitinous Surge",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chitin Rush costs no Rage; +5 yd range"
+  },
+  "504837": {
+   "name": "Poison for Everyone! / Drown In Poison",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Poison"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-10 Rage cost on Venomtip Poison"
+  },
+  "705980": {
+   "name": "Alacrity / Cunning",
+   "source": "Fortitude",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Chitin Rush dmg increases dodge chance by 1% stacking 8x for 5s"
+  },
+  "681315": {
+   "name": "The Antidote / Good Venom",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+2s Rejuvenating Venom duration; -30% tick interval"
+  },
+  "706945": {
+   "name": "Melioration / Lifemender",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Serpent's Fang refreshes a charge of Alkahest"
+  },
+  "705957": {
+   "name": "Book of Shadra / Venomcult Scrolls",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Green Salve duration/CD/healing doubled; jumps every 6s instead of at end"
+  },
+  "681320": {
+   "name": "Sublime Extraction / Venom Fanatic",
+   "source": "Vizier",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Green Salve resets Serpent's Fang CD and removes next cast cost"
+  },
+  "803179": {
+   "name": "Champion of the Spider",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Nature", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10 min buff on ally; -5% all dmg taken, +5% nature healing received",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "805731": {
+   "name": "Debilitating Venom",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Slow", "Poison"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "2h self-venom; 30% proc chance to debuff target AP reduction"
+  },
+  "503907": {
+   "name": "Disciple of Shadra",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; Dummy effect only - verify in-game"
+  },
+  "570123": {
+   "name": "Mantid Descent",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Feather fall effect 30s on target",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "572304": {
+   "name": "Myotoxin",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Nature", "Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; dispels 1 Enrage; applies poison DoT 20s",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "805096": {
+   "name": "Nullifying Toxin",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Nature", "Interrupt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "16s CD; interrupt spell cast"
+  },
+  "630868": {
+   "name": "Rejuvenating Venom",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Nature", "HoT"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "2h self-venom; 20% proc chance to apply HoT on ally",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "630872": {
+   "name": "Remove Venoms",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes venom counter stacks from self",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "520514": {
+   "name": "Ritual Cleansing",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Frost", "HoT", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; AoE periodic heal to all friends within 30 yd 12s",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "800870": {
+   "name": "Shadra's Prayer",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Nature", "HoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s cast; direct heal + HoT on ally 21s; periodic Shadra's Favor proc",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "805568": {
+   "name": "Spawn",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Nature"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10 min CD; 2s cast; resurrect target",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "803177": {
+   "name": "Spider Pheromones",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Nature", "Agility"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min buff on target; +6 Agility",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "800904": {
+   "name": "Unity",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Nature", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "16s CD; 1.5s cast; AoE heal to allies within 12 yd",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "800869": {
+   "name": "Venom Bolt",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Nature", "Poison", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s cast; main ranged nuke; applies Blightcaps"
+  },
+  "800912": {
+   "name": "Vizier Form",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shapeshift into Vizier Form (healer stance)",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  },
+  "805141": {
+   "name": "Wasp Form",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": [],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flight form (Wasp) at lvl 60",
+   "confidence": "low",
+   "notes2": "no desc - classified from DB effects"
+  }
+ }
+}

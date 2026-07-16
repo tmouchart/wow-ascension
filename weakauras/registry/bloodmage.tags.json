@@ -1,0 +1,1779 @@
+{
+ "slug": "bloodmage",
+ "class": "Bloodmage",
+ "count": 176,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "680696": {
+   "name": "Gruesome Rituals",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804726": {
+   "name": "Vampiric Fang",
+   "source": "Sanguine",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Selfheal", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "execute-like spender that drains health; scales with Thirst stacks"
+  },
+  "806423": {
+   "name": "Bloodleaper",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Lunge cooldown"
+  },
+  "560257": {
+   "name": "Blood Runs Cold",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Blood Pact also increases healing received"
+  },
+  "560073": {
+   "name": "Crimson Terror",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transgression grants bonus spell damage"
+  },
+  "704621": {
+   "name": "Easy Prey",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Hemostasis duration"
+  },
+  "804604": {
+   "name": "Puncturing Fangs",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Bloodmoon Blast generates 3 extra Rage per hit"
+  },
+  "560250": {
+   "name": "Blood Banquet",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases damage of Valanar's Vengeance and Taldaram's Torment"
+  },
+  "704634": {
+   "name": "Twisted Magic",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Shadow", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit strikes proc Shadow damage-taken debuff on target"
+  },
+  "501132": {
+   "name": "Fearmonger",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases tick rate of Taldaram's Torment"
+  },
+  "704623": {
+   "name": "Rejuvenating Shadows",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid +6% healing received; also boosts Bloodbolt leech"
+  },
+  "704654": {
+   "name": "Ultra Instinct",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit strikes proc stacking crit chance/damage buff"
+  },
+  "560254": {
+   "name": "Blood Rush",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic damage has 20% chance to grant Blood Rush haste proc"
+  },
+  "680680": {
+   "name": "Atherann's Anguish",
+   "source": "Sanguine",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "AoE", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; accumulates 30% of damage then explodes Shadow AoE"
+  },
+  "680745": {
+   "name": "Agonizing Pain",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Atherann's Anguish now causes targets to bleed Shadow DoT"
+  },
+  "504103": {
+   "name": "The Council Assembled",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "synergy node: reduces costs, adds proc interactions among Sanguine spells"
+  },
+  "704166": {
+   "name": "Vitality",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Eternal Curse grants additional Stamina"
+  },
+  "806421": {
+   "name": "Essence Harvester",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "below 35% HP, proc resets Vampiric Fang CD and grants Wretched regen"
+  },
+  "553267": {
+   "name": "Bloodsurge",
+   "source": "Accursed",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Enrage", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Shadow damage + crit 20s; transitions to Bloodchaser Enrage for Physical"
+  },
+  "704627": {
+   "name": "Heightened Reflexes",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% dodge, +5 expertise"
+  },
+  "805035": {
+   "name": "Infected Blood",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Slow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic damage procs movement-speed slow on enemy"
+  },
+  "681304": {
+   "name": "Hemostasis",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Horrify", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; trap enemy in blood orb, horrify 4s; reactivate to pop for big Shadow damage"
+  },
+  "807774": {
+   "name": "Night Stalker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% damage and healing at night"
+  },
+  "704635": {
+   "name": "Bloodbender",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases effectiveness of Offerings by 20%"
+  },
+  "802576": {
+   "name": "Lifedrinker",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% damage of Vampiric Fang"
+  },
+  "704644": {
+   "name": "Dark Frenzy",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% spell haste to raid; in Cursed Form reduces GCDs by 25%"
+  },
+  "504241": {
+   "name": "Rage",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "spell damage = 15% of AP; +10% Reave damage"
+  },
+  "806212": {
+   "name": "Aortic Assault",
+   "source": "Accursed",
+   "primary": "Rotational",
+   "tags": ["Physical", "AoE", "Channel", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; 3s channel AoE melee; extends Cursed Form duration"
+  },
+  "523727": {
+   "name": "Crimson Expedition",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit chance for Bloodbolt, Blood Shards, Aortic Assault"
+  },
+  "560259": {
+   "name": "Vampyr Lord",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+35% damage to Animated Blood"
+  },
+  "504116": {
+   "name": "Fang Over Fang",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Bloodfang Bite 20% chance to reset Reave cooldown"
+  },
+  "706619": {
+   "name": "Enthraller",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit for Valanar's Vengeance and Keleseth's Calamity"
+  },
+  "681190": {
+   "name": "Endure the Curse",
+   "source": "Accursed",
+   "primary": "CD Defensif",
+   "tags": ["Defensive", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; -30% damage 10s + once per use heal when about to die"
+  },
+  "681403": {
+   "name": "Infuse",
+   "source": "Fleshweaver",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Ranged", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; accumulates damage on target, then bursts + absorbs healing on target"
+  },
+  "706256": {
+   "name": "Blood Redistribution",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% max health restored by Fleshcraft"
+  },
+  "681336": {
+   "name": "Raging Hunger",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "triggering Pooled Vitality also generates 3 Rage"
+  },
+  "806274": {
+   "name": "Aortic Aegis",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blood Veil spreads to party members of target"
+  },
+  "806049": {
+   "name": "Sovereignty",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crimson Tide damage procs Sovereignty: cheaper + AoE Bloodbolt stacks"
+  },
+  "680732": {
+   "name": "Dark Essence",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cursed Form / Bloodbolt heals Blood Rituals allies"
+  },
+  "704633": {
+   "name": "Flesh Foundry",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits reduce Fleshcraft CD; +crit rating from Spirit"
+  },
+  "807490": {
+   "name": "Organ Orbs",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "each Pooled Vitality stack +3% Spirit"
+  },
+  "706598": {
+   "name": "Gift of Lana'thel",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Spirit to spell power; +4% Spirit to hit rating"
+  },
+  "803681": {
+   "name": "Hemal Excision",
+   "source": "Fleshweaver",
+   "primary": "Utility",
+   "tags": ["Arcane", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; dispels curses from ally, can re-apply to enemy within 10s"
+  },
+  "504275": {
+   "name": "Vampyr's Kiss",
+   "source": "Fleshweaver",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD; curse DoT that replicates 25% of your periodic damage on target"
+  },
+  "680730": {
+   "name": "Dissipation",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Fleshcraft CD and Sated debuff duration"
+  },
+  "680731": {
+   "name": "Black Heart",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Vampyr's Kiss regenerates 20% max Rage"
+  },
+  "504282": {
+   "name": "Crimson Tide",
+   "source": "Fleshweaver",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE ground bleed DoT on up to 10 enemies; 40 Rage cost"
+  },
+  "802315": {
+   "name": "Blood Parasites",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Generator", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Taldaram's Torment generates bonus Rage and procs crit debuff on target"
+  },
+  "704659": {
+   "name": "Night Hunter",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Veinburst 40% no-CD proc; Bloodbolt 40% refund half cost"
+  },
+  "680695": {
+   "name": "Lingering Essence",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "periodic dmg/healing 50% chance to reduce Vampyr's Kiss CD -1s"
+  },
+  "681077": {
+   "name": "Arterial Bind",
+   "source": "Fleshweaver",
+   "primary": "Control",
+   "tags": ["Shadow", "Silence", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; AoE silence 4s + AoE heal allies; ground-targeted"
+  },
+  "800780": {
+   "name": "Blood Craving",
+   "source": "Sanguine",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Selfheal", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; 12s immune interrupt/silence, regen 5% HP + 15% missing Rage per 2s"
+  },
+  "560249": {
+   "name": "Keleseth's Calamity",
+   "source": "Sanguine",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Mortal Form; AoE Shadow nuke, cast time reduced by Thirst stacks"
+  },
+  "806944": {
+   "name": "Cardiac Arrest",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["DoT", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Valanar's Vengeance: +50% damage over 10s, heal 50% of that"
+  },
+  "504071": {
+   "name": "Torture",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Leech"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+50% Vampiric Feast leech; consuming 9+ Thirst extends Transgression"
+  },
+  "800781": {
+   "name": "Dark Liturgy",
+   "source": "Fleshweaver",
+   "primary": "Heal",
+   "tags": ["Shadow", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "heal target + chain to 10 allies; applies Blood Rituals; rotational filler"
+  },
+  "680675": {
+   "name": "Adrenaline Boost",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+20% crit for abilities on enemies >75% or <35% HP; melee crits proc instant cast"
+  },
+  "680823": {
+   "name": "Spice of Life",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic dmg/healing 10% chance to grant Pooled Vitality stack"
+  },
+  "706603": {
+   "name": "Consolidation",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% haste"
+  },
+  "804805": {
+   "name": "Gorge",
+   "source": "Fleshweaver",
+   "primary": "CD Offensif",
+   "tags": ["Shadow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; 15s, generates 10 Pooled Vitality every 5s (Fleshweaver power CD)"
+  },
+  "804807": {
+   "name": "Dark Blood",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Cursed Form ability costs; increases Blood Rituals healing"
+  },
+  "680733": {
+   "name": "Bloodcraft",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Darkfallen Lament damage applies Bloodcraft damage debuff stacking"
+  },
+  "505188": {
+   "name": "Sanguine Essence",
+   "source": "Fleshweaver",
+   "primary": "Buff",
+   "tags": ["Shadow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "spec unlock: transforms Blood Curse into Sanguine Essence Cursed Form"
+  },
+  "680685": {
+   "name": "Heart Rupturer",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% damage for Claw Sweep, Sanguine Rupture, Ravenous Strike, Bloodmoon Blast"
+  },
+  "680828": {
+   "name": "Darkfallen Lament",
+   "source": "Fleshweaver",
+   "primary": "Heal",
+   "tags": ["Shadow", "AoE", "Channel", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; 8s channel: heals 12 Blood Ritual allies + drains AoE nearby enemies; immunity to silence/interrupt while channeling"
+  },
+  "800776": {
+   "name": "Malediction",
+   "source": "Sanguine",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; DoT + next 5 direct spells deal 20% more damage to target"
+  },
+  "681026": {
+   "name": "Vitality For Later",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "consuming Pooled Vitality heals up to 10 allies"
+  },
+  "804599": {
+   "name": "Everhungry",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct crits proc 10% haste for 5s"
+  },
+  "504627": {
+   "name": "Blood Bond",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Shadow", "Taunt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30min bond to ally: their damage generates your Rage, redirect their threat; +30% move speed OOC"
+  },
+  "704649": {
+   "name": "Dark Curse",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit chance"
+  },
+  "500124": {
+   "name": "Night Hunter's Howl",
+   "source": "Eternal",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s CD; AoE melee Shadow damage + -60% slow 6s"
+  },
+  "706617": {
+   "name": "Life Scent",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Tracking"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "significantly increased stealth detection"
+  },
+  "561196": {
+   "name": "Blood Constructor",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Animated Blood duration per Thirst stack"
+  },
+  "563736": {
+   "name": "Night Feast",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "each Rage +1% Bloodbolt damage but +10 cost"
+  },
+  "681427": {
+   "name": "Waves of Blood",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Crimson Tide ticks 10% chance to heal a nearby ally for 25% damage"
+  },
+  "804207": {
+   "name": "Wicked Howl",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; +30% max HP for 20 seconds"
+  },
+  "704642": {
+   "name": "Atherann's Wickedness",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% Shadow damage; +3% hit chance"
+  },
+  "300226": {
+   "name": "Nightmare",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "above 50% HP: Rage-costing abilities consume 2% max HP to bonus damage/heal 10%"
+  },
+  "804199": {
+   "name": "Blood Moon",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Animated Blood spawns 1 additional amalgam"
+  },
+  "504710": {
+   "name": "Accursed Form",
+   "source": "Accursed",
+   "primary": "Buff",
+   "tags": ["Physical", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "spec unlock: transforms Blood Curse into Accursed Form (30s, +50% Agility AP, healing-reduction on melee)"
+  },
+  "570746": {
+   "name": "Bloodguard",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Blood Pact duration +4s"
+  },
+  "801074": {
+   "name": "Scarlet Delirium",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Fear", "AoE", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE fear up to 5 enemies 40s (8s PvP) + drain life; 2s cast"
+  },
+  "704660": {
+   "name": "No Mercy",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Thick Pelt can trigger an additional hit (extra charge)"
+  },
+  "806099": {
+   "name": "Aneurysm",
+   "source": "Sanguine",
+   "primary": "Utility",
+   "tags": ["Shadow", "Interrupt", "Ranged", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "24s CD; interrupt + locks school 4s; heals 5% max HP on success"
+  },
+  "801952": {
+   "name": "Fleshcraft",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Shadow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5min CD; heals ally for 50% max HP (Sated debuff 3min); also gives Rage and haste"
+  },
+  "800785": {
+   "name": "Sacrificial Rite",
+   "source": "Sanguine",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; 15s: +20% haste, attackers get Cursed Blood; after: +15% healing + HoT"
+  },
+  "504285": {
+   "name": "Alacrity",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% all primary stats"
+  },
+  "804811": {
+   "name": "Monstrous Hunger",
+   "source": "Eternal",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Enrage", "Summon", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD; 10s Enrage: next 6 Bloodfang Bites reduced GCD/cost + Call of Darkwing procs"
+  },
+  "801959": {
+   "name": "Eyes In The Night",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Summon", "Taunt"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "passive raid aura: allies taking dmg 40% chance to trigger Call of Darkwing + generate threat"
+  },
+  "804197": {
+   "name": "Rotclaw",
+   "source": "Eternal",
+   "primary": "Rotational",
+   "tags": ["Shadow", "AoE", "DoT", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges, 6s recharge; AoE melee + Shadow DoT bleed; generates Rage"
+  },
+  "706683": {
+   "name": "Festering Maw",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Bite Wound healing reduces Lunge CD -1s"
+  },
+  "704624": {
+   "name": "Infection",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "auto-attacking bleeding target procs stacking crit debuff"
+  },
+  "300585": {
+   "name": "Enduring",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Bloodbolt damage; additional +25% below 35% HP"
+  },
+  "572783": {
+   "name": "Iron Claws",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Rotclaw DoT can stack 2 more times; 50% longer duration; 3% armor ignore per stack"
+  },
+  "500012": {
+   "name": "Petrified Legions",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Physical", "Summon", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "physical damage dealt/taken 10% chance to trigger Call of Darkwing"
+  },
+  "800782": {
+   "name": "Blood Howl",
+   "source": "Eternal",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Taunt", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2.5min CD; AoE taunt all nearby enemies 5s"
+  },
+  "801963": {
+   "name": "Battleweaver",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Cursed Form abilities 50% chance to generate Blood Shard; Bloodbolt consumes shards for Arcane damage"
+  },
+  "560001": {
+   "name": "Eternal Presence",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% raid AP; self AP = 15% damage taken for 10s on hit"
+  },
+  "504260": {
+   "name": "Veinburst",
+   "source": "Accursed",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; Shadow blast, +25% damage to bleeding targets"
+  },
+  "704115": {
+   "name": "Clotting",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Physical", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Aortic Assault end: frontal cone Physical AoE +25% vs bleeding"
+  },
+  "560074": {
+   "name": "Veins of Vengeance",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% chance to resist curse effects"
+  },
+  "706247": {
+   "name": "Darkcasting",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits spawn Blood Orbs; picking them up grants Darkcasting stacks (Animated Blood cooldown reduction + blood worm)"
+  },
+  "560315": {
+   "name": "Valanar's Vengeance",
+   "source": "Sanguine",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Mortal Form; heavy Shadow bolt, cast time reduced by Thirst; primary spender"
+  },
+  "524907": {
+   "name": "Hemoglobe",
+   "source": "Fleshweaver",
+   "primary": "Heal",
+   "tags": ["Shadow", "AoE", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; 15s: heals 12 allies + generates Pooled Vitality + 150 Rage per tick"
+  },
+  "504100": {
+   "name": "Excess Blood",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["HoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "healing done 10% chance to proc bonus HoT on target"
+  },
+  "800766": {
+   "name": "Enraging Howls",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Howl spells proc +5% damage dealt + -5% damage taken for nearby party 10s"
+  },
+  "524865": {
+   "name": "Final Embrace",
+   "source": "Accursed",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "AoE", "DoT", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; 20s improved Cursed Form: AoE Hematoma DoT curse every 1s; drains own HP"
+  },
+  "680661": {
+   "name": "One Man's Curse...",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes HP cost of Accursed Form; entering it heals 15% max HP"
+  },
+  "572855": {
+   "name": "Hemoburst",
+   "source": "Accursed",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Crit", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; guaranteed crit vs bleeding targets; extends next Cursed Form +5s"
+  },
+  "504758": {
+   "name": "Hematoma",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Bloodbolt heals for +20% of damage dealt"
+  },
+  "504292": {
+   "name": "Mortal Wounds",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct harmful crits proc bleed DoT on target"
+  },
+  "560535": {
+   "name": "Dark Sigil",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit chance to raid; self heals 15% of all critical damage dealt"
+  },
+  "804602": {
+   "name": "Crimson Feast",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "every 5s in Cursed Form reduces Bloodsurge CD -5s"
+  },
+  "300957": {
+   "name": "Dark Presence",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% spell haste raid; +3% self spell haste"
+  },
+  "680716": {
+   "name": "Dominion of Blood",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Vampiric Fang heals +50% of damage dealt"
+  },
+  "801955": {
+   "name": "Blood Pact",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; 12s: +50% dodge, -50% ranged hit chance on enemies; can dodge/parry while casting"
+  },
+  "504728": {
+   "name": "Transgression",
+   "source": "Sanguine",
+   "primary": "Buff",
+   "tags": ["Shadow", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "spec unlock: Transgression Cursed Form 30s; free Vampiric Fang on entry; direct spell damage procs Vampiric Feast +20% Shadow + 50% heal"
+  },
+  "804858": {
+   "name": "Blood Trails",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "periodic dmg/healing creates blood pools; Cursed Form allies moving through gain Trail of Blood (speed + damage)"
+  },
+  "572800": {
+   "name": "Bloody Claws",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+20% Rage from damage; auto crit reduces Animated Blood / Blood Veil / Blood Pact CD -1s"
+  },
+  "804223": {
+   "name": "Blood Scent",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Execute", "Leech", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "in Accursed Form: +15% dmg to targets <35% HP; direct dmg <35% leech 10%"
+  },
+  "575335": {
+   "name": "Blood Plague",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit chance and crit damage for Ravenous Strike and Claw Sweep vs Diseased"
+  },
+  "560479": {
+   "name": "Appetite for Blood",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% damage of Bloodfang Bite and Claw Sweep vs Humanoids and Beasts"
+  },
+  "504290": {
+   "name": "Packleader",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Howl spells proc Packleader: summons +10% damage 8s"
+  },
+  "804201": {
+   "name": "Eternal Hunt",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% max HP; -5% spell/ability cost"
+  },
+  "704626": {
+   "name": "Thick Pelt",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive", "Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "physical damage taken procs absorb on next physical hit within 10s (5s ICD)"
+  },
+  "806310": {
+   "name": "Liquify",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Frost", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; 6s full damage immunity (cannot attack/cast); usable while stunned/feared/confused"
+  },
+  "560261": {
+   "name": "Darkfallen's Embrace",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% spell haste; +5yds range on Sanguine spells and Bloodbolt"
+  },
+  "807544": {
+   "name": "The Cup Runneth Over",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% SP scaling for Bloodmoon Blast, Taldaram's Torment, Bloodbolt"
+  },
+  "704636": {
+   "name": "Blood Lord",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Bloodsore -15% chance to be consumed on proc"
+  },
+  "806210": {
+   "name": "Terrorizer",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% damage of Veinburst, Bloodfang Bite, Claw Sweep vs targets <35% HP"
+  },
+  "705732": {
+   "name": "Rabid",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-25% cooldown on Howl spells"
+  },
+  "807491": {
+   "name": "Uncanny Speed",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% melee haste; +20% move and mount speed"
+  },
+  "705733": {
+   "name": "Dark Hunt",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Shadow damage vs bleeding targets"
+  },
+  "807345": {
+   "name": "Gore Barrage",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "-30% cost on HP-cost spells and Animated Blood; procs Blood Shards"
+  },
+  "504254": {
+   "name": "Barely Human",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% armor penetration; +15% damage for HP-costing spells"
+  },
+  "300260": {
+   "name": "Screech of the Darkwing",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Call of Darkwing effects trigger an additional Call of Darkwing (1s ICD)"
+  },
+  "806177": {
+   "name": "Shadow Howl",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Immunity", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD; all allies 30yds immune to movement-impairing effects 6s"
+  },
+  "801960": {
+   "name": "Shadow Strength",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Howl spells deal AoE Shadow damage; Call of Darkwing reduces Howl CDs -1s"
+  },
+  "300982": {
+   "name": "Cursed Strikes",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% duration for Rotclaw and Hypovolemic Shock"
+  },
+  "300986": {
+   "name": "Adrenaline",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-25% duration of bleed, root, and slow effects on self"
+  },
+  "804851": {
+   "name": "Sanguine Scripture",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "exiting Accursed Form procs +70% move speed and spell haste 5s"
+  },
+  "807488": {
+   "name": "Inhumane",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Aortic Assault damage launches 1 Blood Shard (Arcane)"
+  },
+  "704690": {
+   "name": "Killer Instinct",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "each Rage = +0.5% crit for Veinburst and Reave, max 50%"
+  },
+  "800490": {
+   "name": "Reave",
+   "source": "Accursed",
+   "primary": "Rotational",
+   "tags": ["Physical", "Shadow", "Melee", "Spender", "Execute"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; 125% weapon dmg; deals 100% bonus Shadow per bleeding/execute/<35%/behind condition"
+  },
+  "804686": {
+   "name": "Everlasting Hunt",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Blood Shard damage reduces Veinburst and Reave CD -1.5s"
+  },
+  "705742": {
+   "name": "Bloody Sacrifice",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% healing received"
+  },
+  "801962": {
+   "name": "Eternal Resolve",
+   "source": "Eternal",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Haste", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; 30s: +50% melee haste, +50% max HP, +50% healing received; feral frenzy"
+  },
+  "706656": {
+   "name": "Crimson Curse",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct crit strikes proc +30% bleed damage taken 15s"
+  },
+  "300590": {
+   "name": "Predator",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sanguine Mend heals 9 additional targets; +1% crit damage for Claw Sweep and Sanguine Rupture"
+  },
+  "705734": {
+   "name": "Transfusion",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Shadow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; swap HP% with ally; both raised to at least 40%"
+  },
+  "504263": {
+   "name": "Blood Veil",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Shield", "Absorb", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; 8s absorb shield 50% incoming damage on ally"
+  },
+  "800154": {
+   "name": "Grim Omen",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Summon", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Ravenous Strike/Bloodfang Bite crits or Howl spells trigger Call of Darkwing"
+  },
+  "704641": {
+   "name": "Blood Prince's Command / Swarm of Flies",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Bloodbolt guaranteed crit on Taldaram's Torment-affected targets"
+  },
+  "560072": {
+   "name": "Bloodwell Eruption / Cursed Ground",
+   "source": "Sanguine",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sanguine Rupture +5yds radius and +10% crit"
+  },
+  "680657": {
+   "name": "Blood Clot / Mucking Around",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Scarlet Delirium deals 100% increased damage"
+  },
+  "570735": {
+   "name": "Crimson Etchings / Bloodbound Etchings",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes HP cost of Blood Shield and Vital Shield"
+  },
+  "561278": {
+   "name": "Dark Mending / Saturating Sutures",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Sanguine Mend cast time -0.5s"
+  },
+  "504088": {
+   "name": "Vampiric Pools / Bloodmoon Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Leech"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "when Liquify ends, leech health from nearby enemies"
+  },
+  "707371": {
+   "name": "Visceral Magic / Coagulation",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+40% armor contribution from Blood Shield; +2 stacks for Eternal Curse"
+  },
+  "561227": {
+   "name": "Shadow Pact / Blood Pact",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% effectiveness of Shields"
+  },
+  "807788": {
+   "name": "Gore Tome / Leeching Tome",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "first 5s after Cursed Form: Bloodfang Bite guaranteed crit"
+  },
+  "707622": {
+   "name": "Dark Intent / Cruel Intent",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Lunge procs heal 5% max HP"
+  },
+  "707435": {
+   "name": "Cursed Blood / Corrupted Blood",
+   "source": "Accursed",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Taldaram's Torment 20% chance to replicate AoE"
+  },
+  "707626": {
+   "name": "Coated In Blood / Coated In Darkness",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% effectiveness of Blood Pact"
+  },
+  "704662": {
+   "name": "Shadows In The Night / Blood Moon",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-5% damage taken while above 75% HP"
+  },
+  "707624": {
+   "name": "Blood Mark / Dark Mark",
+   "source": "Eternal",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "enemies within 5yds take +3% Physical damage"
+  },
+  "680684": {
+   "name": "Fleshbending / Invigorated Flesh",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "own crits proc +5% crit for all party/raid 10s (does not stack)"
+  },
+  "684331": {
+   "name": "Blood-Cursed Weapons / Blood-Cursed Armor",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crimson Tide also grants +5% raid haste 15s (does not stack)"
+  },
+  "806428": {
+   "name": "Universal Donor / Acquired Taste",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Infuse or Vampyr's Kiss cast procs +6% healing received for all allies 10s"
+  },
+  "681792": {
+   "name": "Cursed Blood / Heartbreak",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+20% damage/SP scaling for Bloodbolt, Bloodmoon Blast, Crimson Tide; Bloodbolt procs magic resistance debuff"
+  },
+  "807292": {
+   "name": "Sanguine Scion / Crimson Scion",
+   "source": "Fleshweaver",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit for Sanguine Mend and Bloodbolt"
+  },
+  "520493": {
+   "name": "Red Thirst / Purify Blood",
+   "source": "Fleshweaver",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Raidbuff", "Haste", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5min CD; +30% haste Enrage to all allies 40yds 20s (Bloodlust-style)"
+  },
+  "503134": {
+   "name": "Hammer of Kings",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "AoE", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; 15s CD, Energy cost, AoE melee - verify in-game"
+  },
+  "520314": {
+   "name": "Heartbreak",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no baseline desc; drain health spell with Rage cost; Shadow"
+  },
+  "520154": {
+   "name": "Suture",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Shadow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; instant Shadow spell with small HP cost, likely a heal - verify in-game"
+  },
+  "704686": {
+   "name": "Teachings of Lana'thel",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; +Spirit to spell hit and crit rating - always-on passive"
+  }
+ }
+}

@@ -1,0 +1,1390 @@
+{
+ "slug": "stormbringer",
+ "class": "Stormbringer",
+ "count": 141,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "705643": {
+   "name": "Flux Arc",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Call Lightning AoE splash on marked targets"
+  },
+  "801869": {
+   "name": "Titanstorm",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "CD reduction proc on Call Lightning / Electrocute casts"
+  },
+  "705639": {
+   "name": "Voltaic Bursts",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706434": {
+   "name": "Spheres of Power",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Arcane", "AoE", "Summon", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "proc summons Power Sphere on direct damage"
+  },
+  "705715": {
+   "name": "Gift of Air",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Kiss of the Clouds empowers Air Elemental with Gift of Air buff"
+  },
+  "300834": {
+   "name": "Wrath of Al'Akir",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "extends Unshackle duration on Static depletion"
+  },
+  "804038": {
+   "name": "Child of the Storm",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706625": {
+   "name": "Unshackle",
+   "source": "Wind",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Haste", "Summon", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2m cd, transforms Air Elemental, costs 50 Static"
+  },
+  "504846": {
+   "name": "Mystic Thunder",
+   "source": "Maelstrom",
+   "primary": "Utility",
+   "tags": ["Nature", "Interrupt", "Silence", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "interrupt + silence if they cast again while marked"
+  },
+  "706661": {
+   "name": "Voltaic Mastery",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300961": {
+   "name": "Conductor In Charge",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705657": {
+   "name": "Studious",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300609": {
+   "name": "Lightning Rod",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "spreads Volt DoT on Forked Lightning"
+  },
+  "573436": {
+   "name": "Electrified Waters",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Nature", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit vs Drown target summons Electrified Water Elemental"
+  },
+  "705708": {
+   "name": "Aeromancy",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Air Elemental mirrors Updraft casts"
+  },
+  "560030": {
+   "name": "Lightning Cage",
+   "source": "Lightning",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Arcane", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3m cd, locks self in place but doubles range and generates extra Static per spell"
+  },
+  "681110": {
+   "name": "Storm Ascendance",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Defensive", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc but transforms into storm elemental; 15s, +20% magic dmg, -50% magic taken, +10 Static per spell"
+  },
+  "301298": {
+   "name": "Sparks",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Electrocute/Arm of Thorim apply crit-taken debuff"
+  },
+  "704149": {
+   "name": "Electrical Charge",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "standing still builds Haste stacks; at 20 spells stop depleting Static"
+  },
+  "705655": {
+   "name": "Stormy Days",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704209": {
+   "name": "Comforting Winds",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "mutual haste-stack procs between player and Air Elemental"
+  },
+  "705704": {
+   "name": "Quickdraft",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706297": {
+   "name": "Eye of the Tornado",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit strikes refund 5 Static"
+  },
+  "705666": {
+   "name": "Undertow",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707618": {
+   "name": "Lord of Lightning",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Storm Ascendance also grants Lord of Lightning buff"
+  },
+  "500580": {
+   "name": "Storm Bond",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Air Elemental damage generates 2 Static"
+  },
+  "707548": {
+   "name": "Air Flow",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707055": {
+   "name": "Fulmination",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705650": {
+   "name": "Wicked Storms",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "712431": {
+   "name": "Aurat Scripts",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804040": {
+   "name": "Storm Channeling",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "while Stormcloak active, Armor += 500% Intellect"
+  },
+  "572310": {
+   "name": "Shockingly Powerful",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500039": {
+   "name": "Kiss of the Clouds",
+   "source": "Wind",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Shield", "Absorb", "Raidbuff", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s cd, AoE absorb shield on all allies, costs 40 Static"
+  },
+  "500041": {
+   "name": "Body of Lightning",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Nature", "Raidbuff", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "infuse ally with lightning for mana regen + AoE Nature damage on their attacks, costs 25 Static"
+  },
+  "806307": {
+   "name": "Eye of the Storm",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "DoT", "Root", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "marks target, periodic AoE Nature dmg, roots at end"
+  },
+  "705663": {
+   "name": "Lethal Current",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% crit on Electrocute vs targets below 20% hp"
+  },
+  "500928": {
+   "name": "Volt",
+   "source": "Lightning",
+   "primary": "Rotational",
+   "tags": ["Nature", "DoT", "Slow", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "main DoT, generates 2 Static per tick, slows target"
+  },
+  "804833": {
+   "name": "Stormcloak",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Absorb", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s cd, 15s absorb barrier, 50% chance to half damage and generate 10 Static per hit"
+  },
+  "705677": {
+   "name": "Storm Rider",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806400": {
+   "name": "Deluge",
+   "source": "Maelstrom",
+   "primary": "Rotational",
+   "tags": ["Frost", "AoE", "Spender", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE Frost, consumes Conductive stacks, 50 Static spender"
+  },
+  "804826": {
+   "name": "Charge",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Arcane", "Haste", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1m cd, generates 100 Static + 30% spell haste for next cast"
+  },
+  "800099": {
+   "name": "Ride the Lightning",
+   "source": "Lightning",
+   "primary": "Movement",
+   "tags": ["Nature", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "blink forward, damages enemies in path, costs 40 Static"
+  },
+  "705661": {
+   "name": "Invigorating Winds",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2m cd, grants ally immunity to silence/interrupt and no pushback for 20s"
+  },
+  "705662": {
+   "name": "Master Elementalist",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801851": {
+   "name": "Forked Lightning",
+   "source": "Lightning",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "chain lightning up to 4 enemies, generates 5 Static per enemy hit"
+  },
+  "806411": {
+   "name": "Amped Flow",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "while channeling Stormflow, Shock cleaves 1 extra target"
+  },
+  "532751": {
+   "name": "Stormfury",
+   "source": "Maelstrom",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s cd, 20s AoE lightning storm around caster, costs 50 Static"
+  },
+  "806374": {
+   "name": "Conduit",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Frost damage procs Conductive debuff stacks on target"
+  },
+  "705646": {
+   "name": "Superconductor",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "504401": {
+   "name": "Wind Gate",
+   "source": "Wind",
+   "primary": "Utility",
+   "tags": ["Nature", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "places a gate totem; can pull allies to it with Evacuate"
+  },
+  "804278": {
+   "name": "Electric Energy",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705692": {
+   "name": "Thunder Wave",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Arcane", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on Forked Lightning to proc Thunder Wave AoE burst"
+  },
+  "500042": {
+   "name": "Windsurf",
+   "source": "Wind",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s cd, Air Elemental intercepts next attack + allows casting while moving for 15s"
+  },
+  "705709": {
+   "name": "Clearsky Pendant",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Updraft grants extra 25% movement speed to allies"
+  },
+  "705721": {
+   "name": "Power the Elements",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806414": {
+   "name": "Cloudsurfer",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804605": {
+   "name": "Residual Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800699": {
+   "name": "Power Surge",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "570191": {
+   "name": "High Voltage",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Stun"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804830": {
+   "name": "Skyfall",
+   "source": "Wind",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Arcane", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s cd, Air Elemental delivers massive strike, increases ally movement speed 30% for 15s"
+  },
+  "704212": {
+   "name": "Nimbus",
+   "source": "Wind",
+   "primary": "CD Offensif",
+   "tags": ["Nature"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5m cd, resets cooldown of Evacuate, Windsurf, and Unshackle"
+  },
+  "706628": {
+   "name": "Everlasting Invigoration",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807233": {
+   "name": "Predictable Weather",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "every 30s, next Storm Alert or Torrential Wrath is instant cast proc"
+  },
+  "300595": {
+   "name": "Conjuration Mastery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Conjure Storm refunds 10 Static"
+  },
+  "804591": {
+   "name": "Thunder King",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Arcane", "AoE", "Haste", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3m cd, 20s: Call Lightning cleaves 3 extra, +25% move speed, 5 Static/sec, crit bonus damage + Raging Storm haste stacks"
+  },
+  "707542": {
+   "name": "Binder of Storms",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Nature", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Conduction damage procs Thunder Orb summon"
+  },
+  "801855": {
+   "name": "Flow of Wrath",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524954": {
+   "name": "Static Electricity",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Torrential Wrath crits spawn Electrified Water Elemental"
+  },
+  "806407": {
+   "name": "Drown",
+   "source": "Maelstrom",
+   "primary": "Rotational",
+   "tags": ["Frost", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1m cd, healing reduction + delayed Frost damage burst, ramps with Conductive stacks"
+  },
+  "705723": {
+   "name": "Unstable",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct crit strikes cause Stormflow to tick faster"
+  },
+  "806409": {
+   "name": "Kinetic Energy",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "consuming Conductive grants Kinetic Energy crit stacks"
+  },
+  "801847": {
+   "name": "Arm of Thorim",
+   "source": "Lightning",
+   "primary": "Rotational",
+   "tags": ["Nature", "Ranged", "Stun", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s cd, big single-target nuke + stun, depletes all Static"
+  },
+  "707615": {
+   "name": "Tempest Calling",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "spec keystone: transforms Conjure Storm into Updraft and Call Lightning into Aeroblast"
+  },
+  "560020": {
+   "name": "Tempest Sovereign",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "spec keystone: transforms Shock into Brine and Call Lightning into Torrential Wrath"
+  },
+  "801838": {
+   "name": "Cloudburst",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Nature", "Knockback", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "35s cd, AoE knockback of all nearby enemies"
+  },
+  "705700": {
+   "name": "Invigoration",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Aeroblast grants Air Elemental Invigoration damage-buff stacks"
+  },
+  "707719": {
+   "name": "Windrunner",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "passive movement and mounted speed increase"
+  },
+  "804036": {
+   "name": "Gale",
+   "source": "Wind",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-charge, 10s recharge, cleaves up to 3 enemies, generates 20 Static"
+  },
+  "520087": {
+   "name": "Lexicon of Servitude",
+   "source": "Wind",
+   "primary": "Buff",
+   "tags": ["Nature"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1m cd, next Summon: Air Elemental is instant and free"
+  },
+  "300593": {
+   "name": "Dark Skies",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "missed crits stack crit chance; first actual crit removes stacks"
+  },
+  "567542": {
+   "name": "Heavy Winds",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300597": {
+   "name": "Improved Forked Lightning",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707204": {
+   "name": "Storm Barrier",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "while Lightning Cage active: -25% magic taken, immune to ranged"
+  },
+  "567533": {
+   "name": "Storm Warning",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705667": {
+   "name": "Invoking Storms",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "567555": {
+   "name": "Stormflow",
+   "source": "Maelstrom",
+   "primary": "Rotational",
+   "tags": ["Frost", "Channel", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s channel, Frost DoT, scales with haste, costs 20 Static; Shock instant during channel"
+  },
+  "706660": {
+   "name": "Raining and Pouring",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801859": {
+   "name": "Stormcloud",
+   "source": "Maelstrom",
+   "primary": "Rotational",
+   "tags": ["Frost", "Arcane", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1m cd, debuffs target to take +20% spell damage, Torrential Wrath on target triggers Geyser knockup"
+  },
+  "807196": {
+   "name": "Torrential Rage",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705727": {
+   "name": "Disciple of Thorim",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705645": {
+   "name": "Crackling Devastation",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806412": {
+   "name": "Waterfall",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit damage procs global cooldown reduction"
+  },
+  "705653": {
+   "name": "Titanic Thunderbolt",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "570173": {
+   "name": "Thorim's Gift",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "AoE", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Arm of Thorim leaves AoE lightning patch"
+  },
+  "300618": {
+   "name": "Arcane Lightning",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; +5% Intellect and Spirit",
+   "confidence": "low"
+  },
+  "705675": {
+   "name": "Airing Out",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces duration of incapacitate and disorient effects"
+  },
+  "705652": {
+   "name": "Lingering Storm",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804828": {
+   "name": "Never Strikes Twice?",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance Electrocute strikes again"
+  },
+  "707054": {
+   "name": "Jolt",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300612": {
+   "name": "Storm Chaser",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; 33% chance direct damage reduces next Call Lightning cast time",
+   "confidence": "low"
+  },
+  "806100": {
+   "name": "Fog",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s cd, 8s fog zone, enemies cannot target in/out"
+  },
+  "807462": {
+   "name": "Aether Mastery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "301219": {
+   "name": "Thunder Grip",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature", "Slow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance direct damage applies Thunder Grip (no mount/flee/speed boost)"
+  },
+  "300611": {
+   "name": "Stormcaller",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; reduces Eye of the Storm cooldown and mana cost",
+   "confidence": "low"
+  },
+  "705672": {
+   "name": "Exhale",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Nature", "Dispel", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s cd, AoE slow dispel on nearby allies every 3s for 9s, costs 20 Static"
+  },
+  "503596": {
+   "name": "Wind Shift",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807314": {
+   "name": "Critical Circuit",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crit spender hits refund 10 Static"
+  },
+  "705690": {
+   "name": "Aethermancy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature", "Heal", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705720": {
+   "name": "Aviana's Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300610": {
+   "name": "Thundershocker",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Eye of the Storm rooted enemies take 30% more damage from you",
+   "confidence": "low"
+  },
+  "705702": {
+   "name": "Unbound Elementalist",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705686": {
+   "name": "Storm Clouds",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Body of Lightning auto-casts on self when cast on ally"
+  },
+  "570128": {
+   "name": "Flow",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704222": {
+   "name": "Raging Zephyr",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Control", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "transforms Whirlpool into Raging Zephyr (AoE pull totem)"
+  },
+  "705719": {
+   "name": "Master Airbender",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Gale casts reduce cooldown of Static-spending abilities"
+  },
+  "705659": {
+   "name": "Spellstorm Mastery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300839": {
+   "name": "Hurricanes",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Unshackle also unshackles player (+15% dmg 15s)",
+   "confidence": "low"
+  },
+  "800098": {
+   "name": "Thunder Ward",
+   "source": "Maelstrom",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Immunity", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5m cd, full immunity 10s, depletes all Static"
+  },
+  "300616": {
+   "name": "Hydro Powered",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; +35% spell critical damage",
+   "confidence": "low"
+  },
+  "560568": {
+   "name": "Electrifying Aura / Tome of Lightning",
+   "source": "Lightning",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on +3% crit chance raid aura"
+  },
+  "570722": {
+   "name": "Concentrated Static / Altered Course",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Discharge restores 5% more mana"
+  },
+  "300596": {
+   "name": "Surge Overload / Improved Body of Lightning",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Body of Lightning regens 1% extra mana per tick",
+   "confidence": "low"
+  },
+  "707652": {
+   "name": "Ionic Aura / Storm Sorcery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on +3% max mana/resource raid aura"
+  },
+  "705668": {
+   "name": "Magic Elimination / Pulse Conversion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["SpellSteal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "enhances Stormbreaker (purge) range and count"
+  },
+  "500069": {
+   "name": "Clear Skies / Focal Point",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on +1% hit chance raid aura"
+  },
+  "704211": {
+   "name": "Unrelenting Winds / Evergale",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707546": {
+   "name": "Enveloping Winds / Tailwind",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Air Elemental mirrors Gale casts; always-on +390 Armor raid aura"
+  },
+  "301318": {
+   "name": "Cyclone's Embrace / Cyclone's Recharge",
+   "source": "Wind",
+   "primary": "Passive",
+   "tags": ["Nature", "Shield"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707543": {
+   "name": "Flurry / Aerodynamics",
+   "source": "Wind",
+   "primary": "Rotational",
+   "tags": ["Nature", "DoT", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cd, commands Air Elemental to apply nature DoT on target, costs 10 Static"
+  },
+  "560567": {
+   "name": "Tempest's Call / Surge of Might",
+   "source": "Wind",
+   "primary": "Buff",
+   "tags": ["Haste", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5m cd, +30% haste to all nearby allies for 20s; lust-style cooldown"
+  },
+  "560023": {
+   "name": "Prodigy of Lei Shen / Blessing of Lei Shen",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806397": {
+   "name": "Bursting / Washed Away",
+   "source": "Maelstrom",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "531512": {
+   "name": "Aether Current",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Nature"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; feather fall + levitate + water walk on ally (2m duration)",
+   "confidence": "low"
+  },
+  "500040": {
+   "name": "Call Lightning",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Nature", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; main filler nuke, 1.5s cast, generates Static"
+  },
+  "804018": {
+   "name": "Call of the Wind",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Nature", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 30m AoE mana regen aura; innervate-style buff"
+  },
+  "572303": {
+   "name": "Calm the Storm",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Dispel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; dispels Enrage effect"
+  },
+  "805288": {
+   "name": "Discharge",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; AoE burst that depletes Static, restores 15% mana"
+  },
+  "500923": {
+   "name": "Gale Guard",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Nature"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s cd, 45s duration proc-on-hit defensive; no desc"
+  },
+  "500932": {
+   "name": "Gust of Wind",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Nature", "Interrupt", "Knockback", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "35s cd, AoE interrupt + knockback"
+  },
+  "500038": {
+   "name": "Invigorating Surge",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Nature", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; direct heal on ally"
+  },
+  "804020": {
+   "name": "Shock",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Nature", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; main filler nuke baseline; generates Static"
+  }
+ }
+}

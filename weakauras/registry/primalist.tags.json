@@ -1,0 +1,1808 @@
+{
+ "slug": "primalist",
+ "class": "Primalist",
+ "count": 179,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "680439": {
+   "name": "Blessing of Therazane",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800133": {
+   "name": "Frenzied Roar",
+   "source": "Primal",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Haste", "Enrage", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "60s cd; generates 20 Rage + 20% attack speed 15s"
+  },
+  "706176": {
+   "name": "Son of Ursoc",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc Trigger Spell: empowers Savage Frenzy"
+  },
+  "704099": {
+   "name": "Totem Warrior",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560140": {
+   "name": "Nature's Will",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: extends Earthshaping on Seismic cast"
+  },
+  "802793": {
+   "name": "Magma Fissure",
+   "source": "Geomancy",
+   "primary": "Rotational",
+   "tags": ["Fire", "AoE", "Knockback", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s cd AoE knockback line + next spell instant"
+  },
+  "500294": {
+   "name": "Torn to Shreds",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Totemic Smash/Rylak's Bite apply bleed DoT"
+  },
+  "806559": {
+   "name": "Rexxar's Might",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: pet bleed DoT on physical crit"
+  },
+  "680451": {
+   "name": "Volcanic Blast",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Physical/Nature crits deal bonus Fire AoE splash"
+  },
+  "524677": {
+   "name": "Wild At Heart",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Wildclaw GCD"
+  },
+  "500764": {
+   "name": "Throat Clamp",
+   "source": "Primal",
+   "primary": "Utility",
+   "tags": ["Nature", "Interrupt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pet interrupt, 14s cd"
+  },
+  "500940": {
+   "name": "Primal Shred",
+   "source": "Primal",
+   "primary": "Rotational",
+   "tags": ["Physical", "AoE", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25 Rage; pet AoE bleed on up to 5 enemies"
+  },
+  "300691": {
+   "name": "Rush of the Hunt",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Wildclaw/Rylak's Bite +15% vs bleeding targets"
+  },
+  "520464": {
+   "name": "Mineralization",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: +10% healing received below 35% HP"
+  },
+  "706137": {
+   "name": "Keeper of the Grove",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Bramblepatch cooldown by 30s"
+  },
+  "806536": {
+   "name": "Primordial Earth",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Nature", "Selfheal", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: melee crit summons Spirit of Life that heals ally + damages enemies"
+  },
+  "504220": {
+   "name": "Spiritual Warrior",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% crit chance for Spirit Charge"
+  },
+  "300733": {
+   "name": "Battleweaver",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Effective heals grant stacking melee haste/damage proc"
+  },
+  "300731": {
+   "name": "Infusion of Neptulon",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: crit heal grants AP buff for next 3 attacks"
+  },
+  "804705": {
+   "name": "Ring of Life",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Always-on: +6% healing taken for allies, -10% magic dmg taken self"
+  },
+  "706174": {
+   "name": "Magmatism",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Eruption cd, Magma Geodes +30% vs >75% HP targets"
+  },
+  "706153": {
+   "name": "Pulverize",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% crit chance for Totemic Smash"
+  },
+  "504219": {
+   "name": "Therazane's Gift",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Therazane's Rage generates +5 Rage and +5% mana"
+  },
+  "500615": {
+   "name": "Cave In",
+   "source": "Geomancy",
+   "primary": "Utility",
+   "tags": ["Nature", "Interrupt", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Interrupt that grants 1 Earthshaping stack; 24s cd"
+  },
+  "504229": {
+   "name": "Primal Totem",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Raidbuff", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10 min cd; summons totem giving raid +20% primary stats 15s"
+  },
+  "706203": {
+   "name": "Bountiful Boons",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% effectiveness of Boons and Instincts"
+  },
+  "706201": {
+   "name": "Stonefaced",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic casts grant Earth's Rage (speed+haste stacking buff)"
+  },
+  "706344": {
+   "name": "Heavy Handed",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Hand of Earthmother also grants Armor buff to caster and target"
+  },
+  "504223": {
+   "name": "Tranquil Mind",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% damage and healing done"
+  },
+  "560182": {
+   "name": "Earth Pummeling",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Geode damage applies spell crit debuff on target"
+  },
+  "680452": {
+   "name": "Dream",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: at 10+ Earthshaping stacks, grants Dream crit buff"
+  },
+  "706160": {
+   "name": "Heavy Earth",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Terrasurge consumes Earthshaping to grant Heavy Earth damage buff"
+  },
+  "680862": {
+   "name": "Stone Tosser",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% spell power scaling for Geode Barrage, Stoneshard, Seismic Crash"
+  },
+  "560158": {
+   "name": "Stone Cold",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% maximum health"
+  },
+  "805336": {
+   "name": "Therazane's Might",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Terrasurge always crits vs targets with Seismic Tremor"
+  },
+  "706162": {
+   "name": "Stoneskin",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+200% Intellect as Armor"
+  },
+  "706216": {
+   "name": "Primal Power",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic Wave cast makes next Hand of Earthmother -50% Rage cost"
+  },
+  "300744": {
+   "name": "Running on Instinct",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Primal Rush through allies heals them and stacks damage buff"
+  },
+  "802335": {
+   "name": "Eruption",
+   "source": "Geomancy",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Nature", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s cd; volley of Magma Geodes scaled by Earthshaping stacks"
+  },
+  "803347": {
+   "name": "Bestial Wrath",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: pet crit restores mana and applies physical-dmg-taken debuff"
+  },
+  "704096": {
+   "name": "Raptor Talons",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Strength and +4 expertise"
+  },
+  "802494": {
+   "name": "Tectonic Flow",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Primal Rush and Boulder Dash cooldown by 20%"
+  },
+  "805107": {
+   "name": "Earthmother's Binding",
+   "source": "Life",
+   "primary": "Heal",
+   "tags": ["Nature", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; heal + 30% damage redirect from ally to self 6s"
+  },
+  "503721": {
+   "name": "Grove Guardian",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "AoE", "HoT", "Root", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; zone: heals allies + HoT, roots/slows/damages enemies 20s"
+  },
+  "801234": {
+   "name": "Fury of the Wild",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Boon casts apply 50% effectiveness copy to pet"
+  },
+  "503630": {
+   "name": "Rock Barrier",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Shield", "Absorb", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges 20s recharge; Armor shield, each hit launches Geode (+5 Rage)"
+  },
+  "504198": {
+   "name": "Protector of the Grove",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: direct damage reduces cd of Bearskin/Primal Convergence/Boulder Dash"
+  },
+  "806533": {
+   "name": "Keen Senses",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit and haste"
+  },
+  "802782": {
+   "name": "Protective Roar",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Raidbuff", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min cd; raid +10% max HP 12s, generates 20 Rage"
+  },
+  "806549": {
+   "name": "Savage Frenzy",
+   "source": "Primal",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Enrage", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; +20% dmg, +30% attack/movement speed 18s"
+  },
+  "303014": {
+   "name": "Power Hammer",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+10% Rage from damage; periodic proc energize"
+  },
+  "706167": {
+   "name": "Natural Efficiency",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Root/stun/incapacitate triggers instant 4% max HP heal"
+  },
+  "704402": {
+   "name": "One With The Earth",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% dmg to Stoneshard/Geode Barrage; Stoneshard restores 4% mana"
+  },
+  "800185": {
+   "name": "Primal Shaman's Mask",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Nature", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (10%): direct damage launches Geode (+5 Rage)"
+  },
+  "680409": {
+   "name": "Tilling the Earth",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% Bash proc chance, +5 expertise"
+  },
+  "803974": {
+   "name": "Quake",
+   "source": "Mountain King",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "Melee", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges 8s recharge; weapon dmg + AoE Nature, -20% haste on targets"
+  },
+  "300695": {
+   "name": "Blessed by the Earth",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Primal Rush/Quake damage grants Earth's Rage (speed+haste buff)"
+  },
+  "681130": {
+   "name": "Mountain Hammer",
+   "source": "Mountain King",
+   "primary": "Rotational",
+   "tags": ["Physical", "Nature", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ranged hammer throw, stuns target 5s"
+  },
+  "680964": {
+   "name": "Bash",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Physical", "Stun"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance on auto attack to deal 50% weapon dmg + stun 1s"
+  },
+  "706220": {
+   "name": "Terrasmash",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Physical", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (30%): off-hand hits launch Geode (+5 Rage)"
+  },
+  "560548": {
+   "name": "Resources of the Earth",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (15%): crits grant allies Replenishment (mana regen)"
+  },
+  "570157": {
+   "name": "Stone Soldier",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% off-hand damage, +3% hit chance"
+  },
+  "560505": {
+   "name": "Improved Ursoc's Bellow",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+40% effectiveness of Ursoc's Bellow"
+  },
+  "805643": {
+   "name": "Mountain Mover",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: dodge grants Mountain Mover stacks, consumed by Wildclaw for Rage discount; +15% Parry from Strength"
+  },
+  "560298": {
+   "name": "Earthmother's Protection",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Rock Barrier active: Hand of Earthmother costs -50% Rage"
+  },
+  "680413": {
+   "name": "Seismically Efficient",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seismic Crash +5 Rage, Seismic Spike +2 Rage generated"
+  },
+  "680404": {
+   "name": "Mountain Thane",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Stamina; Earth's Rage stacks 1 higher"
+  },
+  "680410": {
+   "name": "Thane's Guidance",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Auto attacks reduce Mountain Hammer cd by 1s"
+  },
+  "560147": {
+   "name": "Earthbreaker",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% melee haste"
+  },
+  "706161": {
+   "name": "Unyielding Form",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% parry and dodge; +25% Armor from mail/plate"
+  },
+  "680415": {
+   "name": "Stonebound",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% effectiveness of Boon of the Turtle and Earth's Rage"
+  },
+  "681364": {
+   "name": "Spiritbound",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: dodging attacks generates 5 Rage and reduces Seismic cd"
+  },
+  "680412": {
+   "name": "Fury of the Earthmother",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Geode/Geode Barrage generates increased threat; 15% chance to add Rock Barrier charge"
+  },
+  "680421": {
+   "name": "Earthen Avatar",
+   "source": "Mountain King",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Immunity", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Avatar form 20s: +15% dmg, -15% dmg taken, +20% melee haste; immune to stun/root/snare"
+  },
+  "806185": {
+   "name": "Mountain Fury",
+   "source": "Mountain King",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "Melee", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s cd; frontal cone pull + damage repeating 2s; each pull grants -2% dmg taken"
+  },
+  "560150": {
+   "name": "Earthmaker",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic/Quake damage reduces Earthen Avatar cd; Seismic cd -3s"
+  },
+  "560508": {
+   "name": "Earth Destroyer",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Mountain Fury cd -20s and duration +4s"
+  },
+  "300728": {
+   "name": "Primal Guardian",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Haste", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Earthen Avatar/Bearskin/Rock Barrier expiry grants +10% haste + parry 15s"
+  },
+  "680424": {
+   "name": "Legacy of the Bronzebeards",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+100% effectiveness of Earthen Avatar"
+  },
+  "706622": {
+   "name": "Raging Earth",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Nature", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Quake creates a Nature DoT fissure"
+  },
+  "560154": {
+   "name": "Rockslide",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (15%): Stoneshard can repeat cast (self-triggering)"
+  },
+  "680444": {
+   "name": "Cataclysm",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10% chance on Earthshaping/Stoneshard to reset Seismic ability cds"
+  },
+  "681494": {
+   "name": "Whispers of the Earth",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-0.3s cast time for Geode Barrage and Stoneshard"
+  },
+  "680442": {
+   "name": "Seismic Tremor",
+   "source": "Geomancy",
+   "primary": "Rotational",
+   "tags": ["Physical", "Nature", "DoT", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "DoT that ramps damage over time; generates Rage + 2 Earthshaping stacks"
+  },
+  "574314": {
+   "name": "Cave Dweller",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15 max Rage; -50% pushback from attacks"
+  },
+  "805335": {
+   "name": "Golem Form",
+   "source": "Geomancy",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Haste", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min cd; transform 20s: +20% haste, +50% Armor, cast while moving"
+  },
+  "560169": {
+   "name": "Geomolding",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic Tremor periodic damage grants Geomolding (stacking Terrasurge damage buff)"
+  },
+  "706208": {
+   "name": "Rupturer",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic Spike/Crash generate Geomolding stacks; Lithic Lance reduces Terrasurge cd"
+  },
+  "560157": {
+   "name": "Earthmother's Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Cheat-death passive: once per 2min, lethal blow heals 30% HP and -70% physical dmg taken 3s"
+  },
+  "800181": {
+   "name": "Primal Convergence",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; Boons +100% effectiveness for 30s"
+  },
+  "681119": {
+   "name": "Terrasurge",
+   "source": "Geomancy",
+   "primary": "Rotational",
+   "tags": ["Physical", "Nature", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "High-damage nuke, consumes Earthshaping for bonus damage; debuffs target Armor -50% 10s"
+  },
+  "805867": {
+   "name": "Dreamslip",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; shifts ally into Emerald Dream 15s: immune, regenerates, invisible; cannot use on self"
+  },
+  "560145": {
+   "name": "Cracking the Earth",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: hitting 5+ enemies with Volcanic Blast grants Cracking the Earth (Seismic Spike extra targets)"
+  },
+  "680453": {
+   "name": "Gaze of Therazane",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% range on Geomancy spells; +8 yd range on Seismic spells"
+  },
+  "680419": {
+   "name": "Quakeformer",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25% chance on Wildclaw/Seismic cast to refresh a Quake charge"
+  },
+  "706150": {
+   "name": "Nature's Call",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+6% healing done and received"
+  },
+  "680936": {
+   "name": "Focus",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Intellect and Stamina"
+  },
+  "520466": {
+   "name": "Judgement of The Three Hammers",
+   "source": "Mountain King",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; 15s buff: 20% chance on direct dmg to hurl 3 hammers"
+  },
+  "520469": {
+   "name": "Shattering",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: each hammer from Judgment grants stacking crit chance/dmg buff"
+  },
+  "706338": {
+   "name": "Elemental Berserker",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% Totemic Smash AoE dmg but costs 5 more Rage"
+  },
+  "573310": {
+   "name": "Spirit Stable",
+   "source": "Primal",
+   "primary": "Utility",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s cd; switch stabled pet 10s"
+  },
+  "706633": {
+   "name": "Killer's Path",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Always-on raid aura: +5% attack power; self +3% crit"
+  },
+  "707560": {
+   "name": "Druid Training",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Selfheal", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Geode Barrage heals nearby allies for 10% of damage dealt"
+  },
+  "300729": {
+   "name": "Environmentalist",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-5% cost on all spells/abilities"
+  },
+  "805462": {
+   "name": "Seismic Wave",
+   "source": "Life",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "Heal", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cd; 40 Rage; heals 8 allies + damages enemies in 25 yd radius"
+  },
+  "681281": {
+   "name": "Fae Presence",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Tracking"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fae Dust no longer costs reagent and boosts stealth detection"
+  },
+  "555723": {
+   "name": "Earthmother's Precision",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic Crash applies +3% spell hit chance debuff on target for allies"
+  },
+  "500692": {
+   "name": "Boulder Dash",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Physical", "Nature", "AoE", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; encase in boulder, roll forward 10s at +70% speed; immune to CC; damages enemies run over"
+  },
+  "680476": {
+   "name": "Molten Fervor",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Haste", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Always-on: raid +3% spell haste; self +5% spell haste"
+  },
+  "301087": {
+   "name": "Pulverize",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Totemic Smash crits repeat AoE component"
+  },
+  "806415": {
+   "name": "Bramblepatch",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Nature", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min cd; zone 12s: allies immune to grip/knockback; enemies slowed and cannot dash/charge/leap"
+  },
+  "560286": {
+   "name": "Lacerations",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: melee crit increases bleed damage taken by +30% 15s"
+  },
+  "300698": {
+   "name": "Earthshaker",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Seismic ability damage; periodic Seismic dmg can now crit"
+  },
+  "800180": {
+   "name": "Sacred Grove",
+   "source": "Life",
+   "primary": "Heal",
+   "tags": ["Nature", "AoE", "HoT", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min cd; AoE heal + healing-amp zone 16s for up to 12 allies; restores HP/Rage/mana"
+  },
+  "504197": {
+   "name": "Wild Rampage",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% attack power, +2% hit chance"
+  },
+  "800094": {
+   "name": "Bearskin",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min cd; -60% all damage taken + -30% root/stun/incapacitate duration 10s"
+  },
+  "800144": {
+   "name": "Spirit Charge",
+   "source": "Life",
+   "primary": "Movement",
+   "tags": ["Nature", "Heal", "AoE", "Charge"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s cd; charge to ally, heal them + AoE Nature damage to nearby enemies"
+  },
+  "800178": {
+   "name": "Totemic Smash",
+   "source": "Primal",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "6s cd; 35 Rage; weapon dmg + AoE to 5 nearby enemies"
+  },
+  "800184": {
+   "name": "Legacy of Rexxar",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: crits with Shred/Rylak/Wildclaw grant named buffs (Misha's Rage/Leokk's Fury/Huffer's Speed)"
+  },
+  "560305": {
+   "name": "Verdant Chase",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spirit Charge and Primal Rush cooldown faster (periodic CDR trigger)"
+  },
+  "706342": {
+   "name": "Rylak's Bite",
+   "source": "Primal",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Charge", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges 10s recharge; 20 Rage; player + pet rush at enemy; 120% weapon dmg"
+  },
+  "802888": {
+   "name": "Eternally Chosen",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Nature", "Heal", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Spirit Charge/Primal Rush summon 2 Spirits of Life (heal ally + AoE Nature dmg)"
+  },
+  "560510": {
+   "name": "Journey To The Core",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Physical", "Nature", "DoT", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (20%): Seismic Tremor periodic forms exploding crag delayed AoE"
+  },
+  "803980": {
+   "name": "Wildheart",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min cd; reduces all non-damaging spell cds by 5% every 2s for 15s; restores 5% HP/mana/Rage every 3s"
+  },
+  "500696": {
+   "name": "Primal Rush",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Nature", "AoE", "Charge", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25s cd; dash 20 yd through enemies dealing Nature dmg; generates 20 Rage"
+  },
+  "300740": {
+   "name": "Ancient Power",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Strength, +3% hit chance"
+  },
+  "504446": {
+   "name": "Earthmother's Pendant",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Leech"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Passive leech: each strike heals for 10% of damage dealt (0.5s icd)"
+  },
+  "301299": {
+   "name": "Verdant Warrior",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% Wildclaw damage"
+  },
+  "800145": {
+   "name": "Grip",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Nature", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stone hand incapacitates target 40s (8s vs players); 1.5s cast"
+  },
+  "300742": {
+   "name": "Nature's Fury",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Physical", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on auto attack to deal weapon dmg and restore 5% mana"
+  },
+  "504196": {
+   "name": "Elemental Cascade",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Nature", "Selfheal", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Wildclaw crits unleash Elemental Cascade (AoE heal)"
+  },
+  "706138": {
+   "name": "Earth's Guidance",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (20%): Seismic spell dmg/healing reduces all Seismic cds by 1s"
+  },
+  "805445": {
+   "name": "Shaman Training",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Wildclaw applies stacking armor-reduction debuff (-4% up to 5 stacks)"
+  },
+  "504732": {
+   "name": "Thorns",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Nature", "Root", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (10%): physical dmg dealt/taken may root enemy + Nature DoT 6s"
+  },
+  "500937": {
+   "name": "Totemic Echoes",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Totemic Smash applies Totemic Crash; if within 5 yd at expiry, free Totemic Smash"
+  },
+  "806552": {
+   "name": "Bring Me Their Bones",
+   "source": "Primal",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; mark enemy 15s; pet attacks stack and consume for burst armor-ignore hit at 5 stacks"
+  },
+  "802595": {
+   "name": "Rylak's Blessing",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Rylak's Bite damage grants pet stacking damage/crit buff"
+  },
+  "707367": {
+   "name": "Spiritual Frenzy",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Primal Shred empowers pet auto attacks to hit up to 4 nearby enemies 21s"
+  },
+  "803973": {
+   "name": "Hammer of Life",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Nature", "Selfheal", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Melee attacks/abilities heal nearby allies and damage nearby enemies for 20% of dmg dealt"
+  },
+  "806143": {
+   "name": "Earth's Embrace",
+   "source": "Geomancy",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Immunity", "HoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min cd; amber immunity 8s + HoT 300+50%SP per 2s; usable while stunned/feared"
+  },
+  "300688": {
+   "name": "Primal Resurgence / Rips and Tears",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seismic Crash +10 Rage, Seismic Spike +3 Rage generated"
+  },
+  "300690": {
+   "name": "Primal Rage / Wild Rage",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Totemic Smash cast refreshes a Rylak's Bite charge"
+  },
+  "504226": {
+   "name": "Sharpened Claws / Bloody Claws",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: direct crits grant stacking armor penetration buff to self + pet"
+  },
+  "537212": {
+   "name": "Spinebreaker / Wild Carnage",
+   "source": "Primal",
+   "primary": "Passive",
+   "tags": ["Nature", "Root"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic Grasp now roots enemies 3.5s"
+  },
+  "680446": {
+   "name": "Rolling Momentum / Rage Rolling",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% movement speed from Boulder Dash"
+  },
+  "706165": {
+   "name": "Fury of the Elements / Untamed",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Primal Rush generates 10 additional Rage"
+  },
+  "706171": {
+   "name": "Primal Strikes / Primal Fury",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: physical damage ability crits generate 3 Rage"
+  },
+  "524971": {
+   "name": "Mending Touch / Emerald Will",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Soothing Touch dispels an additional poison/disease"
+  },
+  "560135": {
+   "name": "Trembling Rage / Everlasting Rage",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seismic Tremor generates 2 additional Rage"
+  },
+  "707173": {
+   "name": "Tectonic Resonance / Tectonic Power",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Earthquake slows enemies by additional -30%"
+  },
+  "561037": {
+   "name": "Embraced By Earth! / Cragforming",
+   "source": "Geomancy",
+   "primary": "Passive",
+   "tags": ["Control"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Earth's Embrace expiry disorients all nearby enemies 6s; also reduces Mountain Hammer cost"
+  },
+  "504214": {
+   "name": "Vitality Surge / Grovekeeper's Presence",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Haste", "Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (25%): effective heals may grant raid +5% haste 20s"
+  },
+  "561208": {
+   "name": "Hand of a God / Blessing of Neptulon",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hand of Earthmother costs -5 Rage"
+  },
+  "574313": {
+   "name": "Crashing Out / Tears of the Earthmother",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% Seismic Crash damage"
+  },
+  "503718": {
+   "name": "Infused With Power / Protector's Hand",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc (20%): effective heals with Hammer of Life/Hand of Earthmother may grant raid +5% crit 10s"
+  },
+  "707514": {
+   "name": "Earthmother's Warden / Grove Tender",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seismic ability cds reduced by 2s"
+  },
+  "807558": {
+   "name": "Douse / Flourishing Growth",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Proc: Seismic spells deal bonus Frost dmg and reduce target resistances"
+  },
+  "300867": {
+   "name": "Ride the Wave / Nature's Blessing",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seismic Wave now also grants allies +30% movement speed 4s"
+  },
+  "300738": {
+   "name": "Earthmother's Empowerment / Earthmother's Roar",
+   "source": "Life",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hand of Earthmother grants target +15% dodge 5s"
+  },
+  "807467": {
+   "name": "Neptulon's Wrath / Primal Awakening",
+   "source": "Life",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Frost", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; 15s aura: allied players deal +35% AP bonus Froststorm damage on direct damage; applies Exhaustion"
+  },
+  "805105": {
+   "name": "Ancient of Lore / Ancient of War",
+   "source": "Life",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2.5 min cd; transform 20s: self +20% all stats; party -30% costs; -30% movement speed"
+  },
+  "680405": {
+   "name": "Everythings A Nail / Hammer Time!",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% Mountain Hammer damage"
+  },
+  "680408": {
+   "name": "Earthenforged Barrier / Rock Solid",
+   "source": "Mountain King",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% Rock Barrier Armor; -25% spell/ability cost while Rock Barrier active"
+  },
+  "300693": {
+   "name": "Seismic Smash / Quaking Thane",
+   "source": "Mountain King",
+   "primary": "Rotational",
+   "tags": ["Physical", "AoE", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Line AoE melee; grants Thane's Rage (AP from Stamina buff) + Aftershock (next Geode Barrage/Earthquake instant/cheap)"
+  },
+  "500939": {
+   "name": "Boon of the Bear",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Haste", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Stance/Boon: +10% AP, +10% Rage from dmg dealt, +10% melee haste; core maintenance buff"
+  },
+  "500943": {
+   "name": "Boon of the Hawk",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stance/Boon: +12% spell haste, -10% spell costs; periodic MP5 proc"
+  },
+  "500935": {
+   "name": "Boon of the Turtle",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Shield", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stance/Boon: damage shield + -10% all damage taken"
+  },
+  "800137": {
+   "name": "Boon of the Wolf",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stance/Boon: +25% movement speed, +8% dodge"
+  },
+  "500307": {
+   "name": "Expunge Blight - Caster Energize",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404 desc; name suggests dispel/energize proc; no details beyond school"
+  },
+  "800136": {
+   "name": "Fist of Ragnaros",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s cd; 30 Rage; 30s buff that empowers Rylak's Bite; Fire school"
+  },
+  "805919": {
+   "name": "Gaze of Theradras",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Physical", "Taunt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cd; ranged taunt 3s; Taunt effect"
+  },
+  "500402": {
+   "name": "Geode Barrage",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.8s cast channeled barrage of Geodes at target (periodic trigger)"
+  },
+  "800135": {
+   "name": "Hand of the Earthmother",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Nature", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "35 Rage; heal an ally; core heal spender"
+  },
+  "804155": {
+   "name": "Mana Regeneration",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "DB-404 desc; name/effect suggests mana regen passive; Give Power Mana"
+  },
+  "800146": {
+   "name": "Nature's Call",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Nature", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s cd; appears to be a dispel/utility on target (Dummy, Magic dispel type)"
+  },
+  "800197": {
+   "name": "Primal Instinct",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min buff; +30 AP and ranged AP for self or ally"
+  },
+  "560512": {
+   "name": "Stone Edge",
+   "source": "baseline",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Shield", "Defensive", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min cd; 15 Rage; 10s: +15% parry, proc Geodes on hit, +30% Tectonic Shift proc chance"
+  },
+  "503736": {
+   "name": "Therazane's Rage",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Enrage", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s cd; Enrage: generates 20 Rage + 10% mana; core resource tool"
+  },
+  "800140": {
+   "name": "Wildclaw",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 Rage; dual-wield melee strike; core Rage spender"
+  }
+ }
+}

@@ -1,0 +1,1485 @@
+{
+ "slug": "templar",
+ "class": "Templar",
+ "count": 145,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "706431": {
+   "name": "Pious",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Agility", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805415": {
+   "name": "Scarlet Champion",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "stacking Holy damage buff proc at 5 stacks grants High General"
+  },
+  "705256": {
+   "name": "Determined",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Temple Guardian procs free-cost buff on next ability"
+  },
+  "805423": {
+   "name": "Libram of Fervor",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Haste", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; grants SP from Agility + AP from Intellect for 20s"
+  },
+  "520017": {
+   "name": "Light's Echo",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance for Argent Blade to strike an additional time"
+  },
+  "801455": {
+   "name": "Testament of Will",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes movement impairing effects from ally for 10s; 1-min CD"
+  },
+  "300501": {
+   "name": "Sacred Candle",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Testament of Faith CD by 60s"
+  },
+  "300522": {
+   "name": "Deep Meditation",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Oath Chain duration by 5s"
+  },
+  "560833": {
+   "name": "Spiritual",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Energy regeneration by 20%"
+  },
+  "560649": {
+   "name": "Tyr's Guard",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Testament of Hope summons additional copy"
+  },
+  "805421": {
+   "name": "Reckoning",
+   "source": "Oathkeeper",
+   "primary": "Rotational",
+   "tags": ["Holy", "Melee", "Spender", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Oath Breaker; consumes Oaths for bonus damage; restores 15 Energy per enemy hit"
+  },
+  "572546": {
+   "name": "Solemn Soldier",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300513": {
+   "name": "Crusader's Brand",
+   "source": "Crusader",
+   "primary": "Rotational",
+   "tags": ["Holy", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; brands enemy for 20s; procs holy damage when they deal damage",
+   "confidence": "low"
+  },
+  "500011": {
+   "name": "Holy Combatant",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Argent Blade extends Interdict duration; proc trigger"
+  },
+  "520009": {
+   "name": "Paladin Training",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases damage of Righteous Lunge and Argent Blade by 20%"
+  },
+  "560550": {
+   "name": "Call of the Monastery",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5% AP raid aura; does not stack with similar effects"
+  },
+  "705285": {
+   "name": "Tyr's Blessing",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Condemn stacks 1 additional time"
+  },
+  "806522": {
+   "name": "Legacy of the Silver Hand",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Argent Blade/Scarlet Hammer casts guarantee next 2 Scourgebane crits"
+  },
+  "560116": {
+   "name": "Interdict",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Silence", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "silences for 6s; 2-min CD; also prevents healing on Undead/Demons"
+  },
+  "705291": {
+   "name": "Templar's Might",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Righteous Lunge and Chastise deal 6% increased damage per Condemn stack"
+  },
+  "803219": {
+   "name": "Spiritual Abdicator",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Holy", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Testament of Hope copies reduce damage taken per copy"
+  },
+  "504807": {
+   "name": "One With The Light",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Holy", "Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Oath Breakers trigger Zealotry proc + reduce Libram CDs"
+  },
+  "300515": {
+   "name": "Fortified Body",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; allies receive 6% more healing; your max health +6%",
+   "confidence": "low"
+  },
+  "524620": {
+   "name": "Pulverizing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Condemn damage has 15% chance to consecrate ground for AoE Holy damage"
+  },
+  "803163": {
+   "name": "Might of Aggramar",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance on physical damage to stack proc that reduces Blade of Faith CD"
+  },
+  "705274": {
+   "name": "Sanctify",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Libram casts grant 10% melee haste for 20s (trackable buff)"
+  },
+  "301253": {
+   "name": "Warrior of Tyr",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on periodic damage to generate 5 Energy"
+  },
+  "520608": {
+   "name": "Scourge-Defense Training",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Warrior of Dawn also increases Argent Blade damage and crit chance by 20%",
+   "confidence": "low"
+  },
+  "524739": {
+   "name": "Norgannon's Wrath",
+   "source": "Zealot",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "Movement"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; leap + delayed AoE Holy blast; pierces immunities; scales with Chastise modifiers"
+  },
+  "680397": {
+   "name": "Disciplined Blows",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; healing done triggers AoE Holy pulse around healed targets",
+   "confidence": "low"
+  },
+  "501562": {
+   "name": "Righteous Upheaval",
+   "source": "Zealot",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Oath Breaker; 20s CD; damage scales with Zealotry triggers in Oath Chain"
+  },
+  "801481": {
+   "name": "Glory",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Haste", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; 30% attack speed 5s then Downfall (leech 5s) then Redemption (both 5s)"
+  },
+  "803872": {
+   "name": "Blade of Faith",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Holy", "DoT", "Spender", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Oath Breaker; 35 Energy; 21s DoT; can crit"
+  },
+  "300530": {
+   "name": "Martyr",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; increases Gift of Zeal effectiveness by 20%",
+   "confidence": "low"
+  },
+  "804928": {
+   "name": "Mark of Aggramar",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Energy cost of Testaments by 50%"
+  },
+  "804929": {
+   "name": "Argent Blade",
+   "source": "Crusader",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "50 Energy; 5s CD; heals for damage dealt; extends Oath Chain by 3s"
+  },
+  "712346": {
+   "name": "Sacred Oath",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits reduce Oathkeeper duration; Oathkeeper delays 40% damage taken over 8s"
+  },
+  "704180": {
+   "name": "Blessed Strikes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Energy cost of Oath Breakers by 10"
+  },
+  "801466": {
+   "name": "Libram of Zeal",
+   "source": "Zealot",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "Haste", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; 20% melee haste + damaging abilities reduce Righteous Upheaval CD for 20s"
+  },
+  "705295": {
+   "name": "Staffguard",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Physical", "Absorb", "Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sacred Swing casts grant damage-absorb shield for 8s"
+  },
+  "801480": {
+   "name": "Fury of Aggramar",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Libram of Consecration damage by 100% and Libram effectiveness by 25%"
+  },
+  "680953": {
+   "name": "Profound Enlightenment",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Holy"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; reduces remaining cooldown of Testaments by 50%",
+   "confidence": "low"
+  },
+  "705284": {
+   "name": "One-Punch Man",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases damage of Oath Breakers and Titanstrike by 20%"
+  },
+  "520034": {
+   "name": "Pious Sweep",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chastise deals 25% more damage on enemies above 75% HP or with Tranquil Circle"
+  },
+  "560096": {
+   "name": "Devotion of Khaz'goroth",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% melee/ranged haste raid aura; auto attacks reduce Libram CDs"
+  },
+  "804912": {
+   "name": "Parry Dance",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "auto attack crits or parries increase parry chance by 3% stacking 5 times"
+  },
+  "801204": {
+   "name": "Bells of Light",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Agility, Intellect, and hit chance by 3%"
+  },
+  "706357": {
+   "name": "Paragon",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Stamina by 10 plus 10% of Agility"
+  },
+  "520534": {
+   "name": "Templar Rituals",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Righteous Tempest deals bonus Holy damage and pulls enemies within 15 yds",
+   "confidence": "low"
+  },
+  "705253": {
+   "name": "Pure Focus",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Scourgebane proc chance by 5% and hit chance by 2%"
+  },
+  "704175": {
+   "name": "Condemnation",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases crit chance gained through Condemn by 3%"
+  },
+  "705300": {
+   "name": "Eternal Blessing",
+   "source": "Oathkeeper",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1-min CD; +15% Holy damage and healing for 30s; Oath Breakers deal bonus AoE Holy damage"
+  },
+  "300520": {
+   "name": "Judgement",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Scourgebane/Scarlet Hammer/Titanstrike deal 25% more damage below 20% HP",
+   "confidence": "low"
+  },
+  "572548": {
+   "name": "Blade Sermon",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Zealotry Weapon Damage by 10%"
+  },
+  "573452": {
+   "name": "Eternally Devoted",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Eternal Blessing damage reduces Libram CDs by 4s"
+  },
+  "705286": {
+   "name": "Duty Calls",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Oath-granting abilities increase damage and movement speed by 2% stacking 5 times"
+  },
+  "524822": {
+   "name": "Radiant Blade",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; increases Oath: Righteous Lunge effectiveness by 25%",
+   "confidence": "low"
+  },
+  "527023": {
+   "name": "Divine Charge",
+   "source": "Crusader",
+   "primary": "CD Offensif",
+   "tags": ["Holy", "AoE", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; party mounts with 100% movement + trample AoE Holy damage for 15s; outdoors only"
+  },
+  "300512": {
+   "name": "Argent Knight",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; increases Righteous Tempest and Condemn damage by 30%; Righteous Tempest -20% damage taken",
+   "confidence": "low"
+  },
+  "705266": {
+   "name": "Liberty",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Libram spell CDs by 30s"
+  },
+  "805417": {
+   "name": "Barrier of Light",
+   "source": "Oathkeeper",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Raidbuff", "Taunt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5-min CD; allies receive 40% more healing for 15s; ally threat redirected to you"
+  },
+  "805422": {
+   "name": "Tome of Light",
+   "source": "Oathkeeper",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Shield", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5-min CD; 100% max HP absorb shield 30s; resets Barrier of Light and Tranquil Circle"
+  },
+  "803159": {
+   "name": "Chakra of Light",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Oath Breakers heal nearby allies; reduces Testament CDs by 30s"
+  },
+  "803158": {
+   "name": "Chakra of Power",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee attacks restore 1 Energy (+2 on crit)"
+  },
+  "300514": {
+   "name": "Testament of Strength",
+   "source": "Crusader",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; next 3 Titanstrikes usable at any HP% + 25% increased damage for 1min",
+   "confidence": "low"
+  },
+  "560648": {
+   "name": "Warrior of Dawn",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on melee damage to reset Argent Blade CD and reduce its cost by 50%"
+  },
+  "801446": {
+   "name": "Vindication",
+   "source": "Zealot",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "35 Energy; grants Oath; triggers Zealotry proc; core Oath generator"
+  },
+  "705293": {
+   "name": "Sacred Swing",
+   "source": "Oathkeeper",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "AoE", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20 Energy; frontal AoE; -20% attack/movement speed 10s; usable only after avoiding attack"
+  },
+  "560650": {
+   "name": "Aggramar's Rage",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801202": {
+   "name": "Battlepriest",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20% reduced Magic damage while above 80% or below 20% HP"
+  },
+  "806273": {
+   "name": "Mending Ward",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Oath Breakers grant Mending Ward stacks; heal on next damage taken below 35% HP"
+  },
+  "806516": {
+   "name": "Heaven's Finest",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "damaging abilities stack movement speed buff; at 6 stacks 100% Energy regen for 8s"
+  },
+  "300502": {
+   "name": "Blessing of Aggramar",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Righteous Lunge 25% chance to generate an extra Oath: Righteous Lunge stack"
+  },
+  "804897": {
+   "name": "Transcending Strikes",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Divine Force on Blade of Faith targets reduces Divine Force CD by 30s"
+  },
+  "300929": {
+   "name": "Serendipity",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; 3% increased damage for party/raid; reduces your ability costs by 5%",
+   "confidence": "low"
+  },
+  "705271": {
+   "name": "Finesse",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806153": {
+   "name": "Divine Force",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Holy", "Stun", "Melee", "Charge", "Interrupt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; leap to target; stun 6s + interrupt 3s; 15 Energy"
+  },
+  "706318": {
+   "name": "Radiance",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Energy cost of Vindication by 5"
+  },
+  "706320": {
+   "name": "Combat Training",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Oath effectiveness by 20%"
+  },
+  "705290": {
+   "name": "Blessing of Eonar",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Libram casts increase damage and healing done by 10% for 15s (trackable buff)"
+  },
+  "707385": {
+   "name": "Tenacious Defender",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Libram of Tenacity also heals you for 20% max HP"
+  },
+  "705250": {
+   "name": "Martial Paladin",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705276": {
+   "name": "Bursting Impact",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases off-hand weapon damage by 25%"
+  },
+  "801461": {
+   "name": "Libram of Tenacity",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; -30% Physical damage taken for 20s; also heals on cast (Tenacious Defender)"
+  },
+  "707754": {
+   "name": "Courage",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases movement speed by 10%; reduces slow duration by 10%"
+  },
+  "706323": {
+   "name": "Holy Constitution",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increased damage vs Undead; 30% disease resistance"
+  },
+  "680891": {
+   "name": "Righteousness",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no details; Chastise always triggers Scourgebane",
+   "confidence": "low"
+  },
+  "681009": {
+   "name": "Sturdy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; increases max health and Energy by 5%",
+   "confidence": "low"
+  },
+  "500694": {
+   "name": "Force of Golganneth",
+   "source": "Zealot",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Holy", "AoE", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2-min CD; 40 Energy; AoE Holy damage + Zealotry every 1s for 5s; reduces Temple Guardian cost while active"
+  },
+  "524767": {
+   "name": "Judgement of the Gods",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; increases Titanstrike crit chance by 50%",
+   "confidence": "low"
+  },
+  "705263": {
+   "name": "Deep Secrets",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases duration of Librams and Testaments by 10s"
+  },
+  "705268": {
+   "name": "Final Prayer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "doubles healing from Testament of Fortitude and Testament of Faith"
+  },
+  "705306": {
+   "name": "Sacred Defense",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy", "Reflect"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "strikes back for 15% of Physical damage taken as Holy (once per sec)"
+  },
+  "801465": {
+   "name": "Silverhand Incantation",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Holy", "AoE", "Charge"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5-min CD; 30 Energy; throws hammer to charge to target; AoE Holy damage + ally heal on arrival"
+  },
+  "1397742": {
+   "name": "Testament of Hope",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Summon", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; 50 Energy; summons 2 mirror image copies for 20s; each copy -25% damage taken while nearby"
+  },
+  "705283": {
+   "name": "Oath Flow",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Oath Chain duration by 2s"
+  },
+  "704116": {
+   "name": "Deliverance",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Vindication and Righteous Lunge crits deal 50% additional Physical damage"
+  },
+  "523712": {
+   "name": "Iron Penance",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Zealotry damage applies debuff: +1% Physical damage taken per stack up to 10"
+  },
+  "300607": {
+   "name": "Titanfall",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Titanstrike heals for twice the damage dealt",
+   "confidence": "low"
+  },
+  "705287": {
+   "name": "Improved Benediction",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Benediction grants armor based on Agility and Stamina for 15s"
+  },
+  "705255": {
+   "name": "Divine Strikes",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Scourgebane damage stacks buff increasing Argent Blade damage by 5% up to 10 stacks"
+  },
+  "300524": {
+   "name": "Focused",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; increases Blade of Faith and Righteous Tempest damage by 25%",
+   "confidence": "low"
+  },
+  "805409": {
+   "name": "Righteous Tempest",
+   "source": "Crusader",
+   "primary": "Rotational",
+   "tags": ["Physical", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 Energy; AoE whirlwind Oath Breaker; 3s channel; consumes Oaths"
+  },
+  "707391": {
+   "name": "Retribution",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee damage 20% chance to strike 2 additional times for 30% as Holy"
+  },
+  "801457": {
+   "name": "Binding Scripture",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "healing an ally redirects 10% of their damage taken to you and reduces your damage taken by 5% stacking 3 times"
+  },
+  "706359": {
+   "name": "Judicator",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases parry and dodge chance by 3%"
+  },
+  "705278": {
+   "name": "Sacred Style",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Holy healing done and received by 8%"
+  },
+  "706312": {
+   "name": "Holy Edge",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Scourgebane and Scarlet Hammer damage strikes 1 additional nearby enemy"
+  },
+  "705272": {
+   "name": "Chivalric",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Holy critical damage by 15%"
+  },
+  "301309": {
+   "name": "Sacred Resistance",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Reckoning casts increase Armor by 15% for 15s"
+  },
+  "800424": {
+   "name": "Absolution",
+   "source": "Oathkeeper",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Taunt", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2.5-min CD; AoE taunt within 8 yds for 4s; +50% movement speed 4s"
+  },
+  "560835": {
+   "name": "Lightkeeper",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Holy", "AoE", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Condemn ticks have 15% chance to increase parry stacking; also 15% chance to burst AoE"
+  },
+  "712677": {
+   "name": "Conviction",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sacred Swing casts increase melee haste by 5% stacking 4 times"
+  },
+  "301059": {
+   "name": "Grace of Aman'thul",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Energy cost of Righteous Lunge by 5 and Sacred Swing by 10"
+  },
+  "301311": {
+   "name": "Blessed Padding",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Armor from mail by 50%; reduces AoE damage taken by 10%"
+  },
+  "706385": {
+   "name": "Uther's Legacy",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Condemn heals for 75% of damage dealt"
+  },
+  "705259": {
+   "name": "Faith Guard",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Chastise while Libram active triggers holy line AoE proc"
+  },
+  "680399": {
+   "name": "Disciplined Mind",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; Benediction heals 15% more and dispels 1 poison/disease",
+   "confidence": "low"
+  },
+  "705298": {
+   "name": "Untainted",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "effective self-heals reduce Physical damage taken (once per 15s)"
+  },
+  "500678": {
+   "name": "Testament of Fortitude",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Holy", "Selfheal", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3-min CD; Channel 15s; heal 5% max HP/s + -50% damage taken + removes disease each sec; costs 15+15/s Energy"
+  },
+  "706309": {
+   "name": "Battle Hardened / Upheave!",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Righteous Upheaval cooldown by 5s"
+  },
+  "706449": {
+   "name": "Holy Light / Light's Guidance",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Benediction has 1.5s cast time but heals 100% more"
+  },
+  "504808": {
+   "name": "Paladin Training / Priest Training",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Physical", "Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Zealotry trigger has 8% chance to grant additional auto attack"
+  },
+  "707606": {
+   "name": "Fervent Castigation / Condemnation",
+   "source": "Zealot",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Righteous Upheaval or Blade of Faith casts grant Oath: Retribution (+5% crit damage)"
+  },
+  "524747": {
+   "name": "Holy Crusader / Scarlet Judicator",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Divine Force cooldown by 30s"
+  },
+  "705307": {
+   "name": "Holy Warstaff / Way of the Monk",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Reckoning damage by 20%"
+  },
+  "707663": {
+   "name": "Justicar of the Light / Guardian of the Light",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes Benediction cooldown; increases its Energy cost by 10"
+  },
+  "712678": {
+   "name": "Patience / Justice",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": ["Silence"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Interdict duration by 2s and reduces CD by 5s"
+  },
+  "804571": {
+   "name": "Transcendent Guardian / Armor of Faith",
+   "source": "Oathkeeper",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "40% chance to refresh Temple Guardian charge when charging to an ally"
+  },
+  "520812": {
+   "name": "Scarlet Secrets / Teachings of the Cathedral",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no details; every 2nd Argent Blade grants Oath: Retribution (+5% crit damage)",
+   "confidence": "low"
+  },
+  "301339": {
+   "name": "Holy Tempest / Whirling Tempest",
+   "source": "Crusader",
+   "primary": "Passive",
+   "tags": ["Holy", "DoT", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Righteous Tempest damage spreads Condemn to nearby enemy"
+  },
+  "801024": {
+   "name": "Add 2 Felfury",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "internal resource modifier baseline; likely vestigial/internal",
+   "confidence": "low"
+  },
+  "704573": {
+   "name": "Chakram",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Holy", "Ranged", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; ranged Holy drain-health; 15-yd range; no cost; no CD on GCD"
+  },
+  "803157": {
+   "name": "Chastise",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 25 Energy; 15-yd range; core filler nuke (Holy damage + weapon)"
+  },
+  "706634": {
+   "name": "Gift of Zeal",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Agility", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 30-min Agility buff on ally (40-yd range); blessing-style raid buff"
+  },
+  "804434": {
+   "name": "Grave March",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; internal passive aura with unknown effect",
+   "confidence": "low"
+  },
+  "560653": {
+   "name": "Harmonic Disposition",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 2-hr raid aura: safe fall + water walking; 10 Energy; maintenance buff"
+  },
+  "801445": {
+   "name": "Holy Cleave",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Holy", "Melee", "Cleave"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 35 Energy; 5-yd AoE melee cleave; Holy school"
+  },
+  "504120": {
+   "name": "Kick",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Physical", "Melee", "Interrupt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 30 Energy; melee interrupt baseline"
+  },
+  "801443": {
+   "name": "Righteous Lunge",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 40 Energy; core melee attack; generates Oath stacks"
+  },
+  "800518": {
+   "name": "Sacred Strikes",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Holy"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "no desc; proc trigger for Zealotry on strikes"
+  },
+  "560963": {
+   "name": "Shackle The Unrepentant",
+   "source": "baseline",
+   "primary": "Control",
+   "tags": ["Holy", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 1.5s cast; 30-yd range; 40 Energy; 30s banish/stun"
+  },
+  "805406": {
+   "name": "Templar Strike",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 40 Energy; core melee weapon strike; 1s GCD"
+  },
+  "801478": {
+   "name": "Testament of Faith",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Holy", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 3-min CD; 50 Energy; heals target + grants 35% movement speed; 20-yd range"
+  },
+  "804781": {
+   "name": "Tithe",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Holy", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "no desc; 1-hr CD; 3s channel; self buff (unknown effect value 1000)",
+   "confidence": "low"
+  }
+ }
+}

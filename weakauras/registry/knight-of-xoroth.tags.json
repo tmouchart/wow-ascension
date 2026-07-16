@@ -1,0 +1,1400 @@
+{
+ "slug": "knight-of-xoroth",
+ "class": "Knight of Xoroth",
+ "count": 138,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "802615": {
+   "name": "Fury of Xoroth",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Infernal Strike grants Xorothian Fury stacking crit buff; Skulltaker at 6 Demonfire grants Xorothian Rage proc"
+  },
+  "706758": {
+   "name": "Soul Furnace",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sacrificial Circle gains absorb shield scaled on imp health"
+  },
+  "807247": {
+   "name": "Hellbound Charge",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges, 70% speed 3 sec; Mounted Combat speed burst"
+  },
+  "707614": {
+   "name": "Jagged Edge",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Rage generated from damage dealt by 20%"
+  },
+  "706563": {
+   "name": "Demon's Breath",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Shieldgore crits trigger fire eruption + 1 Demonfire"
+  },
+  "805677": {
+   "name": "Sacrificial Circle",
+   "source": "Defiance",
+   "primary": "Heal",
+   "tags": ["Fire", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sacrifice imps to heal 15% max HP + per-imp HP; 1 min CD"
+  },
+  "704991": {
+   "name": "Hellstriker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Direct crits increase Hellrider duration (haste buff extended)"
+  },
+  "704185": {
+   "name": "Chain Warden",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["AoE", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chains of Malice CD -30s; Flesh Hook and Chainwhip cleave 2 extra targets"
+  },
+  "704999": {
+   "name": "Combusting Blade",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Int, Infernal Strike Rage cost -5 per rank"
+  },
+  "300391": {
+   "name": "Hellish Rebuke",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Demon's Blood generation has 15% chance to trigger fire AoE"
+  },
+  "706569": {
+   "name": "Hellsmelted Armor",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+1% block chance per active Hellfire Imp per rank"
+  },
+  "706564": {
+   "name": "Infernal Bulwark",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Defensive", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unleash Pestilence grants 4 Demonfire and Infernal Bulwark +20% block value proc"
+  },
+  "704992": {
+   "name": "Infernal Pursuit",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Haste", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% melee haste, -15% root duration per rank"
+  },
+  "707028": {
+   "name": "Demonfire Command",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Implosion CD -10s and Rage cost -5"
+  },
+  "704981": {
+   "name": "Knight of Pestilence",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Pestilence abilities critical damage +50%"
+  },
+  "560655": {
+   "name": "Hellfire Forgemaster",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% block value"
+  },
+  "805693": {
+   "name": "Infernal Steel",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Skulltaker at 6 Demonfire procs next Hellmaw tick -25% faster and -50% cost"
+  },
+  "705015": {
+   "name": "Gored",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Gore/Meatsaw apply damage-taken debuff (Gored) stacking 2x for Skulltaker/Warbringer"
+  },
+  "801063": {
+   "name": "Suffuse",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Shadow", "Selfheal", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "HoT scaling with Stamina; duration extended per Demonfire consumed"
+  },
+  "524922": {
+   "name": "Demonic Rage",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Demon's Blood generation also generates 1 additional Rage"
+  },
+  "704966": {
+   "name": "Demonfire Plating",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-2% damage taken, +3% Stamina per rank"
+  },
+  "704452": {
+   "name": "Rain of Chaos",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE", "DoT", "Spender"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Flames of Xoroth at 6 Demonfire triggers Rain of Chaos DoT AoE"
+  },
+  "500003": {
+   "name": "Taskmaster",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit chance, +15% vs Demons"
+  },
+  "800997": {
+   "name": "Bloodied Blade",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Melee Physical damage generates Demon's Blood stacks"
+  },
+  "704975": {
+   "name": "Hell Blender",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Meatsaw has 40% chance to refund 10 Rage"
+  },
+  "302548": {
+   "name": "A Curse from Hell",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Periodic dmg has 15% chance to reduce Curse of Xoroth CD by 3s; scales with Demonfire stacks"
+  },
+  "705005": {
+   "name": "Fiend",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sever removes cost of next Infernal Strike"
+  },
+  "524913": {
+   "name": "Decimation",
+   "source": "War",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; next Skulltaker/Warbringer guaranteed crit +25% damage for 30s"
+  },
+  "707388": {
+   "name": "Consuming Blade",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Gore crit chance, +5 expertise per rank"
+  },
+  "804947": {
+   "name": "Screamin' Demon",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unleash Pestilence CD -15s"
+  },
+  "300385": {
+   "name": "Xorothian Finesse",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% parry chance; DB-404 no details"
+  },
+  "524920": {
+   "name": "Burning Blade",
+   "source": "War",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Physical", "Melee", "Buff", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; melee crits spray fire AoE in line + 30% armor pen; consumes Demonfire for extra charges"
+  },
+  "800710": {
+   "name": "Brimstone Bludgeon",
+   "source": "War",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "AoE", "Generator", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Sever; 250% weapon dmg AoE + 1 Demonfire + unleashes Pestilence; DB-404 no details"
+  },
+  "704952": {
+   "name": "The Butcher",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Meatsaw damage stacks buff: +10% Meatsaw dmg and -5% GCD per stack up to 5"
+  },
+  "520372": {
+   "name": "Conqueror's Will",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Crit", "Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Always-on raid +3% crit aura; phys crits apply damage-taken debuff"
+  },
+  "500551": {
+   "name": "Hellfire Rituals",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Skulltaker crits grant Greater Imp +15% haste proc"
+  },
+  "573034": {
+   "name": "Demonfire Retaliation",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Generator", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance to generate 1 Demonfire when attacked"
+  },
+  "704953": {
+   "name": "Chop Shop",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each Demon's Blood stack +1% Sever/Meatsaw crit"
+  },
+  "707631": {
+   "name": "Hellborn",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance per Demon's Blood proc to unleash active Pestilence at 50% effectiveness per rank"
+  },
+  "570727": {
+   "name": "Warbringer",
+   "source": "War",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Flames of Xoroth; AoE slam 65% weapon dmg + healing debuff -50% 10s; scales with Demonfire"
+  },
+  "705008": {
+   "name": "Demonic Frenzy",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Sever grants +20% attack speed 10s; Gore extends duration"
+  },
+  "704986": {
+   "name": "Warden of Hellfire",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% damage to Skulltaker and Flames of Xoroth"
+  },
+  "680199": {
+   "name": "Gorged",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Physical", "Leech", "Selfheal", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Gore heals 50% dmg dealt and grants Gorged stack; at 3 stacks Sever leech AoE; no details"
+  },
+  "300382": {
+   "name": "Xorothian Strength",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Strength per rank; no details"
+  },
+  "704957": {
+   "name": "Demonic Blade",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Demonfire-spending abilities buff next 2 Gore +25% dmg; on expiry instant free Meatsaw"
+  },
+  "705020": {
+   "name": "War Pig",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% Physical damage dealt"
+  },
+  "804013": {
+   "name": "Fiery Retribution",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Per Hellfire Imp death: Sacrificial Circle -2s CD, Implosion -1s CD"
+  },
+  "300375": {
+   "name": "Seething Strikes",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sever +30% dmg vs Burning targets + applies 3% crit-taken debuff; no details"
+  },
+  "801054": {
+   "name": "Pestilence of Death",
+   "source": "War",
+   "primary": "Buff",
+   "tags": ["Physical", "Crit"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "Emanate aura +10% crit dmg self and nearby; 4s CD toggled pestilence buff; procs Unleash Death"
+  },
+  "680723": {
+   "name": "Brute Strength",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% phys crit dmg + range on Flesh Hook/Chains/Chainwhip; no details"
+  },
+  "801065": {
+   "name": "Forgefiend's Bulwark",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Defensive", "Enrage"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "30% chance on block/parry/dodge to Enrage: +10% dmg 10s"
+  },
+  "706502": {
+   "name": "Dread",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shadow", "Fire", "AoE", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on dmg to grant Dread stack; at 10 stacks transforms Meatsaw into Annihilation (frontal cone AoE + 4 Demonfire)"
+  },
+  "520294": {
+   "name": "Juggernaut",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Fire", "Selfheal", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; consume Demon's Blood for -30% dmg taken 10s + HoT scaled per stack"
+  },
+  "804014": {
+   "name": "Hellwrath",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Defensive", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Demon's Blood max stacks +5; each stack increases Black Shield absorption by 1%"
+  },
+  "800081": {
+   "name": "Chainwhip",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Silence", "Interrupt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10 Rage, 20s CD; 15yd range; dmg + 2s silence; interrupts refund 20% CD"
+  },
+  "804169": {
+   "name": "Curse of Xoroth",
+   "source": "Defiance",
+   "primary": "Rotational",
+   "tags": ["Fire", "Shadow", "DoT", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; 30yd range Shadowflame DoT 15s + next Shieldgore within 12s grants Black Shield absorb"
+  },
+  "300387": {
+   "name": "Brimstone's Blood",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% chance to gain Demon's Blood stacks; no details"
+  },
+  "301302": {
+   "name": "Shieldgore",
+   "source": "Defiance",
+   "primary": "Rotational",
+   "tags": ["Fire", "Physical", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Infernal Strike; generates 2 Demonfire; Fire dmg scaling with block value; high-threat"
+  },
+  "300390": {
+   "name": "A Gift from Hell",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Infernal Strike/Meatsaw/Melt Rage cost -10; no details"
+  },
+  "804883": {
+   "name": "Call: Hellfire Imp",
+   "source": "Defiance",
+   "primary": "Rotational",
+   "tags": ["Fire", "Shadow", "Summon", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; summons 1 Hellfire Imp 12s + 20 Rage + 2 Demonfire; imp threat transferred to you"
+  },
+  "300388": {
+   "name": "Bulwark of Xoroth",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Shieldgore applies Torn Flesh bleed DoT; no details"
+  },
+  "704958": {
+   "name": "Indiscriminate",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["AoE", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seeking Flame spreads Hellmaw/Melt to 3 nearby enemies"
+  },
+  "804879": {
+   "name": "Legion's Presence",
+   "source": "Defiance",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Raidbuff", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD; raid aura +10% dmg dealt 15s; Hellfire Imps deal 150% more Fire dmg and +50% HP"
+  },
+  "572370": {
+   "name": "Burning Blade",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skulltaker ignores -25% armor and costs 0 Rage (modified by this node)"
+  },
+  "805074": {
+   "name": "Call: Hellfire Abyssal",
+   "source": "Defiance",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Summon", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, 100 Rage; fire AoE + Abyssal pet 15s with -5% dmg-taken raid aura; cost -15 per active Imp"
+  },
+  "803185": {
+   "name": "Chains of Malice",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; 15yd; stun + drag target 5s"
+  },
+  "300374": {
+   "name": "Invasion",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Fire dmg vs enemies above 80% health per rank; no details"
+  },
+  "573036": {
+   "name": "Hellfire Striker",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Crit", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit chance, +3% hit chance"
+  },
+  "801061": {
+   "name": "Xorothian Sigil",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Raidbuff", "Reflect"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; sigil on party/raid within 20yd deflects next spell in 3s"
+  },
+  "804786": {
+   "name": "Pestilence of Apocalypse",
+   "source": "Hellfire",
+   "primary": "Buff",
+   "tags": ["Fire"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "4s CD toggled pestilence aura; nearby enemies take +10% Fire dmg from you; procs Unleash Apocalypse"
+  },
+  "706756": {
+   "name": "Chains of Xoroth",
+   "source": "Defiance",
+   "primary": "Control",
+   "tags": ["Fire", "Shadow", "Slow", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "90s CD; 20yd AoE chains: -80% slow 5s then pulls all affected enemies to center"
+  },
+  "805678": {
+   "name": "Demonic Grit",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% summon HP and -10% summon dmg taken per rank"
+  },
+  "805679": {
+   "name": "Black Shield",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Shield", "Absorb", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; consume all Demon's Blood for absorb shield (860 base + 20% per stack) 30s"
+  },
+  "802619": {
+   "name": "Into the Maw",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hellmaw triggers Hellfire Explosion on expiry: 50% of periodic dmg dealt as AoE fire"
+  },
+  "805671": {
+   "name": "Seeking Flame",
+   "source": "Hellfire",
+   "primary": "Rotational",
+   "tags": ["Fire", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20 Rage, 6s CD, 30yd; Fire dmg + 1 Demonfire"
+  },
+  "802610": {
+   "name": "Ascended Warlock",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skulltaker at 6 Demonfire reduces Doom CD -5s; while Doom active Doomguard copies Skulltaker"
+  },
+  "704988": {
+   "name": "Punisher",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seeking Flame AP and SP scaling +25%"
+  },
+  "807336": {
+   "name": "Demolisher",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Taunt", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Flesh Hook/Chainwhip cast taunts target 2s + reduces phys dmg taken -5% 10s"
+  },
+  "805555": {
+   "name": "Gore",
+   "source": "War",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 charges, 8s recharge; 30 Rage; 100% weapon dmg + 1 Demonfire"
+  },
+  "806965": {
+   "name": "Hellmaw",
+   "source": "Hellfire",
+   "primary": "Rotational",
+   "tags": ["Fire", "Shadow", "Melee", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20 Rage; Shadowflame direct hit + 12s DoT; deals 20% more per Demonfire consumed"
+  },
+  "520290": {
+   "name": "Murderous Might",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% damage to Demonfire-spending abilities"
+  },
+  "805669": {
+   "name": "Demon Heart",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Shadow", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; instantly generates 6 Demonfire + 50 Rage"
+  },
+  "704979": {
+   "name": "Domination",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Melee crits reduce Burning Blade CD -1s"
+  },
+  "560633": {
+   "name": "Pestilence Unbound",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Demonfire-spending abilities at 6 stacks unleash active Pestilence at 50% effectiveness"
+  },
+  "704954": {
+   "name": "Boundless Fury",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+30% effectiveness of Pestilence of Death unleash effect"
+  },
+  "302581": {
+   "name": "Demonskin",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+1% Armor per Demon's Blood stack; no details"
+  },
+  "520008": {
+   "name": "Blood Frenzy",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Spender", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Demonfire-spending abilities with 4+ stacks refund 1 Demonfire"
+  },
+  "707515": {
+   "name": "Grotesque",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While Hellfire Form active, Seeking Flame has no cooldown and generates 1 additional Demonfire"
+  },
+  "805696": {
+   "name": "Hellfire Form",
+   "source": "Hellfire",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD; +20% Fire dmg and +15% Fire crit for 15s"
+  },
+  "301358": {
+   "name": "Flamewrath",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+20% Seeking Flame crit; also procs Seething Strikes"
+  },
+  "300376": {
+   "name": "Rage of Xoroth",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste", "Enrage"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crits Enrage you: +15% melee attack speed; no details"
+  },
+  "705018": {
+   "name": "Dismemberment",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Demonfire-spending abilities apply -20% healing received debuff 8s on target"
+  },
+  "300384": {
+   "name": "Ragefist",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10 max Rage, -15% disarm duration per rank; no details"
+  },
+  "300386": {
+   "name": "Fiend of Forges",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Crit", "Enrage"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Forgefiend's Bulwark Enrage also grants +10% crit; no details"
+  },
+  "706565": {
+   "name": "Hellfire Reprimand",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Fire", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hellfire Imps have 20% chance on hit to firebolt + attack power debuff 10s"
+  },
+  "704973": {
+   "name": "Stoke the Flames",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Fire", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skulltaker/Melt at 6 Demonfire refund 2 Demonfire; Skulltaker at 6 Demonfire deals +30% Fire"
+  },
+  "704971": {
+   "name": "Pestilent Retaliation",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on block to unleash active Pestilence at 50% effectiveness; 5s ICD"
+  },
+  "704956": {
+   "name": "Heart of Xoroth",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Demon's Blood max stacks +5"
+  },
+  "704182": {
+   "name": "Harbinger of Pestilence",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% Pestilence effectiveness"
+  },
+  "704987": {
+   "name": "Spiked Chains",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Chainwhip deals 321 + 30% AP additional dmg, +100% vs Humanoids"
+  },
+  "704989": {
+   "name": "Shadowflame Forge",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hellmaw duration +3s and DoT dmg +25% per rank"
+  },
+  "802342": {
+   "name": "Hellstorm",
+   "source": "Hellfire",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD, 40 Rage; Fire AoE up to 8 targets + ember ticks; duration 100% per Demonfire consumed"
+  },
+  "680991": {
+   "name": "Hook, Line, and Sinker",
+   "source": "War",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Flesh Hook and Chainwhip CD -5s; no details"
+  },
+  "805697": {
+   "name": "Inferno Blast",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% critical damage vs Burning targets per rank"
+  },
+  "807669": {
+   "name": "Hellfire Embers",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hellfire Imp deals +30% Fire dmg vs enemies above 80% HP"
+  },
+  "802602": {
+   "name": "Doom",
+   "source": "Hellfire",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Summon", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD, 50 Rage; transforms Greater Imp to Doomguard 12s; auto attacks ignite DoT stacking 6x"
+  },
+  "680900": {
+   "name": "Infernal Pummeling",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Melt increases target's dmg taken from Flames of Xoroth/Skulltaker +10%; no details"
+  },
+  "705000": {
+   "name": "To Ashes",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% crit chance on Demonfire-spending abilities"
+  },
+  "520295": {
+   "name": "Burning Rage",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Fire", "Enrage", "Immunity", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD; Enrage 6s: 15 Rage/s + immune to incapacitate/banish/polymorph; usable while CC'd"
+  },
+  "706590": {
+   "name": "Omen of Rage",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on periodic dmg/heal to grant 1 Demonfire stack"
+  },
+  "704980": {
+   "name": "Darkrider",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Mark spell duration +50%; Unleash Pestilence cost reduced"
+  },
+  "704186": {
+   "name": "Hand of Doom",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Sever/Brimstone Bludgeon +10% weapon dmg, +10% per active Demonfire"
+  },
+  "800702": {
+   "name": "Hellknight",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Physical", "Haste", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Above 75% HP, direct phys dmg grants Hellknight stack (+1% phys dmg +1% crit +movement speed +GCD reduction, stacking 5)"
+  },
+  "805695": {
+   "name": "Mutilation",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Gore and Sever damage per rank (up to 3 ranks)"
+  },
+  "524897": {
+   "name": "Implosion",
+   "source": "Defiance",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "AoE", "Summon", "Generator", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40s CD; Fire AoE + summon Imps 12s + 30 Rage; dmg and imp count scale with Demonfire consumed"
+  },
+  "681449": {
+   "name": "Bringer of Destruction / Absolutism",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Generator", "Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Critical damage taken grants 1 Demonfire + 5 Rage; 3s ICD"
+  },
+  "707632": {
+   "name": "Burning Swings / Hellsmelted",
+   "source": "War",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Burning Blade gains 4 additional attack charges"
+  },
+  "300395": {
+   "name": "Boiling Blood / Suffusion of Essence",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Suffuse also increases healing received +25% for first 6s; no details"
+  },
+  "805793": {
+   "name": "Warpath / Hellbreaker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While Unleash Pestilence active, movement speed cannot be reduced below 90%"
+  },
+  "707835": {
+   "name": "Mounted Reaver / Mounted Champion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "All Mounted Combat ability CDs -20%"
+  },
+  "805706": {
+   "name": "Claws of Hell / Calamity",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT", "Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spending 4+ Demonfire refreshes Unleash Apocalypse DoT duration on target"
+  },
+  "704994": {
+   "name": "Xorothian Empowerment / Hellbringer",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Attack Power to all raid members; always-on raid aura"
+  },
+  "500578": {
+   "name": "Partners in Flames / Unbound Inferno",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance Greater Imp fire dmg empowers you: +5% dmg dealt 10s"
+  },
+  "807671": {
+   "name": "Brimstone Flames / Brimstone Splinters",
+   "source": "Hellfire",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Seeking Flame +20% dmg vs Pestilence of Apocalypse targets; +10% per Demonfire active"
+  },
+  "706754": {
+   "name": "Imp Gang Boss / Impcaller",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Call: Hellfire Imp summons 2 additional imps"
+  },
+  "707232": {
+   "name": "Speed Demon / Brimstone Knight",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Suffuse also grants +20% movement speed"
+  },
+  "807144": {
+   "name": "Brimstone Striker / Hellfire Sieger",
+   "source": "Defiance",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stoke the Flames dmg reduces Sever and Juggernaut CD -4s"
+  },
+  "807587": {
+   "name": "Hellfire Bellows / Black Skull Shield",
+   "source": "Defiance",
+   "primary": "Rotational",
+   "tags": ["Fire", "AoE", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Transforms Flames of Xoroth; cone AoE fire + reduces Chains of Xoroth CD per target hit"
+  },
+  "804284": {
+   "name": "Crusher",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "No desc; modifies Infernal Strike cost and effect 2; verify in-game"
+  },
+  "804345": {
+   "name": "Demon's Blood",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "Core mechanic: proc-driven Demon's Blood stack resource; enables Black Shield/Juggernaut gating"
+  },
+  "804773": {
+   "name": "Drag Through Hell",
+   "source": "baseline",
+   "primary": "Control",
+   "tags": ["Fire"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "No desc; Summon Player mechanic - likely a 5s cast drag/root; verify in-game"
+  },
+  "801059": {
+   "name": "Flames of Xoroth",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Melee", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15 Rage; 5yd AoE fire dmg in 12yd radius; applies damage-taken aura from caster"
+  },
+  "801042": {
+   "name": "Flay Corpse",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Physical", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; 10yd; +4% HP regen /sec for 5s (HoT on self + nearby allies?)"
+  },
+  "804683": {
+   "name": "Hell's Forge",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Fire"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20 min CD; 10s cast; summons portable Anvil + Forge object 2 min"
+  },
+  "801016": {
+   "name": "Infernal Strike",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40 Rage; 5yd; 55% weapon dmg Fire; core Demonfire spender"
+  },
+  "706589": {
+   "name": "Mark of Korth'azz",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Fire", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min; 40yd; grants +5 Fire resist and +3 Strength (party/raid mark)"
+  },
+  "802345": {
+   "name": "Pestilence of War",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true,
+   "notes": "4s CD; toggled pestilence aura; procs Unleash War; War spec signature pestilence"
+  },
+  "500904": {
+   "name": "Sever",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "4s CD; 100% weapon dmg + generates Rage; core builder"
+  }
+ }
+}

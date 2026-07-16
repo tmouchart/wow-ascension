@@ -1,0 +1,1450 @@
+{
+ "slug": "runemaster",
+ "class": "Runemaster",
+ "count": 144,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "805796": {
+   "name": "Fists of Power",
+   "source": "Runic",
+   "primary": "Buff",
+   "tags": ["Nature", "Haste", "Melee"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "45s CD self-buff, grants Earthen Fists stacking haste proc on auto attacks"
+  },
+  "800752": {
+   "name": "Primordial Salvos",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unleashing a Glyph deals bonus AoE damage"
+  },
+  "706671": {
+   "name": "Elemental Acuity",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Fire", "Nature", "Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "521219": {
+   "name": "Explosive Runes",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560036": {
+   "name": "Runic Tempest",
+   "source": "Runic",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD, resets Fist of the Ancients CD and enables Runeshroud abilities for 8s"
+  },
+  "705594": {
+   "name": "Frostburn",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes cast time of Glacial Rune and Permafrost Rune"
+  },
+  "300582": {
+   "name": "Magic Etchings",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Primordial Blast hits reduce target armor"
+  },
+  "806984": {
+   "name": "Runelord",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature", "Fire", "Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "After Zenith, deals elemental damage and grants 30% dmg buff for 8s to Runic Brand and Engravings"
+  },
+  "520917": {
+   "name": "Stone Savant",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705540": {
+   "name": "Spellblade",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806543": {
+   "name": "Primordial Fury",
+   "source": "Riftblade",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Arcane", "AoE", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD, 15s buff: Runeblade cleaves up to 5 additional enemies, +100% Runic Tattoo effectiveness"
+  },
+  "806711": {
+   "name": "Elemental Mastery",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "33% chance for Primordial Blast to become random elemental version when Runic Brand deals damage"
+  },
+  "705592": {
+   "name": "Frozen Earth",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Frost", "Nature", "Stun"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520145": {
+   "name": "Glyphs of Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on direct dmg to restore 3% max mana"
+  },
+  "705605": {
+   "name": "Master Engraver",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Weapon Engraving trigger chance by 5%"
+  },
+  "500250": {
+   "name": "Ley Walker",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Warpdagger removes all root/snare effects"
+  },
+  "705575": {
+   "name": "Turbulence",
+   "source": "Riftblade",
+   "primary": "Rotational",
+   "tags": ["Nature", "AoE", "DoT", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD melee Nature AoE + leaves Turbulent Spirals (DoT fields)"
+  },
+  "560039": {
+   "name": "Frost Spectre",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705570": {
+   "name": "Unbound Energy",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707157": {
+   "name": "Stone Petroglyph",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature", "HoT", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "While in Runic Tattoos: Earth, heal 3% max hp every 4s and immune to knockbacks"
+  },
+  "707460": {
+   "name": "Earthen Codex",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Nature", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Palm Sigil activation guarantees crit + 20% bonus crit dmg for 10s or 3 attacks"
+  },
+  "520755": {
+   "name": "Ancient Warrior",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Runeblade and Primordial Blast reduce Fist of the Ancients CD by 2s"
+  },
+  "706523": {
+   "name": "Decoder",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Elemental Burst and Runeblade have 20% chance to instantly trigger Weapon Engravings"
+  },
+  "705586": {
+   "name": "Sigilist",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Control", "Stun"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Palm Sigil CC duration +20%, cast time reduced, buff duration +50%"
+  },
+  "706674": {
+   "name": "Battle Engravings",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes cast time from Ley Lock but reduces its duration by 0.5s"
+  },
+  "712308": {
+   "name": "Leyfrost",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hoarfrost crits cause next spell within 15s to act as if target is Frozen"
+  },
+  "705619": {
+   "name": "Alteration",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature", "Frost", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Runic Tattoos effectiveness by 25%"
+  },
+  "705632": {
+   "name": "Wizardry",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Intellect +10%, mana-per-int bonus +10%"
+  },
+  "560527": {
+   "name": "Runes of Quickness",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Raid-wide 3% spell haste aura, always-on"
+  },
+  "500464": {
+   "name": "Guarding Rune",
+   "source": "Runic",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD, 15s ground AoE: allies inside take -40% magic damage"
+  },
+  "706531": {
+   "name": "Earth, Wind, and Fire",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "After hitting 5 enemies with Runic Explosion, unleash Wild Steam AoE"
+  },
+  "705609": {
+   "name": "Leyborn",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Marked: Runic Brand stacks 3 times instead of 1"
+  },
+  "800736": {
+   "name": "Runic Tattoos",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces resource costs of spells by -10%; also the system enabling switching tattoo stances"
+  },
+  "705581": {
+   "name": "Prismatic Flow",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Phase Out now also grants +40% movement speed for 2s"
+  },
+  "803018": {
+   "name": "Fracture",
+   "source": "Riftblade",
+   "primary": "Rotational",
+   "tags": ["Frost", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Frost melee strike, guaranteed crit vs Frozen targets, also burns mana"
+  },
+  "705634": {
+   "name": "Kirin Tor Agent",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Eye of the Beholder rapidly reduces cooldowns of Rune spells and Phase Out while active"
+  },
+  "804060": {
+   "name": "Permafrost Rune",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Frost", "Root", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Incapacitate frozen target for 40s (10s vs players); reduced CD when in Runeshroud"
+  },
+  "807505": {
+   "name": "Expert Elementalist",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature", "Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces cast time of Elemental Burst and Glyphic Ruin by 0.5s, +3% hit chance"
+  },
+  "805727": {
+   "name": "Arcane Glyph",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "AoE", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unlocks Arcane Glyph proc from Elemental Burst/Primordial Blast while Flame Glyph active"
+  },
+  "560995": {
+   "name": "Concentrated Magic",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805726": {
+   "name": "Cryomagi",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases range of Cryobrand by 10 yds"
+  },
+  "806718": {
+   "name": "Unbound",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces harmful magic/curse effect duration by -20%"
+  },
+  "806698": {
+   "name": "Eternal Magic",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Primordial Blast CD -4s and now refreshes 3 Runeblade charges"
+  },
+  "705613": {
+   "name": "Symbols of Power",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fist of the Ancients deals +15% damage while Weapon Engraving: Fire is active"
+  },
+  "705562": {
+   "name": "Ley Constitution",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Armor from items +30%"
+  },
+  "500121": {
+   "name": "Eye of the Beholder",
+   "source": "Arcane",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Crit", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD, 15s: +25% spell crit chance, +25% Glyphic Ruin and Primordial Blast damage"
+  },
+  "500287": {
+   "name": "Warpdagger",
+   "source": "class",
+   "primary": "Movement",
+   "tags": ["Fire", "Frost", "Nature", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD teleport blink to dagger location, deals elemental AoE on arrival"
+  },
+  "567233": {
+   "name": "Uncovered Engravings",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fist of the Ancients use grants +20% Weapon Engraving trigger chance for 5s"
+  },
+  "300584": {
+   "name": "Bursting Pulses",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Nature", "Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each weapon enchanted by Weapon Engraving: Earth reduces Primordial Pulse CD by 4s and increases its damage by 15%"
+  },
+  "806797": {
+   "name": "Ancient Teachings",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases effectiveness of Etching of the Dextrous by 20%"
+  },
+  "500296": {
+   "name": "Power Engraving",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Arcane", "Raidbuff", "Crit", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5 min CD, 20s ground AoE: up to 5 allies get +20% magic damage and +20% crit chance"
+  },
+  "520156": {
+   "name": "Glyph God",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Reduces Glyphic Overload CD by -15s"
+  },
+  "712325": {
+   "name": "Zenith",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Nature", "Buff", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, 6s buff: +100% Weapon Engraving trigger chance, also grants melee haste"
+  },
+  "802631": {
+   "name": "Silencing Rune",
+   "source": "Arcane",
+   "primary": "Control",
+   "tags": ["Arcane", "Silence", "AoE", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD, placed ground rune silences all enemies in 5yd radius for 6s"
+  },
+  "705551": {
+   "name": "Terraglyphs",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Weapon Engraving: Earth trigger chance by 4%"
+  },
+  "712299": {
+   "name": "Runic Brand",
+   "source": "Runic",
+   "primary": "Rotational",
+   "tags": ["Fire", "Arcane", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "12s CD melee ability, marks target; next Runeblade triggers Runic Explosion (AoE elemental)"
+  },
+  "712326": {
+   "name": "Fist of the Ancients",
+   "source": "Runic",
+   "primary": "Rotational",
+   "tags": ["Fire", "Frost", "Nature", "Melee", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "18s CD melee, hits target + 1 nearby, triggers Weapon Engraving"
+  },
+  "705550": {
+   "name": "Runeslinger",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on direct damage to gain 20% spell haste for 5s"
+  },
+  "500501": {
+   "name": "Genesis",
+   "source": "Riftblade",
+   "primary": "Rotational",
+   "tags": ["Arcane", "DoT", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3 min CD, applies 8s debuff accumulating 50% of dmg dealt, then unleashes as elemental DoT burst"
+  },
+  "801086": {
+   "name": "Convergence",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5 min CD, 15s: next 10 Weapon Engravings deal additional 348+30%SP+20%AP elemental damage"
+  },
+  "524952": {
+   "name": "Manuscription",
+   "source": "Arcane",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "DoT", "AoE", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, DoT AoE + grants Transcribing buff (next Thaumaturgy/Glyphic Ruin chains dmg)"
+  },
+  "801104": {
+   "name": "Hoarfrost",
+   "source": "Riftblade",
+   "primary": "Rotational",
+   "tags": ["Frost", "DoT", "Melee", "AoE", "Root"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD, Frost melee cleave, freezes initial targets 3s, DoT 21s"
+  },
+  "807204": {
+   "name": "Runic Invocation",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hoarfrost +10% crit chance, allows its periodic damage to crit"
+  },
+  "705572": {
+   "name": "Primordial Echoes",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Primordial Blast crits have 40% chance to strike additional time"
+  },
+  "500270": {
+   "name": "Echo Rune",
+   "source": "Riftblade",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Selfheal", "Movement"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD, marks location for 20s; reactivate or duration end warps back and heals 880+150%AP"
+  },
+  "300944": {
+   "name": "Runic Power",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Raid-wide 3% all damage buff (always-on); Elemental Burst debuffs target for +3% spell crit taken"
+  },
+  "705565": {
+   "name": "Waveforged",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "After Hurricane ends, can use Runeshroud abilities for 4s"
+  },
+  "801103": {
+   "name": "Speed Rune",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Arcane", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD, conjures runic path granting allies 70% movement speed for 10s"
+  },
+  "705564": {
+   "name": "Focusing Crystals",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705546": {
+   "name": "Magic Feeder",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Arcane", "SpellSteal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Leyfeed steals 1 additional magic effect from the target"
+  },
+  "560040": {
+   "name": "Residual Power",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Weapon Engraving: Air deals 15% increased replicated damage"
+  },
+  "801096": {
+   "name": "Ley Power",
+   "source": "Runic",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "AoE", "Buff"],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "1.5 min CD, 15s: AoE bonus Arcane dmg based on nearby enemies, grants stacking Harnessed Leylines proc on melee hits"
+  },
+  "520229": {
+   "name": "Granite Resolve",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Nature", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1 min CD, 8s: -30% physical dmg taken; usable while stunned"
+  },
+  "807172": {
+   "name": "Tempo",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature", "Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Runeblade damage +20%"
+  },
+  "705615": {
+   "name": "Volcanic Etching",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Weapon Engraving: Fire and Earth trigger chance +5%"
+  },
+  "521211": {
+   "name": "Echoes of Eternity",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Zenith now has 2 charges"
+  },
+  "807842": {
+   "name": "Glacial Rune",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Frost", "AoE", "Root", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD, placed rune AoE Frost dmg + freeze 40s (8s vs players)"
+  },
+  "804557": {
+   "name": "Advanced Magi",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Elemental Burst spell power scaling +25%"
+  },
+  "800758": {
+   "name": "Glyphic Destruction",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Glyphic Ruin deals +100% damage vs Frozen targets"
+  },
+  "500118": {
+   "name": "Frigid Blast",
+   "source": "Arcane",
+   "primary": "Rotational",
+   "tags": ["Frost", "DoT", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Frost ranged nuke, applies Frigid Fusion DoT (accumulates 20% of damage dealt)"
+  },
+  "705556": {
+   "name": "Primordial Power",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases Frigid Fusion duration by 2s"
+  },
+  "804550": {
+   "name": "Thaumaturgy",
+   "source": "Arcane",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD arcane ranged nuke, unleashes active Glyph effect"
+  },
+  "801511": {
+   "name": "Spellfire Runes",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Runeblade 20%/Warpdagger 100% chance to reset Smolder CD and empower next Smolder"
+  },
+  "801087": {
+   "name": "Smolder",
+   "source": "Riftblade",
+   "primary": "Rotational",
+   "tags": ["Fire", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "6s CD, Fire melee strike + debuff target (-5% healing received from caster)"
+  },
+  "705577": {
+   "name": "Freezing Codex",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ice Rune CD -20s (more mana cost, less range)"
+  },
+  "805743": {
+   "name": "Steam Conjurer",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Weapon Engraving: Earth dmg has 5% chance to cast Wild Steam AoE (3s ICD)"
+  },
+  "705636": {
+   "name": "Primal Rune",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Granite Resolve dmg reduction increased by additional -10%"
+  },
+  "300578": {
+   "name": "Primordial Pulse",
+   "source": "Arcane",
+   "primary": "Rotational",
+   "tags": ["Fire", "Frost", "Nature", "AoE", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Channels elemental AoE dealing dmg every tick to up to 5 enemies for 2s"
+  },
+  "300581": {
+   "name": "Leystone Springs",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Auto attacks 15% chance to restore mana; tripled while Runic Tattoos: Water active"
+  },
+  "560540": {
+   "name": "Leyline Disturbance",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Raid-wide 10% melee/ranged haste aura + stun duration on self reduced -20%"
+  },
+  "705621": {
+   "name": "Runic Affinity",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Zenith duration +6s"
+  },
+  "706823": {
+   "name": "Leyline Magician",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Casting Primordial Blast reduces Primordial Pulse CD by 5s"
+  },
+  "645435": {
+   "name": "Hurricane",
+   "source": "Riftblade",
+   "primary": "Rotational",
+   "tags": ["Nature", "Physical", "Melee", "Cleave"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD, 5 rapid melee strikes over 2s; +100% dodge during channel but cannot use other abilities"
+  },
+  "806704": {
+   "name": "Elemental Strikes",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805724": {
+   "name": "Phase Rush",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Thaumaturgy grants +25% movement speed for 5s"
+  },
+  "705627": {
+   "name": "Glyph Seeker",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Primordial Blast and Thaumaturgy damage +20%"
+  },
+  "804232": {
+   "name": "Warding Rune",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Arcane", "Dispel", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD, 6s magic immunity (harmful magic has no duration) + dispels all current magic effects"
+  },
+  "520237": {
+   "name": "Blade Rift",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Buff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Warpdagger while stealthed grants +10% magic damage for 8s"
+  },
+  "520054": {
+   "name": "Primordialism",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+10% crit chance for 5s after leaving Runeshroud"
+  },
+  "705563": {
+   "name": "Shroudwalker",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Warpdagger has no cooldown when used while in Runeshroud"
+  },
+  "707413": {
+   "name": "Elements of Fury",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Control"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Palm Sigils affect 1 additional instance of damage"
+  },
+  "705583": {
+   "name": "Runic Breakout",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "After Runeshroud breaks, Runeshroud abilities usable for 3s with no cast time"
+  },
+  "705600": {
+   "name": "Swift Etching",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Haste", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "After Hurricane ends, +15% melee attack speed and +10% crit chance for 10s"
+  },
+  "706670": {
+   "name": "Elements, Heed My Call!",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Smolder, Hurricane, and Hoarfrost crit damage +15%"
+  },
+  "705580": {
+   "name": "Runic Omen",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Every 3rd Runeblade cast deals 30% increased damage"
+  },
+  "806737": {
+   "name": "Elemental Inscription",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Fire", "Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Smolder reduces Primordial Fury CD by 10s and Zenith CD by 5s"
+  },
+  "806795": {
+   "name": "Mystical Etchings",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature", "Arcane", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "All Fire, Nature, Frost, Arcane damage taken -8%"
+  },
+  "560992": {
+   "name": "Warpmaster",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Warpdagger CD -5s"
+  },
+  "500671": {
+   "name": "Phase Out",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2 min CD, enter improved stealth for 6s and apply Runeshroud; usable in combat"
+  },
+  "520524": {
+   "name": "Brandmaster",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Runic Brand explosion crit chance +10%"
+  },
+  "806708": {
+   "name": "Graceful",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560050": {
+   "name": "Mark of Strength",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire", "Frost", "Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Primordial Blast spell power scaling +30%"
+  },
+  "560053": {
+   "name": "Sky and Stone",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Weapon Engraving: Air or Earth dmg has 10% chance to grant +10% melee haste for 10 attacks"
+  },
+  "705543": {
+   "name": "Forbidden Engraving",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Nature", "Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Weapon Engraving effectiveness +20%"
+  },
+  "705554": {
+   "name": "Speedy Attuner",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+8% movement speed, Runic Tattoo mana cost -25%"
+  },
+  "705625": {
+   "name": "Flame Glyph",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Fire", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unlocks Flame Glyph from Elemental Burst/Primordial Blast while Frost Glyph active"
+  },
+  "300576": {
+   "name": "Arcane Student",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While Glyphic Overload active, Glyphic Ruin is guaranteed crit"
+  },
+  "802204": {
+   "name": "Scroll of Magic",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unleashing a Glyph grants stacking +5% Unleashed Glyph dmg for 15s (3 stacks max)"
+  },
+  "520099": {
+   "name": "Glyphic Overload",
+   "source": "Arcane",
+   "primary": "CD Offensif",
+   "tags": ["Arcane", "Fire", "Frost", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "45s CD, 15s: generates all 3 Glyphs with overloaded empowerment (bonus effects on next unleash)"
+  },
+  "520015": {
+   "name": "Glyph Master",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Scroll of Magic also grants +5% Unleashed Glyph crit damage and crit chance per stack"
+  },
+  "801179": {
+   "name": "Glyphic Ruin",
+   "source": "Arcane",
+   "primary": "Rotational",
+   "tags": ["Fire", "Frost", "Nature", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Filler/spender ranged cast, unleashes active Glyph effect + 82+100%SP elemental dmg"
+  },
+  "707654": {
+   "name": "Frigid Elements / Cold Elements",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Frigid Blast SP scaling +50% (but +1s cast time), Frigid Fusion accumulates +10% more dmg"
+  },
+  "704139": {
+   "name": "Harnessing Leylines / Burned Etching",
+   "source": "Arcane",
+   "primary": "Passive",
+   "tags": ["Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Periodically grants Harnessed Leylines stacks (+3% Runeblade/Elemental Burst dmg, 10 stacks)"
+  },
+  "707653": {
+   "name": "Nomad's Scroll / Elemental Secrets",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Dispel"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Swapping to Runic Tattoos: Air instantly dispels 1 movement-slowing effect"
+  },
+  "807376": {
+   "name": "Wind Walker / Master of Runes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While Runic Tattoos: Air active, rune spell cooldowns reduce by 5% every 5s"
+  },
+  "800757": {
+   "name": "Mind Wrath / Mind Over Matter",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Interrupt", "Arcane"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ley Lock now interrupts 1 additional nearby enemy"
+  },
+  "524697": {
+   "name": "Flowing Rivers / Wind Surge",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Frost", "Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Runic Tattoos: Water mana restore and Replenishment proc chance increased"
+  },
+  "806993": {
+   "name": "Devastating Flames / Granite Shield",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Fire"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Weapon Engraving: Fire damage +20%"
+  },
+  "800756": {
+   "name": "Protective Warding / Runebound Surge",
+   "source": "Runic",
+   "primary": "Passive",
+   "tags": ["Defensive", "Arcane"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Critical damage taken reduces Guarding Rune CD by 10%"
+  },
+  "706458": {
+   "name": "Cinderstorm Runes / Melting Runes",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Fire", "Physical", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hurricane and Smolder deal 50% more damage against targets below 20% hp"
+  },
+  "706672": {
+   "name": "Wind Runes / Water Runes",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Hurricane duration +1s (2 additional strikes)"
+  },
+  "707463": {
+   "name": "Rift Clones / Phaser",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Arcane", "AoE", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Phase Out summons 10 clones that run randomly and explode dealing AoE Arcane dmg"
+  },
+  "804094": {
+   "name": "Windbreaker / Magebreaker",
+   "source": "Riftblade",
+   "primary": "Passive",
+   "tags": ["Nature"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While Weapon Engraving: Air active, each Hurricane strike deals +30% damage"
+  },
+  "804707": {
+   "name": "Build: Portable Sawmill",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Fire", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "Utility summon object, 20 min CD; no desc in DB"
+  },
+  "802202": {
+   "name": "Elemental Burst",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Frost", "Nature", "Ranged", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Core filler casted nuke (2s cast, no CD); generates Runeblade charges"
+  },
+  "560295": {
+   "name": "Etching of the Magi",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Arcane"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min self buff reducing spell resource costs by -5% (long-duration aspect buff)"
+  },
+  "560316": {
+   "name": "Homebound Runestone",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min CD, 5s cast: summons a portal home (Primordial Portal)"
+  },
+  "800723": {
+   "name": "Inscribe Rune",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Arcane", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1s cast no-CD ability that restores 5% mana; likely the Runeblade-charge generator filler"
+  },
+  "800995": {
+   "name": "Ley Lock",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Interrupt", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "6s CD arcane interrupt (2.5s lockout), 0.5s cast"
+  },
+  "520269": {
+   "name": "Leyfeed",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "SpellSteal", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Steals 2 magic effects from target (spellsteal)"
+  },
+  "800732": {
+   "name": "Primordial Blast",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Fire", "Frost", "Nature", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "8s CD instant ranged nuke; core Runeblade charge Spender"
+  },
+  "804156": {
+   "name": "Runefeed",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Arcane", "Dispel", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "~17 min CD, instant; Dispel Curse on target - no desc in DB"
+  },
+  "804674": {
+   "name": "Scrying Orb",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Nature", "Channel", "Ranged", "Tracking"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Channeled, summons a Scrying Orb (surveillance/tracking utility)"
+  },
+  "801092": {
+   "name": "Wizardry",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "Baseline passive; no desc or effects in DB - cannot confirm function"
+  }
+ }
+}

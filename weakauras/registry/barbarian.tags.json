@@ -1,0 +1,1459 @@
+{
+ "slug": "barbarian",
+ "class": "Barbarian",
+ "count": 143,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "801767": {
+   "name": "Bloodbound",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces cooldowns of Warband and Ancestral Roar"
+  },
+  "805812": {
+   "name": "Frost Giant's Fury",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Breath of the North grants haste proc"
+  },
+  "570236": {
+   "name": "Thirst for Battle",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Smash regenerates 25% max Energy"
+  },
+  "705176": {
+   "name": "Strong Arm",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Spear damage and hit chance"
+  },
+  "805835": {
+   "name": "Vital Spirit",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases range of Spirit spells"
+  },
+  "560518": {
+   "name": "Berserker Rush",
+   "source": "Headhunting",
+   "primary": "Movement",
+   "tags": ["Physical", "Charge", "Root", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "charge + root + leap back"
+  },
+  "800131": {
+   "name": "Born Killer",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "killing blow grants stacking movement/armor pen proc"
+  },
+  "560880": {
+   "name": "To The Bone",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Guts Spilled crits apply Break armor-reduction debuff"
+  },
+  "804414": {
+   "name": "Decapitate",
+   "source": "Brutality",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Execute", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "usable below 35% hp; converts excess Energy to damage"
+  },
+  "500984": {
+   "name": "Impaling Spear",
+   "source": "Headhunting",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "frontal line + AoE burst at impact"
+  },
+  "300499": {
+   "name": "Headlopper",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Decapitate crits apply bleed DoT"
+  },
+  "801549": {
+   "name": "Thick Skull",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "stun immunity 10s; grants Born in Blood on damage taken"
+  },
+  "706353": {
+   "name": "Unstoppable Rage",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Unbridled Rage duration by 2s"
+  },
+  "705234": {
+   "name": "Frothing Savage",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spear/Berserker Axe crit chance vs bleeding targets"
+  },
+  "705240": {
+   "name": "Deep Fury",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "physical damage reduces Unbridled Rage cooldown"
+  },
+  "561359": {
+   "name": "Maximum Carnage",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unbridled Rage triggers AoE whirl proc"
+  },
+  "560938": {
+   "name": "Fury of the North",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Enrage"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "extends Ramhorn Rage enrage + adds movement speed"
+  },
+  "560910": {
+   "name": "Utter Devastation",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Maximum Carnage grants Utter Devastation: slow immunity + guaranteed crit for Decapitate/Crush"
+  },
+  "520539": {
+   "name": "Sustaining Swings",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee attacks 8% chance to heal 10% of damage; next Ancestral Strike +50% dmg"
+  },
+  "705173": {
+   "name": "Pure Power",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Smash damage +15% and expertise +5"
+  },
+  "705222": {
+   "name": "Beheader",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Decapitate killing blow refunds 100% max Energy"
+  },
+  "705167": {
+   "name": "Bloody Fighter",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Brutal Swing and Smash crit chance +5%"
+  },
+  "805997": {
+   "name": "Puncture Wounds",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spear crits apply bleed DoT"
+  },
+  "706352": {
+   "name": "War Tales",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% resist fear and horrify"
+  },
+  "560564": {
+   "name": "You Want Axe?",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "casting Spears while enraged refreshes Berserker Axe charges and reduces Energy cost"
+  },
+  "805893": {
+   "name": "Spear Shards",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Impaling Spear shatter causes bleed DoT"
+  },
+  "705198": {
+   "name": "Gurubashi Technique",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Throw Weapon 25% chance to proc Rapid Throw"
+  },
+  "705227": {
+   "name": "Gruesome",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% damage to Throw Weapon, Gutspiller, Guts Spilled"
+  },
+  "707661": {
+   "name": "Sen'jin's Guidance",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "transforms Throw Weapon into Javelin Toss; +5% crit"
+  },
+  "705202": {
+   "name": "Strength of Goria",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unbridled Rage grants Born in Blood HoT"
+  },
+  "705238": {
+   "name": "Entrails",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "bleed damage grants stacking Agility buff"
+  },
+  "560450": {
+   "name": "Anger Issues",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "critical strikes reduce Carnage cooldown"
+  },
+  "800943": {
+   "name": "Savagery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "below 35% hp: auto attacks grant Born in Blood; once per 2s"
+  },
+  "705196": {
+   "name": "Knockout Artist",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste", "Interrupt"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "successful Jawbreaker interrupt grants 30% haste 4s + refunds Energy"
+  },
+  "707584": {
+   "name": "Spite",
+   "source": "Headhunting",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Ranged", "AoE", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3x Berserker Throws + leap back; Enraged mechanic; 45s cd"
+  },
+  "705235": {
+   "name": "Brutal Form",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Born in Blood ticks faster, scales with Agility, can crit"
+  },
+  "560883": {
+   "name": "Warband",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Selfheal", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE raid Born in Blood every 3s for 12s; 1.5 min cd"
+  },
+  "300497": {
+   "name": "Bloodthirsty",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Outrage effectiveness +100%",
+   "confidence": "low"
+  },
+  "712429": {
+   "name": "Rally Behind Me!",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3s Warband duration; first use no cooldown (once per 1.5 min)"
+  },
+  "560939": {
+   "name": "Frozen Warlord",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Frost", "Root"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hodir's Wrath damage freezes enemies (0s - effectively root on hit)"
+  },
+  "561360": {
+   "name": "Mak'Gora",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits above 80% or below 20% hp apply Mak'gora debuff (heal absorb)"
+  },
+  "805815": {
+   "name": "Frozen Tankard",
+   "source": "Ancestry",
+   "primary": "Control",
+   "tags": ["Frost", "Stun", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "4s stun, treats as Frozen; 30s cd"
+  },
+  "681473": {
+   "name": "Breaking Morale",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Energy cost of Break by 15"
+  },
+  "560532": {
+   "name": "Skull Smash",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Physical", "Ranged", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "disorient 40s (8s vs players), damage breaks; 2 min cd"
+  },
+  "805808": {
+   "name": "Keg Smash",
+   "source": "Ancestry",
+   "primary": "Rotational",
+   "tags": ["Physical", "Frost", "AoE", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "melee AoE + Frost splash to 5 nearby; 10s cd"
+  },
+  "800401": {
+   "name": "Axe Twirling",
+   "source": "Headhunting",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Ranged", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Throw Weapon/Gutspiller/Berserker Axe cleave +2 enemies for 10s; 1 min cd"
+  },
+  "803817": {
+   "name": "Crusher",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "auto attacks 10% chance to reset Crush cooldown"
+  },
+  "560452": {
+   "name": "One With The Ancestors",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+2% global crit chance"
+  },
+  "800193": {
+   "name": "Battle Rhythm",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "ability crits generate 5 Energy"
+  },
+  "807861": {
+   "name": "Savage Cadence",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Enrage"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "direct crits extend Unbridled Rage duration by 0.5s (once per sec)"
+  },
+  "850021": {
+   "name": "Killing Spree",
+   "source": "Brutality",
+   "primary": "Movement",
+   "tags": ["Physical", "Charge", "Melee"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "charge at enemy after kill or Born in Blood; 5s cd"
+  },
+  "805780": {
+   "name": "Ale of The God-King",
+   "source": "Ancestry",
+   "primary": "CD Offensif",
+   "tags": ["Frost", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "empowers Honored Ancestor Frost attacks for 20s/10 attacks; uses Fill Level; 15s cd"
+  },
+  "801759": {
+   "name": "Outrage",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Haste", "Crit", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "requires Enraged; +20% haste and crit, +30% dmg taken, 10s; 3 min cd"
+  },
+  "805811": {
+   "name": "Blind Stupor",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Keg Smash applies -30% cast speed debuff 15s"
+  },
+  "805804": {
+   "name": "Ramhorn Rage",
+   "source": "Ancestry",
+   "primary": "CD Offensif",
+   "tags": ["Enrage", "Selfheal", "Raidbuff", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid enrage + HoT 2% max hp/2s; extends on auto attacks; uses Tankard; 2 min cd"
+  },
+  "805864": {
+   "name": "No Survivors",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5s duration to Axe Twirling, Maiming Spear, Barbed Spear"
+  },
+  "800637": {
+   "name": "Storm of Steel",
+   "source": "Brutality",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Melee", "Channel", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "channel melee strikes every 1s for 3s; 25s cd"
+  },
+  "706354": {
+   "name": "Face Smasher",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "ability crits reduce Battle Vigor and Thick Skull cooldowns"
+  },
+  "500995": {
+   "name": "War Cry",
+   "source": "Ancestry",
+   "primary": "Buff",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid +20% attack speed + 150 AP for 20s; 3 min cd"
+  },
+  "802792": {
+   "name": "Jawbreaker",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Melee", "Interrupt"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "interrupt + lock school 4s; 14s cd"
+  },
+  "560444": {
+   "name": "Overkill",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Decapitate and Headhunter's Spear +30% crit vs targets below 20% hp"
+  },
+  "804137": {
+   "name": "Headhunter's Spear",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "light spear; restores 30% max Energy; 6s cd; no cost"
+  },
+  "801782": {
+   "name": "Ancestral Combat",
+   "source": "Ancestry",
+   "primary": "CD Offensif",
+   "tags": ["Physical", "Frost", "Buff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "25% chance on physical hit to trigger extra Frost main-hand attack + Fill Level stack; 30s cd"
+  },
+  "705209": {
+   "name": "Improved Ancestral Combat",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Ancestral Combat cost and grants +3 trigger charges per rank"
+  },
+  "560906": {
+   "name": "First Blood",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% damage vs enemies above 80% hp"
+  },
+  "705186": {
+   "name": "Spiked Weapons",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% critical damage for Crush, Brutal Swing, Decapitate"
+  },
+  "804139": {
+   "name": "Maiming Spear",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "Ranged", "Slow"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ranged weapon throw, -50% movement speed 10s",
+   "confidence": "low"
+  },
+  "804138": {
+   "name": "Berserker Axe",
+   "source": "Headhunting",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "requires Enraged; 3 charges 8s recharge; reduces target armor stacking"
+  },
+  "706804": {
+   "name": "Legacy of the Amani",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Spear damage 25% chance to proc extra 40% damage spear throw"
+  },
+  "561397": {
+   "name": "Berserker",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged", "Enrage"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "enraged ranged crits grant Berserker proc buff (20% chance Berserker Throw)"
+  },
+  "804730": {
+   "name": "Symbol of the Warspear",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "always-on raid +10% AP aura; reduces Spear cooldowns"
+  },
+  "560563": {
+   "name": "Whirling Assault",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+300% Whirling Advance damage vs enemies above 80% hp"
+  },
+  "804750": {
+   "name": "Steelslinger",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Barbaric Whirl cd -2s; +100% damage vs targets below 35% hp"
+  },
+  "705161": {
+   "name": "Ice Cold Bubbles",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "each Fill Level stack +2% Frost damage dealt"
+  },
+  "705212": {
+   "name": "Unified Rage",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unbridled Rage increases Ancestral Combat proc chance by 25%"
+  },
+  "705211": {
+   "name": "Cold Brew",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Frost crits grant Fill Level stack; once per sec"
+  },
+  "704876": {
+   "name": "Rancor",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Melee"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Brutal Swing triggers additional auto attack on primary target"
+  },
+  "500918": {
+   "name": "Ancestral Roar",
+   "source": "class",
+   "primary": "Heal",
+   "tags": ["Physical", "Selfheal", "Enrage"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "requires Enraged; self-heal 100+50%AP; 25s cd"
+  },
+  "805810": {
+   "name": "Cheers!",
+   "source": "Ancestry",
+   "primary": "CD Defensif",
+   "tags": ["Defensive", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "designate ally: -5% damage taken, 10% redirected to self; 30 min buff; 3s cd"
+  },
+  "800152": {
+   "name": "Hodir's Wrath",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Frost", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "AoE Frost burst + 100% Energy restore; 1.5 min cd"
+  },
+  "560586": {
+   "name": "Guts Splatter",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Gutspiller applies armor ignore debuff"
+  },
+  "926591": {
+   "name": "Time To Kill!",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Axe Twirling cooldown -15s",
+   "confidence": "low"
+  },
+  "705204": {
+   "name": "Reckless Movements",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% damage for Ancestral Strike and Barbaric Whirl"
+  },
+  "806228": {
+   "name": "Defiance",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Physical", "Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30-80% damage reduction 15s based on missing hp; 3 min cd"
+  },
+  "500915": {
+   "name": "Crush",
+   "source": "Brutality",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "AoE", "Stun", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "frontal cone 250% weapon dmg; knockdown + 3s stun; 25s cd"
+  },
+  "805832": {
+   "name": "Gutspiller",
+   "source": "Headhunting",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "heavy axe throw; bleed DoT 12s + Guts Spilled every 6s"
+  },
+  "804729": {
+   "name": "Ancestor's Call",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "summons Honored Ancestor pet that mimics Barbaric Whirl/Whirling Advance"
+  },
+  "804731": {
+   "name": "Ancestral Fury",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "always-on raid +10% melee/ranged haste aura"
+  },
+  "560446": {
+   "name": "Ancestral Trauma",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ancestral Strike and Crush damage scales with Strength"
+  },
+  "705158": {
+   "name": "Frostbite",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Breath of the North applies Frost bleed 30% of dmg over 6s"
+  },
+  "705152": {
+   "name": "Trip to the Alehouse",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Keg Smash damage and +3 yd range per rank"
+  },
+  "706821": {
+   "name": "Drinking Frenzy",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "melee attacks 15% chance to grant Fill Level stack; +5% hit chance"
+  },
+  "705168": {
+   "name": "Ancestor's Fury",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unbridled Rage also increases Frost damage by 10%"
+  },
+  "705216": {
+   "name": "Icebound Ancestry",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Breath of the North crit; attacks ignore Armor vs Frozen targets"
+  },
+  "705218": {
+   "name": "The Finest Ale",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ale of The God-King no longer empties Tankard"
+  },
+  "705214": {
+   "name": "Hodir's Revenge",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Frozen Tankard hit enemies take 50% more damage from you for 6s"
+  },
+  "807047": {
+   "name": "Hail of Hammers",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Crush cast time -25%"
+  },
+  "803085": {
+   "name": "Efficient Killer",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Energy cost of all spells/abilities by 10%"
+  },
+  "500913": {
+   "name": "Brutal Swing",
+   "source": "Brutality",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Cleave", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "cleave up to 2 nearby enemies; 45 Energy; no cooldown"
+  },
+  "561326": {
+   "name": "Battering Ram",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% armor penetration with 2H mace or axe per rank"
+  },
+  "706653": {
+   "name": "Brutal Spirit",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% effectiveness of Spirit spells"
+  },
+  "707410": {
+   "name": "Raging Spirit",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unbridled Rage grants 30 Energy; Spirit spells cost no Energy while active"
+  },
+  "561322": {
+   "name": "Bellowing Voice",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% effectiveness of Shouts"
+  },
+  "560886": {
+   "name": "Savage Strength",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Agility"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Agility per rank"
+  },
+  "560456": {
+   "name": "Athleticism",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Energy regeneration rate"
+  },
+  "705169": {
+   "name": "Unrelenting",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Physical damage dealt and taken"
+  },
+  "560205": {
+   "name": "Vengeance For Zul'jin",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Berserker Rush grants Born in Blood"
+  },
+  "707721": {
+   "name": "Iron Gut",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-40% duration of poison effects"
+  },
+  "804746": {
+   "name": "Dauntless",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Whirling Advance dispels 1 slow + refunds 2 Energy"
+  },
+  "805821": {
+   "name": "Blood and Glory",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "below 35% hp: +20% healing received, -10% damage taken"
+  },
+  "681060": {
+   "name": "Liquid Courage",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Defensive", "Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "each Fill Level stack reduces damage taken by -2%",
+   "confidence": "low"
+  },
+  "572799": {
+   "name": "Drunken Frenzy",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Unbridled Rage grants Honored Ancestor +15% Physical damage 10s"
+  },
+  "800838": {
+   "name": "Breath of The North",
+   "source": "Ancestry",
+   "primary": "Rotational",
+   "tags": ["Frost", "AoE", "Slow", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "frost cone -30% slow 5s; usable only after emptying Tankard"
+  },
+  "705221": {
+   "name": "Rage of the North",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10 trigger charges for Ale of The God-King"
+  },
+  "705153": {
+   "name": "Ancestral Spirit",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reduces Spirit spell cost; increases Shout duration per rank"
+  },
+  "705208": {
+   "name": "The Spins",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Keg Smash triggers Honored Ancestor Ancestral Whirl AoE"
+  },
+  "804768": {
+   "name": "Might of Utgarde",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Summon", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Ancestral Combat attacks heal Honored Ancestor + trigger Ancestral Whirl"
+  },
+  "681063": {
+   "name": "Reckful",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Smash 30% chance per rank to not trigger its cooldown",
+   "confidence": "low"
+  },
+  "704240": {
+   "name": "Steel Fury",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Storm of Steel strikes grant stacking damage buff (4% per stack, 10 stacks); +2.5s duration"
+  },
+  "560881": {
+   "name": "Barbed Spear",
+   "source": "Headhunting",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "160% ranged weapon dmg; -30% healing received debuff 10s",
+   "confidence": "low"
+  },
+  "705206": {
+   "name": "Ogre's Endurance",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% healing received"
+  },
+  "705232": {
+   "name": "Payback",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+75% Guts Spilled damage"
+  },
+  "500060": {
+   "name": "Headhunting",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Physical", "Ranged"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Throw Weapon cast time -20%; removes pushback from damage"
+  },
+  "300879": {
+   "name": "Manhunter",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid +3% crit; +10% damage vs Humanoids",
+   "confidence": "low"
+  },
+  "560517": {
+   "name": "Skullseeker",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% crit vs enemies above 80% hp"
+  },
+  "561321": {
+   "name": "Rage Whirling / Forward Advance",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% crit chance for Whirling Advance; also increases Energy regen"
+  },
+  "707583": {
+   "name": "Bloody Onslaught / Rapid Recovery",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "increases Onslaught duration by 6s"
+  },
+  "561394": {
+   "name": "Smasher / Plugging the Hole",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes Energy cost from Skull Smash"
+  },
+  "560364": {
+   "name": "Drunken Brawler / Powerful Grip",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "direct damage taken grants +1% dodge per stack (10 stacks) for 3s"
+  },
+  "804745": {
+   "name": "Horde Breaker / Power Swings",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Crush applies Wounded debuff (+4% Physical dmg taken 1 min); guaranteed crit vs Headbutt targets"
+  },
+  "805927": {
+   "name": "Mounting Fury / Savage",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Born in Blood duration +2s"
+  },
+  "804749": {
+   "name": "Incredibly Strong / Giant Tosser",
+   "source": "Brutality",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "removes Maiming Spear minimum range; -5 yd max range"
+  },
+  "707389": {
+   "name": "Furious Berserker / Hunting for Sport",
+   "source": "Headhunting",
+   "primary": "Passive",
+   "tags": ["Selfheal"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Barbed Spear crits grant Born in Blood"
+  },
+  "573256": {
+   "name": "Frozen Blades / Ancestral Wisdom",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Crit", "Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "crits grant raid +5% crit 8s proc"
+  },
+  "707541": {
+   "name": "Crystal Enhancements / Uniting Voice",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "always-on raid +390 Armor aura"
+  },
+  "803798": {
+   "name": "Thane's Grip / Thane's Guard",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Physical"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "allows dual-wield 2H weapons (Titan's Grip); -8% Physical damage"
+  },
+  "712673": {
+   "name": "To The Bone / Splash Zone",
+   "source": "Ancestry",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Breath of the North hits reduce resistances and increase Magic dmg taken"
+  },
+  "804737": {
+   "name": "Clanlord's Totem / Tavern Brawl!",
+   "source": "Ancestry",
+   "primary": "Buff",
+   "tags": ["Frost", "Raidbuff", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "drop totem for 15s: raid +35%AP Frost proc on direct dmg; 1 min cd; Exhaustion debuff"
+  },
+  "801576": {
+   "name": "Ancestral Strike",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline melee strike; 35 Energy",
+   "confidence": "low"
+  },
+  "804765": {
+   "name": "Grisly Meal",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Physical", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "self HoT + Energy regen 10s; 15s cd; no cost",
+   "confidence": "low"
+  },
+  "570122": {
+   "name": "Smash Lock",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": ["Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "lockpicking ability via Smash",
+   "confidence": "low"
+  },
+  "804136": {
+   "name": "Throw Weapon",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Physical", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "baseline ranged attack; 45 Energy; 2s cast; requires Thrown",
+   "confidence": "low"
+  },
+  "500919": {
+   "name": "Whirling Advance",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": ["Physical", "AoE", "Charge", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "whirl + charge forward; AoE 12 yd radius; 50 Energy"
+  }
+ }
+}

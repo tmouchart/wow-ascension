@@ -1,0 +1,1629 @@
+{
+ "slug": "felsworn",
+ "class": "Felsworn",
+ "count": 144,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "300465": {
+   "name": "Cunning",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300467": {
+   "name": "Infernal Armor",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300468": {
+   "name": "Illidari Barrier",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Shield"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Hateforged Barrier also shields allies"
+  },
+  "300474": {
+   "name": "Expose",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Expose damage-taken debuff"
+  },
+  "300476": {
+   "name": "Betrayer",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Enrage"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "300477": {
+   "name": "Nether Spirit",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300478": {
+   "name": "Cursed Flames",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "300480": {
+   "name": "Infernal Summoner / Doomsayer",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300483": {
+   "name": "Chaotic Intuition",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "300485": {
+   "name": "Consumed By Fel",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300489": {
+   "name": "Archimonde's Wrath",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "300490": {
+   "name": "Felforged",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Felforged cast-speed proc"
+  },
+  "301287": {
+   "name": "Felheart",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "500028": {
+   "name": "Chaos Rush",
+   "source": "baseline",
+   "primary": "Movement",
+   "tags": [
+    "Arcane",
+    "Charge",
+    "Dispel"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "signature dash, removes root"
+  },
+  "520236": {
+   "name": "Felwrath",
+   "source": "Infernal",
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "AoE",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520240": {
+   "name": "Nether Strength",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "520244": {
+   "name": "Perpetual Fury / Glaiving",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520246": {
+   "name": "Illidari Smiter",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "520251": {
+   "name": "Dark Teachings",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520252": {
+   "name": "Demon Hide",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520257": {
+   "name": "Demonic Embrace",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "520592": {
+   "name": "Illidan's Favor / Fel Torpedo",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520805": {
+   "name": "Scars of the Past",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520817": {
+   "name": "Vengeance",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "520831": {
+   "name": "Annihilan Rituals / Quick Carving",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "520885": {
+   "name": "Burning Legionnaire",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "524947": {
+   "name": "Mark of Chaos",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Mark of Chaos damage-buff proc"
+  },
+  "524950": {
+   "name": "Black Magic",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "525001": {
+   "name": "Felbane",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Reflect",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reflect next enemy spell"
+  },
+  "555738": {
+   "name": "Fury Unleashed",
+   "source": "Slayer",
+   "primary": "CD Offensif",
+   "tags": [
+    "Physical",
+    "AoE",
+    "Channel",
+    "Movement"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560057": {
+   "name": "Chaos Soldier",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560284": {
+   "name": "Infernal",
+   "source": "Infernal",
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Summon",
+    "Horrify"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "damage CD + horrify + summons Infernal"
+  },
+  "560503": {
+   "name": "Straight to the Nether",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Leech",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560533": {
+   "name": "Fel Infusion",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560542": {
+   "name": "Felguard",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Haste",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid haste aura"
+  },
+  "560549": {
+   "name": "Eye of the Tyrant",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "always-on raid haste aura"
+  },
+  "560573": {
+   "name": "Felgorged",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560576": {
+   "name": "Nether Disciple",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560637": {
+   "name": "Dark Magician",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560639": {
+   "name": "Illidari Magi",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "560641": {
+   "name": "Warlock Training",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "560645": {
+   "name": "Fel Instincts",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "560822": {
+   "name": "Anti-Magic",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560836": {
+   "name": "Felfire Adept",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "560838": {
+   "name": "The True Blessing",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "560840": {
+   "name": "Infernal Ruin / Oppressive Ruin",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "561216": {
+   "name": "Fury of the Illidari",
+   "source": "Slayer",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "AoE",
+    "Channel",
+    "Generator",
+    "Immunity"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "570077": {
+   "name": "Blighted Strikes",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "healing-reduction debuff (Inner Demon)"
+  },
+  "570158": {
+   "name": "Scars of Suffering / Fel Blades",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "572889": {
+   "name": "Oblivion",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "681376": {
+   "name": "Chaotic",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Chaotic damage-buff proc"
+  },
+  "685321": {
+   "name": "Doomscarring",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "704360": {
+   "name": "Felguard / Felstrider",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Felguard stacking mitigation on Chaos Rush"
+  },
+  "704361": {
+   "name": "Slice & Dice",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704368": {
+   "name": "Bane of Chaos",
+   "source": "Infernal",
+   "primary": "Rotational",
+   "tags": [
+    "Chaos",
+    "DoT",
+    "Ranged",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704370": {
+   "name": "Curse of Argus",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Bane of Chaos ramp"
+  },
+  "704374": {
+   "name": "Felwracked",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "704378": {
+   "name": "Gul'dan's Prodigy",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704602": {
+   "name": "Whirling Vengeance",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "704606": {
+   "name": "Focused Hatred",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704607": {
+   "name": "Elemental Bane",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704610": {
+   "name": "A Thousand Cuts",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "704611": {
+   "name": "Battle Finesse / Unholy Endurance",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704612": {
+   "name": "Pact Hunter",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "704613": {
+   "name": "Magic Fiend",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705102": {
+   "name": "Demonborn",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705105": {
+   "name": "Fel Communion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705108": {
+   "name": "Demonic Evasion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705109": {
+   "name": "Cruelty",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705122": {
+   "name": "Bulwark of Azzinoth",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705123": {
+   "name": "Outland Slaver",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705125": {
+   "name": "Warden's End",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705127": {
+   "name": "You Cheat, Gul'dan!",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705129": {
+   "name": "Hateforged Barrier",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Shield",
+    "Absorb",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705131": {
+   "name": "Fel Daze / Dark Lord",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "705135": {
+   "name": "Reachwalker",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705137": {
+   "name": "Azzinoth's Battery",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "705141": {
+   "name": "Pit Lord's Rage",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "705145": {
+   "name": "Nether Champion / Demonic Machinations",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "706266": {
+   "name": "Armaments of the Legion",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Absorb"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706267": {
+   "name": "Felspill",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Leech",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "706425": {
+   "name": "Fury of Archimonde",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "707416": {
+   "name": "Withering",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "707907": {
+   "name": "Burning Rage",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800029": {
+   "name": "Vengeful Pact",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Raidbuff",
+    "Shield"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid Pact (shadow resist + dmg shield)"
+  },
+  "800031": {
+   "name": "Demonfire Pact",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Raidbuff",
+    "Crit"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid Pact buff"
+  },
+  "800188": {
+   "name": "Spite",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800203": {
+   "name": "Felbreak",
+   "source": "Infernal",
+   "primary": "Utility",
+   "tags": [
+    "Fire",
+    "Interrupt",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800204": {
+   "name": "Felhoof Charge",
+   "source": "Slayer",
+   "primary": "Movement",
+   "tags": [
+    "Physical",
+    "Charge",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "gap-closer charge"
+  },
+  "800205": {
+   "name": "Breath of Mannoroth",
+   "source": "baseline",
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Shadow"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; 18s cd, 6s self buff - verify in-game"
+  },
+  "800206": {
+   "name": "Carve",
+   "source": "Tyrant",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Channel",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800207": {
+   "name": "Immolation Aura",
+   "source": "Slayer",
+   "primary": "Buff",
+   "tags": [
+    "Fire",
+    "AoE",
+    "DoT"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "maintained self fire aura"
+  },
+  "800209": {
+   "name": "Demonic Will",
+   "source": "Tyrant",
+   "primary": "CD Defensif",
+   "tags": [
+    "Physical",
+    "Selfheal",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-30% physical dmg 10s"
+  },
+  "800210": {
+   "name": "Felrend",
+   "source": "Tyrant",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "AoE",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800212": {
+   "name": "Illidari Intuition",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Agility"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 min self aspect buff"
+  },
+  "800214": {
+   "name": "Malice of Gul'dan",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Felstrike DoT + energy proc"
+  },
+  "800220": {
+   "name": "Taskmaster's Army",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800222": {
+   "name": "The Demon Within",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "enables Inner Demon maintenance buff"
+  },
+  "800225": {
+   "name": "Skull of Gul'dan",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Fire",
+    "Shadow"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% max hp & energy 10s"
+  },
+  "800352": {
+   "name": "Embracing Evil",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "800353": {
+   "name": "Consume Magic",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "SpellSteal",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "spellsteal / purge"
+  },
+  "800355": {
+   "name": "Sargeras Embrace",
+   "source": "Infernal",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Channel",
+    "Slow",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801235": {
+   "name": "Sculptor of Doom",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "801312": {
+   "name": "Fel Fireball",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Ranged",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "filler nuke"
+  },
+  "801890": {
+   "name": "Felstrikes",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; off-hand strike proc mechanic"
+  },
+  "801892": {
+   "name": "Twin Fury",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "801895": {
+   "name": "Ruin",
+   "source": "Infernal",
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Ranged",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "pierces absorbs"
+  },
+  "801899": {
+   "name": "Legionfall",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801901": {
+   "name": "Twin Slice",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "main builder"
+  },
+  "801903": {
+   "name": "Annihilan Strike",
+   "source": "Slayer",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "801904": {
+   "name": "Azzinoth's Assault",
+   "source": "Slayer",
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802058": {
+   "name": "Reckoning",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Fel Fireball free/instant/cleave 10s"
+  },
+  "802076": {
+   "name": "Pit Lord's Strength",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "802180": {
+   "name": "Fel Cannon",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803478": {
+   "name": "Pure Hatred",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803903": {
+   "name": "Fel Haze",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "803904": {
+   "name": "Annihilation",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Crit",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "guaranteed-crit self buff, costs 5% hp"
+  },
+  "803905": {
+   "name": "Shadow Magi",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804052": {
+   "name": "Eye of Archimonde",
+   "source": "baseline",
+   "primary": "Utility",
+   "tags": [
+    "Dispel",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "reveal stealth/invis"
+  },
+  "804219": {
+   "name": "Infernal Doom",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804334": {
+   "name": "Fel Empowerment",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc/effects; self empowerment - verify in-game"
+  },
+  "804610": {
+   "name": "Reckless Assault",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804611": {
+   "name": "Azzinoth's Rage",
+   "source": "Slayer",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804613": {
+   "name": "Doomstride",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "804758": {
+   "name": "Betrayer's Inclinations",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": [
+    "Tracking"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "confidence": "low",
+   "notes": "no desc; Track Demon/Resources + proc"
+  },
+  "804764": {
+   "name": "Legionfel Pact",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid Pact (fire/debuff resist)"
+  },
+  "804822": {
+   "name": "Vengeance Is Mine",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "804823": {
+   "name": "Tyrannical Resolve",
+   "source": "Tyrant",
+   "primary": "CD Defensif",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Taunt",
+    "Absorb"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "ignore 50% dmg 30s + taunt"
+  },
+  "805235": {
+   "name": "Whispers of the Pit",
+   "source": "class",
+   "primary": "Control",
+   "tags": [
+    "Shadow",
+    "Fear",
+    "Slow",
+    "AoE",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805236": {
+   "name": "Grommash's Folly",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Haste",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805239": {
+   "name": "Burning Hatred",
+   "source": "Tyrant",
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Enrage",
+    "Generator",
+    "Leech",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805240": {
+   "name": "Tyrant's Gaze",
+   "source": "Tyrant",
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Execute",
+    "Selfheal",
+    "Generator",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "usable <35% hp"
+  },
+  "805243": {
+   "name": "Infernal Whipcrack",
+   "source": "Tyrant",
+   "primary": "CD Defensif",
+   "tags": [
+    "Raidbuff",
+    "Enrage",
+    "Haste"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "raid mitigation cooldown"
+  },
+  "805244": {
+   "name": "Legion March",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805248": {
+   "name": "Manaburn",
+   "source": "class",
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "mana burn + damage vs casters"
+  },
+  "805255": {
+   "name": "Mannoroth's Rage",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805256": {
+   "name": "Infernal Constitution",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "805998": {
+   "name": "Fel Flamecasting / Herald of the Legion",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806103": {
+   "name": "Wrath of Sargeras",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "806109": {
+   "name": "Illidan's Guile",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Immunity"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "immune 8s but cannot act"
+  },
+  "806235": {
+   "name": "Felshock",
+   "source": "Infernal",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "807430": {
+   "name": "Suffering / Gul'dan's Gift",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  },
+  "807431": {
+   "name": "Abyssal Conditioning / Illidari Training",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
+  },
+  "807438": {
+   "name": "Demonic Blood / Demonic Fortitude",
+   "source": "Tyrant",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
+  }
+ }
+}

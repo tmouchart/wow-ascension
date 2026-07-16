@@ -1,0 +1,1506 @@
+{
+ "slug": "necromancer",
+ "class": "Necromancer",
+ "count": 148,
+ "categories": [
+  "Rotational",
+  "CD Offensif",
+  "CD Defensif",
+  "Utility",
+  "Control",
+  "Movement",
+  "Heal",
+  "Buff",
+  "Passive"
+ ],
+ "spells": {
+  "302923": {
+   "name": "Putrifier",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Increases duration of Ghoulify and Mass Grave"
+  },
+  "802986": {
+   "name": "Plague Horde",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon", "Enrage"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on minion dmg to enrage ghoul and emit plague"
+  },
+  "500981": {
+   "name": "Lich Form",
+   "source": "Rime",
+   "primary": "Buff",
+   "tags": ["Shadow", "Frost", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "Toggle transform: Undead, +10% Frost dmg, gen 3 Runic Power/5s"
+  },
+  "301207": {
+   "name": "Flesh Symbiosis",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Defensive", "Selfheal"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each Abomination/Colossus: +30% armor/resist, 2% hp regen/5s"
+  },
+  "500342": {
+   "name": "Mutation",
+   "source": "Death",
+   "primary": "CD Offensif",
+   "tags": ["Fire", "Shadow", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3min CD; diseases tick 50% faster for 15s"
+  },
+  "504316": {
+   "name": "Command: Hook",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Root", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Spender 30 RP; roots enemy at abom location 2s"
+  },
+  "561138": {
+   "name": "Army of the North",
+   "source": "Rime",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "5min CD; summons Frost Giants every 3s for 15s, undead crit guaranteed"
+  },
+  "300960": {
+   "name": "Creeping Crypt",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Crit", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% crit on Flesh to Worms below 35% hp"
+  },
+  "300241": {
+   "name": "Vampiric Aura",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Selfheal", "Leech"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Below 50% hp: minions heal you for 10% of their dmg"
+  },
+  "300234": {
+   "name": "Icecrown Scriptures",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shadow", "Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% Shadow/Frost dmg vs Humanoids/Undead (2 ranks)"
+  },
+  "803291": {
+   "name": "Hoarfrost Hands",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4s slow duration on Lichfrost; +4% hit"
+  },
+  "806149": {
+   "name": "Damnation",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "Execute"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Shadow dmg (doubled below 35% hp)"
+  },
+  "300748": {
+   "name": "Hulking Hordes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% max hp for self and summons (2 ranks)"
+  },
+  "560595": {
+   "name": "Putrid Summoner",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Enhances Undead Stance bonuses (crit/threat/dmg reduction)"
+  },
+  "705747": {
+   "name": "Unrelenting Army",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on Harvest Plague hit to summon Lesser Zombie"
+  },
+  "805649": {
+   "name": "Raising the Kirin Tor",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "40% chance on Command spell to refund Runic Power"
+  },
+  "704355": {
+   "name": "Glacial Impact",
+   "source": "Rime",
+   "primary": "Rotational",
+   "tags": ["Frost", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Requires Frozen target; 6s CD; heavy Frost nuke"
+  },
+  "807937": {
+   "name": "Champion of Kel'Thuzad",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skeletal Mages cost 1 Life Force instead of 2"
+  },
+  "300940": {
+   "name": "Refreshing Chill",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "20% chance on Command spell to reset Ice Barrage CD and free cast"
+  },
+  "705746": {
+   "name": "Life For Power",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Shield", "Absorb"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Absorbs 20% of healing taken as a 10s shield"
+  },
+  "704528": {
+   "name": "Swarmer",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Crypt Swarm generates +2 Runic Power per tick"
+  },
+  "806324": {
+   "name": "Festering Decay",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-15% Command spell cost; Command increases target spell dmg taken 10% for 15s"
+  },
+  "707113": {
+   "name": "Touch of Death",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Expunge stacks +1; Death spell range +20%"
+  },
+  "504431": {
+   "name": "Master Animator",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+1 max Life Force"
+  },
+  "503740": {
+   "name": "Ghoul Mastery",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Summon", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on ghoul hit to trigger Frenzied Ghoul: +40% haste 10s"
+  },
+  "805038": {
+   "name": "Summoning Ritual",
+   "source": "Animation",
+   "primary": "Utility",
+   "tags": ["Shadow", "Movement"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Places recall beacon; Ritual Return teleports you back to it and dispels slows"
+  },
+  "707175": {
+   "name": "Bone King",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Frost", "Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on Command spell to make next Lichfrost or Blight free+instant"
+  },
+  "707445": {
+   "name": "Runic Animation",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-20% cooldown on Animate: Skeletal Archers and Command: Hook"
+  },
+  "302518": {
+   "name": "Skeletal Artillery",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Skeletal Archers summon 1 additional archer (2 ranks)"
+  },
+  "801739": {
+   "name": "Heartchill",
+   "source": "Rime",
+   "primary": "Utility",
+   "tags": ["Frost", "Interrupt", "Slow", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD interrupt; on success: -80% move/haste 3s"
+  },
+  "805040": {
+   "name": "Animate: Skeletal Archer",
+   "source": "Animation",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "Ranged"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; summons 3 Skeletal Archers for 15s"
+  },
+  "570046": {
+   "name": "Plague Protection",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Ward effectiveness (2 ranks)"
+  },
+  "531126": {
+   "name": "Scourge Disciple",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each active Skeletal Archer: +5% haste"
+  },
+  "500989": {
+   "name": "Raise: Decaying Colossus",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s cast; 3 Life Force; Colossus absorbs 25% of caster dmg taken; Command: AoE melee"
+  },
+  "503738": {
+   "name": "Corpse Wagon",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% raid dmg aura; +25% Corpse Explosion dmg"
+  },
+  "500933": {
+   "name": "Phylactery",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Absorb", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; beacon that revives you at 40% hp if you reach it after near-death"
+  },
+  "802988": {
+   "name": "Lich Essence",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-15% Lichfrost cast time; -50% spell pushback"
+  },
+  "707627": {
+   "name": "Fiend",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Lichfrost dmg and crit dmg vs diseased targets"
+  },
+  "301304": {
+   "name": "Rotting Flesh",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+25% Flesh to Worms dmg; periodic scales with haste"
+  },
+  "707588": {
+   "name": "Arch Lich",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Frost crit refunds 3% max mana"
+  },
+  "300235": {
+   "name": "Death Commander",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on periodic dmg to grant self+undead +20% haste 8s"
+  },
+  "531130": {
+   "name": "Animate: Bone Construct",
+   "source": "Animation",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "15s CD; 30 RP; slow-moving construct explodes for massive Shadow dmg, ignores immunities"
+  },
+  "560727": {
+   "name": "Cycle of Death",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% spell haste"
+  },
+  "706472": {
+   "name": "Sepulchral Might",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Stamina; spell power scales off minion Stamina (2 ranks)"
+  },
+  "504489": {
+   "name": "Command: Bonefreeze",
+   "source": "Rime",
+   "primary": "Control",
+   "tags": ["Frost", "Root", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "20s CD; 30 RP; Skeletal Mages freeze enemies at target loc 40s (8s vs players)"
+  },
+  "707562": {
+   "name": "Frozen Bodies",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "On kill/Frost crit: stack Frozen Bodies (10 stacks = guaranteed Glacial Impact crit)"
+  },
+  "500572": {
+   "name": "Crypt Explosion",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "Nature", "DoT", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Command spells spread Crypt Plague to 3 nearby enemies"
+  },
+  "707001": {
+   "name": "Putricide's Formula",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "10% chance on minion dmg to blast 3 nearby enemies for Plague dmg (2 ranks)"
+  },
+  "680388": {
+   "name": "Fetid Ward",
+   "source": "class",
+   "primary": "Buff",
+   "tags": ["Selfheal", "Leech"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true,
+   "notes": "30min toggle; 30% dmg dealt heals self+minions; +10% healing received"
+  },
+  "572023": {
+   "name": "Soulfreeze",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Channel", "Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "25% chance on Frost dmg vs Frozen to proc Soulfreeze channel (gen RP)"
+  },
+  "500335": {
+   "name": "Raise: Abomination",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "Summon", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s cast; 3 Life Force; disease cloud slows enemy atk speed; Command: AoE disease burst"
+  },
+  "301198": {
+   "name": "Game of Bones",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-60s cooldown on Champion spells"
+  },
+  "704681": {
+   "name": "Permafrost",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on any spell: next 2 casts treat target as Frozen (12s)"
+  },
+  "560852": {
+   "name": "Glacier Lord",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Glacial Impact guaranteed crit vs Frozen targets"
+  },
+  "802121": {
+   "name": "Bone Tithe",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Nature", "Shield", "Absorb"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; sacrifices 40% of minion hp for absorb shield 20s; usable while stunned"
+  },
+  "805427": {
+   "name": "Giant Bones",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unholy Frenzy now also summons a Rotting Frost Giant"
+  },
+  "704669": {
+   "name": "Frigidness",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% crit dmg vs Frozen targets (2 ranks)"
+  },
+  "805369": {
+   "name": "Glacial Tap",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Frost", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "12s CD; costs mana; instantly restores 30 Runic Power"
+  },
+  "807796": {
+   "name": "Death's Due",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Shadow", "Dispel", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5min CD; 30 RP; removes invuln; if target below 20% hp at end: executes for huge Shadow/Frost dmg"
+  },
+  "805675": {
+   "name": "Rot Fetishist",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Virulency applies Rot Fetishist: 20% of periodic dmg repeated as direct dmg"
+  },
+  "806321": {
+   "name": "Plague Revenant",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Critical strikes apply Crypt Plague stack"
+  },
+  "704715": {
+   "name": "Gravedigger",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-0.5s cast time on Sacrifice Undead"
+  },
+  "500338": {
+   "name": "Flesh to Worms",
+   "source": "Death",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "DoT", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Core disease DoT; generates Runic Power per tick"
+  },
+  "707007": {
+   "name": "March of the Dead",
+   "source": "Animation",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "AoE", "Slow", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; 40 RP; undead march and explode for AoE Plague dmg + -70% slow 3s"
+  },
+  "560730": {
+   "name": "Parasite Plague",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "Leech"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on hit to apply Parasites: minions leech 15% dmg as Plague on that target"
+  },
+  "503757": {
+   "name": "Graverobber",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-30% cost and cast time on Raise and Animate spells"
+  },
+  "704717": {
+   "name": "Long March",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Removes March of the Dead CD but adds 1s cast time"
+  },
+  "706953": {
+   "name": "Summoner",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-20% cost and cooldown on Sacrifice Undead"
+  },
+  "504866": {
+   "name": "Anti-Magic Shell",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow", "Shield", "Absorb", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Raised minions spawn with magic absorb shield = 40% max hp"
+  },
+  "561215": {
+   "name": "Forbidden Technique",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Command spells reduce Animate CDs by -1s each cast"
+  },
+  "537208": {
+   "name": "Dominion of Frost",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Minion crits reduce Unholy Frenzy CD by -3s"
+  },
+  "805428": {
+   "name": "Animate: Frost Wyrm",
+   "source": "class",
+   "primary": "CD Offensif",
+   "tags": ["Frost", "Summon", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; Frost Wyrm blasts nearby enemies for Frost dmg every 2s for 30s"
+  },
+  "805429": {
+   "name": "Crown's Call",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Intellect; +10% Frost dmg by undead minions (2 ranks)"
+  },
+  "805424": {
+   "name": "Deathly Chill",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-25% channel/cast time of Ice Barrage"
+  },
+  "705745": {
+   "name": "Harrowing Winds",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "AoE"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Glacial Impact deals +50% dmg to enemies within 6yd of target"
+  },
+  "531135": {
+   "name": "Icecrown",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit", "Raidbuff"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Frost dmg dealt stacks crit chance debuff on enemy for allies (3 stacks max)"
+  },
+  "500331": {
+   "name": "Raise: Skeletal Mage",
+   "source": "Rime",
+   "primary": "Rotational",
+   "tags": ["Frost", "Summon", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s cast; 2 Life Force; Command: Frost AoE burst on target"
+  },
+  "801938": {
+   "name": "Virulency",
+   "source": "Death",
+   "primary": "Rotational",
+   "tags": ["Shadow", "DoT"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD; refreshes and copies diseases to a 2nd target (Infest)"
+  },
+  "807960": {
+   "name": "Dark Harvester",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Crit", "Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% crit and +3% hit chance"
+  },
+  "500329": {
+   "name": "Raise: Gargoyle",
+   "source": "Death",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s cast; 3 Life Force; Command: necrotic bile shot (+50% per disease)"
+  },
+  "302888": {
+   "name": "Living Dead",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-10% Lichfrost and Crypt Swarm cost; Blight refunds mana if full duration (2 ranks)"
+  },
+  "802132": {
+   "name": "Lichplague",
+   "source": "Death",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; 30 RP; heavy DoT, dmg scales with disease count"
+  },
+  "806086": {
+   "name": "Muck Summoner",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon", "AoE"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on periodic dmg to summon 2-3 Rotlings that explode for Plague dmg"
+  },
+  "572130": {
+   "name": "Creeping Plagues",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Virulency gains +1 charge (can Infest additional target)"
+  },
+  "560537": {
+   "name": "Apothecary's Cauldron",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Raidbuff", "Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% raid spell haste aura; +3% magic dmg to self"
+  },
+  "707670": {
+   "name": "Reclaimed Life",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-15% cast time on Raise spells"
+  },
+  "704729": {
+   "name": "Ner'zhul's Blessing",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% max Runic Power"
+  },
+  "801760": {
+   "name": "Ice Barrage",
+   "source": "Rime",
+   "primary": "Rotational",
+   "tags": ["Frost", "Ranged", "Channel", "Root", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "10s CD; 30 RP; 2s channel; Frost burst, freezes target at end"
+  },
+  "801945": {
+   "name": "Plague of Undeath",
+   "source": "Death",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "DoT", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 RP; disease DoT + -40% Holy healing; dispel = stun + burst Plague dmg"
+  },
+  "704670": {
+   "name": "Runic Reservoir",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% Frost dmg; +15 max Runic Power (2 ranks)"
+  },
+  "300958": {
+   "name": "Chilling Presence",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit", "Raidbuff"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3% raid crit aura; Ice Barrage +20% crit vs Frozen"
+  },
+  "707006": {
+   "name": "Bone Legion",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+10% Lichfrost dmg, +25% Runic Power generated (2 ranks)"
+  },
+  "560620": {
+   "name": "Frigid Power",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% SP scaling on Lichfrost and Ice Barrage"
+  },
+  "804371": {
+   "name": "Foul Invocation",
+   "source": "class",
+   "primary": "CD Defensif",
+   "tags": ["Shadow", "Immunity"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; undead form for 20s: +30% max hp, immune to Fear/Sleep/Charm/Disease"
+  },
+  "301333": {
+   "name": "Winds of Northrend",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Frost", "Slow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% slow amount on Lichfrost"
+  },
+  "560848": {
+   "name": "Master Lich",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Soulfreeze stacks Frost dmg taken debuff on enemy (5% per tick, 3 stacks)"
+  },
+  "300580": {
+   "name": "Deadly Defense",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each active summon: -1% dmg taken (max -10%)"
+  },
+  "805048": {
+   "name": "Animate: Plaguefather",
+   "source": "Animation",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2min CD; Plaguefather emits Zombie Plague AoE and reduces enemy AP"
+  },
+  "704701": {
+   "name": "Underking",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Command spells grant Underking stacks; at 10 stacks: random Animate CD -15s"
+  },
+  "570136": {
+   "name": "Waking Crypts",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+50% Crypt Plague dmg; Crypt Swarm +4% dmg per disease on target"
+  },
+  "300233": {
+   "name": "Dead Man Walking",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-25% root and slow duration"
+  },
+  "806328": {
+   "name": "Master of Death",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Command spells apply Crypt Plague on hit"
+  },
+  "561353": {
+   "name": "Unholy Runes",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+15% Crypt Swarm dmg"
+  },
+  "560798": {
+   "name": "Pandemic",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Minion dmg reduces Virulency CD by -1s"
+  },
+  "560800": {
+   "name": "Wormfood",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Full Crypt Swarm channel summons a Rotling that explodes for Plague dmg"
+  },
+  "300941": {
+   "name": "Fleshcrafting",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5s Unholy Frenzy duration; Command spells reduce Unholy Frenzy CD -1s"
+  },
+  "300236": {
+   "name": "Expediting Death",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each Expunge stack: +5% Plague of Undeath dmg taken"
+  },
+  "504050": {
+   "name": "Command: Blight",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Physical", "AoE", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40 RP; Decaying Colossus blights ground: -60% healing 10yd 20s"
+  },
+  "705750": {
+   "name": "Frost Runes",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Frost", "Haste"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "15% chance on Magic dmg: +10% haste 12s proc"
+  },
+  "302519": {
+   "name": "Lich's Prodigy",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Glacial Tap: +20 Runic Power gain but +25% cost"
+  },
+  "704682": {
+   "name": "Summoning Prodigy",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+3s duration on Skeletal Archers"
+  },
+  "500971": {
+   "name": "Raise: Ghoul",
+   "source": "Animation",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Summon", "Selfheal"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1.5s cast; 1 Life Force; auto-heals caster; Command: AoE Plague heal"
+  },
+  "504861": {
+   "name": "Raise: Banshee",
+   "source": "class",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Frost", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s cast; 2 Life Force; channels mana drain+dmg; Command: 20% mana drain burst"
+  },
+  "803741": {
+   "name": "Mass Grave",
+   "source": "class",
+   "primary": "Control",
+   "tags": ["Shadow", "Fear", "AoE"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; AoE fear 40s (8s vs players); Humanoids only; instant if >50 Runic Power"
+  },
+  "560615": {
+   "name": "Disciple of Kel'thuzad",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Haste"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+4% spell haste (2 ranks)"
+  },
+  "560613": {
+   "name": "Improved Mandates",
+   "source": "class",
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% effectiveness on Mandates"
+  },
+  "300240": {
+   "name": "Curse of the Lich",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Crit"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+6yd range on Rime spells; +3% Frost crit for self and summons"
+  },
+  "803772": {
+   "name": "Create Frozen Reliquary",
+   "source": "class",
+   "primary": "Utility",
+   "tags": ["Frost"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "3s cast; creates consumable mana-restore item for allies (30% missing mana, once per min)"
+  },
+  "704721": {
+   "name": "Study of Death",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Unholy Frenzy now summons 3 Greater Zombies; minion dmg reduces Unholy Frenzy CD -0.5s"
+  },
+  "705754": {
+   "name": "Expunge",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Command on Diseased target applies Expunge: +10% disease dmg taken (2 stacks)"
+  },
+  "300965": {
+   "name": "Foul Contagion / Necrosis",
+   "source": "Death",
+   "primary": "Passive",
+   "tags": ["Shadow", "DoT"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Applying Crypt Plague extends Flesh to Worms by 1s"
+  },
+  "531128": {
+   "name": "Overwhelming Force / Tears of Lordaeron",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Generator"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "5% chance on minion dmg to restore 2 RP and 2% max mana"
+  },
+  "704713": {
+   "name": "Lich Commander / Corpse Commander",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Spender"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "-5 Runic Power cost on Command spells"
+  },
+  "300945": {
+   "name": "Cobalt-Plated Armor / Naxxramas Prodigy",
+   "source": "class",
+   "primary": "Passive",
+   "tags": ["Defensive", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+300 Armor on undead minions"
+  },
+  "504357": {
+   "name": "Frigid Winds / Piercing Icicles",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+5% chance to trigger Refreshing Chill proc"
+  },
+  "560851": {
+   "name": "Frigid Death / Freeze Dry",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "+20% Glacial Impact dmg"
+  },
+  "801733": {
+   "name": "Necrotic Chains / Ner'zhul's Blessing",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost", "Root"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Every 3rd Command spell freezes target 5s"
+  },
+  "561164": {
+   "name": "Blood and Ice / Death and Ice",
+   "source": "Rime",
+   "primary": "Passive",
+   "tags": ["Frost"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Each Skeletal Warrior/Rogue: +8% Ice Barrage dmg"
+  },
+  "805032": {
+   "name": "Animate: Bone Wraith / Animate: Tomb King",
+   "source": "Animation",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "AoE", "Physical"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD; Bone Wraith does AoE Bonestorm every 1s to 5 enemies"
+  },
+  "638403": {
+   "name": "Depravity / Mindless Fury",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow", "Haste", "Summon"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "+5% minion melee haste; 50% chance on minion melee crit to trigger Bone Club (Shadow)"
+  },
+  "560596": {
+   "name": "Crypt Keeper / Unrelenting",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Shadow", "Cleave"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Crypt Swarm bounces to 2 additional enemies at -30% dmg each"
+  },
+  "525600": {
+   "name": "Army of the Dead / Unstoppable Frenzy",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Crit", "Haste", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "While only 1 Abomination active: ghoul +10% crit and +10% haste"
+  },
+  "707283": {
+   "name": "Chomp / Fetid Mark",
+   "source": "Animation",
+   "primary": "Passive",
+   "tags": ["Physical", "Shadow"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "Abomination/Colossus melee crits trigger Chomp: bonus Shadow+Physical burst"
+  },
+  "804681": {
+   "name": "Animate: Skeletal Smith",
+   "source": "baseline",
+   "primary": "CD Offensif",
+   "tags": ["Shadow", "Summon", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "1min CD; 10 RP; summons Skeletal Smith for 1 minute",
+   "confidence": "low",
+   "notes": "no desc; classify from name+type (Summon minion, 1min CD)"
+  },
+  "504319": {
+   "name": "Command: Skeletal Archers",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Ranged", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "40 RP; commands archers to fire on target; no CD"
+  },
+  "504334": {
+   "name": "Command: Skeletal Warriors",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Melee", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 RP; commands warriors to attack target; no CD"
+  },
+  "800199": {
+   "name": "Foul Mandate",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Shadow", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30min Mandate buff: +Stamina to target",
+   "confidence": "low"
+  },
+  "500991": {
+   "name": "Grave March",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Shadow"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Triggered minion movement mechanic; not player-pressed ability",
+   "confidence": "low"
+  },
+  "804360": {
+   "name": "Necromancy",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Shadow", "Summon"],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Core class passive: generates Runic Power periodically, tracks Life Force"
+  },
+  "500970": {
+   "name": "Raise: Lesser Skeletal Warrior",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Summon"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "2s cast; basic summon spell; no CD"
+  },
+  "804535": {
+   "name": "Ray of Rot",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Nature", "Channel", "Leech", "Spender"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30 RP; channeled drain + amplifies Harvest Plague; generates resource via leech"
+  },
+  "500967": {
+   "name": "Razorice",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Frost", "Raidbuff"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30min frost armor buff on target: damage shield + Frost dmg aura for allies"
+  },
+  "805027": {
+   "name": "Sacrifice Undead",
+   "source": "baseline",
+   "primary": "Rotational",
+   "tags": ["Shadow", "Selfheal", "Generator"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "30s CD; sacrifices a minion for AoE damage burst and Life Force recovery"
+  },
+  "801530": {
+   "name": "Transfer Life",
+   "source": "baseline",
+   "primary": "Heal",
+   "tags": ["Shadow", "Channel"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Channeled heal on ally; costs HP per second"
+  },
+  "500982": {
+   "name": "Undead: Assault",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Physical", "Crit"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stance: undead attack mode (+crit vs Humanoids)",
+   "confidence": "low"
+  },
+  "500983": {
+   "name": "Undead: Pacify",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stance: undead pacify mode (-dmg taken)",
+   "confidence": "low"
+  },
+  "500985": {
+   "name": "Undead: Protect",
+   "source": "baseline",
+   "primary": "Buff",
+   "tags": ["Defensive"],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "notes": "Stance: undead protect mode (taunt/guard)",
+   "confidence": "low"
+  },
+  "804446": {
+   "name": "Vanguard's Shield",
+   "source": "baseline",
+   "primary": "Passive",
+   "tags": ["Defensive", "Shield"],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "notes": "No desc; proc shield passive",
+   "confidence": "low"
+  }
+ }
+}
