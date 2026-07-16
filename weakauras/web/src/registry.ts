@@ -8,6 +8,10 @@ export type Ability = {
   spellId: number; name: string; iconUrl: string;
   source?: string; guessActive?: boolean; desc?: string;
   entryType?: string; level?: number; essence?: number;
+  // classification (registry/<slug>.tags.json, merged into the registry by registry-build.js)
+  primary?: string; tags?: string[]; passive?: boolean;
+  grantsProc?: boolean; grantsBuff?: boolean; confidence?: string;
+  details?: Record<string, string | string[]>;
 };
 type Registry = { slug: string; class: string; abilities: Ability[] };
 

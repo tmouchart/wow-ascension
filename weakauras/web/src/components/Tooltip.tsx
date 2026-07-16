@@ -4,13 +4,22 @@ import s from '../editor.module.css';
 import type { Ability } from '../registry';
 
 // Wowhead-style hover card for a palette ability. Dark + gold regardless of app theme (like the in-game
-// tooltip). We only surface what the CoA scrape actually gives us: name, type/source, required level,
-// essence cost (the talent-builder cost — NOT a mana/energy cast cost, which we don't scrape) + description.
+// tooltip). Surfaces: name, type/source, classification (category + tags), the scraped cast stats
+// (cast time / cooldown / cost / range / school, from db.ascension.gg), required level + essence, and desc.
 function TypeLine({ a }: { a: Ability }) {
   const bits: string[] = [];
   if (a.entryType) bits.push(a.entryType);
   if (a.source && a.source !== 'baseline') bits.push(a.source[0].toUpperCase() + a.source.slice(1));
   return <div className={s.ttType}>{bits.join(' · ')}</div>;
+}
+
+// Pull a clean scraped stat (skip the "n/a" / "None" placeholders the DB emits).
+const STAT_KEYS = ['Cast time', 'Cooldown', 'Cost', 'Range', 'School'];
+function stat(a: Ability, k: string): string | null {
+  const v = a.details?.[k];
+  if (typeof v !== 'string') return null;
+  const t = v.trim();
+  return !t || /^(n\/a|none)$/i.test(t) ? null : t;
 }
 
 export function AbilityTooltip({ ability, x, y }: { ability: Ability; x: number; y: number }) {
@@ -38,6 +47,21 @@ export function AbilityTooltip({ ability, x, y }: { ability: Ability; x: number;
         <div className={s.ttName}>{ability.name}</div>
       </div>
       <TypeLine a={ability} />
+      {ability.primary ? (
+        <div className={s.ttType}>
+          {ability.primary}{ability.tags?.length ? ' · ' + ability.tags.join(', ') : ''}
+        </div>
+      ) : null}
+      {(() => {
+        const stats = STAT_KEYS.map((k) => [k, stat(ability, k)] as const).filter(([, v]) => v);
+        return stats.length ? (
+          <div className={s.ttMeta}>
+            {stats.map(([k, v]) => (
+              <span key={k}>{k === 'Cast time' || k === 'School' ? v : `${k}: ${v}`}</span>
+            ))}
+          </div>
+        ) : null;
+      })()}
       <div className={s.ttMeta}>
         {ability.level ? <span>Requires Level {ability.level}</span> : null}
         {ability.essence ? <span>{ability.essence} Essence</span> : null}
