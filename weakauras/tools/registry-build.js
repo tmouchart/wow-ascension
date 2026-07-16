@@ -67,9 +67,36 @@ function buildClass(slug) {
     }
   }
   const abilities = [...byId.values()];
+  mergeDetails(slug, abilities);   // scraped spell-detail fields (cooldown/school/cost/...)
+  mergeTags(slug, abilities);      // durable classification sidecar (primary category + tags)
   const specs = Object.entries(nj.specToTab || {}).map(([name, tabId]) => ({ name, tabId }));
   return { slug, class: nj.class, classId: nj.classId, classTreeTab: nj.classTreeTab, specs,
     abilityCount: abilities.length, abilities };
+}
+
+// Merge registry/<slug>.tags.json (authored classification) into each ability. Durable across re-scrapes.
+function mergeTags(slug, abilities) {
+  const p = path.join(OUT, slug + '.tags.json');
+  if (!fs.existsSync(p)) return;
+  const t = JSON.parse(fs.readFileSync(p, 'utf8')).spells || {};
+  for (const a of abilities) {
+    const e = t[a.spellId];
+    if (!e) continue;
+    a.primary = e.primary; a.tags = e.tags || []; a.passive = !!e.passive;
+    a.grantsProc = !!e.grantsProc; a.grantsBuff = !!e.grantsBuff;
+    if (e.confidence) a.confidence = e.confidence;
+  }
+}
+
+// Merge tools/coa-classes/<slug>/<slug>-spell-details.json (scraped fields) into each ability.
+function mergeDetails(slug, abilities) {
+  const p = path.join(ROOT, slug, slug + '-spell-details.json');
+  if (!fs.existsSync(p)) return;
+  const spells = (JSON.parse(fs.readFileSync(p, 'utf8')).spells) || {};
+  for (const a of abilities) {
+    const e = spells[a.spellId];
+    if (e && e.ok && e.details) a.details = e.details;
+  }
 }
 
 // ---- run ----

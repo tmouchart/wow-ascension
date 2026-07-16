@@ -34,7 +34,30 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Duration) Value: 25 Affected Spells: Ghoulify"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802986,
@@ -51,7 +74,33 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards Proc chance: 10% 0.1 sec cooldown Zombie Plague",
+     "Unknown Effect (#190) Radius: 100 yards Proc chance: 10% 0.1 sec cooldown Plague Horde"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Enrage"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 500981,
@@ -68,7 +117,33 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "10% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodically Give Power (Runic Power) Value: 30 Interval: 5 seconds",
+     "Apply Aura: Mod Damage Done - % (Frost) Value: 10"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Shadow",
+    "Frost",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true
   },
   {
    "spellId": 301207,
@@ -85,7 +160,32 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Resistance - % (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane)",
+     "Apply Aura: Periodically Trigger Spell with Value Interval: 5 seconds Flesh Symbiosis"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500342,
@@ -102,7 +202,35 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Fire, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "10% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "3 minutes",
+    "GCD": "0 seconds",
+    "Scaling #1": "+29.10% of spell power per tick",
+    "Scaling #2": "+17.46% of attack power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Intervall) Value: -50 Affected Spells: Harvest Plague Rank 1-4",
+     "Apply Aura: Add Modifier - % (Duration) Affected Spells: Harvest Plague Rank 1-4"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "DoT"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504316,
@@ -119,7 +247,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant",
+    "Cooldown": "30 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy:",
+     "Trigger Spell: Grave March"
+    ]
+   },
+   "primary": "Control",
+   "tags": [
+    "Shadow",
+    "Root",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 561138,
@@ -136,7 +290,34 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "45% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "3 seconds",
+    "Cooldown": "5 minutes",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodically Trigger Spell Interval: 3 seconds Army of the North",
+     "Apply Aura: Cannot Find Aura (353)",
+     "Unknown Effect (#190) Value: 100 Radius: 100 yards"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Crit"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300960,
@@ -153,7 +334,15 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300241,
@@ -170,7 +359,15 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300234,
@@ -189,7 +386,15 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 803291,
@@ -206,7 +411,32 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Duration) Value: 4000 Affected Spells: Lichfrost Rank 1-13",
+     "Apply Aura: Mod All Hit Chance Value: 4"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Slow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 806149,
@@ -225,7 +455,32 @@
    ],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Override Class Script (20001) [13] Value: 5",
+     "Apply Aura: Mod Damage Done - % (Shadow) Value: 5"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Execute"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300748,
@@ -244,7 +499,14 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560595,
@@ -261,7 +523,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 3) Value: 5 Affected Spells: Undead: Assault",
+     "Apply Aura: Add Modifier - Flat (Effect 3) Value: -10 Affected Spells: Undead: Pacify Rank 1",
+     "Apply Aura: Add Modifier - Flat (Effect 2) Value: -75 Affected Spells: Undead: Protect"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705747,
@@ -280,7 +568,32 @@
    ],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 20% Animate: Zombie"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 805649,
@@ -297,7 +610,30 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 40% 1 ms cooldown Energize Runic Power +30"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704355,
@@ -314,7 +650,34 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "14% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "6 seconds",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+100.00% of spell power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell with Value: Value: 84, plus 2 per level 0.5 sec cooldown Glacial Impact",
+     "Trigger Spell: (524287) Value: 1 0.5 sec cooldown Glacial Impact",
+     "Trigger Spell: (524287) 0.5 sec cooldown Glacial Impact"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Frost",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807937,
@@ -331,7 +694,28 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300940,
@@ -348,7 +732,14 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 705746,
@@ -365,7 +756,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Absorb School Healing (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shield",
+    "Absorb"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704528,
@@ -382,7 +797,30 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 2) Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 806324,
@@ -399,7 +837,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cost) Value: -15 Affected Spells: Animate: Bone Wraith",
+     "Apply Aura: Proc Trigger Spell Festering Decay"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707113,
@@ -416,7 +878,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Nature",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (31) Value: 1 Affected Spells: Expunge Rank 1",
+     "Apply Aura: Add Modifier - % (Range) Value: 20 Affected Spells: Blight Rank 1-2"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504431,
@@ -433,7 +919,28 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (31) Value: 1 Affected Spells: Life Force Rank 1-2"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 503740,
@@ -450,7 +957,31 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards Proc chance: 15% 0.1 sec cooldown Frenzied Ghoul"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Summon",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 805038,
@@ -467,7 +998,31 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "1 minute",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "15% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "1 second",
+    "Cooldown": "5 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Scourge Transporter ) Value: 1 Radius: 2 yards"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Movement"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707175,
@@ -484,7 +1039,31 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: -1 Proc chance: 15% 0.02 sec cooldown Bone King"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 707445,
@@ -501,7 +1080,29 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 1) Affected Spells: Animate: Skeletal Archer",
+     "Apply Aura: Add Modifier - % (Cooldown) Value: -20 Affected Spells: Animate: Skeletal Archer"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 302518,
@@ -520,7 +1121,14 @@
    ],
    "sources": [
     "Animation"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801739,
@@ -537,7 +1145,35 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "19% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "30 seconds",
+    "GCD": "0 seconds",
+    "Scaling #1": "+51.00% of spell power per tick",
+    "Scaling #2": "+30.60% of attack power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Interrupt Cast:"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Frost",
+    "Interrupt",
+    "Slow",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805040,
@@ -554,7 +1190,32 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "27% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "30 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell: (524287) Value: 4 Animate: Skeletal Archer"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 570046,
@@ -573,7 +1234,30 @@
    ],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "n/a",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (All Effects) Value: 25 Affected Spells: Wretched Bile Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 531126,
@@ -590,7 +1274,30 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Spell Haste % (10)"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500989,
@@ -607,7 +1314,32 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "69% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "3 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Decaying Colossus ) Value: 1 Radius: 8 yards",
+     "Unknown Effect: (117151)"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 503738,
@@ -624,7 +1356,31 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Area Aura - Raid: Mod Damage Done - % (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) Value: 3 Radius: 100 yards",
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 25 Radius: 100 yards Affected Spells: Undead: Protect"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500933,
@@ -641,7 +1397,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "2 minutes",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "25% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "2 seconds",
+    "Cooldown": "2 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Phylactery ) Value: 1 Radius: 2 yards",
+     "Apply Aura: Mod Absorb School Damage (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) Value: 10"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Absorb",
+    "Immunity"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802988,
@@ -658,7 +1440,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Reduce Pushback Time % (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) Value: 50",
+     "Apply Aura: Add Modifier - % (Casting Time) Value: -15 Affected Spells: Lichfrost Rank 1-13"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707627,
@@ -675,7 +1481,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Override Class Script (20001) [31] Value: 20",
+     "Apply Aura: Override Class Script (20007) [31] Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 301304,
@@ -692,7 +1523,33 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage over Time) Value: 25",
+     "Apply Aura: Periodic Haste"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707588,
@@ -709,7 +1566,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 30 Arch Lich"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 300235,
@@ -726,7 +1607,14 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 531130,
@@ -743,7 +1631,32 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "20 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "3 seconds",
+    "Cooldown": "15 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Bone Construct ) Value: 1 Radius: 3 yards"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560727,
@@ -760,7 +1673,30 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Spell Haste % Value: 5"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706472,
@@ -779,7 +1715,29 @@
    ],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy Value: 15",
+     "Apply Aura: Mod Stat - % (Stamina) Value: 5"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504489,
@@ -796,7 +1754,33 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "20 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy: Radius: 8 yards"
+    ]
+   },
+   "primary": "Control",
+   "tags": [
+    "Frost",
+    "Root",
+    "AoE",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707562,
@@ -813,7 +1797,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 ms cooldown Frozen Bodies"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 500572,
@@ -830,7 +1838,33 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Nature, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Crypt Explosion"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "DoT",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 707001,
@@ -849,7 +1883,32 @@
    ],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Value: 2 Radius: 100 yards Proc chance: 10% Putricide's Formula",
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 680388,
@@ -866,7 +1925,15 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Buff",
+   "tags": [
+    "Selfheal",
+    "Leech"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": true
   },
   {
    "spellId": 572023,
@@ -883,7 +1950,32 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 25% 3 sec cooldown Soulfreeze"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Channel",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 500335,
@@ -900,7 +1992,35 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "67% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "3 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Abomination ) Value: 1 Radius: 8 yards",
+     "Dummy:",
+     "Unknown Effect: (117151)"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "Summon",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 301198,
@@ -917,7 +2037,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Cooldown) Value: -60000 Affected Spells: Gravebound Champion"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704681,
@@ -934,7 +2075,30 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 15% Permafrost"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 560852,
@@ -951,7 +2115,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Override Class Script (20000) [4] Value: 100"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802121,
@@ -968,7 +2156,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Nature, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "25% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "2 minutes",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Script Effect: Value: 40"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "Shield",
+    "Absorb"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805427,
@@ -985,7 +2199,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Frost Giant"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704669,
@@ -1004,7 +2242,31 @@
    ],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Override Class Script (20001) [4] Value: 50"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805369,
@@ -1021,7 +2283,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "12 seconds",
+    "GCD": "1 second",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Give Power: (Runic Power) Value: 30"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Frost",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807796,
@@ -1038,7 +2324,34 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "5 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Curse",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "1 second",
+    "Cooldown": "1.5 minutes",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dispel Mechanic: (Invulnerable) Value: 100",
+     "Apply Aura: Periodically Trigger Spell with Value Value: 800, plus 12 per level Interval: 5 seconds Death's Due",
+     "Dispel Mechanic: (Invulnerable) Value: 100"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Shadow",
+    "Dispel",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805675,
@@ -1055,7 +2368,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Rot Fetishist"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 806321,
@@ -1072,7 +2409,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 1 Add 1 Crypt Plague",
+     "Apply Aura: Proc Trigger Spell Value: 1 Rotting Flesh"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704715,
@@ -1089,7 +2451,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Casting Time) Value: -500 Affected Spells: Sacrifice Undead Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500338,
@@ -1107,7 +2490,35 @@
    "sources": [
     "Death",
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "18 seconds",
+    "School": "Nature, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Disease",
+    "GCD category": "n/a",
+    "Cost": "12% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+11.05% of spell power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodic Damage - Flat Value: 15, plus 0.48 per level Interval: 3 seconds",
+     "Dummy: Value: 50 Affected Spells: Command: Gargoyle Rank 1"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "DoT",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707007,
@@ -1124,7 +2535,33 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "30 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40 Runic Power",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "10 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Script Effect: (523032) Value: 6 Radius: 2 yards"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "AoE",
+    "Slow",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560730,
@@ -1141,7 +2578,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 5% 1 ms cooldown Parasites"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Leech"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 503757,
@@ -1158,7 +2619,29 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cost) Value: -30 Affected Spells: Animate: Bone Wraith",
+     "Apply Aura: Add Modifier - % (Casting Time) Value: -30 Affected Spells: Animate: Bone Wraith"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704717,
@@ -1175,7 +2658,31 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cooldown) Value: -100 Affected Spells: Grave Mastery Rank 1",
+     "Apply Aura: Add Modifier - Flat (Casting Time) Value: 1000 Affected Spells: Grave Mastery Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706953,
@@ -1192,7 +2699,29 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cooldown) Value: -20 Affected Spells: Sacrifice Undead Rank 1",
+     "Apply Aura: Add Modifier - % (Cost) Value: -20 Affected Spells: Sacrifice Undead Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504866,
@@ -1209,7 +2738,33 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy Value: 40"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Shield",
+    "Absorb",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 561215,
@@ -1226,7 +2781,28 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Forbidden Technique"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 537208,
@@ -1243,7 +2819,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards Deathly Chill",
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805428,
@@ -1260,7 +2860,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "30 seconds",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "31% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "2 minutes",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+115.00% of spell power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Frost Wyrm ) Value: 1"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Frost",
+    "Summon",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805429,
@@ -1279,7 +2905,32 @@
    ],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) (16) Value: 10 Radius: 100 yards",
+     "Apply Aura: Mod Stat - % (Intellect) Value: 5"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805424,
@@ -1296,7 +2947,32 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Duration) Value: -25 Affected Spells: Ice Barrage Rank 1-9",
+     "Apply Aura: Add Modifier - % (Intervall) Value: -25 Affected Spells: Ice Barrage Rank 1-9",
+     "Apply Aura: Add Modifier - % (Casting Time) Value: -25 Affected Spells: Ice Barrage Rank 1-9"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705745,
@@ -1313,7 +2989,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Cannot Find Aura (354) Value: 50"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 531135,
@@ -1330,7 +3030,32 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Radius: 100 yards Icecrown"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit",
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 500331,
@@ -1347,7 +3072,32 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "2 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Skeletal Mage ) Value: 1 Radius: 8 yards"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Frost",
+    "Summon",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801938,
@@ -1364,7 +3114,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "18% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "1 minute",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy: Value: 12 to 16, plus 0.2 per level",
+     "Trigger Spell: (524287) Infestation"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807960,
@@ -1381,7 +3156,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Crit Chance Value: 3",
+     "Apply Aura: Mod All Hit Chance Value: 3"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500329,
@@ -1398,7 +3198,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "68% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "3 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Raised Gargoyle ) Value: 1 Radius: 8 yards"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 302888,
@@ -1417,7 +3241,31 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cost) Value: -10 Affected Spells: Crypt Swarm Rank 1-10",
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 7"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802132,
@@ -1434,7 +3282,35 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "18 seconds",
+    "School": "Nature, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Disease",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "1.5 seconds",
+    "Cooldown": "30 seconds",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+22.00% of spell power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodic Damage - Flat Value: 151, plus 8 per level Interval: 3 seconds",
+     "Dummy: Value: 50 Affected Spells: Command: Gargoyle Rank 1"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "DoT",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 806086,
@@ -1451,7 +3327,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Holy",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 5% 2 sec cooldown Animate: Rotling"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 572130,
@@ -1468,7 +3369,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Charges) Value: 1 Affected Spells: Blood and Ice Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560537,
@@ -1485,7 +3410,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Area Aura - Raid: Mod Spell Haste % (1) Value: 3 Radius: 100 yards",
+     "Apply Aura: Mod Damage Done - % (Holy, Fire, Nature, Frost, Shadow, Arcane) Value: 3"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707670,
@@ -1502,7 +3452,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Casting Time) Value: -15 Affected Spells: Animate: Skeletal Archer"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704729,
@@ -1519,7 +3490,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Maximum Power - % (Runic Power) Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801760,
@@ -1536,7 +3530,36 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "1 second",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "2 seconds",
+    "Cooldown": "10 seconds",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+35.00% of spell power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodically Trigger Spell with Value Value: 19, plus 0.914 per level Interval: 250 milliseconds Ice Barrage",
+     "Apply Aura: Periodically Trigger Spell Interval: 999 milliseconds Frozen"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Frost",
+    "Ranged",
+    "Channel",
+    "Root",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801945,
@@ -1553,7 +3576,36 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "20 seconds",
+    "School": "Nature, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Disease",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "1.5 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+31.81% of spell power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodic Damage - Flat Value: 32, plus 0.62 per level Interval: 2.5 seconds",
+     "Dummy: Affected Spells: Command: Gargoyle Rank 1",
+     "Apply Aura: Mod Healing Taken - % (Holy) Value: -40"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "DoT",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704670,
@@ -1572,7 +3624,32 @@
    ],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Maximum Power - Flat (Runic Power) Value: 150",
+     "Apply Aura: Mod Damage Done - % (Frost) Value: 5"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300958,
@@ -1589,7 +3666,16 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit",
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707006,
@@ -1608,7 +3694,32 @@
    ],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage) Value: 10 Affected Spells: Lichfrost Rank 1-13",
+     "Apply Aura: Add Modifier - % (Effect 2) Value: 25 Affected Spells: Ice Barrage Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560620,
@@ -1625,7 +3736,30 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Multiplier (Bonus)) Value: 20 Affected Spells: Lichfrost Rank 1-13"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804371,
@@ -1642,7 +3776,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "20 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "25% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "2 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Transform: NPC #444914",
+     "Apply Aura: Mod Maximum Health - % [1] Value: 30",
+     "Unknown Effect (#190) (127) Value: 15 Radius: 100 yards"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Immunity"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 301333,
@@ -1659,7 +3819,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 3) Value: -15 Affected Spells: Lichfrost Rank 1-13"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Slow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560848,
@@ -1676,7 +3860,32 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy: (12) Value: -20000 Affected Spells: Command: Gargoyle Rank 1",
+     "Apply Aura: Add Modifier - Flat (Duration) Value: 8000 Affected Spells: Command: Gargoyle Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300580,
@@ -1693,7 +3902,14 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805048,
@@ -1710,7 +3926,34 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "25% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "2 seconds",
+    "Cooldown": "2 minutes",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Plaguefather ) Value: 1",
+     "Unknown Effect: (117151)",
+     "Apply Aura: Add Modifier - % (Cooldown) Affected Spells: Command: Blight"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704701,
@@ -1727,7 +3970,28 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Nature",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Underking"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 570136,
@@ -1744,7 +4008,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage over Time) Value: 50 Affected Spells: Crypt Plague Rank 1",
+     "Apply Aura: Add Modifier - Flat (Effect 2) Value: 4 Affected Spells: Crypt Plague Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300233,
@@ -1761,7 +4050,14 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 806328,
@@ -1778,7 +4074,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Add 1 Crypt Plague",
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Rotting Flesh"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 561353,
@@ -1795,7 +4116,30 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cost) Value: 15 Affected Spells: Crypt Swarm Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560798,
@@ -1812,7 +4156,30 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards 0.1 sec cooldown Pandemic"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560800,
@@ -1829,7 +4196,31 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 300941,
@@ -1846,7 +4237,12 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300236,
@@ -1863,7 +4259,15 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504050,
@@ -1881,7 +4285,32 @@
    "sources": [
     "class",
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy:"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Physical",
+    "AoE",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705750,
@@ -1898,7 +4327,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 5% Frost Runes"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 302519,
@@ -1915,7 +4368,14 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704682,
@@ -1932,7 +4392,30 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Duration) Value: 3000 Affected Spells: Animate: Skeletal Archer"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500971,
@@ -1949,7 +4432,33 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "28% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "1.5 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Ghoul ) Value: 1 Radius: 8 yards",
+     "Unknown Effect: (117151)"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504861,
@@ -1966,7 +4475,32 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "60% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "2 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Banshee ) Value: 1 Radius: 8 yards"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Frost",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 803741,
@@ -1983,7 +4517,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "40 seconds",
+    "School": "Shadow",
+    "Mechanic": "Fleeing",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "22% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "2 seconds",
+    "Cooldown": "30 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Fear Radius: 8 yards Mechanic: Fleeing",
+     "Apply Aura: Transform ( Brain Eater ) Value: 1 Radius: 8 yards"
+    ]
+   },
+   "primary": "Control",
+   "tags": [
+    "Shadow",
+    "Fear",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560615,
@@ -2002,7 +4562,30 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Spell Haste % Value: 4"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560613,
@@ -2019,7 +4602,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (All Effects) Value: 20 Affected Spells: Greater Grim Mandate"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300240,
@@ -2036,7 +4640,15 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 803772,
@@ -2053,7 +4665,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "60% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "3 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1 second",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Create Item: Frozen Reliquary"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Frost"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704721,
@@ -2070,7 +4705,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards 1 ms cooldown Study of Death",
+     "Apply Aura: Dummy Value: 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705754,
@@ -2087,7 +4746,32 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Expunge",
+     "Apply Aura: Add Modifier - % (Cooldown) Affected Spells: Command: Skeletal Warriors Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 300965,
@@ -2104,7 +4788,15 @@
    "altSpellIds": [],
    "sources": [
     "Death"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 531128,
@@ -2121,7 +4813,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards Proc chance: 5% 0.1 sec cooldown Overwhelming Forces"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704713,
@@ -2138,7 +4853,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Cost) Value: -50 Affected Spells: Command: Blight"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300945,
@@ -2155,7 +4893,15 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504357,
@@ -2172,7 +4918,30 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Proc Chance) Value: 5 Affected Spells: Animate: Tomb King"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560851,
@@ -2189,7 +4958,30 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage) Value: 20 Affected Spells: Animate: Crypt Fiend Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801733,
@@ -2206,7 +4998,31 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 ms cooldown Necrotic Chains"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost",
+    "Root"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 561164,
@@ -2223,7 +5039,30 @@
    "altSpellIds": [],
    "sources": [
     "Rime"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "n/a",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage) Affected Spells: Ice Barrage Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Frost"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805032,
@@ -2240,7 +5079,33 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "28% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "1 minute",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Bone Wraith ) Value: 1 Radius: 8 yards"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "AoE",
+    "Physical"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 638403,
@@ -2257,7 +5122,33 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Value: 5 Radius: 100 yards",
+     "Unknown Effect (#190) Value: 40 Radius: 100 yards"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Haste",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 560596,
@@ -2274,7 +5165,32 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Jump Targets) Value: 2 Affected Spells: Crypt Swarm Rank 1",
+     "Apply Aura: Add Modifier - % (Damage) Affected Spells: Crypt Swarm Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Cleave"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 525600,
@@ -2291,7 +5207,32 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodically Trigger Spell Interval: 2 seconds Army of the Dead"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Haste",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707283,
@@ -2308,7 +5249,32 @@
    "altSpellIds": [],
    "sources": [
     "Animation"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy",
+     "Unknown Effect (#190) Radius: 100 yards"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 804681,
@@ -2325,7 +5291,34 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "1 minute",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "10 Runic Power",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "1 minute",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Skeletal Smith ) Value: 1 Radius: 8 yards",
+     "Unknown Effect: (117151)"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Shadow",
+    "Summon",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 504319,
@@ -2342,7 +5335,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40 Runic Power",
+    "Range": "40 yards (Long Range )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy:",
+     "School Damage: Value: 2"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Ranged",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 504334,
@@ -2359,7 +5378,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy:",
+     "Dummy: Grave March"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Melee",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 800199,
@@ -2376,7 +5421,32 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "30 minutes",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "27% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Stat - Flat (Stamina) Value: 8"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Shadow",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 500991,
@@ -2393,7 +5463,32 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "1 second",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "50000 yards (Anywhere )",
+    "Cast time": "Instant cast",
+    "Cooldown": "2 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy: Value: 2",
+     "Dummy: Value: 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 804360,
@@ -2410,7 +5505,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodically Trigger Spell Value: 150 Interval: 5 seconds Necromancy",
+     "Apply Aura: Add Modifier - Flat (31) Affected Spells: Life Force Rank 1-2",
+     "Apply Aura: Dummy (5) Value: -20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500970,
@@ -2427,7 +5548,31 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "32% of base mana",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "2 seconds",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Lesser Skeletal Warrior ) Value: 1 Radius: 8 yards"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Summon"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804535,
@@ -2444,7 +5589,37 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "2.5 seconds",
+    "School": "Nature, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "30 Runic Power",
+    "Range": "40 yards (Long Range )",
+    "Cast time": "Channeled",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+4.79% of spell power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodically Drain Health Value: 12 to 13, plus 0.466666 per level Interval: 500 milliseconds",
+     "Apply Aura: Mod Damage/Healing Taken % from Caster Affected Spells: Harvest Plague Rank 1-4",
+     "Apply Aura: Periodically Trigger Spell Interval: 500 milliseconds Ray of Rot"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Nature",
+    "Channel",
+    "Leech",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500967,
@@ -2461,7 +5636,34 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "30 minutes",
+    "School": "Frost",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "17% of base mana",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+2.21% of spell power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Damage Shield (16) Value: 4",
+     "Unknown Effect (#190) (16) Value: 4 Radius: 100 yards",
+     "Apply Aura: Mod Damage Done - % (Frost) Radius: 40 yards"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Frost",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805027,
@@ -2478,7 +5680,34 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "20% of base mana",
+    "Range": "50000 yards (Anywhere )",
+    "Cast time": "1.5 seconds",
+    "Cooldown": "30 seconds",
+    "GCD": "1 second",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell with Value: (524287) Value: 49, plus 12 per level Radius: 100 yards Sacrifice Undead",
+     "Dummy: Value: 1",
+     "Trigger Spell: (524287) Life Force"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Shadow",
+    "Selfheal",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801530,
@@ -2495,7 +5724,32 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "10 seconds",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "5% of base , plus 5 per sec",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Channeled",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Value: 12 Radius: 20 yards",
+     "Apply Aura: Periodically Trigger Spell Value: 1 Radius: 20 yards Interval: 1 second Transfer Life"
+    ]
+   },
+   "primary": "Heal",
+   "tags": [
+    "Shadow",
+    "Channel"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500982,
@@ -2512,7 +5766,34 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "3 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) (127) Radius: 100 yards",
+     "Unknown Effect (#190) (127) Value: 50 Radius: 100 yards",
+     "Apply Aura: Override Class Script (20008) [64]"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Physical",
+    "Crit"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 500983,
@@ -2529,7 +5810,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "3 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy: (127) Value: 3 Radius: 8 yards",
+     "Unknown Effect (#190) Radius: 100 yards",
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 500985,
@@ -2546,7 +5853,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "3 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) (127) Value: 1000 Radius: 100 yards",
+     "Apply Aura: Dummy Radius: 100 yards",
+     "Unknown Effect (#190) (1) Value: 10 Radius: 100 yards"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 804446,
@@ -2563,7 +5896,34 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -10% 2v2 -10% 3v3 -10% Others Open World -10%",
+    "Effects": [
+     "Apply Aura: Dummy (16) [3] Value: 15",
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Vanguard's Shield",
+     "Apply Aura: Dummy (1) Value: 30"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Shield"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false,
+   "confidence": "low"
   }
  ]
 }

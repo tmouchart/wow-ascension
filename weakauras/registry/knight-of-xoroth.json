@@ -34,7 +34,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 1 Xorothian Fury"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 706758,
@@ -51,7 +75,32 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Duration) Value: 10000 Affected Spells: Sacrificial Circle"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shield",
+    "Absorb",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807247,
@@ -68,7 +117,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "3 seconds",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy Value: 1"
+    ]
+   },
+   "primary": "Movement",
+   "tags": [
+    "Physical"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707614,
@@ -85,7 +157,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Rage Generated from Damage Dealt Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706563,
@@ -102,7 +197,33 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 3 Demon's Breath",
+     "Apply Aura: Proc Trigger Spell Add 1 Demonfire"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 805677,
@@ -119,7 +240,32 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "1 minute",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell: Radius: 15 yards Sacrificial Circle",
+     "Heal for % of Total Health: Value: 15"
+    ]
+   },
+   "primary": "Heal",
+   "tags": [
+    "Fire",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704991,
@@ -136,7 +282,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 1 1 ms cooldown Forgehammer Effect"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704185,
@@ -153,7 +322,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Cooldown) Affected Spells: Flesh Hook (Apocalypse) Rank 1-2",
+     "Apply Aura: Add Modifier - Flat (Jump Targets) Value: 2 Affected Spells: Chainwhip Rank 1-8",
+     "Apply Aura: Add Modifier - Flat (Cooldown) Value: -30000 Affected Spells: Chains of Malice"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "AoE",
+    "Cleave"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704999,
@@ -172,7 +367,29 @@
    ],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Stat - % (Intellect) Value: 5",
+     "Apply Aura: Add Modifier - Flat (Cost) Value: -50 Affected Spells: Infernal Strike Rank 1-11"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300391,
@@ -189,7 +406,16 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 706569,
@@ -208,7 +434,30 @@
    ],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Block %"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706564,
@@ -225,7 +474,32 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 3 0.3 sec cooldown Infernal Bulwark",
+     "Apply Aura: Proc Trigger Spell 0.3 sec cooldown Add 4 Demonfire"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704992,
@@ -244,7 +518,32 @@
    ],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Melee Haste % Value: 3",
+     "Apply Aura: Mod Mechanic Duration % (Rooted) Value: -15"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707028,
@@ -261,7 +560,29 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Cooldown) Value: -10000 Affected Spells: Implosion",
+     "Apply Aura: Add Modifier - Flat (Cost) Value: -50 Affected Spells: Implosion"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704981,
@@ -278,7 +599,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Critical Damage Bonus) Value: 50 Affected Spells: Atrophy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560655,
@@ -295,7 +639,30 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Shield Block Value - % Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805693,
@@ -312,7 +679,30 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Infernal Steel"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 705015,
@@ -329,7 +719,28 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Gored"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 801063,
@@ -346,7 +757,32 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell: (524287) Suffuse"
+    ]
+   },
+   "primary": "Heal",
+   "tags": [
+    "Shadow",
+    "Selfheal",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 524922,
@@ -363,7 +799,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 10"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704966,
@@ -382,7 +841,31 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Damage Taken - % (Holy, Fire, Nature, Frost, Shadow, Arcane) Value: -2",
+     "Apply Aura: Mod Stat - % (Stamina) Value: 3"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704452,
@@ -399,7 +882,33 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 ms cooldown Rain of Chaos"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "AoE",
+    "DoT",
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 500003,
@@ -416,7 +925,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Override Class Script (20008) [4] Value: 15",
+     "Apply Aura: Mod Crit Chance Value: 3"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 800997,
@@ -433,7 +966,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell (31) Value: 10 0.2 sec cooldown Demon's Blood"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704975,
@@ -450,7 +1007,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 40% 0.5 sec cooldown Hell Blender"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 302548,
@@ -467,7 +1045,12 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705005,
@@ -484,7 +1067,28 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 0.25 sec cooldown Fiend"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 524913,
@@ -501,7 +1105,33 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "30 seconds",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "2 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Critical Hit Chance) Value: 100 Affected Spells: Skulltaker Rank 1",
+     "Apply Aura: Add Modifier - % (Critical Damage Bonus) Value: 25 Affected Spells: Skulltaker Rank 1"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Physical",
+    "Crit",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707388,
@@ -520,7 +1150,31 @@
    ],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Critical Hit Chance) Value: 25 Affected Spells: Gore Rank 1",
+     "Apply Aura: Mod Expertise Value: 5"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804947,
@@ -537,7 +1191,29 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Cooldown) Value: -15000 Affected Spells: Unleash Pestilence",
+     "Apply Aura: Add Modifier - % (Duration) Affected Spells: Unleash Pestilence"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300385,
@@ -554,7 +1230,14 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 524920,
@@ -571,7 +1254,35 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "1 minute",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Burning Blade",
+     "Apply Aura: Mod Armor Penetration % Value: 30"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Physical",
+    "Melee",
+    "Buff",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 800710,
@@ -588,7 +1299,18 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "AoE",
+    "Generator",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704952,
@@ -605,7 +1327,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell The Butcher"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 520372,
@@ -622,7 +1367,32 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Area Aura - Raid: Mod Crit Chance (1) Value: 3 Radius: 100 yards",
+     "Apply Aura: Proc Trigger Spell Value: 2 Conqueror's Will"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 500551,
@@ -639,7 +1409,30 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell (3) Value: 50 Hellfire Rituals"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 573034,
@@ -656,7 +1449,31 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 30% 1 sec cooldown Demonfire"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704953,
@@ -673,7 +1490,31 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy Value: -20 Hand of Doom",
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707631,
@@ -692,7 +1533,28 @@
    ],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 5% 3 sec cooldown Pestilence Unbound"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 570727,
@@ -709,7 +1571,33 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "AoE",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705008,
@@ -726,7 +1614,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell (2) Value: 25 Demonic Frenzy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704986,
@@ -743,7 +1654,28 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage) Value: 20 Affected Spells: Flames of Xoroth Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 680199,
@@ -760,7 +1692,17 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Leech",
+    "Selfheal",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 300382,
@@ -779,7 +1721,12 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704957,
@@ -796,7 +1743,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Demonic Blade"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 705020,
@@ -813,7 +1783,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Damage Done - % (Physical) Value: 4"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804013,
@@ -830,7 +1823,31 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Value: 15 Radius: 40 yards Fiery Retribution CD",
+     "Apply Aura:"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300375,
@@ -847,7 +1864,15 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801054,
@@ -864,7 +1889,32 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "4 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Melee Critical Damage % (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) [4] Value: 10 Radius: 12 yards",
+     "Apply Aura: Proc Trigger Spell (127) Value: 25 Unleash Death"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Physical",
+    "Crit"
+   ],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true
   },
   {
    "spellId": 680723,
@@ -881,7 +1931,15 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801065,
@@ -898,7 +1956,32 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 30% Forgefiend's Bulwark",
+     "Apply Aura: Mod Combat Rating by % of Stat (Block) [ Strength ]"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Enrage"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 706502,
@@ -915,7 +1998,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 15% Dread"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow",
+    "Fire",
+    "AoE",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 520294,
@@ -932,7 +2041,35 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "10 seconds",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "2 minutes",
+    "GCD": "0 seconds",
+    "Scaling #1": "+10.00% of attack power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Damage Taken - % (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) Value: -30",
+     "Apply Aura: Periodic Heal Value: 6 Interval: 2.5 seconds",
+     "Apply Aura: Mod Healing Taken % from Caster"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Fire",
+    "Selfheal",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804014,
@@ -949,7 +2086,32 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (31) Value: 5 Affected Spells: Demon's Blood",
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive",
+    "Absorb"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 800081,
@@ -966,7 +2128,37 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "2 seconds",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "10 Rage",
+    "Range": "15 yards (Fifteen yards )",
+    "Cast time": "Instant",
+    "Cooldown": "20 seconds",
+    "GCD": "0 seconds",
+    "Scaling #1": "+25.00% of spell power to direct component",
+    "Scaling #2": "+45.00% of attack power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "School Damage: Value: 8 to 9, plus 0.5 per level",
+     "Modify Threat - Flat: Value: 200",
+     "Apply Aura: Silence Value: 50 Mechanic: Silenced"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Physical",
+    "Silence",
+    "Interrupt",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804169,
@@ -983,7 +2175,35 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Fire, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Curse",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "1.5 minutes",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+20.00% of attack power per tick",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodic Damage - Flat Value: 315, plus 0.848 per level Interval: 3 seconds"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "DoT",
+    "Ranged",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300387,
@@ -1000,7 +2220,14 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 301302,
@@ -1017,7 +2244,33 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Torn Flesh"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300390,
@@ -1034,7 +2287,12 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804883,
@@ -1051,7 +2309,35 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "40 yards (Long Range )",
+    "Cast time": "Instant",
+    "Cooldown": "10 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell with Value: (524287) Value: 1 Radius: 8 yards Hellfire Imp",
+     "Trigger Spell: (524287) Add 1 Demonfire",
+     "Give Power: (Rage) Value: 20"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Summon",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300388,
@@ -1068,7 +2354,15 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704958,
@@ -1085,7 +2379,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 3 Indiscriminate"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "AoE",
+    "Cleave"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804879,
@@ -1102,7 +2420,34 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "3 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Area Aura - Raid: Mod Healing Done - % (Physical) Value: 10 Radius: 25 yards",
+     "Unknown Effect (#190) (4) Value: 150 Radius: 25 yards",
+     "Unknown Effect (#190) Value: 50 Radius: 25 yards"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Raidbuff",
+    "AoE"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 572370,
@@ -1119,7 +2464,31 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Ignore Armor) Value: -25 Affected Spells: Skulltaker Rank 1",
+     "Apply Aura: Add Modifier - % (Cost) Value: -100 Affected Spells: Skulltaker Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805074,
@@ -1136,7 +2505,36 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "3 seconds",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "100 Rage",
+    "Range": "40 yards (Long Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "45 seconds",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+100.00% of spell power to direct component",
+    "Scaling #2": "+100.00% of attack power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -40% 2v2 -40% 3v3 -40% Others Open World -40%",
+    "Effects": [
+     "Trigger Spell: Value: 1000 Hellfire Abyssal",
+     "School Damage: Value: 1500 Radius: 8 yards"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Summon",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 803185,
@@ -1153,7 +2551,34 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "5 seconds",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "15 yards (Fifteen yards )",
+    "Cast time": "Instant",
+    "Cooldown": "1.5 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodic Damage - Flat Value: 16 to 17, plus 1 per level Interval: 1 second",
+     "Apply Aura: Periodically Trigger Spell (1) Value: -80 Interval: 1 second Claw Grab",
+     "Apply Aura: Stun Mechanic: Stunned"
+    ]
+   },
+   "primary": "Control",
+   "tags": [
+    "Physical",
+    "Stun",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300374,
@@ -1172,7 +2597,14 @@
    ],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 573036,
@@ -1189,7 +2621,33 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Crit Chance Value: 3",
+     "Apply Aura: Mod All Hit Chance Value: 3",
+     "Apply Aura: Periodic Haste (1)"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Haste"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801061,
@@ -1206,7 +2664,32 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Holy, Fire, Nature, Frost, Shadow, Arcane",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "1 minute",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy:",
+     "Apply Aura: Dummy (127) Value: -30"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Raidbuff",
+    "Reflect"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804786,
@@ -1223,7 +2706,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "4 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Area Aura - Enemy: Mod Damage/Healing Taken % from Caster Radius: 8 yards",
+     "Apply Aura: Proc Trigger Spell (127) Value: 25 Unleash Apocalypse"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Fire"
+   ],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true
   },
   {
    "spellId": 706756,
@@ -1240,7 +2747,35 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "5 seconds",
+    "School": "Fire, Shadow",
+    "Mechanic": "Gripped",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "20 yards (Twenty yards )",
+    "Cast time": "Instant",
+    "Cooldown": "1.5 minutes",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Chains of Xoroth ) Radius: 5 yards",
+     "Persistent Area Aura: Radius: 5 yards"
+    ]
+   },
+   "primary": "Control",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Slow",
+    "AoE",
+    "Ranged"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805678,
@@ -1259,7 +2794,31 @@
    ],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "3 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Value: 15 Radius: 25 yards",
+     "Unknown Effect (#190) (127) Value: 10"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805679,
@@ -1276,7 +2835,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "2 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy:"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Shadow",
+    "Shield",
+    "Absorb",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802619,
@@ -1293,7 +2878,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy Value: 50"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "AoE"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805671,
@@ -1310,7 +2919,35 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "20 Rage",
+    "Range": "30 yards (Medium Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "6 seconds",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+33.62% of spell power to direct component",
+    "Scaling #2": "+33.00% of attack power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "School Damage: Value: 63 to 67, plus 3.60886 per level",
+     "Trigger Spell: Demonfire"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Ranged",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802610,
@@ -1327,7 +2964,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Value: 1 Ascended Warlock"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704988,
@@ -1344,7 +3005,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Multiplier (Bonus)) Value: 25",
+     "Apply Aura: Add Modifier - % (32) Value: 25"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807336,
@@ -1361,7 +3046,32 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Demolished",
+     "Apply Aura: Proc Trigger Spell Value: 1 Demolisher"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Taunt",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 805555,
@@ -1378,7 +3088,35 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "30 Rage",
+    "Range": "5 yards (Combat Range )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1 second",
+    "Requires": "Daggers, Fist Weapons, One-Handed Axes, One-Handed Maces, One-Handed Swords, Polearms, Staves, Two-Handed Axes, Two-Handed Maces, Two-Handed Swords",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Normalized Weapon Damage: Value: 15",
+     "Weapon Damage - %: Value: 100",
+     "Trigger Spell with Value: Generate Rage"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 806965,
@@ -1395,7 +3133,41 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "12 seconds",
+    "School": "Fire, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "20 Rage",
+    "Range": "5 yards (Combat Range )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+16.50% of spell power to direct component",
+    "Scaling #2": "+14.30% of spell power per tick",
+    "Scaling #3": "+11.00% of attack power to direct component",
+    "Scaling #4": "+4.00% of attack power per tick",
+    "Requires": "Daggers, Fist Weapons, One-Handed Axes, One-Handed Maces, One-Handed Swords, Polearms, Staves, Two-Handed Axes, Two-Handed Maces, Two-Handed Swords",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Periodic Damage - Flat Value: 18 to 20 Interval: 3 seconds",
+     "Apply Aura: Mod Damage/Healing Taken % from Caster Affected Spells: Hellmaw Rank 1-7",
+     "School Damage: Value: 18 to 20"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Melee",
+    "DoT",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 520290,
@@ -1412,7 +3184,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage) Value: 25 Affected Spells: Skulltaker Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805669,
@@ -1429,7 +3224,33 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire, Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "1 minute",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect: (6) Value: 1",
+     "Give Power: (Rage) Value: 50"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704979,
@@ -1446,7 +3267,28 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 ms cooldown Domination"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 560633,
@@ -1463,7 +3305,32 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 0.1 sec cooldown Pestilence Unbound",
+     "Apply Aura: Proc Trigger Spell 0.1 sec cooldown Pestilence Unbound",
+     "Apply Aura: Proc Trigger Spell 0.1 sec cooldown Pestilence Unbound"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704954,
@@ -1480,7 +3347,28 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (All Effects) Value: 30"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 302581,
@@ -1497,7 +3385,14 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 520008,
@@ -1514,7 +3409,31 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Blood Frenzy DF"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 707515,
@@ -1531,7 +3450,32 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: -100 Affected Spells: Burning Blade",
+     "Apply Aura: Add Modifier - Flat (Proc Chance) Value: 100 Affected Spells: Burning Blade"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805696,
@@ -1548,7 +3492,33 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "2 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Damage Done - % (Fire) Value: 20",
+     "Apply Aura: Mod Spell School Crit Chance (Fire) Value: 15"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Crit",
+    "Buff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 301358,
@@ -1565,7 +3535,32 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Critical Hit Chance) Value: 20",
+     "Apply Aura: Proc Trigger Spell Seething Strikes"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 300376,
@@ -1582,7 +3577,15 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Haste",
+    "Enrage"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 705018,
@@ -1599,7 +3602,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Dismemberment"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 300384,
@@ -1618,7 +3644,12 @@
    ],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300386,
@@ -1635,7 +3666,15 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Crit",
+    "Enrage"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706565,
@@ -1652,7 +3691,31 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards Proc chance: 20% 0.1 sec cooldown Firebolt"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704973,
@@ -1669,7 +3732,31 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Cannot Find Aura (354) Value: 30"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704971,
@@ -1686,7 +3773,30 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 5% 5 sec cooldown Pestilence Unbound"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704956,
@@ -1703,7 +3813,31 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (31) Value: 5 Affected Spells: Demon's Blood"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704182,
@@ -1720,7 +3854,29 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (All Effects) Value: 50 Affected Spells: Pestilence of Conquest",
+     "Apply Aura: Add Modifier - % (Damage) Value: 50"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704987,
@@ -1737,7 +3893,32 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Spiked Chains",
+     "Apply Aura: Override Class Script (20014) [64] Value: 100"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Melee"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704989,
@@ -1756,7 +3937,33 @@
    ],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Duration) Value: 3000 Affected Spells: Hellmaw Rank 1-7",
+     "Apply Aura: Add Modifier - % (Damage over Time) Value: 25 Affected Spells: Hellmaw Rank 1-7"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Shadow",
+    "DoT"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802342,
@@ -1773,7 +3980,33 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40 Rage",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "30 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Trigger Spell: (524287) Value: 1 Hellstorm",
+     "Unknown Effect: (120692)"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 680991,
@@ -1790,7 +4023,12 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805697,
@@ -1809,7 +4047,31 @@
    ],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Override Class Script (20001) [30] Value: 20"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807669,
@@ -1826,7 +4088,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) (28) Value: 30 Radius: 100 yards"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802602,
@@ -1843,7 +4129,34 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "12 seconds",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "50 Rage",
+    "Range": "40 yards (Long Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "30 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Transform ( Outland Doomguard, Orange ) Radius: 45 yards",
+     "Apply Aura: Mod Damage Done - % (Physical, Holy, Fire, Nature, Frost, Shadow, Arcane) Value: 20 Radius: 45 yards",
+     "Dummy: Radius: 45 yards Doom"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "Summon",
+    "DoT"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 680900,
@@ -1860,7 +4173,12 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 705000,
@@ -1877,7 +4195,32 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Critical Hit Chance) Value: 5 Affected Spells: Flames of Xoroth Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "Crit",
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 520295,
@@ -1894,7 +4237,35 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "6 seconds",
+    "School": "Fire",
+    "Mechanic": "Enraged",
+    "Dispel type": "Enrage",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "1 minute",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mechanic Immunity (Sapped)",
+     "Apply Aura: Mechanic Immunity (Banished)",
+     "Apply Aura: Mechanic Immunity (Polymorphed)"
+    ]
+   },
+   "primary": "CD Defensif",
+   "tags": [
+    "Fire",
+    "Enrage",
+    "Immunity",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706590,
@@ -1911,7 +4282,30 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Proc chance: 10% 1 sec cooldown Add 1 Demonfire"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 704980,
@@ -1928,7 +4322,29 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cost) Affected Spells: Unleash Pestilence",
+     "Apply Aura: Add Modifier - % (Duration) Value: 50 Affected Spells: Mark of Korth'azz Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704186,
@@ -1945,7 +4361,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 2) Value: 10 Affected Spells: Brimstone Bludgeon"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 800702,
@@ -1962,7 +4401,32 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell (800703) Value: 800704 Hellknight"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical",
+    "Haste",
+    "Crit"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 805695,
@@ -1982,7 +4446,30 @@
    ],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Damage) Value: 10 Affected Spells: Brimstone Bludgeon"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Physical"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 524897,
@@ -1999,7 +4486,38 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "12 seconds",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "40 seconds",
+    "GCD": "0 seconds",
+    "Scaling #1": "+50.00% of spell power to direct component",
+    "Scaling #2": "+10.00% of attack power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon: ( Hellfire Imp ) Radius: 2 yards",
+     "School Damage: Value: 51 to 95, plus 2.15 per level Radius: 10 yards",
+     "Give Power: (Rage) Value: 30"
+    ]
+   },
+   "primary": "CD Offensif",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Summon",
+    "Generator",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 681449,
@@ -2016,7 +4534,32 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 3 sec cooldown Add 1 Demonfire",
+     "Apply Aura: Proc Trigger Spell 3 sec cooldown Energize +5 Rage"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator",
+    "Defensive"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 707632,
@@ -2033,7 +4576,30 @@
    "altSpellIds": [],
    "sources": [
     "War"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Charges) Value: 4 Affected Spells: Burning Blade"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 300395,
@@ -2050,7 +4616,14 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "primary": "Passive",
+   "tags": [
+    "Selfheal"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805793,
@@ -2067,7 +4640,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -10% 2v2 -10% 3v3 -10% Others Open World -10%",
+    "Effects": [
+     "Apply Aura: Dummy Witching Shroud"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707835,
@@ -2084,7 +4678,28 @@
    "altSpellIds": [],
    "sources": [
     "class"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - % (Cooldown) Value: -20 Affected Spells: Dreadrider's Stomp"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 805706,
@@ -2101,7 +4716,32 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire",
+    "DoT",
+    "Spender"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 704994,
@@ -2118,7 +4758,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Area Aura - Raid: Mod Melee Attack Power - % (1) Value: 5 Radius: 100 yards",
+     "Apply Area Aura - Raid: Mod Ranged Attack Power - % (1) Value: 5 Radius: 100 yards"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Raidbuff"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 500578,
@@ -2135,7 +4799,31 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Unknown Effect (#190) Radius: 100 yards Proc chance: 25% 1 ms cooldown Partners in Flames",
+     "Apply Aura: Dummy"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": false
   },
   {
    "spellId": 807671,
@@ -2152,7 +4840,30 @@
    "altSpellIds": [],
    "sources": [
     "Hellfire"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 20 Affected Spells: Gore Rank 1"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Fire"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706754,
@@ -2169,7 +4880,30 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 1) Value: 2 Affected Spells: Call: Hellfire Imp"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Summon"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 707232,
@@ -2186,7 +4920,28 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Add Modifier - Flat (Effect 3) Value: 20 Affected Spells: Suffuse"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807144,
@@ -2203,7 +4958,28 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell 1 sec cooldown Hellfire Imp"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 807587,
@@ -2220,7 +4996,33 @@
    "altSpellIds": [],
    "sources": [
     "Defiance"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell Hellfire Bellows2"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "AoE",
+    "Melee",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804284,
@@ -2237,7 +5039,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Shadow",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy",
+     "Apply Aura: Add Modifier - Flat (Cost) Affected Spells: Infernal Strike Rank 1-11",
+     "Apply Aura: Add Modifier - Flat (Effect 2) Value: 100 Affected Spells: Infernal Strike Rank 1-11"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Shadow"
+   ],
+   "passive": true,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 804345,
@@ -2254,7 +5082,31 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Dummy (36) Value: 30",
+     "Apply Aura: Proc Trigger Spell Proc chance: 25% 0.5 sec cooldown Demon's Blood"
+    ]
+   },
+   "primary": "Passive",
+   "tags": [
+    "Generator"
+   ],
+   "passive": true,
+   "grantsProc": true,
+   "grantsBuff": true
   },
   {
    "spellId": 804773,
@@ -2271,7 +5123,31 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "5 seconds",
+    "Cooldown": "n/a",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon Player:"
+    ]
+   },
+   "primary": "Control",
+   "tags": [
+    "Fire"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false,
+   "confidence": "low"
   },
   {
    "spellId": 801059,
@@ -2288,7 +5164,36 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "15 seconds",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "15 Rage",
+    "Range": "5 yards (Combat Range )",
+    "Cast time": "Instant cast",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Scaling #1": "+16.65% of spell power to direct component",
+    "Scaling #2": "+15.00% of attack power to direct component",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "School Damage: Value: 14 to 15, plus 0.216667 per level Radius: 12 yards",
+     "Apply Aura: Mod Damage/Healing Taken % from Caster Radius: 12 yards"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Melee",
+    "AoE",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801042,
@@ -2305,7 +5210,33 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "5 seconds",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "10 yards (Ten yards )",
+    "Cast time": "Instant",
+    "Cooldown": "15 seconds",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Dummy: Value: 1 Radius: 10 yards",
+     "Apply Aura: Regenerate Health - % Value: 4 Interval: 1 second",
+     "Unknown Effect (#190) Value: 4 Radius: 20 yards Interval: 1 second"
+    ]
+   },
+   "primary": "Heal",
+   "tags": [
+    "Physical",
+    "Selfheal"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 804683,
@@ -2322,7 +5253,31 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "2 minutes",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "10 seconds",
+    "Cooldown": "20 minutes",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Summon Object: ( Anvil ) Radius: 3 yards",
+     "Summon Object: ( Forge ) Radius: 3 yards"
+    ]
+   },
+   "primary": "Utility",
+   "tags": [
+    "Fire"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 801016,
@@ -2339,7 +5294,34 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Fire",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "40 Rage",
+    "Range": "5 yards (Combat Range )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "Requires": "Daggers, Fist Weapons, One-Handed Axes, One-Handed Maces, One-Handed Swords, Polearms, Staves, Two-Handed Axes, Two-Handed Maces, Two-Handed Swords",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Normalized Weapon Damage: Value: 3",
+     "Weapon Damage - %: (524287) Value: 55"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Fire",
+    "Melee",
+    "Spender"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 706589,
@@ -2356,7 +5338,32 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "30 minutes",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "Magic",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "40 yards (Long Range )",
+    "Cast time": "Instant",
+    "Cooldown": "n/a",
+    "GCD": "1.5 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Mod Resistance - Flat (not stacking) (Fire) Value: 5",
+     "Apply Aura: Mod Stat - Flat (Strength) Value: 3"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Fire",
+    "Raidbuff"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   },
   {
    "spellId": 802345,
@@ -2373,7 +5380,30 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "0 yards (Self Only )",
+    "Cast time": "Instant",
+    "Cooldown": "4 seconds",
+    "GCD": "0 seconds",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Apply Aura: Proc Trigger Spell (127) Value: 25 Unleash War"
+    ]
+   },
+   "primary": "Buff",
+   "tags": [
+    "Physical"
+   ],
+   "passive": false,
+   "grantsProc": true,
+   "grantsBuff": true
   },
   {
    "spellId": 500904,
@@ -2390,7 +5420,35 @@
    "altSpellIds": [],
    "sources": [
     "baseline"
-   ]
+   ],
+   "details": {
+    "Duration": "n/a",
+    "School": "Physical",
+    "Mechanic": "n/a",
+    "Dispel type": "n/a",
+    "GCD category": "n/a",
+    "Cost": "None",
+    "Range": "5 yards (Combat Range )",
+    "Cast time": "Instant",
+    "Cooldown": "4 seconds",
+    "GCD": "1.5 seconds",
+    "Requires": "Daggers, Fist Weapons, One-Handed Axes, One-Handed Maces, One-Handed Swords, Polearms, Staves, Two-Handed Axes, Two-Handed Maces, Two-Handed Swords",
+    "COA PvP Mods": "Arenas 1v1 -20% 2v2 -20% 3v3 -20% Others Open World -20%",
+    "Effects": [
+     "Normalized Weapon Damage: Value: 3",
+     "Weapon Damage - %: Value: 100",
+     "Trigger Spell with Value: Value: 200 Generate Rage"
+    ]
+   },
+   "primary": "Rotational",
+   "tags": [
+    "Physical",
+    "Melee",
+    "Generator"
+   ],
+   "passive": false,
+   "grantsProc": false,
+   "grantsBuff": false
   }
  ]
 }
