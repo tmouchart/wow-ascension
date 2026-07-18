@@ -128,7 +128,10 @@ export function Editor({ slug }: { slug: string }) {
         </main>
         <Inspector slug={slug} />
       </div>
-      <DragOverlay modifiers={[centerOverlayOnCursor]} dropAnimation={null}>
+      {/* fit-content: dnd-kit sizes the overlay to the SOURCE node (the ~280px palette row), leaving the
+          44px icon stuck at its left edge — the modifier would center the empty 280px box, not the icon.
+          Shrink-wrapping makes overlayNodeRect measure the actual content, so centering lands on the icon. */}
+      <DragOverlay modifiers={[centerOverlayOnCursor]} dropAnimation={null} style={{ width: 'fit-content', height: 'fit-content' }}>
         {overlay ? (
           <div className="pointer-events-none">
             {overlay.icon
