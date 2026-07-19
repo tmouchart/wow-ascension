@@ -4,6 +4,7 @@ import { useStore, activeSpec, type Spec } from '../store';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
+import { Markdown } from './Markdown';
 
 // In-app AI agent: natural-language edits to the current SPEC. Posts { slug, spec, messages } to the backend
 // (/api/agent, proxied to server/server.js in dev), which STREAMS back NDJSON events (model/text/tool/done/
@@ -135,8 +136,17 @@ export function AgentPanel({ slug }: { slug: string }) {
                     <span className="mr-1.5 text-[11px] font-semibold uppercase tracking-wide opacity-60">
                       {t.role === 'user' ? 'you' : 'agent'}
                     </span>
-                    {t.text}
-                    {t.streaming && <span className="ml-0.5 animate-pulse">▍</span>}
+                    {t.role === 'agent' ? (
+                      <div className="mt-0.5">
+                        {t.text && <Markdown>{t.text}</Markdown>}
+                        {t.streaming && <span className="ml-0.5 animate-pulse">▍</span>}
+                      </div>
+                    ) : (
+                      <>
+                        {t.text}
+                        {t.streaming && <span className="ml-0.5 animate-pulse">▍</span>}
+                      </>
+                    )}
                   </div>
                   {t.trace && t.trace.length > 0 && (
                     <div className="mt-1 flex flex-wrap items-center gap-1">
