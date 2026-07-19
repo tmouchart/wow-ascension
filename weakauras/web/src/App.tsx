@@ -9,9 +9,12 @@ import {
   listSnapshots,
   saveSnapshot,
   deleteSnapshot,
+  hasWelcomed,
+  markWelcomed,
   type Snapshot,
 } from './lib/persistence';
 import { Editor } from './components/Editor';
+import { WelcomeModal } from './components/WelcomeModal';
 import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
 import {
@@ -39,6 +42,7 @@ export function App() {
   const [saveName, setSaveName] = useState('');
   const [savedOpen, setSavedOpen] = useState(false);
   const [snaps, setSnaps] = useState<Snapshot[]>(() => listSnapshots());
+  const [showWelcome, setShowWelcome] = useState(() => !hasWelcomed());
 
   const storeSlug = useStore((st) => st.slug);
   const storeSpec = useStore((st) => st.spec);
@@ -59,6 +63,13 @@ export function App() {
   function pickClass(next: string) {
     setSlug(next);
     setStatus('');
+  }
+
+  // First-visit welcome: apply the chosen class and never show the modal again.
+  function confirmWelcome(next: string) {
+    pickClass(next);
+    markWelcomed();
+    setShowWelcome(false);
   }
 
   // Save the current working WA as a named snapshot in localStorage.
@@ -137,6 +148,9 @@ export function App() {
 
   return (
     <div className="grid h-screen grid-rows-[auto_1fr]">
+      {showWelcome && (
+        <WelcomeModal classes={CLASSES} defaultSlug={slug} onConfirm={confirmWelcome} />
+      )}
       <header className="flex h-14 items-center gap-4 border-b bg-[image:var(--grad-bar)] px-4">
         <div className="flex items-center gap-2.5 font-semibold">
           <span className="grid size-7 place-items-center rounded-md bg-primary text-sm font-bold text-primary-foreground shadow-sm">

@@ -9,6 +9,7 @@ import type { Spec } from '../store';
 const DRAFTS_KEY = 'waforge.drafts.v1';
 const LAST_SLUG_KEY = 'waforge.lastSlug.v1';
 const SNAPSHOTS_KEY = 'waforge.snapshots.v1';
+const WELCOMED_KEY = 'waforge.welcomed.v1';
 
 export type Snapshot = { id: string; name: string; slug: string; spec: Spec; createdAt: number };
 
@@ -47,6 +48,15 @@ export function clearDraft(slug: string): void {
 }
 export function loadLastSlug(): string | undefined {
   return read<string | undefined>(LAST_SLUG_KEY, undefined);
+}
+
+// --- First-visit welcome flag ----------------------------------------------
+// True once the user has dismissed the welcome modal, so it only shows on a first-ever visit.
+export function hasWelcomed(): boolean {
+  return read<boolean>(WELCOMED_KEY, false);
+}
+export function markWelcomed(): void {
+  write(WELCOMED_KEY, true);
 }
 
 // --- Named snapshots --------------------------------------------------------
