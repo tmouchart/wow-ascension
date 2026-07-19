@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors, pointerWithin, closestCenter, type CollisionDetection, type DragStartEvent, type DragEndEvent, type Modifier } from '@dnd-kit/core';
 import { getEventCoordinates } from '@dnd-kit/utilities';
 
@@ -25,6 +25,7 @@ import { useRegistry, type Ability } from '../registry';
 import { useStore, elementLabel, type Ref } from '../store';
 import { buildDefaultSpec } from '../lib/defaultSpec';
 import { PRESETS } from '../specs';
+import { loadDraft } from '../lib/persistence';
 
 // Two independent drag worlds share one DndContext: icons/abilities target rows & rails ('row'/'icon'
 // droppables), stack elements target each other ('el' sortables). Filtering the containers by the active
@@ -41,18 +42,19 @@ const collisionByType: CollisionDetection = (args) => {
 export function Editor({ slug }: { slug: string }) {
   const { abilities, className, resolveIcon, loading } = useRegistry(slug);
   const spec = useStore((st) => st.spec);
-  const setClass = useStore((st) => st.setClass);
+  const storeSlug = useStore((st) => st.slug);
+  const switchClass = useStore((st) => st.switchClass);
   const addIcon = useStore((st) => st.addIcon);
 
-  // On class switch, load that class's SPEC: a curated preset (classes/<name>/spec.json) when one exists;
-  // every other class gets an auto-default from its registry (cooldowns + power + health). Runs once per
-  // slug (once the registry has loaded), so it never clobbers the user's edits.
-  const inited = useRef('');
+  // Load a class into the store when the selected class (App `slug`) differs from what's loaded
+  // (`storeSlug`): its saved draft if any, else a curated preset (classes/<name>/spec.json), else an
+  // auto-default built from the registry (cooldowns + power + health). switchClass sets slug+spec atomically,
+  // so once loaded slug === storeSlug and this never re-fires — user edits (which keep slug) are never
+  // clobbered. Gated on `loading` so a no-preset class waits for its abilities before building the default.
   useEffect(() => {
-    if (loading || inited.current === slug) return;
-    inited.current = slug;
-    setClass(PRESETS[slug] ?? buildDefaultSpec(slug, className, abilities));
-  }, [slug, loading, abilities, className, setClass]);
+    if (loading || slug === storeSlug) return;
+    switchClass(slug, loadDraft(slug) ?? PRESETS[slug] ?? buildDefaultSpec(slug, className, abilities));
+  }, [slug, storeSlug, loading, abilities, className, switchClass]);
   const insertIcon = useStore((st) => st.insertIcon);
   const moveIcon = useStore((st) => st.moveIcon);
   const moveElement = useStore((st) => st.moveElement);

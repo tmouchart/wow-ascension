@@ -1,5 +1,7 @@
 import { create } from 'zustand';
 import felswornSpec from '../../classes/felsworn/spec.json';
+import { PRESETS } from './specs';
+import { loadDraft, loadLastSlug } from './lib/persistence';
 
 // The SPEC is the single source of truth the editor mutates; the preview and the generator both read it.
 export type IconCfg = { label?: string; spell: number | string; byName?: boolean; fallbackIcon?: string; _uid?: string; [k: string]: unknown };
@@ -74,9 +76,11 @@ export function elementLabel(el: El): string {
 }
 
 interface Store {
+  slug: string;
   spec: Spec;
   sel: IconSel | null;
   setClass: (spec: Spec) => void;
+  switchClass: (slug: string, spec: Spec) => void;
   select: (sel: IconSel | null) => void;
   addIcon: (ref: Ref, icon: IconCfg) => void;
   insertIcon: (ref: Ref, index: number, icon: IconCfg) => void;
@@ -90,14 +94,26 @@ interface Store {
   setElementField: (stackIndex: number, key: string, value: unknown) => void;
   setGlobal: (key: string, value: number) => void;
   setCombatOnly: (v: boolean) => void;
+  forceReload: () => void;
   reset: () => void;
 }
 
+// Boot: reopen on the last-edited class, restoring its saved draft (or its preset). If the last class has
+// neither a draft nor a preset (a no-preset class whose draft wasn't flushed), we can't build its default
+// SPEC synchronously (that needs the async registry) — so we boot with a sentinel slug that forces the
+// Editor's load effect to run once the registry is ready. `initialSlug` drives App's class dropdown.
+export const initialSlug = loadLastSlug() ?? 'felsworn';
+const bootSpec = loadDraft(initialSlug) ?? PRESETS[initialSlug];
+
 export const useStore = create<Store>((set) => ({
-  spec: stampSpec(clone(felswornSpec) as Spec),
+  slug: bootSpec ? initialSlug : '__boot__',
+  spec: stampSpec(clone((bootSpec ?? felswornSpec) as Spec)),
   sel: null,
-  // Replace the whole SPEC (on class switch). stampSpec gives fresh sortable ids.
+  // Replace the whole SPEC in place, keeping the current class (import / agent / undo). stampSpec gives
+  // fresh sortable ids.
   setClass: (spec) => set({ spec: stampSpec(clone(spec)), sel: null }),
+  // Load a class: set slug AND spec atomically so autosave never pairs a new slug with the old spec.
+  switchClass: (slug, spec) => set({ slug, spec: stampSpec(clone(spec)), sel: null }),
   select: (sel) => set({ sel }),
   addIcon: (ref, icon) => set((st) => {
     const spec = clone(st.spec);
@@ -185,7 +201,11 @@ export const useStore = create<Store>((set) => ({
     else delete spec.combatOnly;
     return { spec };
   }),
-  reset: () => set({ spec: stampSpec(clone(felswornSpec) as Spec), sel: null }),
+  // Force the Editor's load effect to re-fire (it has the registry needed to rebuild a non-preset default):
+  // set a sentinel slug so it no longer matches App's selected class. Used by "Reset to preset" after the
+  // class's draft is cleared.
+  forceReload: () => set({ slug: '__reload__' }),
+  reset: () => set({ slug: 'felsworn', spec: stampSpec(clone(felswornSpec) as Spec), sel: null }),
 }));
 
 // Dev-only handle for debugging/automation in the browser console (harmless; stripped from prod builds).
