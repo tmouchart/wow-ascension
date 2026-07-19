@@ -1,0 +1,28 @@
+{
+  "slug": "starcaller",
+  "id": "Starcaller Warden SPEC",
+  "name": "starcaller-warden-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Umbral Blade", "spell": 680704 },
+      { "label": "Wardens Blade", "spell": 805508 },
+      { "label": "Avatar of Vengeance", "spell": 680822, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Shadowsongs Mandate", "spell": 805439 },
+      { "label": "Halt", "spell": 807741 },
+      { "label": "Shooting Star", "spell": 800505 },
+      { "label": "Starshatter", "spell": 801135 },
+      { "label": "Moonwell", "spell": 804739 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Aspect of the Cosmos", "label": "Aspect of the Cosmos  %p", "warnText": "Aspect", "bg": [0.05, 0.08, 0.14, 0.85] },
+    { "kind": "stacks", "auraNames": ["Scattered Stars"], "count": 4, "hi": [0.4, 0.75, 1, 1], "lo": [0.1, 0.25, 0.55, 1],
+      "capGlow": { "at": 4, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Infused Aegis", "spell": 704777 },
+      { "label": "Astral Aegis", "spell": 806155 },
+      { "label": "Vial of Moonwell Water", "spell": 804652 }
+    ] }
+  ]
+}

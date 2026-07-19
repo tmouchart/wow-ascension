@@ -1,0 +1,28 @@
+{
+  "slug": "pyromancer",
+  "id": "Pyromancer Draconic SPEC",
+  "name": "pyromancer-draconic-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Destroyer's Maw", "spell": 802107 },
+      { "label": "Firefall", "spell": 801905 },
+      { "label": "Draconic Invocation", "spell": 802119, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Death From Above", "spell": 520402 },
+      { "label": "Aspect's Blessing", "spell": 802168 },
+      { "label": "Breath of Neltharion", "spell": 511109 },
+      { "label": "Firestorm", "spell": 802791 },
+      { "label": "Cataclysm", "spell": 520218 },
+      { "label": "Essence of Malygos", "spell": 802120 },
+      { "label": "Circle of Fire", "spell": 800807 },
+      { "label": "Gaze of Ysera", "spell": 806148 },
+      { "label": "Grace of Alexstrasza", "spell": 802167 }
+    ] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1],
+      "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "stacks", "auraNames": ["Flamecasting"], "count": 5,
+      "hi": [1, 0.62, 0.12, 1], "lo": [0.45, 0.18, 0.02, 1],
+      "capGlow": { "at": 5, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] }
+  ]
+}

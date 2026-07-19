@@ -1,0 +1,27 @@
+{
+  "slug": "ranger",
+  "id": "Ranger Farstrider SPEC",
+  "name": "ranger-farstrider-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Onslaught", "spell": 801951, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Thalassian Brand", "spell": 560805 },
+      { "label": "Falcons Call", "spell": 804715 },
+      { "label": "Frenzy", "spell": 520492 },
+      { "label": "Woodland Arrow", "spell": 806368 },
+      { "label": "Cutthroat", "spell": 800359 },
+      { "label": "Survival Potion", "spell": 802839 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Horn of Perseverance", "label": "Horn  %p", "warnText": "Horn", "bg": [0.06, 0.08, 0.03, 0.85] },
+    { "kind": "powerBar", "powerType": 2, "hi": [0.45, 0.78, 0.22, 1], "lo": [0.16, 0.32, 0.06, 1], "bg": [0.06, 0.1, 0.03, 0.85] },
+    { "kind": "stacks", "auraNames": ["Advantage"], "count": 5, "hi": [0.95, 0.72, 0.15, 1], "lo": [0.4, 0.28, 0.04, 1],
+      "capGlow": { "at": 5, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Adrenaline Rush", "spell": 520578 },
+      { "label": "Briar Veil", "spell": 800084 },
+      { "label": "Woodland Adept", "spell": 570015 }
+    ] }
+  ]
+}

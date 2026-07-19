@@ -1,0 +1,26 @@
+{
+  "slug": "reaper",
+  "id": "Reaper Harvest SPEC",
+  "name": "reaper-harvest-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "icons": [
+      { "label": "Slaughter", "spell": 500373, "execute": 35,
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Harvest Time", "spell": 803995, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Harvesting Grounds", "spell": 705413 },
+      { "label": "Crows Harvest", "spell": 504011 },
+      { "label": "Ghastly Screech", "spell": 806146 },
+      { "label": "Masochistic Rage", "spell": 803030 }
+    ] },
+    { "kind": "stacks", "auraNames": ["Reaped Soul"], "count": 5, "hi": [0.45, 0.88, 0.72, 1], "lo": [0.08, 0.3, 0.26, 1],
+      "capGlow": { "at": 3, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Limbo", "spell": 800845 },
+      { "label": "Jailers Bargain", "spell": 805718 }
+    ] }
+  ]
+}

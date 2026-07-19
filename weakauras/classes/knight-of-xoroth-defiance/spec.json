@@ -1,0 +1,30 @@
+{
+  "slug": "knight-of-xoroth",
+  "id": "Knight of Xoroth Defiance SPEC",
+  "name": "knight-of-xoroth-defiance-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Sacrificial Circle", "spell": 805677 },
+      { "label": "Curse of Xoroth", "spell": 804169 },
+      { "label": "Legions Presence", "spell": 804879 },
+      { "label": "Call Hellfire Abyssal", "spell": 805074 },
+      { "label": "Chains of Xoroth", "spell": 706756 },
+      { "label": "Implosion", "spell": 524897, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Chains of Malice", "spell": 803185 },
+      { "label": "Demon Heart", "spell": 805669 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Pestilence of War", "label": "Pestilence of War  %p", "warnText": "Pestilence of War", "bg": [0.1, 0.02, 0.03, 0.85] },
+    { "kind": "uptimeBar", "buff": "Curse of Xoroth", "label": "Curse of Xoroth  %p", "warnText": "Curse of Xoroth", "bg": [0.1, 0.02, 0.03, 0.85] },
+    { "kind": "stacks", "auraNames": ["Demonfire"], "count": 6, "hi": [0.9, 0.24, 0.16, 1], "lo": [0.32, 0.03, 0.03, 1],
+      "capGlow": { "at": 6, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "powerBar", "powerType": 1, "hi": [0.85, 0.15, 0.22, 1], "lo": [0.35, 0.05, 0.08, 1], "bg": [0.12, 0.02, 0.03, 0.8] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Juggernaut", "spell": 520294 },
+      { "label": "Xorothian Sigil", "spell": 801061 },
+      { "label": "Black Shield", "spell": 805679 },
+      { "label": "Burning Rage", "spell": 520295 }
+    ] }
+  ]
+}
