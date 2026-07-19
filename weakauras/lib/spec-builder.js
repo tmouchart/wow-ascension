@@ -549,4 +549,4 @@ function specToParts(spec) {
   return { name: spec.name || spec.id, group, children, combatOnly: spec.combatOnly };
 }
 
-module.exports = { specToParts };
+module.exports = { specToParts, elementHeight, rowHeight };
