@@ -8,6 +8,17 @@ import type { IconResolver } from '../registry';
 
 const rgba = (c?: number[]) => (c ? `rgba(${Math.round(c[0] * 255)},${Math.round(c[1] * 255)},${Math.round(c[2] * 255)},${c[3] ?? 1})` : '#666');
 const grad = (hi?: number[], lo?: number[]) => `linear-gradient(180deg, ${rgba(hi)}, ${rgba(lo ?? hi)})`;
+// A configured glow → the preview glow: its colour (undefined when unset, so the CSS default white applies)
+// + style (default buttonOverlay). In a procRow the legacy buff/execute/stealable sugar — and a bare proc —
+// carry an implicit Action Button glow (matching the generator & ProcPanel); only the when-DSL form can be
+// glow-less. Elsewhere (cdRow / rails) the glow is exactly `ic.glow`.
+const glowOf = (ic: IconCfg, kind?: string): { color?: string; type: string } | undefined => {
+  let g = ic.glow as { color?: number[]; glowType?: string } | undefined;
+  if (kind === 'procRow' && g === undefined && !ic.when) {
+    g = { ...(ic.glowColor ? { color: ic.glowColor as number[] } : {}), ...(ic.glowType ? { glowType: ic.glowType as string } : {}) };
+  }
+  return g ? { color: g.color ? rgba(g.color) : undefined, type: g.glowType ?? 'buttonOverlay' } : undefined;
+};
 
 // Preview-only visual scale: everything renders at (real WA size x Z) px. Applied as native geometry (real
 // widths/heights) rather than a CSS zoom/transform, because dnd-kit's drag math breaks under a scaled
@@ -32,7 +43,7 @@ function StackItem({ id, index, children }: { id: string; index: number; childre
 
 // An existing preview icon: draggable + sortable (reorder within a container / move between containers) +
 // removable. `ref` is the container it lives in (a stack index, or 'left'/'right' for a side rail).
-function IconCell({ id, url, size, containerRef, iconIndex }: { id: string; url: string; size: number; containerRef: Ref; iconIndex: number }) {
+function IconCell({ id, url, size, containerRef, iconIndex, glow }: { id: string; url: string; size: number; containerRef: Ref; iconIndex: number; glow?: { color?: string; type: string } }) {
   const removeIcon = useStore((st) => st.removeIcon);
   const select = useStore((st) => st.select);
   const sel = useStore((st) => st.sel);
@@ -42,13 +53,16 @@ function IconCell({ id, url, size, containerRef, iconIndex }: { id: string; url:
   });
   return (
     <div ref={setNodeRef} {...attributes} {...listeners}
-      className={s.wicon}
+      className={s.wicon} data-glow={glow?.type} data-sel={isSel ? '' : undefined}
       onClick={() => select(isSel ? null : { ref: containerRef, iconIndex })}
       style={{
         width: px(size), height: px(size), backgroundImage: `url(${url})`, cursor: 'grab',
         transform: CSS.Transform.toString(transform), transition, opacity: isDragging ? 0.4 : 1,
         boxShadow: isSel ? '0 0 0 2px var(--ring)' : undefined,
+        ['--gc' as string]: glow?.color,
       }}>
+      {/* the glow this icon carries, shown while hovered (rotating bloom + pulsing halo) */}
+      {glow && <i className={s.glow} aria-hidden />}
       {/* stopPropagation so clicking the remove button never starts a drag */}
       <button className={s.rm} title="Remove" onPointerDown={(e) => e.stopPropagation()} onClick={(e) => { e.stopPropagation(); removeIcon(containerRef, iconIndex); }}>&times;</button>
     </div>
@@ -66,7 +80,7 @@ function IconRow({ el, index, size, W, gap, resolve, dragging }: { el: El; index
         <div className={s.iconrow} style={{ width: px(W), gap, minHeight: px(size) }}>
           {icons.length === 0 && <span className={s.empty}>drop abilities here</span>}
           {icons.map((ic: IconCfg, i) => (
-            <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={index} iconIndex={i} />
+            <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={index} iconIndex={i} glow={glowOf(ic, el.kind)} />
           ))}
         </div>
       </SortableContext>
@@ -86,7 +100,7 @@ function Rail({ side, el, size, gap, resolve, dragging }: { side: 'left' | 'righ
       <SortableContext items={ids} strategy={verticalListSortingStrategy}>
         {icons.length === 0 && <span className={s.railempty}>{side}</span>}
         {icons.map((ic: IconCfg, i) => (
-          <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={side} iconIndex={i} />
+          <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={side} iconIndex={i} glow={glowOf(ic, el?.kind)} />
         ))}
       </SortableContext>
     </div>

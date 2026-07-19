@@ -69,3 +69,64 @@
 .wbar .txt { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 10px; color: #fff; text-shadow: 0 1px 2px #000; }
 .stacks { display: flex; gap: 3px; }
 .stbox { flex: 1; border-radius: 2px; border: 1px solid #000; }
+
+/* ---- hover flourish: a bar demos itself filling 0->100->0, its gradient drifting slightly ---- */
+.wbar:hover .fill { animation: barFill 3s ease-in-out infinite, barDrift 1.6s linear infinite alternate; }
+@keyframes barFill { 0% { width: 0%; } 45%, 55% { width: 100%; } 100% { width: 0%; } }
+/* size >100% so there's spare gradient to slide; animated props override the inline `background` shorthand */
+@keyframes barDrift {
+  from { background-size: 100% 200%; background-position: 50% 0%; }
+  to   { background-size: 100% 200%; background-position: 50% 100%; }
+}
+
+/* ---- hover glow: an icon that carries a configured glow shows it while hovered ---- */
+/* The WoW "Action Button" proc glow = a gold light travelling around the icon BORDER (+ a soft halo).
+   A registered angle lets the conic gradient rotate while the masked border frame stays put, so the bright
+   spots travel around the perimeter instead of the whole icon blooming. */
+@property --waAngle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.glow {
+  position: absolute; inset: -2px; border-radius: 5px; z-index: 2;
+  opacity: 0; pointer-events: none; transition: opacity .14s ease;
+  /* the glow's configured colour drives it; white is the fallback (the taxonomy default for Action Button) */
+  --gl: var(--gc, #fff);
+}
+/* shown while hovered OR while the icon is selected (so you can see it as you edit it in the inspector) */
+.wicon:hover .glow, .wicon[data-sel] .glow { opacity: 1; }
+/* the travelling light, clipped to a thick border ring via the padding + mask-exclude trick. A continuous
+   coloured frame with two brighter hot-spots and two dim gaps that rotate around the perimeter. */
+.glow::before {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 5px;
+  background: conic-gradient(from var(--waAngle),
+    var(--gl) 0deg, var(--glHot, #fff6d0) 40deg, var(--gl) 90deg, transparent 150deg,
+    var(--gl) 210deg, var(--glHot, #fff6d0) 250deg, var(--gl) 300deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  filter: drop-shadow(0 0 2px var(--gl));
+  animation: glowSpin 1.5s linear infinite;
+}
+/* outer halo in the same colour, gently pulsing */
+.glow::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit;
+  box-shadow: 0 0 7px 2px var(--gl), 0 0 15px 4px var(--gl); animation: glowPulse 1.2s ease-in-out infinite;
+}
+@keyframes glowSpin { to { --waAngle: 360deg; } }
+@keyframes glowPulse { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+/* Pixel = the softer "marching ants" cue: a coloured dashed border marching around the perimeter (each
+   edge's dashes travel along it clockwise). Four repeating dash gradients (top/bottom/left/right) whose
+   background-position slides one tile per loop. */
+.wicon[data-glow="Pixel"] .glow { --gl: var(--gc, #fff); inset: -2px; border-radius: 5px; }
+.wicon[data-glow="Pixel"] .glow::before {
+  padding: 0; filter: none;
+  background:
+    linear-gradient(90deg, var(--gl) 50%, transparent 0) repeat-x top left,
+    linear-gradient(90deg, var(--gl) 50%, transparent 0) repeat-x bottom left,
+    linear-gradient(0deg,  var(--gl) 50%, transparent 0) repeat-y top left,
+    linear-gradient(0deg,  var(--gl) 50%, transparent 0) repeat-y top right;
+  background-size: 8px 3px, 8px 3px, 3px 8px, 3px 8px;
+  -webkit-mask: none; mask: none;
+  animation: pixelMarch .55s linear infinite;
+}
+@keyframes pixelMarch { to { background-position: 8px 0, -8px 100%, 0 -8px, 100% 8px; } }
+.wicon[data-glow="Pixel"] .glow::after { content: none; }
+/* Autocast Shine = same travelling-light treatment as the action glow (colour via --gl base default). */
