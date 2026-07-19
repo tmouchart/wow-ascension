@@ -1,0 +1,4 @@
+- [Felsworn WA project](felsworn-wa-project.md) — building a Luxthos-style WeakAura (resource bar + cooldowns) for the Felsworn Tyrant tank on Ascension; codec + ability map already built
+- [WA stable uids](wa-stable-uids.md) — keep uids stable across builds so imports Update instead of creating a new aura set
+- [Ability classification](ability-classification.md) — per-class ability tagging (primary category + tags) for the web palette; db.ascension.gg detail-page enrichment feeds it; vocab frozen in tools/CLASSIFY-SPEC.md
+- [Rotation vs preset model](rotation-vs-preset-model.md) — a rotation is a MENU (superset), not a build; presets carry the superset and load.use_spellknown hides unlearned/unpicked spells (level + talent-point filtering)

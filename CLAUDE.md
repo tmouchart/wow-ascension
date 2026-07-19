@@ -410,6 +410,10 @@ touching anything under `web/src`:
 - Always assert the self round-trip before handing a string to the user (`buildPackage` does this and refuses to write on failure).
 - **ASCII only in generated text** (labels, `text_text`, ids). The codec does not round-trip multi-byte UTF-8 (e.g. `⚠`, `—`) — round-trip fails and `buildPackage` refuses to write. Use `!`, `-`, etc.
 - Reusable procedures are captured as skills in `.claude/skills/` — see below.
+- **Project memory lives IN THE REPO at `memory/`** (repo root, versioned → portable across machines and
+  shared), **NOT in `~/.claude`**. Read `memory/MEMORY.md` at session start for the index; write a new memory
+  as a file under `memory/`, add its one-line pointer to `memory/MEMORY.md`, and commit it. This overrides the
+  default per-user `~/.claude` memory location (which now only holds a redirect stub).
 - **`npm run dev` is ALWAYS already running** in a separate terminal the user keeps open. **NEVER launch it
   yourself** (don't `npm run dev` / `dev:web` / `dev:server`). To debug the web app or agent backend, **read
   the log file `dev.log`** at the repo root — the dev launcher (`scripts/dev.mjs`) tees both process outputs
