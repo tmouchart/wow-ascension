@@ -10,11 +10,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   // Fixed non-standard ports so the dev/preview servers never collide with other local projects.
-  // /api -> the agent backend (server/server.js on :8080), so the app calls `/api/agent` relatively in
-  // dev exactly as it will same-origin in prod (no CORS). Run the backend with `node server/server.js`.
+  // /api -> the agent backend (server/server.mjs on :8374), so the app calls `/api/agent` relatively in
+  // dev exactly as it will same-origin in prod (no CORS). Run the backend with `node server/server.mjs`.
   server: {
     port: 8372, strictPort: true, fs: { allow: ['..'] },
-    proxy: { '/api': 'http://localhost:8080' },
+    proxy: { '/api': 'http://localhost:8374' },
   },
   preview: { port: 8373, strictPort: true },
 });

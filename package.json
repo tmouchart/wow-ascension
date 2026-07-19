@@ -2,7 +2,9 @@
   "name": "wow-ascension",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix weakauras/web run dev",
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "npm --prefix weakauras/web run dev",
+    "dev:server": "node weakauras/server/server.mjs",
     "build": "npm --prefix weakauras/web run build",
     "preview": "npm --prefix weakauras/web run preview"
   }

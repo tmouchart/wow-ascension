@@ -5,6 +5,13 @@ weakauras2/
 node_modules/
 npm-debug.log*
 
+# Dev launcher log (scripts/dev.mjs tees `npm run dev` output here, truncated each run)
+dev.log
+
+# Secrets — never commit real keys (keep .env.example)
+.env
+!.env.example
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
