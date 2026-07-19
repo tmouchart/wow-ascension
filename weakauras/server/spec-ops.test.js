@@ -106,4 +106,78 @@ t('setCombatOnly toggles the flag', () => {
   assert.strictEqual(off.spec.combatOnly, undefined);
 });
 
+// ---- P3 generic CRUD surface ----
+t('describeSpec exposes global + per-element fields (count, powerType)', () => {
+  const d = describeSpec(felsworn);
+  assert.strictEqual(d.global.barWidth, 250);
+  const stacks = d.elements.find(e => e.kind === 'stacks');
+  assert.strictEqual(stacks.count, 6);              // concrete target for updateElement
+  assert.ok(d.elements.find(e => e.kind === 'powerBar').powerType != null);
+});
+
+t('updateElement changes the Felfury stack count 6 -> 5', () => {
+  const i = felsworn.stack.findIndex(e => e.kind === 'stacks');
+  const r = ops.updateElement(felsworn, { index: i, set: { count: 5 } });
+  assert.strictEqual(r.ok, true);
+  assert.strictEqual(r.spec.stack[i].count, 5);
+  valid(r.spec);
+  assert.strictEqual(felsworn.stack[i].count, 6);   // purity: input untouched
+});
+
+t('updateElement null deletes a field', () => {
+  const i = felsworn.stack.findIndex(e => e.kind === 'stacks');
+  const r = ops.updateElement(felsworn, { index: i, set: { capGlow: null } });
+  assert.strictEqual(r.ok, true);
+  assert.strictEqual(r.spec.stack[i].capGlow, undefined);
+});
+
+t('addElement adds a healthBar-free element (powerBar) and stays valid', () => {
+  const r = ops.addElement(felsworn, 'felsworn', { kind: 'uptimeBar', buff: 'Metamorphosis' });
+  assert.strictEqual(r.ok, true);
+  assert.strictEqual(valid(r.spec), valid(felsworn) + 1);
+});
+
+t('addElement rejects an unknown kind', () => {
+  const r = ops.addElement(felsworn, 'felsworn', { kind: 'bogusKind' });
+  assert.strictEqual(r.ok, false);
+  assert.match(r.error, /unknown kind/i);
+});
+
+t('addElement powerBar without powerType fails validation', () => {
+  const r = ops.addElement(felsworn, 'felsworn', { kind: 'powerBar' });
+  assert.strictEqual(r.ok, false);
+  assert.match(r.error, /powerType/i);
+});
+
+t('addIcon adds a cooldown icon to the primary row (generic)', () => {
+  const r = ops.addIcon(felsworn, 'felsworn', { container: 'primary', icon: { spell: 'Felwrath' } });
+  assert.strictEqual(r.ok, true);
+  assert.strictEqual(valid(r.spec), valid(felsworn) + 1);
+});
+
+t('addIcon rejects a proc-shaped icon in a cdRow', () => {
+  const r = ops.addIcon(felsworn, 'felsworn', { container: 'primary', icon: { spell: 'Felwrath', when: [{ buff: 'X' }] } });
+  assert.strictEqual(r.ok, false);
+  assert.match(r.error, /proc\/buff icon/i);
+});
+
+t('updateIcon sets then clears a glow on an existing icon', () => {
+  const set = ops.updateIcon(felsworn, 'felsworn', { container: 'primary', match: 'Blood of Mannoroth', set: { glow: { type: 'ready' } } });
+  assert.strictEqual(set.ok, true);
+  const cd = set.spec.stack.find(e => e.kind === 'cdRow' && !e.secondary);
+  assert.deepStrictEqual(cd.icons.find(i => i.label === 'Blood of Mannoroth').glow, { type: 'ready' });
+  const clr = ops.updateIcon(set.spec, 'felsworn', { container: 'primary', match: 'Blood of Mannoroth', set: { glow: null } });
+  assert.strictEqual(clr.spec.stack.find(e => e.kind === 'cdRow' && !e.secondary).icons.find(i => i.label === 'Blood of Mannoroth').glow, undefined);
+});
+
+t('setGlobal patches sizing and toggles combatOnly', () => {
+  const r = ops.setGlobal(felsworn, { set: { barWidth: 300, combatOnly: true } });
+  assert.strictEqual(r.ok, true);
+  assert.strictEqual(r.spec.global.barWidth, 300);
+  assert.strictEqual(r.spec.combatOnly, true);
+  valid(r.spec);
+  const off = ops.setGlobal(r.spec, { set: { combatOnly: false } });
+  assert.strictEqual(off.spec.combatOnly, undefined);
+});
+
 console.log(`\n${pass} passed`);

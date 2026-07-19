@@ -95,22 +95,29 @@ are provably the same operation. (v1 can inline them server-side and refactor la
 
 ## 3. Tool surface (grounded in the DSL + registry)
 
-Semantic tools, one per intent — NOT a raw JSON-patch tool and NOT a 1:1 mirror of internal
-setters. Each is small, typed (zod), and its handler mutates the in-memory `spec` then
-re-validates. Draft set:
+**Design: structure is generic, fields are typed + revalidated.** NOT a raw JSON-patch tool (dumb free
+models invent field names) and NOT one tool per feature (explodes, and never covers "change a value").
+Instead a uniform CRUD surface over three targets — *element*, *icon*, *global* — where the payload is
+**typed per kind** (a zod discriminated union mirroring the DSL) with a `raw` escape hatch, and every
+mutation is re-run through `specToParts` so a malformed payload is rejected, not shipped. 10 tools, ~100%
+DSL coverage:
 
 | Tool | Args | Effect |
 |---|---|---|
-| `describeSpec` | – | Returns a compact human/LLM view of the current spec: rows, elements, per-row spells. The agent calls this first to orient. |
-| `searchAbilities` | `query, slug` | Registry lookup -> `[{spellId, name, iconUrl, primary, tags, details}]`. Resolves names -> ids and categories. |
-| `addCooldownIcon` | `row('primary'\|'secondary'), spell, glow?` | Append a `cdRow` icon (creates the row if absent). |
-| `addProc` | `spell, when[]` | Append a `procRow` icon with a composable `when` clause list. |
-| `addUptimeBar` | `buff, label?, warnText?` | Append an `uptimeBar` element. |
-| `addPowerBar` / `addHealthBar` / `addStacks` / `addChargeStacks` / `addStackBar` | kind-specific | Append the matching resource element. |
-| `setIconGlow` | `row, index, glow` | Set/clear a glow rule on an existing icon. |
-| `setIconField` / `setElementField` | `ref, key, value` | Generic field patch (escape hatch, still validated). |
-| `moveElement` / `removeElement` / `removeIcon` | positional | Reorder / delete. |
-| `setCombatOnly` / `addSideColumn` | – | Layout-shell toggles. |
+| `describeSpec` | – | Current spec: every element with its **index + all fields** (count, powerType, colors…), icons per container, `global` sizing, `combatOnly`. Call first to orient. |
+| `searchAbilities` | `query` | Registry lookup -> `[{spellId, name, iconUrl, primary, tags, cooldown}]`. Resolves names -> ids. Always before adding a spell. |
+| `addElement` | `element` (discriminated union on `kind` + `raw` + `at`) | Add any stack element, typed per kind. Container kinds are created empty — fill via `addIcon`. |
+| `updateElement` | `index, set` | Merge-patch one element's fields (null deletes). **The way to change a value** — e.g. a stack `count`, a bar color. |
+| `removeElement` / `moveElement` | `index` / `from,to` | Delete / reorder by index. |
+| `addIcon` | `container, icon` | Add an icon to a container (role `primary\|secondary\|proc\|buff\|left\|right` or a stack index; created if absent). Icon is a rich typed shape (glow rule / `when` clauses / buff-icon shapes); the op guards container-appropriateness. |
+| `updateIcon` | `container, match, set` | Merge-patch an existing icon (by spell name/id or label). e.g. `set.glow = {type:"ready"}` or `null` to clear. |
+| `removeIcon` | `container, match` | Delete an icon. |
+| `setGlobal` | `set` | Patch `global` sizing/offsets + `combatOnly` (layout-shell toggles). |
+
+The pure ops live in `server/spec-ops.js` (fully testable, no LLM); `server/agent.mjs` wraps them as the
+zod-typed tool set. The old intent-specific ops (`addCooldownIcon`/`addProc`/`setCooldownGlow`/`setCombatOnly`)
+remain in `spec-ops.js` as thin legacy helpers (still exercised by `spec-ops.test.js`) but are superseded by
+the generic surface and no longer exposed as tools.
 
 Design rules:
 - Tools accept **spell names OR ids**; the handler resolves via the registry (mirrors the
@@ -222,7 +229,7 @@ Same origin => **no CORS**, the frontend calls `/api/agent` relatively. Secret:
   Free tool-capable models resolved from OpenRouter's live `/models` (filtered `supported_parameters ⊇ tools`).
 - **P3 — app panel:** DONE. `web/src/components/AgentPanel.tsx` (chat input + transcript + tool-trace badges
   + one-step Undo) docked under the Preview; posts `{ slug, spec: activeSpec, messages }` to `/api/agent`
-  and applies the returned `newSpec` via `setClass`. Vite dev proxies `/api` -> `:8080` (same relative path
+  and applies the returned `newSpec` via `setClass`. Vite dev proxies `/api` -> `:8374` (same relative path
   as prod, no CORS). Verified: `npm run build` (tsc strict) green; a real request **through the vite proxy**
   returned a validated newSpec from a free model. Known v1 limit: applying an agent edit drops disabled
   elements (we send `activeSpec`).

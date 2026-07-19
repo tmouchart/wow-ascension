@@ -60,17 +60,32 @@ function resolveSpell(slug, spell) {
 }
 
 // ---- read ----
-// Compact, LLM-friendly view of the current spec: each stack element with its kind, label and, for
-// icon containers, the icons it holds. Enough for the agent to orient without seeing the raw SPEC.
+// Compact, LLM-friendly view of the current spec. Each stack element shows its index + ALL of its own
+// scalar fields (so updateElement has concrete targets: e.g. `count`, `powerType`, colors) with icon
+// containers summarising the icons they hold. Also exposes global sizing/offsets, combatOnly, and side
+// rails. Enough for the agent to orient and patch precisely without seeing the raw region JSON.
+const GLOBAL_DEFAULTS = { barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3, xOffset: 0, yOffset: 0 };
+const iconView = ic => {
+  const out = { label: ic.label };
+  if (ic.spell != null) out.spell = ic.spell;
+  for (const k of ['glow', 'proc', 'charges', 'when', 'anyOf', 'weaponEnchant', 'indicator', 'showPowerAbove']) {
+    if (ic[k] !== undefined) out[k] = ic[k];
+  }
+  return out;
+};
 function describeSpec(spec) {
   const elements = (spec.stack || []).map((el, index) => {
-    const out = { index, kind: el.kind };
-    if (el.secondary) out.secondary = true;
-    if (el.buff) out.buff = el.buff;
-    if (el.icons) out.icons = el.icons.map(ic => ({ label: ic.label, spell: ic.spell }));
+    const { icons, ...rest } = el;
+    const out = { index, ...rest };
+    if (icons) out.icons = icons.map(iconView);
     return out;
   });
-  return { id: spec.id, name: spec.name, combatOnly: !!spec.combatOnly, elements };
+  const rail = col => col && { icons: (col.icons || []).map(iconView), xOffset: col.xOffset, size: col.size };
+  return {
+    id: spec.id, name: spec.name, combatOnly: !!spec.combatOnly,
+    global: { ...GLOBAL_DEFAULTS, ...(spec.global || {}) },
+    elements, left: rail(spec.left), right: rail(spec.right),
+  };
 }
 
 // ---- mutate (pure, validated) ----
@@ -95,6 +110,57 @@ function iconPath(slug, spellId) {
 }
 
 const cdRowOf = (spec, secondary) => spec.stack.find(el => el.kind === 'cdRow' && !!el.secondary === secondary);
+
+// ---- generic element/icon/global CRUD (the "structure is generic, fields are typed + revalidated" surface) ----
+const KIND_SET = new Set(['procRow', 'cdRow', 'buffRow', 'powerBar', 'healthBar', 'stackBar', 'uptimeBar', 'stacks', 'chargeStacks', 'buffWarnText']);
+const CONTAINER_KIND = { primary: 'cdRow', secondary: 'cdRow', proc: 'procRow', buff: 'buffRow', left: 'cdRow', right: 'cdRow' };
+
+// Merge-patch one plain object in place: null value deletes the key, everything else replaces wholesale.
+function mergePatch(target, patch) {
+  for (const [k, v] of Object.entries(patch)) { if (v === null) delete target[k]; else target[k] = v; }
+  return target;
+}
+
+// Resolve a container ref (role name or a numeric stack index) to the { icons } holder. Roles: primary /
+// secondary cdRow, proc(Row), buff(Row), left / right side rail. `create` seeds an absent role container.
+function resolveContainer(spec, container, create) {
+  if (typeof container === 'number') {
+    const el = spec.stack[container];
+    if (!el) throw new Error(`no element at index ${container}`);
+    if (!Array.isArray(el.icons)) throw new Error(`element ${container} (${el.kind}) is not an icon container`);
+    return el;
+  }
+  let holder;
+  switch (container) {
+    case 'primary': holder = cdRowOf(spec, false); break;
+    case 'secondary': holder = cdRowOf(spec, true); break;
+    case 'proc': holder = spec.stack.find(e => e.kind === 'procRow'); break;
+    case 'buff': holder = spec.stack.find(e => e.kind === 'buffRow'); break;
+    case 'left': case 'right': holder = spec[container]; break;
+    default: throw new Error(`unknown container "${container}" (primary|secondary|proc|buff|left|right or an index)`);
+  }
+  if (holder) return holder;
+  if (!create) throw new Error(`no ${container} container`);
+  if (container === 'left' || container === 'right') return (spec[container] = { icons: [] });
+  const el = { kind: CONTAINER_KIND[container], ...(container === 'secondary' ? { secondary: true } : {}), icons: [] };
+  if (container === 'proc') spec.stack.unshift(el); else spec.stack.push(el);
+  return el;
+}
+const containerKind = (spec, container) =>
+  typeof container === 'number' ? spec.stack[container].kind : CONTAINER_KIND[container];
+
+// Reject an icon shaped for the wrong container (cd-glow icon into a procRow, etc.) with a clear message.
+function guardIcon(kind, icon) {
+  if (kind === 'procRow') {
+    if (!(icon.when || icon.buff || icon.execute != null || icon.stealable))
+      throw new Error('a proc icon needs `when` (or legacy buff / execute / stealable)');
+  } else if (kind === 'buffRow') {
+    if (!(icon.anyOf || icon.weaponEnchant || icon.indicator))
+      throw new Error('a buff icon needs one of anyOf / weaponEnchant / indicator');
+  } else if (icon.when || icon.anyOf || icon.weaponEnchant || icon.indicator) {
+    throw new Error('that is a proc/buff icon — add it to the proc or buff container instead');
+  }
+}
 
 // Append a cooldown icon to the primary or secondary cdRow (creating that row at the end if absent).
 function addCooldownIcon(spec, slug, { row = 'primary', spell }) {
@@ -159,17 +225,19 @@ function removeElement(spec, { index }) {
   });
 }
 
-// Remove an icon (by spell name/id or label) from the primary/secondary cdRow.
-function removeIcon(spec, slug, { row = 'primary', spell }) {
+// Remove an icon from any container (by spell name/id or label). Container = a role or stack index;
+// legacy { row, spell } (primary/secondary cdRow) still accepted.
+function removeIcon(spec, slug, a) {
+  const container = a.container != null ? a.container : (a.row === 'secondary' ? 'secondary' : 'primary');
+  const match = a.match != null ? a.match : a.spell;
   return mutate(spec, next => {
-    const cd = cdRowOf(next, row === 'secondary');
-    if (!cd || !cd.icons) throw new Error(`no ${row} cdRow`);
-    const key = String(spell).toLowerCase();
-    let id; try { id = resolveSpell(slug, spell).spellId; } catch { /* match by label only */ }
-    const i = cd.icons.findIndex(ic => String(ic.label).toLowerCase() === key || ic.spell === id);
-    if (i < 0) throw new Error(`no icon "${spell}" in the ${row} cdRow`);
-    const [gone] = cd.icons.splice(i, 1);
-    return { removed: { label: gone.label, row } };
+    const c = resolveContainer(next, container, false);
+    const key = String(match).toLowerCase();
+    let id; try { id = resolveSpell(slug, match).spellId; } catch { /* match by label only */ }
+    const i = c.icons.findIndex(ic => String(ic.label).toLowerCase() === key || ic.spell === id);
+    if (i < 0) throw new Error(`no icon "${match}" in the ${container} container`);
+    const [gone] = c.icons.splice(i, 1);
+    return { removed: { label: gone.label, container } };
   });
 }
 
@@ -191,7 +259,79 @@ function setCombatOnly(spec, { on }) {
   });
 }
 
+// Add ANY stack element (typed per kind by the agent schema; `raw` merges rare fields). Container kinds
+// are created empty — populate them with addIcon. `at` = insert position (default: end of the stack).
+function addElement(spec, slug, { kind, at, raw, ...props }) {
+  return mutate(spec, next => {
+    if (!KIND_SET.has(kind)) throw new Error(`unknown kind "${kind}" (known: ${[...KIND_SET].join(', ')})`);
+    const el = { kind, ...props, ...(raw || {}) };
+    if (kind === 'chargeStacks' && typeof el.spell === 'string' && !el.byName) {
+      const { spellId } = resolveSpell(slug, el.spell); el.spell = spellId;
+    }
+    if (['procRow', 'cdRow', 'buffRow'].includes(kind) && !Array.isArray(el.icons)) el.icons = [];
+    const idx = at == null ? next.stack.length : Math.max(0, Math.min(at, next.stack.length));
+    next.stack.splice(idx, 0, el);
+    return { added: { kind, at: idx } };
+  });
+}
+
+// Merge-patch an existing stack element's fields (null deletes a key). THE way to tweak a live element:
+// e.g. { index, set: { count: 5 } } to change a stack box count, or { set: { hi: [...] } } to recolor a bar.
+function updateElement(spec, { index, set }) {
+  return mutate(spec, next => {
+    const el = next.stack[index];
+    if (!el) throw new Error(`no element at index ${index}`);
+    mergePatch(el, set || {});
+    return { updated: { index, kind: el.kind } };
+  });
+}
+
+// Add an icon to any container (creating that role container if absent). The icon is typed by the agent
+// schema; `spell` (cd/proc icons) is resolved to a spellId via the registry unless `byName`.
+function addIcon(spec, slug, { container, icon }) {
+  return mutate(spec, next => {
+    const c = { ...icon };
+    if (c.spell != null && !c.byName) {
+      const { spellId, name } = resolveSpell(slug, c.spell);
+      c.spell = spellId;
+      if (!c.label) c.label = name || String(spellId);
+    }
+    if (!c.label) throw new Error('icon needs a label');
+    guardIcon(containerKind(next, container), c);
+    resolveContainer(next, container, true).icons.push(c);
+    return { added: { label: c.label, container } };
+  });
+}
+
+// Merge-patch an existing icon (found by spell name/id or label) in a container. null deletes a key —
+// e.g. { set: { glow: null } } clears a glow rule; { set: { glow: { type: 'ready' } } } sets one.
+function updateIcon(spec, slug, { container, match, set }) {
+  return mutate(spec, next => {
+    const c = resolveContainer(next, container, false);
+    const key = String(match).toLowerCase();
+    let id; try { id = resolveSpell(slug, match).spellId; } catch { /* match by label only */ }
+    const ic = c.icons.find(i => String(i.label).toLowerCase() === key || i.spell === id);
+    if (!ic) throw new Error(`no icon "${match}" in the ${container} container`);
+    mergePatch(ic, set || {});
+    guardIcon(containerKind(next, container), ic);
+    return { updated: { label: ic.label, container } };
+  });
+}
+
+// Patch global sizing/offsets and the combat-only flag. `combatOnly` lives at SPEC top level (false/null
+// clears it); every other key merges into spec.global.
+function setGlobal(spec, { set }) {
+  return mutate(spec, next => {
+    const s = { ...(set || {}) };
+    if ('combatOnly' in s) { if (s.combatOnly) next.combatOnly = true; else delete next.combatOnly; delete s.combatOnly; }
+    if (Object.keys(s).length) mergePatch((next.global ||= {}), s);
+    return { global: { ...GLOBAL_DEFAULTS, ...(next.global || {}) }, combatOnly: !!next.combatOnly };
+  });
+}
+
 module.exports = {
   loadRegistry, searchAbilities, resolveSpell, describeSpec,
-  addCooldownIcon, addProc, addUptimeBar, setCooldownGlow, removeElement, removeIcon, moveElement, setCombatOnly,
+  addElement, updateElement, addIcon, updateIcon, removeElement, removeIcon, moveElement, setGlobal,
+  // legacy specialised ops (still used by spec-ops.test.js; superseded by the generic surface above)
+  addCooldownIcon, addProc, addUptimeBar, setCooldownGlow, setCombatOnly,
 };
