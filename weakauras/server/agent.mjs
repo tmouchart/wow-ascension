@@ -220,7 +220,7 @@ export async function* runAgentStream({ slug, spec, messages }) {
       // so it would under-report). No wait stays invisible.
       let step = 0, stepStarted = false, tWait = Date.now();
       const markStepOutput = () => {
-        if (!stepStarted) { stepStarted = true; log(`      step ${step}: first token after ${Date.now() - tWait}ms of waiting`); }
+        if (!stepStarted) { stepStarted = true; const ms = Date.now() - tWait; log(`      step ${step}: first token after ${ms}ms (${(ms / 1000).toFixed(1)}s) of waiting`); }
       };
       for await (const part of result.fullStream) {
         if (part.type === 'error') throw part.error;
@@ -239,14 +239,14 @@ export async function* runAgentStream({ slug, spec, messages }) {
           log(`      step ${step}: tool result in -> calling model again, waiting …`);
         }
       }
-      log(`✓ done via ${model} · ${tools_n} tool(s) · ${text.length} chars · ${Date.now() - t0}ms total`);
+      { const ms = Date.now() - t0; log(`✓ done via ${model} · ${tools_n} tool(s) · ${text.length} chars · ${ms}ms (${(ms / 1000).toFixed(1)}s) total`); }
       yield { type: 'done', newSpec: ctx.spec, summary: text, trace, model };
       return;
     } catch (e) {
       lastErr = e;
       ctx.spec = snapshot;   // roll back any partial mutation
       const where = started ? `MID-stream (after ${tools_n} tool(s), ${text.length} chars)` : `before any output`;
-      log(`✗ ${model} failed ${where} after ${Date.now() - tModel}ms: ${briefErr(e)}`);
+      { const ms = Date.now() - tModel; log(`✗ ${model} failed ${where} after ${ms}ms (${(ms / 1000).toFixed(1)}s): ${briefErr(e)}`); }
       if (i + 1 < MODELS.length) log(`   -> falling through to ${MODELS[i + 1]}`);
       // Free models routed through flaky providers can fail MID-stream. Rather than commit to a broken run,
       // tell the client to discard this model's partial output (`reset`) and retry with the next model.
