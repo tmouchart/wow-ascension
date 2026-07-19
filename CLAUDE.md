@@ -373,6 +373,14 @@ generalizes cleanly do we add the fly.io web app + preview/customization fronten
 - Reusable procedures are captured as skills in `.claude/skills/` — see below.
 - **Git: this is a solo hobby project — commit directly to `main`, no branches, no PRs.** Commit when asked;
   don't create feature branches or open pull requests.
+- **Parallel agents — commit ONLY your own files, and ONLY your own lines.** 5+ agents are always working in
+  parallel, so when the user asks you to commit it is **NORMAL and expected** that the working tree has other
+  unrelated changes (modified/untracked files, and edits inside files you also touched). Never `git add -A`,
+  `git add .`, or `git commit -a`. Instead: (1) stage only the specific files YOUR task changed, by explicit
+  path (`git add path/to/file`); (2) if a file you touched also contains someone else's changes, stage just
+  your own lines with `git add -p` (hunk-by-hunk) so you don't sweep in another agent's work; (3) verify with
+  `git diff --cached` that only your lines are staged before committing. Leave every other change untouched
+  in the working tree.
 
 ## Skills (in `.claude/skills/`)
 
