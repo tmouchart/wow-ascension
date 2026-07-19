@@ -1,0 +1,23 @@
+name: Deploy to Fly.io
+
+# Auto-deploy the WA-Forge web app on every push to main. The app + Dockerfile live in weakauras/;
+# flyctl reads weakauras/fly.toml and builds on Fly's remote builder (no Docker in CI).
+on:
+  push:
+    branches: [main]
+
+# Never run two deploys at once; a newer push cancels an in-flight one.
+concurrency:
+  group: fly-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --remote-only
+        working-directory: ./weakauras
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
