@@ -1,7 +1,8 @@
 import { X } from 'lucide-react';
 import { useStore, elementLabel, type El, type Spec, type Ref, type IconCfg } from '../store';
 import { powerIndexConfirmed, BAR_PRESETS } from '../lib/defaultSpec';
-import { Group, Field, Note, ToggleRow, numCls, toHex, fromHex, GLOW_STYLES, NONE } from './inspector-bits';
+import { Group, Field, Note, ToggleRow, InfoTip, numCls, toHex, fromHex, GLOW_STYLES, NONE } from './inspector-bits';
+import { GLOW_STYLE_INFO, GLOW_COLOR_INFO, GLOW_RULE_INFO, ICON_INFO, ELEMENT_INFO, ELEMENT_FIELD_INFO, LAYOUT_INFO, POWER_INDEX_INFO } from './inspector-help';
 import { ProcPanel } from './ProcPanel';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -77,8 +78,8 @@ function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: 
 
   const rule = glow?.type ?? '';
   return (
-    <Group title={`Icon: ${icon.label ?? String(icon.spell)}`}>
-      <Field label="Glow rule">
+    <Group title={`Icon: ${icon.label ?? String(icon.spell)}`} info={ICON_INFO.group}>
+      <Field label="Glow rule" info={GLOW_RULE_INFO[rule]}>
         <Select value={rule || NONE} onValueChange={(v) => pickRule(v === NONE ? '' : v)}>
           <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
           <SelectContent>
@@ -87,26 +88,27 @@ function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: 
         </Select>
       </Field>
       {(rule === 'buff' || rule === 'buffMissing') && (
-        <Field label="Buff name">
+        <Field label="Buff name" info={ICON_INFO.buffName}>
           <Input className="h-8 w-[150px]" type="text" value={glow?.buff ?? ''}
             onChange={(e) => setGlow({ buff: e.target.value })} />
         </Field>
       )}
       {rule === 'readyPower' && (
-        <Field label="Power >=">
+        <Field label="Power >=" info={ICON_INFO.power}>
           <Input className={numCls} type="number" value={glow?.power ?? 50}
             onChange={(e) => setGlow({ power: Number(e.target.value) })} />
         </Field>
       )}
       {(rule === 'powerPct' || rule === 'targetHealthBelow') && (
-        <Field label={rule === 'powerPct' ? 'Power % >=' : 'Target HP % <'}>
+        <Field label={rule === 'powerPct' ? 'Power % >=' : 'Target HP % <'}
+          info={rule === 'powerPct' ? ICON_INFO.powerPct : ICON_INFO.targetHp}>
           <Input className={numCls} type="number" min={1} max={100} value={glow?.pct ?? 35}
             onChange={(e) => setGlow({ pct: Number(e.target.value) })} />
         </Field>
       )}
       {rule && (
         <>
-          <Field label="Glow style">
+          <Field label="Glow style" info={GLOW_STYLE_INFO}>
             <Select value={glow?.glowType ?? 'buttonOverlay'} onValueChange={(v) => setGlow({ glowType: v })}>
               <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
               <SelectContent>
@@ -114,14 +116,14 @@ function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: 
               </SelectContent>
             </Select>
           </Field>
-          <Field label="Glow color">
+          <Field label="Glow color" info={GLOW_COLOR_INFO}>
             <input type="color" value={toHex(glow?.color)} onChange={(e) => setGlow({ color: fromHex(e.target.value) })}
               className="h-8 w-12 cursor-pointer rounded-md border border-input bg-transparent p-0.5" />
           </Field>
         </>
       )}
-      <ToggleRow label="Charge count" on={!!icon.charges} onToggle={() => setF('charges', icon.charges ? undefined : true)} />
-      <Field label="Show at power >=">
+      <ToggleRow label="Charge count" on={!!icon.charges} onToggle={() => setF('charges', icon.charges ? undefined : true)} info={ICON_INFO.charges} />
+      <Field label="Show at power >=" info={ICON_INFO.showPowerAbove}>
         <Input className={numCls} type="number" min={0} placeholder="off"
           value={Number(icon.showPowerAbove ?? 0)}
           onChange={(e) => setF('showPowerAbove', Number(e.target.value) || undefined)} />
@@ -139,7 +141,7 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   const setElementField = useStore((st) => st.setElementField);
   if (el.kind === 'uptimeBar' && typeof el.buff === 'string') {
     return (
-      <Field label="Buff">
+      <Field label="Buff" info={ELEMENT_FIELD_INFO.uptimeBar}>
         <Input className="h-8 w-[150px]" type="text" value={el.buff}
           onChange={(e) => {
             setElementField(index, 'buff', e.target.value);
@@ -151,7 +153,7 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   }
   if (el.kind === 'stacks') {
     return (
-      <Field label="Buff">
+      <Field label="Buff" info={ELEMENT_FIELD_INFO.stacks}>
         <span className="flex items-center gap-2.5">
           <Input className="h-8 w-24" type="text" value={(el.auraNames as string[])?.[0] ?? ''}
             onChange={(e) => setElementField(index, 'auraNames', [e.target.value])} />
@@ -165,7 +167,7 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   if (el.kind === 'chargeStacks') {
     // manual entry is a spell name → track it by name (matching the by-name charge trigger)
     return (
-      <Field label="Spell">
+      <Field label="Spell" info={ELEMENT_FIELD_INFO.chargeStacks}>
         <span className="flex items-center gap-2.5">
           <Input className="h-8 w-24" type="text" value={(el.spell as string) ?? ''}
             onChange={(e) => { setElementField(index, 'spell', e.target.value); setElementField(index, 'byName', true); }} />
@@ -178,7 +180,7 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   }
   if (el.kind === 'stackBar') {
     return (
-      <Field label="Aura / max">
+      <Field label="Aura / max" info={ELEMENT_FIELD_INFO.stackBar}>
         <span className="flex items-center gap-2.5">
           <Input className="h-8 w-24" type="text" value={(el.aura as string) ?? ''}
             onChange={(e) => setElementField(index, 'aura', e.target.value)} />
@@ -191,7 +193,7 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   }
   if (el.kind === 'buffWarnText') {
     return (
-      <Field label="Buff / text">
+      <Field label="Buff / text" info={ELEMENT_FIELD_INFO.buffWarnText}>
         <span className="flex items-center gap-2.5">
           <Input className="h-8 w-24" type="text" placeholder="Buff" value={(el.buff as string) ?? ''}
             onChange={(e) => setElementField(index, 'buff', e.target.value)} />
@@ -243,20 +245,20 @@ export function Inspector({ slug }: { slug: string }) {
           {SLIDERS.map(({ key, label, min, max }) => (
             <div className="mb-3.5" key={key}>
               <div className="mb-2 flex items-center justify-between">
-                <label className="text-sm">{label}</label>
+                <label className="flex items-center gap-1.5 text-sm">{label}<InfoTip text={LAYOUT_INFO[key]} /></label>
                 <span className="font-mono text-[13px] text-muted-foreground">{spec.global[key]}</span>
               </div>
               <Slider min={min} max={max} value={[Number(spec.global[key])]}
                 onValueChange={([v]) => setGlobal(key, v)} />
             </div>
           ))}
-          <ToggleRow label="Combat only" on={!!spec.combatOnly} onToggle={() => setCombatOnly(!spec.combatOnly)} />
+          <ToggleRow label="Combat only" on={!!spec.combatOnly} onToggle={() => setCombatOnly(!spec.combatOnly)} info={LAYOUT_INFO.combatOnly} />
         </Group>
 
         {powerBars.length > 0 && (
-          <Group title="Resource">
+          <Group title="Resource" info={POWER_INDEX_INFO}>
             {powerBars.map(([el, i]) => (
-              <Field label={`${elementLabel(el)} index`} key={el._uid ?? i}>
+              <Field label={`${elementLabel(el)} index`} info={POWER_INDEX_INFO} key={el._uid ?? i}>
                 <Input className={numCls} type="number" min={0} max={20}
                   value={Number(el.powerType ?? 0)}
                   onChange={(e) => setElementField(i, 'powerType', Number(e.target.value))} />
@@ -271,6 +273,7 @@ export function Inspector({ slug }: { slug: string }) {
             <div key={el._uid ?? i}>
               <ToggleRow
                 label={elementLabel(el)}
+                info={ELEMENT_INFO[el.kind]}
                 on={el.enabled !== false}
                 onToggle={() => toggleElement(i)}
                 extra={REMOVABLE.has(el.kind) ? (

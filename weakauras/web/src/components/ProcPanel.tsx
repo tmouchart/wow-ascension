@@ -1,6 +1,7 @@
 import { X } from 'lucide-react';
 import { useStore, type Ref, type IconCfg } from '../store';
-import { Group, Field, Note, ToggleRow, toHex, fromHex, GLOW_STYLES } from './inspector-bits';
+import { Group, Field, Note, ToggleRow, InfoTip, SubHead, toHex, fromHex, GLOW_STYLES } from './inspector-bits';
+import { PROC_INFO, CLAUSE_INFO, GLOW_STYLE_INFO, GLOW_COLOR_INFO } from './inspector-help';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import {
@@ -114,12 +115,15 @@ function ClauseRow({ cl, icon, onChange, onRemove }: { cl: Clause; icon: IconCfg
               onChange={(e) => onChange({ charges: { ...charges, value: Number(e.target.value) } })} />
           </>
         )}
-        {onRemove && (
-          <Button variant="ghost" size="icon" className="size-6 shrink-0 text-muted-foreground hover:bg-destructive hover:text-destructive-foreground"
-            title="Remove condition" onClick={onRemove}>
-            <X className="size-3.5" />
-          </Button>
-        )}
+        <span className="ml-auto flex shrink-0 items-center gap-1">
+          <InfoTip text={CLAUSE_INFO[type]} />
+          {onRemove && (
+            <Button variant="ghost" size="icon" className="size-6 text-muted-foreground hover:bg-destructive hover:text-destructive-foreground"
+              title="Remove condition" onClick={onRemove}>
+              <X className="size-3.5" />
+            </Button>
+          )}
+        </span>
       </div>
       {type === 'buffStacks' && (
         <div className="mt-2 flex items-center gap-2 pl-2">
@@ -181,11 +185,11 @@ export function ProcPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
   const hasAura = view.when.some((cl) => ['buff', 'anyBuff', 'buffStacks'].includes(clauseType(cl)));
 
   return (
-    <Group title={`Proc: ${icon.label ?? String(icon.spell ?? '')}`}>
-      <div className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">Show when (all must pass)</div>
+    <Group title={`Proc: ${icon.label ?? String(icon.spell ?? '')}`} info={PROC_INFO.group}>
+      <SubHead info={PROC_INFO.showWhen}>Show when (all must pass)</SubHead>
       <ClauseList clauses={view.when} icon={icon} addLabel="condition" onChange={(when) => commit({ when })} />
 
-      <Field label="When hidden">
+      <Field label="When hidden" info={PROC_INFO.hide}>
         <Select value={view.hide} onValueChange={(hide) => commit({ hide })}>
           <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
           <SelectContent>
@@ -196,10 +200,10 @@ export function ProcPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
       </Field>
       {badCollapse && <Note>"Row recenters" only supports buff / any-of / target HP / power / stealable conditions — switch back to "Keeps its slot" or remove the others.</Note>}
 
-      <ToggleRow label="Glow" on={!!glow} onToggle={() => commit({ glow: glow ? undefined : {} })} />
+      <ToggleRow label="Glow" on={!!glow} onToggle={() => commit({ glow: glow ? undefined : {} })} info={PROC_INFO.glowToggle} />
       {glow && (
         <>
-          <Field label="Glow style">
+          <Field label="Glow style" info={GLOW_STYLE_INFO}>
             <Select value={glow.glowType ?? 'buttonOverlay'} onValueChange={(v) => commit({ glow: { ...glow, glowType: v } })}>
               <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
               <SelectContent>
@@ -207,18 +211,18 @@ export function ProcPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
               </SelectContent>
             </Select>
           </Field>
-          <Field label="Glow color">
+          <Field label="Glow color" info={GLOW_COLOR_INFO}>
             <input type="color" value={toHex(glow.color)} onChange={(e) => commit({ glow: { ...glow, color: fromHex(e.target.value) } })}
               className="h-8 w-12 cursor-pointer rounded-md border border-input bg-transparent p-0.5" />
           </Field>
-          <div className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">Glow only when (extra)</div>
+          <SubHead info={PROC_INFO.glowExtra}>Glow only when (extra)</SubHead>
           <ClauseList clauses={glow.when ?? []} icon={icon} addLabel="glow condition" removableToZero
             onChange={(w) => { const { when: _omit, ...rest } = glow; void _omit; commit({ glow: w.length ? { ...rest, when: w } : rest }); }} />
           <Note>No extra condition = glow whenever the proc is shown.</Note>
         </>
       )}
 
-      <Field label="Timer / swipe">
+      <Field label="Timer / swipe" info={PROC_INFO.timer}>
         <Select value={view.display.timer ?? 'cooldown'} onValueChange={(v) => setDisplay({ timer: v })}>
           <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
           <SelectContent>
@@ -228,9 +232,9 @@ export function ProcPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
           </SelectContent>
         </Select>
       </Field>
-      <ToggleRow label="Stack count" on={!!view.display.stacks} onToggle={() => setDisplay({ stacks: !view.display.stacks })} />
-      <ToggleRow label="Cooldown numbers" on={view.display.cooldownNumbers !== false} onToggle={() => setDisplay({ cooldownNumbers: view.display.cooldownNumbers === false })} />
-      <ToggleRow label="Grey while on CD" on={!!view.display.desaturateOnCd} onToggle={() => setDisplay({ desaturateOnCd: !view.display.desaturateOnCd })} />
+      <ToggleRow label="Stack count" on={!!view.display.stacks} onToggle={() => setDisplay({ stacks: !view.display.stacks })} info={PROC_INFO.stacks} />
+      <ToggleRow label="Cooldown numbers" on={view.display.cooldownNumbers !== false} onToggle={() => setDisplay({ cooldownNumbers: view.display.cooldownNumbers === false })} info={PROC_INFO.cooldownNumbers} />
+      <ToggleRow label="Grey while on CD" on={!!view.display.desaturateOnCd} onToggle={() => setDisplay({ desaturateOnCd: !view.display.desaturateOnCd })} info={PROC_INFO.desaturate} />
 
       <div className="mt-3 flex gap-2">
         <Button variant="outline" size="sm" onClick={() => select(null)}>Done</Button>
