@@ -64,7 +64,7 @@ classes/<slug>/spec.json           the declarative SPEC (single source of truth,
                                       //   Changing it re-uids everything → re-import creates a NEW aura set.
   "name": "felsworn-spec",            // dist filename (dist/<name>.import.txt). Defaults to id.
   "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3,
-              "xOffset": 0, "yOffset": 0 },   // all optional; these are the DEFAULTS
+              "xOffset": 0, "yOffset": 0, "gateUnknownSpells": true },   // all optional; these are the DEFAULTS
   "stack": [ <element>, ... ],        // REQUIRED, non-empty. Top→bottom vertical list (the central column).
   "left":  { "icons": [<cdIcon>...], "xOffset": -170, "yOffset": 0, "size": 26 },   // optional side rail (DEF)
   "right": { "icons": [<cdIcon>...], "xOffset":  170, "yOffset": 0, "size": 26 },   // optional side rail (OFF)
@@ -73,7 +73,17 @@ classes/<slug>/spec.json           the declarative SPEC (single source of truth,
 ```
 
 - **`global` defaults** (from `specToParts`): `barWidth 250, iconSize 26, secIconSize 24, procSize 30, gap 3,
-  xOffset 0, yOffset 0`. Override any subset.
+  xOffset 0, yOffset 0, gateUnknownSpells true`. Override any subset.
+- **`gateUnknownSpells`** (default **true**): every `cdRow` / `procRow` / side-rail icon that has a `spell`
+  gets `load.use_spellknown = true` + `load.spellknown = <spell>` (+ `use_exact_spellknown = !byName`),
+  mirroring its own cooldown trigger's spell identity — so the icon **only loads while the player knows the
+  spell** (no point showing a cooldown for a spell you haven't specced). Skipped for `buffRow` icons (they
+  track a buff/enchant, not a castable spell) and for spell-less procs (e.g. a stealable indicator). This is
+  **detection-layer**, and it is **confirmed working in-game on Ascension (2026-07-19)**: `IsSpellKnown`
+  resolves custom Ascension spellIds, so a gated icon lands in WeakAuras' "Not Loaded" until the spell is
+  known (probed with a baseline spell that shows vs. a fake spellId 99999999 that stays hidden). Set
+  `"gateUnknownSpells": false` to disable wholesale if ever needed. Gating is derived (not stored), so it
+  round-trips without any `wa-to-spec` change.
 - **Side rails** are vertical `makeColumn` dynamicgroups. Default `xOffset` = `-170` (left) / `+170` (right),
   default `yOffset` = `global.yOffset`, default icon `size` = `global.iconSize`. Icons are **cdRow-shaped**
   (same `cdIconCfg` as `cdRow`, glow rules below). An empty rail is skipped by the web `activeSpec` (an empty

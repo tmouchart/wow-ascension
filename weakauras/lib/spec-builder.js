@@ -19,6 +19,23 @@ const B = require('./builders-core.js');
 
 const WHITE = [1, 1, 1, 1];
 
+// Gate a region so WeakAuras only LOADS it while the player KNOWS the icon's spell (load.use_spellknown):
+// no point showing a cooldown/proc icon for a spell you haven't specced. The gate mirrors the icon's own
+// cooldown-trigger spell identity exactly — same id/name, exact iff not byName — so gate and tracker can
+// never disagree. Shape matches the luxthos-elemental reference (use_spellknown + spellknown [+ use_exact]).
+// Applied to cdRow / procRow / side-rail icons; NOT buffRow (those track a buff/enchant, not a castable
+// spell) and skipped when the icon has no spell (e.g. a stealable-indicator proc). Toggle off per-SPEC with
+// global.gateUnknownSpells:false. NOTE: this is DETECTION-layer — relies on IsSpellKnown resolving custom
+// Ascension spellIds; confirm in-game before trusting (a false negative silently hides the whole icon).
+function gateSpellKnown(region, spell, byName) {
+  if (spell == null) return region;
+  region.load = region.load || {};
+  region.load.use_spellknown = true;
+  region.load.spellknown = spell;
+  region.load.use_exact_spellknown = !byName;
+  return region;
+}
+
 // ---- glow mapping: SPEC glow -> B.cooldownIcon cfg (see builders.js cooldownIcon) ----
 function applyGlow(cfg, g) {
   if (!g) return cfg;
@@ -445,7 +462,10 @@ function buildElement(spec, el, centerY, g, gx) {
     case 'cdRow': {
       const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
       const dgId = el.id || `${spec.id} CDs${el.secondary ? ' (Secondary)' : ''}`;
-      const icons = el.icons.map(c => B.cooldownIcon(cdIconCfg(spec, c, dgId, size)));
+      const icons = el.icons.map(c => {
+        const icon = B.cooldownIcon(cdIconCfg(spec, c, dgId, size));
+        return g.gateUnknownSpells ? gateSpellKnown(icon, c.spell, c.byName) : icon;
+      });
       const dg = B.makeDynGroup(spec.id, dgId, icons, { yOffset: centerY, maxWidth: g.barWidth, iconSize: size });
       dg.xOffset = gx;
       return { rootIds: [dg.id], regions: [dg, ...icons] };
@@ -453,7 +473,10 @@ function buildElement(spec, el, centerY, g, gx) {
     case 'procRow': {
       const size = el.size || g.procSize || 30;
       const dgId = el.id || `${spec.id} Procs`;
-      const icons = el.icons.map(c => procIcon(spec, c, dgId, size));
+      const icons = el.icons.map(c => {
+        const icon = procIcon(spec, c, dgId, size);
+        return g.gateUnknownSpells ? gateSpellKnown(icon, c.spell, c.byName) : icon;
+      });
       const dg = B.makeDynGroup(spec.id, dgId, icons, { yOffset: centerY, maxWidth: g.barWidth, iconSize: size });
       dg.xOffset = gx;
       return { rootIds: [dg.id], regions: [dg, ...icons] };
@@ -466,7 +489,10 @@ function buildElement(spec, el, centerY, g, gx) {
 function buildColumn(spec, col, side, g, gx, gy) {
   const size = col.size || g.iconSize;
   const colId = col.id || `${spec.id} ${side === 'left' ? 'DEF' : 'OFF'}`;
-  const icons = col.icons.map(c => B.cooldownIcon(cdIconCfg(spec, c, colId, size)));
+  const icons = col.icons.map(c => {
+    const icon = B.cooldownIcon(cdIconCfg(spec, c, colId, size));
+    return g.gateUnknownSpells ? gateSpellKnown(icon, c.spell, c.byName) : icon;
+  });
   const dg = B.makeColumn(spec.id, colId, icons, {
     xOffset: (col.xOffset != null ? col.xOffset : (side === 'left' ? -170 : 170)) + gx,
     yOffset: col.yOffset != null ? col.yOffset : gy, iconSize: size,
@@ -514,7 +540,7 @@ function specToParts(spec) {
   validateSpec(spec);
   const g = {
     barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3,
-    xOffset: 0, yOffset: 0, ...(spec.global || {}),
+    xOffset: 0, yOffset: 0, gateUnknownSpells: true, ...(spec.global || {}),
   };
   const gx = g.xOffset, gy = g.yOffset, gap = g.gap;
 
