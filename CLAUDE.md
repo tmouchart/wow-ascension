@@ -361,10 +361,28 @@ Blind spots to close before scaling (the two hypotheses nothing has validated ye
 
 Tooling added 2026-07-14: `tools/audit-aura-names.js` (buff-name checklist), `tools/coverage-report.js`
 (coverage map), and a fixed `tools/verify-unchanged.js` (now normalizes CRLF so the golden guardrail isn't a
-false-red on Windows — it had been red at HEAD purely from line endings). Web app deploy is prepared but
-unshipped: `Dockerfile` + `fly.toml` + `web/nginx.conf` at the repo root serve the static SPA on fly.io
-(`fly launch --no-deploy` once, then `fly deploy`); the Vite build itself is verified, the container build
-is not (Docker daemon was down).
+false-red on Windows — it had been red at HEAD purely from line endings).
+
+### Deployment — fly.io (SHIPPED + auto-deploy on push to main, since 2026-07-19)
+
+The web app is **live at https://wa-forge.fly.dev** (fly app `wa-forge`, region `cdg`). It is **full-stack**:
+ONE Node/Hono process (`server/server.mjs`) serves BOTH the API (`/api/import`, `/api/agent`) AND the built
+SPA (same-origin, no CORS) — set via env `STATIC_DIR=./web/dist`. (The old `web/nginx.conf` static-only path
+is dead — nginx is no longer used.) Deploy files live in **`weakauras/`** (NOT repo root):
+`weakauras/Dockerfile` (multi-stage: build SPA → server prod deps → run `node server/server.mjs`),
+`weakauras/fly.toml` (`PORT`/`STATIC_DIR` env, 512mb VM), `weakauras/.dockerignore` (excludes `server/.env`).
+
+- **Auto-deploy:** `.github/workflows/fly-deploy.yml` runs `flyctl deploy --remote-only` from `weakauras/` on
+  every push to `main` (authed via GitHub repo secret `FLY_API_TOKEN`). So **`git push origin main` = deploy** —
+  nothing manual. Manual deploy still works: `cd weakauras; fly deploy --remote-only`.
+- **GOTCHA (cost real time):** CI builds from **committed files only**, so any file the server requires at
+  runtime MUST be tracked, even though a local `fly deploy` (which uses the working tree) would succeed with it
+  untracked. An untracked `lib/wa-to-spec.js` shipped a `MODULE_NOT_FOUND` crash-loop the first deploy. If the
+  server starts requiring a new file, **commit it** before relying on the auto-deploy.
+- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret on the `wa-forge` app
+  (`fly secrets set OPENROUTER_API_KEY=... -a wa-forge`), NOT in git — `server/.env` is gitignored AND
+  dockerignored. The container build does `npm ci --omit=dev` in `server/`, so `server/package.json` and
+  `server/package-lock.json` MUST stay in sync (run `npm install` after editing deps, or CI fails).
 
 Known open items: baseline spellIds previously tracked by name are now resolvable via the DB scrape
 (`coa-baselines.js` → e.g. Fel Fireball 801312, Primordial Blast 800732) — swap name-tracked triggers to
@@ -410,7 +428,8 @@ generalizes cleanly do we add the fly.io web app + preview/customization fronten
   the log file `dev.log`** at the repo root — the dev launcher (`scripts/dev.mjs`) tees both process outputs
   there (prefixed `[backend]`/`[frontend]`, truncated each run). Read/grep it on demand; don't start a server.
 - **Git: this is a solo hobby project — commit directly to `main`, no branches, no PRs.** Commit when asked;
-  don't create feature branches or open pull requests.
+  don't create feature branches or open pull requests. **`git push origin main` auto-deploys to fly.io**
+  (see Deployment above) — a runtime file left untracked will crash prod even if it works locally.
 - **Parallel agents — commit ONLY your own files, and ONLY your own lines.** 5+ agents are always working in
   parallel, so when the user asks you to commit it is **NORMAL and expected** that the working tree has other
   unrelated changes (modified/untracked files, and edits inside files you also touched). Never `git add -A`,
