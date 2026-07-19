@@ -1,12 +1,18 @@
-# fly.io deploy for the WA-Forge web editor. Static SPA behind nginx (see Dockerfile). Machines
-# auto-stop when idle and cold-start on request — a hobby app costs ~nothing at rest.
-#   fly launch --no-deploy    # first time only: creates the app + picks a name/region (edit `app` below)
-#   fly deploy                # build the Docker image and ship it
+# fly.io deploy for the WA-Forge web editor. One Node process (Hono, see Dockerfile) serves the API
+# (/api/import, /api/agent) AND the built SPA. Machines auto-stop when idle and cold-start on request —
+# a hobby app costs ~nothing at rest.
+#   fly launch --no-deploy                       # first time only: creates the app (edit `app` below)
+#   fly secrets set OPENROUTER_API_KEY=sk-or-...  # required for the Agent panel (/api/agent)
+#   fly deploy --remote-only                     # build on fly's builder (no local Docker needed) + ship
 app = "wa-forge"
 primary_region = "cdg"        # Paris — closest to the user; change if desired
 
 [build]
   dockerfile = "Dockerfile"
+
+[env]
+  PORT = "8080"               # the Hono server reads $PORT
+  STATIC_DIR = "./web/dist"   # tells the server to also serve the built SPA (same-origin as /api)
 
 [http_service]
   internal_port = 8080
@@ -17,4 +23,4 @@ primary_region = "cdg"        # Paris — closest to the user; change if desired
 
 [[vm]]
   size = "shared-cpu-1x"
-  memory = "256mb"
+  memory = "512mb"            # headroom for the AI SDK during an /api/agent run

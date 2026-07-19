@@ -1,6 +1,7 @@
 # Keep the Docker build context small & reproducible. node_modules is reinstalled via `npm ci` in-image;
 # dist/ and derived files are rebuilt. Only web/, lib/, classes/, registry/ are needed (see Dockerfile).
 **/node_modules
+server/.env
 web/dist
 web/tsconfig.tsbuildinfo
 dist

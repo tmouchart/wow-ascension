@@ -1,23 +1,36 @@
-# Static SPA build for the WA-Forge web editor, served by nginx. Multi-stage so `fly deploy` is one
-# self-contained command (no local `npm run build` needed first). Build context = the weakauras/ repo root
-# (NOT web/) because the Vite build reads ../../registry/INDEX.json and ../../../classes/*/spec.json, and
-# gen.mjs bundles ../lib/browser-entry.mjs — all live outside web/.
+# Full-stack build for WA-Forge: the Hono server (server/server.mjs) serves the API (/api/import,
+# /api/agent) AND the built SPA in one Node process, so the frontend calls /api/* same-origin.
+# Build context = the weakauras/ repo root (NOT web/) because the Vite build reads ../../registry/INDEX.json
+# and ../../../classes/*/spec.json, gen.mjs bundles ../lib/browser-entry.mjs, and the server requires
+# ../lib + ../registry at runtime — all live outside web/.
 
-# --- build stage ---
-FROM node:24-alpine AS build
+# --- web build stage: produce web/dist ---
+FROM node:24-alpine AS webbuild
 WORKDIR /app
-# deps first so the layer caches across source-only changes
 COPY web/package.json web/package-lock.json ./web/
 RUN cd web && npm ci
-# the sources the build touches (web app + the parent dirs it imports at build time)
 COPY web ./web
 COPY lib ./lib
 COPY classes ./classes
 COPY registry ./registry
 RUN cd web && npm run build
 
-# --- serve stage ---
-FROM nginx:alpine
-COPY web/nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/web/dist /usr/share/nginx/html
+# --- server deps stage: production node_modules for the Hono server ---
+FROM node:24-alpine AS serverdeps
+WORKDIR /app/server
+COPY server/package.json server/package-lock.json ./
+RUN npm ci --omit=dev
+
+# --- run stage ---
+FROM node:24-alpine
+WORKDIR /app
+ENV NODE_ENV=production
+# server code + its runtime data deps (lib is zero-dep; spec-ops reads registry/<slug>.json)
+COPY server ./server
+COPY lib ./lib
+COPY registry ./registry
+COPY --from=serverdeps /app/server/node_modules ./server/node_modules
+COPY --from=webbuild /app/web/dist ./web/dist
 EXPOSE 8080
+# STATIC_DIR (set in fly.toml) makes the server serve ./web/dist; PORT is provided by fly.
+CMD ["node", "server/server.mjs"]
