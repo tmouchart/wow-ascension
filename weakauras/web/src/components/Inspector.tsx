@@ -22,7 +22,7 @@ const SLIDERS: { key: string; label: string; min: number; max: number }[] = [
 ];
 
 // The kinds the user can freely add (and therefore remove); the rest ships with the class SPEC.
-const REMOVABLE = new Set(['powerBar', 'healthBar', 'uptimeBar', 'stacks', 'procRow']);
+const REMOVABLE = new Set(['powerBar', 'healthBar', 'uptimeBar', 'stacks', 'chargeStacks', 'stackBar', 'buffWarnText', 'procRow']);
 
 // The generator derives a region id from el.id (or a per-kind default like "<spec> Power") — two bars with
 // the same effective id would collide (same region id -> same uid). Mirror those defaults when uniquifying.
@@ -31,6 +31,9 @@ const effectiveId = (spec: Spec, el: El): string | undefined =>
   (el.kind === 'powerBar' ? `${spec.id} Power`
     : el.kind === 'healthBar' ? `${spec.id} Health`
     : el.kind === 'stacks' ? `${spec.id} Stack`
+    : el.kind === 'chargeStacks' ? `${spec.id} Charge`
+    : el.kind === 'stackBar' ? `${spec.id} ${typeof el.aura === 'string' ? el.aura : 'Stack'}`
+    : el.kind === 'buffWarnText' ? `${spec.id} Warn - ${el.buff}`
     : el.kind === 'uptimeBar' ? `${spec.id} ${typeof el.buff === 'string' ? el.buff : 'Uptime'}`
     : el.kind === 'procRow' ? `${spec.id} Procs`
     : undefined);
@@ -155,6 +158,45 @@ function ElementFields({ el, index }: { el: El; index: number }) {
           <Input className="h-8 w-[52px] text-right font-mono" type="number" min={2} max={12} title="Boxes"
             value={Number(el.count ?? 5)}
             onChange={(e) => setElementField(index, 'count', Number(e.target.value))} />
+        </span>
+      </Field>
+    );
+  }
+  if (el.kind === 'chargeStacks') {
+    // manual entry is a spell name → track it by name (matching the by-name charge trigger)
+    return (
+      <Field label="Spell">
+        <span className="flex items-center gap-2.5">
+          <Input className="h-8 w-24" type="text" value={(el.spell as string) ?? ''}
+            onChange={(e) => { setElementField(index, 'spell', e.target.value); setElementField(index, 'byName', true); }} />
+          <Input className="h-8 w-[52px] text-right font-mono" type="number" min={2} max={10} title="Boxes"
+            value={Number(el.count ?? 3)}
+            onChange={(e) => setElementField(index, 'count', Number(e.target.value))} />
+        </span>
+      </Field>
+    );
+  }
+  if (el.kind === 'stackBar') {
+    return (
+      <Field label="Aura / max">
+        <span className="flex items-center gap-2.5">
+          <Input className="h-8 w-24" type="text" value={(el.aura as string) ?? ''}
+            onChange={(e) => setElementField(index, 'aura', e.target.value)} />
+          <Input className="h-8 w-[52px] text-right font-mono" type="number" min={1} title="Max"
+            value={Number(el.max ?? 100)}
+            onChange={(e) => setElementField(index, 'max', Number(e.target.value))} />
+        </span>
+      </Field>
+    );
+  }
+  if (el.kind === 'buffWarnText') {
+    return (
+      <Field label="Buff / text">
+        <span className="flex items-center gap-2.5">
+          <Input className="h-8 w-24" type="text" placeholder="Buff" value={(el.buff as string) ?? ''}
+            onChange={(e) => setElementField(index, 'buff', e.target.value)} />
+          <Input className="h-8 w-24" type="text" placeholder="MISSING" value={(el.text as string) ?? ''}
+            onChange={(e) => setElementField(index, 'text', e.target.value)} />
         </span>
       </Field>
     );

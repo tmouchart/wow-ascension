@@ -105,9 +105,14 @@ export function App() {
       });
       const data = await res.json();
       if (!data.ok) throw new Error(data.error || 'import failed');
-      setClass(data.spec);
+      // The WA string carries no slug, but our generated SPEC ids start with the class name
+      // ("Felsworn Tyrant SPEC"). Infer the class so the dropdown, icon resolution AND the per-class
+      // autosave draft all match; fall back to the current class for an unrecognized (external) id.
+      const inferred = CLASSES.find((c) => String(data.spec.id ?? '').toLowerCase().startsWith(c.class.toLowerCase()))?.slug;
+      if (inferred) { setSlug(inferred); switchClass(inferred, data.spec); }
+      else setClass(data.spec);
       setImportOpen(false); setImportText('');
-      setStatus(`Imported — ${data.regions} regions`);
+      setStatus(inferred ? `Imported — ${data.regions} regions` : `Imported as ${slug} — class not detected`);
     } catch (e) {
       setStatus('Error: ' + (e instanceof Error ? e.message : String(e)));
     } finally {
