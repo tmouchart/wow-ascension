@@ -10,41 +10,23 @@ Never invent a field name, tag, or default from memory. If you can't confirm a s
 decoded reference package, say so — don't ship a plausible guess.
 
 **ASK QUESTIONS IF NOT CLEAR.** Don't assume, don't hide confusion, surface tradeoffs. If a request has
-multiple interpretations, present them — don't silently pick one. If something is unclear, stop and name
-what's confusing before writing code.
+multiple interpretations, present them — don't silently pick one. State assumptions explicitly; push back when
+a simpler approach exists.
 
-### 1. Think before coding
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them — don't pick silently.
-- If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop, name what's confusing, and ask.
-
-### 2. Simplicity first
-Minimum code that solves the problem. Nothing speculative.
-- No features beyond what was asked; no abstractions for single-use code.
-- No "flexibility"/"configurability" that wasn't requested; no error handling for impossible scenarios.
-- If you write 200 lines and it could be 50, rewrite it. Ask: "Would a senior engineer call this overcomplicated?" If yes, simplify.
-
-### 3. Surgical changes
-Touch only what you must; clean up only your own mess.
-- Don't "improve" adjacent code, comments, or formatting. Don't refactor what isn't broken. Match existing style.
-- Remove imports/variables/functions that YOUR changes made unused; don't delete pre-existing dead code unless asked (mention it instead).
-- The test: every changed line should trace directly to the request.
-
-### 4. Goal-driven execution
-Define success criteria, then loop until verified. Turn tasks into verifiable goals
-("fix the bug" → "write a test that reproduces it, then make it pass"). For multi-step work, state a brief
-plan with a `verify:` check per step. In this project the standard verification is the self round-trip:
-`buildPackage` decode→encode→decode-equality asserts before writing, and an in-game import confirms.
-
-### 5. Be an actor of your own self-growth (proactive documentation)
-If during a session you hit something that **wasn't clear and cost you time to rediscover** in the project
-(a non-obvious field shape, a hidden gotcha, a workflow, where a thing lives, a scrape/build quirk), **proactively
-propose capturing it** so future-you doesn't pay that cost again. Don't wait to be asked. Point to the right home:
-- **CLAUDE.md** — a durable project fact, convention, gotcha, or taxonomy entry.
-- **a skill** (`.claude/skills/`) — a repeatable procedure worth codifying.
-- **a subagent** — a specialized, reusable investigation/build role.
-Surface it as a short "worth documenting?" suggestion with the exact addition you'd make, and let the user decide.
+1. **Simplicity first** — minimum code that solves the problem, nothing speculative. No features beyond what was
+   asked, no abstractions for single-use code, no unrequested "flexibility", no error handling for impossible
+   scenarios. If 200 lines could be 50, rewrite it.
+2. **Surgical changes** — touch only what you must; clean up only your own mess. Don't refactor what isn't broken;
+   match existing style. Remove imports/vars YOUR changes made unused; don't delete pre-existing dead code (mention
+   it instead). Every changed line should trace directly to the request.
+3. **Goal-driven execution** — turn tasks into verifiable goals ("fix the bug" → "write a test that reproduces it,
+   then make it pass"). The standard verification here is the self round-trip: `buildPackage` decode→encode→decode-
+   equality asserts before writing, and an in-game import confirms.
+4. **Self-growth (proactive documentation)** — if you hit something that **wasn't clear and cost time to
+   rediscover** (a non-obvious field shape, a gotcha, a workflow, a scrape/build quirk), propose capturing it
+   without being asked, into the right home: **CLAUDE.md** (durable fact/convention/gotcha/taxonomy), **a skill**
+   (`.claude/skills/`, a repeatable procedure), or **a subagent** (a reusable investigation/build role). Surface it
+   as a short "worth documenting?" with the exact addition, and let the user decide.
 
 ## Goal
 
@@ -287,24 +269,23 @@ docs/           spec-dsl-reference.md (the SPEC DSL + engine lookup — READ FIR
 > conventions, the layout-engine math, the build/web pipeline) so you don't have to re-read `lib/spec-builder.js`
 > + `lib/builders-core.js` each time. The source stays the schema of record; if the doc disagrees, fix the doc.
 
-**SPEC-first workflow (since 2026-07-14):** every class package is a declarative `spec.json` consumed
-verbatim by BOTH the Node build and the web app — never duplicate spec data in web/src. The DSL
-(`lib/spec-builder.js`) mirrors the element taxonomy: kinds `procRow` (composable proc DSL — AND-ed
-`when: [clauses]` with clauses `buff` / `buffMissing` / `anyBuff` / `buffStacks:{name,op,value}` /
-`targetHpBelow` / `powerAtLeast` / `spellReady` / `charges:{op,value}` / `stealable`, + `hide: slot|collapse`
-(slot = alpha-gated, keeps its row slot; collapse = show-gated via disjunctive `all`, row recenters — only
-show-capable clauses), + `glow: {color, glowType, when: [extra clauses]}` (empty `glow.when` = glow whenever
-shown), + `display: {timer: cooldown|buff|none, stacks (a `%N.s` per-trigger subtext), cooldownNumbers,
-desaturateOnCd}`; legacy sugar `buff:` proc / `execute: pct` (+`glowAlways`) / `stealable: true` still
-accepted and byte-frozen; the web ProcPanel edits procs per-icon and converts legacy to `when` on first
-edit), `cdRow` (cooldownIcon + one `glow: {type: buff|
-buffMissing|ready|readyPower|powerPct|targetHealthBelow|onCharges}` + `proc:`/`charges`/`showPowerAbove`),
-`buffRow` (`anyOf:[names]` / `weaponEnchant: main|off` / `indicator:` + `lowPowerGlow`), `powerBar`,
-`stackBar` (aura-stack resource, cultist Insanity), `healthBar`, `uptimeBar`, `stacks` (+`capGlow`),
-`chargeStacks`, `buffWarnText`, + side columns `left`/`right` and `combatOnly`. specToParts validates the
-SPEC (unknown kind / missing fields / duplicate region ids -> loud error). Structural parity spec vs
-hand-built was verified region-by-region for all 5 classes (2026-07-14); the golden guardrail keeps both
-families frozen. All 5 spec packages await one in-game import confirmation each, then build.js files retire.
+**SPEC-first workflow (since 2026-07-14):** every class package is a declarative `spec.json` consumed verbatim
+by BOTH the Node build and the web app — never duplicate spec data in web/src. The DSL (`lib/spec-builder.js`)
+mirrors the element taxonomy — full clause/field lists are in `docs/spec-dsl-reference.md`; the kinds:
+- `procRow` — composable proc DSL: AND-ed `when: [clauses]` (`buff` / `buffMissing` / `anyBuff` /
+  `buffStacks:{name,op,value}` / `targetHpBelow` / `powerAtLeast` / `spellReady` / `charges:{op,value}` /
+  `stealable`), + `hide: slot|collapse` (slot = alpha-gated keeps its slot; collapse = show-gated, row recenters),
+  + `glow: {color, glowType, when: [extra clauses]}` (empty `when` = glow whenever shown), + `display: {timer,
+  stacks, cooldownNumbers, desaturateOnCd}`. Legacy sugar (`buff:` / `execute: pct` +`glowAlways` / `stealable`)
+  still accepted and byte-frozen; the web ProcPanel converts legacy to `when` on first edit.
+- `cdRow` (cooldownIcon + one `glow:{type: buff|buffMissing|ready|readyPower|powerPct|targetHealthBelow|onCharges}`
+  + `proc:`/`charges`/`showPowerAbove`), `buffRow` (`anyOf:[names]` / `weaponEnchant: main|off` / `indicator:` +
+  `lowPowerGlow`), `powerBar`, `stackBar` (aura-stack resource, cultist Insanity), `healthBar`, `uptimeBar`,
+  `stacks` (+`capGlow`), `chargeStacks`, `buffWarnText`, + side columns `left`/`right` and `combatOnly`.
+
+specToParts validates the SPEC (unknown kind / missing fields / duplicate region ids → loud error). Structural
+parity spec vs hand-built was verified region-by-region for all 5 classes (2026-07-14) and the golden guardrail
+keeps both frozen. All 5 spec packages await one in-game import confirmation each, then build.js files retire.
 
 `lib/builders.js` shared element helpers: bars `baseBar`/`gradient`/`barText`/`segmentBar`/`chargeSegmentBar`/
 **`uptimeBar`**; icons **`cooldownIcon`** (the one unified CD/proc/featured icon builder) + `iconBase`;
@@ -319,70 +300,56 @@ rotates the previous string into `<class>.prev.import.txt` on each build.
 
 ## Current status
 
-Five classes wired to the shared engine (each has a hand-built `build.js` AND a declarative `spec.json`;
-all await one in-game import confirmation each — nothing is game-validated yet, see the two blind spots below):
-- **Barbarian — Brutality** (`node build.js barbarian-brutality`): **side-rail shell** — DEF column (Battle
-  Vigor / Defiance / Thick Skull) vertical-left, OFF column (Unbridled Rage / Storm of Steel / Killing Spree /
-  Hodir's Wrath) vertical-right; central stack = Warspear buff indicator · big **Crush** featured CD (white
-  glow when up) · horizontal spell row (Whirling Advance / Decapitate / Headbutt / Jawbreaker; Decapitate
-  glows gold at `percentpower>=60`) · **any-of "Rage" bar** (Unbridled Rage OR Onslaught OR Battle Vigor) ·
-  big pink Rage bar · Health · **Decapitate execute proc** (`percenthealth<35`). Whole WA is **combat-only**
-  (`use_combat` on every region). By-name (confirm in-game): Unbridled Rage, Onslaught, Symbol of the Warspear,
-  and Kick was dropped from the layout. Resolved baseline ids: Headbutt 520523, Battle Vigor 801768,
-  Whirling Advance 500919.
-- **Felsworn — Tyrant** (`node build.js felsworn`): Fel Fireball proc row (shows only while "Carve" is up,
-  white Action-Button glow) · 8-icon primary CD row · Inner Demon uptime bar · Energy(gold) · 6 Felfury
-  stack boxes · Health(red) · 3-icon secondary row. Grey-on-cooldown, Chaos Rush charges; Felfury glows
-  gold when capped@6 AND Inner Demon missing; defensive buffs glow Pixel green.
-- **Runemaster — Runic** (`node build.js runemaster`): primary CD row · Runeblade 3-segment **charge** bar
-  (0..3) · Mana(blue) · Health(red) · **weapon/tattoo buff row** · secondary row. Runic Brand glows white
-  (Action Button) when ready, Primordial Blast glows orange when Runeblade charges are spent, Power
-  Overwhelming is a proc-only icon. Runeblade (707141) and Primordial Blast (800732) now use resolved
-  baseline spellIds (was by-name). The buff row (under HP) is a centered dynamicgroup of showOnActive
-  icons: the active **Runic Tattoo** (aura2 by name, all 6 elements Fire/Water/Air/Earth/Frost/Arcane,
-  dynamic elemental icon) + **Weapon Engravings** MH & OH (the `item`/`Weapon Enchant` trigger, enchant
-  `""` = any, weapon-icon + `%n` name subtext + temp-enchant timer). Engraving detection depends on the
-  client exposing `GetWeaponEnchantInfo` — confirm in-game.
-- **Cultist** (`node build.js cultist`): **Insanity** as a `stackBar` resource (aura-stack 0..100, no
-  confirmed power index) + defensive glows (Abyssal Ward / Doomcloak / Embrace the Void). Its `spec.json`
-  `id` is the generic "Cultist SPEC" — not tied to one of the 4 specs (Godblade/Corruption/Dreadnought/
-  Heretic); pick a spec name if/when confirmed (note: changing the id shifts uids).
-- **Tinker — Demolition** (`node build.js tinker`): CD rows + Kinetic Shield glow; Mana primary (index
-  unconfirmed).
+Five classes wired to the shared engine (each has a hand-built `build.js` AND a declarative `spec.json`; all
+await one in-game import confirmation — nothing is game-validated yet, see the two blind spots below):
+- **Barbarian — Brutality** (`barbarian-brutality`): **side-rail shell** — DEF column (Battle Vigor / Defiance /
+  Thick Skull) left, OFF column (Unbridled Rage / Storm of Steel / Killing Spree / Hodir's Wrath) right; central
+  stack = Warspear buff indicator · big **Crush** featured CD (white glow when up) · spell row (Whirling Advance /
+  Decapitate / Headbutt / Jawbreaker; Decapitate glows gold @ `percentpower>=60`) · **any-of "Rage" bar**
+  (Unbridled Rage OR Onslaught OR Battle Vigor) · pink Rage bar · Health · **Decapitate execute proc**
+  (`percenthealth<35`). Whole WA is **combat-only**. Baseline ids: Headbutt 520523, Battle Vigor 801768, Whirling
+  Advance 500919. (Kick dropped from layout.)
+- **Felsworn — Tyrant** (`felsworn`): Fel Fireball proc row (only while "Carve" up, white Action-Button glow) ·
+  8-icon CD row · Inner Demon uptime bar · Energy(gold) · 6 Felfury stack boxes · Health(red) · 3-icon secondary
+  row. Grey-on-cooldown, Chaos Rush charges; Felfury glows gold when capped@6 AND Inner Demon missing; defensives
+  glow Pixel green.
+- **Runemaster — Runic** (`runemaster`): CD row · Runeblade 3-segment **charge** bar (0..3) · Mana(blue) ·
+  Health(red) · **weapon/tattoo buff row** · secondary row. Runic Brand glows white (Action Button) when ready,
+  Primordial Blast glows orange when Runeblade charges spent, Power Overwhelming is a proc-only icon. Baseline
+  ids: Runeblade 707141, Primordial Blast 800732. Buff row = centered showOnActive dynamicgroup: active **Runic
+  Tattoo** (aura2 by name, 6 elements, dynamic icon) + **Weapon Engravings** MH & OH (`Weapon Enchant` trigger,
+  enchant `""`=any, `%n` name + temp-enchant timer; needs client `GetWeaponEnchantInfo` — confirm in-game).
+- **Cultist** (`cultist`): **Insanity** as a `stackBar` (aura-stack 0..100, no confirmed power index) + defensive
+  glows (Abyssal Ward / Doomcloak / Embrace the Void). `spec.json` `id` is the generic "Cultist SPEC" — not tied
+  to one of the 4 specs (Godblade/Corruption/Dreadnought/Heretic); picking a spec name shifts uids.
+- **Tinker — Demolition** (`tinker`): CD rows + Kinetic Shield glow; Mana primary (index unconfirmed).
 
-Blind spots to close before scaling (the two hypotheses nothing has validated yet):
-1. **Aura names** — all detection is `aura2` by exact name. Run `node tools/audit-aura-names.js` →
-   `tools/AURA-NAMES-CHECKLIST.md` (23 aura names + 5 by-name spells across the 5 packages) and tick each
-   in-game; a buff name != spell name is common and a mismatch fails silently.
+Two blind spots to close before scaling (nothing has validated these yet):
+1. **Aura names** — all detection is `aura2` by exact name. `node tools/audit-aura-names.js` →
+   `tools/AURA-NAMES-CHECKLIST.md` (23 aura names + 5 by-name spells); tick each in-game — a buff name != spell
+   name is common and a mismatch fails silently.
 2. **Resource power index** — only barbarian & felsworn have a `confirmed` primary index in
-   `registry/resource-model.json`; the other 19 are inferred (`index: null`) so a `powerBar` for them would
-   be a guess. `node tools/coverage-report.js` → `tools/COVERAGE.md` maps done vs remaining (4/70 named
-   specs packaged) + a next-up queue.
-
-Tooling added 2026-07-14: `tools/audit-aura-names.js` (buff-name checklist), `tools/coverage-report.js`
-(coverage map), and a fixed `tools/verify-unchanged.js` (now normalizes CRLF so the golden guardrail isn't a
-false-red on Windows — it had been red at HEAD purely from line endings).
+   `registry/resource-model.json`; the other 19 are inferred (`index: null`), so a `powerBar` for them is a guess.
+   `node tools/coverage-report.js` → `tools/COVERAGE.md` maps done vs remaining (4/70 specs) + a next-up queue.
+   (`tools/verify-unchanged.js` normalizes CRLF so the golden guardrail isn't a false-red on Windows.)
 
 ### Deployment — fly.io (SHIPPED + auto-deploy on push to main, since 2026-07-19)
 
-The web app is **live at https://wa-forge.fly.dev** (fly app `wa-forge`, region `cdg`). It is **full-stack**:
-ONE Node/Hono process (`server/server.mjs`) serves BOTH the API (`/api/import`, `/api/agent`) AND the built
-SPA (same-origin, no CORS) — set via env `STATIC_DIR=./web/dist`. (The old `web/nginx.conf` static-only path
-is dead — nginx is no longer used.) Deploy files live in **`weakauras/`** (NOT repo root):
-`weakauras/Dockerfile` (multi-stage: build SPA → server prod deps → run `node server/server.mjs`),
-`weakauras/fly.toml` (`PORT`/`STATIC_DIR` env, 512mb VM), `weakauras/.dockerignore` (excludes `server/.env`).
+**Live at https://wa-forge.fly.dev** (fly app `wa-forge`, region `cdg`). **Full-stack**: ONE Node/Hono process
+(`server/server.mjs`) serves BOTH the API (`/api/import`, `/api/agent`) AND the built SPA (same-origin, no CORS)
+via env `STATIC_DIR=./web/dist` (the old `web/nginx.conf` is dead). Deploy files live in **`weakauras/`** (NOT
+repo root): `Dockerfile` (multi-stage: build SPA → server prod deps → `node server/server.mjs`), `fly.toml`
+(`PORT`/`STATIC_DIR`, 512mb VM), `.dockerignore` (excludes `server/.env`).
 
 - **Auto-deploy:** `.github/workflows/fly-deploy.yml` runs `flyctl deploy --remote-only` from `weakauras/` on
-  every push to `main` (authed via GitHub repo secret `FLY_API_TOKEN`). So **`git push origin main` = deploy** —
-  nothing manual. Manual deploy still works: `cd weakauras; fly deploy --remote-only`.
-- **GOTCHA (cost real time):** CI builds from **committed files only**, so any file the server requires at
-  runtime MUST be tracked, even though a local `fly deploy` (which uses the working tree) would succeed with it
-  untracked. An untracked `lib/wa-to-spec.js` shipped a `MODULE_NOT_FOUND` crash-loop the first deploy. If the
-  server starts requiring a new file, **commit it** before relying on the auto-deploy.
-- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret on the `wa-forge` app
-  (`fly secrets set OPENROUTER_API_KEY=... -a wa-forge`), NOT in git — `server/.env` is gitignored AND
-  dockerignored. The container build does `npm ci --omit=dev` in `server/`, so `server/package.json` and
-  `server/package-lock.json` MUST stay in sync (run `npm install` after editing deps, or CI fails).
+  every push to `main` (authed via secret `FLY_API_TOKEN`). So **`git push origin main` = deploy**. Manual:
+  `cd weakauras; fly deploy --remote-only`.
+- **GOTCHA:** CI builds from **committed files only**, so any file the server requires at runtime MUST be tracked
+  (a local `fly deploy` uses the working tree and would mask this). An untracked `lib/wa-to-spec.js` once shipped
+  a `MODULE_NOT_FOUND` crash-loop — **commit new runtime deps** before relying on auto-deploy.
+- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret (`fly secrets set ... -a wa-forge`), NOT in
+  git (`server/.env` is git+docker-ignored). Build does `npm ci --omit=dev` in `server/`, so `server/package.json`
+  + `server/package-lock.json` MUST stay in sync (run `npm install` after editing deps, or CI fails).
 
 Known open items: baseline spellIds previously tracked by name are now resolvable via the DB scrape
 (`coa-baselines.js` → e.g. Fel Fireball 801312, Primordial Blast 800732) — swap name-tracked triggers to
@@ -430,14 +397,11 @@ generalizes cleanly do we add the fly.io web app + preview/customization fronten
 - **Git: this is a solo hobby project — commit directly to `main`, no branches, no PRs.** Commit when asked;
   don't create feature branches or open pull requests. **`git push origin main` auto-deploys to fly.io**
   (see Deployment above) — a runtime file left untracked will crash prod even if it works locally.
-- **Parallel agents — commit ONLY your own files, and ONLY your own lines.** 5+ agents are always working in
-  parallel, so when the user asks you to commit it is **NORMAL and expected** that the working tree has other
-  unrelated changes (modified/untracked files, and edits inside files you also touched). Never `git add -A`,
-  `git add .`, or `git commit -a`. Instead: (1) stage only the specific files YOUR task changed, by explicit
-  path (`git add path/to/file`); (2) if a file you touched also contains someone else's changes, stage just
-  your own lines with `git add -p` (hunk-by-hunk) so you don't sweep in another agent's work; (3) verify with
-  `git diff --cached` that only your lines are staged before committing. Leave every other change untouched
-  in the working tree.
+- **Parallel agents — commit ONLY your own files, and ONLY your own lines.** 5+ agents work in parallel, so an
+  unrelated dirty working tree at commit time is **NORMAL**. Never `git add -A`/`.`/`git commit -a`. Instead:
+  (1) stage only the files YOUR task changed, by explicit path; (2) if a file you touched also has someone else's
+  changes, stage just your own lines with `git add -p` (hunk-by-hunk); (3) `git diff --cached` to verify only your
+  lines are staged before committing. Leave every other change untouched.
 
 ## Skills (in `.claude/skills/`)
 
