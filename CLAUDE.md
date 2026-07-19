@@ -381,6 +381,26 @@ The `lib/builders.js` engine + the `classes/<name>/build.js` data files are the 
 cooldown lists in each class file are already close to that registry shape. Only after the generator
 generalizes cleanly do we add the fly.io web app + preview/customization frontend.
 
+## Web frontend rules (`weakauras/web/`)
+
+The editor is the design system of record: **shadcn/ui** (new-york, CSS-variable tokens) on **Tailwind v4**
+(CSS-first — no `tailwind.config`; theme in `@theme inline` in `src/index.css`), Radix, lucide, zustand. When
+touching anything under `web/src`:
+
+- **ALWAYS shadcn + Tailwind — never anything else.** No inline `style={{...}}`, no ad-hoc CSS, no other
+  component/CSS-in-JS library. New primitives from shadcn (`npx shadcn@latest add <name>` into `src/components/
+  ui/`); compose those, don't hand-roll. Existing `*.module.css` is legacy — don't add to it; port to Tailwind.
+- **Semantic tokens only — never hardcode colors.** Use `bg-background`/`text-foreground`/`border-border`/
+  `bg-primary`/`text-muted-foreground`/`bg-destructive`, etc. No hex/`rgb()`/named Tailwind colors and no
+  arbitrary values (`text-[#56ba04]`) — the WoW identity lives in the token VALUES in `index.css` (add/extend a
+  token in both `:root` and `.dark`) so both themes stay correct.
+- **Merge classes with `cn()`** from `@/lib/utils` — never string-concatenate. **Import via the `@` alias**, not
+  deep relative paths. **Icons = lucide-react only** (no inline SVG when a lucide icon exists).
+- **State = the zustand SPEC store** (`src/store.ts`); `classes/*/spec.json` presets are the single source of
+  truth (loaded via `import.meta.glob`). Never duplicate spec data into `web/src` or hold editable SPEC state in
+  local component state — read/write through the store.
+- **No new npm dependencies without asking** — stay lean; prefer the shadcn/Radix/Tailwind primitives present.
+
 ## Conventions
 
 - Node.js only (v24 present), zero npm dependencies. Windows shell = PowerShell; `node` works from `weakauras/`.
