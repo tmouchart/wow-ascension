@@ -1,0 +1,324 @@
+{
+  "slug": "tinker",
+  "class": "Tinker",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Demolition": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 801005,
+          "name": "Bomb Toss",
+          "res": "Mana",
+          "amt": 6,
+          "cd": 8
+        },
+        {
+          "id": 500535,
+          "name": "Build: Spider Bomb",
+          "res": "Mana",
+          "amt": 8,
+          "cd": 18
+        },
+        {
+          "id": 500235,
+          "name": "Rocket Launcher",
+          "res": "Mana",
+          "amt": 8
+        },
+        {
+          "id": 500600,
+          "name": "Build: Firepot Drone",
+          "res": "Mana",
+          "amt": 6
+        },
+        {
+          "id": 500241,
+          "name": "Rocket Boots",
+          "res": "Mana",
+          "amt": 14
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Bomb Toss",
+          "note": "Bomb Toss reduces target armor by -5% for 15 sec, stacking 4 times - keep the stack up on your primary target."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 707257,
+          "name": "Build: Oil-Spill Pylon",
+          "cd": 120
+        },
+        {
+          "id": 500249,
+          "name": "Hyperblast Barrage",
+          "cd": 30
+        },
+        {
+          "id": 801827,
+          "name": "Rockadier",
+          "cd": 180
+        },
+        {
+          "id": 802052,
+          "name": "Build: Spider Bomb Factory",
+          "cd": 60
+        },
+        {
+          "id": 707104,
+          "name": "Macro-Gravity Zone",
+          "cd": 120
+        },
+        {
+          "id": 800347,
+          "name": "Med Pack",
+          "cd": 60
+        },
+        {
+          "id": 706904,
+          "name": "Build: Repulsion Unit",
+          "cd": 90
+        },
+        {
+          "id": 804673,
+          "name": "Build: Destructo-Bot",
+          "cd": 45
+        },
+        {
+          "id": 801744,
+          "name": "Air Strike",
+          "cd": 60
+        },
+        {
+          "id": 500236,
+          "name": "Deathball",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520445,
+          "name": "Auto Resuscitation Device",
+          "cd": 180
+        },
+        {
+          "id": 806224,
+          "name": "Kinetic Shield",
+          "cd": 300
+        }
+      ],
+      "procs": [
+        {
+          "name": "Build: Firepot Drone",
+          "when": "It has 3 charges (10 sec recharge) - spend charges so it does not cap; Grenadier can refresh a charge at 5 stacks of Napalm."
+        }
+      ],
+      "st": "Keep Bomb Toss up (4-stack armor reduction) and Sticky Bomb on the target, then spend Mana on Rocket Launcher, Build: Spider Bomb and Build: Firepot Drone, filling with the free Scrap Shot; use Hyperblast Barrage and Deathball on cooldown.",
+      "aoe": "Use Build: Spider Bomb Factory and Hyperblast Barrage for cleave, and Firepot Drone / Spider Bomb which detonate in a radius; Bomb Toss and Scrap Shot still keep the turret and debuffs active.",
+      "summary": "Keep Bomb Toss stacks and Sticky Bomb up. ST: Rocket Launcher / Spider Bomb / Firepot Drone, filler Scrap Shot. AoE: Spider Bomb Factory -> Hyperblast Barrage."
+    },
+    "Invention": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 500241,
+          "name": "Rocket Boots",
+          "res": "Mana",
+          "amt": 14
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 805305,
+          "name": "Combat Symbiosis",
+          "cd": 90
+        },
+        {
+          "id": 560744,
+          "name": "My Greatest Invention!",
+          "cd": 180
+        },
+        {
+          "id": 807723,
+          "name": "Build: Noise Box",
+          "cd": 90
+        },
+        {
+          "id": 805308,
+          "name": "Build: Battery Recharge Station",
+          "cd": 120
+        },
+        {
+          "id": 707104,
+          "name": "Macro-Gravity Zone",
+          "cd": 120
+        },
+        {
+          "id": 800347,
+          "name": "Med Pack",
+          "cd": 60
+        },
+        {
+          "id": 706904,
+          "name": "Build: Repulsion Unit",
+          "cd": 90
+        },
+        {
+          "id": 804673,
+          "name": "Build: Destructo-Bot",
+          "cd": 45
+        },
+        {
+          "id": 801744,
+          "name": "Air Strike",
+          "cd": 60
+        },
+        {
+          "id": 500236,
+          "name": "Deathball",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520445,
+          "name": "Auto Resuscitation Device",
+          "cd": 180
+        },
+        {
+          "id": 806224,
+          "name": "Kinetic Shield",
+          "cd": 300
+        }
+      ],
+      "procs": [],
+      "st": "A support/heal spec: Zap! and Repair Shot heal allies, Combat Symbiosis buffs an ally's haste, and My Greatest Invention! is the raid-heal cooldown; Rocket Boots is the only Mana spender listed and there is no damage builder/spender to derive an offensive priority.",
+      "aoe": "My Greatest Invention! heals party/raid in a 30 yd radius on cooldown; use Combat Symbiosis and Med Pack for group support.",
+      "summary": "Support/heal spec: Zap! and Repair Shot to heal, My Greatest Invention! as the raid cooldown, Combat Symbiosis on an ally."
+    },
+    "Mechanics": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Scrap"
+      ],
+      "generators": [
+        {
+          "id": 504527,
+          "name": "Makeshift Dynamite",
+          "res": "Scrap",
+          "amt": 10
+        }
+      ],
+      "spenders": [
+        {
+          "id": 801389,
+          "name": "Mechsuit: Activate Jets",
+          "res": "Mana",
+          "amt": 30,
+          "cd": 10
+        },
+        {
+          "id": 805372,
+          "name": "Mechsuit: Laser Beam",
+          "res": "Mana",
+          "amt": 6,
+          "cd": 10
+        },
+        {
+          "id": 801387,
+          "name": "Mechsuit: Combustion",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 10
+        },
+        {
+          "id": 500241,
+          "name": "Rocket Boots",
+          "res": "Mana",
+          "amt": 14
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 806757,
+          "name": "Overclocked Machine"
+        },
+        {
+          "id": 800349,
+          "name": "Upgrade!",
+          "cd": 120
+        },
+        {
+          "id": 525039,
+          "name": "Scrapper",
+          "cd": 90
+        },
+        {
+          "id": 707104,
+          "name": "Macro-Gravity Zone",
+          "cd": 120
+        },
+        {
+          "id": 800347,
+          "name": "Med Pack",
+          "cd": 60
+        },
+        {
+          "id": 706904,
+          "name": "Build: Repulsion Unit",
+          "cd": 90
+        },
+        {
+          "id": 804673,
+          "name": "Build: Destructo-Bot",
+          "cd": 45
+        },
+        {
+          "id": 801744,
+          "name": "Air Strike",
+          "cd": 60
+        },
+        {
+          "id": 500236,
+          "name": "Deathball",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520445,
+          "name": "Auto Resuscitation Device",
+          "cd": 180
+        },
+        {
+          "id": 806224,
+          "name": "Kinetic Shield",
+          "cd": 300
+        }
+      ],
+      "procs": [
+        {
+          "name": "Makeshift Dynamite",
+          "when": "It has 2 charges (8 sec recharge) and generates 10 Scrap each - use charges to build Scrap without capping."
+        }
+      ],
+      "st": "Build Scrap with Makeshift Dynamite (and Scrap Shot, which also stacks pet buffs) then spend Mana on the Mechsuit abilities Mechsuit: Laser Beam and Mechsuit: Combustion; use Overclocked Machine and Upgrade! on cooldown, and Scrapper out of combat to refill Scrap and Mana.",
+      "aoe": "Mechsuit: Combustion and Mechsuit: Activate Jets hit nearby enemies for AoE; Upgrade! turns your Sentry Turret into an AoE grenade turret.",
+      "summary": "Build Scrap with Makeshift Dynamite / Scrap Shot, spend Mana on Mechsuit: Laser Beam and Combustion. AoE: Mechsuit: Combustion -> Upgrade!."
+    }
+  }
+}

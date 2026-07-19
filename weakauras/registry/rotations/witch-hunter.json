@@ -1,0 +1,484 @@
+{
+  "slug": "witch-hunter",
+  "class": "Witch Hunter",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Boltslinger": {
+      "confidence": "medium",
+      "resource": [
+        "Rage",
+        "Mana"
+      ],
+      "generators": [
+        {
+          "id": 500082,
+          "name": "Coiling Shot",
+          "res": "Rage",
+          "amt": 15
+        }
+      ],
+      "spenders": [
+        {
+          "id": 800162,
+          "name": "Tormentor",
+          "res": "Rage",
+          "amt": 20
+        },
+        {
+          "id": 500086,
+          "name": "Daring Escape",
+          "res": "Mana",
+          "amt": 21,
+          "cd": 30
+        },
+        {
+          "id": 520062,
+          "name": "Damnation",
+          "res": "Rage",
+          "amt": 25
+        },
+        {
+          "id": 800165,
+          "name": "Witchbane",
+          "res": "Rage",
+          "amt": 40
+        },
+        {
+          "id": 500085,
+          "name": "Vault",
+          "res": "Rage",
+          "amt": 15,
+          "cd": 12
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Tormentor",
+          "note": "14 sec Twilight DoT/curse; keep it ticking on the target"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805751,
+          "name": "Twilight Frenzy"
+        },
+        {
+          "id": 805754,
+          "name": "Heartseeking Bolt",
+          "cd": 15
+        },
+        {
+          "id": 681445,
+          "name": "Inquisitor's Trap",
+          "cd": 60
+        },
+        {
+          "id": 681450,
+          "name": "Death Trap",
+          "cd": 60
+        },
+        {
+          "id": 805756,
+          "name": "Smoke Grenade",
+          "cd": 120
+        },
+        {
+          "id": 804068,
+          "name": "Slayer's Mark",
+          "cd": 90
+        },
+        {
+          "id": 501380,
+          "name": "Brand of the Unworthy",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 802278,
+          "name": "Witchblood Tonic",
+          "cd": 120
+        },
+        {
+          "id": 805770,
+          "name": "Witching Shroud",
+          "cd": 90
+        },
+        {
+          "id": 802276,
+          "name": "Vampiric Tonic",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Damnation",
+          "when": "target below 35% health (execute)"
+        },
+        {
+          "name": "Heartseeking Bolt",
+          "when": "you have Bounty Hunter stacks (from Darkslayer/Witchbane) to consume"
+        }
+      ],
+      "st": "Generate Rage with Coiling Shot, keep Tormentor up, then spend Rage on Witchbane and Damnation (execute below 35%); consume Bounty Hunter stacks with Heartseeking Bolt.",
+      "aoe": "Twilight Frenzy channels AoE shots at nearby enemies for multi-target; Tormentor can spread via Strafing Shot on ranged crits.",
+      "summary": "Keep Tormentor up. ST: Coiling Shot -> Witchbane; Damnation as execute. AoE: Twilight Frenzy."
+    },
+    "Houndmaster": {
+      "confidence": "low",
+      "resource": [
+        "Rage",
+        "Mana"
+      ],
+      "generators": [
+        {
+          "id": 500082,
+          "name": "Coiling Shot",
+          "res": "Rage",
+          "amt": 15
+        }
+      ],
+      "spenders": [
+        {
+          "id": 520270,
+          "name": "Darkflock",
+          "res": "Mana",
+          "amt": 21
+        },
+        {
+          "id": 804193,
+          "name": "Quickdraw",
+          "res": "Rage",
+          "amt": 30,
+          "cd": 10
+        },
+        {
+          "id": 500085,
+          "name": "Vault",
+          "res": "Rage",
+          "amt": 15,
+          "cd": 12
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Unleash the Hounds",
+          "note": "summons a Lesser Shadow Hound for 20 sec; keep hounds active"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 807918,
+          "name": "Unleash the Hounds",
+          "cd": 10
+        },
+        {
+          "id": 805738,
+          "name": "Rearmament",
+          "cd": 300
+        },
+        {
+          "id": 802273,
+          "name": "Houndmaster's Call",
+          "cd": 20
+        },
+        {
+          "id": 804194,
+          "name": "Decimate",
+          "cd": 120
+        },
+        {
+          "id": 681445,
+          "name": "Inquisitor's Trap",
+          "cd": 60
+        },
+        {
+          "id": 681450,
+          "name": "Death Trap",
+          "cd": 60
+        },
+        {
+          "id": 805756,
+          "name": "Smoke Grenade",
+          "cd": 120
+        },
+        {
+          "id": 804068,
+          "name": "Slayer's Mark",
+          "cd": 90
+        },
+        {
+          "id": 501380,
+          "name": "Brand of the Unworthy",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 802278,
+          "name": "Witchblood Tonic",
+          "cd": 120
+        },
+        {
+          "id": 805770,
+          "name": "Witching Shroud",
+          "cd": 90
+        },
+        {
+          "id": 802276,
+          "name": "Vampiric Tonic",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Quickdraw",
+          "when": "only usable after critically striking with an ability"
+        }
+      ],
+      "st": "Generate Rage with Coiling Shot, keep Unleash the Hounds up, and spend Rage on Quickdraw (usable after a crit); use Houndmaster's Call on cooldown.",
+      "aoe": "Darkflock channels a wide cone of Shadow damage for multiple targets.",
+      "summary": "Keep hounds out via Unleash the Hounds. ST: Coiling Shot -> Quickdraw. AoE: Darkflock."
+    },
+    "Black Knight": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 681095,
+          "name": "March of the Black King",
+          "res": "Rage",
+          "amt": 5
+        },
+        {
+          "id": 500082,
+          "name": "Coiling Shot",
+          "res": "Rage",
+          "amt": 15
+        }
+      ],
+      "spenders": [
+        {
+          "id": 802280,
+          "name": "Noctis Blade",
+          "res": "Mana",
+          "amt": 7,
+          "cd": 6
+        },
+        {
+          "id": 500085,
+          "name": "Vault",
+          "res": "Rage",
+          "amt": 15,
+          "cd": 12
+        }
+      ],
+      "maintain": [
+        {
+          "name": "March of the Black King",
+          "note": "10 sec Shadow damage over time that generates 5 Rage every 2 sec"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 680513,
+          "name": "Secret of Raven Hill"
+        },
+        {
+          "id": 681445,
+          "name": "Inquisitor's Trap",
+          "cd": 60
+        },
+        {
+          "id": 681450,
+          "name": "Death Trap",
+          "cd": 60
+        },
+        {
+          "id": 805756,
+          "name": "Smoke Grenade",
+          "cd": 120
+        },
+        {
+          "id": 804068,
+          "name": "Slayer's Mark",
+          "cd": 90
+        },
+        {
+          "id": 501380,
+          "name": "Brand of the Unworthy",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680494,
+          "name": "Witchblight"
+        },
+        {
+          "id": 802138,
+          "name": "Gaze of the Black Knight",
+          "cd": 180
+        },
+        {
+          "id": 802278,
+          "name": "Witchblood Tonic",
+          "cd": 120
+        },
+        {
+          "id": 805770,
+          "name": "Witching Shroud",
+          "cd": 90
+        },
+        {
+          "id": 802276,
+          "name": "Vampiric Tonic",
+          "cd": 120
+        }
+      ],
+      "procs": [],
+      "st": "Build Rage with March of the Black King and Coiling Shot, then spend Mana on Noctis Blade (6 sec cooldown, self-heal); Secret of Raven Hill empowers your Dawn Blade after drinking a Tonic.",
+      "aoe": "",
+      "summary": "Keep March of the Black King up for Rage. ST: Noctis Blade on cooldown."
+    },
+    "Inquisition": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 500082,
+          "name": "Coiling Shot",
+          "res": "Rage",
+          "amt": 15
+        }
+      ],
+      "spenders": [
+        {
+          "id": 503662,
+          "name": "Torchlight",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 20
+        },
+        {
+          "id": 802020,
+          "name": "Dusk Blade",
+          "res": "Rage",
+          "amt": 30
+        },
+        {
+          "id": 802006,
+          "name": "Hunt",
+          "res": "Mana",
+          "amt": 12
+        },
+        {
+          "id": 802019,
+          "name": "Purifier's Edge",
+          "res": "Mana",
+          "amt": 9,
+          "cd": 6
+        },
+        {
+          "id": 802004,
+          "name": "Smite Evil",
+          "res": "Rage",
+          "amt": 40
+        },
+        {
+          "id": 500085,
+          "name": "Vault",
+          "res": "Rage",
+          "amt": 15,
+          "cd": 12
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Flames of Sin",
+          "note": "empowerment stacks granted/extended by Purifier's Edge, Fiery Judgement, Torchlight and Flourish; keep it active"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 802277,
+          "name": "Pyro Tonic",
+          "cd": 120
+        },
+        {
+          "id": 802140,
+          "name": "Fiery Judgement",
+          "cd": 30
+        },
+        {
+          "id": 802139,
+          "name": "Darkslayer's Lantern",
+          "cd": 120
+        },
+        {
+          "id": 805365,
+          "name": "Flourish",
+          "cd": 60
+        },
+        {
+          "id": 681445,
+          "name": "Inquisitor's Trap",
+          "cd": 60
+        },
+        {
+          "id": 681450,
+          "name": "Death Trap",
+          "cd": 60
+        },
+        {
+          "id": 805756,
+          "name": "Smoke Grenade",
+          "cd": 120
+        },
+        {
+          "id": 804068,
+          "name": "Slayer's Mark",
+          "cd": 90
+        },
+        {
+          "id": 501380,
+          "name": "Brand of the Unworthy",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 802278,
+          "name": "Witchblood Tonic",
+          "cd": 120
+        },
+        {
+          "id": 805770,
+          "name": "Witching Shroud",
+          "cd": 90
+        },
+        {
+          "id": 802276,
+          "name": "Vampiric Tonic",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Fiery Judgement",
+          "when": "off cooldown, to grant or extend Flames of Sin"
+        }
+      ],
+      "st": "Apply Torchlight then spend on Purifier's Edge and Smite Evil (and Dusk Blade) to keep Flames of Sin active; Hunt generates Rage and Fiery Judgement extends Flames of Sin.",
+      "aoe": "Flourish makes Flames of Sin cleave up to 3 extra enemies for 20 sec; Smite Evil hits the target and 5 nearby enemies.",
+      "summary": "Keep Flames of Sin up. ST: Torchlight -> Purifier's Edge / Smite Evil. AoE: Flourish + Smite Evil."
+    }
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "slug": "runemaster",
+  "class": "Runemaster",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Arcane": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 804550,
+          "name": "Thaumaturgy",
+          "res": "Mana",
+          "amt": 8,
+          "cd": 15
+        },
+        {
+          "id": 801179,
+          "name": "Glyphic Ruin",
+          "res": "Mana",
+          "amt": 10
+        },
+        {
+          "id": 500287,
+          "name": "Warpdagger",
+          "res": "Mana",
+          "amt": 12,
+          "cd": 30
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 500121,
+          "name": "Eye of the Beholder",
+          "cd": 180
+        },
+        {
+          "id": 802631,
+          "name": "Silencing Rune",
+          "cd": 90
+        },
+        {
+          "id": 524952,
+          "name": "Manuscription",
+          "cd": 45
+        },
+        {
+          "id": 520099,
+          "name": "Glyphic Overload",
+          "cd": 45
+        },
+        {
+          "id": 804060,
+          "name": "Permafrost Rune",
+          "cd": 60
+        },
+        {
+          "id": 500296,
+          "name": "Power Engraving",
+          "cd": 300
+        },
+        {
+          "id": 712325,
+          "name": "Zenith",
+          "cd": 45
+        },
+        {
+          "id": 801086,
+          "name": "Convergence",
+          "cd": 90
+        },
+        {
+          "id": 801103,
+          "name": "Speed Rune",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520229,
+          "name": "Granite Resolve",
+          "cd": 60
+        },
+        {
+          "id": 804232,
+          "name": "Warding Rune",
+          "cd": 120
+        },
+        {
+          "id": 500671,
+          "name": "Phase Out",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Glyphic Overload",
+          "when": "On cooldown before a burst window: it generates Frost, Flame and Arcane Glyphs and overloads them, so your next Thaumaturgy / Glyphic Ruin unleashes empowered Glyphs"
+        }
+      ],
+      "st": "Cast Glyphic Overload to load empowered Glyphs, then spend Thaumaturgy and Glyphic Ruin (both unleash your active Glyph effect) as your Mana allows, using Warpdagger for burst/gap-closing.",
+      "aoe": "Same spenders; Glyphic Overload's Overloaded Flame Glyph adds targets and the empowered Glyph unleashes cleave nearby enemies.",
+      "summary": "Load Glyphs with Glyphic Overload, then spend Thaumaturgy and Glyphic Ruin to unleash them."
+    },
+    "Runic": {
+      "confidence": "medium",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 712299,
+          "name": "Runic Brand",
+          "res": "Mana",
+          "amt": 9,
+          "cd": 12
+        },
+        {
+          "id": 712326,
+          "name": "Fist of the Ancients",
+          "res": "Mana",
+          "amt": 13,
+          "cd": 18
+        },
+        {
+          "id": 500287,
+          "name": "Warpdagger",
+          "res": "Mana",
+          "amt": 12,
+          "cd": 30
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Runic Brand",
+          "note": "Applies Marked: Runic Brand for 8 sec; keep it up so your next Runeblade triggers a Runic Explosion"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 560036,
+          "name": "Runic Tempest",
+          "cd": 180
+        },
+        {
+          "id": 801096,
+          "name": "Ley Power",
+          "cd": 90,
+          "proc": true
+        },
+        {
+          "id": 804060,
+          "name": "Permafrost Rune",
+          "cd": 60
+        },
+        {
+          "id": 500296,
+          "name": "Power Engraving",
+          "cd": 300
+        },
+        {
+          "id": 712325,
+          "name": "Zenith",
+          "cd": 45
+        },
+        {
+          "id": 801086,
+          "name": "Convergence",
+          "cd": 90
+        },
+        {
+          "id": 801103,
+          "name": "Speed Rune",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 500464,
+          "name": "Guarding Rune",
+          "cd": 120
+        },
+        {
+          "id": 520229,
+          "name": "Granite Resolve",
+          "cd": 60
+        },
+        {
+          "id": 804232,
+          "name": "Warding Rune",
+          "cd": 120
+        },
+        {
+          "id": 500671,
+          "name": "Phase Out",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Runic Tempest",
+          "when": "Resets the cooldown of Fist of the Ancients and lets you cast Runeshroud abilities while moving for 8 sec"
+        },
+        {
+          "name": "Fists of Power",
+          "when": "Engrave your fists (15 sec) so auto attacks build Earthen Fists; use on cooldown to ramp melee haste and Weapon Engraving: Earth chance"
+        }
+      ],
+      "st": "Keep Marked: Runic Brand up with Runic Brand (every 12 sec), then follow with Runeblade to consume the mark for a Runic Explosion, weave Fist of the Ancients on cooldown and Primordial Blast, and pop Ley Power to stack Harnessed Leylines.",
+      "aoe": "Runic Explosion (from the Runeblade that consumes Marked: Runic Brand) and Fist of the Ancients cleave nearby enemies, so prioritize Runic Brand -> Runeblade to spread the explosion.",
+      "summary": "Keep Marked: Runic Brand up. ST: Runic Brand -> Runeblade (Runic Explosion), Fist of the Ancients on cooldown."
+    },
+    "Riftblade": {
+      "confidence": "medium",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 803018,
+          "name": "Fracture",
+          "res": "Mana",
+          "amt": 10
+        },
+        {
+          "id": 801104,
+          "name": "Hoarfrost",
+          "res": "Mana",
+          "amt": 10,
+          "cd": 10
+        },
+        {
+          "id": 801087,
+          "name": "Smolder",
+          "res": "Mana",
+          "amt": 6,
+          "cd": 6
+        },
+        {
+          "id": 645435,
+          "name": "Hurricane",
+          "res": "Mana",
+          "amt": 14,
+          "cd": 30
+        },
+        {
+          "id": 500287,
+          "name": "Warpdagger",
+          "res": "Mana",
+          "amt": 12,
+          "cd": 30
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Hoarfrost",
+          "note": "Applies a 21 sec Frost DoT and freezes the target; refresh it and use it to set up frozen-target crits"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 806543,
+          "name": "Primordial Fury",
+          "cd": 90
+        },
+        {
+          "id": 705575,
+          "name": "Turbulence",
+          "cd": 60
+        },
+        {
+          "id": 500501,
+          "name": "Genesis",
+          "cd": 180
+        },
+        {
+          "id": 804060,
+          "name": "Permafrost Rune",
+          "cd": 60
+        },
+        {
+          "id": 500296,
+          "name": "Power Engraving",
+          "cd": 300
+        },
+        {
+          "id": 712325,
+          "name": "Zenith",
+          "cd": 45
+        },
+        {
+          "id": 801086,
+          "name": "Convergence",
+          "cd": 90
+        },
+        {
+          "id": 801103,
+          "name": "Speed Rune",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 500270,
+          "name": "Echo Rune",
+          "cd": 120
+        },
+        {
+          "id": 520229,
+          "name": "Granite Resolve",
+          "cd": 60
+        },
+        {
+          "id": 804232,
+          "name": "Warding Rune",
+          "cd": 120
+        },
+        {
+          "id": 500671,
+          "name": "Phase Out",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Smolder",
+          "when": "Its cooldown resets (Runeblade 20% / Warpdagger 100% via Spellfire Runes); use the free empowered Smolder immediately"
+        },
+        {
+          "name": "Fracture",
+          "when": "While the target is Frozen (e.g. right after Hoarfrost) - its damage is guaranteed to critically strike frozen targets"
+        }
+      ],
+      "st": "Keep Hoarfrost up to Freeze the target, then spend Fracture (guaranteed crit vs Frozen) and Smolder (use free resets from Spellfire Runes) on cooldown, filling with Primordial Blast as Mana allows.",
+      "aoe": "Use Hoarfrost (hits up to 3 and applies its DoT) and Hurricane to cleave, plus Primordial Fury to make Runeblade strike extra enemies.",
+      "summary": "Keep Hoarfrost up (Freeze). ST: Fracture on Frozen targets + Smolder resets."
+    }
+  }
+}

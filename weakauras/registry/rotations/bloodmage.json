@@ -1,0 +1,458 @@
+{
+  "slug": "bloodmage",
+  "class": "Bloodmage",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Sanguine": {
+      "confidence": "medium",
+      "resource": [
+        "Rage",
+        "Base"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 804726,
+          "name": "Vampiric Fang",
+          "res": "Rage",
+          "amt": 20,
+          "cd": 8
+        },
+        {
+          "id": 560249,
+          "name": "Keleseth's Calamity",
+          "res": "Base",
+          "amt": 27
+        },
+        {
+          "id": 800776,
+          "name": "Malediction",
+          "res": "Rage",
+          "amt": 25,
+          "cd": 30
+        },
+        {
+          "id": 560315,
+          "name": "Valanar's Vengeance",
+          "res": "Base",
+          "amt": 30
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Transgression",
+          "note": "Cursed Form self-empowerment; lasts 30 sec, casts a free Vampiric Fang and makes direct spell damage heal you via Vampiric Feast - keep it up."
+        },
+        {
+          "name": "Malediction",
+          "note": "12 sec DoT that also increases the damage the target takes from your next 5 direct spells by 20% - refresh to keep the amp rolling."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 680680,
+          "name": "Atherann's Anguish"
+        },
+        {
+          "id": 800785,
+          "name": "Sacrificial Rite",
+          "cd": 120
+        },
+        {
+          "id": 681304,
+          "name": "Hemostasis",
+          "cd": 120
+        },
+        {
+          "id": 504627,
+          "name": "Blood Bond",
+          "cd": 120
+        },
+        {
+          "id": 801952,
+          "name": "Fleshcraft",
+          "cd": 300
+        },
+        {
+          "id": 705734,
+          "name": "Transfusion",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 800780,
+          "name": "Blood Craving",
+          "cd": 180
+        },
+        {
+          "id": 804207,
+          "name": "Wicked Howl",
+          "cd": 180
+        },
+        {
+          "id": 801955,
+          "name": "Blood Pact",
+          "cd": 120
+        },
+        {
+          "id": 806310,
+          "name": "Liquify",
+          "cd": 120
+        },
+        {
+          "id": 806177,
+          "name": "Shadow Howl",
+          "cd": 60
+        },
+        {
+          "id": 504263,
+          "name": "Blood Veil",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Vampiric Fang",
+          "when": "Use to expend Thirst stacks (damage +10% per stack); the cooldown resets and you gain Wretched (via Essence Harvester) when struck below 35% health."
+        }
+      ],
+      "st": "Build Thirst stacks, then spend on the cast-time nukes Valanar's Vengeance and Keleseth's Calamity (Thirst cuts their cast time and boosts damage) while keeping Malediction and Transgression up and dumping Vampiric Fang to consume high Thirst.",
+      "aoe": "Favor Keleseth's Calamity (area blood damage) and drop Atherann's Anguish for accumulated AoE shadow damage.",
+      "summary": "Keep Transgression and Malediction up. ST: build Thirst -> Valanar's Vengeance / Keleseth's Calamity, dump Vampiric Fang. AoE: Keleseth's Calamity + Atherann's Anguish."
+    },
+    "Accursed": {
+      "confidence": "low",
+      "resource": [
+        "Base",
+        "Rage"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 806212,
+          "name": "Aortic Assault",
+          "res": "Base",
+          "amt": 25,
+          "cd": 20
+        },
+        {
+          "id": 504260,
+          "name": "Veinburst",
+          "res": "Rage",
+          "amt": 30,
+          "cd": 15
+        },
+        {
+          "id": 572855,
+          "name": "Hemoburst",
+          "res": "Rage",
+          "amt": 30,
+          "cd": 10
+        },
+        {
+          "id": 800490,
+          "name": "Reave",
+          "res": "Rage",
+          "amt": 35,
+          "cd": 15
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Accursed Form",
+          "note": "Cursed Form buff (30 sec) increasing attack power and applying a healing-reduction stack; extended by Aortic Assault and Hemoburst - keep it active."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 553267,
+          "name": "Bloodsurge",
+          "cd": 180
+        },
+        {
+          "id": 524865,
+          "name": "Final Embrace",
+          "cd": 180
+        },
+        {
+          "id": 681304,
+          "name": "Hemostasis",
+          "cd": 120
+        },
+        {
+          "id": 504627,
+          "name": "Blood Bond",
+          "cd": 120
+        },
+        {
+          "id": 801952,
+          "name": "Fleshcraft",
+          "cd": 300
+        },
+        {
+          "id": 705734,
+          "name": "Transfusion",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 681190,
+          "name": "Endure the Curse"
+        },
+        {
+          "id": 804207,
+          "name": "Wicked Howl",
+          "cd": 180
+        },
+        {
+          "id": 801955,
+          "name": "Blood Pact",
+          "cd": 120
+        },
+        {
+          "id": 806310,
+          "name": "Liquify",
+          "cd": 120
+        },
+        {
+          "id": 806177,
+          "name": "Shadow Howl",
+          "cd": 60
+        },
+        {
+          "id": 504263,
+          "name": "Blood Veil",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Reave",
+          "when": "Cast on cooldown; Fang Over Fang gives Bloodfang Bite a 20% chance to reset Reave, and it hits far harder on bleeding, behind, or sub-35% targets."
+        },
+        {
+          "name": "Hemoburst",
+          "when": "Guaranteed critical strike against bleeding targets - use once a bleed is on the target."
+        }
+      ],
+      "st": "Maintain Accursed Form and keep a bleed on the target, then spend Rage on Hemoburst and Veinburst (both +25%/guaranteed-crit vs bleeding) and Reave, using Aortic Assault to extend the Cursed Form; pop Bloodsurge or Final Embrace as burst.",
+      "aoe": "Use Aortic Assault to strike nearby enemies while extending Cursed Form.",
+      "summary": "Keep Accursed Form and a bleed up. ST: Reave / Hemoburst / Veinburst on bleeding target, Aortic Assault to extend. AoE: Aortic Assault."
+    },
+    "Eternal": {
+      "confidence": "low",
+      "resource": [
+        "Rage",
+        "Base"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 500124,
+          "name": "Night Hunter's Howl",
+          "res": "Rage",
+          "amt": 25,
+          "cd": 8
+        },
+        {
+          "id": 804197,
+          "name": "Rotclaw",
+          "res": "Base",
+          "amt": 10
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Rotclaw",
+          "note": "Applies a 4 sec bleed (infected wounds) and generates Rage; a 2-charge builder to keep the bleed rolling."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 804811,
+          "name": "Monstrous Hunger",
+          "cd": 45
+        },
+        {
+          "id": 681304,
+          "name": "Hemostasis",
+          "cd": 120
+        },
+        {
+          "id": 504627,
+          "name": "Blood Bond",
+          "cd": 120
+        },
+        {
+          "id": 801952,
+          "name": "Fleshcraft",
+          "cd": 300
+        },
+        {
+          "id": 705734,
+          "name": "Transfusion",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 800782,
+          "name": "Blood Howl",
+          "cd": 150
+        },
+        {
+          "id": 801962,
+          "name": "Eternal Resolve",
+          "cd": 180
+        },
+        {
+          "id": 804207,
+          "name": "Wicked Howl",
+          "cd": 180
+        },
+        {
+          "id": 801955,
+          "name": "Blood Pact",
+          "cd": 120
+        },
+        {
+          "id": 806310,
+          "name": "Liquify",
+          "cd": 120
+        },
+        {
+          "id": 806177,
+          "name": "Shadow Howl",
+          "cd": 60
+        },
+        {
+          "id": 504263,
+          "name": "Blood Veil",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Monstrous Hunger",
+          "when": "Enrage cooldown - use to empower the next 6 Bloodfang Bites (reduced GCD/cost, each triggers Call of the Darkwing bats)."
+        }
+      ],
+      "st": "Generate Rage with Bloodfang Bite and Rotclaw (keeping its bleed up), then spend Rage on Night Hunter's Howl; line up Monstrous Hunger to spam empowered Bloodfang Bites.",
+      "aoe": "Rotclaw and Night Hunter's Howl both hit all nearby enemies, so they naturally cleave.",
+      "summary": "Keep Rotclaw's bleed up. ST: Bloodfang Bite / Rotclaw to build -> Night Hunter's Howl, empower with Monstrous Hunger. AoE: Rotclaw + Night Hunter's Howl."
+    },
+    "Fleshweaver": {
+      "confidence": "low",
+      "resource": [
+        "Base",
+        "Rage"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 504282,
+          "name": "Crimson Tide",
+          "res": "Rage",
+          "amt": 40
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Vampyr's Kiss",
+          "note": "30 sec curse bleed that replicates 25% of all periodic damage dealt to the target - keep it applied."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 681403,
+          "name": "Infuse",
+          "cd": 30
+        },
+        {
+          "id": 803681,
+          "name": "Hemal Excision",
+          "cd": 90
+        },
+        {
+          "id": 504275,
+          "name": "Vampyr's Kiss",
+          "cd": 60
+        },
+        {
+          "id": 804805,
+          "name": "Gorge",
+          "cd": 90
+        },
+        {
+          "id": 524907,
+          "name": "Hemoglobe",
+          "cd": 180
+        },
+        {
+          "id": 520493,
+          "name": "Red Thirst / Purify Blood",
+          "cd": 300
+        },
+        {
+          "id": 681304,
+          "name": "Hemostasis",
+          "cd": 120
+        },
+        {
+          "id": 504627,
+          "name": "Blood Bond",
+          "cd": 120
+        },
+        {
+          "id": 801952,
+          "name": "Fleshcraft",
+          "cd": 300
+        },
+        {
+          "id": 705734,
+          "name": "Transfusion",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 804207,
+          "name": "Wicked Howl",
+          "cd": 180
+        },
+        {
+          "id": 801955,
+          "name": "Blood Pact",
+          "cd": 120
+        },
+        {
+          "id": 806310,
+          "name": "Liquify",
+          "cd": 120
+        },
+        {
+          "id": 806177,
+          "name": "Shadow Howl",
+          "cd": 60
+        },
+        {
+          "id": 504263,
+          "name": "Blood Veil",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Gorge",
+          "when": "Use to rapidly stack Pooled Vitality (10 stacks every 5 sec for 15 sec), which boosts damage via Gruesome Rituals and generates Rage."
+        }
+      ],
+      "st": "Build Pooled Vitality (Gorge) and keep Vampyr's Kiss up, spending Rage on Crimson Tide's bleed pool; use Infuse to bank a burst of accumulated damage and Hemal Excision to move curses.",
+      "aoe": "Crimson Tide pools blood under up to 10 enemies for AoE bleed damage.",
+      "summary": "Keep Vampyr's Kiss up and stack Pooled Vitality. ST/AoE: Crimson Tide bleed, Gorge for stacks, Infuse for burst."
+    }
+  }
+}

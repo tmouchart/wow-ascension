@@ -1,0 +1,244 @@
+{
+  "slug": "guardian",
+  "class": "Guardian",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Vanguard": {
+      "confidence": "low",
+      "resource": [
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 300983,
+          "name": "Glorious Arena"
+        },
+        {
+          "id": 802870,
+          "name": "Grand Entrance",
+          "cd": 45
+        }
+      ],
+      "defensives": [
+        {
+          "id": 802283,
+          "name": "Bastion",
+          "cd": 300
+        },
+        {
+          "id": 803830,
+          "name": "Hold the Line",
+          "cd": 120
+        },
+        {
+          "id": 504151,
+          "name": "Knight's Calling",
+          "cd": 120
+        },
+        {
+          "id": 802188,
+          "name": "Counter Stance",
+          "cd": 180
+        },
+        {
+          "id": 800313,
+          "name": "Brace",
+          "cd": 180
+        },
+        {
+          "id": 801219,
+          "name": "Press the Attack",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Hammer of the Law",
+          "when": "Off cooldown - melee crits have a 50% chance (Wreck Formation) to reset its cooldown, so use it whenever it is available"
+        },
+        {
+          "name": "Ram",
+          "when": "Off cooldown - Pulverize has a 20% chance (Guardbreaker) to reset it, so use it as soon as it comes up"
+        }
+      ],
+      "st": "Energy spender priority: Heavy Blow on cooldown, then Ram on cooldown, and dump remaining Energy into Pulverize; fit in Hammer of the Law when its cooldown is up.",
+      "aoe": "Heavy Blow and Hammer of the Law already hit enemies in a line; spend Energy on Broad Sweep instead of Pulverize for the extra targets.",
+      "summary": "ST: Heavy Blow -> Ram -> Pulverize, use Hammer of the Law on cooldown. AoE: Broad Sweep."
+    },
+    "Inspiration": {
+      "confidence": "low",
+      "resource": [
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Hero's March",
+          "note": "15% haste for 15 sec and makes your auto attacks trigger a Sound of War - keep it up on cooldown"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 803683,
+          "name": "Battle Drums",
+          "cd": 180
+        },
+        {
+          "id": 801774,
+          "name": "Hero's March",
+          "cd": 120
+        },
+        {
+          "id": 803956,
+          "name": "Song of Battle",
+          "cd": 90
+        },
+        {
+          "id": 572821,
+          "name": "Harrowing Melody",
+          "cd": 25
+        },
+        {
+          "id": 704420,
+          "name": "Voice of an Angel",
+          "cd": 300
+        },
+        {
+          "id": 803963,
+          "name": "Liberation",
+          "cd": 120
+        },
+        {
+          "id": 705352,
+          "name": "Inspiring Presence / Champion's Presence",
+          "cd": 60
+        },
+        {
+          "id": 300983,
+          "name": "Glorious Arena"
+        },
+        {
+          "id": 802870,
+          "name": "Grand Entrance",
+          "cd": 45
+        }
+      ],
+      "defensives": [
+        {
+          "id": 504151,
+          "name": "Knight's Calling",
+          "cd": 120
+        },
+        {
+          "id": 802188,
+          "name": "Counter Stance",
+          "cd": 180
+        },
+        {
+          "id": 800313,
+          "name": "Brace",
+          "cd": 180
+        },
+        {
+          "id": 801219,
+          "name": "Press the Attack",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Voice of an Angel",
+          "when": "Use to instantly reset Liberation, Harrowing Melody, and Hero's March"
+        },
+        {
+          "name": "Ram",
+          "when": "After a Ballad (Pulverize/Broad Sweep) - Elegant Combat has a 20% chance to make your next Ram free and increase its crit chance"
+        }
+      ],
+      "st": "Keep Hero's March up for haste, cast Harrowing Melody to empower your next Ballads, then spend Energy on Pulverize (Ballad) as your filler while weaving Ram.",
+      "aoe": "Use Broad Sweep (Ballad) as the AoE spender and drop Song of Battle for the ground AoE and end stun.",
+      "summary": "Keep Hero's March up. ST: Harrowing Melody -> Pulverize (Ballad) + Ram. AoE: Broad Sweep + Song of Battle."
+    },
+    "Gladiator": {
+      "confidence": "low",
+      "resource": [
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 500463,
+          "name": "Spear Throw",
+          "res": "Energy",
+          "amt": 55
+        },
+        {
+          "id": 500258,
+          "name": "Final Verdict",
+          "res": "Energy",
+          "amt": 50,
+          "cd": 30
+        },
+        {
+          "id": 802286,
+          "name": "Centurion Strike",
+          "res": "Energy",
+          "amt": 25,
+          "cd": 15
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 300983,
+          "name": "Glorious Arena"
+        },
+        {
+          "id": 802870,
+          "name": "Grand Entrance",
+          "cd": 45
+        }
+      ],
+      "defensives": [
+        {
+          "id": 504151,
+          "name": "Knight's Calling",
+          "cd": 120
+        },
+        {
+          "id": 802188,
+          "name": "Counter Stance",
+          "cd": 180
+        },
+        {
+          "id": 800313,
+          "name": "Brace",
+          "cd": 180
+        },
+        {
+          "id": 801219,
+          "name": "Press the Attack",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Final Verdict",
+          "when": "Target below 20% health - killing blows reset its cooldown, so spam it in execute range"
+        },
+        {
+          "name": "Reprisal",
+          "when": "When it becomes usable - Centurion Strike (Supremacy) and blocking refresh a charge"
+        }
+      ],
+      "st": "Energy spender priority: Centurion Strike on cooldown, Final Verdict when the target is below 20% health, Spear Throw for the healing-reduction debuff, and dump remaining Energy into Pulverize.",
+      "aoe": "Spend Energy on Broad Sweep instead of Pulverize to cleave multiple targets.",
+      "summary": "ST: Centurion Strike -> Pulverize, Final Verdict below 20% HP. AoE: Broad Sweep."
+    }
+  }
+}

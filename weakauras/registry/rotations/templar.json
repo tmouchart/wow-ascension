@@ -1,0 +1,346 @@
+{
+  "slug": "templar",
+  "class": "Templar",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Zealot": {
+      "confidence": "low",
+      "resource": [
+        "Energy",
+        "time",
+        "Oaths"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 501562,
+          "name": "Righteous Upheaval",
+          "res": "time",
+          "cd": 20
+        },
+        {
+          "id": 801446,
+          "name": "Vindication",
+          "res": "Energy",
+          "amt": 35,
+          "proc": true
+        },
+        {
+          "id": 803872,
+          "name": "Blade of Faith",
+          "res": "Oaths"
+        },
+        {
+          "id": 803157,
+          "name": "Chastise",
+          "res": "Oaths"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Blade of Faith",
+          "note": "21 sec Holy DoT (Oath Breaker) - refresh before it expires"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 524739,
+          "name": "Norgannon's Wrath",
+          "cd": 30
+        },
+        {
+          "id": 801466,
+          "name": "Libram of Zeal",
+          "cd": 180
+        },
+        {
+          "id": 500694,
+          "name": "Force of Golganneth",
+          "cd": 120,
+          "proc": true
+        },
+        {
+          "id": 805423,
+          "name": "Libram of Fervor",
+          "cd": 180
+        },
+        {
+          "id": 801455,
+          "name": "Testament of Will",
+          "cd": 60
+        },
+        {
+          "id": 560116,
+          "name": "Interdict",
+          "cd": 120
+        },
+        {
+          "id": 801481,
+          "name": "Glory",
+          "cd": 120
+        },
+        {
+          "id": 806153,
+          "name": "Divine Force",
+          "cd": 120
+        },
+        {
+          "id": 801465,
+          "name": "Silverhand Incantation",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 801461,
+          "name": "Libram of Tenacity",
+          "cd": 180
+        },
+        {
+          "id": 1397742,
+          "name": "Testament of Hope",
+          "cd": 180
+        },
+        {
+          "id": 500678,
+          "name": "Testament of Fortitude",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Force of Golganneth",
+          "when": "use on cooldown as your burst window; also cuts Temple Guardian Energy cost while active"
+        }
+      ],
+      "st": "Build Oaths with Vindication (grants an Oath, triggers Zealotry) and spend them with Righteous Upheaval and Chastise, keeping Blade of Faith's DoT up.",
+      "aoe": "",
+      "summary": "Keep Blade of Faith up. Build Oaths with Vindication, spend with Righteous Upheaval -> Chastise."
+    },
+    "Oathkeeper": {
+      "confidence": "low",
+      "resource": [
+        "Oaths",
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 805421,
+          "name": "Reckoning",
+          "res": "Oaths"
+        },
+        {
+          "id": 705293,
+          "name": "Sacred Swing",
+          "res": "Energy",
+          "amt": 20
+        },
+        {
+          "id": 803872,
+          "name": "Blade of Faith",
+          "res": "Oaths"
+        },
+        {
+          "id": 803157,
+          "name": "Chastise",
+          "res": "Oaths"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Blade of Faith",
+          "note": "21 sec Holy DoT (Oath Breaker) - refresh before it expires"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 705300,
+          "name": "Eternal Blessing",
+          "cd": 60
+        },
+        {
+          "id": 805423,
+          "name": "Libram of Fervor",
+          "cd": 180
+        },
+        {
+          "id": 801455,
+          "name": "Testament of Will",
+          "cd": 60
+        },
+        {
+          "id": 560116,
+          "name": "Interdict",
+          "cd": 120
+        },
+        {
+          "id": 801481,
+          "name": "Glory",
+          "cd": 120
+        },
+        {
+          "id": 806153,
+          "name": "Divine Force",
+          "cd": 120
+        },
+        {
+          "id": 801465,
+          "name": "Silverhand Incantation",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 805417,
+          "name": "Barrier of Light",
+          "cd": 90
+        },
+        {
+          "id": 805422,
+          "name": "Tome of Light",
+          "cd": 300
+        },
+        {
+          "id": 800424,
+          "name": "Absolution",
+          "cd": 150
+        },
+        {
+          "id": 801461,
+          "name": "Libram of Tenacity",
+          "cd": 180
+        },
+        {
+          "id": 1397742,
+          "name": "Testament of Hope",
+          "cd": 180
+        },
+        {
+          "id": 500678,
+          "name": "Testament of Fortitude",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Sacred Swing",
+          "when": "usable only after avoiding an attack (dodge/parry) - use when it lights up"
+        }
+      ],
+      "st": "Spend Energy on Sacred Swing when it procs and dump Oaths with Reckoning (restores 15 Energy per enemy) and Chastise, keeping Blade of Faith's DoT up.",
+      "aoe": "Reckoning and Sacred Swing both hit multiple enemies, so lead with them into a pack.",
+      "summary": "Keep Blade of Faith up. Spend Oaths with Reckoning; use Sacred Swing after a dodge/parry."
+    },
+    "Crusader": {
+      "confidence": "low",
+      "resource": [
+        "Energy",
+        "Oaths"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 804929,
+          "name": "Argent Blade",
+          "res": "Energy",
+          "amt": 50,
+          "cd": 5
+        },
+        {
+          "id": 805409,
+          "name": "Righteous Tempest",
+          "res": "Oaths"
+        },
+        {
+          "id": 803872,
+          "name": "Blade of Faith",
+          "res": "Oaths"
+        },
+        {
+          "id": 803157,
+          "name": "Chastise",
+          "res": "Oaths"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Crusader's Brand",
+          "note": "20 sec Holy debuff on the target - reapply before it drops"
+        },
+        {
+          "name": "Blade of Faith",
+          "note": "21 sec Holy DoT (Oath Breaker) - refresh before it expires"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 527023,
+          "name": "Divine Charge",
+          "cd": 180
+        },
+        {
+          "id": 300514,
+          "name": "Testament of Strength"
+        },
+        {
+          "id": 805423,
+          "name": "Libram of Fervor",
+          "cd": 180
+        },
+        {
+          "id": 801455,
+          "name": "Testament of Will",
+          "cd": 60
+        },
+        {
+          "id": 560116,
+          "name": "Interdict",
+          "cd": 120
+        },
+        {
+          "id": 801481,
+          "name": "Glory",
+          "cd": 120
+        },
+        {
+          "id": 806153,
+          "name": "Divine Force",
+          "cd": 120
+        },
+        {
+          "id": 801465,
+          "name": "Silverhand Incantation",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 801461,
+          "name": "Libram of Tenacity",
+          "cd": 180
+        },
+        {
+          "id": 1397742,
+          "name": "Testament of Hope",
+          "cd": 180
+        },
+        {
+          "id": 500678,
+          "name": "Testament of Fortitude",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Argent Blade",
+          "when": "Warrior of Dawn can reset its cooldown and cut its Energy cost by 50% - use immediately when reset"
+        }
+      ],
+      "st": "Keep Crusader's Brand and Blade of Faith up, spend Energy on Argent Blade on cooldown (extends your Oath Chain), and dump Oaths with Chastise.",
+      "aoe": "Use Righteous Tempest as the Oath spender to hit nearby enemies instead of single-target Chastise.",
+      "summary": "Keep Crusader's Brand + Blade of Faith up. ST: Argent Blade -> Chastise. AoE: Righteous Tempest."
+    }
+  }
+}

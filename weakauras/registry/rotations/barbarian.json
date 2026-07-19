@@ -1,0 +1,289 @@
+{
+  "slug": "barbarian",
+  "class": "Barbarian",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Brutality": {
+      "confidence": "low",
+      "resource": [
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 804414,
+          "name": "Decapitate",
+          "res": "Energy",
+          "amt": 50
+        },
+        {
+          "id": 850021,
+          "name": "Killing Spree",
+          "res": "Energy",
+          "amt": 25,
+          "cd": 5
+        },
+        {
+          "id": 500915,
+          "name": "Crush",
+          "res": "Energy",
+          "amt": 70,
+          "cd": 25
+        },
+        {
+          "id": 500913,
+          "name": "Brutal Swing",
+          "res": "Energy",
+          "amt": 45
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Enrage",
+          "note": "Unbridled Rage OR Onslaught OR Battle Vigor (any-of), per existing preset"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 800637,
+          "name": "Storm of Steel",
+          "cd": 25
+        },
+        {
+          "id": 560883,
+          "name": "Warband",
+          "cd": 90
+        },
+        {
+          "id": 560532,
+          "name": "Skull Smash",
+          "cd": 120
+        },
+        {
+          "id": 801759,
+          "name": "Outrage",
+          "cd": 180
+        },
+        {
+          "id": 800152,
+          "name": "Hodir's Wrath",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 801549,
+          "name": "Thick Skull",
+          "cd": 120
+        },
+        {
+          "id": 806228,
+          "name": "Defiance",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Decapitate",
+          "when": "target below 35% HP (execute); converts extra Energy up to 100 into damage"
+        },
+        {
+          "name": "Killing Spree",
+          "when": "within 6 sec of a killing blow or a Born in Blood proc"
+        }
+      ],
+      "st": "Spend Energy on Crush (70, cd 25) and Decapitate as an execute below 35% HP; fill with Brutal Swing (45); keep an enrage buff up.",
+      "aoe": "Brutal Swing (45) hits up to 3 targets and Storm of Steel (25/sec, cd 25) cleaves; Whirling Advance to reposition into packs.",
+      "summary": "Keep enrage up. ST: Crush -> Decapitate (execute <35%) -> Brutal Swing. AoE: Brutal Swing / Storm of Steel."
+    },
+    "Headhunting": {
+      "confidence": "low",
+      "resource": [
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 500984,
+          "name": "Impaling Spear",
+          "res": "Energy",
+          "amt": 50,
+          "cd": 6
+        },
+        {
+          "id": 804138,
+          "name": "Berserker Axe",
+          "res": "Energy",
+          "amt": 30
+        },
+        {
+          "id": 805832,
+          "name": "Gutspiller",
+          "res": "Energy",
+          "amt": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Gutspiller",
+          "note": "bleed lasting 12 sec that triggers Guts Spilled every 6 sec; keep it applied"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 707584,
+          "name": "Spite",
+          "cd": 45
+        },
+        {
+          "id": 800401,
+          "name": "Axe Twirling",
+          "cd": 60
+        },
+        {
+          "id": 560883,
+          "name": "Warband",
+          "cd": 90
+        },
+        {
+          "id": 560532,
+          "name": "Skull Smash",
+          "cd": 120
+        },
+        {
+          "id": 801759,
+          "name": "Outrage",
+          "cd": 180
+        },
+        {
+          "id": 800152,
+          "name": "Hodir's Wrath",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 801549,
+          "name": "Thick Skull",
+          "cd": 120
+        },
+        {
+          "id": 806228,
+          "name": "Defiance",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Berserker Axe",
+          "when": "while Enraged (3 charges, 8 sec recharge); You Want Axe refreshes all 3 charges and discounts your next 3 casts after casting Spears"
+        }
+      ],
+      "st": "While enraged, spend Energy on Berserker Axe (30, requires Enraged) and Impaling Spear (50, cd 6); maintain the Gutspiller bleed; Spite (cd 45) on cooldown.",
+      "aoe": "Impaling Spear (50, cd 6) is a frontal-line AoE and Axe Twirling (cd 60) makes Throw Weapon / Gutspiller / Berserker Axe strike 2 extra nearby enemies.",
+      "summary": "Keep the Gutspiller bleed up. ST: Berserker Axe (while enraged) + Impaling Spear. AoE: Impaling Spear + Axe Twirling."
+    },
+    "Ancestry": {
+      "confidence": "low",
+      "resource": [
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 805808,
+          "name": "Keg Smash",
+          "res": "Energy",
+          "amt": 30,
+          "cd": 10
+        },
+        {
+          "id": 800838,
+          "name": "Breath of The North",
+          "res": "Energy",
+          "amt": 50
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Fill Level",
+          "note": "Tankard resource; melee/frost crits build stacks that Ale of The God-King and Ramhorn Rage consume for a reduced cooldown"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805780,
+          "name": "Ale of The God-King",
+          "cd": 15
+        },
+        {
+          "id": 805804,
+          "name": "Ramhorn Rage",
+          "cd": 120
+        },
+        {
+          "id": 500995,
+          "name": "War Cry",
+          "cd": 180
+        },
+        {
+          "id": 801782,
+          "name": "Ancestral Combat",
+          "cd": 30
+        },
+        {
+          "id": 804737,
+          "name": "Clanlord's Totem / Tavern Brawl!",
+          "cd": 60
+        },
+        {
+          "id": 560883,
+          "name": "Warband",
+          "cd": 90
+        },
+        {
+          "id": 560532,
+          "name": "Skull Smash",
+          "cd": 120
+        },
+        {
+          "id": 801759,
+          "name": "Outrage",
+          "cd": 180
+        },
+        {
+          "id": 800152,
+          "name": "Hodir's Wrath",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 805810,
+          "name": "Cheers!",
+          "cd": 3
+        },
+        {
+          "id": 801549,
+          "name": "Thick Skull",
+          "cd": 120
+        },
+        {
+          "id": 806228,
+          "name": "Defiance",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Breath of The North",
+          "when": "usable only after emptying your Tankard (Fill Level stacks)"
+        }
+      ],
+      "st": "Build Fill Level stacks, then spend on Breath of The North (50, after emptying Tankard) and Keg Smash (30, cd 10); Ale of The God-King (cd 15) and Ancestral Combat (cd 30) for empowerment.",
+      "aoe": "Keg Smash (30, cd 10) hits up to 5 nearby enemies with Frost and Breath of The North is a cone; same core loop otherwise.",
+      "summary": "Build Fill Level (Tankard). ST: Ale of The God-King -> Breath of The North -> Keg Smash. AoE: Keg Smash cleave."
+    }
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "slug": "primalist",
+  "class": "Primalist",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Primal": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 500696,
+          "name": "Primal Rush",
+          "res": "Rage",
+          "amt": 20,
+          "cd": 25
+        }
+      ],
+      "spenders": [
+        {
+          "id": 500940,
+          "name": "Primal Shred",
+          "res": "Rage",
+          "amt": 25
+        },
+        {
+          "id": 800178,
+          "name": "Totemic Smash",
+          "res": "Rage",
+          "amt": 35,
+          "cd": 6
+        },
+        {
+          "id": 706342,
+          "name": "Rylak's Bite",
+          "res": "Rage",
+          "amt": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Boon of the Bear",
+          "note": "Baseline melee stance; increases attack power, melee haste and Rage generated. Only 1 Boon active at a time - keep this up for the pet/melee build."
+        },
+        {
+          "name": "Frenzied Roar",
+          "note": "Grants 20% increased attack speed for 15 sec and generates 20 Rage; keep the haste buff up (1 min CD)."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 800133,
+          "name": "Frenzied Roar",
+          "cd": 60
+        },
+        {
+          "id": 806549,
+          "name": "Savage Frenzy",
+          "cd": 180
+        },
+        {
+          "id": 806552,
+          "name": "Bring Me Their Bones",
+          "cd": 60
+        },
+        {
+          "id": 504229,
+          "name": "Primal Totem",
+          "cd": 600
+        },
+        {
+          "id": 800181,
+          "name": "Primal Convergence",
+          "cd": 180
+        },
+        {
+          "id": 500692,
+          "name": "Boulder Dash",
+          "cd": 180
+        },
+        {
+          "id": 806415,
+          "name": "Bramblepatch",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 503721,
+          "name": "Grove Guardian",
+          "cd": 60
+        },
+        {
+          "id": 503630,
+          "name": "Rock Barrier"
+        },
+        {
+          "id": 802782,
+          "name": "Protective Roar",
+          "cd": 120
+        },
+        {
+          "id": 805867,
+          "name": "Dreamslip",
+          "cd": 180
+        },
+        {
+          "id": 800094,
+          "name": "Bearskin",
+          "cd": 300
+        },
+        {
+          "id": 803980,
+          "name": "Wildheart",
+          "cd": 300
+        }
+      ],
+      "procs": [
+        {
+          "name": "Bring Me Their Bones",
+          "when": "Apply the 15 sec mark on a priority target; your pet builds stacks and consumes it at 5 stacks for a big Armor-ignoring hit (1 min CD)."
+        },
+        {
+          "name": "Savage Frenzy",
+          "when": "Use on cooldown to Enrage yourself and pet for 18 sec (+20% damage, +30% attack/move speed)."
+        }
+      ],
+      "st": "Keep Boon of the Bear and Frenzied Roar up, then spend Rage on Wildclaw / Totemic Smash while using Rylak's Bite (2 charges) and Primal Shred to fill; generate Rage with Primal Rush and Frenzied Roar.",
+      "aoe": "Prioritize Totemic Smash (hits up to 5 nearby) and Primal Shred (bleeds up to 5) as your Rage spenders instead of single-target Wildclaw.",
+      "summary": "Keep Boon of the Bear + Frenzied Roar up. ST: Totemic Smash / Rylak's Bite / Wildclaw. AoE: Totemic Smash -> Primal Shred."
+    },
+    "Geomancy": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 500696,
+          "name": "Primal Rush",
+          "res": "Rage",
+          "amt": 20,
+          "cd": 25
+        }
+      ],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Golem Form",
+          "note": "20 sec transform granting +20% haste and casting while moving; keep active during burn windows (2 min CD, refreshed by Terrasurge via Heavy Earth)."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 802793,
+          "name": "Magma Fissure",
+          "cd": 90
+        },
+        {
+          "id": 802335,
+          "name": "Eruption",
+          "cd": 30
+        },
+        {
+          "id": 805335,
+          "name": "Golem Form",
+          "cd": 120
+        },
+        {
+          "id": 504229,
+          "name": "Primal Totem",
+          "cd": 600
+        },
+        {
+          "id": 800181,
+          "name": "Primal Convergence",
+          "cd": 180
+        },
+        {
+          "id": 500692,
+          "name": "Boulder Dash",
+          "cd": 180
+        },
+        {
+          "id": 806415,
+          "name": "Bramblepatch",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 806143,
+          "name": "Earth's Embrace",
+          "cd": 300
+        },
+        {
+          "id": 503721,
+          "name": "Grove Guardian",
+          "cd": 60
+        },
+        {
+          "id": 503630,
+          "name": "Rock Barrier"
+        },
+        {
+          "id": 802782,
+          "name": "Protective Roar",
+          "cd": 120
+        },
+        {
+          "id": 805867,
+          "name": "Dreamslip",
+          "cd": 180
+        },
+        {
+          "id": 800094,
+          "name": "Bearskin",
+          "cd": 300
+        },
+        {
+          "id": 803980,
+          "name": "Wildheart",
+          "cd": 300
+        }
+      ],
+      "procs": [
+        {
+          "name": "Magma Fissure",
+          "when": "Your next spell within 6 sec becomes instant cast after using it - follow it with a hard-cast spell."
+        }
+      ],
+      "st": "Ranged caster building Earthshaping stacks then dumping them with Terrasurge (deals 5% more per stack); use Eruption and Magma Fissure on cooldown.",
+      "aoe": "Use Magma Fissure (20 yd line) and Eruption (Magma Geodes) for multi-target; Terrasurge remains the Earthshaping spender.",
+      "summary": "Build Earthshaping, dump with Terrasurge. Use Eruption + Magma Fissure on CD; keep Golem Form up in burst."
+    },
+    "Life": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 500696,
+          "name": "Primal Rush",
+          "res": "Rage",
+          "amt": 20,
+          "cd": 25
+        }
+      ],
+      "spenders": [
+        {
+          "id": 805462,
+          "name": "Seismic Wave",
+          "res": "Rage",
+          "amt": 40,
+          "cd": 8
+        },
+        {
+          "id": 800144,
+          "name": "Spirit Charge",
+          "res": "Mana",
+          "amt": 16,
+          "cd": 30
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 805107,
+          "name": "Earthmother's Binding",
+          "cd": 60
+        },
+        {
+          "id": 800180,
+          "name": "Sacred Grove",
+          "cd": 180
+        },
+        {
+          "id": 807467,
+          "name": "Neptulon's Wrath / Primal Awakening",
+          "cd": 60
+        },
+        {
+          "id": 805105,
+          "name": "Ancient of Lore / Ancient of War",
+          "cd": 150
+        },
+        {
+          "id": 504229,
+          "name": "Primal Totem",
+          "cd": 600
+        },
+        {
+          "id": 800181,
+          "name": "Primal Convergence",
+          "cd": 180
+        },
+        {
+          "id": 500692,
+          "name": "Boulder Dash",
+          "cd": 180
+        },
+        {
+          "id": 806415,
+          "name": "Bramblepatch",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 503721,
+          "name": "Grove Guardian",
+          "cd": 60
+        },
+        {
+          "id": 503630,
+          "name": "Rock Barrier"
+        },
+        {
+          "id": 802782,
+          "name": "Protective Roar",
+          "cd": 120
+        },
+        {
+          "id": 805867,
+          "name": "Dreamslip",
+          "cd": 180
+        },
+        {
+          "id": 800094,
+          "name": "Bearskin",
+          "cd": 300
+        },
+        {
+          "id": 803980,
+          "name": "Wildheart",
+          "cd": 300
+        }
+      ],
+      "procs": [
+        {
+          "name": "Primal Power",
+          "when": "After casting Seismic Wave, your next Hand of the Earthmother within 8 sec costs 50% less Rage - use it in that window."
+        }
+      ],
+      "st": "Hybrid healer-bruiser: generate Rage with Primal Rush and spend it on Seismic Wave (heal + Nature damage, 8 sec CD), using Spirit Charge on cooldown and Wildclaw as filler.",
+      "aoe": "Seismic Wave already hits up to 8 allies / nearby enemies in a 25 yd radius, so it is the AoE spender; Spirit Charge adds a small nearby-enemy hit.",
+      "summary": "Generate Rage with Primal Rush, spend on Seismic Wave; Spirit Charge on CD."
+    },
+    "Mountain King": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 500696,
+          "name": "Primal Rush",
+          "res": "Rage",
+          "amt": 20,
+          "cd": 25
+        }
+      ],
+      "spenders": [
+        {
+          "id": 803974,
+          "name": "Quake",
+          "res": "Mana",
+          "amt": 5
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Boon of the Bear",
+          "note": "Baseline melee stance (+AP, +melee haste, +Rage from auto attacks); only 1 Boon active at a time - keep it up for the melee build."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 806185,
+          "name": "Mountain Fury",
+          "cd": 45
+        },
+        {
+          "id": 520466,
+          "name": "Judgement of The Three Hammers",
+          "cd": 60
+        },
+        {
+          "id": 504229,
+          "name": "Primal Totem",
+          "cd": 600
+        },
+        {
+          "id": 800181,
+          "name": "Primal Convergence",
+          "cd": 180
+        },
+        {
+          "id": 500692,
+          "name": "Boulder Dash",
+          "cd": 180
+        },
+        {
+          "id": 806415,
+          "name": "Bramblepatch",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680421,
+          "name": "Earthen Avatar"
+        },
+        {
+          "id": 503721,
+          "name": "Grove Guardian",
+          "cd": 60
+        },
+        {
+          "id": 503630,
+          "name": "Rock Barrier"
+        },
+        {
+          "id": 802782,
+          "name": "Protective Roar",
+          "cd": 120
+        },
+        {
+          "id": 805867,
+          "name": "Dreamslip",
+          "cd": 180
+        },
+        {
+          "id": 800094,
+          "name": "Bearskin",
+          "cd": 300
+        },
+        {
+          "id": 803980,
+          "name": "Wildheart",
+          "cd": 300
+        }
+      ],
+      "procs": [
+        {
+          "name": "Judgement of The Three Hammers",
+          "when": "Use before/during burst: for 15 sec your direct damage has a 20% chance to hurl 3 extra hammers."
+        }
+      ],
+      "st": "Melee Rage/Mana build: spend Rage on Mountain Fury (30 Rage, 45 sec CD) and mana on Quake (2 charges), fill with Wildclaw and Mountain Hammer; activate Judgement of The Three Hammers in burst.",
+      "aoe": "Mountain Fury (frontal cone, up to 12 enemies) and Quake (8 yd stomp) are the AoE hits; use them on cooldown for multiple targets.",
+      "summary": "Keep Boon of the Bear up. Mountain Fury + Quake on CD, fill with Wildclaw; Judgement of The Three Hammers in burst."
+    }
+  }
+}

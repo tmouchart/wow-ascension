@@ -1,0 +1,403 @@
+{
+  "slug": "starcaller",
+  "class": "Starcaller",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Moon Guard": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Scattered Stars"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 801996,
+          "name": "Starburst",
+          "res": "Mana",
+          "amt": 10,
+          "cd": 20
+        },
+        {
+          "id": 805550,
+          "name": "Starsweep",
+          "res": "Scattered Stars",
+          "cd": 20
+        },
+        {
+          "id": 805508,
+          "name": "Warden's Blade",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 20
+        },
+        {
+          "id": 801132,
+          "name": "Lunar Lance",
+          "res": "Scattered Stars"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Aspect of the Cosmos",
+          "note": "Keep an Aspect active - Aspect of the Cosmos makes attacks apply Scattered Stars (stacks 4x, lasts 30 sec), the resource your spenders consume."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 800505,
+          "name": "Shooting Star",
+          "cd": 60
+        },
+        {
+          "id": 801135,
+          "name": "Starshatter",
+          "cd": 90
+        },
+        {
+          "id": 804739,
+          "name": "Moonwell",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680755,
+          "name": "Chosen of the Moon"
+        },
+        {
+          "id": 805433,
+          "name": "Moonlit Bulwark",
+          "cd": 180
+        },
+        {
+          "id": 804381,
+          "name": "Blanket of Stars",
+          "cd": 35
+        },
+        {
+          "id": 801155,
+          "name": "Astral Reconstitution",
+          "cd": 60
+        },
+        {
+          "id": 680774,
+          "name": "Elune's Presence"
+        },
+        {
+          "id": 704777,
+          "name": "Infused Aegis",
+          "cd": 30
+        },
+        {
+          "id": 806155,
+          "name": "Astral Aegis",
+          "cd": 30
+        },
+        {
+          "id": 804652,
+          "name": "Vial of Moonwell Water",
+          "cd": 180
+        }
+      ],
+      "procs": [],
+      "st": "Keep Aspect of the Cosmos up to build Scattered Stars, then dump them: Starburst -> Warden's Blade -> Lunar Lance (consuming Scattered Stars refunds cooldown on Starburst).",
+      "aoe": "Use Starsweep instead - it hits all nearby enemies and each Scattered Star consumed cuts its cooldown by -3 sec.",
+      "summary": "Keep an Aspect up to build Scattered Stars. ST: Starburst -> Lunar Lance. AoE: Starsweep."
+    },
+    "Sentinel": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Scattered Stars"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 800497,
+          "name": "Starcall",
+          "res": "Mana",
+          "amt": 11,
+          "cd": 12
+        },
+        {
+          "id": 520590,
+          "name": "Trueshot",
+          "res": "Scattered Stars"
+        },
+        {
+          "id": 801978,
+          "name": "Starfire Shot",
+          "res": "Scattered Stars"
+        },
+        {
+          "id": 805508,
+          "name": "Warden's Blade",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 20
+        },
+        {
+          "id": 801132,
+          "name": "Lunar Lance",
+          "res": "Scattered Stars"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Aspect of the Cosmos",
+          "note": "Keep an Aspect active so attacks apply Scattered Stars (stacks 4x, lasts 30 sec) for your shots to consume."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 520481,
+          "name": "Arrows In The Night",
+          "cd": 60
+        },
+        {
+          "id": 563725,
+          "name": "Arrow of the Goddess",
+          "cd": 60
+        },
+        {
+          "id": 801975,
+          "name": "Drawstring of Elune",
+          "cd": 120
+        },
+        {
+          "id": 800505,
+          "name": "Shooting Star",
+          "cd": 60
+        },
+        {
+          "id": 801135,
+          "name": "Starshatter",
+          "cd": 90
+        },
+        {
+          "id": 804739,
+          "name": "Moonwell",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680774,
+          "name": "Elune's Presence"
+        },
+        {
+          "id": 704777,
+          "name": "Infused Aegis",
+          "cd": 30
+        },
+        {
+          "id": 806155,
+          "name": "Astral Aegis",
+          "cd": 30
+        },
+        {
+          "id": 804652,
+          "name": "Vial of Moonwell Water",
+          "cd": 180
+        }
+      ],
+      "procs": [],
+      "st": "Cast Starcall to apply Scattered Stars, then spend them with Starfire Shot and Trueshot; use Lunar Lance to dump extra stacks (consuming a Scattered Star reduces Starcall's cooldown by -1.5 sec).",
+      "aoe": "Starcall and Trueshot already hit all enemies near the target - lead with Starcall for the AoE Scattered Stars application, then Trueshot.",
+      "summary": "Keep an Aspect up. ST: Starcall -> Starfire Shot / Trueshot -> Lunar Lance. AoE: Starcall -> Trueshot."
+    },
+    "Moon Priest": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Scattered Stars"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 575030,
+          "name": "Moonflow",
+          "res": "Scattered Stars",
+          "cd": 10
+        },
+        {
+          "id": 805508,
+          "name": "Warden's Blade",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 20
+        },
+        {
+          "id": 801132,
+          "name": "Lunar Lance",
+          "res": "Scattered Stars"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Aspect of the Cosmos",
+          "note": "Keep an Aspect active so attacks apply Scattered Stars (stacks 4x, lasts 30 sec) for Moonflow and Lunar Lance to consume."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805546,
+          "name": "Moonlit Slumber",
+          "cd": 60
+        },
+        {
+          "id": 801231,
+          "name": "Celestial Form",
+          "cd": 60,
+          "proc": true
+        },
+        {
+          "id": 801134,
+          "name": "Cosmic Shift",
+          "cd": 180
+        },
+        {
+          "id": 572784,
+          "name": "Stellar Convergence",
+          "cd": 90
+        },
+        {
+          "id": 800505,
+          "name": "Shooting Star",
+          "cd": 60
+        },
+        {
+          "id": 801135,
+          "name": "Starshatter",
+          "cd": 90
+        },
+        {
+          "id": 804739,
+          "name": "Moonwell",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680774,
+          "name": "Elune's Presence"
+        },
+        {
+          "id": 704777,
+          "name": "Infused Aegis",
+          "cd": 30
+        },
+        {
+          "id": 806155,
+          "name": "Astral Aegis",
+          "cd": 30
+        },
+        {
+          "id": 804652,
+          "name": "Vial of Moonwell Water",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Celestial Form",
+          "when": "On cooldown (15 sec) - while active your critical strikes apply Scattered Stars to the target and up to 4 nearby enemies, spiking your resource generation."
+        }
+      ],
+      "st": "Keep Aspect of the Cosmos up to build Scattered Stars, then spend them with Moonflow and Lunar Lance; use Celestial Form on cooldown to flood extra Scattered Stars.",
+      "aoe": "Moonflow consumes Scattered Stars from all enemies you are in combat with within 40 yds, so it is your AoE spender.",
+      "summary": "Keep an Aspect up. ST: Moonflow -> Lunar Lance. Use Celestial Form on cooldown."
+    },
+    "Warden": {
+      "confidence": "medium",
+      "resource": [
+        "Scattered Stars",
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 680704,
+          "name": "Umbral Blade",
+          "res": "Scattered Stars"
+        },
+        {
+          "id": 805508,
+          "name": "Warden's Blade",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 20
+        },
+        {
+          "id": 801132,
+          "name": "Lunar Lance",
+          "res": "Scattered Stars"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Aspect of the Cosmos",
+          "note": "Keep an Aspect active so attacks apply Scattered Stars (stacks 4x, lasts 30 sec) for Umbral Blade and Lunar Lance to consume."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 680822,
+          "name": "Avatar of Vengeance"
+        },
+        {
+          "id": 807741,
+          "name": "Halt",
+          "cd": 120
+        },
+        {
+          "id": 805439,
+          "name": "Shadowsong's Mandate",
+          "cd": 120
+        },
+        {
+          "id": 800505,
+          "name": "Shooting Star",
+          "cd": 60
+        },
+        {
+          "id": 801135,
+          "name": "Starshatter",
+          "cd": 90
+        },
+        {
+          "id": 804739,
+          "name": "Moonwell",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680774,
+          "name": "Elune's Presence"
+        },
+        {
+          "id": 704777,
+          "name": "Infused Aegis",
+          "cd": 30
+        },
+        {
+          "id": 806155,
+          "name": "Astral Aegis",
+          "cd": 30
+        },
+        {
+          "id": 804652,
+          "name": "Vial of Moonwell Water",
+          "cd": 180
+        }
+      ],
+      "procs": [],
+      "st": "Keep Aspect of the Cosmos up to build Scattered Stars, then spend them: Umbral Blade -> Warden's Blade -> Lunar Lance.",
+      "aoe": "Umbral Blade hits the target and nearby enemies (each beyond the first takes 20% less), making it the cleave spender.",
+      "summary": "Keep an Aspect up. ST: Umbral Blade -> Lunar Lance. AoE: Umbral Blade cleave."
+    }
+  }
+}

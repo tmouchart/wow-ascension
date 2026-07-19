@@ -1,0 +1,257 @@
+{
+  "slug": "chronomancer",
+  "class": "Chronomancer",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Infinite": {
+      "confidence": "medium",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 806335,
+          "name": "Melt Reality",
+          "res": "Mana",
+          "amt": 23,
+          "cd": 40
+        },
+        {
+          "id": 801292,
+          "name": "Chromatic Shard",
+          "res": "Mana",
+          "amt": 23,
+          "cd": 30
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Melt Reality",
+          "note": "30 sec Chromatic DoT; while active its periodic damage is replicated to nearby enemies for 20%"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 570067,
+          "name": "Incarnation of Chaos",
+          "cd": 180
+        },
+        {
+          "id": 707555,
+          "name": "Slipstream",
+          "cd": 120
+        },
+        {
+          "id": 804491,
+          "name": "Fortify Timeline",
+          "cd": 60
+        },
+        {
+          "id": 561310,
+          "name": "Desynchronization",
+          "cd": 90
+        },
+        {
+          "id": 802790,
+          "name": "Dimensional Divergence",
+          "cd": 120
+        },
+        {
+          "id": 801281,
+          "name": "Gravity Bomb",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 806165,
+          "name": "Temporal Focus",
+          "cd": 120
+        },
+        {
+          "id": 806315,
+          "name": "Temporal Anomaly",
+          "cd": 120
+        },
+        {
+          "id": 804441,
+          "name": "Timeguard",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Incarnation of Chaos",
+          "when": "on cooldown for burst - instantly resets Chromatic Shard, next cast incurs no cooldown, +15% damage for 15 sec"
+        }
+      ],
+      "st": "Keep Melt Reality's DoT rolling on the target, then hard-cast Chromatic Shard as your main nuke on cooldown (its cast time shortens as Anomaly Spikes proc), spending Mana; use Incarnation of Chaos for burst and Gravity Bomb on cooldown.",
+      "aoe": "Melt Reality replicates 20% of its periodic damage to all nearby enemies, and Gravity Bomb explodes for AoE - keep Melt Reality up on your primary target and use Gravity Bomb when several enemies are grouped.",
+      "summary": "Keep Melt Reality up. ST: Chromatic Shard nuke + Gravity Bomb; burst with Incarnation of Chaos. AoE: Melt Reality cleave + Gravity Bomb."
+    },
+    "Time": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Accelerated Recovery",
+          "note": "15 sec HoT to keep on allies; Fortify Timeline extends its duration"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 801271,
+          "name": "Continuum Restoration",
+          "cd": 90
+        },
+        {
+          "id": 520188,
+          "name": "Buy Time",
+          "cd": 180
+        },
+        {
+          "id": 804491,
+          "name": "Fortify Timeline",
+          "cd": 60
+        },
+        {
+          "id": 561310,
+          "name": "Desynchronization",
+          "cd": 90
+        },
+        {
+          "id": 802790,
+          "name": "Dimensional Divergence",
+          "cd": 120
+        },
+        {
+          "id": 801281,
+          "name": "Gravity Bomb",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 706083,
+          "name": "The Vast Infinite",
+          "cd": 300
+        },
+        {
+          "id": 806165,
+          "name": "Temporal Focus",
+          "cd": 120
+        },
+        {
+          "id": 806315,
+          "name": "Temporal Anomaly",
+          "cd": 120
+        },
+        {
+          "id": 804441,
+          "name": "Timeguard",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Fortify Timeline",
+          "when": "on cooldown - AoE heal that also extends Accelerated Recovery on the group"
+        }
+      ],
+      "st": "Time is a healer/support spec: keep Accelerated Recovery up on allies and heal with Reverse Wound and Correct the Mistake, spending Mana, while using Fortify Timeline and cooldowns as needed; no damage builder/spender loop is derivable from the tooltips.",
+      "aoe": "Use Correct the Mistake and Fortify Timeline for group healing when multiple allies are hurt.",
+      "summary": "Support/healer spec: keep Accelerated Recovery up, heal with Reverse Wound / Correct the Mistake, use Fortify Timeline on cooldown."
+    },
+    "Artificer": {
+      "confidence": "medium",
+      "resource": [
+        "Echo",
+        "Mana"
+      ],
+      "generators": [
+        {
+          "id": 806203,
+          "name": "Paradox Cannon",
+          "res": "Echo",
+          "amt": 1,
+          "cd": 15
+        }
+      ],
+      "spenders": [
+        {
+          "id": 524853,
+          "name": "Arc Collision",
+          "res": "Mana",
+          "amt": 18
+        },
+        {
+          "id": 804503,
+          "name": "Shatter Echo",
+          "res": "Mana",
+          "amt": 19,
+          "cd": 3
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Paradox Cannon",
+          "note": "Continuum spell that generates 1 Echo Fragment every 3 sec; keep it running to build Echo Fragments"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 804491,
+          "name": "Fortify Timeline",
+          "cd": 60
+        },
+        {
+          "id": 561310,
+          "name": "Desynchronization",
+          "cd": 90
+        },
+        {
+          "id": 802790,
+          "name": "Dimensional Divergence",
+          "cd": 120
+        },
+        {
+          "id": 801281,
+          "name": "Gravity Bomb",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 503836,
+          "name": "Unstable Chronoglass",
+          "cd": 60
+        },
+        {
+          "id": 806165,
+          "name": "Temporal Focus",
+          "cd": 120
+        },
+        {
+          "id": 806315,
+          "name": "Temporal Anomaly",
+          "cd": 120
+        },
+        {
+          "id": 804441,
+          "name": "Timeguard",
+          "cd": 120
+        }
+      ],
+      "procs": [],
+      "st": "Build Echo Fragments with Paradox Cannon (and Artificer's Wand), then spend them on Shatter Echo (its damage is increased 40% per Echo Fragment consumed), spending Mana.",
+      "aoe": "Spend Echo Fragments on Arc Collision instead, which hits the target plus up to 2 nearby enemies and gains duration per Echo Fragment consumed.",
+      "summary": "Build Echo with Paradox Cannon. ST: Shatter Echo spender. AoE: Arc Collision spender."
+    }
+  }
+}

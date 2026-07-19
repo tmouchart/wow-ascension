@@ -1,0 +1,333 @@
+{
+  "slug": "witch-doctor",
+  "class": "Witch Doctor",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Voodoo": {
+      "confidence": "medium",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 807042,
+          "name": "Hexfire",
+          "res": "Mana",
+          "amt": 17,
+          "cd": 10
+        },
+        {
+          "id": 802087,
+          "name": "Bad Juju",
+          "res": "Mana",
+          "amt": 16,
+          "cd": 15
+        },
+        {
+          "id": 500015,
+          "name": "Shadow Puppets",
+          "res": "Mana",
+          "amt": 15,
+          "cd": 18
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Hex of Malice",
+          "note": "24 sec Shadow DoT/Curse; Bad Juju gains a -20% healing debuff when the target is affected by it"
+        },
+        {
+          "name": "Spirit",
+          "note": "stacking regen collected by Shadow Puppets, Hexfire (via Voodoo Spirits) and Puppeteer's Grasp; keep stacks flowing to fuel Hexfire/Bad Juju damage"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 704497,
+          "name": "Soul Marionette",
+          "cd": 90
+        },
+        {
+          "id": 803678,
+          "name": "Malignant Jinx",
+          "cd": 60
+        },
+        {
+          "id": 801716,
+          "name": "Voice of Bwonsamdi",
+          "cd": 90
+        },
+        {
+          "id": 707209,
+          "name": "Puppeteer's Grasp",
+          "cd": 180
+        },
+        {
+          "id": 500952,
+          "name": "Amphibimorph",
+          "cd": 120
+        },
+        {
+          "id": 804226,
+          "name": "Swift Idol",
+          "cd": 60
+        },
+        {
+          "id": 707162,
+          "name": "Mimic Ward",
+          "cd": 60
+        },
+        {
+          "id": 500947,
+          "name": "Slither",
+          "cd": 60
+        },
+        {
+          "id": 802100,
+          "name": "Veil of Darkness",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 800330,
+          "name": "War Golem",
+          "cd": 180
+        },
+        {
+          "id": 504465,
+          "name": "Vol'jin's Vigil",
+          "cd": 120
+        },
+        {
+          "id": 501136,
+          "name": "Mirage",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Puppeteer's Grasp",
+          "when": "on cooldown as a 30 sec Spirit-generating window (grants a Spirit every 2 sec) - lets you cast Malefic Wrath and Bad Juju while moving"
+        }
+      ],
+      "st": "Keep Hex of Malice on the target, then spend on cooldown: Bad Juju and Shadow Puppets to collect Spirits, and Hexfire (which scales with Spirit) as the filler/dump; use Voice of Bwonsamdi and Soul Marionette as burst cooldowns.",
+      "aoe": "Soul Marionette adds an AoE stun/explosion burst window; otherwise spread Hex of Malice and use Shadow Puppets on multiple targets.",
+      "summary": "Keep Hex of Malice up. ST: Bad Juju / Shadow Puppets to collect Spirits -> Hexfire dump. CD: Voice of Bwonsamdi."
+    },
+    "Brewing": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Ingredient: Bloodthistle",
+          "note": "Cauldron/Potion ingredient buff; Mojo abilities swap active ingredients that apply lasting ally buffs"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 500472,
+          "name": "Mojo: Jungle Thistle",
+          "cd": 45
+        },
+        {
+          "id": 705850,
+          "name": "Mojo: Fish Bones",
+          "cd": 45
+        },
+        {
+          "id": 705851,
+          "name": "Mojo: Frog Shrooms",
+          "cd": 45
+        },
+        {
+          "id": 705864,
+          "name": "Master Mixologist",
+          "cd": 120
+        },
+        {
+          "id": 804684,
+          "name": "Voodoo Cauldron",
+          "cd": 180
+        },
+        {
+          "id": 503750,
+          "name": "Rage Brew / Arcane Brew",
+          "cd": 120
+        },
+        {
+          "id": 500952,
+          "name": "Amphibimorph",
+          "cd": 120
+        },
+        {
+          "id": 804226,
+          "name": "Swift Idol",
+          "cd": 60
+        },
+        {
+          "id": 707162,
+          "name": "Mimic Ward",
+          "cd": 60
+        },
+        {
+          "id": 500947,
+          "name": "Slither",
+          "cd": 60
+        },
+        {
+          "id": 802100,
+          "name": "Veil of Darkness",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 705870,
+          "name": "Base: Beast Blood",
+          "cd": 90
+        },
+        {
+          "id": 500962,
+          "name": "Base: Crystal Water",
+          "cd": 90
+        },
+        {
+          "id": 504465,
+          "name": "Vol'jin's Vigil",
+          "cd": 120
+        },
+        {
+          "id": 501136,
+          "name": "Mirage",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Mojo: Jungle Thistle",
+          "when": "resets Potion Toss / Splash Potion so the next use within 5 sec applies Jungle Thistle"
+        },
+        {
+          "name": "Mojo: Fish Bones",
+          "when": "resets Potion Toss / Splash Potion so the next use within 5 sec applies Fish Bones"
+        },
+        {
+          "name": "Mojo: Frog Shrooms",
+          "when": "resets Potion Toss / Splash Potion so the next use within 5 sec applies Frog Shrooms"
+        }
+      ],
+      "st": "Support/brew spec with no damage builder-spender loop in the data: swap ingredients with the Mojo abilities and follow with Potion Toss, then use Master Mixologist and Voodoo Cauldron as major cooldowns.",
+      "aoe": "",
+      "summary": "Brew/support spec: swap Mojo ingredients, then Potion Toss; Master Mixologist and Voodoo Cauldron as cooldowns."
+    },
+    "Shadowhunting": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Spirits"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 801607,
+          "name": "Spirit Eclipse",
+          "res": "Mana",
+          "amt": 12,
+          "cd": 10
+        },
+        {
+          "id": 560748,
+          "name": "Frenzied Spirits",
+          "res": "Spirits",
+          "cd": 20
+        },
+        {
+          "id": 806289,
+          "name": "Spirit Glaive",
+          "res": "Mana",
+          "amt": 10,
+          "cd": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Eye of Kimbul",
+          "note": "critical strikes apply it for 15 sec, stacking 5 times, raising your damage and crit vs the target"
+        },
+        {
+          "name": "Spirit",
+          "note": "collected by Reclamation; consumed by Spirit Eclipse and Frenzied Spirits, so keep Spirits stacked before spending"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 681007,
+          "name": "Fool's Play"
+        },
+        {
+          "id": 681222,
+          "name": "Call of Sseratus",
+          "cd": 40
+        },
+        {
+          "id": 500952,
+          "name": "Amphibimorph",
+          "cd": 120
+        },
+        {
+          "id": 804226,
+          "name": "Swift Idol",
+          "cd": 60
+        },
+        {
+          "id": 707162,
+          "name": "Mimic Ward",
+          "cd": 60
+        },
+        {
+          "id": 500947,
+          "name": "Slither",
+          "cd": 60
+        },
+        {
+          "id": 802100,
+          "name": "Veil of Darkness",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 807040,
+          "name": "Shadowstalker",
+          "cd": 180
+        },
+        {
+          "id": 504465,
+          "name": "Vol'jin's Vigil",
+          "cd": 120
+        },
+        {
+          "id": 501136,
+          "name": "Mirage",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Frenzied Spirits",
+          "when": "when you have Spirits stacked - consumes them for crit and self-heal and regenerates 1 Spirit/sec while active"
+        }
+      ],
+      "st": "Build Spirits with Reclamation, then spend them with Spirit Eclipse (damage scales per active Spirit); weave Spirit Glaive and Malefic Arrow, and keep Eye of Kimbul stacks up.",
+      "aoe": "Spirit Glaive and Spirit Eclipse both cleave nearby enemies (Spirit Eclipse explodes on impact, Spirit Glaive strikes everything it passes through); Call of Sseratus adds AoE Serpent Wards.",
+      "summary": "Build Spirits with Reclamation -> spend with Spirit Eclipse. AoE: Spirit Glaive / Spirit Eclipse cleave."
+    }
+  }
+}

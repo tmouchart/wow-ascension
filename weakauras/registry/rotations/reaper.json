@@ -1,0 +1,315 @@
+{
+  "slug": "reaper",
+  "class": "Reaper",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Harvest": {
+      "confidence": "medium",
+      "resource": [
+        "Reaped",
+        "Runic",
+        "Reaped Soul",
+        "Soul"
+      ],
+      "generators": [
+        {
+          "id": 500373,
+          "name": "Slaughter",
+          "res": "Reaped",
+          "amt": 1
+        },
+        {
+          "id": 805258,
+          "name": "Wraithblade",
+          "res": "Reaped",
+          "amt": 3,
+          "cd": 30
+        },
+        {
+          "id": 500357,
+          "name": "Reap",
+          "res": "Soul",
+          "amt": 1
+        },
+        {
+          "id": 801624,
+          "name": "Spectre Stride",
+          "res": "Runic",
+          "amt": 20
+        }
+      ],
+      "spenders": [
+        {
+          "id": 504011,
+          "name": "Crow's Harvest",
+          "res": "Runic",
+          "amt": 30
+        },
+        {
+          "id": 500483,
+          "name": "Tormented Souls",
+          "res": "Reaped Soul",
+          "cd": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Reaped Soul",
+          "note": "pooled point resource: 3 Soul Fragments make a Reaped Soul, 3 Reaped Souls grant a Soul Infusion that enables powerful abilities (Soul Collector). Build then spend."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 705413,
+          "name": "Harvesting Grounds",
+          "cd": 120
+        },
+        {
+          "id": 803995,
+          "name": "Harvest Time",
+          "cd": 180
+        },
+        {
+          "id": 806146,
+          "name": "Ghastly Screech",
+          "cd": 90
+        },
+        {
+          "id": 803030,
+          "name": "Masochistic Rage",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 800845,
+          "name": "Limbo",
+          "cd": 180
+        },
+        {
+          "id": 805718,
+          "name": "Jailer's Bargain",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Slaughter",
+          "when": "target below 35% health (execute-only; generates 1 Reaped Soul)"
+        },
+        {
+          "name": "Harvest Time",
+          "when": "on cooldown as a burst window: +15% damage and crit, and Soul Infusion spells have a 50% chance not to consume the effect for 15 sec"
+        }
+      ],
+      "st": "Build Reaped Souls with Reap (+1) / Wraithblade (+3, 30s CD) / Spectre Stride (+20 Runic), then spend Reaped Souls with Tormented Souls; use Crow's Harvest to convert Soul Fragments and Slaughter as an execute below 35%.",
+      "aoe": "Crow's Harvest strikes all nearby enemies and harvests up to 3 Soul Fragments; open Harvesting Grounds and Harvest Time for burst on packs.",
+      "summary": "Build Reaped Souls (Reap / Wraithblade) then spend with Tormented Souls; Slaughter executes below 35%. AoE: Crow's Harvest."
+    },
+    "Soul": {
+      "confidence": "medium",
+      "resource": [
+        "Runic",
+        "Soul",
+        "Reaped",
+        "Reaped Soul"
+      ],
+      "generators": [
+        {
+          "id": 801328,
+          "name": "Dirge",
+          "res": "Soul",
+          "amt": 2
+        },
+        {
+          "id": 805258,
+          "name": "Wraithblade",
+          "res": "Reaped",
+          "amt": 3,
+          "cd": 30
+        },
+        {
+          "id": 500357,
+          "name": "Reap",
+          "res": "Soul",
+          "amt": 1
+        },
+        {
+          "id": 801624,
+          "name": "Spectre Stride",
+          "res": "Runic",
+          "amt": 20
+        }
+      ],
+      "spenders": [
+        {
+          "id": 500483,
+          "name": "Tormented Souls",
+          "res": "Reaped Soul",
+          "cd": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Reaped Soul",
+          "note": "pooled point resource: 3 Soul Fragments make a Reaped Soul, 3 Reaped Souls grant a Soul Infusion (Soul Collector). Build then spend with Tormented Souls."
+        },
+        {
+          "name": "Ghostly Weapon",
+          "note": "weapon imbue lasting 15 sec (2 charges, 40s recharge) adding 25% Frost damage to melee attacks; keep it applied."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 561102,
+          "name": "Sepulchral Renewal",
+          "cd": 600
+        },
+        {
+          "id": 800922,
+          "name": "Endbringer",
+          "cd": 180
+        },
+        {
+          "id": 806146,
+          "name": "Ghastly Screech",
+          "cd": 90
+        },
+        {
+          "id": 803030,
+          "name": "Masochistic Rage",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 573038,
+          "name": "Shade",
+          "cd": 180
+        },
+        {
+          "id": 800845,
+          "name": "Limbo",
+          "cd": 180
+        },
+        {
+          "id": 805718,
+          "name": "Jailer's Bargain",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Endbringer",
+          "when": "on cooldown as a burst window: for 15 sec Dirge deals 30% more damage, generates 3 Reaped Souls, and heals you"
+        },
+        {
+          "name": "Deathchaser",
+          "when": "target below 20% health as an execute (Chasing Death reapplies it until the target dies or 5 sec pass)"
+        }
+      ],
+      "st": "Build Reaped Souls with Dirge (+2) / Reap (+1) / Wraithblade (+3), then spend them with Tormented Souls; keep Ghostly Weapon up and use Endbringer to flood Reaped Souls, Deathchaser to execute.",
+      "aoe": "",
+      "summary": "Keep Ghostly Weapon up. Build Reaped Souls (Dirge / Wraithblade) then spend with Tormented Souls; Endbringer for burst, Deathchaser executes."
+    },
+    "Domination": {
+      "confidence": "medium",
+      "resource": [
+        "Reaped Soul",
+        "Runic",
+        "Reaped",
+        "Soul"
+      ],
+      "generators": [
+        {
+          "id": 803992,
+          "name": "Dreadwake",
+          "res": "Reaped",
+          "amt": 1
+        },
+        {
+          "id": 805258,
+          "name": "Wraithblade",
+          "res": "Reaped",
+          "amt": 3,
+          "cd": 30
+        },
+        {
+          "id": 500357,
+          "name": "Reap",
+          "res": "Soul",
+          "amt": 1
+        },
+        {
+          "id": 801624,
+          "name": "Spectre Stride",
+          "res": "Runic",
+          "amt": 20
+        }
+      ],
+      "spenders": [
+        {
+          "id": 500484,
+          "name": "Spectral Scythe",
+          "res": "Reaped Soul",
+          "cd": 45
+        },
+        {
+          "id": 500483,
+          "name": "Tormented Souls",
+          "res": "Reaped Soul",
+          "cd": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Reaped Soul",
+          "note": "pooled point resource: 3 Soul Fragments make a Reaped Soul, 3 Reaped Souls grant a Soul Infusion (Soul Collector). Pool then release into Spectral Scythe / Tormented Souls."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 806146,
+          "name": "Ghastly Screech",
+          "cd": 90
+        },
+        {
+          "id": 803030,
+          "name": "Masochistic Rage",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 805716,
+          "name": "Spectral Warden",
+          "cd": 180
+        },
+        {
+          "id": 680337,
+          "name": "Bolstered Form"
+        },
+        {
+          "id": 800845,
+          "name": "Limbo",
+          "cd": 180
+        },
+        {
+          "id": 805718,
+          "name": "Jailer's Bargain",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Bolstered Form",
+          "when": "when Painmail stacks are ready to consume / for its 15 sec armor and parry defensive window (generates 30 Runic Power)"
+        }
+      ],
+      "st": "Build Reaped Souls with Dreadwake (+1 cone) / Reap (+1) / Wraithblade (+3), then release them with Spectral Scythe (summons one scythe per active Reaped Soul, 45s CD) or Tormented Souls.",
+      "aoe": "Spectral Scythe scales with the number of Reaped Souls active and Soul Strike makes each scythe cleave 5 nearby enemies, so pool Reaped Souls before releasing into a pack.",
+      "summary": "Build Reaped Souls (Dreadwake / Wraithblade) then release with Spectral Scythe; pool before AoE. Tormented Souls as backup spender."
+    }
+  }
+}

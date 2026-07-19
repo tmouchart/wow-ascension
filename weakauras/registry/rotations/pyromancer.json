@@ -1,0 +1,465 @@
+{
+  "slug": "pyromancer",
+  "class": "Pyromancer",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Incineration": {
+      "confidence": "medium",
+      "resource": [
+        "Heat",
+        "Mana",
+        "Ember",
+        "Flamecasting"
+      ],
+      "generators": [
+        {
+          "id": 800791,
+          "name": "Ignite",
+          "res": "Heat",
+          "amt": 10
+        },
+        {
+          "id": 805496,
+          "name": "Pillar of Flame",
+          "res": "Heat",
+          "amt": 20,
+          "cd": 20
+        },
+        {
+          "id": 805477,
+          "name": "Volcanic Shell",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 120
+        },
+        {
+          "id": 500135,
+          "name": "Meteor",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 30
+        },
+        {
+          "id": 504380,
+          "name": "Inferno Barrier",
+          "res": "Heat",
+          "amt": 30,
+          "cd": 20
+        },
+        {
+          "id": 800806,
+          "name": "Cinderheart",
+          "res": "Heat",
+          "amt": 30
+        },
+        {
+          "id": 800790,
+          "name": "Flare Bolt",
+          "res": "Heat",
+          "amt": 20
+        },
+        {
+          "id": 803950,
+          "name": "Lava Shard",
+          "res": "Ember",
+          "amt": 1
+        }
+      ],
+      "spenders": [
+        {
+          "id": 520019,
+          "name": "Pyroclasm",
+          "res": "Ember",
+          "amt": 1,
+          "cd": 60
+        },
+        {
+          "id": 680369,
+          "name": "Ignis Ultimatus",
+          "res": "Flamecasting"
+        },
+        {
+          "id": 806611,
+          "name": "Dragon Leap",
+          "res": "Mana",
+          "amt": 14,
+          "cd": 30
+        },
+        {
+          "id": 800818,
+          "name": "Ember Touch",
+          "res": "Ember",
+          "amt": 1
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Ignite",
+          "note": "Burn DoT, 21 sec; also generates 10 Heat per tick"
+        },
+        {
+          "name": "Infernus",
+          "note": "Lava Shard applies a Burning DoT for 18 sec"
+        },
+        {
+          "name": "Flamecasting",
+          "note": "haste buff, stack up to 5 by generating Heat"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 704823,
+          "name": "Fired Up!",
+          "cd": 60
+        },
+        {
+          "id": 802791,
+          "name": "Firestorm",
+          "cd": 60
+        },
+        {
+          "id": 802167,
+          "name": "Grace of Alexstrasza",
+          "cd": 300
+        },
+        {
+          "id": 806148,
+          "name": "Gaze of Ysera",
+          "cd": 90
+        },
+        {
+          "id": 800807,
+          "name": "Circle of Fire",
+          "cd": 120
+        },
+        {
+          "id": 520218,
+          "name": "Cataclysm",
+          "cd": 90
+        },
+        {
+          "id": 802120,
+          "name": "Essence of Malygos",
+          "cd": 120
+        }
+      ],
+      "defensives": [],
+      "procs": [
+        {
+          "name": "Fired Up!",
+          "when": "on cooldown: makes Ember spenders instant, 30% cost refund and +20% crit for 15 sec, then dump Embers"
+        }
+      ],
+      "st": "Keep Ignite and Infernus (from Lava Shard) up on the target, generate Heat with Flare Bolt and Pillar of Flame, use Lava Shard on cooldown to build Ember, then spend Ember on Pyroclasm to consume the Burning DoTs for burst.",
+      "aoe": "Use Pillar of Flame and Meteor to hit multiple targets and generate extra Heat while spreading Ignite/Infernus.",
+      "summary": "Keep Ignite/Infernus up. ST: Flare Bolt + Lava Shard -> Pyroclasm. AoE: Pillar of Flame + Meteor."
+    },
+    "Flameweaving": {
+      "confidence": "low",
+      "resource": [
+        "Heat",
+        "Mana",
+        "Flamecasting",
+        "Ember"
+      ],
+      "generators": [
+        {
+          "id": 800816,
+          "name": "Kael's Command",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 120
+        },
+        {
+          "id": 681145,
+          "name": "Cleansing Flames",
+          "res": "Heat",
+          "amt": 10
+        },
+        {
+          "id": 805477,
+          "name": "Volcanic Shell",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 120
+        },
+        {
+          "id": 500135,
+          "name": "Meteor",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 30
+        },
+        {
+          "id": 504380,
+          "name": "Inferno Barrier",
+          "res": "Heat",
+          "amt": 30,
+          "cd": 20
+        },
+        {
+          "id": 800806,
+          "name": "Cinderheart",
+          "res": "Heat",
+          "amt": 30
+        },
+        {
+          "id": 800790,
+          "name": "Flare Bolt",
+          "res": "Heat",
+          "amt": 20
+        },
+        {
+          "id": 803950,
+          "name": "Lava Shard",
+          "res": "Ember",
+          "amt": 1
+        }
+      ],
+      "spenders": [
+        {
+          "id": 680369,
+          "name": "Ignis Ultimatus",
+          "res": "Flamecasting"
+        },
+        {
+          "id": 806611,
+          "name": "Dragon Leap",
+          "res": "Mana",
+          "amt": 14,
+          "cd": 30
+        },
+        {
+          "id": 800818,
+          "name": "Ember Touch",
+          "res": "Ember",
+          "amt": 1
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Flamecasting",
+          "note": "haste buff, stack up to 5 by generating Heat"
+        },
+        {
+          "name": "Roaring Pyre",
+          "note": "healing bonfire, lasts 20 sec, refresh for group healing"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 680378,
+          "name": "Emberheart"
+        },
+        {
+          "id": 520488,
+          "name": "Neltharion's Resolve",
+          "cd": 60
+        },
+        {
+          "id": 804230,
+          "name": "Sunstrider Array",
+          "cd": 60
+        },
+        {
+          "id": 704278,
+          "name": "Roaring Pyre",
+          "cd": 60
+        },
+        {
+          "id": 802791,
+          "name": "Firestorm",
+          "cd": 60
+        },
+        {
+          "id": 802167,
+          "name": "Grace of Alexstrasza",
+          "cd": 300
+        },
+        {
+          "id": 806148,
+          "name": "Gaze of Ysera",
+          "cd": 90
+        },
+        {
+          "id": 800807,
+          "name": "Circle of Fire",
+          "cd": 120
+        },
+        {
+          "id": 520218,
+          "name": "Cataclysm",
+          "cd": 90
+        },
+        {
+          "id": 802120,
+          "name": "Essence of Malygos",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 706854,
+          "name": "Phoenix Dive"
+        }
+      ],
+      "procs": [],
+      "st": "Generate Heat and Flamecasting with Cleansing Flames and Flare Bolt, build Ember with Lava Shard, and spend Flamecasting stacks with Ignis Ultimatus; Ember is spent on Ember Touch for healing.",
+      "aoe": "Cleansing Flames hits several targets in front of you and Ignis Ultimatus cleaves a 50 yd line, both scaling with more targets.",
+      "summary": "Keep Flamecasting and Roaring Pyre up. ST: Cleansing Flames + Lava Shard -> Ignis Ultimatus. AoE: Cleansing Flames -> Ignis Ultimatus."
+    },
+    "Draconic": {
+      "confidence": "medium",
+      "resource": [
+        "Heat",
+        "Mana",
+        "Flamecasting",
+        "Ember"
+      ],
+      "generators": [
+        {
+          "id": 802107,
+          "name": "Destroyer's Maw",
+          "res": "Heat",
+          "amt": 30,
+          "cd": 15
+        },
+        {
+          "id": 801905,
+          "name": "Firefall",
+          "res": "Heat",
+          "amt": 10,
+          "cd": 8
+        },
+        {
+          "id": 805477,
+          "name": "Volcanic Shell",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 120
+        },
+        {
+          "id": 500135,
+          "name": "Meteor",
+          "res": "Heat",
+          "amt": 50,
+          "cd": 30
+        },
+        {
+          "id": 504380,
+          "name": "Inferno Barrier",
+          "res": "Heat",
+          "amt": 30,
+          "cd": 20
+        },
+        {
+          "id": 800806,
+          "name": "Cinderheart",
+          "res": "Heat",
+          "amt": 30
+        },
+        {
+          "id": 800790,
+          "name": "Flare Bolt",
+          "res": "Heat",
+          "amt": 20
+        },
+        {
+          "id": 803950,
+          "name": "Lava Shard",
+          "res": "Ember",
+          "amt": 1
+        }
+      ],
+      "spenders": [
+        {
+          "id": 680369,
+          "name": "Ignis Ultimatus",
+          "res": "Flamecasting"
+        },
+        {
+          "id": 806611,
+          "name": "Dragon Leap",
+          "res": "Mana",
+          "amt": 14,
+          "cd": 30
+        },
+        {
+          "id": 800818,
+          "name": "Ember Touch",
+          "res": "Ember",
+          "amt": 1
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Flamecasting",
+          "note": "haste buff, stack up to 5 by generating Heat"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 520402,
+          "name": "Death From Above",
+          "cd": 90
+        },
+        {
+          "id": 802168,
+          "name": "Aspect's Blessing",
+          "cd": 60
+        },
+        {
+          "id": 802119,
+          "name": "Draconic Invocation",
+          "cd": 180
+        },
+        {
+          "id": 511109,
+          "name": "Breath of Neltharion",
+          "cd": 90
+        },
+        {
+          "id": 802791,
+          "name": "Firestorm",
+          "cd": 60
+        },
+        {
+          "id": 802167,
+          "name": "Grace of Alexstrasza",
+          "cd": 300
+        },
+        {
+          "id": 806148,
+          "name": "Gaze of Ysera",
+          "cd": 90
+        },
+        {
+          "id": 800807,
+          "name": "Circle of Fire",
+          "cd": 120
+        },
+        {
+          "id": 520218,
+          "name": "Cataclysm",
+          "cd": 90
+        },
+        {
+          "id": 802120,
+          "name": "Essence of Malygos",
+          "cd": 120
+        }
+      ],
+      "defensives": [],
+      "procs": [
+        {
+          "name": "Draconic Invocation",
+          "when": "on cooldown: instantly generates 5 Embers to dump into Ember spenders"
+        }
+      ],
+      "st": "Generate Heat with Destroyer's Maw (every 15 sec) and Firefall, build Ember with Lava Shard, and spend Ember on Ember Touch; use Draconic Invocation to burst 5 Embers, then dump them.",
+      "aoe": "Firefall hits the target and up to 8 nearby enemies and Meteor strikes 8 enemies, generating extra Heat while spreading damage.",
+      "summary": "Build Heat with Destroyer's Maw. ST: Firefall + Lava Shard -> Ember Touch. AoE: Firefall + Meteor."
+    }
+  }
+}

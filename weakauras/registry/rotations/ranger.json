@@ -1,0 +1,398 @@
+{
+  "slug": "ranger",
+  "class": "Ranger",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Archery": {
+      "confidence": "medium",
+      "resource": [
+        "Focus",
+        "Advantage"
+      ],
+      "generators": [
+        {
+          "id": 520227,
+          "name": "Deadshot",
+          "res": "Advantage",
+          "amt": 2
+        },
+        {
+          "id": 804940,
+          "name": "Flank",
+          "res": "Advantage",
+          "amt": 2
+        },
+        {
+          "id": 806360,
+          "name": "Horn of Alacrity",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 806359,
+          "name": "Horn of Endurance",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 800088,
+          "name": "Horn of Perseverance",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 500074,
+          "name": "Quick Shot",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 800083,
+          "name": "Wild Strike",
+          "res": "Advantage",
+          "amt": 1
+        }
+      ],
+      "spenders": [
+        {
+          "id": 570014,
+          "name": "Brutal Shot",
+          "res": "Focus",
+          "amt": 45,
+          "cd": 25
+        },
+        {
+          "id": 524870,
+          "name": "Incendiary Shot",
+          "res": "Focus",
+          "amt": 20,
+          "cd": 15
+        },
+        {
+          "id": 801191,
+          "name": "Hunting Shot",
+          "res": "Focus",
+          "amt": 40
+        },
+        {
+          "id": 500075,
+          "name": "Precision Shot",
+          "res": "Focus",
+          "amt": 40
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Skirmish",
+          "note": "Crit +15% and -25% Focus cost; lasts 4 sec per Advantage stack consumed, so re-apply to keep it up"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 500071,
+          "name": "Neurotoxin Arrow",
+          "cd": 120
+        },
+        {
+          "id": 801951,
+          "name": "Onslaught",
+          "cd": 180
+        },
+        {
+          "id": 802839,
+          "name": "Survival Potion",
+          "cd": 60
+        },
+        {
+          "id": 800359,
+          "name": "Cutthroat",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520578,
+          "name": "Adrenaline Rush"
+        },
+        {
+          "id": 800084,
+          "name": "Briar Veil",
+          "cd": 120
+        },
+        {
+          "id": 570015,
+          "name": "Woodland Adept",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Deadshot",
+          "when": "target below 20% health (execute)"
+        }
+      ],
+      "st": "Build Advantage with Quick Shot (and Skullpiercer/Wild Strike), keep Skirmish up, then spend Focus on Precision Shot and Incendiary Shot; use Deadshot below 20% HP.",
+      "aoe": "Use Hunting Shot to build Advantage on multiple targets and spend on the AoE shots Incendiary Shot and Brutal Shot.",
+      "summary": "Keep Skirmish up. ST: Quick Shot -> Precision Shot / Incendiary Shot; Deadshot as execute. AoE: Hunting Shot -> Incendiary Shot / Brutal Shot."
+    },
+    "Brigand": {
+      "confidence": "medium",
+      "resource": [
+        "Focus",
+        "Advantage"
+      ],
+      "generators": [
+        {
+          "id": 803104,
+          "name": "Viper's Bite",
+          "res": "Advantage",
+          "amt": 2,
+          "cd": 20
+        },
+        {
+          "id": 803851,
+          "name": "Ravage",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 804940,
+          "name": "Flank",
+          "res": "Advantage",
+          "amt": 2
+        },
+        {
+          "id": 806360,
+          "name": "Horn of Alacrity",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 806359,
+          "name": "Horn of Endurance",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 800088,
+          "name": "Horn of Perseverance",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 500074,
+          "name": "Quick Shot",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 800083,
+          "name": "Wild Strike",
+          "res": "Advantage",
+          "amt": 1
+        }
+      ],
+      "spenders": [
+        {
+          "id": 803108,
+          "name": "Assault",
+          "res": "Focus",
+          "amt": 55
+        },
+        {
+          "id": 560966,
+          "name": "Quills",
+          "res": "Focus",
+          "amt": 30
+        },
+        {
+          "id": 800360,
+          "name": "Hookshot",
+          "res": "Focus",
+          "amt": 25,
+          "cd": 25
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Ravage",
+          "note": "Bleed DoT lasting 12 sec; keep it on the target (also generates Advantage)"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 557325,
+          "name": "Outmaneuver",
+          "cd": 60
+        },
+        {
+          "id": 801951,
+          "name": "Onslaught",
+          "cd": 180
+        },
+        {
+          "id": 802839,
+          "name": "Survival Potion",
+          "cd": 60
+        },
+        {
+          "id": 800359,
+          "name": "Cutthroat",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520578,
+          "name": "Adrenaline Rush"
+        },
+        {
+          "id": 800084,
+          "name": "Briar Veil",
+          "cd": 120
+        },
+        {
+          "id": 570015,
+          "name": "Woodland Adept",
+          "cd": 180
+        }
+      ],
+      "procs": [
+        {
+          "name": "Assault",
+          "when": "target below 20% health (execute)"
+        }
+      ],
+      "st": "Build Advantage with Viper's Bite, Ravage, Flank and Wild Strike, keep the Ravage bleed up, then spend Focus on Assault (below 20% HP) or Hookshot.",
+      "aoe": "Spend Advantage on Quills to hit up to 5 enemies (it strikes an extra target per Advantage stack).",
+      "summary": "Keep Ravage bleed up. ST: Viper's Bite / Flank -> Assault (execute) / Hookshot. AoE: build Advantage -> Quills."
+    },
+    "Farstrider": {
+      "confidence": "low",
+      "resource": [
+        "Focus",
+        "Advantage"
+      ],
+      "generators": [
+        {
+          "id": 800086,
+          "name": "Horn of War / Battle Prowess",
+          "res": "Advantage",
+          "amt": 1,
+          "cd": 60
+        },
+        {
+          "id": 804940,
+          "name": "Flank",
+          "res": "Advantage",
+          "amt": 2
+        },
+        {
+          "id": 806360,
+          "name": "Horn of Alacrity",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 806359,
+          "name": "Horn of Endurance",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 800088,
+          "name": "Horn of Perseverance",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 500074,
+          "name": "Quick Shot",
+          "res": "Advantage",
+          "amt": 1
+        },
+        {
+          "id": 800083,
+          "name": "Wild Strike",
+          "res": "Advantage",
+          "amt": 1
+        }
+      ],
+      "spenders": [
+        {
+          "id": 806368,
+          "name": "Woodland Arrow",
+          "res": "Focus",
+          "amt": 25,
+          "cd": 15
+        },
+        {
+          "id": 800685,
+          "name": "Backstep",
+          "res": "Focus",
+          "amt": 20,
+          "cd": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Horn of Perseverance",
+          "note": "Emanated aura lasting 30 sec that also grants you 3 Focus/sec while active; a Horn generator to keep active (Horns share a cooldown)"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 560805,
+          "name": "Thalassian Brand",
+          "cd": 120
+        },
+        {
+          "id": 804715,
+          "name": "Falcon's Call",
+          "cd": 90
+        },
+        {
+          "id": 520492,
+          "name": "Frenzy / Command Aura",
+          "cd": 300
+        },
+        {
+          "id": 801951,
+          "name": "Onslaught",
+          "cd": 180
+        },
+        {
+          "id": 802839,
+          "name": "Survival Potion",
+          "cd": 60
+        },
+        {
+          "id": 800359,
+          "name": "Cutthroat",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520578,
+          "name": "Adrenaline Rush"
+        },
+        {
+          "id": 800084,
+          "name": "Briar Veil",
+          "cd": 120
+        },
+        {
+          "id": 570015,
+          "name": "Woodland Adept",
+          "cd": 180
+        }
+      ],
+      "procs": [],
+      "st": "Build Advantage with Quick Shot, Flank and Wild Strike while keeping a Horn active (Horn of Alacrity / Endurance / Perseverance) for Focus and haste, then spend Focus on Woodland Arrow (which also reduces active Horn cooldowns).",
+      "aoe": "",
+      "summary": "Keep a Horn active for Focus/haste. ST: Quick Shot / Flank -> Woodland Arrow to spend Focus and refresh Horns."
+    }
+  }
+}

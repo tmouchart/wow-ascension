@@ -1,0 +1,394 @@
+{
+  "slug": "venomancer",
+  "class": "Venomancer",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Venom": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Rage",
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 800910,
+          "name": "Decay",
+          "res": "Mana",
+          "amt": 25,
+          "cd": 45
+        },
+        {
+          "id": 804982,
+          "name": "Wilt",
+          "res": "Mana",
+          "amt": 10
+        },
+        {
+          "id": 804986,
+          "name": "Mycosis",
+          "res": "Mana",
+          "amt": 16,
+          "cd": 15
+        },
+        {
+          "id": 804983,
+          "name": "Spore",
+          "res": "Mana",
+          "amt": 15
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Wilt",
+          "note": "144 Nature damage over 18 sec DoT; keep it on the target"
+        },
+        {
+          "name": "Spore",
+          "note": "231 damage over 21 sec DoT that also drops a Mushroom after 10 sec"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 504867,
+          "name": "Sepsis Bloom",
+          "cd": 120
+        },
+        {
+          "id": 504344,
+          "name": "Fungal Assailant",
+          "cd": 90
+        },
+        {
+          "id": 681056,
+          "name": "Mycelial Ring"
+        },
+        {
+          "id": 504855,
+          "name": "From Life Comes Death",
+          "cd": 180
+        },
+        {
+          "id": 503923,
+          "name": "Serpent Lord's Ring",
+          "cd": 90
+        },
+        {
+          "id": 704235,
+          "name": "Pinch",
+          "cd": 60,
+          "proc": true
+        },
+        {
+          "id": 804968,
+          "name": "Hive Instinct",
+          "cd": 120
+        },
+        {
+          "id": 804978,
+          "name": "Shadra's Lair",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 806154,
+          "name": "Burrow",
+          "cd": 300
+        },
+        {
+          "id": 504347,
+          "name": "Toxic Stride",
+          "cd": 90
+        },
+        {
+          "id": 804963,
+          "name": "Lifeblood",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Serpent Lord's Ring",
+          "when": "makes Mycosis free and off-cooldown for 15 sec (and restores 20% mana) - spam Mycosis while active"
+        }
+      ],
+      "st": "Keep Wilt and Spore DoTs up, then spend Mana on Mycosis on cooldown (stacks Fungal Growth for more damage) and use Decay when off cooldown.",
+      "aoe": "Decay applies Wilt to up to 5 enemies and drops an exploding Mushroom; add Fungal Assailant and Mycelial Ring for extra area damage.",
+      "summary": "Keep Wilt + Spore up. ST: Mycosis on cooldown + Decay. AoE: Decay to spread Wilt."
+    },
+    "Stalking": {
+      "confidence": "medium",
+      "resource": [
+        "Energy",
+        "Brood Marks",
+        "Mana",
+        "Rage"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 706962,
+          "name": "Withering Venom",
+          "res": "Energy",
+          "amt": 25
+        },
+        {
+          "id": 804961,
+          "name": "Widowmaker",
+          "res": "Brood Marks"
+        },
+        {
+          "id": 800882,
+          "name": "Nerubian Sting",
+          "res": "Energy",
+          "amt": 35
+        },
+        {
+          "id": 800871,
+          "name": "Facemelter",
+          "res": "Brood Marks"
+        },
+        {
+          "id": 804977,
+          "name": "Rotfang",
+          "res": "Brood Marks"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Nerubian Sting",
+          "note": "generates 1 Brood Mark and applies a 15 sec DoT stacking to 3; keep it stacked up"
+        },
+        {
+          "name": "Withering Venom",
+          "note": "21 sec Nature DoT that ramps up over time"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 503851,
+          "name": "Contagion",
+          "cd": 60
+        },
+        {
+          "id": 804964,
+          "name": "Noxious Empowerment",
+          "cd": 180
+        },
+        {
+          "id": 704235,
+          "name": "Pinch",
+          "cd": 60,
+          "proc": true
+        },
+        {
+          "id": 804968,
+          "name": "Hive Instinct",
+          "cd": 120
+        },
+        {
+          "id": 804978,
+          "name": "Shadra's Lair",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 806154,
+          "name": "Burrow",
+          "cd": 300
+        },
+        {
+          "id": 504347,
+          "name": "Toxic Stride",
+          "cd": 90
+        },
+        {
+          "id": 804963,
+          "name": "Lifeblood",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Widow's Kiss",
+          "when": "every 3rd Venom Fang transforms into Widow's Kiss - a free Brood Mark generator granting 20% haste; use it when it lights up"
+        }
+      ],
+      "st": "Spend Energy on Nerubian Sting to build Brood Marks (and keep Withering Venom up), then dump Brood Marks with Rotfang or Widowmaker in Spider Form.",
+      "aoe": "Spend Brood Marks on Facemelter instead (sprays Nature damage to nearby enemies); use Contagion so periodic damage bursts to nearby targets.",
+      "summary": "Build Brood Marks with Nerubian Sting. ST: dump with Rotfang/Widowmaker. AoE: dump with Facemelter."
+    },
+    "Fortitude": {
+      "confidence": "low",
+      "resource": [
+        "Rage",
+        "Mana",
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 803195,
+          "name": "Venomtip Poison",
+          "res": "Rage",
+          "amt": 20
+        },
+        {
+          "id": 805094,
+          "name": "Expulsion",
+          "res": "Rage",
+          "amt": 20,
+          "cd": 10
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Venomtip Poison",
+          "note": "15 sec attack-speed-slow poison DoT; keep it applied"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805102,
+          "name": "Molt",
+          "cd": 45
+        },
+        {
+          "id": 560247,
+          "name": "Locust Swarm",
+          "cd": 30
+        },
+        {
+          "id": 704235,
+          "name": "Pinch",
+          "cd": 60,
+          "proc": true
+        },
+        {
+          "id": 804968,
+          "name": "Hive Instinct",
+          "cd": 120
+        },
+        {
+          "id": 804978,
+          "name": "Shadra's Lair",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 803197,
+          "name": "Regrow Exoskeleton",
+          "cd": 60
+        },
+        {
+          "id": 805931,
+          "name": "Carapace Regeneration"
+        },
+        {
+          "id": 806154,
+          "name": "Burrow",
+          "cd": 300
+        },
+        {
+          "id": 504347,
+          "name": "Toxic Stride",
+          "cd": 90
+        },
+        {
+          "id": 804963,
+          "name": "Lifeblood",
+          "cd": 90
+        }
+      ],
+      "procs": [],
+      "st": "Spend Rage on Venomtip Poison and Expulsion; keep Locust Swarm and Molt on cooldown, and use Barbed Stinger to clear Exposed Flesh stacks.",
+      "aoe": "Venomtip Poison and Expulsion already hit nearby enemies; Locust Swarm leeches from all nearby enemies as an AoE cooldown.",
+      "summary": "Keep Venomtip Poison up. ST: spend Rage on Venomtip Poison/Expulsion + Locust Swarm. AoE: same, cleaves nearby."
+    },
+    "Vizier": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Rage",
+        "Energy"
+      ],
+      "generators": [],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Mycelial Healing",
+          "note": "effective healing stacks a buff increasing periodic healing to an ally by 1% for 30 sec, up to 8 - build and keep it up"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805884,
+          "name": "Extraction",
+          "cd": 300
+        },
+        {
+          "id": 800914,
+          "name": "Serpent Lord's Amulet",
+          "cd": 90
+        },
+        {
+          "id": 706021,
+          "name": "Mycelial Replenishment",
+          "cd": 180
+        },
+        {
+          "id": 704235,
+          "name": "Pinch",
+          "cd": 60,
+          "proc": true
+        },
+        {
+          "id": 804968,
+          "name": "Hive Instinct",
+          "cd": 120
+        },
+        {
+          "id": 804978,
+          "name": "Shadra's Lair",
+          "cd": 180
+        }
+      ],
+      "defensives": [
+        {
+          "id": 504352,
+          "name": "Shadra's Aid",
+          "cd": 180
+        },
+        {
+          "id": 806154,
+          "name": "Burrow",
+          "cd": 300
+        },
+        {
+          "id": 504347,
+          "name": "Toxic Stride",
+          "cd": 90
+        },
+        {
+          "id": 804963,
+          "name": "Lifeblood",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Serpent Lord's Amulet",
+          "when": "direct healing has a 5% chance to grant 5 sec of Serpent Lord's Amulet (20% haste, -50% mana cost) - use it when it procs"
+        }
+      ],
+      "st": "Healer spec: heal with Shadra's Prayer and Unity, build Mycelial Healing stacks, and use Mycelial Replenishment or Extraction to restore mana on cooldown.",
+      "aoe": "Unity heals up to 8 allies around a target location; spread Shadra's Balm/HoTs with the raid healing cooldowns.",
+      "summary": "Build Mycelial Healing stacks. Heal with Shadra's Prayer/Unity; refill mana with Extraction/Mycelial Replenishment."
+    }
+  }
+}

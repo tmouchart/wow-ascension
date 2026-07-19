@@ -1,0 +1,309 @@
+{
+  "slug": "knight-of-xoroth",
+  "class": "Knight of Xoroth",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "War": {
+      "confidence": "medium",
+      "resource": [
+        "Demonfire",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 800710,
+          "name": "Brimstone Bludgeon",
+          "res": "Demonfire",
+          "amt": 1
+        },
+        {
+          "id": 805555,
+          "name": "Gore",
+          "res": "Demonfire",
+          "amt": 1
+        },
+        {
+          "id": 801016,
+          "name": "Infernal Strike",
+          "res": "Demonfire",
+          "amt": 2
+        }
+      ],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Pestilence of Death",
+          "note": "Emanates a pestilence increasing your critical damage by 10%; refresh it (4 sec cooldown)."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 524913,
+          "name": "Decimation",
+          "cd": 120
+        },
+        {
+          "id": 524920,
+          "name": "Burning Blade",
+          "cd": 60
+        },
+        {
+          "id": 803185,
+          "name": "Chains of Malice",
+          "cd": 90
+        },
+        {
+          "id": 805669,
+          "name": "Demon Heart",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520294,
+          "name": "Juggernaut",
+          "cd": 120
+        },
+        {
+          "id": 801061,
+          "name": "Xorothian Sigil",
+          "cd": 60
+        },
+        {
+          "id": 805679,
+          "name": "Black Shield",
+          "cd": 120
+        },
+        {
+          "id": 520295,
+          "name": "Burning Rage",
+          "cd": 60
+        }
+      ],
+      "procs": [
+        {
+          "name": "Decimation",
+          "when": "On cooldown before a spender; makes your next Warbringer guaranteed to critically strike (lasts 30 sec)."
+        },
+        {
+          "name": "Brimstone Bludgeon",
+          "when": "When a Pestilence is active; it unleashes the active Pestilence for a powerful effect while generating 1 Demonfire."
+        }
+      ],
+      "st": "Keep Pestilence of Death up, build Demonfire with Gore, Brimstone Bludgeon and Infernal Strike, then spend at high Demonfire on Warbringer or Burning Blade (both deal increased damage per Demonfire consumed); use Decimation and Demon Heart on cooldown.",
+      "aoe": "Favor Brimstone Bludgeon (hits the target and all nearby enemies) and Warbringer (nearby enemies) as the Demonfire dump.",
+      "summary": "Keep Pestilence of Death up. Build Demonfire (Gore -> Brimstone Bludgeon -> Infernal Strike) then dump on Warbringer / Burning Blade."
+    },
+    "Hellfire": {
+      "confidence": "medium",
+      "resource": [
+        "Demonfire",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 805671,
+          "name": "Seeking Flame",
+          "res": "Demonfire",
+          "amt": 1,
+          "cd": 6
+        },
+        {
+          "id": 801016,
+          "name": "Infernal Strike",
+          "res": "Demonfire",
+          "amt": 2
+        }
+      ],
+      "spenders": [
+        {
+          "id": 806965,
+          "name": "Hellmaw",
+          "res": "Rage",
+          "amt": 20
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Pestilence of Apocalypse",
+          "note": "Makes nearby enemies take 10% increased Fire damage from you; refresh it (4 sec cooldown)."
+        },
+        {
+          "name": "Hellmaw",
+          "note": "Applies a Shadowflame DoT lasting 12 sec; keep it on the target."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805696,
+          "name": "Hellfire Form",
+          "cd": 120
+        },
+        {
+          "id": 802342,
+          "name": "Hellstorm",
+          "cd": 30
+        },
+        {
+          "id": 802602,
+          "name": "Doom",
+          "cd": 30
+        },
+        {
+          "id": 803185,
+          "name": "Chains of Malice",
+          "cd": 90
+        },
+        {
+          "id": 805669,
+          "name": "Demon Heart",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520294,
+          "name": "Juggernaut",
+          "cd": 120
+        },
+        {
+          "id": 801061,
+          "name": "Xorothian Sigil",
+          "cd": 60
+        },
+        {
+          "id": 805679,
+          "name": "Black Shield",
+          "cd": 120
+        },
+        {
+          "id": 520295,
+          "name": "Burning Rage",
+          "cd": 60
+        }
+      ],
+      "procs": [
+        {
+          "name": "Hellfire Form",
+          "when": "On cooldown for a 15 sec window of +20% Fire damage and +15% Fire crit before dumping Demonfire."
+        }
+      ],
+      "st": "Keep Pestilence of Apocalypse and the Hellmaw DoT up, build Demonfire with Seeking Flame and Infernal Strike, and spend at high Demonfire on Hellmaw (deals 20% increased damage per Demonfire consumed), using Doom and Hellfire Form on cooldown.",
+      "aoe": "Use Hellstorm as the AoE Demonfire spender (up to 8 enemies, duration increased per Demonfire consumed) and refresh Hellmaw where it matters.",
+      "summary": "Keep Pestilence of Apocalypse and Hellmaw up. Build Demonfire (Seeking Flame / Infernal Strike) then dump on Hellmaw; Hellstorm for AoE."
+    },
+    "Defiance": {
+      "confidence": "low",
+      "resource": [
+        "Demonfire",
+        "Rage"
+      ],
+      "generators": [
+        {
+          "id": 301302,
+          "name": "Shieldgore",
+          "res": "Demonfire",
+          "amt": 2
+        },
+        {
+          "id": 804883,
+          "name": "Call: Hellfire Imp",
+          "res": "Demonfire",
+          "amt": 2,
+          "cd": 10
+        },
+        {
+          "id": 801016,
+          "name": "Infernal Strike",
+          "res": "Demonfire",
+          "amt": 2
+        }
+      ],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Pestilence of War",
+          "note": "A self pestilence you emanate; refresh it (4 sec cooldown)."
+        },
+        {
+          "name": "Curse of Xoroth",
+          "note": "15 sec Shadowflame DoT; also primes your next Shieldgore to grant the Black Shield absorb."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 805677,
+          "name": "Sacrificial Circle",
+          "cd": 60
+        },
+        {
+          "id": 804169,
+          "name": "Curse of Xoroth",
+          "cd": 90
+        },
+        {
+          "id": 804879,
+          "name": "Legion's Presence",
+          "cd": 180
+        },
+        {
+          "id": 805074,
+          "name": "Call: Hellfire Abyssal",
+          "cd": 45
+        },
+        {
+          "id": 706756,
+          "name": "Chains of Xoroth",
+          "cd": 90
+        },
+        {
+          "id": 524897,
+          "name": "Implosion",
+          "cd": 40
+        },
+        {
+          "id": 803185,
+          "name": "Chains of Malice",
+          "cd": 90
+        },
+        {
+          "id": 805669,
+          "name": "Demon Heart",
+          "cd": 60
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520294,
+          "name": "Juggernaut",
+          "cd": 120
+        },
+        {
+          "id": 801061,
+          "name": "Xorothian Sigil",
+          "cd": 60
+        },
+        {
+          "id": 805679,
+          "name": "Black Shield",
+          "cd": 120
+        },
+        {
+          "id": 520295,
+          "name": "Burning Rage",
+          "cd": 60
+        }
+      ],
+      "procs": [
+        {
+          "name": "Sacrificial Circle",
+          "when": "When you have active Hellfire Imps and need healing; sacrifices them to heal you."
+        }
+      ],
+      "st": "Build Demonfire with Shieldgore, Call: Hellfire Imp and Infernal Strike while keeping Pestilence of War up and Curse of Xoroth on the target; use Implosion (summons imps and generates 30 Rage) and Call: Hellfire Abyssal on cooldown, spending Hellfire Imps with Sacrificial Circle when you need the heal.",
+      "aoe": "Use Implosion (nearby enemies, more imps per Demonfire consumed) and Call: Hellfire Abyssal (8 yd area) for multi-target.",
+      "summary": "Keep Pestilence of War and Curse of Xoroth up. Build Demonfire (Shieldgore / Call: Hellfire Imp / Infernal Strike); Implosion and Sacrificial Circle for imps and healing."
+    }
+  }
+}

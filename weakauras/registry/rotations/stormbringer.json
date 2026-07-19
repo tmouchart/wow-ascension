@@ -1,0 +1,301 @@
+{
+  "slug": "stormbringer",
+  "class": "Stormbringer",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Lightning": {
+      "confidence": "medium",
+      "resource": [
+        "Static",
+        "Mana"
+      ],
+      "generators": [
+        {
+          "id": 560030,
+          "name": "Lightning Cage",
+          "res": "Static",
+          "amt": 50,
+          "cd": 180
+        },
+        {
+          "id": 500928,
+          "name": "Volt",
+          "res": "Static",
+          "amt": 2
+        },
+        {
+          "id": 801851,
+          "name": "Forked Lightning",
+          "res": "Static",
+          "amt": 5
+        }
+      ],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Volt",
+          "note": "Nature DoT for 18 sec that also slows and generates 2 Static per tick; keep it ticking on the target"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 681110,
+          "name": "Storm Ascendance"
+        },
+        {
+          "id": 500041,
+          "name": "Body of Lightning",
+          "cd": 90
+        },
+        {
+          "id": 804826,
+          "name": "Charge",
+          "cd": 60
+        },
+        {
+          "id": 705661,
+          "name": "Invigorating Winds",
+          "cd": 120
+        },
+        {
+          "id": 804591,
+          "name": "Thunder King",
+          "cd": 180
+        },
+        {
+          "id": 806100,
+          "name": "Fog",
+          "cd": 90
+        },
+        {
+          "id": 705672,
+          "name": "Exhale",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 804833,
+          "name": "Stormcloak",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Lightning Cage",
+          "when": "on cooldown - generates 50 Static and, while caged, damaging spells generate 20 Static each"
+        }
+      ],
+      "st": "Keep Volt up, then build Static with Forked Lightning and dump it with Call Lightning; use Storm Ascendance and Lightning Cage on cooldown for extra Static generation.",
+      "aoe": "Forked Lightning bounces to up to 4 enemies (generating 5 Static per hit) - lead with it, then spread damage while keeping Volt on the primary target.",
+      "summary": "Keep Volt up. ST: Forked Lightning -> Call Lightning. AoE: Forked Lightning -> Call Lightning."
+    },
+    "Wind": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Static"
+      ],
+      "generators": [
+        {
+          "id": 804036,
+          "name": "Gale",
+          "res": "Static",
+          "amt": 20
+        }
+      ],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Unshackle",
+          "note": "Depletes 50 Static to transform your Air Elemental into a stronger form for 15 sec (+25% damage, +30% haste); re-empower it when the buff drops"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 706625,
+          "name": "Unshackle",
+          "cd": 120
+        },
+        {
+          "id": 804830,
+          "name": "Skyfall",
+          "cd": 90
+        },
+        {
+          "id": 704212,
+          "name": "Nimbus",
+          "cd": 300
+        },
+        {
+          "id": 520087,
+          "name": "Lexicon of Servitude",
+          "cd": 60
+        },
+        {
+          "id": 560567,
+          "name": "Tempest's Call / Surge of Might",
+          "cd": 300
+        },
+        {
+          "id": 681110,
+          "name": "Storm Ascendance"
+        },
+        {
+          "id": 500041,
+          "name": "Body of Lightning",
+          "cd": 90
+        },
+        {
+          "id": 804826,
+          "name": "Charge",
+          "cd": 60
+        },
+        {
+          "id": 705661,
+          "name": "Invigorating Winds",
+          "cd": 120
+        },
+        {
+          "id": 804591,
+          "name": "Thunder King",
+          "cd": 180
+        },
+        {
+          "id": 806100,
+          "name": "Fog",
+          "cd": 90
+        },
+        {
+          "id": 705672,
+          "name": "Exhale",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 500039,
+          "name": "Kiss of the Clouds",
+          "cd": 30
+        },
+        {
+          "id": 500042,
+          "name": "Windsurf",
+          "cd": 90
+        },
+        {
+          "id": 804833,
+          "name": "Stormcloak",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Skyfall",
+          "when": "off cooldown - depletes 40 Static to command your Air Elemental to strike for heavy damage"
+        }
+      ],
+      "st": "Build Static with Gale and spend it on Unshackle to keep your Air Elemental empowered, then dump extra Static into Skyfall; fill with the class Shock/Call Lightning.",
+      "aoe": "Gale hits the target and up to 2 nearby enemies, so it already cleaves - keep spending Static on Skyfall and Unshackle.",
+      "summary": "Keep the Air Elemental empowered via Unshackle. ST: Gale -> Skyfall. AoE: Gale cleaves."
+    },
+    "Maelstrom": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Conductive"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 806400,
+          "name": "Deluge",
+          "res": "Conductive"
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Drown",
+          "note": "8 sec debuff (-20% healing) that ramps its detonation damage per Conductive stack you generate; keep it applied"
+        },
+        {
+          "name": "Stormcloud",
+          "note": "15 sec debuff that adds 20% spell damage taken and periodically triggers Conductive; keep it up on the target"
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 532751,
+          "name": "Stormfury",
+          "cd": 90
+        },
+        {
+          "id": 806407,
+          "name": "Drown",
+          "cd": 60
+        },
+        {
+          "id": 801859,
+          "name": "Stormcloud",
+          "cd": 60
+        },
+        {
+          "id": 681110,
+          "name": "Storm Ascendance"
+        },
+        {
+          "id": 500041,
+          "name": "Body of Lightning",
+          "cd": 90
+        },
+        {
+          "id": 804826,
+          "name": "Charge",
+          "cd": 60
+        },
+        {
+          "id": 705661,
+          "name": "Invigorating Winds",
+          "cd": 120
+        },
+        {
+          "id": 804591,
+          "name": "Thunder King",
+          "cd": 180
+        },
+        {
+          "id": 806100,
+          "name": "Fog",
+          "cd": 90
+        },
+        {
+          "id": 705672,
+          "name": "Exhale",
+          "cd": 90
+        }
+      ],
+      "defensives": [
+        {
+          "id": 800098,
+          "name": "Thunder Ward",
+          "cd": 300
+        },
+        {
+          "id": 804833,
+          "name": "Stormcloak",
+          "cd": 30
+        }
+      ],
+      "procs": [
+        {
+          "name": "Deluge",
+          "when": "when Conductive is stacked - consumes Conductive (and 50 Static) to trigger Conduction, which scales up 25% per stack consumed"
+        }
+      ],
+      "st": "Keep Drown and Stormcloud up to build Conductive, spend it with Deluge, and channel Stormflow (Shock can be cast during it) to fill; use Stormfury on cooldown.",
+      "aoe": "Deluge and Stormfury are area spenders - apply Stormcloud, build Conductive, then dump with Deluge over the pack.",
+      "summary": "Keep Drown and Stormcloud up. ST: build Conductive -> Deluge / Stormflow. AoE: Deluge -> Stormfury."
+    }
+  }
+}

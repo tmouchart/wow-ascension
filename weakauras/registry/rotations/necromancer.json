@@ -1,0 +1,341 @@
+{
+  "slug": "necromancer",
+  "class": "Necromancer",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Death": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "of",
+        "Runic"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 500338,
+          "name": "Flesh to Worms",
+          "res": "Mana",
+          "amt": 12
+        },
+        {
+          "id": 500329,
+          "name": "Raise: Gargoyle",
+          "res": "of"
+        },
+        {
+          "id": 802132,
+          "name": "Lichplague",
+          "res": "Runic",
+          "amt": 30,
+          "cd": 30
+        },
+        {
+          "id": 801945,
+          "name": "Plague of Undeath",
+          "res": "Runic",
+          "amt": 30
+        },
+        {
+          "id": 500335,
+          "name": "Raise: Abomination",
+          "res": "Mana",
+          "amt": 67
+        },
+        {
+          "id": 805369,
+          "name": "Glacial Tap",
+          "res": "Mana",
+          "amt": 40,
+          "cd": 12
+        },
+        {
+          "id": 504861,
+          "name": "Raise: Banshee",
+          "res": "Mana",
+          "amt": 60
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Flesh to Worms",
+          "note": "Plague DoT for 18 sec that generates Runic Power every 3 sec; keep it ticking."
+        },
+        {
+          "name": "Plague of Undeath",
+          "note": "Plague DoT for 20 sec (-40% Holy healing on target)."
+        },
+        {
+          "name": "Lichplague",
+          "note": "Plague DoT for 18 sec; its damage scales up per Necromancer disease on the target."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 500342,
+          "name": "Mutation",
+          "cd": 180
+        },
+        {
+          "id": 801938,
+          "name": "Virulency",
+          "cd": 60
+        },
+        {
+          "id": 807796,
+          "name": "Death's Due",
+          "cd": 90
+        },
+        {
+          "id": 805428,
+          "name": "Animate: Frost Wyrm",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 500989,
+          "name": "Raise: Decaying Colossus"
+        },
+        {
+          "id": 500933,
+          "name": "Phylactery",
+          "cd": 120
+        },
+        {
+          "id": 802121,
+          "name": "Bone Tithe",
+          "cd": 120
+        },
+        {
+          "id": 804371,
+          "name": "Foul Invocation",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Virulency",
+          "when": "Diseases are near full duration - refresh and copy all diseases; reusable within 10 sec to Infest another target."
+        },
+        {
+          "name": "Mutation",
+          "when": "On cooldown before reapplying diseases - makes freshly applied diseases tick 50% faster for 15 sec."
+        }
+      ],
+      "st": "Keep the three diseases up (Flesh to Worms, Plague of Undeath, Lichplague), refresh them with Virulency, and spend Runic Power on Plague of Undeath.",
+      "aoe": "Spread diseases to extra targets with the Virulency Infest reuse (within 10 sec).",
+      "summary": "Keep diseases up. ST: apply Flesh to Worms / Plague of Undeath / Lichplague, refresh with Virulency."
+    },
+    "Rime": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Runic"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 704355,
+          "name": "Glacial Impact",
+          "res": "Mana",
+          "amt": 14,
+          "cd": 6
+        },
+        {
+          "id": 500331,
+          "name": "Raise: Skeletal Mage",
+          "res": "Mana",
+          "amt": 40
+        },
+        {
+          "id": 801760,
+          "name": "Ice Barrage",
+          "res": "Runic",
+          "amt": 30,
+          "cd": 10
+        },
+        {
+          "id": 500335,
+          "name": "Raise: Abomination",
+          "res": "Mana",
+          "amt": 67
+        },
+        {
+          "id": 805369,
+          "name": "Glacial Tap",
+          "res": "Mana",
+          "amt": 40,
+          "cd": 12
+        },
+        {
+          "id": 504861,
+          "name": "Raise: Banshee",
+          "res": "Mana",
+          "amt": 60
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Lich Form",
+          "note": "Self-buff: +10% Frost damage and generates 3 Runic Power every 5 sec while active."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 561138,
+          "name": "Army of the North",
+          "cd": 300
+        },
+        {
+          "id": 807796,
+          "name": "Death's Due",
+          "cd": 90
+        },
+        {
+          "id": 805428,
+          "name": "Animate: Frost Wyrm",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 500989,
+          "name": "Raise: Decaying Colossus"
+        },
+        {
+          "id": 500933,
+          "name": "Phylactery",
+          "cd": 120
+        },
+        {
+          "id": 802121,
+          "name": "Bone Tithe",
+          "cd": 120
+        },
+        {
+          "id": 804371,
+          "name": "Foul Invocation",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "Glacial Impact",
+          "when": "Target is Frozen - it requires a Frozen target."
+        },
+        {
+          "name": "Ice Barrage",
+          "when": "Refreshing Chill resets its cooldown (20% on Command spells) and makes the next cast free within 15 sec."
+        }
+      ],
+      "st": "Keep Lich Form up, use Ice Barrage to entomb (Freeze) the target, then cast Glacial Impact on the Frozen target; spend Runic Power on Ice Barrage.",
+      "aoe": "",
+      "summary": "Keep Lich Form up. ST: Ice Barrage to freeze -> Glacial Impact on frozen target."
+    },
+    "Animation": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Runic"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 500971,
+          "name": "Raise: Ghoul",
+          "res": "Mana",
+          "amt": 28
+        },
+        {
+          "id": 500335,
+          "name": "Raise: Abomination",
+          "res": "Mana",
+          "amt": 67
+        },
+        {
+          "id": 805369,
+          "name": "Glacial Tap",
+          "res": "Mana",
+          "amt": 40,
+          "cd": 12
+        },
+        {
+          "id": 504861,
+          "name": "Raise: Banshee",
+          "res": "Mana",
+          "amt": 60
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 805040,
+          "name": "Animate: Skeletal Archer",
+          "cd": 30
+        },
+        {
+          "id": 531130,
+          "name": "Animate: Bone Construct",
+          "cd": 15
+        },
+        {
+          "id": 707007,
+          "name": "March of the Dead",
+          "cd": 10
+        },
+        {
+          "id": 805048,
+          "name": "Animate: Plaguefather",
+          "cd": 120
+        },
+        {
+          "id": 805032,
+          "name": "Animate: Bone Wraith / Animate: Tomb King",
+          "cd": 60
+        },
+        {
+          "id": 807796,
+          "name": "Death's Due",
+          "cd": 90
+        },
+        {
+          "id": 805428,
+          "name": "Animate: Frost Wyrm",
+          "cd": 120
+        }
+      ],
+      "defensives": [
+        {
+          "id": 500989,
+          "name": "Raise: Decaying Colossus"
+        },
+        {
+          "id": 500933,
+          "name": "Phylactery",
+          "cd": 120
+        },
+        {
+          "id": 802121,
+          "name": "Bone Tithe",
+          "cd": 120
+        },
+        {
+          "id": 804371,
+          "name": "Foul Invocation",
+          "cd": 120
+        }
+      ],
+      "procs": [
+        {
+          "name": "March of the Dead",
+          "when": "As a 40 Runic Power spender on cooldown (10 sec) for AoE Plague damage."
+        }
+      ],
+      "st": "Keep your Animate summons active (Animate: Skeletal Archer, Animate: Bone Construct, Animate: Bone Wraith / Tomb King, Animate: Plaguefather) and spend Runic Power on March of the Dead; casting Command spells builds Underking to reset summon cooldowns.",
+      "aoe": "Use March of the Dead and Animate: Bone Construct for AoE Plague damage on multiple targets.",
+      "summary": "Keep Animate summons up. ST: cycle Animates, spend Runic Power on March of the Dead."
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "slug": "cultist",
+  "class": "Cultist",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Godblade": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Insanity"
+      ],
+      "generators": [
+        {
+          "id": 681104,
+          "name": "Voidborne",
+          "res": "Insanity",
+          "amt": 1
+        },
+        {
+          "id": 806222,
+          "name": "Netherstrike",
+          "res": "Insanity",
+          "amt": 10,
+          "cd": 6
+        },
+        {
+          "id": 560109,
+          "name": "Corrupt Mind",
+          "res": "Insanity",
+          "amt": 10,
+          "cd": 60
+        },
+        {
+          "id": 500720,
+          "name": "Blade of the Empire",
+          "res": "Insanity",
+          "amt": 20
+        },
+        {
+          "id": 800416,
+          "name": "Horrorbolt",
+          "res": "Insanity",
+          "amt": 10
+        }
+      ],
+      "spenders": [],
+      "maintain": [
+        {
+          "name": "Voidborne",
+          "note": "Offensive CD: +25% damage and crit for 15 sec, also generates 1 Insanity per sec; keep on cooldown."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 560321,
+          "name": "Eldritch Obelisk",
+          "cd": 180
+        },
+        {
+          "id": 805115,
+          "name": "End Times",
+          "cd": 90
+        },
+        {
+          "id": 572103,
+          "name": "Tentacle of N'Zoth",
+          "cd": 90
+        },
+        {
+          "id": 806250,
+          "name": "Rift",
+          "cd": 45
+        },
+        {
+          "id": 800430,
+          "name": "Entropic Singularity",
+          "cd": 60
+        },
+        {
+          "id": 805114,
+          "name": "Mass Nightmare",
+          "cd": 180
+        },
+        {
+          "id": 520388,
+          "name": "Vision of Doom",
+          "cd": 300
+        }
+      ],
+      "defensives": [
+        {
+          "id": 582591,
+          "name": "Embrace the Void",
+          "cd": 300
+        },
+        {
+          "id": 804670,
+          "name": "Abyssal Ward",
+          "cd": 90
+        },
+        {
+          "id": 525065,
+          "name": "Twisted Seal",
+          "cd": 120
+        },
+        {
+          "id": 500715,
+          "name": "Void Shield"
+        }
+      ],
+      "procs": [
+        {
+          "name": "Netherstrike",
+          "when": "target below 35% health (execute-only, +10 Insanity)"
+        }
+      ],
+      "st": "Build and hold high Insanity: use Blade of the Empire (+20, 3 charges) as the melee filler and Horrorbolt (+10) to fill, pop Voidborne on cooldown, and use Netherstrike as an execute below 35% HP; reaching 60 Insanity grants a damage bonus so keep Insanity high.",
+      "aoe": "",
+      "summary": "Build Insanity to 60+ and hold it. ST: Blade of the Empire -> Horrorbolt, Voidborne on CD, Netherstrike below 35%."
+    },
+    "Corruption": {
+      "confidence": "medium",
+      "resource": [
+        "Mana",
+        "Insanity"
+      ],
+      "generators": [
+        {
+          "id": 500712,
+          "name": "Ancient Curse",
+          "res": "Insanity",
+          "amt": 20,
+          "cd": 30
+        },
+        {
+          "id": 805572,
+          "name": "Obliteration Beam",
+          "res": "Insanity",
+          "amt": 10,
+          "cd": 20
+        },
+        {
+          "id": 800446,
+          "name": "Darkwither",
+          "res": "Insanity",
+          "amt": 10
+        },
+        {
+          "id": 560109,
+          "name": "Corrupt Mind",
+          "res": "Insanity",
+          "amt": 10,
+          "cd": 60
+        },
+        {
+          "id": 500720,
+          "name": "Blade of the Empire",
+          "res": "Insanity",
+          "amt": 20
+        },
+        {
+          "id": 800416,
+          "name": "Horrorbolt",
+          "res": "Insanity",
+          "amt": 10
+        }
+      ],
+      "spenders": [
+        {
+          "id": 802727,
+          "name": "Eldritch Devastation",
+          "res": "Mana",
+          "amt": 19
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Ancient Curse",
+          "note": "10 sec debuff, +10% Shadow damage taken from you and +20 Insanity; refresh before it expires (also detonates on expiry)."
+        },
+        {
+          "name": "Darkwither",
+          "note": "15 sec Shadow DoT, +10 Insanity; keep applied on the target."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 800432,
+          "name": "Psychic Suppression",
+          "cd": 90
+        },
+        {
+          "id": 800430,
+          "name": "Entropic Singularity",
+          "cd": 60
+        },
+        {
+          "id": 805114,
+          "name": "Mass Nightmare",
+          "cd": 180
+        },
+        {
+          "id": 520388,
+          "name": "Vision of Doom",
+          "cd": 300
+        }
+      ],
+      "defensives": [
+        {
+          "id": 582591,
+          "name": "Embrace the Void",
+          "cd": 300
+        },
+        {
+          "id": 804670,
+          "name": "Abyssal Ward",
+          "cd": 90
+        },
+        {
+          "id": 525065,
+          "name": "Twisted Seal",
+          "cd": 120
+        },
+        {
+          "id": 500715,
+          "name": "Void Shield"
+        }
+      ],
+      "procs": [],
+      "st": "Keep Ancient Curse and Darkwither up on the target, then build Insanity with Obliteration Beam (+10, hits harder above 60 Insanity) and Horrorbolt (+10) as fillers, spending Eldritch Devastation as the mana-cost channel; hold Insanity at 60+ for the damage bonus.",
+      "aoe": "Obliteration Beam hits the target and all nearby enemies, and Eldritch Devastation chains to nearby enemies, so lead with them on multiple targets.",
+      "summary": "Keep Ancient Curse and Darkwither up, build Insanity to 60+. ST: Obliteration Beam -> Horrorbolt. AoE: Obliteration Beam / Eldritch Devastation."
+    },
+    "Dreadnought": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Insanity"
+      ],
+      "generators": [
+        {
+          "id": 560109,
+          "name": "Corrupt Mind",
+          "res": "Insanity",
+          "amt": 10,
+          "cd": 60
+        },
+        {
+          "id": 500720,
+          "name": "Blade of the Empire",
+          "res": "Insanity",
+          "amt": 20
+        },
+        {
+          "id": 800416,
+          "name": "Horrorbolt",
+          "res": "Insanity",
+          "amt": 10
+        }
+      ],
+      "spenders": [
+        {
+          "id": 524876,
+          "name": "Twilight Shieldtoss",
+          "res": "Mana",
+          "amt": 15,
+          "cd": 8
+        },
+        {
+          "id": 806175,
+          "name": "Dreadfall",
+          "res": "Mana",
+          "amt": 12,
+          "cd": 25
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 802044,
+          "name": "Tentacle of Y'shaarj"
+        },
+        {
+          "id": 800430,
+          "name": "Entropic Singularity",
+          "cd": 60
+        },
+        {
+          "id": 805114,
+          "name": "Mass Nightmare",
+          "cd": 180
+        },
+        {
+          "id": 520388,
+          "name": "Vision of Doom",
+          "cd": 300
+        }
+      ],
+      "defensives": [
+        {
+          "id": 582591,
+          "name": "Embrace the Void",
+          "cd": 300
+        },
+        {
+          "id": 804670,
+          "name": "Abyssal Ward",
+          "cd": 90
+        },
+        {
+          "id": 525065,
+          "name": "Twisted Seal",
+          "cd": 120
+        },
+        {
+          "id": 500715,
+          "name": "Void Shield"
+        }
+      ],
+      "procs": [],
+      "st": "Build and hold Insanity with Blade of the Empire (+20), Horrorbolt (+10) and Corrupt Mind (+10) to fuel your block bonuses (block value/chance scale above 40, 60 and 80 Insanity), and spend mana on Twilight Shieldtoss (8 sec CD, scales with Insanity stacks) and Dreadfall.",
+      "aoe": "Twilight Shieldtoss hits up to 3 enemies (jumping) so use it as your cleave.",
+      "summary": "Build and hold Insanity for block bonuses. ST: Blade of the Empire -> Twilight Shieldtoss. AoE: Twilight Shieldtoss cleave."
+    },
+    "Heretic": {
+      "confidence": "low",
+      "resource": [
+        "Mana",
+        "Insanity"
+      ],
+      "generators": [
+        {
+          "id": 500714,
+          "name": "Malevolence",
+          "res": "Insanity",
+          "amt": 10
+        },
+        {
+          "id": 560109,
+          "name": "Corrupt Mind",
+          "res": "Insanity",
+          "amt": 10,
+          "cd": 60
+        },
+        {
+          "id": 500720,
+          "name": "Blade of the Empire",
+          "res": "Insanity",
+          "amt": 20
+        },
+        {
+          "id": 800416,
+          "name": "Horrorbolt",
+          "res": "Insanity",
+          "amt": 10
+        }
+      ],
+      "spenders": [],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 802049,
+          "name": "Eldritch Eye",
+          "cd": 60
+        },
+        {
+          "id": 704476,
+          "name": "Hand of Yogg-Saron",
+          "cd": 120
+        },
+        {
+          "id": 800430,
+          "name": "Entropic Singularity",
+          "cd": 60
+        },
+        {
+          "id": 805114,
+          "name": "Mass Nightmare",
+          "cd": 180
+        },
+        {
+          "id": 520388,
+          "name": "Vision of Doom",
+          "cd": 300
+        }
+      ],
+      "defensives": [
+        {
+          "id": 520345,
+          "name": "Dark Veil",
+          "cd": 120
+        },
+        {
+          "id": 800105,
+          "name": "Forbidden Ritual",
+          "cd": 60
+        },
+        {
+          "id": 582591,
+          "name": "Embrace the Void",
+          "cd": 300
+        },
+        {
+          "id": 804670,
+          "name": "Abyssal Ward",
+          "cd": 90
+        },
+        {
+          "id": 525065,
+          "name": "Twisted Seal",
+          "cd": 120
+        },
+        {
+          "id": 500715,
+          "name": "Void Shield"
+        }
+      ],
+      "procs": [],
+      "st": "Build and hold high Insanity with Malevolence (+10, also applies Black Blood healing to allies), Blade of the Empire (+20), Horrorbolt (+10) and Corrupt Mind (+10); there is no discrete Insanity spender, so keep Insanity high for its threshold bonuses.",
+      "aoe": "",
+      "summary": "Build and hold Insanity. ST: Malevolence -> Blade of the Empire -> Horrorbolt."
+    }
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "slug": "sun-cleric",
+  "class": "Sun Cleric",
+  "generatedFrom": "rotation-scaffold.js",
+  "confidence": "reviewed",
+  "specs": {
+    "Piety": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 806060,
+          "name": "Radiant Flame",
+          "res": "Mana",
+          "amt": 25
+        },
+        {
+          "id": 500146,
+          "name": "Dawnsear",
+          "res": "Mana",
+          "amt": 15
+        },
+        {
+          "id": 500154,
+          "name": "Horusath Blast",
+          "res": "Mana",
+          "amt": 33,
+          "cd": 25
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Sun Down",
+          "note": "Ground effect: enemies inside take 15% more Rapture/Horusath Blast damage; refresh the scorched zone (9 sec)."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 806477,
+          "name": "Rapture",
+          "cd": 20
+        },
+        {
+          "id": 572752,
+          "name": "Sun Down",
+          "cd": 30
+        },
+        {
+          "id": 301266,
+          "name": "Solar Concord",
+          "cd": 30
+        },
+        {
+          "id": 560123,
+          "name": "Sunwell",
+          "cd": 180
+        },
+        {
+          "id": 802161,
+          "name": "Sun Gate",
+          "cd": 90
+        },
+        {
+          "id": 805583,
+          "name": "Glare",
+          "cd": 120
+        },
+        {
+          "id": 800054,
+          "name": "Radiance",
+          "cd": 120
+        },
+        {
+          "id": 800600,
+          "name": "New Day",
+          "cd": 600
+        },
+        {
+          "id": 806159,
+          "name": "Solar Invocation: Resplendence",
+          "cd": 30
+        },
+        {
+          "id": 806479,
+          "name": "Solar Prayer",
+          "cd": 90
+        },
+        {
+          "id": 800764,
+          "name": "Solar Invocation: Conquest",
+          "cd": 30
+        }
+      ],
+      "defensives": [],
+      "procs": [
+        {
+          "name": "Solar Concord",
+          "when": "On cooldown: resets Horusath Blast in Sunrise and Rapture in Sunset, then dump the reset nuke."
+        },
+        {
+          "name": "Radiant Flame",
+          "when": "When Scorch Marks is up (free, faster Radiant Flame from Dawnsear/Sunflare/Dawn)."
+        },
+        {
+          "name": "Dawnsear",
+          "when": "When Spears of Glory is up (next Dawnsear is instant and hits 25% harder)."
+        }
+      ],
+      "st": "Weave Sunrise/Sunset states, keep Sun Down on the target, and spend Mana on Rapture and Horusath Blast (dumping resets from Solar Concord) while filling with Dawnsear and Radiant Flame; use Radiant Flame for free when Scorch Marks procs.",
+      "aoe": "Rapture and Sun Down hit all nearby enemies, so lead with them and Radiant Flame for multi-target.",
+      "summary": "Keep Sun Down down. ST: Rapture / Horusath Blast, fill with Dawnsear / Radiant Flame; dump Solar Concord resets."
+    },
+    "Blessings": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 804249,
+          "name": "Blessing of Absolution",
+          "res": "Mana",
+          "amt": 18,
+          "cd": 15
+        },
+        {
+          "id": 500154,
+          "name": "Horusath Blast",
+          "res": "Mana",
+          "amt": 33,
+          "cd": 25
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 804250,
+          "name": "Blessing of Triumph",
+          "cd": 180
+        },
+        {
+          "id": 806123,
+          "name": "Solar Invigoration",
+          "cd": 90
+        },
+        {
+          "id": 805583,
+          "name": "Glare",
+          "cd": 120
+        },
+        {
+          "id": 800054,
+          "name": "Radiance",
+          "cd": 120
+        },
+        {
+          "id": 800600,
+          "name": "New Day",
+          "cd": 600
+        },
+        {
+          "id": 806159,
+          "name": "Solar Invocation: Resplendence",
+          "cd": 30
+        },
+        {
+          "id": 806479,
+          "name": "Solar Prayer",
+          "cd": 90
+        },
+        {
+          "id": 800764,
+          "name": "Solar Invocation: Conquest",
+          "cd": 30
+        }
+      ],
+      "defensives": [
+        {
+          "id": 804253,
+          "name": "Blessing of Purity",
+          "cd": 300
+        },
+        {
+          "id": 804254,
+          "name": "Blessing of Retribution",
+          "cd": 90
+        }
+      ],
+      "procs": [
+        {
+          "name": "Solar Invigoration",
+          "when": "On cooldown as a raid throughput window (15 sec)."
+        }
+      ],
+      "st": "Spend Mana on Blessing of Absolution on cooldown (15 sec) and Horusath Blast, using Glare and Radiance as offensive cooldowns.",
+      "aoe": "Blessing of Absolution hits a frontal cone, so aim it into packs.",
+      "summary": "ST: Blessing of Absolution on cooldown + Horusath Blast."
+    },
+    "Valkyrie": {
+      "confidence": "medium",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 520359,
+          "name": "Justice",
+          "res": "Mana",
+          "amt": 10,
+          "cd": 8
+        },
+        {
+          "id": 800626,
+          "name": "Glorious Execution",
+          "res": "Mana",
+          "amt": 6,
+          "cd": 8
+        },
+        {
+          "id": 500154,
+          "name": "Horusath Blast",
+          "res": "Mana",
+          "amt": 33,
+          "cd": 25
+        }
+      ],
+      "maintain": [
+        {
+          "name": "Vow of the Valkyr",
+          "note": "A Vow (only 1 active): auto attacks generate 1 Solar Power and deal 10% more damage; keep the Vow up."
+        },
+        {
+          "name": "Champion of the Sun",
+          "note": "20 sec self-buff adding 50% of auto-attack damage as Holy; refresh in melee windows."
+        }
+      ],
+      "cooldowns": [
+        {
+          "id": 800612,
+          "name": "Champion of the Sun",
+          "cd": 120
+        },
+        {
+          "id": 520024,
+          "name": "Valkyr's Calling",
+          "cd": 180
+        },
+        {
+          "id": 680630,
+          "name": "Pendant of the Sun"
+        },
+        {
+          "id": 805583,
+          "name": "Glare",
+          "cd": 120
+        },
+        {
+          "id": 800054,
+          "name": "Radiance",
+          "cd": 120
+        },
+        {
+          "id": 800600,
+          "name": "New Day",
+          "cd": 600
+        },
+        {
+          "id": 806159,
+          "name": "Solar Invocation: Resplendence",
+          "cd": 30
+        },
+        {
+          "id": 806479,
+          "name": "Solar Prayer",
+          "cd": 90
+        },
+        {
+          "id": 800764,
+          "name": "Solar Invocation: Conquest",
+          "cd": 30
+        }
+      ],
+      "defensives": [],
+      "procs": [
+        {
+          "name": "Glorious Execution",
+          "when": "When reset by Odyn's Vanguard (20% on melee) or after casting Horusath Blast (Blessed Magic reset)."
+        },
+        {
+          "name": "Justice",
+          "when": "When Herald of Purity resets its cooldown (8% on Justice damage)."
+        }
+      ],
+      "st": "Keep Vow of the Valkyr active and Champion of the Sun up, then spend Mana on Justice and Glorious Execution on cooldown, using Dawn to fulfill Vows and Horusath Blast to reset Glorious Execution.",
+      "aoe": "Justice strikes up to 5 enemies, so lead with it for multiple targets.",
+      "summary": "Keep Vow of the Valkyr + Champion of the Sun up. ST: Justice / Glorious Execution, fulfill Vows with Dawn."
+    },
+    "Seraphim": {
+      "confidence": "low",
+      "resource": [
+        "Mana"
+      ],
+      "generators": [],
+      "spenders": [
+        {
+          "id": 800654,
+          "name": "Dawnbreak",
+          "res": "Mana",
+          "amt": 5,
+          "cd": 6
+        },
+        {
+          "id": 806980,
+          "name": "Justicar's Wrath",
+          "res": "Mana",
+          "amt": 6,
+          "cd": 6
+        },
+        {
+          "id": 500154,
+          "name": "Horusath Blast",
+          "res": "Mana",
+          "amt": 33,
+          "cd": 25
+        }
+      ],
+      "maintain": [],
+      "cooldowns": [
+        {
+          "id": 804057,
+          "name": "Calm",
+          "cd": 90
+        },
+        {
+          "id": 804751,
+          "name": "Hammer of Kings",
+          "cd": 20
+        },
+        {
+          "id": 805583,
+          "name": "Glare",
+          "cd": 120
+        },
+        {
+          "id": 800054,
+          "name": "Radiance",
+          "cd": 120
+        },
+        {
+          "id": 800600,
+          "name": "New Day",
+          "cd": 600
+        },
+        {
+          "id": 806159,
+          "name": "Solar Invocation: Resplendence",
+          "cd": 30
+        },
+        {
+          "id": 806479,
+          "name": "Solar Prayer",
+          "cd": 90
+        },
+        {
+          "id": 800764,
+          "name": "Solar Invocation: Conquest",
+          "cd": 30
+        }
+      ],
+      "defensives": [
+        {
+          "id": 680646,
+          "name": "Scroll of Hope"
+        },
+        {
+          "id": 560095,
+          "name": "Seraphic Bulwark"
+        }
+      ],
+      "procs": [],
+      "st": "Spend Mana on Dawnbreak and Justicar's Wrath on cooldown (both 6 sec), weaving Hammer of Kings and Horusath Blast; Justicar's Wrath raises the target's spell damage taken by 10%.",
+      "aoe": "Dawnbreak and Hammer of Kings hit nearby enemies, so favor them in melee packs.",
+      "summary": "ST: Dawnbreak / Justicar's Wrath on cooldown; use Hammer of Kings."
+    }
+  }
+}
