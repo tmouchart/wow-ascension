@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { Moon, Sun, Save, FolderOpen, Trash2, RotateCcw } from 'lucide-react';
 import INDEX from '../../registry/INDEX.json';
 import { generateString } from './lib/generate';
-import { useStore, activeSpec, initialSlug } from './store';
+import { useStore, activeSpec, initialSlug, initialSpecName } from './store';
+import { SPECS_WITH_PRESET, presetKey } from './specs';
 import {
   saveDraft,
   clearDraft,
@@ -34,6 +35,9 @@ const CLASSES = (INDEX as { classes: ClassEntry[] }).classes;
 export function App() {
   const [theme, setTheme] = useState<Theme>('dark');
   const [slug, setSlug] = useState(initialSlug);
+  // Which spec of `slug` is selected. undefined = the class has no per-spec presets (its single preset, or
+  // an auto-default, covers the whole class).
+  const [specName, setSpecName] = useState<string | undefined>(initialSpecName);
   const [status, setStatus] = useState('');
   const [busy, setBusy] = useState(false);
   const [importOpen, setImportOpen] = useState(false);
@@ -45,29 +49,45 @@ export function App() {
   const [showWelcome, setShowWelcome] = useState(() => !hasWelcomed());
 
   const storeSlug = useStore((st) => st.slug);
+  const storeSpecName = useStore((st) => st.specName);
   const storeSpec = useStore((st) => st.spec);
   const setClass = useStore((st) => st.setClass);
   const switchClass = useStore((st) => st.switchClass);
   const forceReload = useStore((st) => st.forceReload);
 
-  // Autosave the working SPEC as this class's per-class draft (debounced), so a reload reopens on it. Skip
+  // Autosave the working SPEC as this class+spec's draft (debounced), so a reload reopens on it. Skip
   // sentinel slugs ('__boot__' / '__reload__') — those are transient states the Editor's load effect resolves.
   useEffect(() => {
     if (storeSlug.startsWith('__')) return;
-    const t = setTimeout(() => saveDraft(storeSlug, storeSpec), 400);
+    const t = setTimeout(() => saveDraft(presetKey(storeSlug, storeSpecName), storeSpec), 400);
     return () => clearTimeout(t);
-  }, [storeSlug, storeSpec]);
+  }, [storeSlug, storeSpecName, storeSpec]);
 
   const flash = (msg: string) => { setStatus(msg); setTimeout(() => setStatus(''), 4000); };
 
+  // Specs of the selected class that have a preset. Empty => no spec dropdown (single-preset class).
+  const specOptions = SPECS_WITH_PRESET[slug] ?? [];
+
+  // Switching class also picks a spec: keep the current one if that class has it, else its first preset,
+  // else none. Without this the spec would stay stale and key a draft that doesn't belong to the class.
   function pickClass(next: string) {
+    const opts = SPECS_WITH_PRESET[next] ?? [];
     setSlug(next);
+    setSpecName(specName && opts.includes(specName) ? specName : opts[0]);
     setStatus('');
   }
 
-  // First-visit welcome: apply the chosen class and never show the modal again.
-  function confirmWelcome(next: string) {
-    pickClass(next);
+  function pickSpec(next: string) {
+    setSpecName(next);
+    setStatus('');
+  }
+
+  // First-visit welcome: apply the chosen class+spec and never show the modal again. The modal already
+  // resolved a valid spec for the class, so set it directly rather than letting pickClass re-derive one.
+  function confirmWelcome(next: string, nextSpec?: string) {
+    setSlug(next);
+    setSpecName(nextSpec);
+    setStatus('');
     markWelcomed();
     setShowWelcome(false);
   }
@@ -76,16 +96,17 @@ export function App() {
   function doSaveAs() {
     const name = saveName.trim();
     if (!name) return;
-    saveSnapshot(name, storeSlug, storeSpec);
+    saveSnapshot(name, storeSlug, storeSpec, storeSpecName);
     setSnaps(listSnapshots());
     setSaveAsOpen(false); setSaveName('');
     flash(`Saved "${name}"`);
   }
-  // Load a snapshot: point the class dropdown at its class and commit its SPEC atomically (slug === storeSlug
-  // afterwards, so the Editor's load effect won't reload the draft over it). It then becomes the class's draft.
+  // Load a snapshot: point the dropdowns at its class+spec and commit its SPEC atomically (the keys match
+  // afterwards, so the Editor's load effect won't reload the draft over it). It then becomes that draft.
   function doLoad(snap: Snapshot) {
     setSlug(snap.slug);
-    switchClass(snap.slug, snap.spec);
+    setSpecName(snap.specName);
+    switchClass(snap.slug, snap.spec, snap.specName);
     setSavedOpen(false);
     flash(`Loaded "${snap.name}"`);
   }
@@ -95,7 +116,7 @@ export function App() {
   }
   // Discard this class's draft and reload its preset/default (the Editor rebuilds it — it has the registry).
   function doReset() {
-    clearDraft(slug);
+    clearDraft(presetKey(slug, specName));
     forceReload();
     flash('Reset to preset');
   }
@@ -116,12 +137,17 @@ export function App() {
       });
       const data = await res.json();
       if (!data.ok) throw new Error(data.error || 'import failed');
-      // The WA string carries no slug, but our generated SPEC ids start with the class name
-      // ("Felsworn Tyrant SPEC"). Infer the class so the dropdown, icon resolution AND the per-class
-      // autosave draft all match; fall back to the current class for an unrecognized (external) id.
-      const inferred = CLASSES.find((c) => String(data.spec.id ?? '').toLowerCase().startsWith(c.class.toLowerCase()))?.slug;
-      if (inferred) { setSlug(inferred); switchClass(inferred, data.spec); }
+      // The WA string carries no slug, but our generated SPEC ids embed class then spec
+      // ("Starcaller Moon Guard SPEC"). Infer both so the dropdowns, icon resolution AND the autosave
+      // draft all match; fall back to the current class for an unrecognized (external) id.
+      const id = String(data.spec.id ?? '');
+      const cls = CLASSES.find((c) => id.toLowerCase().startsWith(c.class.toLowerCase()));
+      // Longest match first, so "Moon Guard" wins over a hypothetical "Moon".
+      const spec = cls && [...cls.specs].sort((a, b) => b.length - a.length)
+        .find((s) => id.slice(cls.class.length).toLowerCase().includes(s.toLowerCase()));
+      if (cls) { setSlug(cls.slug); setSpecName(spec); switchClass(cls.slug, data.spec, spec); }
       else setClass(data.spec);
+      const inferred = cls?.slug;
       setImportOpen(false); setImportText('');
       setStatus(inferred ? `Imported — ${data.regions} regions` : `Imported as ${slug} — class not detected`);
     } catch (e) {
@@ -149,7 +175,7 @@ export function App() {
   return (
     <div className="grid h-screen grid-rows-[auto_1fr]">
       {showWelcome && (
-        <WelcomeModal classes={CLASSES} defaultSlug={slug} onConfirm={confirmWelcome} />
+        <WelcomeModal classes={CLASSES} defaultSlug={slug} defaultSpecName={specName} onConfirm={confirmWelcome} />
       )}
       <header className="flex h-14 items-center gap-4 border-b bg-[image:var(--grad-bar)] px-4">
         <div className="flex items-center gap-2.5 font-semibold">
@@ -174,6 +200,23 @@ export function App() {
             ))}
           </SelectContent>
         </Select>
+
+        {/* Spec picker — only for classes that actually have per-spec presets. Lists the specs we ship a
+            preset for, in registry order; the rest of a class's specs appear once they're built. */}
+        {specOptions.length > 1 && (
+          <Select value={specName ?? ''} onValueChange={pickSpec}>
+            <SelectTrigger className="w-[168px]" aria-label="Specialization">
+              <SelectValue placeholder="Specialization" />
+            </SelectTrigger>
+            <SelectContent>
+              {(CLASSES.find((c) => c.slug === slug)?.specs ?? specOptions)
+                .filter((s) => specOptions.includes(s))
+                .map((s) => (
+                  <SelectItem key={s} value={s}>{s}</SelectItem>
+                ))}
+            </SelectContent>
+          </Select>
+        )}
 
         <div className="flex-1" />
 
@@ -235,7 +278,8 @@ export function App() {
                     <button className="min-w-0 flex-1 text-left" onClick={() => doLoad(s)}>
                       <div className="truncate text-sm">{s.name}</div>
                       <div className="truncate text-[11px] text-muted-foreground">
-                        {CLASSES.find((c) => c.slug === s.slug)?.class ?? s.slug} · {new Date(s.createdAt).toLocaleDateString()}
+                        {CLASSES.find((c) => c.slug === s.slug)?.class ?? s.slug}
+                        {s.specName ? ` — ${s.specName}` : ''} · {new Date(s.createdAt).toLocaleDateString()}
                       </div>
                     </button>
                     <button
@@ -286,7 +330,7 @@ export function App() {
         </Button>
       </header>
 
-      <Editor slug={slug} />
+      <Editor slug={slug} specName={specName} />
     </div>
   );
 }

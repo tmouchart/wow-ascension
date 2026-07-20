@@ -24,7 +24,7 @@ import { AgentPanel } from './AgentPanel';
 import { useRegistry, type Ability } from '../registry';
 import { useStore, elementLabel, type Ref } from '../store';
 import { buildDefaultSpec } from '../lib/defaultSpec';
-import { PRESETS } from '../specs';
+import { PRESETS, presetKey } from '../specs';
 import { loadDraft } from '../lib/persistence';
 
 // Two independent drag worlds share one DndContext: icons/abilities target rows & rails ('row'/'icon'
@@ -39,22 +39,24 @@ const collisionByType: CollisionDetection = (args) => {
   return (isEl ? closestCenter : pointerWithin)({ ...args, droppableContainers });
 };
 
-export function Editor({ slug }: { slug: string }) {
+export function Editor({ slug, specName }: { slug: string; specName?: string }) {
   const { abilities, className, resolveIcon, loading } = useRegistry(slug);
   const spec = useStore((st) => st.spec);
   const storeSlug = useStore((st) => st.slug);
+  const storeSpecName = useStore((st) => st.specName);
   const switchClass = useStore((st) => st.switchClass);
   const addIcon = useStore((st) => st.addIcon);
 
-  // Load a class into the store when the selected class (App `slug`) differs from what's loaded
-  // (`storeSlug`): its saved draft if any, else a curated preset (classes/<name>/spec.json), else an
-  // auto-default built from the registry (cooldowns + power + health). switchClass sets slug+spec atomically,
-  // so once loaded slug === storeSlug and this never re-fires — user edits (which keep slug) are never
-  // clobbered. Gated on `loading` so a no-preset class waits for its abilities before building the default.
+  // Load a class+spec into the store when the selection (App `slug`/`specName`) differs from what's loaded:
+  // its saved draft if any, else a curated preset (classes/<name>/spec.json), else an auto-default built
+  // from the registry (cooldowns + power + health). switchClass sets identity+spec atomically, so once
+  // loaded the keys match and this never re-fires — user edits (which keep the key) are never clobbered.
+  // Gated on `loading` so a no-preset spec waits for its abilities before building the default.
+  const key = presetKey(slug, specName);
   useEffect(() => {
-    if (loading || slug === storeSlug) return;
-    switchClass(slug, loadDraft(slug) ?? PRESETS[slug] ?? buildDefaultSpec(slug, className, abilities));
-  }, [slug, storeSlug, loading, abilities, className, switchClass]);
+    if (loading || key === presetKey(storeSlug, storeSpecName)) return;
+    switchClass(slug, loadDraft(key) ?? PRESETS[key] ?? buildDefaultSpec(slug, className, abilities), specName);
+  }, [key, slug, specName, storeSlug, storeSpecName, loading, abilities, className, switchClass]);
   const insertIcon = useStore((st) => st.insertIcon);
   const moveIcon = useStore((st) => st.moveIcon);
   const moveElement = useStore((st) => st.moveElement);

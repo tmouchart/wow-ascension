@@ -1,14 +1,16 @@
 import { create } from 'zustand';
 import felswornSpec from '../../classes/felsworn/spec.json';
-import { PRESETS } from './specs';
-import { loadDraft, loadLastSlug } from './lib/persistence';
+import { PRESETS, presetKey, SPECS_WITH_PRESET } from './specs';
+import { loadDraft, loadLastKey } from './lib/persistence';
 
 // The SPEC is the single source of truth the editor mutates; the preview and the generator both read it.
 export type IconCfg = { label?: string; spell: number | string; byName?: boolean; fallbackIcon?: string; _uid?: string; [k: string]: unknown };
 export type El = { kind: string; enabled?: boolean; icons?: IconCfg[]; secondary?: boolean; _uid?: string; [k: string]: unknown };
 // A drop container is addressed either by its index in the central stack, or 'left'/'right' for the side rails.
 export type Ref = number | 'left' | 'right';
-export type Spec = { id: string; name: string; global: Record<string, number>; stack: El[]; left?: El; right?: El; combatOnly?: boolean };
+// `slug`/`spec` identify which class+spec preset this is (see specs/index.ts presetKey); both are absent on
+// a SPEC decompiled from an imported string.
+export type Spec = { id: string; name: string; slug?: string; spec?: string; global: Record<string, number>; stack: El[]; left?: El; right?: El; combatOnly?: boolean };
 // The currently-selected icon (per-icon inspector panel), addressed like a drop target.
 export type IconSel = { ref: Ref; iconIndex: number };
 
@@ -77,10 +79,12 @@ export function elementLabel(el: El): string {
 
 interface Store {
   slug: string;
+  /** Which spec of `slug` is loaded (undefined for a class whose preset isn't attributed to one). */
+  specName?: string;
   spec: Spec;
   sel: IconSel | null;
   setClass: (spec: Spec) => void;
-  switchClass: (slug: string, spec: Spec) => void;
+  switchClass: (slug: string, spec: Spec, specName?: string) => void;
   select: (sel: IconSel | null) => void;
   addIcon: (ref: Ref, icon: IconCfg) => void;
   insertIcon: (ref: Ref, index: number, icon: IconCfg) => void;
@@ -98,22 +102,29 @@ interface Store {
   reset: () => void;
 }
 
-// Boot: reopen on the last-edited class, restoring its saved draft (or its preset). If the last class has
-// neither a draft nor a preset (a no-preset class whose draft wasn't flushed), we can't build its default
-// SPEC synchronously (that needs the async registry) — so we boot with a sentinel slug that forces the
-// Editor's load effect to run once the registry is ready. `initialSlug` drives App's class dropdown.
-export const initialSlug = loadLastSlug() ?? 'felsworn';
-const bootSpec = loadDraft(initialSlug) ?? PRESETS[initialSlug];
+// Boot: reopen on the last-edited class+spec, restoring its saved draft (or its preset). If it has neither
+// a draft nor a preset (a no-preset spec whose draft wasn't flushed), we can't build its default SPEC
+// synchronously (that needs the async registry) — so we boot with a sentinel slug that forces the Editor's
+// load effect to run once the registry is ready. `initialSlug`/`initialSpecName` drive App's dropdowns.
+export const [initialSlug, initialSpecName] = (() => {
+  const [slug, name] = (loadLastKey() ?? presetKey('felsworn', 'Tyrant')).split('/');
+  // A key stored before the editor knew about specs is a bare slug; adopt that class's first spec so it
+  // still resolves a preset (PRESETS is keyed slug/spec) instead of falling through to a built default.
+  return [slug, (name ?? SPECS_WITH_PRESET[slug]?.[0]) as string | undefined] as const;
+})();
+const bootKey = presetKey(initialSlug, initialSpecName);
+const bootSpec = loadDraft(bootKey) ?? PRESETS[bootKey];
 
 export const useStore = create<Store>((set) => ({
   slug: bootSpec ? initialSlug : '__boot__',
+  specName: initialSpecName,
   spec: stampSpec(clone((bootSpec ?? felswornSpec) as Spec)),
   sel: null,
   // Replace the whole SPEC in place, keeping the current class (import / agent / undo). stampSpec gives
   // fresh sortable ids.
   setClass: (spec) => set({ spec: stampSpec(clone(spec)), sel: null }),
-  // Load a class: set slug AND spec atomically so autosave never pairs a new slug with the old spec.
-  switchClass: (slug, spec) => set({ slug, spec: stampSpec(clone(spec)), sel: null }),
+  // Load a class+spec: set identity AND spec atomically so autosave never pairs a new key with the old spec.
+  switchClass: (slug, spec, specName) => set({ slug, specName, spec: stampSpec(clone(spec)), sel: null }),
   select: (sel) => set({ sel }),
   addIcon: (ref, icon) => set((st) => {
     const spec = clone(st.spec);
