@@ -333,6 +333,14 @@ Two blind spots to close before scaling (nothing has validated these yet):
    `node tools/coverage-report.js` → `tools/COVERAGE.md` maps done vs remaining (4/70 specs) + a next-up queue.
    (`tools/verify-unchanged.js` normalizes CRLF so the golden guardrail isn't a false-red on Windows.)
 
+> **GOTCHA — no `load.use_spellknown` on Ascension (2026-07-20, confirmed in-game):** a "Spell Known" load
+> condition makes WeakAuras call `IsSpellKnown` → `GetSpellInfo`, which THROWS `"Invalid spell slot"` for
+> custom CoA spellIds. The Lua error aborts the **whole** WA load loop, so `/wa` stops opening entirely (not a
+> silent per-aura failure). Caught after a friend imported barbarian-brutality. The `gateSpellKnown` gate in
+> `spec-builder.js` is therefore **OFF by default** (`gateUnknownSpells:false`); do NOT re-enable it for
+> Ascension packages. Recovery when it happens: WoW closed, rename `WeakAuras.lua` + `.bak`, re-import the
+> regenerated (gate-free) string. Same rule applies to any other load option that resolves a custom spellId.
+
 ### Deployment — fly.io (SHIPPED + auto-deploy on push to main, since 2026-07-19)
 
 **Live at https://wa-forge.fly.dev** (fly app `wa-forge`, region `cdg`). **Full-stack**: ONE Node/Hono process

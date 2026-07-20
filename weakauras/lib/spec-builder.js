@@ -24,9 +24,11 @@ const WHITE = [1, 1, 1, 1];
 // cooldown-trigger spell identity exactly — same id/name, exact iff not byName — so gate and tracker can
 // never disagree. Shape matches the luxthos-elemental reference (use_spellknown + spellknown [+ use_exact]).
 // Applied to cdRow / procRow / side-rail icons; NOT buffRow (those track a buff/enchant, not a castable
-// spell) and skipped when the icon has no spell (e.g. a stealable-indicator proc). Toggle off per-SPEC with
-// global.gateUnknownSpells:false. NOTE: this is DETECTION-layer — relies on IsSpellKnown resolving custom
-// Ascension spellIds; confirm in-game before trusting (a false negative silently hides the whole icon).
+// spell) and skipped when the icon has no spell (e.g. a stealable-indicator proc). Opt IN per-SPEC with
+// global.gateUnknownSpells:true. DEFAULT OFF (since 2026-07-20): IsSpellKnown -> GetSpellInfo THROWS
+// "Invalid spell slot" on the Ascension client for custom CoA spellIds, and the Lua error aborts the whole
+// WeakAuras load loop (symptom: /wa stops opening). Confirmed in-game with barbarian-brutality. Do not turn
+// this back on for Ascension packages unless IsSpellKnown is verified to resolve custom spellIds on-client.
 function gateSpellKnown(region, spell, byName) {
   if (spell == null) return region;
   region.load = region.load || {};
@@ -540,7 +542,7 @@ function specToParts(spec) {
   validateSpec(spec);
   const g = {
     barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3,
-    xOffset: 0, yOffset: 0, gateUnknownSpells: true, ...(spec.global || {}),
+    xOffset: 0, yOffset: 0, gateUnknownSpells: false, ...(spec.global || {}),
   };
   const gx = g.xOffset, gy = g.yOffset, gap = g.gap;
 
