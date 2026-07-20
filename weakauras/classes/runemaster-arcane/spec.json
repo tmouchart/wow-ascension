@@ -1,0 +1,34 @@
+{
+  "slug": "runemaster",
+  "spec": "Arcane",
+  "id": "Runemaster Arcane SPEC",
+  "name": "runemaster-arcane-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Glyphic Overload", "spell": 520099, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Thaumaturgy", "spell": 804550 },
+      { "label": "Glyphic Ruin", "spell": 801179 },
+      { "label": "Warpdagger", "spell": 500287 },
+      { "label": "Zenith", "spell": 712325 },
+      { "label": "Manuscription", "spell": 524952 },
+      { "label": "Convergence", "spell": 801086 },
+      { "label": "Eye of the Beholder", "spell": 500121 }
+    ] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "buffRow", "icons": [
+      { "label": "Engraving MH", "weaponEnchant": "main", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" },
+      { "label": "Engraving OH", "weaponEnchant": "off", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" }
+    ] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Silencing Rune", "spell": 802631 },
+      { "label": "Permafrost Rune", "spell": 804060 },
+      { "label": "Speed Rune", "spell": 801103 },
+      { "label": "Power Engraving", "spell": 500296 },
+      { "label": "Granite Resolve", "spell": 520229 },
+      { "label": "Warding Rune", "spell": 804232 },
+      { "label": "Phase Out", "spell": 500671 }
+    ] }
+  ]
+}

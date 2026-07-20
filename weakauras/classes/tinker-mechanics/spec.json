@@ -1,0 +1,31 @@
+{
+  "slug": "tinker",
+  "spec": "Mechanics",
+  "id": "Tinker Mechanics SPEC",
+  "name": "tinker-mechanics-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Makeshift Dynamite", "spell": 504527, "charges": true },
+      { "label": "Mechsuit Laser Beam", "spell": 805372 },
+      { "label": "Mechsuit Combustion", "spell": 801387 },
+      { "label": "Mechsuit Activate Jets", "spell": 801389 },
+      { "label": "Sticky Bomb", "spell": 500232 },
+      { "label": "Overclocked Machine", "spell": 806757, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Upgrade", "spell": 800349, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Scrapper", "spell": 525039 }
+    ] },
+    { "kind": "chargeStacks", "spell": 504527, "count": 2, "gap": 6,
+      "hi": [1, 0.58, 0.12, 1], "lo": [0.55, 0.2, 0, 1], "emptyBg": [0.12, 0.07, 0.02, 0.9] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Kinetic Shield", "spell": 806224, "glow": { "type": "buff", "buff": "Kinetic Shield", "color": [0.95, 0.58, 0.12, 1], "glowType": "Pixel" } },
+      { "label": "Auto Resuscitation Device", "spell": 520445 },
+      { "label": "Med Pack", "spell": 800347, "fallbackIcon": "Interface\\Icons\\INV_Misc_Bandage_15" },
+      { "label": "Rocket Boots", "spell": 500241, "charges": true, "fallbackIcon": "Interface\\Icons\\Ability_Rogue_Sprint" },
+      { "label": "Air Strike", "spell": 801744 },
+      { "label": "Deathball", "spell": 500236 }
+    ] }
+  ]
+}

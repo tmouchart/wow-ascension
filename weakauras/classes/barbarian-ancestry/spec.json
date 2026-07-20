@@ -1,0 +1,40 @@
+{
+  "slug": "barbarian",
+  "spec": "Ancestry",
+  "id": "Barbarian Ancestry SPEC",
+  "name": "barbarian-ancestry-spec",
+  "combatOnly": true,
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "id": "Barbarian Ancestry SPEC Featured", "size": 46, "icons": [
+      { "label": "Ale of The God-King", "spell": 805780, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } }
+    ] },
+    { "kind": "cdRow", "size": 30, "icons": [
+      { "label": "Keg Smash", "spell": 805808 },
+      { "label": "Ancestral Combat", "spell": 801782 },
+      { "label": "Breath of The North", "spell": 800838, "glow": { "type": "buffMissing", "buff": "Fill Level", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Frozen Tankard", "spell": 805815 },
+      { "label": "Jawbreaker", "spell": 802792 }
+    ] },
+    { "kind": "stackBar", "aura": "Fill Level", "max": 10, "text": "Fill Level  %p",
+      "hi": [0.55, 0.85, 0.98, 1], "lo": [0.12, 0.33, 0.6, 1], "bg": [0.03, 0.08, 0.14, 0.85] },
+    { "kind": "uptimeBar", "buff": ["Unbridled Rage", "Onslaught", "Battle Vigor"], "label": "Enrage  %p", "warnText": "NOT ENRAGED", "bg": [0.06, 0.05, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "width": 280, "height": 22, "textSize": 13,
+      "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] }
+  ],
+  "left": { "icons": [
+    { "label": "Thick Skull", "spell": 801549, "glow": { "type": "buff", "buff": "Thick Skull", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } },
+    { "label": "Defiance", "spell": 806228, "glow": { "type": "buff", "buff": "Defiance", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } },
+    { "label": "Cheers", "spell": 805810 },
+    { "label": "Ancestral Roar", "spell": 500918 }
+  ] },
+  "right": { "icons": [
+    { "label": "Ramhorn Rage", "spell": 805804 },
+    { "label": "War Cry", "spell": 500995 },
+    { "label": "Clanlords Totem", "spell": 804737 },
+    { "label": "Warband", "spell": 560883 },
+    { "label": "Outrage", "spell": 801759 },
+    { "label": "Hodirs Wrath", "spell": 800152 }
+  ] }
+}

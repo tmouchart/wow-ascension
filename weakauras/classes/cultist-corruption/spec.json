@@ -1,0 +1,38 @@
+{
+  "slug": "cultist",
+  "spec": "Corruption",
+  "id": "Cultist Corruption SPEC",
+  "name": "cultist-corruption-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Ancient Curse", "spell": 500712, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Darkwither", "spell": 800446 },
+      { "label": "Obliteration Beam", "spell": 805572 },
+      { "label": "Eldritch Devastation", "spell": 802727 },
+      { "label": "Horrorbolt", "spell": 800416 },
+      { "label": "Blade of the Empire", "spell": 500720, "charges": true },
+      { "label": "Corrupt Mind", "spell": 560109 },
+      { "label": "Psychic Suppression", "spell": 800432 }
+    ] },
+    { "kind": "stacks", "id": "Cultist Corruption SPEC Ancient Curse", "auraNames": ["Ancient Curse"], "count": 1,
+      "unit": "target", "debuffType": "HARMFUL", "unitExists": false,
+      "hi": [0.85, 0.35, 1, 1], "lo": [0.35, 0.08, 0.55, 1], "emptyBg": [0.12, 0.05, 0.16, 0.9] },
+    { "kind": "stacks", "id": "Cultist Corruption SPEC Darkwither", "auraNames": ["Darkwither"], "count": 1,
+      "unit": "target", "debuffType": "HARMFUL", "unitExists": false,
+      "hi": [0.4, 0.85, 0.5, 1], "lo": [0.08, 0.35, 0.15, 1], "emptyBg": [0.05, 0.14, 0.07, 0.9] },
+    { "kind": "stackBar", "aura": "Insanity", "max": 100, "debuffType": "BOTH",
+      "hi": [0.72, 0.3, 0.9, 1], "lo": [0.25, 0.05, 0.4, 1], "bg": [0.1, 0.04, 0.14, 0.85] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.25, 0.45, 0.95, 1], "lo": [0.05, 0.1, 0.35, 1], "bg": [0.03, 0.05, 0.15, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Abyssal Ward", "spell": 804670, "glow": { "type": "buff", "buff": "Abyssal Ward", "color": [0.58, 0.24, 0.82, 1], "glowType": "Pixel" } },
+      { "label": "Embrace the Void", "spell": 582591, "glow": { "type": "buff", "buff": "Embrace the Void", "color": [0.58, 0.24, 0.82, 1], "glowType": "Pixel" } },
+      { "label": "Twisted Seal", "spell": 525065, "glow": { "type": "buff", "buff": "Twisted Seal", "color": [0.58, 0.24, 0.82, 1], "glowType": "Pixel" } },
+      { "label": "Void Shield", "spell": 500715 },
+      { "label": "Entropic Singularity", "spell": 800430 },
+      { "label": "Mass Nightmare", "spell": 805114 },
+      { "label": "Vision of Doom", "spell": 520388 }
+    ] }
+  ]
+}

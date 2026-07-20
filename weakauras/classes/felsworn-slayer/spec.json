@@ -1,0 +1,38 @@
+{
+  "slug": "felsworn",
+  "spec": "Slayer",
+  "id": "Felsworn Slayer SPEC",
+  "name": "felsworn-slayer-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "id": "Felsworn Slayer SPEC Steal", "size": 32, "icons": [
+      { "label": "Consume Magic", "stealable": true, "fallbackIcon": "Interface\\Icons\\Spell_Arcane_ManaTap",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Hateforged Barrier", "spell": 705129, "glow": { "type": "buff", "buff": "Hateforged Barrier", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Skull of Guldan", "spell": 800225, "glow": { "type": "buff", "buff": "Skull of Gul'dan", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Illidans Guile", "spell": 806109, "glow": { "type": "buff", "buff": "Illidan's Guile", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Annihilation", "spell": 803904, "glow": { "type": "buff", "buff": "Annihilation", "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel" } },
+      { "label": "Fury Unleashed", "spell": 555738, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Annihilan Strike", "spell": 801903, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Fury of the Illidari", "spell": 561216 },
+      { "label": "Azzinoths Assault", "spell": 801904 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Inner Demon", "label": "Inner Demon  %p", "warnText": "Inner Demon", "bg": [0.05, 0.08, 0.03, 0.85] },
+    { "kind": "uptimeBar", "buff": "Immolation Aura", "label": "Immolation Aura  %p", "warnText": "Immolation Aura", "bg": [0.09, 0.05, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.88, 0.15, 1], "lo": [0.72, 0.42, 0.0, 1], "bg": [0.12, 0.1, 0.0, 0.8] },
+    { "kind": "stacks", "auraNames": ["Felfury"], "count": 6, "hi": [0.45, 0.9, 0.06, 1], "lo": [0.1, 0.32, 0.0, 1],
+      "capGlow": { "at": 6, "unlessBuff": "Inner Demon", "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Whispers of the Pit", "spell": 805235 },
+      { "label": "Reckoning", "spell": 802058 },
+      { "label": "Manaburn", "spell": 805248 },
+      { "label": "Felhoof Charge", "spell": 800204 },
+      { "label": "Breath of Mannoroth", "spell": 800205 },
+      { "label": "Eye of Archimonde", "spell": 804052 },
+      { "label": "Chaos Rush", "spell": "Chaos Rush", "byName": true, "charges": true }
+    ] }
+  ]
+}

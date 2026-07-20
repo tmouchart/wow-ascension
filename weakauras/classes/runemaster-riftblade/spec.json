@@ -1,0 +1,37 @@
+{
+  "slug": "runemaster",
+  "spec": "Riftblade",
+  "id": "Runemaster Riftblade SPEC",
+  "name": "runemaster-riftblade-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Hoarfrost", "spell": 801104, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Fracture", "spell": 803018 },
+      { "label": "Smolder", "spell": 801087 },
+      { "label": "Hurricane", "spell": 645435 },
+      { "label": "Warpdagger", "spell": 500287 },
+      { "label": "Primordial Blast", "spell": 800732, "fallbackIcon": "Interface\\Icons\\Spell_Fire_Fireball02" },
+      { "label": "Primordial Fury", "spell": 806543 },
+      { "label": "Turbulence", "spell": 705575 }
+    ] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "buffRow", "icons": [
+      { "label": "Engraving MH", "weaponEnchant": "main", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" },
+      { "label": "Engraving OH", "weaponEnchant": "off", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" }
+    ] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Genesis", "spell": 500501 },
+      { "label": "Zenith", "spell": 712325 },
+      { "label": "Convergence", "spell": 801086 },
+      { "label": "Permafrost Rune", "spell": 804060 },
+      { "label": "Speed Rune", "spell": 801103 },
+      { "label": "Power Engraving", "spell": 500296 },
+      { "label": "Echo Rune", "spell": 500270 },
+      { "label": "Granite Resolve", "spell": 520229 },
+      { "label": "Warding Rune", "spell": 804232 },
+      { "label": "Phase Out", "spell": 500671 }
+    ] }
+  ]
+}

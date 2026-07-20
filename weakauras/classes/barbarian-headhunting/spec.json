@@ -1,0 +1,40 @@
+{
+  "slug": "barbarian",
+  "spec": "Headhunting",
+  "id": "Barbarian Headhunting SPEC",
+  "name": "barbarian-headhunting-spec",
+  "combatOnly": true,
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "id": "Barbarian Headhunting SPEC Featured", "size": 46, "icons": [
+      { "label": "Spite", "spell": 707584, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } }
+    ] },
+    { "kind": "cdRow", "size": 30, "icons": [
+      { "label": "Impaling Spear", "spell": 500984 },
+      { "label": "Gutspiller", "spell": 805832 },
+      { "label": "Barbed Spear", "spell": 560881 },
+      { "label": "Throw Weapon", "spell": 804136 },
+      { "label": "Berserker Rush", "spell": 560518 },
+      { "label": "Jawbreaker", "spell": 802792 }
+    ] },
+    { "kind": "uptimeBar", "buff": ["Unbridled Rage", "Onslaught", "Battle Vigor"], "label": "Enrage  %p", "warnText": "NOT ENRAGED", "bg": [0.06, 0.05, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "width": 280, "height": 22, "textSize": 13,
+      "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "procRow", "size": 34, "icons": [
+      { "label": "Berserker Axe", "spell": 804138, "buff": "Unbridled Rage",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] }
+  ],
+  "left": { "icons": [
+    { "label": "Thick Skull", "spell": 801549, "glow": { "type": "buff", "buff": "Thick Skull", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } },
+    { "label": "Defiance", "spell": 806228, "glow": { "type": "buff", "buff": "Defiance", "color": [0.78, 0.61, 0.43, 1], "glowType": "Pixel" } },
+    { "label": "Skull Smash", "spell": 560532 }
+  ] },
+  "right": { "icons": [
+    { "label": "Axe Twirling", "spell": 800401 },
+    { "label": "Outrage", "spell": 801759 },
+    { "label": "Warband", "spell": 560883 },
+    { "label": "Hodirs Wrath", "spell": 800152 }
+  ] }
+}
