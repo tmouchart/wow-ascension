@@ -138,10 +138,12 @@ function chargeSegmentBar(groupId, o) {
   return b;
 }
 
-// A maintenance-buff UPTIME bar (keep-it-up-24/7). Duration countdown that colors green -> yellow (<=8s)
-// -> red (<=4s); when the buff is DOWN the bar goes deep red, swaps the label to a warning subtext, and
-// pulses a red Pixel glow. Tracks one buff by name, or ANY of several (buff: string | string[]).
-//   cfg: { id, yOffset, width, height, buff, label, warnText, bg, downBg?, colors? }
+// A maintenance UPTIME bar (keep-it-up-24/7). Duration countdown that colors green -> yellow (<=8s)
+// -> red (<=4s); when it is DOWN the bar goes deep red, swaps the label to a warning subtext, and
+// pulses a red Pixel glow. Tracks one aura by name, or ANY of several (buff: string | string[}).
+// unit 'target' tracks a DoT/debuff YOU applied to the target instead of a self-buff (ownOnly, and
+// unitExists false so it reads as DOWN with no target) — same countdown + fall-off cue either way.
+//   cfg: { id, yOffset, width, height, buff, unit?: 'player'|'target', label, warnText, bg, downBg?, colors? }
 // warnSubtext -> sub.5, subglow -> sub.6 (the label is sub.4). colors default to the shared green/red set.
 function uptimeBar(groupId, cfg) {
   const C = cfg.colors || { green: [0.30, 0.75, 0.15, 1], yellow: [1, 0.80, 0.10, 1],
@@ -149,7 +151,9 @@ function uptimeBar(groupId, cfg) {
   const b = baseBar(groupId, cfg.id);
   b.yOffset = cfg.yOffset; b.width = cfg.width; b.height = cfg.height;
   b.enableGradient = false; b.barColor = C.green.slice(); b.backgroundColor = cfg.bg.slice();
-  const trig = Array.isArray(cfg.buff) ? anyBuffTrigger(cfg.buff) : buffTrigger(cfg.buff, 'showAlways');
+  const names = Array.isArray(cfg.buff) ? cfg.buff : [cfg.buff];
+  const trig = cfg.unit === 'target' ? targetDebuffTrigger(names)
+    : Array.isArray(cfg.buff) ? anyBuffTrigger(cfg.buff) : buffTrigger(cfg.buff, 'showAlways');
   b.triggers = wrap([T(trig)], 1);
   b.progressSource = [-1, ''];
   const label = b.subRegions.find(s => s.type === 'subtext');

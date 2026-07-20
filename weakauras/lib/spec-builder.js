@@ -391,7 +391,7 @@ function buildElement(spec, el, centerY, g, gx) {
       const bar = B.uptimeBar(spec.id, {
         id: el.id || `${spec.id} ${typeof el.buff === 'string' ? el.buff : 'Uptime'}`,
         yOffset: centerY, width: g.barWidth, height: el.height || 14,
-        buff: el.buff, label: el.label, warnText: el.warnText,
+        buff: el.buff, unit: el.unit, label: el.label, warnText: el.warnText,
         bg: (el.bg || [0.05, 0.08, 0.03, 0.85]).slice(), downBg: el.downBg, colors: el.colors,
       });
       bar.xOffset = gx;

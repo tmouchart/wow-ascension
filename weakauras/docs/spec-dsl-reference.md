@@ -112,7 +112,7 @@ Common bar fields: `hi`/`lo` = gradient high/low `[r,g,b,a]` (0..1); `bg` = back
 | `powerBar` | Primary resource (Mana/Energy/…) | `powerType` (index) | `hi,lo,bg,text,textSize,height(14),width,id` | 1 `aurabar` |
 | `healthBar` | Unit health | — | `unit('player'),hi,lo,bg,text,height(14),id` | 1 `aurabar` |
 | `stackBar` | Resource that is an **aura stack count** (cultist Insanity 0..100) | `aura` (buff name), `max` | `hi,lo,bg,text,debuffType('BOTH'),height(14),id` | 1 `aurabar` |
-| `uptimeBar` | Maintenance-buff countdown (keep-it-up) | `buff` (name **or** [names]) | `label,warnText,bg,downBg,colors,height(14),id` | 1 `aurabar` |
+| `uptimeBar` | Maintenance countdown (keep-it-up) — self-buff **or** target DoT | `buff` (name **or** [names]) | `unit('player'\|'target'),label,warnText,bg,downBg,colors,height(14),id` | 1 `aurabar` |
 | `buffWarnText` | Big text shown only while a buff is **missing** | `buff`, `text` | `color,fontSize(20),height(22),width,id` | 1 invisible `aurabar` (text carrier) |
 | `stacks` | Point boxes from an aura **stack** (Felfury) | `auraNames` [names], `count` | `hi,lo,emptyBg,unit('player'),debuffType('HELPFUL'),unitExists,gap(4),height(12),capGlow,id` | N `aurabar` |
 | `chargeStacks` | Point boxes from a spell's **charges** (Runeblade 0..3) | `spell`, `count` | `byName,hi,lo,emptyBg,gap(4),height(12),id` | N `aurabar` |
@@ -128,6 +128,10 @@ Notes captured from source you can't infer from the table:
   `unitExists:false` (so it drops to 0 when the debuff is consumed).
 - **`uptimeBar.buff`** as a `[names]` array = "any-of" state (enraged = buff A **or** B **or** C); `expirationTime`
   is whichever matched. `colors` overrides the green/yellow/red/down/glow set (see `uptimeBar` in §7).
+- **`uptimeBar.unit: 'target'`** tracks a DoT/debuff YOU applied to the target instead of a self-buff
+  (`targetDebuffTrigger`: HARMFUL, `ownOnly`, `unitExists:false` so no target reads as DOWN). Everything else is
+  identical — same countdown ramp, same fall-off warning + glow. This is what a DoT spec wants; do NOT fall back
+  to a `stacks count:1` presence box, which has no countdown and no fall-off cue. Omit `unit` for a self-buff.
 - **`stackBar`** pins max via `useAdjustededMax + adjustedMax = String(max)` and `progressSource:[1,"stacks"]`;
   `debuffType:"BOTH"` scans buffs **and** debuffs.
 

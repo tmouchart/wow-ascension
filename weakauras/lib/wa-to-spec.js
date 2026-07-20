@@ -180,6 +180,8 @@ function invertBar(region, specId) {
     const warn = (region.subRegions || []).find((s) => s.type === 'subtext' && !s.text_visible);
     return { kind: 'uptimeBar', id: region.id, height: region.height,
       buff: t0.auranames.length > 1 ? t0.auranames.slice() : t0.auranames[0],
+      // unit is emitted only for a target-debuff uptime bar, so a self-buff bar re-generates byte-identically.
+      ...(t0.unit === 'target' ? { unit: 'target' } : {}),
       label: sub.text_text, warnText: warn ? warn.text_text : '', bg: region.backgroundColor.slice() };
   }
   // stack bar (aura stack count as a resource): progressSource stacks + pinned max
