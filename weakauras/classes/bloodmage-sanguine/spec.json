@@ -1,0 +1,36 @@
+{
+  "slug": "bloodmage",
+  "spec": "Sanguine",
+  "id": "Bloodmage Sanguine SPEC",
+  "name": "bloodmage-sanguine-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Vampiric Fang", "spell": 804726 },
+      { "label": "Transgression", "spell": 504728 },
+      { "label": "Malediction", "spell": 800776 },
+      { "label": "Valanars Vengeance", "spell": 560315 },
+      { "label": "Keleseths Calamity", "spell": 560249 },
+      { "label": "Atheranns Anguish", "spell": 680680 },
+      { "label": "Sacrificial Rite", "spell": 800785 },
+      { "label": "Hemostasis", "spell": 681304 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Transgression", "label": "Transgression  %p", "warnText": "TRANSGRESSION DOWN", "bg": [0.08, 0.03, 0.04, 0.85] },
+    { "kind": "uptimeBar", "buff": "Malediction", "unit": "target", "label": "Malediction  %p", "warnText": "MALEDICTION DOWN", "bg": [0.08, 0.03, 0.04, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "stacks", "auraNames": ["Thirst"], "count": 10, "hi": [0.85, 0.18, 0.22, 1], "lo": [0.32, 0.03, 0.05, 1],
+      "capGlow": { "at": 9, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Blood Bond", "spell": 504627 },
+      { "label": "Transfusion", "spell": 705734 },
+      { "label": "Fleshcraft", "spell": 801952 },
+      { "label": "Blood Craving", "spell": 800780 },
+      { "label": "Wicked Howl", "spell": 804207 },
+      { "label": "Blood Pact", "spell": 801955, "glow": { "type": "buff", "buff": "Blood Pact", "color": [0.78, 0.12, 0.16, 1], "glowType": "Pixel" } },
+      { "label": "Liquify", "spell": 806310 },
+      { "label": "Shadow Howl", "spell": 806177 },
+      { "label": "Blood Veil", "spell": 504263, "glow": { "type": "buff", "buff": "Blood Veil", "color": [0.78, 0.12, 0.16, 1], "glowType": "Pixel" } }
+    ] }
+  ]
+}

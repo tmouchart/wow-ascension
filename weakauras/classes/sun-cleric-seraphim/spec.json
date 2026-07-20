@@ -1,0 +1,33 @@
+{
+  "slug": "sun-cleric",
+  "spec": "Seraphim",
+  "id": "Sun Cleric Seraphim SPEC",
+  "name": "sun-cleric-seraphim-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Dawnbreak", "spell": 800654 },
+      { "label": "Justicars Wrath", "spell": 806980 },
+      { "label": "Hammer of Kings", "spell": 804751 },
+      { "label": "Horusath Blast", "spell": 500154 },
+      { "label": "Seraphic Bulwark", "spell": 560095, "charges": true },
+      { "label": "Calm", "spell": 804057 },
+      { "label": "Glare", "spell": 805583 },
+      { "label": "Radiance", "spell": 800054 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Hammer of Kings", "label": "Hammer of Kings  %p",
+      "warnText": "Hammer of Kings", "bg": [0.1, 0.07, 0.02, 0.85] },
+    { "kind": "uptimeBar", "buff": "Justicar's Wrath", "unit": "target", "label": "Justicars Wrath  %p",
+      "warnText": "Justicars Wrath", "bg": [0.1, 0.07, 0.02, 0.85] },
+    { "kind": "chargeStacks", "spell": 560095, "count": 2, "hi": [1, 0.85, 0.35, 1], "lo": [0.55, 0.35, 0.02, 1] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Scroll of Hope", "spell": 680646 },
+      { "label": "Solar Invocation Resplendence", "spell": 806159 },
+      { "label": "Solar Invocation Conquest", "spell": 800764 },
+      { "label": "Solar Prayer", "spell": 806479 },
+      { "label": "New Day", "spell": 800600 }
+    ] }
+  ]
+}

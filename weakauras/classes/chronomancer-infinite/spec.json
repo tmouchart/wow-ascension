@@ -1,0 +1,32 @@
+{
+  "slug": "chronomancer",
+  "spec": "Infinite",
+  "id": "Chronomancer Infinite SPEC",
+  "name": "chronomancer-infinite-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Timerend", "spell": 707430, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Chromatic Shard", "spell": 801292, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Melt Reality", "spell": 806335 },
+      { "label": "Incarnation of Chaos", "spell": 570067 },
+      { "label": "Gravity Bomb", "spell": 801281 },
+      { "label": "Decomposition", "spell": 800856 },
+      { "label": "Slipstream", "spell": 707555 },
+      { "label": "Clasp of Infinity", "spell": 805847 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Melt Reality", "unit": "target", "label": "Melt Reality  %p", "warnText": "Melt Reality", "bg": [0.1, 0.07, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Temporal Focus", "spell": 806165 },
+      { "label": "Temporal Anomaly", "spell": 806315 },
+      { "label": "Timeguard", "spell": 804441 },
+      { "label": "Desynchronization", "spell": 561310 },
+      { "label": "Dimensional Divergence", "spell": 802790 },
+      { "label": "Fortify Timeline", "spell": 804491 },
+      { "label": "Chronostasis", "spell": 706969 },
+      { "label": "Roll Back", "spell": 524966 }
+    ] }
+  ]
+}

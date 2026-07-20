@@ -1,0 +1,40 @@
+{
+  "slug": "primalist",
+  "spec": "Mountain King",
+  "id": "Primalist Mountain King SPEC",
+  "name": "primalist-mountain-king-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "id": "Primalist Mountain King SPEC Featured", "size": 40, "icons": [
+      { "label": "Mountain Fury", "spell": 806185, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Quake", "spell": 803974, "charges": true },
+      { "label": "Mountain Hammer", "spell": 681130 },
+      { "label": "Wildclaw", "spell": 800140 },
+      { "label": "Hand of the Earthmother", "spell": 800135 },
+      { "label": "Primal Rush", "spell": 500696 },
+      { "label": "Judgement of The Three Hammers", "spell": 520466, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Earthen Avatar", "spell": 680421, "glow": { "type": "buff", "buff": "Earthen Avatar", "color": [0.36, 0.62, 0.23, 1], "glowType": "Pixel" } }
+    ] },
+    { "kind": "buffRow", "secondary": true, "icons": [
+      { "label": "Boon of the Bear", "indicator": "Boon of the Bear" }
+    ] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.55, 0.15, 1], "lo": [0.6, 0.22, 0.02, 1], "bg": [0.13, 0.05, 0.01, 0.85] },
+    { "kind": "stacks", "auraNames": ["Mountain Mover"], "count": 5, "hi": [0.78, 0.62, 0.32, 1], "lo": [0.28, 0.2, 0.07, 1],
+      "capGlow": { "at": 5, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Primal Convergence", "spell": 800181 },
+      { "label": "Primal Totem", "spell": 504229 },
+      { "label": "Bramblepatch", "spell": 806415 },
+      { "label": "Grove Guardian", "spell": 503721 },
+      { "label": "Rock Barrier", "spell": 503630, "charges": true, "glow": { "type": "buff", "buff": "Rock Barrier", "color": [0.36, 0.62, 0.23, 1], "glowType": "Pixel" } },
+      { "label": "Protective Roar", "spell": 802782 },
+      { "label": "Dreamslip", "spell": 805867 },
+      { "label": "Bearskin", "spell": 800094, "glow": { "type": "buff", "buff": "Bearskin", "color": [0.36, 0.62, 0.23, 1], "glowType": "Pixel" } },
+      { "label": "Wildheart", "spell": 803980 },
+      { "label": "Boulder Dash", "spell": 500692 }
+    ] }
+  ]
+}

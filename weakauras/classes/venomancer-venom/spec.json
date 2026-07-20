@@ -1,0 +1,37 @@
+{
+  "slug": "venomancer",
+  "spec": "Venom",
+  "id": "Venomancer Venom SPEC",
+  "name": "venomancer-venom-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "icons": [
+      { "label": "Mycosis Free", "spell": 804986, "buff": "Serpent Lord's Ring",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Decay", "spell": 800910 },
+      { "label": "Mycosis", "spell": 804986 },
+      { "label": "Sepsis Bloom", "spell": 504867 },
+      { "label": "Fungal Assailant", "spell": 504344 },
+      { "label": "Mycelial Ring", "spell": 681056 },
+      { "label": "Serpent Lords Ring", "spell": 503923, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "From Life Comes Death", "spell": 504855 },
+      { "label": "Hive Instinct", "spell": 804968 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Wilt", "unit": "target", "label": "Wilt  %p", "warnText": "Wilt", "bg": [0.04, 0.09, 0.04, 0.85] },
+    { "kind": "uptimeBar", "buff": "Spore", "unit": "target", "label": "Spore  %p", "warnText": "Spore", "bg": [0.04, 0.09, 0.04, 0.85] },
+    { "kind": "stacks", "auraNames": ["Fungal Growth"], "count": 10, "unit": "target", "debuffType": "HARMFUL", "unitExists": false,
+      "hi": [0.45, 0.9, 0.25, 1], "lo": [0.1, 0.32, 0.05, 1],
+      "capGlow": { "at": 10, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Lifeblood", "spell": 804963, "glow": { "type": "buff", "buff": "Lifeblood", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Toxic Stride", "spell": 504347, "glow": { "type": "buff", "buff": "Toxic Stride", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Burrow", "spell": 806154 },
+      { "label": "Shadras Lair", "spell": 804978 },
+      { "label": "Pinch", "spell": 704235 }
+    ] }
+  ]
+}

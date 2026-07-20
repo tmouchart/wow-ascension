@@ -1,0 +1,30 @@
+{
+  "slug": "guardian",
+  "spec": "Inspiration",
+  "id": "Guardian Inspiration SPEC",
+  "name": "guardian-inspiration-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Heros March", "spell": 801774 },
+      { "label": "Harrowing Melody", "spell": 572821 },
+      { "label": "Song of Battle", "spell": 803956 },
+      { "label": "Battle Drums", "spell": 803683 },
+      { "label": "Voice of an Angel", "spell": 704420, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Liberation", "spell": 803963 },
+      { "label": "Inspiring Presence", "spell": 705352 },
+      { "label": "Ram", "spell": 802284 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Hero's March", "label": "Heros March  %p", "warnText": "Heros March", "bg": [0.05, 0.07, 0.12, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.88, 0.15, 1], "lo": [0.72, 0.42, 0.0, 1], "bg": [0.12, 0.1, 0.0, 0.8] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Brace", "spell": 800313, "glow": { "type": "buff", "buff": "Brace", "color": [0.62, 0.7, 0.8, 1], "glowType": "Pixel" } },
+      { "label": "Counter Stance", "spell": 802188 },
+      { "label": "Knights Calling", "spell": 504151 },
+      { "label": "Press the Attack", "spell": 801219 },
+      { "label": "Glorious Arena", "spell": 300983 },
+      { "label": "Grand Entrance", "spell": 802870 }
+    ] }
+  ]
+}

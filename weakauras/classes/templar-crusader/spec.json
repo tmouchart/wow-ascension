@@ -1,0 +1,34 @@
+{
+  "slug": "templar",
+  "spec": "Crusader",
+  "id": "Templar Crusader SPEC",
+  "name": "templar-crusader-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "id": "Templar Crusader SPEC Featured", "size": 46, "icons": [
+      { "label": "Divine Charge", "spell": 527023, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Argent Blade", "spell": 804929, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Righteous Tempest", "spell": 805409 },
+      { "label": "Blade of Faith", "spell": 803872 },
+      { "label": "Chastise", "spell": 803157 },
+      { "label": "Crusaders Brand", "spell": 300513 },
+      { "label": "Libram of Fervor", "spell": 805423, "glow": { "type": "buff", "buff": "Libram of Fervor", "color": [0.96, 0.82, 0.35, 1], "glowType": "Pixel" } },
+      { "label": "Glory", "spell": 801481 },
+      { "label": "Silverhand Incantation", "spell": 801465 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Blade of Faith", "unit": "target", "label": "Blade of Faith  %p", "warnText": "Blade of Faith", "bg": [0.1, 0.08, 0.03, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.88, 0.15, 1], "lo": [0.72, 0.42, 0.0, 1], "bg": [0.12, 0.1, 0.0, 0.8] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Testament of Strength", "spell": 300514 },
+      { "label": "Testament of Will", "spell": 801455 },
+      { "label": "Interdict", "spell": 560116 },
+      { "label": "Divine Force", "spell": 806153 },
+      { "label": "Libram of Tenacity", "spell": 801461, "glow": { "type": "buff", "buff": "Libram of Tenacity", "color": [0.96, 0.82, 0.35, 1], "glowType": "Pixel" } },
+      { "label": "Testament of Hope", "spell": 1397742, "glow": { "type": "buff", "buff": "Testament of Hope", "color": [0.96, 0.82, 0.35, 1], "glowType": "Pixel" } },
+      { "label": "Testament of Fortitude", "spell": 500678, "glow": { "type": "buff", "buff": "Testament of Fortitude", "color": [0.96, 0.82, 0.35, 1], "glowType": "Pixel" } }
+    ] }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "witch-hunter",
+  "spec": "Boltslinger",
+  "id": "Witch Hunter Boltslinger SPEC",
+  "name": "witch-hunter-boltslinger-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "icons": [
+      { "label": "Heartseeking Bolt Proc", "spell": 805754, "buff": "Bounty Hunter",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" },
+      { "label": "Damnation Execute", "spell": 520062, "execute": 35, "glowAlways": true,
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Heartseeking Bolt", "spell": 805754, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Witchbane", "spell": 800165 },
+      { "label": "Tormentor", "spell": 800162 },
+      { "label": "Damnation", "spell": 520062 },
+      { "label": "Twilight Frenzy", "spell": 805751 },
+      { "label": "Daring Escape", "spell": 500086 },
+      { "label": "Slayers Mark", "spell": 804068, "glow": { "type": "buff", "buff": "Slayer's Mark", "color": [0.58, 0.35, 0.85, 1], "glowType": "Pixel" } }
+    ] },
+    { "kind": "uptimeBar", "buff": "Tormentor", "unit": "target", "label": "Tormentor  %p", "warnText": "Tormentor", "bg": [0.06, 0.04, 0.1, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Witchblood Tonic", "spell": 802278, "glow": { "type": "buff", "buff": "Witchblood Tonic", "color": [0.58, 0.35, 0.85, 1], "glowType": "Pixel" } },
+      { "label": "Vampiric Tonic", "spell": 802276, "glow": { "type": "buff", "buff": "Vampiric Tonic", "color": [0.58, 0.35, 0.85, 1], "glowType": "Pixel" } },
+      { "label": "Witching Shroud", "spell": 805770 },
+      { "label": "Inquisitors Trap", "spell": 681445 },
+      { "label": "Death Trap", "spell": 681450 },
+      { "label": "Smoke Grenade", "spell": 805756 },
+      { "label": "Brand of the Unworthy", "spell": 501380 },
+      { "label": "Vault", "spell": 500085 }
+    ] }
+  ]
+}

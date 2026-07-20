@@ -1,0 +1,34 @@
+{
+  "slug": "stormbringer",
+  "spec": "Maelstrom",
+  "id": "Stormbringer Maelstrom SPEC",
+  "name": "stormbringer-maelstrom-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Stormfury", "spell": 532751 },
+      { "label": "Deluge", "spell": 806400 },
+      { "label": "Drown", "spell": 806407 },
+      { "label": "Stormcloud", "spell": 801859 },
+      { "label": "Stormflow", "spell": 567555 },
+      { "label": "Storm Ascendance", "spell": 681110, "glow": { "type": "buff", "buff": "Storm Ascendance", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Thunder King", "spell": 804591, "glow": { "type": "buff", "buff": "Thunder King", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Charge", "spell": 804826, "glow": { "type": "buff", "buff": "Charge", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } }
+    ] },
+    { "kind": "uptimeBar", "buff": "Drown", "unit": "target", "label": "Drown  %p", "warnText": "Drown", "bg": [0.03, 0.05, 0.12, 0.85] },
+    { "kind": "uptimeBar", "buff": "Stormcloud", "unit": "target", "label": "Stormcloud  %p", "warnText": "Stormcloud", "bg": [0.03, 0.05, 0.12, 0.85] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Thunder Ward", "spell": 800098, "glow": { "type": "buff", "buff": "Thunder Ward", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Stormcloak", "spell": 804833, "glow": { "type": "buff", "buff": "Stormcloak", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Body of Lightning", "spell": 500041 },
+      { "label": "Fog", "spell": 806100 },
+      { "label": "Exhale", "spell": 705672 },
+      { "label": "Gust of Wind", "spell": 500932 }
+    ] },
+    { "kind": "buffRow", "secondary": true, "icons": [
+      { "label": "Call of the Wind", "indicator": "Call of the Wind", "fallbackIcon": "Interface\\Icons\\Spell_Nature_Cyclone" }
+    ] }
+  ]
+}

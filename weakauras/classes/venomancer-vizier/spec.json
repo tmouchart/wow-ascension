@@ -1,0 +1,34 @@
+{
+  "slug": "venomancer",
+  "spec": "Vizier",
+  "id": "Venomancer Vizier SPEC",
+  "name": "venomancer-vizier-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Extraction", "spell": 805884 },
+      { "label": "Mycelial Replenishment", "spell": 706021 },
+      { "label": "Serpent Lords Amulet", "spell": 800914, "glow": { "type": "buff", "buff": "Serpent Lord's Amulet", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Alkahest", "spell": 504342, "charges": true },
+      { "label": "Unity", "spell": 800904 },
+      { "label": "Mending Mist", "spell": 800899 },
+      { "label": "Shadras Balm", "spell": 800901 },
+      { "label": "Green Salve", "spell": 800902 }
+    ] },
+    { "kind": "stacks", "auraNames": ["Mycelial Healing"], "count": 8,
+      "hi": [0.45, 0.9, 0.25, 1], "lo": [0.1, 0.32, 0.05, 1],
+      "capGlow": { "at": 8, "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Shadras Aid", "spell": 504352, "glow": { "type": "buff", "buff": "Shadra's Aid", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Lifeblood", "spell": 804963, "glow": { "type": "buff", "buff": "Lifeblood", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Toxic Stride", "spell": 504347, "glow": { "type": "buff", "buff": "Toxic Stride", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Blight Antidote", "spell": 520153 },
+      { "label": "Remove Venoms", "spell": 630872 },
+      { "label": "Burrow", "spell": 806154 },
+      { "label": "Shadras Lair", "spell": 804978 },
+      { "label": "Pinch", "spell": 704235 }
+    ] }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "chronomancer",
+  "spec": "Time",
+  "id": "Chronomancer Time SPEC",
+  "name": "chronomancer-time-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Fortify Timeline", "spell": 804491, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Correct the Mistake", "spell": 572352 },
+      { "label": "Ripple", "spell": 806296 },
+      { "label": "Fabric of Time", "spell": 806299 },
+      { "label": "Aeon of Renewal", "spell": 806290 },
+      { "label": "Aeon of Protection", "spell": 806292 },
+      { "label": "Aeon of Oblivion", "spell": 806293 },
+      { "label": "Continuum Restoration", "spell": 801271 }
+    ] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "The Vast Infinite", "spell": 706083 },
+      { "label": "Buy Time", "spell": 520188 },
+      { "label": "Infinite Shield", "spell": 520457 },
+      { "label": "Timeguard", "spell": 804441 },
+      { "label": "Temporal Focus", "spell": 806165 },
+      { "label": "Temporal Anomaly", "spell": 806315 },
+      { "label": "Displacement", "spell": 806727 },
+      { "label": "Roll Back", "spell": 524966 },
+      { "label": "Desynchronization", "spell": 561310 },
+      { "label": "Dimensional Divergence", "spell": 802790 }
+    ] }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "witch-hunter",
+  "spec": "Houndmaster",
+  "id": "Witch Hunter Houndmaster SPEC",
+  "name": "witch-hunter-houndmaster-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Unleash the Hounds", "spell": 807918, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Decimate", "spell": 804194, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Houndmasters Call", "spell": 802273 },
+      { "label": "Quickdraw", "spell": 804193 },
+      { "label": "Darkflock", "spell": 520270 },
+      { "label": "Rearmament", "spell": 805738 },
+      { "label": "Slayers Mark", "spell": 804068, "glow": { "type": "buff", "buff": "Slayer's Mark", "color": [0.58, 0.35, 0.85, 1], "glowType": "Pixel" } }
+    ] },
+    { "kind": "powerBar", "powerType": 3, "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Witchblood Tonic", "spell": 802278, "glow": { "type": "buff", "buff": "Witchblood Tonic", "color": [0.58, 0.35, 0.85, 1], "glowType": "Pixel" } },
+      { "label": "Vampiric Tonic", "spell": 802276, "glow": { "type": "buff", "buff": "Vampiric Tonic", "color": [0.58, 0.35, 0.85, 1], "glowType": "Pixel" } },
+      { "label": "Witching Shroud", "spell": 805770 },
+      { "label": "Inquisitors Trap", "spell": 681445 },
+      { "label": "Death Trap", "spell": 681450 },
+      { "label": "Smoke Grenade", "spell": 805756 },
+      { "label": "Brand of the Unworthy", "spell": 501380 },
+      { "label": "Vault", "spell": 500085 }
+    ] }
+  ]
+}

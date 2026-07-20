@@ -1,0 +1,33 @@
+{
+  "slug": "sun-cleric",
+  "spec": "Valkyrie",
+  "id": "Sun Cleric Valkyrie SPEC",
+  "name": "sun-cleric-valkyrie-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "buffRow", "icons": [
+      { "label": "Vow of the Valkyr", "indicator": "Vow of the Valkyr" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Justice", "spell": 520359 },
+      { "label": "Glorious Execution", "spell": 800626 },
+      { "label": "Horusath Blast", "spell": 500154 },
+      { "label": "Champion of the Sun", "spell": 800612 },
+      { "label": "Valkyrs Calling", "spell": 520024 },
+      { "label": "Pendant of the Sun", "spell": 680630 },
+      { "label": "Glare", "spell": 805583 },
+      { "label": "Radiance", "spell": 800054 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Champion of the Sun", "label": "Champion of the Sun  %p",
+      "warnText": "Champion of the Sun", "bg": [0.1, 0.07, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Vow of the Valkyr", "spell": 807749 },
+      { "label": "Solar Invocation Resplendence", "spell": 806159 },
+      { "label": "Solar Invocation Conquest", "spell": 800764 },
+      { "label": "Solar Prayer", "spell": 806479 },
+      { "label": "New Day", "spell": 800600 }
+    ] }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "primalist",
+  "spec": "Primal",
+  "id": "Primalist Primal SPEC",
+  "name": "primalist-primal-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Totemic Smash", "spell": 800178 },
+      { "label": "Rylaks Bite", "spell": 706342, "charges": true },
+      { "label": "Primal Shred", "spell": 500940 },
+      { "label": "Wildclaw", "spell": 800140 },
+      { "label": "Primal Rush", "spell": 500696 },
+      { "label": "Frenzied Roar", "spell": 800133, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Savage Frenzy", "spell": 806549, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Bring Me Their Bones", "spell": 806552 }
+    ] },
+    { "kind": "buffRow", "secondary": true, "icons": [
+      { "label": "Boon of the Bear", "indicator": "Boon of the Bear" }
+    ] },
+    { "kind": "uptimeBar", "buff": "Frenzied Roar", "label": "Frenzied Roar  %p", "warnText": "Frenzied Roar", "bg": [0.05, 0.08, 0.03, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.55, 0.15, 1], "lo": [0.6, 0.22, 0.02, 1], "bg": [0.13, 0.05, 0.01, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Primal Convergence", "spell": 800181 },
+      { "label": "Primal Totem", "spell": 504229 },
+      { "label": "Bramblepatch", "spell": 806415 },
+      { "label": "Grove Guardian", "spell": 503721 },
+      { "label": "Rock Barrier", "spell": 503630, "charges": true, "glow": { "type": "buff", "buff": "Rock Barrier", "color": [0.36, 0.62, 0.23, 1], "glowType": "Pixel" } },
+      { "label": "Protective Roar", "spell": 802782 },
+      { "label": "Dreamslip", "spell": 805867 },
+      { "label": "Bearskin", "spell": 800094, "glow": { "type": "buff", "buff": "Bearskin", "color": [0.36, 0.62, 0.23, 1], "glowType": "Pixel" } },
+      { "label": "Wildheart", "spell": 803980 },
+      { "label": "Boulder Dash", "spell": 500692 }
+    ] }
+  ]
+}

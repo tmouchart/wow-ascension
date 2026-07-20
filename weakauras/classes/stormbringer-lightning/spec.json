@@ -1,0 +1,35 @@
+{
+  "slug": "stormbringer",
+  "spec": "Lightning",
+  "id": "Stormbringer Lightning SPEC",
+  "name": "stormbringer-lightning-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "icons": [
+      { "label": "Lord of Lightning", "spell": 801851, "buff": "Lord of Lightning",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Storm Ascendance", "spell": 681110, "glow": { "type": "buff", "buff": "Storm Ascendance", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Thunder King", "spell": 804591, "glow": { "type": "buff", "buff": "Thunder King", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Lightning Cage", "spell": 560030 },
+      { "label": "Charge", "spell": 804826, "glow": { "type": "buff", "buff": "Charge", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Arm of Thorim", "spell": 801847 },
+      { "label": "Body of Lightning", "spell": 500041 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Volt", "unit": "target", "label": "Volt  %p", "warnText": "Volt", "bg": [0.03, 0.05, 0.12, 0.85] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Stormcloak", "spell": 804833, "glow": { "type": "buff", "buff": "Stormcloak", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Fog", "spell": 806100 },
+      { "label": "Exhale", "spell": 705672 },
+      { "label": "Ride the Lightning", "spell": 800099 },
+      { "label": "Gust of Wind", "spell": 500932 },
+      { "label": "Discharge", "spell": 805288 }
+    ] },
+    { "kind": "buffRow", "secondary": true, "icons": [
+      { "label": "Call of the Wind", "indicator": "Call of the Wind", "fallbackIcon": "Interface\\Icons\\Spell_Nature_Cyclone" }
+    ] }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "sun-cleric",
+  "spec": "Piety",
+  "id": "Sun Cleric Piety SPEC",
+  "name": "sun-cleric-piety-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "icons": [
+      { "label": "Radiant Flame", "spell": 806060, "buff": "Scorch Marks",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" },
+      { "label": "Dawnsear", "spell": 500146, "buff": "Spears of Glory",
+        "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Rapture", "spell": 806477 },
+      { "label": "Sun Down", "spell": 572752 },
+      { "label": "Horusath Blast", "spell": 500154 },
+      { "label": "Solar Concord", "spell": 301266, "glow": { "type": "buff", "buff": "Solar Concord", "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Sunwell", "spell": 560123 },
+      { "label": "Sun Gate", "spell": 802161 },
+      { "label": "Glare", "spell": 805583 },
+      { "label": "Radiance", "spell": 800054 }
+    ] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Solar Invocation Resplendence", "spell": 806159 },
+      { "label": "Solar Invocation Conquest", "spell": 800764 },
+      { "label": "Solar Prayer", "spell": 806479 },
+      { "label": "New Day", "spell": 800600 }
+    ] }
+  ]
+}

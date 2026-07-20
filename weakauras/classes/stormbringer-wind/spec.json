@@ -1,0 +1,35 @@
+{
+  "slug": "stormbringer",
+  "spec": "Wind",
+  "id": "Stormbringer Wind SPEC",
+  "name": "stormbringer-wind-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Gale", "spell": 804036, "charges": true },
+      { "label": "Unshackle", "spell": 706625 },
+      { "label": "Skyfall", "spell": 804830 },
+      { "label": "Nimbus", "spell": 704212 },
+      { "label": "Lexicon of Servitude", "spell": 520087, "glow": { "type": "buff", "buff": "Lexicon of Servitude", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Storm Ascendance", "spell": 681110, "glow": { "type": "buff", "buff": "Storm Ascendance", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Thunder King", "spell": 804591, "glow": { "type": "buff", "buff": "Thunder King", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Charge", "spell": 804826, "glow": { "type": "buff", "buff": "Charge", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } }
+    ] },
+    { "kind": "chargeStacks", "spell": 804036, "count": 3, "hi": [0.55, 0.85, 1, 1], "lo": [0.08, 0.25, 0.45, 1] },
+    { "kind": "powerBar", "powerType": 0, "hi": [0.3, 0.55, 1, 1], "lo": [0.05, 0.12, 0.45, 1], "bg": [0.03, 0.05, 0.14, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Tempests Call", "spell": 560567 },
+      { "label": "Kiss of the Clouds", "spell": 500039, "glow": { "type": "buff", "buff": "Kiss of the Clouds", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Windsurf", "spell": 500042, "glow": { "type": "buff", "buff": "Windsurf", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Stormcloak", "spell": 804833, "glow": { "type": "buff", "buff": "Stormcloak", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Gale Guard", "spell": 500923, "glow": { "type": "buff", "buff": "Gale Guard", "color": [0.35, 0.68, 1, 1], "glowType": "Pixel" } },
+      { "label": "Fog", "spell": 806100 },
+      { "label": "Exhale", "spell": 705672 },
+      { "label": "Gust of Wind", "spell": 500932 }
+    ] },
+    { "kind": "buffRow", "secondary": true, "icons": [
+      { "label": "Call of the Wind", "indicator": "Call of the Wind", "fallbackIcon": "Interface\\Icons\\Spell_Nature_Cyclone" }
+    ] }
+  ]
+}

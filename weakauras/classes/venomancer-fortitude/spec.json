@@ -1,0 +1,32 @@
+{
+  "slug": "venomancer",
+  "spec": "Fortitude",
+  "id": "Venomancer Fortitude SPEC",
+  "name": "venomancer-fortitude-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "cdRow", "icons": [
+      { "label": "Expulsion", "spell": 805094, "glow": { "type": "ready", "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Venomtip Poison", "spell": 803195 },
+      { "label": "Barbed Stinger", "spell": 803196 },
+      { "label": "Molt", "spell": 805102 },
+      { "label": "Locust Swarm", "spell": 560247 },
+      { "label": "Impale", "spell": 560248 },
+      { "label": "Hive Instinct", "spell": 804968 },
+      { "label": "Pinch", "spell": 704235 }
+    ] },
+    { "kind": "uptimeBar", "buff": "Venomtip Poison", "unit": "target", "label": "Venomtip Poison  %p", "warnText": "Venomtip Poison", "bg": [0.04, 0.09, 0.04, 0.85] },
+    { "kind": "stackBar", "aura": "Exposed Flesh", "max": 15, "debuffType": "BOTH", "text": "Exposed Flesh  %p",
+      "hi": [0.95, 0.55, 0.15, 1], "lo": [0.45, 0.16, 0.02, 1], "bg": [0.12, 0.06, 0.02, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [0.98, 0.42, 0.72, 1], "lo": [0.6, 0.1, 0.38, 1], "bg": [0.14, 0.03, 0.09, 0.85] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Regrow Exoskeleton", "spell": 803197, "glow": { "type": "buff", "buff": "Regrow Exoskeleton", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Carapace Regeneration", "spell": 805931, "charges": true },
+      { "label": "Lifeblood", "spell": 804963, "glow": { "type": "buff", "buff": "Lifeblood", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Toxic Stride", "spell": 504347, "glow": { "type": "buff", "buff": "Toxic Stride", "color": [0.35, 0.78, 0.24, 1], "glowType": "Pixel" } },
+      { "label": "Burrow", "spell": 806154 },
+      { "label": "Shadras Lair", "spell": 804978 }
+    ] }
+  ]
+}

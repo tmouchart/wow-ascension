@@ -1,0 +1,30 @@
+{
+  "slug": "guardian",
+  "spec": "Gladiator",
+  "id": "Guardian Gladiator SPEC",
+  "name": "guardian-gladiator-spec",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "procRow", "icons": [
+      { "label": "Final Verdict", "spell": 500258, "execute": 20, "glowAlways": true, "glowColor": [1, 1, 1, 1], "glowType": "buttonOverlay" }
+    ] },
+    { "kind": "cdRow", "icons": [
+      { "label": "Centurion Strike", "spell": 802286 },
+      { "label": "Final Verdict", "spell": 500258 },
+      { "label": "Spear Throw", "spell": 500463 },
+      { "label": "Ram", "spell": 802284 },
+      { "label": "Shield of Denial", "spell": 704159 },
+      { "label": "Raise Shield", "spell": 500168 },
+      { "label": "Glorious Arena", "spell": 300983 },
+      { "label": "Grand Entrance", "spell": 802870 }
+    ] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.88, 0.15, 1], "lo": [0.72, 0.42, 0.0, 1], "bg": [0.12, 0.1, 0.0, 0.8] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "cdRow", "secondary": true, "icons": [
+      { "label": "Brace", "spell": 800313, "glow": { "type": "buff", "buff": "Brace", "color": [0.62, 0.7, 0.8, 1], "glowType": "Pixel" } },
+      { "label": "Counter Stance", "spell": 802188 },
+      { "label": "Knights Calling", "spell": 504151 },
+      { "label": "Press the Attack", "spell": 801219 }
+    ] }
+  ]
+}
