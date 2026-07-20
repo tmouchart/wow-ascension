@@ -7,6 +7,14 @@ buff/debuff (buff name != spell name is common), that trigger silently never fir
 (self-buff / target dummy, hover the aura or `/dump` the unit) and tick the box. **SPELL** rows are
 cooldown/charge triggers matched by name — prefer swapping to a resolved spellId (see `coa-baselines.js`).
 
+## barbarian-ancestry  (0/4 confirmed)
+
+### AURA names (4) — aura2 detection
+- [ ] `Battle Vigor`  —  uptimeBar "Enrage  %p"
+- [ ] `Fill Level`  —  cdRow / Breath of The North (glow buffMissing); stackBar (resource, max 10)
+- [ ] `Onslaught`  —  uptimeBar "Enrage  %p"
+- [ ] `Unbridled Rage`  —  uptimeBar "Enrage  %p"
+
 ## barbarian-brutality  (0/5 confirmed)
 
 ### AURA names (4) — aura2 detection
@@ -18,6 +26,59 @@ cooldown/charge triggers matched by name — prefer swapping to a resolved spell
 ### SPELL names (1) — by-name cooldown triggers (resolve to spellId)
 - [ ] `Kick`  —  cdRow / Kick (cooldown by-name)
 
+## barbarian-headhunting  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Battle Vigor`  —  uptimeBar "Enrage  %p"
+- [ ] `Onslaught`  —  uptimeBar "Enrage  %p"
+- [ ] `Unbridled Rage`  —  uptimeBar "Enrage  %p"; procRow / Berserker Axe (legacy buff proc)
+
+## bloodmage-accursed  (0/4 confirmed)
+
+### AURA names (4) — aura2 detection
+- [ ] `Accursed Form`  —  uptimeBar "Accursed Form  %p"
+- [ ] `Blood Pact`  —  cdRow(2nd) / Blood Pact (glow buff)
+- [ ] `Blood Veil`  —  cdRow(2nd) / Blood Veil (glow buff)
+- [ ] `Endure the Curse`  —  cdRow(2nd) / Endure the Curse (glow buff)
+
+## bloodmage-eternal  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Blood Pact`  —  cdRow(2nd) / Blood Pact (glow buff)
+- [ ] `Blood Veil`  —  cdRow(2nd) / Blood Veil (glow buff)
+- [ ] `Eternal Resolve`  —  cdRow(2nd) / Eternal Resolve (glow buff)
+
+## bloodmage-fleshweaver  (0/4 confirmed)
+
+### AURA names (4) — aura2 detection
+- [ ] `Blood Pact`  —  cdRow(2nd) / Blood Pact (glow buff)
+- [ ] `Blood Veil`  —  cdRow(2nd) / Blood Veil (glow buff)
+- [ ] `Pooled Vitality`  —  stackBar (resource, max 30)
+- [ ] `Vampyr's Kiss`  —  uptimeBar "Vampyrs Kiss  %p"
+
+## bloodmage-sanguine  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Blood Pact`  —  cdRow(2nd) / Blood Pact (glow buff)
+- [ ] `Blood Veil`  —  cdRow(2nd) / Blood Veil (glow buff)
+- [ ] `Malediction`  —  uptimeBar "Malediction  %p"
+- [ ] `Thirst`  —  stacks (10 boxes)
+- [ ] `Transgression`  —  uptimeBar "Transgression  %p"
+
+## chronomancer-artificer  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Paradox Cannon`  —  uptimeBar "Paradox Cannon  %p"
+
+## chronomancer-infinite  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Melt Reality`  —  uptimeBar "Melt Reality  %p"
+
+## chronomancer-time  (0/0 confirmed)
+
+_No by-name dependencies (all spellId-based)._
+
 ## cultist  (0/4 confirmed)
 
 ### AURA names (4) — aura2 detection
@@ -25,6 +86,43 @@ cooldown/charge triggers matched by name — prefer swapping to a resolved spell
 - [ ] `Doomcloak`  —  cdRow(2nd) / Doomcloak (glow buff)
 - [ ] `Embrace the Void`  —  cdRow(2nd) / Embrace the Void (glow buff)
 - [ ] `Insanity`  —  stackBar (resource, max 100)
+
+## cultist-corruption  (0/6 confirmed)
+
+### AURA names (6) — aura2 detection
+- [ ] `Abyssal Ward`  —  cdRow(2nd) / Abyssal Ward (glow buff)
+- [ ] `Ancient Curse`  —  stacks (1 boxes)
+- [ ] `Darkwither`  —  stacks (1 boxes)
+- [ ] `Embrace the Void`  —  cdRow(2nd) / Embrace the Void (glow buff)
+- [ ] `Insanity`  —  stackBar (resource, max 100)
+- [ ] `Twisted Seal`  —  cdRow(2nd) / Twisted Seal (glow buff)
+
+## cultist-dreadnought  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Abyssal Ward`  —  cdRow(2nd) / Abyssal Ward (glow buff)
+- [ ] `Embrace the Void`  —  cdRow(2nd) / Embrace the Void (glow buff)
+- [ ] `Insanity`  —  stackBar (resource, max 100)
+- [ ] `Twisted Seal`  —  cdRow(2nd) / Twisted Seal (glow buff)
+- [ ] `Void Shield`  —  cdRow(2nd) / Void Shield (glow buff)
+
+## cultist-godblade  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Abyssal Ward`  —  cdRow(2nd) / Abyssal Ward (glow buff)
+- [ ] `Embrace the Void`  —  cdRow(2nd) / Embrace the Void (glow buff)
+- [ ] `Insanity`  —  stackBar (resource, max 100)
+- [ ] `Twisted Seal`  —  cdRow(2nd) / Twisted Seal (glow buff)
+- [ ] `Voidborne`  —  uptimeBar "Voidborne  %p"
+
+## cultist-heretic  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Abyssal Ward`  —  cdRow(2nd) / Abyssal Ward (glow buff)
+- [ ] `Dark Veil`  —  cdRow(2nd) / Dark Veil (glow buff)
+- [ ] `Embrace the Void`  —  cdRow(2nd) / Embrace the Void (glow buff)
+- [ ] `Insanity`  —  stackBar (resource, max 100)
+- [ ] `Twisted Seal`  —  cdRow(2nd) / Twisted Seal (glow buff)
 
 ## felsworn  (11/11 confirmed)
 
@@ -43,6 +141,179 @@ cooldown/charge triggers matched by name — prefer swapping to a resolved spell
 - [x] `Fel Bargain`  —  cdRow(2nd) / Fel Bargain (cooldown by-name)  ✅ **confirmed in-game**
 - [x] `Fel Fireball`  —  procRow / Fel Fireball (cooldown by-name)  ✅ **confirmed in-game**
 
+## felsworn-infernal  (0/8 confirmed)
+
+### AURA names (7) — aura2 detection
+- [ ] `Annihilation`  —  cdRow / Annihilation (glow buff)
+- [ ] `Bane of Chaos`  —  stacks (1 boxes)
+- [ ] `Felfury`  —  stacks (6 boxes)
+- [ ] `Hateforged Barrier`  —  cdRow / Hateforged Barrier (glow buff)
+- [ ] `Illidan's Guile`  —  cdRow / Illidans Guile (glow buff)
+- [ ] `Inner Demon`  —  uptimeBar "Inner Demon  %p"; stacks capGlow (unless)
+- [ ] `Skull of Gul'dan`  —  cdRow / Skull of Guldan (glow buff)
+
+### SPELL names (1) — by-name cooldown triggers (resolve to spellId)
+- [ ] `Chaos Rush`  —  cdRow(2nd) / Chaos Rush (cooldown by-name)
+
+## felsworn-slayer  (0/8 confirmed)
+
+### AURA names (7) — aura2 detection
+- [ ] `Annihilation`  —  cdRow / Annihilation (glow buff)
+- [ ] `Felfury`  —  stacks (6 boxes)
+- [ ] `Hateforged Barrier`  —  cdRow / Hateforged Barrier (glow buff)
+- [ ] `Illidan's Guile`  —  cdRow / Illidans Guile (glow buff)
+- [ ] `Immolation Aura`  —  uptimeBar "Immolation Aura  %p"
+- [ ] `Inner Demon`  —  uptimeBar "Inner Demon  %p"; stacks capGlow (unless)
+- [ ] `Skull of Gul'dan`  —  cdRow / Skull of Guldan (glow buff)
+
+### SPELL names (1) — by-name cooldown triggers (resolve to spellId)
+- [ ] `Chaos Rush`  —  cdRow(2nd) / Chaos Rush (cooldown by-name)
+
+## guardian-gladiator  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Brace`  —  cdRow(2nd) / Brace (glow buff)
+
+## guardian-inspiration  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Brace`  —  cdRow(2nd) / Brace (glow buff)
+- [ ] `Hero's March`  —  uptimeBar "Heros March  %p"
+
+## guardian-vanguard  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Brace`  —  cdRow(2nd) / Brace (glow buff)
+- [ ] `Peril`  —  stacks (5 boxes)
+
+## knight-of-xoroth-defiance  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Curse of Xoroth`  —  uptimeBar "Curse of Xoroth  %p"
+- [ ] `Demonfire`  —  stacks (6 boxes)
+- [ ] `Pestilence of War`  —  uptimeBar "Pestilence of War  %p"
+
+## knight-of-xoroth-hellfire  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Demonfire`  —  stacks (6 boxes)
+- [ ] `Hellmaw`  —  uptimeBar "Hellmaw  %p"
+- [ ] `Pestilence of Apocalypse`  —  uptimeBar "Pestilence of Apocalypse  %p"
+
+## knight-of-xoroth-war  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Demonfire`  —  stacks (6 boxes)
+- [ ] `Pestilence of Death`  —  uptimeBar "Pestilence of Death  %p"
+
+## necromancer-animation  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Foul Invocation`  —  cdRow(2nd) / Foul Invocation (glow buff)
+- [ ] `Phylactery`  —  cdRow(2nd) / Phylactery (glow buff)
+
+## necromancer-death  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Flesh to Worms`  —  uptimeBar "Flesh to Worms  %p"
+- [ ] `Foul Invocation`  —  cdRow(2nd) / Foul Invocation (glow buff)
+- [ ] `Lichplague`  —  uptimeBar "Lichplague  %p"
+- [ ] `Phylactery`  —  cdRow(2nd) / Phylactery (glow buff)
+- [ ] `Plague of Undeath`  —  uptimeBar "Plague of Undeath  %p"
+
+## necromancer-rime  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Foul Invocation`  —  cdRow(2nd) / Foul Invocation (glow buff)
+- [ ] `Lich Form`  —  cdRow / Lich Form (glow buffMissing)
+- [ ] `Phylactery`  —  cdRow(2nd) / Phylactery (glow buff)
+
+## primalist-geomancy  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Bearskin`  —  cdRow(2nd) / Bearskin (glow buff)
+- [ ] `Earth's Embrace`  —  cdRow(2nd) / Earths Embrace (glow buff)
+- [ ] `Earthshaping`  —  stackBar (resource, max 10)
+- [ ] `Golem Form`  —  cdRow / Golem Form (glow buff)
+- [ ] `Rock Barrier`  —  cdRow(2nd) / Rock Barrier (glow buff)
+
+## primalist-life  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Bearskin`  —  cdRow(2nd) / Bearskin (glow buff)
+- [ ] `Primal Power`  —  procRow / Hand of the Earthmother (legacy buff proc)
+- [ ] `Rock Barrier`  —  cdRow(2nd) / Rock Barrier (glow buff)
+
+## primalist-mountain-king  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Bearskin`  —  cdRow(2nd) / Bearskin (glow buff)
+- [ ] `Boon of the Bear`  —  buffRow / Boon of the Bear (indicator)
+- [ ] `Earthen Avatar`  —  cdRow / Earthen Avatar (glow buff)
+- [ ] `Mountain Mover`  —  stacks (5 boxes)
+- [ ] `Rock Barrier`  —  cdRow(2nd) / Rock Barrier (glow buff)
+
+## primalist-primal  (0/4 confirmed)
+
+### AURA names (4) — aura2 detection
+- [ ] `Bearskin`  —  cdRow(2nd) / Bearskin (glow buff)
+- [ ] `Boon of the Bear`  —  buffRow / Boon of the Bear (indicator)
+- [ ] `Frenzied Roar`  —  uptimeBar "Frenzied Roar  %p"
+- [ ] `Rock Barrier`  —  cdRow(2nd) / Rock Barrier (glow buff)
+
+## pyromancer-draconic  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Flamecasting`  —  stacks (5 boxes)
+
+## pyromancer-flameweaving  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Flamecasting`  —  stacks (5 boxes)
+- [ ] `Roaring Pyre`  —  uptimeBar "Roaring Pyre  %p"
+
+## pyromancer-incineration  (0/4 confirmed)
+
+### AURA names (4) — aura2 detection
+- [ ] `Fired Up`  —  procRow / Pyroclasm (legacy buff proc)
+- [ ] `Flamecasting`  —  stacks (5 boxes)
+- [ ] `Ignite`  —  uptimeBar "Ignite  %p"
+- [ ] `Infernus`  —  uptimeBar "Infernus  %p"
+
+## ranger-archery  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Advantage`  —  stacks (5 boxes)
+- [ ] `Skirmish`  —  uptimeBar "Skirmish  %p"
+
+## ranger-brigand  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Advantage`  —  stacks (5 boxes)
+- [ ] `Ravage`  —  uptimeBar "Ravage  %p"
+
+## ranger-farstrider  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Advantage`  —  stacks (5 boxes)
+- [ ] `Horn of Perseverance`  —  uptimeBar "Horn  %p"
+
+## reaper-domination  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Reaped Soul`  —  stacks (5 boxes)
+
+## reaper-harvest  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Reaped Soul`  —  stacks (5 boxes)
+
+## reaper-soul  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Ghostly Weapon`  —  uptimeBar "Ghostly Weapon  %p"
+- [ ] `Reaped Soul`  —  stacks (5 boxes)
+
 ## runemaster  (0/7 confirmed)
 
 ### AURA names (7) — aura2 detection
@@ -54,11 +325,228 @@ cooldown/charge triggers matched by name — prefer swapping to a resolved spell
 - [ ] `Runic Tattoos: Frost`  —  buffRow / Tattoo (any-of)
 - [ ] `Runic Tattoos: Water`  —  buffRow / Tattoo (any-of); buffRow / Water Tattoo Reminder (indicator)
 
+## runemaster-arcane  (0/0 confirmed)
+
+_No by-name dependencies (all spellId-based)._
+
+## runemaster-riftblade  (0/0 confirmed)
+
+_No by-name dependencies (all spellId-based)._
+
+## starcaller-moon-guard  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Aspect of the Cosmos`  —  uptimeBar "Aspect of the Cosmos  %p"
+- [ ] `Scattered Stars`  —  stacks (4 boxes)
+
+## starcaller-moon-priest  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Aspect of the Cosmos`  —  uptimeBar "Aspect of the Cosmos  %p"
+- [ ] `Celestial Form`  —  procRow / Celestial Form (legacy buff proc)
+- [ ] `Scattered Stars`  —  stacks (4 boxes)
+
+## starcaller-sentinel  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Aspect of the Cosmos`  —  uptimeBar "Aspect of the Cosmos  %p"
+- [ ] `Scattered Stars`  —  stacks (4 boxes)
+
+## starcaller-warden  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Aspect of the Cosmos`  —  uptimeBar "Aspect of the Cosmos  %p"
+- [ ] `Scattered Stars`  —  stacks (4 boxes)
+
+## stormbringer-lightning  (0/7 confirmed)
+
+### AURA names (7) — aura2 detection
+- [ ] `Call of the Wind`  —  buffRow / Call of the Wind (indicator)
+- [ ] `Charge`  —  cdRow / Charge (glow buff)
+- [ ] `Lord of Lightning`  —  procRow / Lord of Lightning (legacy buff proc)
+- [ ] `Storm Ascendance`  —  cdRow / Storm Ascendance (glow buff)
+- [ ] `Stormcloak`  —  cdRow(2nd) / Stormcloak (glow buff)
+- [ ] `Thunder King`  —  cdRow / Thunder King (glow buff)
+- [ ] `Volt`  —  uptimeBar "Volt  %p"
+
+## stormbringer-maelstrom  (0/8 confirmed)
+
+### AURA names (8) — aura2 detection
+- [ ] `Call of the Wind`  —  buffRow / Call of the Wind (indicator)
+- [ ] `Charge`  —  cdRow / Charge (glow buff)
+- [ ] `Drown`  —  uptimeBar "Drown  %p"
+- [ ] `Storm Ascendance`  —  cdRow / Storm Ascendance (glow buff)
+- [ ] `Stormcloak`  —  cdRow(2nd) / Stormcloak (glow buff)
+- [ ] `Stormcloud`  —  uptimeBar "Stormcloud  %p"
+- [ ] `Thunder King`  —  cdRow / Thunder King (glow buff)
+- [ ] `Thunder Ward`  —  cdRow(2nd) / Thunder Ward (glow buff)
+
+## stormbringer-wind  (0/9 confirmed)
+
+### AURA names (9) — aura2 detection
+- [ ] `Call of the Wind`  —  buffRow / Call of the Wind (indicator)
+- [ ] `Charge`  —  cdRow / Charge (glow buff)
+- [ ] `Gale Guard`  —  cdRow(2nd) / Gale Guard (glow buff)
+- [ ] `Kiss of the Clouds`  —  cdRow(2nd) / Kiss of the Clouds (glow buff)
+- [ ] `Lexicon of Servitude`  —  cdRow / Lexicon of Servitude (glow buff)
+- [ ] `Storm Ascendance`  —  cdRow / Storm Ascendance (glow buff)
+- [ ] `Stormcloak`  —  cdRow(2nd) / Stormcloak (glow buff)
+- [ ] `Thunder King`  —  cdRow / Thunder King (glow buff)
+- [ ] `Windsurf`  —  cdRow(2nd) / Windsurf (glow buff)
+
+## sun-cleric-blessings  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Holy Form`  —  buffRow / Holy Form (indicator)
+
+## sun-cleric-piety  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Scorch Marks`  —  procRow / Radiant Flame (legacy buff proc)
+- [ ] `Solar Concord`  —  cdRow / Solar Concord (glow buff)
+- [ ] `Spears of Glory`  —  procRow / Dawnsear (legacy buff proc)
+
+## sun-cleric-seraphim  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Hammer of Kings`  —  uptimeBar "Hammer of Kings  %p"
+- [ ] `Justicar's Wrath`  —  uptimeBar "Justicars Wrath  %p"
+
+## sun-cleric-valkyrie  (0/2 confirmed)
+
+### AURA names (2) — aura2 detection
+- [ ] `Champion of the Sun`  —  uptimeBar "Champion of the Sun  %p"
+- [ ] `Vow of the Valkyr`  —  buffRow / Vow of the Valkyr (indicator)
+
+## templar-crusader  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Blade of Faith`  —  uptimeBar "Blade of Faith  %p"
+- [ ] `Libram of Fervor`  —  cdRow / Libram of Fervor (glow buff)
+- [ ] `Libram of Tenacity`  —  cdRow(2nd) / Libram of Tenacity (glow buff)
+- [ ] `Testament of Fortitude`  —  cdRow(2nd) / Testament of Fortitude (glow buff)
+- [ ] `Testament of Hope`  —  cdRow(2nd) / Testament of Hope (glow buff)
+
+## templar-oathkeeper  (0/6 confirmed)
+
+### AURA names (6) — aura2 detection
+- [ ] `Barrier of Light`  —  cdRow(2nd) / Barrier of Light (glow buff)
+- [ ] `Blade of Faith`  —  uptimeBar "Blade of Faith  %p"
+- [ ] `Libram of Fervor`  —  cdRow / Libram of Fervor (glow buff)
+- [ ] `Libram of Tenacity`  —  cdRow(2nd) / Libram of Tenacity (glow buff)
+- [ ] `Testament of Fortitude`  —  cdRow(2nd) / Testament of Fortitude (glow buff)
+- [ ] `Testament of Hope`  —  cdRow(2nd) / Testament of Hope (glow buff)
+
+## templar-zealot  (0/6 confirmed)
+
+### AURA names (6) — aura2 detection
+- [ ] `Blade of Faith`  —  uptimeBar "Blade of Faith  %p"
+- [ ] `Libram of Fervor`  —  cdRow / Libram of Fervor (glow buff)
+- [ ] `Libram of Tenacity`  —  cdRow(2nd) / Libram of Tenacity (glow buff)
+- [ ] `Libram of Zeal`  —  cdRow / Libram of Zeal (glow buff)
+- [ ] `Testament of Fortitude`  —  cdRow(2nd) / Testament of Fortitude (glow buff)
+- [ ] `Testament of Hope`  —  cdRow(2nd) / Testament of Hope (glow buff)
+
 ## tinker  (0/1 confirmed)
 
 ### AURA names (1) — aura2 detection
 - [ ] `Kinetic Shield`  —  cdRow(2nd) / Kinetic Shield (glow buff)
 
+## tinker-invention  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Kinetic Shield`  —  cdRow(2nd) / Kinetic Shield (glow buff)
+
+## tinker-mechanics  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Kinetic Shield`  —  cdRow(2nd) / Kinetic Shield (glow buff)
+
+## venomancer-fortitude  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Exposed Flesh`  —  stackBar (resource, max 15)
+- [ ] `Lifeblood`  —  cdRow(2nd) / Lifeblood (glow buff)
+- [ ] `Regrow Exoskeleton`  —  cdRow(2nd) / Regrow Exoskeleton (glow buff)
+- [ ] `Toxic Stride`  —  cdRow(2nd) / Toxic Stride (glow buff)
+- [ ] `Venomtip Poison`  —  uptimeBar "Venomtip Poison  %p"
+
+## venomancer-stalking  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Lifeblood`  —  cdRow(2nd) / Lifeblood (glow buff)
+- [ ] `Nerubian Sting`  —  stacks (3 boxes)
+- [ ] `Toxic Stride`  —  cdRow(2nd) / Toxic Stride (glow buff)
+- [ ] `Widow's Kiss`  —  procRow / Widows Kiss (legacy buff proc)
+- [ ] `Withering Venom`  —  uptimeBar "Withering Venom  %p"
+
+## venomancer-venom  (0/6 confirmed)
+
+### AURA names (6) — aura2 detection
+- [ ] `Fungal Growth`  —  stacks (10 boxes)
+- [ ] `Lifeblood`  —  cdRow(2nd) / Lifeblood (glow buff)
+- [ ] `Serpent Lord's Ring`  —  procRow / Mycosis Free (legacy buff proc)
+- [ ] `Spore`  —  uptimeBar "Spore  %p"
+- [ ] `Toxic Stride`  —  cdRow(2nd) / Toxic Stride (glow buff)
+- [ ] `Wilt`  —  uptimeBar "Wilt  %p"
+
+## venomancer-vizier  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Lifeblood`  —  cdRow(2nd) / Lifeblood (glow buff)
+- [ ] `Mycelial Healing`  —  stacks (8 boxes)
+- [ ] `Serpent Lord's Amulet`  —  cdRow / Serpent Lords Amulet (glow buff)
+- [ ] `Shadra's Aid`  —  cdRow(2nd) / Shadras Aid (glow buff)
+- [ ] `Toxic Stride`  —  cdRow(2nd) / Toxic Stride (glow buff)
+
+## witch-doctor-brewing  (0/0 confirmed)
+
+_No by-name dependencies (all spellId-based)._
+
+## witch-doctor-shadowhunting  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Eye of Kimbul`  —  uptimeBar "Eye of Kimbul  %p"
+
+## witch-doctor-voodoo  (0/1 confirmed)
+
+### AURA names (1) — aura2 detection
+- [ ] `Hex of Malice`  —  uptimeBar "Hex of Malice  %p"
+
+## witch-hunter-black-knight  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Gaze of the Black Knight`  —  cdRow / Gaze of the Black Knight (glow buff)
+- [ ] `March of the Black King`  —  uptimeBar "March  %p"
+- [ ] `Slayer's Mark`  —  cdRow / Slayers Mark (glow buff)
+- [ ] `Vampiric Tonic`  —  cdRow(2nd) / Vampiric Tonic (glow buff)
+- [ ] `Witchblood Tonic`  —  cdRow(2nd) / Witchblood Tonic (glow buff)
+
+## witch-hunter-boltslinger  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Bounty Hunter`  —  procRow / Heartseeking Bolt Proc (legacy buff proc)
+- [ ] `Slayer's Mark`  —  cdRow / Slayers Mark (glow buff)
+- [ ] `Tormentor`  —  uptimeBar "Tormentor  %p"
+- [ ] `Vampiric Tonic`  —  cdRow(2nd) / Vampiric Tonic (glow buff)
+- [ ] `Witchblood Tonic`  —  cdRow(2nd) / Witchblood Tonic (glow buff)
+
+## witch-hunter-houndmaster  (0/3 confirmed)
+
+### AURA names (3) — aura2 detection
+- [ ] `Slayer's Mark`  —  cdRow / Slayers Mark (glow buff)
+- [ ] `Vampiric Tonic`  —  cdRow(2nd) / Vampiric Tonic (glow buff)
+- [ ] `Witchblood Tonic`  —  cdRow(2nd) / Witchblood Tonic (glow buff)
+
+## witch-hunter-inquisition  (0/5 confirmed)
+
+### AURA names (5) — aura2 detection
+- [ ] `Flames of Sin`  —  uptimeBar "Flames of Sin  %p"
+- [ ] `Pyro Tonic`  —  cdRow / Pyro Tonic (glow buff)
+- [ ] `Slayer's Mark`  —  cdRow(2nd) / Slayers Mark (glow buff)
+- [ ] `Vampiric Tonic`  —  cdRow(2nd) / Vampiric Tonic (glow buff)
+- [ ] `Witchblood Tonic`  —  cdRow(2nd) / Witchblood Tonic (glow buff)
+
 ---
-Totals: **11/28 confirmed** — 23 aura names, 5 by-name spells across 5 packages.
+Totals: **11/248 confirmed** — 241 aura names, 7 by-name spells across 71 packages.
 Confirmations are recorded in `tools/aura-confirmations.json` (add a name there once verified in-game).

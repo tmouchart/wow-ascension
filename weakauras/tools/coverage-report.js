@@ -22,10 +22,16 @@ for (const d of fs.readdirSync(CLASSES_DIR)) {
   if (!fs.existsSync(p)) continue;
   const spec = JSON.parse(fs.readFileSync(p, 'utf8'));
   const slug = spec.slug || d;
-  // the spec's human name is embedded in `id` (e.g. "Felsworn Tyrant SPEC"); match it against the class's specs
+  // `spec` names the spec outright; fall back to matching the class's specs against `id` for a preset that
+  // predates that field. The fallback CANNOT be trusted alone: it is a substring test, so "Primalist Geomancy
+  // SPEC" contains "Primal" and every primalist preset used to collapse onto that one spec (same for
+  // "Venomancer Stalking SPEC" containing "Venom"). Longest-first so the specific name wins over a prefix.
   const entry = INDEX.find(c => c.slug === slug);
   let specName = null;
-  if (entry) specName = entry.specs.find(s => (spec.id || '').includes(s)) || null;
+  if (entry) {
+    specName = entry.specs.includes(spec.spec) ? spec.spec
+      : [...entry.specs].sort((a, b) => b.length - a.length).find(s => (spec.id || '').includes(s)) || null;
+  }
   (wired[slug] ||= []).push(specName || spec.id || d);
 }
 

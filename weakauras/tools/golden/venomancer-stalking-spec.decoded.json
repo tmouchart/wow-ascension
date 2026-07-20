@@ -1,0 +1,5345 @@
+{
+  "d": {
+    "yOffset": 0,
+    "version": 130,
+    "information": {
+      "forceEvents": true
+    },
+    "anchorFrameType": "SCREEN",
+    "animation": {
+      "main": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      },
+      "start": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      },
+      "finish": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      }
+    },
+    "controlledChildren": [
+      "Venomancer Stalking SPEC Procs",
+      "Venomancer Stalking SPEC CDs",
+      "Venomancer Stalking SPEC Withering Venom",
+      "Venomancer Stalking SPEC Stack 1",
+      "Venomancer Stalking SPEC Stack 2",
+      "Venomancer Stalking SPEC Stack 3",
+      "Venomancer Stalking SPEC Power",
+      "Venomancer Stalking SPEC Health",
+      "Venomancer Stalking SPEC CDs (Secondary)"
+    ],
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderInset": 1,
+    "subRegions": [],
+    "actions": {
+      "start": {
+        "do_message": false,
+        "do_custom": false
+      },
+      "init": {
+        "do_custom": false
+      },
+      "finish": {
+        "do_message": false,
+        "do_custom": false
+      }
+    },
+    "config": [],
+    "borderSize": 2,
+    "groupIcon": "interface/icons/classicon_shaman.blp",
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "internalVersion": 85,
+    "border": false,
+    "sharedFrameLevel": true,
+    "alpha": 1,
+    "borderOffset": 4,
+    "xOffset": 0,
+    "uid": "VaiUlMp8iZi",
+    "frameStrata": 2,
+    "anchorPoint": "CENTER",
+    "tocversion": 110200,
+    "conditions": [],
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderEdge": "Square Full White",
+    "authorOptions": [],
+    "load": {
+      "talent": {
+        "multi": []
+      },
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      }
+    },
+    "anchorFrameParent": false,
+    "triggers": [
+      {
+        "untrigger": [],
+        "trigger": {
+          "spellIds": [],
+          "type": "aura2",
+          "unit": "player",
+          "event": "Health",
+          "debuffType": "HELPFUL",
+          "subeventSuffix": "_CAST_START",
+          "subeventPrefix": "SPELL",
+          "names": []
+        }
+      }
+    ],
+    "id": "Venomancer Stalking SPEC",
+    "regionType": "group",
+    "selfPoint": "CENTER",
+    "scale": 1,
+    "desc": "Made by Sheikz - inspired by Luxthos weakaura style"
+  },
+  "c": [
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Venomancer Stalking SPEC",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 7\n    local w, h = 30, 30\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Venomancer Stalking SPEC Proc - Widows Kiss"
+      ],
+      "borderInset": 1,
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": 61,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Venomancer Stalking SPEC Procs",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "tPA4IKfD3fd",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC Procs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 30,
+      "config": [],
+      "adjustedMin": "",
+      "width": 30,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "lXIqGGhwpec",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 807600,
+              "realSpellName": 807600,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Widow's Kiss"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "buffed",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            },
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 807600,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 0,
+      "id": "Venomancer Stalking SPEC Proc - Widows Kiss",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Venomancer Stalking SPEC",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 8\n    local w, h = 26, 26\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Venomancer Stalking SPEC - Nerubian Sting",
+        "Venomancer Stalking SPEC - Withering Venom",
+        "Venomancer Stalking SPEC - Widowmaker",
+        "Venomancer Stalking SPEC - Rotfang",
+        "Venomancer Stalking SPEC - Facemelter",
+        "Venomancer Stalking SPEC - Noxious Empowerment",
+        "Venomancer Stalking SPEC - Contagion",
+        "Venomancer Stalking SPEC - Hive Instinct"
+      ],
+      "borderInset": 1,
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": 30,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Venomancer Stalking SPEC CDs",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "6RTmnAarvwt",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "xDw2RvHRkQo",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 800882,
+              "realSpellName": 800882,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 800882,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Nerubian Sting",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "J6Qp0Fu2GVb",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 706962,
+              "realSpellName": 706962,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 706962,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Withering Venom",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "G6JRD3k4Bmg",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804961,
+              "realSpellName": 804961,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 804961,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Widowmaker",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "wzIgkF1tsJt",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804977,
+              "realSpellName": 804977,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 804977,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Rotfang",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "zg50TTCH8Ow",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 800871,
+              "realSpellName": 800871,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 800871,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Facemelter",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "fOC6enna4pb",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804964,
+              "realSpellName": 804964,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 0
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 804964,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Noxious Empowerment",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "fSXeNFag7tj",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 503851,
+              "realSpellName": 503851,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 503851,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Contagion",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "66AaX6WNteo",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804968,
+              "realSpellName": 804968,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 804968,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Hive Instinct",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0.3,
+        0.75,
+        0.15,
+        1
+      ],
+      "barColor2": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "variable": "expirationTime",
+            "value": "8"
+          },
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                1,
+                0.8,
+                0.1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "variable": "expirationTime",
+            "value": "4"
+          },
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                1,
+                0.35,
+                0.05,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "buffed",
+            "value": 0
+          },
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                0.7,
+                0.05,
+                0.05,
+                1
+              ]
+            },
+            {
+              "property": "backgroundColor",
+              "value": [
+                0.2,
+                0.02,
+                0.02,
+                0.9
+              ]
+            },
+            {
+              "property": "sub.4.text_visible",
+              "value": false
+            },
+            {
+              "property": "sub.5.text_visible",
+              "value": true
+            },
+            {
+              "property": "sub.6.glow",
+              "value": true
+            },
+            {
+              "property": "sub.6.glowType",
+              "value": "Pixel"
+            },
+            {
+              "property": "sub.6.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.6.glowColor",
+              "value": [
+                1,
+                0.15,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "target",
+              "debuffType": "HARMFUL",
+              "useName": true,
+              "auranames": [
+                "Withering Venom"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": 7,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 2,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "Withering Venom  %p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subtext",
+          "text_text": "Withering Venom",
+          "text_visible": false,
+          "text_color": [
+            1,
+            0.35,
+            0.3,
+            1
+          ],
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "anchor_point": "INNER_CENTER",
+          "text_selfPoint": "AUTO",
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 1,
+          "text_shadowYOffset": -1,
+          "text_justify": "CENTER",
+          "rotateText": "NONE",
+          "text_wordWrap": "WordWrap",
+          "text_automaticWidth": "Auto",
+          "text_fixedWidth": 64
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Venomancer Stalking SPEC Withering Venom",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Venomancer Stalking SPEC",
+      "backgroundColor": [
+        0.04,
+        0.09,
+        0.04,
+        0.85
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "NjzDMAPyKri",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 80.66666666666667,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "1"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.55,
+                0.35,
+                0.85,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.16,
+                0.06,
+                0.32,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "target",
+              "debuffType": "HARMFUL",
+              "useName": true,
+              "auranames": [
+                "Nerubian Sting"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": -84.66666666666667,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Venomancer Stalking SPEC Stack 1",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Venomancer Stalking SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "wDx5MjMs2Lo",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 80.66666666666667,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "2"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.55,
+                0.35,
+                0.85,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.16,
+                0.06,
+                0.32,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "target",
+              "debuffType": "HARMFUL",
+              "useName": true,
+              "auranames": [
+                "Nerubian Sting"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Venomancer Stalking SPEC Stack 2",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Venomancer Stalking SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "cqCUusYzSFo",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 80.66666666666667,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.55,
+                0.35,
+                0.85,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.16,
+                0.06,
+                0.32,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "target",
+              "debuffType": "HARMFUL",
+              "useName": true,
+              "auranames": [
+                "Nerubian Sting"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": 84.66666666666667,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Venomancer Stalking SPEC Stack 3",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Venomancer Stalking SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "RcHJcBbHIzo",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        1,
+        0.88,
+        0.15,
+        1
+      ],
+      "barColor2": [
+        0.72,
+        0.42,
+        0,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "use_unit": true,
+              "duration": "1",
+              "use_powertype": true,
+              "use_absorbMode": true,
+              "unevent": "auto",
+              "powertype": 3,
+              "unit": "player",
+              "type": "unit",
+              "event": "Power",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -25,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "%p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Venomancer Stalking SPEC Power",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Venomancer Stalking SPEC",
+      "backgroundColor": [
+        0.12,
+        0.1,
+        0,
+        0.8
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": true,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "SWEUxwQKGvn",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0.9,
+        0.16,
+        0.12,
+        1
+      ],
+      "barColor2": [
+        0.33,
+        0.02,
+        0.02,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "use_unit": true,
+              "use_absorbMode": true,
+              "unevent": "auto",
+              "unit": "player",
+              "type": "unit",
+              "event": "Health",
+              "use_healthpct": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -42,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "%p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Venomancer Stalking SPEC Health",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Venomancer Stalking SPEC",
+      "backgroundColor": [
+        0.12,
+        0.03,
+        0.03,
+        0.85
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": true,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "tMnfpRMJLJy",
+      "version": 130
+    },
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Venomancer Stalking SPEC",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 9\n    local w, h = 24, 24\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Venomancer Stalking SPEC - Lifeblood",
+        "Venomancer Stalking SPEC - Toxic Stride",
+        "Venomancer Stalking SPEC - Burrow",
+        "Venomancer Stalking SPEC - Shadras Lair",
+        "Venomancer Stalking SPEC - Pinch"
+      ],
+      "borderInset": 1,
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": -64,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Venomancer Stalking SPEC CDs (Secondary)",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "tFJOaBxkVlo",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": 2,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "W3cPgcWhbYb",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Lifeblood"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804963,
+              "realSpellName": 804963,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "show",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": false
+            },
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "Pixel"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                0.35,
+                0.78,
+                0.24,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 804963,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Lifeblood",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": 2,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "ZezMFPkLY2u",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Toxic Stride"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showOnActive",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 504347,
+              "realSpellName": 504347,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "show",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": false
+            },
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "Pixel"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                0.35,
+                0.78,
+                0.24,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 504347,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Toxic Stride",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "1QO2AM2vfdk",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 806154,
+              "realSpellName": 806154,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 806154,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Burrow",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "gr3ihNseuFm",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 804978,
+              "realSpellName": 804978,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 804978,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Shadras Lair",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Venomancer Stalking SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "haCTrcxa6jk",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 704235,
+              "realSpellName": 704235,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 704235,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Venomancer Stalking SPEC - Pinch",
+      "anchorFrameType": "SCREEN"
+    }
+  ],
+  "m": "d",
+  "s": "5.20.2",
+  "v": 2000
+}

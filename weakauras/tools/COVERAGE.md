@@ -7,31 +7,29 @@ unknown — a powerBar would be a guess; confirm in-game before adding one, or t
 
 | Class | Specs (✅ = packaged) | Abilities | Resource | res index |
 |---|---|---|---|---|
-| Barbarian | ✅ Brutality, Headhunting, Ancestry | 143 | Rage | **3** ✅ |
-| Bloodmage | Sanguine, Accursed, Eternal, Fleshweaver | 176 | Rage | — *infer* |
-| Chronomancer | Infinite, Time, Artificer | 146 | Mana | — *infer* |
-| Cultist | Godblade, Corruption, Dreadnought, Heretic | 180 | Mana (+Insanity) | — *infer* |
-| Felsworn | Slayer, Infernal, ✅ Tyrant | 144 | Energy (+Felfury) | **3** ✅ |
-| Guardian | Vanguard, Inspiration, Gladiator | 143 | Energy | — *infer* |
-| Knight of Xoroth | War, Hellfire, Defiance | 138 | Rage | — *infer* |
-| Necromancer | Death, Rime, Animation | 148 | Runic Power | — *infer* |
-| Primalist | Primal, Geomancy, Life, Mountain King | 179 | Rage | — *infer* |
-| Pyromancer | Incineration, Flameweaving, Draconic | 144 | Mana (+Heat) | — *infer* |
-| Ranger | Archery, Brigand, Farstrider | 149 | Focus (+Advantage) | — *infer* |
-| Reaper | Harvest, Soul, Domination | 137 | Runic Power | — *infer* |
-| Runemaster | Arcane, ✅ Runic, Riftblade | 144 | Mana (+Runeblade) | **0** ✅ |
-| Starcaller | Moon Guard, Sentinel, Moon Priest, Warden | 175 | Mana (+Scattered) | — *infer* |
-| Stormbringer | Lightning, Wind, Maelstrom | 141 | Mana (+Static) | — *infer* |
-| Sun Cleric | Piety, Blessings, Valkyrie, Seraphim | 178 | Mana | — *infer* |
-| Templar | Zealot, Oathkeeper, Crusader | 145 | Energy | — *infer* |
-| Tinker | ✅ Demolition, Invention, Mechanics | 147 | Mana | — *infer* |
-| Venomancer | Venom, Stalking, Fortitude, Vizier | 182 | Mana | — *infer* |
-| Witch Doctor | Voodoo, Brewing, Shadowhunting | 139 | Mana | — *infer* |
-| Witch Hunter | Boltslinger, Houndmaster, Black Knight, Inquisition | 174 | Rage | — *infer* |
+| Barbarian | ✅ Brutality, ✅ Headhunting, ✅ Ancestry | 143 | Rage | **3** ✅ |
+| Bloodmage | ✅ Sanguine, ✅ Accursed, ✅ Eternal, ✅ Fleshweaver | 176 | Rage | — *infer* |
+| Chronomancer | ✅ Infinite, ✅ Time, ✅ Artificer | 146 | Mana | — *infer* |
+| Cultist | ✅ Godblade, ✅ Corruption, ✅ Dreadnought, ✅ Heretic | 180 | Mana (+Insanity) | — *infer* |
+| Felsworn | ✅ Slayer, ✅ Infernal, ✅ Tyrant | 144 | Energy (+Felfury) | **3** ✅ |
+| Guardian | ✅ Vanguard, ✅ Inspiration, ✅ Gladiator | 143 | Energy | — *infer* |
+| Knight of Xoroth | ✅ War, ✅ Hellfire, ✅ Defiance | 138 | Rage | — *infer* |
+| Necromancer | ✅ Death, ✅ Rime, ✅ Animation | 148 | Runic Power | — *infer* |
+| Primalist | ✅ Primal, ✅ Geomancy, ✅ Life, ✅ Mountain King | 179 | Rage | — *infer* |
+| Pyromancer | ✅ Incineration, ✅ Flameweaving, ✅ Draconic | 144 | Mana (+Heat) | — *infer* |
+| Ranger | ✅ Archery, ✅ Brigand, ✅ Farstrider | 149 | Focus (+Advantage) | — *infer* |
+| Reaper | ✅ Harvest, ✅ Soul, ✅ Domination | 137 | Runic Power | — *infer* |
+| Runemaster | ✅ Arcane, ✅ Runic, ✅ Riftblade | 144 | Mana (+Runeblade) | **0** ✅ |
+| Starcaller | ✅ Moon Guard, ✅ Sentinel, ✅ Moon Priest, ✅ Warden | 175 | Mana (+Scattered) | — *infer* |
+| Stormbringer | ✅ Lightning, ✅ Wind, ✅ Maelstrom | 141 | Mana (+Static) | — *infer* |
+| Sun Cleric | ✅ Piety, ✅ Blessings, ✅ Valkyrie, ✅ Seraphim | 178 | Mana | — *infer* |
+| Templar | ✅ Zealot, ✅ Oathkeeper, ✅ Crusader | 145 | Energy | — *infer* |
+| Tinker | ✅ Demolition, ✅ Invention, ✅ Mechanics | 147 | Mana | — *infer* |
+| Venomancer | ✅ Venom, ✅ Stalking, ✅ Fortitude, ✅ Vizier | 182 | Mana | — *infer* |
+| Witch Doctor | ✅ Voodoo, ✅ Brewing, ✅ Shadowhunting | 139 | Mana | — *infer* |
+| Witch Hunter | ✅ Boltslinger, ✅ Houndmaster, ✅ Black Knight, ✅ Inquisition | 174 | Rage | — *infer* |
 
-**4 / 70 named class-specs packaged** (21 classes, 5 touched).
-
-> ⚠ Packaged but spec-unlabeled (id names no known spec — pick a spec name in its `spec.json` `id`, but note that changing the id shifts uids so re-imports create a new set): **Cultist**.
+**70 / 70 named class-specs packaged** (21 classes, 21 touched).
 
 ## Next-up queue
 
@@ -39,26 +37,6 @@ Fastest wins first: **remaining specs of classes already wired** (resource model
 brand-new classes. Ordered by that heuristic:
 
 ### More specs of already-wired classes
-- **Barbarian** — Headhunting, Ancestry  _(res ✅)_
-- **Cultist** — Godblade, Corruption, Dreadnought, Heretic  _(res needs confirm)_
-- **Felsworn** — Slayer, Infernal  _(res ✅)_
-- **Runemaster** — Arcane, Riftblade  _(res ✅)_
-- **Tinker** — Invention, Mechanics  _(res needs confirm)_
+- _(none — every wired class has only the one spec done)_
 
 ### New classes (0 packages yet)
-- **Bloodmage** — Sanguine, Accursed, Eternal, Fleshweaver  _(res needs confirm)_
-- **Chronomancer** — Infinite, Time, Artificer  _(res needs confirm)_
-- **Guardian** — Vanguard, Inspiration, Gladiator  _(res needs confirm)_
-- **Knight of Xoroth** — War, Hellfire, Defiance  _(res needs confirm)_
-- **Necromancer** — Death, Rime, Animation  _(res needs confirm)_
-- **Primalist** — Primal, Geomancy, Life, Mountain King  _(res needs confirm)_
-- **Pyromancer** — Incineration, Flameweaving, Draconic  _(res needs confirm)_
-- **Ranger** — Archery, Brigand, Farstrider  _(res needs confirm)_
-- **Reaper** — Harvest, Soul, Domination  _(res needs confirm)_
-- **Starcaller** — Moon Guard, Sentinel, Moon Priest, Warden  _(res needs confirm)_
-- **Stormbringer** — Lightning, Wind, Maelstrom  _(res needs confirm)_
-- **Sun Cleric** — Piety, Blessings, Valkyrie, Seraphim  _(res needs confirm)_
-- **Templar** — Zealot, Oathkeeper, Crusader  _(res needs confirm)_
-- **Venomancer** — Venom, Stalking, Fortitude, Vizier  _(res needs confirm)_
-- **Witch Doctor** — Voodoo, Brewing, Shadowhunting  _(res needs confirm)_
-- **Witch Hunter** — Boltslinger, Houndmaster, Black Knight, Inquisition  _(res needs confirm)_

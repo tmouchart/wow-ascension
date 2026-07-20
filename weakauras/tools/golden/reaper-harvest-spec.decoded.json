@@ -1,0 +1,4161 @@
+{
+  "d": {
+    "yOffset": 0,
+    "version": 130,
+    "information": {
+      "forceEvents": true
+    },
+    "anchorFrameType": "SCREEN",
+    "animation": {
+      "main": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      },
+      "start": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      },
+      "finish": {
+        "type": "none",
+        "duration_type": "seconds",
+        "easeType": "none",
+        "easeStrength": 3
+      }
+    },
+    "controlledChildren": [
+      "Reaper Harvest SPEC Procs",
+      "Reaper Harvest SPEC CDs",
+      "Reaper Harvest SPEC Stack 1",
+      "Reaper Harvest SPEC Stack 2",
+      "Reaper Harvest SPEC Stack 3",
+      "Reaper Harvest SPEC Stack 4",
+      "Reaper Harvest SPEC Stack 5",
+      "Reaper Harvest SPEC Health",
+      "Reaper Harvest SPEC CDs (Secondary)"
+    ],
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderInset": 1,
+    "subRegions": [],
+    "actions": {
+      "start": {
+        "do_message": false,
+        "do_custom": false
+      },
+      "init": {
+        "do_custom": false
+      },
+      "finish": {
+        "do_message": false,
+        "do_custom": false
+      }
+    },
+    "config": [],
+    "borderSize": 2,
+    "groupIcon": "interface/icons/classicon_shaman.blp",
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "internalVersion": 85,
+    "border": false,
+    "sharedFrameLevel": true,
+    "alpha": 1,
+    "borderOffset": 4,
+    "xOffset": 0,
+    "uid": "v4bTfibt3rf",
+    "frameStrata": 2,
+    "anchorPoint": "CENTER",
+    "tocversion": 110200,
+    "conditions": [],
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderEdge": "Square Full White",
+    "authorOptions": [],
+    "load": {
+      "talent": {
+        "multi": []
+      },
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      }
+    },
+    "anchorFrameParent": false,
+    "triggers": [
+      {
+        "untrigger": [],
+        "trigger": {
+          "spellIds": [],
+          "type": "aura2",
+          "unit": "player",
+          "event": "Health",
+          "debuffType": "HELPFUL",
+          "subeventSuffix": "_CAST_START",
+          "subeventPrefix": "SPELL",
+          "names": []
+        }
+      }
+    ],
+    "id": "Reaper Harvest SPEC",
+    "regionType": "group",
+    "selfPoint": "CENTER",
+    "scale": 1,
+    "desc": "Made by Sheikz - inspired by Luxthos weakaura style"
+  },
+  "c": [
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Reaper Harvest SPEC",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 7\n    local w, h = 30, 30\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Reaper Harvest SPEC Proc - Slaughter"
+      ],
+      "borderInset": 1,
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": 44,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Reaper Harvest SPEC Procs",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "LjWBic4VMwc",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC Procs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": 2,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 30,
+      "config": [],
+      "adjustedMin": "",
+      "width": 30,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "Ad1nOLrfrQq",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "UNIT_HEALTH, UNIT_MAXHEALTH, PLAYER_TARGET_CHANGED, PLAYER_ENTERING_WORLD",
+              "custom": "function(allstates, event, ...)\n    local show = false\n    if UnitExists(\"target\") and UnitHealthMax(\"target\") > 0 then\n        show = (UnitHealth(\"target\") / UnitHealthMax(\"target\")) < 0.35\n    end\n    allstates[\"\"] = { show = show, changed = true }\n    return true\nend",
+              "unit": "target",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 500373,
+              "realSpellName": 500373,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "all",
+        "activeTriggerMode": 2
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "onCooldown",
+            "value": 0
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 500373,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC Proc - Slaughter",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Reaper Harvest SPEC",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 8\n    local w, h = 26, 26\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Reaper Harvest SPEC - Harvest Time",
+        "Reaper Harvest SPEC - Harvesting Grounds",
+        "Reaper Harvest SPEC - Crows Harvest",
+        "Reaper Harvest SPEC - Ghastly Screech",
+        "Reaper Harvest SPEC - Masochistic Rage"
+      ],
+      "borderInset": 1,
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": 13,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Reaper Harvest SPEC CDs",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "xAdlVrDUmbw",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "4CUPZ8dI6sr",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 803995,
+              "realSpellName": 803995,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 0
+          },
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.3.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.3.glowColor",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 803995,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Harvest Time",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "cnRyh8NOl7h",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 705413,
+              "realSpellName": 705413,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 705413,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Harvesting Grounds",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "t6GiFOm3VVg",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 504011,
+              "realSpellName": 504011,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 504011,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Crows Harvest",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "RdS6nOFdYws",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 806146,
+              "realSpellName": 806146,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 806146,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Ghastly Screech",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 26,
+      "config": [],
+      "adjustedMin": "",
+      "width": 26,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "EA7jVoLXfBj",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 803030,
+              "realSpellName": 803030,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 803030,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Masochistic Rage",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 46.8,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "1"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.45,
+                0.88,
+                0.72,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.08,
+                0.3,
+                0.26,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Reaped Soul"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": -101.6,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Reaper Harvest SPEC Stack 1",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Reaper Harvest SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "EoxA6K8uvoq",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 46.8,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "2"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.45,
+                0.88,
+                0.72,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.08,
+                0.3,
+                0.26,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Reaped Soul"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": -50.8,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Reaper Harvest SPEC Stack 2",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Reaper Harvest SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "V75c8bKQ04p",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 46.8,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.45,
+                0.88,
+                0.72,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.08,
+                0.3,
+                0.26,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Reaped Soul"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Reaper Harvest SPEC Stack 3",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Reaper Harvest SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "gm1nr2xJbcq",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 46.8,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "4"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.45,
+                0.88,
+                0.72,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.08,
+                0.3,
+                0.26,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Reaped Soul"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": 50.79999999999998,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Reaper Harvest SPEC Stack 4",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Reaper Harvest SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "0iVGCt84GSp",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 46.8,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "barColor2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "5"
+          },
+          "changes": [
+            {
+              "property": "enableGradient",
+              "value": true
+            },
+            {
+              "property": "barColor",
+              "value": [
+                0.45,
+                0.88,
+                0.72,
+                1
+              ]
+            },
+            {
+              "property": "barColor2",
+              "value": [
+                0.08,
+                0.3,
+                0.26,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "variable": "stacks",
+            "value": "3"
+          },
+          "changes": [
+            {
+              "property": "sub.5.glow",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowType",
+              "value": "buttonOverlay"
+            },
+            {
+              "property": "sub.5.useGlowColor",
+              "value": true
+            },
+            {
+              "property": "sub.5.glowColor",
+              "value": [
+                1,
+                0.82,
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Reaped Soul"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true, progressType = \"static\", value = 1, total = 1 }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 2
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -9,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": false,
+      "iconSource": -1,
+      "xOffset": 101.6,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": false,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 10,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        },
+        {
+          "type": "subglow",
+          "glow": false,
+          "useGlowColor": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowType": "Pixel",
+          "glowLines": 8,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowThickness": 1,
+          "glowScale": 1,
+          "glowBorder": false,
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "glowDuration": 1,
+          "anchor_area": "bar"
+        }
+      ],
+      "height": 12,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Reaper Harvest SPEC Stack 5",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Reaper Harvest SPEC",
+      "backgroundColor": [
+        0.09,
+        0.11,
+        0.09,
+        0.9
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": false,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "lwQRUkWXQYp",
+      "version": 130
+    },
+    {
+      "icon_side": "RIGHT",
+      "desaturate": false,
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "anchorFrameType": "SCREEN",
+      "texture": "Solid",
+      "tocversion": 110200,
+      "adjustedMin": "",
+      "width": 250,
+      "sparkRotation": 0,
+      "sparkBlendMode": "ADD",
+      "sparkHidden": "NEVER",
+      "sparkRotationMode": "AUTO",
+      "barColor": [
+        0.9,
+        0.16,
+        0.12,
+        1
+      ],
+      "barColor2": [
+        0.33,
+        0.02,
+        0.02,
+        1
+      ],
+      "auto": true,
+      "icon": false,
+      "conditions": [],
+      "inverse": false,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "use_unit": true,
+              "use_absorbMode": true,
+              "unevent": "auto",
+              "unit": "player",
+              "type": "unit",
+              "event": "Health",
+              "use_healthpct": false,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "yOffset": -25,
+      "information": {
+        "ignoreOptionsEventErrors": true,
+        "forceEvents": true
+      },
+      "overlayclip": true,
+      "useAdjustededMin": false,
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "smoothProgress": true,
+      "iconSource": -1,
+      "xOffset": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            0.9
+          ],
+          "border_edge": "Square Full White",
+          "border_visible": true,
+          "type": "subborder",
+          "border_size": 1,
+          "border_offset": 0,
+          "anchor_area": "bar"
+        },
+        {
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_c_format": "none",
+          "text_automaticWidth": "Auto",
+          "rotateText": "NONE",
+          "anchor_point": "INNER_CENTER",
+          "anchorXOffset": 0,
+          "text_text_format_1.percentpower_format": "none",
+          "text_fontType": "OUTLINE",
+          "text_shadowYOffset": -1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_legacy_floor": true,
+          "text_fixedWidth": 64,
+          "text_text_format_p_time_mod_rate": true,
+          "text_visible": true,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 11,
+          "text_wordWrap": "WordWrap",
+          "text_selfPoint": "CENTER",
+          "text_text_format_p_time_format": 0,
+          "text_text": "%p",
+          "anchorYOffset": 0,
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "type": "subtext",
+          "text_anchorYOffset": 0,
+          "text_shadowXOffset": 1,
+          "text_justify": "CENTER"
+        }
+      ],
+      "height": 14,
+      "gradientOrientation": "HORIZONTAL",
+      "textureSource": "LSM",
+      "id": "Reaper Harvest SPEC Health",
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "parent": "Reaper Harvest SPEC",
+      "backgroundColor": [
+        0.12,
+        0.03,
+        0.03,
+        0.85
+      ],
+      "customText": "function()\n    local s = aura_env.state\n    local LWA = LWA and LWA[\"Shaman\"] or {}\n    \n    if LWA and LWA.UpdateBarText then\n        local format = LWA.GetConfig(\"resources\").mana_bar.format\n        \n        return LWA.UpdateBarText(s.value, s.percentpower, format)\n    end\n    \n    return s.percentpower \nend",
+      "sparkOffsetY": 0,
+      "anchorPoint": "CENTER",
+      "enableGradient": true,
+      "alpha": 1,
+      "internalVersion": 85,
+      "zoom": 0,
+      "regionType": "aurabar",
+      "frameStrata": 4,
+      "config": [],
+      "orientation": "HORIZONTAL",
+      "configGroup": "",
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "spark": false,
+      "isPrimaryResource": false,
+      "sparkHeight": 30,
+      "overlays": [
+        [
+          0,
+          0,
+          0,
+          0.40000003576279
+        ]
+      ],
+      "sparkOffsetX": 0,
+      "adjustedMax": "",
+      "authorOptions": [],
+      "sparkWidth": 10,
+      "uid": "EnVPOAVaQEn",
+      "version": 130
+    },
+    {
+      "sortHybridTable": {
+        "Master of the Elements": false,
+        "Flux Melting": false,
+        "Hot Hand": false,
+        "Crackling Surge": false,
+        "Elemental Equilibrium": false,
+        "Flash Flood": false,
+        "Magma Chamber": false,
+        "Power of the Maelstrom": false,
+        "High Tide": false,
+        "Tidal Waves": false,
+        "Hailstorm": false,
+        "Molten Weapon": false,
+        "Legacy of the Frost Witch": false,
+        "Icy Edge": false,
+        "Splintered Elements": false,
+        "Elemental Blast: Buff": false,
+        "Deeply Rooted Elements": false,
+        "Flame Shock & Lava Burst  (Restoration)": false
+      },
+      "centerType": "LR",
+      "parent": "Reaper Harvest SPEC",
+      "anchorFrameType": "SCREEN",
+      "stepAngle": 15,
+      "limit": 5,
+      "customGrow": "function(newPositions, activeRegions)\n    local perRow = 9\n    local w, h = 24, 24\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
+      "controlledChildren": [
+        "Reaper Harvest SPEC - Limbo",
+        "Reaper Harvest SPEC - Jailers Bargain"
+      ],
+      "borderInset": 1,
+      "tocversion": 110200,
+      "scale": 1,
+      "internalVersion": 85,
+      "sharedFrameLevel": true,
+      "borderOffset": 4,
+      "space": 4,
+      "hybridSortMode": "ascending",
+      "conditions": [],
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": []
+      },
+      "anchorFrameParent": false,
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "PLAYER_ENTERING_WORLD, OPTIONS",
+              "custom": "function(allstates, event, ...)\n    allstates[\"\"] = { show = true, changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": -10
+      },
+      "yOffset": -47,
+      "information": {
+        "forceEvents": true
+      },
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        }
+      },
+      "selfPoint": "CENTER",
+      "arcLength": 360,
+      "useLimit": false,
+      "xOffset": 0,
+      "borderEdge": "Square Full White",
+      "hybridPosition": "hybridFirst",
+      "subRegions": [],
+      "gridType": "RD",
+      "config": [],
+      "id": "Reaper Harvest SPEC CDs (Secondary)",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "anchorFrameFrame": "WeakAuras:General Options - LWA - Shaman",
+      "grow": "CUSTOM",
+      "fullCircle": true,
+      "border": false,
+      "constantFactor": "RADIUS",
+      "alpha": 1,
+      "borderBackdrop": "Blizzard Tooltip",
+      "regionType": "dynamicgroup",
+      "anchorPoint": "CENTER",
+      "gridWidth": 5,
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "sort": "none",
+      "stagger": 0,
+      "growOn": "show",
+      "frameStrata": 1,
+      "animate": false,
+      "radius": 200,
+      "rotation": 0,
+      "rowSpace": 1,
+      "borderSize": 2,
+      "align": "CENTER",
+      "authorOptions": [],
+      "columnSpace": 1,
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "uid": "z03NFC3ol6y",
+      "version": 130
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "MJUHJ5rp3Rn",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 800845,
+              "realSpellName": 800845,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 800845,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Limbo",
+      "anchorFrameType": "SCREEN"
+    },
+    {
+      "yOffset": 0,
+      "desaturate": false,
+      "information": {},
+      "parent": "Reaper Harvest SPEC CDs (Secondary)",
+      "regionType": "icon",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds",
+          "easeType": "none",
+          "easeStrength": 3
+        },
+        "start": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        },
+        "finish": {
+          "preset": "shrink",
+          "easeStrength": 3,
+          "type": "preset",
+          "duration_type": "seconds",
+          "easeType": "none"
+        }
+      },
+      "keepAspectRatio": true,
+      "selfPoint": "CENTER",
+      "cooldownEdge": false,
+      "iconSource": -1,
+      "xOffset": 0,
+      "authorOptions": [],
+      "cooldown": true,
+      "zoom": 0.3,
+      "height": 24,
+      "config": [],
+      "adjustedMin": "",
+      "width": 24,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "useAdjustededMax": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "cooldownTextDisabled": false,
+      "internalVersion": 85,
+      "version": 130,
+      "useCooldownModRate": true,
+      "useAdjustededMin": false,
+      "anchorPoint": "CENTER",
+      "uid": "Xeepz2Ycziu",
+      "triggers": {
+        "__array": [
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "spell",
+              "event": "Cooldown Progress (Spell)",
+              "use_genericShowOn": true,
+              "genericShowOn": "showAlways",
+              "use_track": true,
+              "track": "auto",
+              "use_unit": true,
+              "unit": "player",
+              "use_spellName": true,
+              "spellName": 805718,
+              "realSpellName": 805718,
+              "use_exact_spellName": true,
+              "useName": true,
+              "names": [],
+              "spellIds": [],
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START"
+            }
+          }
+        ],
+        "disjunctive": "any",
+        "activeTriggerMode": 1
+      },
+      "auto": true,
+      "tocversion": 110200,
+      "frameStrata": 1,
+      "icon": true,
+      "displayIcon": "",
+      "conditions": [
+        {
+          "check": {
+            "trigger": 1,
+            "variable": "onCooldown",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "border_edge": "Square Full White",
+          "type": "subborder",
+          "border_visible": true,
+          "border_offset": 0,
+          "border_size": 2
+        },
+        {
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "useGlowColor": false,
+          "glowLines": 8,
+          "glow": false,
+          "type": "subglow",
+          "glowType": "Proc",
+          "glowThickness": 1,
+          "glowYOffset": 0,
+          "glowLength": 10,
+          "glowBorder": false,
+          "glowScale": 1,
+          "glowXOffset": 0,
+          "glowDuration": 1,
+          "glowFrequency": 0.25
+        }
+      ],
+      "cooldownSwipe": true,
+      "inverse": true,
+      "load": {
+        "use_never": false,
+        "size": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "class": {
+          "multi": []
+        },
+        "zoneIds": "",
+        "role": [],
+        "use_petbattle": false,
+        "pvptalent": [],
+        "use_spellknown": true,
+        "spellknown": 805718,
+        "use_exact_spellknown": true
+      },
+      "anchorFrameParent": false,
+      "adjustedMax": "",
+      "actions": {
+        "start": {
+          "do_message": false,
+          "do_custom": false
+        },
+        "init": {
+          "do_custom": false
+        },
+        "finish": {
+          "do_message": false,
+          "do_custom": false
+        }
+      },
+      "alpha": 1,
+      "id": "Reaper Harvest SPEC - Jailers Bargain",
+      "anchorFrameType": "SCREEN"
+    }
+  ],
+  "m": "d",
+  "s": "5.20.2",
+  "v": 2000
+}
