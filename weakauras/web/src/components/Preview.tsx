@@ -9,14 +9,10 @@ import type { IconResolver } from '../registry';
 const rgba = (c?: number[]) => (c ? `rgba(${Math.round(c[0] * 255)},${Math.round(c[1] * 255)},${Math.round(c[2] * 255)},${c[3] ?? 1})` : '#666');
 const grad = (hi?: number[], lo?: number[]) => `linear-gradient(180deg, ${rgba(hi)}, ${rgba(lo ?? hi)})`;
 // A configured glow → the preview glow: its colour (undefined when unset, so the CSS default white applies)
-// + style (default buttonOverlay). In a procRow the legacy buff/execute/stealable sugar — and a bare proc —
-// carry an implicit Action Button glow (matching the generator & ProcPanel); only the when-DSL form can be
-// glow-less. Elsewhere (cdRow / rails) the glow is exactly `ic.glow`.
-const glowOf = (ic: IconCfg, kind?: string): { color?: string; type: string } | undefined => {
-  let g = ic.glow as { color?: number[]; glowType?: string } | undefined;
-  if (kind === 'procRow' && g === undefined && !ic.when) {
-    g = { ...(ic.glowColor ? { color: ic.glowColor as number[] } : {}), ...(ic.glowType ? { glowType: ic.glowType as string } : {}) };
-  }
+// + style (default buttonOverlay). Every icon is iconRow-shaped (the store normalizes on load), so the glow
+// is exactly `ic.glow` — present (even empty `{}` = glow whenever shown) means it carries a glow.
+const glowOf = (ic: IconCfg): { color?: string; type: string } | undefined => {
+  const g = ic.glow as { color?: number[]; glowType?: string } | undefined;
   return g ? { color: g.color ? rgba(g.color) : undefined, type: g.glowType ?? 'buttonOverlay' } : undefined;
 };
 
@@ -54,9 +50,9 @@ function IconCell({ id, url, size, containerRef, iconIndex, glow }: { id: string
   return (
     <div ref={setNodeRef} {...attributes} {...listeners}
       className={s.wicon} data-glow={glow?.type} data-sel={isSel ? '' : undefined}
-      onClick={() => select(isSel ? null : { ref: containerRef, iconIndex })}
+      onClick={(e) => { e.stopPropagation(); select(isSel ? null : { ref: containerRef, iconIndex }); }}
       style={{
-        width: px(size), height: px(size), backgroundImage: `url(${url})`, cursor: 'grab',
+        width: px(size), height: px(size), backgroundImage: `url("${url}")`, cursor: 'grab',
         transform: CSS.Transform.toString(transform), transition, opacity: isDragging ? 0.4 : 1,
         boxShadow: isSel ? '0 0 0 2px var(--ring)' : undefined,
         ['--gc' as string]: glow?.color,
@@ -69,18 +65,28 @@ function IconCell({ id, url, size, containerRef, iconIndex, glow }: { id: string
   );
 }
 
-// A cdRow / procRow: drop target for palette abilities and a horizontal sortable list of its icons.
+// An iconRow: drop target for palette abilities and a horizontal sortable list of its icons. Clicking the row
+// background (not an icon) selects the ROW (per-row inspector); a selection ring marks it. `perRow` constrains
+// the wrap width so the preview reflects the override; `gap` reflects the row's icon spacing.
 function IconRow({ el, index, size, W, gap, resolve, dragging }: { el: El; index: number; size: number; W: number; gap: number; resolve: IconResolver; dragging: boolean }) {
   const { setNodeRef, isOver } = useDroppable({ id: `row:${index}`, data: { type: 'row', ref: index } });
+  const select = useStore((st) => st.select);
+  const sel = useStore((st) => st.sel);
+  const rowSel = sel != null && sel.ref === index && sel.iconIndex === null;
   const icons = el.icons ?? [];
   const ids = icons.map((ic, i) => ic._uid ?? `${index}:${i}`);
+  const perRow = el.perRow as number | undefined;
+  const rowW = perRow ? perRow * px(size) + (perRow - 1) * gap : px(W);
   return (
-    <div ref={setNodeRef} className={`${s.el} ${s.dropzone} ${dragging ? s.dropActive : ''} ${isOver ? s.dropOver : ''}`}>
+    <div ref={setNodeRef}
+      className={`${s.el} ${s.dropzone} ${dragging ? s.dropActive : ''} ${isOver ? s.dropOver : ''}`}
+      onClick={(e) => { e.stopPropagation(); select(rowSel ? null : { ref: index, iconIndex: null }); }}
+      style={{ cursor: 'pointer', boxShadow: rowSel ? '0 0 0 2px var(--ring)' : undefined }}>
       <SortableContext items={ids} strategy={horizontalListSortingStrategy}>
-        <div className={s.iconrow} style={{ width: px(W), gap, minHeight: px(size) }}>
+        <div className={s.iconrow} style={{ width: rowW, gap, minHeight: px(size) }}>
           {icons.length === 0 && <span className={s.empty}>drop abilities here</span>}
           {icons.map((ic: IconCfg, i) => (
-            <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={index} iconIndex={i} glow={glowOf(ic, el.kind)} />
+            <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={index} iconIndex={i} glow={glowOf(ic)} />
           ))}
         </div>
       </SortableContext>
@@ -100,7 +106,7 @@ function Rail({ side, el, size, gap, resolve, dragging }: { side: 'left' | 'righ
       <SortableContext items={ids} strategy={verticalListSortingStrategy}>
         {icons.length === 0 && <span className={s.railempty}>{side}</span>}
         {icons.map((ic: IconCfg, i) => (
-          <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={side} iconIndex={i} glow={glowOf(ic, el?.kind)} />
+          <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={side} iconIndex={i} glow={glowOf(ic)} />
         ))}
       </SortableContext>
     </div>
@@ -112,7 +118,7 @@ function ProcRow({ el, size, W, gap, resolve }: { el: El; size: number; W: numbe
     <div className={s.el}>
       <div className={s.iconrow} style={{ width: px(W), gap }}>
         {(el.icons ?? []).map((ic: IconCfg, i) => (
-          <div key={i} className={s.wicon} style={{ width: px(size), height: px(size), backgroundImage: `url(${resolve(ic)})` }} />
+          <div key={i} className={s.wicon} style={{ width: px(size), height: px(size), backgroundImage: `url("${resolve(ic)}")` }} />
         ))}
       </div>
     </div>
@@ -132,6 +138,7 @@ function Bar({ W, fillW, bg, text }: { W: number; fillW: string; bg: string; tex
 
 export function Preview({ resolve, dragging }: { resolve: IconResolver; dragging: boolean }) {
   const spec = useStore((st) => st.spec);
+  const select = useStore((st) => st.select);
   const g = spec.global;
   const W = g.barWidth;
   const GAP = px(g.gap);
@@ -141,13 +148,12 @@ export function Preview({ resolve, dragging }: { resolve: IconResolver; dragging
 
   function renderEl(el: El, i: number) {
     switch (el.kind) {
-      case 'procRow':
-        // a full IconRow: proc icons are selectable (per-proc inspector), sortable, and a palette drop target
-        return <IconRow el={el} index={i} size={(el.size as number) ?? g.procSize} W={W} gap={GAP} resolve={resolve} dragging={dragging} />;
+      case 'iconRow':
+        // a full IconRow: icons are selectable (per-icon inspector), sortable, and a palette drop target
+        return <IconRow el={el} index={i} size={(el.size as number) ?? (el.secondary ? g.secIconSize : g.iconSize)}
+          W={W} gap={el.iconGap != null ? px(el.iconGap as number) : GAP} resolve={resolve} dragging={dragging} />;
       case 'buffRow':
         return <ProcRow el={el} size={(el.size as number) ?? g.iconSize} W={W} gap={GAP} resolve={resolve} />;
-      case 'cdRow':
-        return <IconRow el={el} index={i} size={(el.size as number) ?? (el.secondary ? g.secIconSize : g.iconSize)} W={W} gap={GAP} resolve={resolve} dragging={dragging} />;
       case 'uptimeBar':
         return <Bar W={W} fillW="52%" bg={grad([0.30, 0.75, 0.15, 1], [0.05, 0.2, 0, 1])} text={String(el.label ?? 'Buff').replace('%p', '6.4')} />;
       case 'powerBar':
@@ -184,7 +190,8 @@ export function Preview({ resolve, dragging }: { resolve: IconResolver; dragging
   }
 
   return (
-    <div className={s.preview}>
+    // clicking the canvas background (not a row or icon — those stopPropagation) clears the selection
+    <div className={s.preview} onClick={() => select(null)}>
       <Rail side="left" el={spec.left} size={g.iconSize} gap={GAP} resolve={resolve} dragging={dragging} />
       <SortableContext items={visible.map(([el, i]) => el._uid ?? `el:${i}`)} strategy={verticalListSortingStrategy}>
         <div className={s.stackCol} style={{ gap: GAP }}>

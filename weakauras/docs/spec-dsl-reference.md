@@ -74,20 +74,17 @@ classes/<slug>/spec.json           the declarative SPEC (single source of truth,
 
 - **`global` defaults** (from `specToParts`): `barWidth 250, iconSize 26, secIconSize 24, procSize 30, gap 3,
   xOffset 0, yOffset 0, gateUnknownSpells true`. Override any subset.
-- **`gateUnknownSpells`** (default **true**): every `cdRow` / `procRow` / side-rail icon that has a `spell`
-  gets `load.use_spellknown = true` + `load.spellknown = <spell>` (+ `use_exact_spellknown = !byName`),
-  mirroring its own cooldown trigger's spell identity — so the icon **only loads while the player knows the
-  spell** (no point showing a cooldown for a spell you haven't specced). Skipped for `buffRow` icons (they
-  track a buff/enchant, not a castable spell) and for spell-less procs (e.g. a stealable indicator). This is
-  **detection-layer**, and it is **confirmed working in-game on Ascension (2026-07-19)**: `IsSpellKnown`
-  resolves custom Ascension spellIds, so a gated icon lands in WeakAuras' "Not Loaded" until the spell is
-  known (probed with a baseline spell that shows vs. a fake spellId 99999999 that stays hidden). Set
-  `"gateUnknownSpells": false` to disable wholesale if ever needed. Gating is derived (not stored), so it
-  round-trips without any `wa-to-spec` change.
+- **`gateUnknownSpells`** (default **false** since 2026-07-20): when **true**, every `cdRow` / `procRow` /
+  side-rail icon that has a `spell` gets `load.use_spellknown = true` + `load.spellknown = <spell>`
+  (+ `use_exact_spellknown = !byName`), mirroring its own cooldown trigger's spell identity — so the icon only
+  loads while the player knows the spell. **DEFAULT OFF and do NOT enable on Ascension:** `IsSpellKnown` →
+  `GetSpellInfo` **throws `"Invalid spell slot"`** for custom CoA spellIds, and the Lua error aborts the whole
+  WeakAuras load loop (symptom: `/wa` stops opening). Confirmed in-game with barbarian-brutality (2026-07-20).
+  Gating is derived (not stored), so it round-trips without any `wa-to-spec` change.
 - **Side rails** are vertical `makeColumn` dynamicgroups. Default `xOffset` = `-170` (left) / `+170` (right),
-  default `yOffset` = `global.yOffset`, default icon `size` = `global.iconSize`. Icons are **cdRow-shaped**
-  (same `cdIconCfg` as `cdRow`, glow rules below). An empty rail is skipped by the web `activeSpec` (an empty
-  dynamicgroup would still emit otherwise).
+  default `yOffset` = `global.yOffset`, default icon `size` = `global.iconSize`. Icons are **iconRow-shaped**
+  (`showWhen[]`/`glow.when[]`, §4) as soon as any uses the clause DSL — else legacy `cdRow`-shaped. An empty rail
+  is skipped by the web `activeSpec` (an empty dynamicgroup would still emit otherwise).
 
 ### Editor-only fields (never reach the compiler)
 
@@ -116,8 +113,9 @@ Common bar fields: `hi`/`lo` = gradient high/low `[r,g,b,a]` (0..1); `bg` = back
 | `buffWarnText` | Big text shown only while a buff is **missing** | `buff`, `text` | `color,fontSize(20),height(22),width,id` | 1 invisible `aurabar` (text carrier) |
 | `stacks` | Point boxes from an aura **stack** (Felfury) | `auraNames` [names], `count` | `hi,lo,emptyBg,unit('player'),debuffType('HELPFUL'),unitExists,gap(4),height(12),capGlow,id` | N `aurabar` |
 | `chargeStacks` | Point boxes from a spell's **charges** (Runeblade 0..3) | `spell`, `count` | `byName,hi,lo,emptyBg,gap(4),height(12),id` | N `aurabar` |
-| `procRow` | Row of proc/reminder icons | `icons[]` | `size(procSize 30),id` | 1 dynamicgroup + N icons |
-| `cdRow` | Row of cooldown icons | `icons[]` | `secondary(bool→secIconSize 24),size,id` | 1 dynamicgroup + N icons |
+| `iconRow` | **Unified icon row** — SHOW-IF `showWhen[]` + GLOW-IF `glow.when[]` (§4) | `icons[]` | `secondary(bool→secIconSize 24),size,perRow,iconGap,combatOnly,id` | 1 dynamicgroup + N icons |
+| `procRow` | *(legacy → iconRow)* Row of proc/reminder icons | `icons[]` | `size(procSize 30),id` | 1 dynamicgroup + N icons |
+| `cdRow` | *(legacy → iconRow)* Row of cooldown icons | `icons[]` | `secondary,size,id` | 1 dynamicgroup + N icons |
 | `buffRow` | Row of buff-state icons | `icons[]` | `secondary,size,id` | 1 dynamicgroup + N icons |
 
 Notes captured from source you can't infer from the table:
@@ -137,51 +135,68 @@ Notes captured from source you can't infer from the table:
 
 ---
 
-## 4. `cdRow` / side-rail icon config (`cdIconCfg` → `cooldownIcon`)
+## 4. `iconRow` — the unified icon element (`iconElement`)
 
-Each icon in a `cdRow`, `left`, or `right`:
+**One element models both a "CD" and a "proc"** — there is no separate WeakAuras region behind them: each is an
+`icon` region. The only difference is our config. The mental model is **SHOW IF `showWhen[]` · GLOW IF
+`glow.when[]`**, both AND-arrays of the same clause vocabulary (§5). Used by every `iconRow`, `left`, and `right`
+icon:
 
 ```jsonc
 {
-  "label": "Skull of Guldan",      // REQUIRED — used in the region id ("<spec.id> - <label>"). ASCII only.
-  "spell": 800225,                 // spellId (number) OR spell name (string, needs "byName": true)
+  "label": "Decapitate",           // REQUIRED — used in the region id ("<dgId> - <label>"). ASCII only.
+  "spell": 804414,                 // spellId (number) OR spell name (string, needs "byName": true)
   "byName": true,                  // match by name instead of exact spellId (by-name doesn't resolve art on this client)
   "fallbackIcon": "Interface\\Icons\\Spell_...",  // texture path shown when art can't resolve (by-name spells)
   "charges": true,                 // append a "%s" charge subtext
-  "showPowerAbove": 45,            // gate: icon only shows at >= N power (custom UnitPower stateupdate)
-  "powerType": 3,                  // power index for showPowerAbove (default 3 = Energy)
-  "glow": { "type": "...", ... }   // AT MOST ONE glow rule (below), or "proc" for a proc-only icon
+  "showWhen": [ {clause}, ... ],   // ABSENT = always visible (a "CD"). Present = hidden until ALL clauses pass (a "proc")
+  "hide": "slot",                  // with showWhen: "slot" (default, alpha 0 keeps its slot) | "collapse" (row recenters)
+  "glow": { "color": [1,1,1,1], "glowType": "buttonOverlay",
+            "when": [ {clause}, ... ] },   // ABSENT/[] = glow whenever visible; else glow only while these also pass
+  "display": { "timer": "cooldown|buff|none", "stacks": true,
+               "cooldownNumbers": false, "desaturateOnCd": true }
 }
 ```
 
-### Glow rules (`glow.type`) — pick **exactly one**
+- **`showWhen` absent** ⇒ always visible; with a `spell` it **desaturates while `onCooldown == 1`** by default
+  (the old cd behaviour). **`showWhen` present** ⇒ `alpha 0` + an `AND(clauses) → alpha 1` condition reveals it
+  (`hide:"slot"`), or the show-driving triggers control it and the row recenters (`hide:"collapse"`, only
+  `collapse`-gating clauses — §5 ✅ column). Condition-driven show is **reliable on this client** (unlike
+  disjunctive trigger-activeness). `display.desaturateOnCd` overrides the default either way.
+- **`glow.when`** is the same clause array. `readyPower` = `[{spellReady:true},{powerAtLeast:N}]`, a compound
+  execute cue = `[{powerPctAtLeast:60},{targetHpBelow:35}]`, a defensive = `[{buff:name}]`, etc. — no named
+  `glow.type` enum. `glow.color` default white, `glowType` ∈ `buttonOverlay` (Action Button) | `Pixel` | `ACShine`.
+- **`display.timer`**: `cooldown` (default), `buff` (swipe = a tracked buff's remaining time — needs a
+  buff-family clause), `none`. `display.stacks:true` appends a `%N.s` subtext on the first buff-family trigger.
+- Triggers are **deduped by shape**, so a clause in `showWhen` and one in `glow.when` on the same buff share one
+  trigger. Round-trips through `wa-to-spec` (`invertIconElement` + `checkToClause`, the inverse of `clauseToCheck`).
 
-`glow` also carries `color` (`[r,g,b,a]`, default white) and `glowType` (`buttonOverlay` = Action Button Glow,
-`Pixel`, or `ACShine`; default `buttonOverlay`).
+### Legacy `cdRow` / `procRow` (kept until the Étape 3 codemod, then removed)
 
-| `glow.type` | Extra fields | Lights when | Backing trigger |
-|---|---|---|---|
-| `ready` | — | spell off cooldown | cooldown `onCooldown == 0` |
-| `readyPower` | `power` | off cooldown **and** power ≥ N | cooldown + `powerTrigger` (`power >=`) |
-| `powerPct` | `pct` | resource % ≥ pct | `powerTrigger` (`percentpower >=`) |
-| `buff` | `buff` (name) | self-buff active (**also** swaps swipe to buff's remaining time) | `buffTrigger` (`show == 1`) |
-| `buffMissing` | `buff` (name) | self-buff absent | `buffTrigger showAlways` (`buffed == 0`) |
-| `targetHealthBelow` | `pct` | target HP % < pct | `targetHealthTrigger` (`percenthealth <`) |
-| `onCharges` | `spell,byName?,op?,value` | spell charges `op value` (default `>=`) | 2nd `cooldownTrigger` (`charges`) |
+`cdRow` and `procRow` still parse (70 preset specs use them; byte-frozen goldens). They build via the old
+`cooldownIcon` / `procIcon` and map onto `iconElement` shapes as follows — use `iconRow` for new work:
 
-Special: `"proc": "<buffName>"` (instead of `glow.type`) makes a **proc-only icon** — no cooldown trigger,
-shown/glowing while the buff is up (`buffTrigger show == 1`). Use `cdRow` proc for a simple buff-presence
-icon; use **`procRow`** (below) for the composable proc DSL.
-
-Every cooldown icon also **desaturates while `onCooldown == 1`** automatically (from `cooldownIcon`).
+| Legacy | iconRow equivalent |
+|---|---|
+| `cdRow` glow `ready` | `glow.when:[{spellReady:true}]` |
+| `readyPower:N` | `glow.when:[{spellReady:true},{powerAtLeast:N}]` |
+| `powerPct:P` | `glow.when:[{powerPctAtLeast:P}]` |
+| `buffMissing` | `glow.when:[{buffMissing:name}]` |
+| `targetHealthBelow:H` | `glow.when:[{targetHpBelow:H}]` |
+| `glow.type:"buff"` | `glow.when:[{buff:name}]` (+ `display.timer:"buff"` for the swipe takeover) |
+| `onCharges:{spell,value}` | `glow.when:[{charges:{value},...}]` (charges clause reads the icon's own cd) |
+| `showPowerAbove:N` | `showWhen:[{powerAtLeast:N}]` |
+| proc `buff:X` | `showWhen:[{buff:X}]` |
+| proc `execute:P` + `glowAlways` | `showWhen:[{targetHpBelow:P}], hide:"collapse", glow:{when:[]}` |
+| proc `stealable` | `showWhen:[{stealable:true}], hide:"collapse"` |
 
 ---
 
-## 5. `procRow` — the composable proc DSL
+## 5. Clause DSL — `showWhen[]` and `glow.when[]` (shared by iconRow and legacy procRow)
 
-A proc icon = an icon + AND-ed `when` clauses that decide when it lights up + an optional `glow` + `display`.
-(Legacy sugar `buff:` / `execute:pct` (+`glowAlways`) / `stealable:true` still parses and is byte-frozen; the
-web ProcPanel converts legacy → `when` on first edit. Prefer `when` for new work.)
+Every clause is AND-ed; each has exactly ONE key. `clauseToCheck` (spec-builder) turns each into a
+condition-check; `checkToClause` (wa-to-spec) inverts it. The legacy `procRow` `when[]` uses the same list
+(legacy sugar `buff:` / `execute:pct` (+`glowAlways`) / `stealable:true` still parses and is byte-frozen).
 
 ```jsonc
 {
@@ -207,7 +222,8 @@ web ProcPanel converts legacy → `when` on first edit. Prefer `when` for new wo
 | `{ "anyBuff": [names] }` | any of the buffs present | ✅ | `anyBuffTrigger` → `buffed==1`/`show==1` |
 | `{ "buffStacks": {name,op?,value} }` | buff stacks `op value` (op default `>=`) | ❌ | `buffTrigger showAlways` → `stacks` |
 | `{ "targetHpBelow": pct }` | target HP % < pct (execute) | ✅ | `targetExecuteTrigger` → `show==1` |
-| `{ "powerAtLeast": N, powerType? }` | UnitPower ≥ N (powerType default 3) | ✅ | `powerAtLeastTrigger` → `show==1` |
+| `{ "powerAtLeast": N, powerType? }` | UnitPower ≥ N, **absolute** (powerType default 3) | ✅ | `powerAtLeastTrigger` → `show==1` |
+| `{ "powerPctAtLeast": P, powerType? }` | resource **percent** ≥ P (powerType default 3) | ❌ | `powerTrigger` → `percentpower>=` |
 | `{ "spellReady": true }` | this icon's spell off cooldown | ❌ | own cooldown trigger → `onCooldown==0` |
 | `{ "charges": {op?,value} }` | this icon's spell charges `op value` | ❌ | own cooldown trigger → `charges` |
 | `{ "stealable": true }` | target has ANY spell-stealable buff | ✅ | `stealableTargetTrigger` → `show==1` |
@@ -354,10 +370,10 @@ for each element:  center = topEdge - h/2 ; topEdge = center - h/2 - gap
   power index (`registry/resource-model.json`) and every aura name in-game before trusting detection.
 - **Add an element to a spec**: append to `stack[]` with the right `kind` (§3). Give it an explicit `id` if it
   could collide. Re-run `node classes/<slug>/spec.js`; the round-trip assert gates the write.
-- **Add a glowing cooldown**: a `cdRow` icon with one `glow.type` (§4). Style = urgency, color = meaning
-  (Action Button Glow = act-now; Pixel = passive state) — see CLAUDE.md Glow taxonomy.
+- **Add a glowing cooldown**: an `iconRow` icon (no `showWhen`) with `glow.when:[…]` (§4). Style = urgency,
+  color = meaning (Action Button Glow = act-now; Pixel = passive state) — see CLAUDE.md Glow taxonomy.
 - **Track a maintenance buff**: `uptimeBar` (single or any-of). Down-state warning + pulsing glow are built in.
-- **A "use it now" proc**: `procRow` icon with `when` clauses (§5). Buff proc → `hide:"slot"`; execute window →
+- **A "use it now" proc**: an `iconRow` icon with `showWhen:[…]` (§4). Buff proc → `hide:"slot"`; execute window →
   `hide:"collapse"` + `targetHpBelow`.
 - **Make the whole WA combat-only**: `"combatOnly": true` at SPEC top level.
 - **See the web app pick up an engine change**: re-run `npm run gen` in `web/` (rebundles

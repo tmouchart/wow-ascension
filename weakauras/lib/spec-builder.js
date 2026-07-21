@@ -89,20 +89,82 @@ function cdIconCfg(spec, c, parentId, size) {
 //   { stealable: true }                          (target has ANY spell-stealable buff)
 const GATING_CLAUSES = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable']);  // can drive show ('collapse')
 const AURA_CLAUSES = new Set(['buff', 'anyBuff', 'buffStacks']);   // buff-family (drives timer:'buff' + the stacks subtext)
-const ALL_CLAUSES = new Set([...GATING_CLAUSES, ...AURA_CLAUSES, 'buffMissing', 'spellReady', 'charges']);
+const ALL_CLAUSES = new Set([...GATING_CLAUSES, ...AURA_CLAUSES, 'buffMissing', 'spellReady', 'charges', 'powerPctAtLeast']);
 function clauseKind(cl, at) {
   const keys = [...ALL_CLAUSES].filter(k => cl[k] !== undefined);
   if (keys.length !== 1) throw new Error(`${at}: each when-clause needs exactly one of ${[...ALL_CLAUSES].join(', ')}`);
   return keys[0];
 }
 
-function whenProcIcon(spec, c, parentId, size) {
-  const at = `proc "${c.label}"`;
+// Shared clause -> WeakAuras condition-check builder, used by BOTH the proc when-DSL and the cdRow showWhen
+// gate so the two can never disagree. ctx: { addTrigger(def)->1-based idx, cdIdx, collapse, at, onAura?(idx) }.
+// collapse routes buff/anyBuff through showOnActive-driven `show` checks; otherwise `buffed`.
+function clauseToCheck(cl, ctx) {
+  const { addTrigger, cdIdx, collapse, at } = ctx;
+  const markAura = (idx) => { if (ctx.onAura) ctx.onAura(idx); };
+  switch (clauseKind(cl, at)) {
+    case 'buff': {
+      // slot: showAlways (always active, read `buffed`); collapse: showOnActive drives show
+      const idx = addTrigger(B.buffTrigger(cl.buff, collapse ? undefined : 'showAlways'));
+      markAura(idx);
+      return collapse ? { trigger: idx, variable: 'show', value: 1 } : { trigger: idx, variable: 'buffed', value: 1 };
+    }
+    case 'anyBuff': {
+      const idx = addTrigger(B.anyBuffTrigger(cl.anyBuff, collapse ? 'showOnActive' : 'showAlways'));
+      markAura(idx);
+      return collapse ? { trigger: idx, variable: 'show', value: 1 } : { trigger: idx, variable: 'buffed', value: 1 };
+    }
+    case 'buffMissing':
+      return { trigger: addTrigger(B.buffTrigger(cl.buffMissing, 'showAlways')), variable: 'buffed', value: 0 };
+    case 'buffStacks': {
+      const s = cl.buffStacks;
+      const idx = addTrigger(B.buffTrigger(s.name, 'showAlways'));
+      markAura(idx);
+      return { op: s.op || '>=', trigger: idx, variable: 'stacks', value: String(s.value) };
+    }
+    case 'targetHpBelow':
+      return { trigger: addTrigger(B.targetExecuteTrigger(cl.targetHpBelow)), variable: 'show', value: 1 };
+    case 'powerAtLeast':
+      return { trigger: addTrigger(B.powerAtLeastTrigger(cl.powerAtLeast, cl.powerType != null ? cl.powerType : 3)), variable: 'show', value: 1 };
+    case 'powerPctAtLeast':
+      // percent (not absolute): a powerTrigger + a percentpower condition (no stateupdate equivalent for %).
+      return { op: '>=', trigger: addTrigger(B.powerTrigger(cl.powerType != null ? cl.powerType : 3)), variable: 'percentpower', value: String(cl.powerPctAtLeast) };
+    case 'stealable':
+      return { trigger: addTrigger(B.stealableTargetTrigger()), variable: 'show', value: 1 };
+    case 'spellReady':
+      return { trigger: cdIdx, variable: 'onCooldown', value: 0 };
+    case 'charges':
+      return { op: cl.charges.op || '>=', trigger: cdIdx, variable: 'charges', value: String(cl.charges.value) };
+  }
+}
+// AND-wrap N checks (a single check needs no wrapper). trigger -2 = the WeakAuras multi-check AND.
+const andCheck = (checks) => checks.length > 1 ? { checks, trigger: -2, variable: 'AND' } : checks[0];
+
+// A canonical (unified) icon uses the clause DSL — showWhen[] and/or glow.when[]. A legacy cd icon uses the
+// named glow.type enum + showPowerAbove/proc. Used to route cdRow columns to the right builder during transition.
+const isCanonicalIcon = (c) => c.showWhen !== undefined || (c.glow && Array.isArray(c.glow.when));
+
+// ---- the ONE unified icon element (iconRow) — SHOW-IF and GLOW-IF, both AND-arrays of the same clauses ----
+// An `icon` region + AND-ed clauses. `showWhen` absent = the icon is always visible (a "CD"): it tracks its
+// cooldown (spell art + swipe) and, by default, desaturates while on cooldown. `showWhen` present = the icon
+// is hidden (alpha 0) until every clause passes (a "proc"). `glow.when` absent = glow whenever visible; else
+// glow only while its extra clauses also pass. This is the region-level merge of the old cdRow/procRow split;
+// both legacy kinds normalize onto it. The proc when-DSL path (showWhen via legacy `c.when`) stays identical.
+//   c: { label, spell?, byName?, fallbackIcon?, charges?,
+//        showWhen?: [clause...], hide?: 'slot'|'collapse',
+//        glow?: { color?, glowType?, when?: [clause...] },
+//        display?: { timer?: 'cooldown'|'buff'|'none', stacks?, cooldownNumbers?, desaturateOnCd? } }
+// idBase controls the region id (`${idBase} - ${label}`): the row/column dynamicgroup id for iconRow, or
+// `${spec.id} Proc` for a legacy procRow icon (so those regenerate byte-identically).
+function iconElement(spec, c, parentId, size, idBase) {
+  const at = `icon "${c.label}"`;
+  const showWhen = c.showWhen !== undefined ? c.showWhen : (c.when !== undefined ? c.when : null);
+  const gated = showWhen !== null;
   const collapse = (c.hide || 'slot') === 'collapse';
   const d = c.display || {};
-  const b = B.iconBase(parentId, { id: `${spec.id} Proc - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
+  const b = B.iconBase(parentId, { id: `${idBase || spec.id + ' Proc'} - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
 
-  // triggers are deduped by shape so `when` and `glow.when` clauses on the same buff share one trigger
+  // triggers are deduped by shape so showWhen and glow.when clauses on the same buff share one trigger
   const triggerArr = [], trigIdx = new Map();
   const addTrigger = (def) => {
     const k = JSON.stringify(def);
@@ -112,76 +174,51 @@ function whenProcIcon(spec, c, parentId, size) {
   const cdIdx = c.spell != null ? addTrigger(B.cooldownTrigger(c.spell, c.byName)) : 0;
 
   let auraIdx = 0;   // first buff-family trigger (timer:'buff' + stacks subtext read it)
-  const checkFor = (cl) => {
-    switch (clauseKind(cl, at)) {
-      case 'buff': {
-        // slot: showAlways (always active, read `buffed`); collapse: showOnActive drives show
-        const idx = addTrigger(B.buffTrigger(cl.buff, collapse ? undefined : 'showAlways'));
-        if (!auraIdx) auraIdx = idx;
-        return collapse ? { trigger: idx, variable: 'show', value: 1 } : { trigger: idx, variable: 'buffed', value: 1 };
-      }
-      case 'anyBuff': {
-        const idx = addTrigger(B.anyBuffTrigger(cl.anyBuff, collapse ? 'showOnActive' : 'showAlways'));
-        if (!auraIdx) auraIdx = idx;
-        return collapse ? { trigger: idx, variable: 'show', value: 1 } : { trigger: idx, variable: 'buffed', value: 1 };
-      }
-      case 'buffMissing':
-        return { trigger: addTrigger(B.buffTrigger(cl.buffMissing, 'showAlways')), variable: 'buffed', value: 0 };
-      case 'buffStacks': {
-        const s = cl.buffStacks;
-        const idx = addTrigger(B.buffTrigger(s.name, 'showAlways'));
-        if (!auraIdx) auraIdx = idx;
-        return { op: s.op || '>=', trigger: idx, variable: 'stacks', value: String(s.value) };
-      }
-      case 'targetHpBelow':
-        return { trigger: addTrigger(B.targetExecuteTrigger(cl.targetHpBelow)), variable: 'show', value: 1 };
-      case 'powerAtLeast':
-        return { trigger: addTrigger(B.powerAtLeastTrigger(cl.powerAtLeast, cl.powerType != null ? cl.powerType : 3)), variable: 'show', value: 1 };
-      case 'stealable':
-        return { trigger: addTrigger(B.stealableTargetTrigger()), variable: 'show', value: 1 };
-      case 'spellReady':
-        return { trigger: cdIdx, variable: 'onCooldown', value: 0 };
-      case 'charges':
-        return { op: cl.charges.op || '>=', trigger: cdIdx, variable: 'charges', value: String(cl.charges.value) };
-    }
-  };
-  const AND = (checks) => checks.length > 1 ? { checks, trigger: -2, variable: 'AND' } : checks[0];
+  const checkFor = (cl) => clauseToCheck(cl, { addTrigger, cdIdx, collapse, at, onAura: (idx) => { if (!auraIdx) auraIdx = idx; } });
 
-  const whenChecks = c.when.map(checkFor);   // in collapse mode this still registers the triggers
+  const showChecks = gated ? showWhen.map(checkFor) : [];   // in collapse mode this still registers the triggers
   const glow = c.glow;
   const glowChecks = (glow && Array.isArray(glow.when)) ? glow.when.map(checkFor) : [];
+  // a static (always-on while shown) glow: subglow toggled on directly, no condition
+  const staticGlow = () => {
+    for (const sr of b.subRegions) {
+      if (sr.type === 'subglow') { sr.glow = true; sr.glowType = glow.glowType || 'buttonOverlay'; sr.useGlowColor = true; sr.glowColor = (glow.color || WHITE).slice(); }
+    }
+  };
 
   const conditions = [];
-  if (cdIdx && d.desaturateOnCd) {
+  // desaturate while on cooldown: default ON for an always-visible icon with a spell (cd-like); procs opt in.
+  const desat = d.desaturateOnCd !== undefined ? d.desaturateOnCd : (!gated && cdIdx !== 0);
+  if (cdIdx && desat) {
     conditions.push({ check: { trigger: cdIdx, variable: 'onCooldown', value: 1 }, changes: [{ property: 'desaturate', value: true }] });
   }
-  if (collapse) {
-    // visibility handled by the show-driving triggers (disjunctive 'all'); glow is static while shown,
-    // or conditional on the extra glow.when clauses
-    if (glow && !glowChecks.length) {
-      for (const sr of b.subRegions) {
-        if (sr.type === 'subglow') { sr.glow = true; sr.glowType = glow.glowType || 'buttonOverlay'; sr.useGlowColor = true; sr.glowColor = (glow.color || WHITE).slice(); }
-      }
-    } else if (glow) {
-      conditions.push({ check: AND(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
-    }
-  } else {
+
+  if (gated && collapse) {
+    // visibility handled by the show-driving triggers (disjunctive 'all'); glow static or on extra clauses
+    if (glow && !glowChecks.length) staticGlow();
+    else if (glow) conditions.push({ check: andCheck(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
+  } else if (gated) {
     b.alpha = 0;
     const showChanges = [{ property: 'alpha', value: 1 }];
     if (glow && !glowChecks.length) showChanges.push(...B.glowChanges(glow.color || WHITE, glow.glowType));
-    conditions.push({ check: AND(whenChecks), changes: showChanges });
+    conditions.push({ check: andCheck(showChecks), changes: showChanges });
     if (glow && glowChecks.length) {
-      conditions.push({ check: AND([...whenChecks, ...glowChecks]), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
+      conditions.push({ check: andCheck([...showChecks, ...glowChecks]), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
     }
+  } else {
+    // always visible: glow is a standalone condition (or static if no glow.when clauses)
+    if (glow && !glowChecks.length) staticGlow();
+    else if (glow) conditions.push({ check: andCheck(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
   }
 
   let mode = cdIdx || 1;                     // display trigger: the cooldown by default (spell art + swipe)
-  if (d.timer === 'buff') mode = auraIdx;    // swipe/countdown = the proc buff's remaining time
+  if (d.timer === 'buff') mode = auraIdx;    // swipe/countdown = a tracked buff's remaining time
   if (d.timer === 'none') b.cooldown = false;
   b.triggers = B.wrap(triggerArr, mode);
-  if (collapse) b.triggers.disjunctive = 'all';   // 'any' would show the icon permanently (cd trigger is always active)
+  if (gated && collapse) b.triggers.disjunctive = 'all';   // 'any' would show the icon permanently (cd trigger is always active)
   b.conditions = conditions;
   if (d.stacks) b.subRegions = [...b.subRegions, B.stacksSubtext(auraIdx)];
+  if (c.charges) b.subRegions = [...b.subRegions, B.chargesSubtext()];
   if (d.cooldownNumbers === false) b.cooldownTextDisabled = true;
   return b;
 }
@@ -222,7 +259,7 @@ function validateWhenProc(ic, at, need) {
 //  - stealable indicator (c.stealable): shown only while the target has ANY spell-stealable buff (the
 //    trigger's showOnActive drives show/hide); iconSource -1 pulls the matched buff's own icon; glows.
 function procIcon(spec, c, parentId, size) {
-  if (c.when) return whenProcIcon(spec, c, parentId, size);   // the composable DSL (see above)
+  if (c.when) return iconElement(spec, c, parentId, size);   // the composable DSL (see above)
   const b = B.iconBase(parentId, { id: `${spec.id} Proc - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
   const glow = B.glowChanges(c.glowColor || WHITE, c.glowType || 'buttonOverlay');
   if (c.stealable) {
@@ -311,6 +348,10 @@ function elementHeight(el, g) {
       const size = el.size || g.procSize || 30;
       return rowHeight(el.icons.length, size, g.barWidth);
     }
+    case 'iconRow': {
+      const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
+      return rowHeight(el.icons.length, size, g.barWidth, el.perRow, el.iconGap);
+    }
     case 'buffRow':
     case 'cdRow': {
       const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
@@ -319,10 +360,11 @@ function elementHeight(el, g) {
     default: throw new Error(`unknown stack element kind "${el.kind}"`);
   }
 }
-// icons wrap at maxWidth (matches makeDynGroup/customGrowLua: hSpace = 4)
-function rowHeight(count, size, maxWidth) {
-  const perRow = Math.max(1, Math.floor((maxWidth + 4) / (size + 4)));
-  const rows = Math.max(1, Math.ceil(count / perRow));
+// icons wrap at maxWidth (matches makeDynGroup/customGrowLua). An explicit perRow / hSpace (a row's iconGap
+// override) takes precedence; defaults (perRow derived from maxWidth, hSpace 4) reproduce the base layout.
+function rowHeight(count, size, maxWidth, perRow, hSpace = 4) {
+  const pr = perRow || Math.max(1, Math.floor((maxWidth + hSpace) / (size + hSpace)));
+  const rows = Math.max(1, Math.ceil(count / pr));
   return rows * size + (rows - 1) * 4;
 }
 
@@ -461,7 +503,25 @@ function buildElement(spec, el, centerY, g, gx) {
       dg.xOffset = gx;
       return { rootIds: [dg.id], regions: [dg, ...icons] };
     }
-    case 'cdRow': {
+    case 'iconRow': {
+      // the unified row: one iconElement per icon (showWhen? => proc-like; else cd-like). Icon id = dgId - label.
+      // Per-row overrides of the global style: el.size (icon px), el.perRow (wrap count), el.iconGap (icon
+      // spacing), el.combatOnly (load this row + its icons only in combat).
+      const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
+      const dgId = el.id || `${spec.id} Icons${el.secondary ? ' (Secondary)' : ''}`;
+      const icons = el.icons.map(c => {
+        const icon = iconElement(spec, c, dgId, size, dgId);
+        return g.gateUnknownSpells ? gateSpellKnown(icon, c.spell, c.byName) : icon;
+      });
+      const dgOpts = { yOffset: centerY, iconSize: size };
+      if (el.perRow) dgOpts.perRow = el.perRow; else dgOpts.maxWidth = g.barWidth;
+      if (el.iconGap != null) dgOpts.hSpace = el.iconGap;
+      const dg = B.makeDynGroup(spec.id, dgId, icons, dgOpts);
+      dg.xOffset = gx;
+      if (el.combatOnly) for (const r of [dg, ...icons]) { r.load = r.load || {}; r.load.use_combat = true; }
+      return { rootIds: [dg.id], regions: [dg, ...icons] };
+    }
+    case 'cdRow': {   // legacy (pre-iconRow) — kept working until the Etape 3 codemod, then removed
       const size = el.size || (el.secondary ? g.secIconSize : g.iconSize);
       const dgId = el.id || `${spec.id} CDs${el.secondary ? ' (Secondary)' : ''}`;
       const icons = el.icons.map(c => {
@@ -487,12 +547,16 @@ function buildElement(spec, el, centerY, g, gx) {
   }
 }
 
-// A side-rail column (makeColumn) of cooldown icons. col = { xOffset, yOffset?, size?, icons:[cdIcon] }.
+// A side-rail column (makeColumn) of icons. col = { xOffset, yOffset?, size?, icons:[icon] }. Each icon is
+// canonical iconRow-style (showWhen / glow.when -> iconElement) or legacy cd-style (glow.type -> cooldownIcon).
 function buildColumn(spec, col, side, g, gx, gy) {
   const size = col.size || g.iconSize;
   const colId = col.id || `${spec.id} ${side === 'left' ? 'DEF' : 'OFF'}`;
+  // a column is canonical (iconElement, uniform `${colId} - label` ids) as soon as ANY icon uses the clause
+  // DSL; otherwise it stays legacy (cooldownIcon). Keeps ids uniform so wa-to-spec inverts the whole column one way.
+  const canonical = col.icons.some(isCanonicalIcon);
   const icons = col.icons.map(c => {
-    const icon = B.cooldownIcon(cdIconCfg(spec, c, colId, size));
+    const icon = canonical ? iconElement(spec, c, colId, size, colId) : B.cooldownIcon(cdIconCfg(spec, c, colId, size));
     return g.gateUnknownSpells ? gateSpellKnown(icon, c.spell, c.byName) : icon;
   });
   const dg = B.makeColumn(spec.id, colId, icons, {
@@ -504,7 +568,36 @@ function buildColumn(spec, col, side, g, gx, gy) {
 
 // ---- SPEC validation: fail with a clear message BEFORE building any region ----
 // (The UI edits SPECs as data; an incoherent one must produce a loud error, not a broken import string.)
-const KINDS = new Set(['procRow', 'cdRow', 'buffRow', 'powerBar', 'healthBar', 'stackBar', 'uptimeBar', 'stacks', 'chargeStacks', 'buffWarnText']);
+// A unified iconRow / side-rail icon: validate its showWhen[] and glow.when[] clauses (mirrors validateWhenProc).
+// showWhen absent = always visible (cd-like). A legacy cd icon (glow.type / showPowerAbove / proc) skips this.
+function validateIconRowIcon(ic, at) {
+  const need = (ok, msg) => { if (!ok) throw new Error(`${at}: ${msg}`); };
+  if (!isCanonicalIcon(ic)) return;   // legacy cd icon: cooldownIcon tolerates its data
+  const showWhen = ic.showWhen !== undefined ? ic.showWhen : null;
+  if (showWhen !== null) need(Array.isArray(showWhen) && showWhen.length, 'showWhen must be a non-empty array of clauses');
+  if (ic.hide) {
+    need(showWhen !== null, 'hide needs a showWhen[]');
+    need(ic.hide === 'slot' || ic.hide === 'collapse', `unknown hide "${ic.hide}" (slot | collapse)`);
+  }
+  const glowWhen = (ic.glow && Array.isArray(ic.glow.when)) ? ic.glow.when : [];
+  const all = [...(showWhen || []), ...glowWhen];
+  for (const cl of all) {
+    const k = clauseKind(cl, at);
+    if (k === 'buffStacks') need(cl.buffStacks && cl.buffStacks.name && cl.buffStacks.value != null, 'buffStacks needs { name, value }');
+    if (k === 'charges') need(cl.charges && cl.charges.value != null, 'charges needs { value }');
+    if (k === 'anyBuff') need(Array.isArray(cl.anyBuff) && cl.anyBuff.length, 'anyBuff needs a non-empty [names]');
+    if (k === 'powerPctAtLeast') need(cl.powerPctAtLeast != null, 'powerPctAtLeast needs a percent value');
+    if (k === 'spellReady' || k === 'charges') need(ic.spell != null, `${k} clause needs a spell`);
+  }
+  if (ic.hide === 'collapse') for (const cl of showWhen) {
+    const k = clauseKind(cl, at);
+    need(GATING_CLAUSES.has(k), `clause "${k}" cannot gate collapse-show (allows: ${[...GATING_CLAUSES].join(', ')})`);
+  }
+  const d = ic.display || {};
+  if (d.timer) need(['cooldown', 'buff', 'none'].includes(d.timer), `unknown display.timer "${d.timer}"`);
+  if (d.timer === 'buff') need(all.some(cl => AURA_CLAUSES.has(clauseKind(cl, at))), 'display.timer "buff" needs a buff/anyBuff/buffStacks clause');
+}
+const KINDS = new Set(['iconRow', 'procRow', 'cdRow', 'buffRow', 'powerBar', 'healthBar', 'stackBar', 'uptimeBar', 'stacks', 'chargeStacks', 'buffWarnText']);
 function validateSpec(spec) {
   if (!spec || !spec.id) throw new Error('SPEC needs an `id`');
   if (!Array.isArray(spec.stack) || !spec.stack.length) throw new Error('SPEC needs a non-empty `stack`');
@@ -522,7 +615,12 @@ function validateSpec(spec) {
           else ineed(ic.buff || ic.execute != null || ic.stealable, 'needs when[] (or legacy buff / execute / stealable)');
         });
         break;
-      case 'cdRow': case 'buffRow': need(Array.isArray(el.icons), 'needs icons[]'); break;
+      case 'iconRow':
+        need(Array.isArray(el.icons), 'needs icons[]');
+        el.icons.forEach((ic, j) => validateIconRowIcon(ic, `${at} icons[${j}] "${ic.label}"`));
+        break;
+      case 'cdRow': need(Array.isArray(el.icons), 'needs icons[]'); break;
+      case 'buffRow': need(Array.isArray(el.icons), 'needs icons[]'); break;
       case 'powerBar': need(el.powerType != null, 'needs powerType (a power index)'); break;
       case 'stackBar': need(el.aura && el.max, 'needs aura (buff name) + max'); break;
       case 'uptimeBar': need(el.buff, 'needs buff (a name or [names])'); break;
@@ -532,7 +630,9 @@ function validateSpec(spec) {
     }
   });
   for (const side of ['left', 'right']) {
-    if (spec[side] && !Array.isArray(spec[side].icons)) throw new Error(`${side} column: needs icons[]`);
+    if (!spec[side]) continue;
+    if (!Array.isArray(spec[side].icons)) throw new Error(`${side} column: needs icons[]`);
+    spec[side].icons.forEach((ic, j) => validateIconRowIcon(ic, `${side} column icons[${j}] "${ic.label}"`));
   }
 }
 

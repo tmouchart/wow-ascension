@@ -23,7 +23,7 @@ export const ELEMENT_INFO: Record<string, string> = {
   chargeStacks: 'A row of boxes, one per charge of a charged spell. Boxes fill as charges become available.',
   stackBar: 'A bar driven by an aura stack count (0..max), for stack-based resources like Insanity.',
   buffWarnText: 'A text warning that appears while a buff is missing.',
-  procRow: 'A row of proc icons that appear (and glow) when their conditions are met — telling you to cast a spell now.',
+  iconRow: 'A row of ability icons. Each icon is SHOW IF / GLOW IF conditions: no show condition = an always-visible cooldown; add conditions to make it a proc that appears when you should cast.',
 };
 
 // ---- Inline element fields ----
@@ -35,30 +35,26 @@ export const ELEMENT_FIELD_INFO: Record<string, string> = {
   buffWarnText: 'Buff to watch for, and the warning text shown while it is absent.',
 };
 
-// ---- Glow style / color (shared by IconPanel and ProcPanel) ----
+// ---- Glow style / color (shared across the unified IconPanel controls) ----
 export const GLOW_STYLE_INFO =
   'Glow style signals urgency: Action Button = strong "act now" cue; Pixel = softer passive-state cue; ACShine = a shine sweep.';
 export const GLOW_COLOR_INFO =
   'Glow color signals meaning: white = ready / proc up, class color = a defensive buff is active, gold/orange = optimal dump.';
 
-// ---- CD-icon glow rules (IconPanel) ----
-export const GLOW_RULE_INFO: Record<string, string> = {
-  '': 'No glow on this icon.',
-  buff: 'Glow while a specific buff is active on you.',
-  buffMissing: 'Glow while a specific buff is NOT active on you (a reminder to reapply it).',
-  ready: 'Glow when the spell is off cooldown and ready to cast.',
-  readyPower: 'Glow when the spell is ready AND you have at least the set amount of resource.',
-  powerPct: 'Glow when your resource is at or above the set percentage.',
-  targetHealthBelow: "Glow when the target's health drops below the set percentage (execute range).",
+// ---- Per-row panel (RowPanel) — overrides of the global style, for this row only ----
+export const ROW_INFO = {
+  group: 'Settings for this row only — they override the global style just here.',
+  size: 'Icon size for this row, overriding the global icon size. Reset to fall back to the global value.',
+  perRow: 'How many icons before the row wraps to a new line. Empty = fit as many as the bar width allows.',
+  iconGap: 'Horizontal spacing (px) between icons in this row. Empty = the default (4).',
+  combatOnly: 'Load this row (and its icons) only while in combat, independently of the global combat-only setting.',
 };
+
+// ---- Unified icon panel (IconPanel) ----
 export const ICON_INFO = {
-  group: 'A cooldown icon: it greys out while on cooldown and can glow on one condition.',
-  buffName: 'Exact in-game name of the buff this glow watches.',
-  power: 'Minimum resource amount required for the glow to trigger.',
-  powerPct: 'Resource percentage at/above which the glow triggers.',
-  targetHp: 'Target-health percentage below which the glow triggers.',
+  group: 'An ability icon: no show condition = an always-visible cooldown; add show conditions to make it a proc. It can glow on its own conditions.',
   charges: "Show the spell's charge count as a number on the icon.",
-  showPowerAbove: 'Only show this icon once you have at least this much resource. 0 = always shown.',
+  showWhen: 'Always = the icon is visible all the time (a cooldown). Show when… = it stays hidden (still tracking its cooldown) until ALL its conditions pass at once (a proc).',
 };
 
 // ---- Proc panel ----
@@ -81,7 +77,8 @@ export const CLAUSE_INFO: Record<string, string> = {
   anyBuff: 'True while ANY of the listed buffs is active (comma-separated names).',
   buffStacks: "True when the named buff's stack count meets the comparison.",
   targetHpBelow: "True when the target's health is below this percentage.",
-  powerAtLeast: 'True when your resource is at or above this amount.',
+  powerAtLeast: 'True when your resource is at or above this amount (absolute value).',
+  powerPctAtLeast: 'True when your resource is at or above this percentage of its maximum.',
   spellReady: 'True when the spell is off cooldown.',
   charges: "True when the spell's charge count meets the comparison.",
   stealable: 'True when the target has a stealable / purgeable buff.',

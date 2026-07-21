@@ -41,7 +41,7 @@ export const BAR_PRESETS: Record<string, { title: string; el: El }> = {
   charges: { title: 'Charge boxes', el: { kind: 'chargeStacks', spell: 'Spell name', byName: true, count: 3, hi: [0.45, 0.9, 0.06, 1], lo: [0.1, 0.32, 0, 1] } },
   stackBar: { title: 'Stack bar', el: { kind: 'stackBar', aura: 'Buff name', max: 100, hi: [0.62, 0.24, 0.82, 1], lo: [0.2, 0.05, 0.32, 1], bg: [0.1, 0.1, 0.12, 0.8] } },
   warn: { title: 'Warn text', el: { kind: 'buffWarnText', buff: 'Buff name', text: 'MISSING' } },
-  proc: { title: 'Proc row', el: { kind: 'procRow', icons: [] } },
+  iconrow: { title: 'Icon row', el: { kind: 'iconRow', icons: [] } },
 };
 
 // Is this class's power index confirmed in-game? (drives the inspector's "verify" hint)
@@ -68,7 +68,7 @@ export function buildDefaultSpec(slug: string, className: string, abilities: Abi
     name: `${slug}-spec`,
     global: { barWidth: 250, iconSize: 26, secIconSize: 24, procSize: 30, gap: 3 },
     stack: [
-      { kind: 'cdRow', icons: cds },
+      { kind: 'iconRow', icons: cds },
       { kind: 'powerBar', title: name, powerType, hi, lo, bg: [0.1, 0.1, 0.12, 0.8] },
       { kind: 'healthBar', hi: HP_HI, lo: HP_LO },
     ],

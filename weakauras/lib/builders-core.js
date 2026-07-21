@@ -487,11 +487,11 @@ function cooldownIcon(cfg) {
 }
 
 // ---------- dynamic group (centered, wrapping icon row) ----------
-function customGrowLua(perRow, iconSize) {
+function customGrowLua(perRow, iconSize, hSpace = 4) {
   return `function(newPositions, activeRegions)
     local perRow = ${perRow}
     local w, h = ${iconSize}, ${iconSize}
-    local hSpace, vSpace = 4, 4
+    local hSpace, vSpace = ${hSpace}, 4
     local n = #activeRegions
     local i = 1
     while i <= n do
@@ -507,21 +507,23 @@ function customGrowLua(perRow, iconSize) {
     end
 end`;
 }
-// o = { yOffset, iconSize, perRow?, maxWidth? }. If maxWidth is given, perRow is derived so a row never
-// exceeds maxWidth (hSpace = 4, matching customGrowLua) — this is the dynamicgroup's "max size".
+// o = { yOffset, iconSize, perRow?, maxWidth?, hSpace? }. If maxWidth is given, perRow is derived so a row
+// never exceeds maxWidth (using hSpace, matching customGrowLua) — this is the dynamicgroup's "max size".
+// hSpace = horizontal gap between icons (default 4, overridable per row via SPEC el.iconGap).
 function makeDynGroup(groupId, id, children, o) {
   const dg = clone(templates.dyngroup);
   dg.id = id; dg.uid = uidFor(id); dg.parent = groupId;
   dg.load = loadAlways(); dg.actions = safeActions(); dg.conditions = [];
   stripMeta(dg);
   dg.controlledChildren = children.map(r => r.id);
+  const hSpace = o.hSpace != null ? o.hSpace : 4;
   const perRow = o.maxWidth
-    ? Math.max(1, Math.floor((o.maxWidth + 4) / (o.iconSize + 4)))
+    ? Math.max(1, Math.floor((o.maxWidth + hSpace) / (o.iconSize + hSpace)))
     : o.perRow;
   dg.grow = 'CUSTOM';
-  dg.customGrow = customGrowLua(perRow, o.iconSize);
+  dg.customGrow = customGrowLua(perRow, o.iconSize, hSpace);
   dg.align = 'CENTER';
-  dg.space = 4; dg.stagger = 0; dg.sort = 'none';
+  dg.space = hSpace; dg.stagger = 0; dg.sort = 'none';
   dg.useLimit = false;
   dg.anchorFrameType = 'SCREEN'; dg.anchorPoint = 'CENTER'; dg.selfPoint = 'CENTER';
   dg.xOffset = 0; dg.yOffset = o.yOffset;

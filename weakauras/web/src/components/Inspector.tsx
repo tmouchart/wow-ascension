@@ -1,19 +1,13 @@
 import { X } from 'lucide-react';
-import { useStore, elementLabel, type El, type Spec, type Ref, type IconCfg } from '../store';
+import { useStore, elementLabel, type El, type Spec } from '../store';
 import { powerIndexConfirmed, BAR_PRESETS } from '../lib/defaultSpec';
-import { Group, Field, Note, ToggleRow, InfoTip, numCls, toHex, fromHex, GLOW_STYLES, NONE } from './inspector-bits';
-import { GLOW_STYLE_INFO, GLOW_COLOR_INFO, GLOW_RULE_INFO, ICON_INFO, ELEMENT_INFO, ELEMENT_FIELD_INFO, LAYOUT_INFO, POWER_INDEX_INFO } from './inspector-help';
-import { ProcPanel } from './ProcPanel';
+import { Group, Field, Note, ToggleRow, InfoTip, numCls } from './inspector-bits';
+import { ELEMENT_INFO, ELEMENT_FIELD_INFO, LAYOUT_INFO, POWER_INDEX_INFO } from './inspector-help';
+import { IconPanel } from './IconPanel';
+import { RowPanel } from './RowPanel';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Slider } from './ui/slider';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from './ui/select';
 
 const SLIDERS: { key: string; label: string; min: number; max: number }[] = [
   { key: 'barWidth', label: 'Bar width', min: 150, max: 320 },
@@ -23,7 +17,7 @@ const SLIDERS: { key: string; label: string; min: number; max: number }[] = [
 ];
 
 // The kinds the user can freely add (and therefore remove); the rest ships with the class SPEC.
-const REMOVABLE = new Set(['powerBar', 'healthBar', 'uptimeBar', 'stacks', 'chargeStacks', 'stackBar', 'buffWarnText', 'procRow']);
+const REMOVABLE = new Set(['powerBar', 'healthBar', 'uptimeBar', 'stacks', 'chargeStacks', 'stackBar', 'buffWarnText', 'iconRow']);
 
 // The generator derives a region id from el.id (or a per-kind default like "<spec> Power") — two bars with
 // the same effective id would collide (same region id -> same uid). Mirror those defaults when uniquifying.
@@ -36,105 +30,8 @@ const effectiveId = (spec: Spec, el: El): string | undefined =>
     : el.kind === 'stackBar' ? `${spec.id} ${typeof el.aura === 'string' ? el.aura : 'Stack'}`
     : el.kind === 'buffWarnText' ? `${spec.id} Warn - ${el.buff}`
     : el.kind === 'uptimeBar' ? `${spec.id} ${typeof el.buff === 'string' ? el.buff : 'Uptime'}`
-    : el.kind === 'procRow' ? `${spec.id} Procs`
+    : el.kind === 'iconRow' ? `${spec.id} Icons`
     : undefined);
-
-// ---- per-icon glow editing (cdRow / side-rail icons -> the spec-builder `glow` object) ----
-type Glow = { type?: string; buff?: string; power?: number; pct?: number; color?: number[]; glowType?: string };
-const GLOW_RULES: [string, string][] = [
-  ['', 'None'],
-  ['buff', 'While buff active'],
-  ['buffMissing', 'When buff missing'],
-  ['ready', 'When ready'],
-  ['readyPower', 'Ready + power >='],
-  ['powerPct', 'Power % >='],
-  ['targetHealthBelow', 'Target HP % <'],
-];
-// (Group / Field / Note / ToggleRow / numCls / toHex / fromHex / GLOW_STYLES / NONE live in inspector-bits.tsx,
-// shared with ProcPanel.tsx.)
-
-function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: IconCfg }) {
-  const setIconField = useStore((st) => st.setIconField);
-  const select = useStore((st) => st.select);
-  const setF = (key: string, value: unknown) => setIconField(sel.ref, sel.iconIndex, key, value);
-  const glow = icon.glow as Glow | undefined;
-  const setGlow = (patch: Partial<Glow> | undefined) =>
-    setF('glow', patch === undefined ? undefined : { ...glow, ...patch });
-
-  function pickRule(type: string) {
-    if (!type) return setF('glow', undefined);
-    const next: Glow = {
-      type,
-      color: glow?.color ?? [1, 1, 1, 1],
-      // taxonomy default: passive buff-up state = Pixel; every "act now" cue = Action Button Glow
-      glowType: glow?.glowType ?? (type === 'buff' ? 'Pixel' : 'buttonOverlay'),
-    };
-    if (type === 'buff' || type === 'buffMissing') next.buff = glow?.buff ?? (icon.label || '');
-    if (type === 'readyPower') next.power = glow?.power ?? 50;
-    if (type === 'powerPct') next.pct = glow?.pct ?? 60;
-    if (type === 'targetHealthBelow') next.pct = glow?.pct ?? 35;
-    setF('glow', next);
-  }
-
-  const rule = glow?.type ?? '';
-  return (
-    <Group title={`Icon: ${icon.label ?? String(icon.spell)}`} info={ICON_INFO.group}>
-      <Field label="Glow rule" info={GLOW_RULE_INFO[rule]}>
-        <Select value={rule || NONE} onValueChange={(v) => pickRule(v === NONE ? '' : v)}>
-          <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
-          <SelectContent>
-            {GLOW_RULES.map(([v, label]) => <SelectItem key={v} value={v || NONE}>{label}</SelectItem>)}
-          </SelectContent>
-        </Select>
-      </Field>
-      {(rule === 'buff' || rule === 'buffMissing') && (
-        <Field label="Buff name" info={ICON_INFO.buffName}>
-          <Input className="h-8 w-[150px]" type="text" value={glow?.buff ?? ''}
-            onChange={(e) => setGlow({ buff: e.target.value })} />
-        </Field>
-      )}
-      {rule === 'readyPower' && (
-        <Field label="Power >=" info={ICON_INFO.power}>
-          <Input className={numCls} type="number" value={glow?.power ?? 50}
-            onChange={(e) => setGlow({ power: Number(e.target.value) })} />
-        </Field>
-      )}
-      {(rule === 'powerPct' || rule === 'targetHealthBelow') && (
-        <Field label={rule === 'powerPct' ? 'Power % >=' : 'Target HP % <'}
-          info={rule === 'powerPct' ? ICON_INFO.powerPct : ICON_INFO.targetHp}>
-          <Input className={numCls} type="number" min={1} max={100} value={glow?.pct ?? 35}
-            onChange={(e) => setGlow({ pct: Number(e.target.value) })} />
-        </Field>
-      )}
-      {rule && (
-        <>
-          <Field label="Glow style" info={GLOW_STYLE_INFO}>
-            <Select value={glow?.glowType ?? 'buttonOverlay'} onValueChange={(v) => setGlow({ glowType: v })}>
-              <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
-              <SelectContent>
-                {GLOW_STYLES.map((v) => <SelectItem key={v} value={v}>{v === 'buttonOverlay' ? 'Action Button' : v}</SelectItem>)}
-              </SelectContent>
-            </Select>
-          </Field>
-          <Field label="Glow color" info={GLOW_COLOR_INFO}>
-            <input type="color" value={toHex(glow?.color)} onChange={(e) => setGlow({ color: fromHex(e.target.value) })}
-              className="h-8 w-12 cursor-pointer rounded-md border border-input bg-transparent p-0.5" />
-          </Field>
-        </>
-      )}
-      <ToggleRow label="Charge count" on={!!icon.charges} onToggle={() => setF('charges', icon.charges ? undefined : true)} info={ICON_INFO.charges} />
-      <Field label="Show at power >=" info={ICON_INFO.showPowerAbove}>
-        <Input className={numCls} type="number" min={0} placeholder="off"
-          value={Number(icon.showPowerAbove ?? 0)}
-          onChange={(e) => setF('showPowerAbove', Number(e.target.value) || undefined)} />
-      </Field>
-      <Note>0 = always shown. One glow rule per icon (glow style = urgency, color = meaning).</Note>
-      <div className="mt-3 flex gap-2">
-        <Button variant="outline" size="sm" onClick={() => select(null)}>Done</Button>
-      </div>
-    </Group>
-  );
-}
 
 // Inline fields for the element kinds whose data is a buff name (the SPEC-shipped rows keep their curated data).
 function ElementFields({ el, index }: { el: El; index: number }) {
@@ -220,8 +117,9 @@ export function Inspector({ slug }: { slug: string }) {
   const confirmed = powerIndexConfirmed(slug);
   const selContainer = sel == null ? undefined
     : (sel.ref === 'left' ? spec.left : sel.ref === 'right' ? spec.right : spec.stack[sel.ref]);
-  const selIcon = selContainer?.icons?.[sel!.iconIndex];
-  const selIsProc = selContainer?.kind === 'procRow';
+  const selIcon = sel && sel.iconIndex !== null ? selContainer?.icons?.[sel.iconIndex] : undefined;
+  // a selected ROW (iconIndex null) — v1: central-stack iconRows only (rails are not row-selectable yet)
+  const selRow = sel != null && sel.iconIndex === null && typeof sel.ref === 'number' && selContainer?.kind === 'iconRow';
 
   function addBar(key: keyof typeof BAR_PRESETS) {
     const preset = BAR_PRESETS[key];
@@ -236,10 +134,11 @@ export function Inspector({ slug }: { slug: string }) {
     <aside className="min-h-0 overflow-auto border-l bg-[image:var(--grad-pane)]">
       <div className="sticky top-0 z-[2] flex items-center justify-between border-b bg-[image:var(--grad-bar)] px-4 py-3">
         <h2 className="text-[13px] font-semibold uppercase tracking-wide text-muted-foreground">Inspector</h2>
-        <span className="text-[13px] text-muted-foreground">{sel && selIcon ? (selIsProc ? 'Proc' : 'Icon') : 'Global'}</span>
+        <span className="text-[13px] text-muted-foreground">{selRow ? 'Row' : sel && selIcon ? 'Icon' : 'Global'}</span>
       </div>
       <div className="p-4">
-        {sel && selIcon && (selIsProc ? <ProcPanel sel={sel} icon={selIcon} /> : <IconPanel sel={sel} icon={selIcon} />)}
+        {sel && selIcon && sel.iconIndex !== null && <IconPanel sel={{ ref: sel.ref, iconIndex: sel.iconIndex }} icon={selIcon} />}
+        {selRow && <RowPanel el={selContainer!} index={sel!.ref as number} />}
 
         <Group title="Layout">
           {SLIDERS.map(({ key, label, min, max }) => (
@@ -292,7 +191,7 @@ export function Inspector({ slug }: { slug: string }) {
                 onClick={() => addBar(k)}>+ {BAR_PRESETS[k].title}</Button>
             ))}
           </div>
-          <Note>Drag an element's grip in the preview to reorder the stack (bars above or below any CD row). Side columns stay put. Click an icon to edit its glow.</Note>
+          <Note>Drag an element's grip in the preview to reorder the stack. Side columns stay put. Click an icon to edit it, or click a row's background to edit the row (size, spacing, …).</Note>
         </Group>
       </div>
     </aside>

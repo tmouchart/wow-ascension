@@ -4,10 +4,9 @@ import { cn } from '@/lib/utils';
 import { Switch } from './ui/switch';
 import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip';
 
-// Small presentational helpers shared by the inspector panels (Inspector.tsx, ProcPanel.tsx).
+// Small presentational helpers shared by the inspector panels (Inspector.tsx, IconPanel.tsx).
 
 export const GLOW_STYLES = ['buttonOverlay', 'Pixel', 'ACShine'];
-export const NONE = '__none__'; // Radix Select forbids an empty-string item value
 
 export const toHex = (c?: number[]) =>
   '#' + (c ?? [1, 1, 1]).slice(0, 3).map((v) => Math.round(v * 255).toString(16).padStart(2, '0')).join('');

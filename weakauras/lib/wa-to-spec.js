@@ -34,6 +34,7 @@ const isPower = (t) => t.type === 'unit' && t.event === 'Power';
 const isHealth = (t) => t.type === 'unit' && t.event === 'Health';
 const isPowerAtLeast = (t) => t.type === 'custom' && /UnitPower\("player"/.test(t.custom || '');
 const isTargetExecute = (t) => t.type === 'custom' && /UnitHealth\("target"/.test(t.custom || '');
+const isStealable = (t) => isAura(t) && t.use_stealable;
 const isAlwaysFull = (t) => t.type === 'custom' && /progressType = "static"/.test(t.custom || '');
 
 const trigs = (region) => (region.triggers.__array || []).map((t) => t.trigger);
@@ -103,6 +104,88 @@ function invertCooldownIcon(region, label) {
       c.glow = { type: 'onCharges', ...cdSpell(extra), op: chk.op, value: num(chk.value), ...glow };
     }
   }
+  return c;
+}
+
+// The inverse of spec-builder.js clauseToCheck: a condition-check + the trigger it references -> a when-clause.
+function checkToClause(chk, ts) {
+  const t = ts[chk.trigger - 1];
+  switch (chk.variable) {
+    case 'buffed':
+      if (num(chk.value) === 0) return { buffMissing: t.auranames[0] };
+      return t.auranames.length > 1 ? { anyBuff: t.auranames.slice() } : { buff: t.auranames[0] };
+    case 'stacks':
+      return { buffStacks: { name: t.auranames[0], op: chk.op || '>=', value: num(chk.value) } };
+    case 'show':
+      if (isTargetExecute(t)) return { targetHpBelow: executePct(t) };
+      if (isPowerAtLeast(t)) { const pv = powerAtLeastVals(t); return { powerAtLeast: pv.power, powerType: pv.powerType }; }
+      if (isStealable(t)) return { stealable: true };
+      if (isAura(t)) return t.auranames.length > 1 ? { anyBuff: t.auranames.slice() } : { buff: t.auranames[0] };
+      break;
+    case 'onCooldown': return { spellReady: true };
+    case 'charges': return { charges: { op: chk.op || '>=', value: num(chk.value) } };
+    case 'percentpower': return { powerPctAtLeast: num(chk.value), powerType: t.powertype };
+  }
+  throw new Error(`checkToClause: unhandled check (variable "${chk.variable}")`);
+}
+const decompose = (check) => (check.variable === 'AND' ? check.checks : [check]);
+
+// A unified iconRow / side-rail icon = spec-builder.js iconElement. Recover
+// { label, spell, byName, fallbackIcon, charges, showWhen[], hide, glow{color,glowType,when[]}, display }.
+// showWhen absent = always-visible (cd-like). Mirror of iconElement's slot / collapse / always-visible shapes.
+function invertIconElement(region, label) {
+  const c = { label };
+  if (region.displayIcon) c.fallbackIcon = region.displayIcon;
+  const ts = trigs(region);
+  const conds = region.conditions || [];
+  const mode = region.triggers.activeTriggerMode;
+  const collapse = region.triggers.disjunctive === 'all';
+
+  const cdPos = ts.findIndex(isCooldown);
+  const cdIdx = cdPos >= 0 ? cdPos + 1 : 0;
+  if (cdIdx) Object.assign(c, cdSpell(ts[cdPos]));
+  if ((region.subRegions || []).some((s) => s.type === 'subtext' && s.text_text === '%s')) c.charges = true;
+
+  const desatCond = conds.find((cd) => (cd.changes || []).length === 1 && cd.changes[0].property === 'desaturate');
+  const showCond = conds.find((cd) => (cd.changes || []).some((ch) => ch.property === 'alpha'));
+  const glowCond = conds.find((cd) => cd !== showCond && (cd.changes || []).some((ch) => /^sub\.3\.glow/.test(ch.property)));
+  const staticGlow = glowFromSubglow(region);
+
+  // glow: an explicit glow condition, else glow folded into the show condition (glow whenever shown), else static
+  let glow = null, glowChecks = [];
+  if (glowCond) { glow = glowFromChanges(glowCond.changes); glowChecks = decompose(glowCond.check); }
+  else if (showCond && (showCond.changes || []).some((ch) => /^sub\.3\.glow/.test(ch.property))) glow = glowFromChanges(showCond.changes);
+  else if (Object.keys(staticGlow).length) glow = staticGlow;
+
+  // showWhen: slot mode reads the alpha condition; collapse reads the non-cd/non-glow gating triggers
+  let showWhen = null, showChecks = [];
+  if (showCond) {
+    showChecks = decompose(showCond.check);
+    showWhen = showChecks.map((chk) => checkToClause(chk, ts));
+  } else if (collapse) {
+    const glowTrigIdx = new Set(glowChecks.map((chk) => chk.trigger));
+    showWhen = ts.map((_, i) => i + 1).filter((idx) => idx !== cdIdx && !glowTrigIdx.has(idx))
+      .map((idx) => checkToClause({ trigger: idx, variable: 'show', value: 1 }, ts));
+  }
+  const gated = showWhen !== null;
+
+  // glow.when = the glow AND-checks that aren't already show-checks (slot); all of them otherwise
+  if (glow && glowChecks.length) {
+    const showKeys = new Set((gated && !collapse ? showChecks : []).map((x) => JSON.stringify(x)));
+    const extra = glowChecks.filter((x) => !showKeys.has(JSON.stringify(x)));
+    if (extra.length) glow.when = extra.map((chk) => checkToClause(chk, ts));
+  }
+
+  if (showWhen) { c.showWhen = showWhen; if (collapse) c.hide = 'collapse'; }
+  if (glow) c.glow = glow;
+
+  const display = {};
+  const desatDefault = !gated && cdIdx !== 0;
+  if (!!desatCond !== desatDefault) display.desaturateOnCd = !!desatCond;
+  if (region.cooldown === false) display.timer = 'none';
+  else if (cdIdx && mode !== cdIdx) display.timer = 'buff';
+  if (region.cooldownTextDisabled) display.cooldownNumbers = false;
+  if (Object.keys(display).length) c.display = display;
   return c;
 }
 
@@ -236,6 +319,20 @@ function invertRow(dg, byId, specId) {
   const iconIds = dg.controlledChildren || [];
   const icons = iconIds.map((id) => byId.get(id));
   const first = iconIds[0] || '';
+  // unified iconRow: every icon id is prefixed by the row's dynamicgroup id (`${dg.id} - <label>`)
+  const pfx = `${dg.id} - `;
+  if (iconIds.length && iconIds.every((id) => id.startsWith(pfx))) {
+    const el = { kind: 'iconRow', id: dg.id, size: icons[0].width,
+      icons: icons.map((r) => invertIconElement(r, r.id.slice(pfx.length))) };
+    if (/\(Secondary\)$/.test(dg.id)) el.secondary = true;
+    // per-row overrides: iconGap (dg.space), perRow (customGrow Lua), combatOnly (dg load). perRow / _rowCombat
+    // are resolved against the recovered barWidth / global combat flag in waToSpec's post-pass.
+    if (dg.space != null && dg.space !== 4) el.iconGap = dg.space;
+    const pr = /local perRow = (\d+)/.exec(dg.customGrow || '');
+    if (pr) el.perRow = Number(pr[1]);
+    if (dg.load && dg.load.use_combat) el._rowCombat = true;
+    return el;
+  }
   if (first.startsWith(`${specId} Proc - `)) {
     return { kind: 'procRow', id: dg.id, size: icons[0].width,
       icons: icons.map((r) => invertProcIcon(r, labelOf(r.id, specId, 'Proc'))) };
@@ -254,9 +351,12 @@ function invertRow(dg, byId, specId) {
 const isColumn = (dg) => dg.regionType === 'dynamicgroup' && !/local perRow/.test(dg.customGrow || '');
 
 function invertColumn(dg, byId, specId, gx, gy) {
-  const icons = (dg.controlledChildren || []).map((id) => byId.get(id));
+  const iconIds = dg.controlledChildren || [];
+  const icons = iconIds.map((id) => byId.get(id));
+  const pfx = `${dg.id} - `;
+  const canonical = iconIds.length && iconIds.every((id) => id.startsWith(pfx));
   const col = { id: dg.id, xOffset: dg.xOffset - gx, size: icons[0].width,
-    icons: icons.map((r) => invertCooldownIcon(r, labelOf(r.id, specId))) };
+    icons: icons.map((r) => canonical ? invertIconElement(r, r.id.slice(pfx.length)) : invertCooldownIcon(r, labelOf(r.id, specId))) };
   if (dg.yOffset !== gy) col.yOffset = dg.yOffset;
   return col;
 }
@@ -320,7 +420,19 @@ function waToSpec(top) {
     else spec.right = invertColumn(dg, byId, specId, gx, gy);
   }
 
-  if (group.load && group.load.use_combat) spec.combatOnly = true;
+  const globalCombat = !!(group.load && group.load.use_combat);
+  if (globalCombat) spec.combatOnly = true;
+  // resolve per-row overrides that needed the recovered barWidth / global combat flag: drop a perRow that just
+  // equals the maxWidth-derived default (it was not an override), and a per-row combatOnly already covered globally.
+  for (const el of spec.stack) {
+    if (el.kind !== 'iconRow') continue;
+    if (el.perRow != null) {
+      const hs = el.iconGap != null ? el.iconGap : 4;
+      const def = Math.max(1, Math.floor((barWidth + hs) / (el.size + hs)));
+      if (el.perRow === def) delete el.perRow;
+    }
+    if (el._rowCombat) { if (!globalCombat) el.combatOnly = true; delete el._rowCombat; }
+  }
   return spec;
 }
 

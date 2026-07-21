@@ -401,7 +401,7 @@
       "limit": 5,
       "customGrow": "function(newPositions, activeRegions)\n    local perRow = 5\n    local w, h = 46, 46\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
       "controlledChildren": [
-        "Barbarian Brutality SPEC - Crush"
+        "Barbarian Brutality SPEC Featured - Crush"
       ],
       "borderInset": 1,
       "tocversion": 110200,
@@ -597,7 +597,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "ZroKvXkNh7w",
+      "uid": "ap84P4rNokz",
       "triggers": {
         "__array": [
           {
@@ -626,15 +626,14 @@
           {
             "untrigger": [],
             "trigger": {
-              "use_unit": true,
-              "duration": "1",
-              "use_powertype": true,
-              "use_absorbMode": true,
-              "unevent": "auto",
-              "powertype": 3,
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "UNIT_POWER_UPDATE, UNIT_POWER_FREQUENT, UNIT_MAXPOWER, PLAYER_ENTERING_WORLD",
+              "custom": "function(allstates, event, ...)\n    local p = UnitPower(\"player\", 3)\n    allstates[\"\"] = { show = (p >= 63), changed = true }\n    return true\nend",
               "unit": "player",
-              "type": "unit",
-              "event": "Power",
+              "debuffType": "HELPFUL",
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START",
               "names": [],
@@ -666,8 +665,6 @@
         },
         {
           "check": {
-            "trigger": -2,
-            "variable": "AND",
             "checks": [
               {
                 "trigger": 1,
@@ -676,11 +673,12 @@
               },
               {
                 "trigger": 2,
-                "variable": "power",
-                "op": ">=",
-                "value": "63"
+                "variable": "show",
+                "value": 1
               }
-            ]
+            ],
+            "trigger": -2,
+            "variable": "AND"
           },
           "changes": [
             {
@@ -784,7 +782,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Crush",
+      "id": "Barbarian Brutality SPEC Featured - Crush",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -815,11 +813,11 @@
       "limit": 5,
       "customGrow": "function(newPositions, activeRegions)\n    local perRow = 7\n    local w, h = 30, 30\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
       "controlledChildren": [
-        "Barbarian Brutality SPEC - Whirling Advance",
-        "Barbarian Brutality SPEC - Decapitate",
-        "Barbarian Brutality SPEC - Headbutt",
-        "Barbarian Brutality SPEC - Kick",
-        "Barbarian Brutality SPEC - Jawbreaker"
+        "Barbarian Brutality SPEC CDs - Whirling Advance",
+        "Barbarian Brutality SPEC CDs - Decapitate",
+        "Barbarian Brutality SPEC CDs - Headbutt",
+        "Barbarian Brutality SPEC CDs - Kick",
+        "Barbarian Brutality SPEC CDs - Jawbreaker"
       ],
       "borderInset": 1,
       "tocversion": 110200,
@@ -989,7 +987,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": 2,
+      "iconSource": -1,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -1015,26 +1013,9 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "V5Ew5xpWpgq",
+      "uid": "4CiRdmLMuZm",
       "triggers": {
         "__array": [
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "custom",
-              "custom_type": "stateupdate",
-              "check": "event",
-              "custom_hide": "custom",
-              "events": "UNIT_POWER_UPDATE, UNIT_POWER_FREQUENT, UNIT_MAXPOWER, PLAYER_ENTERING_WORLD",
-              "custom": "function(allstates, event, ...)\n    local p = UnitPower(\"player\", 3)\n    allstates[\"\"] = { show = (p >= 45), changed = true }\n    return true\nend",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "names": [],
-              "spellIds": []
-            }
-          },
           {
             "untrigger": [],
             "trigger": {
@@ -1057,6 +1038,23 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "UNIT_POWER_UPDATE, UNIT_POWER_FREQUENT, UNIT_MAXPOWER, PLAYER_ENTERING_WORLD",
+              "custom": "function(allstates, event, ...)\n    local p = UnitPower(\"player\", 3)\n    allstates[\"\"] = { show = (p >= 45), changed = true }\n    return true\nend",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
           }
         ],
         "disjunctive": "any",
@@ -1070,7 +1068,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "onCooldown",
             "value": 1
           },
@@ -1078,6 +1076,19 @@
             {
               "property": "desaturate",
               "value": true
+            }
+          ]
+        },
+        {
+          "check": {
+            "trigger": 2,
+            "variable": "show",
+            "value": 1
+          },
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
             }
           ]
         }
@@ -1158,8 +1169,8 @@
           "do_custom": false
         }
       },
-      "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Whirling Advance",
+      "alpha": 0,
+      "id": "Barbarian Brutality SPEC CDs - Whirling Advance",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -1219,7 +1230,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "Wk5JACDlObf",
+      "uid": "oE3AABQ6Gko",
       "triggers": {
         "__array": [
           {
@@ -1262,6 +1273,23 @@
               "names": [],
               "spellIds": []
             }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "UNIT_HEALTH, UNIT_MAXHEALTH, PLAYER_TARGET_CHANGED, PLAYER_ENTERING_WORLD",
+              "custom": "function(allstates, event, ...)\n    local show = false\n    if UnitExists(\"target\") and UnitHealthMax(\"target\") > 0 then\n        show = (UnitHealth(\"target\") / UnitHealthMax(\"target\")) < 0.35\n    end\n    allstates[\"\"] = { show = show, changed = true }\n    return true\nend",
+              "unit": "target",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
           }
         ],
         "disjunctive": "any",
@@ -1288,10 +1316,21 @@
         },
         {
           "check": {
-            "trigger": 2,
-            "variable": "percentpower",
-            "op": ">=",
-            "value": "60"
+            "checks": [
+              {
+                "op": ">=",
+                "trigger": 2,
+                "variable": "percentpower",
+                "value": "60"
+              },
+              {
+                "trigger": 3,
+                "variable": "show",
+                "value": 1
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           },
           "changes": [
             {
@@ -1395,7 +1434,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Decapitate",
+      "id": "Barbarian Brutality SPEC CDs - Decapitate",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -1455,7 +1494,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "vwqQfZuPi1w",
+      "uid": "CUJKmt8b4Vn",
       "triggers": {
         "__array": [
           {
@@ -1582,7 +1621,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Headbutt",
+      "id": "Barbarian Brutality SPEC CDs - Headbutt",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -1642,7 +1681,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "Tl4szjqqlVo",
+      "uid": "d61RfNr1kax",
       "triggers": {
         "__array": [
           {
@@ -1769,7 +1808,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Kick",
+      "id": "Barbarian Brutality SPEC CDs - Kick",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -1829,7 +1868,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "Jdbxv40XKwg",
+      "uid": "R4S54sgOM6e",
       "triggers": {
         "__array": [
           {
@@ -1956,7 +1995,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Jawbreaker",
+      "id": "Barbarian Brutality SPEC CDs - Jawbreaker",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -2849,7 +2888,7 @@
       "limit": 5,
       "customGrow": "function(newPositions, activeRegions)\n    local perRow = 6\n    local w, h = 34, 34\n    local hSpace, vSpace = 4, 4\n    local n = #activeRegions\n    local i = 1\n    while i <= n do\n        local rowCount = perRow\n        if n - i + 1 < perRow then rowCount = n - i + 1 end\n        local totalW = rowCount * w + (rowCount - 1) * hSpace\n        local startX = -totalW / 2 + w / 2\n        local row = math.floor((i - 1) / perRow)\n        for k = 0, rowCount - 1 do\n            newPositions[i + k] = { startX + k * (w + hSpace), row * (h + vSpace) }\n        end\n        i = i + rowCount\n    end\nend",
       "controlledChildren": [
-        "Barbarian Brutality SPEC Proc - Decapitate"
+        "Barbarian Brutality SPEC Procs - Decapitate"
       ],
       "borderInset": 1,
       "tocversion": 110200,
@@ -3019,7 +3058,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": 2,
+      "iconSource": -1,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -3045,26 +3084,9 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "xOUPntLsSTw",
+      "uid": "CVo36bzhvJo",
       "triggers": {
         "__array": [
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "custom",
-              "custom_type": "stateupdate",
-              "check": "event",
-              "custom_hide": "custom",
-              "events": "UNIT_HEALTH, UNIT_MAXHEALTH, PLAYER_TARGET_CHANGED, PLAYER_ENTERING_WORLD",
-              "custom": "function(allstates, event, ...)\n    local show = false\n    if UnitExists(\"target\") and UnitHealthMax(\"target\") > 0 then\n        show = (UnitHealth(\"target\") / UnitHealthMax(\"target\")) < 0.35\n    end\n    allstates[\"\"] = { show = show, changed = true }\n    return true\nend",
-              "unit": "target",
-              "debuffType": "HELPFUL",
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "names": [],
-              "spellIds": []
-            }
-          },
           {
             "untrigger": [],
             "trigger": {
@@ -3087,6 +3109,23 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "custom",
+              "custom_type": "stateupdate",
+              "check": "event",
+              "custom_hide": "custom",
+              "events": "UNIT_HEALTH, UNIT_MAXHEALTH, PLAYER_TARGET_CHANGED, PLAYER_ENTERING_WORLD",
+              "custom": "function(allstates, event, ...)\n    local show = false\n    if UnitExists(\"target\") and UnitHealthMax(\"target\") > 0 then\n        show = (UnitHealth(\"target\") / UnitHealthMax(\"target\")) < 0.35\n    end\n    allstates[\"\"] = { show = show, changed = true }\n    return true\nend",
+              "unit": "target",
+              "debuffType": "HELPFUL",
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "names": [],
+              "spellIds": []
+            }
           }
         ],
         "disjunctive": "all",
@@ -3100,7 +3139,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "onCooldown",
             "value": 1
           },
@@ -3189,7 +3228,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC Proc - Decapitate",
+      "id": "Barbarian Brutality SPEC Procs - Decapitate",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -3220,9 +3259,9 @@
       "limit": 5,
       "customGrow": "function(newPositions, activeRegions)\n    local h = 26\n    local vSpace = 4\n    local n = #activeRegions\n    local totalH = n * h + (n - 1) * vSpace\n    local startY = totalH / 2 - h / 2\n    for i = 1, n do\n        newPositions[i] = { 0, startY - (i - 1) * (h + vSpace) }\n    end\nend",
       "controlledChildren": [
-        "Barbarian Brutality SPEC - Battle Vigor",
-        "Barbarian Brutality SPEC - Defiance",
-        "Barbarian Brutality SPEC - Thick Skull"
+        "Barbarian Brutality SPEC DEF - Battle Vigor",
+        "Barbarian Brutality SPEC DEF - Defiance",
+        "Barbarian Brutality SPEC DEF - Thick Skull"
       ],
       "borderInset": 1,
       "tocversion": 110200,
@@ -3392,7 +3431,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": 2,
+      "iconSource": -1,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -3418,30 +3457,9 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "UOB5lupxlKf",
+      "uid": "GgkwPWZemMo",
       "triggers": {
         "__array": [
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "aura2",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "useName": true,
-              "auranames": [
-                "Battle Vigor"
-              ],
-              "names": [],
-              "spellIds": [],
-              "auraspellids": [],
-              "matchesShowOn": "showOnActive",
-              "ownOnly": true,
-              "unitExists": true,
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "event": "Health"
-            }
-          },
           {
             "untrigger": [],
             "trigger": {
@@ -3464,10 +3482,31 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Battle Vigor"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
           }
         ],
         "disjunctive": "any",
-        "activeTriggerMode": -10
+        "activeTriggerMode": 1
       },
       "auto": true,
       "tocversion": 110200,
@@ -3477,7 +3516,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "onCooldown",
             "value": 1
           },
@@ -3490,15 +3529,11 @@
         },
         {
           "check": {
-            "trigger": 1,
-            "variable": "show",
+            "trigger": 2,
+            "variable": "buffed",
             "value": 1
           },
           "changes": [
-            {
-              "property": "desaturate",
-              "value": false
-            },
             {
               "property": "sub.3.glow",
               "value": true
@@ -3600,7 +3635,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Battle Vigor",
+      "id": "Barbarian Brutality SPEC DEF - Battle Vigor",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -3634,7 +3669,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": 2,
+      "iconSource": -1,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -3660,30 +3695,9 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "ulXUZVK8Rbh",
+      "uid": "1VePFOC7MTy",
       "triggers": {
         "__array": [
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "aura2",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "useName": true,
-              "auranames": [
-                "Defiance"
-              ],
-              "names": [],
-              "spellIds": [],
-              "auraspellids": [],
-              "matchesShowOn": "showOnActive",
-              "ownOnly": true,
-              "unitExists": true,
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "event": "Health"
-            }
-          },
           {
             "untrigger": [],
             "trigger": {
@@ -3706,10 +3720,31 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Defiance"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
           }
         ],
         "disjunctive": "any",
-        "activeTriggerMode": -10
+        "activeTriggerMode": 1
       },
       "auto": true,
       "tocversion": 110200,
@@ -3719,7 +3754,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "onCooldown",
             "value": 1
           },
@@ -3732,15 +3767,11 @@
         },
         {
           "check": {
-            "trigger": 1,
-            "variable": "show",
+            "trigger": 2,
+            "variable": "buffed",
             "value": 1
           },
           "changes": [
-            {
-              "property": "desaturate",
-              "value": false
-            },
             {
               "property": "sub.3.glow",
               "value": true
@@ -3842,7 +3873,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Defiance",
+      "id": "Barbarian Brutality SPEC DEF - Defiance",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -3876,7 +3907,7 @@
       "keepAspectRatio": true,
       "selfPoint": "CENTER",
       "cooldownEdge": false,
-      "iconSource": 2,
+      "iconSource": -1,
       "xOffset": 0,
       "authorOptions": [],
       "cooldown": true,
@@ -3902,30 +3933,9 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "3kfz4c7RUin",
+      "uid": "W7CTRgQnyyr",
       "triggers": {
         "__array": [
-          {
-            "untrigger": [],
-            "trigger": {
-              "type": "aura2",
-              "unit": "player",
-              "debuffType": "HELPFUL",
-              "useName": true,
-              "auranames": [
-                "Thick Skull"
-              ],
-              "names": [],
-              "spellIds": [],
-              "auraspellids": [],
-              "matchesShowOn": "showOnActive",
-              "ownOnly": true,
-              "unitExists": true,
-              "subeventPrefix": "SPELL",
-              "subeventSuffix": "_CAST_START",
-              "event": "Health"
-            }
-          },
           {
             "untrigger": [],
             "trigger": {
@@ -3948,10 +3958,31 @@
               "subeventPrefix": "SPELL",
               "subeventSuffix": "_CAST_START"
             }
+          },
+          {
+            "untrigger": [],
+            "trigger": {
+              "type": "aura2",
+              "unit": "player",
+              "debuffType": "HELPFUL",
+              "useName": true,
+              "auranames": [
+                "Thick Skull"
+              ],
+              "names": [],
+              "spellIds": [],
+              "auraspellids": [],
+              "matchesShowOn": "showAlways",
+              "ownOnly": true,
+              "unitExists": true,
+              "subeventPrefix": "SPELL",
+              "subeventSuffix": "_CAST_START",
+              "event": "Health"
+            }
           }
         ],
         "disjunctive": "any",
-        "activeTriggerMode": -10
+        "activeTriggerMode": 1
       },
       "auto": true,
       "tocversion": 110200,
@@ -3961,7 +3992,7 @@
       "conditions": [
         {
           "check": {
-            "trigger": 2,
+            "trigger": 1,
             "variable": "onCooldown",
             "value": 1
           },
@@ -3974,15 +4005,11 @@
         },
         {
           "check": {
-            "trigger": 1,
-            "variable": "show",
+            "trigger": 2,
+            "variable": "buffed",
             "value": 1
           },
           "changes": [
-            {
-              "property": "desaturate",
-              "value": false
-            },
             {
               "property": "sub.3.glow",
               "value": true
@@ -4084,7 +4111,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Thick Skull",
+      "id": "Barbarian Brutality SPEC DEF - Thick Skull",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -4115,10 +4142,10 @@
       "limit": 5,
       "customGrow": "function(newPositions, activeRegions)\n    local h = 26\n    local vSpace = 4\n    local n = #activeRegions\n    local totalH = n * h + (n - 1) * vSpace\n    local startY = totalH / 2 - h / 2\n    for i = 1, n do\n        newPositions[i] = { 0, startY - (i - 1) * (h + vSpace) }\n    end\nend",
       "controlledChildren": [
-        "Barbarian Brutality SPEC - Unbridled Rage",
-        "Barbarian Brutality SPEC - Storm of Steel",
-        "Barbarian Brutality SPEC - Killing Spree",
-        "Barbarian Brutality SPEC - Hodirs Wrath"
+        "Barbarian Brutality SPEC OFF - Unbridled Rage",
+        "Barbarian Brutality SPEC OFF - Storm of Steel",
+        "Barbarian Brutality SPEC OFF - Killing Spree",
+        "Barbarian Brutality SPEC OFF - Hodirs Wrath"
       ],
       "borderInset": 1,
       "tocversion": 110200,
@@ -4314,7 +4341,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "LoJhwpjkeMh",
+      "uid": "ZZQza4qoHRg",
       "triggers": {
         "__array": [
           {
@@ -4492,7 +4519,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Unbridled Rage",
+      "id": "Barbarian Brutality SPEC OFF - Unbridled Rage",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -4552,7 +4579,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "HtZHSXig8Kq",
+      "uid": "Fopg3vd6Abk",
       "triggers": {
         "__array": [
           {
@@ -4679,7 +4706,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Storm of Steel",
+      "id": "Barbarian Brutality SPEC OFF - Storm of Steel",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -4739,7 +4766,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "BVuvyKzk2Bu",
+      "uid": "QKWzJXAz0xr",
       "triggers": {
         "__array": [
           {
@@ -4866,7 +4893,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Killing Spree",
+      "id": "Barbarian Brutality SPEC OFF - Killing Spree",
       "anchorFrameType": "SCREEN"
     },
     {
@@ -4926,7 +4953,7 @@
       "useCooldownModRate": true,
       "useAdjustededMin": false,
       "anchorPoint": "CENTER",
-      "uid": "hag5LMYj8kj",
+      "uid": "C4TcMAtyomm",
       "triggers": {
         "__array": [
           {
@@ -5053,7 +5080,7 @@
         }
       },
       "alpha": 1,
-      "id": "Barbarian Brutality SPEC - Hodirs Wrath",
+      "id": "Barbarian Brutality SPEC OFF - Hodirs Wrath",
       "anchorFrameType": "SCREEN"
     }
   ],

@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import felswornSpec from '../../classes/felsworn/spec.json';
 import { PRESETS, presetKey, SPECS_WITH_PRESET } from './specs';
 import { loadDraft, loadLastKey } from './lib/persistence';
+import { normalizeSpecToIconRow } from './lib/iconrow';
 
 // The SPEC is the single source of truth the editor mutates; the preview and the generator both read it.
 export type IconCfg = { label?: string; spell: number | string; byName?: boolean; fallbackIcon?: string; _uid?: string; [k: string]: unknown };
@@ -11,8 +12,9 @@ export type Ref = number | 'left' | 'right';
 // `slug`/`spec` identify which class+spec preset this is (see specs/index.ts presetKey); both are absent on
 // a SPEC decompiled from an imported string.
 export type Spec = { id: string; name: string; slug?: string; spec?: string; global: Record<string, number>; stack: El[]; left?: El; right?: El; combatOnly?: boolean };
-// The currently-selected icon (per-icon inspector panel), addressed like a drop target.
-export type IconSel = { ref: Ref; iconIndex: number };
+// The current selection (inspector panel): an icon (iconIndex = its position) OR the row/container itself
+// (iconIndex = null → the per-row panel). Addressed like a drop target.
+export type IconSel = { ref: Ref; iconIndex: number | null };
 
 const clone = <T,>(o: T): T => JSON.parse(JSON.stringify(o));
 
@@ -23,28 +25,6 @@ function ensureEl(spec: Spec, ref: Ref): El {
   if (ref === 'left') return spec.left ?? (spec.left = { kind: 'left', icons: [] });
   if (ref === 'right') return spec.right ?? (spec.right = { kind: 'right', icons: [] });
   return spec.stack[ref];
-}
-
-// procRow icons carry the composable proc DSL (`when` clauses); other containers carry cdRow-style cfg.
-// Normalize an icon as it enters/leaves a procRow (palette drop or cross-row drag) so it is always a valid
-// config for its container — the generator fails loudly on a procRow icon with no when/legacy config.
-function normalizeForContainer(el: El, ic: IconCfg) {
-  if (el.kind === 'procRow') {
-    const g = ic.glow as { type?: string; color?: number[]; glowType?: string } | undefined;
-    if (g?.type) ic.glow = { ...(g.color ? { color: g.color } : {}), ...(g.glowType ? { glowType: g.glowType } : {}) };
-    if (ic.charges) { ic.display = { ...(ic.display as object), stacks: true }; delete ic.charges; }
-    delete ic.showPowerAbove;
-    if (!ic.when && !ic.buff && ic.execute == null && !ic.stealable) {
-      ic.when = [{ buff: (ic.label as string) ?? String(ic.spell) }];
-      if (ic.glow === undefined) ic.glow = {};   // glow (white Action Button) whenever shown
-    }
-  } else {
-    const d = ic.display as { stacks?: boolean } | undefined;
-    if (d?.stacks) ic.charges = true;
-    for (const k of ['when', 'hide', 'display', 'buff', 'execute', 'stealable', 'glowAlways', 'glowColor', 'glowType']) delete ic[k];
-    const g = ic.glow as { type?: string } | undefined;
-    if (g && !g.type) delete ic.glow;   // a proc-shaped glow (no rule type) isn't a cdRow glow rule
-  }
 }
 
 // Stable ids for @dnd-kit/sortable (position-based keys break reorder tracking): one per icon AND one per
@@ -58,13 +38,15 @@ function stampSpec(spec: Spec): Spec {
     if (el?.icons) for (const ic of el.icons) ic._uid = nextUid();
   return spec;
 }
+// Any raw SPEC entering the store (boot / preset / import / reset) is normalized to the unified iconRow model
+// first, then stamped with sortable ids. The disk presets stay cdRow/procRow; the conversion is in-memory.
+const prepareSpec = (raw: Spec): Spec => stampSpec(normalizeSpecToIconRow(clone(raw)));
 
 // Human label for a stack element (inspector rows + element drag overlay).
 const POWER_NAMES: Record<number, string> = { 0: 'Mana', 1: 'Rage', 2: 'Focus', 3: 'Energy', 4: 'Combo Points', 6: 'Runic Power' };
 export function elementLabel(el: El): string {
   switch (el.kind) {
-    case 'procRow': return 'Proc row';
-    case 'cdRow': return el.secondary ? 'Secondary CD row' : 'CD row';
+    case 'iconRow': return el.secondary ? 'Secondary icon row' : 'Icon row';
     case 'uptimeBar': return typeof el.buff === 'string' ? `Uptime: ${el.buff}` : 'Uptime bar';
     case 'powerBar': return `${(el.title as string) ?? POWER_NAMES[Number(el.powerType ?? 0)] ?? `Power ${el.powerType}`} bar`;
     case 'stacks': return 'Stack boxes';
@@ -118,30 +100,26 @@ const bootSpec = loadDraft(bootKey) ?? PRESETS[bootKey];
 export const useStore = create<Store>((set) => ({
   slug: bootSpec ? initialSlug : '__boot__',
   specName: initialSpecName,
-  spec: stampSpec(clone((bootSpec ?? felswornSpec) as Spec)),
+  spec: prepareSpec((bootSpec ?? felswornSpec) as Spec),
   sel: null,
-  // Replace the whole SPEC in place, keeping the current class (import / agent / undo). stampSpec gives
-  // fresh sortable ids.
-  setClass: (spec) => set({ spec: stampSpec(clone(spec)), sel: null }),
+  // Replace the whole SPEC in place, keeping the current class (import / agent / undo). prepareSpec normalizes
+  // to iconRow and gives fresh sortable ids.
+  setClass: (spec) => set({ spec: prepareSpec(spec), sel: null }),
   // Load a class+spec: set identity AND spec atomically so autosave never pairs a new key with the old spec.
-  switchClass: (slug, spec, specName) => set({ slug, specName, spec: stampSpec(clone(spec)), sel: null }),
+  switchClass: (slug, spec, specName) => set({ slug, specName, spec: prepareSpec(spec), sel: null }),
   select: (sel) => set({ sel }),
   addIcon: (ref, icon) => set((st) => {
     const spec = clone(st.spec);
     const el = ensureEl(spec, ref);
     if (!el.icons) el.icons = [];
-    const ic = { ...icon, _uid: nextUid() };
-    normalizeForContainer(el, ic);
-    el.icons.push(ic);
+    el.icons.push({ ...icon, _uid: nextUid() });
     return { spec };
   }),
   insertIcon: (ref, index, icon) => set((st) => {
     const spec = clone(st.spec);
     const el = ensureEl(spec, ref);
     if (!el.icons) el.icons = [];
-    const ic = { ...icon, _uid: nextUid() };
-    normalizeForContainer(el, ic);
-    el.icons.splice(index, 0, ic);
+    el.icons.splice(index, 0, { ...icon, _uid: nextUid() });
     return { spec };
   }),
   removeIcon: (ref, iconIndex) => set((st) => {
@@ -168,7 +146,6 @@ export const useStore = create<Store>((set) => ({
     const [item] = src.splice(fromIndex, 1);
     if (!item) return { spec };
     const dstEl = ensureEl(spec, to);
-    if (dstEl.kind !== readEl(spec, from)?.kind) normalizeForContainer(dstEl, item);
     const dst = dstEl.icons ?? (dstEl.icons = []);
     let idx = toIndex ?? dst.length;
     if (from === to && fromIndex < idx) idx--;   // account for the removal shift
@@ -200,9 +177,13 @@ export const useStore = create<Store>((set) => ({
     el.enabled = el.enabled === false;   // undefined/true -> false, false -> true
     return { spec };
   }),
+  // Patch one field of a stack element. value === undefined deletes the key (so a per-row override reset to
+  // global exports as an absent field rather than an undefined).
   setElementField: (stackIndex, key, value) => set((st) => {
     const spec = clone(st.spec);
-    (spec.stack[stackIndex] as Record<string, unknown>)[key] = value;
+    const el = spec.stack[stackIndex] as Record<string, unknown>;
+    if (value === undefined) delete el[key];
+    else el[key] = value;
     return { spec };
   }),
   setGlobal: (key, value) => set((st) => ({ spec: { ...st.spec, global: { ...st.spec.global, [key]: value } } })),
@@ -216,7 +197,7 @@ export const useStore = create<Store>((set) => ({
   // set a sentinel slug so it no longer matches App's selected class. Used by "Reset to preset" after the
   // class's draft is cleared.
   forceReload: () => set({ slug: '__reload__' }),
-  reset: () => set({ slug: 'felsworn', spec: stampSpec(clone(felswornSpec) as Spec), sel: null }),
+  reset: () => set({ slug: 'felsworn', spec: prepareSpec(felswornSpec as Spec), sel: null }),
 }));
 
 // Dev-only handle for debugging/automation in the browser console (harmless; stripped from prod builds).
