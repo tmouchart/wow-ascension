@@ -1,5 +1,16 @@
 # WA Test Harness — client-compat validation in-game
 
+> **RÉSULTAT (2026-07-22, perso Felsworn) — ✅ PASSÉ.** Import OK, `/wa` s'ouvre, zéro erreur Lua.
+> - **Macro 1 : rien manquant** → toutes les fonctions API existent sur le client, **`GetWeaponEnchantInfo`
+>   compris** (→ le trigger `Weapon Enchant` de la buff row runemaster est validé).
+> - **Macro 2 : les 3 en `ok`** (`GetSpellInfo` / `GetSpellCooldown` / `IsSpellKnown` sur l'id custom 500028).
+>   Nos cooldown triggers sont sains. Surprise : `GetSpellInfo`/`IsSpellKnown` **ne throwent PAS** sur cet id
+>   → le crash Marco était probablement **id-spécifique** (id barbarian absent de la DB client), pas "tout id
+>   custom throw". `gateUnknownSpells` reste OFF malgré tout. Pas encore re-testé avec l'id barbarian exact.
+>
+> Conclusion : **tout le vocabulaire actuel du framework est sûr au load.**
+
+
 **But.** Une seule WeakAura qui exerce **tout ce que le framework sait émettre** (chaque `kind` du DSL,
 chaque clause, les 3 types de glow, chaque trigger builder, tout le Lua custom), construite par le
 **pipeline SPEC de production** (`specToParts` → `buildPackage`). Si elle s'importe proprement et que

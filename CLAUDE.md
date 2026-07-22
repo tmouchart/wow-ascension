@@ -318,7 +318,8 @@ await one in-game import confirmation — nothing is game-validated yet, see the
   Primordial Blast glows orange when Runeblade charges spent, Power Overwhelming is a proc-only icon. Baseline
   ids: Runeblade 707141, Primordial Blast 800732. Buff row = centered showOnActive dynamicgroup: active **Runic
   Tattoo** (aura2 by name, 6 elements, dynamic icon) + **Weapon Engravings** MH & OH (`Weapon Enchant` trigger,
-  enchant `""`=any, `%n` name + temp-enchant timer; needs client `GetWeaponEnchantInfo` — confirm in-game).
+  enchant `""`=any, `%n` name + temp-enchant timer; `GetWeaponEnchantInfo` **confirmed present** on client
+  2026-07-22 via the test-harness API probe).
 - **Cultist** (`cultist`): **Insanity** as a `stackBar` (aura-stack 0..100, no confirmed power index) + defensive
   glows (Abyssal Ward / Doomcloak / Embrace the Void). `spec.json` `id` is the generic "Cultist SPEC" — not tied
   to one of the 4 specs (Godblade/Corruption/Dreadnought/Heretic); picking a spec name shifts uids.
@@ -340,6 +341,14 @@ Two blind spots to close before scaling (nothing has validated these yet):
 > `spec-builder.js` is therefore **OFF by default** (`gateUnknownSpells:false`); do NOT re-enable it for
 > Ascension packages. Recovery when it happens: WoW closed, rename `WeakAuras.lua` + `.bak`, re-import the
 > regenerated (gate-free) string. Same rule applies to any other load option that resolves a custom spellId.
+>
+> **Nuance (2026-07-22, test-harness validated in-game):** on the Felsworn char, `pcall(IsSpellKnown, 500028)`,
+> `pcall(GetSpellInfo, 500028)` and `pcall(GetSpellCooldown, 500028)` ALL returned `ok` — these functions do
+> NOT throw on *every* custom CoA id (500028 = Chaos Rush, felsworn baseline, is present in the client spell
+> DB). So the Marco crash was likely **id-specific** (a barbarian id absent from the DB throws `"Invalid spell
+> slot"`), not "all custom ids throw". The rule is unchanged — `gateUnknownSpells` stays **OFF**: re-enabling
+> it still gambles on *every* id, and any id missing from the DB kills the load loop. Not yet re-tested with
+> the exact barbarian id that crashed.
 
 ### Deployment — fly.io (SHIPPED + auto-deploy on push to main, since 2026-07-19)
 
