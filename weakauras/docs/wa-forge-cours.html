@@ -1,0 +1,594 @@
+<title>WA Forge — le cours du repo</title>
+<style>
+  :root {
+    --bg: #f6f8f3;
+    --bg-raised: #ffffff;
+    --bg-inset: #eef2e8;
+    --ink: #1c221a;
+    --ink-soft: #4c5546;
+    --ink-faint: #7a8472;
+    --accent: #3f8a02;          /* fel green, darkened for light ground */
+    --accent-bright: #56ba04;
+    --accent-ink: #ffffff;
+    --gold: #a97b0a;
+    --line: #d8dfd0;
+    --code-bg: #182015;
+    --code-ink: #d9e6cc;
+    --code-accent: #8fdf4a;
+    --code-gold: #f0c435;
+    --code-comment: #7d8f6e;
+    --warn-bg: #fdf3e3;
+    --warn-line: #e3c98d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e120c;
+      --bg-raised: #151b11;
+      --bg-inset: #1a2215;
+      --ink: #e6ecdf;
+      --ink-soft: #aab5a0;
+      --ink-faint: #6f7b65;
+      --accent: #56ba04;
+      --accent-bright: #7ade2b;
+      --accent-ink: #0e120c;
+      --gold: #f0c435;
+      --line: #26301f;
+      --code-bg: #10160c;
+      --code-ink: #d9e6cc;
+      --warn-bg: #241d0d;
+      --warn-line: #574417;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e120c; --bg-raised: #151b11; --bg-inset: #1a2215;
+    --ink: #e6ecdf; --ink-soft: #aab5a0; --ink-faint: #6f7b65;
+    --accent: #56ba04; --accent-bright: #7ade2b; --accent-ink: #0e120c;
+    --gold: #f0c435; --line: #26301f; --code-bg: #10160c; --code-ink: #d9e6cc;
+    --warn-bg: #241d0d; --warn-line: #574417;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f8f3; --bg-raised: #ffffff; --bg-inset: #eef2e8;
+    --ink: #1c221a; --ink-soft: #4c5546; --ink-faint: #7a8472;
+    --accent: #3f8a02; --accent-bright: #56ba04; --accent-ink: #ffffff;
+    --gold: #a97b0a; --line: #d8dfd0; --code-bg: #182015; --code-ink: #d9e6cc;
+    --warn-bg: #fdf3e3; --warn-line: #e3c98d;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 0 24px 96px; }
+
+  h1, h2, h3 {
+    font-family: "Palatino Linotype", Palatino, "Iowan Old Style", "Book Antiqua", Georgia, serif;
+    text-wrap: balance;
+    line-height: 1.2;
+  }
+  code, pre, .tag {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+
+  /* ---------- header ---------- */
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px;
+    color: var(--accent); font-weight: 600; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(30px, 5vw, 44px); margin: 0 0 16px; }
+  .lede { font-size: 18px; color: var(--ink-soft); max-width: 62ch; margin: 0; }
+
+  /* table of contents */
+  nav.toc {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 8px 24px; margin-top: 32px; padding: 0; counter-reset: toc;
+  }
+  nav.toc a {
+    color: var(--ink-soft); text-decoration: none; font-size: 14px;
+    padding: 6px 8px; border-radius: 6px; counter-increment: toc;
+  }
+  nav.toc a::before {
+    content: counter(toc, decimal-leading-zero);
+    color: var(--accent); font-weight: 700; margin-right: 10px;
+    font-variant-numeric: tabular-nums; font-size: 12px;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible { background: var(--bg-inset); color: var(--ink); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- sections ---------- */
+  section { padding-top: 56px; }
+  .secnum {
+    text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px;
+    color: var(--accent); font-weight: 700; margin-bottom: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  h2 { font-size: clamp(24px, 3.4vw, 32px); margin: 0 0 18px; }
+  h3 { font-size: 19px; margin: 32px 0 10px; }
+  p { max-width: 68ch; margin: 0 0 16px; }
+  ul, ol { max-width: 68ch; padding-left: 22px; margin: 0 0 16px; }
+  li { margin-bottom: 6px; }
+  li::marker { color: var(--accent); }
+  strong { color: var(--ink); }
+  section a { color: var(--accent); }
+
+  code {
+    background: var(--bg-inset); border: 1px solid var(--line);
+    padding: 1px 5px; border-radius: 4px; font-size: 0.86em;
+  }
+  pre {
+    background: var(--code-bg); color: var(--code-ink);
+    border-radius: 10px; padding: 18px 20px; overflow-x: auto;
+    font-size: 13px; line-height: 1.6; margin: 0 0 20px;
+  }
+  pre code { background: none; border: none; padding: 0; font-size: inherit; color: inherit; }
+  .c  { color: var(--code-comment); font-style: italic; }
+  .k  { color: var(--code-accent); font-weight: 600; }
+  .g  { color: var(--code-gold); }
+  .caption {
+    font-size: 13px; color: var(--ink-faint); margin: -12px 0 24px;
+  }
+
+  /* ---------- pipeline diagram ---------- */
+  .pipeline {
+    display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px;
+    margin: 24px 0 8px;
+  }
+  .stage {
+    flex: 1 1 130px; min-width: 128px;
+    background: var(--bg-raised); border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .stage.terminal { border-top-color: var(--gold); }
+  .stage b { display: block; font-size: 14px; margin-bottom: 4px; }
+  .stage span { font-size: 12.5px; color: var(--ink-soft); line-height: 1.45; display: block; }
+  .arrow {
+    align-self: center; color: var(--ink-faint); font-size: 18px;
+    user-select: none; flex: 0 0 auto;
+  }
+  .pipe-note { font-size: 13px; color: var(--ink-faint); margin-bottom: 24px; }
+
+  /* big bidirectional diagram */
+  .bidir {
+    background: var(--bg-raised); border: 1px solid var(--line); border-radius: 12px;
+    padding: 24px; margin: 24px 0; overflow-x: auto;
+  }
+  .bidir-row {
+    display: flex; align-items: center; gap: 14px; min-width: 620px;
+    justify-content: space-between;
+  }
+  .node {
+    text-align: center; padding: 14px 16px; border-radius: 10px;
+    background: var(--bg-inset); border: 1px solid var(--line);
+    flex: 1 1 0;
+  }
+  .node b { display: block; font-size: 15px; }
+  .node span { font-size: 12px; color: var(--ink-soft); }
+  .node.spec { border-color: var(--accent); border-width: 2px; }
+  .node.wa { border-color: var(--gold); border-width: 2px; }
+  .duplex { flex: 0 0 auto; text-align: center; font-size: 12px; color: var(--ink-soft); line-height: 1.5; }
+  .duplex .fwd { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  .duplex .rev { color: var(--gold); font-weight: 600; white-space: nowrap; }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    background: var(--warn-bg); border: 1px solid var(--warn-line);
+    border-radius: 10px; padding: 14px 18px; margin: 0 0 20px;
+    font-size: 14.5px; max-width: 68ch;
+  }
+  .callout b:first-child { color: var(--gold); }
+  .tip {
+    background: var(--bg-inset); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 12px 18px; margin: 0 0 20px;
+    font-size: 14.5px; max-width: 68ch;
+  }
+
+  /* ---------- tables ---------- */
+  .tablewrap { overflow-x: auto; margin: 0 0 24px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 560px; }
+  th {
+    text-align: left; text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 11.5px; color: var(--ink-faint); font-weight: 600;
+    padding: 8px 14px 8px 0; border-bottom: 2px solid var(--line);
+  }
+  td { padding: 9px 14px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td:first-child { white-space: nowrap; }
+  .tag {
+    display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 5px;
+    background: var(--bg-inset); border: 1px solid var(--line); color: var(--ink);
+  }
+
+  /* layout mock of the central stack */
+  .stackmock {
+    background: var(--bg-raised); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px; margin: 20px 0 8px;
+    display: flex; flex-direction: column; align-items: center; gap: 5px;
+  }
+  .sm-row { display: flex; gap: 5px; }
+  .sm-icon {
+    width: 30px; height: 30px; border-radius: 4px;
+    background: var(--bg-inset); border: 1px solid var(--line);
+  }
+  .sm-icon.glow { border: 2px solid var(--gold); box-shadow: 0 0 8px var(--gold); }
+  .sm-bar {
+    width: 250px; max-width: 100%; height: 14px; border-radius: 3px;
+    border: 1px solid var(--line); position: relative; overflow: hidden;
+  }
+  .sm-fill { position: absolute; inset: 0; }
+  .sm-label {
+    font-size: 11px; color: var(--ink-faint); text-transform: uppercase;
+    letter-spacing: 0.1em; margin-top: 8px;
+  }
+  .sm-boxes { display: flex; gap: 4px; width: 250px; max-width: 100%; }
+  .sm-box { flex: 1; height: 12px; border-radius: 2px; border: 1px solid var(--line); }
+
+  footer {
+    margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-size: 13px; color: var(--ink-faint);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    nav.toc a { transition: background 0.15s ease; }
+  }
+</style>
+
+<main>
+<header>
+  <div class="eyebrow">WoW Ascension &middot; Conquest of Azeroth</div>
+  <h1>WA Forge — comment le repo fabrique des WeakAuras</h1>
+  <p class="lede">Un tour complet des concepts : ce qu'est une string <code>!WA:2!</code>, comment on la lit et l'écrit, le DSL <code>spec.json</code> qui décrit un package, la compilation vers des régions WeakAuras, la décompilation inverse, et les garde-fous qui empêchent tout ça de casser.</p>
+  <nav class="toc">
+    <a href="#probleme">Le problème qu'on résout</a>
+    <a href="#format">Anatomie d'une string !WA:2!</a>
+    <a href="#structure">La structure d'une WeakAura</a>
+    <a href="#spec">Le SPEC — notre DSL déclaratif</a>
+    <a href="#compile">Compilation : specToParts</a>
+    <a href="#decompile">Décompilation : waToSpec</a>
+    <a href="#guardrails">Les garde-fous</a>
+    <a href="#web">La web app &amp; le déploiement</a>
+    <a href="#repo">Carte du repo &amp; commandes</a>
+    <a href="#gotchas">Gotchas Ascension</a>
+  </nav>
+</header>
+
+<!-- ============================================================ -->
+<section id="probleme">
+  <div class="secnum">01</div>
+  <h2>Le problème qu'on résout</h2>
+  <p>Le serveur privé <strong>Ascension</strong> (realm Conquest of Azeroth) a <strong>21 classes custom</strong> — Felsworn, Barbarian, Runemaster… — avec des sorts, ressources et specs qui n'existent pas dans WoW retail. Les packs WeakAuras existants (Luxthos etc.) ne peuvent donc pas fonctionner pour elles.</p>
+  <p>Notre but : <strong>générer nous-mêmes des strings d'import WeakAuras</strong> (les fameuses <code>!WA:2!...</code> qu'on colle en jeu) pour chaque classe — barres de ressource, rangées de cooldowns, procs, glows — sans jamais passer par le jeu pour les créer.</p>
+  <p>L'insight fondateur du projet : <strong>le format <code>!WA:2!</code> a été complètement rétro-ingénieré</strong>. On sait le lire ET l'écrire depuis Node.js, sans aucune dépendance npm. Tout le reste du repo est construit sur cette capacité.</p>
+
+  <div class="bidir">
+    <div class="bidir-row">
+      <div class="node spec">
+        <b>spec.json</b>
+        <span>le DSL déclaratif<br>(1 fichier par classe)</span>
+      </div>
+      <div class="duplex">
+        <div class="fwd">specToParts&nbsp;&rarr;</div>
+        <div>compile / décompile</div>
+        <div class="rev">&larr;&nbsp;waToSpec</div>
+      </div>
+      <div class="node">
+        <b>Régions WA</b>
+        <span>JSON décodé<br>(groupes, barres, icônes)</span>
+      </div>
+      <div class="duplex">
+        <div class="fwd">encodeWA&nbsp;&rarr;</div>
+        <div>codec</div>
+        <div class="rev">&larr;&nbsp;decodeWA</div>
+      </div>
+      <div class="node wa">
+        <b>!WA:2!aBcD…</b>
+        <span>la string importable<br>en jeu</span>
+      </div>
+    </div>
+  </div>
+  <p class="caption">La vue d'ensemble : deux étages, chacun bidirectionnel. Tout le repo tient dans ce schéma.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="format">
+  <div class="secnum">02</div>
+  <h2>Anatomie d'une string <code>!WA:2!</code></h2>
+  <p>Une string WeakAuras n'est <strong>pas du JSON</strong> ni du base64 standard. C'est une table Lua passée dans une chaîne de 4 transformations :</p>
+
+  <div class="pipeline">
+    <div class="stage"><b>Table Lua</b><span>la structure de données de l'aura</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage"><b>LibSerialize</b><span>sérialisation binaire taguée (v1)</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage"><b>LibDeflate</b><span>raw deflate — sans header zlib/gzip</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage"><b>EncodeForPrint</b><span>base64 custom 6 bits little-endian</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage terminal"><b>!WA:2! + …</b><span>le préfixe + la string finale</span></div>
+  </div>
+  <p class="pipe-note">Pour décoder, on parcourt la chaîne en sens inverse. Tout est implémenté dans <code>weakauras/lib/wa-codec.js</code> — le cœur du projet, zéro dépendance.</p>
+
+  <h3>Les pièges du format (déjà résolus, mais bons à connaître)</h3>
+  <ul>
+    <li><strong>Le charset EncodeForPrint</strong> : <code>a-z A-Z 0-9 ( )</code> — minuscules d'abord, pas les chiffres. Se tromper d'ordre donne une erreur deflate cryptique (« invalid block type »).</li>
+    <li><strong>LibSerialize</strong> : le premier octet est la version (<code>1</code>), puis un flux d'objets tagués — les bits de poids faible de chaque tag disent le type (entier 7 bits, string/table embarquée, type étendu…). Entiers en big-endian.</li>
+    <li><strong>Les clés numériques</strong> : en Lua, <code>load.class_and_spec.multi = {[262]=true}</code> a une clé <em>entière</em>. En JSON on ne peut pas — donc le codec les préfixe <code>"$n$262"</code> pour les ré-émettre en entiers à l'encodage. Sans ça, les conditions de chargement classe/spec cassent silencieusement.</li>
+    <li>Notre encodeur est <strong>non-optimisant</strong> (pas de déduplication de strings) : les strings ré-encodées sont ~30% plus grosses que l'original, mais WeakAuras les importe sans broncher.</li>
+  </ul>
+
+  <h3>Le codec en pratique</h3>
+<pre><code><span class="c"># CLI</span>
+cd weakauras/lib
+node wa-codec.js <span class="k">decode</span> mystring.txt    <span class="c"># !WA:2! -> mystring.decoded.json</span>
+node wa-codec.js <span class="k">encode</span> edited.json     <span class="c"># JSON    -> edited.import.txt</span>
+node wa-codec.js <span class="k">roundtrip</span> mystring.txt <span class="c"># decode -> encode -> decode, égalité profonde</span>
+
+<span class="c">// En module</span>
+<span class="k">const</span> { decodeWA, encodeWA } = <span class="k">require</span>(<span class="g">'./lib/wa-codec.js'</span>);
+<span class="k">const</span> out = decodeWA(str);
+<span class="c">// GOTCHA : l'enveloppe {d, c, m, s, v} est sous out.data, PAS à la racine</span></code></pre>
+</section>
+
+<!-- ============================================================ -->
+<section id="structure">
+  <div class="secnum">03</div>
+  <h2>La structure d'une WeakAura décodée</h2>
+  <p>Une fois décodée, une aura exportée est une <strong>enveloppe</strong> avec cinq champs :</p>
+<pre><code>{
+  <span class="k">"d"</span>: { <span class="c">/* la région RACINE : le group conteneur */</span> },
+  <span class="k">"c"</span>: [ <span class="c">/* TOUTES les régions, à plat (enfants inclus) */</span> ],
+  <span class="k">"m"</span>: <span class="g">"d"</span>,        <span class="c">// marqueur</span>
+  <span class="k">"s"</span>: <span class="g">"5.20.2"</span>,   <span class="c">// version WeakAuras ciblée</span>
+  <span class="k">"v"</span>: 2000        <span class="c">// version du format d'export</span>
+}</code></pre>
+
+  <p>Chaque entrée de <code>c</code> est une <strong>région</strong>. On utilise 4 types de régions :</p>
+  <div class="tablewrap">
+    <table>
+      <tr><th>Type de région</th><th>Rôle</th><th>Template</th></tr>
+      <tr><td><span class="tag">group</span></td><td>Le conteneur racine statique ; <code>controlledChildren</code> liste les ids de ses enfants dans l'ordre d'affichage.</td><td><code>templates/group.json</code></td></tr>
+      <tr><td><span class="tag">dynamicgroup</span></td><td>Une rangée/colonne qui arrange ses enfants automatiquement (les rangées de cooldowns, les colonnes latérales). Utilise notre Lua <code>customGrow</code> pour centrer + wrapper.</td><td><code>templates/dyngroup.json</code></td></tr>
+      <tr><td><span class="tag">aurabar</span></td><td>Une barre de progression (ressource, HP, uptime d'un buff, cases de points).</td><td><code>templates/bar.json</code></td></tr>
+      <tr><td><span class="tag">icon</span></td><td>Une icône de sort (cooldown, proc, indicateur de buff) avec son <code>subglow</code>.</td><td><code>templates/icon.json</code></td></tr>
+    </table>
+  </div>
+
+  <h3>L'astuce fondatrice : cloner, pas construire</h3>
+  <p>Une région WeakAuras 5.x a des <em>dizaines</em> de champs internes obligatoires. Plutôt que de les deviner, on <strong>clone des régions connues-bonnes</strong> extraites de packages Luxthos décodés (les templates ci-dessus), puis on <strong>override uniquement ce qui compte</strong> : id, position, couleurs, triggers, conditions. Impossible d'oublier un champ requis.</p>
+
+  <h3>Dans une région : triggers, conditions, sub-regions</h3>
+  <p>Trois mécanismes font tout le comportement dynamique :</p>
+  <ul>
+    <li><strong>Triggers</strong> — la source de données. Sur Ascension, la détection de buffs passe <em>toujours</em> par le trigger <code>aura2</code> (par nom exact), car <code>C_UnitAuras</code> n'existe pas sur ce client. Les autres : <code>Power</code> (ressource), <code>Health</code>, <code>Cooldown Progress (Spell)</code>, plus nos triggers Lua custom (<code>targetExecuteTrigger</code>, <code>powerAtLeastTrigger</code>) pour ce que le client ne filtre pas nativement.</li>
+    <li><strong>Conditions</strong> — des règles « si variable du trigger X, alors changer la propriété Y ». Exemple : <code>stacks &gt;= 4</code> &rarr; peindre le remplissage de la case ; <code>onCooldown == 1</code> &rarr; <code>desaturate</code>. Les checks se combinent avec un wrapper <code>AND</code>.</li>
+    <li><strong>Sub-regions</strong> — des couches empilées sur la région : texte (<code>subtext</code>), et surtout <strong><code>subglow</code></strong>, le glow qu'une condition allume/éteint.</li>
+  </ul>
+  <p>Extrait (simplifié) d'une condition réelle — « quand le buff manque, glow rouge » :</p>
+<pre><code>{
+  <span class="k">"check"</span>: { <span class="k">"trigger"</span>: 1, <span class="k">"variable"</span>: <span class="g">"buffed"</span>, <span class="k">"op"</span>: <span class="g">"=="</span>, <span class="k">"value"</span>: <span class="g">"0"</span> },
+  <span class="k">"changes"</span>: [
+    { <span class="k">"property"</span>: <span class="g">"sub.3.glow"</span>, <span class="k">"value"</span>: <span class="k">true</span> },
+    { <span class="k">"property"</span>: <span class="g">"sub.3.glowColor"</span>, <span class="k">"value"</span>: [1, 0.1, 0.1, 1] }
+  ]
+}</code></pre>
+
+  <div class="tip"><b>La taxonomie des glows</b> — le style = l'urgence, la couleur = le sens. <strong>Action Button Glow</strong> (<code>buttonOverlay</code>) = « agis MAINTENANT » : blanc pour un proc/sort prêt, or/orange pour un dump de ressource. <strong>Pixel glow</strong> = état passif : couleur de classe pour « mon buff défensif est actif », rouge pulsant pour « un buff d'entretien est tombé ».</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="spec">
+  <div class="secnum">04</div>
+  <h2>Le SPEC — notre DSL déclaratif</h2>
+  <p>Écrire des régions à la main (même via des builders) reste verbeux et error-prone. Depuis le 14/07, chaque classe est décrite par <strong>un seul fichier <code>classes/&lt;nom&gt;/spec.json</code></strong> : le SPEC. C'est un DSL déclaratif qui parle en <em>éléments de gameplay</em> (« une barre d'énergie », « une rangée de CDs », « un proc quand tel buff est up ») — plus jamais en champs de régions.</p>
+  <p>Point crucial : le SPEC est la <strong>source unique de vérité</strong>, consommée telle quelle par <em>deux</em> consommateurs : le build Node (<code>node classes/&lt;nom&gt;/spec.js</code> &rarr; <code>dist/</code>) et la web app (chargé via <code>import.meta.glob</code>, édité dans le store zustand, généré côté client). On ne duplique jamais les données de spec dans <code>web/src</code>.</p>
+
+  <h3>Un SPEC réel, annoté — Felsworn Tyrant</h3>
+<pre><code>{
+  <span class="k">"slug"</span>: <span class="g">"felsworn"</span>,
+  <span class="k">"id"</span>: <span class="g">"Felsworn Tyrant SPEC"</span>,          <span class="c">// racine des ids -> uids stables</span>
+  <span class="k">"global"</span>: { <span class="k">"barWidth"</span>: 250, <span class="k">"iconSize"</span>: 26, <span class="k">"gap"</span>: 3 },
+  <span class="k">"stack"</span>: [                              <span class="c">// la pile centrale, de HAUT en BAS</span>
+
+    <span class="c">// Un proc : Fel Fireball ne s'affiche QUE si le buff "Carve" est up,</span>
+    <span class="c">// avec le glow blanc "agis maintenant"</span>
+    { <span class="k">"kind"</span>: <span class="g">"procRow"</span>, <span class="k">"icons"</span>: [
+      { <span class="k">"label"</span>: <span class="g">"Fel Fireball"</span>, <span class="k">"spell"</span>: <span class="g">"Fel Fireball"</span>, <span class="k">"byName"</span>: <span class="k">true</span>,
+        <span class="k">"buff"</span>: <span class="g">"Carve"</span>, <span class="k">"glowType"</span>: <span class="g">"buttonOverlay"</span> },
+      <span class="c">// Un proc "execute" : visible quand la cible passe sous 35% HP</span>
+      { <span class="k">"label"</span>: <span class="g">"Tyrants Gaze"</span>, <span class="k">"spell"</span>: 805240, <span class="k">"execute"</span>: 35 }
+    ] },
+
+    <span class="c">// La rangée de cooldowns : grise sur CD, glow Pixel vert si le buff est actif</span>
+    { <span class="k">"kind"</span>: <span class="g">"cdRow"</span>, <span class="k">"icons"</span>: [
+      { <span class="k">"label"</span>: <span class="g">"Hateforged Barrier"</span>, <span class="k">"spell"</span>: 705129,
+        <span class="k">"glow"</span>: { <span class="k">"type"</span>: <span class="g">"buff"</span>, <span class="k">"buff"</span>: <span class="g">"Hateforged Barrier"</span>, <span class="k">"glowType"</span>: <span class="g">"Pixel"</span> } },
+      { <span class="k">"label"</span>: <span class="g">"Chaos Rush"</span>, <span class="k">"spell"</span>: <span class="g">"Chaos Rush"</span>, <span class="k">"byName"</span>: <span class="k">true</span>, <span class="k">"charges"</span>: <span class="k">true</span> }
+    ] },
+
+    <span class="c">// Barre d'uptime : vert -> jaune -> rouge, glow + warning si le buff tombe</span>
+    { <span class="k">"kind"</span>: <span class="g">"uptimeBar"</span>, <span class="k">"buff"</span>: <span class="g">"Inner Demon"</span>, <span class="k">"warnText"</span>: <span class="g">"Inner Demon"</span> },
+
+    <span class="c">// Ressource : powerType 3 = Energy, dégradé or</span>
+    { <span class="k">"kind"</span>: <span class="g">"powerBar"</span>, <span class="k">"powerType"</span>: 3, <span class="k">"hi"</span>: [1, 0.88, 0.15, 1] },
+
+    <span class="c">// 6 cases Felfury ; glow or à 6 stacks SAUF si Inner Demon est deja up</span>
+    { <span class="k">"kind"</span>: <span class="g">"stacks"</span>, <span class="k">"auraNames"</span>: [<span class="g">"Felfury"</span>], <span class="k">"count"</span>: 6,
+      <span class="k">"capGlow"</span>: { <span class="k">"at"</span>: 6, <span class="k">"unlessBuff"</span>: <span class="g">"Inner Demon"</span> } },
+
+    { <span class="k">"kind"</span>: <span class="g">"healthBar"</span> },
+    { <span class="k">"kind"</span>: <span class="g">"cdRow"</span>, <span class="k">"secondary"</span>: <span class="k">true</span>, <span class="k">"icons"</span>: [ <span class="c">/* défensifs, plus petits */</span> ] }
+  ]
+}</code></pre>
+  <p class="caption">Version abrégée de <code>classes/felsworn/spec.json</code>. Remarque : zéro yOffset, zéro trigger, zéro condition — tout ça est dérivé.</p>
+
+  <p>Voilà ce que ce SPEC décrit visuellement (la « pile centrale », largeur 250px) :</p>
+  <div class="stackmock" aria-label="Maquette de la pile centrale Felsworn">
+    <div class="sm-row"><div class="sm-icon glow"></div><div class="sm-icon"></div></div>
+    <div class="sm-row"><div class="sm-icon"></div><div class="sm-icon"></div><div class="sm-icon"></div><div class="sm-icon"></div><div class="sm-icon"></div><div class="sm-icon"></div><div class="sm-icon"></div><div class="sm-icon"></div></div>
+    <div class="sm-bar"><div class="sm-fill" style="background: linear-gradient(90deg, #1e5205, #56ba04); width: 70%;"></div></div>
+    <div class="sm-bar"><div class="sm-fill" style="background: linear-gradient(90deg, #b86a00, #f0c435); width: 55%;"></div></div>
+    <div class="sm-boxes">
+      <div class="sm-box" style="background:#56ba04;"></div><div class="sm-box" style="background:#56ba04;"></div><div class="sm-box" style="background:#56ba04;"></div><div class="sm-box" style="background:#56ba04;"></div><div class="sm-box"></div><div class="sm-box"></div>
+    </div>
+    <div class="sm-bar"><div class="sm-fill" style="background: linear-gradient(90deg, #540505, #e6291e); width: 88%;"></div></div>
+    <div class="sm-row"><div class="sm-icon" style="width:26px;height:26px;"></div><div class="sm-icon" style="width:26px;height:26px;"></div><div class="sm-icon" style="width:26px;height:26px;"></div></div>
+    <div class="sm-label">procs &middot; CDs &middot; uptime Inner Demon &middot; Energy &middot; 6&times; Felfury &middot; HP &middot; CDs secondaires</div>
+  </div>
+
+  <h3>Le vocabulaire d'éléments (la taxonomie)</h3>
+  <div class="tablewrap">
+    <table>
+      <tr><th>Kind</th><th>Ce que c'est</th><th>Ce qui est généré</th></tr>
+      <tr><td><span class="tag">powerBar</span></td><td>Ressource primaire (Energy, Mana, Rage…)</td><td><code>aurabar</code> + trigger Power, texte <code>%p</code></td></tr>
+      <tr><td><span class="tag">healthBar</span></td><td>HP du joueur</td><td><code>aurabar</code> rouge + trigger Health</td></tr>
+      <tr><td><span class="tag">stacks</span></td><td>Points/combo via stacks d'un buff (Felfury 0–6)</td><td>N&times; <code>aurabar</code> cases ; condition <code>stacks&gt;=i</code> peint la case i</td></tr>
+      <tr><td><span class="tag">chargeStacks</span></td><td>Charges d'un sort (Runeblade 0–3)</td><td>N&times; cases ; condition <code>charges&gt;=i</code></td></tr>
+      <tr><td><span class="tag">stackBar</span></td><td>Ressource en aura-stacks continue (Insanity 0–100)</td><td>une barre pilotée par <code>stacks</code></td></tr>
+      <tr><td><span class="tag">uptimeBar</span></td><td>Buff d'entretien à maintenir (Inner Demon)</td><td>barre countdown ; vert&rarr;jaune&rarr;rouge par <code>expirationTime</code> ; tombé = glow rouge + warn</td></tr>
+      <tr><td><span class="tag">buffRow</span></td><td>Buffs actifs / enchantements d'arme</td><td>dynamicgroup showOnActive</td></tr>
+      <tr><td><span class="tag">cdRow</span></td><td>Rangée de cooldowns</td><td>dynamicgroup d'<code>icon</code> ; désaturé sur CD ; 1 règle de glow max chacune</td></tr>
+      <tr><td><span class="tag">procRow</span></td><td>Icônes « utilise-moi maintenant », cachées par défaut</td><td>icônes alpha-gated ; DSL <code>when:[clauses]</code> AND-ées (buff, targetHpBelow, powerAtLeast, charges…)</td></tr>
+      <tr><td><span class="tag">left / right</span></td><td>Colonnes latérales (shell « side rails », cf. barbarian)</td><td>colonnes verticales DEF à gauche / OFF à droite</td></tr>
+    </table>
+  </div>
+  <div class="tip"><b>Réflexe à garder :</b> avant d'éditer un spec ou d'ajouter un kind, lire <code>docs/spec-dsl-reference.md</code> — c'est le lexique complet (chaque champ de chaque kind, la table des clauses de proc, le mapping trigger&rarr;variables de condition, la math du layout).</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="compile">
+  <div class="secnum">05</div>
+  <h2>Compilation : <code>specToParts</code> — du SPEC aux régions</h2>
+  <p>Le compilateur vit dans <code>lib/spec-builder.js</code>. Il fait trois choses, dans l'ordre :</p>
+  <ol>
+    <li><strong>Validation</strong> — kind inconnu, champ manquant, id de région dupliqué &rarr; erreur bruyante immédiate. Un SPEC invalide ne produit jamais une string silencieusement fausse.</li>
+    <li><strong>Layout engine</strong> — c'est lui qui calcule toute la géométrie : il descend la <code>stack</code> du haut vers le bas, additionne hauteurs + <code>gap</code>, et produit les <code>yOffset</code> de chaque région. Largeur unique 250px ; les cases de points dérivent leur largeur du nombre demandé ; les rangées d'icônes wrappent au-delà de <code>maxWidth</code>. Tu ne poses jamais une coordonnée à la main.</li>
+    <li><strong>Auto-wiring</strong> — chaque kind est traduit en appels aux builders de <code>lib/builders.js</code> (<code>cooldownIcon</code>, <code>uptimeBar</code>, <code>segmentBar</code>, <code>makeDynGroup</code>…), qui clonent les templates Luxthos et branchent triggers + conditions + subglows. C'est ici que « <code>capGlow at 6 unlessBuff Inner Demon</code> » devient un check AND <code>stacks==6 &amp;&amp; buffed(Inner Demon)==0</code> &rarr; <code>sub.N.glow=true</code>.</li>
+  </ol>
+
+  <h3>Puis l'assemblage : <code>buildPackage</code></h3>
+  <div class="pipeline">
+    <div class="stage"><b>specToParts</b><span>SPEC &rarr; liste de régions + racine</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage"><b>assembleTop</b><span>enveloppe {d, c, m, s, v}</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage"><b>encodeWA</b><span>l'enveloppe &rarr; !WA:2!</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage"><b>round-trip</b><span>decode(encode(x)) == x sinon REFUS d'écrire</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="stage terminal"><b>dist/</b><span>&lt;classe&gt;-spec.import.txt (+ rotation .prev)</span></div>
+  </div>
+
+  <div class="tip"><b>Les uids sont déterministes.</b> Chaque région a un uid dérivé de son <code>id</code> stable via <code>uidFor()</code>. Résultat : ré-importer une nouvelle version en jeu propose « Update » au lieu de créer un doublon. C'est pour ça qu'on ne renomme jamais un id à la légère (et que le <code>spec.json</code> du cultist garde son id générique).</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="decompile">
+  <div class="secnum">06</div>
+  <h2>Décompilation : <code>waToSpec</code> — le chemin inverse</h2>
+  <p><code>lib/wa-to-spec.js</code> est l'<strong>inverse exact</strong> de <code>specToParts</code> : il prend les régions décodées d'une string <code>!WA:2!</code> et reconstruit le SPEC éditable. C'est ce qui alimente le bouton <strong>« Import string »</strong> de la web app (via <code>POST /api/import</code> côté backend) : tu colles une string générée par la Forge, tu récupères son SPEC dans l'éditeur.</p>
+  <p>Sa philosophie : <strong>fidèle, jamais devin</strong>. Il ne sait inverser que les formes exactes que nos builders émettent. Une région qu'il ne reconnaît pas (une WA tierce, ou un pattern qu'aucun package n'utilise encore) fait <strong>throw bruyamment</strong> plutôt que de produire un SPEC plausible mais faux. C'est un choix délibéré, aligné sur le principe « no guessing » du projet.</p>
+  <p>La boucle complète qui doit toujours tenir :</p>
+<pre><code>spec.json ──specToParts──&gt; régions ──waToSpec──&gt; SPEC' ──specToParts──&gt; régions'
+
+<span class="k">assert</span>(régions == régions')   <span class="c">// byte-identique, pour les 5 classes</span></code></pre>
+  <p class="caption">C'est exactement ce que vérifie <code>node tools/wa-to-spec-roundtrip.mjs</code>.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="guardrails">
+  <div class="secnum">07</div>
+  <h2>Les garde-fous — pourquoi on peut refactorer sans peur</h2>
+  <p>Trois filets de sécurité indépendants verrouillent le pipeline :</p>
+  <div class="tablewrap">
+    <table>
+      <tr><th>Garde-fou</th><th>Ce qu'il vérifie</th><th>Quand il tourne</th></tr>
+      <tr><td><span class="tag">self round-trip</span></td><td>Chaque string produite se re-décode à l'identique (<code>decode(encode(x)) == x</code>). Échec = <code>buildPackage</code> <strong>refuse d'écrire</strong>.</td><td>À chaque build, automatiquement</td></tr>
+      <tr><td><span class="tag">verify-unchanged</span></td><td>Rebuild TOUS les packages (build.js + spec.js) et compare le JSON décodé aux <strong>snapshots golden</strong> (<code>tools/golden/</code>), octet par octet. Un refactor du moteur qui change une sortie = rouge.</td><td>Après tout refactor de <code>lib/</code> ; <code>--snapshot</code> pour re-baseliner un changement voulu</td></tr>
+      <tr><td><span class="tag">wa-to-spec-roundtrip</span></td><td>Chaque <code>spec.json</code> survit au cycle compile &rarr; décompile &rarr; recompile en régions byte-identiques.</td><td>Après tout changement du DSL, de <code>spec-builder</code> ou de <code>wa-to-spec</code></td></tr>
+    </table>
+  </div>
+  <p>À ces filets s'ajoutent deux règles de discipline : <strong>ne jamais éditer un <code>.import.txt</code> à la main</strong> (on édite le SPEC et on rebuild), et <strong>ASCII uniquement dans le texte généré</strong> (le codec ne round-trip pas l'UTF-8 multi-octets — un « ⚠ » dans un label fait échouer le build).</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="web">
+  <div class="secnum">08</div>
+  <h2>La web app &amp; le déploiement</h2>
+  <p><strong>Live sur <a href="https://wa-forge.fly.dev">wa-forge.fly.dev</a>.</strong> L'éditeur (Vite/React, <code>weakauras/web/</code>) est construit autour du même SPEC :</p>
+  <ul>
+    <li>Les <strong>presets</strong> = littéralement les fichiers <code>classes/*/spec.json</code>, chargés par <code>import.meta.glob</code>. Aucune duplication.</li>
+    <li>L'état éditable vit dans <strong>un store zustand</strong> (<code>src/store.ts</code>) — jamais dans du state local de composant.</li>
+    <li>La génération de la string est <strong>100% côté client</strong> : <code>specToParts</code> + <code>assembleTop</code> + le codec web (le moteur <code>builders-core.js</code> est isomorphe Node/navigateur).</li>
+    <li>Le backend Hono (<code>server/server.mjs</code>) ne sert que 2 routes : <code>POST /api/import</code> (string &rarr; SPEC, la décompilation) et <code>POST /api/agent</code> (édition du SPEC en langage naturel via LLM).</li>
+    <li>UI : <strong>shadcn/ui + Tailwind v4 uniquement</strong>, tokens sémantiques (jamais de couleur en dur), icônes lucide, classes fusionnées avec <code>cn()</code>.</li>
+  </ul>
+  <div class="callout"><b>Déploiement :</b> <code>git push origin main</code> = déploiement fly.io automatique (GitHub Action, build Docker distant). Piège connu : le CI ne voit que les fichiers <strong>commités</strong> — un fichier runtime laissé untracked marche en local et crash la prod (déjà vécu avec <code>wa-to-spec.js</code>). Autre règle : <code>npm run dev</code> tourne déjà en permanence chez toi — on ne le relance jamais, on lit <code>dev.log</code> pour débugger.</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="repo">
+  <div class="secnum">09</div>
+  <h2>Carte du repo &amp; commandes utiles</h2>
+<pre><code>weakauras/
+├── lib/                    <span class="c"># LE MOTEUR</span>
+│   ├── wa-codec.js         <span class="c">#   codec !WA:2! (decode/encode/roundtrip)</span>
+│   ├── builders.js         <span class="c">#   builders d'éléments (barres, icônes, triggers, glows)</span>
+│   ├── builders-core.js    <span class="c">#   noyau isomorphe (Node + navigateur)</span>
+│   ├── spec-builder.js     <span class="c">#   specToParts : SPEC -&gt; régions (compilateur)</span>
+│   ├── wa-to-spec.js       <span class="c">#   waToSpec : régions -&gt; SPEC (décompilateur)</span>
+│   └── templates/          <span class="c">#   régions Luxthos clonables (bar, icon, group, dyngroup)</span>
+├── classes/&lt;nom&gt;/          <span class="c"># UNE CLASSE = UN DOSSIER</span>
+│   ├── spec.json           <span class="c">#   LE SPEC — source unique Node + web</span>
+│   ├── spec.js             <span class="c">#   writer 2 lignes -&gt; dist/</span>
+│   ├── build.js            <span class="c">#   référence hand-built (à retirer après validation en jeu)</span>
+│   └── abilities.md        <span class="c">#   les sorts scrapés + spellIds</span>
+├── dist/                   <span class="c"># les strings générées (.import.txt + .prev)</span>
+├── reference/              <span class="c"># packages Luxthos décodés (les shapes de vérité)</span>
+├── tools/                  <span class="c"># scrape CoA (21 classes), baselines, garde-fous, coverage</span>
+├── web/                    <span class="c"># l'éditeur React (shadcn/Tailwind/zustand)</span>
+├── server/                 <span class="c"># backend Hono (/api/import, /api/agent)</span>
+├── docs/                   <span class="c"># spec-dsl-reference.md (A LIRE), weakauras-format.md</span>
+└── weakauras2/             <span class="c"># clone du repo officiel WeakAuras = le schéma de référence</span></code></pre>
+
+  <div class="tablewrap">
+    <table>
+      <tr><th>Commande</th><th>Effet</th></tr>
+      <tr><td><code>node classes/&lt;nom&gt;/spec.js</code></td><td>Compile le SPEC de la classe &rarr; <code>dist/&lt;nom&gt;-spec.import.txt</code></td></tr>
+      <tr><td><code>node build.js &lt;classe&gt; | all</code></td><td>Build les packages hand-built (référence)</td></tr>
+      <tr><td><code>node lib/wa-codec.js decode &lt;f&gt;</code></td><td>Inspecter n'importe quelle string <code>!WA:2!</code></td></tr>
+      <tr><td><code>node tools/verify-unchanged.js</code></td><td>Golden check — le refactor n'a rien changé aux sorties</td></tr>
+      <tr><td><code>node tools/wa-to-spec-roundtrip.mjs</code></td><td>Check compile &harr; décompile pour tous les specs</td></tr>
+      <tr><td><code>node tools/coverage-report.js</code></td><td>Où on en est : specs faits vs restants (4/70)</td></tr>
+      <tr><td><code>node tools/audit-aura-names.js</code></td><td>La checklist des noms d'auras à valider en jeu</td></tr>
+    </table>
+  </div>
+
+  <h3>D'où viennent les données de sorts ?</h3>
+  <ul>
+    <li><strong>Les arbres de talents</strong> : scrapés depuis le CoA builder (les spellIds castables vivent dans les props React fiber, pas dans le DOM). <strong>Les 21 classes sont déjà scrapées</strong> &rarr; <code>tools/coa-classes/&lt;slug&gt;/</code>. Fait clé : <code>tabId 87</code> = l'arbre de classe, chaque spec a son propre tabId.</li>
+    <li><strong>Les sorts de base</strong> (grimoire, hors arbre) : extraits de la DB Ascension (<code>db.ascension.gg</code>) par skill line de classe via <code>tools/coa-baselines.js</code>.</li>
+  </ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="gotchas">
+  <div class="secnum">10</div>
+  <h2>Gotchas Ascension — ce que le client custom impose</h2>
+  <div class="callout"><b>Jamais de « Spell Known » en load condition.</b> <code>IsSpellKnown</code> sur un spellId custom CoA fait throw <code>"Invalid spell slot"</code>, et cette erreur Lua avorte <em>toute</em> la boucle de chargement de WeakAuras : <code>/wa</code> ne s'ouvre plus du tout. Confirmé en jeu le 20/07. Le gate <code>gateSpellKnown</code> est OFF par défaut — ne pas le réactiver.</div>
+  <ul>
+    <li><strong>Détection de buffs = <code>aura2</code> par nom exact, toujours.</strong> <code>C_UnitAuras</code> n'existe pas ; le Lua custom ne peut pas lire les auras. Corollaire : un nom de buff &ne; nom du sort échoue <em>silencieusement</em> — d'où la checklist <code>AURA-NAMES-CHECKLIST.md</code> (23 noms à cocher en jeu).</li>
+    <li><strong>Les filtres natifs Health % et Power % ne gatent pas</strong> sur ce client — d'où nos triggers Lua custom <code>targetExecuteTrigger</code> (execute &lt;35%) et <code>powerAtLeastTrigger</code> (montrer une icône à partir de N ressource).</li>
+    <li><strong>Icône d'un sort en fallback</strong> : <code>iconSource:-1</code> (auto) + un <code>cooldownTrigger</code> dont <code>displayIcon</code> est le <em>chemin</em> de texture. Jamais <code>iconSource:0</code> avec un chemin — le mode manuel exige un fileID numérique, sinon &rarr; « ? ».</li>
+    <li><strong>Deux angles morts avant de scaler aux 16 classes restantes</strong> : (1) les noms d'auras non validés en jeu ; (2) l'index de ressource (<code>powerType</code>) confirmé seulement pour barbarian et felsworn — les 19 autres sont des hypothèses (<code>registry/resource-model.json</code>).</li>
+  </ul>
+
+  <h3>En une phrase</h3>
+  <p>Le repo est un <strong>compilateur bidirectionnel</strong> : un DSL de gameplay (<code>spec.json</code>) compilé en régions WeakAuras clonées de shapes connues-bonnes, encodées en <code>!WA:2!</code> par un codec maison — chaque étage inversible, chaque sortie verrouillée par un round-trip ou un golden snapshot, et une web app qui consomme exactement les mêmes specs.</p>
+</section>
+
+<footer>
+  WA Forge &middot; wow-ascension &middot; cours généré le 22/07/2026 &middot; sources : CLAUDE.md, docs/spec-dsl-reference.md, classes/felsworn/spec.json
+</footer>
+</main>
