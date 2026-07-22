@@ -4,9 +4,9 @@ import { Button } from './ui/button';
 import { generateString } from '../lib/generate';
 import { useStore, activeSpec } from '../store';
 
-// "Import in WoW" walkthrough: copy the string (never displayed — it can be 10k+ chars) + the in-game
+// "Export to WoW" walkthrough: copy the string (never displayed — it can be 10k+ chars) + the in-game
 // steps. Hand-rolled overlay to match WelcomeModal (no radix Dialog dep).
-export function ImportModal({ onClose }: { onClose: () => void }) {
+export function ExportModal({ onClose }: { onClose: () => void }) {
   const storeSpec = useStore((st) => st.spec);
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -28,7 +28,7 @@ export function ImportModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-background/80 p-4 backdrop-blur-sm" onClick={onClose}>
       <div className="w-full max-w-md rounded-lg border bg-card p-6 shadow-2xl" onClick={(e) => e.stopPropagation()}>
-        <h2 className="text-lg font-semibold leading-tight tracking-tight">Import in WoW</h2>
+        <h2 className="text-lg font-semibold leading-tight tracking-tight">Export to WoW</h2>
 
         <ol className="mt-4 list-inside list-decimal space-y-2 text-sm text-muted-foreground">
           <li>Copy the import string below.</li>

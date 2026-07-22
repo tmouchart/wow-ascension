@@ -15,7 +15,7 @@ import {
 } from './lib/persistence';
 import { Editor } from './components/Editor';
 import { WelcomeModal } from './components/WelcomeModal';
-import { ImportModal } from './components/ImportModal';
+import { ExportModal } from './components/ExportModal';
 import { GuideModal } from './components/GuideModal';
 import { Button } from './components/ui/button';
 import { Tooltip, TooltipTrigger, TooltipContent } from './components/ui/tooltip';
@@ -325,11 +325,11 @@ export function App() {
         </div>
 
         <Button onClick={() => { setWowOpen(true); setSaveAsOpen(false); setSavedOpen(false); setImportOpen(false); }}>
-          Import in WoW
+          Export to WoW
         </Button>
       </header>
 
-      {wowOpen && <ImportModal onClose={() => setWowOpen(false)} />}
+      {wowOpen && <ExportModal onClose={() => setWowOpen(false)} />}
       {guideOpen && <GuideModal onClose={() => setGuideOpen(false)} />}
 
       <Editor slug={slug} specName={specName} />

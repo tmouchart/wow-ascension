@@ -2,7 +2,7 @@ import { BookOpen, Eye, SlidersHorizontal, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
 
 // "Guide" walkthrough: what the app does and how the 4 zones fit together. Hand-rolled overlay to match
-// WelcomeModal / ImportModal (no radix Dialog dep).
+// WelcomeModal / ExportModal (no radix Dialog dep).
 export function GuideModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-background/80 p-4 backdrop-blur-sm" onClick={onClose}>
@@ -23,7 +23,7 @@ export function GuideModal({ onClose }: { onClose: () => void }) {
             as-is.
           </li>
           <li>
-            <span className="font-medium text-foreground">Import in WoW</span> — copy the string, type{' '}
+            <span className="font-medium text-foreground">Export to WoW</span> — copy the string, type{' '}
             <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs text-foreground">/wa</code>{' '}
             in-game and paste it. Done.
           </li>
