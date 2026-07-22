@@ -3,16 +3,15 @@
 
 // ---- Layout (Inspector "Layout" group) ----
 export const LAYOUT_INFO: Record<string, string> = {
-  barWidth: 'Pixel width of every bar, and the wrap width for cooldown rows — the whole WeakAura lines up to this width.',
+  barWidth: 'Default pixel width of every element (bars, stack boxes, and the wrap width for icon rows). A bar can override it in its own panel.',
   iconSize: 'Pixel size of the icons in the primary cooldown row.',
-  secIconSize: 'Pixel size of the icons in the secondary (defensive / utility) row below health.',
   gap: 'Vertical spacing, in pixels, between stacked elements.',
   combatOnly: 'Hide the entire WeakAura while you are out of combat (adds a combat load condition to every region).',
 };
 
-// ---- Resource (power index) ----
+// ---- Resource type (power bar) ----
 export const POWER_INDEX_INFO =
-  'The in-game UnitPower index this bar reads (0 = Mana, 3 = Energy, 4 = Combo, 9 = Holy Power). CoA custom resources do not map to standard indices — confirm the right number in-game.';
+  'Which resource this bar reads. Pick the one that fills the bar in-game — CoA custom resources sometimes live under a different type than their name suggests.';
 
 // ---- Elements (the toggle rows) ----
 export const ELEMENT_INFO: Record<string, string> = {
@@ -24,6 +23,15 @@ export const ELEMENT_INFO: Record<string, string> = {
   stackBar: 'A bar driven by an aura stack count (0..max), for stack-based resources like Insanity.',
   buffWarnText: 'A text warning that appears while a buff is missing.',
   iconRow: 'A row of ability icons. Each icon is SHOW IF / GLOW IF conditions: no show condition = an always-visible cooldown; add conditions to make it a proc that appears when you should cast.',
+};
+
+// ---- Per-element panel (ElementPanel) ----
+export const ELEMENT_ENABLED_INFO =
+  'Include this element in the generated WeakAura. Off = kept in the editor (dimmed in the preview) but not exported.';
+export const BAR_INFO = {
+  width: 'Width of THIS bar only, overriding the Global width. Reset to fall back to the global value.',
+  height: 'Vertical size (px) of this bar.',
+  color: "The fill gradient: left swatch = top color, right = bottom. Picking a resource type resets it to that resource's default.",
 };
 
 // ---- Inline element fields ----
@@ -48,6 +56,15 @@ export const ROW_INFO = {
   perRow: 'How many icons before the row wraps to a new line. Empty = fit as many as the bar width allows.',
   iconGap: 'Horizontal spacing (px) between icons in this row. Empty = the default (4).',
   combatOnly: 'Load this row (and its icons) only while in combat, independently of the global combat-only setting.',
+};
+
+// ---- Per-column panel (ColumnPanel) — a selected left/right side rail ----
+export const COLUMN_INFO = {
+  group: 'Settings for this side column only. In-game it sits at its X/Y offset from the WeakAura center and stacks its icons top to bottom.',
+  size: 'Icon size for this column, overriding the global icon size.',
+  iconGap: 'Vertical spacing (px) between the icons in this column. Default 4.',
+  xOffset: 'Horizontal distance (px) of the column from the center of the WeakAura. Negative = left of center.',
+  yOffset: 'Vertical center (px) of the column relative to the WeakAura center.',
 };
 
 // ---- Unified icon panel (IconPanel) ----

@@ -17,15 +17,17 @@ const HP_HI = [0.90, 0.16, 0.12, 1], HP_LO = [0.33, 0.02, 0.02, 1];
 const NAME_TO_INDEX: Record<string, number> = {
   Mana: 0, Rage: 1, Focus: 2, Energy: 3, 'Combo Points': 4, 'Runic Power': 6,
 };
-// Bar color by resource name.
-const POWER_COLOR: Record<string, [number[], number[]]> = {
+// Bar color by resource name (also applied by the panel's "Resource type" dropdown).
+export const POWER_COLOR: Record<string, [number[], number[]]> = {
   Mana: [[0.23, 0.51, 0.96, 1], [0.05, 0.12, 0.35, 1]],
   Rage: [[0.88, 0.33, 0.60, 1], [0.30, 0.05, 0.18, 1]],
   Energy: [[1, 0.88, 0.15, 1], [0.72, 0.42, 0, 1]],
   Focus: [[0.95, 0.55, 0.15, 1], [0.35, 0.15, 0, 1]],
   'Runic Power': [[0.30, 0.72, 0.92, 1], [0.05, 0.22, 0.35, 1]],
+  'Combo Points': [[1, 0.82, 0.25, 1], [0.50, 0.33, 0.02, 1]],
+  'Holy Power': [[0.95, 0.90, 0.55, 1], [0.45, 0.38, 0.08, 1]],
 };
-const DEFAULT_COLOR: [number[], number[]] = [[0.55, 0.55, 0.62, 1], [0.15, 0.15, 0.20, 1]];
+export const DEFAULT_COLOR: [number[], number[]] = [[0.55, 0.55, 0.62, 1], [0.15, 0.15, 0.20, 1]];
 
 const CD_CAP = 12;
 const ascii = (s: string) => s.replace(/[^\x20-\x7E]/g, '').trim() || 'Ability';

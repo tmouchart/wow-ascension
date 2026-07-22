@@ -118,7 +118,7 @@ export function Editor({ slug, specName }: { slug: string; specName?: string }) 
 
   return (
     <DndContext sensors={sensors} collisionDetection={collisionByType} onDragStart={onDragStart} onDragEnd={onDragEnd} onDragCancel={() => { setDragging(false); setOverlay(null); }}>
-      <div className="grid h-full min-h-0 grid-cols-[312px_1fr_336px]">
+      <div className="grid h-full min-h-0 grid-cols-[312px_1fr_400px]">
         <Palette abilities={abilities} loading={loading} />
         <main className="flex min-h-0 flex-col overflow-auto">
           <div className="flex items-center gap-2.5 border-b bg-[image:var(--grad-bar)] px-4 py-3 text-[13px] text-muted-foreground">

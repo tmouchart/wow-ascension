@@ -1,6 +1,6 @@
 import { useStore, elementLabel, type El } from '../store';
 import { Group, Field, InfoTip, ToggleRow, numCls } from './inspector-bits';
-import { ROW_INFO } from './inspector-help';
+import { ROW_INFO, ELEMENT_ENABLED_INFO } from './inspector-help';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Slider } from './ui/slider';
@@ -10,7 +10,8 @@ import { Slider } from './ui/slider';
 export function RowPanel({ el, index }: { el: El; index: number }) {
   const setElementField = useStore((st) => st.setElementField);
   const g = useStore((st) => st.spec.global);
-  const select = useStore((st) => st.select);
+  const removeElement = useStore((st) => st.removeElement);
+  const toggleElement = useStore((st) => st.toggleElement);
   const setF = (key: string, value: unknown) => setElementField(index, key, value);
 
   const defaultSize = el.secondary ? g.secIconSize : g.iconSize;
@@ -44,10 +45,10 @@ export function RowPanel({ el, index }: { el: El; index: number }) {
       </Field>
       <ToggleRow label="Show only in combat" on={!!el.combatOnly}
         onToggle={() => setF('combatOnly', el.combatOnly ? undefined : true)} info={ROW_INFO.combatOnly} />
+      <ToggleRow label="Enabled" on={el.enabled !== false} onToggle={() => toggleElement(index)} info={ELEMENT_ENABLED_INFO} />
 
-      <div className="mt-3 flex gap-2">
-        <Button variant="outline" size="sm" onClick={() => select(null)}>Done</Button>
-      </div>
+      <Button variant="outline" size="sm" className="mt-3 w-full text-destructive hover:bg-destructive hover:text-destructive-foreground"
+        onClick={() => removeElement(index)}>Remove</Button>
     </Group>
   );
 }

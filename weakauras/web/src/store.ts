@@ -42,8 +42,9 @@ function stampSpec(spec: Spec): Spec {
 // first, then stamped with sortable ids. The disk presets stay cdRow/procRow; the conversion is in-memory.
 const prepareSpec = (raw: Spec): Spec => stampSpec(normalizeSpecToIconRow(clone(raw)));
 
-// Human label for a stack element (inspector rows + element drag overlay).
-const POWER_NAMES: Record<number, string> = { 0: 'Mana', 1: 'Rage', 2: 'Focus', 3: 'Energy', 4: 'Combo Points', 6: 'Runic Power' };
+// Human label for a stack element (inspector rows + element drag overlay); also the "Resource type"
+// dropdown in the per-bar panel (key = the UnitPower index the generator emits).
+export const POWER_NAMES: Record<number, string> = { 0: 'Mana', 1: 'Rage', 2: 'Focus', 3: 'Energy', 4: 'Combo Points', 6: 'Runic Power', 9: 'Holy Power' };
 export function elementLabel(el: El): string {
   switch (el.kind) {
     case 'iconRow': return el.secondary ? 'Secondary icon row' : 'Icon row';
@@ -74,10 +75,10 @@ interface Store {
   moveIcon: (from: Ref, fromIndex: number, to: Ref, toIndex?: number) => void;
   setIconField: (ref: Ref, iconIndex: number, key: string, value: unknown) => void;
   addElement: (el: El) => void;
-  removeElement: (stackIndex: number) => void;
+  removeElement: (ref: Ref) => void;
   moveElement: (from: number, to: number) => void;
-  toggleElement: (stackIndex: number) => void;
-  setElementField: (stackIndex: number, key: string, value: unknown) => void;
+  toggleElement: (ref: Ref) => void;
+  setElementField: (ref: Ref, key: string, value: unknown) => void;
   setGlobal: (key: string, value: number) => void;
   setCombatOnly: (v: boolean) => void;
   forceReload: () => void;
@@ -158,9 +159,12 @@ export const useStore = create<Store>((set) => ({
     spec.stack.push({ ...clone(el), _uid: nextUid() });
     return { spec };
   }),
-  removeElement: (stackIndex) => set((st) => {
+  // Remove a stack element by index, or a whole side column ('left'/'right') with its icons.
+  removeElement: (ref) => set((st) => {
     const spec = clone(st.spec);
-    spec.stack.splice(stackIndex, 1);
+    if (ref === 'left') delete spec.left;
+    else if (ref === 'right') delete spec.right;
+    else spec.stack.splice(ref, 1);
     return { spec, sel: null };
   }),
   // Reorder the central stack (vertical drag & drop). `to` = the stack index of the element dropped onto.
@@ -171,19 +175,22 @@ export const useStore = create<Store>((set) => ({
     spec.stack.splice(to, 0, el);
     return { spec, sel: null };
   }),
-  toggleElement: (stackIndex) => set((st) => {
+  toggleElement: (ref) => set((st) => {
     const spec = clone(st.spec);
-    const el = spec.stack[stackIndex];
-    el.enabled = el.enabled === false;   // undefined/true -> false, false -> true
+    const el = ensureEl(spec, ref);
+    if (el) el.enabled = el.enabled === false;   // undefined/true -> false, false -> true
     return { spec };
   }),
-  // Patch one field of a stack element. value === undefined deletes the key (so a per-row override reset to
-  // global exports as an absent field rather than an undefined).
-  setElementField: (stackIndex, key, value) => set((st) => {
+  // Patch one field of a stack element or side column. value === undefined deletes the key (so a per-row
+  // override reset to global exports as an absent field rather than an undefined). An empty rail is
+  // lazily created on first write (ensureEl), so its settings can be tuned before any icon is dropped.
+  setElementField: (ref, key, value) => set((st) => {
     const spec = clone(st.spec);
-    const el = spec.stack[stackIndex] as Record<string, unknown>;
-    if (value === undefined) delete el[key];
-    else el[key] = value;
+    const el = ensureEl(spec, ref) as Record<string, unknown> | undefined;
+    if (el) {
+      if (value === undefined) delete el[key];
+      else el[key] = value;
+    }
     return { spec };
   }),
   setGlobal: (key, value) => set((st) => ({ spec: { ...st.spec, global: { ...st.spec.global, [key]: value } } })),
@@ -214,10 +221,15 @@ export function activeStack(spec: Spec): El[] {
     });
 }
 
-// Strip a rail for export: drop it entirely if empty, else strip per-icon `_uid`. An empty rail would emit
-// an empty dynamicgroup, so we omit it (the generator's buildColumn skips a missing left/right).
-const cleanCol = (el?: El): El | undefined =>
-  el?.icons?.length ? { ...el, icons: el.icons.map(({ _uid, ...ic }) => { void _uid; return ic; }) } : undefined;
+// Strip a rail for export: drop it entirely if empty or disabled, else strip editor-only fields (`enabled`,
+// per-icon `_uid`). An empty rail would emit an empty dynamicgroup, so we omit it (buildColumn skips a
+// missing left/right).
+function cleanCol(el?: El): El | undefined {
+  if (!el?.icons?.length || el.enabled === false) return undefined;
+  const { enabled, _uid, icons, ...rest } = el;
+  void enabled; void _uid;
+  return { ...rest, icons: icons.map(({ _uid: iu, ...ic }) => { void iu; return ic; }) };
+}
 
 // The full generator-ready SPEC: cleaned central stack + cleaned side rails.
 export function activeSpec(spec: Spec): Spec {

@@ -537,10 +537,10 @@ function makeDynGroup(groupId, id, children, o) {
 }
 
 // vertical (top->bottom) grow, icons centered on the group's yOffset. For side-rail columns.
-function vGrowLua(iconSize) {
+function vGrowLua(iconSize, vSpace = 4) {
   return `function(newPositions, activeRegions)
     local h = ${iconSize}
-    local vSpace = 4
+    local vSpace = ${vSpace}
     local n = #activeRegions
     local totalH = n * h + (n - 1) * vSpace
     local startY = totalH / 2 - h / 2
@@ -550,11 +550,12 @@ function vGrowLua(iconSize) {
 end`;
 }
 // A vertical Column container (side rail) — a dynamicgroup that stacks its icons top->bottom, offset to
-// one flank of the WA. o = { xOffset, yOffset, iconSize }. Left column: negative xOffset; right: positive.
+// one flank of the WA. o = { xOffset, yOffset, iconSize, vSpace? (icon gap, default 4) }. Left column:
+// negative xOffset; right: positive.
 function makeColumn(groupId, id, children, o) {
   const dg = makeDynGroup(groupId, id, children, { yOffset: o.yOffset, perRow: 1, iconSize: o.iconSize });
   dg.xOffset = o.xOffset;
-  dg.customGrow = vGrowLua(o.iconSize);
+  dg.customGrow = vGrowLua(o.iconSize, o.vSpace);
   return dg;
 }
 

@@ -434,7 +434,7 @@ function buildElement(spec, el, centerY, g, gx) {
       // buff = string (one buff) or string[] (any-of). See builders.js uptimeBar.
       const bar = B.uptimeBar(spec.id, {
         id: el.id || `${spec.id} ${typeof el.buff === 'string' ? el.buff : 'Uptime'}`,
-        yOffset: centerY, width: g.barWidth, height: el.height || 14,
+        yOffset: centerY, width: el.width || g.barWidth, height: el.height || 14,
         buff: el.buff, unit: el.unit, label: el.label, warnText: el.warnText,
         bg: (el.bg || [0.05, 0.08, 0.03, 0.85]).slice(), downBg: el.downBg, colors: el.colors,
       });
@@ -561,7 +561,7 @@ function buildColumn(spec, col, side, g, gx, gy) {
   });
   const dg = B.makeColumn(spec.id, colId, icons, {
     xOffset: (col.xOffset != null ? col.xOffset : (side === 'left' ? -170 : 170)) + gx,
-    yOffset: col.yOffset != null ? col.yOffset : gy, iconSize: size,
+    yOffset: col.yOffset != null ? col.yOffset : gy, iconSize: size, vSpace: col.iconGap,
   });
   return { rootIds: [dg.id], regions: [dg, ...icons] };
 }

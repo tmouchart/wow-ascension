@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import { Info } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
+import { Slider } from './ui/slider';
 import { Switch } from './ui/switch';
 import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip';
 
@@ -65,6 +67,30 @@ export const ToggleRow = ({ label, on, onToggle, extra, info }: { label: ReactNo
   </div>
 );
 export const numCls = 'h-8 w-[74px] text-right font-mono';
+
+// A per-element override slider: unset falls back to `fallback` (tagged with its origin, e.g. "global" /
+// "default"), set shows a reset button. Used by the element and column panels.
+export function OverrideSlider({ label, info, value, fallback, fallbackTag, min, max, onChange }: {
+  label: string; info: string; value: number | undefined; fallback: number; fallbackTag: string;
+  min: number; max: number; onChange: (v: number | undefined) => void;
+}) {
+  const v = value ?? fallback;
+  return (
+    <div className="mb-3.5">
+      <div className="mb-2 flex items-center justify-between">
+        <label className="flex items-center gap-1.5 text-sm">{label}<InfoTip text={info} /></label>
+        <span className="font-mono text-[13px] text-muted-foreground">
+          {v}{value == null && <span className="ml-1 opacity-60">{fallbackTag}</span>}
+        </span>
+      </div>
+      <Slider min={min} max={max} value={[v]} onValueChange={([n]) => onChange(n)} />
+      {value != null && (
+        <Button variant="ghost" size="sm" className="mt-1.5 h-6 px-2 text-xs text-muted-foreground"
+          onClick={() => onChange(undefined)}>Reset to {fallbackTag} ({fallback})</Button>
+      )}
+    </div>
+  );
+}
 
 // A small subheading (e.g. "Show when (all must pass)") with an optional info "i".
 export const SubHead = ({ children, info }: { children: ReactNode; info?: ReactNode }) => (

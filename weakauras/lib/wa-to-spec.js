@@ -261,7 +261,7 @@ function invertBar(region, specId) {
   // uptime bar: aura trigger + expirationTime coloring + warn/glow subRegions
   if (isAura(t0) && (region.conditions || []).some((cd) => cd.check && cd.check.variable === 'expirationTime')) {
     const warn = (region.subRegions || []).find((s) => s.type === 'subtext' && !s.text_visible);
-    return { kind: 'uptimeBar', id: region.id, height: region.height,
+    return { kind: 'uptimeBar', id: region.id, height: region.height, width: region.width,
       buff: t0.auranames.length > 1 ? t0.auranames.slice() : t0.auranames[0],
       // unit is emitted only for a target-debuff uptime bar, so a self-buff bar re-generates byte-identically.
       ...(t0.unit === 'target' ? { unit: 'target' } : {}),
@@ -358,6 +358,9 @@ function invertColumn(dg, byId, specId, gx, gy) {
   const col = { id: dg.id, xOffset: dg.xOffset - gx, size: icons[0].width,
     icons: icons.map((r) => canonical ? invertIconElement(r, r.id.slice(pfx.length)) : invertCooldownIcon(r, labelOf(r.id, specId))) };
   if (dg.yOffset !== gy) col.yOffset = dg.yOffset;
+  // vertical icon gap lives in the grow Lua; only an override (default 4) is a SPEC field
+  const vs = /local vSpace = (\d+)/.exec(dg.customGrow || '');
+  if (vs && Number(vs[1]) !== 4) col.iconGap = Number(vs[1]);
   return col;
 }
 
