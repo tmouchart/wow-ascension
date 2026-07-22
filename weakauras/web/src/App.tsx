@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Moon, Sun, Save, FolderOpen, Trash2, RotateCcw } from 'lucide-react';
+import { Moon, Sun, Save, FolderOpen, Trash2, RotateCcw, CircleHelp } from 'lucide-react';
 import INDEX from '../../registry/INDEX.json';
-import { generateString } from './lib/generate';
-import { useStore, activeSpec, initialSlug, initialSpecName } from './store';
+import { useStore, initialSlug, initialSpecName } from './store';
 import { SPECS_WITH_PRESET, presetKey } from './specs';
 import {
   saveDraft,
@@ -16,6 +15,8 @@ import {
 } from './lib/persistence';
 import { Editor } from './components/Editor';
 import { WelcomeModal } from './components/WelcomeModal';
+import { ImportModal } from './components/ImportModal';
+import { GuideModal } from './components/GuideModal';
 import { Button } from './components/ui/button';
 import { Tooltip, TooltipTrigger, TooltipContent } from './components/ui/tooltip';
 import { Separator } from './components/ui/separator';
@@ -43,6 +44,8 @@ export function App() {
   const [busy, setBusy] = useState(false);
   const [importOpen, setImportOpen] = useState(false);
   const [importText, setImportText] = useState('');
+  const [wowOpen, setWowOpen] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(false);
   const [saveAsOpen, setSaveAsOpen] = useState(false);
   const [saveName, setSaveName] = useState('');
   const [savedOpen, setSavedOpen] = useState(false);
@@ -159,20 +162,6 @@ export function App() {
     }
   }
 
-  async function copyString() {
-    setBusy(true); setStatus('');
-    try {
-      const str = await generateString(activeSpec(storeSpec));
-      await navigator.clipboard.writeText(str);
-      setStatus(`Copied — ${str.length} chars`);
-    } catch (e) {
-      setStatus('Error: ' + (e instanceof Error ? e.message : String(e)));
-    } finally {
-      setBusy(false);
-      setTimeout(() => setStatus(''), 4000);
-    }
-  }
-
   return (
     <div className="grid h-screen grid-rows-[auto_1fr]">
       {showWelcome && (
@@ -224,6 +213,10 @@ export function App() {
         {status && (
           <span className="font-mono text-xs text-muted-foreground">{status}</span>
         )}
+
+        <Button variant="ghost" onClick={() => setGuideOpen(true)}>
+          <CircleHelp /> Guide
+        </Button>
 
         <ToggleGroup
           type="single"
@@ -331,10 +324,13 @@ export function App() {
           )}
         </div>
 
-        <Button onClick={copyString} disabled={busy}>
-          {busy ? 'Generating…' : 'Copy import string'}
+        <Button onClick={() => { setWowOpen(true); setSaveAsOpen(false); setSavedOpen(false); setImportOpen(false); }}>
+          Import in WoW
         </Button>
       </header>
+
+      {wowOpen && <ImportModal onClose={() => setWowOpen(false)} />}
+      {guideOpen && <GuideModal onClose={() => setGuideOpen(false)} />}
 
       <Editor slug={slug} specName={specName} />
     </div>
