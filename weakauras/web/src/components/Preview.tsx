@@ -8,6 +8,7 @@ import { useStore, type El, type IconCfg, type Ref } from '../store';
 import type { IconResolver } from '../registry';
 import { BAR_PRESETS } from '../lib/defaultSpec';
 import { REMOVABLE, presetElement } from '../lib/elements';
+import { track } from '../lib/analytics';
 import { Button } from './ui/button';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from './ui/dropdown-menu';
 
@@ -80,6 +81,7 @@ function AddElementMenu() {
   const add = (k: keyof typeof BAR_PRESETS) => {
     addElement(presetElement(spec, k));
     select({ ref: spec.stack.length, iconIndex: null });   // stack.length pre-add = the new element's index
+    track('element_added', { kind: k });
   };
   return (
     <DropdownMenu>

@@ -26,6 +26,7 @@ import { useStore, elementLabel, type Ref } from '../store';
 import { buildDefaultSpec } from '../lib/defaultSpec';
 import { PRESETS, presetKey } from '../specs';
 import { loadDraft } from '../lib/persistence';
+import { track } from '../lib/analytics';
 
 // Two independent drag worlds share one DndContext: icons/abilities target rows & rails ('row'/'icon'
 // droppables), stack elements target each other ('el' sortables). Filtering the containers by the active
@@ -111,6 +112,7 @@ export function Editor({ slug, specName }: { slug: string; specName?: string }) 
       const icon = { label: (a.ability as Ability).name, spell: (a.ability as Ability).spellId };
       if (toIndex == null) addIcon(to, icon);
       else insertIcon(to, toIndex, icon);
+      track('icon_added', { ability: icon.label });
     } else if (a?.type === 'icon') {
       moveIcon(a.ref as Ref, a.iconIndex as number, to, toIndex);
     }

@@ -7,8 +7,12 @@
     "dev": "nodemon --watch . --watch ../lib --ext js,mjs,json --exec \"node --env-file-if-exists=.env server.mjs\""
   },
   "dependencies": {
+    "@ai-sdk/otel": "^1.0.34",
     "@hono/node-server": "^2.0.10",
     "@openrouter/ai-sdk-provider": "^3.0.0",
+    "@opentelemetry/resources": "^2.10.0",
+    "@opentelemetry/sdk-node": "^0.221.0",
+    "@posthog/ai": "^8.4.0",
     "ai": "^7.0.30",
     "hono": "^4.12.30",
     "posthog-node": "^5.46.0",

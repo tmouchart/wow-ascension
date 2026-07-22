@@ -194,10 +194,21 @@ const briefErr = (e) => {
 // Async generator: yields streaming events. Tries each model in the cascade; a model that fails before
 // emitting anything falls through to the next (spec snapshotted + restored). Once a model has started
 // emitting, we are committed to it (a mid-stream error ends with an error event).
-export async function* runAgentStream({ slug, spec, messages }) {
+export async function* runAgentStream({ slug, spec, messages, analytics }) {
   const openrouter = createOpenRouter({ apiKey: process.env.OPENROUTER_API_KEY });
   const ctx = { slug, spec };
   const tools = buildTools(ctx);
+
+  // PostHog LLM analytics: otel.mjs's enrichSpan stamps `runtimeContext.posthog` onto every span of
+  // this run, so each attempt becomes a trace carrying the full conversation. posthog.distinct_id
+  // ties it to the person; $session_id (when the frontend sent its header) links it to the replay.
+  const runtimeContext = {
+    posthog: {
+      class_slug: slug ?? '',
+      ...(analytics?.distinctId ? { 'posthog.distinct_id': analytics.distinctId } : {}),
+      ...(analytics?.sessionId ? { $session_id: analytics.sessionId } : {}),
+    },
+  };
 
   const t0 = Date.now();
   const lastUser = [...messages].reverse().find((m) => m.role === 'user');
@@ -215,7 +226,7 @@ export async function* runAgentStream({ slug, spec, messages }) {
     try {
       // maxRetries: 0 — a rate-limited free model (429 with Retry-After: 30) must fall through to the NEXT
       // model in the cascade INSTANTLY, not sleep ~30s honoring the retry header. The cascade IS the retry.
-      const result = streamText({ model: openrouter(model), system: SYSTEM, messages, tools, maxRetries: 0, stopWhen: stepCountIs(8) });
+      const result = streamText({ model: openrouter(model), system: SYSTEM, messages, tools, maxRetries: 0, stopWhen: stepCountIs(8), telemetry: { functionId: 'wa-agent', includeRuntimeContext: { posthog: true } }, runtimeContext });
       // `started` flips only on REAL output (text/tool) — control parts (start/start-step) arrive before the
       // model actually responds, so counting them would defeat the cascade (a model that rate-limits before
       // emitting anything must fall through to the next).

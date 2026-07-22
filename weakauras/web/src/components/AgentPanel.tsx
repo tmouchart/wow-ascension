@@ -5,6 +5,7 @@ import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Markdown } from './Markdown';
+import { track } from '../lib/analytics';
 
 // In-app AI agent: natural-language edits to the current SPEC. Posts { slug, spec, messages } to the backend
 // (/api/agent, proxied to server/server.js in dev), which STREAMS back NDJSON events (model/text/tool/done/
@@ -111,6 +112,7 @@ export function AgentPanel({ slug }: { slug: string }) {
     if (!undo) return;
     setClass(undo);
     setUndo(null);
+    track('agent_undo_clicked', { slug });
     setTurns((t) => [...t, { role: 'agent', text: '(reverted the last change)' }]);
   }
 

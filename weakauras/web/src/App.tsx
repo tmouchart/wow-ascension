@@ -13,6 +13,7 @@ import {
   markWelcomed,
   type Snapshot,
 } from './lib/persistence';
+import { track } from './lib/analytics';
 import { Editor } from './components/Editor';
 import { WelcomeModal } from './components/WelcomeModal';
 import { ExportModal } from './components/ExportModal';
@@ -79,11 +80,13 @@ export function App() {
     setSlug(next);
     setSpecName(specName && opts.includes(specName) ? specName : opts[0]);
     setStatus('');
+    track('class_selected', { slug: next, spec: specName && opts.includes(specName) ? specName : opts[0] });
   }
 
   function pickSpec(next: string) {
     setSpecName(next);
     setStatus('');
+    track('class_selected', { slug, spec: next });
   }
 
   // First-visit welcome: apply the chosen class+spec and never show the modal again. The modal already
@@ -104,6 +107,7 @@ export function App() {
     setSnaps(listSnapshots());
     setSaveAsOpen(false); setSaveName('');
     flash(`Saved "${name}"`);
+    track('snapshot_saved', { slug: storeSlug });
   }
   // Load a snapshot: point the dropdowns at its class+spec and commit its SPEC atomically (the keys match
   // afterwards, so the Editor's load effect won't reload the draft over it). It then becomes that draft.
@@ -113,6 +117,7 @@ export function App() {
     switchClass(snap.slug, snap.spec, snap.specName);
     setSavedOpen(false);
     flash(`Loaded "${snap.name}"`);
+    track('snapshot_loaded', { slug: snap.slug });
   }
   function doDelete(id: string) {
     deleteSnapshot(id);
@@ -123,6 +128,7 @@ export function App() {
     clearDraft(presetKey(slug, specName));
     forceReload();
     flash('Reset to preset');
+    track('preset_reset', { slug });
   }
   function pickTheme(t: Theme) {
     if (!t) return; // ToggleGroup emits '' when deselecting the active item — ignore
@@ -214,7 +220,7 @@ export function App() {
           <span className="font-mono text-xs text-muted-foreground">{status}</span>
         )}
 
-        <Button variant="ghost" onClick={() => setGuideOpen(true)}>
+        <Button variant="ghost" onClick={() => { setGuideOpen(true); track('guide_opened'); }}>
           <CircleHelp /> Guide
         </Button>
 

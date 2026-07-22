@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 import { Button } from './ui/button';
 import { generateString } from '../lib/generate';
+import { track } from '../lib/analytics';
 import { useStore, activeSpec } from '../store';
 
 // "Export to WoW" walkthrough: copy the string (never displayed — it can be 10k+ chars) + the in-game
 // steps. Hand-rolled overlay to match WelcomeModal (no radix Dialog dep).
 export function ExportModal({ onClose }: { onClose: () => void }) {
   const storeSpec = useStore((st) => st.spec);
+  const storeSlug = useStore((st) => st.slug);
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState('');
@@ -18,6 +20,7 @@ export function ExportModal({ onClose }: { onClose: () => void }) {
       const str = await generateString(activeSpec(storeSpec));
       await navigator.clipboard.writeText(str);
       setCopied(true);
+      track('export_string_copied', { slug: storeSlug });
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {

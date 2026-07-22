@@ -9,6 +9,7 @@
 //
 // Hono (web-standard Request/Response) over @hono/node-server. The agent lives in agent.mjs (ESM); the
 // isomorphic validator (lib/spec-builder.js) is CJS, pulled in via createRequire.
+import './otel.mjs';   // must load before any AI-SDK call so the PostHog span processor is registered
 import { Hono } from 'hono';
 import { serve } from '@hono/node-server';
 import { serveStatic } from '@hono/node-server/serve-static';
@@ -52,7 +53,6 @@ async function captureEvent(context, event, properties) {
     properties: {
       ...properties,
       ...(context.sessionId ? { $session_id: context.sessionId } : {}),
-      $process_person_profile: false,
     },
   });
   await posthog.flush();
@@ -62,7 +62,6 @@ async function captureError(error, context) {
   if (!posthog) return;
   posthog.captureException(error, context.distinctId, {
     ...(context.sessionId ? { $session_id: context.sessionId } : {}),
-    $process_person_profile: false,
   });
   await posthog.flush();
 }
@@ -143,7 +142,7 @@ app.post(
     c.header('x-accel-buffering', 'no');
     return stream(c, async (s) => {
       try {
-        for await (const ev of runAgentStream({ slug: body.slug, spec: body.spec, messages: body.messages })) {
+        for await (const ev of runAgentStream({ slug: body.slug, spec: body.spec, messages: body.messages, analytics: context })) {
           await s.write(JSON.stringify(ev) + '\n');
           if (ev.type === 'done') {
             await captureEvent(context, 'agent_run_completed', {
