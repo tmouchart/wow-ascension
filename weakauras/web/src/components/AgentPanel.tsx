@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Sparkles, ChevronDown, Undo2 } from 'lucide-react';
+import { Sparkles, ChevronDown, Undo2, Loader2 } from 'lucide-react';
 import { useStore, activeSpec, type Spec } from '../store';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
@@ -141,7 +141,12 @@ export function AgentPanel({ slug }: { slug: string }) {
                     {t.role === 'agent' ? (
                       <div className="mt-0.5">
                         {t.text && <Markdown>{t.text}</Markdown>}
-                        {t.streaming && <span className="ml-0.5 animate-pulse">▍</span>}
+                        {t.streaming && !t.text && (
+                          <span className="animate-shimmer bg-[linear-gradient(90deg,var(--muted-foreground)_40%,var(--foreground)_50%,var(--muted-foreground)_60%)] bg-[length:200%_100%] bg-clip-text text-transparent">
+                            Thinking...
+                          </span>
+                        )}
+                        {t.streaming && t.text && <span className="ml-0.5 animate-pulse">▍</span>}
                       </div>
                     ) : (
                       <>
@@ -180,7 +185,14 @@ export function AgentPanel({ slug }: { slug: string }) {
               </Button>
             )}
             <Button onClick={send} disabled={busy || !input.trim()}>
-              {busy ? 'Thinking…' : 'Send'}
+              {busy ? (
+                <>
+                  <Loader2 className="size-4 animate-spin" />
+                  Thinking…
+                </>
+              ) : (
+                'Send'
+              )}
             </Button>
           </div>
         </>

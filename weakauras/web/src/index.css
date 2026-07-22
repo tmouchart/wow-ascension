@@ -33,6 +33,13 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* left-to-right shine sweep for "Thinking..." text (bg-clip-text + 200% gradient) */
+  --animate-shimmer: shimmer 2s linear infinite;
+  @keyframes shimmer {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+  }
 }
 
 :root {
