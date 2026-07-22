@@ -43,6 +43,25 @@ function searchAbilities(slug, query, limit = 8) {
   }));
 }
 
+// Compact per-class digest of every ACTIVE ability, grouped by the registry's `primary` category
+// ("CD Offensif", "CD Defensif", "Rotational", ...). Injected into the agent's system prompt so it
+// knows the class's spells without the user having to list them (~1.5 KB per class).
+const DIGEST_ORDER = ['CD Offensif', 'CD Defensif', 'Rotational', 'Buff', 'Heal', 'Control', 'Utility', 'Movement'];
+function abilityDigest(slug) {
+  const reg = loadRegistry(slug);
+  const by = new Map();
+  for (const a of reg.abilities) {
+    if (a.passive || !a.primary || a.primary === 'Passive') continue;
+    const cd = a.details?.Cooldown;
+    const entry = `${a.name} (${a.spellId}${cd && cd !== 'n/a' ? `, cd ${cd}` : ''})`;
+    if (!by.has(a.primary)) by.set(a.primary, []);
+    by.get(a.primary).push(entry);
+  }
+  const cats = [...DIGEST_ORDER.filter(c => by.has(c)), ...[...by.keys()].filter(c => !DIGEST_ORDER.includes(c))];
+  return `${reg.class} active abilities (the ONLY valid spells for this class — use these exact names/ids, NEVER invent one):\n`
+    + cats.map(c => `- ${c}: ${by.get(c).join(', ')}`).join('\n');
+}
+
 // Resolve a spell arg (numeric id, numeric string, or a name) to { spellId, name } via the registry.
 // A name that resolves to several candidates returns them so the caller/agent can disambiguate.
 function resolveSpell(slug, spell) {
@@ -278,18 +297,40 @@ function updateElement(spec, { index, set }) {
 
 // Add an icon to any container (creating that role container if absent). The icon is typed by the agent
 // schema; `spell` (cd/proc icons) is resolved to a spellId via the registry unless `byName`.
-function addIcon(spec, slug, { container, icon }) {
+function addIcon(spec, slug, { container, icon, icons }) {
   return mutate(spec, next => {
-    const c = { ...icon };
-    if (c.spell != null && !c.byName) {
-      const { spellId, name } = resolveSpell(slug, c.spell);
-      c.spell = spellId;
-      if (!c.label) c.label = name || String(spellId);
+    const defs = icons && icons.length ? icons : icon ? [icon] : [];
+    if (!defs.length) throw new Error('addIcon needs `icon` or a non-empty `icons`');
+    const target = resolveContainer(next, container, true);
+    const out = [];
+    for (const def of defs) {
+      const c = { ...def };
+      if (c.spell != null && !c.byName) {
+        const { spellId, name } = resolveSpell(slug, c.spell);
+        c.spell = spellId;
+        if (!c.label) c.label = name || String(spellId);
+      }
+      if (!c.label) throw new Error('icon needs a label');
+      guardIcon(containerKind(next, container), c);
+      // Region ids are globally unique (derived from the label), so a spell already placed in another
+      // container can only mean MOVE: relocate it, its config travels, the given fields patch on top.
+      const key = String(c.label).toLowerCase();
+      const holders = [...next.stack.map((el, i) => [i, el]), ['left', next.left], ['right', next.right]];
+      const hit = holders.find(([, el]) =>
+        el?.icons?.some(i => String(i.label).toLowerCase() === key || (c.spell != null && i.spell === c.spell)));
+      if (hit) {
+        const [from, el] = hit;
+        if (el === target) throw new Error(`"${c.label}" is already in container ${from}`);
+        const idx = el.icons.findIndex(i => String(i.label).toLowerCase() === key || (c.spell != null && i.spell === c.spell));
+        const [existing] = el.icons.splice(idx, 1);
+        target.icons.push(mergePatch(existing, c));
+        out.push({ moved: c.label, from, to: container });
+      } else {
+        target.icons.push(c);
+        out.push({ added: c.label, container });
+      }
     }
-    if (!c.label) throw new Error('icon needs a label');
-    guardIcon(containerKind(next, container), c);
-    resolveContainer(next, container, true).icons.push(c);
-    return { added: { label: c.label, container } };
+    return { icons: out };
   });
 }
 
@@ -320,7 +361,7 @@ function setGlobal(spec, { set }) {
 }
 
 module.exports = {
-  loadRegistry, searchAbilities, resolveSpell, describeSpec,
+  loadRegistry, searchAbilities, abilityDigest, resolveSpell, describeSpec,
   addElement, updateElement, addIcon, updateIcon, removeElement, removeIcon, moveElement, setGlobal,
   // legacy specialised ops (still used by spec-ops.test.js; superseded by the generic surface above)
   addCooldownIcon, addProc, addUptimeBar, setCooldownGlow, setCombatOnly,

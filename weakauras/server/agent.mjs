@@ -37,17 +37,18 @@ Use addElement's \`at\` to insert at the conventional spot; it returns the new i
 
 Tools:
 - describeSpec: the current layout — every element with its index and fields (count, powerType, colors...), the icons per row, global sizing, combatOnly. CALL FIRST.
-- searchAbilities: resolve a spell NAME to its spellId + metadata. ALWAYS call before adding a spell — NEVER invent a spellId.
+- searchAbilities: resolve a spell NAME to its spellId + metadata (cooldown, tags). The ability digest below lists every valid spell — use its ids directly; searchAbilities is for extra metadata or fuzzy names. NEVER invent a spellId.
 - addElement: add a stack element (typed per kind). iconRow/buffRow are created empty — fill them with addIcon at the returned index.
 - updateElement: merge-patch ONE element's fields by index (null deletes a field). This is how you change a value — e.g. a stack "count", a bar color, a row's size/perRow/iconGap/combatOnly.
 - removeElement / moveElement: drop or reorder an element by index.
-- addIcon / updateIcon / removeIcon: manage icons in a row (by stack index) or a side rail ("left"/"right").
+- addIcon / updateIcon / removeIcon: manage icons in a row (by stack index) or a side rail ("left"/"right"). addIcon takes \`icons: [...]\` to add several in ONE call, and MOVES a spell that already sits in another container — "put my X in the rail" is a single addIcon, never removeIcon first.
 - setGlobal: sizing/offsets + combatOnly (hide the whole WA out of combat).
 
 Rules:
 - describeSpec first; act by the indexes it returns.
 - If a tool returns ok:false, read the error and fix your call (a duplicate already exists; "ambiguous" returns candidates to choose from).
-- Keep your final answer short: say what you changed (or why you couldn't).`;
+- Keep your final answer short: say what you changed (or why you couldn't).
+- "my offensive cooldowns" / "my defensives" etc. = the matching category in the ability digest below — act on that list, do not ask the user to enumerate their spells.`;
 
 const clone = o => JSON.parse(JSON.stringify(o));
 
@@ -153,8 +154,9 @@ function buildTools(ctx) {
       execute: async a => commit(ops.moveElement(ctx.spec, a)),
     }),
     addIcon: tool({
-      description: 'Add an icon to an icon row (by stack index) or a side rail ("left"/"right", created if absent). No showWhen = a cooldown icon; showWhen = a proc.',
-      inputSchema: z.object({ container: containerRef, icon }),
+      description: 'Add icon(s) to an icon row (by stack index) or a side rail ("left"/"right", created if absent). A spell already placed in another container is MOVED there (its config travels). No showWhen = a cooldown icon; showWhen = a proc.',
+      inputSchema: z.object({ container: containerRef, icon: icon.optional(),
+        icons: z.array(icon).optional().describe('several icons in ONE call — always prefer this for multi-icon requests') }),
       execute: async a => commit(ops.addIcon(ctx.spec, ctx.slug, a)),
     }),
     updateIcon: tool({
@@ -198,6 +200,9 @@ export async function* runAgentStream({ slug, spec, messages, analytics }) {
   const openrouter = createOpenRouter({ apiKey: process.env.OPENROUTER_API_KEY });
   const ctx = { slug, spec };
   const tools = buildTools(ctx);
+  // Per-request system prompt: base rules + the current class's ability digest (name, spellId, cooldown,
+  // grouped by category) so "add my offensive CDs" resolves without the user listing spells.
+  const system = `${SYSTEM}\n\n${ops.abilityDigest(slug)}`;
 
   // PostHog LLM analytics: otel.mjs's enrichSpan stamps `runtimeContext.posthog` onto every span of
   // this run, so each attempt becomes a trace carrying the full conversation. posthog.distinct_id
@@ -226,7 +231,7 @@ export async function* runAgentStream({ slug, spec, messages, analytics }) {
     try {
       // maxRetries: 0 — a rate-limited free model (429 with Retry-After: 30) must fall through to the NEXT
       // model in the cascade INSTANTLY, not sleep ~30s honoring the retry header. The cascade IS the retry.
-      const result = streamText({ model: openrouter(model), system: SYSTEM, messages, tools, maxRetries: 0, stopWhen: stepCountIs(8), telemetry: { functionId: 'wa-agent', includeRuntimeContext: { posthog: true } }, runtimeContext });
+      const result = streamText({ model: openrouter(model), system, messages, tools, maxRetries: 0, stopWhen: stepCountIs(12), telemetry: { functionId: 'wa-agent', includeRuntimeContext: { posthog: true } }, runtimeContext });
       // `started` flips only on REAL output (text/tool) — control parts (start/start-step) arrive before the
       // model actually responds, so counting them would defeat the cascade (a model that rate-limits before
       // emitting anything must fall through to the next).
@@ -256,6 +261,9 @@ export async function* runAgentStream({ slug, spec, messages, analytics }) {
           log(`      step ${step}: tool result in -> calling model again, waiting …`);
         }
       }
+      // A degenerate EMPTY completion (no text, no tool call — flaky free models do this) is a failure,
+      // not a success: throw so the cascade falls through to the next model.
+      if (!started) throw new Error('model emitted nothing (no text, no tool call)');
       { const ms = Date.now() - t0; log(`✓ done via ${model} · ${tools_n} tool(s) · ${text.length} chars · ${ms}ms (${(ms / 1000).toFixed(1)}s) total`); }
       yield { type: 'done', newSpec: ctx.spec, summary: text, trace, model };
       return;
