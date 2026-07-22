@@ -1,14 +1,13 @@
 import { useStore, type El } from '../store';
 import { Group, ToggleRow, OverrideSlider } from './inspector-bits';
 import { COLUMN_INFO, ELEMENT_ENABLED_INFO } from './inspector-help';
-import { Button } from './ui/button';
 
-// Per-column inspector (a selected left/right side rail). Icon size / offsets apply to THIS column only;
-// vertical icon spacing is fixed by the column grow Lua (4px). Opened by clicking the rail in the preview.
+// Per-column inspector (a selected left/right side rail). Icon size / spacing / offsets apply to THIS
+// column only. Opened by clicking the rail in the preview. No Remove: a column disappears from the export
+// by itself once its icons are removed (deleting the whole rail with its icons in one click is a footgun).
 export function ColumnPanel({ el, side }: { el: El; side: 'left' | 'right' }) {
   const setElementField = useStore((st) => st.setElementField);
   const toggleElement = useStore((st) => st.toggleElement);
-  const removeElement = useStore((st) => st.removeElement);
   const g = useStore((st) => st.spec.global);
 
   return (
@@ -27,8 +26,6 @@ export function ColumnPanel({ el, side }: { el: El; side: 'left' | 'right' }) {
         value={el.yOffset as number | undefined} fallback={Number(g.yOffset ?? 0)} fallbackTag="default"
         onChange={(v) => setElementField(side, 'yOffset', v)} />
       <ToggleRow label="Enabled" on={el.enabled !== false} onToggle={() => toggleElement(side)} info={ELEMENT_ENABLED_INFO} />
-      <Button variant="outline" size="sm" className="mt-3 w-full text-destructive hover:bg-destructive hover:text-destructive-foreground"
-        onClick={() => removeElement(side)}>Remove</Button>
     </Group>
   );
 }

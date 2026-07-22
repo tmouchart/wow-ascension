@@ -157,13 +157,12 @@ function IconRow({ el, index, size, W, gap, resolve, dragging }: { el: El; index
 }
 
 // A vertical side rail (left/right column). Always rendered as a drop target — even when empty — so it shows
-// up during a drag; the store lazily creates the rail El on first drop. Once it exists, clicking its
-// background selects the COLUMN (per-column inspector) and hover reveals a remove ✕ (deletes the whole rail).
+// up during a drag; the store lazily creates the rail El on first drop. Clicking its background selects
+// the COLUMN (per-column inspector). No remove ✕: it would delete every icon in the rail at once.
 function Rail({ side, el, size, resolve, dragging }: { side: 'left' | 'right'; el?: El; size: number; resolve: IconResolver; dragging: boolean }) {
   const { setNodeRef, isOver } = useDroppable({ id: `col:${side}`, data: { type: 'row', ref: side } });
   const select = useStore((st) => st.select);
   const sel = useStore((st) => st.sel);
-  const removeElement = useStore((st) => st.removeElement);
   const gy = useStore((st) => Number(st.spec.global.yOffset ?? 0));
   const isSel = sel != null && sel.ref === side && sel.iconIndex === null;
   const icons = el?.icons ?? [];
@@ -186,11 +185,6 @@ function Rail({ side, el, size, resolve, dragging }: { side: 'left' | 'right'; e
           <IconCell key={ids[i]} id={ids[i]} url={resolve(ic)} size={size} containerRef={side} iconIndex={i} glow={glowOf(ic)} />
         ))}
       </SortableContext>
-      {icons.length > 0 && (
-        <button className="absolute -right-1.5 -top-1.5 z-[3] size-[15px] rounded-full border border-black bg-destructive text-center text-[11px] leading-[13px] text-destructive-foreground opacity-0 transition-opacity group-hover/el:opacity-100"
-          title="Remove column" onPointerDown={(e) => e.stopPropagation()}
-          onClick={(e) => { e.stopPropagation(); removeElement(side); }}>&times;</button>
-      )}
     </div>
   );
 }
