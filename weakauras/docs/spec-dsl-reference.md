@@ -111,7 +111,7 @@ Common bar fields: `hi`/`lo` = gradient high/low `[r,g,b,a]` (0..1); `bg` = back
 | `stackBar` | Resource that is an **aura stack count** (cultist Insanity 0..100) | `aura` (buff name), `max` | `hi,lo,bg,text,debuffType('BOTH'),height(14),id` | 1 `aurabar` |
 | `uptimeBar` | Maintenance countdown (keep-it-up) — self-buff **or** target DoT | `buff` (name **or** [names]) | `unit('player'\|'target'),label,warnText,bg,downBg,colors,height(14),id` | 1 `aurabar` |
 | `buffWarnText` | Big text shown only while a buff is **missing** | `buff`, `text` | `color,fontSize(20),height(22),width,id` | 1 invisible `aurabar` (text carrier) |
-| `stacks` | Point boxes from an aura **stack** (Felfury) | `auraNames` [names], `count` | `hi,lo,emptyBg,unit('player'),debuffType('HELPFUL'),unitExists,gap(4),height(12),capGlow,id` | N `aurabar` |
+| `stacks` | Point boxes from an aura **stack** (Felfury) | `auraNames` [names], `count` | `hi,lo,emptyBg,unit('player'),debuffType('HELPFUL'),unitExists,gap(4),height(12),glow,id` | N `aurabar` |
 | `chargeStacks` | Point boxes from a spell's **charges** (Runeblade 0..3) | `spell`, `count` | `byName,hi,lo,emptyBg,gap(4),height(12),id` | N `aurabar` |
 | `iconRow` | **Unified icon row** — SHOW-IF `showWhen[]` + GLOW-IF `glow.when[]` (§4) | `icons[]` | `secondary(bool→secIconSize 24),size,perRow,iconGap,combatOnly,id` | 1 dynamicgroup + N icons |
 | `procRow` | *(legacy → iconRow)* Row of proc/reminder icons | `icons[]` | `size(procSize 30),id` | 1 dynamicgroup + N icons |
@@ -119,9 +119,14 @@ Common bar fields: `hi`/`lo` = gradient high/low `[r,g,b,a]` (0..1); `bg` = back
 | `buffRow` | Row of buff-state icons | `icons[]` | `secondary,size,id` | 1 dynamicgroup + N icons |
 
 Notes captured from source you can't infer from the table:
-- **`stacks.capGlow`** = `{ at?, unlessBuff?, color?, glowType? }`: every box glows when `stacks >= at`
-  (default `at = count`), optionally gated on `unlessBuff` being **missing** (Felfury capped@6 *while* Inner
-  Demon down = dump). Glow is a `subglow` appended at **sub.5** of each box.
+- **`stacks.glow`** = `{ color?, glowType?, when?: [clauses] }` — **GLOW IF**, the same AND-array clause DSL
+  as the icons (§5, minus `spellReady`/`charges` which need a spell), **plus the stacks-only clause
+  `{ stacksAtLeast: N }`** = this element's OWN stack count (read off its trigger 1; extra clause triggers are
+  deduped against the box's own). Empty/absent `when` = glow always. Glow is a `subglow` appended at **sub.5**
+  of each box; default `glowType` is **Pixel** (Action Button Glow reads badly on a rectangular box — decided
+  2026-07-22). Legacy **`capGlow`** `{ at?, unlessBuff?, color?, glowType? }` is byte-frozen sugar for
+  `when: [{stacksAtLeast: at ?? count}, {buffMissing: unlessBuff}]` (Felfury capped@6 *while* Inner Demon
+  down = dump); `wa-to-spec` decompiles both to the canonical `glow` form.
 - **`stacks`** for a *target debuff* point tracker: set `unit:"target"`, `debuffType:"HARMFUL"`,
   `unitExists:false` (so it drops to 0 when the debuff is consumed).
 - **`uptimeBar.buff`** as a `[names]` array = "any-of" state (enraged = buff A **or** B **or** C); `expirationTime`
@@ -299,7 +304,7 @@ Conditions address sub-regions as `sub.N.<prop>` (1-based, in template order). C
 **Bar** (`templates/bar.json`): `sub.1` subbackground · `sub.2` subforeground · `sub.3` subborder ·
 **`sub.4` subtext** (the bar text / label written by `barText`).
 - `uptimeBar` **appends** `warnSubtext` → **`sub.5`** (warning text) and `subglow` → **`sub.6`** (down-state glow).
-- `stacks` capGlow **appends** a `subglow` → **`sub.5`** on each box.
+- `stacks` glow (or legacy capGlow) **appends** a `subglow` → **`sub.5`** on each box.
 - `buffWarnText` reuses the stock **`sub.4`** subtext as its warning text (toggles `sub.4.text_visible`).
 
 A glow condition change-set is: `sub.N.glow=true`, `sub.N.glowType`, `sub.N.useGlowColor=true`, `sub.N.glowColor`.

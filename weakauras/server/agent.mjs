@@ -29,6 +29,7 @@ An iconRow icon is: SHOW IF showWhen[] + GLOW IF glow.when[] — both AND-arrays
 - showWhen ABSENT = always visible: a cooldown icon (tracks its spell, desaturates while on cooldown).
 - showWhen PRESENT = hidden until EVERY clause passes: a proc / "use it now" cue. hide:"slot" (default) keeps its slot; "collapse" recenters the row.
 - glow.when = [] means "glow whenever shown". Glow style = urgency: glowType "buttonOverlay" = act NOW (white by default); "Pixel" = passive state.
+A stacks element takes the same GLOW IF (glow.when) plus the stacks-only clause {stacksAtLeast:N} = its own count (e.g. capped). On these rectangular boxes ALWAYS prefer glowType "Pixel" — buttonOverlay renders badly on non-square regions.
 
 LAYOUT CONVENTION — follow it when creating rows or inserting elements, unless the user asks otherwise (top -> bottom):
 1) proc row (showWhen icons, ~30px)  2) major cooldown row  3) resource bars (powerBar / stacks / healthBar)  4) minor cooldown row (secondary:true, smaller icons).
@@ -69,6 +70,7 @@ const whenClause = z.object({
   spellReady: z.boolean().optional().describe("this icon's own spell off cooldown"),
   charges: z.object({ op: z.string().optional(), value: z.number() }).optional(),
   stealable: z.boolean().optional(),
+  stacksAtLeast: z.number().optional().describe("STACKS ELEMENTS ONLY: this element's own stack count at least N (e.g. capped)"),
 });
 const glow = z.object({
   color: color.optional().describe('default white'),
@@ -105,7 +107,9 @@ const elementUnion = z.discriminatedUnion('kind', [
   el('stackBar', { aura: z.string().describe('the stacking buff name'), max: z.number(), hi: color.optional(), lo: color.optional(), bg: color.optional(), text: z.string().optional(), debuffType: z.string().optional(), height: z.number().optional(), id: z.string().optional() }),
   el('uptimeBar', { buff: z.union([z.string(), z.array(z.string())]).describe('one buff name, or [names] for any-of'), unit: z.enum(['player', 'target']).optional().describe('target = the player\'s DoT/debuff on the target'), label: z.string().optional(), warnText: z.string().optional(), bg: color.optional(), downBg: color.optional(), height: z.number().optional(), id: z.string().optional() }),
   el('buffWarnText', { buff: z.string(), text: z.string().describe('ASCII only'), color: color.optional(), fontSize: z.number().optional(), height: z.number().optional(), width: z.number().optional(), id: z.string().optional() }),
-  el('stacks', { auraNames: z.array(z.string()).describe('buff names giving the stack count'), count: z.number().int(), hi: color.optional(), lo: color.optional(), emptyBg: color.optional(), unit: z.string().optional(), debuffType: z.string().optional(), unitExists: z.boolean().optional(), gap: z.number().optional(), height: z.number().optional(), capGlow: capGlow.optional(), id: z.string().optional() }),
+  el('stacks', { auraNames: z.array(z.string()).describe('buff names giving the stack count'), count: z.number().int(), hi: color.optional(), lo: color.optional(), emptyBg: color.optional(), unit: z.string().optional(), debuffType: z.string().optional(), unitExists: z.boolean().optional(), gap: z.number().optional(), height: z.number().optional(),
+    glow: glow.optional().describe('GLOW IF: same clause DSL as icons + stacksAtLeast (own count); no spellReady/charges; default glowType Pixel (Action Button looks bad on a rectangular box)'),
+    capGlow: capGlow.optional().describe('LEGACY sugar for glow.when [{stacksAtLeast:at},{buffMissing:unlessBuff}] — prefer glow'), id: z.string().optional() }),
   el('chargeStacks', { spell: z.union([z.string(), z.number()]), count: z.number().int(), byName: z.boolean().optional(), hi: color.optional(), lo: color.optional(), emptyBg: color.optional(), gap: z.number().optional(), height: z.number().optional(), id: z.string().optional() }),
   el('iconRow', { secondary: z.boolean().optional().describe('smaller icons (24) — the "minor CD" look'),
     size: z.number().optional().describe('icon px override (a proc row is ~30)'), perRow: z.number().int().optional().describe('wrap count override'),

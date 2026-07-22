@@ -156,8 +156,10 @@ Glow = a `subglow` sub-region toggled by a condition (`glowChanges(color, glowTy
 - **Pixel glow** = a **soft/passive state** (not an urgent action): **class color** = a defensive self-buff is
   active ("is my buff up", e.g. Hateforged Barrier); **red (pulsing)** = a maintenance buff fell off (Inner Demon).
 
-> Consistency debt: felsworn's *situational cues* (Tyrant's Gaze `<35%`, Felfury capped@6) still use **Pixel gold**,
-> while runemaster's use the stronger **Action Button Glow**. Unify to Action Button Glow when revisiting felsworn.
+> **Shape rule (decided 2026-07-22):** Action Button Glow only looks right on **square icons** — on a
+> **rectangular** region (stack/segment boxes, bars) its art stretches and looks bad, so bar-shaped cues use
+> **Pixel** even for a strong "dump now" signal (color still carries the meaning, e.g. gold). All 25 `stacks`
+> cap-glow presets were unified to Pixel gold accordingly.
 
 ### Icon source gotcha
 
@@ -281,7 +283,8 @@ mirrors the element taxonomy — full clause/field lists are in `docs/spec-dsl-r
 - `cdRow` (cooldownIcon + one `glow:{type: buff|buffMissing|ready|readyPower|powerPct|targetHealthBelow|onCharges}`
   + `proc:`/`charges`/`showPowerAbove`), `buffRow` (`anyOf:[names]` / `weaponEnchant: main|off` / `indicator:` +
   `lowPowerGlow`), `powerBar`, `stackBar` (aura-stack resource, cultist Insanity), `healthBar`, `uptimeBar`,
-  `stacks` (+`capGlow`), `chargeStacks`, `buffWarnText`, + side columns `left`/`right` and `combatOnly`.
+  `stacks` (+`glow` = GLOW-IF, the same clause DSL as icons plus `stacksAtLeast`; legacy `capGlow` = sugar),
+  `chargeStacks`, `buffWarnText`, + side columns `left`/`right` and `combatOnly`.
 
 specToParts validates the SPEC (unknown kind / missing fields / duplicate region ids → loud error). Structural
 parity spec vs hand-built was verified region-by-region for all 5 classes (2026-07-14) and the golden guardrail

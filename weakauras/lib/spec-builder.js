@@ -453,26 +453,44 @@ function buildElement(spec, el, centerY, g, gx) {
           unitExists: el.unitExists, hiColor: el.hi, loColor: el.lo, emptyBg: el.emptyBg || [0.09, 0.11, 0.09, 0.9],
           width: boxW, height, xOffset: startX + (i - 1) * pitch, yOffset: centerY,
         });
-        // capGlow = { at?, unlessBuff?, color?, glowType? }: every box glows when the stack count reaches
-        // `at` (default = count) — AND `unlessBuff` is missing, if given (e.g. Felfury capped at 6 while
-        // Inner Demon is down = dump now). Mirrors classes/felsworn/build.js.
-        if (el.capGlow) {
-          const cg = el.capGlow;
-          const checks = [{ op: '>=', trigger: 1, variable: 'stacks', value: String(cg.at != null ? cg.at : n) }];
-          if (cg.unlessBuff) {
-            box.triggers.__array.push(B.T(B.buffTrigger(cg.unlessBuff, 'showAlways')));   // -> trigger 3
-            checks.push({ trigger: 3, variable: 'buffed', value: 0 });
+        // GLOW IF — el.glow = { color?, glowType?, when?: [clauses] }: the composable clause DSL (same
+        // vocabulary as iconRow glow.when, plus the stacks-only `{ stacksAtLeast: N }` = this element's OWN
+        // stack count, read off trigger 1). Empty/absent when = glow always. Default style is Pixel —
+        // Action Button Glow reads badly on a rectangular box. Legacy `capGlow` = { at?, unlessBuff?,
+        // color?, glowType? } is sugar for when: [{stacksAtLeast: at}, {buffMissing: unlessBuff}]
+        // (byte-frozen: Felfury capped at 6 while Inner Demon is down = dump now).
+        const glowCfg = el.glow || (el.capGlow && {
+          color: el.capGlow.color, glowType: el.capGlow.glowType,
+          when: [{ stacksAtLeast: el.capGlow.at != null ? el.capGlow.at : n },
+                 ...(el.capGlow.unlessBuff ? [{ buffMissing: el.capGlow.unlessBuff }] : [])],
+        });
+        if (glowCfg) {
+          const arr = box.triggers.__array;   // dedupe against the box's own triggers (1 = aura, 2 = always-full)
+          const trigIdx = new Map(arr.map((t, i) => [JSON.stringify(t.trigger), i + 1]));
+          const addTrigger = (def) => {
+            const k = JSON.stringify(def);
+            if (!trigIdx.has(k)) { arr.push(B.T(def)); trigIdx.set(k, arr.length); }
+            return trigIdx.get(k);
+          };
+          const checks = (glowCfg.when || []).map((cl) => cl.stacksAtLeast !== undefined
+            ? { op: '>=', trigger: 1, variable: 'stacks', value: String(cl.stacksAtLeast) }
+            : clauseToCheck(cl, { addTrigger, cdIdx: 0, collapse: false, at: `stacks glow (${el.id || spec.id + ' Stack'})` }));
+          const sg = B.subglow();   // -> sub.5
+          if (checks.length) {
+            box.conditions.push({
+              check: andCheck(checks),
+              changes: [
+                { property: 'sub.5.glow', value: true },
+                { property: 'sub.5.glowType', value: glowCfg.glowType || 'Pixel' },
+                { property: 'sub.5.useGlowColor', value: true },
+                { property: 'sub.5.glowColor', value: (glowCfg.color || WHITE).slice() },
+              ],
+            });
+          } else {   // static: glow whenever the box is shown
+            sg.glow = true; sg.glowType = glowCfg.glowType || 'Pixel';
+            sg.useGlowColor = true; sg.glowColor = (glowCfg.color || WHITE).slice();
           }
-          box.subRegions = [...box.subRegions, B.subglow()];   // -> sub.5
-          box.conditions.push({
-            check: checks.length > 1 ? { checks, trigger: -2, variable: 'AND' } : checks[0],
-            changes: [
-              { property: 'sub.5.glow', value: true },
-              { property: 'sub.5.glowType', value: cg.glowType || 'Pixel' },
-              { property: 'sub.5.useGlowColor', value: true },
-              { property: 'sub.5.glowColor', value: (cg.color || WHITE).slice() },
-            ],
-          });
+          box.subRegions = [...box.subRegions, sg];
         }
         boxes.push(box);
       }
@@ -624,7 +642,20 @@ function validateSpec(spec) {
       case 'powerBar': need(el.powerType != null, 'needs powerType (a power index)'); break;
       case 'stackBar': need(el.aura && el.max, 'needs aura (buff name) + max'); break;
       case 'uptimeBar': need(el.buff, 'needs buff (a name or [names])'); break;
-      case 'stacks': need(Array.isArray(el.auraNames) && el.count, 'needs auraNames[] + count'); break;
+      case 'stacks':
+        need(Array.isArray(el.auraNames) && el.count, 'needs auraNames[] + count');
+        if (el.glow && Array.isArray(el.glow.when)) {
+          for (const cl of el.glow.when) {
+            // stacksAtLeast is stacks-only (this element's own count); the rest is the shared vocabulary,
+            // minus the clauses that need a spell (a stacks element has no cooldown trigger).
+            const k = cl.stacksAtLeast !== undefined ? 'stacksAtLeast' : clauseKind(cl, `${at} glow`);
+            need(k !== 'spellReady' && k !== 'charges', `glow clause "${k}" needs a spell — not available on a stacks element`);
+            if (k === 'stacksAtLeast') need(typeof cl.stacksAtLeast === 'number', 'stacksAtLeast needs a number');
+            if (k === 'buffStacks') need(cl.buffStacks && cl.buffStacks.name && cl.buffStacks.value != null, 'buffStacks needs { name, value }');
+            if (k === 'anyBuff') need(Array.isArray(cl.anyBuff) && cl.anyBuff.length, 'anyBuff needs a non-empty [names]');
+          }
+        }
+        break;
       case 'chargeStacks': need(el.spell && el.count, 'needs spell + count'); break;
       case 'buffWarnText': need(el.buff && el.text, 'needs buff + text'); break;
     }

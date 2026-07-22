@@ -48,6 +48,10 @@ export const GLOW_STYLE_INFO =
   'Glow style signals urgency: Action Button = strong "act now" cue; Pixel = softer passive-state cue; ACShine = a shine sweep.';
 export const GLOW_COLOR_INFO =
   'Glow color signals meaning: white = ready / proc up, class color = a defensive buff is active, gold/orange = optimal dump.';
+export const STACKS_GLOW_INFO = {
+  toggle: 'Make every box glow when conditions are met (e.g. stacks capped while a buff is down = dump now).',
+  when: 'The boxes glow only while ALL of these conditions are true at the same time. Empty = glow permanently.',
+};
 
 // ---- Per-row panel (RowPanel) — overrides of the global style, for this row only ----
 export const ROW_INFO = {
@@ -89,6 +93,7 @@ export const PROC_INFO = {
 
 // Per-clause explanations for the proc "Show when" / "Glow only when" condition rows.
 export const CLAUSE_INFO: Record<string, string> = {
+  stacksAtLeast: "True when THIS element's own stack count is at or above this value (e.g. Felfury capped at 6).",
   buff: 'True while the named buff is active on you.',
   buffMissing: 'True while the named buff is NOT active on you.',
   anyBuff: 'True while ANY of the listed buffs is active (comma-separated names).',

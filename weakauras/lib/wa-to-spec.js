@@ -301,15 +301,19 @@ function invertStacks(boxes, specId) {
   }
   const el = { kind: 'stacks', auraNames: ts[0].auranames.slice(), unit: ts[0].unit,
     debuffType: ts[0].debuffType, unitExists: ts[0].unitExists, ...common };
-  // capGlow: an extra condition that turns on sub.5 glow when stacks reach the cap
-  const cap = (first.conditions || []).find((cd) => (cd.changes || []).some((ch) => ch.property === 'sub.5.glow'));
-  if (cap) {
-    const g = glowFromChanges(cap.changes, 5);
-    const checks = cap.check.variable === 'AND' ? cap.check.checks : [cap.check];
-    const stackChk = checks.find((x) => x.variable === 'stacks');
-    const buffChk = checks.find((x) => x.variable === 'buffed');
-    el.capGlow = { at: Number(stackChk.value), color: g.color, glowType: g.glowType };
-    if (buffChk) el.capGlow.unlessBuff = ts[2].auranames[0];
+  // GLOW IF: the sub.5 glow condition -> the composable glow.when[] (stacks-variable checks on trigger 1
+  // = this element's own count -> `stacksAtLeast`; everything else via the shared checkToClause). The
+  // legacy capGlow sugar compiles to this exact shape, so it decompiles to the canonical form.
+  const glowCond = (first.conditions || []).find((cd) => (cd.changes || []).some((ch) => ch.property === 'sub.5.glow'));
+  if (glowCond) {
+    const g = glowFromChanges(glowCond.changes, 5);
+    el.glow = { color: g.color, glowType: g.glowType,
+      when: decompose(glowCond.check).map((chk) => chk.trigger === 1 && chk.variable === 'stacks' && (chk.op || '>=') === '>='
+        ? { stacksAtLeast: num(chk.value) }
+        : checkToClause(chk, ts)) };
+  } else {
+    const sg = glowFromSubglow(first, 5);   // static glow (empty when: glow whenever shown)
+    if (Object.keys(sg).length) el.glow = { color: sg.color, glowType: sg.glowType };
   }
   return el;
 }

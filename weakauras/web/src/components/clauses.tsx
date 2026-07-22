@@ -29,15 +29,23 @@ export const CLAUSE_TYPES: [string, string][] = [
   ['charges', 'Charges'],
   ['stealable', 'Stealable on target'],
 ];
+// Vocabulary for a `stacks` element's GLOW IF: its own stack count comes first; spellReady/charges
+// need a spell (a stacks element has no cooldown trigger). Mirrors the generator's stacks validation.
+export const STACKS_CLAUSE_TYPES: [string, string][] = [
+  ['stacksAtLeast', 'Stacks reach'],
+  ...CLAUSE_TYPES.filter(([k]) => k !== 'spellReady' && k !== 'charges'),
+];
+const ALL_TYPE_KEYS = [...new Set([...STACKS_CLAUSE_TYPES, ...CLAUSE_TYPES].map(([k]) => k))];
 const OPS = ['>=', '<=', '==', '>', '<'];
 // clauses that can drive show in 'collapse' mode (mirror of the generator's GATING_CLAUSES)
 export const GATING = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable']);
 
-export const clauseType = (cl: Clause) => CLAUSE_TYPES.map(([k]) => k).find((k) => cl[k] !== undefined) ?? 'buff';
+export const clauseType = (cl: Clause) => ALL_TYPE_KEYS.find((k) => cl[k] !== undefined) ?? 'buff';
 
 export function defaultClause(type: string, icon: IconCfg): Clause {
   const name = (icon.label as string) ?? '';
   switch (type) {
+    case 'stacksAtLeast': return { stacksAtLeast: 1 };
     case 'anyBuff': return { anyBuff: [name] };
     case 'buffStacks': return { buffStacks: { name, op: '>=', value: 1 } };
     case 'targetHpBelow': return { targetHpBelow: 35 };
@@ -62,7 +70,7 @@ function OpSelect({ value, onChange }: { value: string; onChange: (v: string) =>
   );
 }
 
-function ClauseRow({ cl, icon, onChange, onRemove }: { cl: Clause; icon: IconCfg; onChange: (cl: Clause) => void; onRemove?: () => void }) {
+function ClauseRow({ cl, icon, types, onChange, onRemove }: { cl: Clause; icon: IconCfg; types: [string, string][]; onChange: (cl: Clause) => void; onRemove?: () => void }) {
   const type = clauseType(cl);
   const stacks = (cl.buffStacks ?? {}) as { name?: string; op?: string; value?: number };
   const charges = (cl.charges ?? {}) as { op?: string; value?: number };
@@ -72,7 +80,7 @@ function ClauseRow({ cl, icon, onChange, onRemove }: { cl: Clause; icon: IconCfg
         <Select value={type} onValueChange={(t) => onChange(defaultClause(t, icon))}>
           <SelectTrigger size="sm" className="w-[148px] shrink-0"><SelectValue /></SelectTrigger>
           <SelectContent>
-            {CLAUSE_TYPES.map(([v, label]) => <SelectItem key={v} value={v}>{label}</SelectItem>)}
+            {types.map(([v, label]) => <SelectItem key={v} value={v}>{label}</SelectItem>)}
           </SelectContent>
         </Select>
         {(type === 'buff' || type === 'buffMissing') && (
@@ -83,8 +91,8 @@ function ClauseRow({ cl, icon, onChange, onRemove }: { cl: Clause; icon: IconCfg
           <Input className={inputCls} type="text" placeholder="Name, name, ..." value={((cl.anyBuff as string[]) ?? []).join(', ')}
             onChange={(e) => onChange({ anyBuff: e.target.value.split(',').map((s) => s.trim()).filter(Boolean) })} />
         )}
-        {(type === 'targetHpBelow' || type === 'powerAtLeast' || type === 'powerPctAtLeast') && (
-          <Input className={tinyNum} type="number" min={1} max={type === 'powerAtLeast' ? 1000 : 100} value={Number(cl[type] ?? 0)}
+        {(type === 'targetHpBelow' || type === 'powerAtLeast' || type === 'powerPctAtLeast' || type === 'stacksAtLeast') && (
+          <Input className={tinyNum} type="number" min={1} max={type === 'powerAtLeast' ? 1000 : type === 'stacksAtLeast' ? 20 : 100} value={Number(cl[type] ?? 0)}
             onChange={(e) => onChange({ [type]: Number(e.target.value) })} />
         )}
         {type === 'charges' && (
@@ -117,18 +125,19 @@ function ClauseRow({ cl, icon, onChange, onRemove }: { cl: Clause; icon: IconCfg
   );
 }
 
-export function ClauseList({ clauses, icon, onChange, addLabel, removableToZero }: {
+export function ClauseList({ clauses, icon, onChange, addLabel, removableToZero, types = CLAUSE_TYPES }: {
   clauses: Clause[]; icon: IconCfg; onChange: (clauses: Clause[]) => void; addLabel: string; removableToZero?: boolean;
+  types?: [string, string][];
 }) {
   return (
     <div className="mb-3.5">
       {clauses.map((cl, i) => (
-        <ClauseRow key={i} cl={cl} icon={icon}
+        <ClauseRow key={i} cl={cl} icon={icon} types={types}
           onChange={(next) => onChange(clauses.map((c, j) => (j === i ? next : c)))}
           onRemove={removableToZero || clauses.length > 1 ? () => onChange(clauses.filter((_, j) => j !== i)) : undefined} />
       ))}
       <Button variant="outline" size="sm" className="border-dashed text-muted-foreground"
-        onClick={() => onChange([...clauses, defaultClause('buff', icon)])}>+ {addLabel}</Button>
+        onClick={() => onChange([...clauses, defaultClause(types[0][0], icon)])}>+ {addLabel}</Button>
     </div>
   );
 }

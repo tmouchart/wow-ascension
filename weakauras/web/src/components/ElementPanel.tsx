@@ -1,8 +1,9 @@
-import { useStore, elementLabel, POWER_NAMES, type El } from '../store';
+import { useStore, elementLabel, POWER_NAMES, type El, type IconCfg } from '../store';
 import { powerIndexConfirmed, POWER_COLOR, DEFAULT_COLOR } from '../lib/defaultSpec';
 import { REMOVABLE } from '../lib/elements';
-import { Group, Field, Note, ToggleRow, OverrideSlider, toHex, fromHex } from './inspector-bits';
-import { ELEMENT_INFO, ELEMENT_FIELD_INFO, ELEMENT_ENABLED_INFO, BAR_INFO, POWER_INDEX_INFO } from './inspector-help';
+import { Group, Field, Note, SubHead, ToggleRow, OverrideSlider, toHex, fromHex, GLOW_STYLES } from './inspector-bits';
+import { ClauseList, STACKS_CLAUSE_TYPES, type Clause } from './clauses';
+import { ELEMENT_INFO, ELEMENT_FIELD_INFO, ELEMENT_ENABLED_INFO, BAR_INFO, POWER_INDEX_INFO, STACKS_GLOW_INFO, GLOW_STYLE_INFO, GLOW_COLOR_INFO } from './inspector-help';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
@@ -85,6 +86,61 @@ function ElementFields({ el, index }: { el: El; index: number }) {
   return null;
 }
 
+// GLOW IF for a `stacks` element — the same composable clause DSL as the icons, plus the stacks-only
+// `stacksAtLeast` (this element's own count). Legacy `capGlow` presets are shown converted; the first
+// edit rewrites them as the canonical `glow` form (mirrors lib/spec-builder.js's capGlow sugar).
+type StacksGlow = { color?: number[]; glowType?: string; when?: Clause[] };
+function capGlowToGlow(el: El): StacksGlow | undefined {
+  const cg = el.capGlow as { at?: number; unlessBuff?: string; color?: number[]; glowType?: string } | undefined;
+  if (!cg) return undefined;
+  return {
+    color: cg.color, glowType: cg.glowType,
+    when: [
+      { stacksAtLeast: cg.at ?? Number(el.count ?? 5) },
+      ...(cg.unlessBuff ? [{ buffMissing: cg.unlessBuff }] : []),
+    ],
+  };
+}
+
+function StacksGlowSection({ el, index }: { el: El; index: number }) {
+  const setElementField = useStore((st) => st.setElementField);
+  const glow = (el.glow as StacksGlow | undefined) ?? capGlowToGlow(el);
+  const setGlow = (g: StacksGlow | undefined) => {
+    setElementField(index, 'glow', g);
+    if (el.capGlow !== undefined) setElementField(index, 'capGlow', undefined);
+  };
+  // clause seeds (defaultClause) use the label as the buff name — seed with this element's aura
+  const seed = { label: (el.auraNames as string[])?.[0] ?? '', spell: '' } as IconCfg;
+  return (
+    <>
+      <ToggleRow label="Glow" on={!!glow} info={STACKS_GLOW_INFO.toggle}
+        onToggle={() => setGlow(glow ? undefined : { glowType: 'Pixel', color: [1, 0.82, 0.1, 1], when: [{ stacksAtLeast: Number(el.count ?? 5) }] })} />
+      {glow && (
+        <>
+          <Field label="Glow style" info={GLOW_STYLE_INFO}>
+            <Select value={glow.glowType ?? 'Pixel'} onValueChange={(v) => setGlow({ ...glow, glowType: v })}>
+              <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
+              <SelectContent>
+                {GLOW_STYLES.map((v) => <SelectItem key={v} value={v}>{v === 'buttonOverlay' ? 'Action Button' : v}</SelectItem>)}
+              </SelectContent>
+            </Select>
+          </Field>
+          <Field label="Glow color" info={GLOW_COLOR_INFO}>
+            <input type="color" value={toHex(glow.color)} onChange={(e) => setGlow({ ...glow, color: fromHex(e.target.value) })} className={swatchCls} />
+          </Field>
+          <SubHead info={STACKS_GLOW_INFO.when}>Glow when</SubHead>
+          <ClauseList clauses={glow.when ?? []} icon={seed} types={STACKS_CLAUSE_TYPES} addLabel="glow condition" removableToZero
+            onChange={(w) => {
+              const { when: _o, ...rest } = glow; void _o;
+              setGlow(w.length ? { ...rest, when: w } : rest);
+            }} />
+          {!(glow.when ?? []).length && <Note>Glows permanently — add a condition to make it situational.</Note>}
+        </>
+      )}
+    </>
+  );
+}
+
 // Per-element inspector (a selected bar / stack boxes / warn text — every stack element except icon rows,
 // which get RowPanel). Opened by clicking the element in the preview. Width/height apply to THIS element
 // only; the global Layout group is hidden while it's open.
@@ -117,6 +173,7 @@ export function ElementPanel({ el, index, slug }: { el: El; index: number; slug:
           </span>
         </Field>
       )}
+      {el.kind === 'stacks' && <StacksGlowSection el={el} index={index} />}
       {el.kind === 'healthBar' && <Note>Width follows Global width.</Note>}
       {el.kind === 'powerBar' && (
         <>
