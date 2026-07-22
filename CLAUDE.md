@@ -281,8 +281,10 @@ mirrors the element taxonomy — full clause/field lists are in `docs/spec-dsl-r
   stacks, cooldownNumbers, desaturateOnCd}`. Legacy sugar (`buff:` / `execute: pct` +`glowAlways` / `stealable`)
   still accepted and byte-frozen; the web ProcPanel converts legacy to `when` on first edit.
 - `cdRow` (cooldownIcon + one `glow:{type: buff|buffMissing|ready|readyPower|powerPct|targetHealthBelow|onCharges}`
-  + `proc:`/`charges`/`showPowerAbove`), `buffRow` (`anyOf:[names]` / `weaponEnchant: main|off` / `indicator:` +
-  `lowPowerGlow`), `powerBar`, `stackBar` (aura-stack resource, cultist Insanity), `healthBar`, `uptimeBar`,
+  + `proc:`/`charges`/`showPowerAbove`), `buffRow` (legacy → iconRow, like cdRow/procRow: `anyOf:[names]` /
+  `weaponEnchant: main|off` / `indicator:` + `lowPowerGlow`; the unified equivalents are the `anyBuff`/
+  `weaponEnchant`/`powerPctBelow` clauses + `hide:"dim"`), `powerBar`, `stackBar` (aura-stack resource,
+  cultist Insanity), `healthBar`, `uptimeBar`,
   `stacks` (+`glow` = GLOW-IF, the same clause DSL as icons plus `stacksAtLeast`; legacy `capGlow` = sugar),
   `chargeStacks`, `buffWarnText`, + side columns `left`/`right` and `combatOnly`.
 

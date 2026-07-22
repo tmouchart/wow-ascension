@@ -191,18 +191,6 @@ function Rail({ side, el, size, resolve, dragging }: { side: 'left' | 'right'; e
   );
 }
 
-function ProcRow({ el, size, W, gap, resolve }: { el: El; size: number; W: number; gap: number; resolve: IconResolver }) {
-  return (
-    <div className={s.el}>
-      <div className={s.iconrow} style={{ width: px(W), gap }}>
-        {(el.icons ?? []).map((ic: IconCfg, i) => (
-          <div key={i} className={s.wicon} style={{ width: px(size), height: px(size), backgroundImage: `url("${resolve(ic)}")` }} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function Bar({ W, H = 14, fillW, bg, text }: { W: number; H?: number; fillW: string; bg: string; text: string }) {
   return (
     <div className={s.el}>
@@ -231,8 +219,6 @@ export function Preview({ resolve, dragging }: { resolve: IconResolver; dragging
         // a full IconRow: icons are selectable (per-icon inspector), sortable, and a palette drop target
         return <IconRow el={el} index={i} size={(el.size as number) ?? (el.secondary ? g.secIconSize : g.iconSize)}
           W={W} gap={el.iconGap != null ? px(el.iconGap as number) : GAP} resolve={resolve} dragging={dragging} />;
-      case 'buffRow':
-        return <ProcRow el={el} size={(el.size as number) ?? g.iconSize} W={W} gap={GAP} resolve={resolve} />;
       case 'uptimeBar':
         return <Bar W={(el.width as number) ?? W} H={(el.height as number) ?? 14} fillW="52%" bg={grad([0.30, 0.75, 0.15, 1], [0.05, 0.2, 0, 1])} text={String(el.label ?? 'Buff').replace('%p', '6.4')} />;
       case 'powerBar':

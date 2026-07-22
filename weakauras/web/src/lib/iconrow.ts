@@ -12,7 +12,7 @@ import type { Clause } from '../components/clauses';
 // icon passes through unchanged.
 
 type AnyIcon = Record<string, unknown>;
-type LegacyGlow = { type?: string; buff?: string; power?: number; pct?: number; targetHealthBelow?: number; op?: string; value?: number; color?: number[]; glowType?: string };
+type LegacyGlow = { type?: string; buff?: string; power?: number; pct?: number; targetHealthBelow?: number; op?: string; value?: number; spell?: number | string; byName?: boolean; color?: number[]; glowType?: string };
 type Display = Record<string, unknown>;
 
 const colorStyle = (g?: { color?: number[]; glowType?: string }) => ({
@@ -21,7 +21,7 @@ const colorStyle = (g?: { color?: number[]; glowType?: string }) => ({
 });
 
 // A legacy cdRow glow rule -> glow.when clauses (powerType comes from the ICON, matching cooldownIcon's cfg).
-function cdGlowToWhen(g: LegacyGlow, powerType?: number): Clause[] | undefined {
+function cdGlowToWhen(g: LegacyGlow, powerType?: number, ownSpell?: unknown): Clause[] | undefined {
   const pt = powerType != null ? { powerType } : {};
   switch (g.type) {
     case 'ready': return [{ spellReady: true }];
@@ -30,7 +30,13 @@ function cdGlowToWhen(g: LegacyGlow, powerType?: number): Clause[] | undefined {
     case 'buff': return [{ buff: g.buff }];
     case 'buffMissing': return [{ buffMissing: g.buff }];
     case 'targetHealthBelow': return [{ targetHpBelow: g.pct }];
-    case 'onCharges': return [{ charges: { op: g.op || '>=', value: g.value } }];
+    case 'onCharges':
+      // keep the charge SOURCE when it isn't the icon's own spell (runemaster Primordial Blast glows on
+      // Runeblade's charges) — a spell-less charges clause reads the icon's own cooldown trigger
+      return [{ charges: {
+        ...(g.spell != null && String(g.spell) !== String(ownSpell) ? { spell: g.spell, ...(g.byName ? { byName: true } : {}) } : {}),
+        op: g.op || '>=', value: g.value,
+      } }];
     default: return undefined;   // no type: already an iconRow glow (has when, or empty)
   }
 }
@@ -68,7 +74,7 @@ export function legacyIconToIconRow(ic: IconCfg): IconCfg {
 
   // 3. legacy named glow rule -> glow.when
   if (g && g.type) {
-    const when = cdGlowToWhen(g, powerType);
+    const when = cdGlowToWhen(g, powerType, ic.spell);
     out.glow = { ...colorStyle(g), ...(when ? { when } : {}) };
     if (g.type === 'buff') out.display = { ...(out.display as Display), timer: 'buff' };   // preserve the swipe-takeover
   }
@@ -79,22 +85,49 @@ export function legacyIconToIconRow(ic: IconCfg): IconCfg {
   return out as IconCfg;
 }
 
-const ICON_ROW_KINDS = new Set(['cdRow', 'procRow', 'iconRow']);
+// A legacy buffRow icon (anyOf / weaponEnchant / indicator + lowPowerGlow) -> the composable form.
+// Mirrors the generator's ex-buffRowIcon recipes: anyOf/weaponEnchant collapse away with the row recentering;
+// an indicator stays visible, greyed out while its buff is missing (hide 'dim'). Idempotent like
+// legacyIconToIconRow — an already-converted icon has none of the legacy keys and passes through.
+function buffIconToIconRow(ic: IconCfg): IconCfg {
+  const out = { ...ic } as AnyIcon;
+  if (ic.anyOf) {
+    out.showWhen = [{ anyBuff: ic.anyOf }]; out.hide = 'collapse';
+  } else if (ic.weaponEnchant) {
+    out.showWhen = [{ weaponEnchant: ic.weaponEnchant }]; out.hide = 'collapse';
+  } else if (ic.indicator) {
+    out.showWhen = [{ buff: ic.indicator }]; out.hide = 'dim';
+    const lp = ic.lowPowerGlow as { pct: number; powerType?: number; color?: number[]; glowType?: string } | undefined;
+    // powerType written explicitly (the generator's clause default is 3 = Energy; buffRow's was 0 = Mana)
+    if (lp) out.glow = { ...colorStyle(lp), when: [{ powerPctBelow: lp.pct, powerType: lp.powerType ?? 0 }] };
+  }
+  for (const k of ['anyOf', 'weaponEnchant', 'indicator', 'lowPowerGlow']) delete out[k];
+  return out as IconCfg;
+}
+
+const ICON_ROW_KINDS = new Set(['cdRow', 'procRow', 'buffRow', 'iconRow']);
 // The generator defaults an id-less iconRow to `${spec.id} Icons`, so two id-less rows would collide once both
-// are iconRow. Preserve the original per-kind default id (Procs / CDs) so ids stay distinct AND stable.
+// are iconRow. Preserve the original per-kind default id (Procs / CDs / Buffs) so ids stay distinct AND stable.
 const rowDefaultId = (specId: string, el: El): string =>
   el.kind === 'procRow' ? `${specId} Procs`
     : el.kind === 'cdRow' ? `${specId} CDs${el.secondary ? ' (Secondary)' : ''}`
+    : el.kind === 'buffRow' ? `${specId} Buffs`
     : `${specId} Icons${el.secondary ? ' (Secondary)' : ''}`;
-const convRow = (specId: string, el: El): El =>
-  el.icons ? { ...el, kind: 'iconRow', id: (el.id as string | undefined) ?? rowDefaultId(specId, el), icons: el.icons.map(legacyIconToIconRow) } : el;
+const convRow = (spec: Spec, el: El): El => {
+  if (!el.icons) return el;
+  // a size-less procRow rendered/generated at the generator's procSize (30) — an iconRow defaults to
+  // iconSize (26), so the conversion must pin the size it actually had
+  const size = el.size ?? (el.kind === 'procRow' ? Number(spec.global?.procSize ?? 30) : undefined);
+  return { ...el, kind: 'iconRow', id: (el.id as string | undefined) ?? rowDefaultId(spec.id, el),
+    ...(size != null ? { size } : {}), icons: el.icons.map(el.kind === 'buffRow' ? buffIconToIconRow : legacyIconToIconRow) };
+};
 // Side rails carry no `kind` in the SPEC (buildColumn infers canonical vs legacy per column) — convert icons only.
 const convCol = (el?: El): El | undefined => (el?.icons ? { ...el, icons: el.icons.map(legacyIconToIconRow) } : el);
 
 export function normalizeSpecToIconRow(spec: Spec): Spec {
   return {
     ...spec,
-    stack: spec.stack.map((el) => (ICON_ROW_KINDS.has(el.kind) ? convRow(spec.id, el) : el)),
+    stack: spec.stack.map((el) => (ICON_ROW_KINDS.has(el.kind) ? convRow(spec, el) : el)),
     left: convCol(spec.left),
     right: convCol(spec.right),
   };

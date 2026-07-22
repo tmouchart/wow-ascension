@@ -37,7 +37,10 @@ export const BAR_INFO = {
 // ---- Inline element fields ----
 export const ELEMENT_FIELD_INFO: Record<string, string> = {
   uptimeBar: 'Exact in-game name of the buff to track. A buff name can differ from its spell name — verify in-game.',
+  uptimeBarAnyOf: 'Comma-separated buff names: the bar tracks a STATE that any of these interchangeable buffs grants (e.g. enraged). The countdown follows whichever is active.',
+  uptimeBarUnit: 'Who carries the tracked aura: a buff on you (self-maintenance), or a debuff YOU applied to your target (a DoT to keep up).',
   stacks: 'Buff name to count stacks of, and how many boxes to show.',
+  stacksSource: 'Where the stacks live: a buff on you, or a debuff YOU applied to your target (drops to 0 when consumed / on target swap).',
   chargeStacks: 'Spell whose charges to track (matched by name), and how many charge boxes to show.',
   stackBar: 'Aura whose stack count fills the bar, and the maximum stack value (a full bar).',
   buffWarnText: 'Buff to watch for, and the warning text shown while it is absent.',
@@ -82,7 +85,7 @@ export const ICON_INFO = {
 export const PROC_INFO = {
   group: 'A proc icon: hidden until its conditions are met, then it appears (and can glow) to tell you to cast now.',
   showWhen: 'The icon shows only when ALL of these conditions are true at the same time.',
-  hide: 'What happens while the conditions are not met. "Keeps its slot" holds the icon\'s place (invisible); "Row recenters" removes it so the other icons re-center.',
+  hide: 'What happens while the conditions are not met. "Keeps its slot" holds the icon\'s place (invisible); "Row recenters" removes it so the other icons re-center; "Greys out" keeps it visible but desaturated + faded (a reminder indicator).',
   glowToggle: 'Add a glowing highlight while the proc is up.',
   glowExtra: 'Extra conditions that must ALSO hold for the glow — the icon still shows without them. Empty = glow whenever the proc is shown.',
   timer: "The icon's radial sweep + timer: the spell's cooldown, the tracked buff's remaining duration, or nothing.",
@@ -101,7 +104,9 @@ export const CLAUSE_INFO: Record<string, string> = {
   targetHpBelow: "True when the target's health is below this percentage.",
   powerAtLeast: 'True when your primary resource (Mana / Rage / Energy...) is at or above this ABSOLUTE amount. Pick the resource type on the line below — CoA quirk: some classes sit on an unexpected type (e.g. Barbarian "Rage" is actually Energy).',
   powerPctAtLeast: 'True when your primary resource (Mana / Rage / Energy...) is at or above this PERCENT of its maximum. Pick the resource type on the line below.',
+  powerPctBelow: 'True when your primary resource (Mana / Rage / Energy...) is at or UNDER this PERCENT of its maximum — a "refresh soon" cue. Pick the resource type on the line below.',
   spellReady: 'True when the spell is off cooldown.',
-  charges: "True when the spell's charge count meets the comparison.",
+  charges: "True when the spell's charge count meets the comparison. Reads this icon's spell by default; a preset can point it at another spell's charges (e.g. Primordial Blast glowing on Runeblade's).",
+  weaponEnchant: 'True while a temporary weapon enchant (engraving / imbue) is on the chosen hand. Only gates show with "Row recenters"; the icon shows the enchant\'s remaining time + element letter.',
   stealable: 'True when the target has a stealable / purgeable buff.',
 };

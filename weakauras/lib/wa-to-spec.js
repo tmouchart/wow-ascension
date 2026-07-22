@@ -120,11 +120,20 @@ function checkToClause(chk, ts) {
       if (isTargetExecute(t)) return { targetHpBelow: executePct(t) };
       if (isPowerAtLeast(t)) { const pv = powerAtLeastVals(t); return { powerAtLeast: pv.power, powerType: pv.powerType }; }
       if (isStealable(t)) return { stealable: true };
+      if (t.type === 'item') return { weaponEnchant: t.weapon };
       if (isAura(t)) return t.auranames.length > 1 ? { anyBuff: t.auranames.slice() } : { buff: t.auranames[0] };
       break;
     case 'onCooldown': return { spellReady: true };
-    case 'charges': return { charges: { op: chk.op || '>=', value: num(chk.value) } };
-    case 'percentpower': return { powerPctAtLeast: num(chk.value), powerType: t.powertype };
+    case 'charges': {
+      // a charges check on a cooldown trigger that is NOT the icon's own (first) one = a cross-spell
+      // charge source ({ charges: { spell, ... } }); on the own trigger the clause stays spell-less
+      const own = ts.findIndex(isCooldown) + 1;
+      return { charges: { ...(chk.trigger !== own ? cdSpell(t) : {}), op: chk.op || '>=', value: num(chk.value) } };
+    }
+    case 'percentpower':
+      return chk.op === '<='
+        ? { powerPctBelow: num(chk.value), powerType: t.powertype }
+        : { powerPctAtLeast: num(chk.value), powerType: t.powertype };
   }
   throw new Error(`checkToClause: unhandled check (variable "${chk.variable}")`);
 }
@@ -147,8 +156,11 @@ function invertIconElement(region, label) {
   if ((region.subRegions || []).some((s) => s.type === 'subtext' && s.text_text === '%s')) c.charges = true;
 
   const desatCond = conds.find((cd) => (cd.changes || []).length === 1 && cd.changes[0].property === 'desaturate');
-  const showCond = conds.find((cd) => (cd.changes || []).some((ch) => ch.property === 'alpha'));
-  const glowCond = conds.find((cd) => cd !== showCond && (cd.changes || []).some((ch) => /^sub\.3\.glow/.test(ch.property)));
+  // hide 'dim' ("indicator"): desaturate + alpha 0.5 while the flipped clause passes — distinct from the
+  // slot show condition, whose alpha change is always 1
+  const dimCond = conds.find((cd) => (cd.changes || []).some((ch) => ch.property === 'alpha' && ch.value === 0.5));
+  const showCond = conds.find((cd) => cd !== dimCond && (cd.changes || []).some((ch) => ch.property === 'alpha'));
+  const glowCond = conds.find((cd) => cd !== showCond && cd !== dimCond && (cd.changes || []).some((ch) => /^sub\.3\.glow/.test(ch.property)));
   const staticGlow = glowFromSubglow(region);
 
   // glow: an explicit glow condition, else glow folded into the show condition (glow whenever shown), else static
@@ -157,9 +169,13 @@ function invertIconElement(region, label) {
   else if (showCond && (showCond.changes || []).some((ch) => /^sub\.3\.glow/.test(ch.property))) glow = glowFromChanges(showCond.changes);
   else if (Object.keys(staticGlow).length) glow = staticGlow;
 
-  // showWhen: slot mode reads the alpha condition; collapse reads the non-cd/non-glow gating triggers
+  // showWhen: dim reads the flipped grey-out condition; slot reads the alpha condition; collapse reads
+  // the non-cd/non-glow gating triggers
   let showWhen = null, showChecks = [];
-  if (showCond) {
+  if (dimCond) {
+    const chk = dimCond.check;   // the INVERSE of the clause — flip the 0/1 back
+    showWhen = [checkToClause({ ...chk, value: num(chk.value) === 1 ? 0 : 1 }, ts)];
+  } else if (showCond) {
     showChecks = decompose(showCond.check);
     showWhen = showChecks.map((chk) => checkToClause(chk, ts));
   } else if (collapse) {
@@ -176,7 +192,7 @@ function invertIconElement(region, label) {
     if (extra.length) glow.when = extra.map((chk) => checkToClause(chk, ts));
   }
 
-  if (showWhen) { c.showWhen = showWhen; if (collapse) c.hide = 'collapse'; }
+  if (showWhen) { c.showWhen = showWhen; if (collapse) c.hide = 'collapse'; else if (dimCond) c.hide = 'dim'; }
   if (glow) c.glow = glow;
 
   const display = {};

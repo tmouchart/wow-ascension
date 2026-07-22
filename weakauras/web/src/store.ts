@@ -54,7 +54,6 @@ export function elementLabel(el: El): string {
     case 'chargeStacks': return 'Charge boxes';
     case 'stackBar': return `${(el.aura as string) ?? 'Stack'} bar`;
     case 'buffWarnText': return `Warn: ${el.buff}`;
-    case 'buffRow': return 'Buff row';
     case 'healthBar': return 'Health bar';
     default: return el.kind;
   }

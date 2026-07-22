@@ -1,7 +1,7 @@
 import { useStore, type Ref, type IconCfg } from '../store';
 import { Group, Field, Note, ToggleRow, SubHead, toHex, fromHex, GLOW_STYLES } from './inspector-bits';
 import { ICON_INFO, PROC_INFO, GLOW_STYLE_INFO, GLOW_COLOR_INFO } from './inspector-help';
-import { ClauseList, GATING, clauseType, defaultClause, type Clause } from './clauses';
+import { ClauseList, GATING, DIMMABLE, clauseType, defaultClause, type Clause } from './clauses';
 import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
 import {
   Select,
@@ -38,8 +38,11 @@ export function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
   const glowWhen = glow?.when ?? [];
   const glowGated = glowWhen.length > 0;
   const display = (icon.display as Display) ?? {};
-  const collapse = (icon.hide as string) === 'collapse';
+  const hideMode = (icon.hide as string) ?? 'slot';
+  const collapse = hideMode === 'collapse';
   const badCollapse = collapse && showWhen.some((cl) => !GATING.has(clauseType(cl)));
+  const badDim = hideMode === 'dim' && !(showWhen.length === 1 && DIMMABLE.has(clauseType(showWhen[0])));
+  const badEnchant = !collapse && showWhen.some((cl) => clauseType(cl) === 'weaponEnchant');
   const hasAura = [...showWhen, ...glowWhen].some((cl) => ['buff', 'anyBuff', 'buffStacks'].includes(clauseType(cl)));
 
   // desaturate-on-cooldown: iconElement defaults it ON for an always-visible icon with a spell (cd-like),
@@ -81,15 +84,18 @@ export function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
           <ClauseList clauses={showWhen} icon={icon} addLabel="condition" removableToZero
             onChange={(w) => { setF('showWhen', w.length ? w : undefined); if (!w.length) setF('hide', undefined); }} />
           <Field label="While hidden" info={PROC_INFO.hide}>
-            <Select value={collapse ? 'collapse' : 'slot'} onValueChange={(v) => setF('hide', v === 'collapse' ? 'collapse' : undefined)}>
+            <Select value={hideMode} onValueChange={(v) => setF('hide', v === 'slot' ? undefined : v)}>
               <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
               <SelectContent>
                 <SelectItem value="slot">Keeps its slot</SelectItem>
                 <SelectItem value="collapse">Row recenters</SelectItem>
+                <SelectItem value="dim">Greys out</SelectItem>
               </SelectContent>
             </Select>
           </Field>
-          {badCollapse && <Note>"Row recenters" only supports buff / any-of / target HP / power / stealable conditions — switch to "Keeps its slot" or remove the others.</Note>}
+          {badCollapse && <Note>"Row recenters" only supports buff / any-of / target HP / power / enchant / stealable conditions — switch to "Keeps its slot" or remove the others.</Note>}
+          {badDim && <Note>"Greys out" needs exactly ONE buff / any-of / buff-missing condition (its inverse drives the grey-out).</Note>}
+          {badEnchant && <Note>A weapon-enchant condition only works with "Row recenters" (the enchant trigger has no always-on form).</Note>}
         </>
       )}
 

@@ -87,9 +87,10 @@ function cdIconCfg(spec, c, parentId, size) {
 //   { powerAtLeast: N, powerType? }              (custom UnitPower — same reason; powerType defaults 3)
 //   { spellReady: true } / { charges: { op?, value } }   (read the icon's own cooldown trigger)
 //   { stealable: true }                          (target has ANY spell-stealable buff)
-const GATING_CLAUSES = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable']);  // can drive show ('collapse')
+const GATING_CLAUSES = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable', 'weaponEnchant']);  // can drive show ('collapse')
 const AURA_CLAUSES = new Set(['buff', 'anyBuff', 'buffStacks']);   // buff-family (drives timer:'buff' + the stacks subtext)
-const ALL_CLAUSES = new Set([...GATING_CLAUSES, ...AURA_CLAUSES, 'buffMissing', 'spellReady', 'charges', 'powerPctAtLeast']);
+const DIM_CLAUSES = new Set(['buff', 'anyBuff', 'buffMissing']);   // invertible 0/1 `buffed` checks (hide 'dim' flips them)
+const ALL_CLAUSES = new Set([...GATING_CLAUSES, ...AURA_CLAUSES, 'buffMissing', 'spellReady', 'charges', 'powerPctAtLeast', 'powerPctBelow']);
 function clauseKind(cl, at) {
   const keys = [...ALL_CLAUSES].filter(k => cl[k] !== undefined);
   if (keys.length !== 1) throw new Error(`${at}: each when-clause needs exactly one of ${[...ALL_CLAUSES].join(', ')}`);
@@ -129,12 +130,22 @@ function clauseToCheck(cl, ctx) {
     case 'powerPctAtLeast':
       // percent (not absolute): a powerTrigger + a percentpower condition (no stateupdate equivalent for %).
       return { op: '>=', trigger: addTrigger(B.powerTrigger(cl.powerType != null ? cl.powerType : 3)), variable: 'percentpower', value: String(cl.powerPctAtLeast) };
+    case 'powerPctBelow':
+      // the "swap now" cue (ex-buffRow lowPowerGlow): resource percent AT OR UNDER the threshold
+      return { op: '<=', trigger: addTrigger(B.powerTrigger(cl.powerType != null ? cl.powerType : 3)), variable: 'percentpower', value: String(cl.powerPctBelow) };
+    case 'weaponEnchant':
+      // temp weapon enchant present on 'main'|'off' hand. showOnActive only (no always-on form), so this
+      // clause can only gate show with hide 'collapse' — enforced by validateIconRowIcon.
+      return { trigger: addTrigger(B.weaponEnchantTrigger(cl.weaponEnchant)), variable: 'show', value: 1 };
     case 'stealable':
       return { trigger: addTrigger(B.stealableTargetTrigger()), variable: 'show', value: 1 };
     case 'spellReady':
       return { trigger: cdIdx, variable: 'onCooldown', value: 0 };
     case 'charges':
-      return { op: cl.charges.op || '>=', trigger: cdIdx, variable: 'charges', value: String(cl.charges.value) };
+      // reads the icon's own cooldown trigger — or ANOTHER spell's charges via its own trigger
+      // (runemaster Primordial Blast glows on Runeblade's charges: { charges: { spell, value: 0 } })
+      return { op: cl.charges.op || '>=', variable: 'charges', value: String(cl.charges.value),
+        trigger: cl.charges.spell != null ? addTrigger(B.cooldownTrigger(cl.charges.spell, cl.charges.byName)) : cdIdx };
   }
 }
 // AND-wrap N checks (a single check needs no wrapper). trigger -2 = the WeakAuras multi-check AND.
@@ -161,6 +172,7 @@ function iconElement(spec, c, parentId, size, idBase) {
   const showWhen = c.showWhen !== undefined ? c.showWhen : (c.when !== undefined ? c.when : null);
   const gated = showWhen !== null;
   const collapse = (c.hide || 'slot') === 'collapse';
+  const dim = c.hide === 'dim';
   const d = c.display || {};
   const b = B.iconBase(parentId, { id: `${idBase || spec.id + ' Proc'} - ${c.label}`, parentId, size, fallbackIcon: c.fallbackIcon });
 
@@ -197,6 +209,16 @@ function iconElement(spec, c, parentId, size, idBase) {
     // visibility handled by the show-driving triggers (disjunctive 'all'); glow static or on extra clauses
     if (glow && !glowChecks.length) staticGlow();
     else if (glow) conditions.push({ check: andCheck(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
+  } else if (gated && dim) {
+    // "indicator": stays visible, greyed out while its single buffed-check clause FAILS (0/1 flipped —
+    // validateIconRowIcon guarantees exactly one DIM_CLAUSES clause). The ex-buffRow indicator shape.
+    const chk = showChecks[0];
+    conditions.push({
+      check: { ...chk, value: chk.value === 1 ? 0 : 1 },
+      changes: [{ property: 'desaturate', value: true }, { property: 'alpha', value: 0.5 }],
+    });
+    if (glow && !glowChecks.length) staticGlow();
+    else if (glow) conditions.push({ check: andCheck(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
   } else if (gated) {
     b.alpha = 0;
     const showChanges = [{ property: 'alpha', value: 1 }];
@@ -210,6 +232,9 @@ function iconElement(spec, c, parentId, size, idBase) {
     if (glow && !glowChecks.length) staticGlow();
     else if (glow) conditions.push({ check: andCheck(glowChecks), changes: B.glowChanges(glow.color || WHITE, glow.glowType) });
   }
+
+  // a weaponEnchant-gated icon shows the enchant's element letter (%c custom-text subtext, ex-buffRow)
+  if (gated && showWhen.some(cl => clauseKind(cl, at) === 'weaponEnchant')) B.withEngravingLetter(b);
 
   let mode = cdIdx || 1;                     // display trigger: the cooldown by default (spell art + swipe)
   if (d.timer === 'buff') mode = auraIdx;    // swipe/countdown = a tracked buff's remaining time
@@ -595,7 +620,7 @@ function validateIconRowIcon(ic, at) {
   if (showWhen !== null) need(Array.isArray(showWhen) && showWhen.length, 'showWhen must be a non-empty array of clauses');
   if (ic.hide) {
     need(showWhen !== null, 'hide needs a showWhen[]');
-    need(ic.hide === 'slot' || ic.hide === 'collapse', `unknown hide "${ic.hide}" (slot | collapse)`);
+    need(['slot', 'collapse', 'dim'].includes(ic.hide), `unknown hide "${ic.hide}" (slot | collapse | dim)`);
   }
   const glowWhen = (ic.glow && Array.isArray(ic.glow.when)) ? ic.glow.when : [];
   const all = [...(showWhen || []), ...glowWhen];
@@ -605,11 +630,23 @@ function validateIconRowIcon(ic, at) {
     if (k === 'charges') need(cl.charges && cl.charges.value != null, 'charges needs { value }');
     if (k === 'anyBuff') need(Array.isArray(cl.anyBuff) && cl.anyBuff.length, 'anyBuff needs a non-empty [names]');
     if (k === 'powerPctAtLeast') need(cl.powerPctAtLeast != null, 'powerPctAtLeast needs a percent value');
-    if (k === 'spellReady' || k === 'charges') need(ic.spell != null, `${k} clause needs a spell`);
+    if (k === 'powerPctBelow') need(cl.powerPctBelow != null, 'powerPctBelow needs a percent value');
+    if (k === 'spellReady') need(ic.spell != null, 'spellReady clause needs a spell');
+    if (k === 'charges') need(ic.spell != null || cl.charges.spell != null, 'charges clause needs a spell (the icon\'s, or its own charges.spell)');
+  }
+  for (const cl of glowWhen) {
+    need(clauseKind(cl, at) !== 'weaponEnchant', 'weaponEnchant can only gate show (hide "collapse"), not glow');
+  }
+  if ((showWhen || []).some(cl => clauseKind(cl, at) === 'weaponEnchant')) {
+    need(ic.hide === 'collapse', 'a weaponEnchant clause needs hide "collapse" (the enchant trigger has no always-on form)');
   }
   if (ic.hide === 'collapse') for (const cl of showWhen) {
     const k = clauseKind(cl, at);
     need(GATING_CLAUSES.has(k), `clause "${k}" cannot gate collapse-show (allows: ${[...GATING_CLAUSES].join(', ')})`);
+  }
+  if (ic.hide === 'dim') {
+    need(showWhen.length === 1 && DIM_CLAUSES.has(clauseKind(showWhen[0], at)),
+      'hide "dim" needs exactly one buff / anyBuff / buffMissing clause (its inverse drives the grey-out)');
   }
   const d = ic.display || {};
   if (d.timer) need(['cooldown', 'buff', 'none'].includes(d.timer), `unknown display.timer "${d.timer}"`);

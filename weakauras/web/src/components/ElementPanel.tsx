@@ -19,29 +19,68 @@ const swatchCls = 'h-8 w-12 cursor-pointer rounded-md border border-input bg-tra
 // Inline fields for the element kinds whose data is a buff name (the SPEC-shipped rows keep their curated data).
 function ElementFields({ el, index }: { el: El; index: number }) {
   const setElementField = useStore((st) => st.setElementField);
-  if (el.kind === 'uptimeBar' && typeof el.buff === 'string') {
+  if (el.kind === 'uptimeBar') {
     return (
-      <Field label="Buff" info={ELEMENT_FIELD_INFO.uptimeBar}>
-        <Input className="h-8 w-[150px]" type="text" value={el.buff}
-          onChange={(e) => {
-            setElementField(index, 'buff', e.target.value);
-            setElementField(index, 'label', `${e.target.value}  %p`);
-            setElementField(index, 'warnText', e.target.value.toUpperCase() + ' MISSING');
-          }} />
-      </Field>
+      <>
+        {Array.isArray(el.buff) ? (
+          // any-of state bar (e.g. barbarian Enrage): edit the interchangeable names; the label/warn text
+          // carry their own semantic name, so they are NOT auto-synced like the single-buff form
+          <Field label="Any of buffs" info={ELEMENT_FIELD_INFO.uptimeBarAnyOf}>
+            <Input className="h-8 w-[150px]" type="text" value={(el.buff as string[]).join(', ')}
+              onChange={(e) => setElementField(index, 'buff', e.target.value.split(',').map((s) => s.trim()).filter(Boolean))} />
+          </Field>
+        ) : (
+          <Field label="Buff" info={ELEMENT_FIELD_INFO.uptimeBar}>
+            <Input className="h-8 w-[150px]" type="text" value={el.buff as string}
+              onChange={(e) => {
+                setElementField(index, 'buff', e.target.value);
+                setElementField(index, 'label', `${e.target.value}  %p`);
+                setElementField(index, 'warnText', e.target.value.toUpperCase() + ' MISSING');
+              }} />
+          </Field>
+        )}
+        <Field label="Track on" info={ELEMENT_FIELD_INFO.uptimeBarUnit}>
+          <Select value={el.unit === 'target' ? 'target' : 'player'}
+            onValueChange={(v) => setElementField(index, 'unit', v === 'target' ? 'target' : undefined)}>
+            <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
+            <SelectContent>
+              <SelectItem value="player">Me (self-buff)</SelectItem>
+              <SelectItem value="target">Target (my debuff)</SelectItem>
+            </SelectContent>
+          </Select>
+        </Field>
+      </>
     );
   }
   if (el.kind === 'stacks') {
     return (
-      <Field label="Buff" info={ELEMENT_FIELD_INFO.stacks}>
-        <span className="flex items-center gap-2.5">
-          <Input className="h-8 w-24" type="text" value={(el.auraNames as string[])?.[0] ?? ''}
-            onChange={(e) => setElementField(index, 'auraNames', [e.target.value])} />
-          <Input className="h-8 w-[52px] text-right font-mono" type="number" min={2} max={12} title="Boxes"
-            value={Number(el.count ?? 5)}
-            onChange={(e) => setElementField(index, 'count', Number(e.target.value))} />
-        </span>
-      </Field>
+      <>
+        <Field label="Buff" info={ELEMENT_FIELD_INFO.stacks}>
+          <span className="flex items-center gap-2.5">
+            <Input className="h-8 w-24" type="text" value={(el.auraNames as string[])?.[0] ?? ''}
+              onChange={(e) => setElementField(index, 'auraNames', [e.target.value])} />
+            <Input className="h-8 w-[52px] text-right font-mono" type="number" min={2} max={12} title="Boxes"
+              value={Number(el.count ?? 5)}
+              onChange={(e) => setElementField(index, 'count', Number(e.target.value))} />
+          </span>
+        </Field>
+        <Field label="Source" info={ELEMENT_FIELD_INFO.stacksSource}>
+          <Select value={el.unit === 'target' ? 'target' : 'player'}
+            onValueChange={(v) => {
+              // the target-debuff tracker is a trio (see the element taxonomy): HARMFUL + unitExists:false
+              // so the boxes drop to 0 when the debuff is consumed; self resets to the defaults
+              setElementField(index, 'unit', v === 'target' ? 'target' : undefined);
+              setElementField(index, 'debuffType', v === 'target' ? 'HARMFUL' : undefined);
+              setElementField(index, 'unitExists', v === 'target' ? false : undefined);
+            }}>
+            <SelectTrigger size="sm" className="w-[150px]"><SelectValue /></SelectTrigger>
+            <SelectContent>
+              <SelectItem value="player">My buff</SelectItem>
+              <SelectItem value="target">Debuff on target</SelectItem>
+            </SelectContent>
+          </Select>
+        </Field>
+      </>
     );
   }
   if (el.kind === 'chargeStacks') {

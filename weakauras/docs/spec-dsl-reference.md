@@ -116,7 +116,7 @@ Common bar fields: `hi`/`lo` = gradient high/low `[r,g,b,a]` (0..1); `bg` = back
 | `iconRow` | **Unified icon row** — SHOW-IF `showWhen[]` + GLOW-IF `glow.when[]` (§4) | `icons[]` | `secondary(bool→secIconSize 24),size,perRow,iconGap,combatOnly,id` | 1 dynamicgroup + N icons |
 | `procRow` | *(legacy → iconRow)* Row of proc/reminder icons | `icons[]` | `size(procSize 30),id` | 1 dynamicgroup + N icons |
 | `cdRow` | *(legacy → iconRow)* Row of cooldown icons | `icons[]` | `secondary,size,id` | 1 dynamicgroup + N icons |
-| `buffRow` | Row of buff-state icons | `icons[]` | `secondary,size,id` | 1 dynamicgroup + N icons |
+| `buffRow` | *(legacy → iconRow)* Row of buff-state icons | `icons[]` | `secondary,size,id` | 1 dynamicgroup + N icons |
 
 Notes captured from source you can't infer from the table:
 - **`stacks.glow`** = `{ color?, glowType?, when?: [clauses] }` — **GLOW IF**, the same AND-array clause DSL
@@ -156,6 +156,8 @@ icon:
   "charges": true,                 // append a "%s" charge subtext
   "showWhen": [ {clause}, ... ],   // ABSENT = always visible (a "CD"). Present = hidden until ALL clauses pass (a "proc")
   "hide": "slot",                  // with showWhen: "slot" (default, alpha 0 keeps its slot) | "collapse" (row recenters)
+                                   //   | "dim" (stays visible, desaturated + alpha 0.5 while the clause FAILS — an
+                                   //     "indicator"; needs exactly ONE buff/anyBuff/buffMissing clause, its 0/1 is flipped)
   "glow": { "color": [1,1,1,1], "glowType": "buttonOverlay",
             "when": [ {clause}, ... ] },   // ABSENT/[] = glow whenever visible; else glow only while these also pass
   "display": { "timer": "cooldown|buff|none", "stacks": true,
@@ -194,6 +196,9 @@ icon:
 | proc `buff:X` | `showWhen:[{buff:X}]` |
 | proc `execute:P` + `glowAlways` | `showWhen:[{targetHpBelow:P}], hide:"collapse", glow:{when:[]}` |
 | proc `stealable` | `showWhen:[{stealable:true}], hide:"collapse"` |
+| buffRow `anyOf:[names]` | `showWhen:[{anyBuff:[names]}], hide:"collapse"` |
+| buffRow `weaponEnchant:"main"\|"off"` | `showWhen:[{weaponEnchant:"main"\|"off"}], hide:"collapse"` (engraving `%c` subtext auto-applied) |
+| buffRow `indicator:name` (+`lowPowerGlow:{pct,powerType}`) | `showWhen:[{buff:name}], hide:"dim"` (+ `glow:{when:[{powerPctBelow:pct,powerType}]}`) |
 
 ---
 
@@ -229,8 +234,10 @@ condition-check; `checkToClause` (wa-to-spec) inverts it. The legacy `procRow` `
 | `{ "targetHpBelow": pct }` | target HP % < pct (execute) | ✅ | `targetExecuteTrigger` → `show==1` |
 | `{ "powerAtLeast": N, powerType? }` | UnitPower ≥ N, **absolute** (powerType default 3) | ✅ | `powerAtLeastTrigger` → `show==1` |
 | `{ "powerPctAtLeast": P, powerType? }` | resource **percent** ≥ P (powerType default 3) | ❌ | `powerTrigger` → `percentpower>=` |
+| `{ "powerPctBelow": P, powerType? }` | resource **percent** ≤ P — "refresh soon" cue (powerType default 3) | ❌ | `powerTrigger` → `percentpower<=` |
 | `{ "spellReady": true }` | this icon's spell off cooldown | ❌ | own cooldown trigger → `onCooldown==0` |
 | `{ "charges": {op?,value} }` | this icon's spell charges `op value` | ❌ | own cooldown trigger → `charges` |
+| `{ "weaponEnchant": "main"\|"off" }` | temp weapon enchant on that hand. **showWhen + `hide:"collapse"` ONLY** (the enchant trigger has no always-on form; not allowed in `glow.when`). Auto-appends the `%c` engraving-letter subtext | ✅ | `weaponEnchantTrigger` → `show==1` |
 | `{ "stealable": true }` | target has ANY spell-stealable buff | ✅ | `stealableTargetTrigger` → `show==1` |
 
 - **`hide:"slot"`** (default): icon is `alpha:0`; a condition on `AND(when)` sets `alpha:1` (+ glow). It stays
@@ -247,7 +254,10 @@ condition-check; `checkToClause` (wa-to-spec) inverts it. The legacy `procRow` `
 
 ---
 
-## 6. `buffRow` icon config (`buffRowIcon`) — three shapes
+## 6. `buffRow` icon config (`buffRowIcon`) — three LEGACY shapes (→ iconRow)
+
+Still parsed (10 preset specs use it, byte-frozen goldens); the web editor normalizes it to `iconRow` in
+memory (`web/src/lib/iconrow.ts` `buffIconToIconRow`, mapping table in §4). Use the iconRow clauses for new work.
 
 | Shape | Fields | Behaviour |
 |---|---|---|

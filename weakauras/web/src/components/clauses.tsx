@@ -25,20 +25,25 @@ export const CLAUSE_TYPES: [string, string][] = [
   ['targetHpBelow', 'Target HP % <'],
   ['powerAtLeast', 'Resource >='],
   ['powerPctAtLeast', 'Resource % >='],
+  ['powerPctBelow', 'Resource % <='],
   ['spellReady', 'Spell ready'],
   ['charges', 'Charges'],
+  ['weaponEnchant', 'Weapon enchant'],
   ['stealable', 'Stealable on target'],
 ];
 // Vocabulary for a `stacks` element's GLOW IF: its own stack count comes first; spellReady/charges
-// need a spell (a stacks element has no cooldown trigger). Mirrors the generator's stacks validation.
+// need a spell (a stacks element has no cooldown trigger) and weaponEnchant only gates icon show.
+// Mirrors the generator's stacks validation.
 export const STACKS_CLAUSE_TYPES: [string, string][] = [
   ['stacksAtLeast', 'Stacks reach'],
-  ...CLAUSE_TYPES.filter(([k]) => k !== 'spellReady' && k !== 'charges'),
+  ...CLAUSE_TYPES.filter(([k]) => k !== 'spellReady' && k !== 'charges' && k !== 'weaponEnchant'),
 ];
 const ALL_TYPE_KEYS = [...new Set([...STACKS_CLAUSE_TYPES, ...CLAUSE_TYPES].map(([k]) => k))];
 const OPS = ['>=', '<=', '==', '>', '<'];
 // clauses that can drive show in 'collapse' mode (mirror of the generator's GATING_CLAUSES)
-export const GATING = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable']);
+export const GATING = new Set(['buff', 'anyBuff', 'targetHpBelow', 'powerAtLeast', 'stealable', 'weaponEnchant']);
+// clauses hide 'dim' can invert (mirror of the generator's DIM_CLAUSES)
+export const DIMMABLE = new Set(['buff', 'anyBuff', 'buffMissing']);
 
 export const clauseType = (cl: Clause) => ALL_TYPE_KEYS.find((k) => cl[k] !== undefined) ?? 'buff';
 
@@ -56,6 +61,8 @@ export function defaultClause(type: string, icon: IconCfg, powerType = 3): Claus
     case 'targetHpBelow': return { targetHpBelow: 35 };
     case 'powerAtLeast': return { powerAtLeast: 50, powerType };
     case 'powerPctAtLeast': return { powerPctAtLeast: 60, powerType };
+    case 'powerPctBelow': return { powerPctBelow: 25, powerType };
+    case 'weaponEnchant': return { weaponEnchant: 'main' };
     case 'spellReady': return { spellReady: true };
     case 'charges': return { charges: { op: '>=', value: 1 } };
     case 'stealable': return { stealable: true };
@@ -99,9 +106,18 @@ function ClauseRow({ cl, icon, types, onChange, onRemove }: { cl: Clause; icon: 
           <Input className={inputCls} type="text" placeholder="Name, name, ..." value={((cl.anyBuff as string[]) ?? []).join(', ')}
             onChange={(e) => onChange({ anyBuff: e.target.value.split(',').map((s) => s.trim()).filter(Boolean) })} />
         )}
-        {(type === 'targetHpBelow' || type === 'powerAtLeast' || type === 'powerPctAtLeast' || type === 'stacksAtLeast') && (
+        {(type === 'targetHpBelow' || type === 'powerAtLeast' || type === 'powerPctAtLeast' || type === 'powerPctBelow' || type === 'stacksAtLeast') && (
           <Input className={tinyNum} type="number" min={1} max={type === 'powerAtLeast' ? 1000 : type === 'stacksAtLeast' ? 20 : 100} value={Number(cl[type] ?? 0)}
             onChange={(e) => onChange({ ...cl, [type]: Number(e.target.value) })} />
+        )}
+        {type === 'weaponEnchant' && (
+          <Select value={(cl.weaponEnchant as string) ?? 'main'} onValueChange={(v) => onChange({ weaponEnchant: v })}>
+            <SelectTrigger size="sm" className="w-[110px] shrink-0"><SelectValue /></SelectTrigger>
+            <SelectContent>
+              <SelectItem value="main">Main hand</SelectItem>
+              <SelectItem value="off">Off hand</SelectItem>
+            </SelectContent>
+          </Select>
         )}
         {type === 'charges' && (
           <>
@@ -129,7 +145,7 @@ function ClauseRow({ cl, icon, types, onChange, onRemove }: { cl: Clause; icon: 
             onChange={(e) => onChange({ buffStacks: { ...stacks, value: Number(e.target.value) } })} />
         </div>
       )}
-      {(type === 'powerAtLeast' || type === 'powerPctAtLeast') && (
+      {(type === 'powerAtLeast' || type === 'powerPctAtLeast' || type === 'powerPctBelow') && (
         <div className="mt-2 flex items-center gap-2 pl-2">
           <Select value={String(powerType)} onValueChange={(v) => onChange({ [type]: cl[type], powerType: Number(v) })}>
             <SelectTrigger size="sm" className="w-[148px] shrink-0"><SelectValue /></SelectTrigger>
