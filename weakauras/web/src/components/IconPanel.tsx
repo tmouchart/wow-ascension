@@ -2,7 +2,6 @@ import { useStore, type Ref, type IconCfg } from '../store';
 import { Group, Field, Note, ToggleRow, SubHead, toHex, fromHex, GLOW_STYLES } from './inspector-bits';
 import { ICON_INFO, PROC_INFO, GLOW_STYLE_INFO, GLOW_COLOR_INFO } from './inspector-help';
 import { ClauseList, GATING, clauseType, defaultClause, type Clause } from './clauses';
-import { Button } from './ui/button';
 import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
 import {
   Select,
@@ -31,7 +30,6 @@ function Segmented({ value, onChange, options }: { value: string; onChange: (v: 
 
 export function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number }; icon: IconCfg }) {
   const setIconField = useStore((st) => st.setIconField);
-  const select = useStore((st) => st.select);
   const setF = (key: string, value: unknown) => setIconField(sel.ref, sel.iconIndex, key, value);
 
   const showWhen = (icon.showWhen as Clause[] | undefined) ?? [];
@@ -140,10 +138,6 @@ export function IconPanel({ sel, icon }: { sel: { ref: Ref; iconIndex: number };
       <ToggleRow label="Stack count" on={!!display.stacks} onToggle={() => setDisplay({ stacks: !display.stacks })} info={PROC_INFO.stacks} />
       <ToggleRow label="Cooldown numbers" on={display.cooldownNumbers !== false} onToggle={() => setDisplay({ cooldownNumbers: display.cooldownNumbers === false })} info={PROC_INFO.cooldownNumbers} />
       <ToggleRow label="Grey while on CD" on={desatOn} onToggle={() => setDisplay({ desaturateOnCd: !desatOn })} info={PROC_INFO.desaturate} />
-
-      <div className="mt-3 flex gap-2">
-        <Button variant="outline" size="sm" onClick={() => select(null)}>Done</Button>
-      </div>
     </Group>
   );
 }
