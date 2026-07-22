@@ -15,6 +15,8 @@ import { serveStatic } from '@hono/node-server/serve-static';
 import { stream } from 'hono/streaming';
 import { bodyLimit } from 'hono/body-limit';
 import { createRequire } from 'node:module';
+import { randomUUID } from 'node:crypto';
+import { PostHog } from 'posthog-node';
 
 const require = createRequire(import.meta.url);
 const { specToParts } = require('../lib/spec-builder.js');
@@ -23,6 +25,47 @@ const { waToSpec } = require('../lib/wa-to-spec.js');
 
 const PORT = Number(process.env.PORT) || 8374;
 const MAX_BODY = 1 << 20;   // 1 MB — a SPEC is small JSON; reject anything absurd.
+const posthogToken = process.env.POSTHOG_PROJECT_TOKEN;
+const posthogHost = process.env.POSTHOG_HOST;
+
+if (process.env.NODE_ENV !== 'production') {
+  if (!posthogToken) throw new Error('POSTHOG_PROJECT_TOKEN variable required by PostHog is missing or un-configured, this causes events to be silently missed. This error stops appearing once POSTHOG_PROJECT_TOKEN is configured');
+  if (!posthogHost) throw new Error('POSTHOG_HOST variable required by PostHog is missing or un-configured, this causes events to be silently missed. This error stops appearing once POSTHOG_HOST is configured');
+}
+
+const posthog = posthogToken && posthogHost
+  ? new PostHog(posthogToken, { host: posthogHost, enableExceptionAutocapture: true, flushAt: 1, flushInterval: 0 })
+  : null;
+
+function analyticsContext(c) {
+  return {
+    distinctId: c.req.header('x-posthog-distinct-id') || randomUUID(),
+    sessionId: c.req.header('x-posthog-session-id'),
+  };
+}
+
+async function captureEvent(context, event, properties) {
+  if (!posthog) return;
+  posthog.capture({
+    distinctId: context.distinctId,
+    event,
+    properties: {
+      ...properties,
+      ...(context.sessionId ? { $session_id: context.sessionId } : {}),
+      $process_person_profile: false,
+    },
+  });
+  await posthog.flush();
+}
+
+async function captureError(error, context) {
+  if (!posthog) return;
+  posthog.captureException(error, context.distinctId, {
+    ...(context.sessionId ? { $session_id: context.sessionId } : {}),
+    $process_person_profile: false,
+  });
+  await posthog.flush();
+}
 
 // Validate a SPEC exactly as the generator would. Throws are turned into a structured error by the caller.
 function validate(spec) {
@@ -47,11 +90,14 @@ app.post(
     catch { return c.json({ ok: false, error: 'invalid JSON body' }, 400); }
     const str = body && typeof body.string === 'string' ? body.string.trim() : '';
     if (!str.startsWith('!WA:2!')) return c.json({ ok: false, error: 'not a !WA:2! import string' }, 400);
+    const context = analyticsContext(c);
     try {
       const spec = waToSpec(decodeWA(str).data);
       const { name, children } = specToParts(spec);   // validate the reconstructed SPEC
+      await captureEvent(context, 'weakaura_imported', { region_count: children.length });
       return c.json({ ok: true, spec, name, regions: children.length });
     } catch (e) {
+      await captureError(e, context);
       return c.json({ ok: false, error: String(e.message || e) }, 400);
     }
   },
@@ -67,10 +113,18 @@ app.post(
     if (!body || typeof body.spec !== 'object' || body.spec === null)
       return c.json({ ok: false, error: 'body needs a `spec` object' }, 400);
 
+    const context = analyticsContext(c);
+
     // No messages -> pure validation round-trip. With messages -> run the agent.
     if (!Array.isArray(body.messages) || body.messages.length === 0) {
-      try { return c.json(validate(body.spec)); }
-      catch (e) { return c.json({ ok: false, error: String(e.message || e) }, 400); }
+      try {
+        const result = validate(body.spec);
+        await captureEvent(context, 'spec_validated', { region_count: result.regions });
+        return c.json(result);
+      } catch (e) {
+        await captureError(e, context);
+        return c.json({ ok: false, error: String(e.message || e) }, 400);
+      }
     }
     if (!process.env.OPENROUTER_API_KEY)
       return c.json({ ok: false, error: 'OPENROUTER_API_KEY not set' }, 503);
@@ -80,14 +134,29 @@ app.post(
     // Stream the run as NDJSON: one JSON event per line, flushed as it happens so the frontend can show the
     // answer + tool trace scrolling live.
     const { runAgentStream } = await import('./agent.mjs');
+    await captureEvent(context, 'agent_run_started', {
+      class_slug: body.slug,
+      message_count: body.messages.length,
+    });
     c.header('content-type', 'application/x-ndjson');
     c.header('cache-control', 'no-cache');
     c.header('x-accel-buffering', 'no');
     return stream(c, async (s) => {
       try {
-        for await (const ev of runAgentStream({ slug: body.slug, spec: body.spec, messages: body.messages }))
+        for await (const ev of runAgentStream({ slug: body.slug, spec: body.spec, messages: body.messages })) {
           await s.write(JSON.stringify(ev) + '\n');
+          if (ev.type === 'done') {
+            await captureEvent(context, 'agent_run_completed', {
+              class_slug: body.slug,
+              model: ev.model,
+              tool_count: ev.trace.length,
+            });
+          } else if (ev.type === 'error') {
+            await captureError(new Error(ev.error), context);
+          }
+        }
       } catch (e) {
+        await captureError(e, context);
         await s.write(JSON.stringify({ type: 'error', error: String(e.message || e) }) + '\n');
       }
     });
