@@ -17,6 +17,7 @@ import {
 import { Editor } from './components/Editor';
 import { WelcomeModal } from './components/WelcomeModal';
 import { Button } from './components/ui/button';
+import { Tooltip, TooltipTrigger, TooltipContent } from './components/ui/tooltip';
 import { Separator } from './components/ui/separator';
 import {
   Select,
@@ -237,9 +238,14 @@ export function App() {
           </ToggleGroupItem>
         </ToggleGroup>
 
-        <Button variant="ghost" size="icon" aria-label="Reset to preset" title="Reset to preset" onClick={doReset}>
-          <RotateCcw />
-        </Button>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant="ghost" size="icon" aria-label="Revert to preset" onClick={doReset}>
+              <RotateCcw />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>Revert to preset</TooltipContent>
+        </Tooltip>
 
         <div className="relative">
           <Button variant="outline" onClick={() => { setSaveAsOpen((o) => !o); setSavedOpen(false); }}>

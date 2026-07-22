@@ -408,6 +408,11 @@ touching anything under `web/src`:
   truth (loaded via `import.meta.glob`). Never duplicate spec data into `web/src` or hold editable SPEC state in
   local component state — read/write through the store.
 - **No new npm dependencies without asking** — stay lean; prefer the shadcn/Radix/Tailwind primitives present.
+- **GOTCHA — React 18 + new-style shadcn components as Radix `asChild` triggers:** any component used as a
+  Radix trigger (`<TooltipTrigger asChild><Button/>`) MUST forward its ref — new-style shadcn components
+  (plain `function X({...props})`, no `forwardRef`) silently drop it on React 18, so the popper has no anchor
+  and renders off-screen at `translate(0, -200%)` (open in the DOM, never visible — no error). `Button` is
+  already fixed (`ui/button.tsx` wraps `React.forwardRef`); apply the same fix when it happens to another.
 
 ## Conventions
 
