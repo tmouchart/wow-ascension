@@ -19,23 +19,32 @@ const MODELS = (process.env.AGENT_MODELS || DEFAULT_MODELS).split(',').map(s => 
 
 const SYSTEM = `You edit a WeakAuras "SPEC" for a custom WoW class, through tools only.
 
-The SPEC is a vertical "stack" of elements (top -> bottom). Element kinds:
-- bars: powerBar (resource, needs powerType), healthBar, stackBar (aura-stack resource), uptimeBar (buff countdown), buffWarnText
+The SPEC is a vertical "stack" of elements (top -> bottom), plus optional left/right side rails. Element kinds:
+- bars: powerBar (resource, needs powerType), healthBar, stackBar (aura-stack resource), uptimeBar (buff countdown; unit:"target" = the player's DoT on the target), buffWarnText
 - boxes: stacks (aura point boxes, has a "count"), chargeStacks (spell charge boxes)
-- icon containers (hold icons): cdRow (cooldowns: a primary + optional secondary), procRow ("use it now" procs), buffRow (buff-state icons)
-Containers are referenced by role: primary | secondary | proc | buff | left | right (side rails), or a numeric stack index.
+- icon rows: iconRow (THE icon container — cooldowns and procs mix freely), buffRow (buff-state icons: anyOf / weaponEnchant / indicator)
+The layout is modular: any row can sit anywhere and hold any mix. A container is referenced by its stack INDEX (from describeSpec), or "left"/"right" for the side rails.
+
+An iconRow icon is: SHOW IF showWhen[] + GLOW IF glow.when[] — both AND-arrays of the same clauses.
+- showWhen ABSENT = always visible: a cooldown icon (tracks its spell, desaturates while on cooldown).
+- showWhen PRESENT = hidden until EVERY clause passes: a proc / "use it now" cue. hide:"slot" (default) keeps its slot; "collapse" recenters the row.
+- glow.when = [] means "glow whenever shown". Glow style = urgency: glowType "buttonOverlay" = act NOW (white by default); "Pixel" = passive state.
+
+LAYOUT CONVENTION — follow it when creating rows or inserting elements, unless the user asks otherwise (top -> bottom):
+1) proc row (showWhen icons, ~30px)  2) major cooldown row  3) resource bars (powerBar / stacks / healthBar)  4) minor cooldown row (secondary:true, smaller icons).
+Use addElement's \`at\` to insert at the conventional spot; it returns the new index — addIcon there.
 
 Tools:
-- describeSpec: the current layout — every element with its index and fields (count, powerType, colors...), the icons per container, global sizing, combatOnly. CALL FIRST.
+- describeSpec: the current layout — every element with its index and fields (count, powerType, colors...), the icons per row, global sizing, combatOnly. CALL FIRST.
 - searchAbilities: resolve a spell NAME to its spellId + metadata. ALWAYS call before adding a spell — NEVER invent a spellId.
-- addElement: add a stack element (typed per kind). Container kinds are created empty — fill them with addIcon.
-- updateElement: merge-patch ONE element's fields by index (null deletes a field). This is how you change a value — e.g. a stack "count" or a bar color.
+- addElement: add a stack element (typed per kind). iconRow/buffRow are created empty — fill them with addIcon at the returned index.
+- updateElement: merge-patch ONE element's fields by index (null deletes a field). This is how you change a value — e.g. a stack "count", a bar color, a row's size/perRow/iconGap/combatOnly.
 - removeElement / moveElement: drop or reorder an element by index.
-- addIcon / updateIcon / removeIcon: manage icons in a container. Offensive CDs -> primary; defensive/utility -> secondary; procs -> proc; buff-state -> buff.
+- addIcon / updateIcon / removeIcon: manage icons in a row (by stack index) or a side rail ("left"/"right").
 - setGlobal: sizing/offsets + combatOnly (hide the whole WA out of combat).
 
 Rules:
-- describeSpec first; act by the index/role it returns.
+- describeSpec first; act by the indexes it returns.
 - If a tool returns ok:false, read the error and fix your call (a duplicate already exists; "ambiguous" returns candidates to choose from).
 - Keep your final answer short: say what you changed (or why you couldn't).`;
 
@@ -44,51 +53,43 @@ const clone = o => JSON.parse(JSON.stringify(o));
 // ---- shared Zod shapes (structure is generic; fields are typed per kind, `raw` reaches the rest, and
 // every mutation is revalidated by specToParts so a malformed payload is rejected, not shipped) ----
 const color = z.array(z.number()).length(4).describe('[r,g,b,a], each 0..1');
-const containerRef = z.union([z.enum(['primary', 'secondary', 'proc', 'buff', 'left', 'right']), z.number().int()])
-  .describe('container role or a numeric stack index');
+const containerRef = z.union([z.enum(['left', 'right']), z.number().int()])
+  .describe('stack index of an icon row (see describeSpec), or "left"/"right" for a side rail');
 
-// proc `when` clause — set EXACTLY ONE key (validated downstream)
+// one clause of showWhen[] / glow.when[] — set EXACTLY ONE key (+ powerType where noted; validated downstream)
 const whenClause = z.object({
   buff: z.string().optional().describe('self-buff present'),
   buffMissing: z.string().optional().describe('self-buff absent'),
   anyBuff: z.array(z.string()).optional().describe('any of these buffs present'),
   buffStacks: z.object({ name: z.string(), op: z.string().optional(), value: z.number() }).optional(),
   targetHpBelow: z.number().optional().describe('target HP% below (execute window)'),
-  powerAtLeast: z.number().optional(),
-  powerType: z.number().int().optional(),
+  powerAtLeast: z.number().optional().describe('resource amount at least'),
+  powerPctAtLeast: z.number().optional().describe('resource PERCENT at least'),
+  powerType: z.number().int().optional().describe('for powerAtLeast/powerPctAtLeast (default 3 Energy)'),
   spellReady: z.boolean().optional().describe("this icon's own spell off cooldown"),
   charges: z.object({ op: z.string().optional(), value: z.number() }).optional(),
   stealable: z.boolean().optional(),
 });
 const glow = z.object({
-  type: z.enum(['ready', 'readyPower', 'powerPct', 'buff', 'buffMissing', 'targetHealthBelow', 'onCharges']).optional()
-    .describe('cd-icon glow rule (omit for a proc-icon glow, which only styles color/glowType/when)'),
-  color: color.optional(),
+  color: color.optional().describe('default white'),
   glowType: z.enum(['buttonOverlay', 'Pixel', 'ACShine']).optional().describe('buttonOverlay = Action Button (act now); Pixel = passive state'),
-  buff: z.string().optional().describe('for type buff|buffMissing'),
-  power: z.number().optional().describe('for type readyPower'),
-  pct: z.number().optional().describe('for type powerPct|targetHealthBelow'),
-  spell: z.union([z.string(), z.number()]).optional().describe('for type onCharges'),
-  byName: z.boolean().optional(), op: z.string().optional(), value: z.number().optional(),
-  when: z.array(whenClause).optional().describe('proc-icon: extra clauses gating the glow'),
+  when: z.array(whenClause).optional().describe('AND-ed clauses gating the glow; [] = glow whenever the icon is shown'),
 });
 // one rich icon schema; the op guards container-appropriateness + specToParts validates the shape
 const icon = z.object({
   label: z.string().optional().describe('display label + region id; defaults to the resolved spell name'),
-  spell: z.union([z.string(), z.number()]).optional().describe('spellId or name (cd/proc icons); resolved via the registry'),
+  spell: z.union([z.string(), z.number()]).optional().describe('spellId or name; resolved via the registry'),
   byName: z.boolean().optional().describe('match by name, not spellId (no art on this client)'),
   fallbackIcon: z.string().optional(),
+  showWhen: z.array(whenClause).optional().describe('AND-ed clauses gating VISIBILITY; absent = always visible (a cooldown icon)'),
+  hide: z.enum(['slot', 'collapse']).optional().describe('with showWhen: slot (default, keeps its slot) | collapse (row recenters)'),
   glow: glow.optional(),
-  proc: z.string().optional().describe('cd icon: proc-only, shows/glows while this buff is up'),
-  charges: z.boolean().optional().describe('cd icon: append a charge-count subtext'),
-  showPowerAbove: z.number().optional(), powerType: z.number().int().optional(),
-  when: z.array(whenClause).optional().describe('proc icon: AND-ed clauses that light it up'),
-  hide: z.enum(['slot', 'collapse']).optional(),
+  charges: z.boolean().optional().describe('append a charge-count subtext'),
   display: z.object({ timer: z.enum(['cooldown', 'buff', 'none']).optional(), stacks: z.boolean().optional(),
     cooldownNumbers: z.boolean().optional(), desaturateOnCd: z.boolean().optional() }).optional(),
-  anyOf: z.array(z.string()).optional().describe('buff icon: shown while ANY of these buffs is up'),
+  anyOf: z.array(z.string()).optional().describe('buffRow icon: shown while ANY of these buffs is up'),
   weaponEnchant: z.enum(['main', 'off']).optional(),
-  indicator: z.string().optional().describe('buff icon: always shown, dim while this buff is missing'),
+  indicator: z.string().optional().describe('buffRow icon: always shown, dim while this buff is missing'),
   lowPowerGlow: z.object({ pct: z.number(), powerType: z.number().int().optional(), color: color.optional(), glowType: z.string().optional() }).optional(),
 });
 
@@ -102,12 +103,13 @@ const elementUnion = z.discriminatedUnion('kind', [
     hi: color.optional(), lo: color.optional(), bg: color.optional(), text: z.string().optional(), textSize: z.number().optional(), height: z.number().optional(), width: z.number().optional(), id: z.string().optional() }),
   el('healthBar', { unit: z.string().optional(), hi: color.optional(), lo: color.optional(), bg: color.optional(), text: z.string().optional(), height: z.number().optional(), id: z.string().optional() }),
   el('stackBar', { aura: z.string().describe('the stacking buff name'), max: z.number(), hi: color.optional(), lo: color.optional(), bg: color.optional(), text: z.string().optional(), debuffType: z.string().optional(), height: z.number().optional(), id: z.string().optional() }),
-  el('uptimeBar', { buff: z.union([z.string(), z.array(z.string())]).describe('one buff name, or [names] for any-of'), label: z.string().optional(), warnText: z.string().optional(), bg: color.optional(), downBg: color.optional(), height: z.number().optional(), id: z.string().optional() }),
+  el('uptimeBar', { buff: z.union([z.string(), z.array(z.string())]).describe('one buff name, or [names] for any-of'), unit: z.enum(['player', 'target']).optional().describe('target = the player\'s DoT/debuff on the target'), label: z.string().optional(), warnText: z.string().optional(), bg: color.optional(), downBg: color.optional(), height: z.number().optional(), id: z.string().optional() }),
   el('buffWarnText', { buff: z.string(), text: z.string().describe('ASCII only'), color: color.optional(), fontSize: z.number().optional(), height: z.number().optional(), width: z.number().optional(), id: z.string().optional() }),
   el('stacks', { auraNames: z.array(z.string()).describe('buff names giving the stack count'), count: z.number().int(), hi: color.optional(), lo: color.optional(), emptyBg: color.optional(), unit: z.string().optional(), debuffType: z.string().optional(), unitExists: z.boolean().optional(), gap: z.number().optional(), height: z.number().optional(), capGlow: capGlow.optional(), id: z.string().optional() }),
   el('chargeStacks', { spell: z.union([z.string(), z.number()]), count: z.number().int(), byName: z.boolean().optional(), hi: color.optional(), lo: color.optional(), emptyBg: color.optional(), gap: z.number().optional(), height: z.number().optional(), id: z.string().optional() }),
-  el('procRow', { size: z.number().optional(), id: z.string().optional() }),
-  el('cdRow', { secondary: z.boolean().optional(), size: z.number().optional(), id: z.string().optional() }),
+  el('iconRow', { secondary: z.boolean().optional().describe('smaller icons (24) — the "minor CD" look'),
+    size: z.number().optional().describe('icon px override (a proc row is ~30)'), perRow: z.number().int().optional().describe('wrap count override'),
+    iconGap: z.number().optional().describe('px between icons'), combatOnly: z.boolean().optional().describe('this row only in combat'), id: z.string().optional() }),
   el('buffRow', { secondary: z.boolean().optional(), size: z.number().optional(), id: z.string().optional() }),
 ]);
 
@@ -127,7 +129,7 @@ function buildTools(ctx) {
       execute: async ({ query }) => ops.searchAbilities(ctx.slug, query),
     }),
     addElement: tool({
-      description: 'Add a stack element (typed per kind). Container kinds (cdRow/procRow/buffRow) are created empty — fill them with addIcon.',
+      description: 'Add a stack element (typed per kind). Icon rows (iconRow/buffRow) are created empty — fill them with addIcon at the returned index.',
       inputSchema: z.object({ element: elementUnion }),
       execute: async ({ element }) => commit(ops.addElement(ctx.spec, ctx.slug, element)),
     }),
@@ -147,17 +149,17 @@ function buildTools(ctx) {
       execute: async a => commit(ops.moveElement(ctx.spec, a)),
     }),
     addIcon: tool({
-      description: 'Add an icon to a container (created if absent). Offensive CDs -> primary, defensive -> secondary, procs -> proc, buff-state -> buff.',
+      description: 'Add an icon to an icon row (by stack index) or a side rail ("left"/"right", created if absent). No showWhen = a cooldown icon; showWhen = a proc.',
       inputSchema: z.object({ container: containerRef, icon }),
       execute: async a => commit(ops.addIcon(ctx.spec, ctx.slug, a)),
     }),
     updateIcon: tool({
-      description: 'Merge-patch an existing icon (found by spell name/id or label) in a container. e.g. set glow to {type:"ready"}, or null to clear it.',
+      description: 'Merge-patch an existing icon (found by spell name/id or label) in a row/rail. e.g. set glow to {when:[{spellReady:true}]}, or null to clear it.',
       inputSchema: z.object({ container: containerRef, match: z.string().describe('spell name/id or icon label'), set: z.record(z.any()) }),
       execute: async a => commit(ops.updateIcon(ctx.spec, ctx.slug, a)),
     }),
     removeIcon: tool({
-      description: 'Remove an icon (by spell name/id or label) from a container.',
+      description: 'Remove an icon (by spell name/id or label) from a row/rail.',
       inputSchema: z.object({ container: containerRef, match: z.string() }),
       execute: async a => commit(ops.removeIcon(ctx.spec, ctx.slug, a)),
     }),

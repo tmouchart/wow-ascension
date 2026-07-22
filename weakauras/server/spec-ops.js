@@ -68,7 +68,7 @@ const GLOBAL_DEFAULTS = { barWidth: 250, iconSize: 26, secIconSize: 24, procSize
 const iconView = ic => {
   const out = { label: ic.label };
   if (ic.spell != null) out.spell = ic.spell;
-  for (const k of ['glow', 'proc', 'charges', 'when', 'anyOf', 'weaponEnchant', 'indicator', 'showPowerAbove']) {
+  for (const k of ['showWhen', 'hide', 'glow', 'display', 'proc', 'charges', 'when', 'anyOf', 'weaponEnchant', 'indicator', 'showPowerAbove']) {
     if (ic[k] !== undefined) out[k] = ic[k];
   }
   return out;
@@ -112,8 +112,10 @@ function iconPath(slug, spellId) {
 const cdRowOf = (spec, secondary) => spec.stack.find(el => el.kind === 'cdRow' && !!el.secondary === secondary);
 
 // ---- generic element/icon/global CRUD (the "structure is generic, fields are typed + revalidated" surface) ----
-const KIND_SET = new Set(['procRow', 'cdRow', 'buffRow', 'powerBar', 'healthBar', 'stackBar', 'uptimeBar', 'stacks', 'chargeStacks', 'buffWarnText']);
-const CONTAINER_KIND = { primary: 'cdRow', secondary: 'cdRow', proc: 'procRow', buff: 'buffRow', left: 'cdRow', right: 'cdRow' };
+// The agent creates only the unified `iconRow` (legacy cdRow/procRow still PARSE in existing specs, but new
+// rows are always iconRow — the primary/secondary/proc roles are gone; layout is modular, containers are
+// addressed by stack index or the "left"/"right" side rails).
+const KIND_SET = new Set(['iconRow', 'buffRow', 'powerBar', 'healthBar', 'stackBar', 'uptimeBar', 'stacks', 'chargeStacks', 'buffWarnText']);
 
 // Merge-patch one plain object in place: null value deletes the key, everything else replaces wholesale.
 function mergePatch(target, patch) {
@@ -121,45 +123,36 @@ function mergePatch(target, patch) {
   return target;
 }
 
-// Resolve a container ref (role name or a numeric stack index) to the { icons } holder. Roles: primary /
-// secondary cdRow, proc(Row), buff(Row), left / right side rail. `create` seeds an absent role container.
+// Resolve a container ref (a numeric stack index, or "left"/"right" for a side rail) to the { icons }
+// holder. `create` seeds an absent rail; a stack row must already exist (addElement creates it).
 function resolveContainer(spec, container, create) {
-  if (typeof container === 'number') {
-    const el = spec.stack[container];
-    if (!el) throw new Error(`no element at index ${container}`);
-    if (!Array.isArray(el.icons)) throw new Error(`element ${container} (${el.kind}) is not an icon container`);
-    return el;
+  if (container === 'left' || container === 'right') {
+    if (spec[container]) return spec[container];
+    if (!create) throw new Error(`no ${container} rail`);
+    return (spec[container] = { icons: [] });
   }
-  let holder;
-  switch (container) {
-    case 'primary': holder = cdRowOf(spec, false); break;
-    case 'secondary': holder = cdRowOf(spec, true); break;
-    case 'proc': holder = spec.stack.find(e => e.kind === 'procRow'); break;
-    case 'buff': holder = spec.stack.find(e => e.kind === 'buffRow'); break;
-    case 'left': case 'right': holder = spec[container]; break;
-    default: throw new Error(`unknown container "${container}" (primary|secondary|proc|buff|left|right or an index)`);
-  }
-  if (holder) return holder;
-  if (!create) throw new Error(`no ${container} container`);
-  if (container === 'left' || container === 'right') return (spec[container] = { icons: [] });
-  const el = { kind: CONTAINER_KIND[container], ...(container === 'secondary' ? { secondary: true } : {}), icons: [] };
-  if (container === 'proc') spec.stack.unshift(el); else spec.stack.push(el);
+  if (typeof container !== 'number') throw new Error(`unknown container "${container}" (a stack index, or left|right)`);
+  const el = spec.stack[container];
+  if (!el) throw new Error(`no element at index ${container}`);
+  if (!Array.isArray(el.icons)) throw new Error(`element ${container} (${el.kind}) is not an icon row`);
   return el;
 }
 const containerKind = (spec, container) =>
-  typeof container === 'number' ? spec.stack[container].kind : CONTAINER_KIND[container];
+  typeof container === 'number' ? spec.stack[container].kind : 'iconRow';
 
-// Reject an icon shaped for the wrong container (cd-glow icon into a procRow, etc.) with a clear message.
+// Reject an icon shaped for the wrong container with a clear message. buffRow is the only typed row left;
+// legacy cdRow/procRow (pre-iconRow specs) keep their old constraints since their builders don't do clauses.
 function guardIcon(kind, icon) {
-  if (kind === 'procRow') {
-    if (!(icon.when || icon.buff || icon.execute != null || icon.stealable))
-      throw new Error('a proc icon needs `when` (or legacy buff / execute / stealable)');
-  } else if (kind === 'buffRow') {
-    if (!(icon.anyOf || icon.weaponEnchant || icon.indicator))
-      throw new Error('a buff icon needs one of anyOf / weaponEnchant / indicator');
-  } else if (icon.when || icon.anyOf || icon.weaponEnchant || icon.indicator) {
-    throw new Error('that is a proc/buff icon — add it to the proc or buff container instead');
+  const buffish = icon.anyOf || icon.weaponEnchant || icon.indicator;
+  if (kind === 'buffRow') {
+    if (!buffish) throw new Error('a buff icon needs one of anyOf / weaponEnchant / indicator');
+    return;
   }
+  if (buffish) throw new Error('that is a buff-state icon — add it to a buffRow instead');
+  if (kind === 'procRow' && !(icon.when || icon.showWhen || icon.buff || icon.execute != null || icon.stealable))
+    throw new Error('a legacy procRow icon needs showWhen');
+  if (kind === 'cdRow' && (icon.when || icon.showWhen))
+    throw new Error('a legacy cdRow cannot hold a show-gated icon — put it in an iconRow');
 }
 
 // Append a cooldown icon to the primary or secondary cdRow (creating that row at the end if absent).
@@ -225,11 +218,8 @@ function removeElement(spec, { index }) {
   });
 }
 
-// Remove an icon from any container (by spell name/id or label). Container = a role or stack index;
-// legacy { row, spell } (primary/secondary cdRow) still accepted.
-function removeIcon(spec, slug, a) {
-  const container = a.container != null ? a.container : (a.row === 'secondary' ? 'secondary' : 'primary');
-  const match = a.match != null ? a.match : a.spell;
+// Remove an icon from any container (by spell name/id or label). Container = a stack index or left/right.
+function removeIcon(spec, slug, { container, match }) {
   return mutate(spec, next => {
     const c = resolveContainer(next, container, false);
     const key = String(match).toLowerCase();
@@ -268,7 +258,7 @@ function addElement(spec, slug, { kind, at, raw, ...props }) {
     if (kind === 'chargeStacks' && typeof el.spell === 'string' && !el.byName) {
       const { spellId } = resolveSpell(slug, el.spell); el.spell = spellId;
     }
-    if (['procRow', 'cdRow', 'buffRow'].includes(kind) && !Array.isArray(el.icons)) el.icons = [];
+    if (['iconRow', 'buffRow'].includes(kind) && !Array.isArray(el.icons)) el.icons = [];
     const idx = at == null ? next.stack.length : Math.max(0, Math.min(at, next.stack.length));
     next.stack.splice(idx, 0, el);
     return { added: { kind, at: idx } };

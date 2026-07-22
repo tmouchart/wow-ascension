@@ -79,8 +79,9 @@ t('setCooldownGlow type:buff requires a buff name', () => {
   assert.match(r.error, /needs a buff/i);
 });
 
-t('removeIcon drops an icon by name', () => {
-  const r = ops.removeIcon(felsworn, 'felsworn', { spell: 'Reckoning' });
+t('removeIcon drops an icon by name (container = stack index)', () => {
+  const i = felsworn.stack.findIndex(e => (e.icons || []).some(ic => ic.label === 'Reckoning'));
+  const r = ops.removeIcon(felsworn, 'felsworn', { container: i, match: 'Reckoning' });
   assert.strictEqual(r.ok, true);
   assert.strictEqual(valid(r.spec), valid(felsworn) - 1);
 });
@@ -149,25 +150,61 @@ t('addElement powerBar without powerType fails validation', () => {
   assert.match(r.error, /powerType/i);
 });
 
-t('addIcon adds a cooldown icon to the primary row (generic)', () => {
-  const r = ops.addIcon(felsworn, 'felsworn', { container: 'primary', icon: { spell: 'Felwrath' } });
+const cdIdx = felsworn.stack.findIndex(e => e.kind === 'cdRow' && !e.secondary);
+
+t('addIcon adds a cooldown icon to a row by stack index', () => {
+  const r = ops.addIcon(felsworn, 'felsworn', { container: cdIdx, icon: { spell: 'Felwrath' } });
   assert.strictEqual(r.ok, true);
   assert.strictEqual(valid(r.spec), valid(felsworn) + 1);
 });
 
-t('addIcon rejects a proc-shaped icon in a cdRow', () => {
-  const r = ops.addIcon(felsworn, 'felsworn', { container: 'primary', icon: { spell: 'Felwrath', when: [{ buff: 'X' }] } });
+t('addIcon rejects a show-gated icon in a legacy cdRow', () => {
+  const r = ops.addIcon(felsworn, 'felsworn', { container: cdIdx, icon: { spell: 'Felwrath', showWhen: [{ buff: 'X' }] } });
   assert.strictEqual(r.ok, false);
-  assert.match(r.error, /proc\/buff icon/i);
+  assert.match(r.error, /iconRow/);
 });
 
 t('updateIcon sets then clears a glow on an existing icon', () => {
-  const set = ops.updateIcon(felsworn, 'felsworn', { container: 'primary', match: 'Blood of Mannoroth', set: { glow: { type: 'ready' } } });
+  const set = ops.updateIcon(felsworn, 'felsworn', { container: cdIdx, match: 'Blood of Mannoroth', set: { glow: { type: 'ready' } } });
   assert.strictEqual(set.ok, true);
-  const cd = set.spec.stack.find(e => e.kind === 'cdRow' && !e.secondary);
-  assert.deepStrictEqual(cd.icons.find(i => i.label === 'Blood of Mannoroth').glow, { type: 'ready' });
-  const clr = ops.updateIcon(set.spec, 'felsworn', { container: 'primary', match: 'Blood of Mannoroth', set: { glow: null } });
-  assert.strictEqual(clr.spec.stack.find(e => e.kind === 'cdRow' && !e.secondary).icons.find(i => i.label === 'Blood of Mannoroth').glow, undefined);
+  assert.deepStrictEqual(set.spec.stack[cdIdx].icons.find(i => i.label === 'Blood of Mannoroth').glow, { type: 'ready' });
+  const clr = ops.updateIcon(set.spec, 'felsworn', { container: cdIdx, match: 'Blood of Mannoroth', set: { glow: null } });
+  assert.strictEqual(clr.spec.stack[cdIdx].icons.find(i => i.label === 'Blood of Mannoroth').glow, undefined);
+});
+
+// ---- unified iconRow surface ----
+t('addElement iconRow + addIcon: a cooldown and a showWhen proc in ONE row', () => {
+  const row = ops.addElement(felsworn, 'felsworn', { kind: 'iconRow', id: 'Test Row', at: 0 });
+  assert.strictEqual(row.ok, true);
+  assert.deepStrictEqual(row.added, { kind: 'iconRow', at: 0 });
+  const cd = ops.addIcon(row.spec, 'felsworn', { container: 0, icon: { spell: 'Felwrath' } });
+  assert.strictEqual(cd.ok, true);
+  const proc = ops.addIcon(cd.spec, 'felsworn', {
+    container: 0,
+    icon: { spell: 'Chaos Rush', label: 'Chaos Rush (proc)', showWhen: [{ buff: 'Carve' }], glow: { when: [] } },
+  });
+  assert.strictEqual(proc.ok, true);
+  assert.strictEqual(valid(proc.spec), valid(felsworn) + 3);   // dyngroup + 2 icons
+});
+
+t('addElement rejects the retired legacy kinds', () => {
+  const r = ops.addElement(felsworn, 'felsworn', { kind: 'cdRow' });
+  assert.strictEqual(r.ok, false);
+  assert.match(r.error, /unknown kind/i);
+});
+
+t('addIcon rejects a buff-state icon outside a buffRow', () => {
+  const r = ops.addIcon(felsworn, 'felsworn', { container: cdIdx, icon: { label: 'X', anyOf: ['Some Buff'] } });
+  assert.strictEqual(r.ok, false);
+  assert.match(r.error, /buffRow/);
+});
+
+t('describeSpec exposes showWhen on gated icons', () => {
+  const row = ops.addElement(felsworn, 'felsworn', { kind: 'iconRow', id: 'Test Row 2' });
+  const proc = ops.addIcon(row.spec, 'felsworn', { container: row.added.at, icon: { spell: 'Felwrath', showWhen: [{ buff: 'Carve' }] } });
+  const d = describeSpec(proc.spec);
+  const el = d.elements.find(e => e.id === 'Test Row 2');
+  assert.deepStrictEqual(el.icons[0].showWhen, [{ buff: 'Carve' }]);
 });
 
 t('setGlobal patches sizing and toggles combatOnly', () => {
