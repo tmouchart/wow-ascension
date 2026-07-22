@@ -1,0 +1,75 @@
+{
+  "slug": "felsworn",
+  "id": "WA Test Harness",
+  "name": "test-harness",
+  "global": { "barWidth": 250, "iconSize": 26, "secIconSize": 24, "procSize": 30, "gap": 3 },
+  "stack": [
+    { "kind": "buffWarnText", "buff": "Inner Demon", "text": "TEST WARN TEXT" },
+    { "kind": "iconRow", "id": "WA Test Harness Procs", "size": 30, "icons": [
+      { "label": "Show buff slot", "spell": 801312, "fallbackIcon": "Interface\\Icons\\Spell_Fire_FelFireBolt",
+        "showWhen": [ { "buff": "Carve" } ], "hide": "slot",
+        "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay" },
+        "display": { "timer": "buff", "stacks": true } },
+      { "label": "Show execute collapse", "spell": 805240, "fallbackIcon": "Interface\\Icons\\inv_summondemonictyrant",
+        "showWhen": [ { "targetHpBelow": 35 } ], "hide": "collapse",
+        "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Show stealable", "spell": 800353, "fallbackIcon": "Interface\\Icons\\Spell_Arcane_ManaTap",
+        "showWhen": [ { "stealable": true } ], "hide": "collapse",
+        "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay" } },
+      { "label": "Show anybuff", "spell": 801901,
+        "showWhen": [ { "anyBuff": ["Inner Demon", "Carve"] } ] },
+      { "label": "Show buffstacks", "spell": 800210,
+        "showWhen": [ { "buffStacks": { "name": "Felfury", "op": ">=", "value": 3 } } ] },
+      { "label": "Show power gate", "spell": 800205,
+        "showWhen": [ { "powerAtLeast": 40, "powerType": 3 } ],
+        "display": { "desaturateOnCd": true } }
+    ] },
+    { "kind": "iconRow", "id": "WA Test Harness CDs", "icons": [
+      { "label": "Plain CD", "spell": 705129 },
+      { "label": "Glow ready", "spell": 800209,
+        "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay", "when": [ { "spellReady": true } ] } },
+      { "label": "Glow ready power", "spell": 800225,
+        "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay", "when": [ { "spellReady": true }, { "powerAtLeast": 30, "powerType": 3 } ] } },
+      { "label": "Glow power pct", "spell": 803904,
+        "glow": { "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay", "when": [ { "powerPctAtLeast": 60, "powerType": 3 } ] } },
+      { "label": "Glow buff", "spell": 805239,
+        "glow": { "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel", "when": [ { "buff": "Inner Demon" } ] },
+        "display": { "timer": "buff" } },
+      { "label": "Glow buff missing", "spell": 802075,
+        "glow": { "color": [1, 0.2, 0.2, 1], "glowType": "ACShine", "when": [ { "buffMissing": "Inner Demon" } ] } },
+      { "label": "Glow target hp", "spell": 802058,
+        "glow": { "color": [1, 0.82, 0.1, 1], "glowType": "buttonOverlay", "when": [ { "targetHpBelow": 35 } ] } },
+      { "label": "Glow charges", "spell": 500028, "charges": true,
+        "glow": { "color": [1, 1, 1, 1], "glowType": "buttonOverlay", "when": [ { "charges": { "op": ">=", "value": 1 } } ] } },
+      { "label": "By name CD", "spell": "Fel Bargain", "byName": true, "fallbackIcon": "Interface\\Icons\\Spell_Shadow_DemonicPact" }
+    ] },
+    { "kind": "uptimeBar", "buff": "Inner Demon", "label": "Uptime single  %p", "warnText": "SINGLE DOWN", "bg": [0.05, 0.08, 0.03, 0.85] },
+    { "kind": "uptimeBar", "id": "WA Test Harness Uptime AnyOf", "buff": ["Inner Demon", "Carve"], "label": "Uptime any-of  %p", "warnText": "ANYOF DOWN", "bg": [0.06, 0.05, 0.02, 0.85] },
+    { "kind": "uptimeBar", "id": "WA Test Harness Uptime Target", "unit": "target", "buff": "Cripple", "label": "Target DoT  %p", "warnText": "DOT DOWN", "bg": [0.08, 0.03, 0.03, 0.85] },
+    { "kind": "powerBar", "powerType": 3, "hi": [1, 0.88, 0.15, 1], "lo": [0.72, 0.42, 0, 1], "bg": [0.12, 0.1, 0, 0.8] },
+    { "kind": "stacks", "auraNames": ["Felfury"], "count": 6, "hi": [0.45, 0.9, 0.06, 1], "lo": [0.1, 0.32, 0, 1],
+      "capGlow": { "at": 6, "unlessBuff": "Inner Demon", "color": [1, 0.82, 0.1, 1], "glowType": "Pixel" } },
+    { "kind": "stacks", "id": "WA Test Harness Target Stacks", "auraNames": ["Cripple"], "count": 3,
+      "unit": "target", "debuffType": "HARMFUL", "unitExists": false, "hi": [0.9, 0.3, 0.1, 1], "lo": [0.35, 0.08, 0, 1] },
+    { "kind": "chargeStacks", "spell": 500028, "count": 2, "hi": [1, 0.58, 0.12, 1], "lo": [0.55, 0.2, 0, 1] },
+    { "kind": "stackBar", "aura": "Felfury", "max": 6, "hi": [0.45, 0.9, 0.06, 1], "lo": [0.1, 0.32, 0, 1] },
+    { "kind": "healthBar", "hi": [0.9, 0.16, 0.12, 1], "lo": [0.33, 0.02, 0.02, 1] },
+    { "kind": "buffRow", "icons": [
+      { "label": "AnyOf icon", "anyOf": ["Inner Demon", "Carve"], "fallbackIcon": "Interface\\Icons\\Spell_Shadow_DeathPact" },
+      { "label": "Indicator", "indicator": "Inner Demon", "fallbackIcon": "Interface\\Icons\\inv_summondemonictyrant",
+        "lowPowerGlow": { "pct": 25, "powerType": 3, "color": [0.3, 0.7, 1, 1] } },
+      { "label": "Engraving MH", "weaponEnchant": "main", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" },
+      { "label": "Engraving OH", "weaponEnchant": "off", "fallbackIcon": "Interface\\Icons\\INV_Sword_48" }
+    ] },
+    { "kind": "iconRow", "id": "WA Test Harness CombatOnly", "secondary": true, "combatOnly": true, "icons": [
+      { "label": "Combat only icon", "spell": 805235 }
+    ] }
+  ],
+  "left": { "icons": [
+    { "label": "Rail DEF", "spell": 805248,
+      "glow": { "color": [0.337, 0.729, 0.016, 1], "glowType": "Pixel", "when": [ { "buff": "Inner Demon" } ] } }
+  ] },
+  "right": { "icons": [
+    { "label": "Rail OFF", "spell": 801312 }
+  ] }
+}
