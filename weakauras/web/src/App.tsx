@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Moon, Sun, Save, FolderOpen, Trash2, RotateCcw, CircleHelp } from 'lucide-react';
+import { Moon, Sun, Save, FolderOpen, Trash2, RotateCcw, CircleHelp, Lightbulb, Bug } from 'lucide-react';
 import INDEX from '../../registry/INDEX.json';
 import { useStore, initialSlug, initialSpecName } from './store';
 import { SPECS_WITH_PRESET, presetKey } from './specs';
@@ -18,6 +18,7 @@ import { Editor } from './components/Editor';
 import { WelcomeModal } from './components/WelcomeModal';
 import { ExportModal } from './components/ExportModal';
 import { GuideModal } from './components/GuideModal';
+import { FeedbackModal, type FeedbackType } from './components/FeedbackModal';
 import { Button } from './components/ui/button';
 import { Tooltip, TooltipTrigger, TooltipContent } from './components/ui/tooltip';
 import { Separator } from './components/ui/separator';
@@ -47,6 +48,7 @@ export function App() {
   const [importText, setImportText] = useState('');
   const [wowOpen, setWowOpen] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState<FeedbackType | null>(null);
   const [saveAsOpen, setSaveAsOpen] = useState(false);
   const [saveName, setSaveName] = useState('');
   const [savedOpen, setSavedOpen] = useState(false);
@@ -220,6 +222,24 @@ export function App() {
           <span className="font-mono text-xs text-muted-foreground">{status}</span>
         )}
 
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant="ghost" size="icon" aria-label="Suggest an improvement" onClick={() => setFeedbackOpen('suggestion')}>
+              <Lightbulb />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>Suggestion</TooltipContent>
+        </Tooltip>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant="ghost" size="icon" aria-label="Report a bug" onClick={() => setFeedbackOpen('bug')}>
+              <Bug />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>Report a bug</TooltipContent>
+        </Tooltip>
+
         <Button variant="ghost" onClick={() => { setGuideOpen(true); track('guide_opened'); }}>
           <CircleHelp /> Guide
         </Button>
@@ -337,6 +357,7 @@ export function App() {
 
       {wowOpen && <ExportModal onClose={() => setWowOpen(false)} />}
       {guideOpen && <GuideModal onClose={() => setGuideOpen(false)} />}
+      {feedbackOpen && <FeedbackModal type={feedbackOpen} slug={slug} onClose={() => setFeedbackOpen(null)} />}
 
       <Editor slug={slug} specName={specName} />
     </div>
