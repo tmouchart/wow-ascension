@@ -9,7 +9,7 @@ const COPY: Record<FeedbackType, { icon: typeof Lightbulb; title: string; hint: 
   suggestion: {
     icon: Lightbulb,
     title: 'Suggest an improvement',
-    hint: 'An idea, a missing feature, anything that would make Forge better.',
+    hint: 'An idea, a missing feature, anything that would make Auraforge better.',
     placeholder: 'It would be great if…',
   },
   bug: {

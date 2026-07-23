@@ -1,4 +1,4 @@
-# Full-stack build for WA-Forge: the Hono server (server/server.mjs) serves the API (/api/import,
+# Full-stack build for Auraforge: the Hono server (server/server.mjs) serves the API (/api/import,
 # /api/agent) AND the built SPA in one Node process, so the frontend calls /api/* same-origin.
 # Build context = the weakauras/ repo root (NOT web/) because the Vite build reads ../../registry/INDEX.json
 # and ../../../classes/*/spec.json, gen.mjs bundles ../lib/browser-entry.mjs, and the server requires

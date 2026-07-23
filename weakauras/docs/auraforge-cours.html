@@ -1,4 +1,4 @@
-<title>WA Forge — le cours du repo</title>
+<title>Auraforge — le cours du repo</title>
 <style>
   :root {
     --bg: #f6f8f3;
@@ -238,7 +238,7 @@
 <main>
 <header>
   <div class="eyebrow">WoW Ascension &middot; Conquest of Azeroth</div>
-  <h1>WA Forge — comment le repo fabrique des WeakAuras</h1>
+  <h1>Auraforge — comment le repo fabrique des WeakAuras</h1>
   <p class="lede">Un tour complet des concepts : ce qu'est une string <code>!WA:2!</code>, comment on la lit et l'écrit, le DSL <code>spec.json</code> qui décrit un package, la compilation vers des régions WeakAuras, la décompilation inverse, et les garde-fous qui empêchent tout ça de casser.</p>
   <nav class="toc">
     <a href="#probleme">Le problème qu'on résout</a>
@@ -516,7 +516,7 @@ node wa-codec.js <span class="k">roundtrip</span> mystring.txt <span class="c">#
 <section id="web">
   <div class="secnum">08</div>
   <h2>La web app &amp; le déploiement</h2>
-  <p><strong>Live sur <a href="https://wa-forge.fly.dev">wa-forge.fly.dev</a>.</strong> L'éditeur (Vite/React, <code>weakauras/web/</code>) est construit autour du même SPEC :</p>
+  <p><strong>Live sur <a href="https://auraforge.fly.dev">auraforge.fly.dev</a>.</strong> L'éditeur (Vite/React, <code>weakauras/web/</code>) est construit autour du même SPEC :</p>
   <ul>
     <li>Les <strong>presets</strong> = littéralement les fichiers <code>classes/*/spec.json</code>, chargés par <code>import.meta.glob</code>. Aucune duplication.</li>
     <li>L'état éditable vit dans <strong>un store zustand</strong> (<code>src/store.ts</code>) — jamais dans du state local de composant.</li>
@@ -589,6 +589,6 @@ node wa-codec.js <span class="k">roundtrip</span> mystring.txt <span class="c">#
 </section>
 
 <footer>
-  WA Forge &middot; wow-ascension &middot; cours généré le 22/07/2026 &middot; sources : CLAUDE.md, docs/spec-dsl-reference.md, classes/felsworn/spec.json
+  Auraforge &middot; wow-ascension &middot; cours généré le 22/07/2026 &middot; sources : CLAUDE.md, docs/spec-dsl-reference.md, classes/felsworn/spec.json
 </footer>
 </main>

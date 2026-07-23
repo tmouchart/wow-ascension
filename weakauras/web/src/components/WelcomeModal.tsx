@@ -12,7 +12,7 @@ import {
 
 type ClassEntry = { slug: string; class: string; specs: string[] };
 
-// First-visit welcome: a short pitch of what Forge does + a class/spec picker + OK. Shown once (persistence
+// First-visit welcome: a short pitch of what Auraforge does + a class/spec picker + OK. Shown once (persistence
 // flag), hand-rolled overlay to match the header's existing Tailwind-token popovers (no radix Dialog dep).
 export function WelcomeModal({
   classes,
@@ -48,13 +48,13 @@ export function WelcomeModal({
             W
           </span>
           <div>
-            <h2 className="text-lg font-semibold leading-tight tracking-tight">Welcome to Forge</h2>
+            <h2 className="text-lg font-semibold leading-tight tracking-tight">Welcome to Auraforge</h2>
             <p className="text-xs text-muted-foreground">CoA WeakAuras generator</p>
           </div>
         </div>
 
         <p className="text-sm text-muted-foreground">
-          Forge builds ready-to-import <span className="font-medium text-foreground">WeakAuras</span> for
+          Auraforge builds ready-to-import <span className="font-medium text-foreground">WeakAuras</span> for
           Conquest of Azeroth custom classes — resource bars, cooldown rows, buff trackers and procs — then
           gives you an import string to paste in-game.
         </p>

@@ -7,7 +7,7 @@ export function GuideModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-background/80 p-4 backdrop-blur-sm" onClick={onClose}>
       <div className="w-full max-w-lg rounded-lg border bg-card p-6 shadow-2xl" onClick={(e) => e.stopPropagation()}>
-        <h2 className="text-lg font-semibold leading-tight tracking-tight">How Forge works</h2>
+        <h2 className="text-lg font-semibold leading-tight tracking-tight">How Auraforge works</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           Build a ready-to-use WeakAuras HUD for your Conquest of Azeroth class — no WeakAuras knowledge
           needed.
@@ -63,7 +63,7 @@ export function GuideModal({ onClose }: { onClose: () => void }) {
         <p className="mt-5 border-t pt-4 text-xs text-muted-foreground">
           Your work is autosaved per class &amp; spec. Use <span className="font-medium text-foreground">Save
           as</span> for named snapshots, the ↺ button to revert to the preset, and{' '}
-          <span className="font-medium text-foreground">Import string</span> to keep editing a string Forge
+          <span className="font-medium text-foreground">Import string</span> to keep editing a string Auraforge
           generated earlier.
         </p>
 

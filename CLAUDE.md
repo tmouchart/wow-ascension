@@ -355,7 +355,7 @@ Two blind spots to close before scaling (nothing has validated these yet):
 
 ### Deployment — fly.io (SHIPPED + auto-deploy on push to main, since 2026-07-19)
 
-**Live at https://wa-forge.fly.dev** (fly app `wa-forge`, region `cdg`). **Full-stack**: ONE Node/Hono process
+**Live at https://auraforge.fly.dev** (fly app `auraforge`, region `cdg`). **Full-stack**: ONE Node/Hono process
 (`server/server.mjs`) serves BOTH the API (`/api/import`, `/api/agent`) AND the built SPA (same-origin, no CORS)
 via env `STATIC_DIR=./web/dist` (the old `web/nginx.conf` is dead). Deploy files live in **`weakauras/`** (NOT
 repo root): `Dockerfile` (multi-stage: build SPA → server prod deps → `node server/server.mjs`), `fly.toml`
@@ -367,7 +367,7 @@ repo root): `Dockerfile` (multi-stage: build SPA → server prod deps → `node 
 - **GOTCHA:** CI builds from **committed files only**, so any file the server requires at runtime MUST be tracked
   (a local `fly deploy` uses the working tree and would mask this). An untracked `lib/wa-to-spec.js` once shipped
   a `MODULE_NOT_FOUND` crash-loop — **commit new runtime deps** before relying on auto-deploy.
-- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret (`fly secrets set ... -a wa-forge`), NOT in
+- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret (`fly secrets set ... -a auraforge`), NOT in
   git (`server/.env` is git+docker-ignored). Build does `npm ci --omit=dev` in `server/`, so `server/package.json`
   + `server/package-lock.json` MUST stay in sync (run `npm install` after editing deps, or CI fails).
 

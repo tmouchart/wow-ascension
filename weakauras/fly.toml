@@ -1,10 +1,10 @@
-# fly.io deploy for the WA-Forge web editor. One Node process (Hono, see Dockerfile) serves the API
+# fly.io deploy for the Auraforge web editor. One Node process (Hono, see Dockerfile) serves the API
 # (/api/import, /api/agent) AND the built SPA. Machines auto-stop when idle and cold-start on request —
 # a hobby app costs ~nothing at rest.
 #   fly launch --no-deploy                       # first time only: creates the app (edit `app` below)
 #   fly secrets set OPENROUTER_API_KEY=sk-or-...  # required for the Agent panel (/api/agent)
 #   fly deploy --remote-only                     # build on fly's builder (no local Docker needed) + ship
-app = "wa-forge"
+app = "auraforge"
 primary_region = "cdg"        # Paris — closest to the user; change if desired
 
 [build]
