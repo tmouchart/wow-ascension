@@ -24,7 +24,11 @@ export function KitchenSink() {
       </div>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-3">
         {CLASS_COLORS.map((c) => (
-          <div key={c.classId} style={classVars(c)} className="rounded-lg border border-primary/30 bg-card p-4">
+          <div
+            key={c.classId}
+            style={classVars(c, dark ? 'dark' : 'light')}
+            className="rounded-lg border border-primary/30 bg-card p-4"
+          >
             <div className="mb-3 flex items-center gap-2">
               <span className="size-3 rounded-full bg-primary" />
               <span className="font-bold text-primary">{c.name}</span>

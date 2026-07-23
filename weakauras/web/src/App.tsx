@@ -133,10 +133,11 @@ export function App() {
     flash('Reset to preset');
     track('preset_reset', { slug });
   }
-  // Class-colored primary: retint the app's theme tokens to the loaded class's color.
+  // Class-colored primary: retint the app's theme tokens to the loaded class's color (theme-aware:
+  // light mode gets a luminance-clamped "ink" variant of the same hue).
   useEffect(() => {
-    applyClassTheme(storeSlug);
-  }, [storeSlug]);
+    applyClassTheme(storeSlug, theme);
+  }, [storeSlug, theme]);
 
   function pickTheme(t: Theme) {
     if (!t) return; // ToggleGroup emits '' when deselecting the active item — ignore
