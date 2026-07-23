@@ -1,8 +1,8 @@
 import posthog from 'posthog-js';
 
 // Product analytics + session replay. Prod-only so dev sessions don't pollute the stats;
-// set localStorage['waforge.ph'] = '1' (then reload) to force-enable in dev for testing.
-const enabled = import.meta.env.PROD || !!localStorage.getItem('waforge.ph');
+// set localStorage['auraforge.ph'] = '1' (then reload) to force-enable in dev for testing.
+const enabled = import.meta.env.PROD || !!localStorage.getItem('auraforge.ph');
 
 if (enabled) {
   // Project token — public by design (it ships in every browser bundle).
@@ -14,7 +14,7 @@ if (enabled) {
     person_profiles: 'always',
     // Auto-inject X-POSTHOG-DISTINCT-ID / X-POSTHOG-SESSION-ID on our /api calls so backend
     // events and LLM traces land on the same person + session (server.mjs analyticsContext).
-    tracing_headers: ['wa-forge.fly.dev', 'localhost'],
+    tracing_headers: ['auraforge.fly.dev', 'localhost'],
     // No login/PII anywhere in the app — unmasked inputs make replays actually useful
     // (agent prompts, pasted WA strings).
     session_recording: { maskAllInputs: false },

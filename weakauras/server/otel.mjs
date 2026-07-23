@@ -15,7 +15,7 @@ import { OpenTelemetry } from '@ai-sdk/otel';
 
 if (process.env.POSTHOG_PROJECT_TOKEN && process.env.POSTHOG_HOST) {
   new NodeSDK({
-    resource: resourceFromAttributes({ 'service.name': 'wa-forge' }),
+    resource: resourceFromAttributes({ 'service.name': 'auraforge' }),
     spanProcessors: [
       new PostHogSpanProcessor({
         projectToken: process.env.POSTHOG_PROJECT_TOKEN,

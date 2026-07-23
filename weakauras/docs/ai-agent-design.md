@@ -177,7 +177,7 @@ Public site + your key = you pay and can be abused. Mitigations, server-side:
 
 ## 8. Deployment on fly.io — one app, one Node server
 
-A single fly app (keep `wa-forge`). One Node server (Hono) does both jobs:
+A single fly app (keep `auraforge`). One Node server (Hono) does both jobs:
 - `GET /*` -> serves the Vite build (`web/dist/`) as static files (`@hono/node-server` +
   `serveStatic`). **Replaces nginx** — drop `web/nginx.conf` from the deploy path.
 - `POST /api/agent` -> the stateless agent endpoint. Holds the OpenRouter key, runs the AI SDK

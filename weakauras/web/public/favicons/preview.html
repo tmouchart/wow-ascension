@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Favicon candidates</title>
+<style>
+  body { font-family: system-ui; background: #1e1e1e; color: #ddd; padding: 24px; }
+  h2 { margin: 24px 0 8px; font-size: 15px; }
+  .row { display: flex; gap: 40px; align-items: flex-end; }
+  .strip { display: flex; gap: 18px; align-items: center; padding: 10px 16px; border-radius: 8px; margin-top: 8px; }
+  .light { background: #dee1e6; }
+  .dark { background: #202124; }
+  .tab { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 6px 12px; border-radius: 8px 8px 0 0; }
+  .light .tab { background: #fff; color: #333; }
+  .dark .tab { background: #35363a; color: #ddd; }
+  img { image-rendering: auto; }
+</style>
+</head>
+<body>
+  <div id="out"></div>
+  <script>
+    const v = Date.now();
+    const names = ['anvil', 'spellbutton', 'hybrid', 'segbar'].map(n => `${n}.svg?${v}`);
+    const out = document.getElementById('out');
+    for (const n of names) {
+      out.insertAdjacentHTML('beforeend', `
+        <h2>${n}</h2>
+        <div class="row">
+          <img src="${n}" width="64" height="64">
+          <img src="${n}" width="32" height="32">
+          <img src="${n}" width="16" height="16">
+          <div class="strip light"><span class="tab"><img src="${n}" width="16" height="16"> Auraforge — Conquest…</span></div>
+          <div class="strip dark"><span class="tab"><img src="${n}" width="16" height="16"> Auraforge — Conquest…</span></div>
+        </div>`);
+    }
+  </script>
+</body>
+</html>

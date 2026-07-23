@@ -357,7 +357,7 @@ Two blind spots to close before scaling (nothing has validated these yet):
 
 ### Deployment — fly.io (SHIPPED + auto-deploy on push to main, since 2026-07-19)
 
-**Live at https://wa-forge.fly.dev** (fly app `wa-forge`, region `cdg`). **Full-stack**: ONE Node/Hono process
+**Live at https://auraforge.fly.dev** (fly app `auraforge`, region `cdg`). **Full-stack**: ONE Node/Hono process
 (`server/server.mjs`) serves BOTH the API (`/api/import`, `/api/agent`) AND the built SPA (same-origin, no CORS)
 via env `STATIC_DIR=./web/dist` (the old `web/nginx.conf` is dead). Deploy files live in **`weakauras/`** (NOT
 repo root): `Dockerfile` (multi-stage: build SPA → server prod deps → `node server/server.mjs`), `fly.toml`
@@ -369,9 +369,14 @@ repo root): `Dockerfile` (multi-stage: build SPA → server prod deps → `node 
 - **GOTCHA:** CI builds from **committed files only**, so any file the server requires at runtime MUST be tracked
   (a local `fly deploy` uses the working tree and would mask this). An untracked `lib/wa-to-spec.js` once shipped
   a `MODULE_NOT_FOUND` crash-loop — **commit new runtime deps** before relying on auto-deploy.
-- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret (`fly secrets set ... -a wa-forge`), NOT in
+- **Secrets:** `OPENROUTER_API_KEY` (for `/api/agent`) is a fly secret (`fly secrets set ... -a auraforge`), NOT in
   git (`server/.env` is git+docker-ignored). Build does `npm ci --omit=dev` in `server/`, so `server/package.json`
   + `server/package-lock.json` MUST stay in sync (run `npm install` after editing deps, or CI fails).
+- **Link previews (Discord etc.):** OG meta in `web/index.html` + the card image `web/public/og.jpg` (1200x630
+  JPEG ~90K). **Discord does NOT animate GIF `og:image`s** (first frame only — tested 2026-07-23; animation only
+  works for attachments/bot embeds, and `og:video` mp4 = a click-to-play player, not a preview) — so the card
+  stays a static JPEG. Regenerate: headless-Chrome CDP screenshot of the app (welcome modal pre-dismissed via
+  `localStorage waforge.welcomed.v1`) composed into an HTML card, rendered at 1200x630.
 
 Known open items: baseline spellIds previously tracked by name are now resolvable via the DB scrape
 (`coa-baselines.js` → e.g. Fel Fireball 801312, Primordial Blast 800732) — swap name-tracked triggers to

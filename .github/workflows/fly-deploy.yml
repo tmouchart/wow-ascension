@@ -1,6 +1,6 @@
 name: Deploy to Fly.io
 
-# Auto-deploy the WA-Forge web app on every push to main. The app + Dockerfile live in weakauras/;
+# Auto-deploy the Auraforge web app on every push to main. The app + Dockerfile live in weakauras/;
 # flyctl reads weakauras/fly.toml and builds on Fly's remote builder (no Docker in CI).
 on:
   push:

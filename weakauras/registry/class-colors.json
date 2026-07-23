@@ -1,0 +1,388 @@
+{
+  "_source": "ascension.gg CoA builder JS bundle (--coa-class-color map, keyed by classId), scraped 2026-07-23",
+  "_note": "classId continues after the 11 retail classes. internalSlug = the dev codename used in the site bundle. wa = [r,g,b,1] normalized 0..1 for WeakAuras color fields. NB: felsworn spec.json currently uses [0.337,0.729,0.016,1] (RGB 86,186,4) sampled from an in-game Details screenshot - the official builder color is brighter (117,250,0). ui = hand-adjusted UI-primary variant for colors that are too dull/gray as an app accent (2026-07-23: barbarian, guardian, primalist, tinker); the WA package color stays rgb/hex/wa - ui is ONLY for the web app theme.",
+  "classes": [
+    {
+      "classId": 12,
+      "name": "Barbarian",
+      "slug": "barbarian",
+      "internalSlug": "barbarian",
+      "rgb": [
+        138,
+        51,
+        3
+      ],
+      "hex": "#8a3303",
+      "wa": [
+        0.541,
+        0.2,
+        0.012,
+        1
+      ],
+      "ui": "#cc5c14"
+    },
+    {
+      "classId": 13,
+      "name": "Witch Doctor",
+      "slug": "witch-doctor",
+      "internalSlug": "witchdoctor",
+      "rgb": [
+        245,
+        0,
+        255
+      ],
+      "hex": "#f500ff",
+      "wa": [
+        0.961,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "classId": 14,
+      "name": "Felsworn",
+      "slug": "felsworn",
+      "internalSlug": "demonhunter",
+      "rgb": [
+        117,
+        250,
+        0
+      ],
+      "hex": "#75fa00",
+      "wa": [
+        0.459,
+        0.98,
+        0,
+        1
+      ]
+    },
+    {
+      "classId": 15,
+      "name": "Witch Hunter",
+      "slug": "witch-hunter",
+      "internalSlug": "witchhunter",
+      "rgb": [
+        84,
+        51,
+        207
+      ],
+      "hex": "#5433cf",
+      "wa": [
+        0.329,
+        0.2,
+        0.812,
+        1
+      ]
+    },
+    {
+      "classId": 16,
+      "name": "Stormbringer",
+      "slug": "stormbringer",
+      "internalSlug": "stormbringer",
+      "rgb": [
+        0,
+        125,
+        237
+      ],
+      "hex": "#007ded",
+      "wa": [
+        0,
+        0.49,
+        0.929,
+        1
+      ]
+    },
+    {
+      "classId": 17,
+      "name": "Knight of Xoroth",
+      "slug": "knight-of-xoroth",
+      "internalSlug": "fleshwarden",
+      "rgb": [
+        252,
+        0,
+        5
+      ],
+      "hex": "#fc0005",
+      "wa": [
+        0.988,
+        0,
+        0.02,
+        1
+      ]
+    },
+    {
+      "classId": 18,
+      "name": "Guardian",
+      "slug": "guardian",
+      "internalSlug": "guardian",
+      "rgb": [
+        156,
+        148,
+        130
+      ],
+      "hex": "#9c9482",
+      "wa": [
+        0.612,
+        0.58,
+        0.51,
+        1
+      ],
+      "ui": "#bfa96e"
+    },
+    {
+      "classId": 19,
+      "name": "Templar",
+      "slug": "templar",
+      "internalSlug": "monk",
+      "rgb": [
+        255,
+        250,
+        179
+      ],
+      "hex": "#fffab3",
+      "wa": [
+        1,
+        0.98,
+        0.702,
+        1
+      ]
+    },
+    {
+      "classId": 20,
+      "name": "Bloodmage",
+      "slug": "bloodmage",
+      "internalSlug": "sonofarugal",
+      "rgb": [
+        163,
+        0,
+        0
+      ],
+      "hex": "#a30000",
+      "wa": [
+        0.639,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "classId": 21,
+      "name": "Ranger",
+      "slug": "ranger",
+      "internalSlug": "ranger",
+      "rgb": [
+        191,
+        240,
+        107
+      ],
+      "hex": "#bff06b",
+      "wa": [
+        0.749,
+        0.941,
+        0.42,
+        1
+      ]
+    },
+    {
+      "classId": 22,
+      "name": "Chronomancer",
+      "slug": "chronomancer",
+      "internalSlug": "chronomancer",
+      "rgb": [
+        255,
+        237,
+        74
+      ],
+      "hex": "#ffed4a",
+      "wa": [
+        1,
+        0.929,
+        0.29,
+        1
+      ]
+    },
+    {
+      "classId": 23,
+      "name": "Necromancer",
+      "slug": "necromancer",
+      "internalSlug": "necromancer",
+      "rgb": [
+        69,
+        219,
+        156
+      ],
+      "hex": "#45db9c",
+      "wa": [
+        0.271,
+        0.859,
+        0.612,
+        1
+      ]
+    },
+    {
+      "classId": 24,
+      "name": "Pyromancer",
+      "slug": "pyromancer",
+      "internalSlug": "pyromancer",
+      "rgb": [
+        255,
+        97,
+        18
+      ],
+      "hex": "#ff6112",
+      "wa": [
+        1,
+        0.38,
+        0.071,
+        1
+      ]
+    },
+    {
+      "classId": 25,
+      "name": "Cultist",
+      "slug": "cultist",
+      "internalSlug": "cultist",
+      "rgb": [
+        156,
+        69,
+        242
+      ],
+      "hex": "#9c45f2",
+      "wa": [
+        0.612,
+        0.271,
+        0.949,
+        1
+      ]
+    },
+    {
+      "classId": 26,
+      "name": "Starcaller",
+      "slug": "starcaller",
+      "internalSlug": "starcaller",
+      "rgb": [
+        143,
+        255,
+        255
+      ],
+      "hex": "#8fffff",
+      "wa": [
+        0.561,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "classId": 27,
+      "name": "Sun Cleric",
+      "slug": "sun-cleric",
+      "internalSlug": "suncleric",
+      "rgb": [
+        255,
+        179,
+        64
+      ],
+      "hex": "#ffb340",
+      "wa": [
+        1,
+        0.702,
+        0.251,
+        1
+      ]
+    },
+    {
+      "classId": 28,
+      "name": "Tinker",
+      "slug": "tinker",
+      "internalSlug": "tinker",
+      "rgb": [
+        217,
+        217,
+        217
+      ],
+      "hex": "#d9d9d9",
+      "wa": [
+        0.851,
+        0.851,
+        0.851,
+        1
+      ],
+      "ui": "#8fb6d9"
+    },
+    {
+      "classId": 29,
+      "name": "Venomancer",
+      "slug": "venomancer",
+      "internalSlug": "prophet",
+      "rgb": [
+        107,
+        166,
+        0
+      ],
+      "hex": "#6ba600",
+      "wa": [
+        0.42,
+        0.651,
+        0,
+        1
+      ]
+    },
+    {
+      "classId": 30,
+      "name": "Reaper",
+      "slug": "reaper",
+      "internalSlug": "reaper",
+      "rgb": [
+        10,
+        135,
+        107
+      ],
+      "hex": "#0a876b",
+      "wa": [
+        0.039,
+        0.529,
+        0.42,
+        1
+      ]
+    },
+    {
+      "classId": 31,
+      "name": "Primalist",
+      "slug": "primalist",
+      "internalSlug": "wildwalker",
+      "rgb": [
+        227,
+        140,
+        89
+      ],
+      "hex": "#e38c59",
+      "wa": [
+        0.89,
+        0.549,
+        0.349,
+        1
+      ],
+      "ui": "#f08245"
+    },
+    {
+      "classId": 32,
+      "name": "Runemaster",
+      "slug": "runemaster",
+      "internalSlug": "spiritmage",
+      "rgb": [
+        64,
+        199,
+        235
+      ],
+      "hex": "#40c7eb",
+      "wa": [
+        0.251,
+        0.78,
+        0.922,
+        1
+      ]
+    }
+  ]
+}
