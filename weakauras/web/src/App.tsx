@@ -184,13 +184,8 @@ export function App() {
       )}
       <header className="flex h-14 items-center gap-4 border-b bg-[image:var(--grad-bar)] px-4">
         <div className="flex items-center gap-2.5 font-semibold">
-          <span className="grid size-7 place-items-center rounded-md bg-primary text-sm font-bold text-primary-foreground shadow-sm">
-            A
-          </span>
+          <img src="/favicon.svg" alt="" className="size-7 rounded-md shadow-sm" />
           <span className="tracking-tight">Auraforge</span>
-          <span className="text-[11px] font-normal uppercase tracking-wider text-muted-foreground">
-            CoA WeakAuras
-          </span>
         </div>
 
         <Separator orientation="vertical" className="!h-6" />
