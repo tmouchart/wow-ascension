@@ -83,13 +83,13 @@ export function App() {
     setSlug(next);
     setSpecName(specName && opts.includes(specName) ? specName : opts[0]);
     setStatus('');
-    track('class_selected', { slug: next, spec: specName && opts.includes(specName) ? specName : opts[0] });
+    track('class_selected', { slug: next, spec: specName && opts.includes(specName) ? specName : opts[0], source: 'switcher' });
   }
 
   function pickSpec(next: string) {
     setSpecName(next);
     setStatus('');
-    track('class_selected', { slug, spec: next });
+    track('class_selected', { slug, spec: next, source: 'switcher' });
   }
 
   // First-visit welcome: apply the chosen class+spec and never show the modal again. The modal already
@@ -98,6 +98,7 @@ export function App() {
     setSlug(next);
     setSpecName(nextSpec);
     setStatus('');
+    track('class_selected', { slug: next, spec: nextSpec, source: 'welcome' });
     markWelcomed();
     setShowWelcome(false);
   }
